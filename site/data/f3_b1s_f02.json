@@ -1,0 +1,803 @@
+{
+  "unit_id": "B1S-F02",
+  "unit_title": "Límites y continuidad",
+  "product_phase": "F3_OLA18",
+  "version": "0.18.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Calcular límites finitos de polinomios y racionales con simplificación justificada.",
+    "Calcular límites laterales aplicando la rama y la restricción correctas.",
+    "Identificar asíntotas verticales y horizontales mediante límites apropiados."
+  ],
+  "warnings": [
+    "Material sintético EN REVISIÓN; no homologado ni publicable.",
+    "La continuidad no implica derivabilidad; f′=0 no asegura extremo y f′′=0 no asegura inflexión.",
+    "El marginal continuo no equivale automáticamente al incremento discreto de una unidad.",
+    "Revisión humana, normativa autonómica, accesibilidad integral y dispositivos físicos NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Familias de funciones MACS I",
+      "lesson_id": "B1S-F01-L07",
+      "href": "#/curso/B1S/unidad/B1S-F01/leccion/B1S-F01-L07"
+    },
+    {
+      "label": "Definición de logaritmo",
+      "lesson_id": "B1S-N01-L03",
+      "href": "#/curso/B1S/unidad/B1S-N01/leccion/B1S-N01-L03"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recuperación sin pistas con feedback, revisión local y guardado voluntario."
+  },
+  "source_note": "Marco estatal RD 217/2022 y RD 243/2022, secuencia editorial, mapeo territorial pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1S-F02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F02:C01"
+      ],
+      "objectives": [
+        "Calcular límites finitos de polinomios y racionales con simplificación justificada.",
+        "Distinguir el valor de una función en un punto de su límite, incluso si hay un hueco."
+      ],
+      "prerequisites": [
+        "B1S-F01-L03",
+        "B1S-F01-L05",
+        "B1S-N01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El límite de f(x) cuando x se acerca a a describe el comportamiento de los valores próximos con x distinto de a; no exige que f(a) esté definido. Para un polinomio, la continuidad permite sustituir a directamente. En una fracción con 0/0, no se divide por cero: primero se factoriza, cancela solo para x≠a y después se calcula el límite. Así, para g(x)=(x²−4)/(x−2), x≠2, se tiene g(x)=x+2 y lim(x→2)g(x)=4; sin embargo g(2) no existe en la expresión original. Un resultado finito no prueba por sí mismo continuidad: falta comprobar dominio y valor en a. Los límites deben analizarse por ambos lados si el dominio permite aproximaciones desde izquierda y derecha."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=x²+3x, al acercarse x a 2, lim f(x)=4+6=10, por continuidad del polinomio en todos los reales."
+        },
+        {
+          "type": "example",
+          "body": "Para g(x)=(x²−9)/(x−3), x≠3, factoriza (x−3)(x+3); el límite en x=3 vale 6, pero g(3) está sin definir."
+        },
+        {
+          "type": "figure",
+          "body": "Límite finito en un hueco. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Límite finito en un hueco. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "hole",
+            "title": "Límite finito en un hueco",
+            "rows": [
+              [
+                "Función",
+                "g(x)=(x²−9)/(x−3)"
+              ],
+              [
+                "Dominio original",
+                "x≠3"
+              ],
+              [
+                "Para x≠3",
+                "g(x)=x+3"
+              ],
+              [
+                "Límite x→3",
+                "6"
+              ],
+              [
+                "Valor g(3)",
+                "No definido"
+              ]
+            ],
+            "model": {
+              "kind": "hole",
+              "a": 1,
+              "b": 3,
+              "hole": 3
+            },
+            "domain": [
+              0,
+              6
+            ],
+            "marks": [
+              [
+                "Hueco",
+                3,
+                6
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un límite finito garantiza que la función original tiene valor en el punto?||No; la expresión puede tener un hueco o estar definida con otro valor."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El límite de f(x) cuando x se acerca a a describe el comportamiento de los valores próximos con x distinto de a; no exige que f(a) esté definido. Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F02-L01-01",
+        "F3-B1S-F02-L01-02",
+        "F3-B1S-F02-L01-03",
+        "F3-B1S-F02-L01-04",
+        "F3-B1S-F02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-F02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F02:C02"
+      ],
+      "objectives": [
+        "Calcular límites laterales aplicando la rama y la restricción correctas.",
+        "Deducir existencia o inexistencia del límite bilateral a partir de ambos lados."
+      ],
+      "prerequisites": [
+        "B1S-F02-L01",
+        "B1S-F01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Los límites laterales lim(x→a−)f(x) y lim(x→a+)f(x) consideran aproximaciones desde x<a y x>a, respectivamente. El límite bilateral finito existe si ambos límites laterales existen y coinciden; el valor asignado f(a) puede ser diferente sin cambiar esa condición. Ejemplo: f(x)=x+1 para x<2 y f(x)=2x+1 para x≥2. El límite izquierdo es 3 y el derecho es 5: no existe límite bilateral finito, aunque f(2)=5. En cambio, si la segunda rama fuera 2x−1, ambos laterales valdrían 3. La notación de rama abierta/cerrada es esencial para f(a), pero la expresión de cada lado se usa exclusivamente para acercarse desde su semieje."
+        },
+        {
+          "type": "example",
+          "body": "En x=2, f(x)=x+1 si x<2 y 2x+1 si x≥2: límite por la izquierda 3, por la derecha 5; bilateral inexistente."
+        },
+        {
+          "type": "example",
+          "body": "Para h(x)=x+1 si x<2 y 2x−1 si x≥2, ambos límites laterales son 3; como h(2)=3, también hay continuidad."
+        },
+        {
+          "type": "figure",
+          "body": "Salto y límites laterales diferentes. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Salto y límites laterales diferentes. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "piecewise",
+            "title": "Salto y límites laterales diferentes",
+            "rows": [
+              [
+                "Umbral",
+                "x=2"
+              ],
+              [
+                "Rama x<2",
+                "x+1"
+              ],
+              [
+                "Rama x≥2",
+                "2x+1"
+              ],
+              [
+                "Límite izquierdo",
+                "3"
+              ],
+              [
+                "Límite derecho",
+                "5"
+              ],
+              [
+                "Límite bilateral",
+                "No existe"
+              ]
+            ],
+            "model": {
+              "kind": "piecewise",
+              "threshold": 2,
+              "left_a": 1,
+              "left_b": 1,
+              "right_a": 2,
+              "right_b": 1,
+              "left_closed": false
+            },
+            "domain": [
+              -1,
+              5
+            ],
+            "marks": [
+              [
+                "Izq",
+                2,
+                3
+              ],
+              [
+                "Der",
+                2,
+                5
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Si lim izquierdo vale 3 y lim derecho 5 existe un límite bilateral finito?||No; los dos límites laterales deben coincidir."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Los límites laterales lim(x→a−)f(x) y lim(x→a+)f(x) consideran aproximaciones desde x<a y x>a, respectivamente. Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F02-L02-01",
+        "F3-B1S-F02-L02-02",
+        "F3-B1S-F02-L02-03",
+        "F3-B1S-F02-L02-04",
+        "F3-B1S-F02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-F02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F02:C03"
+      ],
+      "objectives": [
+        "Identificar asíntotas verticales y horizontales mediante límites apropiados.",
+        "Distinguir tendencias infinitas de valores reales alcanzados y de huecos evitables."
+      ],
+      "prerequisites": [
+        "B1S-F02-L02",
+        "B1S-F01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una asíntota vertical x=a se reconoce cuando al menos un límite lateral de f(x) cuando x→a diverge a +∞ o −∞. Para f(x)=1/(x−2), cuando x→2− el denominador es negativo y pequeño: el valor tiende a −∞; desde x→2+ tiende a +∞. Una asíntota horizontal y=L se detecta si lim(x→+∞)f(x)=L o lim(x→−∞)f(x)=L. La misma función 1/(x−2) tiene horizontal y=0 en ambos sentidos. El infinito no es una respuesta numérica real ni implica que el modelo social pueda usar infinitos clientes o tiempo ilimitado. Un cociente con factores cancelables y límite finito tiene hueco, no asíntota vertical. Al dibujar se separan ramas sin unir segmentos a través de puntos prohibidos."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=1/(x−2), cuando x→2− el resultado tiende a −∞ y cuando x→2+ a +∞; x=2 es asíntota vertical."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=3+1/(x−2), cuando x→+∞ la parte 1/(x−2) tiende a cero y la asíntota horizontal es y=3."
+        },
+        {
+          "type": "figure",
+          "body": "Asíntota vertical y horizontal de función racional. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Asíntota vertical y horizontal de función racional. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "rational",
+            "title": "Asíntota vertical y horizontal de función racional",
+            "rows": [
+              [
+                "Función",
+                "f(x)=1/(x−2)"
+              ],
+              [
+                "Dominio",
+                "x≠2"
+              ],
+              [
+                "Límite lateral izquierdo",
+                "−∞"
+              ],
+              [
+                "Límite lateral derecho",
+                "+∞"
+              ],
+              [
+                "Horizontal para |x| grande",
+                "y=0"
+              ]
+            ],
+            "model": {
+              "kind": "rational",
+              "shift": 2,
+              "vertical": 0
+            },
+            "domain": [
+              -1,
+              6
+            ],
+            "marks": [
+              [
+                "P",
+                3,
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un punto excluido con límite finito es necesariamente una asíntota vertical?||No; puede ser una discontinuidad evitable."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una asíntota vertical x=a se reconoce cuando al menos un límite lateral de f(x) cuando x→a diverge a +∞ o −∞. Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F02-L03-01",
+        "F3-B1S-F02-L03-02",
+        "F3-B1S-F02-L03-03",
+        "F3-B1S-F02-L03-04",
+        "F3-B1S-F02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-F02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F02:C04"
+      ],
+      "objectives": [
+        "Comprobar continuidad verificando valor y límite con hipótesis explícitas.",
+        "Interpretar continuidad relativa a extremos de dominio y sobre intervalos."
+      ],
+      "prerequisites": [
+        "B1S-F02-L01",
+        "B1S-F02-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una función es continua en un punto interior a de su dominio cuando existe f(a), el límite bilateral lim(x→a)f(x) existe y coincide con f(a). Para un extremo de intervalo cerrado se comprueba continuidad relativa al dominio mediante el límite unilateral disponible; no debe exigir valores fuera del dominio. Los polinomios son continuos en todos los reales, y un cociente de polinomios es continuo donde su denominador no se anula. Una función con hueco puede completarse con un valor adecuado: si h(x)=(x²−4)/(x−2) para x≠2, definir h(2)=4 hace continua la extensión en x=2. Una función con salto no puede arreglarse cambiando solo su valor en el punto, porque sus límites laterales no coinciden."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=x² y a=3: f(3)=9 y lim(x→3)x²=9; la igualdad verifica continuidad en el punto."
+        },
+        {
+          "type": "example",
+          "body": "La expresión (x²−4)/(x−2), x≠2, tiene límite 4; si se redefine exclusivamente f(2)=4, la extensión es continua."
+        },
+        {
+          "type": "figure",
+          "body": "Continuidad de la extensión por valor correcto. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Continuidad de la extensión por valor correcto. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "hole",
+            "title": "Continuidad de la extensión por valor correcto",
+            "rows": [
+              [
+                "Expresión",
+                "(x²−4)/(x−2)"
+              ],
+              [
+                "Original en x=2",
+                "No definido"
+              ],
+              [
+                "Límite x→2",
+                "4"
+              ],
+              [
+                "Valor para continuidad",
+                "f(2)=4"
+              ],
+              [
+                "Condición",
+                "Valor igual a límite"
+              ]
+            ],
+            "model": {
+              "kind": "hole",
+              "a": 1,
+              "b": 2,
+              "hole": 2
+            },
+            "domain": [
+              0,
+              5
+            ],
+            "marks": [
+              [
+                "Hueco",
+                2,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Basta definir cualquier valor en el punto de salto para volver continua una función?||No; los límites laterales seguirían siendo diferentes."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una función es continua en un punto interior a de su dominio cuando existe f(a), el límite bilateral lim(x→a)f(x) existe y coincide con f(a). Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F02-L04-01",
+        "F3-B1S-F02-L04-02",
+        "F3-B1S-F02-L04-03",
+        "F3-B1S-F02-L04-04",
+        "F3-B1S-F02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-F02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F02:C05"
+      ],
+      "objectives": [
+        "Clasificar discontinuidades evitables, de salto y de tipo infinito.",
+        "Justificar el tipo mediante dominio y límites laterales, sin inferirlo por una figura."
+      ],
+      "prerequisites": [
+        "B1S-F02-L02",
+        "B1S-F02-L03",
+        "B1S-F02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una discontinuidad evitable ocurre si el límite bilateral finito existe pero la función no está definida en a o su valor allí no coincide con el límite. Una discontinuidad de salto se presenta cuando los límites laterales finitos existen y son distintos. Una discontinuidad infinita sucede si alguna rama tiende a +∞ o −∞; no se arregla asignando un valor finito. Por ejemplo (x²−9)/(x−3) tiene hueco evitable en 3; la función a trozos x+1 para x<2 y 2x+1 para x≥2 tiene salto de 2 unidades en 2; 1/(x−2) posee asíntota vertical en 2. Una representación gráfica es ilustrativa: la clasificación exige examinar la expresión y los límites, e identificar las restricciones de contexto cuando sean pertinentes."
+        },
+        {
+          "type": "example",
+          "body": "En (x²−9)/(x−3), x≠3, el límite en 3 vale 6; basta asignar el valor 6 para eliminar la discontinuidad evitable."
+        },
+        {
+          "type": "example",
+          "body": "En x+1 para x<2 y 2x+1 para x≥2, los laterales son 3 y 5; hay salto de magnitud 2 que no se elimina cambiando f(2)."
+        },
+        {
+          "type": "figure",
+          "body": "Discontinuidad de salto entre ramas. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Discontinuidad de salto entre ramas. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "piecewise",
+            "title": "Discontinuidad de salto entre ramas",
+            "rows": [
+              [
+                "En x=2",
+                "Salto"
+              ],
+              [
+                "Lateral izquierdo",
+                "3"
+              ],
+              [
+                "Lateral derecho",
+                "5"
+              ],
+              [
+                "Magnitud",
+                "2"
+              ],
+              [
+                "Reparación en f(2)",
+                "Insuficiente"
+              ]
+            ],
+            "model": {
+              "kind": "piecewise",
+              "threshold": 2,
+              "left_a": 1,
+              "left_b": 1,
+              "right_a": 2,
+              "right_b": 1,
+              "left_closed": false
+            },
+            "domain": [
+              -1,
+              5
+            ],
+            "marks": [
+              [
+                "Izq",
+                2,
+                3
+              ],
+              [
+                "Der",
+                2,
+                5
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La discontinuidad de 1/(x−2) puede eliminarse asignando f(2)=0?||No; los valores cercanos divergen y el límite no es finito."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una discontinuidad evitable ocurre si el límite bilateral finito existe pero la función no está definida en a o su valor allí no coincide con el límite. Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F02-L05-01",
+        "F3-B1S-F02-L05-02",
+        "F3-B1S-F02-L05-03",
+        "F3-B1S-F02-L05-04",
+        "F3-B1S-F02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-F02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F02:C06"
+      ],
+      "objectives": [
+        "Analizar continuidad de tarifas y modelos a trozos con condiciones reales.",
+        "Explicar por qué continuidad matemática puede no ser significativa para cantidades discretas."
+      ],
+      "prerequisites": [
+        "B1S-F02-L05",
+        "B1S-F01-L05",
+        "B1S-F01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una tarifa por tramos puede presentar un cambio de regla y un salto en el umbral. Considérese C(x)=10+2x si 0≤x≤3 y C(x)=9+4x si x>3, una extensión sobre reales. Se tiene C(3)=16; al acercarse desde la derecha, el valor tiende a 21, por lo que el límite bilateral no existe y hay un salto de 5 euros. Para x=5 se aplica exclusivamente la segunda rama y C(5)=29. Si x cuenta entradas indivisibles, no se compran 3,01 entradas, de modo que los límites de la extensión continua son un recurso interpretativo y no una observación económica real. Las condiciones contractuales pueden introducir costes fijos, redondeos y discreción no contemplados: los resultados corresponden solo al modelo sintético dado."
+        },
+        {
+          "type": "example",
+          "body": "En la tarifa C(x)=10+2x para x≤3 y 9+4x para x>3, el valor C(3)=16 pero el límite derecho es 21: salto de 5."
+        },
+        {
+          "type": "example",
+          "body": "Para x=5 se elige C(x)=9+4x y se obtienen 29 €. Usar la primera rama daría 20 €, resultado fuera de su dominio."
+        },
+        {
+          "type": "figure",
+          "body": "Tarifa ilustrativa con salto en el umbral. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Tarifa ilustrativa con salto en el umbral. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "piecewise",
+            "title": "Tarifa ilustrativa con salto en el umbral",
+            "rows": [
+              [
+                "Tramo I",
+                "10+2x, x≤3"
+              ],
+              [
+                "Tramo II",
+                "9+4x, x>3"
+              ],
+              [
+                "C(3)",
+                "16 €"
+              ],
+              [
+                "Límite derecho en 3",
+                "21 €"
+              ],
+              [
+                "Salto",
+                "5 €"
+              ]
+            ],
+            "model": {
+              "kind": "piecewise",
+              "threshold": 3,
+              "left_a": 2,
+              "left_b": 10,
+              "right_a": 4,
+              "right_b": 9,
+              "left_closed": true
+            },
+            "domain": [
+              0,
+              6
+            ],
+            "marks": [
+              [
+                "I",
+                3,
+                16
+              ],
+              [
+                "D",
+                3,
+                21
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Demuestra una discontinuidad en una extensión real que los clientes pueden comprar fracciones de entrada?||No; el modelo físico puede ser discreto."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una tarifa por tramos puede presentar un cambio de regla y un salto en el umbral. Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F02-L06-01",
+        "F3-B1S-F02-L06-02",
+        "F3-B1S-F02-L06-03",
+        "F3-B1S-F02-L06-04",
+        "F3-B1S-F02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

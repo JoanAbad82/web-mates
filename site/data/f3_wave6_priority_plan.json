@@ -1,0 +1,47 @@
+{
+  "version": "0.6.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "E2-N01",
+      "priority": 1,
+      "why": "Arista canónica E1-N04→E2-N01; bases numéricas E1-N01/E1-N02 desarrolladas"
+    },
+    {
+      "unit_id": "E2-N02",
+      "priority": 2,
+      "why": "Campo prerequisites_text del catálogo: Números racionales; depende de E2-N01"
+    },
+    {
+      "unit_id": "E3-N01",
+      "priority": 3,
+      "why": "Campo prerequisites_text: racionales, potencias y raíces; depende de E2-N01 y aproximación E2-N02"
+    }
+  ],
+  "new_editorial_edges": [
+    {
+      "from": "E2-N01",
+      "to": "E2-N02",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Cálculo racional antes de decimal periódico y precisión"
+    },
+    {
+      "from": "E2-N01",
+      "to": "E3-N01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Raíces y racionales antes de distinguir irracionales"
+    },
+    {
+      "from": "E2-N02",
+      "to": "E3-N01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Aproximación y error antes de error relativo, cifras significativas"
+    }
+  ],
+  "preserved": "20 aristas canónicas y 17 editoriales anteriores, sin alteración",
+  "excluded": "E2-G01 tiene arista canónica a E4B-G01, pero su prerrequisito E1-G01 aún no está desarrollado",
+  "regional_mapping": "PENDIENTE, no atribuir códigos oficiales sin cotejo"
+}

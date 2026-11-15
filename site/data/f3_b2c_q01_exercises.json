@@ -1,0 +1,1011 @@
+{
+  "unit_id": "B2C-Q01",
+  "version": "0.26.0",
+  "status": "revision",
+  "notice": "30 ejercicios sintéticos por unidad; revisión matemática y pedagógica humana F4 pendiente.",
+  "activities": [
+    {
+      "exercise_id": "F3-B2C-Q01-L01-01",
+      "lesson_id": "B2C-Q01-L01",
+      "type": "numeric",
+      "prompt": "Si P(A)=0,6, P(B)=0,5 y P(A∩B)=0,2, calcula P(A∪B).",
+      "answer": 0.9,
+      "explanation": "P(A∪B)=0,6+0,5−0,2=0,9. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Distingue unión, intersección y complemento antes de calcular.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L01-02",
+      "lesson_id": "B2C-Q01-L01",
+      "type": "numeric",
+      "prompt": "En el mismo modelo, calcula P(no A) cuando P(A)=0,6.",
+      "answer": 0.4,
+      "explanation": "P(no A)=1−0,6=0,4. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Distingue unión, intersección y complemento antes de calcular.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L01-03",
+      "lesson_id": "B2C-Q01-L01",
+      "type": "numeric",
+      "prompt": "Se lanzan dos dados ideales independientes. ¿Probabilidad de que la suma sea 7? Decimal a 4 cifras.",
+      "answer": 0.1667,
+      "explanation": "Seis parejas de 36 dan suma 7, P=6/36=1/6≈0,1667.",
+      "hint": "Distingue unión, intersección y complemento antes de calcular.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 0.00015
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L01-04",
+      "lesson_id": "B2C-Q01-L01",
+      "type": "choice",
+      "prompt": "¿Por qué se resta P(A∩B) al sumar una unión?",
+      "answer": "Porque la intersección aparece dos veces en P(A)+P(B).",
+      "explanation": "La identidad suma-resta evita contar dos veces la intersección.",
+      "hint": "Distingue unión, intersección y complemento antes de calcular.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Porque la intersección aparece dos veces en P(A)+P(B).",
+        "Porque toda unión equivale a un producto.",
+        "Porque las probabilidades negativas no están permitidas.",
+        "Porque A y B son siempre incompatibles."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L01-05",
+      "lesson_id": "B2C-Q01-L01",
+      "type": "choice",
+      "prompt": "¿Qué hipótesis permite usar Laplace contando casos favorables sobre posibles?",
+      "answer": "Equiprobabilidad de resultados elementales.",
+      "explanation": "La regla de Laplace exige probabilidades elementales iguales.",
+      "hint": "Distingue unión, intersección y complemento antes de calcular.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Que se han recogido muchos datos mediante voluntarios.",
+        "Que hay independencia entre cualesquiera dos sucesos.",
+        "Equiprobabilidad de resultados elementales.",
+        "Que todos los resultados tienen nombres distintos, sin mirar sus probabilidades."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L02-01",
+      "lesson_id": "B2C-Q01-L02",
+      "type": "numeric",
+      "prompt": "Urna con 4 rojas y 2 azules. Dos extracciones sin reemplazo: calcula P(RR).",
+      "answer": 0.4,
+      "explanation": "P(RR)=4/6×3/5=0,4. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Traza las etapas y modifica el denominador tras cada extracción sin reemplazo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L02-02",
+      "lesson_id": "B2C-Q01-L02",
+      "type": "numeric",
+      "prompt": "En la misma urna, dos extracciones sin reemplazo: P(roja y después azul). Decimal a 4 cifras.",
+      "answer": 0.2667,
+      "explanation": "4/6×2/5=4/15≈0,2667. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Traza las etapas y modifica el denominador tras cada extracción sin reemplazo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 0.00015
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L02-03",
+      "lesson_id": "B2C-Q01-L02",
+      "type": "numeric",
+      "prompt": "Con 4 rojas y 2 azules, después de extraer una roja sin reemplazo, calcula P(roja segunda|roja primera).",
+      "answer": 0.6,
+      "explanation": "Tras extraer roja quedan tres rojas de cinco bolas.",
+      "hint": "Traza las etapas y modifica el denominador tras cada extracción sin reemplazo.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L02-04",
+      "lesson_id": "B2C-Q01-L02",
+      "type": "choice",
+      "prompt": "Al extraer dos bolas sin reemplazo de una urna pequeña, los sucesos suelen ser:",
+      "answer": "Dependientes porque cambia la composición después de extraer la primera.",
+      "explanation": "Los denominadores del árbol se actualizan con el resultado previo.",
+      "hint": "Traza las etapas y modifica el denominador tras cada extracción sin reemplazo.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Dependientes porque cambia la composición después de extraer la primera.",
+        "Imposibles de expresar mediante un árbol.",
+        "Independientes porque son dos turnos distintos.",
+        "Iguales a extracciones con reemplazo siempre."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L02-05",
+      "lesson_id": "B2C-Q01-L02",
+      "type": "choice",
+      "prompt": "¿Cómo se calcula la probabilidad de una ruta del árbol?",
+      "answer": "Multiplicando probabilidades marginales y condicionales sucesivas.",
+      "explanation": "P(A∩B)=P(A)P(B|A). El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Traza las etapas y modifica el denominador tras cada extracción sin reemplazo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Restando automáticamente sus probabilidades.",
+        "Promediando siempre todas las ramas por igual.",
+        "Multiplicando probabilidades marginales y condicionales sucesivas.",
+        "Sumando las probabilidades de etapas como si fueran disjuntas."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L03-01",
+      "lesson_id": "B2C-Q01-L03",
+      "type": "numeric",
+      "prompt": "En 200 casos hay 80 con B y 24 con A∩B. Calcula P(A|B).",
+      "answer": 0.3,
+      "explanation": "El universo condicionado son los 80 con B: 24/80=0,30.",
+      "hint": "La letra situada después de | indica el conjunto condicionante.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L03-02",
+      "lesson_id": "B2C-Q01-L03",
+      "type": "numeric",
+      "prompt": "En 200 casos hay 24 A∩B. Calcula P(A∩B).",
+      "answer": 0.12,
+      "explanation": "La conjunta usa los 200 casos: 24/200=0,12.",
+      "hint": "La letra situada después de | indica el conjunto condicionante.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L03-03",
+      "lesson_id": "B2C-Q01-L03",
+      "type": "numeric",
+      "prompt": "En 200 casos hay 50 con A y 24 con A∩B. Calcula P(B|A).",
+      "answer": 0.48,
+      "explanation": "P(B|A)=24/50=0,48, diferente de P(A|B). El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "La letra situada después de | indica el conjunto condicionante.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L03-04",
+      "lesson_id": "B2C-Q01-L03",
+      "type": "choice",
+      "prompt": "¿Qué total sirve de denominador para P(A|B)?",
+      "answer": "El total de casos que cumplen B.",
+      "explanation": "La condición B define el nuevo universo de referencia.",
+      "hint": "La letra situada después de | indica el conjunto condicionante.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "El total de casos que cumplen B.",
+        "El total de toda la muestra, sin atender a B.",
+        "El número de celdas de la tabla.",
+        "El total de casos con A exclusivamente."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L03-05",
+      "lesson_id": "B2C-Q01-L03",
+      "type": "choice",
+      "prompt": "¿Qué diferencia hay entre P(A|B) y P(B|A)?",
+      "answer": "En general cambian los denominadores y no son iguales.",
+      "explanation": "La inversión requiere la regla de Bayes con tasas previas.",
+      "hint": "La letra situada después de | indica el conjunto condicionante.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Son siempre iguales por conmutatividad.",
+        "Ambas son iguales a P(A∩B) en todo contexto.",
+        "P(A|B) es causalidad y P(B|A) no.",
+        "En general cambian los denominadores y no son iguales."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L04-01",
+      "lesson_id": "B2C-Q01-L04",
+      "type": "numeric",
+      "prompt": "Para P(A)=0,4 y P(B)=0,3 independientes, calcula P(A∩B).",
+      "answer": 0.12,
+      "explanation": "0,4×0,3=0,12 si son independientes. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Compara P(A∩B) con P(A)P(B), no sus nombres.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L04-02",
+      "lesson_id": "B2C-Q01-L04",
+      "type": "numeric",
+      "prompt": "Si P(A∩B)=0,12 y P(B)=0,3, calcula P(A|B).",
+      "answer": 0.4,
+      "explanation": "0,12/0,3=0,4; coincide con P(A) en independencia.",
+      "hint": "Compara P(A∩B) con P(A)P(B), no sus nombres.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L04-03",
+      "lesson_id": "B2C-Q01-L04",
+      "type": "numeric",
+      "prompt": "Producto P(A)P(B)=0,12, intersección observada en otro modelo=0,20. ¿Diferencia absoluta?",
+      "answer": 0.08,
+      "explanation": "|0,12−0,20|=0,08, por tanto no hay igualdad de independencia.",
+      "hint": "Compara P(A∩B) con P(A)P(B), no sus nombres.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L04-04",
+      "lesson_id": "B2C-Q01-L04",
+      "type": "choice",
+      "prompt": "¿Qué igualdad define independencia entre A y B?",
+      "answer": "P(A∩B)=P(A)P(B).",
+      "explanation": "La igualdad del producto es criterio matemático de independencia.",
+      "hint": "Compara P(A∩B) con P(A)P(B), no sus nombres.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "P(A∪B)=P(A)P(B).",
+        "P(A)=P(B) siempre.",
+        "P(A∩B)=0 para toda pareja independiente.",
+        "P(A∩B)=P(A)P(B)."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L04-05",
+      "lesson_id": "B2C-Q01-L04",
+      "type": "choice",
+      "prompt": "¿Son independientes dos sucesos incompatibles de probabilidad positiva?",
+      "answer": "No; intersección cero y producto positivo.",
+      "explanation": "Incompatibilidad con eventos positivos contradice P(A∩B)=P(A)P(B).",
+      "hint": "Compara P(A∩B) con P(A)P(B), no sus nombres.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "No; intersección cero y producto positivo.",
+        "Sí, porque se nombran de modo diferente.",
+        "Siempre dependen de P(A∪B)=1.",
+        "Sí, por no ocurrir al mismo tiempo."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L05-01",
+      "lesson_id": "B2C-Q01-L05",
+      "type": "numeric",
+      "prompt": "P(A)=0,30, P(B|A)=0,80, P(B|no A)=0,20. Calcula P(B).",
+      "answer": 0.38,
+      "explanation": "0,3×0,8+0,7×0,2=0,38. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Identifica una partición exhaustiva y sin solapamientos.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L05-02",
+      "lesson_id": "B2C-Q01-L05",
+      "type": "numeric",
+      "prompt": "En el mismo modelo calcula P(A∩B).",
+      "answer": 0.24,
+      "explanation": "0,3×0,8=0,24. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Identifica una partición exhaustiva y sin solapamientos.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L05-03",
+      "lesson_id": "B2C-Q01-L05",
+      "type": "numeric",
+      "prompt": "Grupos de pesos 0,9 y 0,1, con tasas 0,1 y 0,9. Calcula P(B) total.",
+      "answer": 0.18,
+      "explanation": "0,9×0,1+0,1×0,9=0,18, no la media 0,5. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Identifica una partición exhaustiva y sin solapamientos.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L05-04",
+      "lesson_id": "B2C-Q01-L05",
+      "type": "choice",
+      "prompt": "¿Exige independencia la fórmula de probabilidad total?",
+      "answer": "No; exige una partición y condicionadas válidas.",
+      "explanation": "Permite sumar rutas disjuntas ponderando los grupos.",
+      "hint": "Identifica una partición exhaustiva y sin solapamientos.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Sí, y todas las tasas deben ser idénticas.",
+        "No; exige una partición y condicionadas válidas.",
+        "Sí, de lo contrario se ignoran las tasas.",
+        "Solo vale para sucesos de probabilidad cero."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L05-05",
+      "lesson_id": "B2C-Q01-L05",
+      "type": "choice",
+      "prompt": "¿Qué error supone promediar tasas de dos grupos con pesos 0,9 y 0,1 al 50 %?",
+      "answer": "Se ignoran las proporciones previas de los grupos.",
+      "explanation": "El promedio correcto usa los pesos 0,9 y 0,1.",
+      "hint": "Identifica una partición exhaustiva y sin solapamientos.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Se obtiene siempre P(B|A) en lugar de P(B).",
+        "Se garantiza automáticamente una cota del 95 %.",
+        "Es la aplicación exacta de probabilidad total.",
+        "Se ignoran las proporciones previas de los grupos."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L06-01",
+      "lesson_id": "B2C-Q01-L06",
+      "type": "numeric",
+      "prompt": "P(A)=0,02, P(+|A)=0,90, P(+|no A)=0,10. Calcula P(+).",
+      "answer": 0.116,
+      "explanation": "P(+)=0,02×0,90+0,98×0,10=0,116. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Separa la probabilidad previa del evento y la tasa de la prueba.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L06-02",
+      "lesson_id": "B2C-Q01-L06",
+      "type": "numeric",
+      "prompt": "En el mismo modelo, calcula P(A|+). Decimal redondeado a 4 cifras.",
+      "answer": 0.1552,
+      "explanation": "P(A|+)=0,018/0,116=9/58≈0,1552. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Separa la probabilidad previa del evento y la tasa de la prueba.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 0.00015
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L06-03",
+      "lesson_id": "B2C-Q01-L06",
+      "type": "numeric",
+      "prompt": "Con esas tasas, calcula P(no A|+). Decimal a 4 cifras.",
+      "answer": 0.8448,
+      "explanation": "P(no A|+)=0,098/0,116=49/58≈0,8448. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Separa la probabilidad previa del evento y la tasa de la prueba.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 0.00015
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L06-04",
+      "lesson_id": "B2C-Q01-L06",
+      "type": "choice",
+      "prompt": "¿Por qué P(A|+) puede ser menor que P(+|A)?",
+      "answer": "Por la prevalencia previa y falsos positivos en el denominador.",
+      "explanation": "Una tasa previa pequeña puede reducir el valor predictivo positivo.",
+      "hint": "Separa la probabilidad previa del evento y la tasa de la prueba.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Porque P(A|+) siempre es exactamente cero.",
+        "Porque Bayes prohíbe tasas condicionales superiores a 0,5.",
+        "Porque toda prueba positiva obliga a que ocurra A.",
+        "Por la prevalencia previa y falsos positivos en el denominador."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q01-L06-05",
+      "lesson_id": "B2C-Q01-L06",
+      "type": "choice",
+      "prompt": "En Bayes, ¿qué representa P(B) en P(A|B)=P(B|A)P(A)/P(B)?",
+      "answer": "La suma de probabilidades de todas las rutas que llevan a B.",
+      "explanation": "La probabilidad total actúa como denominador normalizador.",
+      "hint": "Separa la probabilidad previa del evento y la tasa de la prueba.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q01_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "El valor de P(A) por definición.",
+        "La probabilidad del complemento de B exclusivamente.",
+        "La suma de probabilidades de todas las rutas que llevan a B.",
+        "Solo la tasa P(B|A) sin ponderar."
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B2C-Q01-L01-01": {
+      "hints": [
+        "Distingue unión, intersección y complemento antes de calcular.",
+        "P(A∪B)=P(A)+P(B)−P(A∩B); P(no A)=1−P(A)."
+      ],
+      "math_check": {
+        "kind": "union",
+        "params": [
+          0.6,
+          0.5,
+          0.2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L01-02": {
+      "hints": [
+        "Distingue unión, intersección y complemento antes de calcular.",
+        "P(A∪B)=P(A)+P(B)−P(A∩B); P(no A)=1−P(A)."
+      ],
+      "math_check": {
+        "kind": "complement",
+        "params": [
+          0.6
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L01-03": {
+      "hints": [
+        "Distingue unión, intersección y complemento antes de calcular.",
+        "P(A∪B)=P(A)+P(B)−P(A∩B); P(no A)=1−P(A)."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          6,
+          36
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L01-04": {
+      "hints": [
+        "Distingue unión, intersección y complemento antes de calcular.",
+        "P(A∪B)=P(A)+P(B)−P(A∩B); P(no A)=1−P(A)."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L01-05": {
+      "hints": [
+        "Distingue unión, intersección y complemento antes de calcular.",
+        "P(A∪B)=P(A)+P(B)−P(A∩B); P(no A)=1−P(A)."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L02-01": {
+      "hints": [
+        "Traza las etapas y modifica el denominador tras cada extracción sin reemplazo.",
+        "La probabilidad de cada ruta es producto de marginal y condicional."
+      ],
+      "math_check": {
+        "kind": "product",
+        "params": [
+          [
+            4,
+            6
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L02-02": {
+      "hints": [
+        "Traza las etapas y modifica el denominador tras cada extracción sin reemplazo.",
+        "La probabilidad de cada ruta es producto de marginal y condicional."
+      ],
+      "math_check": {
+        "kind": "product",
+        "params": [
+          [
+            4,
+            6
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L02-03": {
+      "hints": [
+        "Traza las etapas y modifica el denominador tras cada extracción sin reemplazo.",
+        "La probabilidad de cada ruta es producto de marginal y condicional."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          3,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L02-04": {
+      "hints": [
+        "Traza las etapas y modifica el denominador tras cada extracción sin reemplazo.",
+        "La probabilidad de cada ruta es producto de marginal y condicional."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L02-05": {
+      "hints": [
+        "Traza las etapas y modifica el denominador tras cada extracción sin reemplazo.",
+        "La probabilidad de cada ruta es producto de marginal y condicional."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L03-01": {
+      "hints": [
+        "La letra situada después de | indica el conjunto condicionante.",
+        "P(A|B)=intersección/total B siempre que P(B)>0."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          24,
+          80
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L03-02": {
+      "hints": [
+        "La letra situada después de | indica el conjunto condicionante.",
+        "P(A|B)=intersección/total B siempre que P(B)>0."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          24,
+          200
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L03-03": {
+      "hints": [
+        "La letra situada después de | indica el conjunto condicionante.",
+        "P(A|B)=intersección/total B siempre que P(B)>0."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          24,
+          50
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L03-04": {
+      "hints": [
+        "La letra situada después de | indica el conjunto condicionante.",
+        "P(A|B)=intersección/total B siempre que P(B)>0."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L03-05": {
+      "hints": [
+        "La letra situada después de | indica el conjunto condicionante.",
+        "P(A|B)=intersección/total B siempre que P(B)>0."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L04-01": {
+      "hints": [
+        "Compara P(A∩B) con P(A)P(B), no sus nombres.",
+        "La independencia se define por igualdad exacta en el modelo."
+      ],
+      "math_check": {
+        "kind": "product",
+        "params": [
+          [
+            0.4,
+            1
+          ],
+          [
+            0.3,
+            1
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L04-02": {
+      "hints": [
+        "Compara P(A∩B) con P(A)P(B), no sus nombres.",
+        "La independencia se define por igualdad exacta en el modelo."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          0.12,
+          0.3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L04-03": {
+      "hints": [
+        "Compara P(A∩B) con P(A)P(B), no sus nombres.",
+        "La independencia se define por igualdad exacta en el modelo."
+      ],
+      "math_check": {
+        "kind": "absdiff",
+        "params": [
+          0.12,
+          0.2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L04-04": {
+      "hints": [
+        "Compara P(A∩B) con P(A)P(B), no sus nombres.",
+        "La independencia se define por igualdad exacta en el modelo."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L04-05": {
+      "hints": [
+        "Compara P(A∩B) con P(A)P(B), no sus nombres.",
+        "La independencia se define por igualdad exacta en el modelo."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L05-01": {
+      "hints": [
+        "Identifica una partición exhaustiva y sin solapamientos.",
+        "Multiplica cada condicional por su peso previo y suma rutas disjuntas."
+      ],
+      "math_check": {
+        "kind": "total",
+        "params": [
+          0.3,
+          0.8,
+          0.2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L05-02": {
+      "hints": [
+        "Identifica una partición exhaustiva y sin solapamientos.",
+        "Multiplica cada condicional por su peso previo y suma rutas disjuntas."
+      ],
+      "math_check": {
+        "kind": "product",
+        "params": [
+          [
+            0.3,
+            1
+          ],
+          [
+            0.8,
+            1
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L05-03": {
+      "hints": [
+        "Identifica una partición exhaustiva y sin solapamientos.",
+        "Multiplica cada condicional por su peso previo y suma rutas disjuntas."
+      ],
+      "math_check": {
+        "kind": "total",
+        "params": [
+          0.9,
+          0.1,
+          0.9
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L05-04": {
+      "hints": [
+        "Identifica una partición exhaustiva y sin solapamientos.",
+        "Multiplica cada condicional por su peso previo y suma rutas disjuntas."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L05-05": {
+      "hints": [
+        "Identifica una partición exhaustiva y sin solapamientos.",
+        "Multiplica cada condicional por su peso previo y suma rutas disjuntas."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L06-01": {
+      "hints": [
+        "Separa la probabilidad previa del evento y la tasa de la prueba.",
+        "P(A|+)=P(+|A)P(A)/[P(+|A)P(A)+P(+|no A)P(no A)]."
+      ],
+      "math_check": {
+        "kind": "total",
+        "params": [
+          0.02,
+          0.9,
+          0.1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L06-02": {
+      "hints": [
+        "Separa la probabilidad previa del evento y la tasa de la prueba.",
+        "P(A|+)=P(+|A)P(A)/[P(+|A)P(A)+P(+|no A)P(no A)]."
+      ],
+      "math_check": {
+        "kind": "bayes",
+        "params": [
+          0.02,
+          0.9,
+          0.1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L06-03": {
+      "hints": [
+        "Separa la probabilidad previa del evento y la tasa de la prueba.",
+        "P(A|+)=P(+|A)P(A)/[P(+|A)P(A)+P(+|no A)P(no A)]."
+      ],
+      "math_check": {
+        "kind": "complement_bayes",
+        "params": [
+          0.02,
+          0.9,
+          0.1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L06-04": {
+      "hints": [
+        "Separa la probabilidad previa del evento y la tasa de la prueba.",
+        "P(A|+)=P(+|A)P(A)/[P(+|A)P(A)+P(+|no A)P(no A)]."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q01-L06-05": {
+      "hints": [
+        "Separa la probabilidad previa del evento y la tasa de la prueba.",
+        "P(A|+)=P(+|A)P(A)/[P(+|A)P(A)+P(+|no A)P(no A)]."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    }
+  }
+}

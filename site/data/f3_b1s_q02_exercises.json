@@ -1,0 +1,994 @@
+{
+  "unit_id": "B1S-Q02",
+  "version": "0.24.0",
+  "status": "revision",
+  "notice": "Cinco ejercicios sintéticos deterministas por lección. EN REVISIÓN.",
+  "activities": [
+    {
+      "exercise_id": "F3-B1S-Q02-L01-01",
+      "lesson_id": "B1S-Q02-L01",
+      "type": "numeric",
+      "prompt": "En Variables aleatorias: Dos monedas ideales independientes. X=número de caras. Calcula P(X=0) usando sus cuatro rutas. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 0.25,
+      "explanation": "Resultado exacto o aproximado según se indica: 0,25. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_coin_mass",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L01-02",
+      "lesson_id": "B1S-Q02-L01",
+      "type": "numeric",
+      "prompt": "En Variables aleatorias: Dos monedas ideales independientes. X=número de caras. Calcula P(X=1) usando sus cuatro rutas. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 0.5,
+      "explanation": "Resultado exacto o aproximado según se indica: 0,5. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_coin_mass",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L01-03",
+      "lesson_id": "B1S-Q02-L01",
+      "type": "numeric",
+      "prompt": "En Variables aleatorias: Dos monedas ideales independientes. X=número de caras. Calcula F(1)=P(X≤1). Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 0.75,
+      "explanation": "Resultado exacto o aproximado según se indica: 0,75. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_coin_cdf",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L01-04",
+      "lesson_id": "B1S-Q02-L01",
+      "type": "choice",
+      "prompt": "En Variables aleatorias: ¿Los tres VALORES de X=caras de dos monedas tienen igual probabilidad? Sí/No. Elige la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto o aproximado según se indica: No. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_outcomes_equiprob_no",
+        "prerrequisito_b1s_q02"
+      ],
+      "choices": [
+        "Sí",
+        "No necesariamente",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L01-05",
+      "lesson_id": "B1S-Q02-L01",
+      "type": "choice",
+      "prompt": "En Variables aleatorias: Distribución del número de caras de dos monedas ideales: calcula P(X=0)+P(X=1)+P(X=2). Elige la opción matemáticamente justificada.",
+      "answer": "1",
+      "explanation": "Resultado exacto o aproximado según se indica: 1. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_mass_sum",
+        "prerrequisito_b1s_q02"
+      ],
+      "choices": [
+        "5/6",
+        "1",
+        "0,9"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L02-01",
+      "lesson_id": "B1S-Q02-L02",
+      "type": "numeric",
+      "prompt": "En Distribución binomial: B(4,p=1/2) con ensayos independientes: calcula P(X=2)=C(n,k)p^k(1−p)^(n−k). Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 0.375,
+      "explanation": "Resultado exacto o aproximado según se indica: 0,375. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_binom_pmf",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L02-02",
+      "lesson_id": "B1S-Q02-L02",
+      "type": "numeric",
+      "prompt": "En Distribución binomial: B(4,p=1/2) con ensayos independientes: calcula P(X=0)=C(n,k)p^k(1−p)^(n−k). Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 0.0625,
+      "explanation": "Resultado exacto o aproximado según se indica: 0,0625. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_binom_pmf",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L02-03",
+      "lesson_id": "B1S-Q02-L02",
+      "type": "numeric",
+      "prompt": "En Distribución binomial: B(4,p=1/2) con ensayos independientes: calcula P(X=4)=C(n,k)p^k(1−p)^(n−k). Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 0.0625,
+      "explanation": "Resultado exacto o aproximado según se indica: 0,0625. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_binom_pmf",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L02-04",
+      "lesson_id": "B1S-Q02-L02",
+      "type": "choice",
+      "prompt": "En Distribución binomial: ¿Un muestreo sin reemplazo con p cambiante es SIEMPRE binomial exacto? Sí/No. Elige la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto o aproximado según se indica: No. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_without_replacement_binomial_no",
+        "prerrequisito_b1s_q02"
+      ],
+      "choices": [
+        "No necesariamente",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L02-05",
+      "lesson_id": "B1S-Q02-L02",
+      "type": "choice",
+      "prompt": "En Distribución binomial: B(4,p=1/2), n ensayos independientes: calcula P(X≤1) sumando las masas de 0 a 1. Elige la opción matemáticamente justificada.",
+      "answer": "0,3125",
+      "explanation": "Resultado exacto o aproximado según se indica: 0,3125. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_binom_cdf",
+        "prerrequisito_b1s_q02"
+      ],
+      "choices": [
+        "0,3125",
+        "1/3",
+        "0,25"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L03-01",
+      "lesson_id": "B1S-Q02-L03",
+      "type": "numeric",
+      "prompt": "En Esperanza y dispersión: X~B(100,p=1/2) con independencia y p constante: calcula esperanza E(X)=np. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 50.0,
+      "explanation": "Resultado exacto o aproximado según se indica: 50. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_binom_mean",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L03-02",
+      "lesson_id": "B1S-Q02-L03",
+      "type": "numeric",
+      "prompt": "En Esperanza y dispersión: X~B(100,p=1/2) con independencia y p constante: calcula varianza np(1−p). Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 25.0,
+      "explanation": "Resultado exacto o aproximado según se indica: 25. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_binom_variance",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L03-03",
+      "lesson_id": "B1S-Q02-L03",
+      "type": "numeric",
+      "prompt": "En Esperanza y dispersión: X~B(100,p=1/2) con independencia y p constante: calcula desviación típica √[np(1−p)]. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 5.0,
+      "explanation": "Resultado exacto o aproximado según se indica: 5. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_binom_sd",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L03-04",
+      "lesson_id": "B1S-Q02-L03",
+      "type": "choice",
+      "prompt": "En Esperanza y dispersión: ¿Si Var(X)=25 necesariamente la desviación típica σ vale también 25? Sí/No. Elige la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto o aproximado según se indica: No. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_variance_equals_sd_no",
+        "prerrequisito_b1s_q02"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No necesariamente"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L03-05",
+      "lesson_id": "B1S-Q02-L03",
+      "type": "choice",
+      "prompt": "En Esperanza y dispersión: X~B(4,p=1/2) con independencia y p constante: calcula esperanza E(X)=np. Elige la opción matemáticamente justificada.",
+      "answer": "2",
+      "explanation": "Resultado exacto o aproximado según se indica: 2. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_binom_mean",
+        "prerrequisito_b1s_q02"
+      ],
+      "choices": [
+        "3",
+        "1",
+        "2"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L04-01",
+      "lesson_id": "B1S-Q02-L04",
+      "type": "numeric",
+      "prompt": "En Distribución normal: X~N(media 70, desviación típica 10), continua. Calcula P(X≤media) por simetría. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 0.5,
+      "explanation": "Resultado exacto o aproximado según se indica: 0,5. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_normal_mu_cdf",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L04-02",
+      "lesson_id": "B1S-Q02-L04",
+      "type": "numeric",
+      "prompt": "En Distribución normal: X~N(media 70, desviación típica 10) continua: calcula P(X=70) EXACTA. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 0.0,
+      "explanation": "Resultado exacto o aproximado según se indica: 0. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_normal_point",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L04-03",
+      "lesson_id": "B1S-Q02-L04",
+      "type": "numeric",
+      "prompt": "En Distribución normal: Normal estándar Z~N(0,1): estima P(−1≤Z≤1) con 4 decimales a partir de la integral normal. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 0.6827,
+      "explanation": "Resultado exacto o aproximado según se indica: 0,6827. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_normal_interval_one_sd",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L04-04",
+      "lesson_id": "B1S-Q02-L04",
+      "type": "choice",
+      "prompt": "En Distribución normal: ¿Una normal continua asigna probabilidad positiva a un PUNTO exacto? Sí/No. Elige la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto o aproximado según se indica: No. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_normal_point_positive_no",
+        "prerrequisito_b1s_q02"
+      ],
+      "choices": [
+        "Sí",
+        "No necesariamente",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L04-05",
+      "lesson_id": "B1S-Q02-L04",
+      "type": "choice",
+      "prompt": "En Distribución normal: X~N(media 0, desviación típica 1), continua. Calcula P(X≤media) por simetría. Elige la opción matemáticamente justificada.",
+      "answer": "0,5",
+      "explanation": "Resultado exacto o aproximado según se indica: 0,5. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_normal_mu_cdf",
+        "prerrequisito_b1s_q02"
+      ],
+      "choices": [
+        "0,4",
+        "0,5",
+        "0,45"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L05-01",
+      "lesson_id": "B1S-Q02-L05",
+      "type": "numeric",
+      "prompt": "En Estandarización: X~N(media 70, desviación típica 10). Para x=85, calcula z=(x−μ)/σ, no una probabilidad. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 1.5,
+      "explanation": "Resultado exacto o aproximado según se indica: 1,5. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_normal_z",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L05-02",
+      "lesson_id": "B1S-Q02-L05",
+      "type": "numeric",
+      "prompt": "En Estandarización: X~N(media 70, desviación típica 10). Para x=60, calcula z=(x−μ)/σ, no una probabilidad. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": -1.0,
+      "explanation": "Resultado exacto o aproximado según se indica: -1. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_normal_z",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L05-03",
+      "lesson_id": "B1S-Q02-L05",
+      "type": "numeric",
+      "prompt": "En Estandarización: Normal estándar Z: calcula Φ(3/2)=P(Z≤3/2), redondea a cuatro decimales. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 0.9332,
+      "explanation": "Resultado exacto o aproximado según se indica: 0,9332. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_normal_cdf_z",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L05-04",
+      "lesson_id": "B1S-Q02-L05",
+      "type": "choice",
+      "prompt": "En Estandarización: ¿Una puntuación z=1,5 es por sí misma una PROBABILIDAD? Sí/No. Elige la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto o aproximado según se indica: No. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_z_is_probability_no",
+        "prerrequisito_b1s_q02"
+      ],
+      "choices": [
+        "No necesariamente",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L05-05",
+      "lesson_id": "B1S-Q02-L05",
+      "type": "choice",
+      "prompt": "En Estandarización: Normal estándar Z: calcula Φ(0/1)=P(Z≤0/1), redondea a cuatro decimales. Elige la opción matemáticamente justificada.",
+      "answer": "0,5",
+      "explanation": "Resultado exacto o aproximado según se indica: 0,5. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_normal_cdf_z",
+        "prerrequisito_b1s_q02"
+      ],
+      "choices": [
+        "0,5",
+        "0,49",
+        "0,51"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L06-01",
+      "lesson_id": "B1S-Q02-L06",
+      "type": "numeric",
+      "prompt": "En Aproximación binomial-normal cuando proceda: X~B(100,p=1/2) con independencia y p constante: calcula esperanza E(X)=np. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 50.0,
+      "explanation": "Resultado exacto o aproximado según se indica: 50. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_binom_mean",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L06-02",
+      "lesson_id": "B1S-Q02-L06",
+      "type": "numeric",
+      "prompt": "En Aproximación binomial-normal cuando proceda: X~B(100,p=1/2) con independencia y p constante: calcula desviación típica √[np(1−p)]. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 5.0,
+      "explanation": "Resultado exacto o aproximado según se indica: 5. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_binom_sd",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L06-03",
+      "lesson_id": "B1S-Q02-L06",
+      "type": "numeric",
+      "prompt": "En Aproximación binomial-normal cuando proceda: Para B(100,1/2), aproximación normal con corrección de continuidad a P(X≤55): z=(cut+0,5−np)/σ. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 1.1,
+      "explanation": "Resultado exacto o aproximado según se indica: 1,1. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_continuity_z",
+        "prerrequisito_b1s_q02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L06-04",
+      "lesson_id": "B1S-Q02-L06",
+      "type": "choice",
+      "prompt": "En Aproximación binomial-normal cuando proceda: B(100,1/2), np y n(1−p)≥10: aproxima P(X≤55) por normal con corrección +0,5; redondea a 4 decimales. Elige la opción matemáticamente justificada.",
+      "answer": "0,8643",
+      "explanation": "Resultado exacto o aproximado según se indica: 0,8643. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_binom_normal_cdf",
+        "prerrequisito_b1s_q02"
+      ],
+      "choices": [
+        "0,8643",
+        "0,8543",
+        "0,8743"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q02-L06-05",
+      "lesson_id": "B1S-Q02-L06",
+      "type": "choice",
+      "prompt": "En Aproximación binomial-normal cuando proceda: ¿La normal con corrección de continuidad da siempre la probabilidad binomial EXACTA? Sí/No. Elige la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto o aproximado según se indica: No. Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular. En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_approximation_exact_no",
+        "prerrequisito_b1s_q02"
+      ],
+      "choices": [
+        "Sí",
+        "No necesariamente",
+        "No"
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B1S-Q02-L01-01": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "coin_mass",
+        "params": [
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: coin_mass"
+    },
+    "F3-B1S-Q02-L01-02": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "coin_mass",
+        "params": [
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: coin_mass"
+    },
+    "F3-B1S-Q02-L01-03": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "coin_cdf",
+        "params": [
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: coin_cdf"
+    },
+    "F3-B1S-Q02-L01-04": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "outcomes_equiprob_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: outcomes_equiprob_no"
+    },
+    "F3-B1S-Q02-L01-05": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "mass_sum",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: mass_sum"
+    },
+    "F3-B1S-Q02-L02-01": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "binom_pmf",
+        "params": [
+          4,
+          1,
+          2,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: binom_pmf"
+    },
+    "F3-B1S-Q02-L02-02": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "binom_pmf",
+        "params": [
+          4,
+          1,
+          2,
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: binom_pmf"
+    },
+    "F3-B1S-Q02-L02-03": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "binom_pmf",
+        "params": [
+          4,
+          1,
+          2,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: binom_pmf"
+    },
+    "F3-B1S-Q02-L02-04": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "without_replacement_binomial_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: without_replacement_binomial_no"
+    },
+    "F3-B1S-Q02-L02-05": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "binom_cdf",
+        "params": [
+          4,
+          1,
+          2,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: binom_cdf"
+    },
+    "F3-B1S-Q02-L03-01": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "binom_mean",
+        "params": [
+          100,
+          1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: binom_mean"
+    },
+    "F3-B1S-Q02-L03-02": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "binom_variance",
+        "params": [
+          100,
+          1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: binom_variance"
+    },
+    "F3-B1S-Q02-L03-03": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "binom_sd",
+        "params": [
+          100,
+          1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: binom_sd"
+    },
+    "F3-B1S-Q02-L03-04": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "variance_equals_sd_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: variance_equals_sd_no"
+    },
+    "F3-B1S-Q02-L03-05": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "binom_mean",
+        "params": [
+          4,
+          1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: binom_mean"
+    },
+    "F3-B1S-Q02-L04-01": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "normal_mu_cdf",
+        "params": [
+          70,
+          10
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: normal_mu_cdf"
+    },
+    "F3-B1S-Q02-L04-02": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "normal_point",
+        "params": [
+          70,
+          10,
+          70
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: normal_point"
+    },
+    "F3-B1S-Q02-L04-03": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "normal_interval_one_sd",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: normal_interval_one_sd"
+    },
+    "F3-B1S-Q02-L04-04": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "normal_point_positive_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: normal_point_positive_no"
+    },
+    "F3-B1S-Q02-L04-05": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "normal_mu_cdf",
+        "params": [
+          0,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: normal_mu_cdf"
+    },
+    "F3-B1S-Q02-L05-01": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "normal_z",
+        "params": [
+          70,
+          10,
+          85
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: normal_z"
+    },
+    "F3-B1S-Q02-L05-02": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "normal_z",
+        "params": [
+          70,
+          10,
+          60
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: normal_z"
+    },
+    "F3-B1S-Q02-L05-03": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "normal_cdf_z",
+        "params": [
+          3,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: normal_cdf_z"
+    },
+    "F3-B1S-Q02-L05-04": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "z_is_probability_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: z_is_probability_no"
+    },
+    "F3-B1S-Q02-L05-05": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "normal_cdf_z",
+        "params": [
+          0,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: normal_cdf_z"
+    },
+    "F3-B1S-Q02-L06-01": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "binom_mean",
+        "params": [
+          100,
+          1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: binom_mean"
+    },
+    "F3-B1S-Q02-L06-02": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "binom_sd",
+        "params": [
+          100,
+          1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: binom_sd"
+    },
+    "F3-B1S-Q02-L06-03": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "continuity_z",
+        "params": [
+          100,
+          1,
+          2,
+          55
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: continuity_z"
+    },
+    "F3-B1S-Q02-L06-04": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "binom_normal_cdf",
+        "params": [
+          100,
+          1,
+          2,
+          55
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: binom_normal_cdf"
+    },
+    "F3-B1S-Q02-L06-05": {
+      "hints": [
+        "Define si el modelo es discreto binomial o continuo normal y comprueba sus hipótesis antes de calcular.",
+        "En B(n,p), E=np y Var=np(1−p). Para normal estandariza z=(x−μ)/σ. Solo si procede aproximación B→N, corrige X≤k con límite k+0,5 y declara que es estimación."
+      ],
+      "math_check": {
+        "kind": "approximation_exact_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: approximation_exact_no"
+    }
+  }
+}

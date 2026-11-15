@@ -1,0 +1,60 @@
+{
+  "version": "0.20.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "B2S-A02",
+      "priority": 1,
+      "why": "Inecuaciones de B1S-A01 y sistemas B2S-A01 ya desarrollados; programación lineal sin bloqueos."
+    },
+    {
+      "unit_id": "E1-D01",
+      "priority": 2,
+      "why": "Fracciones E1-N04 y porcentajes E1-N05 ya desarrollados, desbloquea estadística."
+    },
+    {
+      "unit_id": "E2-D01",
+      "priority": 3,
+      "why": "E1-D01 se desarrolla primero en la misma oleada, habilita distribuciones de 2.º y posteriores."
+    }
+  ],
+  "not_selected": [
+    {
+      "unit_id": "E3-D01",
+      "why": "Posterior a E2-D01; límite de 3 unidades. Evaluar en siguiente oleada."
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 59,
+  "new_editorial_edges": [
+    {
+      "from": "B1S-A01",
+      "to": "B2S-A02",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Inecuaciones y sistemas MACS I."
+    },
+    {
+      "from": "B2S-A01",
+      "to": "B2S-A02",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Sistemas lineales MACS II."
+    },
+    {
+      "from": "E1-N05",
+      "to": "E1-D01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Porcentajes en frecuencias y sectores."
+    },
+    {
+      "from": "E1-D01",
+      "to": "E2-D01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Estadística 1.º ESO antes de descriptiva de 2.º."
+    }
+  ],
+  "regional_mapping": "NO VERIFICADO; aristas exclusivamente editoriales."
+}

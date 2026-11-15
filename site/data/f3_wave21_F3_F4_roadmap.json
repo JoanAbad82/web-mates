@@ -1,0 +1,477 @@
+{
+  "version": "2026-11-14-F3-21",
+  "source_of_truth": "sources/Catalogo_Matematicas_LOMLOE_85_unidades_2026.json",
+  "base_f3_20_sha256": "edf51243e39dd5af7dfea2864e1a8dd091fe78e7e1fa0802deb34bfc73fc52d6",
+  "baseline": {
+    "courses": 9,
+    "units": 85,
+    "canonical_lessons": 505,
+    "canonical_edges": 20,
+    "covered_units": 59,
+    "covered_lessons": 353,
+    "units_to_author": 26,
+    "lessons_to_author": 152,
+    "exercises_created": 1765
+  },
+  "wave21_plan": {
+    "selected_in_dependency_order": [
+      "E3-D01",
+      "E2-Q01",
+      "E3-Q01"
+    ],
+    "to_author_units": 3,
+    "to_author_lessons": 17,
+    "to_author_exercises": 85,
+    "preflight_decision": "E3-D01 necesita E2-D01 (F3-20). E2-Q01 necesita fracciones E1-N04 y frecuencias/azar E1-D01, ambas desarrolladas. E3-Q01 necesita E2-Q01 desarrollada secuencialmente en F3-21.",
+    "caution": "E2-Q01 tiene cinco lecciones canónicas: NO inventar una sexta. Independencia, equiprobabilidad y reemplazo explícitos."
+  },
+  "after_wave21_if_all_gates_pass": {
+    "covered_units": 62,
+    "covered_lessons": 370,
+    "exercises_created": 1850,
+    "units_remaining": 23,
+    "lessons_remaining": 135,
+    "content_state": "EN REVISION; sin revisión humana, homologación ni publicación"
+  },
+  "remaining_units_at_F3_20": [
+    {
+      "unit_id": "E2-Q01",
+      "title": "Probabilidad elemental",
+      "course_code": "E2",
+      "lesson_count": 5,
+      "prerequisites_text": "Fracciones y frecuencias",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": true,
+      "status_after_F3_21_if_verified": "revision",
+      "workstream": "Fundamentos estadísticos y probabilidad ESO"
+    },
+    {
+      "unit_id": "E3-N02",
+      "title": "Notación científica y escala",
+      "course_code": "E3",
+      "lesson_count": 5,
+      "prerequisites_text": "Potencias y aproximación",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Precursores numéricos, medidas y geometría"
+    },
+    {
+      "unit_id": "E3-G02",
+      "title": "Semejanza, transformaciones y cuerpos",
+      "course_code": "E3",
+      "lesson_count": 6,
+      "prerequisites_text": "Semejanza y medidas de 2.º",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Precursores numéricos, medidas y geometría"
+    },
+    {
+      "unit_id": "E3-D01",
+      "title": "Distribuciones, muestras y gráficos",
+      "course_code": "E3",
+      "lesson_count": 6,
+      "prerequisites_text": "Estadística 2.º",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": true,
+      "status_after_F3_21_if_verified": "revision",
+      "workstream": "Fundamentos estadísticos y probabilidad ESO"
+    },
+    {
+      "unit_id": "E3-Q01",
+      "title": "Probabilidad y recuento",
+      "course_code": "E3",
+      "lesson_count": 6,
+      "prerequisites_text": "Probabilidad de 2.º",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": true,
+      "status_after_F3_21_if_verified": "revision",
+      "workstream": "Fundamentos estadísticos y probabilidad ESO"
+    },
+    {
+      "unit_id": "E4A-G01",
+      "title": "Geometría aplicada",
+      "course_code": "E4A",
+      "lesson_count": 6,
+      "prerequisites_text": "Semejanza y coordenadas 3.º",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Precursores numéricos, medidas y geometría"
+    },
+    {
+      "unit_id": "E4A-D01",
+      "title": "Estadística bidimensional y regresión",
+      "course_code": "E4A",
+      "lesson_count": 6,
+      "prerequisites_text": "Distribuciones y gráficos de 3.º",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Fundamentos estadísticos y probabilidad ESO"
+    },
+    {
+      "unit_id": "E4A-Q01",
+      "title": "Probabilidad, muestreo e inferencia inicial",
+      "course_code": "E4A",
+      "lesson_count": 6,
+      "prerequisites_text": "Probabilidad y muestreo de 3.º",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Fundamentos estadísticos y probabilidad ESO"
+    },
+    {
+      "unit_id": "E4B-N01",
+      "title": "Reales, radicales y precisión",
+      "course_code": "E4B",
+      "lesson_count": 6,
+      "prerequisites_text": "Números reales de 3.º",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Precursores numéricos, medidas y geometría"
+    },
+    {
+      "unit_id": "E4B-D01",
+      "title": "Estadística bivariante",
+      "course_code": "E4B",
+      "lesson_count": 6,
+      "prerequisites_text": "Estadística de 3.º",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Fundamentos estadísticos y probabilidad ESO"
+    },
+    {
+      "unit_id": "E4B-Q01",
+      "title": "Probabilidad compuesta e inferencia inicial",
+      "course_code": "E4B",
+      "lesson_count": 6,
+      "prerequisites_text": "Probabilidad 3.º",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Fundamentos estadísticos y probabilidad ESO"
+    },
+    {
+      "unit_id": "B1C-N01",
+      "title": "Reales y números complejos",
+      "course_code": "B1C",
+      "lesson_count": 6,
+      "prerequisites_text": "Reales y álgebra 4.º B",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Precursores numéricos, medidas y geometría"
+    },
+    {
+      "unit_id": "B1C-D01",
+      "title": "Estadística bivariante",
+      "course_code": "B1C",
+      "lesson_count": 5,
+      "prerequisites_text": "Estadística bivariante 4.º",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Fundamentos estadísticos y probabilidad ESO"
+    },
+    {
+      "unit_id": "B1C-Q01",
+      "title": "Recuento y probabilidad",
+      "course_code": "B1C",
+      "lesson_count": 6,
+      "prerequisites_text": "Probabilidad 4.º",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Fundamentos estadísticos y probabilidad ESO"
+    },
+    {
+      "unit_id": "B2C-G03",
+      "title": "Métrica espacial",
+      "course_code": "B2C",
+      "lesson_count": 6,
+      "prerequisites_text": "Rectas y planos",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Precursores numéricos, medidas y geometría"
+    },
+    {
+      "unit_id": "B2C-Q01",
+      "title": "Probabilidad condicionada y Bayes",
+      "course_code": "B2C",
+      "lesson_count": 6,
+      "prerequisites_text": "Recuento y probabilidad I",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Probabilidad Matemáticas II"
+    },
+    {
+      "unit_id": "B2C-Q02",
+      "title": "Variables aleatorias y distribuciones",
+      "course_code": "B2C",
+      "lesson_count": 6,
+      "prerequisites_text": "Probabilidad condicionada",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Probabilidad Matemáticas II"
+    },
+    {
+      "unit_id": "B1S-P01",
+      "title": "Matemática financiera I",
+      "course_code": "B1S",
+      "lesson_count": 6,
+      "prerequisites_text": "Proporcionalidad y potencias",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Cadena cuarto ESO A y MACS I"
+    },
+    {
+      "unit_id": "B1S-D01",
+      "title": "Estadística bivariante y ajuste",
+      "course_code": "B1S",
+      "lesson_count": 6,
+      "prerequisites_text": "Estadística de 4.º",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Probabilidad y estadística MACS I / II"
+    },
+    {
+      "unit_id": "B1S-Q01",
+      "title": "Combinatoria y probabilidad",
+      "course_code": "B1S",
+      "lesson_count": 5,
+      "prerequisites_text": "Probabilidad de 4.º",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Probabilidad y estadística MACS I / II"
+    },
+    {
+      "unit_id": "B1S-Q02",
+      "title": "Binomial, normal y aproximaciones",
+      "course_code": "B1S",
+      "lesson_count": 6,
+      "prerequisites_text": "Combinatoria y probabilidad",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Probabilidad y estadística MACS I / II"
+    },
+    {
+      "unit_id": "B1S-D02",
+      "title": "Muestreo y estimación puntual inicial",
+      "course_code": "B1S",
+      "lesson_count": 6,
+      "prerequisites_text": "Estadística descriptiva",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Probabilidad y estadística MACS I / II"
+    },
+    {
+      "unit_id": "B2S-Q01",
+      "title": "Condicionamiento, total y Bayes",
+      "course_code": "B2S",
+      "lesson_count": 6,
+      "prerequisites_text": "Probabilidad de MACS I",
+      "canonical_predecessors": [],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Probabilidad y estadística MACS I / II"
+    },
+    {
+      "unit_id": "B2S-Q02",
+      "title": "Distribuciones de probabilidad",
+      "course_code": "B2S",
+      "lesson_count": 6,
+      "prerequisites_text": "Binomial y normal I",
+      "canonical_predecessors": [
+        "B1S-Q02"
+      ],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Probabilidad y estadística MACS I / II"
+    },
+    {
+      "unit_id": "B2S-D01",
+      "title": "Muestreo y distribución muestral",
+      "course_code": "B2S",
+      "lesson_count": 6,
+      "prerequisites_text": "Muestreo de MACS I",
+      "canonical_predecessors": [
+        "B1S-D02"
+      ],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Probabilidad y estadística MACS I / II"
+    },
+    {
+      "unit_id": "B2S-D02",
+      "title": "Inferencia e intervalos de confianza",
+      "course_code": "B2S",
+      "lesson_count": 6,
+      "prerequisites_text": "Distribuciones y muestreo",
+      "canonical_predecessors": [
+        "B2S-D01"
+      ],
+      "status_at_F3_20": "solo_titulo",
+      "target_F3_21": false,
+      "status_after_F3_21_if_verified": "solo_titulo",
+      "workstream": "Probabilidad y estadística MACS I / II"
+    }
+  ],
+  "remaining_after_F3_21_workstreams": [
+    {
+      "name": "Fundamentos estadísticos y probabilidad ESO",
+      "unit_ids": [
+        "E4A-D01",
+        "E4A-Q01",
+        "E4B-D01",
+        "E4B-Q01",
+        "B1C-D01",
+        "B1C-Q01"
+      ],
+      "execution_rule": "Evaluar grafo completo, predecesores editoriales y cobertura real antes de seleccionar; máximo 3 unidades con requisitos desarrollados o secuenciales."
+    },
+    {
+      "name": "Precursores numéricos, medidas y geometría",
+      "unit_ids": [
+        "E3-N02",
+        "E3-G02",
+        "E4A-G01",
+        "E4B-N01",
+        "B1C-N01",
+        "B2C-G03"
+      ],
+      "execution_rule": "Evaluar grafo completo, predecesores editoriales y cobertura real antes de seleccionar; máximo 3 unidades con requisitos desarrollados o secuenciales."
+    },
+    {
+      "name": "Cadena cuarto ESO A y MACS I",
+      "unit_ids": [
+        "B1S-P01"
+      ],
+      "execution_rule": "Evaluar grafo completo, predecesores editoriales y cobertura real antes de seleccionar; máximo 3 unidades con requisitos desarrollados o secuenciales."
+    },
+    {
+      "name": "Probabilidad y estadística MACS I / II",
+      "unit_ids": [
+        "B1S-D01",
+        "B1S-Q01",
+        "B1S-Q02",
+        "B1S-D02",
+        "B2S-Q01",
+        "B2S-Q02",
+        "B2S-D01",
+        "B2S-D02"
+      ],
+      "execution_rule": "Evaluar grafo completo, predecesores editoriales y cobertura real antes de seleccionar; máximo 3 unidades con requisitos desarrollados o secuenciales."
+    },
+    {
+      "name": "Probabilidad Matemáticas II",
+      "unit_ids": [
+        "B2C-Q01",
+        "B2C-Q02"
+      ],
+      "execution_rule": "Evaluar grafo completo, predecesores editoriales y cobertura real antes de seleccionar; máximo 3 unidades con requisitos desarrollados o secuenciales."
+    }
+  ],
+  "prioritization_rules": [
+    "No suponer que una arista editorial es obligación estatal; 20 canónicas congeladas.",
+    "Cubrir E1-D01→E2-D01→E3-D01 antes de rutas estadísticas que la exijan.",
+    "Cubrir E2-Q01→E3-Q01 y probabilidad 4º antes de B1C-Q01 y MACS.",
+    "Cubrir E4A-P01 y E4A-A02/B1S-A01 antes de B1S-F01; luego B1S-F02→B1S-F03→B2S-F01→B2S-F02.",
+    "Cubrir B1S-Q01→B1S-Q02→B2S-Q02 y B1S-D02→B2S-D01→B2S-D02 como cadenas condicionadas.",
+    "Cada ola empaquetada en copia aislada con fuentes, oráculos, Chrome, puntero, regresión, privacidad e integridad verificados.",
+    "Evitar revisión circular: una ola con puertas técnicas superadas permanece cerrada, salvo evidencia material nueva.",
+    "La cadena E4A-A01→E4A-A02→B1S-A01 queda desarrollada, y E4A-P01 aporta porcentajes a MACS I.",
+    "B1S-N01 (potencias, radicales y logaritmos) sigue pendiente: evaluar como base de B1S-F01 y B1S-F02 sin asumir que el repaso interno de B1S-A01 la sustituye por completo.",
+    "No declarar B1S-F01 completada ni F4 verificada sin evidencias de sus propias lecciones y pruebas.",
+    "Cada ola nueva deja intacto el ZIP base y los archivos de trazabilidad anteriores; actualiza cobertura solo tras gates PASS.",
+    "B1S-N01 de números y logaritmos se completa solo después de E4A-N01, que se apoya en reales/medidas existentes.",
+    "B1S-F01 aporta siete familias de funciones como prerrequisito EDITORIAL de B1S-F02; validar B1S-F02 en una ola posterior.",
+    "Mantener E3-N02/E3-G02 pendientes: desarrollar si sus propias cadenas y prioridades lo justifican, no inferir cumplimiento.",
+    "No declarar F4 completada por pruebas de navegador automatizadas o cobertura de títulos.",
+    "La cadena B1S-F01→B1S-F02→B1S-F03→B2S-F01 queda redactada en revisión, sin homologación.",
+    "B1S-F03→B2S-F01 es CANÓNICA y no se duplica como editorial.",
+    "No confundir derivada cero con extremo, f′′ cero con inflexión ni incremento discreto con marginal continuo.",
+    "Actualizar coberturas solo después de cierre de todos los gates técnicos y preservar evidencias previas.",
+    "Desarrollar B2S-A02 solo tras comprobar inecuaciones y sistemas previos y las decisiones editoriales aprobadas.",
+    "Las integrales F3-19 diferencian acumulación firmada, área geométrica y tasas con unidades; revisar matemáticamente antes de F4.",
+    "Matrices y grafos sintéticos no requieren cuentas ni datos personales y el producto matricial no es conmutativo.",
+    "No abrir validaciones circulares; cerrar por gates técnicos y preservar ZIP de la ola previa.",
+    "E3-D01 estadística de 3.º y ramas posteriores deberán tomar E2-D01 completa y comprobada.",
+    "B2S-A02 programación lineal no es programación entera; comprobar restricciones y óptimos múltiples.",
+    "Mantener datos estadísticos sintéticos, sin datos personales de menores, y advertir muestras no representativas.",
+    "Conservar F3-19 congelado y los cinco controles de aceptación F4 no verificados.",
+    "Próximas estadísticas/probabilidad ESO y MACS: verificar por separado requisitos y 23 unidades sin contenido.",
+    "Laplace solo con resultados elementales equiprobables; para extracción sin reemplazo usar probabilidades condicionales.",
+    "Distinguir observación estadística sintética, parámetro teórico, sesgo y causalidad; no datos personales de menores.",
+    "Sin publicación ni regresiones circulares: aceptar solo cierre técnico sustentado por SHA y pruebas reproducibles."
+  ],
+  "phase_F4_acceptance_gates": [
+    {
+      "id": "F4-CURR",
+      "goal": "Revisión humana matemática, didáctica y mapeo oficial por territorio de todas las unidades",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Actas y resultados identificados por lección/versión/currículo; cotejo RD y Cataluña, sin inventar códigos"
+    },
+    {
+      "id": "F4-ACCESS",
+      "goal": "Accesibilidad WCAG 2.2 AA, lectores de pantalla y móvil físico",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Pruebas con teclado, zoom, contraste, lectores, Android/iOS, 320px, dispositivos y hallazgos corregidos"
+    },
+    {
+      "id": "F4-SEC",
+      "goal": "Privacidad y seguridad sin datos personales de menores no autorizados",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Inventario de flujos, rechazo entradas, borrado local, permisos, dependencias, control red e incidentes"
+    },
+    {
+      "id": "F4-LEARN",
+      "goal": "Pruebas de aprendizaje, distractores, feedback, espaciado y revisión de todas las soluciones",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Oráculos independientes, muestras revisadas, pruebas usuario proporcionadas voluntariamente sin identificar menores"
+    },
+    {
+      "id": "F4-RELEASE",
+      "goal": "Preparación de despliegue reversible, rendimiento, pruebas integrales y autorización de publicar",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Build reproducible, hashes, rollback y pruebas multidispositivo; permiso específico posterior antes de publicar"
+    }
+  ],
+  "publication_state": "BLOQUEADA HASTA F4 Y AUTORIZACION ESPECIFICA"
+}

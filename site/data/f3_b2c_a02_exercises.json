@@ -1,0 +1,1200 @@
+{
+  "unit_id": "B2C-A02",
+  "version": "0.12.0",
+  "status": "revision",
+  "notice": "Ejercicios sintéticos y deterministas pendientes de revisión humana.",
+  "activities": [
+    {
+      "exercise_id": "F3-B2C-A02-L01-01",
+      "lesson_id": "B2C-A02-L01",
+      "type": "numeric",
+      "prompt": "Calcula el determinante exacto ad−bc de A=[[2,1],[3,4]]. Escribe el valor numérico EXACTO sin unidades.",
+      "answer": 5.0,
+      "explanation": "Procedimiento matemático: det=(2)·(4)−(1)·(3)=5. El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo. En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse. Resultado exacto: 5. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_det2",
+        "prerrequisito_b2c_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L01-02",
+      "lesson_id": "B2C-A02-L01",
+      "type": "numeric",
+      "prompt": "Calcula el determinante 3×3 exacto de A=[[1,2,0],[0,3,1],[0,0,4]]. Escribe el valor numérico EXACTO sin unidades.",
+      "answer": 12.0,
+      "explanation": "Procedimiento matemático: Cofactores en primera fila de la 3×3: det=12; comprueba signos alternos + − +. El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo. En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse. Resultado exacto: 12. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_det3",
+        "prerrequisito_b2c_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L01-03",
+      "lesson_id": "B2C-A02-L01",
+      "type": "numeric",
+      "prompt": "Calcula el determinante de la diagonal 3×3 con entradas 2,3,4. Escribe el valor numérico EXACTO sin unidades.",
+      "answer": 24.0,
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente 24. El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo. En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse. Resultado exacto: 24. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_diagdet3",
+        "prerrequisito_b2c_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L01-04",
+      "lesson_id": "B2C-A02-L01",
+      "type": "choice",
+      "prompt": "Calcula el determinante 3×3 exacto de A=[[1,2,3],[0,1,4],[5,6,0]]. Selecciona la respuesta EXACTA.",
+      "answer": "1",
+      "explanation": "Procedimiento matemático: Cofactores en primera fila de la 3×3: det=1; comprueba signos alternos + − +. El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo. En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse. Resultado exacto: 1. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_det3",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "2",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L01-05",
+      "lesson_id": "B2C-A02-L01",
+      "type": "choice",
+      "prompt": "Calcula el determinante exacto ad−bc de A=[[1,2],[3,4]]. Selecciona la respuesta EXACTA.",
+      "answer": "-2",
+      "explanation": "Procedimiento matemático: det=(1)·(4)−(2)·(3)=-2. El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo. En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse. Resultado exacto: -2. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_det2",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "-3",
+        "-2",
+        "-1"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L02-01",
+      "lesson_id": "B2C-A02-L02",
+      "type": "numeric",
+      "prompt": "Para A=[[1,2],[3,4]], calcula det(B) si B resulta de INTERCAMBIAR sus dos filas. Escribe el valor numérico EXACTO sin unidades.",
+      "answer": 2.0,
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente 2. El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo. En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse. Resultado exacto: 2. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_swapdet2",
+        "prerrequisito_b2c_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L02-02",
+      "lesson_id": "B2C-A02-L02",
+      "type": "numeric",
+      "prompt": "Para A=[[1,2],[3,4]], calcula el determinante tras reemplazar la segunda fila por fila2+(5)·fila1. Escribe el valor numérico EXACTO sin unidades.",
+      "answer": -2.0,
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente -2. El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo. En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse. Resultado exacto: -2. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_rowadddet2",
+        "prerrequisito_b2c_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L02-03",
+      "lesson_id": "B2C-A02-L02",
+      "type": "numeric",
+      "prompt": "Para A=[[1,2],[3,4]], calcula su determinante tras MULTIPLICAR solo la primera fila por 2. Escribe el valor numérico EXACTO sin unidades.",
+      "answer": -4.0,
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente -4. El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo. En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse. Resultado exacto: -4. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_scaleddet2",
+        "prerrequisito_b2c_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L02-04",
+      "lesson_id": "B2C-A02-L02",
+      "type": "choice",
+      "prompt": "Dos matrices diagonales 2×2 tienen diagonales (1,2) y (3,4). Calcula det(AB). Selecciona la respuesta EXACTA.",
+      "answer": "24",
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente 24. El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo. En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse. Resultado exacto: 24. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_diagdetprod",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "23",
+        "24",
+        "25"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L02-05",
+      "lesson_id": "B2C-A02-L02",
+      "type": "choice",
+      "prompt": "Calcula el determinante 3×3 exacto de A=[[1,2,3],[2,4,6],[0,1,2]]. Selecciona la respuesta EXACTA.",
+      "answer": "0",
+      "explanation": "Procedimiento matemático: Cofactores en primera fila de la 3×3: det=0; comprueba signos alternos + − +. El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo. En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse. Resultado exacto: 0. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_det3",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "0",
+        "1",
+        "-1"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L03-01",
+      "lesson_id": "B2C-A02-L03",
+      "type": "choice",
+      "prompt": "Calcula la matriz INVERSA exacta de A=[[1,1],[1,2]]; devuelve sus cuatro entradas por filas. Selecciona la respuesta EXACTA.",
+      "answer": "(2, -1, -1, 1)",
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente (2, -1, -1, 1). El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo. En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse. Resultado exacto: (2, -1, -1, 1). Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_inverse2",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "(2, -1, -1, 1)",
+        "(-2, 1, 1, -1)",
+        "(3, 0, 0, 2)"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L03-02",
+      "lesson_id": "B2C-A02-L03",
+      "type": "numeric",
+      "prompt": "Para A=[[1,1],[1,2]], calcula la entrada (1,1) de A⁻¹, válida solo si det(A)≠0. Escribe el valor numérico EXACTO sin unidades.",
+      "answer": 2.0,
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente 2. El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo. En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse. Resultado exacto: 2. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_inv_entry",
+        "prerrequisito_b2c_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L03-03",
+      "lesson_id": "B2C-A02-L03",
+      "type": "choice",
+      "prompt": "¿Existe la inversa de A=[[1,2],[2,4]]? Comprueba el determinante y responde Sí o No. Selecciona la respuesta EXACTA.",
+      "answer": "No",
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente No. El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo. En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse. Resultado exacto: No. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_invertible",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "No se puede determinar",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L03-04",
+      "lesson_id": "B2C-A02-L03",
+      "type": "choice",
+      "prompt": "Calcula rango de A=[[1,2,3],[0,1,4],[0,0,2]]. Selecciona la respuesta EXACTA.",
+      "answer": "3",
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente 3. El rango es el número de pivotes tras reducción reversible, no el número bruto de filas. Escalona sin dividir entre cero; un menor no nulo aporta rango y el rango nunca excede el número de filas o columnas. Resultado exacto: 3. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "El rango es el número de pivotes tras reducción reversible, no el número bruto de filas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_rank3",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "3",
+        "4",
+        "2"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L03-05",
+      "lesson_id": "B2C-A02-L03",
+      "type": "choice",
+      "prompt": "Para A=[[2,1],[1,1]], calcula la entrada (1,2) de la matriz ADJUNTA traspuesta (adj(A)). Selecciona la respuesta EXACTA.",
+      "answer": "-1",
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente -1. El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo. En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse. Resultado exacto: -1. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_adjentry",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "0",
+        "-2",
+        "-1"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L04-01",
+      "lesson_id": "B2C-A02-L04",
+      "type": "choice",
+      "prompt": "Sistema 1x+(1)y=2; 2x+(2)y=4. Clasifícalo como Única, Ninguna o Infinitas soluciones. Selecciona la respuesta EXACTA.",
+      "answer": "Infinitas",
+      "explanation": "Procedimiento matemático: Reducción racional exacta y comparación de rangos de matriz y ampliada: Infinitas. Escribe la matriz ampliada y conserva las ecuaciones al operar por filas. Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0. Resultado exacto: Infinitas. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_system_type2",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "Única",
+        "Ninguna",
+        "Infinitas"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L04-02",
+      "lesson_id": "B2C-A02-L04",
+      "type": "choice",
+      "prompt": "Sistema 1x+(1)y=2; 2x+(2)y=5. Clasifícalo como Única, Ninguna o Infinitas soluciones. Selecciona la respuesta EXACTA.",
+      "answer": "Ninguna",
+      "explanation": "Procedimiento matemático: Reducción racional exacta y comparación de rangos de matriz y ampliada: Ninguna. Escribe la matriz ampliada y conserva las ecuaciones al operar por filas. Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0. Resultado exacto: Ninguna. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_system_type2",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "Infinitas",
+        "Ninguna",
+        "Única"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L04-03",
+      "lesson_id": "B2C-A02-L04",
+      "type": "choice",
+      "prompt": "El sistema tridimensional A·(x,y,z)=b tiene A=[[1,0,0],[0,1,0],[0,0,1]] y b=(1, 2, 3). Clasifica rango/compatibilidad como Única, Ninguna o Infinitas. Selecciona la respuesta EXACTA.",
+      "answer": "Única",
+      "explanation": "Procedimiento matemático: Reducción racional exacta y comparación de rangos de matriz y ampliada: Única. Escribe la matriz ampliada y conserva las ecuaciones al operar por filas. Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0. Resultado exacto: Única. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_system_type3",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "Única",
+        "Ninguna",
+        "Infinitas"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L04-04",
+      "lesson_id": "B2C-A02-L04",
+      "type": "choice",
+      "prompt": "Sistema 1x+(1)y=5; 1x+(-1)y=1. Resuelve el sistema y escribe (x,y). Selecciona la respuesta EXACTA.",
+      "answer": "(3, 2)",
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente (3, 2). Escribe la matriz ampliada y conserva las ecuaciones al operar por filas. Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0. Resultado exacto: (3, 2). Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_system2",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "(-3, -2)",
+        "(4, 3)",
+        "(3, 2)"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L04-05",
+      "lesson_id": "B2C-A02-L04",
+      "type": "choice",
+      "prompt": "El sistema tridimensional A·(x,y,z)=b tiene A=[[1,1,0],[2,2,0],[0,0,1]] y b=(2, 5, 1). Clasifica rango/compatibilidad como Única, Ninguna o Infinitas. Selecciona la respuesta EXACTA.",
+      "answer": "Ninguna",
+      "explanation": "Procedimiento matemático: Reducción racional exacta y comparación de rangos de matriz y ampliada: Ninguna. Escribe la matriz ampliada y conserva las ecuaciones al operar por filas. Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0. Resultado exacto: Ninguna. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_system_type3",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "Infinitas",
+        "Ninguna",
+        "Única"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L05-01",
+      "lesson_id": "B2C-A02-L05",
+      "type": "choice",
+      "prompt": "El sistema tridimensional A·(x,y,z)=b tiene A=[[1,1,1],[0,1,1],[0,0,1]] y b=(6, 5, 3). Resuelve exactamente por eliminación de Gauss, devuelve (x,y,z). Selecciona la respuesta EXACTA.",
+      "answer": "(1, 2, 3)",
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente (1, 2, 3). Escribe la matriz ampliada y conserva las ecuaciones al operar por filas. Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0. Resultado exacto: (1, 2, 3). Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_solve3",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "(2, 3, 4)",
+        "(1, 2, 3)",
+        "(-1, -2, -3)"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L05-02",
+      "lesson_id": "B2C-A02-L05",
+      "type": "numeric",
+      "prompt": "Calcula número de pivotes no nulos en una reducción por filas de A=[[1,0,0],[0,2,0],[0,0,3]]. Escribe el valor numérico EXACTO sin unidades.",
+      "answer": 3.0,
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente 3. El rango es el número de pivotes tras reducción reversible, no el número bruto de filas. Escalona sin dividir entre cero; un menor no nulo aporta rango y el rango nunca excede el número de filas o columnas. Resultado exacto: 3. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "El rango es el número de pivotes tras reducción reversible, no el número bruto de filas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_pivotcount3",
+        "prerrequisito_b2c_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L05-03",
+      "lesson_id": "B2C-A02-L05",
+      "type": "numeric",
+      "prompt": "El sistema tridimensional A·(x,y,z)=b tiene A=[[1,1,1],[0,1,1],[0,0,1]] y b=(6, 5, 3). Resuelve por Gauss y devuelve exclusivamente la incógnita de índice 2. Escribe el valor numérico EXACTO sin unidades.",
+      "answer": 2.0,
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente 2. Escribe la matriz ampliada y conserva las ecuaciones al operar por filas. Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0. Resultado exacto: 2. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_solve3_entry",
+        "prerrequisito_b2c_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L05-04",
+      "lesson_id": "B2C-A02-L05",
+      "type": "choice",
+      "prompt": "El sistema tridimensional A·(x,y,z)=b tiene A=[[1,1,0],[2,2,0],[0,0,1]] y b=(2, 5, 1). Clasifica rango/compatibilidad como Única, Ninguna o Infinitas. Selecciona la respuesta EXACTA.",
+      "answer": "Ninguna",
+      "explanation": "Procedimiento matemático: Reducción racional exacta y comparación de rangos de matriz y ampliada: Ninguna. Escribe la matriz ampliada y conserva las ecuaciones al operar por filas. Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0. Resultado exacto: Ninguna. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_system_type3",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "Infinitas",
+        "Ninguna",
+        "Única"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L05-05",
+      "lesson_id": "B2C-A02-L05",
+      "type": "choice",
+      "prompt": "El sistema tridimensional A·(x,y,z)=b tiene A=[[2,0,0],[0,2,0],[0,0,2]] y b=(2, 4, 6). Resuelve exactamente por eliminación de Gauss, devuelve (x,y,z). Selecciona la respuesta EXACTA.",
+      "answer": "(1, 2, 3)",
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente (1, 2, 3). Escribe la matriz ampliada y conserva las ecuaciones al operar por filas. Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0. Resultado exacto: (1, 2, 3). Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_solve3",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "(1, 2, 3)",
+        "(-1, -2, -3)",
+        "(2, 3, 4)"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L06-01",
+      "lesson_id": "B2C-A02-L06",
+      "type": "choice",
+      "prompt": "Sistema 1x+(1)y=5; 1x+(-1)y=1. Resuelve por Cramer si det(A)≠0. Devuelve (x,y). Selecciona la respuesta EXACTA.",
+      "answer": "(3, 2)",
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente (3, 2). Escribe la matriz ampliada y conserva las ecuaciones al operar por filas. Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0. Resultado exacto: (3, 2). Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cramer2",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "(3, 2)",
+        "(-3, -2)",
+        "(4, 3)"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L06-02",
+      "lesson_id": "B2C-A02-L06",
+      "type": "numeric",
+      "prompt": "Sistema 1x+(1)y=5; 1x+(-1)y=1. Calcula el determinante del numerador de Cramer, con la columna 1 sustituida por términos independientes. Escribe el valor numérico EXACTO sin unidades.",
+      "answer": -6.0,
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente -6. Escribe la matriz ampliada y conserva las ecuaciones al operar por filas. Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0. Resultado exacto: -6. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cramer_num2",
+        "prerrequisito_b2c_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L06-03",
+      "lesson_id": "B2C-A02-L06",
+      "type": "choice",
+      "prompt": "El sistema tridimensional A·(x,y,z)=b tiene A=[[1,1,1],[0,1,1],[0,0,1]] y b=(6, 5, 3). Resuelve por Cramer porque det(A)≠0. Devuelve (x,y,z). Selecciona la respuesta EXACTA.",
+      "answer": "(1, 2, 3)",
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente (1, 2, 3). Escribe la matriz ampliada y conserva las ecuaciones al operar por filas. Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0. Resultado exacto: (1, 2, 3). Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cramer3",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "(2, 3, 4)",
+        "(1, 2, 3)",
+        "(-1, -2, -3)"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L06-04",
+      "lesson_id": "B2C-A02-L06",
+      "type": "choice",
+      "prompt": "¿Es válida la regla de Cramer para cualquier b en A·x=b con A=[[1,1],[2,2]]? Contesta Sí si det(A)≠0, No en caso contrario. Selecciona la respuesta EXACTA.",
+      "answer": "No",
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente No. Escribe la matriz ampliada y conserva las ecuaciones al operar por filas. Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0. Resultado exacto: No. Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cramer_applicable",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No se puede determinar"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-A02-L06-05",
+      "lesson_id": "B2C-A02-L06",
+      "type": "choice",
+      "prompt": "Sistema 2x+(1)y=7; 1x+(2)y=8. Resuelve por Cramer si det(A)≠0. Devuelve (x,y). Selecciona la respuesta EXACTA.",
+      "answer": "(2, 3)",
+      "explanation": "Procedimiento matemático: Sustituyendo los datos en las fórmulas y respetando dimensiones y condiciones se obtiene exactamente (2, 3). Escribe la matriz ampliada y conserva las ecuaciones al operar por filas. Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0. Resultado exacto: (2, 3). Comprueba hipótesis, dimensiones, signos, orientaciones, sistemas originales y condiciones de no anulación.",
+      "hint": "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cramer2",
+        "prerrequisito_b2c_a02"
+      ],
+      "choices": [
+        "(-2, -3)",
+        "(3, 4)",
+        "(2, 3)"
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B2C-A02-L01-01": {
+      "hints": [
+        "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+        "En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse."
+      ],
+      "math_check": {
+        "kind": "det2",
+        "params": [
+          2,
+          1,
+          3,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: det2"
+    },
+    "F3-B2C-A02-L01-02": {
+      "hints": [
+        "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+        "En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse."
+      ],
+      "math_check": {
+        "kind": "det3",
+        "params": [
+          1,
+          2,
+          0,
+          0,
+          3,
+          1,
+          0,
+          0,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: det3"
+    },
+    "F3-B2C-A02-L01-03": {
+      "hints": [
+        "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+        "En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse."
+      ],
+      "math_check": {
+        "kind": "diagdet3",
+        "params": [
+          2,
+          3,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: diagdet3"
+    },
+    "F3-B2C-A02-L01-04": {
+      "hints": [
+        "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+        "En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse."
+      ],
+      "math_check": {
+        "kind": "det3",
+        "params": [
+          1,
+          2,
+          3,
+          0,
+          1,
+          4,
+          5,
+          6,
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: det3"
+    },
+    "F3-B2C-A02-L01-05": {
+      "hints": [
+        "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+        "En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse."
+      ],
+      "math_check": {
+        "kind": "det2",
+        "params": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: det2"
+    },
+    "F3-B2C-A02-L02-01": {
+      "hints": [
+        "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+        "En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse."
+      ],
+      "math_check": {
+        "kind": "swapdet2",
+        "params": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: swapdet2"
+    },
+    "F3-B2C-A02-L02-02": {
+      "hints": [
+        "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+        "En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse."
+      ],
+      "math_check": {
+        "kind": "rowadddet2",
+        "params": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: rowadddet2"
+    },
+    "F3-B2C-A02-L02-03": {
+      "hints": [
+        "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+        "En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse."
+      ],
+      "math_check": {
+        "kind": "scaleddet2",
+        "params": [
+          2,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: scaleddet2"
+    },
+    "F3-B2C-A02-L02-04": {
+      "hints": [
+        "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+        "En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse."
+      ],
+      "math_check": {
+        "kind": "diagdetprod",
+        "params": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: diagdetprod"
+    },
+    "F3-B2C-A02-L02-05": {
+      "hints": [
+        "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+        "En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse."
+      ],
+      "math_check": {
+        "kind": "det3",
+        "params": [
+          1,
+          2,
+          3,
+          2,
+          4,
+          6,
+          0,
+          1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: det3"
+    },
+    "F3-B2C-A02-L03-01": {
+      "hints": [
+        "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+        "En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse."
+      ],
+      "math_check": {
+        "kind": "inverse2",
+        "params": [
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: inverse2"
+    },
+    "F3-B2C-A02-L03-02": {
+      "hints": [
+        "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+        "En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse."
+      ],
+      "math_check": {
+        "kind": "inv_entry",
+        "params": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: inv_entry"
+    },
+    "F3-B2C-A02-L03-03": {
+      "hints": [
+        "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+        "En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse."
+      ],
+      "math_check": {
+        "kind": "invertible",
+        "params": [
+          1,
+          2,
+          2,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: invertible"
+    },
+    "F3-B2C-A02-L03-04": {
+      "hints": [
+        "El rango es el número de pivotes tras reducción reversible, no el número bruto de filas.",
+        "Escalona sin dividir entre cero; un menor no nulo aporta rango y el rango nunca excede el número de filas o columnas."
+      ],
+      "math_check": {
+        "kind": "rank3",
+        "params": [
+          1,
+          2,
+          3,
+          0,
+          1,
+          4,
+          0,
+          0,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: rank3"
+    },
+    "F3-B2C-A02-L03-05": {
+      "hints": [
+        "El determinante es un escalar; las operaciones por filas pueden conservarlo, cambiarlo o escalarlo.",
+        "En 2×2 usa ad−bc; en 3×3 cofactores o Gauss. Inversa solo si det≠0; la adjunta debe trasponerse."
+      ],
+      "math_check": {
+        "kind": "adjentry",
+        "params": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: adjentry"
+    },
+    "F3-B2C-A02-L04-01": {
+      "hints": [
+        "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+        "Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0."
+      ],
+      "math_check": {
+        "kind": "system_type2",
+        "params": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: system_type2"
+    },
+    "F3-B2C-A02-L04-02": {
+      "hints": [
+        "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+        "Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0."
+      ],
+      "math_check": {
+        "kind": "system_type2",
+        "params": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: system_type2"
+    },
+    "F3-B2C-A02-L04-03": {
+      "hints": [
+        "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+        "Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0."
+      ],
+      "math_check": {
+        "kind": "system_type3",
+        "params": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: system_type3"
+    },
+    "F3-B2C-A02-L04-04": {
+      "hints": [
+        "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+        "Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0."
+      ],
+      "math_check": {
+        "kind": "system2",
+        "params": [
+          1,
+          1,
+          1,
+          -1,
+          5,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: system2"
+    },
+    "F3-B2C-A02-L04-05": {
+      "hints": [
+        "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+        "Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0."
+      ],
+      "math_check": {
+        "kind": "system_type3",
+        "params": [
+          1,
+          1,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          1,
+          2,
+          5,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: system_type3"
+    },
+    "F3-B2C-A02-L05-01": {
+      "hints": [
+        "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+        "Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0."
+      ],
+      "math_check": {
+        "kind": "solve3",
+        "params": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          6,
+          5,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: solve3"
+    },
+    "F3-B2C-A02-L05-02": {
+      "hints": [
+        "El rango es el número de pivotes tras reducción reversible, no el número bruto de filas.",
+        "Escalona sin dividir entre cero; un menor no nulo aporta rango y el rango nunca excede el número de filas o columnas."
+      ],
+      "math_check": {
+        "kind": "pivotcount3",
+        "params": [
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: pivotcount3"
+    },
+    "F3-B2C-A02-L05-03": {
+      "hints": [
+        "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+        "Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0."
+      ],
+      "math_check": {
+        "kind": "solve3_entry",
+        "params": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          6,
+          5,
+          3,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: solve3_entry"
+    },
+    "F3-B2C-A02-L05-04": {
+      "hints": [
+        "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+        "Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0."
+      ],
+      "math_check": {
+        "kind": "system_type3",
+        "params": [
+          1,
+          1,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          1,
+          2,
+          5,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: system_type3"
+    },
+    "F3-B2C-A02-L05-05": {
+      "hints": [
+        "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+        "Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0."
+      ],
+      "math_check": {
+        "kind": "solve3",
+        "params": [
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          2,
+          2,
+          4,
+          6
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: solve3"
+    },
+    "F3-B2C-A02-L06-01": {
+      "hints": [
+        "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+        "Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0."
+      ],
+      "math_check": {
+        "kind": "cramer2",
+        "params": [
+          1,
+          1,
+          1,
+          -1,
+          5,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: cramer2"
+    },
+    "F3-B2C-A02-L06-02": {
+      "hints": [
+        "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+        "Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0."
+      ],
+      "math_check": {
+        "kind": "cramer_num2",
+        "params": [
+          1,
+          1,
+          1,
+          -1,
+          5,
+          1,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: cramer_num2"
+    },
+    "F3-B2C-A02-L06-03": {
+      "hints": [
+        "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+        "Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0."
+      ],
+      "math_check": {
+        "kind": "cramer3",
+        "params": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          6,
+          5,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: cramer3"
+    },
+    "F3-B2C-A02-L06-04": {
+      "hints": [
+        "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+        "Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0."
+      ],
+      "math_check": {
+        "kind": "cramer_applicable",
+        "params": [
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: cramer_applicable"
+    },
+    "F3-B2C-A02-L06-05": {
+      "hints": [
+        "Escribe la matriz ampliada y conserva las ecuaciones al operar por filas.",
+        "Rouché-Frobenius: rango(A)≠rango([A|b]) implica Ninguna; si coinciden, Única si rango=n, Infinitas si rango<n. Cramer solo con det≠0."
+      ],
+      "math_check": {
+        "kind": "cramer2",
+        "params": [
+          2,
+          1,
+          1,
+          2,
+          7,
+          8
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Rango, singularidad, orientación, sistema incompatible o entrada indebida: cramer2"
+    }
+  }
+}

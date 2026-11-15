@@ -1,0 +1,687 @@
+{
+  "unit_id": "E2-M01",
+  "unit_title": "Áreas, cuerpos y volúmenes",
+  "product_phase": "F3_OLA10",
+  "version": "0.10.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Calcular áreas y perímetros de polígonos y circunferencias con unidades coherentes.",
+    "Descomponer figuras compuestas en piezas de área conocida.",
+    "Calcular volúmenes de prismas y pirámides con la altura perpendicular."
+  ],
+  "warnings": [
+    "Material sintético editorial EN REVISIÓN; no homologado, no publicable.",
+    "Producto mixto cuando proceda: desarrollo de ampliación editorial, no obligatorio universal.",
+    "La relación de prerrequisitos E1-G01 y E2-G01 hacia E2-M01 es editorial.",
+    "Revisión humana, autonómica y WCAG integral NO VERIFICADAS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Áreas planas",
+      "lesson_id": "E1-G01-L03",
+      "href": "#/curso/E1/unidad/E1-G01/leccion/E1-G01-L03"
+    },
+    {
+      "label": "Teorema de Pitágoras",
+      "lesson_id": "E2-G01-L04",
+      "href": "#/curso/E2/unidad/E2-G01/leccion/E2-G01-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Comprensión guiada, recuperación sin ayuda y repetición espaciada voluntaria."
+  },
+  "source_note": "Marco normativo estatal RD 217/2022 y RD 243/2022; asignación editorial, cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E2-M01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.10.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-M01:C01"
+      ],
+      "objectives": [
+        "Calcular áreas y perímetros de polígonos y circunferencias con unidades coherentes.",
+        "Distinguir área, longitud de contorno y aproximación del número π."
+      ],
+      "prerequisites": [
+        "E1-G01-L02",
+        "E2-G01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El perímetro mide el contorno (unidades de longitud) y el área mide superficie (unidades cuadradas). Para rectángulos, área=b·h; para triángulos, área=b·h/2 con altura perpendicular a la base. El área de un círculo es πr² y la longitud de su circunferencia es 2πr; el radio es la mitad del diámetro. En problemas con π conviene conservar resultados como múltiplos exactos de π y solo aproximar cuando se solicite. No confundir círculo (región) con circunferencia (contorno), ni emplear radios en centímetros con resultados en metros cuadrados."
+        },
+        {
+          "type": "example",
+          "body": "Un círculo de radio 3 cm tiene área 9π cm² y perímetro 6π cm."
+        },
+        {
+          "type": "example",
+          "body": "Un triángulo con base 8 m y altura perpendicular de 5 m tiene área (8×5)/2=20 m²."
+        },
+        {
+          "type": "figure",
+          "body": "Área circular y longitud de circunferencia. Diagrama conceptual declarativo: todas las medidas exactas y relaciones se ofrecen de nuevo en una tabla textual independiente, sin requerir color o percepción espacial.",
+          "alt": "Área circular y longitud de circunferencia. La tabla semántica identifica con exactitud todas las coordenadas, dimensiones, unidades y resultados de esta representación.",
+          "visual_spec": {
+            "kind": "circle",
+            "title": "Área circular y longitud de circunferencia",
+            "rows": [
+              [
+                "Radio",
+                "3 cm"
+              ],
+              [
+                "Diámetro",
+                "6 cm"
+              ],
+              [
+                "Área",
+                "9π cm²"
+              ],
+              [
+                "Circunferencia",
+                "6π cm"
+              ]
+            ],
+            "points": [],
+            "vectors": [],
+            "shape": {
+              "type": "circle",
+              "r": 3,
+              "show": "area_perimeter"
+            }
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué no es correcto decir que el área de un círculo de radio 3 vale 6π?||6π corresponde a longitud de circunferencia; el área es π×3²=9π."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El perímetro mide el contorno (unidades de longitud) y el área mide superficie (unidades cuadradas). Justifica cada resultado, comprueba las unidades y resuelve después una variación sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-M01-L01-01",
+        "F3-E2-M01-L01-02",
+        "F3-E2-M01-L01-03",
+        "F3-E2-M01-L01-04",
+        "F3-E2-M01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; RD 243/2022, anexo II, Matemáticas II",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; contenido y secuencia editorial originales pendientes de revisión."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-M01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.10.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-M01:C02"
+      ],
+      "objectives": [
+        "Descomponer figuras compuestas en piezas de área conocida.",
+        "Restar huecos y verificar unidades cuadradas y no negatividad."
+      ],
+      "prerequisites": [
+        "E2-M01-L01",
+        "E1-G01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una figura compuesta puede resolverse sumando áreas de regiones sin solapamiento, o restando un hueco interior de un contorno conocido. Dibujar una partición y etiquetar cada medida evita sumar zonas dos veces. El área de un trapecio de bases paralelas B,b y altura perpendicular h es (B+b)h/2; un semicírculo de radio r tiene área πr²/2. Si se extrae un cuadrado de otro, las áreas se restan, no se restan primero longitudes para después elevarlas al cuadrado. El área nunca es negativa y necesita unidades cuadradas."
+        },
+        {
+          "type": "example",
+          "body": "Un patio rectangular de 10×8 m con un estanque rectangular de 3×2 m tiene superficie útil 80−6=74 m²."
+        },
+        {
+          "type": "example",
+          "body": "Un trapecio de bases 8 y 4 cm y altura 3 cm tiene área (8+4)×3/2=18 cm²."
+        },
+        {
+          "type": "figure",
+          "body": "Superficie rectangular con hueco. Diagrama conceptual declarativo: todas las medidas exactas y relaciones se ofrecen de nuevo en una tabla textual independiente, sin requerir color o percepción espacial.",
+          "alt": "Superficie rectangular con hueco. La tabla semántica identifica con exactitud todas las coordenadas, dimensiones, unidades y resultados de esta representación.",
+          "visual_spec": {
+            "kind": "composite",
+            "title": "Superficie rectangular con hueco",
+            "rows": [
+              [
+                "Rectángulo exterior",
+                "10 × 8 = 80 m²"
+              ],
+              [
+                "Hueco",
+                "3 × 2 = 6 m²"
+              ],
+              [
+                "Área útil",
+                "74 m²"
+              ],
+              [
+                "Operación",
+                "Área exterior − hueco"
+              ]
+            ],
+            "points": [],
+            "vectors": [],
+            "shape": {
+              "type": "composite",
+              "width": 10,
+              "height": 8,
+              "holeWidth": 3,
+              "holeHeight": 2
+            }
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El área útil de un cuadrado de lado 10 con hueco de lado 2 es (10−2)²?||No. Se restan áreas: 10²−2²=96, no 64."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una figura compuesta puede resolverse sumando áreas de regiones sin solapamiento, o restando un hueco interior de un contorno conocido. Justifica cada resultado, comprueba las unidades y resuelve después una variación sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-M01-L02-01",
+        "F3-E2-M01-L02-02",
+        "F3-E2-M01-L02-03",
+        "F3-E2-M01-L02-04",
+        "F3-E2-M01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; RD 243/2022, anexo II, Matemáticas II",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; contenido y secuencia editorial originales pendientes de revisión."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-M01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.10.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-M01:C03"
+      ],
+      "objectives": [
+        "Calcular volúmenes de prismas y pirámides con la altura perpendicular.",
+        "Distinguir volumen de superficie y aplicar el factor un tercio en pirámides."
+      ],
+      "prerequisites": [
+        "E2-M01-L02",
+        "E2-G01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El volumen de un prisma recto o de cualquier prisma con secciones paralelas congruentes se calcula como área de la base por altura perpendicular, V=A_base·h. Una pirámide con base de área A y altura perpendicular h tiene volumen V=A·h/3. La altura de una pirámide no es necesariamente la longitud de una arista inclinada. En un ortoedro de largo a, ancho b y alto c, V=abc y el área total es 2(ab+ac+bc), magnitud diferente. Las unidades del volumen son cúbicas; las de la superficie exterior son cuadradas."
+        },
+        {
+          "type": "example",
+          "body": "Un prisma rectangular de 4×3×5 cm tiene volumen 4×3×5=60 cm³."
+        },
+        {
+          "type": "example",
+          "body": "Una pirámide de base rectangular 6×4 m y altura perpendicular 3 m ocupa (24×3)/3=24 m³."
+        },
+        {
+          "type": "figure",
+          "body": "Volumen de prisma rectangular. Diagrama conceptual declarativo: todas las medidas exactas y relaciones se ofrecen de nuevo en una tabla textual independiente, sin requerir color o percepción espacial.",
+          "alt": "Volumen de prisma rectangular. La tabla semántica identifica con exactitud todas las coordenadas, dimensiones, unidades y resultados de esta representación.",
+          "visual_spec": {
+            "kind": "prism",
+            "title": "Volumen de prisma rectangular",
+            "rows": [
+              [
+                "Largo",
+                "4 cm"
+              ],
+              [
+                "Ancho",
+                "3 cm"
+              ],
+              [
+                "Alto",
+                "5 cm"
+              ],
+              [
+                "Volumen",
+                "60 cm³"
+              ]
+            ],
+            "points": [],
+            "vectors": [],
+            "shape": {
+              "type": "prism",
+              "width": 4,
+              "depth": 3,
+              "height": 5
+            }
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una pirámide de igual base y altura que un prisma tiene idéntico volumen?||No, el volumen de la pirámide es un tercio del prisma correspondiente."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El volumen de un prisma recto o de cualquier prisma con secciones paralelas congruentes se calcula como área de la base por altura perpendicular, V=A_base·h. Justifica cada resultado, comprueba las unidades y resuelve después una variación sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-M01-L03-01",
+        "F3-E2-M01-L03-02",
+        "F3-E2-M01-L03-03",
+        "F3-E2-M01-L03-04",
+        "F3-E2-M01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; RD 243/2022, anexo II, Matemáticas II",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; contenido y secuencia editorial originales pendientes de revisión."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-M01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.10.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-M01:C04"
+      ],
+      "objectives": [
+        "Calcular volúmenes de cilindros y conos y distinguir generatriz de altura.",
+        "Aplicar correctamente la fórmula del área lateral cuando se conoce la generatriz."
+      ],
+      "prerequisites": [
+        "E2-M01-L03",
+        "E2-G01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un cilindro circular de radio r y altura perpendicular h tiene volumen πr²h y área lateral 2πrh. Su área total añade dos bases: 2πrh+2πr². Un cono circular recto con igual base y altura tiene volumen πr²h/3. El área lateral de un cono es πrg, donde g es la generatriz oblicua y cumple g²=r²+h² en el cono recto; la generatriz no debe sustituirse por h. Se conservan múltiplos exactos de π para evitar errores de redondeo. Para comparar volúmenes, comprueba que los radios y alturas estén en unidades iguales."
+        },
+        {
+          "type": "example",
+          "body": "Un cilindro de radio 2 cm y altura 5 cm tiene volumen 20π cm³ y área lateral 20π cm²."
+        },
+        {
+          "type": "example",
+          "body": "Un cono de radio 3 cm y altura 4 cm tiene generatriz 5 cm, volumen 12π cm³ y área lateral 15π cm²."
+        },
+        {
+          "type": "figure",
+          "body": "Cilindro de radio dos y altura cinco. Diagrama conceptual declarativo: todas las medidas exactas y relaciones se ofrecen de nuevo en una tabla textual independiente, sin requerir color o percepción espacial.",
+          "alt": "Cilindro de radio dos y altura cinco. La tabla semántica identifica con exactitud todas las coordenadas, dimensiones, unidades y resultados de esta representación.",
+          "visual_spec": {
+            "kind": "cylinder",
+            "title": "Cilindro de radio dos y altura cinco",
+            "rows": [
+              [
+                "Radio",
+                "2 cm"
+              ],
+              [
+                "Altura perpendicular",
+                "5 cm"
+              ],
+              [
+                "Volumen",
+                "20π cm³"
+              ],
+              [
+                "Área lateral",
+                "20π cm²"
+              ]
+            ],
+            "points": [],
+            "vectors": [],
+            "shape": {
+              "type": "cylinder",
+              "r": 2,
+              "height": 5
+            }
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es el volumen del cono πr²g/3?||No. En el volumen interviene la altura perpendicular h, no la generatriz g."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un cilindro circular de radio r y altura perpendicular h tiene volumen πr²h y área lateral 2πrh. Justifica cada resultado, comprueba las unidades y resuelve después una variación sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-M01-L04-01",
+        "F3-E2-M01-L04-02",
+        "F3-E2-M01-L04-03",
+        "F3-E2-M01-L04-04",
+        "F3-E2-M01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; RD 243/2022, anexo II, Matemáticas II",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; contenido y secuencia editorial originales pendientes de revisión."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-M01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.10.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-M01:C05"
+      ],
+      "objectives": [
+        "Convertir unidades de superficie y volumen mediante factores al cuadrado o al cubo.",
+        "Relacionar litros, mililitros y decímetros cúbicos con exactitud."
+      ],
+      "prerequisites": [
+        "E1-M01-L03",
+        "E2-M01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El factor entre unidades de superficie es el cuadrado del factor lineal: 1 m²=10 000 cm², mientras 1 m³=1 000 000 cm³ porque el factor lineal cien se eleva al cubo. Un litro equivale exactamente a 1 dm³, esto es, 1 000 cm³; 1 mL equivale a 1 cm³, y 1 m³ son 1 000 L. Para convertir una cantidad, comprueba primero si es longitud, superficie, volumen o capacidad. Es erróneo aplicar multiplicación por 100 a un cambio de unidad de volumen entre metros y centímetros, porque exige el cubo de 100."
+        },
+        {
+          "type": "example",
+          "body": "2,5 m² equivalen a 25 000 cm²; cada metro cuadrado contiene cien por cien centímetros cuadrados."
+        },
+        {
+          "type": "example",
+          "body": "3 500 cm³ equivalen a 3,5 L, porque 1 L = 1 000 cm³."
+        },
+        {
+          "type": "figure",
+          "body": "Volumen y unidades cúbicas. Diagrama conceptual declarativo: todas las medidas exactas y relaciones se ofrecen de nuevo en una tabla textual independiente, sin requerir color o percepción espacial.",
+          "alt": "Volumen y unidades cúbicas. La tabla semántica identifica con exactitud todas las coordenadas, dimensiones, unidades y resultados de esta representación.",
+          "visual_spec": {
+            "kind": "unit_cube",
+            "title": "Volumen y unidades cúbicas",
+            "rows": [
+              [
+                "1 dm³",
+                "1 L"
+              ],
+              [
+                "1 L",
+                "1000 cm³"
+              ],
+              [
+                "1 m³",
+                "1000 L"
+              ],
+              [
+                "1 m²",
+                "10000 cm²"
+              ]
+            ],
+            "points": [],
+            "vectors": [],
+            "shape": {
+              "type": "cube",
+              "side": 1
+            }
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué 1 m³ no corresponde a 100 cm³?||Porque se convierten tres dimensiones: 100³=1 000 000 cm³."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El factor entre unidades de superficie es el cuadrado del factor lineal: 1 m²=10 000 cm², mientras 1 m³=1 000 000 cm³ porque el factor lineal cien se eleva al cubo. Justifica cada resultado, comprueba las unidades y resuelve después una variación sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-M01-L05-01",
+        "F3-E2-M01-L05-02",
+        "F3-E2-M01-L05-03",
+        "F3-E2-M01-L05-04",
+        "F3-E2-M01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; RD 243/2022, anexo II, Matemáticas II",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; contenido y secuencia editorial originales pendientes de revisión."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-M01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.10.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-M01:C06"
+      ],
+      "objectives": [
+        "Resolver problemas de capacidad y volumen con conversiones explícitas.",
+        "Distinguir volumen interior disponible, porcentaje de llenado y desplazamiento."
+      ],
+      "prerequisites": [
+        "E2-M01-L05",
+        "E2-M01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En problemas de depósitos y recipientes, calcula primero el volumen geométrico interior, convierte a la unidad de capacidad solicitada y aplica, si procede, la fracción de llenado. Un depósito rectangular de dimensiones internas a,b,h en decímetros tiene volumen abc litros; su capacidad útil puede ser menor si no se llena completamente. Si se pide el agua necesaria para pasar de un porcentaje a otro, aplica la diferencia de fracciones, no el porcentaje final como si estuviera vacío. Para sólidos sumergidos, el aumento de volumen desplazado coincide con el volumen sumergido cuando no hay pérdidas ni huecos. No confundas dimensiones externas con capacidad interna."
+        },
+        {
+          "type": "example",
+          "body": "Un depósito interior de 5×4×3 dm contiene 60 L al llenarse; al 75 % contiene 45 L."
+        },
+        {
+          "type": "example",
+          "body": "De 20 % a 70 % de un recipiente de 80 L se añaden 0,50×80=40 L, no 56 L."
+        },
+        {
+          "type": "figure",
+          "body": "Depósito rectangular con llenado parcial. Diagrama conceptual declarativo: todas las medidas exactas y relaciones se ofrecen de nuevo en una tabla textual independiente, sin requerir color o percepción espacial.",
+          "alt": "Depósito rectangular con llenado parcial. La tabla semántica identifica con exactitud todas las coordenadas, dimensiones, unidades y resultados de esta representación.",
+          "visual_spec": {
+            "kind": "tank",
+            "title": "Depósito rectangular con llenado parcial",
+            "rows": [
+              [
+                "Dimensiones interiores",
+                "5 × 4 × 3 dm"
+              ],
+              [
+                "Capacidad",
+                "60 L"
+              ],
+              [
+                "Fracción llena",
+                "75 %"
+              ],
+              [
+                "Líquido contenido",
+                "45 L"
+              ]
+            ],
+            "points": [],
+            "vectors": [],
+            "shape": {
+              "type": "tank",
+              "width": 5,
+              "depth": 4,
+              "height": 3,
+              "fill": 0.75
+            }
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si una piscina de 1000 L está al 40 % y se lleva al 70 %, ¿se añaden 700 L?||No. Se agrega el 30 % de su capacidad: 300 L."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: En problemas de depósitos y recipientes, calcula primero el volumen geométrico interior, convierte a la unidad de capacidad solicitada y aplica, si procede, la fracción de llenado. Justifica cada resultado, comprueba las unidades y resuelve después una variación sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-M01-L06-01",
+        "F3-E2-M01-L06-02",
+        "F3-E2-M01-L06-03",
+        "F3-E2-M01-L06-04",
+        "F3-E2-M01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; RD 243/2022, anexo II, Matemáticas II",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; contenido y secuencia editorial originales pendientes de revisión."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

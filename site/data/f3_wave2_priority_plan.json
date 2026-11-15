@@ -1,0 +1,89 @@
+{
+  "version": "0.2.0",
+  "status": "propuesta_editorial",
+  "note": "Se conserva íntegro el grafo canónico. Las nuevas aristas son puentes educativos propuestos y no requisitos legales.",
+  "source_basis": [
+    "Catálogo original 9/85/505 y 20 aristas",
+    "Guía LOMLOE original 2026, ámbito ESO",
+    "RD 217/2022, anexo II, sentido algebraico"
+  ],
+  "ordered_units": [
+    {
+      "unit_id": "E1-A01",
+      "order": 1,
+      "rationale": "Arista canónica E1-A01→E2-A01, base de lenguaje simbólico y ecuaciones."
+    },
+    {
+      "unit_id": "E2-F01",
+      "order": 2,
+      "rationale": "E2-A02 desarrollado antes; incluye puentes de proporcionalidad y lectura de tablas de unidades aún pendientes."
+    },
+    {
+      "unit_id": "E3-F01",
+      "order": 3,
+      "rationale": "Arista canónica E2-F01→E3-F01 y ecuaciones cuadráticas E3-A02 ya desarrolladas."
+    }
+  ],
+  "editorial_edges": [
+    {
+      "from": "E2-A02",
+      "to": "E2-F01",
+      "relation": "recomendado",
+      "status": "propuesta",
+      "evidence": "Ecuaciones y modelos lineales ya desarrollados en oleada F3-1"
+    },
+    {
+      "from": "E1-F01",
+      "to": "E2-F01",
+      "relation": "puente",
+      "status": "no_cubierto_íntegramente",
+      "evidence": "Interpretación de tablas y coordenadas: solo índice canónico"
+    },
+    {
+      "from": "E1-P01",
+      "to": "E2-F01",
+      "relation": "puente",
+      "status": "no_cubierto_íntegramente",
+      "evidence": "Proporcionalidad directa de primero: solo índice canónico"
+    },
+    {
+      "from": "E3-A02",
+      "to": "E3-F01",
+      "relation": "recomendado",
+      "status": "propuesta",
+      "evidence": "Resolución de cuadráticas y discriminante, contenidos existentes F1"
+    }
+  ],
+  "prerequisite_readiness": {
+    "E1-A01": {
+      "covered": [
+        "E1-N01: conocimientos escolares previos y ejemplos de refuerzo"
+      ],
+      "not_fully_covered": [
+        "E1-N02 operaciones con enteros (solo índice)"
+      ],
+      "decision": "Desarrollar con refuerzo de signos"
+    },
+    "E2-F01": {
+      "covered": [
+        "E2-A02 ecuaciones y sistemas F3-1"
+      ],
+      "not_fully_covered": [
+        "E1-F01 primeras gráficas",
+        "E1-P01 proporcionalidad directa"
+      ],
+      "decision": "Crear lecciones completas con puente explícito de tablas y razón constante; conservar dependencias visibles"
+    },
+    "E3-F01": {
+      "covered": [
+        "E2-F01 desarrollada en esta oleada",
+        "E3-A02 ecuaciones cuadráticas heredadas F1"
+      ],
+      "not_fully_covered": [
+        "E1-F01 como antecedente indirecto"
+      ],
+      "decision": "Puede desarrollarse después de E2-F01, sin certificar dominio individual de prerrequisitos"
+    }
+  },
+  "exclusions": "No se cambian las 20 aristas canónicas ni los 505 IDs. No se afirma cobertura completa de E1-F01 o E1-P01."
+}

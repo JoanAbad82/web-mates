@@ -1,0 +1,1018 @@
+{
+  "unit_id": "B2C-Q02",
+  "version": "0.27.0",
+  "status": "revision",
+  "notice": "Cinco ejercicios por lección; contenidos sintéticos con revisión humana F4 pendiente.",
+  "activities": [
+    {
+      "exercise_id": "F3-B2C-Q02-L01-01",
+      "lesson_id": "B2C-Q02-L01",
+      "type": "numeric",
+      "prompt": "X discreta tiene masas 0,2; 0,5; 0,3 para 0,1,2. Calcula P(X≥1).",
+      "answer": 0.8,
+      "explanation": "P(X≥1)=0,5+0,3=0,8. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Averigua primero si los resultados son valores contables o mediciones continuas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L01-02",
+      "lesson_id": "B2C-Q02-L01",
+      "type": "numeric",
+      "prompt": "Si T~U(0,10), calcula P(2≤T≤4).",
+      "answer": 0.2,
+      "explanation": "Longitud favorable 2 sobre longitud total 10: P=0,2.",
+      "hint": "Averigua primero si los resultados son valores contables o mediciones continuas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L01-03",
+      "lesson_id": "B2C-Q02-L01",
+      "type": "numeric",
+      "prompt": "Para X con masas 0,2;0,5;0,3 en los valores 0,1,2, calcula P(X≤1).",
+      "answer": 0.7,
+      "explanation": "La acumulada es 0,2+0,5=0,7. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Averigua primero si los resultados son valores contables o mediciones continuas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L01-04",
+      "lesson_id": "B2C-Q02-L01",
+      "type": "choice",
+      "prompt": "¿Qué corresponde a la probabilidad de un punto para una variable continua con densidad?",
+      "answer": "Cero: un punto tiene longitud nula.",
+      "explanation": "La probabilidad continua se obtiene integrando una densidad sobre un intervalo.",
+      "hint": "Averigua primero si los resultados son valores contables o mediciones continuas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Cero: un punto tiene longitud nula.",
+        "Uno si el valor pertenece al soporte.",
+        "El valor de la densidad en ese punto.",
+        "El promedio de los extremos del intervalo."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L01-05",
+      "lesson_id": "B2C-Q02-L01",
+      "type": "choice",
+      "prompt": "¿Qué condición es esencial para masas de una distribución discreta?",
+      "answer": "No negatividad y suma total igual a uno.",
+      "explanation": "Las masas forman una distribución de probabilidad solo si son válidas y suman uno.",
+      "hint": "Averigua primero si los resultados son valores contables o mediciones continuas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "La media coincide con el valor más probable.",
+        "Cada masa vale necesariamente 0,5.",
+        "Todos los resultados tienen que ser consecutivos.",
+        "No negatividad y suma total igual a uno."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L02-01",
+      "lesson_id": "B2C-Q02-L02",
+      "type": "numeric",
+      "prompt": "X toma 0,1,2 con masas 1/4,1/2,1/4. Calcula E[X].",
+      "answer": 1,
+      "explanation": "0×0,25+1×0,5+2×0,25=1. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Para obtener E[X] multiplica cada valor por su masa; revisa que sumen uno.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L02-02",
+      "lesson_id": "B2C-Q02-L02",
+      "type": "numeric",
+      "prompt": "Para X=0,1,2 con masas 1/4,1/2,1/4, calcula Var(X).",
+      "answer": 0.5,
+      "explanation": "E[X²]=1,5 y E[X]=1; varianza 1,5−1=0,5. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Para obtener E[X] multiplica cada valor por su masa; revisa que sumen uno.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L02-03",
+      "lesson_id": "B2C-Q02-L02",
+      "type": "numeric",
+      "prompt": "Si X~B(20,0,3) bajo supuestos binomiales, calcula E[X].",
+      "answer": 6,
+      "explanation": "Media binomial np=20×0,3=6. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Para obtener E[X] multiplica cada valor por su masa; revisa que sumen uno.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L02-04",
+      "lesson_id": "B2C-Q02-L02",
+      "type": "choice",
+      "prompt": "¿Puede E[X] ser un número que X nunca toma?",
+      "answer": "Sí, porque es un promedio ponderado teórico.",
+      "explanation": "La esperanza describe un promedio, no un resultado elemental obligatorio.",
+      "hint": "Para obtener E[X] multiplica cada valor por su masa; revisa que sumen uno.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "No: debe ser el menor posible.",
+        "Sí, porque es un promedio ponderado teórico.",
+        "No: siempre ha de ser un valor observado.",
+        "Solo cuando hay masas negativas."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L02-05",
+      "lesson_id": "B2C-Q02-L02",
+      "type": "choice",
+      "prompt": "¿Cuáles son las unidades de Var(X) si X se mide en metros?",
+      "answer": "Metros cuadrados.",
+      "explanation": "La varianza promedia cuadrados de desviaciones y tiene unidad elevada al cuadrado.",
+      "hint": "Para obtener E[X] multiplica cada valor por su masa; revisa que sumen uno.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Metros cuadrados.",
+        "Una probabilidad sin unidades.",
+        "Metros, exactamente igual que la desviación típica.",
+        "Segundos cuadrados independientemente de X."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L03-01",
+      "lesson_id": "B2C-Q02-L03",
+      "type": "numeric",
+      "prompt": "X~B(4,0,5). ¿Probabilidad exacta P(X=2)?",
+      "answer": 0.375,
+      "explanation": "C(4,2)×(0,5)^4=6/16=0,375. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Enumera n fijo, dos resultados, independencia y p constante.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L03-02",
+      "lesson_id": "B2C-Q02-L03",
+      "type": "numeric",
+      "prompt": "Cinco ensayos binomiales independientes con p=0,2. ¿P(X=0)?",
+      "answer": 0.32768,
+      "explanation": "P(0)=(1−0,2)^5=0,8^5=0,32768. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Enumera n fijo, dos resultados, independencia y p constante.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L03-03",
+      "lesson_id": "B2C-Q02-L03",
+      "type": "numeric",
+      "prompt": "X~B(3,0,5). ¿P(X=1)?",
+      "answer": 0.375,
+      "explanation": "Tres posibles posiciones del éxito: C(3,1)/2^3=3/8.",
+      "hint": "Enumera n fijo, dos resultados, independencia y p constante.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L03-04",
+      "lesson_id": "B2C-Q02-L03",
+      "type": "choice",
+      "prompt": "¿Qué supuesto puede fallar al extraer bolas sin reemplazo de urna pequeña?",
+      "answer": "Independencia y probabilidad p constante.",
+      "explanation": "La probabilidad de éxito cambia tras cada extracción.",
+      "hint": "Enumera n fijo, dos resultados, independencia y p constante.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Posibilidad de contar éxitos al final.",
+        "Número fijo de extracciones necesariamente.",
+        "Existencia de dos tipos de bolas.",
+        "Independencia y probabilidad p constante."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L03-05",
+      "lesson_id": "B2C-Q02-L03",
+      "type": "choice",
+      "prompt": "¿Qué representa C(n,k) en la fórmula binomial?",
+      "answer": "El número de formas de colocar k éxitos entre n ensayos.",
+      "explanation": "El coeficiente combinatorio cuenta secuencias con k éxitos.",
+      "hint": "Enumera n fijo, dos resultados, independencia y p constante.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "La probabilidad de éxito por ensayo.",
+        "La tasa de respuestas que no contestaron.",
+        "La desviación típica de la variable.",
+        "El número de formas de colocar k éxitos entre n ensayos."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L04-01",
+      "lesson_id": "B2C-Q02-L04",
+      "type": "numeric",
+      "prompt": "Para X~N(100,15²), convierte x=115 al valor z.",
+      "answer": 1,
+      "explanation": "z=(115−100)/15=1. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Primero identifica si el problema se refiere a un área o una densidad.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L04-02",
+      "lesson_id": "B2C-Q02-L04",
+      "type": "numeric",
+      "prompt": "Para Z normal estándar, calcula P(Z≤0).",
+      "answer": 0.5,
+      "explanation": "Por simetría Φ(0)=0,5. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Primero identifica si el problema se refiere a un área o una densidad.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L04-03",
+      "lesson_id": "B2C-Q02-L04",
+      "type": "numeric",
+      "prompt": "Para Z~N(0,1), calcula P(Z≤1) redondeado a cuatro decimales.",
+      "answer": 0.8413,
+      "explanation": "Φ(1)≈0,841344746; cuatro decimales 0,8413.",
+      "hint": "Primero identifica si el problema se refiere a un área o una densidad.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 6e-05
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L04-04",
+      "lesson_id": "B2C-Q02-L04",
+      "type": "choice",
+      "prompt": "¿Qué vale P(X=μ) en una distribución normal continua?",
+      "answer": "Cero, aunque la densidad sea máxima en μ.",
+      "explanation": "Una probabilidad puntual continua es cero; 0,5 corresponde a una semirrecta.",
+      "hint": "Primero identifica si el problema se refiere a un área o una densidad.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Uno por definición de media.",
+        "0,5 porque Φ(0)=0,5.",
+        "El mismo número que la desviación típica.",
+        "Cero, aunque la densidad sea máxima en μ."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L04-05",
+      "lesson_id": "B2C-Q02-L04",
+      "type": "choice",
+      "prompt": "¿Qué cambia al estandarizar una variable normal con Z=(X−μ)/σ?",
+      "answer": "La unidad y los parámetros pasan a μ=0 y σ=1.",
+      "explanation": "El cambio lineal estandariza sin alterar las áreas correspondientes.",
+      "hint": "Primero identifica si el problema se refiere a un área o una densidad.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Se sustituye σ por la varianza al cuadrado.",
+        "El modelo pasa necesariamente a binomial.",
+        "La unidad y los parámetros pasan a μ=0 y σ=1.",
+        "La probabilidad de todos los eventos se vuelve cero."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L05-01",
+      "lesson_id": "B2C-Q02-L05",
+      "type": "numeric",
+      "prompt": "Para B(4,0,5), calcula P(X≤2) sumando masas exactas.",
+      "answer": 0.6875,
+      "explanation": "P(0)+P(1)+P(2)=(1+4+6)/16=11/16=0,6875. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Marca si se pide =, ≤, ≥ o un intervalo para elegir la operación.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L05-02",
+      "lesson_id": "B2C-Q02-L05",
+      "type": "numeric",
+      "prompt": "Para B(4,0,5), calcula P(X=2) sin acumular.",
+      "answer": 0.375,
+      "explanation": "La masa puntual es 6/16=0,375, no la acumulada.",
+      "hint": "Marca si se pide =, ≤, ≥ o un intervalo para elegir la operación.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L05-03",
+      "lesson_id": "B2C-Q02-L05",
+      "type": "numeric",
+      "prompt": "Para Z normal estándar calcula P(Z>1), redondeado a cuatro decimales.",
+      "answer": 0.1587,
+      "explanation": "P(Z>1)=1−Φ(1)≈0,158655; redondea 0,1587.",
+      "hint": "Marca si se pide =, ≤, ≥ o un intervalo para elegir la operación.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 6e-05
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L05-04",
+      "lesson_id": "B2C-Q02-L05",
+      "type": "choice",
+      "prompt": "¿Qué operación debe realizar una calculadora para P(X≤k) binomial?",
+      "answer": "Sumar todas las masas desde cero hasta k.",
+      "explanation": "Una CDF discreta acumula probabilidades hasta el umbral.",
+      "hint": "Marca si se pide =, ≤, ≥ o un intervalo para elegir la operación.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Sumar todas las masas desde cero hasta k.",
+        "Multiplicar n×k sin mirar p.",
+        "Calcular solo P(X=k).",
+        "Buscar el máximo de la densidad normal."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L05-05",
+      "lesson_id": "B2C-Q02-L05",
+      "type": "choice",
+      "prompt": "¿Qué garantiza un resultado numérico mostrado con diez decimales?",
+      "answer": "Solo una representación del cálculo; no valida sus supuestos.",
+      "explanation": "La elección y validez del modelo son previas al cálculo tecnológico.",
+      "hint": "Marca si se pide =, ≤, ≥ o un intervalo para elegir la operación.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Que el tamaño muestral elimine sesgo automáticamente.",
+        "Solo una representación del cálculo; no valida sus supuestos.",
+        "Que la distribución usada no pueda ser incorrecta.",
+        "Que la población estudiada sea exactamente normal."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L06-01",
+      "lesson_id": "B2C-Q02-L06",
+      "type": "numeric",
+      "prompt": "X~B(100,0,5). ¿Cuál es el número esperado de éxitos?",
+      "answer": 50,
+      "explanation": "E[X]=np=100×0,5=50. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Describe la población y los ensayos antes de escoger distribución.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L06-02",
+      "lesson_id": "B2C-Q02-L06",
+      "type": "numeric",
+      "prompt": "X~B(100,0,5). ¿Desviación típica teórica?",
+      "answer": 5,
+      "explanation": "Var(X)=100×0,5×0,5=25 y σ=5. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Describe la población y los ensayos antes de escoger distribución.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L06-03",
+      "lesson_id": "B2C-Q02-L06",
+      "type": "numeric",
+      "prompt": "Cinco monedas ideales independientes: P(ninguna cara).",
+      "answer": 0.03125,
+      "explanation": "P(X=0)=(0,5)^5=1/32=0,03125. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Describe la población y los ensayos antes de escoger distribución.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L06-04",
+      "lesson_id": "B2C-Q02-L06",
+      "type": "choice",
+      "prompt": "¿Qué modelo describe adecuadamente contar caras en 100 monedas ideales independientes?",
+      "answer": "B(100,0,5).",
+      "explanation": "n fijo, dos resultados, ensayos independientes y p constante permiten binomial.",
+      "hint": "Describe la población y los ensayos antes de escoger distribución.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "B(100,0,5).",
+        "Una binomial con probabilidad variable arbitrariamente.",
+        "Una normal exacta para cada lanzamiento individual.",
+        "Una uniforme continua sin justificación."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-Q02-L06-05",
+      "lesson_id": "B2C-Q02-L06",
+      "type": "choice",
+      "prompt": "¿Cuál es la primera decisión correcta antes de ajustar una distribución?",
+      "answer": "Examinar variable, mecanismo y supuestos del modelo.",
+      "explanation": "El modelo se justifica por el mecanismo y la evidencia, no por comodidad.",
+      "hint": "Describe la población y los ensayos antes de escoger distribución.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_q02_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Examinar variable, mecanismo y supuestos del modelo.",
+        "Elegir la fórmula con más decimales.",
+        "Declarar normalidad automática con n grande.",
+        "Calcular un intervalo sin determinar independencia."
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B2C-Q02-L01-01": {
+      "hints": [
+        "Averigua primero si los resultados son valores contables o mediciones continuas.",
+        "Para discreta suma masas; para U(a,b) divide longitud del intervalo favorable por b−a."
+      ],
+      "math_check": {
+        "kind": "sum_tail",
+        "params": [
+          [
+            0.2,
+            0.5,
+            0.3
+          ],
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L01-02": {
+      "hints": [
+        "Averigua primero si los resultados son valores contables o mediciones continuas.",
+        "Para discreta suma masas; para U(a,b) divide longitud del intervalo favorable por b−a."
+      ],
+      "math_check": {
+        "kind": "uniform_cont",
+        "params": [
+          0,
+          10,
+          2,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L01-03": {
+      "hints": [
+        "Averigua primero si los resultados son valores contables o mediciones continuas.",
+        "Para discreta suma masas; para U(a,b) divide longitud del intervalo favorable por b−a."
+      ],
+      "math_check": {
+        "kind": "sum_head",
+        "params": [
+          [
+            0.2,
+            0.5,
+            0.3
+          ],
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L01-04": {
+      "hints": [
+        "Averigua primero si los resultados son valores contables o mediciones continuas.",
+        "Para discreta suma masas; para U(a,b) divide longitud del intervalo favorable por b−a."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L01-05": {
+      "hints": [
+        "Averigua primero si los resultados son valores contables o mediciones continuas.",
+        "Para discreta suma masas; para U(a,b) divide longitud del intervalo favorable por b−a."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L02-01": {
+      "hints": [
+        "Para obtener E[X] multiplica cada valor por su masa; revisa que sumen uno.",
+        "Var(X)=E[X²]−E[X]²; para B(n,p) usa np y np(1−p) solo con supuestos binomiales."
+      ],
+      "math_check": {
+        "kind": "expect",
+        "params": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0.25,
+            0.5,
+            0.25
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L02-02": {
+      "hints": [
+        "Para obtener E[X] multiplica cada valor por su masa; revisa que sumen uno.",
+        "Var(X)=E[X²]−E[X]²; para B(n,p) usa np y np(1−p) solo con supuestos binomiales."
+      ],
+      "math_check": {
+        "kind": "variance",
+        "params": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0.25,
+            0.5,
+            0.25
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L02-03": {
+      "hints": [
+        "Para obtener E[X] multiplica cada valor por su masa; revisa que sumen uno.",
+        "Var(X)=E[X²]−E[X]²; para B(n,p) usa np y np(1−p) solo con supuestos binomiales."
+      ],
+      "math_check": {
+        "kind": "binom_mean",
+        "params": [
+          20,
+          0.3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L02-04": {
+      "hints": [
+        "Para obtener E[X] multiplica cada valor por su masa; revisa que sumen uno.",
+        "Var(X)=E[X²]−E[X]²; para B(n,p) usa np y np(1−p) solo con supuestos binomiales."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L02-05": {
+      "hints": [
+        "Para obtener E[X] multiplica cada valor por su masa; revisa que sumen uno.",
+        "Var(X)=E[X²]−E[X]²; para B(n,p) usa np y np(1−p) solo con supuestos binomiales."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L03-01": {
+      "hints": [
+        "Enumera n fijo, dos resultados, independencia y p constante.",
+        "Masa exacta = C(n,k)×p^k×(1−p)^(n−k), sin sustituir n por k."
+      ],
+      "math_check": {
+        "kind": "binom_mass",
+        "params": [
+          4,
+          0.5,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L03-02": {
+      "hints": [
+        "Enumera n fijo, dos resultados, independencia y p constante.",
+        "Masa exacta = C(n,k)×p^k×(1−p)^(n−k), sin sustituir n por k."
+      ],
+      "math_check": {
+        "kind": "binom_mass",
+        "params": [
+          5,
+          0.2,
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L03-03": {
+      "hints": [
+        "Enumera n fijo, dos resultados, independencia y p constante.",
+        "Masa exacta = C(n,k)×p^k×(1−p)^(n−k), sin sustituir n por k."
+      ],
+      "math_check": {
+        "kind": "binom_mass",
+        "params": [
+          3,
+          0.5,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L03-04": {
+      "hints": [
+        "Enumera n fijo, dos resultados, independencia y p constante.",
+        "Masa exacta = C(n,k)×p^k×(1−p)^(n−k), sin sustituir n por k."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L03-05": {
+      "hints": [
+        "Enumera n fijo, dos resultados, independencia y p constante.",
+        "Masa exacta = C(n,k)×p^k×(1−p)^(n−k), sin sustituir n por k."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L04-01": {
+      "hints": [
+        "Primero identifica si el problema se refiere a un área o una densidad.",
+        "Calcula z=(x−μ)/σ y lee Φ(z); por simetría Φ(0)=0,5."
+      ],
+      "math_check": {
+        "kind": "zscore",
+        "params": [
+          115,
+          100,
+          15
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L04-02": {
+      "hints": [
+        "Primero identifica si el problema se refiere a un área o una densidad.",
+        "Calcula z=(x−μ)/σ y lee Φ(z); por simetría Φ(0)=0,5."
+      ],
+      "math_check": {
+        "kind": "normal_cdf",
+        "params": [
+          0,
+          1,
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L04-03": {
+      "hints": [
+        "Primero identifica si el problema se refiere a un área o una densidad.",
+        "Calcula z=(x−μ)/σ y lee Φ(z); por simetría Φ(0)=0,5."
+      ],
+      "math_check": {
+        "kind": "normal_cdf",
+        "params": [
+          0,
+          1,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L04-04": {
+      "hints": [
+        "Primero identifica si el problema se refiere a un área o una densidad.",
+        "Calcula z=(x−μ)/σ y lee Φ(z); por simetría Φ(0)=0,5."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L04-05": {
+      "hints": [
+        "Primero identifica si el problema se refiere a un área o una densidad.",
+        "Calcula z=(x−μ)/σ y lee Φ(z); por simetría Φ(0)=0,5."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L05-01": {
+      "hints": [
+        "Marca si se pide =, ≤, ≥ o un intervalo para elegir la operación.",
+        "Binomial acumulada = suma de masas; normal acumulada = Φ(z), generalmente aproximada."
+      ],
+      "math_check": {
+        "kind": "binom_cdf",
+        "params": [
+          4,
+          0.5,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L05-02": {
+      "hints": [
+        "Marca si se pide =, ≤, ≥ o un intervalo para elegir la operación.",
+        "Binomial acumulada = suma de masas; normal acumulada = Φ(z), generalmente aproximada."
+      ],
+      "math_check": {
+        "kind": "binom_mass",
+        "params": [
+          4,
+          0.5,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L05-03": {
+      "hints": [
+        "Marca si se pide =, ≤, ≥ o un intervalo para elegir la operación.",
+        "Binomial acumulada = suma de masas; normal acumulada = Φ(z), generalmente aproximada."
+      ],
+      "math_check": {
+        "kind": "normal_tail",
+        "params": [
+          0,
+          1,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L05-04": {
+      "hints": [
+        "Marca si se pide =, ≤, ≥ o un intervalo para elegir la operación.",
+        "Binomial acumulada = suma de masas; normal acumulada = Φ(z), generalmente aproximada."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L05-05": {
+      "hints": [
+        "Marca si se pide =, ≤, ≥ o un intervalo para elegir la operación.",
+        "Binomial acumulada = suma de masas; normal acumulada = Φ(z), generalmente aproximada."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L06-01": {
+      "hints": [
+        "Describe la población y los ensayos antes de escoger distribución.",
+        "Comprueba n fijo, dos resultados, independencia, p constante y naturaleza discreta/continua."
+      ],
+      "math_check": {
+        "kind": "binom_mean",
+        "params": [
+          100,
+          0.5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L06-02": {
+      "hints": [
+        "Describe la población y los ensayos antes de escoger distribución.",
+        "Comprueba n fijo, dos resultados, independencia, p constante y naturaleza discreta/continua."
+      ],
+      "math_check": {
+        "kind": "binom_sd",
+        "params": [
+          100,
+          0.5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L06-03": {
+      "hints": [
+        "Describe la población y los ensayos antes de escoger distribución.",
+        "Comprueba n fijo, dos resultados, independencia, p constante y naturaleza discreta/continua."
+      ],
+      "math_check": {
+        "kind": "binom_mass",
+        "params": [
+          5,
+          0.5,
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L06-04": {
+      "hints": [
+        "Describe la población y los ensayos antes de escoger distribución.",
+        "Comprueba n fijo, dos resultados, independencia, p constante y naturaleza discreta/continua."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-B2C-Q02-L06-05": {
+      "hints": [
+        "Describe la población y los ensayos antes de escoger distribución.",
+        "Comprueba n fijo, dos resultados, independencia, p constante y naturaleza discreta/continua."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    }
+  }
+}

@@ -1,0 +1,820 @@
+{
+  "unit_id": "E4A-D01",
+  "unit_title": "Estadística bidimensional y regresión",
+  "product_phase": "F3_OLA22",
+  "version": "0.22.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Interpretar pares de datos y frecuencias conjuntas en tablas de contingencia.",
+    "Representar parejas cuantitativas en nube de puntos sin unirlas indebidamente.",
+    "Distinguir correlación positiva, negativa o nula de dependencia causal."
+  ],
+  "warnings": [
+    "Todos los datos son sintéticos y el contenido permanece EN REVISIÓN.",
+    "Asociación o correlación no demuestra causalidad; las extrapolaciones no están validadas por la muestra.",
+    "Laplace exige equiprobabilidad; sin reemplazo usar ramas condicionadas.",
+    "La proporción muestral no identifica con certeza el parámetro de población; no se fabrican márgenes de error.",
+    "WCAG 2.2 AA integral, validación autonómica, revisión humana y dispositivos físicos NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Distribuciones de 3.º ESO",
+      "lesson_id": "E3-D01-L05",
+      "href": "#/curso/E3/unidad/E3-D01/leccion/E3-D01-L05"
+    },
+    {
+      "label": "Interpretación crítica de gráficos 3.º",
+      "lesson_id": "E3-D01-L06",
+      "href": "#/curso/E3/unidad/E3-D01/leccion/E3-D01-L06"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recuperación activa y revisión local únicamente si usuario consiente."
+  },
+  "source_note": "Referencias estatales RD 217/2022 y RD 243/2022; distribución por itinerario editorial no homologada.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E4A-D01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.22.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-D01:C01"
+      ],
+      "objectives": [
+        "Interpretar pares de datos y frecuencias conjuntas en tablas de contingencia.",
+        "Distinguir frecuencias marginales y condicionadas, indicando denominadores."
+      ],
+      "prerequisites": [
+        "E3-D01-L02",
+        "E3-D01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La estadística bidimensional registra parejas de valores en una misma observación. Una tabla de contingencia de dos variables cualitativas usa celdas con recuentos conjuntos; las sumas por fila y columna son frecuencias marginales. Si en 20 observaciones sintéticas las filas transporte A/B y columnas éxito S/N dan A:(6,4), B:(3,7), los marginales son 10,10 y 9,11. La proporción de éxito entre quienes usan A es 6/10, mientras la proporción de A entre quienes presentan éxito es 6/9; no son intercambiables. La tabla por sí sola no demuestra que el transporte cause un resultado, ni representa una población por el solo hecho de que sus cifras sumen 20. Cada tasa debe declarar el denominador y los recuentos son datos demostrativos, no información de estudiantes."
+        },
+        {
+          "type": "example",
+          "body": "Tabla A:6 éxito,4 no; B:3 éxito,7 no. Total 20, éxito marginal 6+3=9, no éxito 4+7=11."
+        },
+        {
+          "type": "example",
+          "body": "El 60 % dentro de la fila A son 6/10; dentro de la columna éxito, A constituye 6/9=2/3, otra probabilidad condicionada."
+        },
+        {
+          "type": "figure",
+          "body": "Frecuencias conjuntas y marginales. Gráfico SVG local de apoyo y tabla semántica con datos exactos y limitaciones.",
+          "alt": "Frecuencias conjuntas y marginales. La tabla completa indica coordenadas, recuentos, modelo, unidades y limitaciones, sin depender de visión de color.",
+          "visual_spec": {
+            "render_family": "wave22",
+            "kind": "contingency",
+            "title": "Frecuencias conjuntas y marginales",
+            "rows": [
+              [
+                "Fila A",
+                "6 éxito; 4 no; total 10"
+              ],
+              [
+                "Fila B",
+                "3 éxito; 7 no; total 10"
+              ],
+              [
+                "Columna éxito",
+                "9"
+              ],
+              [
+                "Columna no éxito",
+                "11"
+              ],
+              [
+                "Total",
+                "20"
+              ]
+            ],
+            "model": {
+              "kind": "contingency",
+              "matrix": [
+                [
+                  6,
+                  4
+                ],
+                [
+                  3,
+                  7
+                ]
+              ],
+              "row_labels": [
+                "A",
+                "B"
+              ],
+              "col_labels": [
+                "Sí",
+                "No"
+              ]
+            },
+            "domain": [
+              0,
+              20
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿P(éxito|A) y P(A|éxito) deben coincidir?||No; sus denominadores son 10 y 9."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La estadística bidimensional registra parejas de valores en una misma observación. Explica qué hipótesis o sesgo puede modificar tu respuesta."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-D01-L01-01",
+        "F3-E4A-D01-L01-02",
+        "F3-E4A-D01-L01-03",
+        "F3-E4A-D01-L01-04",
+        "F3-E4A-D01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; secuenciación por cursos propuesta editorial, mapeo autonómico no cotejado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto. No sustituye cotejo competencial oficial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-D01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.22.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-D01:C02"
+      ],
+      "objectives": [
+        "Representar parejas cuantitativas en nube de puntos sin unirlas indebidamente.",
+        "Reconocer dirección y fuerza visual de asociación frente a una serie temporal."
+      ],
+      "prerequisites": [
+        "E4A-D01-L01",
+        "E3-D01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un diagrama de dispersión sitúa cada pareja cuantitativa (x,y) como un punto. Las observaciones (1,2),(2,4),(3,6) muestran una asociación lineal creciente perfecta en esta muestra; (1,6),(2,4),(3,2) muestran asociación decreciente. Los ejes deben llevar magnitud, unidad y escala; intercambiar las variables cambia la pregunta de predicción. Los puntos no se unen automáticamente como una curva de evolución temporal si el orden no representa tiempo. Una tendencia puede ser no lineal, contener valores atípicos o reflejar una variable de confusión; no implica causalidad. El tamaño de muestra es pequeño y sintético, por lo que el gráfico solo ilustra representación, no una regularidad universal."
+        },
+        {
+          "type": "example",
+          "body": "Con pares (1,2),(2,4),(3,6), representa en x las cantidades 1,2,3 y en y 2,4,6; los puntos forman pendiente ascendente."
+        },
+        {
+          "type": "example",
+          "body": "Con (1,6),(2,4),(3,2), al aumentar x la y disminuye; el sentido visual es descendente aunque la nube también sea lineal."
+        },
+        {
+          "type": "figure",
+          "body": "Nube de puntos creciente. Gráfico SVG local de apoyo y tabla semántica con datos exactos y limitaciones.",
+          "alt": "Nube de puntos creciente. La tabla completa indica coordenadas, recuentos, modelo, unidades y limitaciones, sin depender de visión de color.",
+          "visual_spec": {
+            "render_family": "wave22",
+            "kind": "scatter",
+            "title": "Nube de puntos creciente",
+            "rows": [
+              [
+                "Punto 1",
+                "(1,2)"
+              ],
+              [
+                "Punto 2",
+                "(2,4)"
+              ],
+              [
+                "Punto 3",
+                "(3,6)"
+              ],
+              [
+                "Tendencia",
+                "Creciente"
+              ],
+              [
+                "Limitación",
+                "Asociación no causalidad"
+              ]
+            ],
+            "model": {
+              "kind": "scatter",
+              "points": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  6
+                ]
+              ]
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Tres puntos alineados bastan para demostrar causalidad y posibilidad de extrapolar?||No; solo describen los datos observados."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un diagrama de dispersión sitúa cada pareja cuantitativa (x,y) como un punto. Explica qué hipótesis o sesgo puede modificar tu respuesta."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-D01-L02-01",
+        "F3-E4A-D01-L02-02",
+        "F3-E4A-D01-L02-03",
+        "F3-E4A-D01-L02-04",
+        "F3-E4A-D01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; secuenciación por cursos propuesta editorial, mapeo autonómico no cotejado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto. No sustituye cotejo competencial oficial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-D01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.22.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-D01:C03"
+      ],
+      "objectives": [
+        "Distinguir correlación positiva, negativa o nula de dependencia causal.",
+        "Interpretar el coeficiente lineal r con límites de validez."
+      ],
+      "prerequisites": [
+        "E4A-D01-L02",
+        "E3-D01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La correlación lineal de Pearson r es adimensional y está entre −1 y 1 cuando ambas desviaciones típicas son positivas. Valores próximos a 1 indican asociación lineal creciente, próximos a −1 decreciente, y próximos a cero poca asociación lineal; r=0 no equivale a independencia estadística ni excluye dependencia no lineal. Para x=[1,2,3] e y=[2,4,6], r=1, puesto que y=2x. Para x=[1,2,3] e y=[6,4,2], r=−1; si una variable es constante, r no está definido por división entre cero. Pearson es sensible a extremos y una muestra pequeña puede inducir correlaciones espurias. Nunca interpretar r como porcentaje de causalidad ni como fuerza de asociación universal en ausencia de sus hipótesis."
+        },
+        {
+          "type": "example",
+          "body": "En x=1,2,3; y=2,4,6 la relación y=2x es lineal creciente perfecta y Pearson r=+1."
+        },
+        {
+          "type": "example",
+          "body": "En x=1,2,3; y=6,4,2 la relación y=8−2x es decreciente perfecta y r=−1; correlación no prueba causalidad."
+        },
+        {
+          "type": "figure",
+          "body": "Asociación creciente en datos sintéticos. Gráfico SVG local de apoyo y tabla semántica con datos exactos y limitaciones.",
+          "alt": "Asociación creciente en datos sintéticos. La tabla completa indica coordenadas, recuentos, modelo, unidades y limitaciones, sin depender de visión de color.",
+          "visual_spec": {
+            "render_family": "wave22",
+            "kind": "scatter",
+            "title": "Asociación creciente en datos sintéticos",
+            "rows": [
+              [
+                "x",
+                "1,2,3"
+              ],
+              [
+                "y",
+                "2,4,6"
+              ],
+              [
+                "Pearson r",
+                "+1"
+              ],
+              [
+                "Hipótesis",
+                "Ambas varianzas no nulas"
+              ],
+              [
+                "Cautela",
+                "Correlación no causalidad"
+              ]
+            ],
+            "model": {
+              "kind": "scatter",
+              "points": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  6
+                ]
+              ]
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿r=0 implica necesariamente que dos variables sean independientes?||No; pueden tener dependencia no lineal."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La correlación lineal de Pearson r es adimensional y está entre −1 y 1 cuando ambas desviaciones típicas son positivas. Explica qué hipótesis o sesgo puede modificar tu respuesta."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-D01-L03-01",
+        "F3-E4A-D01-L03-02",
+        "F3-E4A-D01-L03-03",
+        "F3-E4A-D01-L03-04",
+        "F3-E4A-D01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; secuenciación por cursos propuesta editorial, mapeo autonómico no cotejado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto. No sustituye cotejo competencial oficial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-D01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.22.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-D01:C04"
+      ],
+      "objectives": [
+        "Encontrar una recta de ajuste en casos perfectamente alineados.",
+        "Distinguir interpolación exacta y mínimos cuadrados en datos generales."
+      ],
+      "prerequisites": [
+        "E4A-D01-L03",
+        "E4A-D01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una recta de regresión de y sobre x adopta ŷ=a+bx. Con puntos alineados (0,1),(1,3),(2,5), la recta ŷ=1+2x reproduce todos los datos; pendiente b=2 unidades de y por unidad de x y ordenada a=1. Para datos no exactamente lineales, mínimos cuadrados elige a,b que minimizan la suma de residuos verticales al cuadrado; una recta dibujada a ojo es aproximación, no cálculo equivalente. La pendiente estimada no describe necesariamente un efecto causal, y cambiar x por y modifica el criterio de ajuste. Si todos los valores x son iguales, el denominador de b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² es cero y este ajuste no está definido. La recta es modelo descriptivo sujeto a supuestos, no una ley extrapolable sin límite."
+        },
+        {
+          "type": "example",
+          "body": "Puntos (0,1),(1,3),(2,5) cumplen ŷ=1+2x: para x=2 predice 5 y cada residuo observado menos predicho es 0."
+        },
+        {
+          "type": "example",
+          "body": "Puntos (0,2),(1,5),(2,8) cumplen ŷ=2+3x; el cambio de y por cada unidad adicional de x es 3."
+        },
+        {
+          "type": "figure",
+          "body": "Recta de ajuste exactamente alineada. Gráfico SVG local de apoyo y tabla semántica con datos exactos y limitaciones.",
+          "alt": "Recta de ajuste exactamente alineada. La tabla completa indica coordenadas, recuentos, modelo, unidades y limitaciones, sin depender de visión de color.",
+          "visual_spec": {
+            "render_family": "wave22",
+            "kind": "scatter",
+            "title": "Recta de ajuste exactamente alineada",
+            "rows": [
+              [
+                "Puntos",
+                "(0,1),(1,3),(2,5)"
+              ],
+              [
+                "Pendiente",
+                "2"
+              ],
+              [
+                "Intercepto",
+                "1"
+              ],
+              [
+                "Modelo",
+                "ŷ=1+2x"
+              ],
+              [
+                "Residuos",
+                "0,0,0"
+              ]
+            ],
+            "model": {
+              "kind": "scatter",
+              "points": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  2,
+                  5
+                ]
+              ],
+              "line": [
+                1,
+                2
+              ]
+            },
+            "domain": [
+              0,
+              6
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una recta trazada a ojo siempre coincide con la solución de mínimos cuadrados?||No; solo si satisface el criterio exacto correspondiente."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una recta de regresión de y sobre x adopta ŷ=a+bx. Explica qué hipótesis o sesgo puede modificar tu respuesta."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-D01-L04-01",
+        "F3-E4A-D01-L04-02",
+        "F3-E4A-D01-L04-03",
+        "F3-E4A-D01-L04-04",
+        "F3-E4A-D01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; secuenciación por cursos propuesta editorial, mapeo autonómico no cotejado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto. No sustituye cotejo competencial oficial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-D01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.22.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-D01:C05"
+      ],
+      "objectives": [
+        "Usar predicciones interpoladas con el dominio observado explícito.",
+        "Calcular residuos y explicar la diferencia entre valor ajustado y observado."
+      ],
+      "prerequisites": [
+        "E4A-D01-L04",
+        "E3-D01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La interpolación estima un valor de y en un x incluido en el intervalo de observación, usando un modelo previamente comprobado. Si los datos (0,1),(2,5),(4,9) son lineales, el ajuste es ŷ=1+2x; para x=3 interpolamos ŷ=7, con x dentro de [0,4]. Una predicción no es un dato observado: incluso en ese ejemplo exacto el valor 7 es estimación si x=3 no se midió. El residuo se define y−ŷ y puede ser positivo o negativo; confundirlo con su valor absoluto impide analizar sesgos. Un ajuste imperfecto requiere estudiar dispersión, residuos y escala antes de confiar en la predicción. El mismo modelo para x=10 sería extrapolación y no puede justificar igual fiabilidad."
+        },
+        {
+          "type": "example",
+          "body": "Con ŷ=1+2x y observaciones x=0,2,4, para x=3 se obtiene 1+6=7, interpolación porque 0≤3≤4."
+        },
+        {
+          "type": "example",
+          "body": "Si en x=2 el valor observado es 6 y la recta predice 5, el residuo es 6−5=+1, no −1."
+        },
+        {
+          "type": "figure",
+          "body": "Interpolación dentro de datos. Gráfico SVG local de apoyo y tabla semántica con datos exactos y limitaciones.",
+          "alt": "Interpolación dentro de datos. La tabla completa indica coordenadas, recuentos, modelo, unidades y limitaciones, sin depender de visión de color.",
+          "visual_spec": {
+            "render_family": "wave22",
+            "kind": "scatter",
+            "title": "Interpolación dentro de datos",
+            "rows": [
+              [
+                "Datos",
+                "(0,1),(2,5),(4,9)"
+              ],
+              [
+                "Recta",
+                "ŷ=1+2x"
+              ],
+              [
+                "x interpolado",
+                "3"
+              ],
+              [
+                "ŷ(3)",
+                "7"
+              ],
+              [
+                "Intervalo observado",
+                "[0,4]"
+              ]
+            ],
+            "model": {
+              "kind": "scatter",
+              "points": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  5
+                ],
+                [
+                  4,
+                  9
+                ]
+              ],
+              "line": [
+                1,
+                2
+              ]
+            },
+            "domain": [
+              0,
+              10
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una predicción dentro del intervalo observado se convierte automáticamente en dato medido?||No; sigue siendo estimación del modelo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La interpolación estima un valor de y en un x incluido en el intervalo de observación, usando un modelo previamente comprobado. Explica qué hipótesis o sesgo puede modificar tu respuesta."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-D01-L05-01",
+        "F3-E4A-D01-L05-02",
+        "F3-E4A-D01-L05-03",
+        "F3-E4A-D01-L05-04",
+        "F3-E4A-D01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; secuenciación por cursos propuesta editorial, mapeo autonómico no cotejado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto. No sustituye cotejo competencial oficial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-D01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.22.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-D01:C06"
+      ],
+      "objectives": [
+        "Detectar extrapolaciones y riesgos de sesgo en la comunicación estadística.",
+        "Distinguir evidencia descriptiva, modelo y causalidad no demostrada."
+      ],
+      "prerequisites": [
+        "E4A-D01-L05",
+        "E3-D01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Extrapolar consiste en usar una recta ajustada fuera del intervalo de x observado; la incertidumbre suele aumentar porque no se ha contrastado allí el comportamiento. Una recta ŷ=1+2x ajustada entre x=0 y 4 da ŷ(10)=21, pero ese cálculo algebraico no valida el valor real en x=10. Si la relación cambia después de x=4, la predicción puede fallar sustancialmente. Una nube aparentemente alineada también puede reflejar subgrupos, cambios de escala, selección sesgada, valores atípicos o una causa común. Al comunicar conclusiones se especifican fuente, tamaño de muestra, dominio, unidades y diferencia entre observaciones y estimaciones. Un r elevado no acredita causalidad; un conjunto sintético no equivale a datos experimentales reales."
+        },
+        {
+          "type": "example",
+          "body": "Ajuste ŷ=1+2x sobre x=0,2,4. Para x=10 el cálculo da 21, pero es extrapolación fuera de [0,4]."
+        },
+        {
+          "type": "example",
+          "body": "El valor ŷ=7 para x=3 con el mismo modelo sería interpolación; cambiar el dominio altera la validez contextual, no la fórmula."
+        },
+        {
+          "type": "figure",
+          "body": "Predicción fuera del dominio observado. Gráfico SVG local de apoyo y tabla semántica con datos exactos y limitaciones.",
+          "alt": "Predicción fuera del dominio observado. La tabla completa indica coordenadas, recuentos, modelo, unidades y limitaciones, sin depender de visión de color.",
+          "visual_spec": {
+            "render_family": "wave22",
+            "kind": "scatter",
+            "title": "Predicción fuera del dominio observado",
+            "rows": [
+              [
+                "Observado",
+                "x∈[0,4]"
+              ],
+              [
+                "Modelo",
+                "ŷ=1+2x"
+              ],
+              [
+                "Extrapolación x",
+                "10"
+              ],
+              [
+                "Valor calculado",
+                "21"
+              ],
+              [
+                "Validez",
+                "No verificada fuera del intervalo"
+              ]
+            ],
+            "model": {
+              "kind": "scatter",
+              "points": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  5
+                ],
+                [
+                  4,
+                  9
+                ]
+              ],
+              "line": [
+                1,
+                2
+              ]
+            },
+            "domain": [
+              0,
+              11
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una recta de ajuste garantiza predicciones fiables a cualquier distancia del intervalo observado?||No; no se verificó el modelo fuera de él."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Extrapolar consiste en usar una recta ajustada fuera del intervalo de x observado; la incertidumbre suele aumentar porque no se ha contrastado allí el comportamiento. Explica qué hipótesis o sesgo puede modificar tu respuesta."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-D01-L06-01",
+        "F3-E4A-D01-L06-02",
+        "F3-E4A-D01-L06-03",
+        "F3-E4A-D01-L06-04",
+        "F3-E4A-D01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; secuenciación por cursos propuesta editorial, mapeo autonómico no cotejado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto. No sustituye cotejo competencial oficial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

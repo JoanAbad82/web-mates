@@ -1,0 +1,654 @@
+{
+  "unit_id": "E2-G01",
+  "unit_title": "Semejanza y teorema de Pitágoras",
+  "product_phase": "F3_OLA7",
+  "version": "0.7.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Distinguir congruencia de semejanza en figuras planas.",
+    "Calcular longitudes mediante una razón de semejanza.",
+    "Aplicar escalas a planos y maquetas."
+  ],
+  "warnings": [
+    "Material editorial sintético EN REVISIÓN; pendiente revisión humana independiente.",
+    "No atribuir al Estado un orden obligatorio por curso de ESO 1.º–3.º.",
+    "No verificar accesibilidad integral o equivalencia curricular autonómica sin pruebas específicas."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Triángulos",
+      "lesson_id": "E1-G01-L02",
+      "href": "#/curso/E1/unidad/E1-G01/leccion/E1-G01-L02"
+    },
+    {
+      "label": "Mapas y escala",
+      "lesson_id": "E1-M01-L04",
+      "href": "#/curso/E1/unidad/E1-M01/leccion/E1-M01-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 sin calibración",
+    "rule": "Comprender, recuperar y practicar sin ayuda antes de repasar."
+  },
+  "source_note": "RD 217/2022 anexo II Matemáticas ESO: sentido espacial y de la medida, secuencia editorial; cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E2-G01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-G01:C01"
+      ],
+      "objectives": [
+        "Distinguir congruencia de semejanza en figuras planas.",
+        "Comprobar proporcionalidad de lados homólogos."
+      ],
+      "prerequisites": [
+        "E1-G01-L02",
+        "E1-M01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Dos figuras congruentes tienen la misma forma y el mismo tamaño, aunque estén giradas o reflejadas. Dos figuras semejantes conservan sus ángulos correspondientes y tienen lados homólogos proporcionales por un mismo factor positivo k; k=1 es el caso congruente. En triángulos basta el criterio ángulo-ángulo para semejanza, pero solo comparar un lado no demuestra que dos figuras sean semejantes. Hay que emparejar correctamente los vértices antes de dividir lados."
+        },
+        {
+          "type": "example",
+          "body": "Triángulos con lados 3,4,5 y 6,8,10 son semejantes con razón 2, pues 6/3=8/4=10/5=2."
+        },
+        {
+          "type": "example",
+          "body": "Un triángulo 3,4,5 y otro 3,4,6 no son semejantes por lados: las tres razones correspondientes no son iguales."
+        },
+        {
+          "type": "figure",
+          "body": "Triángulos semejantes, razón 2. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Triángulos semejantes, razón 2. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "similar_triangles",
+            "title": "Triángulos semejantes, razón 2",
+            "rows": [
+              [
+                "Triángulo inicial",
+                "3, 4, 5"
+              ],
+              [
+                "Triángulo ampliado",
+                "6, 8, 10"
+              ],
+              [
+                "Razón de semejanza",
+                "2"
+              ]
+            ],
+            "first": [
+              3,
+              4,
+              5
+            ],
+            "second": [
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Congruente implica semejante?||Sí: dos figuras congruentes son semejantes con razón k=1, además de iguales en tamaño."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: Dos figuras congruentes tienen la misma forma y el mismo tamaño, aunque estén giradas o reflejadas. Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-G01-L01-01",
+        "F3-E2-G01-L01-02",
+        "F3-E2-G01-L01-03",
+        "F3-E2-G01-L01-04",
+        "F3-E2-G01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-G01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-G01:C02"
+      ],
+      "objectives": [
+        "Calcular longitudes mediante una razón de semejanza.",
+        "Justificar que perímetro y área escalan de modo diferente."
+      ],
+      "prerequisites": [
+        "E2-G01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si una figura semejante se amplía con factor lineal k positivo, todas las longitudes correspondientes y el perímetro se multiplican por k, pero su área se multiplica por k². Esta diferencia se debe a que las superficies tienen dos dimensiones. Si k=1/2, las áreas se reducen a la cuarta parte; si k=3, se multiplican por nueve. Una razón entre lados sin correspondencia clara no se debe aplicar a toda la figura."
+        },
+        {
+          "type": "example",
+          "body": "Un rectángulo 3×4 se amplía al triple: queda 9×12, su área pasa de 12 a 108, factor 9."
+        },
+        {
+          "type": "example",
+          "body": "Dos triángulos semejantes tienen razón de lados 2; si el perímetro pequeño es 15 cm, el grande es 30 cm."
+        },
+        {
+          "type": "figure",
+          "body": "Longitud k, área k². La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Longitud k, área k². Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "similar_triangles",
+            "title": "Longitud k, área k²",
+            "rows": [
+              [
+                "Factor lineal",
+                "2"
+              ],
+              [
+                "Factor de perímetro",
+                "2"
+              ],
+              [
+                "Factor de área",
+                "4"
+              ]
+            ],
+            "first": [
+              3,
+              4,
+              5
+            ],
+            "second": [
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si duplicamos la longitud de todos los lados, ¿se duplica el área?||No: se cuadruplica porque el factor superficial es 2²."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: Si una figura semejante se amplía con factor lineal k positivo, todas las longitudes correspondientes y el perímetro se multiplican por k, pero su área se multiplica por k². Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-G01-L02-01",
+        "F3-E2-G01-L02-02",
+        "F3-E2-G01-L02-03",
+        "F3-E2-G01-L02-04",
+        "F3-E2-G01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-G01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-G01:C03"
+      ],
+      "objectives": [
+        "Aplicar escalas a planos y maquetas.",
+        "Relacionar razones de escala con longitud y superficie."
+      ],
+      "prerequisites": [
+        "E2-G01-L02",
+        "E1-M01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una escala 1:100 representa una longitud del plano cien veces menor que la real, si ambas usan la misma unidad. La escala geométrica es un caso de semejanza: la razón entre longitudes representadas es constante, y las áreas en el plano cambian con el cuadrado de esa razón. Para pasar de cm del plano a m reales, divide entre cien después de aplicar el denominador de escala. No confundas la escala de un plano impreso con la del mismo plano reescalado digitalmente."
+        },
+        {
+          "type": "example",
+          "body": "En un plano 1:200, 5 cm equivalen a 1000 cm reales, es decir, 10 m."
+        },
+        {
+          "type": "example",
+          "body": "Un rectángulo de 4×3 cm en plano 1:100 corresponde a 4×3 m reales, superficie de 12 m²."
+        },
+        {
+          "type": "figure",
+          "body": "Escala geométrica 1:200. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Escala geométrica 1:200. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "scale_bar",
+            "title": "Escala geométrica 1:200",
+            "rows": [
+              [
+                "Plano",
+                "5 cm"
+              ],
+              [
+                "Razón",
+                "1 : 200"
+              ],
+              [
+                "Realidad",
+                "1000 cm = 10 m"
+              ]
+            ],
+            "scale": 200
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿A escala 1:50, 4 cm del plano equivalen a 200 m?||No: son 4×50=200 cm, que equivalen a 2 m."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: Una escala 1:100 representa una longitud del plano cien veces menor que la real, si ambas usan la misma unidad. Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-G01-L03-01",
+        "F3-E2-G01-L03-02",
+        "F3-E2-G01-L03-03",
+        "F3-E2-G01-L03-04",
+        "F3-E2-G01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-G01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-G01:C04"
+      ],
+      "objectives": [
+        "Identificar hipotenusa y catetos en un triángulo rectángulo.",
+        "Aplicar Pitágoras y su recíproco en longitudes exactas."
+      ],
+      "prerequisites": [
+        "E2-G01-L01",
+        "E1-G01-L02",
+        "E2-N01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El teorema de Pitágoras se aplica exclusivamente a triángulos rectángulos: la suma de los cuadrados de los dos catetos coincide con el cuadrado de la hipotenusa, que es el lado opuesto al ángulo de 90° y siempre el mayor. Para buscar un cateto se resta el cuadrado del otro al cuadrado de la hipotenusa y se toma la raíz principal no negativa. Su recíproco permite comprobar si un triángulo con tres lados dados es rectángulo, usando el mayor como candidato a hipotenusa."
+        },
+        {
+          "type": "example",
+          "body": "Catetos 3 cm y 4 cm: hipotenusa √(9+16)=√25=5 cm."
+        },
+        {
+          "type": "example",
+          "body": "Hipotenusa 13 cm y cateto 5 cm: otro cateto √(169−25)=√144=12 cm."
+        },
+        {
+          "type": "figure",
+          "body": "Triángulo rectángulo de lados 3, 4 y 5. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Triángulo rectángulo de lados 3, 4 y 5. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "right_triangle",
+            "title": "Triángulo rectángulo de lados 3, 4 y 5",
+            "rows": [
+              [
+                "Cateto a",
+                "3"
+              ],
+              [
+                "Cateto b",
+                "4"
+              ],
+              [
+                "Hipotenusa",
+                "5"
+              ],
+              [
+                "Comprobación",
+                "3²+4²=5²"
+              ]
+            ],
+            "a": 3,
+            "b": 4,
+            "c": 5
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se puede sumar directamente 3+4 para obtener la hipotenusa?||No: hay que sumar cuadrados y extraer raíz principal, por lo que el valor es 5."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: El teorema de Pitágoras se aplica exclusivamente a triángulos rectángulos: la suma de los cuadrados de los dos catetos coincide con el cuadrado de la hipotenusa, que es el lado opuesto al ángulo de 90° y siempre el mayor. Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-G01-L04-01",
+        "F3-E2-G01-L04-02",
+        "F3-E2-G01-L04-03",
+        "F3-E2-G01-L04-04",
+        "F3-E2-G01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-G01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-G01:C05"
+      ],
+      "objectives": [
+        "Calcular distancias y diagonales mediante triángulos rectángulos.",
+        "Distinguir distancia en línea recta de recorrido por los lados."
+      ],
+      "prerequisites": [
+        "E2-G01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La diagonal de un rectángulo forma un triángulo rectángulo con sus lados, por lo que su longitud se calcula mediante la raíz principal de la suma de los cuadrados de ambos lados. En una cuadrícula cartesiana, los cambios horizontal y vertical son los catetos, y la distancia directa es la hipotenusa. La ruta por bordes suma longitudes, y generalmente es mayor que la distancia recta. Antes de aplicar el teorema confirma la perpendicularidad de las direcciones."
+        },
+        {
+          "type": "example",
+          "body": "Una pantalla de 6 cm de ancho y 8 cm de alto tiene diagonal √(36+64)=10 cm."
+        },
+        {
+          "type": "example",
+          "body": "Entre puntos que difieren 5 unidades horizontalmente y 12 verticalmente, la distancia recta es 13 unidades."
+        },
+        {
+          "type": "figure",
+          "body": "Distancia directa frente a recorrido por bordes. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Distancia directa frente a recorrido por bordes. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "right_triangle",
+            "title": "Distancia directa frente a recorrido por bordes",
+            "rows": [
+              [
+                "Avance horizontal",
+                "6 m"
+              ],
+              [
+                "Avance vertical",
+                "8 m"
+              ],
+              [
+                "Recorrido por bordes",
+                "14 m"
+              ],
+              [
+                "Distancia directa",
+                "10 m"
+              ]
+            ],
+            "a": 6,
+            "b": 8,
+            "c": 10
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El camino horizontal 6 más vertical 8 mide lo mismo que la diagonal?||No: el recorrido por lados mide 14, mientras la diagonal mide 10."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: La diagonal de un rectángulo forma un triángulo rectángulo con sus lados, por lo que su longitud se calcula mediante la raíz principal de la suma de los cuadrados de ambos lados. Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-G01-L05-01",
+        "F3-E2-G01-L05-02",
+        "F3-E2-G01-L05-03",
+        "F3-E2-G01-L05-04",
+        "F3-E2-G01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-G01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-G01:C06"
+      ],
+      "objectives": [
+        "Elegir entre semejanza, área, perímetro y Pitágoras según la situación.",
+        "Justificar supuestos geométricos antes de calcular."
+      ],
+      "prerequisites": [
+        "E2-G01-L05",
+        "E2-G01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para elegir una herramienta identifica primero el objetivo y los datos. Un factor constante entre lados homólogos sugiere semejanza; superficie interior se mide con áreas; el contorno requiere perímetro; y la distancia diagonal en ángulo recto requiere Pitágoras. Ningún dato numérico autoriza por sí solo a aplicar Pitágoras si la perpendicularidad no está garantizada. Antes de responder escribe un esquema con unidades, señala los ángulos o lados correspondientes y contrasta que el resultado sea razonable."
+        },
+        {
+          "type": "example",
+          "body": "Si una maqueta semejante usa razón 3 y su superficie inicial vale 8 cm², el área nueva vale 3²×8 = 72 cm²."
+        },
+        {
+          "type": "example",
+          "body": "Si una escalera, pared y suelo forman un triángulo rectángulo con base 9 m y altura 12 m, la escalera mide 15 m."
+        },
+        {
+          "type": "figure",
+          "body": "Elegir procedimiento geométrico. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Elegir procedimiento geométrico. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "method_choice",
+            "title": "Elegir procedimiento geométrico",
+            "rows": [
+              [
+                "Longitudes proporcionales",
+                "Semejanza"
+              ],
+              [
+                "Superficie interior",
+                "Área"
+              ],
+              [
+                "Contorno",
+                "Perímetro"
+              ],
+              [
+                "Diagonal recta en ángulo de 90°",
+                "Pitágoras"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué información falta para aplicar Pitágoras a un triángulo de lados desconocidos?||Necesitas que sea rectángulo o datos suficientes para demostrar el ángulo recto; no basta una ilustración."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: Para elegir una herramienta identifica primero el objetivo y los datos. Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-G01-L06-01",
+        "F3-E2-G01-L06-02",
+        "F3-E2-G01-L06-03",
+        "F3-E2-G01-L06-04",
+        "F3-E2-G01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

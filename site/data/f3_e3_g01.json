@@ -1,0 +1,679 @@
+{
+  "unit_id": "E3-G01",
+  "unit_title": "Coordenadas y geometría analítica inicial",
+  "product_phase": "F3_OLA9",
+  "version": "0.9.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Calcular distancias entre puntos cartesianos aplicando Pitágoras.",
+    "Calcular el punto medio de un segmento en coordenadas.",
+    "Interpretar una ecuación y=mx+n como recta no vertical."
+  ],
+  "warnings": [
+    "Ejercicios y teoría originales sintéticos EN REVISIÓN; no homologados.",
+    "La cadena entre E3-G01 y E4B-G02 es editorial; E4B-G02→B1C-G02 es canónica.",
+    "Cotejo territorial, revisión humana y WCAG integral NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Pitágoras y distancias",
+      "lesson_id": "E2-G01-L05",
+      "href": "#/curso/E2/unidad/E2-G01/leccion/E2-G01-L05"
+    },
+    {
+      "label": "Funciones lineales",
+      "lesson_id": "E2-F01-L03",
+      "href": "#/curso/E2/unidad/E2-F01/leccion/E2-F01-L03"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Comprender, recuperar sin pistas y practicar errores con intervalos voluntarios."
+  },
+  "source_note": "RD 217/2022 y RD 243/2022, saberes espaciales y métricos; asignación de lecciones editorial y cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E3-G01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-G01:C01"
+      ],
+      "objectives": [
+        "Calcular distancias entre puntos cartesianos aplicando Pitágoras.",
+        "Interpretar los incrementos horizontal y vertical con signos correctos."
+      ],
+      "prerequisites": [
+        "E2-G01-L04",
+        "E2-F01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El plano cartesiano usa dos ejes perpendiculares, horizontal x y vertical y, y un origen O=(0,0). Un punto P=(x,y) está determinado por sus coordenadas ordenadas: invertirlas suele cambiar de lugar. Entre A=(x₁,y₁) y B=(x₂,y₂), los cambios Δx=x₂−x₁ y Δy=y₂−y₁ forman los catetos de un triángulo rectángulo; su distancia directa no negativa es la raíz principal de Δx²+Δy². Esta relación vale con coordenadas negativas y no debe confundirse con el recorrido por calles de una cuadrícula."
+        },
+        {
+          "type": "example",
+          "body": "Desde A=(1,1) hasta B=(4,5), los cambios son (3,4), por lo que la distancia recta es √(9+16)=5 unidades."
+        },
+        {
+          "type": "example",
+          "body": "Desde C=(−3,2) hasta D=(1,2) solo cambia x: la distancia horizontal es 4 unidades, no 2."
+        },
+        {
+          "type": "figure",
+          "body": "Distancia cartesiana con cambios 3 y 4. Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Distancia cartesiana con cambios 3 y 4. Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "distance",
+            "title": "Distancia cartesiana con cambios 3 y 4",
+            "rows": [
+              [
+                "A",
+                "(1, 1)"
+              ],
+              [
+                "B",
+                "(4, 5)"
+              ],
+              [
+                "Δx",
+                "3"
+              ],
+              [
+                "Δy",
+                "4"
+              ],
+              [
+                "Distancia directa",
+                "5"
+              ]
+            ],
+            "points": [
+              [
+                "A",
+                1,
+                1
+              ],
+              [
+                "B",
+                4,
+                5
+              ]
+            ],
+            "arrows": [],
+            "segments": [
+              [
+                1,
+                1,
+                4,
+                1
+              ],
+              [
+                4,
+                1,
+                4,
+                5
+              ],
+              [
+                1,
+                1,
+                4,
+                5
+              ]
+            ],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede la distancia entre dos puntos distintos ser negativa?||No. La raíz principal de la suma de cuadrados es no negativa y solo vale cero si coinciden."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: El plano cartesiano usa dos ejes perpendiculares, horizontal x y vertical y, y un origen O=(0,0). Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-G01-L01-01",
+        "F3-E3-G01-L01-02",
+        "F3-E3-G01-L01-03",
+        "F3-E3-G01-L01-04",
+        "F3-E3-G01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-G01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-G01:C02"
+      ],
+      "objectives": [
+        "Calcular el punto medio de un segmento en coordenadas.",
+        "Comprobar que el punto medio equidista de ambos extremos."
+      ],
+      "prerequisites": [
+        "E3-G01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El punto medio M de A=(x₁,y₁) y B=(x₂,y₂) se obtiene promediando separadamente las abscisas y las ordenadas: M=((x₁+x₂)/2,(y₁+y₂)/2). Es importante no mezclar coordenadas de ejes distintos. El resultado puede contener fracciones incluso si los extremos tienen coordenadas enteras. El punto medio queda sobre el segmento y tiene la misma distancia a sus extremos. Si A=B, el punto medio es ese mismo punto."
+        },
+        {
+          "type": "example",
+          "body": "Para A=(−2,1) y B=(4,5), M=((−2+4)/2,(1+5)/2)=(1,3)."
+        },
+        {
+          "type": "example",
+          "body": "Entre P=(1,2) y Q=(4,7), el punto medio es (5/2,9/2), no es necesario redondearlo a enteros."
+        },
+        {
+          "type": "figure",
+          "body": "Punto medio de un segmento. Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Punto medio de un segmento. Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "midpoint",
+            "title": "Punto medio de un segmento",
+            "rows": [
+              [
+                "A",
+                "(−2, 1)"
+              ],
+              [
+                "B",
+                "(4, 5)"
+              ],
+              [
+                "M",
+                "(1, 3)"
+              ],
+              [
+                "Distancias",
+                "AM = MB"
+              ]
+            ],
+            "points": [
+              [
+                "A",
+                -2,
+                1
+              ],
+              [
+                "B",
+                4,
+                5
+              ],
+              [
+                "M",
+                1,
+                3
+              ]
+            ],
+            "arrows": [],
+            "segments": [
+              [
+                -2,
+                1,
+                4,
+                5
+              ]
+            ],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué sumar x₁+y₁ no sirve para encontrar la primera coordenada del punto medio?||Porque hay que promediar las abscisas entre sí y las ordenadas entre sí."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: El punto medio M de A=(x₁,y₁) y B=(x₂,y₂) se obtiene promediando separadamente las abscisas y las ordenadas: M=((x₁+x₂)/2,(y₁+y₂)/2). Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-G01-L02-01",
+        "F3-E3-G01-L02-02",
+        "F3-E3-G01-L02-03",
+        "F3-E3-G01-L02-04",
+        "F3-E3-G01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-G01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-G01:C03"
+      ],
+      "objectives": [
+        "Interpretar una ecuación y=mx+n como recta no vertical.",
+        "Comprobar si un punto pertenece a la gráfica por sustitución."
+      ],
+      "prerequisites": [
+        "E2-F01-L02",
+        "E3-G01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una recta no vertical puede expresarse como y=mx+n, donde m mide el cambio de y por cada unidad de cambio de x y n es la ordenada donde corta al eje vertical. Para obtener puntos de la recta se asignan valores de x y se calcula y; para comprobar un punto se sustituyen ambas coordenadas. La expresión y=mx+n no representa rectas verticales, cuya ecuación tiene forma x=k. La variable y no debe confundirse con la distancia al origen."
+        },
+        {
+          "type": "example",
+          "body": "La recta y=2x+1 pasa por (0,1), (1,3) y (2,5), pues todos satisfacen la igualdad."
+        },
+        {
+          "type": "example",
+          "body": "El punto (3,8) no está en y=2x+1: al sustituir x=3 se obtiene y=7."
+        },
+        {
+          "type": "figure",
+          "body": "Recta con ordenada inicial 1 y pendiente 2. Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Recta con ordenada inicial 1 y pendiente 2. Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "line",
+            "title": "Recta con ordenada inicial 1 y pendiente 2",
+            "rows": [
+              [
+                "Ecuación",
+                "y = 2x + 1"
+              ],
+              [
+                "Corte vertical",
+                "(0, 1)"
+              ],
+              [
+                "Punto",
+                "(1, 3)"
+              ],
+              [
+                "Pendiente",
+                "2"
+              ]
+            ],
+            "points": [
+              [
+                "N",
+                0,
+                1
+              ],
+              [
+                "P",
+                1,
+                3
+              ]
+            ],
+            "arrows": [],
+            "segments": [],
+            "lines": [
+              [
+                2,
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es la recta x=2 una función de x con expresión y=mx+n?||No, es vertical y para x=2 contiene distintos valores de y."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Una recta no vertical puede expresarse como y=mx+n, donde m mide el cambio de y por cada unidad de cambio de x y n es la ordenada donde corta al eje vertical. Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-G01-L03-01",
+        "F3-E3-G01-L03-02",
+        "F3-E3-G01-L03-03",
+        "F3-E3-G01-L03-04",
+        "F3-E3-G01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-G01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-G01:C04"
+      ],
+      "objectives": [
+        "Determinar pendientes de rectas a partir de dos puntos.",
+        "Identificar rectas paralelas por igualdad de pendiente."
+      ],
+      "prerequisites": [
+        "E3-G01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La pendiente de la recta por A y B, con abscisas diferentes, es m=(y₂−y₁)/(x₂−x₁). Su signo expresa subida, descenso o horizontalidad al avanzar hacia la derecha. Si x₂=x₁, la recta es vertical y la pendiente no está definida; nunca se divide entre cero. Dos rectas no verticales con igual pendiente son paralelas o coincidentes, según el término independiente. Las rectas horizontales tienen pendiente cero; todas las verticales son paralelas entre sí."
+        },
+        {
+          "type": "example",
+          "body": "Entre A=(1,2) y B=(3,6), la pendiente es (6−2)/(3−1)=4/2=2."
+        },
+        {
+          "type": "example",
+          "body": "Las rectas y=2x+1 e y=2x−3 son paralelas distintas porque comparten pendiente 2 y difieren en n."
+        },
+        {
+          "type": "figure",
+          "body": "Dos rectas paralelas de pendiente 2. Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Dos rectas paralelas de pendiente 2. Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "parallel",
+            "title": "Dos rectas paralelas de pendiente 2",
+            "rows": [
+              [
+                "Recta primera",
+                "y = 2x + 1"
+              ],
+              [
+                "Recta segunda",
+                "y = 2x − 2"
+              ],
+              [
+                "Pendiente común",
+                "2"
+              ],
+              [
+                "Intersección",
+                "Ninguna"
+              ]
+            ],
+            "points": [],
+            "arrows": [],
+            "segments": [],
+            "lines": [
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                -2
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede calcularse la pendiente entre (2,1) y (2,7) mediante una división ordinaria?||No: el cambio horizontal es cero y la pendiente de esa recta vertical está indefinida."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: La pendiente de la recta por A y B, con abscisas diferentes, es m=(y₂−y₁)/(x₂−x₁). Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-G01-L04-01",
+        "F3-E3-G01-L04-02",
+        "F3-E3-G01-L04-03",
+        "F3-E3-G01-L04-04",
+        "F3-E3-G01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-G01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-G01:C05"
+      ],
+      "objectives": [
+        "Resolver problemas de distancias, puntos medios y rectas en el plano.",
+        "Elegir la propiedad geométrica adecuada y verificar el resultado."
+      ],
+      "prerequisites": [
+        "E3-G01-L04",
+        "E2-G01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En una situación de geometría coordenada primero localiza los puntos, después identifica si se pide una distancia, un punto medio, una pendiente o la pertenencia a una recta. La distancia usa incrementos al cuadrado, el punto medio promedios y la pendiente un cociente orientado; son magnitudes distintas. Para comprobar una construcción, sustituye coordenadas en la ecuación, verifica signos y comprueba que las distancias sean no negativas. No se debe deducir una perpendicularidad solo porque dos segmentos parecen cruzarse en el dibujo."
+        },
+        {
+          "type": "example",
+          "body": "Si A=(0,0), B=(6,0) y C=(6,8), la distancia AC es 10, mientras AB+BC=14."
+        },
+        {
+          "type": "example",
+          "body": "El punto medio del lado AB entre (0,0) y (6,0) es (3,0) y permanece en la recta y=0."
+        },
+        {
+          "type": "figure",
+          "body": "Triángulo y trayectoria en coordenadas. Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Triángulo y trayectoria en coordenadas. Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "coordinates",
+            "title": "Triángulo y trayectoria en coordenadas",
+            "rows": [
+              [
+                "A",
+                "(0, 0)"
+              ],
+              [
+                "B",
+                "(3, 0)"
+              ],
+              [
+                "C",
+                "(3, 4)"
+              ],
+              [
+                "AC",
+                "5"
+              ],
+              [
+                "AB + BC",
+                "7"
+              ]
+            ],
+            "points": [
+              [
+                "A",
+                0,
+                0
+              ],
+              [
+                "B",
+                3,
+                0
+              ],
+              [
+                "C",
+                3,
+                4
+              ]
+            ],
+            "arrows": [],
+            "segments": [
+              [
+                0,
+                0,
+                3,
+                0
+              ],
+              [
+                3,
+                0,
+                3,
+                4
+              ],
+              [
+                0,
+                0,
+                3,
+                4
+              ]
+            ],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué dato determina si conviene calcular una distancia o pendiente?||La pregunta: longitud directa exige Pitágoras; inclinación exige cambio vertical dividido por horizontal."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: En una situación de geometría coordenada primero localiza los puntos, después identifica si se pide una distancia, un punto medio, una pendiente o la pertenencia a una recta. Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-G01-L05-01",
+        "F3-E3-G01-L05-02",
+        "F3-E3-G01-L05-03",
+        "F3-E3-G01-L05-04",
+        "F3-E3-G01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

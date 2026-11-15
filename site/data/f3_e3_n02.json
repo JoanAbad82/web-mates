@@ -1,0 +1,629 @@
+{
+  "unit_id": "E3-N02",
+  "unit_title": "Notación científica y escala",
+  "product_phase": "F3-27",
+  "version": "0.27.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Relacionar exponentes enteros con multiplicación y división por potencias de diez.",
+    "Interpretar exponentes negativos como fracciones positivas sin cambiar el signo del número."
+  ],
+  "warnings": [
+    "Datos sintéticos EN REVISIÓN. No homologado ni publicado.",
+    "Modelos de probabilidad, unidades, exponentes y transformaciones requieren interpretación rigurosa; cotejo territorial pendiente."
+  ],
+  "prerequisite_links": [
+    "E2-G01-L03",
+    "E2-N01-L01",
+    "E2-N01-L02",
+    "E3-N01-L05",
+    "E3-N01-L06",
+    "E3-N02-L01",
+    "E3-N02-L02",
+    "E3-N02-L04"
+  ],
+  "recall_policy": "f2-spaced-v1.0.0",
+  "source_note": "Guía LOMLOE local; RD 217/2022 ESO o RD 243/2022 Bachillerato; cotejo territorial pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E3-N02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.27.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-N02:C01"
+      ],
+      "objectives": [
+        "Relacionar exponentes enteros con multiplicación y división por potencias de diez.",
+        "Interpretar exponentes negativos como fracciones positivas sin cambiar el signo del número."
+      ],
+      "prerequisites": [
+        "E2-N01-L01",
+        "E3-N01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una potencia de diez 10^n tiene base 10 y exponente entero n. Cuando n>0 desplaza la coma n posiciones a la derecha al multiplicar; 10^0=1. Cuando n<0, 10^n=1/10^(−n), de modo que 10^−3=0,001, no −1000. En un cociente de potencias de igual base, 10^a/10^b=10^(a−b), siempre que el divisor sea distinto de cero. Multiplicar potencias suma exponentes. Estas reglas permiten expresar cantidades muy grandes y muy pequeñas sin perder de vista las unidades. Un cambio de exponente de +1 multiplica el valor positivo por diez, no suma diez."
+        },
+        {
+          "type": "example",
+          "body": "10^4=10000, 10^0=1 y 10^−3=1/1000=0,001. El exponente negativo no convierte el valor en negativo."
+        },
+        {
+          "type": "example",
+          "body": "10^5/10^2=10^(5−2)=10^3=1000; 10^−2×10^3=10^1=10. En el cociente se restan exponentes y en el producto se suman."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Potencias de diez. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave27",
+            "title": "Potencias de diez",
+            "kind": "powers",
+            "model": {
+              "labels": [
+                "10^-3",
+                "10^0",
+                "10^4"
+              ],
+              "values": [
+                -3,
+                0,
+                4
+              ]
+            },
+            "rows": [
+              [
+                "Exponente",
+                "−3"
+              ],
+              [
+                "10^−3",
+                "0,001"
+              ],
+              [
+                "10^0",
+                "1"
+              ],
+              [
+                "10^4",
+                "10000"
+              ],
+              [
+                "Regla de cociente",
+                "Se restan exponentes"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿10^−3 es negativo?||No; es la fracción positiva 1/1000."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Relacionar exponentes enteros con multiplicación y división por potencias de diez. Averigua si el exponente afecta al valor o al signo. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-N02-L01-01",
+        "F3-E3-N02-L01-02",
+        "F3-E3-N02-L01-03",
+        "F3-E3-N02-L01-04",
+        "F3-E3-N02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-N02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.27.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-N02:C02"
+      ],
+      "objectives": [
+        "Normalizar números no nulos a la forma a×10^n con 1≤|a|<10.",
+        "Convertir decimales ordinarios a notación científica conservando signo y magnitud."
+      ],
+      "prerequisites": [
+        "E3-N02-L01",
+        "E3-N01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La notación científica de un número real no nulo tiene forma a×10^n, con n entero y 1≤|a|<10. Si se mueve la coma hacia la izquierda al construir a, el exponente aumenta; si se mueve hacia la derecha, el exponente disminuye. Por ejemplo, 4 520 000=4,52×10^6 y 0,000078=7,8×10^−5. El número cero se escribe 0 y no cumple la condición de mantisa normalizada. Una notación como 45,2×10^5 puede representar el mismo valor, pero no está normalizada. Se debe conservar la unidad de la magnitud original y señalar posibles cifras significativas."
+        },
+        {
+          "type": "example",
+          "body": "4 520 000 se transforma en 4,52×10^6 porque desplazamos la coma seis posiciones a la izquierda."
+        },
+        {
+          "type": "example",
+          "body": "0,000078 se escribe 7,8×10^−5; 7,8×0,00001=0,000078, una comprobación directa de equivalencia."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Notación científica. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave27",
+            "title": "Notación científica",
+            "kind": "powers",
+            "model": {
+              "labels": [
+                "10^-5",
+                "10^0",
+                "10^6"
+              ],
+              "values": [
+                -5,
+                0,
+                6
+              ]
+            },
+            "rows": [
+              [
+                "Número",
+                "4 520 000"
+              ],
+              [
+                "Notación",
+                "4,52×10^6"
+              ],
+              [
+                "Número pequeño",
+                "0,000078"
+              ],
+              [
+                "Notación",
+                "7,8×10^−5"
+              ],
+              [
+                "Mantisa normalizada",
+                "1≤|a|<10"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es 45,2×10^5 una forma científica normalizada?||No; tiene mantisa de valor absoluto superior o igual a diez."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Normalizar números no nulos a la forma a×10^n con 1≤|a|<10. Desplaza la coma hasta que la mantisa tenga una sola cifra no nula antes de ella. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-N02-L02-01",
+        "F3-E3-N02-L02-02",
+        "F3-E3-N02-L02-03",
+        "F3-E3-N02-L02-04",
+        "F3-E3-N02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-N02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.27.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-N02:C03"
+      ],
+      "objectives": [
+        "Convertir magnitudes utilizando prefijos y equivalencias de unidades exactas.",
+        "Diferenciar números de unidades para evitar factores de mil erróneos."
+      ],
+      "prerequisites": [
+        "E3-N02-L01",
+        "E2-G01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para convertir unidades hay que aplicar factores dimensionales, no únicamente desplazar comas sin contexto. Un kilómetro equivale a 10^3 metros, un milímetro a 10^−3 metros y un micrómetro a 10^−6 metros. La letra mayúscula M del prefijo mega representa 10^6, mientras la minúscula m de mili representa 10^−3; la capitalización importa. Una conversión conserva la magnitud física y cambia su valor numérico y unidad. Si se convierten unidades de superficie o volumen, el factor lineal se eleva al cuadrado o al cubo: 1 km²=10^6 m². Los enunciados deben indicar claramente longitud, área o volumen."
+        },
+        {
+          "type": "example",
+          "body": "Una distancia de 3,2 km equivale a 3,2×1000=3200 m=3,2×10^3 m. El valor físico no cambia."
+        },
+        {
+          "type": "example",
+          "body": "Una longitud de 4500 mm equivale a 4500×10^−3=4,5 m. En cambio 2 km²=2×10^6 m², pues el factor de longitud se cuadra."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Conversión de magnitudes. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave27",
+            "title": "Conversión de magnitudes",
+            "kind": "powers",
+            "model": {
+              "labels": [
+                "μ",
+                "mili",
+                "base",
+                "kilo"
+              ],
+              "values": [
+                -6,
+                -3,
+                0,
+                3
+              ]
+            },
+            "rows": [
+              [
+                "1 km",
+                "10^3 m"
+              ],
+              [
+                "1 mm",
+                "10^−3 m"
+              ],
+              [
+                "1 μm",
+                "10^−6 m"
+              ],
+              [
+                "3,2 km",
+                "3200 m"
+              ],
+              [
+                "4500 mm",
+                "4,5 m"
+              ],
+              [
+                "2 km²",
+                "2×10^6 m²"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué 1 km² no equivale a 1000 m²?||Porque el factor de longitud 1000 se eleva al cuadrado: 10^6 m²."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Convertir magnitudes utilizando prefijos y equivalencias de unidades exactas. Escribe la equivalencia con unidades antes de calcular. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-N02-L03-01",
+        "F3-E3-N02-L03-02",
+        "F3-E3-N02-L03-03",
+        "F3-E3-N02-L03-04",
+        "F3-E3-N02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-N02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.27.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-N02:C04"
+      ],
+      "objectives": [
+        "Multiplicar y dividir números en notación científica aplicando potencias.",
+        "Sumar cantidades alineando exponentes antes de operar las mantisas."
+      ],
+      "prerequisites": [
+        "E3-N02-L02",
+        "E2-N01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para multiplicar (a×10^m)(b×10^n), se multiplican las mantisas a·b y se suman los exponentes m+n. Para dividir con b≠0, se dividen mantisas y se restan exponentes. Después es necesario normalizar si la mantisa queda fuera del intervalo 1≤|a|<10. En suma y resta no se suman directamente los exponentes: primero se expresan las cantidades con la misma potencia de diez, y solo entonces se suman las mantisas. Las unidades deben ser compatibles para sumar. El resultado puede necesitar redondeo a cifras significativas según la precisión de los datos; aquí se trabaja con valores exactos sintéticos."
+        },
+        {
+          "type": "example",
+          "body": "(2×10^3)(3×10^−2)=6×10^(3−2)=6×10^1=60; las mantisas se multiplican y los exponentes se suman."
+        },
+        {
+          "type": "example",
+          "body": "(3×10^4)+(2×10^4)=5×10^4=50000. Si tuvieran exponentes distintos, primero se expresarían con el mismo exponente."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Operaciones con notación científica. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave27",
+            "title": "Operaciones con notación científica",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "3×10^4",
+                "2×10^4",
+                "suma"
+              ],
+              "values": [
+                30000,
+                20000,
+                50000
+              ]
+            },
+            "rows": [
+              [
+                "Factor 1",
+                "2×10^3"
+              ],
+              [
+                "Factor 2",
+                "3×10^−2"
+              ],
+              [
+                "Producto",
+                "6×10^1=60"
+              ],
+              [
+                "Sumando 1",
+                "3×10^4"
+              ],
+              [
+                "Sumando 2",
+                "2×10^4"
+              ],
+              [
+                "Suma",
+                "5×10^4"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Para sumar 3×10^4 y 2×10^4 se suman exponentes?||No; las potencias ya son iguales y se suman solo las mantisas."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Multiplicar y dividir números en notación científica aplicando potencias. Distingue producto de suma; la regla de exponentes depende de la operación. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-N02-L04-01",
+        "F3-E3-N02-L04-02",
+        "F3-E3-N02-L04-03",
+        "F3-E3-N02-L04-04",
+        "F3-E3-N02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-N02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.27.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-N02:C05"
+      ],
+      "objectives": [
+        "Comparar órdenes de magnitud mediante razones y potencias de diez.",
+        "Redondear cifras significativas sin inventar precisión experimental."
+      ],
+      "prerequisites": [
+        "E3-N02-L04",
+        "E3-N01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El orden de magnitud da una escala aproximada de una cantidad positiva. Debe explicitarse el convenio: aquí aproximamos al exponente entero más cercano de log10(|x|), de manera que una cantidad 8×10^3 se aproxima a 10^4 y 3×10^3 a 10^3. El límite está en √10×10^n y hay otros usos del término en divulgación. Para comparar dos valores positivos, el cociente indica cuántas veces mayor es uno, mientras el cociente entre potencias de diez indica diferencias de escala. Las cifras significativas reflejan precisión declarada; redondear 5,67×10^4 a dos cifras es 5,7×10^4, no un aumento real de exactitud."
+        },
+        {
+          "type": "example",
+          "body": "La razón entre 4×10^5 y 2×10^3 es (4/2)×10^(5−3)=2×10²=200, equivalente a una diferencia de aproximadamente dos órdenes."
+        },
+        {
+          "type": "example",
+          "body": "Según el convenio de potencia de diez más cercana, 8×10^3 se aproxima a 10^4 porque log10(8000)≈3,903; 3×10^3 se aproxima a 10^3."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Órdenes de magnitud. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave27",
+            "title": "Órdenes de magnitud",
+            "kind": "powers",
+            "model": {
+              "labels": [
+                "10^2",
+                "10^3",
+                "10^4",
+                "10^5"
+              ],
+              "values": [
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "rows": [
+              [
+                "Cantidad A",
+                "4×10^5"
+              ],
+              [
+                "Cantidad B",
+                "2×10^3"
+              ],
+              [
+                "Razón A/B",
+                "200"
+              ],
+              [
+                "8×10^3 aprox.",
+                "10^4"
+              ],
+              [
+                "5,67×10^4 a 2 cifras",
+                "5,7×10^4"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una diferencia de dos potencias implica siempre que las cantidades reales difieren exactamente 100 veces?||No; las mantisas modifican la razón exacta."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Comparar órdenes de magnitud mediante razones y potencias de diez. Escribe el cociente completo mantisas y potencias antes de estimar. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-N02-L05-01",
+        "F3-E3-N02-L05-02",
+        "F3-E3-N02-L05-03",
+        "F3-E3-N02-L05-04",
+        "F3-E3-N02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

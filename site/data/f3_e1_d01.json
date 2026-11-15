@@ -1,0 +1,795 @@
+{
+  "unit_id": "E1-D01",
+  "unit_title": "Datos, estadística y azar",
+  "product_phase": "F3_OLA20",
+  "version": "0.20.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Distinguir población, muestra, individuo, variable y dato observable.",
+    "Construir una tabla de frecuencias absolutas y relativas.",
+    "Interpretar barras y sectores con escalas y categorías correctas."
+  ],
+  "warnings": [
+    "Material sintético EN REVISIÓN, sin revisión humana o publicación.",
+    "Las aristas de prerrequisitos añadidas son editoriales, no normativa oficial.",
+    "La muestra no equivale a la población; frecuencia relativa observada no es probabilidad teórica.",
+    "El óptimo lineal continuo puede no ser entero o único; las restricciones y unidades prevalecen.",
+    "WCAG 2.2 AA integral, normativa autonómica y teléfonos físicos NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Fracciones 1.º ESO",
+      "lesson_id": "E1-N04-L02",
+      "href": "#/curso/E1/unidad/E1-N04/leccion/E1-N04-L02"
+    },
+    {
+      "label": "Porcentajes iniciales",
+      "lesson_id": "E1-N05-L05",
+      "href": "#/curso/E1/unidad/E1-N05/leccion/E1-N05-L05"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recordar sin pistas y revisar explicaciones, progreso local solo por consentimiento."
+  },
+  "source_note": "Referencias estatales RD 217/2022 y RD 243/2022, asignaciones de itinerarios editoriales sin cotejo autonómico.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E1-D01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-D01:C01"
+      ],
+      "objectives": [
+        "Distinguir población, muestra, individuo, variable y dato observable.",
+        "Clasificar variables cualitativas y cuantitativas sin inferir propiedades personales."
+      ],
+      "prerequisites": [
+        "E1-N05-L03",
+        "E1-N04-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En un estudio estadístico la población es el conjunto completo de elementos de interés y la muestra es un subconjunto observado; un individuo es cada elemento. La variable es la característica que se registra y el dato es el valor particular de esa variable para un individuo. Si una clase voluntaria observa el número de libros leídos por cinco estudiantes, el dato de alguien puede ser 3 y la variable es cuantitativa discreta. El medio de transporte declarado (a pie, bicicleta, autobús) es cualitativo nominal y no permite operaciones numéricas como calcular una media. No debe confundirse el número de observaciones con el tamaño de la población real, ni inferir que una muestra pequeña es representativa por sí misma. Se utilizan únicamente datos sintéticos y no se recopilan respuestas identificativas de menores."
+        },
+        {
+          "type": "example",
+          "body": "Población de 80 alumnos y muestra anónima de 20 respuestas: tamaño muestral n=20, distinto del total poblacional N=80."
+        },
+        {
+          "type": "example",
+          "body": "Los datos de libros [1,3,2,3,1] proceden de cinco observaciones; la variable número de libros es cuantitativa discreta."
+        },
+        {
+          "type": "figure",
+          "body": "Clasificación de datos sintéticos. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Clasificación de datos sintéticos. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "stats_bars",
+            "title": "Clasificación de datos sintéticos",
+            "rows": [
+              [
+                "Población",
+                "80 observaciones posibles"
+              ],
+              [
+                "Muestra",
+                "20 observaciones"
+              ],
+              [
+                "Variable",
+                "Número de libros"
+              ],
+              [
+                "Dato",
+                "Un valor: 3"
+              ],
+              [
+                "Tipo",
+                "Cuantitativa discreta"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                2,
+                1,
+                2
+              ],
+              "labels": [
+                "1",
+                "2",
+                "3"
+              ]
+            },
+            "domain": [
+              0,
+              4
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es la muestra necesariamente idéntica a toda la población?||No; puede contener solo una parte de la población."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: En un estudio estadístico la población es el conjunto completo de elementos de interés y la muestra es un subconjunto observado; un individuo es cada elemento. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-D01-L01-01",
+        "F3-E1-D01-L01-02",
+        "F3-E1-D01-L01-03",
+        "F3-E1-D01-L01-04",
+        "F3-E1-D01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-D01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-D01:C02"
+      ],
+      "objectives": [
+        "Construir una tabla de frecuencias absolutas y relativas.",
+        "Comprobar que sumas de frecuencias absolutas y relativas son n y 1."
+      ],
+      "prerequisites": [
+        "E1-D01-L01",
+        "E1-N04-L04",
+        "E1-N05-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La frecuencia absoluta nᵢ de un valor es el número de apariciones en los datos, y su frecuencia relativa fᵢ=nᵢ/n es una proporción entre 0 y 1 cuando n>0. En [1,1,2,3,3,3] hay n=6: para el valor 1, n₁=2 y f₁=2/6=1/3; para el valor 2, n₂=1, f₂=1/6; para 3, n₃=3, f₃=1/2. Las frecuencias absolutas suman 6 y las relativas suman 1. Para mostrar porcentajes se multiplica la frecuencia relativa por 100, por ejemplo 1/2=50 %. La frecuencia acumulada requiere un orden significativo, que existe para datos numéricos pero no necesariamente para categorías nominales. Si n=0, no se divide por cero ni se interpreta una tabla sin observaciones como distribución probabilística."
+        },
+        {
+          "type": "example",
+          "body": "En [1,1,2,3,3,3], la frecuencia absoluta de 3 es 3, su frecuencia relativa 3/6=1/2 y su porcentaje 50 %."
+        },
+        {
+          "type": "example",
+          "body": "La tabla de valores 1,2,3 tiene frecuencias 2,1,3. La suma 2+1+3=6 permite comprobar el tamaño de muestra."
+        },
+        {
+          "type": "figure",
+          "body": "Frecuencias de seis datos. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Frecuencias de seis datos. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "stats_bars",
+            "title": "Frecuencias de seis datos",
+            "rows": [
+              [
+                "Dato",
+                "1 | 2 | 3"
+              ],
+              [
+                "Frecuencias absolutas",
+                "2 | 1 | 3"
+              ],
+              [
+                "Frecuencias relativas",
+                "1/3 | 1/6 | 1/2"
+              ],
+              [
+                "Tamaño",
+                "n=6"
+              ],
+              [
+                "Suma relativa",
+                "1"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                2,
+                1,
+                3
+              ],
+              "labels": [
+                "1",
+                "2",
+                "3"
+              ]
+            },
+            "domain": [
+              0,
+              4
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede una tabla de frecuencias relativas correcta sumar 1,5 con categorías disjuntas exhaustivas?||No; deben sumar exactamente 1, salvo redondeos presentados claramente."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La frecuencia absoluta nᵢ de un valor es el número de apariciones en los datos, y su frecuencia relativa fᵢ=nᵢ/n es una proporción entre 0 y 1 cuando n>0. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-D01-L02-01",
+        "F3-E1-D01-L02-02",
+        "F3-E1-D01-L02-03",
+        "F3-E1-D01-L02-04",
+        "F3-E1-D01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-D01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-D01:C03"
+      ],
+      "objectives": [
+        "Interpretar barras y sectores con escalas y categorías correctas.",
+        "Convertir frecuencias relativas en ángulos de sectores sin alterar el total."
+      ],
+      "prerequisites": [
+        "E1-D01-L02",
+        "E1-N05-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un diagrama de barras utiliza alturas proporcionales a frecuencias de categorías, con eje y y escala rotulada; las barras de categorías diferenciadas no deben implicar continuidad. En un diagrama de sectores, cada categoría recibe un ángulo θ=360°·nᵢ/n si el total n>0 y las categorías son mutuamente excluyentes. Con 12 observaciones y frecuencias 3, 6 y 3, los sectores valen 90°, 180° y 90°, cuya suma es 360°. La mitad de las observaciones significa 50 % y 180°, no 50°. Un gráfico debe indicar fuente, periodo, unidad y denominador; recortar el eje o representar superficies desproporcionadas puede crear impresiones engañosas. Nunca debe extraerse una causalidad de la altura de una barra ni inventarse registros de alumnos."
+        },
+        {
+          "type": "example",
+          "body": "En 12 respuestas con categorías A=3, B=6 y C=3, el sector B corresponde a 6/12=1/2 y ocupa 180°."
+        },
+        {
+          "type": "example",
+          "body": "La categoría A ocupa 3/12=1/4 de un círculo, por lo tanto 90°; todos los ángulos suman 360°."
+        },
+        {
+          "type": "figure",
+          "body": "Frecuencias antes de dibujar sectores. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Frecuencias antes de dibujar sectores. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "stats_bars",
+            "title": "Frecuencias antes de dibujar sectores",
+            "rows": [
+              [
+                "Categoría A",
+                "3 observaciones, 90°"
+              ],
+              [
+                "Categoría B",
+                "6 observaciones, 180°"
+              ],
+              [
+                "Categoría C",
+                "3 observaciones, 90°"
+              ],
+              [
+                "Total",
+                "12 observaciones, 360°"
+              ],
+              [
+                "Escala",
+                "Frecuencia absoluta"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                3,
+                6,
+                3
+              ],
+              "labels": [
+                "A",
+                "B",
+                "C"
+              ]
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Si una categoría representa la mitad de respuestas debe ocupar 50° en el diagrama circular?||No; representa 180° (50 % de 360°)."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un diagrama de barras utiliza alturas proporcionales a frecuencias de categorías, con eje y y escala rotulada; las barras de categorías diferenciadas no deben implicar continuidad. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-D01-L03-01",
+        "F3-E1-D01-L03-02",
+        "F3-E1-D01-L03-03",
+        "F3-E1-D01-L03-04",
+        "F3-E1-D01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-D01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-D01:C04"
+      ],
+      "objectives": [
+        "Calcular media aritmética, mediana y moda en muestras pequeñas.",
+        "Elegir medidas según el tipo de variable y la resistencia a valores extremos."
+      ],
+      "prerequisites": [
+        "E1-D01-L02",
+        "E1-N04-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La media aritmética de n datos numéricos es la suma dividida entre n, siempre que n>0. La mediana es el valor central tras ordenar la muestra; cuando n es par se promedian los dos valores centrales. La moda es el valor con mayor frecuencia y puede no ser única. Para [1,2,2,3,12], la suma vale 20, la media vale 4, la mediana es 2 y la moda 2. El valor extremo 12 eleva la media pero no desplaza la mediana en esta muestra. No se calcula una media numérica de respuestas como colores o medios de transporte porque no tienen magnitud numérica; sí se puede identificar su moda. Las medidas describen la muestra y por sí solas no permiten generalizar a toda la población."
+        },
+        {
+          "type": "example",
+          "body": "Ordena [1,2,2,3,12]. Media (1+2+2+3+12)/5=20/5=4; mediana tercer dato=2; moda=2."
+        },
+        {
+          "type": "example",
+          "body": "Para [1,2,3,4], media 10/4=2,5 y mediana (2+3)/2=2,5; no existe moda única si todas las frecuencias empatan."
+        },
+        {
+          "type": "figure",
+          "body": "Media sensible a un dato extremo. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Media sensible a un dato extremo. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "stats_bars",
+            "title": "Media sensible a un dato extremo",
+            "rows": [
+              [
+                "Muestra",
+                "1,2,2,3,12"
+              ],
+              [
+                "Suma",
+                "20"
+              ],
+              [
+                "Media",
+                "4"
+              ],
+              [
+                "Mediana",
+                "2"
+              ],
+              [
+                "Moda",
+                "2"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                1,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "labels": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12"
+              ]
+            },
+            "domain": [
+              0,
+              13
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es correcto calcular media aritmética de colores nominales usando códigos numéricos arbitrarios?||No; esos códigos no crean distancias cuantitativas."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La media aritmética de n datos numéricos es la suma dividida entre n, siempre que n>0. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-D01-L04-01",
+        "F3-E1-D01-L04-02",
+        "F3-E1-D01-L04-03",
+        "F3-E1-D01-L04-04",
+        "F3-E1-D01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-D01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-D01:C05"
+      ],
+      "objectives": [
+        "Detectar gráficos con ejes truncados y escalas no comparables.",
+        "Formular conclusiones limitadas por el tamaño y método de muestreo."
+      ],
+      "prerequisites": [
+        "E1-D01-L03",
+        "E1-D01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un gráfico puede inducir conclusiones erróneas si el eje vertical comienza en un valor distinto de cero sin avisar, si dos series emplean escalas diferentes o si las áreas se dibujan con tamaños desproporcionados. Supongamos que una barra muestra 48 respuestas y otra 52. La diferencia absoluta es 4 respuestas y la relativa respecto de 48 es 4/48=1/12, aproximadamente 8,33 %, no un crecimiento del 100 %. Si se dibujan barras con eje desde 47, la primera altura visible es 1 y la segunda 5, sugiriendo una proporción 5:1 inexistente en el dato original. La muestra, su procedencia y el intervalo temporal son necesarios antes de extrapolar conclusiones; ver asociación entre categorías no demuestra una causa. Las cifras de esta actividad son totalmente sintéticas."
+        },
+        {
+          "type": "example",
+          "body": "Dos grupos registran 48 y 52 observaciones: diferencia absoluta 52−48=4, y la proporción de sus totales es 52/48=13/12."
+        },
+        {
+          "type": "example",
+          "body": "Si el eje vertical empieza en 47, las alturas dibujadas pueden ser 1 y 5, pero los totales reales siguen siendo 48 y 52."
+        },
+        {
+          "type": "figure",
+          "body": "Comparación con eje desde cero. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Comparación con eje desde cero. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "stats_bars",
+            "title": "Comparación con eje desde cero",
+            "rows": [
+              [
+                "Grupo A",
+                "48 respuestas"
+              ],
+              [
+                "Grupo B",
+                "52 respuestas"
+              ],
+              [
+                "Diferencia absoluta",
+                "4"
+              ],
+              [
+                "Proporción B/A",
+                "13/12"
+              ],
+              [
+                "Precaución",
+                "No recortar eje sin señalarlo"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                48,
+                52
+              ],
+              "labels": [
+                "A",
+                "B"
+              ]
+            },
+            "domain": [
+              0,
+              55
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es legítimo concluir que un grupo quintuplica al otro porque el eje recortado muestra alturas 1 y 5?||No; los totales son 48 y 52, no 1 y 5."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un gráfico puede inducir conclusiones erróneas si el eje vertical comienza en un valor distinto de cero sin avisar, si dos series emplean escalas diferentes o si las áreas se dibujan con tamaños desproporcionados. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-D01-L05-01",
+        "F3-E1-D01-L05-02",
+        "F3-E1-D01-L05-03",
+        "F3-E1-D01-L05-04",
+        "F3-E1-D01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-D01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-D01:C06"
+      ],
+      "objectives": [
+        "Distinguir experimento aleatorio, resultado y frecuencia relativa observada.",
+        "Reconocer que la frecuencia experimental puede variar respecto de la probabilidad teórica."
+      ],
+      "prerequisites": [
+        "E1-D01-L02",
+        "E1-N05-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un experimento aleatorio ofrece distintos resultados posibles antes de realizarse. En el lanzamiento ideal de una moneda equilibrada, la probabilidad teórica de cara es 1/2, pero en una serie corta puede observarse una frecuencia relativa diferente de 1/2 sin contradicción. Si aparecen 7 caras en 10 lanzamientos independientes, la frecuencia relativa observada es 7/10=70 %, que no prueba que la probabilidad verdadera sea 70 %. Con repeticiones suficientes y bajo hipótesis de independencia y condiciones estables, las frecuencias tienden a estabilizarse, pero no se garantiza el resultado exacto para una muestra finita. Hay que distinguir espacio muestral, evento y observación, y nunca equiparar frecuencia observada con probabilidad sin un modelo justificado. Los datos son sintéticos."
+        },
+        {
+          "type": "example",
+          "body": "Se registran 7 caras en 10 ensayos. La frecuencia relativa de cara es 7/10=0,7, mientras la probabilidad teórica ideal sigue siendo 1/2."
+        },
+        {
+          "type": "example",
+          "body": "En 20 lanzamientos con 9 caras, la frecuencia relativa es 9/20=0,45, distinta de 0,5; no es una prueba de moneda sesgada."
+        },
+        {
+          "type": "figure",
+          "body": "Frecuencias observadas de una moneda sintética. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Frecuencias observadas de una moneda sintética. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "stats_bars",
+            "title": "Frecuencias observadas de una moneda sintética",
+            "rows": [
+              [
+                "Experimento",
+                "10 lanzamientos"
+              ],
+              [
+                "Caras observadas",
+                "7"
+              ],
+              [
+                "Cruces observadas",
+                "3"
+              ],
+              [
+                "Frecuencia cara",
+                "7/10"
+              ],
+              [
+                "Probabilidad teórica equilibrada",
+                "1/2"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                7,
+                3
+              ],
+              "labels": [
+                "Cara",
+                "Cruz"
+              ]
+            },
+            "domain": [
+              0,
+              10
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Diez lanzamientos con siete caras demuestran que la probabilidad teórica de cara es 70 %?||No; una frecuencia experimental finita no determina necesariamente la probabilidad teórica."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un experimento aleatorio ofrece distintos resultados posibles antes de realizarse. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-D01-L06-01",
+        "F3-E1-D01-L06-02",
+        "F3-E1-D01-L06-03",
+        "F3-E1-D01-L06-04",
+        "F3-E1-D01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+# Exclusión de secretos, originales, evidencias privadas y artefactos
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.key
+*.pfx
+*.kdbx
+*credentials*
+*secrets*
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.cache/
+coverage/
+dist/
+*.zip
+*.sha256
+*.log
+.DS_Store
+Thumbs.db
+evidencias/
+baseline/
+private/

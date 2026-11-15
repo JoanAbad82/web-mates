@@ -1,0 +1,981 @@
+{
+  "unit_id": "B1S-F02",
+  "version": "0.18.0",
+  "status": "revision",
+  "notice": "Ejercicios sintéticos deterministas EN REVISIÓN; sin validación humana.",
+  "activities": [
+    {
+      "exercise_id": "F3-B1S-F02-L01-01",
+      "lesson_id": "B1S-F02-L01",
+      "type": "numeric",
+      "prompt": "En Límites en un punto: Calcula lim(x→2) de f(x)=3+2x, justificando continuidad del polinomio. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 7.0,
+      "explanation": "Explicación matemática: Cálculo del límite con dominio y expresiones laterales diferenciadas; valor contrastado: 7. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 7.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_poly_limit",
+        "prerequisito_b1s_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L01-02",
+      "lesson_id": "B1S-F02-L01",
+      "type": "numeric",
+      "prompt": "En Límites en un punto: Para f(t)=t²+1, calcula lim(t→2)f(t) o f(2) según continuidad. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 5.0,
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 5. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 5.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_poly_square_plus",
+        "prerequisito_b1s_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L01-03",
+      "lesson_id": "B1S-F02-L01",
+      "type": "numeric",
+      "prompt": "En Límites en un punto: Calcula lim(x→3) (x²−9)/(x−3) mediante factorización válida solo para x≠3. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 6.0,
+      "explanation": "Explicación matemática: Cálculo del límite con dominio y expresiones laterales diferenciadas; valor contrastado: 6. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 6.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_removable_limit",
+        "prerequisito_b1s_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L01-04",
+      "lesson_id": "B1S-F02-L01",
+      "type": "choice",
+      "prompt": "En Límites en un punto: ¿La función ORIGINAL g(x)=(x²−9)/(x−3) admite g(3) en su dominio real (Sí/No)? Elige la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Explicación matemática: Cálculo del límite con dominio y expresiones laterales diferenciadas; valor contrastado: No. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: No.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_hole_defined",
+        "prerequisito_b1s_f02"
+      ],
+      "choices": [
+        "Sí",
+        "No se puede concluir",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L01-05",
+      "lesson_id": "B1S-F02-L01",
+      "type": "choice",
+      "prompt": "En Límites en un punto: ¿La existencia de un límite finito en x=a garantiza automáticamente que f(a) está definida (Sí/No)? Elige la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Explicación matemática: Cálculo del límite con dominio y expresiones laterales diferenciadas; valor contrastado: No. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: No.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_limit_implies_value",
+        "prerequisito_b1s_f02"
+      ],
+      "choices": [
+        "No se puede concluir",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L02-01",
+      "lesson_id": "B1S-F02-L02",
+      "type": "numeric",
+      "prompt": "En Límites laterales: En la función a tramos f(x)=1x+1 para x<2 y 2x+1 para x≥2, calcula el límite IZQUIERDO en x=2. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 3.0,
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 3. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 3.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_piece_left",
+        "prerequisito_b1s_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L02-02",
+      "lesson_id": "B1S-F02-L02",
+      "type": "numeric",
+      "prompt": "En Límites laterales: En f(x)=x+1 si x<2 y 2x+1 si x≥2, calcula el límite DERECHO en x=2. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 5.0,
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 5. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 5.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_piece_right",
+        "prerequisito_b1s_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L02-03",
+      "lesson_id": "B1S-F02-L02",
+      "type": "choice",
+      "prompt": "En Límites laterales: Los límites laterales de f en a son 3 y 5. ¿Existe límite bilateral finito (Sí/No)? Elige la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: No. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: No.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_bilateral_equal",
+        "prerequisito_b1s_f02"
+      ],
+      "choices": [
+        "Sí",
+        "No se puede concluir",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L02-04",
+      "lesson_id": "B1S-F02-L02",
+      "type": "choice",
+      "prompt": "En Límites laterales: Una función tiene límite izquierdo 3 y derecho 5 en el umbral. Calcula la MAGNITUD del salto absoluto. Elige la opción matemáticamente correcta.",
+      "answer": "2",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 2. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 2.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_jump_magnitude",
+        "prerequisito_b1s_f02"
+      ],
+      "choices": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L02-05",
+      "lesson_id": "B1S-F02-L02",
+      "type": "choice",
+      "prompt": "En Límites laterales: ¿Coinciden los límites de f(x)=1x+1 para x<2 y 2x+(-1) para x≥2 (Sí/No)? Elige la opción matemáticamente correcta.",
+      "answer": "Sí",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: Sí. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: Sí.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_continuous_piece_pair",
+        "prerequisito_b1s_f02"
+      ],
+      "choices": [
+        "Sí",
+        "No",
+        "No se puede concluir"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L03-01",
+      "lesson_id": "B1S-F02-L03",
+      "type": "numeric",
+      "prompt": "En Comportamiento asintótico: Para r(x)=3+1/(x−2), determina la asíntota HORIZONTAL y=L, introduciendo el valor L. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 3.0,
+      "explanation": "Explicación matemática: Cálculo del límite con dominio y expresiones laterales diferenciadas; valor contrastado: 3. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 3.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_rational_horizontal",
+        "prerequisito_b1s_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L03-02",
+      "lesson_id": "B1S-F02-L03",
+      "type": "numeric",
+      "prompt": "En Comportamiento asintótico: Para r(x)=1/(x−2), determina la abscisa x=a de la asíntota VERTICAL. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 2.0,
+      "explanation": "Explicación matemática: Cálculo del límite con dominio y expresiones laterales diferenciadas; valor contrastado: 2. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 2.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_rational_vertical",
+        "prerequisito_b1s_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L03-03",
+      "lesson_id": "B1S-F02-L03",
+      "type": "numeric",
+      "prompt": "En Comportamiento asintótico: En r(x)=1/(x−2), evalúa exactamente r(3) con denominador distinto de cero. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 1.0,
+      "explanation": "Explicación matemática: Cálculo del límite con dominio y expresiones laterales diferenciadas; valor contrastado: 1. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 1.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_rational_eval",
+        "prerequisito_b1s_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L03-04",
+      "lesson_id": "B1S-F02-L03",
+      "type": "choice",
+      "prompt": "En Comportamiento asintótico: Para r(x)=1/(x−2), ¿a qué infinito tiende cuando x→2 por la IZQUIERDA: −∞, +∞ o Cero? Elige la opción matemáticamente correcta.",
+      "answer": "−∞",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: −∞. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: −∞.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_left_infinite_sign",
+        "prerequisito_b1s_f02"
+      ],
+      "choices": [
+        "−∞",
+        "+∞",
+        "Cero"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L03-05",
+      "lesson_id": "B1S-F02-L03",
+      "type": "choice",
+      "prompt": "En Comportamiento asintótico: Para r(x)=1/(x−2), ¿a qué infinito tiende cuando x→2 por la DERECHA: −∞, +∞ o Cero? Elige la opción matemáticamente correcta.",
+      "answer": "+∞",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: +∞. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: +∞.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_right_infinite_sign",
+        "prerequisito_b1s_f02"
+      ],
+      "choices": [
+        "−∞",
+        "Cero",
+        "+∞"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L04-01",
+      "lesson_id": "B1S-F02-L04",
+      "type": "numeric",
+      "prompt": "En Continuidad: Para f(t)=t²+0, calcula lim(t→3)f(t) o f(3) según continuidad. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 9.0,
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 9. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 9.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_poly_square_plus",
+        "prerequisito_b1s_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L04-02",
+      "lesson_id": "B1S-F02-L04",
+      "type": "numeric",
+      "prompt": "En Continuidad: Para h(x)=(x²−4)/(x−2), x≠2, ¿qué valor h(2) debe asignarse para extenderla continuamente? Introduce el resultado numérico exacto sin unidades.",
+      "answer": 4.0,
+      "explanation": "Explicación matemática: Cálculo del límite con dominio y expresiones laterales diferenciadas; valor contrastado: 4. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 4.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_removable_patch",
+        "prerequisito_b1s_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L04-03",
+      "lesson_id": "B1S-F02-L04",
+      "type": "choice",
+      "prompt": "En Continuidad: ¿Es continua f(x)=x² en x=3 porque está definida y su límite coincide con f(3) (Sí/No)? Elige la opción matemáticamente correcta.",
+      "answer": "Sí",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: Sí. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: Sí.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_poly_continuity",
+        "prerequisito_b1s_f02"
+      ],
+      "choices": [
+        "Sí",
+        "No",
+        "No se puede concluir"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L04-04",
+      "lesson_id": "B1S-F02-L04",
+      "type": "choice",
+      "prompt": "En Continuidad: ¿Cambiar únicamente f(2) puede eliminar un salto con límites laterales 3 y 5 (Sí/No)? Elige la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: No. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: No.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_jump_fix_value",
+        "prerequisito_b1s_f02"
+      ],
+      "choices": [
+        "Sí",
+        "No se puede concluir",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L04-05",
+      "lesson_id": "B1S-F02-L04",
+      "type": "choice",
+      "prompt": "En Continuidad: ¿Se utiliza el límite lateral interior al dominio para estudiar continuidad en el extremo de [0,5] (Sí/No)? Elige la opción matemáticamente correcta.",
+      "answer": "Sí",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: Sí. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: Sí.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_endpoint_continuity",
+        "prerequisito_b1s_f02"
+      ],
+      "choices": [
+        "No se puede concluir",
+        "Sí",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L05-01",
+      "lesson_id": "B1S-F02-L05",
+      "type": "numeric",
+      "prompt": "En Discontinuidades: Una función tiene límite izquierdo 3 y derecho 5 en el umbral. Calcula la MAGNITUD del salto absoluto. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 2.0,
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 2. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 2.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_jump_magnitude",
+        "prerequisito_b1s_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L05-02",
+      "lesson_id": "B1S-F02-L05",
+      "type": "numeric",
+      "prompt": "En Discontinuidades: Calcula lim(x→3) (x²−9)/(x−3) mediante factorización válida solo para x≠3. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 6.0,
+      "explanation": "Explicación matemática: Cálculo del límite con dominio y expresiones laterales diferenciadas; valor contrastado: 6. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 6.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_removable_limit",
+        "prerequisito_b1s_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L05-03",
+      "lesson_id": "B1S-F02-L05",
+      "type": "choice",
+      "prompt": "En Discontinuidades: Clasifica discontinuidad de (x²−9)/(x−3) en x=3: Evitable, De salto o Infinita. Elige la opción matemáticamente correcta.",
+      "answer": "Evitable",
+      "explanation": "Explicación matemática: Cálculo del límite con dominio y expresiones laterales diferenciadas; valor contrastado: Evitable. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: Evitable.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_class_hole",
+        "prerequisito_b1s_f02"
+      ],
+      "choices": [
+        "De salto",
+        "Infinita",
+        "Evitable"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L05-04",
+      "lesson_id": "B1S-F02-L05",
+      "type": "choice",
+      "prompt": "En Discontinuidades: Clasifica discontinuidad con límites laterales 3 y 5: Evitable, De salto o Infinita. Elige la opción matemáticamente correcta.",
+      "answer": "De salto",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: De salto. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: De salto.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_class_jump",
+        "prerequisito_b1s_f02"
+      ],
+      "choices": [
+        "Infinita",
+        "De salto",
+        "Evitable"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L05-05",
+      "lesson_id": "B1S-F02-L05",
+      "type": "choice",
+      "prompt": "En Discontinuidades: Clasifica discontinuidad de 1/(x−2) en x=2: Evitable, De salto o Infinita. Elige la opción matemáticamente correcta.",
+      "answer": "Infinita",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: Infinita. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: Infinita.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_class_infinite",
+        "prerequisito_b1s_f02"
+      ],
+      "choices": [
+        "Infinita",
+        "Evitable",
+        "De salto"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L06-01",
+      "lesson_id": "B1S-F02-L06",
+      "type": "numeric",
+      "prompt": "En Interpretación de modelos a trozos: Tarifa hipotética C(x)=10+2x para x≤3 y 9+4x para x>3. Calcula C(3) usando la rama válida. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 16.0,
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 16. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 16.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_tariff_value",
+        "prerequisito_b1s_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L06-02",
+      "lesson_id": "B1S-F02-L06",
+      "type": "numeric",
+      "prompt": "En Interpretación de modelos a trozos: Para tarifa C(x)=10+2x si x≤3 y 9+4x si x>3, calcula límite DERECHO al aproximarse a 3. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 21.0,
+      "explanation": "Explicación matemática: Cálculo del límite con dominio y expresiones laterales diferenciadas; valor contrastado: 21. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 21.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_tariff_right_limit",
+        "prerequisito_b1s_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L06-03",
+      "lesson_id": "B1S-F02-L06",
+      "type": "numeric",
+      "prompt": "En Interpretación de modelos a trozos: Tarifa hipotética C(x)=10+2x para x≤3 y 9+4x para x>3. Calcula C(5) usando la rama válida. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 29.0,
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 29. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 29.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_tariff_value",
+        "prerequisito_b1s_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L06-04",
+      "lesson_id": "B1S-F02-L06",
+      "type": "choice",
+      "prompt": "En Interpretación de modelos a trozos: ¿Es continua en x=3 la tarifa real extendida C(x)=10+2x si x≤3 y 9+4x si x>3 (Sí/No)? Elige la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: No. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: No.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_tariff_continuity",
+        "prerequisito_b1s_f02"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No se puede concluir"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F02-L06-05",
+      "lesson_id": "B1S-F02-L06",
+      "type": "choice",
+      "prompt": "En Interpretación de modelos a trozos: Calcula el salto (valor absoluto) de C(x)=10+2x para x≤3 y 9+4x para x>3 en x=3. Elige la opción matemáticamente correcta.",
+      "answer": "5",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 5. Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas. Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 5.",
+      "hint": "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_tariff_jump",
+        "prerequisito_b1s_f02"
+      ],
+      "choices": [
+        "6",
+        "4",
+        "5"
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B1S-F02-L01-01": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "poly_limit",
+        "params": [
+          3,
+          2,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: poly_limit"
+    },
+    "F3-B1S-F02-L01-02": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "poly_square_plus",
+        "params": [
+          2,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: poly_square_plus"
+    },
+    "F3-B1S-F02-L01-03": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "removable_limit",
+        "params": [
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: removable_limit"
+    },
+    "F3-B1S-F02-L01-04": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "hole_defined",
+        "params": [
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: hole_defined"
+    },
+    "F3-B1S-F02-L01-05": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "limit_implies_value",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: limit_implies_value"
+    },
+    "F3-B1S-F02-L02-01": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "piece_left",
+        "params": [
+          2,
+          1,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: piece_left"
+    },
+    "F3-B1S-F02-L02-02": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "piece_right",
+        "params": [
+          2,
+          2,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: piece_right"
+    },
+    "F3-B1S-F02-L02-03": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "bilateral_equal",
+        "params": [
+          3,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: bilateral_equal"
+    },
+    "F3-B1S-F02-L02-04": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "jump_magnitude",
+        "params": [
+          3,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: jump_magnitude"
+    },
+    "F3-B1S-F02-L02-05": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "continuous_piece_pair",
+        "params": [
+          2,
+          1,
+          1,
+          2,
+          -1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: continuous_piece_pair"
+    },
+    "F3-B1S-F02-L03-01": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "rational_horizontal",
+        "params": [
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: rational_horizontal"
+    },
+    "F3-B1S-F02-L03-02": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "rational_vertical",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: rational_vertical"
+    },
+    "F3-B1S-F02-L03-03": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "rational_eval",
+        "params": [
+          2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: rational_eval"
+    },
+    "F3-B1S-F02-L03-04": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "left_infinite_sign",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: left_infinite_sign"
+    },
+    "F3-B1S-F02-L03-05": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "right_infinite_sign",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: right_infinite_sign"
+    },
+    "F3-B1S-F02-L04-01": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "poly_square_plus",
+        "params": [
+          3,
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: poly_square_plus"
+    },
+    "F3-B1S-F02-L04-02": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "removable_patch",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: removable_patch"
+    },
+    "F3-B1S-F02-L04-03": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "poly_continuity",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: poly_continuity"
+    },
+    "F3-B1S-F02-L04-04": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "jump_fix_value",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: jump_fix_value"
+    },
+    "F3-B1S-F02-L04-05": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "endpoint_continuity",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: endpoint_continuity"
+    },
+    "F3-B1S-F02-L05-01": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "jump_magnitude",
+        "params": [
+          3,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: jump_magnitude"
+    },
+    "F3-B1S-F02-L05-02": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "removable_limit",
+        "params": [
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: removable_limit"
+    },
+    "F3-B1S-F02-L05-03": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "class_hole",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: class_hole"
+    },
+    "F3-B1S-F02-L05-04": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "class_jump",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: class_jump"
+    },
+    "F3-B1S-F02-L05-05": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "class_infinite",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: class_infinite"
+    },
+    "F3-B1S-F02-L06-01": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "tariff_value",
+        "params": [
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: tariff_value"
+    },
+    "F3-B1S-F02-L06-02": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "tariff_right_limit",
+        "params": [
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: tariff_right_limit"
+    },
+    "F3-B1S-F02-L06-03": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "tariff_value",
+        "params": [
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: tariff_value"
+    },
+    "F3-B1S-F02-L06-04": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "tariff_continuity",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: tariff_continuity"
+    },
+    "F3-B1S-F02-L06-05": {
+      "hints": [
+        "Comprueba el dominio, el valor en el punto y los límites laterales; evita dividir entre cero o mezclar ramas.",
+        "Factoriza solo para x distinto del punto excluido. Existe límite bilateral finito si los dos laterales coinciden; continuidad exige además f(a)=límite. Una asíntota vertical requiere divergencia lateral."
+      ],
+      "math_check": {
+        "kind": "tariff_jump",
+        "params": [
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: tariff_jump"
+    }
+  }
+}

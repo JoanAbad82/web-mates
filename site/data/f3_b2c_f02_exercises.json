@@ -1,0 +1,1011 @@
+{
+  "unit_id": "B2C-F02",
+  "version": "0.14.0",
+  "status": "revision",
+  "notice": "95 ejercicios sintéticos deterministas originales EN REVISIÓN, pendientes de evaluación humana.",
+  "activities": [
+    {
+      "exercise_id": "F3-B2C-F02-L01-01",
+      "lesson_id": "B2C-F02-L01",
+      "type": "numeric",
+      "prompt": "Para f(x)=(2x²+(1))(1x+(-2)), calcula exactamente f′(2) con la regla del PRODUCTO. Escribe el resultado numérico exacto sin unidades.",
+      "answer": 9.0,
+      "explanation": "Explicación paso a paso de la regla: Aplica la regla estructural correcta; desarrolla la derivada con dominio explícito y sustituye al final: 9. Elige la regla de derivación según la estructura: potencia, suma, producto, cociente o composición. Producto (uv)′=u′v+uv′; cociente (u/v)′=(u′v−uv′)/v² con v≠0; cadena [F(u)]′=F′(u)u′, sin omitir dominio. Resultado comprobado: 9. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Elige la regla de derivación según la estructura: potencia, suma, producto, cociente o composición.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_product_deriv_at",
+        "prerrequisito_b2c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L01-02",
+      "lesson_id": "B2C-F02-L01",
+      "type": "numeric",
+      "prompt": "La función es f(x)=(3x+(1))². Calcula f′(1) usando la regla de la CADENA. Escribe el resultado numérico exacto sin unidades.",
+      "answer": 24.0,
+      "explanation": "Explicación paso a paso de la regla: Aplica la regla estructural correcta; desarrolla la derivada con dominio explícito y sustituye al final: 24. Elige la regla de derivación según la estructura: potencia, suma, producto, cociente o composición. Producto (uv)′=u′v+uv′; cociente (u/v)′=(u′v−uv′)/v² con v≠0; cadena [F(u)]′=F′(u)u′, sin omitir dominio. Resultado comprobado: 24. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Elige la regla de derivación según la estructura: potencia, suma, producto, cociente o composición.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_chain_square_at",
+        "prerrequisito_b2c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L01-03",
+      "lesson_id": "B2C-F02-L01",
+      "type": "numeric",
+      "prompt": "Calcula f′(2) si f(x)=(1x+(2))/(1x+(-1)), usando la regla del COCIENTE, con denominador distinto de cero. Escribe el resultado numérico exacto sin unidades.",
+      "answer": -3.0,
+      "explanation": "Explicación paso a paso de la regla: Aplica la regla estructural correcta; desarrolla la derivada con dominio explícito y sustituye al final: -3. Elige la regla de derivación según la estructura: potencia, suma, producto, cociente o composición. Producto (uv)′=u′v+uv′; cociente (u/v)′=(u′v−uv′)/v² con v≠0; cadena [F(u)]′=F′(u)u′, sin omitir dominio. Resultado comprobado: -3. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Elige la regla de derivación según la estructura: potencia, suma, producto, cociente o composición.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_quotient_deriv_at",
+        "prerrequisito_b2c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L01-04",
+      "lesson_id": "B2C-F02-L01",
+      "type": "choice",
+      "prompt": "Dada f(x)=ln(x) con x>0, calcula la derivada f′(2) exactamente. Selecciona la respuesta EXACTA.",
+      "answer": "0,5",
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado 0,5. Elige la regla de derivación según la estructura: potencia, suma, producto, cociente o composición. Producto (uv)′=u′v+uv′; cociente (u/v)′=(u′v−uv′)/v² con v≠0; cadena [F(u)]′=F′(u)u′, sin omitir dominio. Resultado comprobado: 0,5. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Elige la regla de derivación según la estructura: potencia, suma, producto, cociente o composición.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_log_deriv_at",
+        "prerrequisito_b2c_f02"
+      ],
+      "choices": [
+        "1,5",
+        "-0,5",
+        "0,5"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L01-05",
+      "lesson_id": "B2C-F02-L01",
+      "type": "choice",
+      "prompt": "Para f(x)=e^x, calcula la derivada f′(0) sin aproximaciones decimales. Selecciona la respuesta EXACTA.",
+      "answer": "1",
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado 1. Elige la regla de derivación según la estructura: potencia, suma, producto, cociente o composición. Producto (uv)′=u′v+uv′; cociente (u/v)′=(u′v−uv′)/v² con v≠0; cadena [F(u)]′=F′(u)u′, sin omitir dominio. Resultado comprobado: 1. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Elige la regla de derivación según la estructura: potencia, suma, producto, cociente o composición.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_exponential_deriv0",
+        "prerrequisito_b2c_f02"
+      ],
+      "choices": [
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L02-01",
+      "lesson_id": "B2C-F02-L02",
+      "type": "numeric",
+      "prompt": "Para f(x)=1x³+(-3)x²+(0)x+(2), calcula exactamente f″(2). Escribe el resultado numérico exacto sin unidades.",
+      "answer": 6.0,
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado 6. Deriva el polinomio sucesivamente término a término con la regla de potencias. Si f(x)=Ax³+Bx²+Cx+D, f″=6Ax+2B, f‴=6A y f⁽⁴⁾=0. No mezcles velocidad con posición. Resultado comprobado: 6. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Deriva el polinomio sucesivamente término a término con la regla de potencias.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_second_cubic_at",
+        "prerrequisito_b2c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L02-02",
+      "lesson_id": "B2C-F02-L02",
+      "type": "numeric",
+      "prompt": "Para f(x)=1x³+(-3)x²+(0)x+(2), calcula la tercera derivada f‴(x), constante. Escribe el resultado numérico exacto sin unidades.",
+      "answer": 6.0,
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado 6. Deriva el polinomio sucesivamente término a término con la regla de potencias. Si f(x)=Ax³+Bx²+Cx+D, f″=6Ax+2B, f‴=6A y f⁽⁴⁾=0. No mezcles velocidad con posición. Resultado comprobado: 6. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Deriva el polinomio sucesivamente término a término con la regla de potencias.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_third_cubic",
+        "prerrequisito_b2c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L02-03",
+      "lesson_id": "B2C-F02-L02",
+      "type": "numeric",
+      "prompt": "Para f(x)=2x²+(-3)x+(1), calcula f″(x), constante para todos los reales. Escribe el resultado numérico exacto sin unidades.",
+      "answer": 4.0,
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado 4. Deriva el polinomio sucesivamente término a término con la regla de potencias. Si f(x)=Ax³+Bx²+Cx+D, f″=6Ax+2B, f‴=6A y f⁽⁴⁾=0. No mezcles velocidad con posición. Resultado comprobado: 4. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Deriva el polinomio sucesivamente término a término con la regla de potencias.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_second_quad",
+        "prerrequisito_b2c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L02-04",
+      "lesson_id": "B2C-F02-L02",
+      "type": "choice",
+      "prompt": "Para s(t)=2t²+(-3)t metros, calcula la ACELERACIÓN constante s″(t), valor numérico en m/s². Selecciona la respuesta EXACTA.",
+      "answer": "4",
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado 4. Deriva la posición para velocidad, y la velocidad para aceleración. Identifica las unidades. Para s(t)=At²+Bt, s′(t)=2At+B en m/s y s″(t)=2A en m/s²; distingue velocidad con signo de rapidez no negativa. Resultado comprobado: 4. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Deriva la posición para velocidad, y la velocidad para aceleración. Identifica las unidades.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_acceleration_quad",
+        "prerrequisito_b2c_f02"
+      ],
+      "choices": [
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L02-05",
+      "lesson_id": "B2C-F02-L02",
+      "type": "choice",
+      "prompt": "Para el polinomio cúbico f(x)=1x³+(-3)x²+(0)x+(2), calcula f⁽⁴⁾(x). Selecciona la respuesta EXACTA.",
+      "answer": "0",
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado 0. Deriva el polinomio sucesivamente término a término con la regla de potencias. Si f(x)=Ax³+Bx²+Cx+D, f″=6Ax+2B, f‴=6A y f⁽⁴⁾=0. No mezcles velocidad con posición. Resultado comprobado: 0. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Deriva el polinomio sucesivamente término a término con la regla de potencias.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_fourth_cubic",
+        "prerrequisito_b2c_f02"
+      ],
+      "choices": [
+        "0",
+        "1",
+        "-1"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L03-01",
+      "lesson_id": "B2C-F02-L03",
+      "type": "numeric",
+      "prompt": "Para f(x)=x³−3x, encuentra la ABSCISA del máximo local. Hay que comprobar signo de f′ alrededor del crítico. Escribe el resultado numérico exacto sin unidades.",
+      "answer": -1.0,
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado -1. Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados. f′(a)=0 es necesario en extremos interiores derivables pero no suficiente; en intervalos cerrados compara también las fronteras. Resultado comprobado: -1. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cubic_max_x",
+        "prerrequisito_b2c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L03-02",
+      "lesson_id": "B2C-F02-L03",
+      "type": "numeric",
+      "prompt": "Para f(x)=x³−3x, calcula el VALOR de la función en su mínimo local (x=1). Escribe el resultado numérico exacto sin unidades.",
+      "answer": -2.0,
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado -2. Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados. f′(a)=0 es necesario en extremos interiores derivables pero no suficiente; en intervalos cerrados compara también las fronteras. Resultado comprobado: -2. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cubic_min_value",
+        "prerrequisito_b2c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L03-03",
+      "lesson_id": "B2C-F02-L03",
+      "type": "numeric",
+      "prompt": "Halla el valor MÍNIMO absoluto de f(x)=x² en el intervalo cerrado [-1,2], comprobando los críticos. Escribe el resultado numérico exacto sin unidades.",
+      "answer": 0.0,
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado 0. Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados. f′(a)=0 es necesario en extremos interiores derivables pero no suficiente; en intervalos cerrados compara también las fronteras. Resultado comprobado: 0. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_sq_min_on_interval",
+        "prerrequisito_b2c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L03-04",
+      "lesson_id": "B2C-F02-L03",
+      "type": "choice",
+      "prompt": "Halla el valor MÁXIMO absoluto de f(x)=x² en el intervalo cerrado [-1,2], incluyendo los extremos. Selecciona la respuesta EXACTA.",
+      "answer": "4",
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado 4. Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados. f′(a)=0 es necesario en extremos interiores derivables pero no suficiente; en intervalos cerrados compara también las fronteras. Resultado comprobado: 4. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_sq_max_on_interval",
+        "prerrequisito_b2c_f02"
+      ],
+      "choices": [
+        "4",
+        "5",
+        "3"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L03-05",
+      "lesson_id": "B2C-F02-L03",
+      "type": "choice",
+      "prompt": "¿Es f′(a)=0 una condición suficiente por sí sola para garantizar un extremo local (Sí/No)? Selecciona la respuesta EXACTA.",
+      "answer": "No",
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado No. Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados. f′(a)=0 es necesario en extremos interiores derivables pero no suficiente; en intervalos cerrados compara también las fronteras. Resultado comprobado: No. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_critical_sufficient",
+        "prerrequisito_b2c_f02"
+      ],
+      "choices": [
+        "Sí",
+        "No se puede concluir",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L04-01",
+      "lesson_id": "B2C-F02-L04",
+      "type": "numeric",
+      "prompt": "La función f(x)=x³ cumple f″(x)=6x. Halla la ABSCISA de la inflexión con cambio de concavidad. Escribe el resultado numérico exacto sin unidades.",
+      "answer": 0.0,
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado 0. La concavidad se estudia por el signo de la segunda derivada a ambos lados. f″(a)=0 solo propone un candidato; sin cambio de concavidad no hay inflexión. f″(a)>0 con f′(a)=0 indica mínimo local. Resultado comprobado: 0. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "La concavidad se estudia por el signo de la segunda derivada a ambos lados.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cubic_inflexion_x",
+        "prerrequisito_b2c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L04-02",
+      "lesson_id": "B2C-F02-L04",
+      "type": "choice",
+      "prompt": "Para f(x)=x⁴, f″(0)=0. ¿Existe punto de INFLEXIÓN en x=0 (Sí/No)? Comprueba signos. Selecciona la respuesta EXACTA.",
+      "answer": "No",
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado No. La concavidad se estudia por el signo de la segunda derivada a ambos lados. f″(a)=0 solo propone un candidato; sin cambio de concavidad no hay inflexión. f″(a)>0 con f′(a)=0 indica mínimo local. Resultado comprobado: No. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "La concavidad se estudia por el signo de la segunda derivada a ambos lados.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_quartic_inflexion",
+        "prerrequisito_b2c_f02"
+      ],
+      "choices": [
+        "No se puede concluir",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L04-03",
+      "lesson_id": "B2C-F02-L04",
+      "type": "numeric",
+      "prompt": "Para f(x)=1x³+(0)x²+(0)x+(0), calcula exactamente f″(2). Escribe el resultado numérico exacto sin unidades.",
+      "answer": 12.0,
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado 12. Deriva el polinomio sucesivamente término a término con la regla de potencias. Si f(x)=Ax³+Bx²+Cx+D, f″=6Ax+2B, f‴=6A y f⁽⁴⁾=0. No mezcles velocidad con posición. Resultado comprobado: 12. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Deriva el polinomio sucesivamente término a término con la regla de potencias.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_second_cubic_at",
+        "prerrequisito_b2c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L04-04",
+      "lesson_id": "B2C-F02-L04",
+      "type": "choice",
+      "prompt": "Para f(x)=1x³, clasifica la concavidad en x=-2: Arriba si f″>0, Abajo si f″<0. Selecciona la respuesta EXACTA.",
+      "answer": "Abajo",
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado Abajo. La concavidad se estudia por el signo de la segunda derivada a ambos lados. f″(a)=0 solo propone un candidato; sin cambio de concavidad no hay inflexión. f″(a)>0 con f′(a)=0 indica mínimo local. Resultado comprobado: Abajo. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "La concavidad se estudia por el signo de la segunda derivada a ambos lados.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cubic_concavity_side",
+        "prerrequisito_b2c_f02"
+      ],
+      "choices": [
+        "Arriba",
+        "No existe segunda derivada",
+        "Abajo"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L04-05",
+      "lesson_id": "B2C-F02-L04",
+      "type": "choice",
+      "prompt": "Una función cumple f′(a)=0 y f″(a)=2. ¿Qué concluye el test de segunda derivada: Mínimo, Máximo o No concluyente? Selecciona la respuesta EXACTA.",
+      "answer": "Mínimo",
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado Mínimo. La concavidad se estudia por el signo de la segunda derivada a ambos lados. f″(a)=0 solo propone un candidato; sin cambio de concavidad no hay inflexión. f″(a)>0 con f′(a)=0 indica mínimo local. Resultado comprobado: Mínimo. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "La concavidad se estudia por el signo de la segunda derivada a ambos lados.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_second_test",
+        "prerrequisito_b2c_f02"
+      ],
+      "choices": [
+        "No concluyente",
+        "Mínimo",
+        "Máximo"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L05-01",
+      "lesson_id": "B2C-F02-L05",
+      "type": "choice",
+      "prompt": "Halla las dos RAÍCES ordenadas (x₁,x₂) de f(x)=x²−(4) y justifica sus cortes con el eje x. Selecciona la respuesta EXACTA.",
+      "answer": "(-2, 2)",
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado (-2, 2). Estudia primero dominio, ceros y límites antes de usar los signos de derivadas. Para f(x)=1/(x−1), f′(x)=−1/(x−1)²<0 en cada tramo. Resolver x²−a²=0 da −a y a. Resultado comprobado: (-2, 2). Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Estudia primero dominio, ceros y límites antes de usar los signos de derivadas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_quad_roots",
+        "prerrequisito_b2c_f02"
+      ],
+      "choices": [
+        "(-1, 3)",
+        "(-2, 2)",
+        "(2, -2)"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L05-02",
+      "lesson_id": "B2C-F02-L05",
+      "type": "numeric",
+      "prompt": "Para f(x)=x³−3x, encuentra la ABSCISA del máximo local. Hay que comprobar signo de f′ alrededor del crítico. Escribe el resultado numérico exacto sin unidades.",
+      "answer": -1.0,
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado -1. Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados. f′(a)=0 es necesario en extremos interiores derivables pero no suficiente; en intervalos cerrados compara también las fronteras. Resultado comprobado: -1. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cubic_max_x",
+        "prerrequisito_b2c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L05-03",
+      "lesson_id": "B2C-F02-L05",
+      "type": "choice",
+      "prompt": "Para f(x)=1/(x−(1))+3, escribe la ecuación EXACTA de la asíntota VERTICAL. Selecciona la respuesta EXACTA.",
+      "answer": "x=1",
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado x=1. Una asíntota vertical requiere límite lateral infinito, una horizontal límite finito en infinito. Para oblicua y=mx+b comprueba f(x)−(mx+b)→0, m≠0. Un factor cancelado con límite finito produce agujero. Resultado comprobado: x=1. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Una asíntota vertical requiere límite lateral infinito, una horizontal límite finito en infinito.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_vertical_asymptote",
+        "prerrequisito_b2c_f02"
+      ],
+      "choices": [
+        "y=1",
+        "x=2",
+        "x=1"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L05-04",
+      "lesson_id": "B2C-F02-L05",
+      "type": "choice",
+      "prompt": "La función f(x)=x³ cumple f″(x)=6x. Halla la ABSCISA de la inflexión con cambio de concavidad. Selecciona la respuesta EXACTA.",
+      "answer": "0",
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado 0. La concavidad se estudia por el signo de la segunda derivada a ambos lados. f″(a)=0 solo propone un candidato; sin cambio de concavidad no hay inflexión. f″(a)>0 con f′(a)=0 indica mínimo local. Resultado comprobado: 0. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "La concavidad se estudia por el signo de la segunda derivada a ambos lados.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cubic_inflexion_x",
+        "prerrequisito_b2c_f02"
+      ],
+      "choices": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L05-05",
+      "lesson_id": "B2C-F02-L05",
+      "type": "choice",
+      "prompt": "Para f(x)=1/(x−1) en su dominio real x≠1, ¿el signo de f′ en CADA tramo es Positiva o Negativa? Selecciona la respuesta EXACTA.",
+      "answer": "Negativa",
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado Negativa. Estudia primero dominio, ceros y límites antes de usar los signos de derivadas. Para f(x)=1/(x−1), f′(x)=−1/(x−1)²<0 en cada tramo. Resolver x²−a²=0 da −a y a. Resultado comprobado: Negativa. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Estudia primero dominio, ceros y límites antes de usar los signos de derivadas.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_reciprocal_deriv_sign",
+        "prerrequisito_b2c_f02"
+      ],
+      "choices": [
+        "Negativa",
+        "Positiva",
+        "Nula"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L06-01",
+      "lesson_id": "B2C-F02-L06",
+      "type": "numeric",
+      "prompt": "Un rectángulo tiene perímetro total 20 m. ¿Qué longitud en metros debe tener cada lado para maximizar su área? Escribe el resultado numérico exacto sin unidades.",
+      "answer": 5.0,
+      "explanation": "Explicación paso a paso de la regla: Restringe las longitudes y compara los extremos y críticos factibles: 5. Escribe función objetivo y restricciones del dominio físico antes de derivar. Rectángulo de perímetro P: lados x y P/2−x, área x(P/2−x); el crítico x=P/4 maximiza área P²/16. Resultado comprobado: 5. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Escribe función objetivo y restricciones del dominio físico antes de derivar.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_rectangle_opt_side",
+        "prerrequisito_b2c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L06-02",
+      "lesson_id": "B2C-F02-L06",
+      "type": "numeric",
+      "prompt": "Un rectángulo de perímetro 20 m se optimiza entre formas rectangulares. Calcula el área MÁXIMA en m². Escribe el resultado numérico exacto sin unidades.",
+      "answer": 25.0,
+      "explanation": "Explicación paso a paso de la regla: Restringe las longitudes y compara los extremos y críticos factibles: 25. Escribe función objetivo y restricciones del dominio físico antes de derivar. Rectángulo de perímetro P: lados x y P/2−x, área x(P/2−x); el crítico x=P/4 maximiza área P²/16. Resultado comprobado: 25. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Escribe función objetivo y restricciones del dominio físico antes de derivar.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_rectangle_opt_area",
+        "prerrequisito_b2c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L06-03",
+      "lesson_id": "B2C-F02-L06",
+      "type": "numeric",
+      "prompt": "Para f(x)=(x−(3))²+(4) en [0,5], calcula la abscisa del MÍNIMO global factible. Escribe el resultado numérico exacto sin unidades.",
+      "answer": 3.0,
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado 3. Escribe función objetivo y restricciones del dominio físico antes de derivar. Rectángulo de perímetro P: lados x y P/2−x, área x(P/2−x); el crítico x=P/4 maximiza área P²/16. Resultado comprobado: 3. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Escribe función objetivo y restricciones del dominio físico antes de derivar.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_quad_min_x",
+        "prerrequisito_b2c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L06-04",
+      "lesson_id": "B2C-F02-L06",
+      "type": "choice",
+      "prompt": "Para f(x)=(x−(3))²+(4) en [0,5], calcula el VALOR del mínimo global factible. Selecciona la respuesta EXACTA.",
+      "answer": "4",
+      "explanation": "Explicación paso a paso de la regla: Operación exacta según las definiciones y restricciones indicadas, con resultado 4. Escribe función objetivo y restricciones del dominio físico antes de derivar. Rectángulo de perímetro P: lados x y P/2−x, área x(P/2−x); el crítico x=P/4 maximiza área P²/16. Resultado comprobado: 4. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Escribe función objetivo y restricciones del dominio físico antes de derivar.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_quad_min_value",
+        "prerrequisito_b2c_f02"
+      ],
+      "choices": [
+        "4",
+        "5",
+        "3"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F02-L06-05",
+      "lesson_id": "B2C-F02-L06",
+      "type": "choice",
+      "prompt": "Se obtuvo punto crítico x=-1 para optimizar bajo restricción 0≤x≤5. ¿Es candidato FACTIBLE (Sí/No)? Selecciona la respuesta EXACTA.",
+      "answer": "No",
+      "explanation": "Explicación paso a paso de la regla: Restringe las longitudes y compara los extremos y críticos factibles: No. Escribe función objetivo y restricciones del dominio físico antes de derivar. Rectángulo de perímetro P: lados x y P/2−x, área x(P/2−x); el crítico x=P/4 maximiza área P²/16. Resultado comprobado: No. Revisa el dominio, el límite bilateral, la regularidad, la orientación de los signos, el intervalo y las unidades antes de interpretar el resultado.",
+      "hint": "Escribe función objetivo y restricciones del dominio físico antes de derivar.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_feasible_critical",
+        "prerrequisito_b2c_f02"
+      ],
+      "choices": [
+        "Sí",
+        "No se puede concluir",
+        "No"
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B2C-F02-L01-01": {
+      "hints": [
+        "Elige la regla de derivación según la estructura: potencia, suma, producto, cociente o composición.",
+        "Producto (uv)′=u′v+uv′; cociente (u/v)′=(u′v−uv′)/v² con v≠0; cadena [F(u)]′=F′(u)u′, sin omitir dominio."
+      ],
+      "math_check": {
+        "kind": "product_deriv_at",
+        "params": [
+          2,
+          1,
+          1,
+          -2,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: product_deriv_at"
+    },
+    "F3-B2C-F02-L01-02": {
+      "hints": [
+        "Elige la regla de derivación según la estructura: potencia, suma, producto, cociente o composición.",
+        "Producto (uv)′=u′v+uv′; cociente (u/v)′=(u′v−uv′)/v² con v≠0; cadena [F(u)]′=F′(u)u′, sin omitir dominio."
+      ],
+      "math_check": {
+        "kind": "chain_square_at",
+        "params": [
+          3,
+          1,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: chain_square_at"
+    },
+    "F3-B2C-F02-L01-03": {
+      "hints": [
+        "Elige la regla de derivación según la estructura: potencia, suma, producto, cociente o composición.",
+        "Producto (uv)′=u′v+uv′; cociente (u/v)′=(u′v−uv′)/v² con v≠0; cadena [F(u)]′=F′(u)u′, sin omitir dominio."
+      ],
+      "math_check": {
+        "kind": "quotient_deriv_at",
+        "params": [
+          1,
+          2,
+          1,
+          -1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: quotient_deriv_at"
+    },
+    "F3-B2C-F02-L01-04": {
+      "hints": [
+        "Elige la regla de derivación según la estructura: potencia, suma, producto, cociente o composición.",
+        "Producto (uv)′=u′v+uv′; cociente (u/v)′=(u′v−uv′)/v² con v≠0; cadena [F(u)]′=F′(u)u′, sin omitir dominio."
+      ],
+      "math_check": {
+        "kind": "log_deriv_at",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: log_deriv_at"
+    },
+    "F3-B2C-F02-L01-05": {
+      "hints": [
+        "Elige la regla de derivación según la estructura: potencia, suma, producto, cociente o composición.",
+        "Producto (uv)′=u′v+uv′; cociente (u/v)′=(u′v−uv′)/v² con v≠0; cadena [F(u)]′=F′(u)u′, sin omitir dominio."
+      ],
+      "math_check": {
+        "kind": "exponential_deriv0",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: exponential_deriv0"
+    },
+    "F3-B2C-F02-L02-01": {
+      "hints": [
+        "Deriva el polinomio sucesivamente término a término con la regla de potencias.",
+        "Si f(x)=Ax³+Bx²+Cx+D, f″=6Ax+2B, f‴=6A y f⁽⁴⁾=0. No mezcles velocidad con posición."
+      ],
+      "math_check": {
+        "kind": "second_cubic_at",
+        "params": [
+          1,
+          -3,
+          0,
+          2,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: second_cubic_at"
+    },
+    "F3-B2C-F02-L02-02": {
+      "hints": [
+        "Deriva el polinomio sucesivamente término a término con la regla de potencias.",
+        "Si f(x)=Ax³+Bx²+Cx+D, f″=6Ax+2B, f‴=6A y f⁽⁴⁾=0. No mezcles velocidad con posición."
+      ],
+      "math_check": {
+        "kind": "third_cubic",
+        "params": [
+          1,
+          -3,
+          0,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: third_cubic"
+    },
+    "F3-B2C-F02-L02-03": {
+      "hints": [
+        "Deriva el polinomio sucesivamente término a término con la regla de potencias.",
+        "Si f(x)=Ax³+Bx²+Cx+D, f″=6Ax+2B, f‴=6A y f⁽⁴⁾=0. No mezcles velocidad con posición."
+      ],
+      "math_check": {
+        "kind": "second_quad",
+        "params": [
+          2,
+          -3,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: second_quad"
+    },
+    "F3-B2C-F02-L02-04": {
+      "hints": [
+        "Deriva la posición para velocidad, y la velocidad para aceleración. Identifica las unidades.",
+        "Para s(t)=At²+Bt, s′(t)=2At+B en m/s y s″(t)=2A en m/s²; distingue velocidad con signo de rapidez no negativa."
+      ],
+      "math_check": {
+        "kind": "acceleration_quad",
+        "params": [
+          2,
+          -3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: acceleration_quad"
+    },
+    "F3-B2C-F02-L02-05": {
+      "hints": [
+        "Deriva el polinomio sucesivamente término a término con la regla de potencias.",
+        "Si f(x)=Ax³+Bx²+Cx+D, f″=6Ax+2B, f‴=6A y f⁽⁴⁾=0. No mezcles velocidad con posición."
+      ],
+      "math_check": {
+        "kind": "fourth_cubic",
+        "params": [
+          1,
+          -3,
+          0,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: fourth_cubic"
+    },
+    "F3-B2C-F02-L03-01": {
+      "hints": [
+        "Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados.",
+        "f′(a)=0 es necesario en extremos interiores derivables pero no suficiente; en intervalos cerrados compara también las fronteras."
+      ],
+      "math_check": {
+        "kind": "cubic_max_x",
+        "params": [
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: cubic_max_x"
+    },
+    "F3-B2C-F02-L03-02": {
+      "hints": [
+        "Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados.",
+        "f′(a)=0 es necesario en extremos interiores derivables pero no suficiente; en intervalos cerrados compara también las fronteras."
+      ],
+      "math_check": {
+        "kind": "cubic_min_value",
+        "params": [
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: cubic_min_value"
+    },
+    "F3-B2C-F02-L03-03": {
+      "hints": [
+        "Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados.",
+        "f′(a)=0 es necesario en extremos interiores derivables pero no suficiente; en intervalos cerrados compara también las fronteras."
+      ],
+      "math_check": {
+        "kind": "sq_min_on_interval",
+        "params": [
+          -1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: sq_min_on_interval"
+    },
+    "F3-B2C-F02-L03-04": {
+      "hints": [
+        "Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados.",
+        "f′(a)=0 es necesario en extremos interiores derivables pero no suficiente; en intervalos cerrados compara también las fronteras."
+      ],
+      "math_check": {
+        "kind": "sq_max_on_interval",
+        "params": [
+          -1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: sq_max_on_interval"
+    },
+    "F3-B2C-F02-L03-05": {
+      "hints": [
+        "Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados.",
+        "f′(a)=0 es necesario en extremos interiores derivables pero no suficiente; en intervalos cerrados compara también las fronteras."
+      ],
+      "math_check": {
+        "kind": "critical_sufficient",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: critical_sufficient"
+    },
+    "F3-B2C-F02-L04-01": {
+      "hints": [
+        "La concavidad se estudia por el signo de la segunda derivada a ambos lados.",
+        "f″(a)=0 solo propone un candidato; sin cambio de concavidad no hay inflexión. f″(a)>0 con f′(a)=0 indica mínimo local."
+      ],
+      "math_check": {
+        "kind": "cubic_inflexion_x",
+        "params": [
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: cubic_inflexion_x"
+    },
+    "F3-B2C-F02-L04-02": {
+      "hints": [
+        "La concavidad se estudia por el signo de la segunda derivada a ambos lados.",
+        "f″(a)=0 solo propone un candidato; sin cambio de concavidad no hay inflexión. f″(a)>0 con f′(a)=0 indica mínimo local."
+      ],
+      "math_check": {
+        "kind": "quartic_inflexion",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: quartic_inflexion"
+    },
+    "F3-B2C-F02-L04-03": {
+      "hints": [
+        "Deriva el polinomio sucesivamente término a término con la regla de potencias.",
+        "Si f(x)=Ax³+Bx²+Cx+D, f″=6Ax+2B, f‴=6A y f⁽⁴⁾=0. No mezcles velocidad con posición."
+      ],
+      "math_check": {
+        "kind": "second_cubic_at",
+        "params": [
+          1,
+          0,
+          0,
+          0,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: second_cubic_at"
+    },
+    "F3-B2C-F02-L04-04": {
+      "hints": [
+        "La concavidad se estudia por el signo de la segunda derivada a ambos lados.",
+        "f″(a)=0 solo propone un candidato; sin cambio de concavidad no hay inflexión. f″(a)>0 con f′(a)=0 indica mínimo local."
+      ],
+      "math_check": {
+        "kind": "cubic_concavity_side",
+        "params": [
+          1,
+          -2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: cubic_concavity_side"
+    },
+    "F3-B2C-F02-L04-05": {
+      "hints": [
+        "La concavidad se estudia por el signo de la segunda derivada a ambos lados.",
+        "f″(a)=0 solo propone un candidato; sin cambio de concavidad no hay inflexión. f″(a)>0 con f′(a)=0 indica mínimo local."
+      ],
+      "math_check": {
+        "kind": "second_test",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: second_test"
+    },
+    "F3-B2C-F02-L05-01": {
+      "hints": [
+        "Estudia primero dominio, ceros y límites antes de usar los signos de derivadas.",
+        "Para f(x)=1/(x−1), f′(x)=−1/(x−1)²<0 en cada tramo. Resolver x²−a²=0 da −a y a."
+      ],
+      "math_check": {
+        "kind": "quad_roots",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: quad_roots"
+    },
+    "F3-B2C-F02-L05-02": {
+      "hints": [
+        "Encuentra puntos críticos y examina el signo de la primera derivada a ambos lados.",
+        "f′(a)=0 es necesario en extremos interiores derivables pero no suficiente; en intervalos cerrados compara también las fronteras."
+      ],
+      "math_check": {
+        "kind": "cubic_max_x",
+        "params": [
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: cubic_max_x"
+    },
+    "F3-B2C-F02-L05-03": {
+      "hints": [
+        "Una asíntota vertical requiere límite lateral infinito, una horizontal límite finito en infinito.",
+        "Para oblicua y=mx+b comprueba f(x)−(mx+b)→0, m≠0. Un factor cancelado con límite finito produce agujero."
+      ],
+      "math_check": {
+        "kind": "vertical_asymptote",
+        "params": [
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: vertical_asymptote"
+    },
+    "F3-B2C-F02-L05-04": {
+      "hints": [
+        "La concavidad se estudia por el signo de la segunda derivada a ambos lados.",
+        "f″(a)=0 solo propone un candidato; sin cambio de concavidad no hay inflexión. f″(a)>0 con f′(a)=0 indica mínimo local."
+      ],
+      "math_check": {
+        "kind": "cubic_inflexion_x",
+        "params": [
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: cubic_inflexion_x"
+    },
+    "F3-B2C-F02-L05-05": {
+      "hints": [
+        "Estudia primero dominio, ceros y límites antes de usar los signos de derivadas.",
+        "Para f(x)=1/(x−1), f′(x)=−1/(x−1)²<0 en cada tramo. Resolver x²−a²=0 da −a y a."
+      ],
+      "math_check": {
+        "kind": "reciprocal_deriv_sign",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: reciprocal_deriv_sign"
+    },
+    "F3-B2C-F02-L06-01": {
+      "hints": [
+        "Escribe función objetivo y restricciones del dominio físico antes de derivar.",
+        "Rectángulo de perímetro P: lados x y P/2−x, área x(P/2−x); el crítico x=P/4 maximiza área P²/16."
+      ],
+      "math_check": {
+        "kind": "rectangle_opt_side",
+        "params": [
+          20
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: rectangle_opt_side"
+    },
+    "F3-B2C-F02-L06-02": {
+      "hints": [
+        "Escribe función objetivo y restricciones del dominio físico antes de derivar.",
+        "Rectángulo de perímetro P: lados x y P/2−x, área x(P/2−x); el crítico x=P/4 maximiza área P²/16."
+      ],
+      "math_check": {
+        "kind": "rectangle_opt_area",
+        "params": [
+          20
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: rectangle_opt_area"
+    },
+    "F3-B2C-F02-L06-03": {
+      "hints": [
+        "Escribe función objetivo y restricciones del dominio físico antes de derivar.",
+        "Rectángulo de perímetro P: lados x y P/2−x, área x(P/2−x); el crítico x=P/4 maximiza área P²/16."
+      ],
+      "math_check": {
+        "kind": "quad_min_x",
+        "params": [
+          3,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: quad_min_x"
+    },
+    "F3-B2C-F02-L06-04": {
+      "hints": [
+        "Escribe función objetivo y restricciones del dominio físico antes de derivar.",
+        "Rectángulo de perímetro P: lados x y P/2−x, área x(P/2−x); el crítico x=P/4 maximiza área P²/16."
+      ],
+      "math_check": {
+        "kind": "quad_min_value",
+        "params": [
+          3,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: quad_min_value"
+    },
+    "F3-B2C-F02-L06-05": {
+      "hints": [
+        "Escribe función objetivo y restricciones del dominio físico antes de derivar.",
+        "Rectángulo de perímetro P: lados x y P/2−x, área x(P/2−x); el crítico x=P/4 maximiza área P²/16."
+      ],
+      "math_check": {
+        "kind": "feasible_critical",
+        "params": [
+          -1,
+          0,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Errores de dominio, signo, regularidad, límite unilateral y restricción: feasible_critical"
+    }
+  }
+}

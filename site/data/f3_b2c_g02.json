@@ -1,0 +1,794 @@
+{
+  "unit_id": "B2C-G02",
+  "unit_title": "Rectas y planos en 3D",
+  "product_phase": "F3_OLA12",
+  "version": "0.12.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Escribir ecuaciones vectoriales y paramétricas de rectas espaciales.",
+    "Construir ecuaciones de planos a partir de punto y normal no nula.",
+    "Distinguir rectas paralelas, secantes, coincidentes y cruzadas en 3D."
+  ],
+  "warnings": [
+    "Borrador sintético determinista EN REVISIÓN; no homologado.",
+    "Aristas B1C-A01→B2C-A01→B2C-A02→B2C-G02 y B2C-G01→B2C-G02 son editoriales.",
+    "Revisión territorial, matemática/didáctica humana y WCAG integral no verificadas."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Vectores espaciales",
+      "lesson_id": "B2C-G01-L01",
+      "href": "#/curso/B2C/unidad/B2C-G01/leccion/B2C-G01-L01"
+    },
+    {
+      "label": "Sistemas y rangos",
+      "lesson_id": "B2C-A02-L05",
+      "href": "#/curso/B2C/unidad/B2C-A02/leccion/B2C-A02-L05"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Practicar sentido antes que fórmula, recuperar sin pistas y espaciar errores voluntariamente."
+  },
+  "source_note": "RD 243/2022 Matemáticas II; secuencia editorial y normativa autonómica sin cotejo.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B2C-G02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.12.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G02:C01"
+      ],
+      "objectives": [
+        "Escribir ecuaciones vectoriales y paramétricas de rectas espaciales.",
+        "Comprobar pertenencia de puntos con un mismo parámetro en las tres coordenadas."
+      ],
+      "prerequisites": [
+        "B2C-G01-L01",
+        "B2C-G01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una recta en el espacio queda determinada por un punto P=(p₁,p₂,p₃) y un vector director v=(a,b,c) no nulo: X=P+t v con t real. Sus ecuaciones paramétricas son x=p₁+at, y=p₂+bt, z=p₃+ct. Para comprobar que Q pertenece a la recta, debe existir un único mismo valor de t que satisfaga las tres ecuaciones; resolver cada una por separado sin contrastarlas genera falsos positivos. La ecuación continua (x−p₁)/a=(y−p₂)/b=(z−p₃)/c solo puede escribirse así si a,b,c son distintos de cero; para componentes nulas deben utilizarse restricciones explícitas o la forma paramétrica. Distintos vectores directores proporcionales no nulos describen la misma dirección."
+        },
+        {
+          "type": "example",
+          "body": "La recta P=(1,2,3), v=(2,−1,1) pasa por (5,0,5) para t=2."
+        },
+        {
+          "type": "example",
+          "body": "La recta x=1+t,y=2,z=3−t no contiene Q=(3,3,1): de x resulta t=2, pero y debería valer 2."
+        },
+        {
+          "type": "figure",
+          "body": "Recta paramétrica 3D. Diagrama matemático declarativo; la tabla semántica adjunta especifica de forma independiente dimensiones, valores exactos, condiciones y ecuaciones.",
+          "alt": "Recta paramétrica 3D. La tabla accesible aporta todos los valores y condiciones sin necesidad de interpretar el dibujo.",
+          "visual_spec": {
+            "kind": "space",
+            "title": "Recta paramétrica 3D",
+            "rows": [
+              [
+                "P",
+                "(1,2,3)"
+              ],
+              [
+                "Director",
+                "(2,−1,1)"
+              ],
+              [
+                "Ecuación",
+                "(x,y,z)=P+t·v"
+              ],
+              [
+                "t=2",
+                "(5,0,5)"
+              ]
+            ],
+            "points": [
+              [
+                "P",
+                1,
+                2,
+                3
+              ],
+              [
+                "Q",
+                5,
+                0,
+                5
+              ]
+            ],
+            "arrows": [
+              [
+                1,
+                2,
+                3,
+                5,
+                0,
+                5
+              ]
+            ],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede una recta tener director (0,0,0)?||No. El vector nulo no define dirección ni una recta, solo un punto constante."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Una recta en el espacio queda determinada por un punto P=(p₁,p₂,p₃) y un vector director v=(a,b,c) no nulo: X=P+t v con t real. Explica el procedimiento sin ayuda, distingue los casos degenerados y revisa un ejercicio de transferencia."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G02-L01-01",
+        "F3-B2C-G02-L01-02",
+        "F3-B2C-G02-L01-03",
+        "F3-B2C-G02-L01-04",
+        "F3-B2C-G02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, anexo II, Matemáticas II; marco RD 217/2022 ESO como prerrequisito",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa; ubicación editorial de unidades, mapeo territorial no verificado."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-G02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.12.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G02:C02"
+      ],
+      "objectives": [
+        "Construir ecuaciones de planos a partir de punto y normal no nula.",
+        "Verificar incidencia sustituyendo coordenadas en la ecuación del plano."
+      ],
+      "prerequisites": [
+        "B2C-G01-L03",
+        "B2C-G02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un plano con vector normal n=(a,b,c) no nulo que pasa por P=(p₁,p₂,p₃) satisface n·(X−P)=0; su ecuación general es ax+by+cz=d con d=ap₁+bp₂+cp₃. Si n es nulo, la ecuación 0=d no define un plano geométrico y debe rechazarse. Dos normales proporcionales no nulas definen planos de la misma orientación, aunque pueden ser planos distintos según el término independiente. Para comprobar pertenencia de Q solo hay que sustituir sus tres coordenadas y comparar con d. La normal es perpendicular a todo vector dirección contenido en el plano."
+        },
+        {
+          "type": "example",
+          "body": "El plano con n=(1,2,−1) por P=(1,0,3) tiene ecuación x+2y−z=−2."
+        },
+        {
+          "type": "example",
+          "body": "El punto Q=(2,−1,2) cumple 2+2(−1)−2=−2, así que pertenece al mismo plano."
+        },
+        {
+          "type": "figure",
+          "body": "Plano por un punto y vector normal. Diagrama matemático declarativo; la tabla semántica adjunta especifica de forma independiente dimensiones, valores exactos, condiciones y ecuaciones.",
+          "alt": "Plano por un punto y vector normal. La tabla accesible aporta todos los valores y condiciones sin necesidad de interpretar el dibujo.",
+          "visual_spec": {
+            "kind": "space",
+            "title": "Plano por un punto y vector normal",
+            "rows": [
+              [
+                "Normal",
+                "(1,2,−1)"
+              ],
+              [
+                "Punto P",
+                "(1,0,3)"
+              ],
+              [
+                "Ecuación",
+                "x+2y−z=−2"
+              ],
+              [
+                "Q",
+                "(2,−1,2) pertenece"
+              ]
+            ],
+            "points": [
+              [
+                "P",
+                1,
+                0,
+                3
+              ],
+              [
+                "Q",
+                2,
+                -1,
+                2
+              ]
+            ],
+            "arrows": [
+              [
+                1,
+                0,
+                3,
+                2,
+                2,
+                2
+              ]
+            ],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si n=(0,0,0), ¿puede definir una orientación válida de plano?||No. Para un plano geométrico se exige vector normal distinto de cero."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Un plano con vector normal n=(a,b,c) no nulo que pasa por P=(p₁,p₂,p₃) satisface n·(X−P)=0; su ecuación general es ax+by+cz=d con d=ap₁+bp₂+cp₃. Explica el procedimiento sin ayuda, distingue los casos degenerados y revisa un ejercicio de transferencia."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G02-L02-01",
+        "F3-B2C-G02-L02-02",
+        "F3-B2C-G02-L02-03",
+        "F3-B2C-G02-L02-04",
+        "F3-B2C-G02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, anexo II, Matemáticas II; marco RD 217/2022 ESO como prerrequisito",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa; ubicación editorial de unidades, mapeo territorial no verificado."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-G02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.12.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G02:C03"
+      ],
+      "objectives": [
+        "Distinguir rectas paralelas, secantes, coincidentes y cruzadas en 3D.",
+        "Resolver igualdad de parámetros y reconocer ausencia de intersección espacial."
+      ],
+      "prerequisites": [
+        "B2C-G02-L01",
+        "B2C-G01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Dos rectas espaciales con vectores directores paralelos pueden ser coincidentes si comparten un punto o paralelas distintas si no lo comparten. Si los directores no son proporcionales, pueden cortarse (secantes) o ser cruzadas (no coplanarias y sin punto común). Para decidirlo se igualan sus tres coordenadas usando dos parámetros independientes t y s; resolver solo dos ecuaciones puede proponer un encuentro que la tercera coordenada contradiga. El producto mixto entre la diferencia de puntos base y los dos directores también permite detectar coplanaridad; si es distinto de cero, las rectas son cruzadas. Una representación en perspectiva no demuestra que dos rectas se crucen."
+        },
+        {
+          "type": "example",
+          "body": "r:(t,0,0), s:(0,s,0) se cortan en (0,0,0), aun teniendo directores distintos."
+        },
+        {
+          "type": "example",
+          "body": "r:(t,0,0), s:(0,s,1) son cruzadas: para x=y=0 hay candidatos t=s=0, pero las z son 0 y 1."
+        },
+        {
+          "type": "figure",
+          "body": "Rectas secantes y cruzadas. Diagrama matemático declarativo; la tabla semántica adjunta especifica de forma independiente dimensiones, valores exactos, condiciones y ecuaciones.",
+          "alt": "Rectas secantes y cruzadas. La tabla accesible aporta todos los valores y condiciones sin necesidad de interpretar el dibujo.",
+          "visual_spec": {
+            "kind": "space",
+            "title": "Rectas secantes y cruzadas",
+            "rows": [
+              [
+                "r",
+                "(t,0,0)"
+              ],
+              [
+                "s",
+                "(0,s,1)"
+              ],
+              [
+                "Distancia vertical",
+                "1"
+              ],
+              [
+                "Clasificación",
+                "Cruzadas"
+              ]
+            ],
+            "points": [
+              [
+                "R",
+                0,
+                0,
+                0
+              ],
+              [
+                "S",
+                0,
+                0,
+                1
+              ]
+            ],
+            "arrows": [
+              [
+                0,
+                0,
+                0,
+                3,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                3,
+                1
+              ]
+            ],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Dos rectas de directores no paralelos siempre se cortan en el espacio?||No. En 3D pueden ser cruzadas si no están en un mismo plano."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Dos rectas espaciales con vectores directores paralelos pueden ser coincidentes si comparten un punto o paralelas distintas si no lo comparten. Explica el procedimiento sin ayuda, distingue los casos degenerados y revisa un ejercicio de transferencia."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G02-L03-01",
+        "F3-B2C-G02-L03-02",
+        "F3-B2C-G02-L03-03",
+        "F3-B2C-G02-L03-04",
+        "F3-B2C-G02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, anexo II, Matemáticas II; marco RD 217/2022 ESO como prerrequisito",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa; ubicación editorial de unidades, mapeo territorial no verificado."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-G02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.12.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G02:C04"
+      ],
+      "objectives": [
+        "Clasificar posiciones relativas de dos planos por sus normales y términos independientes.",
+        "Calcular dirección de su intersección mediante producto vectorial."
+      ],
+      "prerequisites": [
+        "B2C-G02-L02",
+        "B2C-A02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Dos planos a·x=d y b·x=e tienen normales a,b no nulas. Si las normales son proporcionales, los planos son paralelos distintos o coincidentes, según sean compatibles los términos independientes bajo la misma proporción. Si las normales no son proporcionales, los planos se cortan en una recta; un vector director de su intersección es a×b, no nulo. La perpendicularidad entre planos equivale a que sus normales tengan producto escalar cero. Reducir las dos ecuaciones con Gauss facilita obtener un punto particular de la recta de corte. No puede deducirse coincidencia comparando solo los coeficientes normales sin revisar la constante."
+        },
+        {
+          "type": "example",
+          "body": "x=1 e y=2 son planos perpendiculares: normales (1,0,0) y (0,1,0), corte (1,2,t)."
+        },
+        {
+          "type": "example",
+          "body": "Los planos x+y=1 y 2x+2y=3 son paralelos distintos, no coincidentes, porque 2·1≠3."
+        },
+        {
+          "type": "figure",
+          "body": "Intersección de planos coordenados. Diagrama matemático declarativo; la tabla semántica adjunta especifica de forma independiente dimensiones, valores exactos, condiciones y ecuaciones.",
+          "alt": "Intersección de planos coordenados. La tabla accesible aporta todos los valores y condiciones sin necesidad de interpretar el dibujo.",
+          "visual_spec": {
+            "kind": "space",
+            "title": "Intersección de planos coordenados",
+            "rows": [
+              [
+                "Plano π",
+                "x=1"
+              ],
+              [
+                "Plano σ",
+                "y=2"
+              ],
+              [
+                "Normales",
+                "(1,0,0), (0,1,0)"
+              ],
+              [
+                "Recta corte",
+                "(1,2,t)"
+              ]
+            ],
+            "points": [
+              [
+                "P",
+                1,
+                2,
+                0
+              ],
+              [
+                "Q",
+                1,
+                2,
+                3
+              ]
+            ],
+            "arrows": [
+              [
+                1,
+                2,
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Dos planos con normales paralelas son necesariamente coincidentes?||No. Solo lo son si también lo es la proporción de sus términos independientes."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Dos planos a·x=d y b·x=e tienen normales a,b no nulas. Explica el procedimiento sin ayuda, distingue los casos degenerados y revisa un ejercicio de transferencia."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G02-L04-01",
+        "F3-B2C-G02-L04-02",
+        "F3-B2C-G02-L04-03",
+        "F3-B2C-G02-L04-04",
+        "F3-B2C-G02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, anexo II, Matemáticas II; marco RD 217/2022 ESO como prerrequisito",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa; ubicación editorial de unidades, mapeo territorial no verificado."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-G02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.12.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G02:C05"
+      ],
+      "objectives": [
+        "Resolver intersecciones recta-plano mediante sustitución paramétrica.",
+        "Encontrar cortes de tres planos con sistemas y controlar casos degenerados."
+      ],
+      "prerequisites": [
+        "B2C-G02-L01",
+        "B2C-G02-L02",
+        "B2C-A02-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para intersectar una recta X=P+t v con un plano n·X=d, sustituimos: n·P+t(n·v)=d. Si n·v≠0 hay un punto único; si n·v=0, la recta es paralela al plano, y puede estar contenida (n·P=d) o quedar fuera (n·P≠d). Para tres planos, el punto común se obtiene resolviendo el sistema de tres ecuaciones lineales por Gauss; determinante no nulo garantiza un único punto, mientras el caso singular exige rango y compatibilidad. No se permite dividir por n·v cuando vale cero. Un punto candidato debe satisfacer simultáneamente recta y plano originales."
+        },
+        {
+          "type": "example",
+          "body": "r:(x,y,z)=(0,0,0)+t(1,2,1), π:z=3. Entonces t=3 y el corte es (3,6,3)."
+        },
+        {
+          "type": "example",
+          "body": "La recta X=(1,0,0)+t(0,1,0) nunca corta al plano x=2, porque siempre x=1."
+        },
+        {
+          "type": "figure",
+          "body": "Intersección paramétrica recta-plano. Diagrama matemático declarativo; la tabla semántica adjunta especifica de forma independiente dimensiones, valores exactos, condiciones y ecuaciones.",
+          "alt": "Intersección paramétrica recta-plano. La tabla accesible aporta todos los valores y condiciones sin necesidad de interpretar el dibujo.",
+          "visual_spec": {
+            "kind": "space",
+            "title": "Intersección paramétrica recta-plano",
+            "rows": [
+              [
+                "Recta",
+                "(t,2t,t)"
+              ],
+              [
+                "Plano",
+                "z=3"
+              ],
+              [
+                "Parámetro",
+                "t=3"
+              ],
+              [
+                "Corte",
+                "(3,6,3)"
+              ]
+            ],
+            "points": [
+              [
+                "P",
+                0,
+                0,
+                0
+              ],
+              [
+                "I",
+                3,
+                6,
+                3
+              ]
+            ],
+            "arrows": [
+              [
+                0,
+                0,
+                0,
+                3,
+                6,
+                3
+              ]
+            ],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si n·v=0 y el punto base ya pertenece al plano, ¿cuántos puntos de corte hay?||Infinitos: toda la recta está contenida en el plano."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Para intersectar una recta X=P+t v con un plano n·X=d, sustituimos: n·P+t(n·v)=d. Explica el procedimiento sin ayuda, distingue los casos degenerados y revisa un ejercicio de transferencia."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G02-L05-01",
+        "F3-B2C-G02-L05-02",
+        "F3-B2C-G02-L05-03",
+        "F3-B2C-G02-L05-04",
+        "F3-B2C-G02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, anexo II, Matemáticas II; marco RD 217/2022 ESO como prerrequisito",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa; ubicación editorial de unidades, mapeo territorial no verificado."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-G02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.12.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G02:C06"
+      ],
+      "objectives": [
+        "Interpretar rango y compatibilidad de sistemas asociados a posiciones espaciales.",
+        "Comprobar intersecciones de rectas y planos en los tres ejes y evitar falsas soluciones."
+      ],
+      "prerequisites": [
+        "B2C-A02-L04",
+        "B2C-A02-L05",
+        "B2C-G02-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Las posiciones relativas de rectas y planos se expresan mediante sistemas lineales donde cada ecuación representa una restricción geométrica. En tres planos ax+by+cz=d, la comparación de rangos del sistema y su ampliada determina existencia de puntos comunes; si el rango coincide con tres, hay intersección única, si es menor hay infinitos puntos, y si no coincide no hay corte común. Las matrices singulares no autorizan Cramer y requieren análisis por Gauss. La sustitución en las ecuaciones originales verifica que la solución no sea un artefacto de redondeo. Las unidades físicas y vectores normales nulos deben tratarse explícitamente como hipótesis."
+        },
+        {
+          "type": "example",
+          "body": "El sistema x+y=3, y+z=5, z=2 tiene única solución (0,3,2), comprobable: 0+3=3 y 3+2=5."
+        },
+        {
+          "type": "example",
+          "body": "Los planos x+y+z=1 y 2x+2y+2z=3 son incompatibles; no hay punto común pese a normales proporcionales."
+        },
+        {
+          "type": "figure",
+          "body": "Sistemas geométricos en tres dimensiones. Diagrama matemático declarativo; la tabla semántica adjunta especifica de forma independiente dimensiones, valores exactos, condiciones y ecuaciones.",
+          "alt": "Sistemas geométricos en tres dimensiones. La tabla accesible aporta todos los valores y condiciones sin necesidad de interpretar el dibujo.",
+          "visual_spec": {
+            "kind": "space",
+            "title": "Sistemas geométricos en tres dimensiones",
+            "rows": [
+              [
+                "Plano 1",
+                "x+y=3"
+              ],
+              [
+                "Plano 2",
+                "y+z=5"
+              ],
+              [
+                "Plano 3",
+                "z=2"
+              ],
+              [
+                "Intersección",
+                "(0,3,2)"
+              ]
+            ],
+            "points": [
+              [
+                "I",
+                0,
+                3,
+                2
+              ]
+            ],
+            "arrows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                3,
+                2
+              ]
+            ],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si el rango del sistema aumentado es mayor que el de coeficientes, ¿existe intersección común?||No. El sistema es incompatible y los tres planos no comparten solución."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Las posiciones relativas de rectas y planos se expresan mediante sistemas lineales donde cada ecuación representa una restricción geométrica. Explica el procedimiento sin ayuda, distingue los casos degenerados y revisa un ejercicio de transferencia."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G02-L06-01",
+        "F3-B2C-G02-L06-02",
+        "F3-B2C-G02-L06-03",
+        "F3-B2C-G02-L06-04",
+        "F3-B2C-G02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, anexo II, Matemáticas II; marco RD 217/2022 ESO como prerrequisito",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa; ubicación editorial de unidades, mapeo territorial no verificado."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

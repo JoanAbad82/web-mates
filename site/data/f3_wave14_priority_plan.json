@@ -1,0 +1,63 @@
+{
+  "version": "0.14.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "B1C-F03",
+      "priority": 1,
+      "why": "B1C-F02 límites y continuidad desarrollado en F3-13, prerrequisito documental."
+    },
+    {
+      "unit_id": "B2C-F01",
+      "priority": 2,
+      "why": "Límites B1C-F02 y derivadas B1C-F03 cubiertos, arista canónica B1C-F02→B2C-F01."
+    },
+    {
+      "unit_id": "B2C-F02",
+      "priority": 3,
+      "why": "Derivabilidad B2C-F01 cubierta en esta ola y derivadas B1C-F03, arista canónica B1C-F03→B2C-F02."
+    }
+  ],
+  "canonical_edges_highlight": [
+    {
+      "from": "B1C-F02",
+      "to": "B2C-F01"
+    },
+    {
+      "from": "B1C-F03",
+      "to": "B2C-F02"
+    }
+  ],
+  "new_editorial_edges": [
+    {
+      "from": "B1C-F02",
+      "to": "B1C-F03",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Derivada definida mediante límite requiere comprensión previa de límites y continuidad."
+    },
+    {
+      "from": "B1C-F03",
+      "to": "B2C-F01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Prerrequisitos documentales: límites y derivadas de Matemáticas I."
+    },
+    {
+      "from": "B2C-F01",
+      "to": "B2C-F02",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Cálculo diferencial/optimización requiere derivabilidad estudiada primero."
+    }
+  ],
+  "not_selected": [
+    {
+      "unit_id": "B2C-F03",
+      "why": "Primitivas e integrales se evaluarán en una ola posterior; máximo de tres unidades."
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 37,
+  "regional_mapping": "NO VERIFICADO; relaciones nuevas son editoriales, no exigencias estatales obligatorias"
+}

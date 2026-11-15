@@ -1,0 +1,67 @@
+{
+  "version": "0.24.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "B1S-D01",
+      "priority": 1,
+      "why": "Estadística de 4.º ESO A/B redactada en F3-22."
+    },
+    {
+      "unit_id": "B1S-Q01",
+      "priority": 2,
+      "why": "Probabilidad de 4.º ESO A/B cubierta en F3-22/F3-23."
+    },
+    {
+      "unit_id": "B1S-Q02",
+      "priority": 3,
+      "why": "B1S-Q01 completada primero dentro de F3-24; binomial y normal secuenciales."
+    }
+  ],
+  "not_selected": [
+    {
+      "unit_id": "B2S-Q01",
+      "why": "Depende de probabilidad MACS I; reservar para siguiente ola y comprobar grafo y catálogo."
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 75,
+  "new_editorial_edges": [
+    {
+      "from": "E4A-D01",
+      "to": "B1S-D01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Estadística 4.º ESO A antes de MACS I."
+    },
+    {
+      "from": "E4B-D01",
+      "to": "B1S-D01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Covarianza y correlación 4.º ESO B antes de MACS I."
+    },
+    {
+      "from": "E4A-Q01",
+      "to": "B1S-Q01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Probabilidad 4.º ESO A antes de MACS I."
+    },
+    {
+      "from": "E4B-Q01",
+      "to": "B1S-Q01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Probabilidad compuesta 4.º ESO B antes de MACS I."
+    },
+    {
+      "from": "B1S-Q01",
+      "to": "B1S-Q02",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Combinatoria y probabilidad antes de distribuciones binomial y normal."
+    }
+  ],
+  "regional_mapping": "NO VERIFICADO, SOLO relaciones editoriales"
+}

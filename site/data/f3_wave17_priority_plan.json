@@ -1,0 +1,67 @@
+{
+  "version": "0.17.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "E4A-N01",
+      "priority": 1,
+      "why": "B1S-N01 requiere números de 4º; E3-N01 y medida E2-M01 desarrolladas; introduce escalas desde E2-P01 sin presumir E3-N02."
+    },
+    {
+      "unit_id": "B1S-N01",
+      "priority": 2,
+      "why": "E4A-N01 completada primero, base completa de reales, potencias, raíces y logaritmos."
+    },
+    {
+      "unit_id": "B1S-F01",
+      "priority": 3,
+      "why": "E4A-P01 porcentajes y B1S-A01 álgebra de F3-16, B1S-N01 completa en esta ola, funciones E4A-F01 previas."
+    }
+  ],
+  "not_selected": [
+    {
+      "unit_id": "B1S-F02",
+      "why": "Sería cuarta unidad; su prerrequisito familias de funciones queda cubierto al cerrar B1S-F01 y se reevaluará después."
+    }
+  ],
+  "new_editorial_edges": [
+    {
+      "from": "E3-N01",
+      "to": "E4A-N01",
+      "status": "propuesta_editorial",
+      "type": "prerrequisito",
+      "why": "Reales y aproximaciones del curso anterior."
+    },
+    {
+      "from": "E2-M01",
+      "to": "E4A-N01",
+      "status": "propuesta_editorial",
+      "type": "prerrequisito",
+      "why": "Medición, conversión y escala superficial anteriores."
+    },
+    {
+      "from": "E4A-N01",
+      "to": "B1S-N01",
+      "status": "propuesta_editorial",
+      "type": "prerrequisito",
+      "why": "Números de 4.º ESO antes de números de MACS I."
+    },
+    {
+      "from": "B1S-N01",
+      "to": "B1S-F01",
+      "status": "propuesta_editorial",
+      "type": "prerrequisito",
+      "why": "Potencias y logaritmos para funciones sociales."
+    },
+    {
+      "from": "B1S-F01",
+      "to": "B1S-F02",
+      "status": "propuesta_editorial",
+      "type": "prerrequisito",
+      "why": "Familias de funciones antes de límites y continuidad; F02 aún no desarrollada."
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 50,
+  "regional_mapping": "NO VERIFICADO; aristas propuestas por dependencia didáctica, no normativas."
+}

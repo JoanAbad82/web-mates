@@ -1,0 +1,755 @@
+{
+  "unit_id": "B1C-G01",
+  "unit_title": "Trigonometría y medida angular",
+  "product_phase": "F3_OLA8",
+  "version": "0.8.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Convertir entre grados y radianes mediante una igualdad exacta.",
+    "Interpretar la circunferencia unitaria como conjunto de ángulos orientados.",
+    "Calcular seno, coseno y tangente en cualquier cuadrante con ángulos de referencia."
+  ],
+  "warnings": [
+    "Material educativo sintético editorial EN REVISIÓN, no homologado.",
+    "No declarar revisión matemática, didáctica ni cotejo autonómico sin evidencias humanas.",
+    "Trabajar con valores exactos y ángulos orientados; el redondeo debe declararse."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Razones y problemas trigonométricos de 4.º ESO B",
+      "lesson_id": "E4B-G01-L01",
+      "href": "#/curso/E4B/unidad/E4B-G01/leccion/E4B-G01-L01"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Comprender, practicar, recuperar sin ayuda y revisar con intervalo voluntario."
+  },
+  "source_note": "RD 217/2022 Matemáticas 4.º ESO y RD 243/2022 Matemáticas I Bachillerato; cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1C-G01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.8.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-G01:C01"
+      ],
+      "objectives": [
+        "Convertir entre grados y radianes mediante una igualdad exacta.",
+        "Distinguir la medida angular de las unidades de longitud de arco."
+      ],
+      "prerequisites": [
+        "E4B-G01-L01",
+        "E1-G01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una vuelta completa mide 360° o 2π radianes. Por tanto, 180° equivalen exactamente a π rad y 1 rad equivale a 180/π grados. Para pasar de grados a radianes se multiplica por π/180, y para pasar de radianes a grados se multiplica por 180/π. El radián es una unidad adimensional de medida angular que se define como longitud de arco dividida por radio; no es una longitud. Una aproximación decimal de π no es apropiada para expresiones exactas de ángulos notables."
+        },
+        {
+          "type": "example",
+          "body": "60° × π/180 = π/3 rad exactamente. En sentido inverso 3π/4 rad × 180/π = 135°."
+        },
+        {
+          "type": "example",
+          "body": "Para un círculo de radio 5 cm, el arco subtendido por 2 rad mide 2×5=10 cm; se usa s=rθ con θ en radianes."
+        },
+        {
+          "type": "figure",
+          "body": "Equivalencia angular de media vuelta. Representación geométrica con tabla de valores y relaciones matemáticas exactas. Las escalas ilustrativas no sustituyen las condiciones del enunciado.",
+          "alt": "Equivalencia angular de media vuelta. Todos los ángulos, lados, signos y cocientes representados se describen en una tabla semántica alternativa debajo del gráfico.",
+          "visual_spec": {
+            "kind": "angle_arc",
+            "title": "Equivalencia angular de media vuelta",
+            "rows": [
+              [
+                "Media vuelta",
+                "180° = π rad"
+              ],
+              [
+                "Vuelta completa",
+                "360° = 2π rad"
+              ],
+              [
+                "Cuarto de vuelta",
+                "90° = π/2 rad"
+              ]
+            ],
+            "degrees": 180
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿A cuántos radianes exactos equivalen 90°?||A π/2 rad, porque 90/180 = 1/2."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Una vuelta completa mide 360° o 2π radianes. Revisa las condiciones geométricas, el cuadrante o intervalo y la exactitud antes de calcular otro caso sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-G01-L01-01",
+        "F3-B1C-G01-L01-02",
+        "F3-B1C-G01-L01-03",
+        "F3-B1C-G01-L01-04",
+        "F3-B1C-G01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; y RD 243/2022, anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; contenido didáctico original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-G01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.8.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-G01:C02"
+      ],
+      "objectives": [
+        "Interpretar la circunferencia unitaria como conjunto de ángulos orientados.",
+        "Leer coordenadas de puntos mediante coseno y seno."
+      ],
+      "prerequisites": [
+        "B1C-G01-L01",
+        "E4B-G01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La circunferencia goniométrica tiene radio 1 y centro en el origen. Partiendo del punto (1,0), un ángulo positivo recorre el círculo en sentido antihorario; uno negativo, en sentido horario. El punto correspondiente al ángulo θ tiene coordenadas (cos θ, sen θ). Los signos de estas coordenadas dependen del cuadrante. Ángulos que difieren en vueltas completas de 360° o 2π rad comparten punto. No confundas el punto sobre la circunferencia con la inclinación de una recta, ni el radián con el radio."
+        },
+        {
+          "type": "example",
+          "body": "A 0°, el punto es (1,0); a 90°, es (0,1), y a 180° es (−1,0)."
+        },
+        {
+          "type": "example",
+          "body": "A 150°, el punto es (−√3/2,1/2): coseno negativo por estar en el segundo cuadrante y seno positivo."
+        },
+        {
+          "type": "figure",
+          "body": "Circunferencia unitaria en 150°. Representación geométrica con tabla de valores y relaciones matemáticas exactas. Las escalas ilustrativas no sustituyen las condiciones del enunciado.",
+          "alt": "Circunferencia unitaria en 150°. Todos los ángulos, lados, signos y cocientes representados se describen en una tabla semántica alternativa debajo del gráfico.",
+          "visual_spec": {
+            "kind": "unit_circle",
+            "title": "Circunferencia unitaria en 150°",
+            "rows": [
+              [
+                "Ángulo orientado",
+                "150°"
+              ],
+              [
+                "cos 150°",
+                "−√3/2"
+              ],
+              [
+                "sen 150°",
+                "1/2"
+              ],
+              [
+                "Cuadrante",
+                "II"
+              ]
+            ],
+            "degrees": 150
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué coordenada corresponde al seno en la circunferencia unitaria?||La coordenada vertical y, pues el punto es (cosθ, senθ)."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: La circunferencia goniométrica tiene radio 1 y centro en el origen. Revisa las condiciones geométricas, el cuadrante o intervalo y la exactitud antes de calcular otro caso sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-G01-L02-01",
+        "F3-B1C-G01-L02-02",
+        "F3-B1C-G01-L02-03",
+        "F3-B1C-G01-L02-04",
+        "F3-B1C-G01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; y RD 243/2022, anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; contenido didáctico original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-G01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.8.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-G01:C03"
+      ],
+      "objectives": [
+        "Calcular seno, coseno y tangente en cualquier cuadrante con ángulos de referencia.",
+        "Reconocer el dominio y las discontinuidades de la tangente."
+      ],
+      "prerequisites": [
+        "B1C-G01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El seno y el coseno de cualquier ángulo real se leen como las coordenadas de la circunferencia unitaria y varían entre −1 y 1. El ángulo de referencia permite aprovechar valores de 30°, 45° y 60° en los cuatro cuadrantes, aplicando signos correctos. La tangente es senθ/cosθ y no está definida si cosθ=0, como a 90° y 270°; nunca se sustituye por infinito como valor real. En ángulos negativos y mayores de una vuelta se usa periodicidad: seno y coseno tienen periodo 360°, tangente 180°."
+        },
+        {
+          "type": "example",
+          "body": "sen 150°=1/2 porque el ángulo de referencia es 30° y el seno es positivo en el cuadrante II."
+        },
+        {
+          "type": "example",
+          "body": "cos 240°=−1/2 (cuadrante III) y tan 45°=1; sin embargo tan 90° no está definida."
+        },
+        {
+          "type": "figure",
+          "body": "Signos trigonométricos en el tercer cuadrante. Representación geométrica con tabla de valores y relaciones matemáticas exactas. Las escalas ilustrativas no sustituyen las condiciones del enunciado.",
+          "alt": "Signos trigonométricos en el tercer cuadrante. Todos los ángulos, lados, signos y cocientes representados se describen en una tabla semántica alternativa debajo del gráfico.",
+          "visual_spec": {
+            "kind": "unit_circle",
+            "title": "Signos trigonométricos en el tercer cuadrante",
+            "rows": [
+              [
+                "Ángulo",
+                "240°"
+              ],
+              [
+                "Coseno",
+                "−1/2"
+              ],
+              [
+                "Seno",
+                "−√3/2"
+              ],
+              [
+                "Tangente",
+                "√3"
+              ]
+            ],
+            "degrees": 240
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es tan 90° una cantidad real muy grande?||No, no está definida: cos 90°=0 y no es posible dividir entre cero."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: El seno y el coseno de cualquier ángulo real se leen como las coordenadas de la circunferencia unitaria y varían entre −1 y 1. Revisa las condiciones geométricas, el cuadrante o intervalo y la exactitud antes de calcular otro caso sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-G01-L03-01",
+        "F3-B1C-G01-L03-02",
+        "F3-B1C-G01-L03-03",
+        "F3-B1C-G01-L03-04",
+        "F3-B1C-G01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; y RD 243/2022, anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; contenido didáctico original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-G01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.8.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-G01:C04"
+      ],
+      "objectives": [
+        "Aplicar la identidad fundamental seno² + coseno² = 1.",
+        "Deducir el signo faltante usando el cuadrante."
+      ],
+      "prerequisites": [
+        "B1C-G01-L03",
+        "E2-G01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La identidad fundamental sen²θ+cos²θ=1 se obtiene de Pitágoras aplicado al punto (cosθ, senθ) de la circunferencia unitaria. Si conocemos un coseno racional, el seno tiene módulo √(1−cos²θ), pero su signo depende del cuadrante. Por ejemplo, con cosθ=3/5 y θ en el cuarto cuadrante, senθ=−4/5. No debe escribirse senθ=+4/5 sin información de signo. Esta identidad vale para cualquier ángulo real, no solo para triángulos rectángulos con ángulo agudo."
+        },
+        {
+          "type": "example",
+          "body": "Si cosθ=3/5 y θ está en el primer cuadrante, senθ=√(1−9/25)=4/5."
+        },
+        {
+          "type": "example",
+          "body": "Si cosθ=−3/5 y θ está en el segundo cuadrante, senθ=+4/5, por ser positivo el seno allí."
+        },
+        {
+          "type": "figure",
+          "body": "Identidad fundamental para 3/5 y 4/5. Representación geométrica con tabla de valores y relaciones matemáticas exactas. Las escalas ilustrativas no sustituyen las condiciones del enunciado.",
+          "alt": "Identidad fundamental para 3/5 y 4/5. Todos los ángulos, lados, signos y cocientes representados se describen en una tabla semántica alternativa debajo del gráfico.",
+          "visual_spec": {
+            "kind": "identity",
+            "title": "Identidad fundamental para 3/5 y 4/5",
+            "rows": [
+              [
+                "Coseno",
+                "3/5"
+              ],
+              [
+                "Seno (cuadrante I)",
+                "4/5"
+              ],
+              [
+                "Suma de cuadrados",
+                "9/25 + 16/25 = 1"
+              ]
+            ],
+            "degrees": 53.13010235415598
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué el signo de senθ no se obtiene solo tomando la raíz cuadrada principal?||Porque la raíz aporta el módulo; el cuadrante determina si el seno es positivo o negativo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: La identidad fundamental sen²θ+cos²θ=1 se obtiene de Pitágoras aplicado al punto (cosθ, senθ) de la circunferencia unitaria. Revisa las condiciones geométricas, el cuadrante o intervalo y la exactitud antes de calcular otro caso sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-G01-L04-01",
+        "F3-B1C-G01-L04-02",
+        "F3-B1C-G01-L04-03",
+        "F3-B1C-G01-L04-04",
+        "F3-B1C-G01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; y RD 243/2022, anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; contenido didáctico original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-G01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.8.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-G01:C05"
+      ],
+      "objectives": [
+        "Resolver ecuaciones trigonométricas sencillas en un intervalo declarado.",
+        "Distinguir raíces múltiples por simetría y periodicidad."
+      ],
+      "prerequisites": [
+        "B1C-G01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una ecuación trigonométrica puede tener infinitas soluciones reales por periodicidad, pero un intervalo concreto restringe las respuestas. En el intervalo 0°≤θ<360°, senθ=1/2 tiene dos soluciones, 30° y 150°. Para cosθ=1/2 aparecen 60° y 300°, mientras tanθ=1 tiene soluciones 45° y 225°. El extremo 360° queda excluido para evitar duplicar 0°. Las soluciones que anulan cosθ no pueden pertenecer al dominio de la tangente."
+        },
+        {
+          "type": "example",
+          "body": "En [0°,360°), senθ=0 implica θ=0° o θ=180°; 360° no se incluye."
+        },
+        {
+          "type": "example",
+          "body": "En [0°,360°), cosθ=0 implica θ=90° o θ=270°, ambos dentro del intervalo."
+        },
+        {
+          "type": "figure",
+          "body": "Dos soluciones de seno igual a 1/2. Representación geométrica con tabla de valores y relaciones matemáticas exactas. Las escalas ilustrativas no sustituyen las condiciones del enunciado.",
+          "alt": "Dos soluciones de seno igual a 1/2. Todos los ángulos, lados, signos y cocientes representados se describen en una tabla semántica alternativa debajo del gráfico.",
+          "visual_spec": {
+            "kind": "equation_circle",
+            "title": "Dos soluciones de seno igual a 1/2",
+            "rows": [
+              [
+                "sen θ",
+                "1/2"
+              ],
+              [
+                "Primera solución",
+                "30°"
+              ],
+              [
+                "Segunda solución",
+                "150°"
+              ],
+              [
+                "Dominio",
+                "0° ≤ θ < 360°"
+              ]
+            ],
+            "angles": [
+              30,
+              150
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué senθ=1/2 no tiene una única solución en una vuelta?||El seno es positivo en los cuadrantes I y II: 30° y 150° tienen la misma coordenada vertical."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Una ecuación trigonométrica puede tener infinitas soluciones reales por periodicidad, pero un intervalo concreto restringe las respuestas. Revisa las condiciones geométricas, el cuadrante o intervalo y la exactitud antes de calcular otro caso sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-G01-L05-01",
+        "F3-B1C-G01-L05-02",
+        "F3-B1C-G01-L05-03",
+        "F3-B1C-G01-L05-04",
+        "F3-B1C-G01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; y RD 243/2022, anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; contenido didáctico original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-G01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.8.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-G01:C06"
+      ],
+      "objectives": [
+        "Elegir y aplicar las leyes del seno y del coseno.",
+        "Reconocer la limitación del caso ambiguo seno-seno-lado."
+      ],
+      "prerequisites": [
+        "B1C-G01-L04",
+        "E2-G01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En cualquier triángulo euclídeo, la ley del seno afirma a/sen A=b/sen B=c/sen C con cada lado frente a su ángulo; los ángulos internos son positivos y suman 180°. La ley del coseno generaliza Pitágoras: c²=a²+b²−2ab cos C, donde C es el ángulo incluido entre a y b. Si C=90°, cos C=0 y recuperamos Pitágoras. En un caso con dos lados y un ángulo no incluido puede haber dos triángulos, uno o ninguno; no se debe forzar una solución única."
+        },
+        {
+          "type": "example",
+          "body": "Con a=5, b=7 y ángulo incluido C=60°, c²=25+49−70×1/2=39; por ello c=√39, exacto."
+        },
+        {
+          "type": "example",
+          "body": "Con a=4 y A=30°, y B=90°, por ley del seno b=4×sen90°/sen30°=8."
+        },
+        {
+          "type": "figure",
+          "body": "Ley del coseno con ángulo comprendido de 60°. Representación geométrica con tabla de valores y relaciones matemáticas exactas. Las escalas ilustrativas no sustituyen las condiciones del enunciado.",
+          "alt": "Ley del coseno con ángulo comprendido de 60°. Todos los ángulos, lados, signos y cocientes representados se describen en una tabla semántica alternativa debajo del gráfico.",
+          "visual_spec": {
+            "kind": "cosine_law",
+            "title": "Ley del coseno con ángulo comprendido de 60°",
+            "rows": [
+              [
+                "Lado a",
+                "5"
+              ],
+              [
+                "Lado b",
+                "7"
+              ],
+              [
+                "Ángulo incluido C",
+                "60°"
+              ],
+              [
+                "Lado opuesto c",
+                "√39"
+              ]
+            ],
+            "a": 5,
+            "b": 7,
+            "c": 6.244997998398398,
+            "angle": 60
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿En la ley del coseno puede usarse un ángulo opuesto a uno de los lados multiplicados?||No: el ángulo C de −2ab cos C es el comprendido entre los lados a y b."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: En cualquier triángulo euclídeo, la ley del seno afirma a/sen A=b/sen B=c/sen C con cada lado frente a su ángulo; los ángulos internos son positivos y suman 180°. Revisa las condiciones geométricas, el cuadrante o intervalo y la exactitud antes de calcular otro caso sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-G01-L06-01",
+        "F3-B1C-G01-L06-02",
+        "F3-B1C-G01-L06-03",
+        "F3-B1C-G01-L06-04",
+        "F3-B1C-G01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; y RD 243/2022, anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; contenido didáctico original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-G01-L07",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.8.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-G01:C07"
+      ],
+      "objectives": [
+        "Resolver triángulos no necesariamente rectángulos con datos suficientes.",
+        "Seleccionar leyes trigonométricas, comprobar ángulos y unidades."
+      ],
+      "prerequisites": [
+        "B1C-G01-L06",
+        "B1C-G01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para resolver un triángulo, comprueba primero qué lados y ángulos se conocen y si el triángulo existe. La suma de ángulos es 180°. Con dos ángulos y un lado (AAS/ASA), el tercero es inmediato y la ley del seno proporciona las longitudes. Con dos lados y el ángulo incluido (SAS), se usa la ley del coseno para el tercero. Comprueba siempre positividad de longitudes, correspondencia lado-ángulo y posibles ambigüedades si se dispone de lado-lado-ángulo no incluido."
+        },
+        {
+          "type": "example",
+          "body": "Un triángulo con A=30°, B=60° y lado a=5 tiene C=90°, y b=5√3, c=10 por ley del seno."
+        },
+        {
+          "type": "example",
+          "body": "Un triángulo con lados adyacentes 6 y 8 y ángulo incluido 90° tiene tercer lado 10 por la ley del coseno."
+        },
+        {
+          "type": "figure",
+          "body": "Triángulo 30°–60°–90° y lados homólogos. Representación geométrica con tabla de valores y relaciones matemáticas exactas. Las escalas ilustrativas no sustituyen las condiciones del enunciado.",
+          "alt": "Triángulo 30°–60°–90° y lados homólogos. Todos los ángulos, lados, signos y cocientes representados se describen en una tabla semántica alternativa debajo del gráfico.",
+          "visual_spec": {
+            "kind": "triangle_solution",
+            "title": "Triángulo 30°–60°–90° y lados homólogos",
+            "rows": [
+              [
+                "Ángulo A",
+                "30°"
+              ],
+              [
+                "Ángulo B",
+                "60°"
+              ],
+              [
+                "Ángulo C",
+                "90°"
+              ],
+              [
+                "Lado a",
+                "5"
+              ],
+              [
+                "Lado b",
+                "5√3"
+              ],
+              [
+                "Lado c",
+                "10"
+              ]
+            ],
+            "angles": [
+              30,
+              60,
+              90
+            ],
+            "sides": [
+              "5",
+              "5√3",
+              "10"
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es posible un triángulo con ángulos 90°, 60° y 40°?||No, suman 190°, mayor que 180°."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Para resolver un triángulo, comprueba primero qué lados y ángulos se conocen y si el triángulo existe. Revisa las condiciones geométricas, el cuadrante o intervalo y la exactitud antes de calcular otro caso sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-G01-L07-01",
+        "F3-B1C-G01-L07-02",
+        "F3-B1C-G01-L07-03",
+        "F3-B1C-G01-L07-04",
+        "F3-B1C-G01-L07-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; y RD 243/2022, anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; contenido didáctico original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

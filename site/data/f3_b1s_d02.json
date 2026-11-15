@@ -1,0 +1,748 @@
+{
+  "unit_id": "B1S-D02",
+  "unit_title": "Muestreo y estimación puntual inicial",
+  "product_phase": "F3-25",
+  "version": "0.25.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Diferenciar población objetivo, marco muestral y participantes observados.",
+    "Calcular tamaños y fracciones de muestreo en un ejemplo sintético."
+  ],
+  "warnings": [
+    "Contenido sintético y editorial EN REVISIÓN. No validación curricular autonómica ni resultados reales.",
+    "No suponer representatividad, independencia, aproximación exacta ni causalidad sin hipótesis."
+  ],
+  "prerequisite_links": [
+    "B1S-D01-L06",
+    "B1S-D02-L01",
+    "B1S-D02-L03",
+    "B1S-D02-L04",
+    "B1S-D02-L05",
+    "B1S-Q01-L01",
+    "E3-D01-L04",
+    "E4A-D01-L01",
+    "E4A-D01-L02",
+    "E4B-D01-L01"
+  ],
+  "recall_policy": "f2-spaced-v1.0.0",
+  "source_note": "Guía LOMLOE local y RD 243/2022 como marco sin mapeo fino.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1S-D02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.25.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-D02:C01"
+      ],
+      "objectives": [
+        "Diferenciar población objetivo, marco muestral y participantes observados.",
+        "Calcular tamaños y fracciones de muestreo en un ejemplo sintético."
+      ],
+      "prerequisites": [
+        "E4A-D01-L01",
+        "E4B-D01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La población objetivo reúne las personas o elementos sobre los que se desea concluir; el marco muestral es la lista desde la que realmente se selecciona. Una muestra son las unidades efectivamente seleccionadas y observadas. Si el marco excluye un grupo, ese grupo no tiene oportunidad de entrar: aumentar el tamaño de la muestra no soluciona esa cobertura defectuosa. La fracción de muestreo es n/N, no la proporción de una característica estudiada. Un censo pretende observar toda la población definida, mientras una muestra pretende inferir con incertidumbre y supuestos."
+        },
+        {
+          "type": "example",
+          "body": "Un centro tiene 600 matrículas y selecciona 60 mediante un sorteo verificable entre las 600: N=600, n=60, fracción n/N=60/600=0,10. Esto no demuestra ausencia de no respuesta."
+        },
+        {
+          "type": "example",
+          "body": "Si la pregunta se refiere a todo el alumnado pero el sorteo solo incluye a quienes usan el comedor, el marco no coincide con la población. Ni 300 cuestionarios eliminan esa exclusión."
+        },
+        {
+          "type": "figure",
+          "body": "Representación matemática ilustrativa con tabla de valores, denominadores y límites. Los símbolos y cifras exactos se consultan en la tabla accesible.",
+          "alt": "Población y muestra. Visual de apoyo; la tabla HTML semántica contiene todos los datos y advertencias.",
+          "visual_spec": {
+            "render_family": "wave25",
+            "title": "Población y muestra",
+            "kind": "sample",
+            "model": {
+              "labels": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12"
+              ],
+              "values": [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            },
+            "rows": [
+              [
+                "Población objetivo",
+                "600 matrículas"
+              ],
+              [
+                "Muestra seleccionada",
+                "60"
+              ],
+              [
+                "Fracción de muestreo",
+                "60/600=0,10"
+              ],
+              [
+                "Advertencia",
+                "Ilustración, sin conclusiones reales"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué cambia al aumentar n si el marco deja fuera un curso?||Mejora la cantidad de observaciones del marco, pero persiste el sesgo de cobertura."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Diferenciar población objetivo, marco muestral y participantes observados. Identifica primero a quién se pretende describir y quién aparece en el marco. Repite al día siguiente y después de 3, 7, 14 y 30 días solo como pauta editorial, no como eficacia validada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-D02-L01-01",
+        "F3-B1S-D02-L01-02",
+        "F3-B1S-D02-L01-03",
+        "F3-B1S-D02-L01-04",
+        "F3-B1S-D02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I y II (marco estatal, mapeo fino pendiente).",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Referencia oficial para contexto curricular; transposición a criterios y Cataluña NO VERIFICADA."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-D02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.25.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-D02:C02"
+      ],
+      "objectives": [
+        "Explicar por qué la representatividad depende del proceso de selección.",
+        "Reconocer subcobertura y no respuesta sin prometer ausencia de sesgo."
+      ],
+      "prerequisites": [
+        "B1S-D02-L01",
+        "E4A-D01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Representatividad no significa que la muestra tenga exactamente las proporciones de todos los grupos, sino que el diseño permita inferir hacia una población bien definida con errores estudiables. Seleccionar solo voluntarios o personas disponibles puede sobre-representar perfiles motivados. Un sorteo válido dentro de un marco incompleto sigue sin representar a quienes quedaron excluidos. El error aleatorio disminuye habitualmente con muestras adecuadas, pero el sesgo sistemático no desaparece por multiplicar n. Cuando hay estratos, es necesario especificar si se han muestreado proporcionalmente y cómo se ponderan."
+        },
+        {
+          "type": "example",
+          "body": "En un marco con 300 estudiantes de grupo A y 100 del B, una asignación proporcional de 40 encuestas daría 30 del A y 10 del B: 40×300/400=30."
+        },
+        {
+          "type": "example",
+          "body": "Una encuesta de 500 visitas a una web sobre toda la ciudad no garantiza representatividad por ser grande: ni el marco ni las probabilidades de inclusión son conocidos."
+        },
+        {
+          "type": "figure",
+          "body": "Representación matemática ilustrativa con tabla de valores, denominadores y límites. Los símbolos y cifras exactos se consultan en la tabla accesible.",
+          "alt": "Muestras representativas. Visual de apoyo; la tabla HTML semántica contiene todos los datos y advertencias.",
+          "visual_spec": {
+            "render_family": "wave25",
+            "title": "Muestras representativas",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "A",
+                "B"
+              ],
+              "values": [
+                0.75,
+                0.25
+              ]
+            },
+            "rows": [
+              [
+                "Grupo A en marco",
+                "300 de 400"
+              ],
+              [
+                "Grupo B en marco",
+                "100 de 400"
+              ],
+              [
+                "Muestra proporcional de 40",
+                "A:30; B:10"
+              ],
+              [
+                "Límite",
+                "La proporcionalidad por sí sola no prueba ausencia de sesgo"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es suficiente una muestra muy grande de voluntarios?||No. Se necesitan un marco apropiado, mecanismo de selección y control de no respuesta."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Explicar por qué la representatividad depende del proceso de selección. Busca qué personas nunca pudieron ser seleccionadas. Repite al día siguiente y después de 3, 7, 14 y 30 días solo como pauta editorial, no como eficacia validada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-D02-L02-01",
+        "F3-B1S-D02-L02-02",
+        "F3-B1S-D02-L02-03",
+        "F3-B1S-D02-L02-04",
+        "F3-B1S-D02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I y II (marco estatal, mapeo fino pendiente).",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Referencia oficial para contexto curricular; transposición a criterios y Cataluña NO VERIFICADA."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-D02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.25.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-D02:C03"
+      ],
+      "objectives": [
+        "Distinguir selección aleatoria simple de conveniencia y respuestas voluntarias.",
+        "Calcular probabilidades de inclusión bajo muestreo aleatorio simple sin reemplazo."
+      ],
+      "prerequisites": [
+        "B1S-D02-L01",
+        "B1S-Q01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En un muestreo aleatorio simple sin reemplazo, cada subconjunto del mismo tamaño tiene igual probabilidad de selección. Cada unidad de un marco completo de tamaño N tiene probabilidad de inclusión n/N, pero las inclusiones no son independientes: una unidad seleccionada cambia las posibilidades de las otras. En el muestreo estratificado se selecciona por separado en grupos explícitos y después puede hacer falta ponderar. En el de conveniencia se elige por facilidad y no está justificado tratar las observaciones como independientes e idénticamente distribuidas de la población. La no respuesta y las sustituciones improvisadas pueden romper el diseño inicial."
+        },
+        {
+          "type": "example",
+          "body": "Sorteo de n=25 plazas entre N=250 personas, sin reemplazo: cada persona tiene probabilidad 25/250=0,10 de estar incluida."
+        },
+        {
+          "type": "example",
+          "body": "Con N=10 y n=2 sin reemplazo, el conjunto {A,B} y {A,C} son selecciones posibles; una vez A seleccionada, la probabilidad de seleccionar B cambia. Igual probabilidad de inclusión no equivale a independencia."
+        },
+        {
+          "type": "figure",
+          "body": "Representación matemática ilustrativa con tabla de valores, denominadores y límites. Los símbolos y cifras exactos se consultan en la tabla accesible.",
+          "alt": "Muestreo aleatorio y sesgo. Visual de apoyo; la tabla HTML semántica contiene todos los datos y advertencias.",
+          "visual_spec": {
+            "render_family": "wave25",
+            "title": "Muestreo aleatorio y sesgo",
+            "kind": "sample",
+            "model": {
+              "labels": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K",
+                "L"
+              ],
+              "values": [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "rows": [
+              [
+                "Marco completo",
+                "N=250"
+              ],
+              [
+                "Muestra sin reemplazo",
+                "n=25"
+              ],
+              [
+                "Probabilidad individual",
+                "25/250=0,10"
+              ],
+              [
+                "Dependencia",
+                "Las selecciones no son independientes"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿En un sorteo sin reemplazo, las inclusiones de dos personas son independientes?||No; tras una selección cambia el conjunto disponible."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Distinguir selección aleatoria simple de conveniencia y respuestas voluntarias. Comprueba si se sortean personas, hogares o grupos y si existe reemplazo. Repite al día siguiente y después de 3, 7, 14 y 30 días solo como pauta editorial, no como eficacia validada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-D02-L03-01",
+        "F3-B1S-D02-L03-02",
+        "F3-B1S-D02-L03-03",
+        "F3-B1S-D02-L03-04",
+        "F3-B1S-D02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I y II (marco estatal, mapeo fino pendiente).",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Referencia oficial para contexto curricular; transposición a criterios y Cataluña NO VERIFICADA."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-D02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.25.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-D02:C04"
+      ],
+      "objectives": [
+        "Distinguir el parámetro poblacional del estadístico calculado en una muestra.",
+        "Calcular medias y proporciones de ejemplos sin confundirlos con valores poblacionales."
+      ],
+      "prerequisites": [
+        "B1S-D02-L01",
+        "E3-D01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un parámetro es una propiedad fija de la población definida (por ejemplo, μ o p), normalmente desconocida. Un estadístico se calcula con los datos de la muestra (media x̄ o proporción p̂) y varía entre muestras. Su valor no se convierte en parámetro porque tenga muchos decimales. La media muestral suma valores y divide entre n; la proporción muestral divide el número de casos que cumplen una condición entre n. Un estimador es una regla aleatoria; una estimación es el número observado al aplicar esa regla a una muestra concreta. No se concluye que p=p̂ sin cuantificar incertidumbre y sesgos."
+        },
+        {
+          "type": "example",
+          "body": "En una muestra sintética con tiempos 4, 6, 8 y 10 minutos, x̄=(4+6+8+10)/4=7 min. El parámetro μ poblacional no se ha observado."
+        },
+        {
+          "type": "example",
+          "body": "Si 18 de 60 respuestas son afirmativas, p̂=18/60=0,30. No se conoce con ello la proporción exacta p de toda la población."
+        },
+        {
+          "type": "figure",
+          "body": "Representación matemática ilustrativa con tabla de valores, denominadores y límites. Los símbolos y cifras exactos se consultan en la tabla accesible.",
+          "alt": "Parámetro y estadístico. Visual de apoyo; la tabla HTML semántica contiene todos los datos y advertencias.",
+          "visual_spec": {
+            "render_family": "wave25",
+            "title": "Parámetro y estadístico",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "4",
+                "6",
+                "8",
+                "10"
+              ],
+              "values": [
+                4,
+                6,
+                8,
+                10
+              ]
+            },
+            "rows": [
+              [
+                "Muestra (min)",
+                "4, 6, 8, 10"
+              ],
+              [
+                "Media muestral",
+                "7 min"
+              ],
+              [
+                "Positivos",
+                "18 de 60"
+              ],
+              [
+                "Proporción estimada",
+                "18/60=0,30"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es x̄=7 una afirmación de que μ=7 exactamente?||No. x̄ es un estadístico muestral, μ es el parámetro poblacional."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Distinguir el parámetro poblacional del estadístico calculado en una muestra. Decide si el número se conoce por todas las unidades o solo por una muestra. Repite al día siguiente y después de 3, 7, 14 y 30 días solo como pauta editorial, no como eficacia validada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-D02-L04-01",
+        "F3-B1S-D02-L04-02",
+        "F3-B1S-D02-L04-03",
+        "F3-B1S-D02-L04-04",
+        "F3-B1S-D02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I y II (marco estatal, mapeo fino pendiente).",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Referencia oficial para contexto curricular; transposición a criterios y Cataluña NO VERIFICADA."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-D02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.25.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-D02:C05"
+      ],
+      "objectives": [
+        "Construir estimaciones puntuales descriptivas bajo un diseño explícito.",
+        "Distinguir precisión de redondeo de precisión inferencial no evaluada."
+      ],
+      "prerequisites": [
+        "B1S-D02-L04",
+        "B1S-D02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una estimación puntual propone un solo número para un parámetro: x̄ para μ, p̂ para p. Bajo muestreo aleatorio simple y condiciones pertinentes pueden estudiarse propiedades del estimador, pero un número aislado no incluye por sí solo un margen de error ni un nivel de confianza. Afirmar que «el 95 % de la población» queda dentro de cierto intervalo a partir de p̂ sin diseño y fórmula es una conclusión injustificada. Al dar el resultado, n, marco, fecha, no respuesta y método de selección son parte de la interpretación. El exceso de decimales no compensa un diseño sesgado."
+        },
+        {
+          "type": "example",
+          "body": "Entre 80 encuestas seleccionadas, 28 respuestas positivas: p̂=28/80=0,35, es decir, estimación puntual del 35 %, no intervalo al 95 %."
+        },
+        {
+          "type": "example",
+          "body": "Con una muestra numérica 10, 12 y 14, x̄=12; escribir 12,00000 no reduce la variabilidad entre posibles muestras."
+        },
+        {
+          "type": "figure",
+          "body": "Representación matemática ilustrativa con tabla de valores, denominadores y límites. Los símbolos y cifras exactos se consultan en la tabla accesible.",
+          "alt": "Estimación puntual. Visual de apoyo; la tabla HTML semántica contiene todos los datos y advertencias.",
+          "visual_spec": {
+            "render_family": "wave25",
+            "title": "Estimación puntual",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "Sí",
+                "No"
+              ],
+              "values": [
+                0.35,
+                0.65
+              ]
+            },
+            "rows": [
+              [
+                "n",
+                "80"
+              ],
+              [
+                "Respuestas positivas",
+                "28"
+              ],
+              [
+                "Estimación puntual",
+                "28/80=0,35"
+              ],
+              [
+                "Incertidumbre",
+                "No calculada; requiere diseño y supuestos"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se puede deducir un margen de error solo de p̂=0,35?||No. Necesitamos como mínimo diseño, tamaño y supuestos válidos."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Construir estimaciones puntuales descriptivas bajo un diseño explícito. El estimador está definido por una operación; su valor no trae intervalo incorporado. Repite al día siguiente y después de 3, 7, 14 y 30 días solo como pauta editorial, no como eficacia validada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-D02-L05-01",
+        "F3-B1S-D02-L05-02",
+        "F3-B1S-D02-L05-03",
+        "F3-B1S-D02-L05-04",
+        "F3-B1S-D02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I y II (marco estatal, mapeo fino pendiente).",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Referencia oficial para contexto curricular; transposición a criterios y Cataluña NO VERIFICADA."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-D02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.25.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-D02:C06"
+      ],
+      "objectives": [
+        "Criticar conclusiones de estudios considerando selección, no respuesta y causalidad.",
+        "Comunicar proporciones y límites sin exagerar inferencias."
+      ],
+      "prerequisites": [
+        "B1S-D02-L05",
+        "B1S-D01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Al leer un estudio diferencia: pregunta, población objetivo, marco, método de muestreo, respuestas, estimación y límites. Un 70 % entre quienes respondieron puede no ser el 70 % de todos los invitados; existe no respuesta. Dos variables asociadas no establecen un efecto causal. Comparar grupos requiere observar denominadores adecuados, posibles factores de confusión y si los grupos eran comparables. El tamaño de la muestra y los decimales no sustituyen el diseño. Una conclusión responsable señala para quién es informativa la evidencia y qué no permite asegurar."
+        },
+        {
+          "type": "example",
+          "body": "Se invita a 200 personas y contestan 120: tasa de respuesta=120/200=0,60. Si 84 dicen «sí», 84/120=0,70 entre respuestas, pero no 70 % de los 200 invitados."
+        },
+        {
+          "type": "example",
+          "body": "En un seguimiento sin asignación aleatoria, el grupo que dedica más horas a estudiar obtiene mejores resultados. Esto es asociación; no prueba por sí solo que cambiar las horas produzca esa diferencia."
+        },
+        {
+          "type": "figure",
+          "body": "Representación matemática ilustrativa con tabla de valores, denominadores y límites. Los símbolos y cifras exactos se consultan en la tabla accesible.",
+          "alt": "Interpretación de estudios. Visual de apoyo; la tabla HTML semántica contiene todos los datos y advertencias.",
+          "visual_spec": {
+            "render_family": "wave25",
+            "title": "Interpretación de estudios",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "Respuesta",
+                "Sin respuesta"
+              ],
+              "values": [
+                0.6,
+                0.4
+              ]
+            },
+            "rows": [
+              [
+                "Invitados",
+                "200"
+              ],
+              [
+                "Respondieron",
+                "120"
+              ],
+              [
+                "Tasa respuesta",
+                "60 %"
+              ],
+              [
+                "Sí entre participantes",
+                "84/120=70 %"
+              ],
+              [
+                "Advertencia",
+                "No extrapolar sin estudiar sesgo"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El 70 % entre quienes responden permite afirmar 70 % de todos?||No: la no respuesta puede alterar la proporción."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Criticar conclusiones de estudios considerando selección, no respuesta y causalidad. Separa porcentaje de respuesta y porcentaje de opinión entre respondentes. Repite al día siguiente y después de 3, 7, 14 y 30 días solo como pauta editorial, no como eficacia validada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-D02-L06-01",
+        "F3-B1S-D02-L06-02",
+        "F3-B1S-D02-L06-03",
+        "F3-B1S-D02-L06-04",
+        "F3-B1S-D02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I y II (marco estatal, mapeo fino pendiente).",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Referencia oficial para contexto curricular; transposición a criterios y Cataluña NO VERIFICADA."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

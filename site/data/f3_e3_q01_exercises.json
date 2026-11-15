@@ -1,0 +1,981 @@
+{
+  "unit_id": "E3-Q01",
+  "version": "0.21.0",
+  "status": "revision",
+  "notice": "Banco de 5 ejercicios sintéticos deterministas por lección canónica. EN REVISIÓN.",
+  "activities": [
+    {
+      "exercise_id": "F3-E3-Q01-L01-01",
+      "lesson_id": "E3-Q01-L01",
+      "type": "numeric",
+      "prompt": "En Experimentos simples y compuestos: Un experimento ordenado tiene 2 alternativas iniciales y 2 en cada segunda etapa. Cuenta SECUENCIAS. Introduce número exacto sin unidades.",
+      "answer": 4.0,
+      "explanation": "Resultado exacto verificado: 4. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_product_count",
+        "prerrequisito_e3_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L01-02",
+      "lesson_id": "E3-Q01-L01",
+      "type": "numeric",
+      "prompt": "En Experimentos simples y compuestos: Dos monedas lanzadas en orden: ¿cuántas secuencias de Ω={CC,CX,XC,XX} tienen EXACTAMENTE una cara? Introduce número exacto sin unidades.",
+      "answer": 2.0,
+      "explanation": "Resultado exacto verificado: 2. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_event_exact_one_count",
+        "prerrequisito_e3_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L01-03",
+      "lesson_id": "E3-Q01-L01",
+      "type": "numeric",
+      "prompt": "En Experimentos simples y compuestos: Dos monedas ideales e independientes: calcula P(exactamente una cara), contando rutas CX y XC. Introduce número exacto sin unidades.",
+      "answer": 0.5,
+      "explanation": "Resultado exacto verificado: 0,5. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_exactly_one_coin",
+        "prerrequisito_e3_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L01-04",
+      "lesson_id": "E3-Q01-L01",
+      "type": "choice",
+      "prompt": "En Experimentos simples y compuestos: ¿CX y XC son la MISMA secuencia de dos lanzamientos ordenados? Sí/No. Selecciona la respuesta matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto verificado: No. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_order_merge_no",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "Sí",
+        "No necesariamente",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L01-05",
+      "lesson_id": "E3-Q01-L01",
+      "type": "choice",
+      "prompt": "En Experimentos simples y compuestos: Un experimento ordenado tiene 6 alternativas iniciales y 6 en cada segunda etapa. Cuenta SECUENCIAS. Selecciona la respuesta matemáticamente justificada.",
+      "answer": "36",
+      "explanation": "Resultado exacto verificado: 36. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_product_count",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "35",
+        "36",
+        "37"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L02-01",
+      "lesson_id": "E3-Q01-L02",
+      "type": "numeric",
+      "prompt": "En Reglas de recuento: Un experimento ordenado tiene 3 alternativas iniciales y 2 en cada segunda etapa. Cuenta SECUENCIAS. Introduce número exacto sin unidades.",
+      "answer": 6.0,
+      "explanation": "Resultado exacto verificado: 6. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_product_count",
+        "prerrequisito_e3_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L02-02",
+      "lesson_id": "E3-Q01-L02",
+      "type": "numeric",
+      "prompt": "En Reglas de recuento: Elige una opción de grupo A con 3 opciones o grupo B con 2 opciones disjuntas. Cuenta alternativas. Introduce número exacto sin unidades.",
+      "answer": 5.0,
+      "explanation": "Resultado exacto verificado: 5. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_disjoint_sum",
+        "prerrequisito_e3_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L02-03",
+      "lesson_id": "E3-Q01-L02",
+      "type": "numeric",
+      "prompt": "En Reglas de recuento: Un experimento ordenado tiene 2 alternativas iniciales y 2 en cada segunda etapa. Cuenta SECUENCIAS. Introduce número exacto sin unidades.",
+      "answer": 4.0,
+      "explanation": "Resultado exacto verificado: 4. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_product_count",
+        "prerrequisito_e3_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L02-04",
+      "lesson_id": "E3-Q01-L02",
+      "type": "choice",
+      "prompt": "En Reglas de recuento: ¿Se multiplican 3×2 alternativas al elegir exactamente UNA entre dos grupos disjuntos de 3 y 2? Sí/No. Selecciona la respuesta matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto verificado: No. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_disjoint_multiply_no",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "No necesariamente",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L02-05",
+      "lesson_id": "E3-Q01-L02",
+      "type": "choice",
+      "prompt": "En Reglas de recuento: Dos monedas lanzadas en orden: ¿cuántas secuencias de Ω={CC,CX,XC,XX} tienen EXACTAMENTE una cara? Selecciona la respuesta matemáticamente justificada.",
+      "answer": "2",
+      "explanation": "Resultado exacto verificado: 2. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_event_exact_one_count",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "2",
+        "3",
+        "1"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L03-01",
+      "lesson_id": "E3-Q01-L03",
+      "type": "numeric",
+      "prompt": "En Regla de Laplace: Un experimento ordenado tiene 6 alternativas iniciales y 6 en cada segunda etapa. Cuenta SECUENCIAS. Introduce número exacto sin unidades.",
+      "answer": 36.0,
+      "explanation": "Resultado exacto verificado: 36. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_product_count",
+        "prerrequisito_e3_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L03-02",
+      "lesson_id": "E3-Q01-L03",
+      "type": "choice",
+      "prompt": "En Regla de Laplace: Dos dados ideales distinguibles: cuenta 36 parejas equiprobables y calcula P(suma=7). Selecciona la respuesta matemáticamente justificada.",
+      "answer": "1/6",
+      "explanation": "Resultado exacto verificado: 1/6. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_dice_sum_prob",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "1/12",
+        "0,25",
+        "1/6"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L03-03",
+      "lesson_id": "E3-Q01-L03",
+      "type": "choice",
+      "prompt": "En Regla de Laplace: Dos dados ideales distinguibles: cuenta 36 parejas equiprobables y calcula P(suma=2). Selecciona la respuesta matemáticamente justificada.",
+      "answer": "1/36",
+      "explanation": "Resultado exacto verificado: 1/36. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_dice_sum_prob",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "1/18",
+        "1/36",
+        "0"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L03-04",
+      "lesson_id": "E3-Q01-L03",
+      "type": "choice",
+      "prompt": "En Regla de Laplace: ¿Las once sumas posibles de dos dados ideales son EQUIPROBABLES? Sí/No. Selecciona la respuesta matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto verificado: No. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_dice_sums_uniform_no",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No necesariamente"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L03-05",
+      "lesson_id": "E3-Q01-L03",
+      "type": "choice",
+      "prompt": "En Regla de Laplace: Dos dados ideales distinguibles: calcula P(suma distinta de 7) por complemento de las 36 parejas. Selecciona la respuesta matemáticamente justificada.",
+      "answer": "5/6",
+      "explanation": "Resultado exacto verificado: 5/6. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_complement_dice_sum",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "0,75",
+        "2/3",
+        "5/6"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L04-01",
+      "lesson_id": "E3-Q01-L04",
+      "type": "numeric",
+      "prompt": "En Frecuencias empíricas: Escribe fracción o decimal exacto de 18 casos favorables entre 40 casos totales. Introduce número exacto sin unidades.",
+      "answer": 0.45,
+      "explanation": "Resultado exacto verificado: 0,45. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_fraction",
+        "prerrequisito_e3_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L04-02",
+      "lesson_id": "E3-Q01-L04",
+      "type": "numeric",
+      "prompt": "En Frecuencias empíricas: Calcula el número de casos: el 45 % de 100 observaciones. Introduce número exacto sin unidades.",
+      "answer": 45.0,
+      "explanation": "Resultado exacto verificado: 45. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_percentage_count",
+        "prerrequisito_e3_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L04-03",
+      "lesson_id": "E3-Q01-L04",
+      "type": "numeric",
+      "prompt": "En Frecuencias empíricas: Calcula diferencia ABSOLUTA entre frecuencia 18/40 y probabilidad teórica 1/2. Introduce número exacto sin unidades.",
+      "answer": 0.05,
+      "explanation": "Resultado exacto verificado: 0,05. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_abs_prob_difference",
+        "prerrequisito_e3_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L04-04",
+      "lesson_id": "E3-Q01-L04",
+      "type": "choice",
+      "prompt": "En Frecuencias empíricas: ¿Una FRECUENCIA experimental distinta de 1/2 determina la probabilidad real de la moneda sin más evidencia? Sí/No. Selecciona la respuesta matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto verificado: No. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_empirical_proves_theory_no",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "Sí",
+        "No necesariamente",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L04-05",
+      "lesson_id": "E3-Q01-L04",
+      "type": "choice",
+      "prompt": "En Frecuencias empíricas: Escribe fracción o decimal exacto de 8 casos favorables entre 20 casos totales. Selecciona la respuesta matemáticamente justificada.",
+      "answer": "0,4",
+      "explanation": "Resultado exacto verificado: 0,4. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_fraction",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "0,5",
+        "0,4",
+        "1/3"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L05-01",
+      "lesson_id": "E3-Q01-L05",
+      "type": "choice",
+      "prompt": "En Árboles de dos etapas: En urna con 2 fichas rojas y 1 azul, calcula P(roja en PRIMERA extracción). Selecciona la respuesta matemáticamente justificada.",
+      "answer": "2/3",
+      "explanation": "Resultado exacto verificado: 2/3. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_urn_first_red",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "0,5",
+        "2/3",
+        "0,75"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L05-02",
+      "lesson_id": "E3-Q01-L05",
+      "type": "numeric",
+      "prompt": "En Árboles de dos etapas: Urna 2 rojas y 1 azul SIN reemplazo: tras primera roja, calcula P(roja segunda | roja primera). Introduce número exacto sin unidades.",
+      "answer": 0.5,
+      "explanation": "Resultado exacto verificado: 0,5. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_urn_second_red_given_red",
+        "prerrequisito_e3_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L05-03",
+      "lesson_id": "E3-Q01-L05",
+      "type": "choice",
+      "prompt": "En Árboles de dos etapas: Urna 2 rojas y 1 azul SIN reemplazo: calcula P(roja y roja) por ramas condicionadas. Selecciona la respuesta matemáticamente justificada.",
+      "answer": "1/3",
+      "explanation": "Resultado exacto verificado: 1/3. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_urn_path_RR",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "0,25",
+        "1/6",
+        "1/3"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L05-04",
+      "lesson_id": "E3-Q01-L05",
+      "type": "choice",
+      "prompt": "En Árboles de dos etapas: Urna 2 rojas y 1 azul SIN reemplazo: calcula P(azul y después roja). Selecciona la respuesta matemáticamente justificada.",
+      "answer": "1/3",
+      "explanation": "Resultado exacto verificado: 1/3. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_urn_path_AR",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "1/6",
+        "1/3",
+        "0,25"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L05-05",
+      "lesson_id": "E3-Q01-L05",
+      "type": "choice",
+      "prompt": "En Árboles de dos etapas: ¿La segunda extracción de urna SIN reemplazo mantiene la misma probabilidad que la primera? Sí/No. Selecciona la respuesta matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto verificado: No. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_without_replacement_independence_no",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No necesariamente"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L06-01",
+      "lesson_id": "E3-Q01-L06",
+      "type": "choice",
+      "prompt": "En Sucesos compatibles e incompatibles iniciales: Dado ideal A=par={2,4,6}, B=>4={5,6}. Calcula P(A∪B) sin contar dos veces 6. Selecciona la respuesta matemáticamente justificada.",
+      "answer": "2/3",
+      "explanation": "Resultado exacto verificado: 2/3. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_union_dice_A_B",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "2/3",
+        "0,75",
+        "0,5"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L06-02",
+      "lesson_id": "E3-Q01-L06",
+      "type": "choice",
+      "prompt": "En Sucesos compatibles e incompatibles iniciales: Dado ideal A=par y B=>4. Calcula P(A∩B) contando resultados comunes. Selecciona la respuesta matemáticamente justificada.",
+      "answer": "1/6",
+      "explanation": "Resultado exacto verificado: 1/6. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_intersection_dice_A_B",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "1/12",
+        "0,25",
+        "1/6"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L06-03",
+      "lesson_id": "E3-Q01-L06",
+      "type": "numeric",
+      "prompt": "En Sucesos compatibles e incompatibles iniciales: Laplace bajo EQUIDAD de resultados: calcula P(A) con 3 favorables entre 6 posibles. Introduce número exacto sin unidades.",
+      "answer": 0.5,
+      "explanation": "Resultado exacto verificado: 0,5. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_laplace",
+        "prerrequisito_e3_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L06-04",
+      "lesson_id": "E3-Q01-L06",
+      "type": "choice",
+      "prompt": "En Sucesos compatibles e incompatibles iniciales: En dado ideal A=par y B=>4, ¿SON compatibles porque ambos contienen el 6? Sí/No. Selecciona la respuesta matemáticamente justificada.",
+      "answer": "Sí",
+      "explanation": "Resultado exacto verificado: Sí. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_events_compatible_yes",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "Sí",
+        "No",
+        "No necesariamente"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-Q01-L06-05",
+      "lesson_id": "E3-Q01-L06",
+      "type": "choice",
+      "prompt": "En Sucesos compatibles e incompatibles iniciales: Si dos sucesos se SOLAPAN, ¿se puede sumar P(A)+P(B) sin restar P(A∩B)? Sí/No. Selecciona la respuesta matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto verificado: No. Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica. En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática. Comprueba hipótesis, denominadores, orden de resultados, rango de datos y significado de la probabilidad o estadístico.",
+      "hint": "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_sum_without_overlap_no",
+        "prerrequisito_e3_q01"
+      ],
+      "choices": [
+        "Sí",
+        "No necesariamente",
+        "No"
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-E3-Q01-L01-01": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "product_count",
+        "params": [
+          2,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: product_count"
+    },
+    "F3-E3-Q01-L01-02": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "event_exact_one_count",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: event_exact_one_count"
+    },
+    "F3-E3-Q01-L01-03": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "exactly_one_coin",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: exactly_one_coin"
+    },
+    "F3-E3-Q01-L01-04": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "order_merge_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: order_merge_no"
+    },
+    "F3-E3-Q01-L01-05": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "product_count",
+        "params": [
+          6,
+          6
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: product_count"
+    },
+    "F3-E3-Q01-L02-01": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "product_count",
+        "params": [
+          3,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: product_count"
+    },
+    "F3-E3-Q01-L02-02": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "disjoint_sum",
+        "params": [
+          3,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: disjoint_sum"
+    },
+    "F3-E3-Q01-L02-03": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "product_count",
+        "params": [
+          2,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: product_count"
+    },
+    "F3-E3-Q01-L02-04": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "disjoint_multiply_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: disjoint_multiply_no"
+    },
+    "F3-E3-Q01-L02-05": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "event_exact_one_count",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: event_exact_one_count"
+    },
+    "F3-E3-Q01-L03-01": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "product_count",
+        "params": [
+          6,
+          6
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: product_count"
+    },
+    "F3-E3-Q01-L03-02": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "dice_sum_prob",
+        "params": [
+          7
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: dice_sum_prob"
+    },
+    "F3-E3-Q01-L03-03": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "dice_sum_prob",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: dice_sum_prob"
+    },
+    "F3-E3-Q01-L03-04": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "dice_sums_uniform_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: dice_sums_uniform_no"
+    },
+    "F3-E3-Q01-L03-05": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "complement_dice_sum",
+        "params": [
+          7
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: complement_dice_sum"
+    },
+    "F3-E3-Q01-L04-01": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "fraction",
+        "params": [
+          18,
+          40
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: fraction"
+    },
+    "F3-E3-Q01-L04-02": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "percentage_count",
+        "params": [
+          45,
+          100
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: percentage_count"
+    },
+    "F3-E3-Q01-L04-03": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "abs_prob_difference",
+        "params": [
+          18,
+          40,
+          1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: abs_prob_difference"
+    },
+    "F3-E3-Q01-L04-04": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "empirical_proves_theory_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: empirical_proves_theory_no"
+    },
+    "F3-E3-Q01-L04-05": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "fraction",
+        "params": [
+          8,
+          20
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: fraction"
+    },
+    "F3-E3-Q01-L05-01": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "urn_first_red",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: urn_first_red"
+    },
+    "F3-E3-Q01-L05-02": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "urn_second_red_given_red",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: urn_second_red_given_red"
+    },
+    "F3-E3-Q01-L05-03": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "urn_path_RR",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: urn_path_RR"
+    },
+    "F3-E3-Q01-L05-04": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "urn_path_AR",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: urn_path_AR"
+    },
+    "F3-E3-Q01-L05-05": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "without_replacement_independence_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: without_replacement_independence_no"
+    },
+    "F3-E3-Q01-L06-01": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "union_dice_A_B",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: union_dice_A_B"
+    },
+    "F3-E3-Q01-L06-02": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "intersection_dice_A_B",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: intersection_dice_A_B"
+    },
+    "F3-E3-Q01-L06-03": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "laplace",
+        "params": [
+          3,
+          6
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: laplace"
+    },
+    "F3-E3-Q01-L06-04": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "events_compatible_yes",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: events_compatible_yes"
+    },
+    "F3-E3-Q01-L06-05": {
+      "hints": [
+        "Enumera primero resultados elementales y comprueba si son equiprobables; distingue frecuencia observada y probabilidad teórica.",
+        "En etapas multiplica probabilidades locales condicionadas; para alternativas disjuntas suma rutas. Laplace requiere equiprobabilidad; al unir sucesos compatibles resta intersección. Sin reemplazo no hay independencia automática."
+      ],
+      "math_check": {
+        "kind": "sum_without_overlap_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de espacio muestral, sesgo, frecuencia, varianza, independencia, equiprobabilidad, recuento o unión: sum_without_overlap_no"
+    }
+  }
+}

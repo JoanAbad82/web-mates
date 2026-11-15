@@ -1,0 +1,45 @@
+{
+  "version": "0.29.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "B2C-G03",
+      "priority": 1,
+      "prerequisites_verified_in_sequence": [
+        "B2C-G02"
+      ]
+    },
+    {
+      "unit_id": "B1S-P01",
+      "priority": 2,
+      "prerequisites_verified_in_sequence": [
+        "E2-P01",
+        "B1S-N01"
+      ]
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 93,
+  "new_editorial_edges": [
+    {
+      "from": "B2C-G02",
+      "to": "B2C-G03",
+      "status": "propuesta_editorial",
+      "why": "Rectas y planos tridimensionales preceden a métrica espacial Matemáticas II."
+    },
+    {
+      "from": "E2-P01",
+      "to": "B1S-P01",
+      "status": "propuesta_editorial",
+      "why": "Porcentajes encadenados e interés simple como prerrequisito de finanzas."
+    },
+    {
+      "from": "B1S-N01",
+      "to": "B1S-P01",
+      "status": "propuesta_editorial",
+      "why": "Potencias y logaritmos de MACS I previos a modelos de capitalización."
+    }
+  ],
+  "verified_DAG_edges": 116,
+  "regional_mapping": "NO VERIFICADO; nuevas aristas solo editoriales"
+}

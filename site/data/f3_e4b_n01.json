@@ -1,0 +1,739 @@
+{
+  "unit_id": "E4B-N01",
+  "unit_title": "Reales, radicales y precisión",
+  "product_phase": "F3-28",
+  "version": "0.28.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Clasificar números racionales, irracionales y reales con argumentos matemáticos.",
+    "Situar estimaciones de raíces e intervalos en la recta real."
+  ],
+  "warnings": [
+    "Datos sintéticos EN REVISIÓN. No homologado ni publicado.",
+    "Radicales, logaritmos, complejos y geometría requieren dominios, unidades y validación territorial; revisión pendiente."
+  ],
+  "prerequisite_links": [
+    "E2-N01-L03",
+    "E2-N01-L04",
+    "E3-N01-L01",
+    "E3-N01-L02",
+    "E3-N01-L03",
+    "E3-N01-L05",
+    "E3-N01-L06",
+    "E3-N02-L01",
+    "E4B-N01-L01",
+    "E4B-N01-L03",
+    "E4B-N01-L04"
+  ],
+  "recall_policy": "f2-spaced-v1.0.0",
+  "source_note": "Guía LOMLOE local; RD 217/2022 ESO o RD 243/2022 Bachillerato; cotejo territorial pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E4B-N01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-N01:C01"
+      ],
+      "objectives": [
+        "Clasificar números racionales, irracionales y reales con argumentos matemáticos.",
+        "Situar estimaciones de raíces e intervalos en la recta real."
+      ],
+      "prerequisites": [
+        "E3-N01-L01",
+        "E3-N01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Los números reales incluyen racionales, expresables como cociente de enteros con denominador no nulo, e irracionales, que no admiten esa representación. Todo decimal finito o periódico es racional. La raíz cuadrada de un entero positivo que no es un cuadrado perfecto es irracional. La recta real ordena ambos tipos y permite aproximar cantidades con error controlado. La clasificación de un número no depende de cuántas cifras muestre una calculadora: escribir √2≈1,414 no lo convierte en racional. Para comparar √2 y 1,5, puede contrastarse 2 con 2,25 después de asegurar positividad. Distingue siempre igualdad exacta y aproximación decimal."
+        },
+        {
+          "type": "example",
+          "body": "El número 3/8=0,375 es racional. √2 es irracional, pero está entre 1 y 2 porque 1²<2<2²; su valor aproximado es 1,414."
+        },
+        {
+          "type": "example",
+          "body": "Para comparar √3 y 1,8, ambos positivos: 3<3,24=1,8², por lo que √3<1,8. La comparación no necesita truncar irracional."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Conjuntos numéricos y recta real. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Conjuntos numéricos y recta real",
+            "kind": "numberline",
+            "model": {
+              "labels": [
+                "1",
+                "√2",
+                "√3",
+                "2"
+              ],
+              "values": [
+                1,
+                1.41421356237,
+                1.73205080757,
+                2
+              ]
+            },
+            "rows": [
+              [
+                "Racional",
+                "3/8=0,375"
+              ],
+              [
+                "Irracional",
+                "√2≈1,4142"
+              ],
+              [
+                "Otro irracional",
+                "√3≈1,7321"
+              ],
+              [
+                "Orden válido",
+                "1<√2<√3<2"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un decimal truncado transforma un número irracional en racional?||No; representa una aproximación, no su valor exacto."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Clasificar números racionales, irracionales y reales con argumentos matemáticos. Clasifica primero: fracción de enteros, decimal periódico o raíz no exacta. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-N01-L01-01",
+        "F3-E4B-N01-L01-02",
+        "F3-E4B-N01-L01-03",
+        "F3-E4B-N01-L01-04",
+        "F3-E4B-N01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-N01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-N01:C02"
+      ],
+      "objectives": [
+        "Representar intervalos abiertos y cerrados con desigualdades equivalentes.",
+        "Resolver desigualdades lineales invirtiendo sentido al dividir por negativo."
+      ],
+      "prerequisites": [
+        "E4B-N01-L01",
+        "E3-N01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un intervalo como [a,b] incluye ambos extremos; (a,b) los excluye, y combinaciones mixtas incluyen uno solo. La intersección de dos intervalos está formada por números comunes; la unión contiene los de cualquiera. Resolver una desigualdad requiere conservar equivalencia: sumar el mismo número a ambos lados mantiene el sentido, pero multiplicar o dividir por un número negativo lo invierte. Por ejemplo, −2x<6 da x>−3. Las desigualdades estrictas generan extremos abiertos; las no estrictas pueden incluirlos. En intervalos vacíos no debe inventarse ningún elemento, y en semirrectas el infinito nunca se incluye como extremo real."
+        },
+        {
+          "type": "example",
+          "body": "Resolver 2x−3≤5 conduce a 2x≤8 y x≤4; el conjunto es (−∞,4]. El 4 sí está incluido."
+        },
+        {
+          "type": "example",
+          "body": "La intersección [1,5]∩(3,7) es (3,5]. El extremo 3 se excluye porque el segundo intervalo es abierto allí."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Intervalos y desigualdades. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Intervalos y desigualdades",
+            "kind": "numberline",
+            "model": {
+              "labels": [
+                "1",
+                "3",
+                "4",
+                "5",
+                "7"
+              ],
+              "values": [
+                1,
+                3,
+                4,
+                5,
+                7
+              ]
+            },
+            "rows": [
+              [
+                "Primero",
+                "[1,5]"
+              ],
+              [
+                "Segundo",
+                "(3,7)"
+              ],
+              [
+                "Intersección",
+                "(3,5]"
+              ],
+              [
+                "Desigualdad",
+                "2x−3≤5"
+              ],
+              [
+                "Solución",
+                "x≤4"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué el 3 queda excluido de [1,5]∩(3,7)?||Porque el segundo intervalo exige x>3."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Representar intervalos abiertos y cerrados con desigualdades equivalentes. Comprueba cada extremo contra todas las condiciones simultáneamente. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-N01-L02-01",
+        "F3-E4B-N01-L02-02",
+        "F3-E4B-N01-L02-03",
+        "F3-E4B-N01-L02-04",
+        "F3-E4B-N01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-N01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-N01:C03"
+      ],
+      "objectives": [
+        "Simplificar radicales separando factores cuadrados perfectos.",
+        "Sumar radicales semejantes y reconocer limitaciones en la suma de raíces."
+      ],
+      "prerequisites": [
+        "E2-N01-L04",
+        "E4B-N01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para números no negativos, √(ab)=√a√b, pero esa propiedad exige productos y dominios válidos; no se aplica a sumas. Una forma de simplificar √72 es extraer 36: √72=6√2. Solo pueden sumarse como términos semejantes expresiones con el mismo radical tras simplificación: √18+√8=3√2+2√2=5√2. No es correcto afirmar √(a+b)=√a+√b. La racionalización de 1/√2 produce √2/2 multiplicando numerador y denominador por √2, sin cambiar el valor. En expresiones con variables, las hipótesis sobre signos y dominios evitan falsas equivalencias como √(x²)=x para x negativo; el resultado general es |x|."
+        },
+        {
+          "type": "example",
+          "body": "√72=√(36×2)=6√2, aproximadamente 8,4853. Es una igualdad exacta en forma radical y solo aproximada en decimal."
+        },
+        {
+          "type": "example",
+          "body": "√18+√8=3√2+2√2=5√2; también 1/√2=√2/2 mediante multiplicación por √2/√2."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Radicales y simplificaciones. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Radicales y simplificaciones",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "√8",
+                "√18",
+                "√72"
+              ],
+              "values": [
+                2.82842712475,
+                4.24264068712,
+                8.48528137424
+              ]
+            },
+            "rows": [
+              [
+                "√72",
+                "6√2"
+              ],
+              [
+                "√18",
+                "3√2"
+              ],
+              [
+                "√8",
+                "2√2"
+              ],
+              [
+                "Suma exacta",
+                "5√2"
+              ],
+              [
+                "Racionalización",
+                "1/√2=√2/2"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es √(9+16) igual a √9+√16?||No; √25=5, pero 3+4=7."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Simplificar radicales separando factores cuadrados perfectos. Descompón el radicando como cuadrado perfecto por resto. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-N01-L03-01",
+        "F3-E4B-N01-L03-02",
+        "F3-E4B-N01-L03-03",
+        "F3-E4B-N01-L03-04",
+        "F3-E4B-N01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-N01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-N01:C04"
+      ],
+      "objectives": [
+        "Relacionar potencias racionales con raíces reales bajo dominios válidos.",
+        "Calcular potencias de exponente fraccionario de bases positivas."
+      ],
+      "prerequisites": [
+        "E4B-N01-L03",
+        "E2-N01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para a>0 y enteros m, n con n positivo, a^(m/n)=(raíz n-ésima de a)^m. Por ejemplo, 27^(2/3)=(∛27)²=9. Esta extensión es coherente con las propiedades de potencias de exponente entero y permite modelizar escalas. El denominador del exponente indica el índice de la raíz; el numerador indica la potencia posterior, sin necesidad de que se apliquen en orden fijo cuando a>0. En bases negativas las raíces de índice par no son reales, por lo que esta lección trabaja con bases estrictamente positivas. Hay que distinguir a^(1/2)=√a de 1/(2a), y a^0=1 para a≠0."
+        },
+        {
+          "type": "example",
+          "body": "27^(2/3)=(∛27)²=3²=9. La potencia fraccionaria se interpreta mediante raíz cúbica y cuadrado."
+        },
+        {
+          "type": "example",
+          "body": "16^(3/4)=(⁴√16)³=2³=8, mientras 16^(1/2)=4 y no 16/2=8. Comprueba la igualdad con las operaciones inversas y revisa las condiciones del ejemplo."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Potencias racionales como ampliación. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Potencias racionales como ampliación",
+            "kind": "powers",
+            "model": {
+              "labels": [
+                "10⁰",
+                "10¹",
+                "10²"
+              ],
+              "values": [
+                0,
+                1,
+                2
+              ]
+            },
+            "rows": [
+              [
+                "Base",
+                "27"
+              ],
+              [
+                "Exponente",
+                "2/3"
+              ],
+              [
+                "Raíz cúbica",
+                "3"
+              ],
+              [
+                "Potencia resultante",
+                "9"
+              ],
+              [
+                "Otro ejemplo",
+                "16^(3/4)=8"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué significa el denominador 3 del exponente 2/3?||Indica raíz cúbica; después se eleva al cuadrado."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Relacionar potencias racionales con raíces reales bajo dominios válidos. Expresa primero la fracción de exponente como raíz y potencia. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-N01-L04-01",
+        "F3-E4B-N01-L04-02",
+        "F3-E4B-N01-L04-03",
+        "F3-E4B-N01-L04-04",
+        "F3-E4B-N01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-N01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-N01:C05"
+      ],
+      "objectives": [
+        "Interpretar logaritmos como exponentes inversos de potencias.",
+        "Aplicar propiedades básicas solo para argumentos y bases permitidos."
+      ],
+      "prerequisites": [
+        "E4B-N01-L04",
+        "E3-N02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El logaritmo log_b(x) de un número real positivo x, en base b>0 y b≠1, es el exponente y que satisface b^y=x. Así, log_2(8)=3 porque 2³=8. La propiedad log_b(xy)=log_b(x)+log_b(y) vale para x,y>0, y log_b(x^k)=k log_b(x) bajo sus hipótesis. No es correcto log_b(x+y)=log_b(x)+log_b(y). El dominio real del logaritmo es x>0; log_b(0) y log_b(−2) no tienen valor real. Los logaritmos se presentan como ampliación/puente conceptual, sin imponerles una correspondencia normativa de curso no cotejada."
+        },
+        {
+          "type": "example",
+          "body": "log_2(8)=3 porque 2³=8; log_10(1000)=3 porque 10³=1000. El resultado indica exponente, no la base."
+        },
+        {
+          "type": "example",
+          "body": "log_3(81)=4 dado que 3⁴=81. También log_2(4×8)=log_2(32)=5=2+3. Comprueba la igualdad con las operaciones inversas y revisa las condiciones del ejemplo."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Logaritmos como puente opcional. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Logaritmos como puente opcional",
+            "kind": "powers",
+            "model": {
+              "labels": [
+                "2^0",
+                "2^1",
+                "2^3",
+                "2^5"
+              ],
+              "values": [
+                0,
+                1,
+                3,
+                5
+              ]
+            },
+            "rows": [
+              [
+                "log₂ 8",
+                "3"
+              ],
+              [
+                "log₃ 81",
+                "4"
+              ],
+              [
+                "log₁₀ 1000",
+                "3"
+              ],
+              [
+                "Dominio real",
+                "x>0"
+              ],
+              [
+                "Restricción de base",
+                "b>0 y b≠1"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Log₂(8) es 8/2?||No; es el exponente 3 que transforma 2 en 8."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Interpretar logaritmos como exponentes inversos de potencias. Reescribe log_b(x)=y en forma exponencial b^y=x. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-N01-L05-01",
+        "F3-E4B-N01-L05-02",
+        "F3-E4B-N01-L05-03",
+        "F3-E4B-N01-L05-04",
+        "F3-E4B-N01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-N01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-N01:C06"
+      ],
+      "objectives": [
+        "Calcular errores absoluto y relativo de medidas con valor de referencia declarado.",
+        "Distinguir precisión de medidas, redondeo y exactitud de afirmaciones."
+      ],
+      "prerequisites": [
+        "E3-N01-L05",
+        "E3-N01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El error absoluto de una medición aproximada x respecto a un valor de referencia r es |x−r|, expresado en las mismas unidades. Si r≠0, el error relativo es |x−r|/|r| y el porcentaje relativo se obtiene multiplicando por 100. Sin un valor de referencia fiable solo puede hablarse de incertidumbre estimada o dispersión, no de error real conocido. Las cifras significativas y el redondeo describen representación y precisión, pero no justifican declarar exactitud experimental. Una cota de redondeo a la unidad más cercana es 0,5 unidad para números dentro de la regla elegida, si no hay otros errores. No se debe afirmar que una medida sea exacta porque coincide con un cálculo digital."
+        },
+        {
+          "type": "example",
+          "body": "Un objeto mide realmente 10 cm según patrón y se registra 9,8 cm: error absoluto 0,2 cm; error relativo 0,2/10=0,02=2 %."
+        },
+        {
+          "type": "example",
+          "body": "Redondear 12,34 cm a décimas produce 12,3 cm; el error de redondeo respecto a ese valor es 0,04 cm, sin informar de errores del instrumento."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Precisión y error. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Precisión y error",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "Referencia",
+                "Medición"
+              ],
+              "values": [
+                10,
+                9.8
+              ]
+            },
+            "rows": [
+              [
+                "Referencia",
+                "10 cm"
+              ],
+              [
+                "Medición",
+                "9,8 cm"
+              ],
+              [
+                "Error absoluto",
+                "0,2 cm"
+              ],
+              [
+                "Error relativo",
+                "0,02"
+              ],
+              [
+                "Error porcentual",
+                "2 %"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se puede calcular error absoluto real sin conocer un valor de referencia?||No; solo estimar incertidumbre o comparar mediciones."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Calcular errores absoluto y relativo de medidas con valor de referencia declarado. Separar el valor observado de la referencia antes de restar. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-N01-L06-01",
+        "F3-E4B-N01-L06-02",
+        "F3-E4B-N01-L06-03",
+        "F3-E4B-N01-L06-04",
+        "F3-E4B-N01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

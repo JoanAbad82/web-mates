@@ -1,0 +1,740 @@
+{
+  "unit_id": "B2C-Q01",
+  "unit_title": "Probabilidad condicionada y Bayes",
+  "product_phase": "F3-26",
+  "version": "0.26.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Aplicar reglas de complemento y unión con intersecciones explícitas.",
+    "Comprobar probabilidades de un espacio equiprobable finito."
+  ],
+  "warnings": [
+    "Datos sintéticos EN REVISIÓN. No homologado ni publicado.",
+    "Intervalos, errores estándar, independencia, condicionadas y Bayes requieren supuestos; sin cotejo autonómico."
+  ],
+  "prerequisite_links": [
+    "B1C-Q01-L03",
+    "B1C-Q01-L04",
+    "B1C-Q01-L05",
+    "B2C-Q01-L01",
+    "B2C-Q01-L02",
+    "B2C-Q01-L03",
+    "B2C-Q01-L04",
+    "B2C-Q01-L05"
+  ],
+  "recall_policy": "f2-spaced-v1.0.0",
+  "source_note": "Guía maestra LOMLOE local y RD 243/2022 como marco; revisión jurídica y regional pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B2C-Q01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-Q01:C01"
+      ],
+      "objectives": [
+        "Aplicar reglas de complemento y unión con intersecciones explícitas.",
+        "Comprobar probabilidades de un espacio equiprobable finito."
+      ],
+      "prerequisites": [
+        "B1C-Q01-L04",
+        "B1C-Q01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una probabilidad asigna a cada suceso un valor entre cero y uno; el total del espacio es uno. Para A y B, P(A∪B)=P(A)+P(B)−P(A∩B), ya que la intersección se cuenta dos veces al sumar. El complemento satisface P(no A)=1−P(A). Los sucesos incompatibles tienen P(A∩B)=0. Independencia no significa incompatibilidad: para sucesos independientes P(A∩B)=P(A)P(B). La regla de Laplace requiere resultados elementales equiprobables; en escenarios no equiprobables se suman probabilidades reales de cada ruta."
+        },
+        {
+          "type": "example",
+          "body": "Si P(A)=0,6, P(B)=0,5 y P(A∩B)=0,2, entonces P(A∪B)=0,6+0,5−0,2=0,9, no 1,1."
+        },
+        {
+          "type": "example",
+          "body": "Con dos dados ideales independientes hay 36 pares equiprobables. Para el suceso de suma siete, seis pares sirven y la probabilidad es 6/36=1/6."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Reglas de probabilidad. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Reglas de probabilidad",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "A",
+                "B",
+                "A∩B"
+              ],
+              "values": [
+                0.6,
+                0.5,
+                0.2
+              ]
+            },
+            "rows": [
+              [
+                "P(A)",
+                "0,6"
+              ],
+              [
+                "P(B)",
+                "0,5"
+              ],
+              [
+                "P(A∩B)",
+                "0,2"
+              ],
+              [
+                "P(A∪B)",
+                "0,9"
+              ],
+              [
+                "P(no A)",
+                "0,4"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué se resta P(A∩B) al hallar la unión?||Porque la intersección se contabilizó dos veces al sumar P(A)+P(B)."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Aplicar reglas de complemento y unión con intersecciones explícitas. Distingue unión, intersección y complemento antes de calcular. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-Q01-L01-01",
+        "F3-B2C-Q01-L01-02",
+        "F3-B2C-Q01-L01-03",
+        "F3-B2C-Q01-L01-04",
+        "F3-B2C-Q01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-Q01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-Q01:C02"
+      ],
+      "objectives": [
+        "Representar sucesos compuestos mediante árboles de etapas.",
+        "Calcular intersecciones multiplicando probabilidades condicionadas."
+      ],
+      "prerequisites": [
+        "B2C-Q01-L01",
+        "B1C-Q01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un suceso compuesto reúne varias condiciones o etapas del experimento. Para dos eventos A y B con P(A)>0, P(A∩B)=P(A)P(B|A). En un árbol, las probabilidades condicionales de ramas que salen del mismo nodo deben sumar uno. Las rutas disjuntas se suman para hallar la probabilidad del suceso de interés. Sin reemplazo, las probabilidades cambian tras una extracción; con reemplazo y mezcla apropiada pueden permanecer constantes. Dar por supuesta independencia al extraer sin reemplazo de una urna pequeña produce errores. Un árbol es un recurso de razonamiento, no una garantía de que el modelo elegido sea realista."
+        },
+        {
+          "type": "example",
+          "body": "Urna de 4 bolas rojas y 2 azules: en dos extracciones sin reemplazo, P(RR)=4/6×3/5=12/30=0,4."
+        },
+        {
+          "type": "example",
+          "body": "Para una roja seguida de azul sin reemplazo, P(RA)=4/6×2/5=8/30=4/15≈0,2667; en la segunda etapa quedan 5 bolas, no 6."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Sucesos compuestos. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Sucesos compuestos",
+            "kind": "tree",
+            "model": {
+              "labels": [
+                "P(R)",
+                "P(R|R)",
+                "P(azul|1? azul)"
+              ],
+              "values": [
+                0.6666666666666666,
+                0.6,
+                0.2
+              ]
+            },
+            "rows": [
+              [
+                "Roja primera",
+                "4/6"
+              ],
+              [
+                "Roja después de roja",
+                "3/5"
+              ],
+              [
+                "Azul después de roja",
+                "2/5"
+              ],
+              [
+                "P(RR)",
+                "0,4"
+              ],
+              [
+                "P(RA)",
+                "4/15"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Son las dos extracciones sin reemplazo independientes?||No: el resultado de la primera altera las proporciones de la urna."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Representar sucesos compuestos mediante árboles de etapas. Traza las etapas y modifica el denominador tras cada extracción sin reemplazo. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-Q01-L02-01",
+        "F3-B2C-Q01-L02-02",
+        "F3-B2C-Q01-L02-03",
+        "F3-B2C-Q01-L02-04",
+        "F3-B2C-Q01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-Q01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-Q01:C03"
+      ],
+      "objectives": [
+        "Calcular P(A|B) a partir de intersección y base condicionante.",
+        "Evitar confundir condicionada y probabilidad conjunta."
+      ],
+      "prerequisites": [
+        "B2C-Q01-L02",
+        "B1C-Q01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para P(B)>0 se define P(A|B)=P(A∩B)/P(B). El suceso tras la barra constituye el nuevo universo de referencia; debe tener probabilidad positiva. En una tabla de frecuencias, P(A|B) se obtiene dividiendo la celda común A∩B entre el total de B, no entre el total de la muestra. Generalmente P(A|B) y P(B|A) son diferentes por sus denominadores. Un cambio de condición no implica una relación causa-efecto. La lectura de los datos debe separar recuentos exactos de probabilidades estimadas por un muestreo con incertidumbre."
+        },
+        {
+          "type": "example",
+          "body": "En un modelo de 200 casos, 80 cumplen B y 24 cumplen tanto A como B. Entonces P(A|B)=24/80=0,30, mientras P(A∩B)=24/200=0,12."
+        },
+        {
+          "type": "example",
+          "body": "Si entre 200 casos 50 cumplen A y 24 A∩B, P(B|A)=24/50=0,48, diferente de P(A|B)=0,30."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Condicionamiento. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Condicionamiento",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "A∩B",
+                "B sin A",
+                "fuera B"
+              ],
+              "values": [
+                0.12,
+                0.28,
+                0.6
+              ]
+            },
+            "rows": [
+              [
+                "Total",
+                "200"
+              ],
+              [
+                "B",
+                "80"
+              ],
+              [
+                "A∩B",
+                "24"
+              ],
+              [
+                "P(A|B)",
+                "0,30"
+              ],
+              [
+                "P(A∩B)",
+                "0,12"
+              ],
+              [
+                "P(B|A)",
+                "0,48"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué denominador usa P(B|A)?||Los casos con A, a diferencia de P(A|B), cuyo denominador es B."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Calcular P(A|B) a partir de intersección y base condicionante. La letra situada después de | indica el conjunto condicionante. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-Q01-L03-01",
+        "F3-B2C-Q01-L03-02",
+        "F3-B2C-Q01-L03-03",
+        "F3-B2C-Q01-L03-04",
+        "F3-B2C-Q01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-Q01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-Q01:C04"
+      ],
+      "objectives": [
+        "Caracterizar independencia mediante producto de probabilidades.",
+        "Distinguir dependencia estadística, incompatibilidad y causalidad."
+      ],
+      "prerequisites": [
+        "B2C-Q01-L03",
+        "B2C-Q01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Dos sucesos son independientes si P(A∩B)=P(A)P(B). Si P(B)>0, esto equivale a P(A|B)=P(A). Ser incompatibles significa que no pueden ocurrir juntos, y dos sucesos incompatibles de probabilidades positivas no son independientes. La igualdad de probabilidades marginales P(A)=P(B) no implica independencia. En un conjunto de datos real, una igualdad aproximada de frecuencias tampoco constituye una prueba universal de independencia poblacional: el muestreo y sus incertidumbres requieren análisis adicional. Independencia es una afirmación matemática de un modelo; no establece causalidad entre sucesos."
+        },
+        {
+          "type": "example",
+          "body": "Si P(A)=0,4 y P(B)=0,3 en un modelo independiente, P(A∩B)=0,12. Si en otro modelo la intersección vale 0,20, ya no hay independencia."
+        },
+        {
+          "type": "example",
+          "body": "Con P(A)=0,4 y P(B)=0,3, sucesos incompatibles tienen intersección 0, pero el producto 0,12: por tanto, no son independientes."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Independencia. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Independencia",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "P(A)P(B)",
+                "Intersección diferente"
+              ],
+              "values": [
+                0.12,
+                0.2
+              ]
+            },
+            "rows": [
+              [
+                "P(A)",
+                "0,4"
+              ],
+              [
+                "P(B)",
+                "0,3"
+              ],
+              [
+                "Producto",
+                "0,12"
+              ],
+              [
+                "Intersección independiente",
+                "0,12"
+              ],
+              [
+                "Intersección incompatible",
+                "0"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Si dos sucesos tienen probabilidad positiva y no pueden ocurrir juntos son independientes?||No: la intersección vale cero y su producto es positivo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Caracterizar independencia mediante producto de probabilidades. Compara P(A∩B) con P(A)P(B), no sus nombres. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-Q01-L04-01",
+        "F3-B2C-Q01-L04-02",
+        "F3-B2C-Q01-L04-03",
+        "F3-B2C-Q01-L04-04",
+        "F3-B2C-Q01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-Q01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-Q01:C05"
+      ],
+      "objectives": [
+        "Aplicar la ley de la probabilidad total a una partición válida.",
+        "Reconocer que las tasas condicionadas se promedian con pesos previos."
+      ],
+      "prerequisites": [
+        "B2C-Q01-L03",
+        "B2C-Q01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si A y no A forman una partición y se dispone de sus probabilidades previas, la probabilidad total de B satisface P(B)=P(B|A)P(A)+P(B|no A)P(no A). Es imprescindible identificar los grupos y que sus pesos sumen uno. No se promedian por igual dos tasas a menos que los grupos tengan igual peso. En una partición de más de dos grupos se suman todas las rutas disjuntas. La fórmula no exige independencia de A y B, sino coherencia de la partición y denominadores válidos. La ley sirve como denominador para Bayes y evita confundir sensibilidad con valor predictivo."
+        },
+        {
+          "type": "example",
+          "body": "Si P(A)=0,30, P(B|A)=0,80 y P(B|no A)=0,20, P(B)=0,3×0,8+0,7×0,2=0,38."
+        },
+        {
+          "type": "example",
+          "body": "Con grupos de tamaños relativos 0,9 y 0,1, y tasas de B 0,1 y 0,9, P(B)=0,9×0,1+0,1×0,9=0,18; su media aritmética 0,5 sería incorrecta."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Probabilidad total. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Probabilidad total",
+            "kind": "tree",
+            "model": {
+              "labels": [
+                "P(A)",
+                "P(B|A)",
+                "P(B|no A)"
+              ],
+              "values": [
+                0.3,
+                0.8,
+                0.2
+              ]
+            },
+            "rows": [
+              [
+                "P(A)",
+                "0,30"
+              ],
+              [
+                "P(B|A)",
+                "0,80"
+              ],
+              [
+                "P(B|no A)",
+                "0,20"
+              ],
+              [
+                "Ruta A∩B",
+                "0,24"
+              ],
+              [
+                "Ruta no A∩B",
+                "0,14"
+              ],
+              [
+                "P(B)",
+                "0,38"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se puede promediar al 50 % tasas de grupos de pesos 0,9 y 0,1?||No: se ponderan por las probabilidades de cada grupo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Aplicar la ley de la probabilidad total a una partición válida. Identifica una partición exhaustiva y sin solapamientos. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-Q01-L05-01",
+        "F3-B2C-Q01-L05-02",
+        "F3-B2C-Q01-L05-03",
+        "F3-B2C-Q01-L05-04",
+        "F3-B2C-Q01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-Q01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-Q01:C06"
+      ],
+      "objectives": [
+        "Aplicar Bayes usando probabilidad total en el denominador.",
+        "Interpretar tasas base y distinguir P(A|B) de P(B|A)."
+      ],
+      "prerequisites": [
+        "B2C-Q01-L05",
+        "B2C-Q01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El teorema de Bayes permite invertir una condición: P(A|B)=P(B|A)P(A)/P(B), para P(B)>0. El denominador P(B) se determina sumando todas las rutas que conducen a B. Por ello una señal muy sensible puede tener un valor predictivo relativamente bajo si el evento buscado es raro y hay falsos positivos. Los valores de este ejemplo son matemáticos y sintéticos, no indicadores sanitarios ni recomendaciones diagnósticas. Bayes no crea información inexistente: exige probabilidades previas y tasas condicionales justificadas. Deben exponerse denominadores, condiciones y significado de cada suceso."
+        },
+        {
+          "type": "example",
+          "body": "En un modelo P(A)=0,02, P(+|A)=0,90 y P(+|no A)=0,10, P(+)=0,018+0,098=0,116, por lo que P(A|+)=0,018/0,116=9/58≈0,1552."
+        },
+        {
+          "type": "example",
+          "body": "En un modelo hipotético equivalente de 5000 casos, habría en promedio 90 verdaderos positivos y 490 falsos positivos; entre 580 positivos, 90/580=9/58 corresponden a A."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Teorema de Bayes. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Teorema de Bayes",
+            "kind": "tree",
+            "model": {
+              "labels": [
+                "P(A)",
+                "P(+|A)",
+                "P(+|no A)"
+              ],
+              "values": [
+                0.02,
+                0.9,
+                0.1
+              ]
+            },
+            "rows": [
+              [
+                "Previo P(A)",
+                "0,02"
+              ],
+              [
+                "P(+|A)",
+                "0,90"
+              ],
+              [
+                "P(+|no A)",
+                "0,10"
+              ],
+              [
+                "P(+)",
+                "0,116"
+              ],
+              [
+                "P(A|+)",
+                "9/58≈0,1552"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede P(A|+) ser mucho menor que P(+|A)?||Sí: el denominador incluye falsos positivos y la tasa previa P(A)."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Aplicar Bayes usando probabilidad total en el denominador. Separa la probabilidad previa del evento y la tasa de la prueba. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-Q01-L06-01",
+        "F3-B2C-Q01-L06-02",
+        "F3-B2C-Q01-L06-03",
+        "F3-B2C-Q01-L06-04",
+        "F3-B2C-Q01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

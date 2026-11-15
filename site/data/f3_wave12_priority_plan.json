@@ -1,0 +1,54 @@
+{
+  "version": "0.12.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "B2C-A01",
+      "priority": 1,
+      "why": "Sistemas de Matemáticas I B1C-A01 desarrollados en F3-11."
+    },
+    {
+      "unit_id": "B2C-A02",
+      "priority": 2,
+      "why": "Requisito textual matrices B2C-A01 desarrollado dentro de F3-12."
+    },
+    {
+      "unit_id": "B2C-G02",
+      "priority": 3,
+      "why": "Vectores 3D B2C-G01 desarrollados F3-10 y sistemas tridimensionales B2C-A02 desarrollados aquí."
+    }
+  ],
+  "new_editorial_edges": [
+    {
+      "from": "B1C-A01",
+      "to": "B2C-A01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Sistemas lineales de Matemáticas I para iniciar matrices."
+    },
+    {
+      "from": "B2C-A01",
+      "to": "B2C-A02",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Matrices para sus determinantes, rango y métodos de sistemas."
+    },
+    {
+      "from": "B2C-A02",
+      "to": "B2C-G02",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Sistemas lineales espaciales para intersecciones en 3D."
+    },
+    {
+      "from": "B2C-G01",
+      "to": "B2C-G02",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Vectores en 3D son prerrequisito explícito del catálogo."
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 30,
+  "regional_mapping": "NO VERIFICADO; aristas editoriales no son requisitos normativos del Estado"
+}

@@ -1,0 +1,781 @@
+{
+  "unit_id": "E2-D01",
+  "unit_title": "Estadística descriptiva",
+  "product_phase": "F3_OLA20",
+  "version": "0.20.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Construir tablas de frecuencias y agrupar datos por intervalos disjuntos.",
+    "Calcular medidas de centralización a partir de datos y frecuencias.",
+    "Calcular rango y varianza poblacional de conjuntos pequeños."
+  ],
+  "warnings": [
+    "Material sintético EN REVISIÓN, sin revisión humana o publicación.",
+    "Las aristas de prerrequisitos añadidas son editoriales, no normativa oficial.",
+    "La muestra no equivale a la población; frecuencia relativa observada no es probabilidad teórica.",
+    "El óptimo lineal continuo puede no ser entero o único; las restricciones y unidades prevalecen.",
+    "WCAG 2.2 AA integral, normativa autonómica y teléfonos físicos NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Tablas estadística 1.º ESO",
+      "lesson_id": "E1-D01-L02",
+      "href": "#/curso/E1/unidad/E1-D01/leccion/E1-D01-L02"
+    },
+    {
+      "label": "Media, mediana y moda 1.º ESO",
+      "lesson_id": "E1-D01-L04",
+      "href": "#/curso/E1/unidad/E1-D01/leccion/E1-D01-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recordar sin pistas y revisar explicaciones, progreso local solo por consentimiento."
+  },
+  "source_note": "Referencias estatales RD 217/2022 y RD 243/2022, asignaciones de itinerarios editoriales sin cotejo autonómico.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E2-D01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-D01:C01"
+      ],
+      "objectives": [
+        "Construir tablas de frecuencias y agrupar datos por intervalos disjuntos.",
+        "Diferenciar clase, marca de clase y valor original no recuperable al agrupar."
+      ],
+      "prerequisites": [
+        "E1-D01-L02",
+        "E1-N04-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una tabla de datos agrupados utiliza intervalos de clase sin solapamiento, por ejemplo [0,10), [10,20), [20,30), y cuenta observaciones en cada intervalo. El extremo derecho excluido evita contar dos veces los datos fronterizos, salvo si la última clase se define de otro modo explícito. La marca de clase del intervalo [10,20) es (10+20)/2=15; representa el punto medio del intervalo, no un dato necesariamente observado. Si las frecuencias de tres intervalos son 2,3,5, el tamaño de muestra es 10, la frecuencia relativa del último es 5/10=1/2 y las acumuladas son 2,5,10. Al agrupar se pierde información de valores individuales, así que una media por marcas de clase es aproximada salvo supuestos específicos. Comparar clases requiere anchos coherentes; para histogramas de anchos distintos se interpreta densidad de frecuencia y no altura bruta."
+        },
+        {
+          "type": "example",
+          "body": "Para las clases [0,10), [10,20), [20,30) con frecuencias 2,3,5, el total n es 10 y la última frecuencia relativa 5/10=1/2."
+        },
+        {
+          "type": "example",
+          "body": "La marca de clase del intervalo [10,20) vale (10+20)/2=15; el dato 20 pertenece a la clase siguiente, no a esta."
+        },
+        {
+          "type": "figure",
+          "body": "Frecuencias agrupadas en clases de igual ancho. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Frecuencias agrupadas en clases de igual ancho. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "stats_bars",
+            "title": "Frecuencias agrupadas en clases de igual ancho",
+            "rows": [
+              [
+                "Clase I",
+                "[0,10), f=2"
+              ],
+              [
+                "Clase II",
+                "[10,20), f=3"
+              ],
+              [
+                "Clase III",
+                "[20,30), f=5"
+              ],
+              [
+                "Marcas",
+                "5,15,25"
+              ],
+              [
+                "Total",
+                "n=10"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                2,
+                3,
+                5
+              ],
+              "labels": [
+                "0–10",
+                "10–20",
+                "20–30"
+              ]
+            },
+            "domain": [
+              0,
+              6
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La marca de clase tiene que coincidir con uno de los datos observados?||No; es el punto medio representativo de un intervalo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una tabla de datos agrupados utiliza intervalos de clase sin solapamiento, por ejemplo [0,10), [10,20), [20,30), y cuenta observaciones en cada intervalo. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-D01-L01-01",
+        "F3-E2-D01-L01-02",
+        "F3-E2-D01-L01-03",
+        "F3-E2-D01-L01-04",
+        "F3-E2-D01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-D01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-D01:C02"
+      ],
+      "objectives": [
+        "Calcular medidas de centralización a partir de datos y frecuencias.",
+        "Justificar la diferencia entre media exacta y estimación por marcas agrupadas."
+      ],
+      "prerequisites": [
+        "E2-D01-L01",
+        "E1-D01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para valores xᵢ con frecuencias nᵢ, la media ponderada es (Σxᵢnᵢ)/(Σnᵢ) cuando el denominador es positivo. La mediana ordena las observaciones; con cantidad par es la media de los dos valores centrales. La moda es el dato de mayor frecuencia, no siempre único. Para datos [1,1,2,3,3], frecuencias 2,1,2, la suma ponderada es 2+2+6=10, n=5 y media=2; la mediana es 2 y las modas son 1 y 3 (bimodal). Al agrupar por intervalos y sustituir cada dato por la marca de clase, la media obtenida es una estimación, no una reconstrucción exacta: muchos conjuntos distintos generan la misma tabla. Nunca se calcula la media de categorías nominales arbitrariamente codificadas."
+        },
+        {
+          "type": "example",
+          "body": "Para 1 con frecuencia 2, 2 con frecuencia 1 y 3 con frecuencia 2, la media es (2+2+6)/5=2."
+        },
+        {
+          "type": "example",
+          "body": "La muestra [1,1,2,3,3] tiene mediana 2 y dos modas, 1 y 3; no se fuerza una sola moda al empatar."
+        },
+        {
+          "type": "figure",
+          "body": "Distribución bimodal de cinco observaciones. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Distribución bimodal de cinco observaciones. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "stats_bars",
+            "title": "Distribución bimodal de cinco observaciones",
+            "rows": [
+              [
+                "Dato 1",
+                "Frecuencia 2"
+              ],
+              [
+                "Dato 2",
+                "Frecuencia 1"
+              ],
+              [
+                "Dato 3",
+                "Frecuencia 2"
+              ],
+              [
+                "Media",
+                "2"
+              ],
+              [
+                "Mediana",
+                "2"
+              ],
+              [
+                "Modas",
+                "1 y 3"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                2,
+                1,
+                2
+              ],
+              "labels": [
+                "1",
+                "2",
+                "3"
+              ]
+            },
+            "domain": [
+              0,
+              4
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es siempre exacta la media por marcas de clase si solo conocemos intervalos y frecuencias?||No; habitualmente es una estimación."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para valores xᵢ con frecuencias nᵢ, la media ponderada es (Σxᵢnᵢ)/(Σnᵢ) cuando el denominador es positivo. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-D01-L02-01",
+        "F3-E2-D01-L02-02",
+        "F3-E2-D01-L02-03",
+        "F3-E2-D01-L02-04",
+        "F3-E2-D01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-D01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-D01:C03"
+      ],
+      "objectives": [
+        "Calcular rango y varianza poblacional de conjuntos pequeños.",
+        "Relacionar dispersión con unidades y sensibilidad a valores extremos."
+      ],
+      "prerequisites": [
+        "E2-D01-L02",
+        "E1-D01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El rango se obtiene restando máximo−mínimo de los datos observados. La varianza descriptiva poblacional es la media de los cuadrados de desviaciones respecto de la media: σ²=(Σ(xᵢ−x̄)²)/n cuando n>0; la desviación típica es su raíz cuadrada. Si los datos son [1,2,3], la media es 2, las desviaciones −1,0,1, los cuadrados 1,0,1 y la varianza poblacional 2/3; la desviación típica es √(2/3). La varianza utiliza unidades al cuadrado, no las mismas que los datos. La varianza muestral corregida usa divisor n−1 con otro propósito inferencial: no debe mezclarse con la descriptiva poblacional aquí definida. Con datos constantes el rango y la varianza son 0. El rango es muy sensible a un extremo y no describe por sí solo la distribución completa."
+        },
+        {
+          "type": "example",
+          "body": "Para [1,2,3], rango 3−1=2, media 2 y varianza poblacional (1+0+1)/3=2/3."
+        },
+        {
+          "type": "example",
+          "body": "Para [2,2,2], rango 0 y varianza poblacional 0; no hay dispersión alrededor de la media 2."
+        },
+        {
+          "type": "figure",
+          "body": "Datos alrededor de la media. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Datos alrededor de la media. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "stats_bars",
+            "title": "Datos alrededor de la media",
+            "rows": [
+              [
+                "Muestra",
+                "1,2,3"
+              ],
+              [
+                "Media",
+                "2"
+              ],
+              [
+                "Desviaciones",
+                "−1,0,+1"
+              ],
+              [
+                "Varianza poblacional",
+                "2/3"
+              ],
+              [
+                "Rango",
+                "2"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                1,
+                1,
+                1
+              ],
+              "labels": [
+                "1",
+                "2",
+                "3"
+              ]
+            },
+            "domain": [
+              0,
+              4
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La varianza de medidas en centímetros se expresa también en centímetros?||No; se expresa en centímetros cuadrados."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El rango se obtiene restando máximo−mínimo de los datos observados. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-D01-L03-01",
+        "F3-E2-D01-L03-02",
+        "F3-E2-D01-L03-03",
+        "F3-E2-D01-L03-04",
+        "F3-E2-D01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-D01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-D01:C04"
+      ],
+      "objectives": [
+        "Leer gráficos de barras, sectores y cajas con escalas consistentes.",
+        "Determinar cuartiles según una convención explícita y comparar distribuciones."
+      ],
+      "prerequisites": [
+        "E2-D01-L03",
+        "E1-D01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un diagrama de cajas representa mínimo, primer cuartil Q1, mediana, tercer cuartil Q3 y máximo (o bigotes según convención sobre valores atípicos). En esta unidad se usa la convención de mitades: para n par, la mediana divide en dos mitades del mismo tamaño y Q1 y Q3 son medianas de esas mitades. En los datos [1,2,3,4,5,6,7,8], la mediana es 4,5, Q1=(2+3)/2=2,5, Q3=(6+7)/2=6,5 y rango intercuartílico Q3−Q1=4. Otras convenciones de cuartiles pueden producir valores diferentes: nunca se oculta la elegida. Los sectores expresan parte de un total y las barras comparan frecuencias; no se mezclan porcentajes de totales diferentes sin indicar denominadores. El dibujo no debe sustituir el cálculo tabulado."
+        },
+        {
+          "type": "example",
+          "body": "Datos ordenados [1,2,3,4,5,6,7,8]: mediana 4,5; mitad inferior [1,2,3,4], Q1=2,5; superior [5,6,7,8], Q3=6,5."
+        },
+        {
+          "type": "example",
+          "body": "El rango intercuartílico es 6,5−2,5=4. Con esta convención, mínimo 1 y máximo 8 permanecen extremos del conjunto."
+        },
+        {
+          "type": "figure",
+          "body": "Cuartiles de ocho valores. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Cuartiles de ocho valores. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "stats_box",
+            "title": "Cuartiles de ocho valores",
+            "rows": [
+              [
+                "Datos",
+                "1,2,3,4,5,6,7,8"
+              ],
+              [
+                "Q1",
+                "2,5"
+              ],
+              [
+                "Mediana",
+                "4,5"
+              ],
+              [
+                "Q3",
+                "6,5"
+              ],
+              [
+                "IQR",
+                "4"
+              ],
+              [
+                "Convención",
+                "Medianas de mitades"
+              ]
+            ],
+            "model": {
+              "kind": "stats_box",
+              "five": [
+                1,
+                2.5,
+                4.5,
+                6.5,
+                8
+              ]
+            },
+            "domain": [
+              0,
+              9
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Todos los libros y programas deben obtener idénticos cuartiles sin especificar la convención?||No; hay convenciones de cálculo distintas."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un diagrama de cajas representa mínimo, primer cuartil Q1, mediana, tercer cuartil Q3 y máximo (o bigotes según convención sobre valores atípicos). Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-D01-L04-01",
+        "F3-E2-D01-L04-02",
+        "F3-E2-D01-L04-03",
+        "F3-E2-D01-L04-04",
+        "F3-E2-D01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-D01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-D01:C05"
+      ],
+      "objectives": [
+        "Comparar dos distribuciones usando centro y dispersión.",
+        "Evitar conclusiones de dispersión basadas únicamente en medias iguales."
+      ],
+      "prerequisites": [
+        "E2-D01-L03",
+        "E2-D01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Dos conjuntos pueden tener la misma media y dispersión distinta. Los datos A=[4,5,6] tienen media 5, rango 2 y varianza poblacional (1+0+1)/3=2/3. Los datos B=[0,5,10] tienen también media 5, pero rango 10 y varianza poblacional (25+0+25)/3=50/3. Concluir que ambos grupos se comportan igual porque comparten media ocultaría una diferencia notable de variabilidad. La mediana de ambos es 5; tampoco es suficiente por sí sola. Se deben informar tamaño, unidad, origen y método de muestreo antes de generalizar a poblaciones. El contraste de histogramas con escalas distintas puede distorsionar y es necesario usar las mismas clases o aclarar diferencias. Las muestras son sintéticas y no describen alumnado real."
+        },
+        {
+          "type": "example",
+          "body": "En A=[4,5,6] y B=[0,5,10], las medias son 5 en ambos casos; los rangos son 2 y 10, respectivamente."
+        },
+        {
+          "type": "example",
+          "body": "La varianza poblacional de A es 2/3, la de B es 50/3; B presenta mayor dispersión, aunque las medianas coincidan en 5."
+        },
+        {
+          "type": "figure",
+          "body": "Distribuciones con igual media y distinto rango. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Distribuciones con igual media y distinto rango. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "stats_bars",
+            "title": "Distribuciones con igual media y distinto rango",
+            "rows": [
+              [
+                "Conjunto A",
+                "4,5,6"
+              ],
+              [
+                "Conjunto B",
+                "0,5,10"
+              ],
+              [
+                "Media ambas",
+                "5"
+              ],
+              [
+                "Rango A",
+                "2"
+              ],
+              [
+                "Rango B",
+                "10"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                2,
+                10
+              ],
+              "labels": [
+                "Rango A",
+                "Rango B"
+              ]
+            },
+            "domain": [
+              0,
+              12
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Tener la misma media obliga a que dos distribuciones tengan la misma dispersión?||No; deben compararse rango, varianza u otras medidas."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Dos conjuntos pueden tener la misma media y dispersión distinta. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-D01-L05-01",
+        "F3-E2-D01-L05-02",
+        "F3-E2-D01-L05-03",
+        "F3-E2-D01-L05-04",
+        "F3-E2-D01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-D01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-D01:C06"
+      ],
+      "objectives": [
+        "Detectar escalas manipuladas, muestras sesgadas y denominadores omitidos.",
+        "Justificar comparaciones responsables sin inferir causalidad a partir de correlación visual."
+      ],
+      "prerequisites": [
+        "E2-D01-L05",
+        "E1-D01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una noticia puede presentar un aumento de 48 a 52 respuestas como si fuese cinco veces mayor al truncar el eje a partir de 47, cuando la diferencia real es 4. También puede ocultar el denominador: 20 % de 10 observaciones son 2, pero 20 % de 100 observaciones son 20; estos recuentos no son equivalentes. Si una muestra de voluntarios no representa la población, sus porcentajes no pueden generalizarse automáticamente. La causalidad no se deduce de dos barras que suben juntas, pues podrían intervenir otras variables y sesgos de selección. La interpretación responsable incluye escala completa o advertencia explícita, tamaño y procedencia de la muestra, unidades, tiempo y límites de la inferencia. Los datos ilustrativos son sintéticos y no representan información privada de menores."
+        },
+        {
+          "type": "example",
+          "body": "Una figura con barras de 48 y 52 muestra diferencia real 4 y relación 52/48=13/12, no una multiplicación por cinco."
+        },
+        {
+          "type": "example",
+          "body": "Dos encuestas muestran 20 % de 10 y 20 % de 100 respuestas. Los casos correspondientes son 2 y 20, aunque los porcentajes coincidan."
+        },
+        {
+          "type": "figure",
+          "body": "Denominadores y escalas comparables. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Denominadores y escalas comparables. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "stats_bars",
+            "title": "Denominadores y escalas comparables",
+            "rows": [
+              [
+                "Grupo pequeño",
+                "20 % de 10=2"
+              ],
+              [
+                "Grupo grande",
+                "20 % de 100=20"
+              ],
+              [
+                "Porcentaje ambos",
+                "20 %"
+              ],
+              [
+                "Conteos",
+                "No iguales"
+              ],
+              [
+                "Alerta",
+                "No inferir causalidad visual"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                2,
+                20
+              ],
+              "labels": [
+                "n=10",
+                "n=100"
+              ]
+            },
+            "domain": [
+              0,
+              22
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un gráfico que usa muestras voluntarias permite afirmar sin más que toda la población presenta el mismo porcentaje?||No; debe evaluarse representatividad y sesgo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una noticia puede presentar un aumento de 48 a 52 respuestas como si fuese cinco veces mayor al truncar el eje a partir de 47, cuando la diferencia real es 4. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-D01-L06-01",
+        "F3-E2-D01-L06-02",
+        "F3-E2-D01-L06-03",
+        "F3-E2-D01-L06-04",
+        "F3-E2-D01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

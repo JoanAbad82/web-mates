@@ -1,0 +1,747 @@
+{
+  "unit_id": "E3-G02",
+  "unit_title": "Semejanza, transformaciones y cuerpos",
+  "product_phase": "F3-27",
+  "version": "0.27.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Reconocer homotecias mediante razón lineal y puntos correspondientes.",
+    "Calcular longitudes homólogas con factores positivos o negativos."
+  ],
+  "warnings": [
+    "Datos sintéticos EN REVISIÓN. No homologado ni publicado.",
+    "Modelos de probabilidad, unidades, exponentes y transformaciones requieren interpretación rigurosa; cotejo territorial pendiente."
+  ],
+  "prerequisite_links": [
+    "E2-G01-L01",
+    "E2-G01-L02",
+    "E2-G01-L04",
+    "E2-G01-L05",
+    "E3-G02-L01",
+    "E3-G02-L02",
+    "E3-G02-L04"
+  ],
+  "recall_policy": "f2-spaced-v1.0.0",
+  "source_note": "Guía LOMLOE local; RD 217/2022 ESO o RD 243/2022 Bachillerato; cotejo territorial pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E3-G02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.27.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-G02:C01"
+      ],
+      "objectives": [
+        "Reconocer homotecias mediante razón lineal y puntos correspondientes.",
+        "Calcular longitudes homólogas con factores positivos o negativos."
+      ],
+      "prerequisites": [
+        "E2-G01-L01",
+        "E2-G01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Dos figuras son semejantes cuando conservan ángulos correspondientes y las longitudes homólogas mantienen una razón constante. Una homotecia de centro C y razón k transforma un punto P en P′ situado sobre la recta CP, cumpliendo el vector CP′=k·CP. Las longitudes se multiplican por |k|, no por k con signo; si k es negativo, el punto transformado queda al otro lado del centro. Con k=1 las longitudes se conservan; con 0<|k|<1 la figura se reduce. Áreas y volúmenes no se escalan linealmente, sino con potencias distintas de k. Para utilizar semejanza es necesario establecer correspondencias válidas y evitar comparar lados no homólogos."
+        },
+        {
+          "type": "example",
+          "body": "Un triángulo con base 3 cm bajo homotecia k=2 produce base 6 cm; los ángulos se mantienen y la figura ampliada tiene área cuatro veces mayor."
+        },
+        {
+          "type": "example",
+          "body": "Si el segmento correspondiente mide 5 cm y k=−0,5, su nueva longitud es 2,5 cm. El signo negativo indica disposición relativa al centro, no longitud negativa."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Homotecias y semejanza. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave27",
+            "title": "Homotecias y semejanza",
+            "kind": "similarity",
+            "model": {
+              "labels": [
+                "Base inicial",
+                "Base ampliada"
+              ],
+              "values": [
+                3,
+                6
+              ]
+            },
+            "rows": [
+              [
+                "Base inicial",
+                "3 cm"
+              ],
+              [
+                "Razón k",
+                "2"
+              ],
+              [
+                "Base final",
+                "6 cm"
+              ],
+              [
+                "Razón de áreas",
+                "4"
+              ],
+              [
+                "Con k=−0,5 y 5 cm",
+                "2,5 cm"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede una homotecia con k negativo producir longitud negativa?||No: las longitudes se multiplican por |k|; el signo afecta la posición."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Reconocer homotecias mediante razón lineal y puntos correspondientes. Identifica el centro y los lados homólogos. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-G02-L01-01",
+        "F3-E3-G02-L01-02",
+        "F3-E3-G02-L01-03",
+        "F3-E3-G02-L01-04",
+        "F3-E3-G02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-G02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.27.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-G02:C02"
+      ],
+      "objectives": [
+        "Transformar puntos por reflexión y giro alrededor del origen.",
+        "Comprobar conservación de longitudes y orientación según la transformación."
+      ],
+      "prerequisites": [
+        "E3-G02-L01",
+        "E2-G01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La simetría respecto del eje horizontal convierte (x,y) en (x,−y); la del eje vertical convierte (x,y) en (−x,y). Un giro de 90° antihorario con centro en el origen lleva (x,y) a (−y,x); el giro horario de 90° produce (y,−x). Una isometría conserva todas las distancias y los ángulos, aunque puede cambiar la orientación de una figura: la reflexión la invierte y los giros la preservan. Para un centro distinto del origen se trasladan las coordenadas al centro, se aplica la transformación y se vuelve a trasladar. El sentido del giro debe explicitarse, no inferirse por dibujos esquemáticos."
+        },
+        {
+          "type": "example",
+          "body": "El giro antihorario de 90° de P=(2,3) alrededor del origen produce P′=(−3,2). Ambos están a distancia √13 del centro."
+        },
+        {
+          "type": "example",
+          "body": "La reflexión respecto del eje horizontal de Q=(4,−1) produce Q′=(4,1); cambia el signo de y pero no el de x."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Simetrías y giros. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave27",
+            "title": "Simetrías y giros",
+            "kind": "transform",
+            "model": {
+              "labels": [
+                "x",
+                "y",
+                "x final",
+                "y final"
+              ],
+              "values": [
+                2,
+                3,
+                -3,
+                2
+              ]
+            },
+            "rows": [
+              [
+                "P original",
+                "(2,3)"
+              ],
+              [
+                "Giro 90° antihorario",
+                "(−3,2)"
+              ],
+              [
+                "Distancia al origen",
+                "√13"
+              ],
+              [
+                "Q original",
+                "(4,−1)"
+              ],
+              [
+                "Reflexión eje horizontal",
+                "(4,1)"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un giro antihorario de 90° transforma (2,3) en (3,−2)?||No; eso es un giro horario. Antihorario da (−3,2)."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Transformar puntos por reflexión y giro alrededor del origen. Fija explícitamente centro, eje y sentido del giro. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-G02-L02-01",
+        "F3-E3-G02-L02-02",
+        "F3-E3-G02-L02-03",
+        "F3-E3-G02-L02-04",
+        "F3-E3-G02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-G02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.27.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-G02:C03"
+      ],
+      "objectives": [
+        "Describir traslaciones mediante vectores y pares de coordenadas.",
+        "Comprobar que una traslación conserva distancia, área y orientación."
+      ],
+      "prerequisites": [
+        "E3-G02-L02",
+        "E2-G01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una traslación por el vector v=(a,b) convierte cada punto P=(x,y) en P′=(x+a,y+b). Todas las partes de la figura se desplazan la misma distancia y dirección, sin cambiar forma, área, perímetro ni orientación. El vector entre los puntos correspondientes P y P′ es exactamente v. Para encontrar el desplazamiento a partir de dos puntos se restan coordenadas: v=(x′−x,y′−y). Al componer dos traslaciones se suman sus vectores componente a componente. Un giro no es una traslación, porque normalmente mueve los puntos mediante vectores distintos. La malla cartesiana es útil, pero el cálculo algebraico evita errores de lectura."
+        },
+        {
+          "type": "example",
+          "body": "Trasladar P=(2,−3) por v=(−1,5) da P′=(1,2). La diferencia P′−P=(−1,5) confirma el desplazamiento."
+        },
+        {
+          "type": "example",
+          "body": "Dos traslaciones de v1=(3,−2) y v2=(−1,4) equivalen a la única traslación v=(2,2); no hay giro ni cambio de escala."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Traslaciones. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave27",
+            "title": "Traslaciones",
+            "kind": "transform",
+            "model": {
+              "labels": [
+                "x",
+                "y",
+                "x final",
+                "y final"
+              ],
+              "values": [
+                2,
+                -3,
+                1,
+                2
+              ]
+            },
+            "rows": [
+              [
+                "P inicial",
+                "(2,−3)"
+              ],
+              [
+                "Vector v",
+                "(−1,5)"
+              ],
+              [
+                "P final",
+                "(1,2)"
+              ],
+              [
+                "v1",
+                "(3,−2)"
+              ],
+              [
+                "v2",
+                "(−1,4)"
+              ],
+              [
+                "Vector compuesto",
+                "(2,2)"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una traslación cambia el área de una figura?||No: se conserva la distancia entre cualquier par de puntos."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Describir traslaciones mediante vectores y pares de coordenadas. Resta punto final menos inicial para hallar el vector. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-G02-L03-01",
+        "F3-E3-G02-L03-02",
+        "F3-E3-G02-L03-03",
+        "F3-E3-G02-L03-04",
+        "F3-E3-G02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-G02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.27.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-G02:C04"
+      ],
+      "objectives": [
+        "Calcular factores de superficie y volumen bajo semejanza espacial.",
+        "Evitar aplicar la razón lineal a magnitudes cuadráticas o cúbicas."
+      ],
+      "prerequisites": [
+        "E3-G02-L01",
+        "E2-G01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Cuando una figura semejante se amplía con razón lineal k, su perímetro y todas sus longitudes se multiplican por |k|, sus superficies por k² y sus volúmenes por |k|³. El volumen de un sólido semejante no se multiplica solo por k², porque intervienen tres dimensiones. Por ejemplo, duplicar aristas multiplica áreas por cuatro y volúmenes por ocho. Una reducción a la mitad reduce superficies a una cuarta parte y volúmenes a un octavo. Si el factor de área conocido es 9, la razón de longitudes positiva es 3. Para objetos físicos semejantes también cambian capacidades y masas solo bajo hipótesis de densidad comparable."
+        },
+        {
+          "type": "example",
+          "body": "Para una homotecia espacial k=3, un área de 4 cm² pasa a 4×9=36 cm² y un volumen de 2 cm³ pasa a 2×27=54 cm³."
+        },
+        {
+          "type": "example",
+          "body": "Con factor de longitud 0,5, un área de 20 cm² se convierte en 5 cm² y un volumen de 80 cm³ en 10 cm³. Los factores 1/4 y 1/8 son distintos."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Escalas de área y volumen. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave27",
+            "title": "Escalas de área y volumen",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "longitud",
+                "área",
+                "volumen"
+              ],
+              "values": [
+                3,
+                9,
+                27
+              ]
+            },
+            "rows": [
+              [
+                "Razón lineal",
+                "k=3"
+              ],
+              [
+                "Factor perímetro",
+                "3"
+              ],
+              [
+                "Factor área",
+                "9"
+              ],
+              [
+                "Factor volumen",
+                "27"
+              ],
+              [
+                "Área inicial→final",
+                "4→36 cm²"
+              ],
+              [
+                "Volumen inicial→final",
+                "2→54 cm³"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué triplicar un lado multiplica el volumen por 27?||Cada una de las tres dimensiones se multiplica por 3; 3³=27."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Calcular factores de superficie y volumen bajo semejanza espacial. Clasifica la magnitud en longitud, superficie o volumen. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-G02-L04-01",
+        "F3-E3-G02-L04-02",
+        "F3-E3-G02-L04-03",
+        "F3-E3-G02-L04-04",
+        "F3-E3-G02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-G02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.27.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-G02:C05"
+      ],
+      "objectives": [
+        "Calcular superficies y volúmenes de prismas y cilindros con unidades.",
+        "Usar fórmulas de desarrollo plano cuando corresponda y distinguir área de capacidad."
+      ],
+      "prerequisites": [
+        "E3-G02-L04",
+        "E2-G01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El volumen de un prisma recto es área de la base multiplicada por altura: V=A_base·h. Para un cilindro circular recto de radio r y altura h, V=πr²h y el área total es A=2πr²+2πrh, contando dos bases circulares y superficie lateral. El área total y volumen de un cubo de arista a son 6a² y a³ respectivamente. Las superficies se miden en unidades cuadradas, y los volúmenes en cúbicas. Si el sólido se abre, la superficie lateral del cilindro forma un rectángulo de anchura 2πr y altura h. Las fórmulas presuponen geometría ideal; cuerpos reales requieren mediciones y tolerancias."
+        },
+        {
+          "type": "example",
+          "body": "Con cilindro r=2 cm y h=5 cm, V=π×2²×5=20π cm³≈62,832 cm³ y área total=2π×4+2π×2×5=28π cm²≈87,965 cm²."
+        },
+        {
+          "type": "example",
+          "body": "Para un cubo de arista 4 cm, el área total es 6×4²=96 cm² y su volumen es 4³=64 cm³. No debe intercambiarse el exponente de las unidades."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Superficies y volúmenes. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave27",
+            "title": "Superficies y volúmenes",
+            "kind": "solid",
+            "model": {
+              "labels": [
+                "Radio",
+                "Altura"
+              ],
+              "values": [
+                2,
+                5
+              ]
+            },
+            "rows": [
+              [
+                "Cilindro r",
+                "2 cm"
+              ],
+              [
+                "Cilindro h",
+                "5 cm"
+              ],
+              [
+                "Volumen",
+                "20π cm³"
+              ],
+              [
+                "Área total",
+                "28π cm²"
+              ],
+              [
+                "Cubo a=4",
+                "Superficie 96 cm²"
+              ],
+              [
+                "Cubo a=4",
+                "Volumen 64 cm³"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Para un cilindro de radio 2 y altura 5, el área total es 20π?||No: 20π es el volumen; el área total es 28π."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Calcular superficies y volúmenes de prismas y cilindros con unidades. Dibuja y separa bases y superficie lateral antes de sumar áreas. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-G02-L05-01",
+        "F3-E3-G02-L05-02",
+        "F3-E3-G02-L05-03",
+        "F3-E3-G02-L05-04",
+        "F3-E3-G02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-G02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.27.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-G02:C06"
+      ],
+      "objectives": [
+        "Modelizar problemas contextualizados combinando semejanza, escala y medidas.",
+        "Validar unidades y razonabilidad de una solución geométrica."
+      ],
+      "prerequisites": [
+        "E3-G02-L01",
+        "E3-G02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un problema de semejanza requiere definir figuras, señalar lados homólogos y comprobar la razón común antes de hacer cálculos. En mapas y planos con escala 1:s, una longitud medida se convierte a longitud real multiplicando por s, pero es esencial convertir después las unidades. Los factores de área son s² y no s. En triángulos semejantes, si la base se multiplica por k y la altura también, su superficie cambia por k². Los resultados de mediciones reales son aproximados cuando la escala o lectura tiene error. Una solución completa comunica diagrama, relaciones, unidades y un control de plausibilidad."
+        },
+        {
+          "type": "example",
+          "body": "En un plano con escala 1:25000, una longitud de 3 cm representa 75000 cm=750 m en la realidad; multiplicar por 25000 sin convertir centímetros a metros sería incompleto."
+        },
+        {
+          "type": "example",
+          "body": "Un triángulo de base 6 cm y altura 4 cm tiene área 12 cm². Una copia semejante con razón k=1,5 tiene área 12×1,5²=27 cm²."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Resolución de problemas geométricos. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave27",
+            "title": "Resolución de problemas geométricos",
+            "kind": "similarity",
+            "model": {
+              "labels": [
+                "base original",
+                "base nueva"
+              ],
+              "values": [
+                6,
+                9
+              ]
+            },
+            "rows": [
+              [
+                "Escala plano",
+                "1:25000"
+              ],
+              [
+                "Longitud medida",
+                "3 cm"
+              ],
+              [
+                "Real",
+                "750 m"
+              ],
+              [
+                "Triángulo inicial",
+                "base 6; altura 4 cm"
+              ],
+              [
+                "Área inicial",
+                "12 cm²"
+              ],
+              [
+                "Área con k=1,5",
+                "27 cm²"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una ampliación de base por 1,5 multiplica el área también por 1,5?||No: en figuras semejantes el factor de área es 1,5²=2,25."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Modelizar problemas contextualizados combinando semejanza, escala y medidas. Dibuja las figuras y anota correspondencias y unidades. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-G02-L06-01",
+        "F3-E3-G02-L06-02",
+        "F3-E3-G02-L06-03",
+        "F3-E3-G02-L06-04",
+        "F3-E3-G02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

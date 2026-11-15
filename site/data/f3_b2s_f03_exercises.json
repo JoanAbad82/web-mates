@@ -1,0 +1,1007 @@
+{
+  "unit_id": "B2S-F03",
+  "version": "0.19.0",
+  "status": "revision",
+  "notice": "Banco sintético determinista EN REVISIÓN, sin validación humana todavía.",
+  "activities": [
+    {
+      "exercise_id": "F3-B2S-F03-L01-01",
+      "lesson_id": "B2S-F03-L01",
+      "type": "numeric",
+      "prompt": "En Primitivas básicas: Una primitiva de f(x)=4x^3 es Ax^4+C. Calcula coeficiente exacto A. Escribe el número exacto sin unidades.",
+      "answer": 1.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 1. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 1.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_primitive_power_coefficient",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L01-02",
+      "lesson_id": "B2S-F03-L01",
+      "type": "numeric",
+      "prompt": "En Primitivas básicas: Escoge la primitiva F(t)=4/(4)·t^4 con C=0. Calcula F(1). Escribe el número exacto sin unidades.",
+      "answer": 1.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 1. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 1.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_primitive_polynomial_at",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L01-03",
+      "lesson_id": "B2S-F03-L01",
+      "type": "numeric",
+      "prompt": "En Primitivas básicas: Una primitiva de f(x)=6x^1 es Ax^2+C. Calcula coeficiente exacto A. Escribe el número exacto sin unidades.",
+      "answer": 3.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 3. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 3.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_primitive_power_coefficient",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L01-04",
+      "lesson_id": "B2S-F03-L01",
+      "type": "choice",
+      "prompt": "En Primitivas básicas: ¿Debe incluirse constante arbitraria C para describir TODAS las primitivas de f(x)=2x (Sí/No)? Selecciona la opción matemáticamente correcta.",
+      "answer": "Sí",
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: Sí. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: Sí.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_integration_constant",
+        "prerequisito_b2s_f03"
+      ],
+      "choices": [
+        "No",
+        "No se puede determinar",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L01-05",
+      "lesson_id": "B2S-F03-L01",
+      "type": "choice",
+      "prompt": "En Primitivas básicas: ¿Se puede aplicar directamente x^(n+1)/(n+1) cuando n=−1 dividiendo entre cero (Sí/No)? Selecciona la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: No. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: No.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_power_rule_negative_one",
+        "prerequisito_b2s_f03"
+      ],
+      "choices": [
+        "No se puede determinar",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L02-01",
+      "lesson_id": "B2S-F03-L02",
+      "type": "numeric",
+      "prompt": "En Integral definida: Calcula integral DEFINIDA desde 1 hasta 3 de f(x)=2x+(0), con signo. Escribe el número exacto sin unidades.",
+      "answer": 8.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 8. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 8.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_integral_linear",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L02-02",
+      "lesson_id": "B2S-F03-L02",
+      "type": "numeric",
+      "prompt": "En Integral definida: Calcula integral DEFINIDA desde 0 hasta 2 de f(x)=1x+(-1), con signo. Escribe el número exacto sin unidades.",
+      "answer": 0.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 0. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 0.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_integral_linear",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L02-03",
+      "lesson_id": "B2S-F03-L02",
+      "type": "numeric",
+      "prompt": "En Integral definida: Calcula integral DEFINIDA desde 0 hasta 2 de f(x)=2x+(0), con signo. Escribe el número exacto sin unidades.",
+      "answer": 4.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 4. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 4.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_integral_linear",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L02-04",
+      "lesson_id": "B2S-F03-L02",
+      "type": "choice",
+      "prompt": "En Integral definida: ¿La integral firmada de una función que cruza el eje es siempre igual al área geométrica positiva (Sí/No)? Selecciona la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: No. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: No.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_signed_equals_area",
+        "prerequisito_b2s_f03"
+      ],
+      "choices": [
+        "No se puede determinar",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L02-05",
+      "lesson_id": "B2S-F03-L02",
+      "type": "choice",
+      "prompt": "En Integral definida: Calcula integral ORIENTADA desde 3 hasta 1 de f(x)=2x+0, invirtiendo límites. Selecciona la opción matemáticamente correcta.",
+      "answer": "-8",
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: -8. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: -8.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_swap_bounds",
+        "prerequisito_b2s_f03"
+      ],
+      "choices": [
+        "-8",
+        "-7",
+        "-9"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L03-01",
+      "lesson_id": "B2S-F03-L03",
+      "type": "numeric",
+      "prompt": "En Propiedades: Calcula integral DEFINIDA desde 0 hasta 2 de f(x)=2x+(0), con signo. Escribe el número exacto sin unidades.",
+      "answer": 4.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 4. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 4.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_integral_linear",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L03-02",
+      "lesson_id": "B2S-F03-L03",
+      "type": "numeric",
+      "prompt": "En Propiedades: Calcula integral DEFINIDA desde 2 hasta 3 de f(x)=2x+(0), con signo. Escribe el número exacto sin unidades.",
+      "answer": 5.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 5. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 5.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_integral_linear",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L03-03",
+      "lesson_id": "B2S-F03-L03",
+      "type": "numeric",
+      "prompt": "En Propiedades: Calcula integral DEFINIDA desde 0 hasta 3 de f(x)=2x+(0), con signo. Escribe el número exacto sin unidades.",
+      "answer": 9.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 9. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 9.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_integral_linear",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L03-04",
+      "lesson_id": "B2S-F03-L03",
+      "type": "choice",
+      "prompt": "En Propiedades: ¿Es válido en general ∫f(x)g(x)dx=(∫f)(∫g) como regla de integrales (Sí/No)? Selecciona la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: No. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: No.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_integral_product_rule",
+        "prerequisito_b2s_f03"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No se puede determinar"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L03-05",
+      "lesson_id": "B2S-F03-L03",
+      "type": "choice",
+      "prompt": "En Propiedades: Calcula integral ORIENTADA desde 3 hasta 0 de f(x)=2x+0, invirtiendo límites. Selecciona la opción matemáticamente correcta.",
+      "answer": "-9",
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: -9. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: -9.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_swap_bounds",
+        "prerequisito_b2s_f03"
+      ],
+      "choices": [
+        "-8",
+        "-10",
+        "-9"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L04-01",
+      "lesson_id": "B2S-F03-L04",
+      "type": "numeric",
+      "prompt": "En Cálculo de áreas: Calcula ÁREA geométrica entre y=1(x−1) y el eje, en [0,2], separando signo en x=1. Escribe el número exacto sin unidades.",
+      "answer": 1.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 1. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 1.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_absolute_area_shift",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L04-02",
+      "lesson_id": "B2S-F03-L04",
+      "type": "numeric",
+      "prompt": "En Cálculo de áreas: Calcula integral DEFINIDA desde 0 hasta 2 de f(x)=1x+(-1), con signo. Escribe el número exacto sin unidades.",
+      "answer": 0.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 0. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 0.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_integral_linear",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L04-03",
+      "lesson_id": "B2S-F03-L04",
+      "type": "numeric",
+      "prompt": "En Cálculo de áreas: ¿Cuál es el área positiva entre f(x)=2 constante y eje x, desde x=0 hasta 3? Escribe el número exacto sin unidades.",
+      "answer": 6.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 6. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 6.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_rectangle_area",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L04-04",
+      "lesson_id": "B2S-F03-L04",
+      "type": "choice",
+      "prompt": "En Cálculo de áreas: ¿Que ∫_0^2 (x−1)dx=0 demuestra área geométrica inexistente (Sí/No)? Selecciona la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: No. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: No.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_signed_area_always",
+        "prerequisito_b2s_f03"
+      ],
+      "choices": [
+        "Sí",
+        "No se puede determinar",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L04-05",
+      "lesson_id": "B2S-F03-L04",
+      "type": "choice",
+      "prompt": "En Cálculo de áreas: Calcula ÁREA geométrica entre y=2(x−1) y el eje, en [0,2], separando signo en x=1. Selecciona la opción matemáticamente correcta.",
+      "answer": "2",
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 2. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 2.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_absolute_area_shift",
+        "prerequisito_b2s_f03"
+      ],
+      "choices": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L05-01",
+      "lesson_id": "B2S-F03-L05",
+      "type": "numeric",
+      "prompt": "En Interpretación de acumulación económica: Calcula integral DEFINIDA desde 0 hasta 3 de f(x)=2x+(10), con signo. Escribe el número exacto sin unidades.",
+      "answer": 39.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 39. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 39.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_integral_linear",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L05-02",
+      "lesson_id": "B2S-F03-L05",
+      "type": "numeric",
+      "prompt": "En Interpretación de acumulación económica: Calcula integral DEFINIDA desde 0 hasta 4 de f(x)=0x+(5), con signo. Escribe el número exacto sin unidades.",
+      "answer": 20.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 20. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 20.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_integral_linear",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L05-03",
+      "lesson_id": "B2S-F03-L05",
+      "type": "numeric",
+      "prompt": "En Interpretación de acumulación económica: Para tasa monetaria r(t)=2t+10 €/mes, calcula la TASA puntual r(3) en €/mes. Escribe el número exacto sin unidades.",
+      "answer": 16.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 16. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 16.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_rate_at_time",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L05-04",
+      "lesson_id": "B2S-F03-L05",
+      "type": "choice",
+      "prompt": "En Interpretación de acumulación económica: La integral de una tasa en €/mes respecto al tiempo en meses tiene unidades: Euros, €/mes o Meses. Selecciona la opción matemáticamente correcta.",
+      "answer": "Euros",
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: Euros. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: Euros.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_rate_accum_units",
+        "prerequisito_b2s_f03"
+      ],
+      "choices": [
+        "Unidades",
+        "Euros",
+        "Sin unidades"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L05-05",
+      "lesson_id": "B2S-F03-L05",
+      "type": "choice",
+      "prompt": "En Interpretación de acumulación económica: ¿Una tabla de importes mensuales, por sí sola, prueba que existe tasa continua exacta entre meses (Sí/No)? Selecciona la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: No. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: No.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_integration_from_discrete",
+        "prerequisito_b2s_f03"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No se puede determinar"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L06-01",
+      "lesson_id": "B2S-F03-L06",
+      "type": "numeric",
+      "prompt": "En Problemas con unidades: Calcula integral desde 0 a 2 de f(t)=3t²+0t+0 exactamente, aplicando primitiva. Escribe el número exacto sin unidades.",
+      "answer": 8.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 8. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 8.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_integral_quadratic",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L06-02",
+      "lesson_id": "B2S-F03-L06",
+      "type": "numeric",
+      "prompt": "En Problemas con unidades: Calcula integral DEFINIDA desde 1 hasta 3 de f(x)=2x+(4), con signo. Escribe el número exacto sin unidades.",
+      "answer": 16.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 16. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 16.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_integral_linear",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L06-03",
+      "lesson_id": "B2S-F03-L06",
+      "type": "numeric",
+      "prompt": "En Problemas con unidades: Calcula integral DEFINIDA desde 0 hasta 2 de f(x)=2x+(4), con signo. Escribe el número exacto sin unidades.",
+      "answer": 12.0,
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 12. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 12.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_integral_linear",
+        "prerequisito_b2s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L06-04",
+      "lesson_id": "B2S-F03-L06",
+      "type": "choice",
+      "prompt": "En Problemas con unidades: La integral temporal de una velocidad en m/s a lo largo de segundos produce: Metros, m/s o Segundos. Selecciona la opción matemáticamente correcta.",
+      "answer": "Metros",
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: Metros. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: Metros.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_velocity_displacement_units",
+        "prerequisito_b2s_f03"
+      ],
+      "choices": [
+        "Metros",
+        "m/s",
+        "Segundos"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-F03-L06-05",
+      "lesson_id": "B2S-F03-L06",
+      "type": "choice",
+      "prompt": "En Problemas con unidades: ¿La integral de un coste marginal permite determinar coste TOTAL absoluto sin conocer ningún coste inicial (Sí/No)? Selecciona la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Se verifica la primitiva por derivación y se aplica el teorema fundamental solo en su dominio; signo y unidades incluidos. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: No. Calcula una primitiva y comprueba derivando antes de usar límites de integración. El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: No.",
+      "hint": "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_total_cost_requires_initial",
+        "prerequisito_b2s_f03"
+      ],
+      "choices": [
+        "Sí",
+        "No se puede determinar",
+        "No"
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B2S-F03-L01-01": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "primitive_power_coefficient",
+        "params": [
+          4,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: primitive_power_coefficient"
+    },
+    "F3-B2S-F03-L01-02": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "primitive_polynomial_at",
+        "params": [
+          4,
+          3,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: primitive_polynomial_at"
+    },
+    "F3-B2S-F03-L01-03": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "primitive_power_coefficient",
+        "params": [
+          6,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: primitive_power_coefficient"
+    },
+    "F3-B2S-F03-L01-04": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "integration_constant",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: integration_constant"
+    },
+    "F3-B2S-F03-L01-05": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "power_rule_negative_one",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: power_rule_negative_one"
+    },
+    "F3-B2S-F03-L02-01": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "integral_linear",
+        "params": [
+          2,
+          0,
+          1,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: integral_linear"
+    },
+    "F3-B2S-F03-L02-02": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "integral_linear",
+        "params": [
+          1,
+          -1,
+          0,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: integral_linear"
+    },
+    "F3-B2S-F03-L02-03": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "integral_linear",
+        "params": [
+          2,
+          0,
+          0,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: integral_linear"
+    },
+    "F3-B2S-F03-L02-04": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "signed_equals_area",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: signed_equals_area"
+    },
+    "F3-B2S-F03-L02-05": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "swap_bounds",
+        "params": [
+          2,
+          0,
+          1,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: swap_bounds"
+    },
+    "F3-B2S-F03-L03-01": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "integral_linear",
+        "params": [
+          2,
+          0,
+          0,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: integral_linear"
+    },
+    "F3-B2S-F03-L03-02": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "integral_linear",
+        "params": [
+          2,
+          0,
+          2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: integral_linear"
+    },
+    "F3-B2S-F03-L03-03": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "integral_linear",
+        "params": [
+          2,
+          0,
+          0,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: integral_linear"
+    },
+    "F3-B2S-F03-L03-04": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "integral_product_rule",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: integral_product_rule"
+    },
+    "F3-B2S-F03-L03-05": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "swap_bounds",
+        "params": [
+          2,
+          0,
+          0,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: swap_bounds"
+    },
+    "F3-B2S-F03-L04-01": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "absolute_area_shift",
+        "params": [
+          1,
+          0,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: absolute_area_shift"
+    },
+    "F3-B2S-F03-L04-02": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "integral_linear",
+        "params": [
+          1,
+          -1,
+          0,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: integral_linear"
+    },
+    "F3-B2S-F03-L04-03": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "rectangle_area",
+        "params": [
+          2,
+          0,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: rectangle_area"
+    },
+    "F3-B2S-F03-L04-04": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "signed_area_always",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: signed_area_always"
+    },
+    "F3-B2S-F03-L04-05": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "absolute_area_shift",
+        "params": [
+          2,
+          0,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: absolute_area_shift"
+    },
+    "F3-B2S-F03-L05-01": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "integral_linear",
+        "params": [
+          2,
+          10,
+          0,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: integral_linear"
+    },
+    "F3-B2S-F03-L05-02": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "integral_linear",
+        "params": [
+          0,
+          5,
+          0,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: integral_linear"
+    },
+    "F3-B2S-F03-L05-03": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "rate_at_time",
+        "params": [
+          2,
+          10,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: rate_at_time"
+    },
+    "F3-B2S-F03-L05-04": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "rate_accum_units",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: rate_accum_units"
+    },
+    "F3-B2S-F03-L05-05": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "integration_from_discrete",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: integration_from_discrete"
+    },
+    "F3-B2S-F03-L06-01": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "integral_quadratic",
+        "params": [
+          3,
+          0,
+          0,
+          0,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: integral_quadratic"
+    },
+    "F3-B2S-F03-L06-02": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "integral_linear",
+        "params": [
+          2,
+          4,
+          1,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: integral_linear"
+    },
+    "F3-B2S-F03-L06-03": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "integral_linear",
+        "params": [
+          2,
+          4,
+          0,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: integral_linear"
+    },
+    "F3-B2S-F03-L06-04": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "velocity_displacement_units",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: velocity_displacement_units"
+    },
+    "F3-B2S-F03-L06-05": {
+      "hints": [
+        "Calcula una primitiva y comprueba derivando antes de usar límites de integración.",
+        "El teorema fundamental evalúa F(b)−F(a). La integral es firmada; área geométrica integra |f| separando en raíces. Respeta unidades de tasa·tiempo."
+      ],
+      "math_check": {
+        "kind": "total_cost_requires_initial",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: total_cost_requires_initial"
+    }
+  }
+}

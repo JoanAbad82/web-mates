@@ -1,0 +1,790 @@
+{
+  "unit_id": "E3-D01",
+  "unit_title": "Distribuciones, muestras y gráficos",
+  "product_phase": "F3_OLA21",
+  "version": "0.21.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Clasificar variables nominales, ordinales, discretas y continuas.",
+    "Reconocer muestra sesgada, conveniencia y selección aleatoria.",
+    "Calcular medidas de centralización por datos y frecuencias."
+  ],
+  "warnings": [
+    "Datos exclusivamente sintéticos, EN REVISIÓN, no representan alumnado ni resultados reales.",
+    "Las probabilidades se condicionan a la equiprobabilidad, independencia o información previa cuando corresponda.",
+    "Frecuencia empírica no prueba probabilidad teórica; correlación no demuestra causalidad.",
+    "Las asignaciones a cursos y relaciones nuevas son editoriales, no obligaciones normativas.",
+    "WCAG 2.2 AA integral, currículo autonómico, revisión humana y móvil físico NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Estadística descriptiva 2.º ESO",
+      "lesson_id": "E2-D01-L06",
+      "href": "#/curso/E2/unidad/E2-D01/leccion/E2-D01-L06"
+    },
+    {
+      "label": "Dispersión y cuartiles",
+      "lesson_id": "E2-D01-L04",
+      "href": "#/curso/E2/unidad/E2-D01/leccion/E2-D01-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recuperar sin pistas y repasar con explicaciones, registro local solo si se consiente."
+  },
+  "source_note": "Referencia estatal RD 217/2022 y RD 243/2022; distribución editorial no homologada por autonomía.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E3-D01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-D01:C01"
+      ],
+      "objectives": [
+        "Clasificar variables nominales, ordinales, discretas y continuas.",
+        "Seleccionar una representación adecuada sin fingir operaciones numéricas entre categorías."
+      ],
+      "prerequisites": [
+        "E2-D01-L01",
+        "E1-D01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En un estudio estadístico se distingue el individuo observado, la población de referencia y la variable medida. Las variables cualitativas nominales tienen categorías sin orden matemático (color), y las ordinales presentan categorías ordenadas (satisfacción baja, media, alta) pero sin distancias numéricas garantizadas. Las cuantitativas discretas cuentan valores (número de libros), mientras las continuas modelan medidas en un intervalo (longitud). No se calcula la media de códigos numéricos arbitrarios de categorías, porque su diferencia no representa magnitud. Para [2,3,2,4,3] libros hay cinco observaciones: la media sí tiene interpretación cuantitativa. La clasificación depende del modo de registro: altura redondeada al centímetro sigue siendo medida cuantitativa de magnitud continua, aunque se registre con precisión finita. Los datos aquí son sintéticos, no provienen de alumnado real."
+        },
+        {
+          "type": "example",
+          "body": "En la lista de libros [2,3,2,4,3] la variable es cuantitativa discreta porque cuenta objetos; cinco datos no representan necesariamente toda la población."
+        },
+        {
+          "type": "example",
+          "body": "El color favorito no tiene orden numérico natural; asignar códigos 1,2,3 no permite interpretar su media como un color medio real."
+        },
+        {
+          "type": "figure",
+          "body": "Frecuencia por libros sintéticos. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Frecuencia por libros sintéticos. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "stats_bars",
+            "title": "Frecuencia por libros sintéticos",
+            "rows": [
+              [
+                "Variable",
+                "Número de libros (discreta)"
+              ],
+              [
+                "Datos",
+                "2,3,2,4,3"
+              ],
+              [
+                "Frecuencia de 2",
+                "2"
+              ],
+              [
+                "Frecuencia de 3",
+                "2"
+              ],
+              [
+                "Frecuencia de 4",
+                "1"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                2,
+                2,
+                1
+              ],
+              "labels": [
+                "2",
+                "3",
+                "4"
+              ]
+            },
+            "domain": [
+              0,
+              5
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Los códigos 1, 2 y 3 atribuidos a colores convierten la variable en cuantitativa?||No; esos códigos son etiquetas nominales."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: En un estudio estadístico se distingue el individuo observado, la población de referencia y la variable medida. Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-D01-L01-01",
+        "F3-E3-D01-L01-02",
+        "F3-E3-D01-L01-03",
+        "F3-E3-D01-L01-04",
+        "F3-E3-D01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-D01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-D01:C02"
+      ],
+      "objectives": [
+        "Reconocer muestra sesgada, conveniencia y selección aleatoria.",
+        "Distinguir frecuencia muestral de parámetro de población e informar incertidumbre."
+      ],
+      "prerequisites": [
+        "E2-D01-L06",
+        "E1-D01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una muestra es un subconjunto observado de la población, y su representatividad depende de cómo se elige, del tamaño y de los posibles sesgos. Preguntar exclusivamente a voluntarios de un club deportivo sobre práctica deportiva tiende a sobre-representar personas activas: no equivale a muestrear al azar de todos los residentes. En un muestreo aleatorio simple ideal cada conjunto de igual tamaño tiene la misma probabilidad de selección bajo el diseño adoptado; esto no garantiza que una muestra concreta coincida con la población. Si de 50 respuestas sintéticas 30 son favorables, la proporción observada es 30/50=0,6; no se puede afirmar que el 60 % de la población completa lo sea sin supuestos adicionales. El sesgo no se elimina multiplicando por cien ni por aumentar el tamaño de una muestra seleccionada de modo incorrecto. La privacidad de menores exige usar datos inventados y no solicitar identificadores."
+        },
+        {
+          "type": "example",
+          "body": "Una muestra de 50 respuestas contiene 30 favorables: frecuencia relativa 30/50=3/5. Es una descripción de la muestra, no prueba del parámetro poblacional."
+        },
+        {
+          "type": "example",
+          "body": "Si se encuesta solo a socios de un club sobre su preferencia por deporte, se aplica selección por conveniencia y puede sesgar el resultado respecto de la ciudad."
+        },
+        {
+          "type": "figure",
+          "body": "Ejemplo de muestra, no de población. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Ejemplo de muestra, no de población. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "stats_bars",
+            "title": "Ejemplo de muestra, no de población",
+            "rows": [
+              [
+                "Encuestados sintéticos",
+                "50"
+              ],
+              [
+                "Favorables",
+                "30"
+              ],
+              [
+                "No favorables",
+                "20"
+              ],
+              [
+                "Proporción muestral",
+                "30/50=0,6"
+              ],
+              [
+                "Limitación",
+                "No inferir población automáticamente"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                30,
+                20
+              ],
+              "labels": [
+                "Sí",
+                "No"
+              ]
+            },
+            "domain": [
+              0,
+              35
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una muestra grande elegida solo por voluntarios garantiza ausencia de sesgo?||No; el diseño de selección sigue siendo esencial."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una muestra es un subconjunto observado de la población, y su representatividad depende de cómo se elige, del tamaño y de los posibles sesgos. Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-D01-L02-01",
+        "F3-E3-D01-L02-02",
+        "F3-E3-D01-L02-03",
+        "F3-E3-D01-L02-04",
+        "F3-E3-D01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-D01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-D01:C03"
+      ],
+      "objectives": [
+        "Calcular medidas de centralización por datos y frecuencias.",
+        "Interpretar mediana y moda frente a observaciones atípicas y categorías nominales."
+      ],
+      "prerequisites": [
+        "E2-D01-L02",
+        "E2-D01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La media de n datos cuantitativos se define como suma/n para n>0 y la media ponderada por frecuencias es Σxᵢnᵢ/Σnᵢ. La mediana necesita ordenar valores: en muestra impar es el valor central y en muestra par es el promedio de los dos centrales. La moda es el valor o categoría más frecuente, que puede haber más de uno. Para [1,2,2,3,12], la media es 4, la mediana es 2 y la moda es 2; el extremo 12 eleva la media sin mover la mediana. En una variable nominal se admite moda y distribución de frecuencia, pero no una media de etiquetas. La medida elegida debe acompañarse del tamaño n, el contexto y el motivo por el cual resume adecuadamente el conjunto. Igual mediana tampoco garantiza igual dispersión ni equivalencia de distribuciones."
+        },
+        {
+          "type": "example",
+          "body": "Con datos [1,2,2,3,12], media=20/5=4, mediana=2 (tercero al ordenar) y moda=2 por repetirse dos veces."
+        },
+        {
+          "type": "example",
+          "body": "En [1,1,2,3,3], media=2 y hay dos modas 1 y 3; inventar una moda única ocultaría el empate."
+        },
+        {
+          "type": "figure",
+          "body": "Medidas de centro frente a extremo. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Medidas de centro frente a extremo. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "stats_bars",
+            "title": "Medidas de centro frente a extremo",
+            "rows": [
+              [
+                "Muestra",
+                "1,2,2,3,12"
+              ],
+              [
+                "Media",
+                "4"
+              ],
+              [
+                "Mediana",
+                "2"
+              ],
+              [
+                "Moda",
+                "2"
+              ],
+              [
+                "Extremo observado",
+                "12"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                1,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "labels": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12"
+              ]
+            },
+            "domain": [
+              0,
+              13
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La media de un conjunto siempre coincide con su mediana aunque existan extremos?||No; un valor extremo puede desplazar la media."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La media de n datos cuantitativos se define como suma/n para n>0 y la media ponderada por frecuencias es Σxᵢnᵢ/Σnᵢ. Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-D01-L03-01",
+        "F3-E3-D01-L03-02",
+        "F3-E3-D01-L03-03",
+        "F3-E3-D01-L03-04",
+        "F3-E3-D01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-D01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-D01:C04"
+      ],
+      "objectives": [
+        "Calcular rango, varianza poblacional y desviación típica.",
+        "Diferenciar la definición poblacional con n de la muestral corregida con n−1."
+      ],
+      "prerequisites": [
+        "E2-D01-L03",
+        "E2-D01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La dispersión cuantifica la variabilidad de los valores, distinta de sus medidas centrales. El rango es máximo−mínimo, muy sensible a extremos. La varianza descriptiva poblacional es σ²=Σ(xᵢ−x̄)²/n para n>0; la desviación típica es √σ² y conserva las unidades originales, a diferencia de la varianza, que tiene unidades al cuadrado. Para A=[4,5,6], media 5, rango 2 y varianza 2/3. Para B=[0,5,10], media también 5, rango 10 y varianza 50/3. Si se pretende estimar una varianza poblacional con muestra aleatoria bajo supuestos inferenciales específicos, suele usarse divisor n−1; no se sustituye silenciosamente la definición descriptiva usada en esta lección. Una distribución más extendida puede tener la misma mediana y media, por lo que compararlas solas sería insuficiente."
+        },
+        {
+          "type": "example",
+          "body": "Para [4,5,6], la media es 5; las diferencias son −1,0,1, sus cuadrados 1,0,1 y σ²=(1+0+1)/3=2/3."
+        },
+        {
+          "type": "example",
+          "body": "Para [0,5,10], la media sigue siendo 5, pero σ²=(25+0+25)/3=50/3, muy superior a 2/3."
+        },
+        {
+          "type": "figure",
+          "body": "Igual media y distinta varianza. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Igual media y distinta varianza. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "stats_bars",
+            "title": "Igual media y distinta varianza",
+            "rows": [
+              [
+                "A",
+                "4,5,6"
+              ],
+              [
+                "B",
+                "0,5,10"
+              ],
+              [
+                "Media ambas",
+                "5"
+              ],
+              [
+                "Varianza A",
+                "2/3"
+              ],
+              [
+                "Varianza B",
+                "50/3"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                2,
+                10
+              ],
+              "labels": [
+                "Rango A",
+                "Rango B"
+              ]
+            },
+            "domain": [
+              0,
+              12
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La varianza descriptiva poblacional utiliza obligatoriamente el divisor n−1?||No; la definición aquí empleada divide por n."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La dispersión cuantifica la variabilidad de los valores, distinta de sus medidas centrales. Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-D01-L04-01",
+        "F3-E3-D01-L04-02",
+        "F3-E3-D01-L04-03",
+        "F3-E3-D01-L04-04",
+        "F3-E3-D01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-D01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-D01:C05"
+      ],
+      "objectives": [
+        "Comparar dos distribuciones con medidas centrales y de dispersión.",
+        "Distinguir proporciones condicionadas a denominadores diferentes."
+      ],
+      "prerequisites": [
+        "E3-D01-L04",
+        "E2-D01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Comparar datos exige una misma escala y aclarar si se miden tamaños absolutos, porcentajes o tasas. Las muestras A=[4,5,6] y B=[0,5,10] tienen media y mediana 5, pero rangos 2 y 10; no son intercambiables como distribuciones. Si dos encuestas registran 20 % favorable con tamaños 10 y 100, los recuentos son 2 y 20, distintos aunque el porcentaje sea igual. Una tasa por 100 habitantes no puede sustituirse por número de casos sin conocer el tamaño de la población. En gráficos de histogramas, anchos de clase distintos exigen densidad de frecuencia y no solo altura bruta si se comparan áreas. Se advierte cuándo un agregado oculta subgrupos y que una correlación descriptiva no prueba una relación causal. Todos los grupos empleados son sintéticos."
+        },
+        {
+          "type": "example",
+          "body": "A=[4,5,6] y B=[0,5,10] comparten media 5, pero el rango de A es 2 y el de B 10; B está más disperso."
+        },
+        {
+          "type": "example",
+          "body": "El 20 % de 10 respuestas son 2; el 20 % de 100 respuestas son 20. Los porcentajes son iguales, los conteos no."
+        },
+        {
+          "type": "figure",
+          "body": "Dos dispersiones diferentes. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Dos dispersiones diferentes. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "stats_bars",
+            "title": "Dos dispersiones diferentes",
+            "rows": [
+              [
+                "Grupo A",
+                "4,5,6"
+              ],
+              [
+                "Grupo B",
+                "0,5,10"
+              ],
+              [
+                "Medias",
+                "5 y 5"
+              ],
+              [
+                "Rangos",
+                "2 y 10"
+              ],
+              [
+                "Advertencia",
+                "Mismo centro no equivale a igual variación"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                2,
+                10
+              ],
+              "labels": [
+                "A",
+                "B"
+              ]
+            },
+            "domain": [
+              0,
+              12
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Dos distribuciones con igual media deben tener siempre el mismo rango y varianza?||No; centro y dispersión son conceptos distintos."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Comparar datos exige una misma escala y aclarar si se miden tamaños absolutos, porcentajes o tasas. Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-D01-L05-01",
+        "F3-E3-D01-L05-02",
+        "F3-E3-D01-L05-03",
+        "F3-E3-D01-L05-04",
+        "F3-E3-D01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-D01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-D01:C06"
+      ],
+      "objectives": [
+        "Analizar escalas, denominadores y fuentes de una infografía.",
+        "Separar afirmaciones justificadas de inferencias causales o poblacionales no apoyadas."
+      ],
+      "prerequisites": [
+        "E3-D01-L05",
+        "E2-D01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una infografía puede ser engañosa cuando omite la línea de base, cambia escalas o representa cantidades por superficies tridimensionales desproporcionadas. Una subida de 48 a 52 observaciones es diferencia absoluta 4 y cambio relativo 4/48=1/12, aproximadamente 8,33 %, no cinco veces los casos. Si las barras arrancan en 47, sus alturas visibles son 1 y 5 y crean una proporción visual falsa. Toda comparación estadística debe incluir fuentes, método de muestreo, tamaño de muestra, periodo y unidades. Una asociación entre horas de estudio y una variable de rendimiento puede deberse también a otros factores; sin diseño que identifique causalidad, no se afirma que una variable cause la otra. Los ejemplos no contienen registros reales de menores y deben poder leerse con tablas exactas y descripciones alternativas."
+        },
+        {
+          "type": "example",
+          "body": "Los grupos A=48 y B=52 difieren en 4 observaciones; el crecimiento respecto a 48 es 4/48=1/12, no 400 %."
+        },
+        {
+          "type": "example",
+          "body": "Si una infografía presenta alturas relativas 1 y 5 tras restar 47 a ambas cifras, se recuperan los datos originales 48 y 52 antes de comparar."
+        },
+        {
+          "type": "figure",
+          "body": "Representación no truncada de dos recuentos. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Representación no truncada de dos recuentos. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "stats_bars",
+            "title": "Representación no truncada de dos recuentos",
+            "rows": [
+              [
+                "A",
+                "48"
+              ],
+              [
+                "B",
+                "52"
+              ],
+              [
+                "Diferencia",
+                "4"
+              ],
+              [
+                "Cambio relativo",
+                "1/12"
+              ],
+              [
+                "Nota",
+                "Eje de base cero para comparar totales"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                48,
+                52
+              ],
+              "labels": [
+                "A",
+                "B"
+              ]
+            },
+            "domain": [
+              0,
+              55
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La mayor altura de una barra con eje recortado prueba una relación de cinco a uno entre los datos reales?||No; hay que leer el eje y los valores originales."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una infografía puede ser engañosa cuando omite la línea de base, cambia escalas o representa cantidades por superficies tridimensionales desproporcionadas. Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-D01-L06-01",
+        "F3-E3-D01-L06-02",
+        "F3-E3-D01-L06-03",
+        "F3-E3-D01-L06-04",
+        "F3-E3-D01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

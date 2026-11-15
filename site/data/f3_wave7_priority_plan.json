@@ -1,0 +1,52 @@
+{
+  "version": "0.7.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "E1-M01",
+      "priority": 1,
+      "why": "Catálogo: E1-M01 requiere proporcionalidad directa, ya desarrollada en E1-P01."
+    },
+    {
+      "unit_id": "E1-G01",
+      "priority": 2,
+      "why": "Catálogo: figuras y áreas planas declara Magnitudes y medida como prerrequisito."
+    },
+    {
+      "unit_id": "E2-G01",
+      "priority": 3,
+      "why": "Catálogo: Semejanza y Pitágoras declara Geometría plana de 1.º; E2-G01→E4B-G01 es arista canónica."
+    }
+  ],
+  "new_editorial_edges": [
+    {
+      "from": "E1-P01",
+      "to": "E1-M01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Proporcionalidad directa para escalas de medida"
+    },
+    {
+      "from": "E1-M01",
+      "to": "E1-G01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Unidades, ángulos y perímetros como base de geometría plana"
+    },
+    {
+      "from": "E1-G01",
+      "to": "E2-G01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Triángulos y geometría plana como base de semejanza y Pitágoras"
+    }
+  ],
+  "canonical_edge_highlight": {
+    "from": "E2-G01",
+    "to": "E4B-G01",
+    "status": "canonica_ya_existente"
+  },
+  "excluded": "E4B-G01 no se desarrolla: máximo tres unidades para cubrir bases de geometría antes de trigonometría.",
+  "preserved": "20 aristas canónicas, 20 editoriales previas, sin modificación",
+  "regional_mapping": "PENDIENTE; no inventar códigos de competencias o criterios"
+}

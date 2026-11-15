@@ -1,0 +1,798 @@
+{
+  "unit_id": "B2S-F03",
+  "unit_title": "Integrales y acumulación",
+  "product_phase": "F3_OLA19",
+  "version": "0.19.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Definir primitivas de polinomios como funciones derivables en un intervalo.",
+    "Calcular integrales definidas mediante una primitiva y el teorema fundamental.",
+    "Aplicar linealidad, aditividad y cambio de orientación en integrales definidas."
+  ],
+  "warnings": [
+    "Ejercicios sintéticos EN REVISIÓN, sin revisión humana ni publicación.",
+    "Modelos económicos educativos no predicen finanzas ni datos reales.",
+    "Integral definida acumula con signo; área geométrica requiere valor absoluto y particiones.",
+    "Matrices: producto no conmutativo; inversa solo si det≠0; solución real no asegura viabilidad.",
+    "WCAG 2.2 AA integral, mapeo autonómico y móviles físicos NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Derivadas y funciones MACS II",
+      "lesson_id": "B2S-F01-L05",
+      "href": "#/curso/B2S/unidad/B2S-F01/leccion/B2S-F01-L05"
+    },
+    {
+      "label": "Continuidad MACS I",
+      "lesson_id": "B1S-F02-L04",
+      "href": "#/curso/B1S/unidad/B1S-F02/leccion/B1S-F02-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recordar sin pistas, con corrección y repaso local voluntario."
+  },
+  "source_note": "RD 217/2022 y RD 243/2022 estatales; secuencia editorial sujeta a revisión territorial.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B2S-F03-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F03:C01"
+      ],
+      "objectives": [
+        "Definir primitivas de polinomios como funciones derivables en un intervalo.",
+        "Aplicar reglas elementales y constante de integración para integrales indefinidas."
+      ],
+      "prerequisites": [
+        "B2S-F01-L02",
+        "B1S-F03-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una primitiva F de una función f sobre un intervalo satisface F′(x)=f(x) en todos sus puntos. La integral indefinida representa la familia F(x)+C, con C constante real; olvidar C produce una sola primitiva, no toda la familia. Para n entero no negativo, una primitiva de x^n es x^(n+1)/(n+1), pues su derivada recupera x^n. La regla de potencia requiere n≠−1 cuando se usa en su forma general; para 1/x las primitivas son ln|x|+C en cada intervalo que no contiene 0. Al integrar 3x²+2x, se obtiene x³+x²+C. La linealidad permite integrar suma y múltiplo constante, siempre en intervalos donde existen las funciones y las primitivas. Comprobar por derivación es un oráculo más fiable que memorizar un patrón visual."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=4x³+6x, una primitiva es F(x)=x⁴+3x². En efecto F′(x)=4x³+6x; la familia completa añade C."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=2x+5, la integral indefinida es x²+5x+C. Diferenciar dos primitivas revela una constante."
+        },
+        {
+          "type": "figure",
+          "body": "Función derivable y pendiente de primitiva. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Función derivable y pendiente de primitiva. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "quadratic",
+            "title": "Función derivable y pendiente de primitiva",
+            "rows": [
+              [
+                "f(x)",
+                "2x"
+              ],
+              [
+                "F(x)",
+                "x²+C"
+              ],
+              [
+                "Derivada F′(x)",
+                "2x"
+              ],
+              [
+                "C",
+                "Constante arbitraria"
+              ],
+              [
+                "Comprobación",
+                "Derivar F"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 2,
+              "b": 0
+            },
+            "domain": [
+              0,
+              5
+            ],
+            "marks": [
+              [
+                "f(3)",
+                3,
+                6
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La integral indefinida de 2x es solo x² sin posible constante?||No; cualquier x²+C tiene derivada 2x."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una primitiva F de una función f sobre un intervalo satisface F′(x)=f(x) en todos sus puntos. Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F03-L01-01",
+        "F3-B2S-F03-L01-02",
+        "F3-B2S-F03-L01-03",
+        "F3-B2S-F03-L01-04",
+        "F3-B2S-F03-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-F03-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F03:C02"
+      ],
+      "objectives": [
+        "Calcular integrales definidas mediante una primitiva y el teorema fundamental.",
+        "Distinguir integral como acumulación firmada de área geométrica positiva."
+      ],
+      "prerequisites": [
+        "B2S-F03-L01",
+        "B1S-F02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si f es continua en [a,b] y F es una primitiva, el teorema fundamental del cálculo permite calcular la integral definida ∫_a^b f(x)dx=F(b)−F(a). Su resultado es un número con unidades de f multiplicadas por unidades de x. Para f(x)=2x en [1,3], F(x)=x² y la acumulación firmada es 9−1=8. Si f toma valores negativos, la integral tiene aportaciones negativas: por ejemplo ∫_0^2(x−1)dx=0, aunque el área geométrica entre la recta y el eje no sea cero. Intercambiar límites cambia el signo, no los valores absolutos de regiones. La continuidad es una hipótesis suficiente habitual, no permiso para integrar sin justificar cualquier singularidad. Una visualización sombreada no sustituye los límites y la primitiva calculada."
+        },
+        {
+          "type": "example",
+          "body": "Calcula ∫ de 1 a 3 de 2x dx: primitiva x², evalúa 3²−1²=9−1=8 unidades acumuladas."
+        },
+        {
+          "type": "example",
+          "body": "Para ∫ de 0 a 2 de (x−1)dx, una primitiva es x²/2−x y el resultado es (2−2)−0=0 por cancelación de áreas con signo."
+        },
+        {
+          "type": "figure",
+          "body": "Acumulación firmada bajo una recta positiva. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Acumulación firmada bajo una recta positiva. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "linear",
+            "title": "Acumulación firmada bajo una recta positiva",
+            "rows": [
+              [
+                "f(x)",
+                "2x"
+              ],
+              [
+                "Intervalo",
+                "[1,3]"
+              ],
+              [
+                "Primitiva",
+                "x²"
+              ],
+              [
+                "F(3)−F(1)",
+                "9−1"
+              ],
+              [
+                "Integral",
+                "8"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 2,
+              "b": 0,
+              "shade": [
+                1,
+                3
+              ]
+            },
+            "domain": [
+              0,
+              4
+            ],
+            "marks": [
+              [
+                "A",
+                1,
+                2
+              ],
+              [
+                "B",
+                3,
+                6
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La integral definida de una función que cruza el eje coincide siempre con el área geométrica positiva?||No; contabiliza superficies con signo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Si f es continua en [a,b] y F es una primitiva, el teorema fundamental del cálculo permite calcular la integral definida ∫_a^b f(x)dx=F(b)−F(a). Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F03-L02-01",
+        "F3-B2S-F03-L02-02",
+        "F3-B2S-F03-L02-03",
+        "F3-B2S-F03-L02-04",
+        "F3-B2S-F03-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-F03-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F03:C03"
+      ],
+      "objectives": [
+        "Aplicar linealidad, aditividad y cambio de orientación en integrales definidas.",
+        "Verificar hipótesis de integrabilidad y evitar sustituir integral de producto por producto de integrales."
+      ],
+      "prerequisites": [
+        "B2S-F03-L02",
+        "B2S-F03-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La integral definida cumple linealidad: ∫(af+bg)=a∫f+b∫g para funciones integrables y constantes a,b. También es aditiva en intervalos: ∫_a^c f=∫_a^b f+∫_b^c f. Cambiar la orientación invierte el signo, ∫_b^a f=−∫_a^b f, y ∫_a^a f=0. Ninguna de estas reglas dice ∫fg=(∫f)(∫g) en general, ni permite dividir una integral por cero. En un modelo con función continua, las propiedades se prueban a partir de sumas y de primitivas; deben respetarse los intervalos reales y las unidades. Para f(x)=2x, ∫_0^2 f=4 y ∫_2^3 f=5, de manera que ∫_0^3 f=9. La partición del intervalo no altera la acumulación total, salvo pequeños errores numéricos si se aproxima."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=2x, ∫_0^2 f=4, ∫_2^3 f=5 y su suma 9 coincide con ∫_0^3 f=3²=9."
+        },
+        {
+          "type": "example",
+          "body": "Intercambiando límites, ∫_3^1 2x dx=−∫_1^3 2x dx=−8; el signo depende de la orientación y no de una superficie negativa."
+        },
+        {
+          "type": "figure",
+          "body": "Aditividad de integrales por subintervalos. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Aditividad de integrales por subintervalos. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "linear",
+            "title": "Aditividad de integrales por subintervalos",
+            "rows": [
+              [
+                "f(x)",
+                "2x"
+              ],
+              [
+                "∫ de 0 a 2",
+                "4"
+              ],
+              [
+                "∫ de 2 a 3",
+                "5"
+              ],
+              [
+                "∫ de 0 a 3",
+                "9"
+              ],
+              [
+                "Suma",
+                "4+5=9"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 2,
+              "b": 0,
+              "shade": [
+                0,
+                3
+              ]
+            },
+            "domain": [
+              0,
+              4
+            ],
+            "marks": [
+              [
+                "Corte",
+                2,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es siempre cierto que la integral del producto f·g es el producto de sus integrales?||No; la propiedad demostrada es linealidad, no multiplicatividad."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La integral definida cumple linealidad: ∫(af+bg)=a∫f+b∫g para funciones integrables y constantes a,b. Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F03-L03-01",
+        "F3-B2S-F03-L03-02",
+        "F3-B2S-F03-L03-03",
+        "F3-B2S-F03-L03-04",
+        "F3-B2S-F03-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-F03-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F03:C04"
+      ],
+      "objectives": [
+        "Calcular área geométrica entre una curva y el eje con integrales por tramos.",
+        "Usar valor absoluto o cambio de signo para separar áreas positivas."
+      ],
+      "prerequisites": [
+        "B2S-F03-L03",
+        "B2S-F01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La integral firmada ∫_a^b f(x)dx no es siempre el área geométrica entre la curva y el eje. El área geométrica se obtiene integrando |f(x)| cuando tiene sentido: conviene localizar las raíces y separar en intervalos de signo constante. Para f(x)=x−1 en [0,2], la recta es negativa en [0,1] y positiva en [1,2]. La integral firmada vale cero, pero el área es ∫_0^1(1−x)dx+∫_1^2(x−1)dx=1/2+1/2=1. Para dos curvas continuas, el área entre ellas se calcula por ∫|f−g|, localizando antes sus intersecciones. Una cota inferior negativa de altura no significa área negativa: el signo se relaciona con orientación, mientras que la superficie física se cuenta positiva."
+        },
+        {
+          "type": "example",
+          "body": "Para y=x−1 de 0 a 2, el área geométrica son dos triángulos de base 1 y altura 1: 1/2+1/2=1, aunque integral firmada cero."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=2 y g(x)=0 en [0,3], el área entre ambas rectas es ∫_0^3 2dx=6 unidades cuadradas."
+        },
+        {
+          "type": "figure",
+          "body": "Área positiva frente a integral con cancelación. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Área positiva frente a integral con cancelación. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "linear",
+            "title": "Área positiva frente a integral con cancelación",
+            "rows": [
+              [
+                "f(x)",
+                "x−1"
+              ],
+              [
+                "Dominio",
+                "[0,2]"
+              ],
+              [
+                "Integral firmada",
+                "0"
+              ],
+              [
+                "Área [0,1]",
+                "1/2"
+              ],
+              [
+                "Área [1,2]",
+                "1/2"
+              ],
+              [
+                "Área total",
+                "1"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 1,
+              "b": -1,
+              "shade": [
+                0,
+                2
+              ]
+            },
+            "domain": [
+              0,
+              2
+            ],
+            "marks": [
+              [
+                "Raíz",
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El resultado 0 de ∫_0^2(x−1)dx significa que no existe ninguna región geométrica entre curva y eje?||No; las áreas con signo se cancelan."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La integral firmada ∫_a^b f(x)dx no es siempre el área geométrica entre la curva y el eje. Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F03-L04-01",
+        "F3-B2S-F03-L04-02",
+        "F3-B2S-F03-L04-03",
+        "F3-B2S-F03-L04-04",
+        "F3-B2S-F03-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-F03-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F03:C05"
+      ],
+      "objectives": [
+        "Interpretar una integral de tasa monetaria como variación acumulada.",
+        "Distinguir magnitud instantánea, acumulación neta y unidades de la variable temporal."
+      ],
+      "prerequisites": [
+        "B2S-F03-L02",
+        "B1S-F03-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si una tasa neta continua r(t) se expresa en euros por mes y t se mide en meses, ∫_a^b r(t)dt representa euros acumulados en ese intervalo: las unidades €/mes por mes resultan euros. Con r(t)=10+2t y t∈[0,3], la variación acumulada es ∫_0^3(10+2t)dt=[10t+t²]_0^3=30+9=39 €. Si la tasa fuera negativa una parte del tiempo, la integral neta permitiría cancelaciones y no coincidiría con el flujo monetario bruto positivo. La interpretación supone una tasa continua y estable durante el intervalo; los registros mensuales discretos no verifican automáticamente esa hipótesis ni permiten interpolación causal. Comparar 39 euros de acumulación con r(3)=16 €/mes como si fueran misma magnitud produce un error dimensional."
+        },
+        {
+          "type": "example",
+          "body": "Para r(t)=10+2t €/mes entre t=0 y t=3 meses, la acumulación es [10t+t²]_0^3=30+9=39 euros."
+        },
+        {
+          "type": "example",
+          "body": "La tasa constante r(t)=5 €/hora durante 4 horas produce ∫_0^4 5dt=20 €: la unidad de tiempo se cancela correctamente."
+        },
+        {
+          "type": "figure",
+          "body": "Tasa monetaria y acumulación. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Tasa monetaria y acumulación. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "linear",
+            "title": "Tasa monetaria y acumulación",
+            "rows": [
+              [
+                "r(t)",
+                "10+2t €/mes"
+              ],
+              [
+                "Intervalo",
+                "0≤t≤3 meses"
+              ],
+              [
+                "Integral",
+                "∫(10+2t)dt"
+              ],
+              [
+                "Cambio total",
+                "39 €"
+              ],
+              [
+                "Tasa al final",
+                "16 €/mes"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 2,
+              "b": 10,
+              "shade": [
+                0,
+                3
+              ]
+            },
+            "domain": [
+              0,
+              4
+            ],
+            "marks": [
+              [
+                "Final",
+                3,
+                16
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Tiene la misma unidad una tasa r(t) en €/mes que su integral acumulada de tres meses?||No; la integral se mide en euros."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Si una tasa neta continua r(t) se expresa en euros por mes y t se mide en meses, ∫_a^b r(t)dt representa euros acumulados en ese intervalo: las unidades €/mes por mes resultan euros. Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F03-L05-01",
+        "F3-B2S-F03-L05-02",
+        "F3-B2S-F03-L05-03",
+        "F3-B2S-F03-L05-04",
+        "F3-B2S-F03-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-F03-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F03:C06"
+      ],
+      "objectives": [
+        "Aplicar integral definida en problemas de tasa con unidades compatibles.",
+        "Comprobar límites, orientación, dominio y plausibilidad de resultados exactos."
+      ],
+      "prerequisites": [
+        "B2S-F03-L05",
+        "B2S-F03-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para recuperar una acumulación a partir de una tasa se precisa conocer la variable de integración y su unidad, el intervalo orientado y una descripción integrable de la tasa. Sea v(t)=3t² m/s con tiempo t en segundos y dominio [0,2]. El desplazamiento es ∫_0^2 3t² dt=[t³]_0^2=8 m. Si v puede ser negativa, la integral representa desplazamiento neto, mientras que la distancia recorrida es ∫|v|dt. Una función de costes marginales C′(q)=2q+4 €/unidad, aplicada de q=1 a 3, produce aumento total C(3)−C(1)=∫_1^3(2q+4)dq=[q²+4q]_1^3=(9+12)−(1+4)=16 €. La constante de integración se cancela en una integral definida, pero la función de coste total necesita un dato inicial para reconstruirse."
+        },
+        {
+          "type": "example",
+          "body": "Para velocidad v(t)=3t² m/s entre 0 y 2 segundos, el desplazamiento es [t³]_0^2=8 metros."
+        },
+        {
+          "type": "example",
+          "body": "Para marginal C′(q)=2q+4 de q=1 a 3, el incremento es [q²+4q]_1^3=(21−5)=16 euros, sin conocer el coste fijo."
+        },
+        {
+          "type": "figure",
+          "body": "Integral de velocidad no negativa. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Integral de velocidad no negativa. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "quadratic",
+            "title": "Integral de velocidad no negativa",
+            "rows": [
+              [
+                "v(t)",
+                "3t² m/s"
+              ],
+              [
+                "Intervalo",
+                "[0,2] s"
+              ],
+              [
+                "Primitiva",
+                "t³"
+              ],
+              [
+                "Desplazamiento",
+                "8 m"
+              ],
+              [
+                "Unidad acumulada",
+                "Metros"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 3,
+              "h": 0,
+              "k": 0,
+              "shade": [
+                0,
+                2
+              ]
+            },
+            "domain": [
+              0,
+              3
+            ],
+            "marks": [
+              [
+                "v(2)",
+                2,
+                12
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una integral definida de coste marginal en €/unidad produce necesariamente una cantidad en €/unidad?||No; produce euros, porque integra respecto a unidades."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para recuperar una acumulación a partir de una tasa se precisa conocer la variable de integración y su unidad, el intervalo orientado y una descripción integrable de la tasa. Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F03-L06-01",
+        "F3-B2S-F03-L06-02",
+        "F3-B2S-F03-L06-03",
+        "F3-B2S-F03-L06-04",
+        "F3-B2S-F03-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

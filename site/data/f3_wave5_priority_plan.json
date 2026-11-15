@@ -1,0 +1,40 @@
+{
+  "version": "0.5.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "E1-N01",
+      "priority": 1,
+      "why": "Valor posicional y operaciones previos a enteros y divisibilidad"
+    },
+    {
+      "unit_id": "E1-N02",
+      "priority": 2,
+      "why": "Signos y recta necesarios para el cálculo posterior; no prerrequisito estricto de divisibilidad"
+    },
+    {
+      "unit_id": "E1-N03",
+      "priority": 3,
+      "why": "Divisibilidad y MCD necesarios para la equivalencia de fracciones"
+    }
+  ],
+  "new_editorial_edges": [
+    {
+      "from": "E1-N01",
+      "to": "E1-N02",
+      "type": "prerrequisito",
+      "status": "desarrollado_en_esta_oleada",
+      "why": "Extensión del cálculo natural a enteros"
+    },
+    {
+      "from": "E1-N01",
+      "to": "E1-N03",
+      "type": "prerrequisito",
+      "status": "desarrollado_en_esta_oleada",
+      "why": "Operaciones y productos naturales antes de divisibilidad"
+    }
+  ],
+  "preserved": "20 aristas canónicas y 15 editoriales de olas anteriores sin modificar",
+  "note": "La secuencia de producción no implica dependencia E1-N02→E1-N03",
+  "territorial_mapping": "PENDIENTE; sin códigos oficiales sin cotejo"
+}

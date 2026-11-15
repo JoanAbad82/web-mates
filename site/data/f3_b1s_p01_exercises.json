@@ -1,0 +1,998 @@
+{
+  "unit_id": "B1S-P01",
+  "version": "0.29.0",
+  "status": "revision",
+  "notice": "Cinco ejercicios por lección; contenidos sintéticos con revisión humana F4 pendiente.",
+  "activities": [
+    {
+      "exercise_id": "F3-B1S-P01-L01-01",
+      "lesson_id": "B1S-P01-L01",
+      "type": "numeric",
+      "prompt": "Precio sintético 100 €: sube 10 % y baja 10 %. ¿Importe final en euros?",
+      "answer": 99,
+      "explanation": "Los factores son 1,10 y 0,90: 100×1,10×0,90=99 €.",
+      "hint": "Transforma cada porcentaje en un factor multiplicativo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L01-02",
+      "lesson_id": "B1S-P01-L01",
+      "type": "numeric",
+      "prompt": "Precio 100 € tras +10 % y −10 %: ¿variación neta porcentual con signo?",
+      "answer": -1,
+      "explanation": "Factor total 0,99; cambio porcentual (0,99−1)×100=−1 %.",
+      "hint": "Transforma cada porcentaje en un factor multiplicativo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L01-03",
+      "lesson_id": "B1S-P01-L01",
+      "type": "numeric",
+      "prompt": "Índice 100 tras subidas sucesivas de 20 % y 10 %: ¿aumento total en %?",
+      "answer": 32,
+      "explanation": "1,20×1,10=1,32, por lo tanto aumento del 32 %.",
+      "hint": "Transforma cada porcentaje en un factor multiplicativo.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L01-04",
+      "lesson_id": "B1S-P01-L01",
+      "type": "choice",
+      "prompt": "¿Por qué +10 % y después −10 % no se anulan?",
+      "answer": "La segunda variación se aplica a una base distinta.",
+      "explanation": "Las variaciones compuestas se multiplican mediante factores, no se suman.",
+      "hint": "Transforma cada porcentaje en un factor multiplicativo.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "La segunda variación se aplica a una base distinta.",
+        "Porque un porcentaje negativo se suma siempre como positivo.",
+        "Porque todo porcentaje sucesivo se aplica al precio original.",
+        "Porque solo existen porcentajes enteros para aumentos."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L01-05",
+      "lesson_id": "B1S-P01-L01",
+      "type": "choice",
+      "prompt": "Una tasa pasa del 5 % al 7 %. ¿Cuál es la descripción inequívoca de la diferencia?",
+      "answer": "Sube 2 puntos porcentuales, que equivalen al 40 % relativo al 5 %.",
+      "explanation": "Los puntos porcentuales son diferencia de tasas; la variación relativa usa cociente 2/5.",
+      "hint": "Transforma cada porcentaje en un factor multiplicativo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Sube exactamente un 2 % relativo al valor original.",
+        "Baja 2 puntos porcentuales.",
+        "Sube 7 puntos porcentuales.",
+        "Sube 2 puntos porcentuales, que equivalen al 40 % relativo al 5 %."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L02-01",
+      "lesson_id": "B1S-P01-L02",
+      "type": "numeric",
+      "prompt": "Interés simple: 1000 € al 5 % anual durante 3 años. ¿Capital final?",
+      "answer": 1150,
+      "explanation": "Capital final 1000(1+0,05×3)=1150 € sin costes.",
+      "hint": "Comprueba que tipo y número de periodos usen la misma unidad temporal.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L02-02",
+      "lesson_id": "B1S-P01-L02",
+      "type": "numeric",
+      "prompt": "Interés simple: capital 1000 €, 5 % anual, 3 años. ¿Intereses ganados?",
+      "answer": 150,
+      "explanation": "I=C₀rt=1000×0,05×3=150 €. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Comprueba que tipo y número de periodos usen la misma unidad temporal.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L02-03",
+      "lesson_id": "B1S-P01-L02",
+      "type": "numeric",
+      "prompt": "En interés simple, 1000 € al 5 % anual producen 200 € de interés. ¿Años?",
+      "answer": 4,
+      "explanation": "t=I/(C₀r)=200/(1000×0,05)=4 años. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Comprueba que tipo y número de periodos usen la misma unidad temporal.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L02-04",
+      "lesson_id": "B1S-P01-L02",
+      "type": "choice",
+      "prompt": "¿Qué distingue el interés simple del compuesto?",
+      "answer": "En simple los intereses no generan intereses nuevos durante el plazo.",
+      "explanation": "El interés simple calcula cada periodo sobre el capital inicial fijo.",
+      "hint": "Comprueba que tipo y número de periodos usen la misma unidad temporal.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "En simple se aplica necesariamente (1+i)^n.",
+        "En simple los plazos deben medirse siempre en días.",
+        "En simple el interés solo puede ser negativo.",
+        "En simple los intereses no generan intereses nuevos durante el plazo."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L02-05",
+      "lesson_id": "B1S-P01-L02",
+      "type": "choice",
+      "prompt": "Si el tipo es anual y el periodo está en meses, ¿qué se debe hacer?",
+      "answer": "Acordar convención temporal y expresar duración compatible con el tipo.",
+      "explanation": "La fórmula C₀rt exige unidades de periodo consistentes.",
+      "hint": "Comprueba que tipo y número de periodos usen la misma unidad temporal.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Tomar meses como años sin conversión.",
+        "Cambiar automáticamente el tipo anual a un tipo mensual idéntico.",
+        "Acordar convención temporal y expresar duración compatible con el tipo.",
+        "Omitir el tiempo porque la cuota siempre es fija."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L03-01",
+      "lesson_id": "B1S-P01-L03",
+      "type": "numeric",
+      "prompt": "Compuesto: 1000 €, 5 % efectivo anual durante 2 años. ¿Monto final?",
+      "answer": 1102.5,
+      "explanation": "1000×(1,05)²=1102,50 €. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Identifica el tipo periódico efectivo y la frecuencia de capitalización.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L03-02",
+      "lesson_id": "B1S-P01-L03",
+      "type": "numeric",
+      "prompt": "Compuesto: 1000 €, 5 % anual, 2 años. ¿Interés acumulado?",
+      "answer": 102.5,
+      "explanation": "1102,50−1000=102,50 €. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Identifica el tipo periódico efectivo y la frecuencia de capitalización.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L03-03",
+      "lesson_id": "B1S-P01-L03",
+      "type": "numeric",
+      "prompt": "1000 €, 5 % anual, 2 años: ¿diferencia de monto compuesto menos simple?",
+      "answer": 2.5,
+      "explanation": "Compuesto 1102,50 €; simple 1100 €; diferencia 2,50 €.",
+      "hint": "Identifica el tipo periódico efectivo y la frecuencia de capitalización.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L03-04",
+      "lesson_id": "B1S-P01-L03",
+      "type": "choice",
+      "prompt": "¿Qué supuesto está incorporado al modelo de capitalización compuesta sin flujos?",
+      "answer": "Se reinvierten los intereses en cada periodo.",
+      "explanation": "Cada periodo acumula sobre capital y rendimientos previos.",
+      "hint": "Identifica el tipo periódico efectivo y la frecuencia de capitalización.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Se garantiza rentabilidad real positiva con cualquier inflación.",
+        "Se reinvierten los intereses en cada periodo.",
+        "El tipo periódico cambia aleatoriamente sin especificarlo.",
+        "Nunca se reinvierten los intereses del primer periodo."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L03-05",
+      "lesson_id": "B1S-P01-L03",
+      "type": "choice",
+      "prompt": "Para aplicar C_n=C₀(1+i)^n correctamente, ¿qué debe verificarse?",
+      "answer": "Que i corresponda a la unidad de los n periodos.",
+      "explanation": "La consistencia temporal del tipo efectivo y el plazo es imprescindible.",
+      "hint": "Identifica el tipo periódico efectivo y la frecuencia de capitalización.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Que se omitan las hipótesis de comisiones y retiradas.",
+        "Que i corresponda a la unidad de los n periodos.",
+        "Que n sea igual a i en valor numérico.",
+        "Que i se exprese siempre como porcentaje 5 en vez de 0,05."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L04-01",
+      "lesson_id": "B1S-P01-L04",
+      "type": "numeric",
+      "prompt": "Nominal anual 12 % convertible mensualmente, sin gastos: ¿efectivo anual en %, cuatro decimales?",
+      "answer": 12.6825,
+      "explanation": "[(1+0,12/12)^12−1]×100≈12,682503 %; redondea 12,6825.",
+      "hint": "Distingue nominal anual, periódico efectivo y anual efectivo antes de operar.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 6e-05
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L04-02",
+      "lesson_id": "B1S-P01-L04",
+      "type": "numeric",
+      "prompt": "Nominal anual 6 % convertible semestralmente, sin gastos: ¿efectivo anual en %?",
+      "answer": 6.09,
+      "explanation": "[(1+0,06/2)²−1]×100=6,09 %. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Distingue nominal anual, periódico efectivo y anual efectivo antes de operar.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L04-03",
+      "lesson_id": "B1S-P01-L04",
+      "type": "numeric",
+      "prompt": "Nominal anual 12 % convertible mensualmente: ¿tipo por mes en %?",
+      "answer": 1,
+      "explanation": "El tipo mensual proporcional es (0,12/12)×100=1 %.",
+      "hint": "Distingue nominal anual, periódico efectivo y anual efectivo antes de operar.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L04-04",
+      "lesson_id": "B1S-P01-L04",
+      "type": "choice",
+      "prompt": "¿Un tipo efectivo anual calculado sin gastos coincide necesariamente con la TAE contractual?",
+      "answer": "No; los gastos, plazos y normativa de cálculo pueden modificar la TAE.",
+      "explanation": "La equivalencia matemática sin costes no permite inferir una TAE regulada real.",
+      "hint": "Distingue nominal anual, periódico efectivo y anual efectivo antes de operar.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "No, porque una tasa efectiva siempre debe ser cero.",
+        "Sí, aunque existan comisiones y desembolsos distintos.",
+        "No; los gastos, plazos y normativa de cálculo pueden modificar la TAE.",
+        "Sí, porque toda TAE tiene por obligación el mismo valor que el nominal."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L04-05",
+      "lesson_id": "B1S-P01-L04",
+      "type": "choice",
+      "prompt": "Con capitalización mensual y nominal j, ¿qué tipo periódico se usa en el modelo sin gastos?",
+      "answer": "j/12, si j es nominal anual repartido proporcionalmente.",
+      "explanation": "La nominal se distribuye por número de capitalizaciones en este convenio.",
+      "hint": "Distingue nominal anual, periódico efectivo y anual efectivo antes de operar.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "La TAE contractual de cualquier banco desconocido.",
+        "j/12, si j es nominal anual repartido proporcionalmente.",
+        "j, idéntico en cada mes y al tipo anual.",
+        "j×12 sin transformar unidades."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L05-01",
+      "lesson_id": "B1S-P01-L05",
+      "type": "numeric",
+      "prompt": "Préstamo 1200 €, tipo efectivo anual 10 %, 2 cuotas anuales vencidas. ¿Cuota matemática a 4 decimales?",
+      "answer": 691.4286,
+      "explanation": "A=1200×0,10/[1−(1,10)^−2]≈691,428571 €. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Comprueba que el tipo y la frecuencia de pago correspondan.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 6e-05
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L05-02",
+      "lesson_id": "B1S-P01-L05",
+      "type": "numeric",
+      "prompt": "Préstamo 1200 € al 10 % anual, antes de primera cuota: ¿interés del primer año?",
+      "answer": 120,
+      "explanation": "El saldo inicial 1200 € genera 1200×0,10=120 € de interés.",
+      "hint": "Comprueba que el tipo y la frecuencia de pago correspondan.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L05-03",
+      "lesson_id": "B1S-P01-L05",
+      "type": "numeric",
+      "prompt": "Préstamo 1200 €, tipo 10 %, 2 pagos vencidos. ¿Saldo tras primera cuota, a cuatro decimales?",
+      "answer": 628.5714,
+      "explanation": "Saldo=1200+120−691,428571≈628,571429 €. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Comprueba que el tipo y la frecuencia de pago correspondan.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 6e-05
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L05-04",
+      "lesson_id": "B1S-P01-L05",
+      "type": "choice",
+      "prompt": "¿Qué incluye una cuota fija de amortización con tipo positivo?",
+      "answer": "Interés del periodo y devolución parcial del principal.",
+      "explanation": "Amortización de principal=cuota−interés devengado del periodo.",
+      "hint": "Comprueba que el tipo y la frecuencia de pago correspondan.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Una fracción fija de inflación cualquiera.",
+        "Solo devolución de principal sin ningún interés.",
+        "Interés del periodo y devolución parcial del principal.",
+        "Solo intereses sin modificar nunca el saldo."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L05-05",
+      "lesson_id": "B1S-P01-L05",
+      "type": "choice",
+      "prompt": "¿Qué limitación tiene calcular cuotas exactas con decimales indefinidos?",
+      "answer": "Los pagos reales suelen redondearse a céntimos y ajustar la última cuota.",
+      "explanation": "La política de redondeo afecta saldos y última cuota, pero no la estructura del modelo.",
+      "hint": "Comprueba que el tipo y la frecuencia de pago correspondan.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Que las cuotas matemáticas nunca pueden ser iguales.",
+        "Que el redondeo elimina por definición cualquier comisión.",
+        "Que toda cuota debe ser un número entero de euros.",
+        "Los pagos reales suelen redondearse a céntimos y ajustar la última cuota."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L06-01",
+      "lesson_id": "B1S-P01-L06",
+      "type": "numeric",
+      "prompt": "Índice 100 tras inflación de 3 % y después 2 %. ¿Índice final?",
+      "answer": 105.06,
+      "explanation": "100×1,03×1,02=105,06. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Encadena factores de precios como multiplicaciones y señala el periodo base.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L06-02",
+      "lesson_id": "B1S-P01-L06",
+      "type": "numeric",
+      "prompt": "Ingreso sube 5 % y precios 3 %. ¿Cambio real porcentual a cuatro decimales?",
+      "answer": 1.9417,
+      "explanation": "[(1,05/1,03)−1]×100≈1,94174757 %. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Encadena factores de precios como multiplicaciones y señala el periodo base.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 6e-05
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L06-03",
+      "lesson_id": "B1S-P01-L06",
+      "type": "numeric",
+      "prompt": "Inflación encadenada de 3 % y 2 %. ¿Inflación acumulada porcentual?",
+      "answer": 5.06,
+      "explanation": "Factor 1,03×1,02=1,0506; la subida acumulada es 5,06 %.",
+      "hint": "Encadena factores de precios como multiplicaciones y señala el periodo base.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L06-04",
+      "lesson_id": "B1S-P01-L06",
+      "type": "choice",
+      "prompt": "¿Cómo comparar un aumento nominal de ingresos con el aumento de precios?",
+      "answer": "Dividiendo factores nominal y de precios para obtener cambio real.",
+      "explanation": "Cambio real=(1+r)/(1+π)−1, una relación exacta bajo el índice supuesto.",
+      "hint": "Encadena factores de precios como multiplicaciones y señala el periodo base.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Restando dos tasas y llamando exacto el resultado siempre.",
+        "Dividiendo factores nominal y de precios para obtener cambio real.",
+        "Usando solo el salario nominal porque el poder adquisitivo no cambia.",
+        "Multiplicando siempre sus porcentajes sin añadir uno."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-P01-L06-05",
+      "lesson_id": "B1S-P01-L06",
+      "type": "choice",
+      "prompt": "¿Qué limitación tiene un índice general de precios para cada hogar?",
+      "answer": "No representa necesariamente la cesta particular de todas las personas.",
+      "explanation": "La composición del gasto personal puede diferir de la cesta estadística del índice.",
+      "hint": "Encadena factores de precios como multiplicaciones y señala el periodo base.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_p01_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Acredita automáticamente los gastos individuales exactos.",
+        "Permite conocer los precios de cada producto sin datos.",
+        "No representa necesariamente la cesta particular de todas las personas.",
+        "Es una tasa de interés nominal y no un índice de precios."
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B1S-P01-L01-01": {
+      "hints": [
+        "Transforma cada porcentaje en un factor multiplicativo.",
+        "Valor final=valor inicial×producto de factores; porcentaje neto=100×(factor total−1)."
+      ],
+      "math_check": {
+        "kind": "percentage_chain_amount",
+        "params": [
+          100,
+          [
+            10,
+            -10
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L01-02": {
+      "hints": [
+        "Transforma cada porcentaje en un factor multiplicativo.",
+        "Valor final=valor inicial×producto de factores; porcentaje neto=100×(factor total−1)."
+      ],
+      "math_check": {
+        "kind": "percentage_chain_change",
+        "params": [
+          10,
+          -10
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L01-03": {
+      "hints": [
+        "Transforma cada porcentaje en un factor multiplicativo.",
+        "Valor final=valor inicial×producto de factores; porcentaje neto=100×(factor total−1)."
+      ],
+      "math_check": {
+        "kind": "percentage_chain_change",
+        "params": [
+          20,
+          10
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L01-04": {
+      "hints": [
+        "Transforma cada porcentaje en un factor multiplicativo.",
+        "Valor final=valor inicial×producto de factores; porcentaje neto=100×(factor total−1)."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L01-05": {
+      "hints": [
+        "Transforma cada porcentaje en un factor multiplicativo.",
+        "Valor final=valor inicial×producto de factores; porcentaje neto=100×(factor total−1)."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L02-01": {
+      "hints": [
+        "Comprueba que tipo y número de periodos usen la misma unidad temporal.",
+        "Interés I=C₀rt y capital C_t=C₀(1+rt), sin comisiones ni reinversión."
+      ],
+      "math_check": {
+        "kind": "simple_future",
+        "params": [
+          1000,
+          0.05,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L02-02": {
+      "hints": [
+        "Comprueba que tipo y número de periodos usen la misma unidad temporal.",
+        "Interés I=C₀rt y capital C_t=C₀(1+rt), sin comisiones ni reinversión."
+      ],
+      "math_check": {
+        "kind": "simple_interest",
+        "params": [
+          1000,
+          0.05,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L02-03": {
+      "hints": [
+        "Comprueba que tipo y número de periodos usen la misma unidad temporal.",
+        "Interés I=C₀rt y capital C_t=C₀(1+rt), sin comisiones ni reinversión."
+      ],
+      "math_check": {
+        "kind": "simple_time",
+        "params": [
+          1000,
+          0.05,
+          200
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L02-04": {
+      "hints": [
+        "Comprueba que tipo y número de periodos usen la misma unidad temporal.",
+        "Interés I=C₀rt y capital C_t=C₀(1+rt), sin comisiones ni reinversión."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L02-05": {
+      "hints": [
+        "Comprueba que tipo y número de periodos usen la misma unidad temporal.",
+        "Interés I=C₀rt y capital C_t=C₀(1+rt), sin comisiones ni reinversión."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L03-01": {
+      "hints": [
+        "Identifica el tipo periódico efectivo y la frecuencia de capitalización.",
+        "C_n=C₀(1+i)^n y rentabilidad acumulada=C_n−C₀ bajo supuestos explícitos."
+      ],
+      "math_check": {
+        "kind": "compound_future",
+        "params": [
+          1000,
+          0.05,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L03-02": {
+      "hints": [
+        "Identifica el tipo periódico efectivo y la frecuencia de capitalización.",
+        "C_n=C₀(1+i)^n y rentabilidad acumulada=C_n−C₀ bajo supuestos explícitos."
+      ],
+      "math_check": {
+        "kind": "compound_interest",
+        "params": [
+          1000,
+          0.05,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L03-03": {
+      "hints": [
+        "Identifica el tipo periódico efectivo y la frecuencia de capitalización.",
+        "C_n=C₀(1+i)^n y rentabilidad acumulada=C_n−C₀ bajo supuestos explícitos."
+      ],
+      "math_check": {
+        "kind": "compound_minus_simple",
+        "params": [
+          1000,
+          0.05,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L03-04": {
+      "hints": [
+        "Identifica el tipo periódico efectivo y la frecuencia de capitalización.",
+        "C_n=C₀(1+i)^n y rentabilidad acumulada=C_n−C₀ bajo supuestos explícitos."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L03-05": {
+      "hints": [
+        "Identifica el tipo periódico efectivo y la frecuencia de capitalización.",
+        "C_n=C₀(1+i)^n y rentabilidad acumulada=C_n−C₀ bajo supuestos explícitos."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L04-01": {
+      "hints": [
+        "Distingue nominal anual, periódico efectivo y anual efectivo antes de operar.",
+        "i=j/m; efectivo anual=(1+i)^m−1. Sin gastos solo es equivalencia matemática."
+      ],
+      "math_check": {
+        "kind": "effective_annual_percent",
+        "params": [
+          0.12,
+          12
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L04-02": {
+      "hints": [
+        "Distingue nominal anual, periódico efectivo y anual efectivo antes de operar.",
+        "i=j/m; efectivo anual=(1+i)^m−1. Sin gastos solo es equivalencia matemática."
+      ],
+      "math_check": {
+        "kind": "effective_annual_percent",
+        "params": [
+          0.06,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L04-03": {
+      "hints": [
+        "Distingue nominal anual, periódico efectivo y anual efectivo antes de operar.",
+        "i=j/m; efectivo anual=(1+i)^m−1. Sin gastos solo es equivalencia matemática."
+      ],
+      "math_check": {
+        "kind": "periodic_nominal_percent",
+        "params": [
+          0.12,
+          12
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L04-04": {
+      "hints": [
+        "Distingue nominal anual, periódico efectivo y anual efectivo antes de operar.",
+        "i=j/m; efectivo anual=(1+i)^m−1. Sin gastos solo es equivalencia matemática."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L04-05": {
+      "hints": [
+        "Distingue nominal anual, periódico efectivo y anual efectivo antes de operar.",
+        "i=j/m; efectivo anual=(1+i)^m−1. Sin gastos solo es equivalencia matemática."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L05-01": {
+      "hints": [
+        "Comprueba que el tipo y la frecuencia de pago correspondan.",
+        "A=P i/[1−(1+i)^−n]. Interés inicial=P·i; amortización=A−interés."
+      ],
+      "math_check": {
+        "kind": "loan_payment",
+        "params": [
+          1200,
+          0.1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L05-02": {
+      "hints": [
+        "Comprueba que el tipo y la frecuencia de pago correspondan.",
+        "A=P i/[1−(1+i)^−n]. Interés inicial=P·i; amortización=A−interés."
+      ],
+      "math_check": {
+        "kind": "loan_first_interest",
+        "params": [
+          1200,
+          0.1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L05-03": {
+      "hints": [
+        "Comprueba que el tipo y la frecuencia de pago correspondan.",
+        "A=P i/[1−(1+i)^−n]. Interés inicial=P·i; amortización=A−interés."
+      ],
+      "math_check": {
+        "kind": "loan_balance_first",
+        "params": [
+          1200,
+          0.1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L05-04": {
+      "hints": [
+        "Comprueba que el tipo y la frecuencia de pago correspondan.",
+        "A=P i/[1−(1+i)^−n]. Interés inicial=P·i; amortización=A−interés."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L05-05": {
+      "hints": [
+        "Comprueba que el tipo y la frecuencia de pago correspondan.",
+        "A=P i/[1−(1+i)^−n]. Interés inicial=P·i; amortización=A−interés."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L06-01": {
+      "hints": [
+        "Encadena factores de precios como multiplicaciones y señala el periodo base.",
+        "Cambio real=(1+r_nominal)/(1+π)−1, no resta simple salvo aproximación."
+      ],
+      "math_check": {
+        "kind": "inflation_index",
+        "params": [
+          100,
+          [
+            0.03,
+            0.02
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L06-02": {
+      "hints": [
+        "Encadena factores de precios como multiplicaciones y señala el periodo base.",
+        "Cambio real=(1+r_nominal)/(1+π)−1, no resta simple salvo aproximación."
+      ],
+      "math_check": {
+        "kind": "real_change_percent",
+        "params": [
+          0.05,
+          0.03
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L06-03": {
+      "hints": [
+        "Encadena factores de precios como multiplicaciones y señala el periodo base.",
+        "Cambio real=(1+r_nominal)/(1+π)−1, no resta simple salvo aproximación."
+      ],
+      "math_check": {
+        "kind": "inflation_change_percent",
+        "params": [
+          [
+            0.03,
+            0.02
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L06-04": {
+      "hints": [
+        "Encadena factores de precios como multiplicaciones y señala el periodo base.",
+        "Cambio real=(1+r_nominal)/(1+π)−1, no resta simple salvo aproximación."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B1S-P01-L06-05": {
+      "hints": [
+        "Encadena factores de precios como multiplicaciones y señala el periodo base.",
+        "Cambio real=(1+r_nominal)/(1+π)−1, no resta simple salvo aproximación."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    }
+  }
+}

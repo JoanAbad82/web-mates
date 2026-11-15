@@ -1,0 +1,539 @@
+{
+  "unit_id": "E1-N04",
+  "unit_title": "Fracciones",
+  "product_phase": "F3_OLA4",
+  "version": "0.4.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Interpretar una fracción como parte de una unidad, cociente y posición en la recta.",
+    "Comparar fracciones positivas referidas a la misma unidad mediante denominador común o producto cruzado.",
+    "Multiplicar dos fracciones y simplificar factores comunes cuando conviene."
+  ],
+  "warnings": [
+    "Contenidos originales editoriales en revisión; no homologados.",
+    "La distribución por cursos del tramo 1.º–3.º ESO es editorial, no una prescripción estatal universal.",
+    "Algunos prerrequisitos numéricos precedentes siguen solo en el índice y no se declara dominio de ellos."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Divisibilidad y divisores",
+      "lesson_id": "E1-N03-L05",
+      "href": "#/curso/E1/unidad/E1-N03/leccion/E1-N03-L05"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrada",
+    "rule": "Recuperación sin ayuda tras ejemplos, práctica determinista y repetición diferida optativa."
+  },
+  "source_note": "RD 217/2022, anexo II, Matemáticas ESO: fracciones; ubicación editorial con cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E1-N04-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N04:C01"
+      ],
+      "objectives": [
+        "Interpretar una fracción como parte de una unidad, cociente y posición en la recta.",
+        "Distinguir numerador, denominador y significado de la unidad entera."
+      ],
+      "prerequisites": [
+        "E1-N03-L05",
+        "E1-N01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una fracción a/b, con b distinto de cero, representa a dividido entre b y puede indicar partes iguales de una unidad, un cociente o un punto de la recta. El denominador indica en cuántas partes iguales se divide cada unidad; el numerador cuántas se toman. Si a>b, la fracción representa más de una unidad. Siempre hay que identificar cuál es la unidad de referencia."
+        },
+        {
+          "type": "example",
+          "body": "En una barra dividida en 8 partes iguales, tomar 3 es 3/8. No es 3/5: el denominador cuenta todas las partes iguales."
+        },
+        {
+          "type": "example",
+          "body": "Siete galletas repartidas entre dos personas dan 7/2=3,5 galletas por persona. Como número, 7/2 queda entre 3 y 4 en la recta."
+        },
+        {
+          "type": "figure",
+          "body": "Barra en ocho partes iguales: tres seleccionadas. El total es la unidad y cada celda vale un octavo.",
+          "alt": "Barra en ocho partes iguales: tres seleccionadas. El total es la unidad y cada celda vale un octavo.",
+          "visual_spec": {
+            "kind": "fraction_bar",
+            "numerator": 3,
+            "denominator": 8,
+            "title": "Tres octavos de una unidad"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué 3/8 no significa tres partes de un total de cinco?||Porque ocho es el número de partes iguales que forman la unidad; tres indica cuántas tomas."
+        },
+        {
+          "type": "summary",
+          "body": "Fracción: a/b, b≠0. Comprueba la unidad, las partes iguales y el valor del cociente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N04-L01-01",
+        "F3-E1-N04-L01-02",
+        "F3-E1-N04-L01-03",
+        "F3-E1-N04-L01-04",
+        "F3-E1-N04-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N04-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N04:C02"
+      ],
+      "objectives": [
+        "Reconocer fracciones equivalentes multiplicando o dividiendo ambos términos por el mismo número no nulo.",
+        "Simplificar fracciones mediante un factor común sin cambiar su valor."
+      ],
+      "prerequisites": [
+        "E1-N04-L01",
+        "E1-N03-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Dos fracciones son equivalentes si representan el mismo número. Multiplicar o dividir numerador y denominador por un mismo factor distinto de cero no cambia el cociente; cambiar solo uno sí altera el valor. Para simplificar, divide entre un divisor común. Una fracción irreducible tiene numerador y denominador sin factor común mayor que uno."
+        },
+        {
+          "type": "example",
+          "body": "6/8 se simplifica entre 2: 6/8=3/4. Ambas barras cubren el mismo porcentaje de una unidad."
+        },
+        {
+          "type": "example",
+          "body": "2/3 y 8/12 son equivalentes porque se multiplican numerador y denominador por 4. En cambio 2/3 y 2/12 no lo son."
+        },
+        {
+          "type": "figure",
+          "body": "Dos barras ilustran 3/4 y 6/8, cada una con tres cuartos de la unidad coloreada.",
+          "alt": "Dos barras ilustran 3/4 y 6/8, cada una con tres cuartos de la unidad coloreada.",
+          "visual_spec": {
+            "kind": "fraction_bar",
+            "numerator": 6,
+            "denominator": 8,
+            "title": "Seis octavos, equivalente a tres cuartos"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué al simplificar 10/15 no podemos dividir solo el numerador entre cinco?||Porque se alteraría la razón: 10/15 es 2/3 cuando ambos términos se dividen por cinco."
+        },
+        {
+          "type": "summary",
+          "body": "Equivalencia: mismo cociente. Simplifica ambos términos por el mismo factor; verifica multiplicando en cruz cuando proceda."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N04-L02-01",
+        "F3-E1-N04-L02-02",
+        "F3-E1-N04-L02-03",
+        "F3-E1-N04-L02-04",
+        "F3-E1-N04-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N04-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N04:C03"
+      ],
+      "objectives": [
+        "Comparar fracciones positivas referidas a la misma unidad mediante denominador común o producto cruzado.",
+        "Ordenar fracciones y justificar la comparación, evitando comparar solo numeradores."
+      ],
+      "prerequisites": [
+        "E1-N04-L02",
+        "E1-N02-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para comparar fracciones con denominadores positivos, usa un denominador común, representaciones del mismo tamaño o productos cruzados: a/b<c/d si ad<bc, siempre que b y d sean positivos. Con numerador igual y fracciones positivas, la que tiene denominador mayor es menor. Nunca se comparan fracciones de unidades físicas diferentes sin normalizar."
+        },
+        {
+          "type": "example",
+          "body": "3/4>2/3: 3·3=9 y 2·4=8, luego 9>8. Las dos fracciones se refieren a la misma unidad."
+        },
+        {
+          "type": "example",
+          "body": "Entre 2/5 y 3/5 es mayor 3/5, pues cada quinto tiene igual tamaño y se toman tres en lugar de dos."
+        },
+        {
+          "type": "figure",
+          "body": "Barras del mismo tamaño: 3/4 coloreado y 2/3 coloreado; se compara la superficie relativa.",
+          "alt": "Barras del mismo tamaño: 3/4 coloreado y 2/3 coloreado; se compara la superficie relativa.",
+          "visual_spec": {
+            "kind": "fraction_bar",
+            "numerator": 3,
+            "denominator": 4,
+            "title": "Tres cuartos para comparar con dos tercios"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una fracción con denominador 9 siempre es mayor que otra con denominador 4?||No. Si tomamos una parte, 1/9 es menor que 1/4 porque cada noveno es más pequeño."
+        },
+        {
+          "type": "summary",
+          "body": "Compara usando la misma unidad; razona por equivalencias, barra o producto cruzado con denominadores positivos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N04-L03-01",
+        "F3-E1-N04-L03-02",
+        "F3-E1-N04-L03-03",
+        "F3-E1-N04-L03-04",
+        "F3-E1-N04-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N04-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N04:C04"
+      ],
+      "objectives": [
+        "Sumar y restar fracciones tras expresarlas con un denominador común.",
+        "Simplificar el resultado y comprobar su plausibilidad con una barra o estimación."
+      ],
+      "prerequisites": [
+        "E1-N04-L02",
+        "E1-N03-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para sumar o restar fracciones de la misma unidad, primero expresa sus términos con un denominador común. Después suma o resta numeradores y conserva el denominador; simplifica si es posible. La regla a/b+c/d=(ad+bc)/bd requiere b y d no nulos. Sumar denominadores directamente no produce el mismo reparto de unidad."
+        },
+        {
+          "type": "example",
+          "body": "1/4+2/4=3/4: sumamos una y dos partes del mismo tamaño, sin alterar los cuartos."
+        },
+        {
+          "type": "example",
+          "body": "1/2+1/3=3/6+2/6=5/6. La suma se aproxima a una unidad, lo que ayuda a detectarla si calculamos mal."
+        },
+        {
+          "type": "figure",
+          "body": "Barra dividida en seis partes iguales: tres sextos más dos sextos llenan cinco sextos.",
+          "alt": "Barra dividida en seis partes iguales: tres sextos más dos sextos llenan cinco sextos.",
+          "visual_spec": {
+            "kind": "fraction_bar",
+            "numerator": 5,
+            "denominator": 6,
+            "title": "Cinco sextos como suma de un medio y un tercio"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué no es correcto afirmar que 1/2+1/3=2/5?||Porque medios y tercios no tienen el mismo tamaño. Con sextos obtenemos 3/6+2/6=5/6."
+        },
+        {
+          "type": "summary",
+          "body": "Iguala denominadores, opera numeradores y simplifica; estima antes para descartar resultados imposibles."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N04-L04-01",
+        "F3-E1-N04-L04-02",
+        "F3-E1-N04-L04-03",
+        "F3-E1-N04-L04-04",
+        "F3-E1-N04-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N04-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N04:C05"
+      ],
+      "objectives": [
+        "Multiplicar dos fracciones y simplificar factores comunes cuando conviene.",
+        "Dividir por una fracción no nula multiplicando por su inversa y justificar la condición."
+      ],
+      "prerequisites": [
+        "E1-N04-L04",
+        "E1-N04-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El producto (a/b)(c/d) equivale a (ac)/(bd), con b,d distintos de cero. Para dividir a/b entre c/d hay que multiplicar a/b por d/c, pero c también debe ser distinto de cero; no existe división entre cero. La multiplicación de fracciones puede describir una parte de otra parte y no exige denominador común."
+        },
+        {
+          "type": "example",
+          "body": "3/4 de 2/3 es (3·2)/(4·3)=6/12=1/2. La barra representa media unidad del total."
+        },
+        {
+          "type": "example",
+          "body": "2/3 dividido entre 4/5 es (2/3)(5/4)=10/12=5/6. Invertimos únicamente el divisor."
+        },
+        {
+          "type": "figure",
+          "body": "Barra de la unidad con media superficie coloreada, resultado de multiplicar 3/4 por 2/3.",
+          "alt": "Barra de la unidad con media superficie coloreada, resultado de multiplicar 3/4 por 2/3.",
+          "visual_spec": {
+            "kind": "fraction_bar",
+            "numerator": 1,
+            "denominator": 2,
+            "title": "La mitad de una unidad, producto de fracciones"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué no se invierte la primera fracción al dividir 2/3 entre 4/5?||Porque la regla es multiplicar el dividendo 2/3 por el inverso del divisor 5/4."
+        },
+        {
+          "type": "summary",
+          "body": "Producto: numeradores y denominadores entre sí. Cociente: multiplica por el inverso del divisor no nulo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N04-L05-01",
+        "F3-E1-N04-L05-02",
+        "F3-E1-N04-L05-03",
+        "F3-E1-N04-L05-04",
+        "F3-E1-N04-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N04-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N04:C06"
+      ],
+      "objectives": [
+        "Modelizar situaciones de parte-todo y de parte de una cantidad con fracciones.",
+        "Comprobar que las cantidades y unidades del resultado tienen sentido contextual."
+      ],
+      "prerequisites": [
+        "E1-N04-L01",
+        "E1-N04-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En un problema contextual, identifica primero la unidad completa: dinero, longitud, alumnado o capacidad. Para hallar a/b de N calcula N·a/b; si el problema pide cuánto queda, resta esa parte al total. No confundir la fracción consumida con la restante y no calcular «parte de una parte» como si fueran sumas."
+        },
+        {
+          "type": "example",
+          "body": "Tres cuartos de una caja de 20 lápices son 20·3/4=15 lápices; quedan 5."
+        },
+        {
+          "type": "example",
+          "body": "Ana recorre 2/5 de 30 km: hace 12 km y aún le faltan 18 km. La fracción restante es 3/5."
+        },
+        {
+          "type": "figure",
+          "body": "Barra con tres cuartos coloreados: representa la parte utilizada de un recurso completo.",
+          "alt": "Barra con tres cuartos coloreados: representa la parte utilizada de un recurso completo.",
+          "visual_spec": {
+            "kind": "fraction_bar",
+            "numerator": 3,
+            "denominator": 4,
+            "title": "Tres cuartos usados y un cuarto disponible"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si has gastado 2/5 de tu dinero, ¿qué fracción conservas?||Conservas 1−2/5=3/5, suponiendo que no existen otros gastos."
+        },
+        {
+          "type": "summary",
+          "body": "Identifica total, parte, fracción restante y unidades; verifica suma de utilizado y restante."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N04-L06-01",
+        "F3-E1-N04-L06-02",
+        "F3-E1-N04-L06-03",
+        "F3-E1-N04-L06-04",
+        "F3-E1-N04-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

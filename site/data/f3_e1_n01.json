@@ -1,0 +1,563 @@
+{
+  "unit_id": "E1-N01",
+  "unit_title": "Números naturales y cálculo",
+  "product_phase": "F3_OLA5",
+  "version": "0.5.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Descomponer naturales por valor posicional.",
+    "Redondear naturales a decenas, centenas o millares.",
+    "Operar con naturales y comprobar con operaciones inversas."
+  ],
+  "warnings": [
+    "Contenido editorial sintético pendiente de revisión humana.",
+    "Distribución entre 1.º y 3.º de ESO no prescrita universalmente por curso.",
+    "No se ha validado adecuación autonómica ni eficacia pedagógica."
+  ],
+  "prerequisite_links": [],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 sin calibrar",
+    "rule": "Recuerda antes de consultar la respuesta y repasa de manera optativa."
+  },
+  "source_note": "RD 217/2022 anexo II; asignación por curso editorial. Cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E1-N01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N01:C01"
+      ],
+      "objectives": [
+        "Descomponer naturales por valor posicional.",
+        "Comparar números considerando primero la cifra de mayor orden."
+      ],
+      "prerequisites": [],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En base diez cada posición vale diez veces la situada a su derecha. Una cifra aporta su valor multiplicado por 1, 10, 100, 1000, etcétera. Para comparar dos naturales, comienza por la cantidad de cifras y después compara, de izquierda a derecha, las cifras de igual posición. El cero intermedio conserva su posición aunque no aporte unidades."
+        },
+        {
+          "type": "example",
+          "body": "4 305 = 4 000 + 300 + 0 + 5; el 3 aporta 300, no 3 unidades."
+        },
+        {
+          "type": "example",
+          "body": "Para comparar 4 305 y 4 350, coinciden millares y centenas; en las decenas, 0 < 5, por lo que 4 305 < 4 350."
+        },
+        {
+          "type": "figure",
+          "body": "Descomposición de 4 305. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "Descomposición de 4 305. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "place_value",
+            "number": 4305,
+            "title": "Descomposición de 4 305"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué cambia si intercambiamos las cifras 2 y 5 de 2 530?||Pasamos a 5 230: cada cifra cambia de orden y, por tanto, de valor."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: En base diez cada posición vale diez veces la situada a su derecha. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N01-L01-01",
+        "F3-E1-N01-L01-02",
+        "F3-E1-N01-L01-03",
+        "F3-E1-N01-L01-04",
+        "F3-E1-N01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N01:C02"
+      ],
+      "objectives": [
+        "Redondear naturales a decenas, centenas o millares.",
+        "Distinguir resultado exacto y estimación razonada."
+      ],
+      "prerequisites": [
+        "E1-N01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Redondear a una posición significa elegir el múltiplo más próximo de esa unidad; si el resto está justo a mitad se redondea hacia arriba en naturales. Observa la cifra inmediatamente a la derecha de la posición: de 0 a 4 se conserva y de 5 a 9 se aumenta una unidad. Una estimación orienta, pero no reemplaza una cuenta exacta cuando se exige precisión."
+        },
+        {
+          "type": "example",
+          "body": "3 472 redondeado a centenas es 3 500, porque 72 está más cerca de 100 que de 0."
+        },
+        {
+          "type": "example",
+          "body": "Si sumamos 248 y 352, a centenas estimamos 200 + 400 = 600; la suma exacta también es 600 en este caso particular."
+        },
+        {
+          "type": "figure",
+          "body": "Posiciones para redondear 3 472. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "Posiciones para redondear 3 472. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "place_value",
+            "number": 3472,
+            "title": "Posiciones para redondear 3 472"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Redondear 2 449 a centenas produce 2 400 o 2 500?||Produce 2 400: la decena es cuatro, y el resto 49 es menor que 50."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: Redondear a una posición significa elegir el múltiplo más próximo de esa unidad; si el resto está justo a mitad se redondea hacia arriba en naturales. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N01-L02-01",
+        "F3-E1-N01-L02-02",
+        "F3-E1-N01-L02-03",
+        "F3-E1-N01-L02-04",
+        "F3-E1-N01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N01:C03"
+      ],
+      "objectives": [
+        "Operar con naturales y comprobar con operaciones inversas.",
+        "Interpretar divisiones exactas y restricciones del divisor."
+      ],
+      "prerequisites": [
+        "E1-N01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La suma y el producto de naturales son naturales. La resta solo permanece entre naturales cuando no se obtiene un resultado negativo; una división puede no ser exacta y nunca admite divisor cero. Comprueba sumas con restas, multiplicaciones con divisiones y divisiones exactas multiplicando el cociente por el divisor. Escribe las unidades al resolver problemas."
+        },
+        {
+          "type": "example",
+          "body": "367 + 128 = 495; la comprobación consiste en restar 128 a 495 y recuperar 367."
+        },
+        {
+          "type": "example",
+          "body": "864 ÷ 12 = 72 porque 72 × 12 = 864. Dividir entre cero no representa un reparto posible."
+        },
+        {
+          "type": "figure",
+          "body": "Comprobación de una operación. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "Comprobación de una operación. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "steps",
+            "title": "Comprobación de una operación",
+            "rows": [
+              [
+                "Operación",
+                "864 ÷ 12 = 72"
+              ],
+              [
+                "Inversa",
+                "72 × 12 = 864"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué 13 ÷ 4 no es una división exacta entre naturales?||Porque 4 × 3 = 12 y sobra 1; no hay cociente natural que multiplique por cuatro y dé trece."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: La suma y el producto de naturales son naturales. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N01-L03-01",
+        "F3-E1-N01-L03-02",
+        "F3-E1-N01-L03-03",
+        "F3-E1-N01-L03-04",
+        "F3-E1-N01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N01:C04"
+      ],
+      "objectives": [
+        "Resolver operaciones combinadas con prioridad correcta.",
+        "Justificar el papel de paréntesis, productos y sumas."
+      ],
+      "prerequisites": [
+        "E1-N01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Los paréntesis tienen prioridad sobre las operaciones exteriores; después se realizan multiplicaciones y divisiones de izquierda a derecha, y finalmente sumas y restas también de izquierda a derecha. No basta calcular estrictamente de izquierda a derecha cuando intervienen niveles diferentes. Separar los pasos reduce errores de interpretación y facilita revisar el resultado."
+        },
+        {
+          "type": "example",
+          "body": "6 + 4 × 3 = 6 + 12 = 18, pues el producto precede a la suma."
+        },
+        {
+          "type": "example",
+          "body": "(6 + 4) × 3 = 10 × 3 = 30; añadir paréntesis cambia la expresión y su valor."
+        },
+        {
+          "type": "figure",
+          "body": "Orden de cálculo de 6 + 4 × 3. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "Orden de cálculo de 6 + 4 × 3. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "steps",
+            "title": "Orden de cálculo de 6 + 4 × 3",
+            "rows": [
+              [
+                "Primero",
+                "4 × 3 = 12"
+              ],
+              [
+                "Después",
+                "6 + 12 = 18"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué 8 + 2 × 5 no es 50?||Porque antes de sumar 8 hay que multiplicar 2 × 5; el resultado correcto es 18."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: Los paréntesis tienen prioridad sobre las operaciones exteriores; después se realizan multiplicaciones y divisiones de izquierda a derecha, y finalmente sumas y restas también de izquierda a derecha. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N01-L04-01",
+        "F3-E1-N01-L04-02",
+        "F3-E1-N01-L04-03",
+        "F3-E1-N01-L04-04",
+        "F3-E1-N01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N01:C05"
+      ],
+      "objectives": [
+        "Usar propiedades conmutativa, asociativa y distributiva.",
+        "Elegir transformaciones equivalentes que simplifiquen cálculos."
+      ],
+      "prerequisites": [
+        "E1-N01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En números naturales, la suma y el producto son conmutativos y asociativos, pero la resta y la división no lo son en general. La distributiva permite sustituir a × (b + c) por a × b + a × c. Separar números en sumas convenientes permite calcular mentalmente sin alterar el valor; comprueba siempre que la transformación respete paréntesis y signos."
+        },
+        {
+          "type": "example",
+          "body": "25 × 16 = 25 × (4 × 4) = (25 × 4) × 4 = 400."
+        },
+        {
+          "type": "example",
+          "body": "7 × 19 = 7 × (20 − 1) = 140 − 7 = 133; es una distributiva de la multiplicación respecto de una diferencia."
+        },
+        {
+          "type": "figure",
+          "body": "Distributiva en 7 × 19. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "Distributiva en 7 × 19. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "steps",
+            "title": "Distributiva en 7 × 19",
+            "rows": [
+              [
+                "Reescribe",
+                "7 × (20 − 1)"
+              ],
+              [
+                "Distribuye",
+                "140 − 7"
+              ],
+              [
+                "Resultado",
+                "133"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es lícito intercambiar los términos de 15 − 6?||No: 15 − 6 = 9 y 6 − 15 = −9; la resta no es conmutativa."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: En números naturales, la suma y el producto son conmutativos y asociativos, pero la resta y la división no lo son en general. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N01-L05-01",
+        "F3-E1-N01-L05-02",
+        "F3-E1-N01-L05-03",
+        "F3-E1-N01-L05-04",
+        "F3-E1-N01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N01:C06"
+      ],
+      "objectives": [
+        "Modelizar problemas de varias operaciones.",
+        "Verificar que la respuesta satisface el contexto y las unidades."
+      ],
+      "prerequisites": [
+        "E1-N01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un problema de varias etapas exige identificar datos, incógnita y orden lógico de las operaciones. Dibuja o escribe cantidades parciales, calcula con las unidades correctas y comprueba que la respuesta tiene sentido. Si aparecen grupos o repartos, distingue el número de grupos del número de elementos por grupo; en situaciones de capacidad, a veces hay que redondear hacia arriba."
+        },
+        {
+          "type": "example",
+          "body": "Una escuela compra 5 cajas de 24 lápices y reparte 37: quedan 5 × 24 − 37 = 83 lápices."
+        },
+        {
+          "type": "example",
+          "body": "En una excursión van 67 personas y caben 20 por autocar: hacen falta 4 autocares porque tres solo cubren a 60."
+        },
+        {
+          "type": "figure",
+          "body": "Problema de existencias. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "Problema de existencias. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "steps",
+            "title": "Problema de existencias",
+            "rows": [
+              [
+                "Llegan",
+                "5 × 24 = 120"
+              ],
+              [
+                "Se reparten",
+                "37"
+              ],
+              [
+                "Quedan",
+                "83 lápices"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué tres autobuses de 20 plazas no bastan para 67 personas?||Porque 3 × 20 = 60 plazas; faltan 7 y se necesita un cuarto autobús."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: Un problema de varias etapas exige identificar datos, incógnita y orden lógico de las operaciones. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N01-L06-01",
+        "F3-E1-N01-L06-02",
+        "F3-E1-N01-L06-03",
+        "F3-E1-N01-L06-04",
+        "F3-E1-N01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

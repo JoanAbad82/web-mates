@@ -1,0 +1,776 @@
+{
+  "unit_id": "B1S-Q02",
+  "unit_title": "Binomial, normal y aproximaciones",
+  "product_phase": "F3_OLA24",
+  "version": "0.24.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Definir una variable aleatoria discreta como función de resultados a números.",
+    "Reconocer hipótesis de una binomial B(n,p).",
+    "Calcular esperanza, varianza y desviación típica de una binomial."
+  ],
+  "warnings": [
+    "Todos los datos son sintéticos y el contenido permanece EN REVISIÓN.",
+    "Pearson y R² son medidas descriptivas, no prueba causal ni de extrapolación.",
+    "Binomial exige ensayos independientes, n fijo y p constante; normal requiere modelo adecuado.",
+    "Criterios np≥10 y n(1−p)≥10 son umbrales editoriales, nunca garantía universal de error.",
+    "WCAG 2.2 AA, currículo autonómico, revisión humana y dispositivo físico NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Combinatoria MACS I",
+      "lesson_id": "B1S-Q01-L02",
+      "href": "#/curso/B1S/unidad/B1S-Q01/leccion/B1S-Q01-L02"
+    },
+    {
+      "label": "Sucesos compuestos MACS I",
+      "lesson_id": "B1S-Q01-L05",
+      "href": "#/curso/B1S/unidad/B1S-Q01/leccion/B1S-Q01-L05"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 sin calibrar",
+    "rule": "Recuperación y repaso solamente con almacenamiento local voluntario."
+  },
+  "source_note": "Marco RD 217/2022 y RD 243/2022; asignaciones editoriales no homologadas territorialmente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1S-Q02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-Q02:C01"
+      ],
+      "objectives": [
+        "Definir una variable aleatoria discreta como función de resultados a números.",
+        "Construir y comprobar distribuciones finitas de probabilidad sin confundir valores con eventos."
+      ],
+      "prerequisites": [
+        "B1S-Q01-L05",
+        "B1S-Q01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una variable aleatoria asigna a cada resultado elemental un valor numérico. Si X cuenta el número de caras de dos monedas ideales independientes, los cuatro resultados CC,CX,XC,XX son equiprobables, pero los valores X=0,1,2 tienen probabilidades 1/4,1/2,1/4. La probabilidad de X=1 reúne dos rutas distintas, mientras X=0 y X=2 contienen una cada uno. Una función de probabilidad discreta debe tener pesos no negativos y suma total uno; los valores numéricos de X no tienen por qué ser equiprobables. La función de distribución F(x)=P(X≤x) es acumulada, no decreciente y alcanza uno cuando x sobrepasa todos los valores posibles. Los datos del esquema son sintéticos y no justifican predicciones sobre casos reales sin un modelo bien especificado."
+        },
+        {
+          "type": "example",
+          "body": "De CC,CX,XC,XX con 1/4 cada ruta, X=caras vale 0 con probabilidad 1/4, 1 con 2/4 y 2 con 1/4."
+        },
+        {
+          "type": "example",
+          "body": "Para la variable X que cuenta las caras de dos monedas, la acumulada F(1)=P(X≤1)=P(X=0)+P(X=1)=1/4+1/2=3/4, no 1/2."
+        },
+        {
+          "type": "figure",
+          "body": "Distribución del número de caras de dos monedas. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "Distribución del número de caras de dos monedas. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "stats_bars",
+            "title": "Distribución del número de caras de dos monedas",
+            "rows": [
+              [
+                "X=0",
+                "P=1/4"
+              ],
+              [
+                "X=1",
+                "P=1/2"
+              ],
+              [
+                "X=2",
+                "P=1/4"
+              ],
+              [
+                "Suma",
+                "1"
+              ],
+              [
+                "F(1)",
+                "3/4"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                0.25,
+                0.5,
+                0.25
+              ],
+              "labels": [
+                "0",
+                "1",
+                "2"
+              ]
+            },
+            "domain": [
+              0,
+              0.6
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Los valores 0,1,2 de la variable X tienen igual probabilidad por ser tres valores?||No; los resultados elementales no se agrupan uniformemente."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una variable aleatoria asigna a cada resultado elemental un valor numérico. Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-Q02-L01-01",
+        "F3-B1S-Q02-L01-02",
+        "F3-B1S-Q02-L01-03",
+        "F3-B1S-Q02-L01-04",
+        "F3-B1S-Q02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-Q02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-Q02:C02"
+      ],
+      "objectives": [
+        "Reconocer hipótesis de una binomial B(n,p).",
+        "Calcular probabilidades puntuales con el coeficiente binomial y fracciones exactas."
+      ],
+      "prerequisites": [
+        "B1S-Q02-L01",
+        "B1S-Q01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si se repiten n ensayos independientes, cada uno con dos resultados éxito/fracaso y probabilidad constante p de éxito, X, número de éxitos, sigue B(n,p). Su función de masa es P(X=k)=C(n,k)p^k(1−p)^(n−k), k entero de 0 a n. Para cuatro ensayos equilibrados, P(X=2)=C(4,2)(1/2)^4=6/16=3/8; P(X=0)=1/16 y P(X=4)=1/16. La distribución no es binomial si la probabilidad de éxito cambia entre ensayos, hay dependencia relevante o n no es fijo. Una extracción sin reemplazo de una población pequeña normalmente genera un modelo hipergeométrico, no binomial exacto. Los coeficientes C(n,k) cuentan las secuencias con k éxitos, no implican que los valores k sean equiprobables."
+        },
+        {
+          "type": "example",
+          "body": "Para cuatro ensayos Bernoulli independientes con p=1/2, X~B(4,1/2), P(X=2)=C(4,2)(1/2)^2(1/2)^2=6/16=3/8."
+        },
+        {
+          "type": "example",
+          "body": "En X~B(4,1/2), P(X=0)=C(4,0)(1/2)^4=1/16, igual que P(X=4) por simetría."
+        },
+        {
+          "type": "figure",
+          "body": "Binomial B(4,1/2) por recuento. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "Binomial B(4,1/2) por recuento. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "stats_bars",
+            "title": "Binomial B(4,1/2) por recuento",
+            "rows": [
+              [
+                "k=0",
+                "1/16"
+              ],
+              [
+                "k=1",
+                "4/16"
+              ],
+              [
+                "k=2",
+                "6/16"
+              ],
+              [
+                "k=3",
+                "4/16"
+              ],
+              [
+                "k=4",
+                "1/16"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                0.0625,
+                0.25,
+                0.375,
+                0.25,
+                0.0625
+              ],
+              "labels": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+              ]
+            },
+            "domain": [
+              0,
+              0.45
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una serie de extracciones sin reemplazo con p cambiante sigue siempre una binomial exacta?||No; falla constancia o independencia."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Si se repiten n ensayos independientes, cada uno con dos resultados éxito/fracaso y probabilidad constante p de éxito, X, número de éxitos, sigue B(n,p). Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-Q02-L02-01",
+        "F3-B1S-Q02-L02-02",
+        "F3-B1S-Q02-L02-03",
+        "F3-B1S-Q02-L02-04",
+        "F3-B1S-Q02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-Q02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-Q02:C03"
+      ],
+      "objectives": [
+        "Calcular esperanza, varianza y desviación típica de una binomial.",
+        "Interpretar la variabilidad y distinguir desviación típica de varianza."
+      ],
+      "prerequisites": [
+        "B1S-Q02-L02",
+        "B1S-Q02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para X~B(n,p), con ensayos Bernoulli independientes y p constante, la esperanza es E(X)=np y la varianza Var(X)=np(1−p); la desviación típica es σ=√[np(1−p)]. Una B(4,1/2) tiene E(X)=2, Var(X)=1 y σ=1. Para B(100,1/2), la esperanza es 50, varianza 25 y desviación típica 5. No debe confundirse Var(X)=25 con σ=25: la primera se mide en unidades al cuadrado, la segunda en las unidades originales de X. La esperanza es una media teórica, no una predicción de resultado exacto en cada secuencia. Cuando p está cerca de 0 o 1, la distribución puede ser muy asimétrica y una aproximación normal no se acepta únicamente por el valor de n."
+        },
+        {
+          "type": "example",
+          "body": "En 100 ensayos de p=1/2, E(X)=100·1/2=50, Var(X)=100·1/2·1/2=25 y σ=√25=5."
+        },
+        {
+          "type": "example",
+          "body": "Para B(4,1/2), E(X)=2 y Var(X)=1; la desviación típica también es 1, por ser raíz de la varianza."
+        },
+        {
+          "type": "figure",
+          "body": "Resumen teórico de una binomial equilibrada. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "Resumen teórico de una binomial equilibrada. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "stats_bars",
+            "title": "Resumen teórico de una binomial equilibrada",
+            "rows": [
+              [
+                "n",
+                "100"
+              ],
+              [
+                "p",
+                "1/2"
+              ],
+              [
+                "Esperanza",
+                "50"
+              ],
+              [
+                "Varianza",
+                "25"
+              ],
+              [
+                "Desviación típica",
+                "5"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                50,
+                25,
+                5
+              ],
+              "labels": [
+                "E(X)",
+                "Var(X)",
+                "σ"
+              ]
+            },
+            "domain": [
+              0,
+              55
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La varianza 25 significa que la desviación típica es 25?||No; la desviación típica es 5."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para X~B(n,p), con ensayos Bernoulli independientes y p constante, la esperanza es E(X)=np y la varianza Var(X)=np(1−p); la desviación típica es σ=√[np(1−p)]. Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-Q02-L03-01",
+        "F3-B1S-Q02-L03-02",
+        "F3-B1S-Q02-L03-03",
+        "F3-B1S-Q02-L03-04",
+        "F3-B1S-Q02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-Q02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-Q02:C04"
+      ],
+      "objectives": [
+        "Identificar la densidad normal y el papel de media y desviación típica.",
+        "Interpretar áreas de probabilidad en una distribución continua y simetría."
+      ],
+      "prerequisites": [
+        "B1S-Q02-L03",
+        "B1S-Q02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una variable normal X~N(μ,σ²), con σ>0, tiene densidad f(x)=exp[−(x−μ)²/(2σ²)]/(σ√(2π)). El área total bajo la curva es uno y una probabilidad de intervalo corresponde a un área, no a la altura de la función. Por continuidad, P(X=μ)=0 aunque la densidad alcance allí su máximo. Por simetría P(X≤μ)=1/2 y P(X≥μ)=1/2. En una normal estándar Z~N(0,1), aproximadamente el 68,27 % del área cae entre −1 y 1, y el 95,45 % entre −2 y 2; son aproximaciones numéricas, no fracciones exactas. La elección de un modelo normal para datos observados exige contrastar su adecuación y no debe asumirse por comodidad."
+        },
+        {
+          "type": "example",
+          "body": "En X~N(70,10²), el centro es μ=70; por simetría P(X≤70)=1/2, y P(X=70)=0 al ser continua."
+        },
+        {
+          "type": "example",
+          "body": "Para Z~N(0,1), P(−1≤Z≤1)≈0,6827; se trata de área entre dos límites, no de la altura de la densidad."
+        },
+        {
+          "type": "figure",
+          "body": "Curva normal estándar y áreas. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "Curva normal estándar y áreas. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "normal_curve",
+            "title": "Curva normal estándar y áreas",
+            "rows": [
+              [
+                "Distribución",
+                "Z~N(0,1)"
+              ],
+              [
+                "Media",
+                "0"
+              ],
+              [
+                "Desviación típica",
+                "1"
+              ],
+              [
+                "P(Z≤0)",
+                "1/2"
+              ],
+              [
+                "P(−1≤Z≤1)",
+                "≈0,6827"
+              ]
+            ],
+            "model": {
+              "kind": "normal_curve",
+              "mean": 0,
+              "sigma": 1,
+              "marks": [
+                -1,
+                0,
+                1
+              ]
+            },
+            "domain": [
+              -3,
+              3
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una distribución normal continua asigna probabilidad positiva a X=μ exactamente?||No; cualquier punto individual tiene probabilidad cero."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una variable normal X~N(μ,σ²), con σ>0, tiene densidad f(x)=exp[−(x−μ)²/(2σ²)]/(σ√(2π)). Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-Q02-L04-01",
+        "F3-B1S-Q02-L04-02",
+        "F3-B1S-Q02-L04-03",
+        "F3-B1S-Q02-L04-04",
+        "F3-B1S-Q02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-Q02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-Q02:C05"
+      ],
+      "objectives": [
+        "Estandarizar observaciones normales mediante z=(x−μ)/σ.",
+        "Usar la simetría y una función de distribución normal sin confundir puntuación z y probabilidad."
+      ],
+      "prerequisites": [
+        "B1S-Q02-L04",
+        "B1S-Q02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si X~N(μ,σ²) y σ>0, entonces Z=(X−μ)/σ sigue N(0,1). El número z indica cuántas desviaciones típicas separan x de la media, y puede ser positivo o negativo. En X~N(70,10²), x=85 tiene z=(85−70)/10=1,5; x=60 tiene z=−1. Para obtener la probabilidad P(X≤85) se consulta Φ(1,5)≈0,9332, no se responde 1,5 como si fuera probabilidad. Por simetría Φ(−z)=1−Φ(z) y P(Z≤0)=1/2. Los redondeos de tablas o software se declaran como aproximados; no se debe elevar una probabilidad superior a uno por confundir z con Φ(z). La estandarización es exacta si la media y desviación son parámetros correctos del modelo dado."
+        },
+        {
+          "type": "example",
+          "body": "Para X~N(70,10²) y x=85, z=(85−70)/10=1,5; el percentil teórico aproximado es Φ(1,5)≈0,9332."
+        },
+        {
+          "type": "example",
+          "body": "Si X~N(70,10²) y x=60, z=−1; por simetría P(X≤70)=0,5, independientemente de la escala."
+        },
+        {
+          "type": "figure",
+          "body": "Estandarización y puntuación z. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "Estandarización y puntuación z. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "normal_curve",
+            "title": "Estandarización y puntuación z",
+            "rows": [
+              [
+                "Modelo",
+                "X~N(70,10²)"
+              ],
+              [
+                "x",
+                "85"
+              ],
+              [
+                "z",
+                "1,5"
+              ],
+              [
+                "Φ(1,5)",
+                "≈0,9332"
+              ],
+              [
+                "P(X≤70)",
+                "1/2"
+              ]
+            ],
+            "model": {
+              "kind": "normal_curve",
+              "mean": 0,
+              "sigma": 1,
+              "marks": [
+                0,
+                1,
+                1.5
+              ]
+            },
+            "domain": [
+              -3,
+              3
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El valor estandarizado z=1,5 es él mismo una probabilidad?||No; la probabilidad es el área Φ(1,5), distinta de z."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Si X~N(μ,σ²) y σ>0, entonces Z=(X−μ)/σ sigue N(0,1). Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-Q02-L05-01",
+        "F3-B1S-Q02-L05-02",
+        "F3-B1S-Q02-L05-03",
+        "F3-B1S-Q02-L05-04",
+        "F3-B1S-Q02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-Q02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-Q02:C06"
+      ],
+      "objectives": [
+        "Comprobar condiciones para aproximar una binomial por una normal.",
+        "Aplicar corrección de continuidad y declarar la aproximación numérica."
+      ],
+      "prerequisites": [
+        "B1S-Q02-L05",
+        "B1S-Q02-L02",
+        "B1S-Q01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para X~B(n,p), una aproximación normal N(np,np(1−p)) puede resultar útil cuando los ensayos son independientes, p constante y los productos np y n(1−p) son suficientemente grandes. Como criterio editorial prudente se usa aquí np≥10 y n(1−p)≥10, no un teorema universal de error garantizado. En B(100,1/2), μ=50 y σ=5; para aproximar P(X≤55) mediante normal se incluye corrección de continuidad: P(Y≤55,5), con z=(55,5−50)/5=1,1 y Φ(1,1)≈0,8643. Sin corrección se obtendría Φ(1)=0,8413, una estimación diferente. En B(10,0,05), np=0,5 y la condición falla; no se debe presentar la normal como apropiada sin comprobar error. La aproximación no sustituye la masa binomial exacta ni acredita automáticamente precisión."
+        },
+        {
+          "type": "example",
+          "body": "Para X~B(100,1/2), μ=50, σ=5, n p=n(1−p)=50. P(X≤55)≈Φ((55,5−50)/5)=Φ(1,1)≈0,8643."
+        },
+        {
+          "type": "example",
+          "body": "Para X~B(10,0,05), np=0,5 y n(1−p)=9,5; no supera umbrales editoriales 10 y 10, por lo que se evita aproximar."
+        },
+        {
+          "type": "figure",
+          "body": "Aproximación normal con corrección de continuidad. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "Aproximación normal con corrección de continuidad. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "normal_curve",
+            "title": "Aproximación normal con corrección de continuidad",
+            "rows": [
+              [
+                "Binomial",
+                "B(100,1/2)"
+              ],
+              [
+                "Media",
+                "50"
+              ],
+              [
+                "σ",
+                "5"
+              ],
+              [
+                "Corrección de límite",
+                "55→55,5"
+              ],
+              [
+                "P(X≤55)",
+                "≈0,8643"
+              ]
+            ],
+            "model": {
+              "kind": "normal_curve",
+              "mean": 50,
+              "sigma": 5,
+              "marks": [
+                50,
+                55,
+                55.5
+              ]
+            },
+            "domain": [
+              34,
+              66
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La aproximación normal de una binomial es necesariamente exacta por usar corrección de continuidad?||No; sigue siendo una aproximación con supuestos."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para X~B(n,p), una aproximación normal N(np,np(1−p)) puede resultar útil cuando los ensayos son independientes, p constante y los productos np y n(1−p) son suficientemente grandes. Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-Q02-L06-01",
+        "F3-B1S-Q02-L06-02",
+        "F3-B1S-Q02-L06-03",
+        "F3-B1S-Q02-L06-04",
+        "F3-B1S-Q02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

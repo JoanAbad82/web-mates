@@ -1,0 +1,662 @@
+{
+  "unit_id": "B1S-N01",
+  "unit_title": "Reales, potencias, radicales y logaritmos",
+  "product_phase": "F3_OLA17",
+  "version": "0.17.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Usar intervalos, valor absoluto y notación de conjuntos reales con dominio.",
+    "Aplicar propiedades de potencias y radicales preservando restricciones reales.",
+    "Definir logaritmos mediante potencias con base y argumento válidos."
+  ],
+  "warnings": [
+    "Lecciones y ejercicios sintéticos EN REVISIÓN, sin publicación ni homologación.",
+    "E3-N02 y E3-G02 siguen solo título: las escalas esenciales se explican explícitamente sin declararlas cubiertas.",
+    "Modelos de funciones sociales son ilustrativos, no pronósticos económicos reales.",
+    "Mapeo autonómico, WCAG 2.2 AA completo, dispositivos físicos y revisión humana NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Números de 4.º ESO A completos",
+      "lesson_id": "E4A-N01-L05",
+      "href": "#/curso/E4A/unidad/E4A-N01/leccion/E4A-N01-L05"
+    },
+    {
+      "label": "Álgebra y logaritmos introductorios",
+      "lesson_id": "B1S-A01-L03",
+      "href": "#/curso/B1S/unidad/B1S-A01/leccion/B1S-A01-L03"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recuperación sin pistas, feedback específico y repaso local voluntario."
+  },
+  "source_note": "RD 217/2022 y RD 243/2022: marco estatal, secuencia editorial no oficial.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1S-N01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-N01:C01"
+      ],
+      "objectives": [
+        "Usar intervalos, valor absoluto y notación de conjuntos reales con dominio.",
+        "Resolver desigualdades sencillas interpretando abiertos y cerrados."
+      ],
+      "prerequisites": [
+        "E4A-N01-L01",
+        "E4A-A02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El conjunto de números reales incluye racionales e irracionales y ordena medidas sobre una recta continua. El valor absoluto |x−a| representa distancia entre x y a, por lo que |x−3|≤2 equivale a 1≤x≤5, mientras que |x−3|>2 da x<1 o x>5. Los intervalos pueden ser acotados, semirrectas o uniones; en [a,b] se incluyen extremos si se utiliza ≤ o ≥, pero el infinito nunca es un extremo numérico incluible. Una distancia no es negativa, así que una desigualdad |x|<−1 no tiene soluciones. Si una variable describe número de clientes, el dominio contextual podría incluir solo enteros, aunque la ecuación algebraica admita todos los reales. Antes de operar logaritmos y radicales se identifica el dominio real; esta etapa completa la base de números de 4.º y no asume como desarrollada una lección pendiente."
+        },
+        {
+          "type": "example",
+          "body": "Resolver |x−3|≤2 equivale a −2≤x−3≤2. Al sumar 3 se obtiene 1≤x≤5, intervalo cerrado [1,5]."
+        },
+        {
+          "type": "example",
+          "body": "La condición |x+1|>3 significa x+1<−3 o x+1>3: por tanto x<−4 o x>2, con extremos excluidos."
+        },
+        {
+          "type": "figure",
+          "body": "Distancia y soluciones de desigualdad absoluta. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Distancia y soluciones de desigualdad absoluta. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "absolute",
+            "title": "Distancia y soluciones de desigualdad absoluta",
+            "rows": [
+              [
+                "Restricción",
+                "|x−3|≤2"
+              ],
+              [
+                "Centro",
+                "x=3"
+              ],
+              [
+                "Radio",
+                "2"
+              ],
+              [
+                "Solución",
+                "[1,5]"
+              ],
+              [
+                "Frentes",
+                "Incluidos"
+              ]
+            ],
+            "model": {
+              "kind": "absolute",
+              "a": 1,
+              "h": 3,
+              "k": 0
+            },
+            "domain": [
+              -1,
+              7
+            ],
+            "marks": [
+              [
+                "C",
+                3,
+                0
+              ],
+              [
+                "A",
+                1,
+                2
+              ],
+              [
+                "B",
+                5,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede cumplirse |x−3|<−1 para algún número real?||No; el valor absoluto nunca es negativo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El conjunto de números reales incluye racionales e irracionales y ordena medidas sobre una recta continua. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-N01-L01-01",
+        "F3-B1S-N01-L01-02",
+        "F3-B1S-N01-L01-03",
+        "F3-B1S-N01-L01-04",
+        "F3-B1S-N01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-N01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-N01:C02"
+      ],
+      "objectives": [
+        "Aplicar propiedades de potencias y radicales preservando restricciones reales.",
+        "Simplificar raíces y exponentes racionales evitando cancelaciones inválidas."
+      ],
+      "prerequisites": [
+        "E4A-N01-L02",
+        "E4A-N01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para a>0 y exponentes reales, la identidad a^r·a^s=a^(r+s) y (a^r)^s=a^(rs) es segura bajo la definición usual de potencia positiva. Los exponentes racionales p/q se interpretan mediante raíz principal cuando el dominio lo permite. En los números reales, √a existe si a≥0 y √(x²)=|x|; para la raíz cúbica, un radicando negativo sí es admisible. Las raíces se simplifican extrayendo cuadrados perfectos: √50=5√2. Para dividir potencias se exige denominador no nulo. Cuando se manipulan raíces en ecuaciones, elevar al cuadrado puede introducir soluciones falsas que deben verificarse en la expresión original. El dominio a>0 es especialmente importante para conectar con logaritmos: logaritmo de base negativa no se define aquí en los reales."
+        },
+        {
+          "type": "example",
+          "body": "Simplificar √200: √(100·2)=10√2. Es una igualdad exacta sin aproximar decimales ni perder el factor 10."
+        },
+        {
+          "type": "example",
+          "body": "Para x=−5, √(x²)=√25=5=|x|; reemplazarlo por x daría −5, contradiciendo que la raíz principal sea no negativa."
+        },
+        {
+          "type": "figure",
+          "body": "Raíz principal y valor absoluto. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Raíz principal y valor absoluto. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "radical",
+            "title": "Raíz principal y valor absoluto",
+            "rows": [
+              [
+                "x",
+                "−5"
+              ],
+              [
+                "x²",
+                "25"
+              ],
+              [
+                "√(x²)",
+                "5"
+              ],
+              [
+                "Identidad",
+                "√(x²)=|x|"
+              ],
+              [
+                "Dominio",
+                "x real"
+              ]
+            ],
+            "model": {
+              "kind": "absolute",
+              "a": 1,
+              "h": 0,
+              "k": 0
+            },
+            "domain": [
+              -6,
+              6
+            ],
+            "marks": [
+              [
+                "N",
+                -5,
+                5
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es correcta la identidad √(x²)=x sin imponer x≥0?||No: el resultado general real es |x|."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para a>0 y exponentes reales, la identidad a^r·a^s=a^(r+s) y (a^r)^s=a^(rs) es segura bajo la definición usual de potencia positiva. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-N01-L02-01",
+        "F3-B1S-N01-L02-02",
+        "F3-B1S-N01-L02-03",
+        "F3-B1S-N01-L02-04",
+        "F3-B1S-N01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-N01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-N01:C03"
+      ],
+      "objectives": [
+        "Definir logaritmos mediante potencias con base y argumento válidos.",
+        "Aplicar leyes de producto, cociente y potencia sin distribuir sobre sumas."
+      ],
+      "prerequisites": [
+        "B1S-N01-L02",
+        "B1S-A01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para base a>0 distinta de 1 y argumento x>0, log_a(x)=y significa que a^y=x; exponencial y logaritmo son operaciones inversas en sus dominios. Ejemplos: log_2(8)=3 y log_10(0,01)=−2. Las propiedades log_a(xy)=log_a(x)+log_a(y) y log_a(x/y)=log_a(x)−log_a(y) exigen x>0 e y>0; también log_a(x^r)=r log_a(x) para x>0. No existe una regla log(x+y)=log x+log y. Para resolver log_2(x−1)=3 se transforma en x−1=8, x=9, y se comprueba x>1. Si el argumento es cero o negativo, el logaritmo real no existe; además la base no puede ser 1. Los cambios de base dividen por log_b(a), que es distinto de cero cuando a≠1."
+        },
+        {
+          "type": "example",
+          "body": "Resolver log_2(x−1)=3 da x−1=2³=8, x=9. Comprobación: el argumento x−1=8 es positivo y log_2(8)=3."
+        },
+        {
+          "type": "example",
+          "body": "Usando propiedades válidas, log_3(9·27)=log_3(9)+log_3(27)=2+3=5, ya que 9·27=243=3⁵."
+        },
+        {
+          "type": "figure",
+          "body": "Logaritmo como inversa de una exponencial. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Logaritmo como inversa de una exponencial. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "logarithm",
+            "title": "Logaritmo como inversa de una exponencial",
+            "rows": [
+              [
+                "Base",
+                "2 (>0 y ≠1)"
+              ],
+              [
+                "Argumento",
+                "8 (>0)"
+              ],
+              [
+                "Resultado",
+                "log₂8=3"
+              ],
+              [
+                "Verificación",
+                "2³=8"
+              ],
+              [
+                "Suma",
+                "log(x+y) ≠ log x+log y"
+              ]
+            ],
+            "model": {
+              "kind": "logarithm",
+              "base": 2
+            },
+            "domain": [
+              0.1,
+              10
+            ],
+            "marks": [
+              [
+                "A",
+                8,
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se puede sustituir log(x+y) por log x+log y?||No; la identidad logarítmica se aplica a productos, no a sumas."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para base a>0 distinta de 1 y argumento x>0, log_a(x)=y significa que a^y=x; exponencial y logaritmo son operaciones inversas en sus dominios. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-N01-L03-01",
+        "F3-B1S-N01-L03-02",
+        "F3-B1S-N01-L03-03",
+        "F3-B1S-N01-L03-04",
+        "F3-B1S-N01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-N01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-N01:C04"
+      ],
+      "objectives": [
+        "Convertir números entre forma decimal y notación científica estándar.",
+        "Operar con exponentes de diez conservando unidades y orden de magnitud."
+      ],
+      "prerequisites": [
+        "B1S-N01-L02",
+        "E4A-N01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La notación científica normalizada escribe un número no nulo como a·10^n, donde 1≤|a|<10 y n es entero. Por ejemplo 0,00072=7,2·10^−4 y 3400000=3,4·10^6. Multiplicar dos cantidades científicas suma exponentes y multiplica mantisas; después se normaliza la mantisa si queda fuera del intervalo. El orden de magnitud orienta comparaciones, pero la potencia de diez y el coeficiente deben mantenerse juntos para cifras exactas. Con medidas se especifican unidades y cifras significativas: 3,4·10^3 m no necesariamente tiene precisión hasta el metro. La forma científica no cambia la magnitud física, solo la representa más compactamente. Aunque E3-N02 está pendiente, el procedimiento se desarrolla aquí desde la definición sin presentar esa unidad como terminada."
+        },
+        {
+          "type": "example",
+          "body": "Escribir 0,00072 en notación científica: desplaza la coma cuatro lugares a la derecha, 7,2·10^−4."
+        },
+        {
+          "type": "example",
+          "body": "Multiplica (3·10⁴)(2·10³)=6·10⁷. La mantisa 6 se mantiene entre 1 y 10, de modo que el resultado está normalizado."
+        },
+        {
+          "type": "figure",
+          "body": "Potencia de diez y orden de magnitud. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Potencia de diez y orden de magnitud. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "exponential",
+            "title": "Potencia de diez y orden de magnitud",
+            "rows": [
+              [
+                "Número",
+                "0,00072"
+              ],
+              [
+                "Mantisa",
+                "7,2"
+              ],
+              [
+                "Exponente",
+                "−4"
+              ],
+              [
+                "Notación",
+                "7,2·10^−4"
+              ],
+              [
+                "Comprobación",
+                "0,00072"
+              ]
+            ],
+            "model": {
+              "kind": "exponential",
+              "a": 1,
+              "factor": 10
+            },
+            "domain": [
+              -2,
+              2
+            ],
+            "marks": [
+              [
+                "U",
+                0,
+                1
+              ],
+              [
+                "D",
+                1,
+                10
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es científica normalizada la forma 34·10^5?||No: hay que reescribirla como 3,4·10^6 para cumplir 1≤|a|<10."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La notación científica normalizada escribe un número no nulo como a·10^n, donde 1≤|a|<10 y n es entero. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-N01-L04-01",
+        "F3-B1S-N01-L04-02",
+        "F3-B1S-N01-L04-03",
+        "F3-B1S-N01-L04-04",
+        "F3-B1S-N01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-N01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-N01:C05"
+      ],
+      "objectives": [
+        "Evaluar aproximaciones y propagación de cotas de medida sencillas.",
+        "Escoger precisión razonable y diferenciar valor exacto de redondeo."
+      ],
+      "prerequisites": [
+        "E4A-N01-L03",
+        "B1S-N01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La aritmética exacta y la aproximada responden a necesidades diferentes. Una fracción 1/3 es un valor racional exacto; escribir 0,333 representa una aproximación con error 1/3000, no igualdad. Para dos cantidades aproximadas con errores absolutos acotados por e1 y e2, la suma tiene error absoluto como máximo e1+e2 por desigualdad triangular. Si A=10±0,2 m y B=5±0,1 m, la suma A+B tiene valor anunciado 15 m y error máximo 0,3 m. El error relativo de una magnitud real no nula compara error absoluto con |valor real|, y no debe confundirse con porcentaje de variación económica. Cifras significativas expresan precisión de datos, por lo que mostrar muchos decimales calculados no los convierte en información observada. Antes de redondear, se preservan resultados exactos cuando son manejables."
+        },
+        {
+          "type": "example",
+          "body": "Sumamos medidas 10±0,2 cm y 5±0,1 cm: estimación central 15 cm y cota de error absoluto 0,3 cm."
+        },
+        {
+          "type": "example",
+          "body": "La fracción 1/3 aproximada a 0,33 difiere en 1/300≈0,00333. Es mejor distinguir siempre símbolo igual de símbolo aproximadamente."
+        },
+        {
+          "type": "figure",
+          "body": "Errores absolutos acumulados en una suma. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Errores absolutos acumulados en una suma. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "linear",
+            "title": "Errores absolutos acumulados en una suma",
+            "rows": [
+              [
+                "Medida A",
+                "10±0,2 cm"
+              ],
+              [
+                "Medida B",
+                "5±0,1 cm"
+              ],
+              [
+                "Suma central",
+                "15 cm"
+              ],
+              [
+                "Error máximo",
+                "0,3 cm"
+              ],
+              [
+                "Intervalo estimado",
+                "[14,7;15,3] cm"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 1,
+              "b": 0
+            },
+            "domain": [
+              13,
+              17
+            ],
+            "marks": [
+              [
+                "S",
+                15,
+                15
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El error máximo de sumar dos medidas con cotas 0,2 y 0,1 puede justificarse como 0,3?||Sí, por la desigualdad triangular de errores absolutos."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La aritmética exacta y la aproximada responden a necesidades diferentes. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-N01-L05-01",
+        "F3-B1S-N01-L05-02",
+        "F3-B1S-N01-L05-03",
+        "F3-B1S-N01-L05-04",
+        "F3-B1S-N01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

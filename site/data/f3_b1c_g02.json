@@ -1,0 +1,788 @@
+{
+  "unit_id": "B1C-G02",
+  "unit_title": "Vectores y geometría analítica 2D",
+  "product_phase": "F3_OLA9",
+  "version": "0.9.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Expresar vectores con componentes y reconocer vectores equipolentes.",
+    "Sumar, restar y multiplicar vectores por escalares.",
+    "Calcular el producto escalar de vectores planos."
+  ],
+  "warnings": [
+    "Ejercicios y teoría originales sintéticos EN REVISIÓN; no homologados.",
+    "La cadena entre E3-G01 y E4B-G02 es editorial; E4B-G02→B1C-G02 es canónica.",
+    "Cotejo territorial, revisión humana y WCAG integral NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Geometría analítica 4.º ESO B",
+      "lesson_id": "E4B-G02-L04",
+      "href": "#/curso/E4B/unidad/E4B-G02/leccion/E4B-G02-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Comprender, recuperar sin pistas y practicar errores con intervalos voluntarios."
+  },
+  "source_note": "RD 217/2022 y RD 243/2022, saberes espaciales y métricos; asignación de lecciones editorial y cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1C-G02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-G02:C01"
+      ],
+      "objectives": [
+        "Expresar vectores con componentes y reconocer vectores equipolentes.",
+        "Distinguir módulo, dirección, sentido y vector nulo."
+      ],
+      "prerequisites": [
+        "E4B-G02-L01",
+        "E4B-G02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un vector libre del plano puede representarse mediante componentes v=(vₓ,vᵧ). Desde A a B se obtiene v=B−A; vectores con las mismas componentes son equipolentes aunque tengan distintos orígenes. Su módulo es √(vₓ²+vᵧ²) y es no negativo. El vector nulo tiene módulo cero y carece de una dirección única; no puede normalizarse dividiendo entre su módulo. Dos vectores son paralelos si sus componentes son proporcionales y ambos son no nulos. Al trasladar un vector libre no cambian sus componentes."
+        },
+        {
+          "type": "example",
+          "body": "Entre A=(−1,2) y B=(3,5), AB=(4,3) y su módulo es √(16+9)=5."
+        },
+        {
+          "type": "example",
+          "body": "Un vector CD desde C=(0,0) hasta D=(4,3) coincide con AB como vector libre, aunque sus orígenes difieren."
+        },
+        {
+          "type": "figure",
+          "body": "Vector equipolente de componentes (4,3). Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Vector equipolente de componentes (4,3). Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "vector",
+            "title": "Vector equipolente de componentes (4,3)",
+            "rows": [
+              [
+                "A",
+                "(−1, 2)"
+              ],
+              [
+                "B",
+                "(3, 5)"
+              ],
+              [
+                "AB",
+                "(4, 3)"
+              ],
+              [
+                "Módulo",
+                "5"
+              ]
+            ],
+            "points": [
+              [
+                "A",
+                -1,
+                2
+              ],
+              [
+                "B",
+                3,
+                5
+              ]
+            ],
+            "arrows": [
+              [
+                -1,
+                2,
+                3,
+                5
+              ],
+              [
+                0,
+                0,
+                4,
+                3
+              ]
+            ],
+            "segments": [],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué no existe un vector unitario en la dirección de (0,0)?||Porque el vector nulo no define dirección y dividir entre su módulo cero no está permitido."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Un vector libre del plano puede representarse mediante componentes v=(vₓ,vᵧ). Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-G02-L01-01",
+        "F3-B1C-G02-L01-02",
+        "F3-B1C-G02-L01-03",
+        "F3-B1C-G02-L01-04",
+        "F3-B1C-G02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-G02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-G02:C02"
+      ],
+      "objectives": [
+        "Sumar, restar y multiplicar vectores por escalares.",
+        "Interpretar geométricamente las operaciones mediante componentes."
+      ],
+      "prerequisites": [
+        "B1C-G02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La suma y resta de vectores del plano se hace por componentes: (a,b)+(c,d)=(a+c,b+d) y (a,b)−(c,d)=(a−c,b−d). Multiplicar por un escalar λ produce (λa,λb), cambia el módulo por |λ| y, si λ es negativo, invierte el sentido. La suma puede representarse colocando un vector al final del otro o con la diagonal del paralelogramo. El orden de una resta importa; la suma sí es conmutativa. No se deben sumar módulos en lugar de componentes salvo casos especiales de colinealidad."
+        },
+        {
+          "type": "example",
+          "body": "u=(2,1) y v=(−1,3): u+v=(1,4), mientras u−v=(3,−2)."
+        },
+        {
+          "type": "example",
+          "body": "Si u=(2,−3), entonces −2u=(−4,6), que tiene módulo doble y sentido opuesto."
+        },
+        {
+          "type": "figure",
+          "body": "Suma vectorial por el método punta-cola. Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Suma vectorial por el método punta-cola. Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "vector_sum",
+            "title": "Suma vectorial por el método punta-cola",
+            "rows": [
+              [
+                "u",
+                "(2, 1)"
+              ],
+              [
+                "v",
+                "(−1, 3)"
+              ],
+              [
+                "u + v",
+                "(1, 4)"
+              ],
+              [
+                "u − v",
+                "(3, −2)"
+              ]
+            ],
+            "points": [
+              [
+                "O",
+                0,
+                0
+              ],
+              [
+                "U",
+                2,
+                1
+              ],
+              [
+                "S",
+                1,
+                4
+              ]
+            ],
+            "arrows": [
+              [
+                0,
+                0,
+                2,
+                1
+              ],
+              [
+                2,
+                1,
+                1,
+                4
+              ],
+              [
+                0,
+                0,
+                1,
+                4
+              ]
+            ],
+            "segments": [],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es |u+v| necesariamente igual a |u|+|v|?||No: la igualdad solo aparece en condiciones particulares de alineación y sentido; en general se aplica la desigualdad triangular."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: La suma y resta de vectores del plano se hace por componentes: (a,b)+(c,d)=(a+c,b+d) y (a,b)−(c,d)=(a−c,b−d). Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-G02-L02-01",
+        "F3-B1C-G02-L02-02",
+        "F3-B1C-G02-L02-03",
+        "F3-B1C-G02-L02-04",
+        "F3-B1C-G02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-G02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-G02:C03"
+      ],
+      "objectives": [
+        "Calcular el producto escalar de vectores planos.",
+        "Aplicar la condición de ortogonalidad en problemas geométricos."
+      ],
+      "prerequisites": [
+        "B1C-G02-L02",
+        "E4B-G02-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El producto escalar de u=(uₓ,uᵧ) y v=(vₓ,vᵧ) es u·v=uₓvₓ+uᵧvᵧ, un número real. Para vectores no nulos también puede escribirse |u||v|cosθ, donde θ es su ángulo entre 0° y 180°. Dos vectores no nulos son perpendiculares si y solo si su producto escalar es cero. La condición u·v=0 incluye el caso del vector nulo, por eso al deducir perpendicularidad de direcciones debe verificarse que ninguno sea nulo. El producto escalar no es un producto vectorial, ni devuelve un par de componentes."
+        },
+        {
+          "type": "example",
+          "body": "u=(3,1), v=(−1,3): u·v=3×(−1)+1×3=0, así que son perpendiculares al ser ambos no nulos."
+        },
+        {
+          "type": "example",
+          "body": "Para u=(2,−1) y v=(4,3), u·v=8−3=5; no son perpendiculares."
+        },
+        {
+          "type": "figure",
+          "body": "Vectores perpendiculares con producto escalar cero. Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Vectores perpendiculares con producto escalar cero. Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "dot_product",
+            "title": "Vectores perpendiculares con producto escalar cero",
+            "rows": [
+              [
+                "u",
+                "(3, 1)"
+              ],
+              [
+                "v",
+                "(−1, 3)"
+              ],
+              [
+                "u·v",
+                "3(−1)+1(3)=0"
+              ],
+              [
+                "Condición",
+                "u y v no nulos"
+              ]
+            ],
+            "points": [],
+            "arrows": [
+              [
+                0,
+                0,
+                3,
+                1
+              ],
+              [
+                0,
+                0,
+                -1,
+                3
+              ]
+            ],
+            "segments": [],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El producto escalar de (2,3) y (4,5) es el vector (8,15)?||No: es un escalar, 2×4+3×5=23."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: El producto escalar de u=(uₓ,uᵧ) y v=(vₓ,vᵧ) es u·v=uₓvₓ+uᵧvᵧ, un número real. Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-G02-L03-01",
+        "F3-B1C-G02-L03-02",
+        "F3-B1C-G02-L03-03",
+        "F3-B1C-G02-L03-04",
+        "F3-B1C-G02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-G02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-G02:C04"
+      ],
+      "objectives": [
+        "Calcular módulos y ángulos entre vectores no nulos.",
+        "Distinguir coseno del ángulo y producto escalar."
+      ],
+      "prerequisites": [
+        "B1C-G02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El módulo del vector u=(a,b) es |u|=√(a²+b²). El ángulo θ entre vectores no nulos u y v cumple cosθ=(u·v)/(|u||v|), con −1≤cosθ≤1 por la desigualdad de Cauchy-Schwarz. Para vectores ortogonales θ=90°; si comparten dirección y sentido θ=0°, y si son opuestos θ=180°. No se puede calcular ángulo con el vector nulo, porque aparece división entre módulo cero. Para respuestas exactas puede ser suficiente proporcionar cosθ, sin introducir una aproximación decimal al ángulo."
+        },
+        {
+          "type": "example",
+          "body": "u=(3,4) tiene módulo 5; con v=(5,0) de módulo 5, el producto escalar vale 15 y cosθ=15/25=3/5."
+        },
+        {
+          "type": "example",
+          "body": "u=(2,0) y v=(−3,0) son opuestos en dirección, así que su ángulo es 180° y cosθ=−1."
+        },
+        {
+          "type": "figure",
+          "body": "Coseno del ángulo entre dos vectores. Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Coseno del ángulo entre dos vectores. Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "vector_angle",
+            "title": "Coseno del ángulo entre dos vectores",
+            "rows": [
+              [
+                "u",
+                "(3, 4), módulo 5"
+              ],
+              [
+                "v",
+                "(5, 0), módulo 5"
+              ],
+              [
+                "u·v",
+                "15"
+              ],
+              [
+                "cos θ",
+                "3/5"
+              ]
+            ],
+            "points": [],
+            "arrows": [
+              [
+                0,
+                0,
+                3,
+                4
+              ],
+              [
+                0,
+                0,
+                5,
+                0
+              ]
+            ],
+            "segments": [],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se puede hallar el ángulo entre u=(0,0) y v=(1,2)?||No se define un ángulo entre direcciones porque el vector nulo carece de dirección."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: El módulo del vector u=(a,b) es |u|=√(a²+b²). Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-G02-L04-01",
+        "F3-B1C-G02-L04-02",
+        "F3-B1C-G02-L04-03",
+        "F3-B1C-G02-L04-04",
+        "F3-B1C-G02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-G02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-G02:C05"
+      ],
+      "objectives": [
+        "Escribir la ecuación vectorial y paramétrica de una recta en el plano.",
+        "Comprobar si un punto pertenece a una recta mediante un parámetro común."
+      ],
+      "prerequisites": [
+        "B1C-G02-L02",
+        "E4B-G02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una recta se representa con un punto P=(x₀,y₀) y un vector director v=(a,b) no nulo como (x,y)=(x₀,y₀)+t(a,b), t∈R. Sus ecuaciones paramétricas son x=x₀+ta e y=y₀+tb; el mismo valor de t debe satisfacer ambas. Si a=0, la recta es vertical; si b=0, horizontal. Multiplicar v por un escalar no nulo no cambia la recta. No se debe confundir el parámetro libre con las coordenadas y no puede usarse v=(0,0) como director."
+        },
+        {
+          "type": "example",
+          "body": "La recta por (1,2) con director (2,−1) cumple (x,y)=(1+2t,2−t). Con t=3 contiene el punto (7,−1)."
+        },
+        {
+          "type": "example",
+          "body": "El punto (3,1) pertenece a la misma recta: la primera ecuación da t=1, que también produce y=1."
+        },
+        {
+          "type": "figure",
+          "body": "Recta parametrizada por punto y vector director. Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Recta parametrizada por punto y vector director. Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "parametric",
+            "title": "Recta parametrizada por punto y vector director",
+            "rows": [
+              [
+                "Punto de paso",
+                "(1, 2)"
+              ],
+              [
+                "Vector director",
+                "(2, −1)"
+              ],
+              [
+                "Ecuaciones",
+                "x=1+2t; y=2−t"
+              ],
+              [
+                "t=1",
+                "(3, 1)"
+              ]
+            ],
+            "points": [
+              [
+                "P",
+                1,
+                2
+              ],
+              [
+                "Q",
+                3,
+                1
+              ]
+            ],
+            "arrows": [
+              [
+                1,
+                2,
+                3,
+                1
+              ]
+            ],
+            "segments": [],
+            "lines": [
+              [
+                -0.5,
+                2.5
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es suficiente que x=3 aparezca en alguna ecuación de la recta?||No: se requiere un mismo parámetro t que satisfaga ambas coordenadas."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Una recta se representa con un punto P=(x₀,y₀) y un vector director v=(a,b) no nulo como (x,y)=(x₀,y₀)+t(a,b), t∈R. Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-G02-L05-01",
+        "F3-B1C-G02-L05-02",
+        "F3-B1C-G02-L05-03",
+        "F3-B1C-G02-L05-04",
+        "F3-B1C-G02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-G02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-G02:C06"
+      ],
+      "objectives": [
+        "Decidir si dos rectas son secantes, paralelas o coincidentes.",
+        "Calcular distancias simples de un punto a una recta y justificar la perpendicular."
+      ],
+      "prerequisites": [
+        "B1C-G02-L05",
+        "B1C-G02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En el plano, dos rectas con directores no proporcionales se cortan en un único punto; si son proporcionales, pueden ser paralelas distintas o coincidentes según un punto de una pertenezca a la otra. Para hallar una intersección se resuelve el sistema y se comprueba en ambas ecuaciones. La distancia de un punto P=(x₀,y₀) a una recta Ax+By+C=0 con (A,B)≠(0,0) es |Ax₀+By₀+C|/√(A²+B²), siempre no negativa. Para la recta horizontal y=k, la distancia es |y₀−k|; no debe confundirse con la distancia a cualquier punto de esa recta."
+        },
+        {
+          "type": "example",
+          "body": "Las rectas y=x+1 e y=−x+3 se cortan en (1,2), porque 1+1=−1+3=2."
+        },
+        {
+          "type": "example",
+          "body": "La distancia de (2,5) a y=1 es |5−1|=4 unidades, mediante segmento vertical perpendicular."
+        },
+        {
+          "type": "figure",
+          "body": "Distancia perpendicular de punto a recta. Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Distancia perpendicular de punto a recta. Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "point_line",
+            "title": "Distancia perpendicular de punto a recta",
+            "rows": [
+              [
+                "P",
+                "(2, 5)"
+              ],
+              [
+                "Recta",
+                "y = 1"
+              ],
+              [
+                "Pie H",
+                "(2, 1)"
+              ],
+              [
+                "Distancia",
+                "4"
+              ]
+            ],
+            "points": [
+              [
+                "P",
+                2,
+                5
+              ],
+              [
+                "H",
+                2,
+                1
+              ]
+            ],
+            "arrows": [],
+            "segments": [
+              [
+                2,
+                5,
+                2,
+                1
+              ]
+            ],
+            "lines": [
+              [
+                0,
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Dos rectas con igual pendiente son necesariamente coincidentes?||No: pueden ser paralelas distintas si sus términos independientes son diferentes."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: En el plano, dos rectas con directores no proporcionales se cortan en un único punto; si son proporcionales, pueden ser paralelas distintas o coincidentes según un punto de una pertenezca a la otra. Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-G02-L06-01",
+        "F3-B1C-G02-L06-02",
+        "F3-B1C-G02-L06-03",
+        "F3-B1C-G02-L06-04",
+        "F3-B1C-G02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

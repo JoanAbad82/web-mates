@@ -1,0 +1,828 @@
+{
+  "unit_id": "B1S-D01",
+  "unit_title": "Estadística bivariante y ajuste",
+  "product_phase": "F3_OLA24",
+  "version": "0.24.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Organizar dos variables en una tabla bidimensional y hallar totales.",
+    "Calcular distribuciones marginales y condicionadas de dos variables.",
+    "Calcular covarianza descriptiva exacta a partir de parejas."
+  ],
+  "warnings": [
+    "Todos los datos son sintéticos y el contenido permanece EN REVISIÓN.",
+    "Pearson y R² son medidas descriptivas, no prueba causal ni de extrapolación.",
+    "Binomial exige ensayos independientes, n fijo y p constante; normal requiere modelo adecuado.",
+    "Criterios np≥10 y n(1−p)≥10 son umbrales editoriales, nunca garantía universal de error.",
+    "WCAG 2.2 AA, currículo autonómico, revisión humana y dispositivo físico NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Estadística 4.º ESO A",
+      "lesson_id": "E4A-D01-L04",
+      "href": "#/curso/E4A/unidad/E4A-D01/leccion/E4A-D01-L04"
+    },
+    {
+      "label": "Estadística 4.º ESO B",
+      "lesson_id": "E4B-D01-L03",
+      "href": "#/curso/E4B/unidad/E4B-D01/leccion/E4B-D01-L03"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 sin calibrar",
+    "rule": "Recuperación y repaso solamente con almacenamiento local voluntario."
+  },
+  "source_note": "Marco RD 217/2022 y RD 243/2022; asignaciones editoriales no homologadas territorialmente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1S-D01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-D01:C01"
+      ],
+      "objectives": [
+        "Organizar dos variables en una tabla bidimensional y hallar totales.",
+        "Elegir de manera explícita denominadores conjuntos, marginales y condicionales."
+      ],
+      "prerequisites": [
+        "E4A-D01-L01",
+        "E3-D01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una tabla bidimensional presenta pares de categorías registradas en la misma observación. En una muestra sintética de 30 operaciones, la fila del grupo A contiene 9 resultados favorables y 6 desfavorables, y la fila B tiene 5 favorables y 10 desfavorables. Los marginales por fila son 15 y 15; por columna favorable 14 y desfavorable 16. Una frecuencia conjunta como 9/30 utiliza toda la muestra, mientras P(favorable|A)=9/15 usa la primera fila y P(A|favorable)=9/14 usa la primera columna. Cambiar la dirección del condicionamiento cambia la pregunta. Una tabla solo describe la muestra, no prueba que el grupo cause el resultado ni justifica generalización a la población. Todos los datos son inventados y se presentan con denominadores."
+        },
+        {
+          "type": "example",
+          "body": "La muestra tiene 9+6+5+10=30 observaciones; el total de la columna favorable es 9+5=14 y el desfavorable 6+10=16."
+        },
+        {
+          "type": "example",
+          "body": "La proporción favorable dentro del grupo A es 9/15=3/5; A entre los favorables representa 9/14, cuyo denominador no es 15."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla conjunta de treinta observaciones sintéticas. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "Tabla conjunta de treinta observaciones sintéticas. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "contingency",
+            "title": "Tabla conjunta de treinta observaciones sintéticas",
+            "rows": [
+              [
+                "Grupo A",
+                "9 favorables; 6 otras; total 15"
+              ],
+              [
+                "Grupo B",
+                "5 favorables; 10 otras; total 15"
+              ],
+              [
+                "Favorables total",
+                "14"
+              ],
+              [
+                "Otras total",
+                "16"
+              ],
+              [
+                "Muestra total",
+                "30"
+              ]
+            ],
+            "model": {
+              "kind": "contingency",
+              "matrix": [
+                [
+                  9,
+                  6
+                ],
+                [
+                  5,
+                  10
+                ]
+              ],
+              "row_labels": [
+                "A",
+                "B"
+              ],
+              "col_labels": [
+                "Sí",
+                "No"
+              ]
+            },
+            "domain": [
+              0,
+              30
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿P(favorable|A) y P(A|favorable) deben dar el mismo número?||No; condicionan sobre grupos distintos."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una tabla bidimensional presenta pares de categorías registradas en la misma observación. Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-D01-L01-01",
+        "F3-B1S-D01-L01-02",
+        "F3-B1S-D01-L01-03",
+        "F3-B1S-D01-L01-04",
+        "F3-B1S-D01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-D01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-D01:C02"
+      ],
+      "objectives": [
+        "Calcular distribuciones marginales y condicionadas de dos variables.",
+        "Interpretar diferencias de tasas con el grupo de referencia identificado."
+      ],
+      "prerequisites": [
+        "B1S-D01-L01",
+        "E4A-D01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Las frecuencias marginales se obtienen sumando filas o columnas; las condicionadas normalizan por el total de la categoría impuesta. En una tabla de 20 casos sintéticos con filas A:(6,4) y B:(3,7), la distribución marginal de éxito es 9/20 y la de fracaso 11/20. Dentro de A la tasa de éxito es 6/10=0,6; dentro de B es 3/10=0,3. La diferencia de tasas muestrales es de 30 puntos porcentuales, no de 30 % relativo: (0,6−0,3)/0,3 equivale al 100 % de aumento relativo. Estas diferencias pueden sugerir asociación, pero un estudio observacional puede contener confusores y sesgo de selección. Si alguna fila tuviera total cero, su probabilidad condicionada no estaría definida. Las tablas semánticas deben conservar los cuatro recuentos exactos."
+        },
+        {
+          "type": "example",
+          "body": "Los marginales de éxito y no éxito son 6+3=9 y 4+7=11, respectivamente; sus frecuencias relativas son 9/20 y 11/20."
+        },
+        {
+          "type": "example",
+          "body": "Tasa de éxito A=6/10=60 %, B=3/10=30 %: la diferencia son 30 puntos porcentuales y el cambio relativo respecto de B es 100 %."
+        },
+        {
+          "type": "figure",
+          "body": "Marginales y condicionadas por grupos. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "Marginales y condicionadas por grupos. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "contingency",
+            "title": "Marginales y condicionadas por grupos",
+            "rows": [
+              [
+                "A",
+                "6 éxitos, 4 no"
+              ],
+              [
+                "B",
+                "3 éxitos, 7 no"
+              ],
+              [
+                "P(éxito|A)",
+                "3/5"
+              ],
+              [
+                "P(éxito|B)",
+                "3/10"
+              ],
+              [
+                "Diferencia",
+                "30 puntos porcentuales"
+              ]
+            ],
+            "model": {
+              "kind": "contingency",
+              "matrix": [
+                [
+                  6,
+                  4
+                ],
+                [
+                  3,
+                  7
+                ]
+              ],
+              "row_labels": [
+                "A",
+                "B"
+              ],
+              "col_labels": [
+                "Éxito",
+                "No"
+              ]
+            },
+            "domain": [
+              0,
+              20
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una diferencia de 30 puntos porcentuales equivale siempre a un cambio relativo del 30 %?||No; son unidades de comparación distintas."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Las frecuencias marginales se obtienen sumando filas o columnas; las condicionadas normalizan por el total de la categoría impuesta. Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-D01-L02-01",
+        "F3-B1S-D01-L02-02",
+        "F3-B1S-D01-L02-03",
+        "F3-B1S-D01-L02-04",
+        "F3-B1S-D01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-D01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-D01:C03"
+      ],
+      "objectives": [
+        "Calcular covarianza descriptiva exacta a partir de parejas.",
+        "Distinguir covarianza de correlación normalizada y sus unidades."
+      ],
+      "prerequisites": [
+        "B1S-D01-L02",
+        "E4A-D01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En parejas cuantitativas (xᵢ,yᵢ), la covarianza descriptiva de una muestra tomada como conjunto observado es Σ(xᵢ−x̄)(yᵢ−ȳ)/n. Para (1,2),(2,4),(3,6), x̄=2, ȳ=4 y los productos de desviaciones son 2,0,2; por tanto cov=4/3 positiva. Si se invierte el sentido con (1,6),(2,4),(3,2), la covarianza es −4/3. La covarianza tiene unidades producto de las dos magnitudes y cambia al cambiar sus escalas; por ello su valor absoluto no mide por sí solo fuerza de relación comparable entre estudios. El coeficiente de Pearson divide por desviaciones típicas positivas para obtener una magnitud adimensional en [−1,1]. Una covarianza cero puede coexistir con una dependencia no lineal. No se atribuye causalidad a partir de este resumen descriptivo."
+        },
+        {
+          "type": "example",
+          "body": "Para x=1,2,3 e y=2,4,6, los productos centrados son (−1)(−2)=2, 0 y (1)(2)=2: covarianza=4/3."
+        },
+        {
+          "type": "example",
+          "body": "Para x=1,2,3 e y=6,4,2, los productos centrados son −2,0,−2 y la covarianza es −4/3."
+        },
+        {
+          "type": "figure",
+          "body": "Pares lineales crecientes y covarianza exacta. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "Pares lineales crecientes y covarianza exacta. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "scatter",
+            "title": "Pares lineales crecientes y covarianza exacta",
+            "rows": [
+              [
+                "x",
+                "1,2,3"
+              ],
+              [
+                "y",
+                "2,4,6"
+              ],
+              [
+                "Media x",
+                "2"
+              ],
+              [
+                "Media y",
+                "4"
+              ],
+              [
+                "Covarianza descriptiva",
+                "4/3"
+              ]
+            ],
+            "model": {
+              "kind": "scatter",
+              "points": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  6
+                ]
+              ]
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La covarianza siempre pertenece al intervalo entre −1 y 1?||No; esa cota es del coeficiente de Pearson."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: En parejas cuantitativas (xᵢ,yᵢ), la covarianza descriptiva de una muestra tomada como conjunto observado es Σ(xᵢ−x̄)(yᵢ−ȳ)/n. Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-D01-L03-01",
+        "F3-B1S-D01-L03-02",
+        "F3-B1S-D01-L03-03",
+        "F3-B1S-D01-L03-04",
+        "F3-B1S-D01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-D01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-D01:C04"
+      ],
+      "objectives": [
+        "Interpretar el coeficiente de Pearson con condiciones de existencia.",
+        "Diferenciar correlación lineal fuerte, asociación no lineal y causalidad."
+      ],
+      "prerequisites": [
+        "B1S-D01-L03",
+        "E4A-D01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La correlación lineal de Pearson r=Σ(x−x̄)(y−ȳ)/√[Σ(x−x̄)²Σ(y−ȳ)²] solo se define cuando ambas sumas de cuadrados son positivas. En los pares (1,2),(2,4),(3,6) resulta r=1; para (1,6),(2,4),(3,2), r=−1. El signo indica dirección lineal y |r| mide la intensidad de asociación lineal de la muestra. Si todos los valores x son iguales, r no existe, aunque la fórmula pueda intentarse numéricamente. La serie simétrica (−1,1),(0,0),(1,1) satisface y=x², dependencia total no lineal, pero r=0 por anulación de la covarianza. Correlación no determina causa, no controla variables ocultas y puede alterarse por observaciones extremas. Debe indicarse tamaño de muestra y dominio."
+        },
+        {
+          "type": "example",
+          "body": "Con x=(1,2,3) e y=(2,4,6), y=2x; ambas desviaciones no nulas y r=+1 por alineación perfecta."
+        },
+        {
+          "type": "example",
+          "body": "Con (−1,1),(0,0),(1,1), media x=0, media y=2/3 y covarianza cero: Pearson r=0 pese a dependencia cuadrática."
+        },
+        {
+          "type": "figure",
+          "body": "Dependencia parabólica con correlación lineal nula. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "Dependencia parabólica con correlación lineal nula. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "scatter",
+            "title": "Dependencia parabólica con correlación lineal nula",
+            "rows": [
+              [
+                "x",
+                "−1,0,1"
+              ],
+              [
+                "y",
+                "1,0,1"
+              ],
+              [
+                "Relación",
+                "y=x²"
+              ],
+              [
+                "Pearson r",
+                "0"
+              ],
+              [
+                "Lectura",
+                "No implica independencia"
+              ]
+            ],
+            "model": {
+              "kind": "scatter",
+              "points": [
+                [
+                  -1,
+                  1
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "quadratic": [
+                0,
+                0,
+                1
+              ]
+            },
+            "domain": [
+              -2,
+              2
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿r=0 significa que dos variables sean necesariamente independientes?||No; puede existir dependencia no lineal."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La correlación lineal de Pearson r=Σ(x−x̄)(y−ȳ)/√[Σ(x−x̄)²Σ(y−ȳ)²] solo se define cuando ambas sumas de cuadrados son positivas. Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-D01-L04-01",
+        "F3-B1S-D01-L04-02",
+        "F3-B1S-D01-L04-03",
+        "F3-B1S-D01-L04-04",
+        "F3-B1S-D01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-D01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-D01:C05"
+      ],
+      "objectives": [
+        "Ajustar modelos lineal y cuadrático a datos sintéticos en casos identificables.",
+        "Comparar residuos y evitar extrapolación o causalidad no justificada."
+      ],
+      "prerequisites": [
+        "B1S-D01-L04",
+        "E4B-D01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La recta de mínimos cuadrados ŷ=a+bx minimiza Σ(yᵢ−a−bxᵢ)² y, con Sxx>0, da b=Sxy/Sxx y a=ȳ−bx̄. Los pares (0,1),(1,3),(2,5) siguen ŷ=1+2x y tienen residuos cero. Una curva cuadrática ŷ=a+bx+cx² requiere al menos tres abscisas distintas y diseño de rango tres. En los cinco pares x=−2,−1,0,1,2 con y=4,1,0,1,4, la parábola ŷ=x² ajusta exactamente y da SSE=0; la mejor recta es ŷ=2 y tiene SSE=14. El menor error dentro de la muestra no prueba capacidad predictiva fuera de ella. Deben explicarse el rango observado, la complejidad y los supuestos de cada modelo. La curva SVG muestra solo la región de abscisas observadas y la tabla revela residuos."
+        },
+        {
+          "type": "example",
+          "body": "Para (0,1),(1,3),(2,5), Sxy=4 y Sxx=2: b=2, a=1 y predicción ŷ(1)=3, con residuo observado cero."
+        },
+        {
+          "type": "example",
+          "body": "En (−2,4),(−1,1),(0,0),(1,1),(2,4), la mejor parábola es ŷ=x², SSE=0; la recta ŷ=2 genera SSE=14."
+        },
+        {
+          "type": "figure",
+          "body": "Modelo cuadrático frente a recta constante. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "Modelo cuadrático frente a recta constante. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "scatter",
+            "title": "Modelo cuadrático frente a recta constante",
+            "rows": [
+              [
+                "Datos",
+                "(−2,4),(−1,1),(0,0),(1,1),(2,4)"
+              ],
+              [
+                "Cuadrático",
+                "ŷ=x²"
+              ],
+              [
+                "SSE cuadrático",
+                "0"
+              ],
+              [
+                "Recta MCO",
+                "ŷ=2"
+              ],
+              [
+                "SSE lineal",
+                "14"
+              ]
+            ],
+            "model": {
+              "kind": "scatter",
+              "points": [
+                [
+                  -2,
+                  4
+                ],
+                [
+                  -1,
+                  1
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  4
+                ]
+              ],
+              "quadratic": [
+                0,
+                0,
+                1
+              ]
+            },
+            "domain": [
+              -3,
+              3
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una parábola con SSE=0 demuestra que seguirá prediciendo perfectamente fuera del intervalo observado?||No; ajustar no es validar externamente."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La recta de mínimos cuadrados ŷ=a+bx minimiza Σ(yᵢ−a−bxᵢ)² y, con Sxx>0, da b=Sxy/Sxx y a=ȳ−bx̄. Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-D01-L05-01",
+        "F3-B1S-D01-L05-02",
+        "F3-B1S-D01-L05-03",
+        "F3-B1S-D01-L05-04",
+        "F3-B1S-D01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-D01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-D01:C06"
+      ],
+      "objectives": [
+        "Calcular R² mediante SSE y SST con sus hipótesis explícitas.",
+        "Reconocer los límites de R² ante extrapolación, sobreajuste y causalidad."
+      ],
+      "prerequisites": [
+        "B1S-D01-L05",
+        "B1S-D01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El coeficiente de determinación para un modelo ajustado con intercepto se define R²=1−SSE/SST, donde SSE=Σ(y−ŷ)² y SST=Σ(y−ȳ)²; requiere SST>0 para aplicar esa expresión. En los cinco pares y=x² para x=−2,−1,0,1,2, media y=2, SST=4+1+4+1+4=14. La mejor recta ŷ=2 tiene SSE=14 y R²=0; la parábola ŷ=x² tiene SSE=0 y R²=1. Con intercepto y ajuste MCO en muestra, R² está entre 0 y 1; fuera de estas condiciones puede ser negativo o no estar definido. R² no representa porcentaje de causalidad ni garantiza generalización. Si y es constante, SST=0 y se debe advertir que la fórmula indicada no define R². La comparación honesta incluye complejidad, tamaño de muestra y validación independiente."
+        },
+        {
+          "type": "example",
+          "body": "Para x=−2,−1,0,1,2 e y=4,1,0,1,4, ȳ=2 y SST=14. La recta ŷ=2 tiene SSE=14: R²=1−14/14=0."
+        },
+        {
+          "type": "example",
+          "body": "Con los mismos cinco datos, el modelo ŷ=x² produce SSE=0 y R²=1−0/14=1, sin probar que extrapolar sea fiable."
+        },
+        {
+          "type": "figure",
+          "body": "SSE y R² en dos modelos de los mismos datos. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "SSE y R² en dos modelos de los mismos datos. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "stats_bars",
+            "title": "SSE y R² en dos modelos de los mismos datos",
+            "rows": [
+              [
+                "SST",
+                "14"
+              ],
+              [
+                "SSE recta",
+                "14"
+              ],
+              [
+                "R² recta",
+                "0"
+              ],
+              [
+                "SSE parábola",
+                "0"
+              ],
+              [
+                "R² parábola",
+                "1"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                14,
+                14,
+                0,
+                1
+              ],
+              "labels": [
+                "SST",
+                "SSE línea",
+                "SSE parábola",
+                "R² parábola"
+              ]
+            },
+            "domain": [
+              0,
+              15
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿R²=1 implica necesariamente causalidad o predicción perfecta fuera de la muestra?||No; solo describe ajuste bajo condiciones."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El coeficiente de determinación para un modelo ajustado con intercepto se define R²=1−SSE/SST, donde SSE=Σ(y−ŷ)² y SST=Σ(y−ȳ)²; requiere SST>0 para aplicar esa expresión. Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-D01-L06-01",
+        "F3-B1S-D01-L06-02",
+        "F3-B1S-D01-L06-03",
+        "F3-B1S-D01-L06-04",
+        "F3-B1S-D01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

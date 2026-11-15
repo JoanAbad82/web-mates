@@ -1,0 +1,508 @@
+{
+  "unit_id": "E2-A01",
+  "unit_title": "Expresiones algebraicas y polinomios elementales",
+  "product_phase": "F3",
+  "version": "0.1.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "warnings": [
+    "Secuencia editorial del tramo estatal 1.º–3.º ESO; mapeo autonómico fino pendiente.",
+    "Actividades y ejemplos F3 comprobables técnicamente pero pendientes de revisión humana.",
+    "Fracciones algebraicas E3-A01-L06 etiquetadas como ampliación, no obligación oficial."
+  ],
+  "unit_objectives": [
+    "Reconocer monomios y polinomios, sus partes y equivalencias.",
+    "Operar y evaluar expresiones en problemas sencillos.",
+    "Explicar los pasos y comprobar sustituyendo."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Lenguaje algebraico de 1.º ESO",
+      "lesson_id": "E1-A01-L02",
+      "href": "#/curso/E1/unidad/E1-A01/leccion/E1-A01-L02"
+    },
+    {
+      "label": "Valor numérico de 1.º ESO",
+      "lesson_id": "E1-A01-L04",
+      "href": "#/curso/E1/unidad/E1-A01/leccion/E1-A01-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "rule": "Recuperación sin mostrar inicialmente la respuesta; práctica guiada con pistas; revisión de errores y repaso espaciado solo con consentimiento local.",
+    "cadence_proposal": "D+1, D+3, D+7, D+14, D+30 como heurística editorial, no garantía científica."
+  },
+  "source_note": "Contenido original F3, distribución editorial. Competencias y criterios autonómicos pendientes de cotejo.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E2-A01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Distinguir el coeficiente y la parte literal de un monomio.",
+        "Reducir monomios que tienen las mismas letras con idénticos exponentes."
+      ],
+      "concept_ids": [
+        "E2-A01:C_01"
+      ],
+      "prerequisites": [
+        "E1-A01-L02",
+        "E1-A01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un monomio es un producto de un número (coeficiente) por letras elevadas a exponentes naturales. Dos términos son semejantes solo si su parte literal es exactamente igual. Podemos sumar sus coeficientes sin alterar la parte literal; 3x y 3x² no son semejantes."
+        },
+        {
+          "type": "example",
+          "body": "5x + 2x − 4x: todos contienen x. Opera los coeficientes 5 + 2 − 4 = 3 y conserva x. Resultado: 3x."
+        },
+        {
+          "type": "example",
+          "body": "4a² − 7a² + a²: (4 − 7 + 1)a² = −2a². No cambies el exponente al sumar."
+        },
+        {
+          "type": "figure",
+          "body": "Visualiza tres cajas marcadas x: cinco cajas más dos cajas menos cuatro cajas dejan tres cajas x. No se puede unir una caja x² con una caja x: representan cantidades distintas.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué 5x y 5x² no se reducen a 10x³?||Porque al sumar términos el exponente no se suma: las partes literales son diferentes y no son términos semejantes."
+        },
+        {
+          "type": "summary",
+          "body": "Para reducir: compara parte literal → agrupa semejantes → suma coeficientes. Un signo menos pertenece al coeficiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-A01-L01-01",
+        "F3-E2-A01-L01-02",
+        "F3-E2-A01-L01-03",
+        "F3-E2-A01-L01-04",
+        "F3-E2-A01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-A01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Multiplicar y dividir monomios usando las propiedades de las potencias.",
+        "Distinguir las reglas de producto, cociente y potencia de potencia."
+      ],
+      "concept_ids": [
+        "E2-A01:C_02"
+      ],
+      "prerequisites": [
+        "E2-A01-L01",
+        "E2-N01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Al multiplicar monomios, multiplica coeficientes y suma exponentes de la misma base. Al dividir, divide coeficientes y resta exponentes, siempre que el divisor no sea cero. La potencia de una potencia multiplica exponentes, no los suma."
+        },
+        {
+          "type": "example",
+          "body": "(−3x²)(4x³) = (−3·4)x²⁺³ = −12x⁵. Antes de sumar exponentes verifica que ambas bases son x."
+        },
+        {
+          "type": "example",
+          "body": "18a⁵ / 3a² = 6a³, si a ≠ 0. La división exige denominador no nulo; (x³)² = x⁶."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla verbal de operaciones: producto → suma de exponentes; cociente → resta; potencia de potencia → multiplicación. Estas reglas actúan sobre factores, no sobre términos de una suma.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué diferencia hay entre (x²)³ y x²·x³?||La potencia de potencia produce x⁶; el producto de dos potencias de base x produce x⁵."
+        },
+        {
+          "type": "summary",
+          "body": "Coeficientes por separado; después potencias de igual base. Comprueba siempre el signo y las restricciones en divisiones."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-A01-L02-01",
+        "F3-E2-A01-L02-02",
+        "F3-E2-A01-L02-03",
+        "F3-E2-A01-L02-04",
+        "F3-E2-A01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-A01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Identificar términos, grado y término independiente de un polinomio.",
+        "Sumar y restar polinomios agrupando potencias iguales."
+      ],
+      "concept_ids": [
+        "E2-A01:C_03"
+      ],
+      "prerequisites": [
+        "E2-A01-L01",
+        "E2-A01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un polinomio es una suma finita de monomios con exponentes naturales. El grado del polinomio no nulo es el mayor exponente con coeficiente distinto de cero. Para sumar o restar coloca en columnas las mismas potencias y opera sus coeficientes."
+        },
+        {
+          "type": "example",
+          "body": "(2x² + 3x − 1) + (5x² − x + 4) = (2+5)x² + (3−1)x + (−1+4) = 7x² + 2x + 3."
+        },
+        {
+          "type": "example",
+          "body": "(4x² − 2x + 1) − (x² + 3x − 2) = 4x²−2x+1−x²−3x+2 = 3x²−5x+3."
+        },
+        {
+          "type": "figure",
+          "body": "Una tabla de tres columnas x² | x | constante permite alinear términos de distinta posición. La columna vacía equivale a coeficiente cero.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué en la resta cambia el signo de todos los términos del segundo polinomio?||Porque el signo menos multiplica por −1 a todo el paréntesis, no solo a su primer término."
+        },
+        {
+          "type": "summary",
+          "body": "Ordena por exponentes, escribe ceros donde falten potencias, reúne coeficientes y comprueba con un valor sencillo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-A01-L03-01",
+        "F3-E2-A01-L03-02",
+        "F3-E2-A01-L03-03",
+        "F3-E2-A01-L03-04",
+        "F3-E2-A01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-A01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Evaluar expresiones sustituyendo letras por números con paréntesis.",
+        "Evitar errores de signos y orden de operaciones."
+      ],
+      "concept_ids": [
+        "E2-A01:C_04"
+      ],
+      "prerequisites": [
+        "E1-A01-L04",
+        "E2-A01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El valor numérico de una expresión se calcula reemplazando cada letra por un número. Una sustitución negativa debe llevar paréntesis: para x = −2, x² = (−2)² = 4. Después sigue la jerarquía de operaciones."
+        },
+        {
+          "type": "example",
+          "body": "En 2x² − 3x + 1 con x=−2: 2·(−2)²−3·(−2)+1 = 8+6+1 = 15."
+        },
+        {
+          "type": "example",
+          "body": "En 3(a+2) − a² para a=4: 3·6−16 = 2. Primero paréntesis y potencias; luego producto y resta."
+        },
+        {
+          "type": "figure",
+          "body": "Representa una máquina: introduce x, calcula x², duplica ese valor, resta 3x y suma 1. Cambiar el orden puede dar una salida errónea.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué error aparece si escribes −2² en vez de (−2)² para x² cuando x=−2?||−2² suele significar −(2²)=−4, mientras que (−2)²=4; por eso se sustituyen negativos entre paréntesis."
+        },
+        {
+          "type": "summary",
+          "body": "Reemplaza cada aparición de la letra; usa paréntesis con negativos; respeta potencias y operaciones; estima si el resultado tiene sentido."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-A01-L04-01",
+        "F3-E2-A01-L04-02",
+        "F3-E2-A01-L04-03",
+        "F3-E2-A01-L04-04",
+        "F3-E2-A01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-A01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Reconocer expresiones equivalentes mediante la propiedad distributiva.",
+        "Verificar una identidad y distinguirla de una igualdad cierta solo para algunos valores."
+      ],
+      "concept_ids": [
+        "E2-A01:C_05"
+      ],
+      "prerequisites": [
+        "E1-A01-L05",
+        "E2-A01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Dos expresiones son equivalentes cuando dan el mismo valor para toda sustitución permitida. La distributiva a(b+c)=ab+ac genera identidades. Comprobar en un solo número ayuda a detectar errores, pero no demuestra equivalencia general."
+        },
+        {
+          "type": "example",
+          "body": "3(x+2)=3x+6 para todo x: cada término del paréntesis recibe el factor 3."
+        },
+        {
+          "type": "example",
+          "body": "2(x−4)+x=2x−8+x=3x−8. Si pruebas x=5, ambos lados valen 7; la igualdad se justifica con la distributiva."
+        },
+        {
+          "type": "figure",
+          "body": "Un dibujo de 3 grupos con una x y dos unidades muestra 3x y seis unidades. Es una explicación visual de la distributiva.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "¿Basta probar x=1 para demostrar que dos expresiones son idénticas?||No. Coincidir para un valor no basta; hay que justificar transformaciones válidas para todo valor permitido."
+        },
+        {
+          "type": "summary",
+          "body": "Transformación equivalente: distribuye, agrupa y contrasta. Nunca distribuyas a(b+c) como ab+c."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-A01-L05-01",
+        "F3-E2-A01-L05-02",
+        "F3-E2-A01-L05-03",
+        "F3-E2-A01-L05-04",
+        "F3-E2-A01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-A01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Traducir costes, perímetros y patrones a expresiones algebraicas.",
+        "Evaluar un modelo y reconocer el significado de cada término."
+      ],
+      "concept_ids": [
+        "E2-A01:C_06"
+      ],
+      "prerequisites": [
+        "E1-A01-L03",
+        "E2-A01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Modelizar significa asignar letras a magnitudes, escribir relaciones y comprobar unidades. En precio total = tarifa fija + coste por unidad, el coeficiente representa el precio unitario y la constante representa el coste fijo."
+        },
+        {
+          "type": "example",
+          "body": "Una excursión cuesta 5 € por alumno y 12 € de reserva. Para n alumnos, C(n)=5n+12; para n=8, C=52 €."
+        },
+        {
+          "type": "example",
+          "body": "Un rectángulo tiene ancho x y largo x+3. Su perímetro es 2x+2(x+3)=4x+6. Para x=4, P=22 unidades."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla verbal: n=0 → tarifa fija 12; n=1 → 17; n=2 → 22. Cada alumno adicional aumenta el coste cinco euros.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "Si un coste incluye una tarifa fija, ¿por qué no basta multiplicar el número de usos por el precio unitario?||Porque la tarifa fija se paga aunque haya cero usos y debe añadirse aparte."
+        },
+        {
+          "type": "summary",
+          "body": "Identifica variable y unidad, traduce cada frase, simplifica la expresión y comprueba con un caso posible. No confundas perímetro con área."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-A01-L06-01",
+        "F3-E2-A01-L06-02",
+        "F3-E2-A01-L06-03",
+        "F3-E2-A01-L06-04",
+        "F3-E2-A01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,815 @@
+{
+  "unit_id": "B2S-F01",
+  "unit_title": "Análisis de funciones",
+  "product_phase": "F3_OLA18",
+  "version": "0.18.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Unificar límites, continuidad y dominio en el estudio de una función.",
+    "Derivar productos, cocientes y composiciones donde estén definidas.",
+    "Construir intervalos de crecimiento y decrecimiento desde el signo de la derivada."
+  ],
+  "warnings": [
+    "Material sintético EN REVISIÓN; no homologado ni publicable.",
+    "La continuidad no implica derivabilidad; f′=0 no asegura extremo y f′′=0 no asegura inflexión.",
+    "El marginal continuo no equivale automáticamente al incremento discreto de una unidad.",
+    "Revisión humana, normativa autonómica, accesibilidad integral y dispositivos físicos NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Derivadas y cambios marginales MACS I",
+      "lesson_id": "B1S-F03-L06",
+      "href": "#/curso/B1S/unidad/B1S-F03/leccion/B1S-F03-L06"
+    },
+    {
+      "label": "Límites y continuidad MACS I",
+      "lesson_id": "B1S-F02-L04",
+      "href": "#/curso/B1S/unidad/B1S-F02/leccion/B1S-F02-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recuperación sin pistas con feedback, revisión local y guardado voluntario."
+  },
+  "source_note": "Marco estatal RD 217/2022 y RD 243/2022, secuencia editorial, mapeo territorial pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B2S-F01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F01:C01"
+      ],
+      "objectives": [
+        "Unificar límites, continuidad y dominio en el estudio de una función.",
+        "Separar discontinuidades evitables, de salto e infinitas mediante límites laterales."
+      ],
+      "prerequisites": [
+        "B1S-F02-L05",
+        "B1S-N01-L03",
+        "B1S-F01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El análisis inicial de una función comienza por dominio, puntos excluidos, límites en puntos relevantes y comportamiento al infinito. En f(x)=(x²−9)/(x−3), x≠3, el límite en 3 vale 6, pero f(3) no existe: la discontinuidad es evitable. En h(x)=1/(x−2) los laterales divergen con signos opuestos en x=2 y hay asíntota vertical, no un hueco. En una función a trozos, un salto se verifica comparando límites laterales. La continuidad en a requiere que f(a) esté definida y coincida con el límite bilateral, mientras que en extremos del dominio se usa límite relativo unilateral. No se debe derivar en un punto discontinuo ni suponer que un límite infinito sea un número real. La extensión de un modelo social a entradas continuas es hipótesis didáctica, no dato empírico."
+        },
+        {
+          "type": "example",
+          "body": "La función g(x)=(x²−16)/(x−4) para x≠4 coincide con x+4 fuera del punto; por tanto lim(x→4)g(x)=8 y g(4) no existe."
+        },
+        {
+          "type": "example",
+          "body": "En h(x)=1/(x−2), el límite por la izquierda de 2 es −∞ y por la derecha +∞: la función tiene asíntota vertical en x=2."
+        },
+        {
+          "type": "figure",
+          "body": "Dominio y límite de discontinuidad evitable. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Dominio y límite de discontinuidad evitable. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "hole",
+            "title": "Dominio y límite de discontinuidad evitable",
+            "rows": [
+              [
+                "Original",
+                "(x²−16)/(x−4)"
+              ],
+              [
+                "Dominio",
+                "x≠4"
+              ],
+              [
+                "Simplificación",
+                "x+4, x≠4"
+              ],
+              [
+                "Límite x→4",
+                "8"
+              ],
+              [
+                "g(4)",
+                "No existe"
+              ]
+            ],
+            "model": {
+              "kind": "hole",
+              "a": 1,
+              "b": 4,
+              "hole": 4
+            },
+            "domain": [
+              0,
+              6
+            ],
+            "marks": [
+              [
+                "Hueco",
+                4,
+                8
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un límite finito en un punto que no pertenece al dominio demuestra continuidad de la expresión original?||No; requiere además que el valor en el punto exista y coincida."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El análisis inicial de una función comienza por dominio, puntos excluidos, límites en puntos relevantes y comportamiento al infinito. Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F01-L01-01",
+        "F3-B2S-F01-L01-02",
+        "F3-B2S-F01-L01-03",
+        "F3-B2S-F01-L01-04",
+        "F3-B2S-F01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-F01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F01:C02"
+      ],
+      "objectives": [
+        "Derivar productos, cocientes y composiciones donde estén definidas.",
+        "Construir tangentes y detectar restricciones que impiden derivar."
+      ],
+      "prerequisites": [
+        "B1S-F03-L03",
+        "B1S-F03-L04",
+        "B1S-F02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para funciones derivables u y v se cumplen (uv)′=u′v+uv′ y (u/v)′=(u′v−uv′)/v² donde v≠0. La regla de la cadena para f(g(x)) exige derivabilidad de g y de f en el punto imagen, y entonces (f∘g)′=f′(g(x))g′(x). En un ejemplo, h(x)=x²(x+1)=x³+x² tiene h′(x)=3x²+2x. Para r(x)=(x+1)/(x+2), la derivada es 1/(x+2)², válida cuando x≠−2. En t(x)=(2x+1)², t′(x)=4(2x+1), de modo que t′(2)=20. Una tangente en a se escribe y=t(a)+t′(a)(x−a). En puntos de discontinuidad o esquinas sin derivada no se fuerza una pendiente mediante una fórmula aplicada fuera del dominio."
+        },
+        {
+          "type": "example",
+          "body": "Deriva h(x)=x²(x+1)=x³+x². La regla de producto ofrece h′=2x(x+1)+x²=3x²+2x; en x=2 vale 16."
+        },
+        {
+          "type": "example",
+          "body": "Deriva r(x)=(x+1)/(x+2), x≠−2: r′=[(x+2)−(x+1)]/(x+2)²=1/(x+2)²; en x=0 vale 1/4."
+        },
+        {
+          "type": "figure",
+          "body": "Derivación de una composición cuadrática. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Derivación de una composición cuadrática. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "quadratic",
+            "title": "Derivación de una composición cuadrática",
+            "rows": [
+              [
+                "t(x)",
+                "(2x+1)²"
+              ],
+              [
+                "Regla de cadena",
+                "2(2x+1)·2"
+              ],
+              [
+                "t′(x)",
+                "4(2x+1)"
+              ],
+              [
+                "t′(2)",
+                "20"
+              ],
+              [
+                "Dominio",
+                "Todos los reales"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 4,
+              "h": -0.5,
+              "k": 0,
+              "tangent_x": 2
+            },
+            "domain": [
+              -3,
+              3
+            ],
+            "marks": [
+              [
+                "P",
+                2,
+                25
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se puede usar la regla de cociente directamente en un punto con denominador cero?||No; la expresión original ni siquiera está definida allí."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para funciones derivables u y v se cumplen (uv)′=u′v+uv′ y (u/v)′=(u′v−uv′)/v² donde v≠0. Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F01-L02-01",
+        "F3-B2S-F01-L02-02",
+        "F3-B2S-F01-L02-03",
+        "F3-B2S-F01-L02-04",
+        "F3-B2S-F01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-F01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F01:C03"
+      ],
+      "objectives": [
+        "Construir intervalos de crecimiento y decrecimiento desde el signo de la derivada.",
+        "Distinguir puntos críticos y extremos locales de cambios en puntos excluidos."
+      ],
+      "prerequisites": [
+        "B1S-F03-L05",
+        "B2S-F01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El signo de la derivada permite estudiar monotonía en intervalos abiertos donde la función sea derivable. Para f(x)=x³−3x, su derivada f′(x)=3x²−3=3(x−1)(x+1) se anula en −1 y 1. Es positiva para x<−1, negativa entre −1 y 1, positiva para x>1: existe máximo local f(−1)=2 y mínimo local f(1)=−2. Si el dominio se restringe, los puntos de frontera deben evaluarse aparte para extremos absolutos. Un punto crítico f′=0 no implica por sí mismo extremo, como x³ en x=0. La gráfica puede sugerir el patrón, pero los signos algebraicos de f′ en cada componente del dominio constituyen la justificación matemática. Nunca se cruza inadvertidamente una asíntota o un hueco al afirmar monotonía global."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=x³−3x, la derivada es 3(x−1)(x+1): crece en (−∞,−1), decrece en (−1,1) y vuelve a crecer en (1,+∞)."
+        },
+        {
+          "type": "example",
+          "body": "Los valores críticos de f(x)=x³−3x son f(−1)=2 y f(1)=−2. En −1 hay máximo local y en 1 mínimo local por cambios de signo."
+        },
+        {
+          "type": "figure",
+          "body": "Crecimiento y extremos de función cúbica. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Crecimiento y extremos de función cúbica. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "cubic",
+            "title": "Crecimiento y extremos de función cúbica",
+            "rows": [
+              [
+                "f(x)",
+                "x³−3x"
+              ],
+              [
+                "f′(x)",
+                "3(x−1)(x+1)"
+              ],
+              [
+                "Críticos",
+                "−1 y 1"
+              ],
+              [
+                "Máximo local",
+                "(−1,2)"
+              ],
+              [
+                "Mínimo local",
+                "(1,−2)"
+              ]
+            ],
+            "model": {
+              "kind": "cubic",
+              "a": 1,
+              "b": 0,
+              "c": -3,
+              "d": 0
+            },
+            "domain": [
+              -3,
+              3
+            ],
+            "marks": [
+              [
+                "Max",
+                -1,
+                2
+              ],
+              [
+                "Min",
+                1,
+                -2
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una derivada cero garantiza siempre un máximo?||No; debe estudiarse el signo de la derivada o la definición del extremo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El signo de la derivada permite estudiar monotonía en intervalos abiertos donde la función sea derivable. Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F01-L03-01",
+        "F3-B2S-F01-L03-02",
+        "F3-B2S-F01-L03-03",
+        "F3-B2S-F01-L03-04",
+        "F3-B2S-F01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-F01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F01:C04"
+      ],
+      "objectives": [
+        "Estudiar concavidad y puntos de inflexión mediante cambios de signo de segunda derivada.",
+        "Rechazar la falsa equivalencia f′′(a)=0 si y solo si hay inflexión."
+      ],
+      "prerequisites": [
+        "B2S-F01-L03",
+        "B1S-F03-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Cuando f es dos veces derivable, la segunda derivada orienta sobre curvatura: si f′′>0 en un intervalo es convexa (curva hacia arriba), y si f′′<0 es cóncava hacia abajo. Un punto de inflexión interior se caracteriza por un cambio real de concavidad; la condición f′′(a)=0 puede ser candidata pero no basta. Para f(x)=x³, f′′(x)=6x cambia de signo al cruzar 0, por lo que (0,0) es punto de inflexión. Para g(x)=x⁴, g′′(x)=12x²≥0 a ambos lados: g′′(0)=0 pero NO hay inflexión. Un punto donde f′′ no existe también exige análisis de intervalos; si una función carece de segunda derivada en un punto, no se aplica el criterio automático. En gráficos sociales la curvatura representa aceleración del cambio solo dentro de las hipótesis del modelo."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=x³, f′′(x)=6x es negativa si x<0 y positiva si x>0: la concavidad cambia en x=0, inflexión (0,0)."
+        },
+        {
+          "type": "example",
+          "body": "Para g(x)=x⁴, g′′(x)=12x² se anula en 0 pero permanece no negativa en ambos lados; no hay punto de inflexión."
+        },
+        {
+          "type": "figure",
+          "body": "Cambio de concavidad en función cúbica. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Cambio de concavidad en función cúbica. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "cubic",
+            "title": "Cambio de concavidad en función cúbica",
+            "rows": [
+              [
+                "f(x)",
+                "x³"
+              ],
+              [
+                "f′′(x)",
+                "6x"
+              ],
+              [
+                "Para x<0",
+                "Concavidad hacia abajo"
+              ],
+              [
+                "Para x>0",
+                "Convexidad"
+              ],
+              [
+                "Inflexión",
+                "(0,0)"
+              ]
+            ],
+            "model": {
+              "kind": "cubic",
+              "a": 1,
+              "b": 0,
+              "c": 0,
+              "d": 0
+            },
+            "domain": [
+              -3,
+              3
+            ],
+            "marks": [
+              [
+                "I",
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es suficiente f′′(a)=0 para asegurar inflexión?||No; se debe comprobar cambio de concavidad."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Cuando f es dos veces derivable, la segunda derivada orienta sobre curvatura: si f′′>0 en un intervalo es convexa (curva hacia arriba), y si f′′<0 es cóncava hacia abajo. Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F01-L04-01",
+        "F3-B2S-F01-L04-02",
+        "F3-B2S-F01-L04-03",
+        "F3-B2S-F01-L04-04",
+        "F3-B2S-F01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-F01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F01:C05"
+      ],
+      "objectives": [
+        "Realizar estudio completo de una función dentro de su dominio.",
+        "Relacionar raíces, vértice, monotonía y límites sin confundir huecos con asíntotas."
+      ],
+      "prerequisites": [
+        "B2S-F01-L01",
+        "B2S-F01-L03",
+        "B2S-F01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un estudio ordenado incluye dominio, intersecciones con ejes cuando existan, límites relevantes, continuidad y posibles discontinuidades, signo de derivada, extremos, concavidad si procede y comportamiento hacia los extremos del dominio. Para f(x)=x²−4x+3=(x−2)²−1, las raíces son 1 y 3, el vértice (2,−1) es un mínimo, y f′(x)=2x−4 pasa de negativa a positiva en 2. Como polinomio, la función es continua y derivable en todos los reales, y crece hacia +∞ cuando x→±∞. Si el contexto impone x≥0, se evalúan extremos y resultados solo allí. En cambio, (x²−1)/(x−1) no es continua en x=1 como expresión original, aunque se simplifique a x+1 para x≠1. La gráfica resume las conclusiones, pero los cálculos son la prueba."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=x²−4x+3 se factoriza (x−1)(x−3), de modo que corta el eje x en 1 y 3 y tiene mínimo f(2)=−1."
+        },
+        {
+          "type": "example",
+          "body": "Su derivada 2x−4 es negativa si x<2, cero en 2 y positiva si x>2; decrece antes del vértice y crece después."
+        },
+        {
+          "type": "figure",
+          "body": "Estudio completo de parábola. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Estudio completo de parábola. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "quadratic",
+            "title": "Estudio completo de parábola",
+            "rows": [
+              [
+                "f(x)",
+                "x²−4x+3"
+              ],
+              [
+                "Dominio",
+                "Todos los reales"
+              ],
+              [
+                "Ceros",
+                "1 y 3"
+              ],
+              [
+                "Vértice mínimo",
+                "(2,−1)"
+              ],
+              [
+                "Derivada",
+                "2x−4"
+              ],
+              [
+                "Convexidad",
+                "f′′=2>0"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 2,
+              "k": -1
+            },
+            "domain": [
+              -1,
+              5
+            ],
+            "marks": [
+              [
+                "R1",
+                1,
+                0
+              ],
+              [
+                "V",
+                2,
+                -1
+              ],
+              [
+                "R2",
+                3,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una expresión racional simplificada define automáticamente su valor en un cero del denominador original?||No; una cancelación algebraica no elimina la exclusión de dominio."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un estudio ordenado incluye dominio, intersecciones con ejes cuando existan, límites relevantes, continuidad y posibles discontinuidades, signo de derivada, extremos, concavidad si procede y comportamiento hacia los extremos del dominio. Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F01-L05-01",
+        "F3-B2S-F01-L05-02",
+        "F3-B2S-F01-L05-03",
+        "F3-B2S-F01-L05-04",
+        "F3-B2S-F01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-F01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F01:C06"
+      ],
+      "objectives": [
+        "Interpretar óptimos, pendientes y restricciones en gráficas económicas sintéticas.",
+        "Separar beneficio marginal continuo, incremento discreto y capacidad factible."
+      ],
+      "prerequisites": [
+        "B2S-F01-L03",
+        "B2S-F01-L05",
+        "B1S-F03-L06",
+        "B1S-A01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Sea un beneficio sintético B(q)=−q²+12q−20 para q∈[0,10], con q entero cuando representa unidades producidas. Su derivada B′(q)=12−2q se anula en q=6 y cambia de positiva a negativa: existe máximo B(6)=16. Las raíces B(q)=0 son q=2 y q=10, de modo que el modelo tiene beneficio no negativo entre ellas dentro del dominio. En q=4 el beneficio marginal continuo es B′(4)=4 por unidad; sin embargo el incremento exacto B(5)−B(4)=3, distinto porque la función es cuadrática. Si se intentase q=11 se violaría la restricción q≤10, aunque la expresión algebraica siguiera aceptando su evaluación. Los resultados pertenecen únicamente a un modelo ilustrativo; no representan una recomendación empresarial ni predicen ingresos reales."
+        },
+        {
+          "type": "example",
+          "body": "El máximo de B(q)=−q²+12q−20 ocurre cuando B′(q)=−2q+12=0: q=6, beneficio B(6)=−36+72−20=16."
+        },
+        {
+          "type": "example",
+          "body": "En q=4, B′(4)=4; el incremento finito B(5)−B(4)=[−25+60−20]−[−16+48−20]=15−12=3, no 4."
+        },
+        {
+          "type": "figure",
+          "body": "Beneficio máximo condicionado por capacidad. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Beneficio máximo condicionado por capacidad. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "quadratic",
+            "title": "Beneficio máximo condicionado por capacidad",
+            "rows": [
+              [
+                "B(q)",
+                "−q²+12q−20"
+              ],
+              [
+                "Dominio",
+                "0≤q≤10"
+              ],
+              [
+                "B′(q)",
+                "12−2q"
+              ],
+              [
+                "Óptimo",
+                "q=6"
+              ],
+              [
+                "Beneficio máximo",
+                "16"
+              ],
+              [
+                "Raíces",
+                "q=2 y 10"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": -1,
+              "h": 6,
+              "k": 16,
+              "tangent_x": 4
+            },
+            "domain": [
+              0,
+              10
+            ],
+            "marks": [
+              [
+                "R1",
+                2,
+                0
+              ],
+              [
+                "Máx",
+                6,
+                16
+              ],
+              [
+                "R2",
+                10,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede decidirse producir q=11 por conveniencia de la parábola si el dominio permitido termina en 10?||No; viola la restricción de capacidad del modelo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Sea un beneficio sintético B(q)=−q²+12q−20 para q∈[0,10], con q entero cuando representa unidades producidas. Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F01-L06-01",
+        "F3-B2S-F01-L06-02",
+        "F3-B2S-F01-L06-03",
+        "F3-B2S-F01-L06-04",
+        "F3-B2S-F01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

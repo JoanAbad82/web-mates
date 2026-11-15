@@ -1,0 +1,759 @@
+{
+  "unit_id": "B2C-F03",
+  "unit_title": "Primitivas e integrales",
+  "product_phase": "F3_OLA15",
+  "version": "0.15.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Identificar primitivas de potencias, exponenciales y constantes respetando dominios.",
+    "Aplicar linealidad de la integral indefinida a sumas y constantes.",
+    "Reconocer sustituciones sencillas con derivada de la función interior."
+  ],
+  "warnings": [
+    "Contenido determinista y editorial EN REVISIÓN, sin aprobación humana ni publicación.",
+    "Los modelos contextuales tienen dominios físicos; las integrales con signo difieren del área geométrica.",
+    "Mapeo territorial, accesibilidad WCAG integral y dispositivos físicos NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Funciones y derivadas de Matemáticas II",
+      "lesson_id": "B2C-F02-L01",
+      "href": "#/curso/B2C/unidad/B2C-F02/leccion/B2C-F02-L01"
+    },
+    {
+      "label": "Continuidad e integración por intervalos",
+      "lesson_id": "B2C-F01-L04",
+      "href": "#/curso/B2C/unidad/B2C-F01/leccion/B2C-F01-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Explicación y ejemplos, recuperación activa sin pistas, feedback y repaso voluntario."
+  },
+  "source_note": "RD 243/2022 y RD 217/2022; secuencia editorial, revisión territorial pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B2C-F03-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.15.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F03:C01"
+      ],
+      "objectives": [
+        "Identificar primitivas de potencias, exponenciales y constantes respetando dominios.",
+        "Explicar por qué toda familia de primitivas incluye una constante arbitraria C."
+      ],
+      "prerequisites": [
+        "B2C-F02-L01",
+        "B1C-F03-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una primitiva F de f en un intervalo es una función derivable cuya derivada F′ coincide con f en ese intervalo. Para n distinto de −1, una primitiva de xⁿ es x⁽ⁿ⁺¹⁾/(n+1); para 1/x, en intervalos sin cero, es ln|x|. La primitiva de eˣ es eˣ y la de una constante a es ax. Dos primitivas de una misma función sobre un intervalo difieren en una constante C; no se debe omitirla en integrales indefinidas. La fórmula para potencias requiere n≠−1, y no autoriza atravesar discontinuidades del integrando sin precisar intervalos. La comprobación determinista más útil es derivar el resultado, no comparar su apariencia algebraica."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=6x², toma F(x)=2x³+C. Por la regla de potencia F′(x)=6x², por lo que toda constante C es válida."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=1/x con x>0, F(x)=ln(x)+C porque F′=1/x. En x<0 puede usarse ln|x|+C con constante por intervalo."
+        },
+        {
+          "type": "figure",
+          "body": "Primitiva de 2x y derivada. Gráfico SVG original y tabla HTML semántica con expresiones exactas y dominios; ilustración, no demostración.",
+          "alt": "Primitiva de 2x y derivada. Los datos exactos, restricciones y resultados se ofrecen también en tabla accesible, sin depender de color o imagen.",
+          "visual_spec": {
+            "render_family": "wave15",
+            "kind": "primitive",
+            "title": "Primitiva de 2x y derivada",
+            "rows": [
+              [
+                "Integrando",
+                "2x"
+              ],
+              [
+                "Primitiva",
+                "x²+C"
+              ],
+              [
+                "Comprobación",
+                "(x²+C)′=2x"
+              ],
+              [
+                "Constante",
+                "C arbitraria por intervalo"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 0,
+              "k": 0
+            },
+            "domain": [
+              -3,
+              3
+            ],
+            "marks": [
+              [
+                "P",
+                1,
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué escribir solo 2x³ para integrar 6x² deja incompleta la respuesta general?||Porque todas las funciones 2x³+C tienen la misma derivada y C es libre."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una primitiva F de f en un intervalo es una función derivable cuya derivada F′ coincide con f en ese intervalo. Comprueba el dominio, repite un cálculo sin pistas y explica un error típico."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F03-L01-01",
+        "F3-B2C-F03-L01-02",
+        "F3-B2C-F03-L01-03",
+        "F3-B2C-F03-L01-04",
+        "F3-B2C-F03-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022 Matemáticas II; RD 217/2022 ESO 4A: marco curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa no homologación de correspondencia territorial ni unidad editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-F03-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.15.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F03:C02"
+      ],
+      "objectives": [
+        "Aplicar linealidad de la integral indefinida a sumas y constantes.",
+        "Verificar por derivación integrales de polinomios y exponenciales."
+      ],
+      "prerequisites": [
+        "B2C-F03-L01",
+        "B2C-F02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La linealidad establece ∫(af+bg)dx=a∫f dx+b∫g dx para constantes a y b, siempre que existan primitivas en el intervalo considerado. Por eso se integran término a término polinomios: ∫(3x²−4x+7)dx=x³−2x²+7x+C. La constante total no se multiplica ni se escribe una nueva C arbitraria para cada sumando, pues todas se reúnen en una sola. No existe una regla general ∫f·g=(∫f)(∫g), y tampoco se puede dividir mecánicamente cualquier potencia por su exponente si es x⁻¹. Siempre comprueba el resultado derivando y respetando las condiciones de dominio."
+        },
+        {
+          "type": "example",
+          "body": "∫(2x+3)dx=x²+3x+C. Al derivar x²+3x+C se obtiene exactamente 2x+3."
+        },
+        {
+          "type": "example",
+          "body": "∫(6x²−8x+5)dx=2x³−4x²+5x+C; comprobación: 6x²−8x+5."
+        },
+        {
+          "type": "figure",
+          "body": "Linealidad con polinomio. Gráfico SVG original y tabla HTML semántica con expresiones exactas y dominios; ilustración, no demostración.",
+          "alt": "Linealidad con polinomio. Los datos exactos, restricciones y resultados se ofrecen también en tabla accesible, sin depender de color o imagen.",
+          "visual_spec": {
+            "render_family": "wave15",
+            "kind": "primitive",
+            "title": "Linealidad con polinomio",
+            "rows": [
+              [
+                "Integrando",
+                "2x+3"
+              ],
+              [
+                "Primitiva",
+                "x²+3x+C"
+              ],
+              [
+                "Derivada de F",
+                "2x+3"
+              ],
+              [
+                "Validez",
+                "Todos los reales"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": -1.5,
+              "k": -2.25
+            },
+            "domain": [
+              -3,
+              4
+            ],
+            "marks": [
+              [
+                "P",
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es cierto que la integral de un producto equivale al producto de las integrales?||No. La linealidad solo se aplica a sumas y factores constantes, no a productos."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La linealidad establece ∫(af+bg)dx=a∫f dx+b∫g dx para constantes a y b, siempre que existan primitivas en el intervalo considerado. Comprueba el dominio, repite un cálculo sin pistas y explica un error típico."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F03-L02-01",
+        "F3-B2C-F03-L02-02",
+        "F3-B2C-F03-L02-03",
+        "F3-B2C-F03-L02-04",
+        "F3-B2C-F03-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022 Matemáticas II; RD 217/2022 ESO 4A: marco curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa no homologación de correspondencia territorial ni unidad editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-F03-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.15.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F03:C03"
+      ],
+      "objectives": [
+        "Reconocer sustituciones sencillas con derivada de la función interior.",
+        "Verificar el cambio de variable y las restricciones de dominio."
+      ],
+      "prerequisites": [
+        "B2C-F03-L02",
+        "B2C-F02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La sustitución aprovecha la regla de la cadena: si u=g(x), entonces ∫f(g(x))g′(x)dx=F(g(x))+C siempre que F′=f y las expresiones estén bien definidas. Para ∫2x(x²+1)³dx, elige u=x²+1, du=2x dx, integra u³ para obtener u⁴/4+C y vuelve a x: (x²+1)⁴/4+C. Debe aparecer el factor g′; si falta, no puede introducirse sin compensación. En ∫1/(2x+1)dx, una primitiva es (1/2)ln|2x+1|+C en intervalos que no contienen x=−1/2. Derivar la respuesta obliga a recuperar el integrando inicial."
+        },
+        {
+          "type": "example",
+          "body": "∫2x(x²+1)³dx: con u=x²+1, du=2x dx; resulta (x²+1)⁴/4+C y su derivada es 2x(x²+1)³."
+        },
+        {
+          "type": "example",
+          "body": "∫6(3x+2)⁴dx: con u=3x+2 y du=3dx, queda 2∫u⁴du=(2/5)(3x+2)⁵+C."
+        },
+        {
+          "type": "figure",
+          "body": "Sustitución y regla de la cadena. Gráfico SVG original y tabla HTML semántica con expresiones exactas y dominios; ilustración, no demostración.",
+          "alt": "Sustitución y regla de la cadena. Los datos exactos, restricciones y resultados se ofrecen también en tabla accesible, sin depender de color o imagen.",
+          "visual_spec": {
+            "render_family": "wave15",
+            "kind": "primitive",
+            "title": "Sustitución y regla de la cadena",
+            "rows": [
+              [
+                "Integrando",
+                "2x(x²+1)³"
+              ],
+              [
+                "u",
+                "x²+1"
+              ],
+              [
+                "du",
+                "2x dx"
+              ],
+              [
+                "Primitiva",
+                "(x²+1)⁴/4+C"
+              ]
+            ],
+            "model": {
+              "kind": "quartic",
+              "scale": 0.25
+            },
+            "domain": [
+              -2,
+              2
+            ],
+            "marks": [
+              [
+                "O",
+                0,
+                0.25
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es válido sustituir u=x²+1 si aparece 2x dx en el integrando?||Sí; precisamente 2x dx es du y permite aplicar la regla inversa de la cadena."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La sustitución aprovecha la regla de la cadena: si u=g(x), entonces ∫f(g(x))g′(x)dx=F(g(x))+C siempre que F′=f y las expresiones estén bien definidas. Comprueba el dominio, repite un cálculo sin pistas y explica un error típico."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F03-L03-01",
+        "F3-B2C-F03-L03-02",
+        "F3-B2C-F03-L03-03",
+        "F3-B2C-F03-L03-04",
+        "F3-B2C-F03-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022 Matemáticas II; RD 217/2022 ESO 4A: marco curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa no homologación de correspondencia territorial ni unidad editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-F03-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.15.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F03:C04"
+      ],
+      "objectives": [
+        "Aplicar integración por partes a productos elementales.",
+        "Elegir u y dv justificando la reducción y verificar por derivada."
+      ],
+      "prerequisites": [
+        "B2C-F03-L03",
+        "B2C-F02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La regla del producto conduce a ∫u dv=u·v−∫v du en intervalos donde las funciones son derivables y las primitivas existen. Es útil cuando derivar uno de los factores simplifica la expresión, como ∫x eˣ dx. Elige u=x, dv=eˣdx; entonces du=dx, v=eˣ y la integral es x eˣ−eˣ+C=eˣ(x−1)+C. Otro caso es ∫x cos x dx con u=x y dv=cos x dx, dando x sen x+cos x+C. La regla no garantiza simplicidad para una elección arbitraria: conviene evaluar si la nueva integral es más sencilla. En todos los casos se verifica que al derivar u v−∫v du se obtiene el integrando."
+        },
+        {
+          "type": "example",
+          "body": "Para ∫x eˣ dx, toma u=x, dv=eˣdx. Entonces ∫x eˣ=x eˣ−∫eˣdx=eˣ(x−1)+C. Al derivar recuperas x eˣ."
+        },
+        {
+          "type": "example",
+          "body": "Para ∫x cos x dx, u=x y v=sen x. El resultado es x sen x−∫sen x dx=x sen x+cos x+C."
+        },
+        {
+          "type": "figure",
+          "body": "Integración por partes para un producto. Gráfico SVG original y tabla HTML semántica con expresiones exactas y dominios; ilustración, no demostración.",
+          "alt": "Integración por partes para un producto. Los datos exactos, restricciones y resultados se ofrecen también en tabla accesible, sin depender de color o imagen.",
+          "visual_spec": {
+            "render_family": "wave15",
+            "kind": "primitive",
+            "title": "Integración por partes para un producto",
+            "rows": [
+              [
+                "Integrando",
+                "x eˣ"
+              ],
+              [
+                "u / dv",
+                "x / eˣ dx"
+              ],
+              [
+                "du / v",
+                "dx / eˣ"
+              ],
+              [
+                "Primitiva",
+                "eˣ(x−1)+C"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 1,
+              "b": 0
+            },
+            "domain": [
+              -3,
+              3
+            ],
+            "marks": [
+              [
+                "O",
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿En partes es correcto sumar ∫v du en vez de restarla?||No. La fórmula es ∫u dv=u v−∫v du, obtenida de la derivada de un producto."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La regla del producto conduce a ∫u dv=u·v−∫v du en intervalos donde las funciones son derivables y las primitivas existen. Comprueba el dominio, repite un cálculo sin pistas y explica un error típico."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F03-L04-01",
+        "F3-B2C-F03-L04-02",
+        "F3-B2C-F03-L04-03",
+        "F3-B2C-F03-L04-04",
+        "F3-B2C-F03-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022 Matemáticas II; RD 217/2022 ESO 4A: marco curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa no homologación de correspondencia territorial ni unidad editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-F03-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.15.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F03:C05"
+      ],
+      "objectives": [
+        "Calcular integrales definidas mediante Barrow bajo hipótesis de continuidad.",
+        "Interpretar integral definida como acumulación con signo, no necesariamente como área geométrica."
+      ],
+      "prerequisites": [
+        "B2C-F03-L01",
+        "B1C-F02-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si f es continua en [a,b] y F es una primitiva, el teorema fundamental del cálculo y la regla de Barrow permiten ∫_a^b f(x)dx=F(b)−F(a). La integral definida es un número con signo: invertir los límites cambia el signo, y ∫_a^a f=0. Para f(x)=x entre −1 y 1, la integral vale 0 porque las contribuciones negativa y positiva se compensan, aunque la región total entre gráfica y eje tiene área positiva 1. No se añade constante C al resultado final, pues F(b)−F(a) elimina cualquier constante. Para interpretar el resultado como acumulación física, las unidades son producto de unidades de f por unidades de x. Antes de usar Barrow es preciso comprobar continuidad u otras condiciones que garanticen integrabilidad y una primitiva apropiada."
+        },
+        {
+          "type": "example",
+          "body": "∫₀²2x dx=[x²]₀²=4−0=4. La unidad sería la de f multiplicada por la unidad de x."
+        },
+        {
+          "type": "example",
+          "body": "∫₋₁¹x dx=[x²/2]₋₁¹=1/2−1/2=0; las dos áreas triangulares tienen igual magnitud y signo opuesto."
+        },
+        {
+          "type": "figure",
+          "body": "Área algebraica con signo bajo una recta. Gráfico SVG original y tabla HTML semántica con expresiones exactas y dominios; ilustración, no demostración.",
+          "alt": "Área algebraica con signo bajo una recta. Los datos exactos, restricciones y resultados se ofrecen también en tabla accesible, sin depender de color o imagen.",
+          "visual_spec": {
+            "render_family": "wave15",
+            "kind": "signed_area",
+            "title": "Área algebraica con signo bajo una recta",
+            "rows": [
+              [
+                "f(x)",
+                "x"
+              ],
+              [
+                "Intervalo",
+                "[−1,1]"
+              ],
+              [
+                "Integral definida",
+                "0"
+              ],
+              [
+                "Área geométrica",
+                "1"
+              ],
+              [
+                "Signo",
+                "Contribuciones canceladas"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 1,
+              "b": 0,
+              "fill": [
+                -1,
+                1
+              ]
+            },
+            "domain": [
+              -2,
+              2
+            ],
+            "marks": [
+              [
+                "O",
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una integral definida nula siempre significa que no hay región entre la curva y el eje?||No. Puede haber áreas positivas y negativas que se cancelan."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Si f es continua en [a,b] y F es una primitiva, el teorema fundamental del cálculo y la regla de Barrow permiten ∫_a^b f(x)dx=F(b)−F(a). Comprueba el dominio, repite un cálculo sin pistas y explica un error típico."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F03-L05-01",
+        "F3-B2C-F03-L05-02",
+        "F3-B2C-F03-L05-03",
+        "F3-B2C-F03-L05-04",
+        "F3-B2C-F03-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022 Matemáticas II; RD 217/2022 ESO 4A: marco curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa no homologación de correspondencia territorial ni unidad editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-F03-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.15.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F03:C06"
+      ],
+      "objectives": [
+        "Calcular áreas geométricas con integrales de valores absolutos.",
+        "Identificar cruces y dividir intervalos para distinguir área y acumulación firmada."
+      ],
+      "prerequisites": [
+        "B2C-F03-L05",
+        "B2C-F02-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El área geométrica entre y=f(x) y el eje x en [a,b] se obtiene integrando |f(x)|, no f(x) sin comprobar su signo. Si f cambia de signo, se parte el intervalo en sus ceros y se suman valores absolutos de las integrales definidas. Para f(x)=x en [−1,1], ∫₋₁⁰|x|dx+∫₀¹|x|dx=1/2+1/2=1, mientras que ∫₋₁¹x dx=0. Entre dos curvas continuas y=f(x) e y=g(x), el área se obtiene integrando |f−g|, separando tramos donde intercambian posición. Un gráfico no basta para fijar las intersecciones exactas; hay que resolver f=g con álgebra. Las unidades resultantes son cuadradas cuando ambos ejes expresan longitudes."
+        },
+        {
+          "type": "example",
+          "body": "El área entre f(x)=x y el eje horizontal en [−2,1] es ∫₋₂⁰(−x)dx+∫₀¹x dx=2+1/2=5/2."
+        },
+        {
+          "type": "example",
+          "body": "El área bajo f(x)=x² en [0,2] es ∫₀²x²dx=[x³/3]₀²=8/3 unidades cuadradas; no hay cambio de signo."
+        },
+        {
+          "type": "figure",
+          "body": "Área total frente a integral con signo. Gráfico SVG original y tabla HTML semántica con expresiones exactas y dominios; ilustración, no demostración.",
+          "alt": "Área total frente a integral con signo. Los datos exactos, restricciones y resultados se ofrecen también en tabla accesible, sin depender de color o imagen.",
+          "visual_spec": {
+            "render_family": "wave15",
+            "kind": "absolute_area",
+            "title": "Área total frente a integral con signo",
+            "rows": [
+              [
+                "f(x)",
+                "x"
+              ],
+              [
+                "Intervalo",
+                "[−1,1]"
+              ],
+              [
+                "Integral con signo",
+                "0"
+              ],
+              [
+                "Área total",
+                "1"
+              ],
+              [
+                "Regla",
+                "Integrar |f(x)|"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 1,
+              "b": 0,
+              "fill": [
+                -1,
+                1
+              ]
+            },
+            "domain": [
+              -2,
+              2
+            ],
+            "marks": [
+              [
+                "O",
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué el área de f(x)=x en [−1,1] no vale cero?||Porque el área suma magnitudes positivas; el cero corresponde solo a la integral con signo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El área geométrica entre y=f(x) y el eje x en [a,b] se obtiene integrando |f(x)|, no f(x) sin comprobar su signo. Comprueba el dominio, repite un cálculo sin pistas y explica un error típico."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F03-L06-01",
+        "F3-B2C-F03-L06-02",
+        "F3-B2C-F03-L06-03",
+        "F3-B2C-F03-L06-04",
+        "F3-B2C-F03-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022 Matemáticas II; RD 217/2022 ESO 4A: marco curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa no homologación de correspondencia territorial ni unidad editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

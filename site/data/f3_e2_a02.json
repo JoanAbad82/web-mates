@@ -1,0 +1,507 @@
+{
+  "unit_id": "E2-A02",
+  "unit_title": "Ecuaciones y sistemas lineales",
+  "product_phase": "F3",
+  "version": "0.1.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "warnings": [
+    "Secuencia editorial del tramo estatal 1.º–3.º ESO; mapeo autonómico fino pendiente.",
+    "Actividades y ejemplos F3 comprobables técnicamente pero pendientes de revisión humana.",
+    "Fracciones algebraicas E3-A01-L06 etiquetadas como ampliación, no obligación oficial."
+  ],
+  "unit_objectives": [
+    "Resolver ecuaciones lineales y comprobar sus soluciones.",
+    "Distinguir soluciones únicas, imposibles e identidades.",
+    "Modelizar problemas y sistemas 2×2 con representación verbal y gráfica."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Expresiones e identidades de 2.º ESO",
+      "lesson_id": "E2-A01-L05",
+      "href": "#/curso/E2/unidad/E2-A01/leccion/E2-A01-L05"
+    },
+    {
+      "label": "Ecuaciones iniciales de 1.º ESO",
+      "lesson_id": "E1-A01-L06",
+      "href": "#/curso/E1/unidad/E1-A01/leccion/E1-A01-L06"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "rule": "Recuperación sin mostrar inicialmente la respuesta; práctica guiada con pistas; revisión de errores y repaso espaciado solo con consentimiento local.",
+    "cadence_proposal": "D+1, D+3, D+7, D+14, D+30 como heurística editorial, no garantía científica."
+  },
+  "source_note": "Contenido original F3, distribución editorial. Competencias y criterios autonómicos pendientes de cotejo.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E2-A02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Resolver ax+b=c aplicando operaciones equivalentes.",
+        "Verificar sustituyendo la solución en la igualdad original."
+      ],
+      "concept_ids": [
+        "E2-A02:C_01"
+      ],
+      "prerequisites": [
+        "E1-A01-L06",
+        "E2-A01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una ecuación lineal permite encontrar un valor que hace iguales sus miembros. Sumar o restar la misma cantidad en los dos lados conserva la igualdad; dividir requiere un número diferente de cero. Termina comprobando en el enunciado original."
+        },
+        {
+          "type": "example",
+          "body": "3x+5=20 → resta 5: 3x=15 → divide 3: x=5. Comprobación: 3·5+5=20."
+        },
+        {
+          "type": "example",
+          "body": "2x−7=9 → suma 7: 2x=16 → x=8. Sustituye: 16−7=9."
+        },
+        {
+          "type": "figure",
+          "body": "Piensa en una balanza equilibrada: si quitas cinco fichas de ambos platillos, continúa equilibrada. Quitar solo en uno altera la solución.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué no se puede restar cinco solo a un miembro al resolver 3x+5=20?||Porque dejarían de ser iguales las cantidades de ambos lados; la operación debe aplicarse a los dos."
+        },
+        {
+          "type": "summary",
+          "body": "Deshacer suma/resta → deshacer producto/división → sustituir para comprobar. Recuerda comprobar la operación inversa."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-A02-L01-01",
+        "F3-E2-A02-L01-02",
+        "F3-E2-A02-L01-03",
+        "F3-E2-A02-L01-04",
+        "F3-E2-A02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-A02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Desarrollar paréntesis al resolver ecuaciones.",
+        "Eliminar denominadores simples sin alterar las soluciones."
+      ],
+      "concept_ids": [
+        "E2-A02:C_02"
+      ],
+      "prerequisites": [
+        "E2-A02-L01",
+        "E2-A01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una ecuación con paréntesis exige distribuir el coeficiente a todos sus términos. Si aparecen fracciones, multiplica ambos miembros por un denominador común no nulo antes de despejar. Comprueba en la expresión original, no solo en la simplificada."
+        },
+        {
+          "type": "example",
+          "body": "3(x−2)=15 → 3x−6=15 → 3x=21 → x=7."
+        },
+        {
+          "type": "example",
+          "body": "(x+3)/2=5 → x+3=10 → x=7. Sustituye: (7+3)/2=5."
+        },
+        {
+          "type": "figure",
+          "body": "Equilibrio verbal: duplicar ambos platillos elimina una mitad. Multiplicar por el mismo 2 no cambia el valor que equilibra la igualdad.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "Al multiplicar por 2 una ecuación, ¿deben multiplicarse ambos miembros?||Sí. Si se multiplica solo un lado, ya no se conserva la equivalencia."
+        },
+        {
+          "type": "summary",
+          "body": "Distribuye todos los términos, elimina denominadores por ambos lados y comprueba la solución original. Vigila el signo menos delante del paréntesis."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-A02-L02-01",
+        "F3-E2-A02-L02-02",
+        "F3-E2-A02-L02-03",
+        "F3-E2-A02-L02-04",
+        "F3-E2-A02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-A02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Distinguir ecuaciones con una, ninguna o infinitas soluciones.",
+        "Interpretar las igualdades obtenidas al reducir ambos miembros."
+      ],
+      "concept_ids": [
+        "E2-A02:C_03"
+      ],
+      "prerequisites": [
+        "E2-A02-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Al simplificar una ecuación puede desaparecer la incógnita. Si queda una igualdad numérica falsa (por ejemplo, 3=8), la ecuación no tiene solución. Si queda una identidad verdadera (por ejemplo, 0=0), todos los valores permitidos sirven. No fuerces un resultado x=0 cuando x desaparece."
+        },
+        {
+          "type": "example",
+          "body": "2(x+1)=2x+2 → 2x+2=2x+2 → 0=0. Infinitas soluciones reales."
+        },
+        {
+          "type": "example",
+          "body": "3(x−1)=3x+1 → 3x−3=3x+1 → −3=1. Ninguna solución."
+        },
+        {
+          "type": "figure",
+          "body": "Dos rectas coincidentes representan la misma relación; dos rectas paralelas distintas nunca se cortan. Esa idea prepara los sistemas.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "Si acabas con 5=5, ¿debes concluir x=5?||No. La igualdad es cierta para todo x permitido: hay infinitas soluciones."
+        },
+        {
+          "type": "summary",
+          "body": "Si al reducir desaparece x, decide si el enunciado final es verdadero para todos o imposible. No confundas igualdad verdadera con solución única."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-A02-L03-01",
+        "F3-E2-A02-L03-02",
+        "F3-E2-A02-L03-03",
+        "F3-E2-A02-L03-04",
+        "F3-E2-A02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-A02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Definir la variable con sus unidades y plantear una ecuación.",
+        "Interpretar y comprobar la solución en el contexto."
+      ],
+      "concept_ids": [
+        "E2-A02:C_04"
+      ],
+      "prerequisites": [
+        "E2-A02-L01",
+        "E2-A01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Antes de operar, define qué representa x y sus unidades. Traducir «el doble de un número más tres es once» a 2x+3=11 requiere entender el orden de las acciones. Comprobar en el problema evita aceptar resultados incompatibles con la situación."
+        },
+        {
+          "type": "example",
+          "body": "Tres entradas iguales y una tasa de 2 € cuestan 20 €. 3x+2=20 → x=6 €. Comprueba 3·6+2=20."
+        },
+        {
+          "type": "example",
+          "body": "Un recorrido de 18 km se hace en dos tramos: el segundo es el doble del primero. x+2x=18 → x=6 km, segundo 12 km."
+        },
+        {
+          "type": "figure",
+          "body": "Diagrama verbal de barras: un tramo x y otro 2x forman 18 km. Se dividen los 18 km en tres partes iguales.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué debe comprobarse después de obtener x en un problema real?||Que cumple la ecuación original y tiene sentido por unidades, signo y restricciones del contexto."
+        },
+        {
+          "type": "summary",
+          "body": "Variable y unidad → ecuación → resolución → comprobación numérica → interpretación con palabras."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-A02-L04-01",
+        "F3-E2-A02-L04-02",
+        "F3-E2-A02-L04-03",
+        "F3-E2-A02-L04-04",
+        "F3-E2-A02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-A02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Resolver dos ecuaciones lineales con dos incógnitas.",
+        "Comprobar ambos miembros de las dos ecuaciones."
+      ],
+      "concept_ids": [
+        "E2-A02:C_05"
+      ],
+      "prerequisites": [
+        "E2-A02-L01",
+        "E2-A01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un sistema exige que el mismo par (x,y) cumpla simultáneamente todas las ecuaciones. En reducción, combina ecuaciones para eliminar una variable. En sustitución, despeja una y reemplázala en la otra. Sustituye el par final en ambas ecuaciones."
+        },
+        {
+          "type": "example",
+          "body": "x+y=9 y x−y=3. Suma: 2x=12 → x=6; y=3. Ambas ecuaciones se cumplen."
+        },
+        {
+          "type": "example",
+          "body": "2x+y=10 y x−y=2. Suma: 3x=12 → x=4; y=2. Comprueba 8+2=10 y 4−2=2."
+        },
+        {
+          "type": "figure",
+          "body": "Visualiza la intersección de dos caminos rectos en un plano: un punto (x,y) que satisface ambos es la solución del sistema.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué una pareja que cumple solo una ecuación no resuelve el sistema?||Porque debe satisfacer las dos simultáneamente; si falla una, no pertenece a su conjunto común."
+        },
+        {
+          "type": "summary",
+          "body": "Reduce o sustituye, calcula las dos incógnitas y comprueba cada ecuación. El orden de x e y importa."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-A02-L05-01",
+        "F3-E2-A02-L05-02",
+        "F3-E2-A02-L05-03",
+        "F3-E2-A02-L05-04",
+        "F3-E2-A02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-A02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Interpretar el punto de corte de dos rectas como solución del sistema.",
+        "Relacionar sistemas compatibles determinados, incompatibles y coincidentes con sus gráficas."
+      ],
+      "concept_ids": [
+        "E2-A02:C_06"
+      ],
+      "prerequisites": [
+        "E2-A02-L05",
+        "E1-F01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Cada ecuación lineal en x e y representa una recta cuando tiene variables de primer grado. Dos rectas que se cruzan tienen una solución; paralelas distintas, ninguna; coincidentes, infinitas. Puedes razonar con tablas de pares ordenados sin depender de un gráfico visual."
+        },
+        {
+          "type": "example",
+          "body": "Recta y=x+1 y recta y=5−x. Igualando: x+1=5−x → x=2, y=3. El punto de intersección es (2,3)."
+        },
+        {
+          "type": "example",
+          "body": "Rectas y=2x+1 e y=2x−3. Tienen la misma pendiente 2 y ordenadas distintas: son paralelas, sin punto común."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla accesible: para x=1, la primera da y=2 y la segunda y=4; para x=2, ambas dan y=3. Ese par indica el corte.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "Si dos rectas tienen idéntica pendiente pero diferente ordenada, ¿cuántas intersecciones tienen?||Ninguna: son paralelas y distintas."
+        },
+        {
+          "type": "summary",
+          "body": "Pendientes iguales + distinta ordenada → ninguna. Misma recta → infinitas. Pendientes distintas → un cruce."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-A02-L06-01",
+        "F3-E2-A02-L06-02",
+        "F3-E2-A02-L06-03",
+        "F3-E2-A02-L06-04",
+        "F3-E2-A02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

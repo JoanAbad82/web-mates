@@ -1,0 +1,665 @@
+{
+  "unit_id": "E2-Q01",
+  "unit_title": "Probabilidad elemental",
+  "product_phase": "F3_OLA21",
+  "version": "0.21.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Describir espacio muestral finito y sucesos como conjuntos.",
+    "Calcular frecuencias absolutas y relativas de resultados observados.",
+    "Aplicar regla de Laplace únicamente cuando hay equiprobabilidad."
+  ],
+  "warnings": [
+    "Datos exclusivamente sintéticos, EN REVISIÓN, no representan alumnado ni resultados reales.",
+    "Las probabilidades se condicionan a la equiprobabilidad, independencia o información previa cuando corresponda.",
+    "Frecuencia empírica no prueba probabilidad teórica; correlación no demuestra causalidad.",
+    "Las asignaciones a cursos y relaciones nuevas son editoriales, no obligaciones normativas.",
+    "WCAG 2.2 AA integral, currículo autonómico, revisión humana y móvil físico NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Experimentos aleatorios y frecuencia relativa",
+      "lesson_id": "E1-D01-L06",
+      "href": "#/curso/E1/unidad/E1-D01/leccion/E1-D01-L06"
+    },
+    {
+      "label": "Fracciones",
+      "lesson_id": "E1-N04-L04",
+      "href": "#/curso/E1/unidad/E1-N04/leccion/E1-N04-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recuperar sin pistas y repasar con explicaciones, registro local solo si se consiente."
+  },
+  "source_note": "Referencia estatal RD 217/2022 y RD 243/2022; distribución editorial no homologada por autonomía.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E2-Q01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-Q01:C01"
+      ],
+      "objectives": [
+        "Describir espacio muestral finito y sucesos como conjuntos.",
+        "Distinguir suceso seguro, imposible, simple y complementario."
+      ],
+      "prerequisites": [
+        "E1-D01-L06",
+        "E1-N04-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un experimento aleatorio tiene un resultado desconocido antes de realizarse, aunque el conjunto de resultados posibles pueda especificarse. El espacio muestral Ω agrupa resultados elementales mutuamente excluyentes y exhaustivos. En un dado ideal de seis caras, Ω={1,2,3,4,5,6}; el suceso par A={2,4,6} tiene tres resultados. Un suceso puede reunir varios resultados, y su complementario Aᶜ contiene los de Ω que no están en A, por ejemplo {1,3,5}. El suceso seguro coincide con Ω y el imposible es el conjunto vacío. Enumerar posibles resultados no establece que sean equiprobables: esa hipótesis depende del modelo del experimento. Una observación de diez tiradas no es el espacio muestral completo. Se usan experimentos simulados, nunca apuestas reales ni información personal."
+        },
+        {
+          "type": "example",
+          "body": "Para un dado de seis caras, el suceso A={2,4,6} tiene 3 resultados favorables y el complemento {1,3,5} otros 3."
+        },
+        {
+          "type": "example",
+          "body": "En un lanzamiento de moneda ideal con caras C y X, Ω={C,X}; el suceso imposible no contiene ningún elemento, mientras el seguro contiene ambos."
+        },
+        {
+          "type": "figure",
+          "body": "Espacio muestral de moneda ideal. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Espacio muestral de moneda ideal. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "prob_tree",
+            "title": "Espacio muestral de moneda ideal",
+            "rows": [
+              [
+                "Ω",
+                "{Cara, Cruz}"
+              ],
+              [
+                "Suceso cara",
+                "{Cara}"
+              ],
+              [
+                "Complemento cara",
+                "{Cruz}"
+              ],
+              [
+                "Imposible",
+                "∅"
+              ],
+              [
+                "Seguro",
+                "Ω"
+              ]
+            ],
+            "model": {
+              "kind": "prob_tree",
+              "first": [
+                "Cara",
+                "Cruz"
+              ],
+              "weights": [
+                "1/2",
+                "1/2"
+              ]
+            },
+            "domain": [
+              0,
+              2
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Enumerar seis caras posibles garantiza que las probabilidades de las caras sean todas iguales?||No; la equiprobabilidad necesita una hipótesis adicional."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un experimento aleatorio tiene un resultado desconocido antes de realizarse, aunque el conjunto de resultados posibles pueda especificarse. Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-Q01-L01-01",
+        "F3-E2-Q01-L01-02",
+        "F3-E2-Q01-L01-03",
+        "F3-E2-Q01-L01-04",
+        "F3-E2-Q01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-Q01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-Q01:C02"
+      ],
+      "objectives": [
+        "Calcular frecuencias absolutas y relativas de resultados observados.",
+        "Distinguir probabilidad teórica de frecuencia experimental en ensayos finitos."
+      ],
+      "prerequisites": [
+        "E2-Q01-L01",
+        "E1-D01-L06",
+        "E1-N05-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La frecuencia absoluta cuenta cuántas veces aparece un resultado en una secuencia de n ensayos, y la frecuencia relativa es ese recuento dividido entre n cuando n>0. En una moneda equilibrada ideal la probabilidad teórica de cara es 1/2; si se observan siete caras en diez ensayos, la frecuencia experimental es 7/10 y no contradice el modelo. La frecuencia relativa entre 0 y 1 puede cambiar con el tamaño y selección de los ensayos. La independencia y condiciones estables son hipótesis para interpretar patrones, pero no permiten asegurar que diez tiradas produzcan cinco caras. El porcentaje de siete caras es 70 %, no 7 %, y no debe confundirse la variable frecuencia con la posibilidad teórica del suceso. Una simulación didáctica no acredita equilibrio físico de la moneda ni sirve de evidencia poblacional."
+        },
+        {
+          "type": "example",
+          "body": "En 10 lanzamientos con siete caras, frecuencia absoluta=7, relativa=7/10 y porcentaje=70 %, mientras P(cara)=1/2 solo en el modelo ideal."
+        },
+        {
+          "type": "example",
+          "body": "En 20 ensayos con 9 resultados favorables, la frecuencia observada es 9/20=0,45; no demuestra que la probabilidad teórica sea 0,45."
+        },
+        {
+          "type": "figure",
+          "body": "Frecuencia experimental de dos resultados. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Frecuencia experimental de dos resultados. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "stats_bars",
+            "title": "Frecuencia experimental de dos resultados",
+            "rows": [
+              [
+                "Ensayos",
+                "10"
+              ],
+              [
+                "Caras",
+                "7"
+              ],
+              [
+                "Cruces",
+                "3"
+              ],
+              [
+                "Frecuencia cara",
+                "7/10"
+              ],
+              [
+                "Probabilidad ideal cara",
+                "1/2"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                7,
+                3
+              ],
+              "labels": [
+                "Cara",
+                "Cruz"
+              ]
+            },
+            "domain": [
+              0,
+              10
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una frecuencia relativa de 7/10 prueba que P(cara)=7/10 para la moneda ideal?||No; es un resultado experimental de una muestra finita."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La frecuencia absoluta cuenta cuántas veces aparece un resultado en una secuencia de n ensayos, y la frecuencia relativa es ese recuento dividido entre n cuando n>0. Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-Q01-L02-01",
+        "F3-E2-Q01-L02-02",
+        "F3-E2-Q01-L02-03",
+        "F3-E2-Q01-L02-04",
+        "F3-E2-Q01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-Q01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-Q01:C03"
+      ],
+      "objectives": [
+        "Aplicar regla de Laplace únicamente cuando hay equiprobabilidad.",
+        "Calcular complementarios y reconocer eventos imposibles o seguros."
+      ],
+      "prerequisites": [
+        "E2-Q01-L01",
+        "E1-N04-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La regla de Laplace P(A)=número de resultados favorables/número de resultados posibles se aplica a un espacio muestral finito con resultados elementales igualmente probables. En un dado ideal de seis caras, P(par)=3/6=1/2; P(múltiplo de 3)=2/6=1/3 y P(7)=0. El complemento verifica P(Aᶜ)=1−P(A) cuando el suceso está bien definido. El dado puede estar cargado: en ese caso contar tres caras pares no garantiza probabilidad 1/2; deben conocerse probabilidades de los resultados. Tampoco se puede aplicar Laplace directamente a sucesos compuestos enumerados de forma desigual, como sumas de dos dados (la suma 7 tiene más parejas que la 2). Es importante representar resultados equiprobables como parejas ordenadas cuando el experimento tiene etapas, sin olvidar los supuestos."
+        },
+        {
+          "type": "example",
+          "body": "Dado ideal: A=obtener par={2,4,6}, P(A)=3/6=1/2, y P(no par)=1−1/2=1/2."
+        },
+        {
+          "type": "example",
+          "body": "Dado ideal: B=ser mayor que 4={5,6}, P(B)=2/6=1/3; obtener un 7 es imposible y tiene probabilidad 0."
+        },
+        {
+          "type": "figure",
+          "body": "Resultados equiprobables de un dado ideal. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Resultados equiprobables de un dado ideal. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "prob_tree",
+            "title": "Resultados equiprobables de un dado ideal",
+            "rows": [
+              [
+                "Espacio muestral",
+                "1,2,3,4,5,6"
+              ],
+              [
+                "Suceso par",
+                "2,4,6"
+              ],
+              [
+                "P(par)",
+                "3/6=1/2"
+              ],
+              [
+                "P(>4)",
+                "2/6=1/3"
+              ],
+              [
+                "Hipótesis",
+                "Caras equiprobables"
+              ]
+            ],
+            "model": {
+              "kind": "prob_tree",
+              "first": [
+                "Par",
+                "Impar"
+              ],
+              "weights": [
+                "1/2",
+                "1/2"
+              ]
+            },
+            "domain": [
+              0,
+              2
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se aplica Laplace por simple recuento de caras a un dado cargado con probabilidades desiguales?||No; requiere equiprobabilidad."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La regla de Laplace P(A)=número de resultados favorables/número de resultados posibles se aplica a un espacio muestral finito con resultados elementales igualmente probables. Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-Q01-L03-01",
+        "F3-E2-Q01-L03-02",
+        "F3-E2-Q01-L03-03",
+        "F3-E2-Q01-L03-04",
+        "F3-E2-Q01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-Q01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-Q01:C04"
+      ],
+      "objectives": [
+        "Aplicar regla del producto para contar resultados en dos etapas.",
+        "Dibujar árbol completo de parejas ordenadas y evitar duplicados u omisiones."
+      ],
+      "prerequisites": [
+        "E2-Q01-L01",
+        "E2-Q01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si una primera etapa ofrece m alternativas y cada una conduce a n alternativas en la segunda etapa, hay m·n secuencias ordenadas; para conjuntos de tamaños diferentes se suman los números de ramas de cada primer resultado. Al lanzar una moneda y luego un dado ideal de seis caras, las posibilidades son 2·6=12 parejas ordenadas: (Cara,1),...,(Cara,6),(Cruz,1),...,(Cruz,6). Un árbol primero bifurca Cara/Cruz y después tiene seis ramas por resultado. No es correcto sumar 2+6=8 ni contar las sumas numéricas como equiprobables cuando se combinan dados. El recuento de resultados no es todavía la probabilidad de un evento si las ramas no tienen pesos equiprobables. Los diagramas son un apoyo; la tabla exacta conserva orden, número total y supuestos."
+        },
+        {
+          "type": "example",
+          "body": "Moneda seguida de dado: 2 posibilidades en la primera etapa y 6 en cada rama de la segunda, por lo tanto 2·6=12 resultados ordenados."
+        },
+        {
+          "type": "example",
+          "body": "Dos monedas con caras C/X tienen resultados CC, CX, XC, XX: son 4 secuencias, y CX no es lo mismo que XC al contar orden."
+        },
+        {
+          "type": "figure",
+          "body": "Dos etapas: moneda y dado. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Dos etapas: moneda y dado. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "prob_tree",
+            "title": "Dos etapas: moneda y dado",
+            "rows": [
+              [
+                "Primera etapa",
+                "Cara o Cruz"
+              ],
+              [
+                "Segunda etapa",
+                "1,2,3,4,5,6"
+              ],
+              [
+                "Ramas totales",
+                "2·6"
+              ],
+              [
+                "Parejas ordenadas",
+                "12"
+              ],
+              [
+                "Estrategia",
+                "Producto de alternativas por etapa"
+              ]
+            ],
+            "model": {
+              "kind": "prob_tree",
+              "first": [
+                "Cara",
+                "Cruz"
+              ],
+              "weights": [
+                "1/2",
+                "1/2"
+              ],
+              "second": [
+                "Dado 1–6",
+                "Dado 1–6"
+              ],
+              "second_weights": [
+                "6 casos",
+                "6 casos"
+              ]
+            },
+            "domain": [
+              0,
+              2
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La suma 2+6 da el número correcto de parejas de una moneda y un dado?||No; las etapas sucesivas se cuentan multiplicando 2·6."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Si una primera etapa ofrece m alternativas y cada una conduce a n alternativas en la segunda etapa, hay m·n secuencias ordenadas; para conjuntos de tamaños diferentes se suman los números de ramas de cada primer resultado. Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-Q01-L04-01",
+        "F3-E2-Q01-L04-02",
+        "F3-E2-Q01-L04-03",
+        "F3-E2-Q01-L04-04",
+        "F3-E2-Q01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-Q01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-Q01:C05"
+      ],
+      "objectives": [
+        "Calcular probabilidades de sucesos compuestos sencillos con independencia declarada.",
+        "Diferenciar probabilidad de una secuencia de probabilidad de una unión de caminos."
+      ],
+      "prerequisites": [
+        "E2-Q01-L04",
+        "E2-Q01-L03",
+        "E1-N04-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En experimentos de dos etapas independientes, P(A y B)=P(A)·P(B). Para dos lanzamientos independientes de moneda equilibrada, P(Cara, Cara)=(1/2)(1/2)=1/4. El suceso obtener exactamente una cara reúne dos caminos disjuntos, CX y XC, por lo que su probabilidad es 1/4+1/4=1/2. Es un error sumar probabilidades al calcular una intersección de etapas independientes, o multiplicar para combinar alternativas que se excluyen. Si los experimentos no son independientes, la segunda rama debe llevar probabilidad condicionada P(B|A), que puede diferir de P(B). En la extracción de dos fichas sin reemplazo la segunda etapa cambia su composición: aplicar independencia sin revisarla produce resultados erróneos. El árbol representa probabilidades locales cuya suma en cada nodo es 1."
+        },
+        {
+          "type": "example",
+          "body": "Dos monedas equilibradas e independientes: CC,CX,XC,XX son equiprobables; P(CC)=1/4 y P(exactamente una cara)=P(CX)+P(XC)=1/2."
+        },
+        {
+          "type": "example",
+          "body": "Si dos etapas independientes tienen P(A)=1/2 y P(B)=1/3, la probabilidad de que ocurran ambas es 1/6, bajo independencia explícita."
+        },
+        {
+          "type": "figure",
+          "body": "Árbol de dos monedas independientes. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Árbol de dos monedas independientes. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "prob_tree",
+            "title": "Árbol de dos monedas independientes",
+            "rows": [
+              [
+                "Resultados",
+                "CC, CX, XC, XX"
+              ],
+              [
+                "P de cada ruta",
+                "1/4"
+              ],
+              [
+                "P(CC)",
+                "1/4"
+              ],
+              [
+                "P(una cara)",
+                "1/2"
+              ],
+              [
+                "Hipótesis",
+                "Dos ensayos independientes"
+              ]
+            ],
+            "model": {
+              "kind": "prob_tree",
+              "first": [
+                "C",
+                "X"
+              ],
+              "weights": [
+                "1/2",
+                "1/2"
+              ],
+              "second": [
+                "C",
+                "X"
+              ],
+              "second_weights": [
+                "1/2",
+                "1/2"
+              ]
+            },
+            "domain": [
+              0,
+              2
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se multiplica P(A)·P(B) sin cambios cuando la segunda extracción depende de la primera?||No; debe usarse la probabilidad condicionada apropiada."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: En experimentos de dos etapas independientes, P(A y B)=P(A)·P(B). Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-Q01-L05-01",
+        "F3-E2-Q01-L05-02",
+        "F3-E2-Q01-L05-03",
+        "F3-E2-Q01-L05-04",
+        "F3-E2-Q01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

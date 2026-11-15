@@ -1,0 +1,785 @@
+{
+  "unit_id": "B1C-F03",
+  "unit_title": "Derivada y tasa de cambio",
+  "product_phase": "F3_OLA14",
+  "version": "0.14.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Calcular la tasa de variación media en intervalos no degenerados.",
+    "Definir derivada como límite bilateral de cocientes incrementales.",
+    "Interpretar la derivada como pendiente local y tasa instantánea con unidades."
+  ],
+  "warnings": [
+    "Contenido original determinista EN REVISIÓN, no homologado ni publicable.",
+    "Teoremas requieren continuidad, derivabilidad y condiciones de intervalo; aplicar solo bajo sus hipótesis.",
+    "Gráficas SVG ilustrativas; tablas HTML exactas son alternativa semántica.",
+    "Revisión humana, correspondencia autonómica, WCAG integral y móviles físicos no verificados."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Límites y continuidad de Matemáticas I",
+      "lesson_id": "B1C-F02-L06",
+      "href": "#/curso/B1C/unidad/B1C-F02/leccion/B1C-F02-L06"
+    },
+    {
+      "label": "Funciones y tasa media",
+      "lesson_id": "B1C-F01-L02",
+      "href": "#/curso/B1C/unidad/B1C-F01/leccion/B1C-F01-L02"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Primero comprensión y ejercicios guiados, después recuperación activa, revisión de errores e intercalado voluntario."
+  },
+  "source_note": "RD 243/2022, Matemáticas I/II; distribución editorial y normativa autonómica por cotejar.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1C-F03-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F03:C01"
+      ],
+      "objectives": [
+        "Calcular la tasa de variación media en intervalos no degenerados.",
+        "Relacionar la tasa media con pendiente secante y unidades de medida."
+      ],
+      "prerequisites": [
+        "B1C-F02-L01",
+        "E4B-F01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La tasa de variación media de f en [a,b], a≠b, es TVM=(f(b)−f(a))/(b−a). La recta secante entre (a,f(a)) y (b,f(b)) posee precisamente esa pendiente. Para un movimiento, si f(t) expresa posición en metros y t tiempo en segundos, la TVM se expresa en m/s; no significa velocidad instantánea. El signo indica aumento o disminución netos entre extremos, pero no garantiza monotonía interna. Una tasa media nula solo prueba igualdad entre los valores finales; el recorrido interior puede variar. Si a=b el cociente se indetermina como definición de tasa media en un intervalo nulo. Trabajar con fracciones exactas evita errores por redondeos."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=x² en [1,3], f(3)−f(1)=9−1=8 y 3−1=2; TVM=4. La pendiente de la secante es 4, aunque f no tiene pendiente constante."
+        },
+        {
+          "type": "example",
+          "body": "Para s(t)=−2t²+8t en [0,2], s(0)=0 y s(2)=8; la velocidad media es 8/2=4 m/s si s está en metros y t en segundos."
+        },
+        {
+          "type": "figure",
+          "body": "Secante de la parábola entre x=1 y x=3. Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Secante de la parábola entre x=1 y x=3. Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "secant",
+            "title": "Secante de la parábola entre x=1 y x=3",
+            "rows": [
+              [
+                "Función",
+                "f(x)=x²"
+              ],
+              [
+                "Intervalo",
+                "[1,3]"
+              ],
+              [
+                "f(1)",
+                "1"
+              ],
+              [
+                "f(3)",
+                "9"
+              ],
+              [
+                "Pendiente secante",
+                "4"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 0,
+              "k": 0,
+              "secant": [
+                1,
+                3
+              ]
+            },
+            "domain": [
+              -1,
+              4
+            ],
+            "marks": [
+              [
+                "A",
+                1,
+                1
+              ],
+              [
+                "B",
+                3,
+                9
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una TVM igual a cero prueba que la función sea constante dentro del intervalo?||No; solo que f(a)=f(b). Puede subir y bajar entre ambos extremos."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: La tasa de variación media de f en [a,b], a≠b, es TVM=(f(b)−f(a))/(b−a). Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F03-L01-01",
+        "F3-B1C-F03-L01-02",
+        "F3-B1C-F03-L01-03",
+        "F3-B1C-F03-L01-04",
+        "F3-B1C-F03-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-F03-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F03:C02"
+      ],
+      "objectives": [
+        "Definir derivada como límite bilateral de cocientes incrementales.",
+        "Distinguir existencia de derivada de la simple continuidad y de los límites laterales."
+      ],
+      "prerequisites": [
+        "B1C-F02-L02",
+        "B1C-F02-L06",
+        "B1C-F03-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La derivada f′(a) se define por el límite bilateral de [f(a+h)−f(a)]/h cuando h→0, si existe y es finito. Es la pendiente de la tangente, obtenida como límite de pendientes de secantes. Para f(x)=x², el cociente incremental en a es ((a+h)²−a²)/h=2a+h para h≠0; al tender h a cero resulta f′(a)=2a. Una función derivable en a debe ser continua en a, pero el recíproco es falso: |x| es continua en cero y tiene pendientes laterales −1 y +1, por lo que no es derivable allí. Calcular el cociente solo con h positivo no demuestra derivabilidad bilateral; también hay que comparar el límite desde h negativo."
+        },
+        {
+          "type": "example",
+          "body": "En f(x)=x², a=3: [(3+h)²−9]/h=6+h para h≠0. El límite es 6, así que la tangente tiene pendiente 6."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=|x| en a=0, el cociente es |h|/h: vale −1 con h<0 y +1 con h>0; al discrepar, f′(0) no existe."
+        },
+        {
+          "type": "figure",
+          "body": "La tangente como límite de secantes. Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "La tangente como límite de secantes. Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "tangent",
+            "title": "La tangente como límite de secantes",
+            "rows": [
+              [
+                "Función",
+                "f(x)=x²"
+              ],
+              [
+                "a",
+                "2"
+              ],
+              [
+                "f(a)",
+                "4"
+              ],
+              [
+                "Derivada en a",
+                "4"
+              ],
+              [
+                "Tangente",
+                "y=4x−4"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 0,
+              "k": 0,
+              "tangent_x": 2,
+              "secant": [
+                2,
+                3
+              ]
+            },
+            "domain": [
+              -1,
+              4
+            ],
+            "marks": [
+              [
+                "P",
+                2,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si existe el límite de cocientes solo para h>0, ¿queda probada una derivada bilateral?||No; es necesario que los límites por ambos lados coincidan y sean finitos."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: La derivada f′(a) se define por el límite bilateral de [f(a+h)−f(a)]/h cuando h→0, si existe y es finito. Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F03-L02-01",
+        "F3-B1C-F03-L02-02",
+        "F3-B1C-F03-L02-03",
+        "F3-B1C-F03-L02-04",
+        "F3-B1C-F03-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-F03-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F03:C03"
+      ],
+      "objectives": [
+        "Interpretar la derivada como pendiente local y tasa instantánea con unidades.",
+        "Usar el signo de la derivada para describir variación en intervalos."
+      ],
+      "prerequisites": [
+        "B1C-F03-L02",
+        "E3-F01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Geométricamente f′(a) es la pendiente de la tangente si la derivada existe. Físicamente, si s(t) mide posición, s′(t) representa velocidad instantánea y sus unidades son distancia por tiempo; una segunda derivada sería aceleración, con unidades de distancia por tiempo al cuadrado. Una derivada positiva significa crecimiento local cuando la regularidad lo permite; una negativa describe descenso, mientras que cero señala pendiente horizontal, pero no asegura un extremo. Por ejemplo f(x)=x³ tiene f′(0)=0 sin mínimo ni máximo en cero. Es importante diferenciar velocidad y rapidez: la rapidez es el valor absoluto de la velocidad, no puede ser negativa."
+        },
+        {
+          "type": "example",
+          "body": "Para s(t)=t²+2t metros, s′(t)=2t+2 m/s; en t=3 s, la velocidad instantánea es 8 m/s, no la posición de 15 m."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=x³, f′(x)=3x²≥0 y f′(0)=0; aun así f crece atravesando cero, de modo que el punto no es un máximo ni mínimo."
+        },
+        {
+          "type": "figure",
+          "body": "Pendiente instantánea de una posición cuadrática. Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Pendiente instantánea de una posición cuadrática. Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "tangent",
+            "title": "Pendiente instantánea de una posición cuadrática",
+            "rows": [
+              [
+                "Posición",
+                "s(t)=t²+2t"
+              ],
+              [
+                "Tiempo",
+                "t=3 s"
+              ],
+              [
+                "Velocidad",
+                "s′(3)=8 m/s"
+              ],
+              [
+                "Segunda derivada",
+                "2 m/s²"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": -1,
+              "k": -1,
+              "tangent_x": 3
+            },
+            "domain": [
+              -1,
+              5
+            ],
+            "marks": [
+              [
+                "P",
+                3,
+                15
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Derivada cero en un punto implica siempre que haya máximo o mínimo?||No. Por ejemplo x³ tiene derivada cero en cero y mantiene el crecimiento a ambos lados."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Geométricamente f′(a) es la pendiente de la tangente si la derivada existe. Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F03-L03-01",
+        "F3-B1C-F03-L03-02",
+        "F3-B1C-F03-L03-03",
+        "F3-B1C-F03-L03-04",
+        "F3-B1C-F03-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-F03-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F03:C04"
+      ],
+      "objectives": [
+        "Aplicar derivadas elementales a polinomios y funciones sencillas.",
+        "Distinguir regla de la suma, constante, potencia y producto."
+      ],
+      "prerequisites": [
+        "B1C-F03-L02",
+        "B1C-A01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La derivada de una constante es cero; (xⁿ)′=n xⁿ⁻¹ para exponentes naturales, y (af+bg)′=af′+bg′. De estas reglas se deduce que (3x²−5x+7)′=6x−5. Cuando se diferencian productos de funciones variables, no es válido multiplicar sus derivadas: (fg)′=f′g+fg′. Una derivada puede calcularse simbólicamente para x en un intervalo de derivabilidad, pero las reglas no autorizan usar puntos donde la expresión carece de dominio. Para potencias negativas como 1/x debe excluirse x=0. En la fase introductoria la explicación conceptual por límites precede al uso algorítmico de reglas."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=4x³−2x²+9, derivar término a término da f′(x)=12x²−4x; en x=1 la pendiente local es 8."
+        },
+        {
+          "type": "example",
+          "body": "Si f(x)=x² y g(x)=x+1, la derivada del producto es 2x(x+1)+x², no (2x)·1. En x=1 resulta 5."
+        },
+        {
+          "type": "figure",
+          "body": "Derivación de un polinomio. Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Derivación de un polinomio. Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "derivative",
+            "title": "Derivación de un polinomio",
+            "rows": [
+              [
+                "f(x)",
+                "x³−2x²+1"
+              ],
+              [
+                "f′(x)",
+                "3x²−4x"
+              ],
+              [
+                "f′(2)",
+                "4"
+              ],
+              [
+                "Regla",
+                "Linealidad y potencia"
+              ]
+            ],
+            "model": {
+              "kind": "cubic",
+              "a": 1,
+              "b": -2,
+              "c": 0,
+              "d": 1,
+              "tangent_x": 2
+            },
+            "domain": [
+              -1,
+              4
+            ],
+            "marks": [
+              [
+                "P",
+                2,
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es correcta la identidad (fg)′=f′g′ en general?||No. La regla del producto es f′g+fg′ y exige derivabilidad de ambas funciones."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: La derivada de una constante es cero; (xⁿ)′=n xⁿ⁻¹ para exponentes naturales, y (af+bg)′=af′+bg′. Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F03-L04-01",
+        "F3-B1C-F03-L04-02",
+        "F3-B1C-F03-L04-03",
+        "F3-B1C-F03-L04-04",
+        "F3-B1C-F03-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-F03-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F03:C05"
+      ],
+      "objectives": [
+        "Construir la ecuación de la tangente a una gráfica derivable.",
+        "Reconocer la normal como perpendicular cuando la tangente no es vertical."
+      ],
+      "prerequisites": [
+        "B1C-F03-L02",
+        "B1C-F03-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si f es derivable en x=a, la recta tangente se escribe y−f(a)=f′(a)(x−a). Conocer únicamente la pendiente no determina la recta; hace falta además el punto de contacto. La recta normal es perpendicular a la tangente: si f′(a)≠0, su pendiente es −1/f′(a). Si f′(a)=0, la tangente es horizontal y la normal es vertical x=a. La fórmula de la normal con cociente no puede utilizarse dividiendo entre cero. La tangente puede atravesar la propia curva y no tiene por qué tocarla en un solo punto. El resultado debe comprobarse sustituyendo el punto (a,f(a)) en la ecuación obtenida."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=x² en a=2: f(2)=4 y f′(2)=4, luego y−4=4(x−2), es decir y=4x−4. Comprueba que (2,4) pertenece a la recta."
+        },
+        {
+          "type": "example",
+          "body": "Para g(x)=(x−1)² en a=1, la pendiente es cero: tangente horizontal y=0 y normal vertical x=1; no existe pendiente numérica para la normal."
+        },
+        {
+          "type": "figure",
+          "body": "Tangente a y=x² en (2,4). Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Tangente a y=x² en (2,4). Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "tangent",
+            "title": "Tangente a y=x² en (2,4)",
+            "rows": [
+              [
+                "f(x)",
+                "x²"
+              ],
+              [
+                "Punto",
+                "(2,4)"
+              ],
+              [
+                "Pendiente",
+                "4"
+              ],
+              [
+                "Tangente",
+                "y=4x−4"
+              ],
+              [
+                "Normal",
+                "Pendiente −1/4"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 0,
+              "k": 0,
+              "tangent_x": 2
+            },
+            "domain": [
+              -1,
+              4
+            ],
+            "marks": [
+              [
+                "P",
+                2,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede calcularse la pendiente de la normal como −1/0 si la tangente es horizontal?||No. La normal es una recta vertical y su pendiente no está definida."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Si f es derivable en x=a, la recta tangente se escribe y−f(a)=f′(a)(x−a). Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F03-L05-01",
+        "F3-B1C-F03-L05-02",
+        "F3-B1C-F03-L05-03",
+        "F3-B1C-F03-L05-04",
+        "F3-B1C-F03-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-F03-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F03:C06"
+      ],
+      "objectives": [
+        "Determinar intervalos de crecimiento mediante el signo de la derivada.",
+        "Clasificar extremos locales sencillos sin confundir puntos críticos e inflexiones."
+      ],
+      "prerequisites": [
+        "B1C-F03-L04",
+        "B1C-F01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para una función derivable en un intervalo, f′(x)>0 implica crecimiento estricto y f′(x)<0 decrecimiento. Un cambio de signo de positivo a negativo al atravesar un punto crítico produce un máximo local; de negativo a positivo produce un mínimo. La condición f′(a)=0 por sí sola es necesaria para extremos interiores derivables (teorema de Fermat), pero no suficiente. Un punto donde f′ no existe también puede ser un extremo, como el mínimo de |x| en cero. Para estudiar extremos absolutos en intervalos cerrados hay que comparar además los valores de los extremos del intervalo, no solo los puntos estacionarios."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=x²−4x+1 tiene f′(x)=2x−4. Es decreciente para x<2, creciente para x>2 y presenta mínimo f(2)=−3."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=−(x−1)²+4 tiene derivada −2(x−1), positiva antes de x=1 y negativa después; el máximo vale 4 en x=1."
+        },
+        {
+          "type": "figure",
+          "body": "Signo de la derivada y mínimo. Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Signo de la derivada y mínimo. Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "sign",
+            "title": "Signo de la derivada y mínimo",
+            "rows": [
+              [
+                "f(x)",
+                "(x−2)²−3"
+              ],
+              [
+                "f′(x)",
+                "2x−4"
+              ],
+              [
+                "x<2",
+                "Decreciente"
+              ],
+              [
+                "x=2",
+                "Mínimo −3"
+              ],
+              [
+                "x>2",
+                "Creciente"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 2,
+              "k": -3,
+              "tangent_x": 2
+            },
+            "domain": [
+              -1,
+              5
+            ],
+            "marks": [
+              [
+                "V",
+                2,
+                -3
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una derivada nula demuestra un extremo aunque la función siga creciendo?||No. Hay que estudiar el cambio de signo o argumentos adicionales."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Para una función derivable en un intervalo, f′(x)>0 implica crecimiento estricto y f′(x)<0 decrecimiento. Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F03-L06-01",
+        "F3-B1C-F03-L06-02",
+        "F3-B1C-F03-L06-03",
+        "F3-B1C-F03-L06-04",
+        "F3-B1C-F03-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

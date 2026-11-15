@@ -1,0 +1,759 @@
+{
+  "unit_id": "B2C-G03",
+  "unit_title": "Métrica espacial",
+  "product_phase": "F3-29",
+  "version": "0.29.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Calcular módulo, producto escalar y coseno del ángulo entre vectores no nulos en R³.",
+    "Interpretar dirección, orientación y casos de perpendicularidad."
+  ],
+  "warnings": [
+    "Datos sintéticos EN REVISIÓN. No homologado ni publicado.",
+    "Geometría métrica y modelos financieros exigen supuestos, coherencia dimensional y revisión territorial pendiente."
+  ],
+  "prerequisite_links": [
+    "B2C-G01-L03",
+    "B2C-G01-L04",
+    "B2C-G02-L01",
+    "B2C-G02-L02",
+    "B2C-G02-L03",
+    "B2C-G02-L04",
+    "B2C-G03-L01",
+    "B2C-G03-L03",
+    "B2C-G03-L04"
+  ],
+  "recall_policy": "f2-spaced-v1.0.0",
+  "source_note": "Guía LOMLOE local y RD 243/2022 como marco de Bachillerato; cotejo territorial y asignación oficial pendientes.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B2C-G03-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.29.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G03:C01"
+      ],
+      "objectives": [
+        "Calcular módulo, producto escalar y coseno del ángulo entre vectores no nulos en R³.",
+        "Interpretar dirección, orientación y casos de perpendicularidad."
+      ],
+      "prerequisites": [
+        "B2C-G01-L03",
+        "B2C-G01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En un sistema cartesiano ortonormal tridimensional, un vector u=(u₁,u₂,u₃) tiene norma |u|=√(u₁²+u₂²+u₃²), y el producto escalar de u y v es u·v=u₁v₁+u₂v₂+u₃v₃. Para vectores no nulos se cumple cosθ=(u·v)/(|u||v|), con θ entre 0° y 180°. Un producto escalar cero significa perpendicularidad solo si se consideran vectores no nulos; el vector cero no define dirección. El coseno está necesariamente entre −1 y 1, lo que permite detectar errores de aritmética. La visualización isométrica de dos vectores es una proyección gráfica de datos 3D y no sustituye a sus coordenadas exactas."
+        },
+        {
+          "type": "example",
+          "body": "Para u=(1,2,2), |u|=√(1+4+4)=3. Si v=(2,1,2), entonces u·v=2+2+4=8 y cosθ=8/9; los vectores no son perpendiculares."
+        },
+        {
+          "type": "example",
+          "body": "Para a=(1,0,0) y b=(0,1,0), el producto escalar es 0 y ambas normas valen 1: θ=90°. Si b=(1,1,0), cosθ=1/√2."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Ángulos entre vectores. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave29",
+            "title": "Ángulos entre vectores",
+            "kind": "vectors3d",
+            "model": {
+              "labels": [
+                "u₁",
+                "u₂",
+                "u₃",
+                "v₁",
+                "v₂",
+                "v₃"
+              ],
+              "values": [
+                1,
+                2,
+                2,
+                2,
+                1,
+                2
+              ]
+            },
+            "rows": [
+              [
+                "u",
+                "(1,2,2)"
+              ],
+              [
+                "v",
+                "(2,1,2)"
+              ],
+              [
+                "|u|",
+                "3"
+              ],
+              [
+                "|v|",
+                "3"
+              ],
+              [
+                "u·v",
+                "8"
+              ],
+              [
+                "cosθ",
+                "8/9"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un producto escalar cero define un ángulo si uno de los vectores es nulo?||No: el vector cero carece de dirección."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Calcular módulo, producto escalar y coseno del ángulo entre vectores no nulos en R³. Calcula por separado el producto escalar y las dos normas. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G03-L01-01",
+        "F3-B2C-G03-L01-02",
+        "F3-B2C-G03-L01-03",
+        "F3-B2C-G03-L01-04",
+        "F3-B2C-G03-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas II de 2.º Bachillerato; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto; sin asignación no verificada de códigos ni currículo autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-G03-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.29.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G03:C02"
+      ],
+      "objectives": [
+        "Obtener el ángulo agudo entre rectas no orientadas mediante sus vectores directores.",
+        "Calcular el ángulo agudo de recta con plano y de dos planos usando normales."
+      ],
+      "prerequisites": [
+        "B2C-G03-L01",
+        "B2C-G02-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para rectas sin orientación, el ángulo menor se calcula a partir de sus vectores directores no nulos u y v mediante cosθ=|u·v|/(|u||v|), con 0°≤θ≤90°. Para dos planos se usa la misma relación entre normales n₁ y n₂. En cambio, el ángulo α de una recta con un plano se obtiene de sinα=|u·n|/(|u||n|), donde n es normal al plano; α=0° si la recta es paralela al plano y 90° si es perpendicular. Es indispensable distinguir el ángulo entre una recta y la normal del ángulo entre la recta y el plano, que son complementarios. Las fórmulas presuponen geometría euclídea ortonormal."
+        },
+        {
+          "type": "example",
+          "body": "Una recta con dirección (1,0,1) forma 45° con el plano z=0: su normal es (0,0,1), y sinα=1/√2."
+        },
+        {
+          "type": "example",
+          "body": "Dos planos con normales (1,0,0) y (1,1,0) forman ángulo agudo de 45°, ya que cosθ=1/√2. Las orientaciones no alteran el ángulo agudo."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Ángulo entre rectas y planos. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave29",
+            "title": "Ángulo entre rectas y planos",
+            "kind": "vectors3d",
+            "model": {
+              "labels": [
+                "u₁",
+                "u₂",
+                "u₃",
+                "n₁",
+                "n₂",
+                "n₃"
+              ],
+              "values": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            },
+            "rows": [
+              [
+                "u recta",
+                "(1,0,1)"
+              ],
+              [
+                "n plano z=0",
+                "(0,0,1)"
+              ],
+              [
+                "sen α",
+                "1/√2"
+              ],
+              [
+                "α recta-plano",
+                "45°"
+              ],
+              [
+                "Ángulo entre planos",
+                "45°"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El ángulo entre una recta y un plano equivale al ángulo entre dirección y normal?||No: son complementarios."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Obtener el ángulo agudo entre rectas no orientadas mediante sus vectores directores. Aclara si se comparan vectores, rectas sin orientación o recta contra plano. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G03-L02-01",
+        "F3-B2C-G03-L02-02",
+        "F3-B2C-G03-L02-03",
+        "F3-B2C-G03-L02-04",
+        "F3-B2C-G03-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas II de 2.º Bachillerato; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto; sin asignación no verificada de códigos ni currículo autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-G03-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.29.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G03:C03"
+      ],
+      "objectives": [
+        "Aplicar la distancia punto-plano en forma cartesiana con normal no nula.",
+        "Aplicar la distancia punto-recta mediante producto vectorial."
+      ],
+      "prerequisites": [
+        "B2C-G02-L01",
+        "B2C-G02-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La distancia euclídea del punto P=(x₀,y₀,z₀) al plano ax+by+cz+d=0, con (a,b,c) no nulo, es |ax₀+by₀+cz₀+d|/√(a²+b²+c²). El numerador es una evaluación algebraica de la ecuación y el denominador normaliza la normal; el resultado no puede ser negativo. Para una recta por A y vector director u≠0, la distancia de P a la recta es |(P−A)×u|/|u|; la norma del producto vectorial da el área de un paralelogramo, que se divide por su base. Nunca basta restar coordenadas en una dirección arbitraria si el plano o la recta son oblicuos."
+        },
+        {
+          "type": "example",
+          "body": "Para P=(1,2,5) y plano z=2, la distancia es |5−2|/1=3 unidades; la perpendicular baja en dirección z al plano."
+        },
+        {
+          "type": "example",
+          "body": "Para P=(0,3,0) y recta r=(t,0,0), la distancia es 3. El vector (0,3,0) es perpendicular a la dirección (1,0,0)."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Distancia punto-recta/plano. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave29",
+            "title": "Distancia punto-recta/plano",
+            "kind": "pointplane",
+            "model": {
+              "labels": [
+                "x",
+                "y",
+                "z"
+              ],
+              "values": [
+                1,
+                2,
+                5
+              ]
+            },
+            "rows": [
+              [
+                "P",
+                "(1,2,5)"
+              ],
+              [
+                "Plano",
+                "z=2"
+              ],
+              [
+                "Normal",
+                "(0,0,1)"
+              ],
+              [
+                "Distancia P-plano",
+                "3"
+              ],
+              [
+                "P a eje x",
+                "(0,3,0)"
+              ],
+              [
+                "Distancia P-recta",
+                "3"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La distancia punto-plano puede resultar negativa?||No; el numerador se toma en valor absoluto."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Aplicar la distancia punto-plano en forma cartesiana con normal no nula. Identifica normal del plano o dirección de la recta antes de calcular. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G03-L03-01",
+        "F3-B2C-G03-L03-02",
+        "F3-B2C-G03-L03-03",
+        "F3-B2C-G03-L03-04",
+        "F3-B2C-G03-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas II de 2.º Bachillerato; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto; sin asignación no verificada de códigos ni currículo autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-G03-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.29.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G03:C04"
+      ],
+      "objectives": [
+        "Calcular distancias entre planos paralelos y rectas paralelas.",
+        "Distinguir intersección, paralelismo y posición cruzada en espacio."
+      ],
+      "prerequisites": [
+        "B2C-G02-L03",
+        "B2C-G02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Dos planos paralelos con una misma normal n no nula y ecuaciones ax+by+cz+d₁=0 y ax+by+cz+d₂=0 están separados por |d₂−d₁|/|n|. Solo puede emplearse directamente esta fórmula si los coeficientes normales están normalizados de modo idéntico; si sus normales son proporcionales, se reescalan primero. Para rectas paralelas se mide la distancia de cualquier punto de una a la otra. Para rectas cruzadas con directores u, v independientes y puntos A, B, la distancia es |(B−A)·(u×v)|/|u×v|. Rectas que se intersecan tienen distancia cero; en 3D dos rectas no paralelas no tienen por qué cortarse. Se debe comprobar la posición relativa antes de elegir fórmula."
+        },
+        {
+          "type": "example",
+          "body": "Los planos z=0 y z=4 son paralelos y su separación es 4 unidades, porque las normales coinciden con módulo uno."
+        },
+        {
+          "type": "example",
+          "body": "La recta x=(t,0,0) y la recta y=(0,3+s,4) son cruzadas. Con u=(1,0,0), v=(0,1,0) y B−A=(0,3,4), la distancia es 4."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Distancias entre elementos. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave29",
+            "title": "Distancias entre elementos",
+            "kind": "parallelplanes",
+            "model": {
+              "labels": [
+                "separación mínima",
+                "plano superior"
+              ],
+              "values": [
+                4,
+                4
+              ]
+            },
+            "rows": [
+              [
+                "Plano 1",
+                "z=0"
+              ],
+              [
+                "Plano 2",
+                "z=4"
+              ],
+              [
+                "Distancia planos",
+                "4"
+              ],
+              [
+                "Rectas cruzadas",
+                "eje x, recta y a z=4"
+              ],
+              [
+                "Distancia rectas",
+                "4"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Dos rectas 3D no paralelas se cortan necesariamente?||No: pueden ser cruzadas y no compartir punto."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Calcular distancias entre planos paralelos y rectas paralelas. Determina primero si son coincidentes, paralelas, incidentes o cruzadas. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G03-L04-01",
+        "F3-B2C-G03-L04-02",
+        "F3-B2C-G03-L04-03",
+        "F3-B2C-G03-L04-04",
+        "F3-B2C-G03-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas II de 2.º Bachillerato; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto; sin asignación no verificada de códigos ni currículo autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-G03-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.29.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G03:C05"
+      ],
+      "objectives": [
+        "Calcular proyecciones ortogonales de vectores sobre direcciones no nulas.",
+        "Descomponer un vector en componente paralela y residual perpendicular."
+      ],
+      "prerequisites": [
+        "B2C-G03-L01",
+        "B2C-G02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La proyección vectorial de v sobre u≠0 es proy_u(v)=[(v·u)/(u·u)]u. El vector residual v−proy_u(v) es perpendicular a u, ya que su producto escalar con u es cero. Sobre el eje x, la proyección de v=(3,4,0) es (3,0,0), y el residual tiene longitud 4. La proyección escalar (v·u)/|u| puede tener signo y no debe confundirse con la longitud no negativa de la proyección vectorial. La proyección sobre un plano de normal n≠0 se obtiene como v−proy_n(v); en particular proyectar al plano z=0 equivale a eliminar la componente z. Estas fórmulas se emplean con producto escalar euclídeo."
+        },
+        {
+          "type": "example",
+          "body": "Para v=(3,4,0) y u=(1,0,0), se obtiene proy_u(v)=(3,0,0) y residual (0,4,0). El módulo residual es 4."
+        },
+        {
+          "type": "example",
+          "body": "Para w=(2,3,6) y plano z=0, la proyección ortogonal es (2,3,0) y la distancia de w al plano es 6 unidades."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Proyecciones. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave29",
+            "title": "Proyecciones",
+            "kind": "projection3d",
+            "model": {
+              "labels": [
+                "v₁",
+                "v₂",
+                "v₃"
+              ],
+              "values": [
+                3,
+                4,
+                0
+              ]
+            },
+            "rows": [
+              [
+                "v",
+                "(3,4,0)"
+              ],
+              [
+                "u",
+                "(1,0,0)"
+              ],
+              [
+                "Proyección sobre u",
+                "(3,0,0)"
+              ],
+              [
+                "Residual",
+                "(0,4,0)"
+              ],
+              [
+                "Módulo residual",
+                "4"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una proyección ortogonal sobre una recta conserva necesariamente toda la norma de v?||No; solo conserva la componente paralela."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Calcular proyecciones ortogonales de vectores sobre direcciones no nulas. Calcula u·u antes de dividir y verifica que u no sea nulo. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G03-L05-01",
+        "F3-B2C-G03-L05-02",
+        "F3-B2C-G03-L05-03",
+        "F3-B2C-G03-L05-04",
+        "F3-B2C-G03-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas II de 2.º Bachillerato; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto; sin asignación no verificada de códigos ni currículo autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-G03-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.29.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G03:C06"
+      ],
+      "objectives": [
+        "Seleccionar y combinar distancias, normas y volumen geométrico en problemas 3D.",
+        "Comprobar supuestos de sistema ortonormal, unidades y razonabilidad."
+      ],
+      "prerequisites": [
+        "B2C-G03-L03",
+        "B2C-G03-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La geometría métrica del espacio exige interpretar qué elementos están dados, determinar si son puntos, rectas o planos y después seleccionar herramientas vectoriales. Para un desplazamiento (3,4,12), la distancia euclídea al origen es √(3²+4²+12²)=13, no la suma de componentes. La distancia del origen al plano x+y+z=6 es |−6|/√3=2√3≈3,464; el denominador procede del módulo de la normal (1,1,1). El volumen absoluto del paralelepípedo construido por u, v y w se obtiene mediante |u·(v×w)|, con unidades cúbicas. El volumen es cero si los tres vectores son coplanarios. Una solución rigurosa revisa signos, escala, unidades y un posible modelo degenerado."
+        },
+        {
+          "type": "example",
+          "body": "El vector (3,4,12) tiene norma √(9+16+144)=13. La distancia expresa la longitud recta entre extremos, no una trayectoria por ejes."
+        },
+        {
+          "type": "example",
+          "body": "Los vectores u=(1,0,0), v=(0,2,0), w=(0,0,3) delimitan paralelepípedo de volumen |1·2·3|=6 unidades cúbicas."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Problemas geométricos completos. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave29",
+            "title": "Problemas geométricos completos",
+            "kind": "vectors3d",
+            "model": {
+              "labels": [
+                "x",
+                "y",
+                "z",
+                "aux x",
+                "aux y",
+                "aux z"
+              ],
+              "values": [
+                3,
+                4,
+                12,
+                1,
+                0,
+                0
+              ]
+            },
+            "rows": [
+              [
+                "Desplazamiento",
+                "(3,4,12)"
+              ],
+              [
+                "Norma",
+                "13"
+              ],
+              [
+                "Plano",
+                "x+y+z=6"
+              ],
+              [
+                "Distancia origen-plano",
+                "2√3"
+              ],
+              [
+                "Volumen mixto",
+                "6"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El producto mixto puede ser negativo si se interpreta como volumen físico?||Su valor absoluto es el volumen; el signo mide orientación."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Seleccionar y combinar distancias, normas y volumen geométrico en problemas 3D. Identifica claramente la magnitud y sus unidades antes de escoger fórmula. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G03-L06-01",
+        "F3-B2C-G03-L06-02",
+        "F3-B2C-G03-L06-03",
+        "F3-B2C-G03-L06-04",
+        "F3-B2C-G03-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas II de 2.º Bachillerato; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto; sin asignación no verificada de códigos ni currículo autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

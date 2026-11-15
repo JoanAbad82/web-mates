@@ -1,0 +1,692 @@
+{
+  "unit_id": "E4B-A01",
+  "unit_title": "Polinomios y transformaciones algebraicas",
+  "product_phase": "F3_OLA11",
+  "version": "0.11.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Desarrollar identidades notables mediante la propiedad distributiva.",
+    "Dividir polinomios por factores lineales con Ruffini cuando proceda.",
+    "Relacionar raíces y factores lineales de un polinomio."
+  ],
+  "warnings": [
+    "Lecciones y ejercicios sintéticos editoriales EN REVISIÓN; sin homologación.",
+    "B2C-A01/B2C-A02/B2C-G02 siguen sin desarrollar; esta ola cubre solo la cadena de Matemáticas I.",
+    "Logaritmos sencillos explicados autónomamente; prerrequisito E4B-F01 no se da por desarrollado.",
+    "Mapeo regional, revisión humana y WCAG integral NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Polinomios tercero",
+      "lesson_id": "E3-A01-L02",
+      "href": "#/curso/E3/unidad/E3-A01/leccion/E3-A01-L02"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Comprender antes de memorizar, recuperación sin ayuda y reestudio de errores."
+  },
+  "source_note": "RD 217/2022 ESO y RD 243/2022 Bachillerato; distribución editorial y cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E4B-A01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-A01:C01"
+      ],
+      "objectives": [
+        "Desarrollar identidades notables mediante la propiedad distributiva.",
+        "Distinguir el término mixto de un binomio al cuadrado y una diferencia de cuadrados."
+      ],
+      "prerequisites": [
+        "E3-A01-L01",
+        "E2-A01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Las identidades algebraicas son igualdades verdaderas para todos los valores de sus variables. Usando la distributiva, (a+b)²=a²+2ab+b² y (a−b)²=a²−2ab+b²; el signo del término mixto depende del signo entre a y b. Por otra parte, (a+b)(a−b)=a²−b², sin término mixto. En (x+3)² el término 6x aparece porque dos productos x·3 contribuyen. Comprobar con valores sencillos puede detectar un fallo, pero no sustituye una demostración general por distributiva. Al factorizar se recorren estas identidades en sentido inverso."
+        },
+        {
+          "type": "example",
+          "body": "(x+3)²=x²+6x+9: expandimos x·x, dos veces x·3 y 3·3."
+        },
+        {
+          "type": "example",
+          "body": "(2x−1)(2x+1)=4x²−1; los términos de primer grado se cancelan y no queda +1."
+        },
+        {
+          "type": "figure",
+          "body": "Cuadrado de un binomio por áreas. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Cuadrado de un binomio por áreas. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "algebra_tiles",
+            "title": "Cuadrado de un binomio por áreas",
+            "rows": [
+              [
+                "Lado",
+                "x+3"
+              ],
+              [
+                "Cuadrado principal",
+                "x²"
+              ],
+              [
+                "Dos franjas",
+                "3x + 3x"
+              ],
+              [
+                "Esquina",
+                "9"
+              ],
+              [
+                "Total",
+                "x²+6x+9"
+              ]
+            ],
+            "points": [],
+            "lines": [],
+            "marks": [],
+            "area": {
+              "kind": "square",
+              "offset": 3
+            }
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué (x+4)² no es igual a x²+16?||Porque al distribuir también aparecen dos productos 4x: el término medio es 8x."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Las identidades algebraicas son igualdades verdaderas para todos los valores de sus variables. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-A01-L01-01",
+        "F3-E4B-A01-L01-02",
+        "F3-E4B-A01-L01-03",
+        "F3-E4B-A01-L01-04",
+        "F3-E4B-A01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-A01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-A01:C02"
+      ],
+      "objectives": [
+        "Dividir polinomios por factores lineales con Ruffini cuando proceda.",
+        "Factorizar polinomios mediante raíces racionales comprobadas."
+      ],
+      "prerequisites": [
+        "E4B-A01-L01",
+        "E3-A01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La división euclídea de polinomios cumple P(x)=D(x)Q(x)+R(x), con el grado de R menor que el de D. Al dividir por x−a, el resto es P(a), teorema del resto, y el factor x−a existe exactamente cuando P(a)=0. Ruffini organiza el cálculo para divisores lineales de la forma x−a; no debe aplicarse mecánicamente a divisores de grado mayor. La factorización requiere verificar multiplicando los factores y respetar multiplicidades. Una raíz candidata puede descartarse evaluando P(a) sin efectuar una división completa."
+        },
+        {
+          "type": "example",
+          "body": "P(x)=x²−5x+6; P(2)=4−10+6=0. Por tanto x−2 es factor y P=(x−2)(x−3)."
+        },
+        {
+          "type": "example",
+          "body": "Para P(x)=x³−4x²+x+6, P(−1)=−1−4−1+6=0: Ruffini con −1 da cociente x²−5x+6."
+        },
+        {
+          "type": "figure",
+          "body": "Factorización de un trinomio mónico. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Factorización de un trinomio mónico. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "factor_table",
+            "title": "Factorización de un trinomio mónico",
+            "rows": [
+              [
+                "Polinomio",
+                "x²−5x+6"
+              ],
+              [
+                "Factores",
+                "(x−2)(x−3)"
+              ],
+              [
+                "Ceros",
+                "2 y 3"
+              ],
+              [
+                "Verificación",
+                "P(2)=P(3)=0"
+              ]
+            ],
+            "points": [],
+            "lines": [],
+            "marks": [
+              2,
+              3
+            ],
+            "area": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si P(4) es diferente de cero, ¿puede x−4 ser factor exacto de P?||No. El teorema del resto identifica P(4) con el resto de esa división."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: La división euclídea de polinomios cumple P(x)=D(x)Q(x)+R(x), con el grado de R menor que el de D. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-A01-L02-01",
+        "F3-E4B-A01-L02-02",
+        "F3-E4B-A01-L02-03",
+        "F3-E4B-A01-L02-04",
+        "F3-E4B-A01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-A01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-A01:C03"
+      ],
+      "objectives": [
+        "Relacionar raíces y factores lineales de un polinomio.",
+        "Distinguir raíces simples y múltiples por multiplicidad y comportamiento de signo."
+      ],
+      "prerequisites": [
+        "E4B-A01-L02",
+        "E3-A01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una raíz r de un polinomio P es un valor que verifica P(r)=0. Por el teorema del factor, x−r divide a P. Si un factor (x−r) se repite k veces, r tiene multiplicidad k. Un cero de multiplicidad par puede tocar el eje x sin cambiar signo; uno de multiplicidad impar puede atravesarlo, aunque otras condiciones locales importan. Contar raíces reales distintas no es lo mismo que contar multiplicidades. Un polinomio de grado n no puede tener más de n raíces distintas en el cuerpo real. La fórmula cuadrática ofrece otra herramienta cuando no hay factorización inmediata."
+        },
+        {
+          "type": "example",
+          "body": "P(x)=(x−2)²(x+1) tiene ceros 2 (doble) y −1 (simple); la suma de multiplicidades es tres."
+        },
+        {
+          "type": "example",
+          "body": "P(x)=x²−5x+6 tiene raíces 2 y 3; expandiendo (x−2)(x−3) recuperamos el polinomio."
+        },
+        {
+          "type": "figure",
+          "body": "Raíces y multiplicidad algebraica. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Raíces y multiplicidad algebraica. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "roots",
+            "title": "Raíces y multiplicidad algebraica",
+            "rows": [
+              [
+                "P(x)",
+                "(x−2)²(x+1)"
+              ],
+              [
+                "Cero simple",
+                "−1"
+              ],
+              [
+                "Cero doble",
+                "2"
+              ],
+              [
+                "Grado",
+                "3"
+              ]
+            ],
+            "points": [],
+            "lines": [],
+            "marks": [
+              -1,
+              2
+            ],
+            "area": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una raíz doble cuenta como dos valores diferentes de x?||No: es un único valor real con multiplicidad algebraica dos."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Una raíz r de un polinomio P es un valor que verifica P(r)=0. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-A01-L03-01",
+        "F3-E4B-A01-L03-02",
+        "F3-E4B-A01-L03-03",
+        "F3-E4B-A01-L03-04",
+        "F3-E4B-A01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-A01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-A01:C04"
+      ],
+      "objectives": [
+        "Simplificar expresiones racionales mediante factorización.",
+        "Excluir del dominio los ceros del denominador original."
+      ],
+      "prerequisites": [
+        "E4B-A01-L02",
+        "E2-N01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una expresión racional P(x)/Q(x) requiere Q(x)≠0, incluso si una factorización permite cancelar factores comunes. Para simplificar (x²−1)/(x−1), factorizamos (x−1)(x+1) y cancelamos el factor común solo para x≠1; la expresión simplificada coincide con x+1 en su dominio original, pero no está definida en x=1. No existe cancelación de términos separados por sumas: (x+1)/x no es 1+1. Al combinar fracciones algebraicas, se emplea denominador común y se enumeran todas las exclusiones. La igualdad entre expresiones simplificadas está condicionada por esos dominios."
+        },
+        {
+          "type": "example",
+          "body": "(x²−9)/(x−3)=x+3 para x≠3; x=3 sigue excluido aunque la expresión final tenga valor allí."
+        },
+        {
+          "type": "example",
+          "body": "1/(x−1)+2/(x−1)=3/(x−1), manteniendo x≠1 desde el inicio."
+        },
+        {
+          "type": "figure",
+          "body": "Simplificación y punto excluido. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Simplificación y punto excluido. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "rational_hole",
+            "title": "Simplificación y punto excluido",
+            "rows": [
+              [
+                "Original",
+                "(x²−9)/(x−3)"
+              ],
+              [
+                "Factorización",
+                "(x−3)(x+3)/(x−3)"
+              ],
+              [
+                "Simplificada",
+                "x+3"
+              ],
+              [
+                "Exclusión",
+                "x≠3"
+              ]
+            ],
+            "points": [
+              [
+                "Hueco",
+                3,
+                6
+              ]
+            ],
+            "lines": [
+              [
+                1,
+                3
+              ]
+            ],
+            "marks": [],
+            "area": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se puede sustituir x=3 en (x²−9)/(x−3) después de simplificar?||No en la expresión original: el denominador era cero y la simplificación no recupera ese punto."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Una expresión racional P(x)/Q(x) requiere Q(x)≠0, incluso si una factorización permite cancelar factores comunes. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-A01-L04-01",
+        "F3-E4B-A01-L04-02",
+        "F3-E4B-A01-L04-03",
+        "F3-E4B-A01-L04-04",
+        "F3-E4B-A01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-A01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-A01:C05"
+      ],
+      "objectives": [
+        "Identificar restricciones de dominio en transformaciones algebraicas.",
+        "Distinguir implicación de equivalencia al elevar al cuadrado o multiplicar por expresiones."
+      ],
+      "prerequisites": [
+        "E4B-A01-L04",
+        "E3-A02-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Dos ecuaciones son equivalentes si tienen el mismo conjunto de soluciones dentro del dominio considerado. Multiplicar ambos miembros por una expresión que puede valer cero puede añadir soluciones falsas y dividir por ella puede perder otras; por eso deben registrarse condiciones de no anulación. Al elevar al cuadrado se obtiene una condición necesaria, no siempre suficiente: de √(x+1)=x−1 se deduce x+1=(x−1)², pero las raíces algebraicas resultantes requieren comprobar que x−1≥0. Transformar correctamente exige conservar condiciones, justificar cada paso y sustituir candidatos en la ecuación original."
+        },
+        {
+          "type": "example",
+          "body": "√(x+1)=x−1 produce candidatos 0 y 3 al cuadrar; x=0 falla por el signo del lado derecho y solo x=3 verifica 2=2."
+        },
+        {
+          "type": "example",
+          "body": "Multiplicar (x−2)/(x−2)=1 por x−2 solo es legítimo si x≠2; el punto 2 jamás entra en el dominio de origen."
+        },
+        {
+          "type": "figure",
+          "body": "Transformación y rechazo de solución extraña. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Transformación y rechazo de solución extraña. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "restrictions",
+            "title": "Transformación y rechazo de solución extraña",
+            "rows": [
+              [
+                "Ecuación",
+                "√(x+1)=x−1"
+              ],
+              [
+                "Candidatos al cuadrar",
+                "0 y 3"
+              ],
+              [
+                "Restricción",
+                "x≥1"
+              ],
+              [
+                "Solución válida",
+                "x=3"
+              ]
+            ],
+            "points": [],
+            "lines": [],
+            "marks": [
+              0,
+              1,
+              3
+            ],
+            "area": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Elevar ambos lados al cuadrado siempre produce una ecuación equivalente?||No: puede añadir soluciones incompatibles con los signos de la ecuación original."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Dos ecuaciones son equivalentes si tienen el mismo conjunto de soluciones dentro del dominio considerado. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-A01-L05-01",
+        "F3-E4B-A01-L05-02",
+        "F3-E4B-A01-L05-03",
+        "F3-E4B-A01-L05-04",
+        "F3-E4B-A01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-A01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-A01:C06"
+      ],
+      "objectives": [
+        "Modelizar magnitudes mediante expresiones polinómicas.",
+        "Comprobar coherencia dimensional, dominio contextual y factorización de resultados."
+      ],
+      "prerequisites": [
+        "E4B-A01-L01",
+        "E4B-A01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En modelización simbólica cada variable debe representar una magnitud definida y un dominio razonable. El área de un rectángulo de lados x+2 y x+5 es (x+2)(x+5)=x²+7x+10, con longitudes positivas; el perímetro es 2[(x+2)+(x+5)]=4x+14, que no tiene las mismas unidades que el área. La factorización permite interpretar productos de medidas y analizar ceros puramente algebraicos, pero una raíz negativa puede carecer de sentido físico. Una comprobación con x=1 ayuda a detectar errores de transcripción; contrastar unidades es fundamental."
+        },
+        {
+          "type": "example",
+          "body": "Con x=3, el área del rectángulo (x+2) por (x+5) es 5×8=40 unidades cuadradas."
+        },
+        {
+          "type": "example",
+          "body": "Si los lados son x+2 y x+5, el incremento de x en una unidad no aumenta el área en una cantidad fija: A(x)=x²+7x+10."
+        },
+        {
+          "type": "figure",
+          "body": "Área polinómica de un rectángulo. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Área polinómica de un rectángulo. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "algebra_tiles",
+            "title": "Área polinómica de un rectángulo",
+            "rows": [
+              [
+                "Lado horizontal",
+                "x+2"
+              ],
+              [
+                "Lado vertical",
+                "x+5"
+              ],
+              [
+                "Área factorizada",
+                "(x+2)(x+5)"
+              ],
+              [
+                "Área desarrollada",
+                "x²+7x+10"
+              ]
+            ],
+            "points": [],
+            "lines": [],
+            "marks": [],
+            "area": {
+              "kind": "rectangle",
+              "widthOffset": 2,
+              "heightOffset": 5
+            }
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué una raíz x=−5 del polinomio de área no describe un rectángulo real?||Porque entonces un lado vale cero, y el contexto exige longitudes estrictamente positivas."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: En modelización simbólica cada variable debe representar una magnitud definida y un dominio razonable. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-A01-L06-01",
+        "F3-E4B-A01-L06-02",
+        "F3-E4B-A01-L06-03",
+        "F3-E4B-A01-L06-04",
+        "F3-E4B-A01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

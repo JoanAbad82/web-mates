@@ -1,0 +1,747 @@
+{
+  "unit_id": "B2S-D02",
+  "unit_title": "Inferencia e intervalos de confianza",
+  "product_phase": "F3-26",
+  "version": "0.26.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Distinguir una estimación puntual de un intervalo construido por un procedimiento.",
+    "Explicar qué datos y supuestos requiere una inferencia cuantitativa."
+  ],
+  "warnings": [
+    "Datos sintéticos EN REVISIÓN. No homologado ni publicado.",
+    "Intervalos, errores estándar, independencia, condicionadas y Bayes requieren supuestos; sin cotejo autonómico."
+  ],
+  "prerequisite_links": [
+    "B2S-D01-L03",
+    "B2S-D01-L05",
+    "B2S-D01-L06",
+    "B2S-D02-L01",
+    "B2S-D02-L02",
+    "B2S-D02-L03",
+    "B2S-D02-L04",
+    "B2S-D02-L05",
+    "B2S-Q02-L04"
+  ],
+  "recall_policy": "f2-spaced-v1.0.0",
+  "source_note": "Guía maestra LOMLOE local y RD 243/2022 como marco; revisión jurídica y regional pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B2S-D02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-D02:C01"
+      ],
+      "objectives": [
+        "Distinguir una estimación puntual de un intervalo construido por un procedimiento.",
+        "Explicar qué datos y supuestos requiere una inferencia cuantitativa."
+      ],
+      "prerequisites": [
+        "B2S-D01-L06",
+        "B2S-Q02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una estimación puntual de μ puede ser x̄ y de p puede ser p̂; ambas son valores obtenidos de la muestra. Un intervalo de confianza es el resultado de un procedimiento estadístico basado en un diseño, un estadístico, un modelo de variabilidad y un nivel nominal de cobertura. La fórmula conocida x̄ ± z·σ/√n para media requiere muestreo iid y σ conocida, además de una población normal o una aproximación defendible. No se aplica automáticamente a cualquier media ni corrige sesgos de cobertura. Los extremos cambian de una muestra a otra; el parámetro poblacional se considera fijo. El intervalo no garantiza que cada resultado particular incluya el parámetro."
+        },
+        {
+          "type": "example",
+          "body": "Con x̄=50, σ=10, n=25 iid normales, SE=10/√25=2. Para z≈1,96, margen=3,92 y el intervalo nominal de 95 % es [46,08;53,92]."
+        },
+        {
+          "type": "example",
+          "body": "La estimación puntual 50 es un solo valor; los extremos 46,08 y 53,92 requieren suponer distribución y varianza. En un muestreo sesgado la etiqueta «95 %» no repara ese problema."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Estimación puntual y por intervalos. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Estimación puntual y por intervalos",
+            "kind": "normal",
+            "model": {
+              "labels": [
+                "x̄",
+                "SE",
+                "superior"
+              ],
+              "values": [
+                50,
+                2,
+                53.92
+              ]
+            },
+            "rows": [
+              [
+                "Estimación puntual x̄",
+                "50"
+              ],
+              [
+                "σ conocida",
+                "10"
+              ],
+              [
+                "n iid normal",
+                "25"
+              ],
+              [
+                "SE",
+                "2"
+              ],
+              [
+                "Margen aproximado 95 %",
+                "3,92"
+              ],
+              [
+                "Intervalo",
+                "[46,08;53,92]"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un intervalo de confianza sustituye el análisis de sesgo del marco?||No: su cobertura se refiere al procedimiento y supuestos, no a errores sistemáticos."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Distinguir una estimación puntual de un intervalo construido por un procedimiento. Define población, muestreo y modelo antes de insertar cifras. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-D02-L01-01",
+        "F3-B2S-D02-L01-02",
+        "F3-B2S-D02-L01-03",
+        "F3-B2S-D02-L01-04",
+        "F3-B2S-D02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-D02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-D02:C02"
+      ],
+      "objectives": [
+        "Interpretar nivel de confianza como cobertura de un procedimiento repetido.",
+        "Diferenciar parámetro fijo, intervalo aleatorio y una probabilidad posterior."
+      ],
+      "prerequisites": [
+        "B2S-D02-L01",
+        "B2S-Q02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Bajo un modelo válido y el procedimiento habitual, decir «nivel de confianza 95 %» significa que a largo plazo alrededor del 95 % de los intervalos construidos a partir de muestras repetidas incluirían el parámetro fijo. Una vez calculado un intervalo concreto, desde el enfoque frecuentista clásico no se dice que haya una probabilidad del 95 % de que el parámetro fijo esté dentro. Para una normal estándar, z≈1,96 deja alrededor del 2,5 % a cada lado y aproximadamente el 95 % central; para 90 % z≈1,645. Estas cifras son aproximadas y dependen del modelo. Un nivel mayor generalmente ensancha el intervalo si los otros elementos permanecen iguales."
+        },
+        {
+          "type": "example",
+          "body": "En un experimento ilustrativo con 100 muestras independientes del mismo diseño válido, se espera, en promedio, que unos 95 intervalos nominales del 95 % cubran μ; 95 no es un recuento garantizado."
+        },
+        {
+          "type": "example",
+          "body": "Si SE=2, el margen con z≈1,96 es 3,92; con z≈1,645 es 3,29. El segundo intervalo es más estrecho por el nivel nominal menor."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Nivel de confianza. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Nivel de confianza",
+            "kind": "normal",
+            "model": {
+              "labels": [
+                "μ",
+                "SE",
+                "z"
+              ],
+              "values": [
+                0,
+                1,
+                1.96
+              ]
+            },
+            "rows": [
+              [
+                "Nivel 95 %",
+                "z≈1,96"
+              ],
+              [
+                "Cola inferior",
+                "≈2,5 %"
+              ],
+              [
+                "Cola superior",
+                "≈2,5 %"
+              ],
+              [
+                "SE del ejemplo",
+                "2"
+              ],
+              [
+                "Margen 95 %",
+                "3,92"
+              ],
+              [
+                "Margen 90 %",
+                "3,29"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué representa el 95 %: cobertura del método o probabilidad de un μ fijo ya calculado?||Cobertura nominal del procedimiento sobre muestras repetidas, bajo supuestos."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Interpretar nivel de confianza como cobertura de un procedimiento repetido. La aleatoriedad en inferencia frecuentista reside en la muestra y el intervalo. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-D02-L02-01",
+        "F3-B2S-D02-L02-02",
+        "F3-B2S-D02-L02-03",
+        "F3-B2S-D02-L02-04",
+        "F3-B2S-D02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-D02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-D02:C03"
+      ],
+      "objectives": [
+        "Construir intervalos normales aproximados para una proporción en condiciones adecuadas.",
+        "Advertir por qué el intervalo de Wald es débil en muestras pequeñas o extremos."
+      ],
+      "prerequisites": [
+        "B2S-D02-L02",
+        "B2S-D01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para n observaciones Bernoulli independientes con la misma p y selección pertinente, p̂=k/n. Una aproximación frecuente es el intervalo de Wald p̂ ± z·√(p̂(1−p̂)/n), que debe etiquetarse como aproximado y puede funcionar mal con n pequeño o p̂ cerca de cero o uno. Es necesario examinar al menos recuentos esperados y diseño; no es suficiente un gran número de decimales. Los extremos no son una promesa exacta de 95 % de cobertura ni se interpretan como porcentaje de individuos que respondieron correctamente. En escenarios difíciles son preferibles métodos como Wilson o exactos con revisión apropiada."
+        },
+        {
+          "type": "example",
+          "body": "Con 200 éxitos de n=400 observaciones Bernoulli iid, p̂=0,5 y SE estimado=√(0,5×0,5/400)=0,025. El margen Wald al 95 % es 1,96×0,025=0,049; el intervalo aproximado es [0,451;0,549]."
+        },
+        {
+          "type": "example",
+          "body": "Con 1 éxito de n=10, p̂=0,1, el intervalo Wald normal puede tener cobertura deficiente; no se debe calificar como inferencia exacta por incluir la cifra 95 %."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Intervalo de proporción. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Intervalo de proporción",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "Límite inf.",
+                "p estimado",
+                "Límite sup."
+              ],
+              "values": [
+                0.451,
+                0.5,
+                0.549
+              ]
+            },
+            "rows": [
+              [
+                "Éxitos / n",
+                "200/400"
+              ],
+              [
+                "p̂",
+                "0,5"
+              ],
+              [
+                "SE estimado",
+                "0,025"
+              ],
+              [
+                "Margen Wald",
+                "0,049"
+              ],
+              [
+                "Intervalo Wald aprox.",
+                "[0,451;0,549]"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es un intervalo Wald nominal del 95 % una garantía de cobertura exacta?||No: es una aproximación sensible a n, p y diseño."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Construir intervalos normales aproximados para una proporción en condiciones adecuadas. Comprueba independencia, marco y si ambos recuentos de éxito y fracaso son suficientes. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-D02-L03-01",
+        "F3-B2S-D02-L03-02",
+        "F3-B2S-D02-L03-03",
+        "F3-B2S-D02-L03-04",
+        "F3-B2S-D02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-D02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-D02:C04"
+      ],
+      "objectives": [
+        "Construir un intervalo de media normal con σ poblacional conocida.",
+        "Reconocer cuándo la fórmula z no debe utilizarse sin modificaciones."
+      ],
+      "prerequisites": [
+        "B2S-D01-L05",
+        "B2S-D02-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si las observaciones son independientes de una población normal y σ es conocida, la media x̄ tiene distribución normal con desviación σ/√n. Un intervalo bilateral nominal del 95 % para μ se calcula x̄±1,96·σ/√n (aproximando el cuantil normal). Si σ se desconoce y se sustituye por la desviación típica muestral, el tratamiento habitual de una muestra normal emplea la distribución t de Student con grados de libertad n−1, no z de manera automáticamente exacta. La correlación entre observaciones o un diseño por conglomerados también cambia los errores estándar. Un resultado con hipótesis falsas no se rescata por redondeo."
+        },
+        {
+          "type": "example",
+          "body": "Datos de una muestra sintética normal iid: x̄=80, σ poblacional conocida=12, n=36. SE=2, margen≈3,92 y el intervalo aproximado al 95 % es [76,08;83,92]."
+        },
+        {
+          "type": "example",
+          "body": "Con n=9, σ=6 conocida y media muestral 20 bajo población normal, SE=6/3=2 y el intervalo nominal 95 % usa [16,08;23,92]."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Intervalo de media en supuestos adecuados. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Intervalo de media en supuestos adecuados",
+            "kind": "normal",
+            "model": {
+              "labels": [
+                "x̄",
+                "SE",
+                "superior"
+              ],
+              "values": [
+                80,
+                2,
+                83.92
+              ]
+            },
+            "rows": [
+              [
+                "Media x̄",
+                "80"
+              ],
+              [
+                "σ conocida",
+                "12"
+              ],
+              [
+                "n",
+                "36"
+              ],
+              [
+                "SE",
+                "2"
+              ],
+              [
+                "Margen 95 %",
+                "3,92"
+              ],
+              [
+                "Intervalo",
+                "[76,08;83,92]"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es el intervalo z exactamente apropiado cuando σ se desconoce sin más supuestos?||No: normalmente se estudia t y las condiciones del diseño."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Construir un intervalo de media normal con σ poblacional conocida. Declara σ conocida y muestreo iid normal o aproximación justificada. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-D02-L04-01",
+        "F3-B2S-D02-L04-02",
+        "F3-B2S-D02-L04-03",
+        "F3-B2S-D02-L04-04",
+        "F3-B2S-D02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-D02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-D02:C05"
+      ],
+      "objectives": [
+        "Calcular e interpretar margen de error y dependencia con n.",
+        "Evitar atribuir al margen errores sistemáticos o garantías que no cubre."
+      ],
+      "prerequisites": [
+        "B2S-D02-L04",
+        "B2S-D02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El margen de error modelizado en un intervalo simétrico es un múltiplo z del error estándar. Bajo el mismo nivel nominal y condiciones iid, SE es proporcional a 1/√n y cuadruplicar el tamaño muestral reduce aproximadamente a la mitad el margen. Para una proporción se puede usar √(p̂(1−p̂)/n) como estimador del SE solo cuando la aproximación es razonable; para una media con σ conocida es σ/√n. Ninguna de estas expresiones recoge automáticamente sesgos de selección, no respuesta o medición. No se deben anunciar «precisión» y «95 % de certeza» como equivalentes, ni prometer un error real máximo."
+        },
+        {
+          "type": "example",
+          "body": "Para media normal iid con σ=20, n=100 y z≈1,96, SE=2 y margen≈3,92. Si n=400, SE=1 y margen≈1,96."
+        },
+        {
+          "type": "example",
+          "body": "Para p̂=0,5 en n=400, SE estimado=0,025 y margen de Wald≈0,049; no cubre la incertidumbre adicional de un marco incompleto."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Margen de error. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Margen de error",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "n=100",
+                "n=400"
+              ],
+              "values": [
+                3.92,
+                1.96
+              ]
+            },
+            "rows": [
+              [
+                "σ",
+                "20"
+              ],
+              [
+                "n inicial",
+                "100"
+              ],
+              [
+                "SE inicial",
+                "2"
+              ],
+              [
+                "Margen 95 % inicial",
+                "3,92"
+              ],
+              [
+                "n cuadruplicado",
+                "400"
+              ],
+              [
+                "Margen 95 % nuevo",
+                "1,96"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Reducir el margen por diseño elimina la no respuesta diferencial?||No: el margen estadístico no integra automáticamente el sesgo sistemático."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Calcular e interpretar margen de error y dependencia con n. Diferencia la dispersión estadística de los posibles sesgos. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-D02-L05-01",
+        "F3-B2S-D02-L05-02",
+        "F3-B2S-D02-L05-03",
+        "F3-B2S-D02-L05-04",
+        "F3-B2S-D02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-D02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-D02:C06"
+      ],
+      "objectives": [
+        "Comunicar inferencias y limitaciones del diseño con lenguaje no causal.",
+        "Detectar errores comunes en la interpretación de niveles y parámetros."
+      ],
+      "prerequisites": [
+        "B2S-D02-L05",
+        "B2S-D01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un informe útil declara la población, el marco, la selección, n, respuesta, estimador, intervalo y supuestos. Un intervalo de confianza nominal del 95 % corresponde a cobertura de la regla bajo repetición hipotética del muestreo; no significa una probabilidad posterior del 95 % para el parámetro fijo. Los extremos pueden oscilar entre muestras y no describen la variación entre personas individuales. Un estudio observacional no atribuye causalidad a asociaciones detectadas. Ante autoselección o dependencia no modelizada debe considerarse la inferencia no verificada, incluso si las calculadoras devuelven un intervalo estrecho. La precisión aparente de cifras decimales no sustituye evidencia de calidad del diseño."
+        },
+        {
+          "type": "example",
+          "body": "Una encuesta de 300 participantes seleccionados aleatoriamente de una lista completa obtiene 180 respuestas positivas: p̂=0,60. Antes de generalizar es preciso conocer no respuesta, diseño y posibles dependencias."
+        },
+        {
+          "type": "example",
+          "body": "Con 50 observaciones obtenidas por voluntariado, informar «95 % de confianza» sin modelo válido y cobertura puede inducir a error; la frase correcta admite limitaciones y no promete exactitud poblacional."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Interpretación de resultados y límites. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Interpretación de resultados y límites",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "Sí",
+                "No"
+              ],
+              "values": [
+                0.6,
+                0.4
+              ]
+            },
+            "rows": [
+              [
+                "Muestra sintética",
+                "n=300"
+              ],
+              [
+                "Positivos",
+                "180"
+              ],
+              [
+                "Estimación p̂",
+                "0,60"
+              ],
+              [
+                "No respuesta y marco",
+                "Requieren verificación"
+              ],
+              [
+                "Cobertura",
+                "Solo bajo procedimiento válido"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un intervalo que incluye solo valores altos demuestra causalidad?||No: inferencia sobre parámetros y causalidad exigen diseños y supuestos diferentes."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Comunicar inferencias y limitaciones del diseño con lenguaje no causal. Separar lo observado, lo estimado y lo no verificado. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-D02-L06-01",
+        "F3-B2S-D02-L06-02",
+        "F3-B2S-D02-L06-03",
+        "F3-B2S-D02-L06-04",
+        "F3-B2S-D02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

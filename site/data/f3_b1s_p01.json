@@ -1,0 +1,742 @@
+{
+  "unit_id": "B1S-P01",
+  "unit_title": "Matemática financiera I",
+  "product_phase": "F3-29",
+  "version": "0.29.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Componer tasas porcentuales consecutivas utilizando factores y no sumas.",
+    "Interpretar variación neta y cambios respecto de la base inicial."
+  ],
+  "warnings": [
+    "Datos sintéticos EN REVISIÓN. No homologado ni publicado.",
+    "Geometría métrica y modelos financieros exigen supuestos, coherencia dimensional y revisión territorial pendiente."
+  ],
+  "prerequisite_links": [
+    "B1S-N01-L02",
+    "B1S-N01-L03",
+    "B1S-P01-L01",
+    "B1S-P01-L02",
+    "B1S-P01-L03",
+    "B1S-P01-L04",
+    "E2-P01-L04",
+    "E2-P01-L06"
+  ],
+  "recall_policy": "f2-spaced-v1.0.0",
+  "source_note": "Guía LOMLOE local y RD 243/2022 como marco de Bachillerato; cotejo territorial y asignación oficial pendientes.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1S-P01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.29.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-P01:C01"
+      ],
+      "objectives": [
+        "Componer tasas porcentuales consecutivas utilizando factores y no sumas.",
+        "Interpretar variación neta y cambios respecto de la base inicial."
+      ],
+      "prerequisites": [
+        "E2-P01-L04",
+        "B1S-N01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un porcentaje relativo de aumento r se aplica multiplicando la magnitud inicial por 1+r cuando r se expresa en decimal. Una disminución de porcentaje d multiplica por 1−d. Los cambios encadenados se componen multiplicando factores, de modo que un aumento de 10 % seguido de una reducción del 10 % conduce a 1,10×0,90=0,99, una pérdida neta del 1 %, no a cero. La ordenación de porcentajes con factor constante es conmutativa matemáticamente, pero cada paso se calcula sobre la base actual, no la original. Debe distinguirse una variación relativa de puntos porcentuales: subir una tasa del 5 % al 7 % es +2 puntos, equivalentes a +40 % respecto a 5 %. Los importes usados son ejemplos sintéticos, no precios actuales ni asesoramiento financiero."
+        },
+        {
+          "type": "example",
+          "body": "Un precio sintético de 100 € sube 10 % y luego baja 10 %: 100×1,10×0,90=99 €. La variación neta es −1 €, es decir −1 %."
+        },
+        {
+          "type": "example",
+          "body": "Un índice de 100 aumenta 20 % y después 10 %: 100×1,20×1,10=132; el incremento neto es 32 %, no 30 %."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Porcentajes encadenados. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave29",
+            "title": "Porcentajes encadenados",
+            "kind": "finance",
+            "model": {
+              "labels": [
+                "Inicial",
+                "Tras +10 %",
+                "Tras −10 %"
+              ],
+              "values": [
+                100,
+                110,
+                99
+              ]
+            },
+            "rows": [
+              [
+                "Base inicial",
+                "100 €"
+              ],
+              [
+                "Factor al subir 10 %",
+                "1,10"
+              ],
+              [
+                "Factor al bajar 10 %",
+                "0,90"
+              ],
+              [
+                "Resultado",
+                "99 €"
+              ],
+              [
+                "Variación neta",
+                "−1 %"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Subir 10 % y luego bajar 10 % deja exactamente el precio inicial?||No; los porcentajes se aplican sobre bases distintas."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Componer tasas porcentuales consecutivas utilizando factores y no sumas. Transforma cada porcentaje en un factor multiplicativo. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-P01-L01-01",
+        "F3-B1S-P01-L01-02",
+        "F3-B1S-P01-L01-03",
+        "F3-B1S-P01-L01-04",
+        "F3-B1S-P01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I de 1.º Bachillerato; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto; sin asignación no verificada de códigos ni currículo autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-P01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.29.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-P01:C02"
+      ],
+      "objectives": [
+        "Distinguir interés simple y capital final con periodos y tipo consistentes.",
+        "Despejar tiempo o interés bajo capitalización lineal y sin gastos."
+      ],
+      "prerequisites": [
+        "B1S-P01-L01",
+        "E2-P01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En el modelo de interés simple, el interés devengado en t periodos es I=C₀rt y el capital final C_t=C₀(1+rt), donde el tipo r corresponde al mismo periodo que t. Es un modelo lineal: los intereses no generan nuevos intereses durante el plazo. Por ejemplo, con 1000 € iniciales, 5 % anual y 3 años, el interés es 150 € y el monto 1150 €. Estos cálculos suponen tipo fijo, ausencia de comisiones, impuestos y flujos intermedios; no son estimaciones de ofertas reales. Si la duración está expresada en meses y r es anual, hay que establecer convención temporal antes de usar t/12. El interés simple puede describir operaciones comerciales acotadas, pero no debe confundirse con capitalización compuesta."
+        },
+        {
+          "type": "example",
+          "body": "Para C₀=1000 €, r=0,05 anual y t=3 años, I=1000×0,05×3=150 € y capital final C_t=1150 €."
+        },
+        {
+          "type": "example",
+          "body": "Con C₀=1000 €, r=0,05 anual y objetivo de 200 € de interés simple, t=200/(1000×0,05)=4 años exactos bajo el modelo."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Capitalización simple. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave29",
+            "title": "Capitalización simple",
+            "kind": "finance",
+            "model": {
+              "labels": [
+                "Inicio",
+                "Año 1",
+                "Año 2",
+                "Año 3"
+              ],
+              "values": [
+                1000,
+                1050,
+                1100,
+                1150
+              ]
+            },
+            "rows": [
+              [
+                "Capital inicial",
+                "1000 €"
+              ],
+              [
+                "Tipo anual",
+                "5 %"
+              ],
+              [
+                "Duración",
+                "3 años"
+              ],
+              [
+                "Interés simple",
+                "150 €"
+              ],
+              [
+                "Capital final",
+                "1150 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Los intereses de un año generan intereses nuevos bajo el modelo simple?||No, la base sigue siendo el capital inicial."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Distinguir interés simple y capital final con periodos y tipo consistentes. Comprueba que tipo y número de periodos usen la misma unidad temporal. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-P01-L02-01",
+        "F3-B1S-P01-L02-02",
+        "F3-B1S-P01-L02-03",
+        "F3-B1S-P01-L02-04",
+        "F3-B1S-P01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I de 1.º Bachillerato; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto; sin asignación no verificada de códigos ni currículo autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-P01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.29.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-P01:C03"
+      ],
+      "objectives": [
+        "Calcular montos de interés compuesto mediante potencias de factores periódicos.",
+        "Comparar interés compuesto y simple con supuestos homogéneos."
+      ],
+      "prerequisites": [
+        "B1S-P01-L02",
+        "B1S-N01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La capitalización compuesta reinvierte el interés de cada periodo, por lo que C_n=C₀(1+i)^n para un tipo efectivo periódico i y n periodos, suponiendo que no hay aportaciones, retiradas, costes ni cambios de tipo. Para 1000 € al 5 % anual durante 2 años se obtiene 1102,50 €, frente a 1100 € en simple; la diferencia se debe al interés sobre intereses del primer año. La tasa debe corresponder a la unidad del periodo: no se puede usar una tasa anual directamente como si fuera mensual. Para periodos fraccionarios hay que aclarar convención; aquí n es entero no negativo. La expresión exponencial describe un supuesto matemático, no garantiza rentabilidad, ausencia de riesgo ni disponibilidad de productos comerciales."
+        },
+        {
+          "type": "example",
+          "body": "Con 1000 € y tipo efectivo anual del 5 %, C₂=1000(1,05)²=1102,50 €, así que el interés acumulado es 102,50 €."
+        },
+        {
+          "type": "example",
+          "body": "A igual tipo y 2 años, en simple C₂=1000(1+2×0,05)=1100 €; la diferencia es 2,50 € porque se reinvierte el interés previo."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Capitalización compuesta. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave29",
+            "title": "Capitalización compuesta",
+            "kind": "finance",
+            "model": {
+              "labels": [
+                "Inicio",
+                "Año 1",
+                "Año 2"
+              ],
+              "values": [
+                1000,
+                1050,
+                1102.5
+              ]
+            },
+            "rows": [
+              [
+                "Capital inicial",
+                "1000 €"
+              ],
+              [
+                "Tipo efectivo anual",
+                "5 %"
+              ],
+              [
+                "Periodo 1",
+                "1050 €"
+              ],
+              [
+                "Periodo 2",
+                "1102,50 €"
+              ],
+              [
+                "Simple tras 2 años",
+                "1100 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El interés compuesto garantiza una rentabilidad positiva real?||No: es un modelo; inflación, riesgo y costes pueden cambiar el resultado real."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Calcular montos de interés compuesto mediante potencias de factores periódicos. Identifica el tipo periódico efectivo y la frecuencia de capitalización. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-P01-L03-01",
+        "F3-B1S-P01-L03-02",
+        "F3-B1S-P01-L03-03",
+        "F3-B1S-P01-L03-04",
+        "F3-B1S-P01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I de 1.º Bachillerato; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto; sin asignación no verificada de códigos ni currículo autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-P01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.29.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-P01:C04"
+      ],
+      "objectives": [
+        "Distinguir tipo nominal, tipo efectivo periódico y tasa anual equivalente bajo condiciones explícitas.",
+        "Interpretar críticamente el efecto de frecuencia de capitalización, comisiones y gastos en la TAE."
+      ],
+      "prerequisites": [
+        "B1S-P01-L03",
+        "B1S-N01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si un interés nominal anual j se capitaliza m veces al año con reparto periódico proporcional y sin otros costes, el tipo periódico es i=j/m y el efectivo anual es (1+j/m)^m−1. Así, j=12 % convertible mensualmente produce (1,01)^12−1≈12,6825 % efectivo anual. Esta tasa equivalente por capitalización no constituye necesariamente la TAE legal de un préstamo o depósito: la TAE publicada puede incluir gastos y flujos definidos por regulación, y requiere datos que aquí no se aportan. Tampoco representa el tipo de inflación ni garantiza rentabilidad real. La frecuencia de liquidación importa incluso con j nominal idéntico. Cuando se comparan productos reales hay que comprobar condiciones, importes, plazos y todos los costes; los ejemplos son sintéticos y solo para aprendizaje matemático."
+        },
+        {
+          "type": "example",
+          "body": "Para j=12 % anual nominal y m=12, i=j/m=1 % mensual, y efectivo anual=(1,01)^12−1≈0,126825=12,6825 %."
+        },
+        {
+          "type": "example",
+          "body": "Con j=6 % nominal anual y dos capitalizaciones, tipo semestral 3 %; efectivo anual=(1,03)²−1=0,0609=6,09 %."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "TAE y tipos como lectura crítica. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave29",
+            "title": "TAE y tipos como lectura crítica",
+            "kind": "finance",
+            "model": {
+              "labels": [
+                "Nominal %",
+                "Efectivo sin gastos %"
+              ],
+              "values": [
+                12,
+                12.6825
+              ]
+            },
+            "rows": [
+              [
+                "Nominal anual j",
+                "12 %"
+              ],
+              [
+                "Capitalizaciones m",
+                "12"
+              ],
+              [
+                "Tipo mensual",
+                "1 %"
+              ],
+              [
+                "Efectivo anual sin costes",
+                "≈12,6825 %"
+              ],
+              [
+                "TAE de oferta real",
+                "NO inferible sin gastos y condiciones"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El tipo efectivo por capitalización calculado sin gastos es siempre la TAE contractual?||No: pueden existir costes y convenciones que cambian la TAE regulada."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Distinguir tipo nominal, tipo efectivo periódico y tasa anual equivalente bajo condiciones explícitas. Distingue nominal anual, periódico efectivo y anual efectivo antes de operar. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-P01-L04-01",
+        "F3-B1S-P01-L04-02",
+        "F3-B1S-P01-L04-03",
+        "F3-B1S-P01-L04-04",
+        "F3-B1S-P01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I de 1.º Bachillerato; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto; sin asignación no verificada de códigos ni currículo autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-P01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.29.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-P01:C05"
+      ],
+      "objectives": [
+        "Calcular la cuota fija de un préstamo de anualidad vencida bajo tipo y periodos establecidos.",
+        "Separar interés del periodo, amortización y saldo pendiente sin confundirlos."
+      ],
+      "prerequisites": [
+        "B1S-P01-L03",
+        "B1S-P01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En un préstamo amortizado mediante n cuotas iguales vencidas y tipo efectivo por periodo i>0, sin comisiones, seguros ni pagos extras, la cuota A=P·i/[1−(1+i)^(−n)]. Para i=0, la cuota se calcula por continuidad como P/n. La cuota incluye interés del periodo calculado sobre el saldo vivo y devolución de principal; no todo el pago reduce deuda. Con P=1200 €, i=10 % anual y dos pagos al final de cada año, A≈691,4286 €, el primer interés es 120 € y la amortización de principal de la primera cuota ≈571,4286 €. El saldo tras esa cuota es ≈628,5714 €. Los céntimos exigen una política de redondeo real que puede ajustar la última cuota; estos valores se muestran sin costes y con precisión interna superior a dos decimales. No es una recomendación de financiación."
+        },
+        {
+          "type": "example",
+          "body": "Con principal 1200 €, tipo 10 % anual y dos pagos vencidos, A=1200×0,10/[1−1/(1,1)²]≈691,4286 € por año."
+        },
+        {
+          "type": "example",
+          "body": "Primera cuota: interés 1200×0,10=120 €, amortización 691,4286−120≈571,4286 € y saldo restante ≈628,5714 €."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Cuotas y préstamos. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave29",
+            "title": "Cuotas y préstamos",
+            "kind": "finance",
+            "model": {
+              "labels": [
+                "Principal",
+                "Saldo tras cuota 1",
+                "Saldo final"
+              ],
+              "values": [
+                1200,
+                628.57142857,
+                0
+              ]
+            },
+            "rows": [
+              [
+                "Principal",
+                "1200 €"
+              ],
+              [
+                "Tipo efectivo anual",
+                "10 %"
+              ],
+              [
+                "Cuotas",
+                "2 anuales vencidas"
+              ],
+              [
+                "Cuota matemática",
+                "≈691,4286 €"
+              ],
+              [
+                "Interés primer año",
+                "120 €"
+              ],
+              [
+                "Saldo tras primera cuota",
+                "≈628,5714 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La cuota de un préstamo equivale íntegramente a amortización de principal?||No; parte paga intereses del periodo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Calcular la cuota fija de un préstamo de anualidad vencida bajo tipo y periodos establecidos. Comprueba que el tipo y la frecuencia de pago correspondan. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-P01-L05-01",
+        "F3-B1S-P01-L05-02",
+        "F3-B1S-P01-L05-03",
+        "F3-B1S-P01-L05-04",
+        "F3-B1S-P01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I de 1.º Bachillerato; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto; sin asignación no verificada de códigos ni currículo autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-P01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.29.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-P01:C06"
+      ],
+      "objectives": [
+        "Calcular índices de precios e interpretar inflación acumulada.",
+        "Distinguir rendimiento o salario nominal de variación real del poder adquisitivo."
+      ],
+      "prerequisites": [
+        "B1S-P01-L01",
+        "B1S-P01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un índice de precios con base 100 multiplicado por 1+π refleja una variación de precios π en un periodo. La inflación acumulada de dos periodos con tasas 3 % y 2 % no se suma: el factor total es 1,03×1,02=1,0506, o aumento del 5,06 %. Para comparar cambios nominales de dinero y precios se calcula el factor real (1+r_nominal)/(1+π)−1 siempre que 1+π>0. Si los ingresos nominales suben 5 % y los precios 3 %, la variación real es aproximadamente 1,9417 %, no 2 % exacto. El índice no describe por sí solo la cesta personal de cada hogar y la inflación observada depende del indicador y periodo elegidos. Aquí las cifras son completamente sintéticas y no son estadísticas de actualidad."
+        },
+        {
+          "type": "example",
+          "body": "Un índice base 100 aumenta 3 % y luego 2 %: 100×1,03×1,02=105,06, una inflación acumulada de 5,06 %."
+        },
+        {
+          "type": "example",
+          "body": "Si el ingreso nominal sube 5 % y el índice de precios 3 %, el cambio real=(1,05/1,03)−1≈0,0194175, es decir 1,94175 %."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Inflación y variación de precios. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave29",
+            "title": "Inflación y variación de precios",
+            "kind": "finance",
+            "model": {
+              "labels": [
+                "Inicial",
+                "Tras +3 %",
+                "Tras +2 %"
+              ],
+              "values": [
+                100,
+                103,
+                105.06
+              ]
+            },
+            "rows": [
+              [
+                "Índice inicial",
+                "100"
+              ],
+              [
+                "Inflación periodo 1",
+                "3 %"
+              ],
+              [
+                "Inflación periodo 2",
+                "2 %"
+              ],
+              [
+                "Índice final",
+                "105,06"
+              ],
+              [
+                "Variación nominal",
+                "5 %"
+              ],
+              [
+                "Variación real con π=3 %",
+                "≈1,94175 %"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una subida nominal de 5 % con inflación 3 % implica necesariamente 2 % real exacto?||No; el factor real es 1,05/1,03 y da ≈1,94175 %."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Calcular índices de precios e interpretar inflación acumulada. Encadena factores de precios como multiplicaciones y señala el periodo base. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-P01-L06-01",
+        "F3-B1S-P01-L06-02",
+        "F3-B1S-P01-L06-03",
+        "F3-B1S-P01-L06-04",
+        "F3-B1S-P01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I de 1.º Bachillerato; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto; sin asignación no verificada de códigos ni currículo autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,554 @@
+{
+  "unit_id": "E2-N01",
+  "unit_title": "Potencias, raíces y números racionales",
+  "product_phase": "F3_OLA6",
+  "version": "0.6.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Interpretar potencias enteras de exponente natural.",
+    "Aplicar producto de potencias de la misma base.",
+    "Calcular una potencia de otra potencia."
+  ],
+  "warnings": [
+    "Material original editorial sintético en revisión humana; no homologado.",
+    "Ubicación de unidades y saberes de 1.º–3.º ESO: propuesta editorial.",
+    "No inventar criterios autonómicos; ejercicios deterministas no equivalen a revisión humana."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Fracciones equivalentes",
+      "lesson_id": "E1-N04-L02",
+      "href": "#/curso/E1/unidad/E1-N04/leccion/E1-N04-L02"
+    },
+    {
+      "label": "Potencias con enteros",
+      "lesson_id": "E1-N02-L05",
+      "href": "#/curso/E1/unidad/E1-N02/leccion/E1-N02-L05"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrada",
+    "rule": "Resolver sin ayuda después de comprender y repetir en sesiones breves."
+  },
+  "source_note": "RD 217/2022, Matemáticas ESO, sentido numérico; ubicación editorial y cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E2-N01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-N01:C01"
+      ],
+      "objectives": [
+        "Interpretar potencias enteras de exponente natural.",
+        "Distinguir entre signo de una base negativa y signo exterior."
+      ],
+      "prerequisites": [
+        "E1-N02-L05",
+        "E1-N01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una potencia a^n con exponente natural positivo multiplica n factores iguales a a. Si a es negativo y n es par, el producto es positivo; si n es impar, es negativo. Con base no nula, a^0 = 1. El signo exterior de −3², sin paréntesis en la base, es distinto de (−3)²; nunca se define aquí 0^0."
+        },
+        {
+          "type": "example",
+          "body": "(−3)^2 = (−3)×(−3) = 9; en cambio −3² = −(3×3) = −9."
+        },
+        {
+          "type": "example",
+          "body": "5^0 = 1 porque la base cinco no es cero; 2^4 = 16 al multiplicar cuatro doses."
+        },
+        {
+          "type": "figure",
+          "body": "Potencias de base −2. El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "Potencias de base −2. Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "power_ladder",
+            "base": -2,
+            "max_exp": 4,
+            "title": "Potencias de base −2"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué (−2)^4 es positivo?||Porque hay cuatro factores negativos, un número par, y su producto es +16."
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: Una potencia a^n con exponente natural positivo multiplica n factores iguales a a. Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-N01-L01-01",
+        "F3-E2-N01-L01-02",
+        "F3-E2-N01-L01-03",
+        "F3-E2-N01-L01-04",
+        "F3-E2-N01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-N01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-N01:C02"
+      ],
+      "objectives": [
+        "Aplicar producto de potencias de la misma base.",
+        "Usar el cociente cuando la base no es cero."
+      ],
+      "prerequisites": [
+        "E2-N01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para potencias con la misma base, a^m × a^n = a^(m+n). Si a es distinto de cero y m≥n, a^m ÷ a^n = a^(m−n). Estas reglas no sirven para bases distintas, ni permiten dividir entre cero. Para bases negativas, conserva los paréntesis en el cálculo del signo final."
+        },
+        {
+          "type": "example",
+          "body": "2³ × 2⁴ = 2⁷ = 128: los exponentes se suman porque la base es la misma."
+        },
+        {
+          "type": "example",
+          "body": "(−3)⁵ ÷ (−3)³ = (−3)² = 9; se restan los exponentes con base no nula."
+        },
+        {
+          "type": "figure",
+          "body": "Exponentes de una misma base. El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "Exponentes de una misma base. Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "power_ladder",
+            "base": 2,
+            "max_exp": 5,
+            "title": "Exponentes de una misma base"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es correcto sumar bases en 2³×2²?||No, permanece la base 2 y se suman los exponentes: 2⁵ = 32."
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: Para potencias con la misma base, a^m × a^n = a^(m+n). Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-N01-L02-01",
+        "F3-E2-N01-L02-02",
+        "F3-E2-N01-L02-03",
+        "F3-E2-N01-L02-04",
+        "F3-E2-N01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-N01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-N01:C03"
+      ],
+      "objectives": [
+        "Calcular una potencia de otra potencia.",
+        "Distinguir potencia de producto de potencias."
+      ],
+      "prerequisites": [
+        "E2-N01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Elevar una potencia a otra potencia multiplica exponentes: (a^m)^n = a^(m×n), para exponentes naturales. No se suman, porque se repite el bloque a^m n veces. En cambio, a^m × a^n suma exponentes. No confundir (a^m)^n con a^(m^n)."
+        },
+        {
+          "type": "example",
+          "body": "(2³)² = 2⁶ = 64, ya que (2³) se multiplica por sí mismo dos veces."
+        },
+        {
+          "type": "example",
+          "body": "((−2)²)³ = (−2)^6 = 64; el exponente total es seis, par."
+        },
+        {
+          "type": "figure",
+          "body": "Potencia de potencia. El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "Potencia de potencia. Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "power_ladder",
+            "base": 3,
+            "max_exp": 4,
+            "title": "Potencia de potencia"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué (3²)³ no es 3⁵?||Porque se multiplican exponentes, 2×3=6; 3⁶=729."
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: Elevar una potencia a otra potencia multiplica exponentes: (a^m)^n = a^(m×n), para exponentes naturales. Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-N01-L03-01",
+        "F3-E2-N01-L03-02",
+        "F3-E2-N01-L03-03",
+        "F3-E2-N01-L03-04",
+        "F3-E2-N01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-N01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-N01:C04"
+      ],
+      "objectives": [
+        "Reconocer raíces cuadradas principales.",
+        "Conectar cuadrados perfectos, potencias y raíz inversa."
+      ],
+      "prerequisites": [
+        "E2-N01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La raíz cuadrada principal de x≥0 es el único número no negativo cuyo cuadrado es x. Por ejemplo √49 = 7, no ±7: la ecuación t² = 49 tiene dos soluciones, t=7 y t=−7, pero el símbolo √49 indica solo la raíz principal. Si un natural no es cuadrado perfecto, su raíz puede ser irracional y se trabaja mediante cotas y estimaciones sin presentar decimales truncados como igualdades exactas."
+        },
+        {
+          "type": "example",
+          "body": "√81=9 porque 9²=81; −9 también resuelve t²=81 pero no es √81."
+        },
+        {
+          "type": "example",
+          "body": "Como 4²=16 y 5²=25, se verifica 4 < √20 < 5 sin afirmar un decimal exacto."
+        },
+        {
+          "type": "figure",
+          "body": "Área de un cuadrado de lado 7. El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "Área de un cuadrado de lado 7. Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "square_area",
+            "side": 7,
+            "title": "Área de un cuadrado de lado 7"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es √36 igual a ±6?||No: √36 representa la raíz principal, 6; la ecuación x²=36 admite ±6."
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: La raíz cuadrada principal de x≥0 es el único número no negativo cuyo cuadrado es x. Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-N01-L04-01",
+        "F3-E2-N01-L04-02",
+        "F3-E2-N01-L04-03",
+        "F3-E2-N01-L04-04",
+        "F3-E2-N01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-N01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-N01:C05"
+      ],
+      "objectives": [
+        "Representar racionales positivos y negativos como cocientes.",
+        "Operar y comparar fracciones manteniendo equivalencias exactas."
+      ],
+      "prerequisites": [
+        "E1-N04-L04",
+        "E1-N02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un racional puede expresarse como a/b con a y b enteros y b distinto de cero. El signo puede colocarse delante de la fracción, en el numerador o en el denominador, pero se prefiere denominador positivo. Para sumar se usa denominador común; para multiplicar se multiplican numeradores y denominadores. Se simplifica dividiendo ambos por el mismo factor no nulo."
+        },
+        {
+          "type": "example",
+          "body": "−1/2 + 3/4 = −2/4 + 3/4 = 1/4, sin redondeo decimal."
+        },
+        {
+          "type": "example",
+          "body": "Comparar −2/3 y −3/4: −2/3 > −3/4 porque −8/12 > −9/12."
+        },
+        {
+          "type": "figure",
+          "body": "Fracciones con signo en la recta. El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "Fracciones con signo en la recta. Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "rational_line",
+            "min": -1,
+            "max": 1,
+            "points": [
+              [
+                -3,
+                4
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "title": "Fracciones con signo en la recta"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué 1/2 + 1/3 no es 2/5?||Porque hay que usar denominador común: 3/6 + 2/6 = 5/6."
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: Un racional puede expresarse como a/b con a y b enteros y b distinto de cero. Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-N01-L05-01",
+        "F3-E2-N01-L05-02",
+        "F3-E2-N01-L05-03",
+        "F3-E2-N01-L05-04",
+        "F3-E2-N01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-N01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-N01:C06"
+      ],
+      "objectives": [
+        "Resolver expresiones con paréntesis, potencias y racionales.",
+        "Comprobar equivalencias con cálculo exacto."
+      ],
+      "prerequisites": [
+        "E2-N01-L05",
+        "E2-N01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La jerarquía coloca los paréntesis y potencias antes de multiplicaciones/divisiones, y estas antes de sumas/restas. Con fracciones conserva el cociente exacto y no redondees operaciones intermedias. Una potencia negativa con base entre paréntesis conserva las reglas de signos. El resultado racional admite una representación simplificada y puede introducirse como fracción si la interfaz lo admite."
+        },
+        {
+          "type": "example",
+          "body": "(−2)² + 1/2 = 4 + 1/2 = 9/2; no es 4/2 ni una suma de bases."
+        },
+        {
+          "type": "example",
+          "body": "2³ − (3/4 × 4) = 8 − 3 = 5. La multiplicación del paréntesis precede a la resta."
+        },
+        {
+          "type": "figure",
+          "body": "Calcula potencias antes de sumar. El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "Calcula potencias antes de sumar. Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "power_ladder",
+            "base": -2,
+            "max_exp": 4,
+            "title": "Calcula potencias antes de sumar"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Cuánto vale (−3)² − 4?||Vale 9 − 4 = 5: la potencia de base negativa con exponente par es positiva."
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: La jerarquía coloca los paréntesis y potencias antes de multiplicaciones/divisiones, y estas antes de sumas/restas. Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-N01-L06-01",
+        "F3-E2-N01-L06-02",
+        "F3-E2-N01-L06-03",
+        "F3-E2-N01-L06-04",
+        "F3-E2-N01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

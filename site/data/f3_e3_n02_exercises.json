@@ -1,0 +1,829 @@
+{
+  "unit_id": "E3-N02",
+  "version": "0.27.0",
+  "status": "revision",
+  "notice": "Cinco ejercicios por lección; contenidos sintéticos con revisión humana F4 pendiente.",
+  "activities": [
+    {
+      "exercise_id": "F3-E3-N02-L01-01",
+      "lesson_id": "E3-N02-L01",
+      "type": "numeric",
+      "prompt": "Calcula 10 elevado a −3 como número decimal.",
+      "answer": 0.001,
+      "explanation": "10^−3=1/1000=0,001; el valor sigue siendo positivo.",
+      "hint": "Averigua si el exponente afecta al valor o al signo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-N02-L01-02",
+      "lesson_id": "E3-N02-L01",
+      "type": "numeric",
+      "prompt": "Calcula 10^5 dividido entre 10^2.",
+      "answer": 1000,
+      "explanation": "Para igual base resta exponentes: 10^(5−2)=10³=1000.",
+      "hint": "Averigua si el exponente afecta al valor o al signo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-N02-L01-03",
+      "lesson_id": "E3-N02-L01",
+      "type": "numeric",
+      "prompt": "Calcula (10^−2)×(10^3).",
+      "answer": 10,
+      "explanation": "Suma exponentes −2+3=1: 10^1=10. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Averigua si el exponente afecta al valor o al signo.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-N02-L01-04",
+      "lesson_id": "E3-N02-L01",
+      "type": "choice",
+      "prompt": "¿Qué signo tiene 10^−3?",
+      "answer": "Positivo, porque representa el recíproco de 1000.",
+      "explanation": "El signo del exponente determina el recíproco, no el signo del valor.",
+      "hint": "Averigua si el exponente afecta al valor o al signo.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Negativo porque el exponente lleva signo menos.",
+        "Positivo, porque representa el recíproco de 1000.",
+        "Cero porque el exponente es negativo.",
+        "Indefinido para cualquier exponente entero."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-N02-L01-05",
+      "lesson_id": "E3-N02-L01",
+      "type": "choice",
+      "prompt": "Al multiplicar potencias de la misma base diez, ¿qué operación se hace con exponentes?",
+      "answer": "Se suman los exponentes.",
+      "explanation": "10^a×10^b=10^(a+b). El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Averigua si el exponente afecta al valor o al signo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Se restan los exponentes siempre.",
+        "Se suman los exponentes.",
+        "Se elevan ambos exponentes al cuadrado.",
+        "Se multiplican los exponentes."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-N02-L02-01",
+      "lesson_id": "E3-N02-L02",
+      "type": "numeric",
+      "prompt": "Expresa 4,52×10^6 como número decimal.",
+      "answer": 4520000,
+      "explanation": "Desplaza seis posiciones a la derecha: 4 520 000.",
+      "hint": "Desplaza la coma hasta que la mantisa tenga una sola cifra no nula antes de ella.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-N02-L02-02",
+      "lesson_id": "E3-N02-L02",
+      "type": "numeric",
+      "prompt": "Expresa 7,8×10^−5 como número decimal.",
+      "answer": 7.8e-05,
+      "explanation": "7,8×0,00001=0,000078. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Desplaza la coma hasta que la mantisa tenga una sola cifra no nula antes de ella.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-N02-L02-03",
+      "lesson_id": "E3-N02-L02",
+      "type": "numeric",
+      "prompt": "Expresa 6,2×10^4 como número decimal.",
+      "answer": 62000,
+      "explanation": "6,2×10000=62000. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Desplaza la coma hasta que la mantisa tenga una sola cifra no nula antes de ella.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-N02-L02-04",
+      "lesson_id": "E3-N02-L02",
+      "type": "choice",
+      "prompt": "¿Qué caracteriza una notación científica normalizada no nula?",
+      "answer": "Una mantisa con 1≤|a|<10 y exponente entero.",
+      "explanation": "La restricción de mantisa asegura una forma estándar.",
+      "hint": "Desplaza la coma hasta que la mantisa tenga una sola cifra no nula antes de ella.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Una mantisa con 1≤|a|<10 y exponente entero.",
+        "Una mantisa que sea siempre un número entero mayor que diez.",
+        "Que todo exponente deba ser positivo.",
+        "Que la cantidad no pueda representar un número negativo."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-N02-L02-05",
+      "lesson_id": "E3-N02-L02",
+      "type": "choice",
+      "prompt": "¿Es 45,2×10^5 forma normalizada?",
+      "answer": "No: la mantisa 45,2 supera el intervalo permitido.",
+      "explanation": "Equivale a 4,52×10^6, que sí es normalizada.",
+      "hint": "Desplaza la coma hasta que la mantisa tenga una sola cifra no nula antes de ella.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "No: la mantisa 45,2 supera el intervalo permitido.",
+        "Sí: toda potencia de diez asegura normalización.",
+        "No, porque el exponente debería ser siempre negativo.",
+        "Sí, pero solo cuando se omiten las unidades."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-N02-L03-01",
+      "lesson_id": "E3-N02-L03",
+      "type": "numeric",
+      "prompt": "Convierte 3,2 km en metros. Da el número de metros.",
+      "answer": 3200,
+      "explanation": "Un km equivale a 10³ m; 3,2×1000=3200 m.",
+      "hint": "Escribe la equivalencia con unidades antes de calcular.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-N02-L03-02",
+      "lesson_id": "E3-N02-L03",
+      "type": "numeric",
+      "prompt": "Convierte 4500 milímetros en metros.",
+      "answer": 4.5,
+      "explanation": "1 mm=10^−3 m; 4500×0,001=4,5 m. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Escribe la equivalencia con unidades antes de calcular.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-N02-L03-03",
+      "lesson_id": "E3-N02-L03",
+      "type": "numeric",
+      "prompt": "Convierte 2 km² en m². Da el número de m².",
+      "answer": 2000000,
+      "explanation": "El factor de longitud 1000 se cuadra: 2×(10³)²=2 000 000 m².",
+      "hint": "Escribe la equivalencia con unidades antes de calcular.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-N02-L03-04",
+      "lesson_id": "E3-N02-L03",
+      "type": "choice",
+      "prompt": "¿Qué diferencia hay entre el prefijo M y el prefijo m?",
+      "answer": "M es mega 10^6 y m es mili 10^−3 cuando funcionan como prefijos.",
+      "explanation": "Las mayúsculas y minúsculas en símbolos del SI importan.",
+      "hint": "Escribe la equivalencia con unidades antes de calcular.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "M es milésima y m es millón.",
+        "M es mega 10^6 y m es mili 10^−3 cuando funcionan como prefijos.",
+        "M significa metro por sí solo y m es una unidad de área.",
+        "Son equivalentes y pueden intercambiarse siempre."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-N02-L03-05",
+      "lesson_id": "E3-N02-L03",
+      "type": "choice",
+      "prompt": "¿Por qué 1 km² equivale a un millón de m²?",
+      "answer": "Porque la equivalencia lineal 1000 se eleva al cuadrado.",
+      "explanation": "Al medir dos dimensiones, el factor se aplica dos veces.",
+      "hint": "Escribe la equivalencia con unidades antes de calcular.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Porque 1 km² se define como 1000 m².",
+        "Porque la equivalencia lineal 1000 se eleva al cuadrado.",
+        "Porque todos los kilómetros representan un millón de metros.",
+        "Porque el área se convierte usando el factor de longitud sin elevar."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-N02-L04-01",
+      "lesson_id": "E3-N02-L04",
+      "type": "numeric",
+      "prompt": "Calcula (2×10^3)×(3×10^−2) como decimal.",
+      "answer": 60,
+      "explanation": "Mantisas: 2×3=6. Exponentes: 3−2=1. Producto=60.",
+      "hint": "Distingue producto de suma; la regla de exponentes depende de la operación.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-N02-L04-02",
+      "lesson_id": "E3-N02-L04",
+      "type": "numeric",
+      "prompt": "Calcula (3×10^4)+(2×10^4) como decimal.",
+      "answer": 50000,
+      "explanation": "Al tener igual exponente: (3+2)×10^4=50000.",
+      "hint": "Distingue producto de suma; la regla de exponentes depende de la operación.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-N02-L04-03",
+      "lesson_id": "E3-N02-L04",
+      "type": "numeric",
+      "prompt": "Calcula (6×10^5)/(2×10^2) como decimal.",
+      "answer": 3000,
+      "explanation": "(6/2)×10^(5−2)=3×10³=3000. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Distingue producto de suma; la regla de exponentes depende de la operación.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-N02-L04-04",
+      "lesson_id": "E3-N02-L04",
+      "type": "choice",
+      "prompt": "Al sumar cantidades en notación científica, ¿qué es necesario hacer?",
+      "answer": "Alinear las potencias de diez antes de sumar mantisas.",
+      "explanation": "La suma requiere cantidades de la misma escala y unidades.",
+      "hint": "Distingue producto de suma; la regla de exponentes depende de la operación.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Alinear las potencias de diez antes de sumar mantisas.",
+        "Multiplicar los exponentes aunque sean distintos.",
+        "Eliminar las unidades aunque sean incompatibles.",
+        "Sumar siempre los exponentes directamente."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-N02-L04-05",
+      "lesson_id": "E3-N02-L04",
+      "type": "choice",
+      "prompt": "¿Cuál es la regla de exponentes al dividir potencias de base diez?",
+      "answer": "Se restan los exponentes numerador menos denominador.",
+      "explanation": "10^a/10^b=10^(a−b). El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Distingue producto de suma; la regla de exponentes depende de la operación.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Se elevan al cubo los dos exponentes.",
+        "Se restan los exponentes numerador menos denominador.",
+        "Se divide el exponente mayor por el menor.",
+        "Se suman siempre, como en un producto."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-N02-L05-01",
+      "lesson_id": "E3-N02-L05",
+      "type": "numeric",
+      "prompt": "¿Cuál es la razón (4×10^5)/(2×10^3)?",
+      "answer": 200,
+      "explanation": "Cociente exacto 2×10²=200, no solo una potencia aproximada.",
+      "hint": "Escribe el cociente completo mantisas y potencias antes de estimar.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-N02-L05-02",
+      "lesson_id": "E3-N02-L05",
+      "type": "numeric",
+      "prompt": "Con convenio de potencia de diez más cercana, ¿exponente del orden de 8000?",
+      "answer": 4,
+      "explanation": "log10(8000)≈3,903, cuyo entero más cercano es 4.",
+      "hint": "Escribe el cociente completo mantisas y potencias antes de estimar.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-N02-L05-03",
+      "lesson_id": "E3-N02-L05",
+      "type": "numeric",
+      "prompt": "Redondea 5,67×10^4 a dos cifras significativas. Da resultado decimal.",
+      "answer": 57000,
+      "explanation": "5,67 se redondea a 5,7: resultado 5,7×10^4=57000.",
+      "hint": "Escribe el cociente completo mantisas y potencias antes de estimar.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-N02-L05-04",
+      "lesson_id": "E3-N02-L05",
+      "type": "choice",
+      "prompt": "¿Una aproximación por orden de magnitud indica siempre la razón exacta entre cantidades?",
+      "answer": "No: las mantisas pueden modificar la razón precisa.",
+      "explanation": "Para comparar valores usa el cociente completo.",
+      "hint": "Escribe el cociente completo mantisas y potencias antes de estimar.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "No: las mantisas pueden modificar la razón precisa.",
+        "Sí: todas las mantisas tienen valor uno.",
+        "No: los exponentes nunca influyen en la escala.",
+        "Sí: toda razón vale una potencia exacta de diez."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-N02-L05-05",
+      "lesson_id": "E3-N02-L05",
+      "type": "choice",
+      "prompt": "¿Qué convenio de orden se usa explícitamente en esta lección?",
+      "answer": "Potencia de diez más cercana en escala logarítmica.",
+      "explanation": "8×10³ queda más cerca de 10^4 que de 10^3 en escala logarítmica.",
+      "hint": "Escribe el cociente completo mantisas y potencias antes de estimar.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_n02_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Siempre la potencia inferior independientemente del valor.",
+        "Redondear el valor en metros enteros antes de comparar.",
+        "Siempre la potencia superior independientemente del valor.",
+        "Potencia de diez más cercana en escala logarítmica."
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-E3-N02-L01-01": {
+      "hints": [
+        "Averigua si el exponente afecta al valor o al signo.",
+        "10^−n=1/10^n; 10^a·10^b=10^(a+b); 10^a/10^b=10^(a−b)."
+      ],
+      "math_check": {
+        "kind": "pow10",
+        "params": [
+          -3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L01-02": {
+      "hints": [
+        "Averigua si el exponente afecta al valor o al signo.",
+        "10^−n=1/10^n; 10^a·10^b=10^(a+b); 10^a/10^b=10^(a−b)."
+      ],
+      "math_check": {
+        "kind": "power_div",
+        "params": [
+          5,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L01-03": {
+      "hints": [
+        "Averigua si el exponente afecta al valor o al signo.",
+        "10^−n=1/10^n; 10^a·10^b=10^(a+b); 10^a/10^b=10^(a−b)."
+      ],
+      "math_check": {
+        "kind": "power_mult",
+        "params": [
+          -2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L01-04": {
+      "hints": [
+        "Averigua si el exponente afecta al valor o al signo.",
+        "10^−n=1/10^n; 10^a·10^b=10^(a+b); 10^a/10^b=10^(a−b)."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L01-05": {
+      "hints": [
+        "Averigua si el exponente afecta al valor o al signo.",
+        "10^−n=1/10^n; 10^a·10^b=10^(a+b); 10^a/10^b=10^(a−b)."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L02-01": {
+      "hints": [
+        "Desplaza la coma hasta que la mantisa tenga una sola cifra no nula antes de ella.",
+        "Cada desplazamiento hacia izquierda aumenta n; hacia derecha disminuye n."
+      ],
+      "math_check": {
+        "kind": "mantissa_power",
+        "params": [
+          4.52,
+          6
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L02-02": {
+      "hints": [
+        "Desplaza la coma hasta que la mantisa tenga una sola cifra no nula antes de ella.",
+        "Cada desplazamiento hacia izquierda aumenta n; hacia derecha disminuye n."
+      ],
+      "math_check": {
+        "kind": "mantissa_power",
+        "params": [
+          7.8,
+          -5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L02-03": {
+      "hints": [
+        "Desplaza la coma hasta que la mantisa tenga una sola cifra no nula antes de ella.",
+        "Cada desplazamiento hacia izquierda aumenta n; hacia derecha disminuye n."
+      ],
+      "math_check": {
+        "kind": "mantissa_power",
+        "params": [
+          6.2,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L02-04": {
+      "hints": [
+        "Desplaza la coma hasta que la mantisa tenga una sola cifra no nula antes de ella.",
+        "Cada desplazamiento hacia izquierda aumenta n; hacia derecha disminuye n."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L02-05": {
+      "hints": [
+        "Desplaza la coma hasta que la mantisa tenga una sola cifra no nula antes de ella.",
+        "Cada desplazamiento hacia izquierda aumenta n; hacia derecha disminuye n."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L03-01": {
+      "hints": [
+        "Escribe la equivalencia con unidades antes de calcular.",
+        "Prefijos de longitud: kilo 10^3, mili 10^−3, micro 10^−6. Área y volumen elevan el factor."
+      ],
+      "math_check": {
+        "kind": "unit_scale",
+        "params": [
+          3.2,
+          3,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L03-02": {
+      "hints": [
+        "Escribe la equivalencia con unidades antes de calcular.",
+        "Prefijos de longitud: kilo 10^3, mili 10^−3, micro 10^−6. Área y volumen elevan el factor."
+      ],
+      "math_check": {
+        "kind": "unit_scale",
+        "params": [
+          4500,
+          -3,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L03-03": {
+      "hints": [
+        "Escribe la equivalencia con unidades antes de calcular.",
+        "Prefijos de longitud: kilo 10^3, mili 10^−3, micro 10^−6. Área y volumen elevan el factor."
+      ],
+      "math_check": {
+        "kind": "unit_scale",
+        "params": [
+          2,
+          3,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L03-04": {
+      "hints": [
+        "Escribe la equivalencia con unidades antes de calcular.",
+        "Prefijos de longitud: kilo 10^3, mili 10^−3, micro 10^−6. Área y volumen elevan el factor."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L03-05": {
+      "hints": [
+        "Escribe la equivalencia con unidades antes de calcular.",
+        "Prefijos de longitud: kilo 10^3, mili 10^−3, micro 10^−6. Área y volumen elevan el factor."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L04-01": {
+      "hints": [
+        "Distingue producto de suma; la regla de exponentes depende de la operación.",
+        "Producto suma exponentes; cociente resta; suma requiere exponente común."
+      ],
+      "math_check": {
+        "kind": "sci_product",
+        "params": [
+          2,
+          3,
+          3,
+          -2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L04-02": {
+      "hints": [
+        "Distingue producto de suma; la regla de exponentes depende de la operación.",
+        "Producto suma exponentes; cociente resta; suma requiere exponente común."
+      ],
+      "math_check": {
+        "kind": "sci_sum",
+        "params": [
+          3,
+          4,
+          2,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L04-03": {
+      "hints": [
+        "Distingue producto de suma; la regla de exponentes depende de la operación.",
+        "Producto suma exponentes; cociente resta; suma requiere exponente común."
+      ],
+      "math_check": {
+        "kind": "sci_div",
+        "params": [
+          6,
+          5,
+          2,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L04-04": {
+      "hints": [
+        "Distingue producto de suma; la regla de exponentes depende de la operación.",
+        "Producto suma exponentes; cociente resta; suma requiere exponente común."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L04-05": {
+      "hints": [
+        "Distingue producto de suma; la regla de exponentes depende de la operación.",
+        "Producto suma exponentes; cociente resta; suma requiere exponente común."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L05-01": {
+      "hints": [
+        "Escribe el cociente completo mantisas y potencias antes de estimar.",
+        "Orden más cercano según log10(|x|), distinto de la razón numérica exacta."
+      ],
+      "math_check": {
+        "kind": "sci_div",
+        "params": [
+          4,
+          5,
+          2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L05-02": {
+      "hints": [
+        "Escribe el cociente completo mantisas y potencias antes de estimar.",
+        "Orden más cercano según log10(|x|), distinto de la razón numérica exacta."
+      ],
+      "math_check": {
+        "kind": "nearest_order",
+        "params": [
+          8000
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L05-03": {
+      "hints": [
+        "Escribe el cociente completo mantisas y potencias antes de estimar.",
+        "Orden más cercano según log10(|x|), distinto de la razón numérica exacta."
+      ],
+      "math_check": {
+        "kind": "sig_round",
+        "params": [
+          56700,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L05-04": {
+      "hints": [
+        "Escribe el cociente completo mantisas y potencias antes de estimar.",
+        "Orden más cercano según log10(|x|), distinto de la razón numérica exacta."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-N02-L05-05": {
+      "hints": [
+        "Escribe el cociente completo mantisas y potencias antes de estimar.",
+        "Orden más cercano según log10(|x|), distinto de la razón numérica exacta."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    }
+  }
+}

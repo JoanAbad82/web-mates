@@ -1,0 +1,720 @@
+{
+  "unit_id": "B2S-A01",
+  "unit_title": "Matrices y sistemas",
+  "product_phase": "F3_OLA19",
+  "version": "0.19.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Leer dimensiones y operar suma, producto por escalar y transposición.",
+    "Calcular producto matricial 2×2 respetando el orden.",
+    "Resolver sistemas 2×2 por eliminación o determinantes con comprobación."
+  ],
+  "warnings": [
+    "Ejercicios sintéticos EN REVISIÓN, sin revisión humana ni publicación.",
+    "Modelos económicos educativos no predicen finanzas ni datos reales.",
+    "Integral definida acumula con signo; área geométrica requiere valor absoluto y particiones.",
+    "Matrices: producto no conmutativo; inversa solo si det≠0; solución real no asegura viabilidad.",
+    "WCAG 2.2 AA integral, mapeo autonómico y móviles físicos NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Álgebra de MACS I",
+      "lesson_id": "B1S-A01-L06",
+      "href": "#/curso/B1S/unidad/B1S-A01/leccion/B1S-A01-L06"
+    },
+    {
+      "label": "Sistemas de MACS I",
+      "lesson_id": "B1S-A01-L02",
+      "href": "#/curso/B1S/unidad/B1S-A01/leccion/B1S-A01-L02"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recordar sin pistas, con corrección y repaso local voluntario."
+  },
+  "source_note": "RD 217/2022 y RD 243/2022 estatales; secuencia editorial sujeta a revisión territorial.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B2S-A01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-A01:C01"
+      ],
+      "objectives": [
+        "Leer dimensiones y operar suma, producto por escalar y transposición.",
+        "Comprobar compatibilidad de dimensiones sin confundir entrada, fila y columna."
+      ],
+      "prerequisites": [
+        "B1S-A01-L01",
+        "B1S-A01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una matriz m×n dispone de m filas y n columnas y representa datos estructurados, no un número aislado. La suma A+B está definida únicamente para matrices del mismo tamaño y se realiza componente a componente. Multiplicar por un escalar k multiplica cada entrada; la transpuesta Aᵀ intercambia filas y columnas, de dimensión n×m. Si A=[[1,2],[3,4]] y B=[[5,0],[-1,2]], A+B=[[6,2],[2,6]]. Para 2A se obtiene [[2,4],[6,8]], mientras Aᵀ=[[1,3],[2,4]]. No se suman matrices de dimensiones distintas mediante rellenado de ceros salvo convenio explícito externo, ni se asume que dos celdas tienen unidades compatibles sin declarar su significado. Una tabla muestra filas y columnas con encabezados y puede servir a estudiantes con lector de pantalla."
+        },
+        {
+          "type": "example",
+          "body": "Con A=[[1,2],[3,4]], la matriz 2A=[[2,4],[6,8]]. La entrada (2,1) pasa de 3 a 6; el tamaño 2×2 no cambia."
+        },
+        {
+          "type": "example",
+          "body": "Para A=[[1,2],[3,4]] y B=[[5,0],[-1,2]], A+B=[[6,2],[2,6]]. La entrada (2,1) es 3+(−1)=2."
+        },
+        {
+          "type": "figure",
+          "body": "Matriz como tabla de datos, no curva obligatoria. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Matriz como tabla de datos, no curva obligatoria. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "matrix",
+            "title": "Matriz como tabla de datos, no curva obligatoria",
+            "rows": [
+              [
+                "A fila 1",
+                "[1,2]"
+              ],
+              [
+                "A fila 2",
+                "[3,4]"
+              ],
+              [
+                "2A fila 1",
+                "[2,4]"
+              ],
+              [
+                "2A fila 2",
+                "[6,8]"
+              ],
+              [
+                "Aᵀ fila 1",
+                "[1,3]"
+              ]
+            ],
+            "model": {
+              "kind": "matrix"
+            },
+            "domain": [
+              0,
+              5
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede sumarse directamente una matriz 2×3 y otra 3×2 sin transformar sus dimensiones?||No; la suma elemento a elemento exige dimensiones iguales."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una matriz m×n dispone de m filas y n columnas y representa datos estructurados, no un número aislado. Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-A01-L01-01",
+        "F3-B2S-A01-L01-02",
+        "F3-B2S-A01-L01-03",
+        "F3-B2S-A01-L01-04",
+        "F3-B2S-A01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-A01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-A01:C02"
+      ],
+      "objectives": [
+        "Calcular producto matricial 2×2 respetando el orden.",
+        "Decidir invertibilidad de una matriz 2×2 por su determinante y hallar la inversa cuando existe."
+      ],
+      "prerequisites": [
+        "B2S-A01-L01",
+        "B1S-A01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El producto AB requiere que las columnas de A coincidan con las filas de B; la entrada (i,j) resulta del producto escalar de fila i y columna j. No es multiplicación elemento a elemento y, en general, AB≠BA. Para A=[[1,2],[0,1]] y B=[[2,0],[3,4]], AB=[[8,8],[3,4]], mientras BA=[[2,4],[3,7]]. Una matriz 2×2 A=[[a,b],[c,d]] tiene determinante ad−bc; posee inversa si y solo si el determinante es distinto de cero. Su inversa es (1/det)[[d,−b],[−c,a]], cuya validez puede comprobarse con AA⁻¹=I. Si det=0 es singular, y no debe afirmarse una inversa al dividir entre cero. Estas operaciones no se derivan del dibujo de una recta: la tabla exacta es la representación matemática principal."
+        },
+        {
+          "type": "example",
+          "body": "A=[[1,2],[0,1]], B=[[2,0],[3,4]]: AB tiene primera entrada 1·2+2·3=8 y segunda entrada 1·0+2·4=8."
+        },
+        {
+          "type": "example",
+          "body": "Para A=[[2,1],[1,1]], det=2·1−1·1=1; A⁻¹=[[1,−1],[−1,2]]. Multiplica AA⁻¹ para obtener I."
+        },
+        {
+          "type": "figure",
+          "body": "Producto matricial en tabla exacta. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Producto matricial en tabla exacta. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "matrix",
+            "title": "Producto matricial en tabla exacta",
+            "rows": [
+              [
+                "A",
+                "[[1,2],[0,1]]"
+              ],
+              [
+                "B",
+                "[[2,0],[3,4]]"
+              ],
+              [
+                "AB fila 1",
+                "[8,8]"
+              ],
+              [
+                "AB fila 2",
+                "[3,4]"
+              ],
+              [
+                "BA≠AB",
+                "En general"
+              ]
+            ],
+            "model": {
+              "kind": "matrix"
+            },
+            "domain": [
+              0,
+              5
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede existir inversa ordinaria de una matriz cuadrada con determinante cero?||No; es singular."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El producto AB requiere que las columnas de A coincidan con las filas de B; la entrada (i,j) resulta del producto escalar de fila i y columna j. Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-A01-L02-01",
+        "F3-B2S-A01-L02-02",
+        "F3-B2S-A01-L02-03",
+        "F3-B2S-A01-L02-04",
+        "F3-B2S-A01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-A01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-A01:C03"
+      ],
+      "objectives": [
+        "Resolver sistemas 2×2 por eliminación o determinantes con comprobación.",
+        "Relacionar el sistema Ax=b con soluciones y condiciones de invertibilidad."
+      ],
+      "prerequisites": [
+        "B2S-A01-L02",
+        "B1S-A01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un sistema lineal 2×2 puede escribirse como Ax=b; la matriz de coeficientes no debe confundirse con la matriz ampliada. Si A tiene determinante distinto de cero, existe una única solución x=A⁻¹b. Para 2x+y=7 y x−y=2 se suman las ecuaciones y se obtiene 3x=9, x=3 e y=1; comprobar ambos miembros confirma 2·3+1=7 y 3−1=2. Para matrices singulares, la fórmula de la inversa no se aplica; deben compararse rangos de coeficientes y ampliada. Resolver solo algebraicamente sin atender unidades y dominio puede producir soluciones que carecen de sentido si x e y representan números de productos indivisibles o no negativos."
+        },
+        {
+          "type": "example",
+          "body": "Resuelve 2x+y=7, x−y=2: suma ambas expresiones, 3x=9, así x=3; sustituye y=1. Comprueba 7 y 2."
+        },
+        {
+          "type": "example",
+          "body": "Para x+y=5 y x−y=1, sumar da 2x=6, x=3, y=2; ambas ecuaciones se satisfacen exactamente."
+        },
+        {
+          "type": "figure",
+          "body": "Dos ecuaciones lineales con solución única. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Dos ecuaciones lineales con solución única. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "matrix",
+            "title": "Dos ecuaciones lineales con solución única",
+            "rows": [
+              [
+                "Ecuación 1",
+                "2x+y=7"
+              ],
+              [
+                "Ecuación 2",
+                "x−y=2"
+              ],
+              [
+                "Solución",
+                "x=3, y=1"
+              ],
+              [
+                "Comprobación 1",
+                "7=7"
+              ],
+              [
+                "Comprobación 2",
+                "2=2"
+              ]
+            ],
+            "model": {
+              "kind": "matrix"
+            },
+            "domain": [
+              0,
+              5
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se debe aplicar A⁻¹b sin comprobar primero que det(A)≠0?||No; la inversa exige invertibilidad."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un sistema lineal 2×2 puede escribirse como Ax=b; la matriz de coeficientes no debe confundirse con la matriz ampliada. Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-A01-L03-01",
+        "F3-B2S-A01-L03-02",
+        "F3-B2S-A01-L03-03",
+        "F3-B2S-A01-L03-04",
+        "F3-B2S-A01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-A01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-A01:C04"
+      ],
+      "objectives": [
+        "Clasificar un sistema singular como compatible indeterminado o incompatible.",
+        "Usar rangos y relaciones de proporcionalidad entre ecuaciones para justificar el resultado."
+      ],
+      "prerequisites": [
+        "B2S-A01-L03",
+        "B1S-A01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un sistema Ax=b no tiene necesariamente solución única. Si el rango de A coincide con el de la ampliada y es igual al número de incógnitas, la solución es única. Si ambos rangos coinciden pero son menores, hay infinitas soluciones; si el rango de la ampliada supera al de A, no hay soluciones. En 2×2 basta razonar con ecuaciones proporcionales: x+y=2 y 2x+2y=4 representan la misma recta, infinitas soluciones. En cambio x+y=2 y 2x+2y=5 son rectas paralelas distintas, sin soluciones. En ambos casos el determinante de coeficientes es cero, lo que solo prueba no unicidad: no permite elegir entre infinitas o ninguna sin inspeccionar términos independientes. El análisis de rango, compatibilidad y restricciones económicas precede a cualquier predicción basada en soluciones."
+        },
+        {
+          "type": "example",
+          "body": "Las ecuaciones x+y=2 y 2x+2y=4 son equivalentes: todo par (t,2−t) es solución; el sistema es compatible indeterminado."
+        },
+        {
+          "type": "example",
+          "body": "Las ecuaciones x+y=2 y 2x+2y=5 se contradicen, porque duplicar la primera daría 2x+2y=4, no 5; sistema incompatible."
+        },
+        {
+          "type": "figure",
+          "body": "Sistemas proporcionales y clasificación. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Sistemas proporcionales y clasificación. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "matrix",
+            "title": "Sistemas proporcionales y clasificación",
+            "rows": [
+              [
+                "Sistema A",
+                "x+y=2; 2x+2y=4"
+              ],
+              [
+                "A",
+                "Infinitas soluciones"
+              ],
+              [
+                "Sistema B",
+                "x+y=2; 2x+2y=5"
+              ],
+              [
+                "B",
+                "Sin soluciones"
+              ],
+              [
+                "Determinante",
+                "0 en ambos"
+              ]
+            ],
+            "model": {
+              "kind": "matrix"
+            },
+            "domain": [
+              0,
+              4
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Determinante cero implica necesariamente que un sistema 2×2 no tiene solución?||No; puede tener infinitas soluciones."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un sistema Ax=b no tiene necesariamente solución única. Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-A01-L04-01",
+        "F3-B2S-A01-L04-02",
+        "F3-B2S-A01-L04-03",
+        "F3-B2S-A01-L04-04",
+        "F3-B2S-A01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-A01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-A01:C05"
+      ],
+      "objectives": [
+        "Representar demandas y restricciones económicas mediante sistemas matriciales.",
+        "Comprobar la no negatividad de cantidades y el significado de las unidades."
+      ],
+      "prerequisites": [
+        "B2S-A01-L03",
+        "B1S-A01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Las matrices pueden organizar consumos y recursos. Una economía didáctica utiliza cantidades x e y de dos bienes con requisitos x+y=10 unidades y 2x+y=14 unidades de recurso; por eliminación x=4 e y=6. En notación Ax=b, A=[[1,1],[2,1]], b=(10,14)ᵀ. El determinante es −1≠0: la solución algebraica es única y, en este ejemplo, no negativa e íntegra. Si el sistema tuviera solución x<0, el modelo de producción podría ser matemáticamente resoluble pero físicamente inviable; un determinante no garantiza la viabilidad económica. Tampoco se deduce causalidad de los coeficientes y no debe exponerse la tabla como si fueran datos reales de empresas o estudiantes. Las unidades de cada fila deben ser compatibles para sumarse dentro de una ecuación."
+        },
+        {
+          "type": "example",
+          "body": "Para x+y=10 y 2x+y=14, resta la primera a la segunda: x=4; entonces y=6. El par es no negativo y satisface ambas."
+        },
+        {
+          "type": "example",
+          "body": "Si x+y=5 y x−y=1, el sistema da x=3, y=2. Si x e y representan piezas, ambas cantidades son enteras factibles."
+        },
+        {
+          "type": "figure",
+          "body": "Recursos de dos bienes en un sistema. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Recursos de dos bienes en un sistema. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "matrix",
+            "title": "Recursos de dos bienes en un sistema",
+            "rows": [
+              [
+                "Matriz A",
+                "[[1,1],[2,1]]"
+              ],
+              [
+                "Demanda b",
+                "[10,14]"
+              ],
+              [
+                "Cantidad x",
+                "4"
+              ],
+              [
+                "Cantidad y",
+                "6"
+              ],
+              [
+                "No negatividad",
+                "Verificada"
+              ]
+            ],
+            "model": {
+              "kind": "matrix"
+            },
+            "domain": [
+              0,
+              10
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Resolver Ax=b con números reales asegura siempre cantidades no negativas de productos?||No; deben comprobarse las restricciones contextuales."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Las matrices pueden organizar consumos y recursos. Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-A01-L05-01",
+        "F3-B2S-A01-L05-02",
+        "F3-B2S-A01-L05-03",
+        "F3-B2S-A01-L05-04",
+        "F3-B2S-A01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-A01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-A01:C06"
+      ],
+      "objectives": [
+        "Interpretar matrices de adyacencia y potencias como conteo de recorridos.",
+        "Distinguir conexiones directas de recorridos de longitud dos en un grafo simple."
+      ],
+      "prerequisites": [
+        "B2S-A01-L02",
+        "B2S-A01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En un grafo dirigido pequeño con nodos A y B, la matriz de adyacencia M tiene entrada M_ij=1 si hay una arista directa i→j y cero en caso contrario. Para M=[[0,1],[1,0]], existe un enlace A→B y otro B→A, pero ningún bucle directo en A o B. La matriz cuadrado es M²=[[1,0],[0,1]], y su entrada (i,j) cuenta recorridos de longitud exactamente dos desde i hasta j; por eso hay una vuelta A→B→A. No significa que exista una arista directa A→A: una caminata de longitud dos no es un enlace de longitud uno. Para grafos con múltiples caminos las entradas de potencias pueden superar 1, y la interpretación requiere definir bien el orden de nodos y las aristas. Un grafo de ejemplo no representa relaciones reales entre menores ni conserva datos personales."
+        },
+        {
+          "type": "example",
+          "body": "M=[[0,1],[1,0]] representa dos conexiones cruzadas. Multiplica M·M: M²=[[1,0],[0,1]], recorrido A→B→A de longitud dos."
+        },
+        {
+          "type": "example",
+          "body": "Para matriz identidad I=[[1,0],[0,1]], I²=I. La entrada (1,1) indica un único recorrido de longitud dos de A a A mediante dos bucles."
+        },
+        {
+          "type": "figure",
+          "body": "Matrices de adyacencia y caminos de dos pasos. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Matrices de adyacencia y caminos de dos pasos. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "matrix",
+            "title": "Matrices de adyacencia y caminos de dos pasos",
+            "rows": [
+              [
+                "M fila A",
+                "[0,1]"
+              ],
+              [
+                "M fila B",
+                "[1,0]"
+              ],
+              [
+                "M² fila A",
+                "[1,0]"
+              ],
+              [
+                "M² fila B",
+                "[0,1]"
+              ],
+              [
+                "Interpretación",
+                "Camino A→B→A"
+              ]
+            ],
+            "model": {
+              "kind": "matrix"
+            },
+            "domain": [
+              0,
+              3
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una entrada positiva en M² garantiza una arista directa en M entre los mismos nodos?||No; cuenta recorridos de dos pasos, no conexiones de uno."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: En un grafo dirigido pequeño con nodos A y B, la matriz de adyacencia M tiene entrada M_ij=1 si hay una arista directa i→j y cero en caso contrario. Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-A01-L06-01",
+        "F3-B2S-A01-L06-02",
+        "F3-B2S-A01-L06-03",
+        "F3-B2S-A01-L06-04",
+        "F3-B2S-A01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

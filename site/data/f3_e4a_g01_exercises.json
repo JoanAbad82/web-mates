@@ -1,0 +1,994 @@
+{
+  "unit_id": "E4A-G01",
+  "version": "0.28.0",
+  "status": "revision",
+  "notice": "Cinco ejercicios por lección; contenidos sintéticos con revisión humana F4 pendiente.",
+  "activities": [
+    {
+      "exercise_id": "F3-E4A-G01-L01-01",
+      "lesson_id": "E4A-G01-L01",
+      "type": "numeric",
+      "prompt": "Un rectángulo tiene lados perpendiculares 6 y 8 cm. ¿Diagonal en cm?",
+      "answer": 10,
+      "explanation": "√(6²+8²)=√100=10 cm usando Pitágoras. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Marca un ángulo de 90° y distingue catetos de hipotenusa.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L01-02",
+      "lesson_id": "E4A-G01-L01",
+      "type": "numeric",
+      "prompt": "Triángulo semejante: base inicial 3 cm, factor 2. ¿Base final?",
+      "answer": 6,
+      "explanation": "Los lados homólogos se multiplican por la razón lineal 2.",
+      "hint": "Marca un ángulo de 90° y distingue catetos de hipotenusa.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L01-03",
+      "lesson_id": "E4A-G01-L01",
+      "type": "numeric",
+      "prompt": "Catetos de 3 y 4 cm: ¿hipotenusa en cm?",
+      "answer": 5,
+      "explanation": "3²+4²=25; su raíz positiva es 5. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Marca un ángulo de 90° y distingue catetos de hipotenusa.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L01-04",
+      "lesson_id": "E4A-G01-L01",
+      "type": "choice",
+      "prompt": "¿Qué exige la igualdad a²+b²=c² de Pitágoras?",
+      "answer": "Que a y b sean catetos de un triángulo rectángulo.",
+      "explanation": "El teorema supone un ángulo recto entre los catetos.",
+      "hint": "Marca un ángulo de 90° y distingue catetos de hipotenusa.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Que a y b sean los lados mayores de cualquier triángulo.",
+        "Solo que los lados se expresen en centímetros.",
+        "Que a y b sean catetos de un triángulo rectángulo.",
+        "Que el triángulo tenga tres ángulos agudos sin excepción."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L01-05",
+      "lesson_id": "E4A-G01-L01",
+      "type": "choice",
+      "prompt": "¿Qué propiedad se conserva en triángulos semejantes?",
+      "answer": "Los ángulos correspondientes son iguales.",
+      "explanation": "La semejanza mantiene forma y multiplica longitudes por k.",
+      "hint": "Marca un ángulo de 90° y distingue catetos de hipotenusa.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "El área es siempre idéntica.",
+        "El perímetro permanece constante con cualquier razón.",
+        "Todos los lados miden lo mismo.",
+        "Los ángulos correspondientes son iguales."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L02-01",
+      "lesson_id": "E4A-G01-L02",
+      "type": "numeric",
+      "prompt": "Escala 1:500, distancia 4 cm en plano. ¿Distancia real en metros?",
+      "answer": 20,
+      "explanation": "4×500=2000 cm, es decir 20 m. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Primero convierte longitudes conservando la misma unidad.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L02-02",
+      "lesson_id": "E4A-G01-L02",
+      "type": "numeric",
+      "prompt": "Escala 1:500, área de plano 6 cm². ¿Área real en m²?",
+      "answer": 150,
+      "explanation": "6×500²/10000=150 m². El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Primero convierte longitudes conservando la misma unidad.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L02-03",
+      "lesson_id": "E4A-G01-L02",
+      "type": "numeric",
+      "prompt": "En escala 1:500, un segmento de 2 cm corresponde a ¿cuántos m?",
+      "answer": 10,
+      "explanation": "2×500 cm=1000 cm=10 m. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Primero convierte longitudes conservando la misma unidad.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L02-04",
+      "lesson_id": "E4A-G01-L02",
+      "type": "choice",
+      "prompt": "¿Cómo cambia el área al usar una razón lineal de escala 500?",
+      "answer": "Se multiplica por 500².",
+      "explanation": "Dos dimensiones lineales generan un factor cuadrático.",
+      "hint": "Primero convierte longitudes conservando la misma unidad.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "No cambia al medir sobre un papel.",
+        "Se multiplica siempre por 500³.",
+        "Se multiplica solo por 500.",
+        "Se multiplica por 500²."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L02-05",
+      "lesson_id": "E4A-G01-L02",
+      "type": "choice",
+      "prompt": "Para convertir cm² a m², ¿cuál es el divisor exacto?",
+      "answer": "10000.",
+      "explanation": "1 m²=(100 cm)²=10000 cm². El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Primero convierte longitudes conservando la misma unidad.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "500, por ser un factor de escala usual.",
+        "100 como si fueran longitudes.",
+        "1000, sin tener en cuenta unidades cuadradas.",
+        "10000."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L03-01",
+      "lesson_id": "E4A-G01-L03",
+      "type": "numeric",
+      "prompt": "¿Pendiente entre P=(1,2) y Q=(4,8)?",
+      "answer": 2,
+      "explanation": "(8−2)/(4−1)=6/3=2. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Resta en el mismo orden numerador y denominador.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L03-02",
+      "lesson_id": "E4A-G01-L03",
+      "type": "numeric",
+      "prompt": "¿Ángulo de inclinación en grados de recta pendiente 1?",
+      "answer": 45,
+      "explanation": "arctan(1)=45° bajo la convención de inclinación.",
+      "hint": "Resta en el mismo orden numerador y denominador.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L03-03",
+      "lesson_id": "E4A-G01-L03",
+      "type": "numeric",
+      "prompt": "¿Pendiente entre (0,5) y (5,5)?",
+      "answer": 0,
+      "explanation": "Δy=0, por tanto la recta es horizontal y m=0.",
+      "hint": "Resta en el mismo orden numerador y denominador.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L03-04",
+      "lesson_id": "E4A-G01-L03",
+      "type": "choice",
+      "prompt": "¿Cuál es la pendiente de una recta vertical x=2?",
+      "answer": "No está definida como número real finito.",
+      "explanation": "Δx=0 y no es posible dividir Δy por cero.",
+      "hint": "Resta en el mismo orden numerador y denominador.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "No está definida como número real finito.",
+        "Dos, porque x=2.",
+        "Cero, como para una horizontal.",
+        "Siempre uno."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L03-05",
+      "lesson_id": "E4A-G01-L03",
+      "type": "choice",
+      "prompt": "Si dos rectas no verticales tienen pendientes 2 y −1/2, son:",
+      "answer": "Perpendiculares, ya que el producto es −1.",
+      "explanation": "Bajo coordenadas ortogonales el producto de pendientes perpendiculares es −1.",
+      "hint": "Resta en el mismo orden numerador y denominador.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Paralelas, porque comparten valor absoluto.",
+        "Horizontales porque una pendiente es negativa.",
+        "Perpendiculares, ya que el producto es −1.",
+        "Coincidentes necesariamente."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L04-01",
+      "lesson_id": "E4A-G01-L04",
+      "type": "numeric",
+      "prompt": "Intersección de y=2x+1 e y=x+4: ¿coordenada x?",
+      "answer": 3,
+      "explanation": "Iguala ambas: 2x+1=x+4→x=3. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Iguala las dos expresiones de y; verifica el par resultante en las dos.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L04-02",
+      "lesson_id": "E4A-G01-L04",
+      "type": "numeric",
+      "prompt": "En la intersección de y=2x+1 e y=x+4, ¿coordenada y?",
+      "answer": 7,
+      "explanation": "Para x=3, y=2×3+1=7. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Iguala las dos expresiones de y; verifica el par resultante en las dos.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L04-03",
+      "lesson_id": "E4A-G01-L04",
+      "type": "numeric",
+      "prompt": "En y=2x+1, calcula y para x=1.",
+      "answer": 3,
+      "explanation": "y=2×1+1=3. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Iguala las dos expresiones de y; verifica el par resultante en las dos.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L04-04",
+      "lesson_id": "E4A-G01-L04",
+      "type": "choice",
+      "prompt": "Dos rectas de igual pendiente y cortes verticales distintos son:",
+      "answer": "Paralelas sin intersección.",
+      "explanation": "Las expresiones y=mx+b no tienen solución común si el mismo m acompaña b distintos.",
+      "hint": "Iguala las dos expresiones de y; verifica el par resultante en las dos.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Perpendiculares en todo caso.",
+        "Coincidentes sin excepción.",
+        "Paralelas sin intersección.",
+        "Dos rectas verticales obligatoriamente."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L04-05",
+      "lesson_id": "E4A-G01-L04",
+      "type": "choice",
+      "prompt": "¿Cómo verificas un punto de corte calculado?",
+      "answer": "Sustituyendo sus coordenadas en ambas ecuaciones.",
+      "explanation": "Una intersección debe satisfacer simultáneamente ambas rectas.",
+      "hint": "Iguala las dos expresiones de y; verifica el par resultante en las dos.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Sustituyendo sus coordenadas en ambas ecuaciones.",
+        "Leyendo únicamente el color del gráfico.",
+        "Comprobando solo la primera ecuación.",
+        "Comparando exclusivamente los valores de b."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L05-01",
+      "lesson_id": "E4A-G01-L05",
+      "type": "numeric",
+      "prompt": "P=(3,−1) se traslada por (−2,4). ¿Coordenada x de P′?",
+      "answer": 1,
+      "explanation": "x final=3−2=1. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Fija el origen o centro antes de operar.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L05-02",
+      "lesson_id": "E4A-G01-L05",
+      "type": "numeric",
+      "prompt": "P=(3,−1) se traslada por (−2,4). ¿Coordenada y de P′?",
+      "answer": 3,
+      "explanation": "y final=−1+4=3. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Fija el origen o centro antes de operar.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L05-03",
+      "lesson_id": "E4A-G01-L05",
+      "type": "numeric",
+      "prompt": "Giro antihorario 90° de Q=(2,1): ¿coordenada x resultante?",
+      "answer": -1,
+      "explanation": "El giro (x,y)→(−y,x) produce x final −1.",
+      "hint": "Fija el origen o centro antes de operar.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L05-04",
+      "lesson_id": "E4A-G01-L05",
+      "type": "choice",
+      "prompt": "¿Cuál es la reflexión de (2,1) sobre el eje x?",
+      "answer": "(2,−1).",
+      "explanation": "La reflexión horizontal conserva x y cambia signo de y.",
+      "hint": "Fija el origen o centro antes de operar.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "(−1,2), giro antihorario.",
+        "(−2,1), reflexión sobre eje y.",
+        "(2,−1).",
+        "(4,2), homotecia de razón 2."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L05-05",
+      "lesson_id": "E4A-G01-L05",
+      "type": "choice",
+      "prompt": "¿Qué transforma una homotecia de razón 2 respecto al origen?",
+      "answer": "(x,y)→(2x,2y), duplicando longitudes.",
+      "explanation": "La homotecia aplica un factor común a las coordenadas relativas al centro.",
+      "hint": "Fija el origen o centro antes de operar.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "(x,y)→(x+2,y+2), que es traslación.",
+        "(x,y)→(−y,x), que es giro.",
+        "(x,y)→(2x,2y), duplicando longitudes.",
+        "(x,y)→(x,−y), que es reflexión."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L06-01",
+      "lesson_id": "E4A-G01-L06",
+      "type": "numeric",
+      "prompt": "Huerto rectangular 4×3 m. ¿Área en m²?",
+      "answer": 12,
+      "explanation": "La superficie es 4×3=12 m². El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Distingue magnitudes lineales y cuadráticas antes del cálculo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L06-02",
+      "lesson_id": "E4A-G01-L06",
+      "type": "numeric",
+      "prompt": "Huerto rectangular 4×3 m. ¿Perímetro en m?",
+      "answer": 14,
+      "explanation": "Perímetro=2(4+3)=14 m. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Distingue magnitudes lineales y cuadráticas antes del cálculo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L06-03",
+      "lesson_id": "E4A-G01-L06",
+      "type": "numeric",
+      "prompt": "Escala 1:200, longitud dibujada 3 cm. ¿Longitud real en metros?",
+      "answer": 6,
+      "explanation": "3×200=600 cm=6 m. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Distingue magnitudes lineales y cuadráticas antes del cálculo.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L06-04",
+      "lesson_id": "E4A-G01-L06",
+      "type": "choice",
+      "prompt": "¿Qué unidad expresa el área de un huerto de 4×3 m?",
+      "answer": "Metros cuadrados.",
+      "explanation": "El área es un producto de dos longitudes y se expresa al cuadrado.",
+      "hint": "Distingue magnitudes lineales y cuadráticas antes del cálculo.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Centímetros sin convertir.",
+        "Metros cúbicos sin medir altura.",
+        "Metros cuadrados.",
+        "Metros lineales como para cercarlo."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4A-G01-L06-05",
+      "lesson_id": "E4A-G01-L06",
+      "type": "choice",
+      "prompt": "Al medir con instrumentos con incertidumbre, ¿qué debe declararse?",
+      "answer": "Modelo, escala, unidad y precisión razonable de los datos.",
+      "explanation": "La utilidad del resultado depende de la interpretación y calidad de las medidas.",
+      "hint": "Distingue magnitudes lineales y cuadráticas antes del cálculo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4a_g01_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Solo el número final sin unidades ni hipótesis.",
+        "Modelo, escala, unidad y precisión razonable de los datos.",
+        "Exactitud absoluta al usar muchos decimales.",
+        "Ausencia automática de error por ser un plano digital."
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-E4A-G01-L01-01": {
+      "hints": [
+        "Marca un ángulo de 90° y distingue catetos de hipotenusa.",
+        "Distancia recta=√(a²+b²); factor k=lado nuevo/lado original."
+      ],
+      "math_check": {
+        "kind": "hypotenuse",
+        "params": [
+          6,
+          8
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L01-02": {
+      "hints": [
+        "Marca un ángulo de 90° y distingue catetos de hipotenusa.",
+        "Distancia recta=√(a²+b²); factor k=lado nuevo/lado original."
+      ],
+      "math_check": {
+        "kind": "scale_length",
+        "params": [
+          3,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L01-03": {
+      "hints": [
+        "Marca un ángulo de 90° y distingue catetos de hipotenusa.",
+        "Distancia recta=√(a²+b²); factor k=lado nuevo/lado original."
+      ],
+      "math_check": {
+        "kind": "hypotenuse",
+        "params": [
+          3,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L01-04": {
+      "hints": [
+        "Marca un ángulo de 90° y distingue catetos de hipotenusa.",
+        "Distancia recta=√(a²+b²); factor k=lado nuevo/lado original."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L01-05": {
+      "hints": [
+        "Marca un ángulo de 90° y distingue catetos de hipotenusa.",
+        "Distancia recta=√(a²+b²); factor k=lado nuevo/lado original."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L02-01": {
+      "hints": [
+        "Primero convierte longitudes conservando la misma unidad.",
+        "Para área, multiplica por s² y convierte cm² a m² dividiendo entre 10000."
+      ],
+      "math_check": {
+        "kind": "map_meters",
+        "params": [
+          4,
+          500
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L02-02": {
+      "hints": [
+        "Primero convierte longitudes conservando la misma unidad.",
+        "Para área, multiplica por s² y convierte cm² a m² dividiendo entre 10000."
+      ],
+      "math_check": {
+        "kind": "map_area_m2",
+        "params": [
+          6,
+          500
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L02-03": {
+      "hints": [
+        "Primero convierte longitudes conservando la misma unidad.",
+        "Para área, multiplica por s² y convierte cm² a m² dividiendo entre 10000."
+      ],
+      "math_check": {
+        "kind": "map_meters",
+        "params": [
+          2,
+          500
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L02-04": {
+      "hints": [
+        "Primero convierte longitudes conservando la misma unidad.",
+        "Para área, multiplica por s² y convierte cm² a m² dividiendo entre 10000."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L02-05": {
+      "hints": [
+        "Primero convierte longitudes conservando la misma unidad.",
+        "Para área, multiplica por s² y convierte cm² a m² dividiendo entre 10000."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L03-01": {
+      "hints": [
+        "Resta en el mismo orden numerador y denominador.",
+        "m=Δy/Δx con Δx≠0 y m=tan θ con convención de inclinación."
+      ],
+      "math_check": {
+        "kind": "slope",
+        "params": [
+          1,
+          2,
+          4,
+          8
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L03-02": {
+      "hints": [
+        "Resta en el mismo orden numerador y denominador.",
+        "m=Δy/Δx con Δx≠0 y m=tan θ con convención de inclinación."
+      ],
+      "math_check": {
+        "kind": "atan_deg",
+        "params": [
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L03-03": {
+      "hints": [
+        "Resta en el mismo orden numerador y denominador.",
+        "m=Δy/Δx con Δx≠0 y m=tan θ con convención de inclinación."
+      ],
+      "math_check": {
+        "kind": "slope",
+        "params": [
+          0,
+          5,
+          5,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L03-04": {
+      "hints": [
+        "Resta en el mismo orden numerador y denominador.",
+        "m=Δy/Δx con Δx≠0 y m=tan θ con convención de inclinación."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L03-05": {
+      "hints": [
+        "Resta en el mismo orden numerador y denominador.",
+        "m=Δy/Δx con Δx≠0 y m=tan θ con convención de inclinación."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L04-01": {
+      "hints": [
+        "Iguala las dos expresiones de y; verifica el par resultante en las dos.",
+        "Si m₁=m₂ y b₁≠b₂, las rectas no se cortan."
+      ],
+      "math_check": {
+        "kind": "line_intersection_x",
+        "params": [
+          2,
+          1,
+          1,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L04-02": {
+      "hints": [
+        "Iguala las dos expresiones de y; verifica el par resultante en las dos.",
+        "Si m₁=m₂ y b₁≠b₂, las rectas no se cortan."
+      ],
+      "math_check": {
+        "kind": "line_intersection_y",
+        "params": [
+          2,
+          1,
+          1,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L04-03": {
+      "hints": [
+        "Iguala las dos expresiones de y; verifica el par resultante en las dos.",
+        "Si m₁=m₂ y b₁≠b₂, las rectas no se cortan."
+      ],
+      "math_check": {
+        "kind": "line_value",
+        "params": [
+          2,
+          1,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L04-04": {
+      "hints": [
+        "Iguala las dos expresiones de y; verifica el par resultante en las dos.",
+        "Si m₁=m₂ y b₁≠b₂, las rectas no se cortan."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L04-05": {
+      "hints": [
+        "Iguala las dos expresiones de y; verifica el par resultante en las dos.",
+        "Si m₁=m₂ y b₁≠b₂, las rectas no se cortan."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L05-01": {
+      "hints": [
+        "Fija el origen o centro antes de operar.",
+        "Traslación suma coordenadas; giro 90° antihorario (x,y)→(−y,x)."
+      ],
+      "math_check": {
+        "kind": "translated_x",
+        "params": [
+          3,
+          -1,
+          -2,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L05-02": {
+      "hints": [
+        "Fija el origen o centro antes de operar.",
+        "Traslación suma coordenadas; giro 90° antihorario (x,y)→(−y,x)."
+      ],
+      "math_check": {
+        "kind": "translated_y",
+        "params": [
+          3,
+          -1,
+          -2,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L05-03": {
+      "hints": [
+        "Fija el origen o centro antes de operar.",
+        "Traslación suma coordenadas; giro 90° antihorario (x,y)→(−y,x)."
+      ],
+      "math_check": {
+        "kind": "rot90_x",
+        "params": [
+          2,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L05-04": {
+      "hints": [
+        "Fija el origen o centro antes de operar.",
+        "Traslación suma coordenadas; giro 90° antihorario (x,y)→(−y,x)."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L05-05": {
+      "hints": [
+        "Fija el origen o centro antes de operar.",
+        "Traslación suma coordenadas; giro 90° antihorario (x,y)→(−y,x)."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L06-01": {
+      "hints": [
+        "Distingue magnitudes lineales y cuadráticas antes del cálculo.",
+        "Rectángulo: área=ab y perímetro=2(a+b). Escala real s·longitud de plano."
+      ],
+      "math_check": {
+        "kind": "rect_area",
+        "params": [
+          4,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L06-02": {
+      "hints": [
+        "Distingue magnitudes lineales y cuadráticas antes del cálculo.",
+        "Rectángulo: área=ab y perímetro=2(a+b). Escala real s·longitud de plano."
+      ],
+      "math_check": {
+        "kind": "rect_perimeter",
+        "params": [
+          4,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L06-03": {
+      "hints": [
+        "Distingue magnitudes lineales y cuadráticas antes del cálculo.",
+        "Rectángulo: área=ab y perímetro=2(a+b). Escala real s·longitud de plano."
+      ],
+      "math_check": {
+        "kind": "map_meters",
+        "params": [
+          3,
+          200
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L06-04": {
+      "hints": [
+        "Distingue magnitudes lineales y cuadráticas antes del cálculo.",
+        "Rectángulo: área=ab y perímetro=2(a+b). Escala real s·longitud de plano."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4A-G01-L06-05": {
+      "hints": [
+        "Distingue magnitudes lineales y cuadráticas antes del cálculo.",
+        "Rectángulo: área=ab y perímetro=2(a+b). Escala real s·longitud de plano."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    }
+  }
+}

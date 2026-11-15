@@ -1,0 +1,72 @@
+{
+  "version": "0.11.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "E4B-A01",
+      "priority": 1,
+      "why": "Polinomios 3º E3-A01 desarrollados. Base de factorización de cuarto."
+    },
+    {
+      "unit_id": "E4B-A02",
+      "priority": 2,
+      "why": "Arista canónica E3-A02→E4B-A02; factorizar requiere E4B-A01 desarrollado dentro de esta ola."
+    },
+    {
+      "unit_id": "B1C-A01",
+      "priority": 3,
+      "why": "El catálogo pide factorización y sistemas de 4º B, cubiertos en E4B-A01 y E4B-A02."
+    }
+  ],
+  "new_editorial_edges": [
+    {
+      "from": "E3-A01",
+      "to": "E4B-A01",
+      "status": "propuesta_editorial",
+      "type": "prerrequisito",
+      "why": "Polinomios 3º para álgebra 4º B."
+    },
+    {
+      "from": "E4B-A01",
+      "to": "E4B-A02",
+      "status": "propuesta_editorial",
+      "type": "prerrequisito",
+      "why": "Factorización antes de ecuaciones racionales y polinómicas."
+    },
+    {
+      "from": "E4B-A01",
+      "to": "B1C-A01",
+      "status": "propuesta_editorial",
+      "type": "prerrequisito",
+      "why": "Factorización de 4º B para Matemáticas I."
+    },
+    {
+      "from": "E4B-A02",
+      "to": "B1C-A01",
+      "status": "propuesta_editorial",
+      "type": "prerrequisito",
+      "why": "Sistemas y restricciones de 4º B para Matemáticas I."
+    }
+  ],
+  "canonical_edge_highlight": {
+    "from": "E3-A02",
+    "to": "E4B-A02",
+    "status": "canonica_ya_existente"
+  },
+  "evaluated_but_deferred": [
+    {
+      "unit_id": "B2C-A01",
+      "why": "Su requisito de sistemas de Matemáticas I se cubre con B1C-A01 en esta ola; desarrollar después."
+    },
+    {
+      "unit_id": "B2C-A02",
+      "why": "Matrices B2C-A01 no desarrolladas, pendiente."
+    },
+    {
+      "unit_id": "B2C-G02",
+      "why": "Vectores 3D sí cubiertos; falta cadena de matrices/determinantes y sistemas 3D."
+    }
+  ],
+  "region_mapping": "PENDIENTE códigos oficiales, sin equivalencia normativa inventada",
+  "preserved": "20 aristas canónicas y 26 editoriales anteriores; cuatro nuevas editoriales"
+}

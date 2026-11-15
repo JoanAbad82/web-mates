@@ -1,0 +1,88 @@
+{
+  "version": "2026-11-14-F3-29",
+  "source_of_truth": "sources/Catalogo_Matematicas_LOMLOE_85_unidades_2026.json",
+  "base_f3_28_sha256": "8510029717c4dcc24d46538e9f625343a5679c43057970b6df9cf688b1c779ef",
+  "baseline": {
+    "courses": 9,
+    "units": 85,
+    "canonical_lessons": 505,
+    "covered_units": 83,
+    "covered_lessons": 493,
+    "exercises_created": 2465,
+    "units_remaining": 2,
+    "lessons_remaining": 12
+  },
+  "wave29_plan": {
+    "selected_in_dependency_order": [
+      "B2C-G03",
+      "B1S-P01"
+    ],
+    "lessons": 12,
+    "exercises": 60,
+    "proposed_editorial_edges": [
+      {
+        "from": "B2C-G02",
+        "to": "B2C-G03",
+        "status": "propuesta_editorial",
+        "why": "Rectas y planos tridimensionales preceden a métrica espacial Matemáticas II."
+      },
+      {
+        "from": "E2-P01",
+        "to": "B1S-P01",
+        "status": "propuesta_editorial",
+        "why": "Porcentajes encadenados e interés simple como prerrequisito de finanzas."
+      },
+      {
+        "from": "B1S-N01",
+        "to": "B1S-P01",
+        "status": "propuesta_editorial",
+        "why": "Potencias y logaritmos de MACS I previos a modelos de capitalización."
+      }
+    ]
+  },
+  "after_wave29_if_all_gates_pass": {
+    "covered_units": 85,
+    "covered_lessons": 505,
+    "exercises_created": 2525,
+    "units_remaining": 0,
+    "lessons_remaining": 0,
+    "content_state": "EN REVISION; F4 no verificada"
+  },
+  "remaining_units": [],
+  "phase_F3_editorial_coverage": "CERRADA_VERIFICADA_TECNICAMENTE",
+  "phase_F3_human_review": "PENDIENTE_REVISION_F4",
+  "phase_F4_status": "NO INICIADA",
+  "phase_F4_acceptance_gates": [
+    {
+      "id": "F4-CURR",
+      "goal": "Revisión humana matemática, didáctica y mapeo oficial por territorio de todas las unidades",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Actas y resultados identificados por lección/versión/currículo; cotejo RD y Cataluña, sin inventar códigos"
+    },
+    {
+      "id": "F4-ACCESS",
+      "goal": "Accesibilidad WCAG 2.2 AA, lectores de pantalla y móvil físico",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Pruebas con teclado, zoom, contraste, lectores, Android/iOS, 320px, dispositivos y hallazgos corregidos"
+    },
+    {
+      "id": "F4-SEC",
+      "goal": "Privacidad y seguridad sin datos personales de menores no autorizados",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Inventario de flujos, rechazo entradas, borrado local, permisos, dependencias, control red e incidentes"
+    },
+    {
+      "id": "F4-LEARN",
+      "goal": "Pruebas de aprendizaje, distractores, feedback, espaciado y revisión de todas las soluciones",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Oráculos independientes, muestras revisadas, pruebas usuario proporcionadas voluntariamente sin identificar menores"
+    },
+    {
+      "id": "F4-RELEASE",
+      "goal": "Preparación de despliegue reversible, rendimiento, pruebas integrales y autorización de publicar",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Build reproducible, hashes, rollback y pruebas multidispositivo; permiso específico posterior antes de publicar"
+    }
+  ],
+  "publication_state": "BLOQUEADA HASTA F4 Y AUTORIZACIÓN EXPRESA"
+}

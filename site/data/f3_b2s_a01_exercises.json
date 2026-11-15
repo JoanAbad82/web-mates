@@ -1,0 +1,1063 @@
+{
+  "unit_id": "B2S-A01",
+  "version": "0.19.0",
+  "status": "revision",
+  "notice": "Banco sintético determinista EN REVISIÓN, sin validación humana todavía.",
+  "activities": [
+    {
+      "exercise_id": "F3-B2S-A01-L01-01",
+      "lesson_id": "B2S-A01-L01",
+      "type": "numeric",
+      "prompt": "En Matrices y operaciones: Suma matrices A=[[1,2],[3,4]] y B=[[5,0],[-1,2]]. Calcula entrada (2,1) de A+B. Escribe el número exacto sin unidades.",
+      "answer": 2.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 2. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 2.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_matrix_add_entry",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L01-02",
+      "lesson_id": "B2S-A01-L01",
+      "type": "numeric",
+      "prompt": "En Matrices y operaciones: Para A=[[1,2],[3,4]], calcula entrada (2,1) de 2A. Escribe el número exacto sin unidades.",
+      "answer": 6.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 6. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 6.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_matrix_scalar_entry",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L01-03",
+      "lesson_id": "B2S-A01-L01",
+      "type": "numeric",
+      "prompt": "En Matrices y operaciones: Para A=[[1,2],[3,4]], calcula entrada (1,2) de la matriz TRANSPUESTA Aᵀ. Escribe el número exacto sin unidades.",
+      "answer": 3.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 3. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 3.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_matrix_transpose_entry",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L01-04",
+      "lesson_id": "B2S-A01-L01",
+      "type": "choice",
+      "prompt": "En Matrices y operaciones: ¿Puede sumarse componente a componente una matriz 2×3 y otra 3×2 sin transformación explícita (Sí/No)? Selecciona la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: No. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: No.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_matrix_add_wrong_dims",
+        "prerequisito_b2s_a01"
+      ],
+      "choices": [
+        "Sí",
+        "No se puede determinar",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L01-05",
+      "lesson_id": "B2S-A01-L01",
+      "type": "choice",
+      "prompt": "En Matrices y operaciones: Si A tiene dimensiones 2×3, ¿qué dimensiones tiene Aᵀ: 3×2, 2×3 o 3×3? Selecciona la opción matemáticamente correcta.",
+      "answer": "3×2",
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 3×2. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 3×2.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_matrix_transpose_dims",
+        "prerequisito_b2s_a01"
+      ],
+      "choices": [
+        "3×3",
+        "3×2",
+        "2×3"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L02-01",
+      "lesson_id": "B2S-A01-L02",
+      "type": "numeric",
+      "prompt": "En Producto e inversa: Calcula entrada (1,1) del producto AB, A=[[1,2],[0,1]], B=[[2,0],[3,4]]. Escribe el número exacto sin unidades.",
+      "answer": 8.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 8. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 8.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_matrix_mul_entry",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L02-02",
+      "lesson_id": "B2S-A01-L02",
+      "type": "numeric",
+      "prompt": "En Producto e inversa: Calcula determinante exacto de A=[[2,1],[1,1]], det=ad−bc. Escribe el número exacto sin unidades.",
+      "answer": 1.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 1. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 1.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_matrix_det",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L02-03",
+      "lesson_id": "B2S-A01-L02",
+      "type": "numeric",
+      "prompt": "En Producto e inversa: La matriz A=[[2,1],[1,1]] es invertible. Calcula entrada (1,1) de A⁻¹. Escribe el número exacto sin unidades.",
+      "answer": 1.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 1. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 1.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_matrix_inverse_entry",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L02-04",
+      "lesson_id": "B2S-A01-L02",
+      "type": "choice",
+      "prompt": "En Producto e inversa: ¿La identidad AB=BA es válida para todas las matrices cuadradas compatibles (Sí/No)? Selecciona la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: No. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: No.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_matrix_mul_commutative",
+        "prerequisito_b2s_a01"
+      ],
+      "choices": [
+        "No se puede determinar",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L02-05",
+      "lesson_id": "B2S-A01-L02",
+      "type": "choice",
+      "prompt": "En Producto e inversa: ¿Una matriz cuadrada 2×2 con det=0 posee siempre inversa ordinaria (Sí/No)? Selecciona la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: No. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: No.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_singular_has_inverse",
+        "prerequisito_b2s_a01"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No se puede determinar"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L03-01",
+      "lesson_id": "B2S-A01-L03",
+      "type": "numeric",
+      "prompt": "En Sistemas lineales: Resuelve 2x+(1)y=7; 1x+(-1)y=2. Calcula variable x con comprobación. Escribe el número exacto sin unidades.",
+      "answer": 3.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 3. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 3.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_solve_x",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L03-02",
+      "lesson_id": "B2S-A01-L03",
+      "type": "numeric",
+      "prompt": "En Sistemas lineales: Resuelve 2x+(1)y=7; 1x+(-1)y=2. Calcula variable y con comprobación. Escribe el número exacto sin unidades.",
+      "answer": 1.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 1. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 1.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_solve_y",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L03-03",
+      "lesson_id": "B2S-A01-L03",
+      "type": "numeric",
+      "prompt": "En Sistemas lineales: Resuelve 1x+(1)y=5; 1x+(-1)y=1. Calcula variable x con comprobación. Escribe el número exacto sin unidades.",
+      "answer": 3.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 3. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 3.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_solve_x",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L03-04",
+      "lesson_id": "B2S-A01-L03",
+      "type": "choice",
+      "prompt": "En Sistemas lineales: ¿Determinante no nulo de la matriz 2×2 garantiza solución única del sistema lineal Ax=b para todo b (Sí/No)? Selecciona la opción matemáticamente correcta.",
+      "answer": "Sí",
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: Sí. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: Sí.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_unique_nonsingular",
+        "prerequisito_b2s_a01"
+      ],
+      "choices": [
+        "Sí",
+        "No",
+        "No se puede determinar"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L03-05",
+      "lesson_id": "B2S-A01-L03",
+      "type": "choice",
+      "prompt": "En Sistemas lineales: ¿Puede aplicarse A⁻¹b a una matriz singular sin comprobar invertibilidad (Sí/No)? Selecciona la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: No. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: No.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_inverse_without_det",
+        "prerequisito_b2s_a01"
+      ],
+      "choices": [
+        "Sí",
+        "No se puede determinar",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L04-01",
+      "lesson_id": "B2S-A01-L04",
+      "type": "numeric",
+      "prompt": "En Discusión de soluciones: Calcula rango de A=[[1,1],[2,2]], justificando con proporcionalidad/determinante. Escribe el número exacto sin unidades.",
+      "answer": 1.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 1. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 1.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_system_rank_coeff",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L04-02",
+      "lesson_id": "B2S-A01-L04",
+      "type": "numeric",
+      "prompt": "En Discusión de soluciones: Sistema 1x+(1)y=2; 2x+(2)y=5. Calcula rango de la matriz AMPLIADA. Escribe el número exacto sin unidades.",
+      "answer": 2.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 2. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 2.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_system_rank_augmented",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L04-03",
+      "lesson_id": "B2S-A01-L04",
+      "type": "numeric",
+      "prompt": "En Discusión de soluciones: Sistema 1x+(1)y=2; 2x+(2)y=4. Calcula rango de la matriz AMPLIADA. Escribe el número exacto sin unidades.",
+      "answer": 1.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 1. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 1.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_system_rank_augmented",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L04-04",
+      "lesson_id": "B2S-A01-L04",
+      "type": "choice",
+      "prompt": "En Discusión de soluciones: ¿El determinante cero de un sistema 2×2 obliga siempre a incompatibilidad y ninguna solución (Sí/No)? Selecciona la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: No. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: No.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_det_zero_implies_none",
+        "prerequisito_b2s_a01"
+      ],
+      "choices": [
+        "Sí",
+        "No se puede determinar",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L04-05",
+      "lesson_id": "B2S-A01-L04",
+      "type": "choice",
+      "prompt": "En Discusión de soluciones: Sistema 1x+(1)y=2; 2x+(2)y=4. Clasifica soluciones: Única, Infinitas o Ninguna. Selecciona la opción matemáticamente correcta.",
+      "answer": "Infinitas",
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: Infinitas. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: Infinitas.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_system_classification",
+        "prerequisito_b2s_a01"
+      ],
+      "choices": [
+        "Única",
+        "Infinitas",
+        "Ninguna"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L05-01",
+      "lesson_id": "B2S-A01-L05",
+      "type": "numeric",
+      "prompt": "En Aplicaciones económicas: Resuelve 1x+(1)y=10; 2x+(1)y=14. Calcula variable x con comprobación. Escribe el número exacto sin unidades.",
+      "answer": 4.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 4. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 4.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_solve_x",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L05-02",
+      "lesson_id": "B2S-A01-L05",
+      "type": "numeric",
+      "prompt": "En Aplicaciones económicas: Resuelve 1x+(1)y=10; 2x+(1)y=14. Calcula variable y con comprobación. Escribe el número exacto sin unidades.",
+      "answer": 6.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 6. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 6.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_solve_y",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L05-03",
+      "lesson_id": "B2S-A01-L05",
+      "type": "numeric",
+      "prompt": "En Aplicaciones económicas: Calcula determinante exacto de A=[[1,1],[2,1]], det=ad−bc. Escribe el número exacto sin unidades.",
+      "answer": -1.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: -1. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: -1.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_matrix_det",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L05-04",
+      "lesson_id": "B2S-A01-L05",
+      "type": "choice",
+      "prompt": "En Aplicaciones económicas: ¿La unicidad de solución real de Ax=b garantiza cantidades de productos no negativas (Sí/No)? Selecciona la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: No. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: No.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_system_solution_always_nonnegative",
+        "prerequisito_b2s_a01"
+      ],
+      "choices": [
+        "No se puede determinar",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L05-05",
+      "lesson_id": "B2S-A01-L05",
+      "type": "choice",
+      "prompt": "En Aplicaciones económicas: Resuelve 1x+(1)y=5; 1x+(-1)y=1. Calcula variable x con comprobación. Selecciona la opción matemáticamente correcta.",
+      "answer": "3",
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 3. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 3.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_solve_x",
+        "prerequisito_b2s_a01"
+      ],
+      "choices": [
+        "3",
+        "4",
+        "2"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L06-01",
+      "lesson_id": "B2S-A01-L06",
+      "type": "numeric",
+      "prompt": "En Grafos y matrices como aplicación: En M=[[0,1],[1,0]] como matriz de adyacencia, calcula entrada (1,1) de M²: recorridos de DOS pasos. Escribe el número exacto sin unidades.",
+      "answer": 1.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 1. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 1.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_adjacency_square_entry",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L06-02",
+      "lesson_id": "B2S-A01-L06",
+      "type": "numeric",
+      "prompt": "En Grafos y matrices como aplicación: En M=[[0,1],[1,0]] como matriz de adyacencia, calcula entrada (1,2) de M²: recorridos de DOS pasos. Escribe el número exacto sin unidades.",
+      "answer": 0.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 0. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 0.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_adjacency_square_entry",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L06-03",
+      "lesson_id": "B2S-A01-L06",
+      "type": "numeric",
+      "prompt": "En Grafos y matrices como aplicación: En M=[[0,1],[1,0]] como matriz de adyacencia, calcula entrada (2,2) de M²: recorridos de DOS pasos. Escribe el número exacto sin unidades.",
+      "answer": 1.0,
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 1. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 1.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_adjacency_square_entry",
+        "prerequisito_b2s_a01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L06-04",
+      "lesson_id": "B2S-A01-L06",
+      "type": "choice",
+      "prompt": "En Grafos y matrices como aplicación: ¿Una entrada no nula de M² garantiza una arista DIRECTA en esa misma posición de M (Sí/No)? Selecciona la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: No. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: No.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_two_steps_implies_edge",
+        "prerequisito_b2s_a01"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No se puede determinar"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A01-L06-05",
+      "lesson_id": "B2S-A01-L06",
+      "type": "choice",
+      "prompt": "En Grafos y matrices como aplicación: En M=[[0,1],[1,0]] como matriz de adyacencia, calcula aristas DIRECTAS entrada (1,2) de M. Selecciona la opción matemáticamente correcta.",
+      "answer": "1",
+      "explanation": "Se comprueba el orden fila-columna y el sistema con rango, determinante o sustitución, y se interpreta la estructura. Se comprueba la expresión original y el dominio, con aritmética exacta. Resultado: 1. Escribe filas, columnas, determinante, rango y unidades antes de operar matrices. Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos. Comprueba restricciones, unidades y la distinción entre magnitudes o entre función y modelo. Respuesta exacta verificable: 1.",
+      "hint": "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_adjacency_count_direct",
+        "prerequisito_b2s_a01"
+      ],
+      "choices": [
+        "2",
+        "0",
+        "1"
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B2S-A01-L01-01": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "matrix_add_entry",
+        "params": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          -1,
+          2,
+          2,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: matrix_add_entry"
+    },
+    "F3-B2S-A01-L01-02": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "matrix_scalar_entry",
+        "params": [
+          2,
+          1,
+          2,
+          3,
+          4,
+          2,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: matrix_scalar_entry"
+    },
+    "F3-B2S-A01-L01-03": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "matrix_transpose_entry",
+        "params": [
+          1,
+          2,
+          3,
+          4,
+          1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: matrix_transpose_entry"
+    },
+    "F3-B2S-A01-L01-04": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "matrix_add_wrong_dims",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: matrix_add_wrong_dims"
+    },
+    "F3-B2S-A01-L01-05": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "matrix_transpose_dims",
+        "params": [
+          2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: matrix_transpose_dims"
+    },
+    "F3-B2S-A01-L02-01": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "matrix_mul_entry",
+        "params": [
+          1,
+          2,
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          1,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: matrix_mul_entry"
+    },
+    "F3-B2S-A01-L02-02": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "matrix_det",
+        "params": [
+          2,
+          1,
+          1,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: matrix_det"
+    },
+    "F3-B2S-A01-L02-03": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "matrix_inverse_entry",
+        "params": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: matrix_inverse_entry"
+    },
+    "F3-B2S-A01-L02-04": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "matrix_mul_commutative",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: matrix_mul_commutative"
+    },
+    "F3-B2S-A01-L02-05": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "singular_has_inverse",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: singular_has_inverse"
+    },
+    "F3-B2S-A01-L03-01": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "solve_x",
+        "params": [
+          2,
+          1,
+          1,
+          -1,
+          7,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: solve_x"
+    },
+    "F3-B2S-A01-L03-02": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "solve_y",
+        "params": [
+          2,
+          1,
+          1,
+          -1,
+          7,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: solve_y"
+    },
+    "F3-B2S-A01-L03-03": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "solve_x",
+        "params": [
+          1,
+          1,
+          1,
+          -1,
+          5,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: solve_x"
+    },
+    "F3-B2S-A01-L03-04": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "unique_nonsingular",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: unique_nonsingular"
+    },
+    "F3-B2S-A01-L03-05": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "inverse_without_det",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: inverse_without_det"
+    },
+    "F3-B2S-A01-L04-01": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "system_rank_coeff",
+        "params": [
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: system_rank_coeff"
+    },
+    "F3-B2S-A01-L04-02": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "system_rank_augmented",
+        "params": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: system_rank_augmented"
+    },
+    "F3-B2S-A01-L04-03": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "system_rank_augmented",
+        "params": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: system_rank_augmented"
+    },
+    "F3-B2S-A01-L04-04": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "det_zero_implies_none",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: det_zero_implies_none"
+    },
+    "F3-B2S-A01-L04-05": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "system_classification",
+        "params": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: system_classification"
+    },
+    "F3-B2S-A01-L05-01": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "solve_x",
+        "params": [
+          1,
+          1,
+          2,
+          1,
+          10,
+          14
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: solve_x"
+    },
+    "F3-B2S-A01-L05-02": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "solve_y",
+        "params": [
+          1,
+          1,
+          2,
+          1,
+          10,
+          14
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: solve_y"
+    },
+    "F3-B2S-A01-L05-03": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "matrix_det",
+        "params": [
+          1,
+          1,
+          2,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: matrix_det"
+    },
+    "F3-B2S-A01-L05-04": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "system_solution_always_nonnegative",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: system_solution_always_nonnegative"
+    },
+    "F3-B2S-A01-L05-05": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "solve_x",
+        "params": [
+          1,
+          1,
+          1,
+          -1,
+          5,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: solve_x"
+    },
+    "F3-B2S-A01-L06-01": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "adjacency_square_entry",
+        "params": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: adjacency_square_entry"
+    },
+    "F3-B2S-A01-L06-02": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "adjacency_square_entry",
+        "params": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: adjacency_square_entry"
+    },
+    "F3-B2S-A01-L06-03": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "adjacency_square_entry",
+        "params": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: adjacency_square_entry"
+    },
+    "F3-B2S-A01-L06-04": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "two_steps_implies_edge",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: two_steps_implies_edge"
+    },
+    "F3-B2S-A01-L06-05": {
+      "hints": [
+        "Escribe filas, columnas, determinante, rango y unidades antes de operar matrices.",
+        "Suma y transpuesta por entradas; producto fila×columna. Invertir solo si det≠0. Sistemas singulares se clasifican comparando rango de A y ampliada. M² cuenta recorridos de dos pasos."
+      ],
+      "math_check": {
+        "kind": "adjacency_count_direct",
+        "params": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, unidad, integral, det, rango, orden matricial, elasticidad o factibilidad: adjacency_count_direct"
+    }
+  }
+}

@@ -1,0 +1,630 @@
+{
+  "unit_id": "E2-P01",
+  "unit_title": "Proporcionalidad inversa y porcentajes",
+  "product_phase": "F3_OLA4",
+  "version": "0.4.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Distinguir proporcionalidad directa, inversa y relaciones no proporcionales mediante tablas.",
+    "Resolver problemas de proporcionalidad directa e inversa con un modelo razonado.",
+    "Calcular tasas y velocidades medias con unidades consistentes."
+  ],
+  "warnings": [
+    "Contenidos originales editoriales en revisión; no homologados.",
+    "La distribución por cursos del tramo 1.º–3.º ESO es editorial, no una prescripción estatal universal.",
+    "Algunos prerrequisitos numéricos precedentes siguen solo en el índice y no se declara dominio de ellos."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Proporcionalidad directa",
+      "lesson_id": "E1-P01-L02",
+      "href": "#/curso/E1/unidad/E1-P01/leccion/E1-P01-L02"
+    },
+    {
+      "label": "Porcentajes",
+      "lesson_id": "E1-N05-L04",
+      "href": "#/curso/E1/unidad/E1-N05/leccion/E1-N05-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrada",
+    "rule": "Recuperación sin ayuda tras ejemplos, práctica determinista y repetición diferida optativa."
+  },
+  "source_note": "RD 217/2022, anexo II, Matemáticas ESO: proporcionalidad directa, inversa y porcentajes sucesivos; ubicación editorial con cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E2-P01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-P01:C01"
+      ],
+      "objectives": [
+        "Distinguir proporcionalidad directa, inversa y relaciones no proporcionales mediante tablas.",
+        "Comprobar y/x constante en relaciones directas y xy constante en inversas."
+      ],
+      "prerequisites": [
+        "E1-P01-L02",
+        "E1-N05-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una relación directa cumple y=kx y tiene cociente y/x constante para x distinto de cero. Una relación inversa cumple y=k/x y mantiene producto xy=k, con x distinto de cero. Si ninguna condición se cumple, no clasifiques el modelo como proporcional por parecer una curva o una recta. El contexto debe permitir usar los valores representados."
+        },
+        {
+          "type": "example",
+          "body": "Con seis trabajadores idénticos y trabajo fijo, si la duración es 4 horas, con tres trabajadores equivalentes será 8 horas: 6·4=3·8=24."
+        },
+        {
+          "type": "example",
+          "body": "Una tarifa 2+3x es lineal afín, pero no directamente proporcional porque en x=0 vale 2. Tampoco cumple producto xy constante."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla inversa para trabajo fijo: trabajadores 2, 3, 4, 6; horas 12, 8, 6, 4; los productos valen 24.",
+          "alt": "Tabla inversa para trabajo fijo: trabajadores 2, 3, 4, 6; horas 12, 8, 6, 4; los productos valen 24.",
+          "visual_spec": {
+            "kind": "relation_table",
+            "pairs": [
+              [
+                2,
+                12
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                6,
+                4
+              ]
+            ],
+            "title": "Proporcionalidad inversa de tiempo y equipos",
+            "x_label": "Equipos",
+            "y_label": "Horas",
+            "continuous": false
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si al duplicar x la salida y se reduce a la mitad, ¿qué tipo de proporcionalidad puede indicar?||Puede indicar proporcionalidad inversa, siempre que xy permanezca constante en todo el dominio considerado."
+        },
+        {
+          "type": "summary",
+          "body": "Directa: cociente constante; inversa: producto constante; ninguna: ambas pruebas fallan."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-P01-L01-01",
+        "F3-E2-P01-L01-02",
+        "F3-E2-P01-L01-03",
+        "F3-E2-P01-L01-04",
+        "F3-E2-P01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-P01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-P01:C02"
+      ],
+      "objectives": [
+        "Reconocer relaciones con término fijo o crecimiento no constante.",
+        "Justificar por qué varios datos no determinan una proporcionalidad."
+      ],
+      "prerequisites": [
+        "E2-P01-L01",
+        "E2-F01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "No todas las relaciones entre magnitudes son proporcionales. Una tarifa y=5+2x tiene un coste inicial distinto de cero y su cociente y/x cambia; por tanto no es directa. Si el producto xy tampoco es constante, no es inversa. Un par aislado no basta para decidir: compara varias filas y explica el contexto."
+        },
+        {
+          "type": "example",
+          "body": "Una suscripción cuesta 5 € fijos más 2 € por uso. Para 1, 2 y 3 usos se pagan 7, 9 y 11 €; ni y/x ni xy se mantienen."
+        },
+        {
+          "type": "example",
+          "body": "En y=x², al pasar de 1 a 2 unidades la salida va de 1 a 4, es decir, se cuadruplica. No es y=kx ni y=k/x."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla tarifa: usos 0,1,2,3; coste 5,7,9,11. Fijarse en la fila de cero revela el término fijo.",
+          "alt": "Tabla tarifa: usos 0,1,2,3; coste 5,7,9,11. Fijarse en la fila de cero revela el término fijo.",
+          "visual_spec": {
+            "kind": "relation_table",
+            "pairs": [
+              [
+                0,
+                5
+              ],
+              [
+                1,
+                7
+              ],
+              [
+                2,
+                9
+              ],
+              [
+                3,
+                11
+              ]
+            ],
+            "title": "Tarifa con cuota fija no proporcional",
+            "x_label": "Usos",
+            "y_label": "Euros",
+            "continuous": false
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una gráfica en forma de recta siempre describe proporcionalidad directa?||No; una recta que no pasa por el origen tiene un término fijo y es una relación afín no proporcional."
+        },
+        {
+          "type": "summary",
+          "body": "Verifica varios pares y la presencia de cuota fija; no clasifiques solo por apariencia."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-P01-L02-01",
+        "F3-E2-P01-L02-02",
+        "F3-E2-P01-L02-03",
+        "F3-E2-P01-L02-04",
+        "F3-E2-P01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-P01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-P01:C03"
+      ],
+      "objectives": [
+        "Resolver problemas de proporcionalidad directa e inversa con un modelo razonado.",
+        "Distinguir qué magnitud se mantiene fija y comprobar la solución en la relación original."
+      ],
+      "prerequisites": [
+        "E2-P01-L01",
+        "E1-P01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Antes de aplicar una regla de tres, clasifica el fenómeno. En una relación directa y=kx, puedes hallar k y escalar. En una inversa xy=k, mantén el producto. No cruces números de manera automática: dibuja una tabla con unidades y comprueba el resultado en el contexto, porque más trabajadores hacen menos horas solo bajo supuestos comparables."
+        },
+        {
+          "type": "example",
+          "body": "Tres máquinas completan una tarea en 8 horas; seis máquinas iguales la harían en 4 horas (3·8=6·4) suponiendo rendimiento constante."
+        },
+        {
+          "type": "example",
+          "body": "Dos kilos cuestan 7 € y cinco kilos a precio fijo cuestan 17,50 € porque el coste unitario es 3,50 €/kg, una relación directa."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla inversa: máquinas 2,4,8; horas 12,6,3 para un trabajo fijo de 24 máquina-horas.",
+          "alt": "Tabla inversa: máquinas 2,4,8; horas 12,6,3 para un trabajo fijo de 24 máquina-horas.",
+          "visual_spec": {
+            "kind": "relation_table",
+            "pairs": [
+              [
+                2,
+                12
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                8,
+                3
+              ]
+            ],
+            "title": "Trabajo fijo y rendimiento uniforme",
+            "x_label": "Máquinas",
+            "y_label": "Horas",
+            "continuous": false
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Para una tarea fija, ¿por qué al duplicar máquinas iguales se reduce a la mitad el tiempo?||Porque el producto máquinas·tiempo debe permanecer constante bajo los supuestos de rendimiento uniforme."
+        },
+        {
+          "type": "summary",
+          "body": "Primero clasifica; después usa k=y/x (directa) o k=xy (inversa) y verifica."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-P01-L03-01",
+        "F3-E2-P01-L03-02",
+        "F3-E2-P01-L03-03",
+        "F3-E2-P01-L03-04",
+        "F3-E2-P01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-P01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-P01:C04"
+      ],
+      "objectives": [
+        "Resolver cambios porcentuales sucesivos multiplicando factores.",
+        "Explicar por qué aumentos y descuentos del mismo porcentaje no suelen cancelar el cambio."
+      ],
+      "prerequisites": [
+        "E1-N05-L06",
+        "E2-P01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Los porcentajes sucesivos se aplican sobre bases nuevas. Una subida del p % multiplica por 1+p/100; una bajada del q % multiplica por 1−q/100. El resultado se obtiene multiplicando ambos factores, no sumando porcentajes sin más. Si primero aumenta un 10% y luego baja un 10%, el producto 1,1·0,9=0,99 produce una caída neta del 1%."
+        },
+        {
+          "type": "example",
+          "body": "Un precio de 100 € sube 20% y después baja 10%: 100·1,2·0,9=108 €. Los cambios se aplican en orden sobre precios sucesivos."
+        },
+        {
+          "type": "example",
+          "body": "Un importe de 80 € con un descuento de 25% y después otro de 20% queda en 80·0,75·0,80=48 €. No es una rebaja del 45% sino del 40%."
+        },
+        {
+          "type": "figure",
+          "body": "Cuadrícula de cien: 99 celdas permanecen tras subir y bajar un 10%, partiendo de 100.",
+          "alt": "Cuadrícula de cien: 99 celdas permanecen tras subir y bajar un 10%, partiendo de 100.",
+          "visual_spec": {
+            "kind": "hundred_grid",
+            "percent": 99,
+            "title": "Noventa y nueve por ciento del valor inicial"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si el precio sube 10% y después baja 10%, ¿vuelve al valor inicial?||No. El factor total 1,1·0,9=0,99 deja el valor un 1% por debajo del inicial."
+        },
+        {
+          "type": "summary",
+          "body": "Multiplica factores sucesivos; la base de cada cambio es el resultado anterior."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-P01-L04-01",
+        "F3-E2-P01-L04-02",
+        "F3-E2-P01-L04-03",
+        "F3-E2-P01-L04-04",
+        "F3-E2-P01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-P01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-P01:C05"
+      ],
+      "objectives": [
+        "Calcular tasas y velocidades medias con unidades consistentes.",
+        "Distinguir velocidad media de trayectos individuales y detectar promedios incorrectos."
+      ],
+      "prerequisites": [
+        "E1-P01-L04",
+        "E2-F01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La velocidad media en un recorrido es distancia total dividida entre tiempo total, con unidades como km/h. Si el tiempo incluye paradas, estas cuentan en el denominador cuando se pide el tiempo transcurrido total. No calcules siempre la media aritmética de velocidades de tramos: puede ser incorrecta si los tiempos difieren."
+        },
+        {
+          "type": "example",
+          "body": "Un viaje de 150 km dura 3 h, incluidas paradas: velocidad media = 150/3=50 km/h."
+        },
+        {
+          "type": "example",
+          "body": "Una bici recorre 20 km en 1 h y 10 km en otra hora: velocidad media total 30/2=15 km/h. El resultado coincide con la media de 20 y 10 solo porque los tiempos de ambos tramos son iguales."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla lineal distancia-tiempo de una velocidad constante de 30 km/h: (1,30),(2,60),(3,90).",
+          "alt": "Tabla lineal distancia-tiempo de una velocidad constante de 30 km/h: (1,30),(2,60),(3,90).",
+          "visual_spec": {
+            "kind": "relation_table",
+            "pairs": [
+              [
+                1,
+                30
+              ],
+              [
+                2,
+                60
+              ],
+              [
+                3,
+                90
+              ]
+            ],
+            "title": "Distancia recorrida a 30 km/h",
+            "x_label": "Tiempo (h)",
+            "y_label": "Distancia (km)",
+            "continuous": false
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si recorres 60 km en 2 h, ¿qué debe aparecer en el denominador de la velocidad media?||El tiempo total de dos horas; la velocidad media es 60/2=30 km/h."
+        },
+        {
+          "type": "summary",
+          "body": "Tasa media = cambio total/cantidad de referencia; expresa y comprueba las unidades."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-P01-L05-01",
+        "F3-E2-P01-L05-02",
+        "F3-E2-P01-L05-03",
+        "F3-E2-P01-L05-04",
+        "F3-E2-P01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-P01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-P01:C06"
+      ],
+      "objectives": [
+        "Calcular interés simple para un capital y duración definidos.",
+        "Resolver situaciones comerciales identificando importe base, tipo y tiempo sin mezclar unidades."
+      ],
+      "prerequisites": [
+        "E2-P01-L04",
+        "E1-N05-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En el interés simple, los intereses no se incorporan al capital para producir nuevos intereses. Para un capital inicial C, un tipo anual r expresado como fracción y t años, el interés es I=Crt. Si r está en porcentaje, divide entre 100. La fórmula no representa interés compuesto, gastos ni impuestos. Los meses se convierten a años bajo la convención indicada."
+        },
+        {
+          "type": "example",
+          "body": "Depositar 1.000 € al 5% anual simple durante 2 años genera I=1000·0,05·2=100 € de intereses, con total final 1.100 €."
+        },
+        {
+          "type": "example",
+          "body": "Un capital de 600 € al 4% simple durante 6 meses produce I=600·0,04·0,5=12 €. El año fraccionario es medio año."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla de interés simple sobre 1.000 € al 5%: años 0,1,2,3; intereses acumulados 0,50,100,150.",
+          "alt": "Tabla de interés simple sobre 1.000 € al 5%: años 0,1,2,3; intereses acumulados 0,50,100,150.",
+          "visual_spec": {
+            "kind": "relation_table",
+            "pairs": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                50
+              ],
+              [
+                2,
+                100
+              ],
+              [
+                3,
+                150
+              ]
+            ],
+            "title": "Intereses simples acumulados",
+            "x_label": "Años",
+            "y_label": "Interés (€)",
+            "continuous": false
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El interés simple de 1.000 € al 5% durante dos años es igual al interés compuesto del mismo periodo?||No en general. En interés simple cada año se calcula sobre los 1.000 € iniciales; en compuesto los intereses pueden capitalizar."
+        },
+        {
+          "type": "summary",
+          "body": "Interés simple I=C·r·t, tasa en forma decimal y tiempo en años; distingue interés del saldo final."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-P01-L06-01",
+        "F3-E2-P01-L06-02",
+        "F3-E2-P01-L06-03",
+        "F3-E2-P01-L06-04",
+        "F3-E2-P01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,794 @@
+{
+  "unit_id": "E4A-Q01",
+  "unit_title": "Probabilidad, muestreo e inferencia inicial",
+  "product_phase": "F3_OLA22",
+  "version": "0.22.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Describir experimentos compuestos mediante espacio de rutas y árbol.",
+    "Aplicar la regla de Laplace y los principios de recuento con hipótesis explícitas.",
+    "Construir árboles con probabilidades condicionales y tablas de eventos."
+  ],
+  "warnings": [
+    "Todos los datos son sintéticos y el contenido permanece EN REVISIÓN.",
+    "Asociación o correlación no demuestra causalidad; las extrapolaciones no están validadas por la muestra.",
+    "Laplace exige equiprobabilidad; sin reemplazo usar ramas condicionadas.",
+    "La proporción muestral no identifica con certeza el parámetro de población; no se fabrican márgenes de error.",
+    "WCAG 2.2 AA integral, validación autonómica, revisión humana y dispositivos físicos NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Probabilidad compuesta de 3.º ESO",
+      "lesson_id": "E3-Q01-L05",
+      "href": "#/curso/E3/unidad/E3-Q01/leccion/E3-Q01-L05"
+    },
+    {
+      "label": "Muestreo y representatividad",
+      "lesson_id": "E3-D01-L02",
+      "href": "#/curso/E3/unidad/E3-D01/leccion/E3-D01-L02"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recuperación activa y revisión local únicamente si usuario consiente."
+  },
+  "source_note": "Referencias estatales RD 217/2022 y RD 243/2022; distribución por itinerario editorial no homologada.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E4A-Q01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.22.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-Q01:C01"
+      ],
+      "objectives": [
+        "Describir experimentos compuestos mediante espacio de rutas y árbol.",
+        "Distinguir independencia de dependencia por extracción sin reemplazo."
+      ],
+      "prerequisites": [
+        "E3-Q01-L05",
+        "E3-Q01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un experimento compuesto contiene varias etapas y cada ruta representa una secuencia ordenada. Dos monedas independientes y equilibradas producen cuatro rutas CC,CX,XC,XX equiprobables: la probabilidad de dos caras es 1/4, y de exactamente una cara es 2/4=1/2. Si se extraen dos fichas de una bolsa de 2 rojas y 1 azul sin reemplazo, las probabilidades cambian después de la primera extracción: P(RR)=2/3·1/2=1/3, no (2/3)². En un árbol, las probabilidades salientes de un nodo deben sumar 1, y la probabilidad de una ruta es el producto de pesos condicionales locales. Para unir rutas incompatibles se suman sus probabilidades. La independencia es hipótesis que debe probarse o estar declarada, y las rutas no son equiprobables por el mero hecho de ser dibujadas."
+        },
+        {
+          "type": "example",
+          "body": "Dos monedas equilibradas e independientes: CC,CX,XC,XX pesan 1/4. Exactamente una cara tiene probabilidad 1/4+1/4=1/2."
+        },
+        {
+          "type": "example",
+          "body": "Urna con 2 rojas y 1 azul sin reemplazo: P(primera roja)=2/3, P(segunda roja|primera roja)=1/2, P(RR)=1/3."
+        },
+        {
+          "type": "figure",
+          "body": "Árbol de extracción dependiente. Gráfico SVG local de apoyo y tabla semántica con datos exactos y limitaciones.",
+          "alt": "Árbol de extracción dependiente. La tabla completa indica coordenadas, recuentos, modelo, unidades y limitaciones, sin depender de visión de color.",
+          "visual_spec": {
+            "render_family": "wave22",
+            "kind": "prob_tree",
+            "title": "Árbol de extracción dependiente",
+            "rows": [
+              [
+                "Bolsa inicial",
+                "2 R y 1 A"
+              ],
+              [
+                "P(R primera)",
+                "2/3"
+              ],
+              [
+                "P(R segunda|R)",
+                "1/2"
+              ],
+              [
+                "P(RR)",
+                "1/3"
+              ],
+              [
+                "Hipótesis",
+                "Sin reemplazo"
+              ]
+            ],
+            "model": {
+              "kind": "prob_tree",
+              "first": [
+                "R",
+                "A"
+              ],
+              "weights": [
+                "2/3",
+                "1/3"
+              ],
+              "second": [
+                "R|R",
+                "A|R"
+              ],
+              "second_weights": [
+                "1/2",
+                "1/2"
+              ]
+            },
+            "domain": [
+              0,
+              2
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Dos extracciones sin reemplazo conservan automáticamente independencia?||No; la segunda composición depende de la primera."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un experimento compuesto contiene varias etapas y cada ruta representa una secuencia ordenada. Explica qué hipótesis o sesgo puede modificar tu respuesta."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-Q01-L01-01",
+        "F3-E4A-Q01-L01-02",
+        "F3-E4A-Q01-L01-03",
+        "F3-E4A-Q01-L01-04",
+        "F3-E4A-Q01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; secuenciación por cursos propuesta editorial, mapeo autonómico no cotejado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto. No sustituye cotejo competencial oficial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-Q01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.22.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-Q01:C02"
+      ],
+      "objectives": [
+        "Aplicar la regla de Laplace y los principios de recuento con hipótesis explícitas.",
+        "Evitar equiprobabilidad falsa de sumas y recuentos repetidos."
+      ],
+      "prerequisites": [
+        "E3-Q01-L02",
+        "E3-Q01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La regla P(A)=|A|/|Ω| solo funciona por simple recuento cuando los resultados elementales de Ω tienen igual probabilidad. Dos dados ideales, distinguibles e independientes generan 36 parejas ordenadas; la suma 7 aparece en 6 y la suma 2 en 1, con probabilidades 1/6 y 1/36. En un experimento por etapas de 3 camisetas y 2 pantalones hay 3·2=6 atuendos; elegir un objeto de uno entre dos grupos disjuntos de 3 y 2 produce 3+2=5 opciones. Confundir producto para etapas con suma para alternativas es un error estructural. Ni las once sumas del dado son equiprobables ni un dado cargado admite Laplace sin conocer pesos. Los diagramas deben acompañarse de tablas que muestren universo, unidad de resultado, número favorable y denominador."
+        },
+        {
+          "type": "example",
+          "body": "Dos dados ideales: suma 7 se obtiene con seis parejas de 36, así que P(suma 7)=1/6; suma 2 solo con (1,1), P=1/36."
+        },
+        {
+          "type": "example",
+          "body": "Escoger una camiseta entre 3 y un pantalón entre 2 genera 6 atuendos distintos; escoger solo uno de dos grupos disjuntos da 5 alternativas."
+        },
+        {
+          "type": "figure",
+          "body": "Multiplicidad de sumas de dados ideales. Gráfico SVG local de apoyo y tabla semántica con datos exactos y limitaciones.",
+          "alt": "Multiplicidad de sumas de dados ideales. La tabla completa indica coordenadas, recuentos, modelo, unidades y limitaciones, sin depender de visión de color.",
+          "visual_spec": {
+            "render_family": "wave22",
+            "kind": "stats_bars",
+            "title": "Multiplicidad de sumas de dados ideales",
+            "rows": [
+              [
+                "Resultados elementales",
+                "36 parejas"
+              ],
+              [
+                "Suma 2",
+                "1 pareja"
+              ],
+              [
+                "Suma 7",
+                "6 parejas"
+              ],
+              [
+                "P(suma 7)",
+                "1/6"
+              ],
+              [
+                "Hipótesis",
+                "Dados independientes y equilibrados"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ],
+              "labels": [
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12"
+              ]
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Pueden considerarse equiprobables las once sumas de dos dados ideales?||No; son los pares elementales los equiprobables."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La regla P(A)=|A|/|Ω| solo funciona por simple recuento cuando los resultados elementales de Ω tienen igual probabilidad. Explica qué hipótesis o sesgo puede modificar tu respuesta."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-Q01-L02-01",
+        "F3-E4A-Q01-L02-02",
+        "F3-E4A-Q01-L02-03",
+        "F3-E4A-Q01-L02-04",
+        "F3-E4A-Q01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; secuenciación por cursos propuesta editorial, mapeo autonómico no cotejado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto. No sustituye cotejo competencial oficial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-Q01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.22.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-Q01:C03"
+      ],
+      "objectives": [
+        "Construir árboles con probabilidades condicionales y tablas de eventos.",
+        "Calcular unión e intersección sin contar dos veces los casos compartidos."
+      ],
+      "prerequisites": [
+        "E4A-Q01-L01",
+        "E3-Q01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para sucesos A,B, P(A∪B)=P(A)+P(B)−P(A∩B), fórmula válida independientemente de que sean compatibles. Si un dado ideal define A=par={2,4,6} y B=>4={5,6}, la intersección es {6} y la unión {2,4,5,6}; P(A∪B)=4/6=2/3. En dos monedas independientes, el árbol tiene rutas CC,CX,XC,XX, cada una con probabilidad 1/4; las rutas CX y XC son incompatibles y pueden sumarse para exactamente una cara. La independencia entre eventos y su incompatibilidad no son equivalentes: eventos excluyentes con probabilidades positivas no son independientes. Un árbol condicionado describe situaciones con probabilidades cambiantes y no debe sustituirse por un producto ingenuo de marginales. Toda cifra es sintética, usada solo para justificar reglas."
+        },
+        {
+          "type": "example",
+          "body": "En dado ideal A=par (3 caras), B=>4 (2), A∩B={6} (1), la unión tiene 3+2−1=4 casos de seis."
+        },
+        {
+          "type": "example",
+          "body": "Dos monedas independientes: P(CX o XC)=1/4+1/4=1/2 porque las rutas son disjuntas."
+        },
+        {
+          "type": "figure",
+          "body": "Intersección y unión de sucesos. Gráfico SVG local de apoyo y tabla semántica con datos exactos y limitaciones.",
+          "alt": "Intersección y unión de sucesos. La tabla completa indica coordenadas, recuentos, modelo, unidades y limitaciones, sin depender de visión de color.",
+          "visual_spec": {
+            "render_family": "wave22",
+            "kind": "prob_tree",
+            "title": "Intersección y unión de sucesos",
+            "rows": [
+              [
+                "A=par",
+                "{2,4,6}"
+              ],
+              [
+                "B=>4",
+                "{5,6}"
+              ],
+              [
+                "A∩B",
+                "{6}"
+              ],
+              [
+                "A∪B",
+                "{2,4,5,6}"
+              ],
+              [
+                "P(A∪B)",
+                "2/3"
+              ]
+            ],
+            "model": {
+              "kind": "prob_tree",
+              "first": [
+                "A",
+                "B"
+              ],
+              "weights": [
+                "3/6",
+                "2/6"
+              ]
+            },
+            "domain": [
+              0,
+              2
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Incompatibilidad e independencia significan lo mismo?||No; son propiedades distintas de los sucesos."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para sucesos A,B, P(A∪B)=P(A)+P(B)−P(A∩B), fórmula válida independientemente de que sean compatibles. Explica qué hipótesis o sesgo puede modificar tu respuesta."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-Q01-L03-01",
+        "F3-E4A-Q01-L03-02",
+        "F3-E4A-Q01-L03-03",
+        "F3-E4A-Q01-L03-04",
+        "F3-E4A-Q01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; secuenciación por cursos propuesta editorial, mapeo autonómico no cotejado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto. No sustituye cotejo competencial oficial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-Q01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.22.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-Q01:C04"
+      ],
+      "objectives": [
+        "Interpretar simulación como aproximación, no prueba matemática de un modelo.",
+        "Comparar frecuencia empírica y probabilidad teórica con muestras finitas."
+      ],
+      "prerequisites": [
+        "E3-Q01-L04",
+        "E1-D01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Simular significa generar resultados de un modelo supuesto y observar sus frecuencias. En una moneda ideal P(cara)=1/2, pero 18 caras en 40 simulaciones producen frecuencia observada 18/40=0,45, una desviación de 0,05 respecto a 0,50. Esa desviación no demuestra sesgo del instrumento, y el modelo teórico tampoco obliga a obtener exactamente 20 caras en una serie de 40. Al aumentar repeticiones independientes y de distribución idéntica, la frecuencia tiende en probabilidad hacia el valor teórico, pero no tiene que mejorar en cada paso ni hay igualdad garantizada para tamaño finito. Una simulación reproducible puede definir semilla y algoritmo, no sustituye por sí sola la verificación de hipótesis físicas de un experimento. Los datos de la unidad son fijos y sintéticos, sin llamadas externas ni información privada."
+        },
+        {
+          "type": "example",
+          "body": "En 40 lanzamientos sintéticos se observan 18 caras: frecuencia=18/40=9/20=0,45 y desviación absoluta |0,45−0,5|=0,05."
+        },
+        {
+          "type": "example",
+          "body": "En 20 ensayos con 8 caras la frecuencia es 8/20=0,4: no acredita que una moneda ideal tenga P(cara)=0,4."
+        },
+        {
+          "type": "figure",
+          "body": "Frecuencias simuladas y modelo de moneda. Gráfico SVG local de apoyo y tabla semántica con datos exactos y limitaciones.",
+          "alt": "Frecuencias simuladas y modelo de moneda. La tabla completa indica coordenadas, recuentos, modelo, unidades y limitaciones, sin depender de visión de color.",
+          "visual_spec": {
+            "render_family": "wave22",
+            "kind": "stats_bars",
+            "title": "Frecuencias simuladas y modelo de moneda",
+            "rows": [
+              [
+                "Ensayos sintéticos",
+                "40"
+              ],
+              [
+                "Caras observadas",
+                "18"
+              ],
+              [
+                "Cruces observadas",
+                "22"
+              ],
+              [
+                "Frecuencia cara",
+                "9/20"
+              ],
+              [
+                "Probabilidad teórica ideal",
+                "1/2"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                18,
+                22
+              ],
+              "labels": [
+                "Cara",
+                "Cruz"
+              ]
+            },
+            "domain": [
+              0,
+              25
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La simulación con cuarenta ensayos garantiza obtener veinte caras exactas de una moneda ideal?||No; el resultado finito fluctúa."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Simular significa generar resultados de un modelo supuesto y observar sus frecuencias. Explica qué hipótesis o sesgo puede modificar tu respuesta."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-Q01-L04-01",
+        "F3-E4A-Q01-L04-02",
+        "F3-E4A-Q01-L04-03",
+        "F3-E4A-Q01-L04-04",
+        "F3-E4A-Q01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; secuenciación por cursos propuesta editorial, mapeo autonómico no cotejado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto. No sustituye cotejo competencial oficial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-Q01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.22.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-Q01:C05"
+      ],
+      "objectives": [
+        "Distinguir población, marco muestral y selección representativa.",
+        "Identificar sesgos de selección y denominadores de proporciones."
+      ],
+      "prerequisites": [
+        "E3-D01-L02",
+        "E4A-Q01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La población es el conjunto sobre el que se desea razonar; el marco muestral es el listado o procedimiento desde el cual se seleccionan observaciones, que puede excluir parte de esa población. Una muestra de 20 respuestas favorables entre 50 da una proporción 20/50=0,4, no prueba que el 40 % de toda la población comparta la respuesta. Si solo contestan personas que voluntariamente visitan un sitio, el sesgo de autoselección puede persistir aunque aumente el número de respuestas. Para un muestreo aleatorio simple ideal deben definirse unidades y probabilidades de selección, y considerar no respuesta y cobertura del marco. Los porcentajes deben acompañarse de recuentos y denominadores; 20 % de 10 son 2 casos, mientras 20 % de 100 son 20. Se emplean datos inventados, sin solicitar identificadores ni opiniones reales de menores."
+        },
+        {
+          "type": "example",
+          "body": "En una muestra de 50 respuestas hay 20 favorables; proporción observada 20/50=2/5. No se extiende automáticamente a toda la población."
+        },
+        {
+          "type": "example",
+          "body": "En una muestra de 10 el 20 % son 2 casos, en una de 100 el mismo 20 % representa 20 casos, con diferente precisión."
+        },
+        {
+          "type": "figure",
+          "body": "Frecuencias y denominadores muestrales. Gráfico SVG local de apoyo y tabla semántica con datos exactos y limitaciones.",
+          "alt": "Frecuencias y denominadores muestrales. La tabla completa indica coordenadas, recuentos, modelo, unidades y limitaciones, sin depender de visión de color.",
+          "visual_spec": {
+            "render_family": "wave22",
+            "kind": "stats_bars",
+            "title": "Frecuencias y denominadores muestrales",
+            "rows": [
+              [
+                "Muestra",
+                "50"
+              ],
+              [
+                "Favorables",
+                "20"
+              ],
+              [
+                "Otras",
+                "30"
+              ],
+              [
+                "Frecuencia favorable",
+                "2/5"
+              ],
+              [
+                "Población",
+                "No inferible sin diseño"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                20,
+                30
+              ],
+              "labels": [
+                "Sí",
+                "Otras"
+              ]
+            },
+            "domain": [
+              0,
+              35
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La autoselección voluntaria desaparece como sesgo por recopilar más respuestas sin cambiar el diseño?||No; el mecanismo puede seguir sesgado."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La población es el conjunto sobre el que se desea razonar; el marco muestral es el listado o procedimiento desde el cual se seleccionan observaciones, que puede excluir parte de esa población. Explica qué hipótesis o sesgo puede modificar tu respuesta."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-Q01-L05-01",
+        "F3-E4A-Q01-L05-02",
+        "F3-E4A-Q01-L05-03",
+        "F3-E4A-Q01-L05-04",
+        "F3-E4A-Q01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; secuenciación por cursos propuesta editorial, mapeo autonómico no cotejado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto. No sustituye cotejo competencial oficial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-Q01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.22.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-Q01:C06"
+      ],
+      "objectives": [
+        "Comunicar estimaciones elementales sin inventar precisión estadística.",
+        "Distinguir proporción muestral y parámetro poblacional, con límites de inferencia."
+      ],
+      "prerequisites": [
+        "E4A-Q01-L05",
+        "E3-D01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una proporción muestral p̂=k/n resume los datos observados cuando n>0, mientras la proporción poblacional p es un parámetro desconocido. Si una muestra sintética de n=100 recoge k=40 respuestas favorables, p̂=0,4; no equivale a demostrar que el parámetro p sea exactamente 0,4. Una inferencia formal requeriría diseño de muestreo, supuestos de independencia y definición explícita de estimador, variabilidad y nivel de confianza. No se puede fabricar un margen de error o un intervalo de confianza sin fijar metodología ni comprobar condiciones. La muestra por conveniencia puede estar sesgada y un intervalo calculado bajo muestreo aleatorio no elimina ese sesgo. La conclusión responsable indica denominador, método, origen y limitaciones. Tampoco se confunde una diferencia de 40 % a 45 % con 5 % relativo: son cinco puntos porcentuales y un cambio relativo 5/40=12,5 %."
+        },
+        {
+          "type": "example",
+          "body": "En n=100 respuestas sintéticas hay k=40 favorables. p̂=k/n=40/100=0,4; p de la población no es observable directamente."
+        },
+        {
+          "type": "example",
+          "body": "De 40 % a 45 % hay 5 puntos porcentuales y el incremento relativo es (45−40)/40=1/8=12,5 %."
+        },
+        {
+          "type": "figure",
+          "body": "Proporción observada y parámetro desconocido. Gráfico SVG local de apoyo y tabla semántica con datos exactos y limitaciones.",
+          "alt": "Proporción observada y parámetro desconocido. La tabla completa indica coordenadas, recuentos, modelo, unidades y limitaciones, sin depender de visión de color.",
+          "visual_spec": {
+            "render_family": "wave22",
+            "kind": "stats_bars",
+            "title": "Proporción observada y parámetro desconocido",
+            "rows": [
+              [
+                "Observaciones",
+                "100"
+              ],
+              [
+                "Favorables",
+                "40"
+              ],
+              [
+                "No favorables",
+                "60"
+              ],
+              [
+                "Estimación p̂",
+                "0,4"
+              ],
+              [
+                "Parámetro p",
+                "Desconocido, no garantizado"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                40,
+                60
+              ],
+              "labels": [
+                "Sí",
+                "No"
+              ]
+            },
+            "domain": [
+              0,
+              65
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una proporción muestral p̂=0,4 asegura que p poblacional sea exactamente 0,4?||No; sin diseño e incertidumbre no se justifica identidad."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una proporción muestral p̂=k/n resume los datos observados cuando n>0, mientras la proporción poblacional p es un parámetro desconocido. Explica qué hipótesis o sesgo puede modificar tu respuesta."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-Q01-L06-01",
+        "F3-E4A-Q01-L06-02",
+        "F3-E4A-Q01-L06-03",
+        "F3-E4A-Q01-L06-04",
+        "F3-E4A-Q01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; secuenciación por cursos propuesta editorial, mapeo autonómico no cotejado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto. No sustituye cotejo competencial oficial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

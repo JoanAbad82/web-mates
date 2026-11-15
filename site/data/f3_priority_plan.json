@@ -1,0 +1,85 @@
+{
+  "version": "0.1.0",
+  "state": "propuesta_editorial",
+  "policy": "Los 20 vínculos del JSON fuente se conservan; las conexiones adicionales son hipótesis didácticas sin validación normativa.",
+  "selection_rule": "Priorizar nodos previos a E3-A02 del grafo original o de prerrequisitos declarados por lección, cerrar una unidad completa de seis lecciones antes de la siguiente.",
+  "units": [
+    {
+      "unit_id": "E1-A01",
+      "priority": 0,
+      "status": "indice_preexistente",
+      "rationale": "Lenguaje algebraico: base explícita E1-A01→E2-A01, sin contenido final todavía"
+    },
+    {
+      "unit_id": "E2-A01",
+      "priority": 1,
+      "status": "f3_revision",
+      "rationale": "Operaciones y equivalencia indispensables para ecuaciones y factorización"
+    },
+    {
+      "unit_id": "E2-A02",
+      "priority": 2,
+      "status": "f3_revision",
+      "rationale": "Arista canónica E2-A02→E3-A02; ecuaciones, sistemas y lectura gráfica"
+    },
+    {
+      "unit_id": "E3-A01",
+      "priority": 3,
+      "status": "f3_revision",
+      "rationale": "Prerequisito de factorización para E3-A02 señalado por los documentos F1; ampliación E3-A01-L06 claramente identificada"
+    },
+    {
+      "unit_id": "E3-A02",
+      "priority": 4,
+      "status": "f1_revision_heredada",
+      "rationale": "Unidad funcional existente; no se altera"
+    },
+    {
+      "unit_id": "E2-F01",
+      "priority": 5,
+      "status": "siguiente_lote_propuesto",
+      "rationale": "Consolidar rectas tras E2-A02"
+    },
+    {
+      "unit_id": "E3-A03",
+      "priority": 6,
+      "status": "siguiente_lote_propuesto",
+      "rationale": "Inecuaciones tras ecuaciones"
+    },
+    {
+      "unit_id": "E3-F01",
+      "priority": 7,
+      "status": "siguiente_lote_propuesto",
+      "rationale": "Funciones lineales y cuadráticas tras E2-A02 y E3-A02"
+    }
+  ],
+  "editorial_edges": [
+    {
+      "from": "E2-A01",
+      "to": "E2-A02",
+      "relation": "recomendado",
+      "evidence": "Títulos y prerrequisitos textuales del catálogo; vinculación didáctica propuesta",
+      "review_status": "pending"
+    },
+    {
+      "from": "E2-A01",
+      "to": "E3-A01",
+      "relation": "recomendado",
+      "evidence": "Títulos del catálogo y prerrequisitos de seis lecciones desarrolladas",
+      "review_status": "pending"
+    },
+    {
+      "from": "E3-A01",
+      "to": "E3-A02",
+      "relation": "recomendado",
+      "evidence": "F1 E3-A02 refiere factor común E3-A01-L03",
+      "review_status": "pending"
+    }
+  ],
+  "thresholds": {
+    "lesson_count": 6,
+    "exercises_per_lesson": 5,
+    "unit_count": 3
+  },
+  "exclusions": "Sin cambio de 85 unidades o 505 IDs. Sin dar por homologada la distribución en 2.º/3.º de ESO."
+}

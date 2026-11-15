@@ -1,0 +1,759 @@
+{
+  "unit_id": "B2S-D01",
+  "unit_title": "Muestreo y distribución muestral",
+  "product_phase": "F3-26",
+  "version": "0.26.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Identificar población, marco y parámetro frente al estadístico muestral.",
+    "Separar el valor fijo del parámetro de la variabilidad de estimadores."
+  ],
+  "warnings": [
+    "Datos sintéticos EN REVISIÓN. No homologado ni publicado.",
+    "Intervalos, errores estándar, independencia, condicionadas y Bayes requieren supuestos; sin cotejo autonómico."
+  ],
+  "prerequisite_links": [
+    "B1S-D02-L01",
+    "B1S-D02-L03",
+    "B1S-D02-L04",
+    "B1S-D02-L05",
+    "B1S-D02-L06",
+    "B1S-Q02-L04",
+    "B2S-D01-L01",
+    "B2S-D01-L02",
+    "B2S-D01-L04",
+    "B2S-D01-L05",
+    "B2S-Q02-L01"
+  ],
+  "recall_policy": "f2-spaced-v1.0.0",
+  "source_note": "Guía maestra LOMLOE local y RD 243/2022 como marco; revisión jurídica y regional pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B2S-D01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-D01:C01"
+      ],
+      "objectives": [
+        "Identificar población, marco y parámetro frente al estadístico muestral.",
+        "Separar el valor fijo del parámetro de la variabilidad de estimadores."
+      ],
+      "prerequisites": [
+        "B1S-D02-L01",
+        "B1S-D02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La población es el conjunto definido de personas u objetos al que se refiere la pregunta. El marco es la lista accesible para seleccionar unidades; puede no cubrir toda la población. Un parámetro, como la media poblacional μ o la proporción p, describe esa población y no cambia al cambiar de muestra. Una media muestral x̄ o proporción p̂ es un estadístico: varía entre muestras. La estimación de una muestra no equivale a conocer el parámetro exacto; incluso una selección aleatoria adecuada puede presentar error de muestreo. La subcobertura y la no respuesta pueden introducir sesgo que un aumento de n no elimina automáticamente."
+        },
+        {
+          "type": "example",
+          "body": "Población de 500 registros y muestra simple de 50: la fracción de muestreo es 50/500=0,10. La fracción no informa de cuántos responden afirmativamente."
+        },
+        {
+          "type": "example",
+          "body": "En una muestra de 4 valores sintéticos 5,7,9,11, la media x̄=(5+7+9+11)/4=8. Esta cifra no prueba que la media poblacional μ sea exactamente 8."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Población y parámetro. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Población y parámetro",
+            "kind": "sample",
+            "model": {
+              "labels": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K",
+                "L"
+              ],
+              "values": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            "rows": [
+              [
+                "Población objetivo",
+                "N=500"
+              ],
+              [
+                "Muestra",
+                "n=50"
+              ],
+              [
+                "Fracción de muestreo",
+                "0,10"
+              ],
+              [
+                "Media muestral ejemplo",
+                "8"
+              ],
+              [
+                "Parámetro μ",
+                "Desconocido"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una media de muestra de 8 equivale a μ=8?||No; el estadístico cambia entre muestras y el parámetro permanece desconocido."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Identificar población, marco y parámetro frente al estadístico muestral. Determina el conjunto objetivo y el marco antes de elegir denominadores. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-D01-L01-01",
+        "F3-B2S-D01-L01-02",
+        "F3-B2S-D01-L01-03",
+        "F3-B2S-D01-L01-04",
+        "F3-B2S-D01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-D01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-D01:C02"
+      ],
+      "objectives": [
+        "Explicar el muestreo aleatorio simple y el estratificado bajo hipótesis explícitas.",
+        "Calcular probabilidades de inclusión sin confundirlas con independencia."
+      ],
+      "prerequisites": [
+        "B2S-D01-L01",
+        "B1S-D02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En muestreo aleatorio simple sin reemplazo de tamaño fijo n, todos los subconjuntos de tamaño n del marco de N unidades son igualmente probables. Cada individuo tiene probabilidad de inclusión n/N, pero las inclusiones de dos personas no son independientes. En el muestreo estratificado se divide el marco en estratos y se sortean unidades dentro de cada uno; los pesos deben justificarse si la asignación no es proporcional. El muestreo por conveniencia y las respuestas voluntarias no proporcionan por sí solos probabilidades de inclusión conocidas. Los efectos de diseño y de no respuesta importan antes de emplear fórmulas habituales de error estándar."
+        },
+        {
+          "type": "example",
+          "body": "Entre 200 registros, seleccionar 40 por muestreo aleatorio simple sin reemplazo da probabilidad individual 40/200=0,20, no garantiza que cada par se seleccione independientemente."
+        },
+        {
+          "type": "example",
+          "body": "En un marco con 300 integrantes del grupo A y 100 del B, una muestra proporcional n=40 reserva 30 plazas para A y 10 para B: 40×300/400=30."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Métodos de muestreo. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Métodos de muestreo",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "A",
+                "B"
+              ],
+              "values": [
+                0.75,
+                0.25
+              ]
+            },
+            "rows": [
+              [
+                "Marco",
+                "N=200"
+              ],
+              [
+                "Seleccionados",
+                "n=40"
+              ],
+              [
+                "P(inclusión individual)",
+                "0,20"
+              ],
+              [
+                "Estratos de otro marco",
+                "300 A y 100 B"
+              ],
+              [
+                "Asignación proporcional de 40",
+                "30 A, 10 B"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Elegir 40 entre 200 sin reemplazo implica 40 selecciones independientes?||No: el conjunto restante cambia en cada extracción."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Explicar el muestreo aleatorio simple y el estratificado bajo hipótesis explícitas. Comprueba si se sortea sin reemplazo y si el marco incluye a la población. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-D01-L02-01",
+        "F3-B2S-D01-L02-02",
+        "F3-B2S-D01-L02-03",
+        "F3-B2S-D01-L02-04",
+        "F3-B2S-D01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-D01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-D01:C03"
+      ],
+      "objectives": [
+        "Detectar sesgo de cobertura y no respuesta en estudios observacionales.",
+        "Distinguir error aleatorio de sesgo sistemático de selección."
+      ],
+      "prerequisites": [
+        "B2S-D01-L02",
+        "B1S-D02-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una muestra grande puede estar sesgada si la lista omite colectivos o se autoseleccionan las respuestas. Sesgo no significa necesariamente una diferencia observada grande: es un desplazamiento sistemático asociado al proceso de generación de la muestra. La no respuesta es especialmente problemática si la probabilidad de contestar depende de la variable estudiada. La dispersión entre muestras de un diseño adecuado describe error aleatorio; aumentar n suele reducir esa dispersión, pero no corrige un marco incompleto. Una asociación entre variables tampoco identifica causalidad. La representatividad se justifica con el procedimiento, no con una fotografía superficial de la muestra."
+        },
+        {
+          "type": "example",
+          "body": "Se invita a 250 personas de un marco definido y contestan 175: tasa de respuesta=175/250=0,70. Esa tasa no permite suponer que los 75 ausentes opinan igual."
+        },
+        {
+          "type": "example",
+          "body": "Si se pregunta a 400 usuarios de una aplicación para representar a toda una localidad, la encuesta puede excluir sistemáticamente a quienes no la utilizan: mayor n no corrige esa subcobertura."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Sesgo y representatividad. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Sesgo y representatividad",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "Contesta",
+                "No contesta"
+              ],
+              "values": [
+                0.7,
+                0.3
+              ]
+            },
+            "rows": [
+              [
+                "Invitados",
+                "250"
+              ],
+              [
+                "Respuestas",
+                "175"
+              ],
+              [
+                "Sin respuesta",
+                "75"
+              ],
+              [
+                "Tasa de respuesta",
+                "0,70"
+              ],
+              [
+                "Riesgo",
+                "No respuesta diferencial"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede el sesgo de autoselección desaparecer automáticamente al duplicar n?||No, debe corregirse o estudiarse el mecanismo de selección."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Detectar sesgo de cobertura y no respuesta en estudios observacionales. Pregunta quién podía entrar en la muestra y quién decidió responder. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-D01-L03-01",
+        "F3-B2S-D01-L03-02",
+        "F3-B2S-D01-L03-03",
+        "F3-B2S-D01-L03-04",
+        "F3-B2S-D01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-D01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-D01:C04"
+      ],
+      "objectives": [
+        "Calcular la media muestral y la proporción muestral con unidades correctas.",
+        "Distinguir estimador insesgado bajo modelo y valor observado sin promesa universal."
+      ],
+      "prerequisites": [
+        "B2S-D01-L01",
+        "B1S-D02-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La media muestral x̄ es la suma de observaciones dividida entre n; p̂ es el número de éxitos dividido entre n. Bajo observaciones independientes e idénticamente distribuidas con esperanza finita, E[x̄]=μ; para Bernoulli independientes con probabilidad fija p, E[p̂]=p. Estas igualdades caracterizan un diseño y un modelo, no acreditan la ausencia de sesgo de una encuesta concreta. Al calcular medias se conservan unidades, mientras las proporciones son adimensionales. La desviación entre posibles resultados de x̄ se estudia mediante su distribución muestral, no por decimales adicionales."
+        },
+        {
+          "type": "example",
+          "body": "Cuatro tiempos ficticios 10,12,14,16 minutos producen x̄=(10+12+14+16)/4=13 minutos; μ del colectivo objetivo sigue desconocida."
+        },
+        {
+          "type": "example",
+          "body": "De 80 observaciones con 28 éxitos, p̂=28/80=0,35. No es correcto afirmar que el parámetro poblacional p ya quedó demostrado como 0,35."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Media y proporción muestral. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Media y proporción muestral",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "10",
+                "12",
+                "14",
+                "16"
+              ],
+              "values": [
+                10,
+                12,
+                14,
+                16
+              ]
+            },
+            "rows": [
+              [
+                "Muestra numérica",
+                "10,12,14,16 min"
+              ],
+              [
+                "Media muestral",
+                "13 min"
+              ],
+              [
+                "Éxitos",
+                "28 de 80"
+              ],
+              [
+                "Proporción p̂",
+                "0,35"
+              ],
+              [
+                "Parámetros μ, p",
+                "Desconocidos"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Son un parámetro y su estadístico muestral el mismo objeto?||No: el parámetro describe la población y el estadístico depende de los datos seleccionados."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Calcular la media muestral y la proporción muestral con unidades correctas. Clasifica si los datos son medidas o respuestas binarias. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-D01-L04-01",
+        "F3-B2S-D01-L04-02",
+        "F3-B2S-D01-L04-03",
+        "F3-B2S-D01-L04-04",
+        "F3-B2S-D01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-D01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-D01:C05"
+      ],
+      "objectives": [
+        "Describir una distribución muestral de medias o proporciones bajo muestreo repetido.",
+        "Distinguir variación de estadísticos y distribución de observaciones individuales."
+      ],
+      "prerequisites": [
+        "B2S-D01-L04",
+        "B1S-Q02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La distribución muestral no es el histograma de una sola muestra: es la distribución teórica de un estadístico que obtendríamos repitiendo el mismo proceso de muestreo. Si X_i son iid con E[X_i]=μ y Var(X_i)=σ², E[x̄]=μ y Var(x̄)=σ²/n, de modo que SD(x̄)=σ/√n. Si cada X_i es normal, la media es exactamente normal. Si no, aproximaciones por el teorema central del límite requieren condiciones y tamaño apropiado. Para Bernoulli iid, E[p̂]=p y SD(p̂)=√(p(1−p)/n). En muestras sin reemplazo de población finita se necesita considerar corrección y diseño; no usar fórmulas iid indiscriminadamente."
+        },
+        {
+          "type": "example",
+          "body": "Con σ=12 unidades y n=36 medidas iid, la desviación típica de las medias muestrales es 12/√36=2 unidades; la de las observaciones individuales sigue siendo 12."
+        },
+        {
+          "type": "example",
+          "body": "Para Bernoulli iid con p=0,5 y n=100, SD(p̂)=√(0,5×0,5/100)=0,05. La proporción concreta puede alejarse de 0,5."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Distribución muestral. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Distribución muestral",
+            "kind": "normal",
+            "model": {
+              "labels": [
+                "μ",
+                "SE",
+                "umbral"
+              ],
+              "values": [
+                0,
+                2,
+                3.92
+              ]
+            },
+            "rows": [
+              [
+                "SD de observaciones",
+                "σ=12"
+              ],
+              [
+                "n de observaciones iid",
+                "36"
+              ],
+              [
+                "SD de x̄",
+                "2"
+              ],
+              [
+                "p de Bernoulli",
+                "0,5"
+              ],
+              [
+                "n para proporción",
+                "100"
+              ],
+              [
+                "SD de p̂",
+                "0,05"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La distribución muestral de x̄ coincide con la distribución de cada X_i?||No: normalmente comparten media, pero x̄ tiene dispersión σ/√n bajo iid."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Describir una distribución muestral de medias o proporciones bajo muestreo repetido. Piensa en repetir todo el sorteo, no en contar los valores de una muestra. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-D01-L05-01",
+        "F3-B2S-D01-L05-02",
+        "F3-B2S-D01-L05-03",
+        "F3-B2S-D01-L05-04",
+        "F3-B2S-D01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-D01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.26.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-D01:C06"
+      ],
+      "objectives": [
+        "Calcular el error estándar teórico de una media o proporción bajo iid.",
+        "Interpretar la reducción proporcional de dispersión al crecer n."
+      ],
+      "prerequisites": [
+        "B2S-D01-L05",
+        "B2S-Q02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El error estándar es la desviación típica de la distribución muestral de un estimador, no la desviación típica de las observaciones ni la diferencia garantizada con el parámetro. Para una media de observaciones iid con desviación σ conocida, SE=σ/√n. Para una proporción Bernoulli iid de parámetro p, SE=√(p(1−p)/n); si p es desconocido puede sustituirse por p̂ como estimación del error, con limitaciones. Cuadruplicar n reduce el error estándar a la mitad si el resto del modelo permanece igual. Correlación, conglomerados y extracción sin reemplazo pueden cambiar esta fórmula, por lo que no debe utilizarse fuera de sus supuestos."
+        },
+        {
+          "type": "example",
+          "body": "Con σ=18 y n=81 observaciones independientes, SE(x̄)=18/9=2. Con n=324 sería 18/18=1, la mitad."
+        },
+        {
+          "type": "example",
+          "body": "Para 400 respuestas Bernoulli iid con p=0,5, SE(p̂)=√(0,25/400)=0,025; es dispersión teórica, no margen garantizado de error."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Error estándar como magnitud. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave26",
+            "title": "Error estándar como magnitud",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "n=81",
+                "n=324"
+              ],
+              "values": [
+                2,
+                1
+              ]
+            },
+            "rows": [
+              [
+                "σ",
+                "18"
+              ],
+              [
+                "n inicial",
+                "81"
+              ],
+              [
+                "SE inicial",
+                "2"
+              ],
+              [
+                "n cuadruplicado",
+                "324"
+              ],
+              [
+                "SE nuevo",
+                "1"
+              ],
+              [
+                "p=0,5 y n=400",
+                "SE(p̂)=0,025"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Multiplicar n por cuatro reduce SE a un cuarto bajo iid?||No; SE se reduce a la mitad por su dependencia con √n."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Calcular el error estándar teórico de una media o proporción bajo iid. Determina si se busca σ de datos o SD de un estimador. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-D01-L06-01",
+        "F3-B2S-D01-L06-02",
+        "F3-B2S-D01-L06-03",
+        "F3-B2S-D01-L06-04",
+        "F3-B2S-D01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, materias de Matemáticas II y Matemáticas Aplicadas a las Ciencias Sociales II; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

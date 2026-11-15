@@ -1,0 +1,833 @@
+{
+  "unit_id": "B1S-Q01",
+  "version": "0.24.0",
+  "status": "revision",
+  "notice": "Cinco ejercicios sintéticos deterministas por lección. EN REVISIÓN.",
+  "activities": [
+    {
+      "exercise_id": "F3-B1S-Q01-L01-01",
+      "lesson_id": "B1S-Q01-L01",
+      "type": "numeric",
+      "prompt": "En Recuento sistemático: De 4 objetos distintos elige 2 en ORDEN, SIN repetición. Cuenta variaciones V(n,k). Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 12.0,
+      "explanation": "Resultado exacto o aproximado según se indica: 12. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_variation",
+        "prerrequisito_b1s_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L01-02",
+      "lesson_id": "B1S-Q01-L01",
+      "type": "numeric",
+      "prompt": "En Recuento sistemático: Se rellenan 2 posiciones ordenadas eligiendo entre 4 símbolos CON repetición permitida. Cuenta resultados. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 16.0,
+      "explanation": "Resultado exacto o aproximado según se indica: 16. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_with_replacement",
+        "prerrequisito_b1s_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L01-03",
+      "lesson_id": "B1S-Q01-L01",
+      "type": "numeric",
+      "prompt": "En Recuento sistemático: Elige EXACTAMENTE una opción de dos conjuntos disjuntos con 3 y 2 opciones. Calcula total. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 5.0,
+      "explanation": "Resultado exacto o aproximado según se indica: 5. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_disjoint_sum",
+        "prerrequisito_b1s_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L01-04",
+      "lesson_id": "B1S-Q01-L01",
+      "type": "choice",
+      "prompt": "En Recuento sistemático: ¿Para DOS ETAPAS sucesivas con 4 y 3 opciones debe sumarse 4+3 en lugar de multiplicar? Sí/No. Elige la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto o aproximado según se indica: No. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_add_instead_product_no",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "Sí",
+        "No necesariamente",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L01-05",
+      "lesson_id": "B1S-Q01-L01",
+      "type": "choice",
+      "prompt": "En Recuento sistemático: De 4 objetos distintos elige 2 SIN ORDEN ni repetición. Cuenta combinaciones C(n,k). Elige la opción matemáticamente justificada.",
+      "answer": "6",
+      "explanation": "Resultado exacto o aproximado según se indica: 6. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_combination",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L02-01",
+      "lesson_id": "B1S-Q01-L02",
+      "type": "numeric",
+      "prompt": "En Variaciones y combinaciones contextualizadas: De 5 objetos distintos elige 2 en ORDEN, SIN repetición. Cuenta variaciones V(n,k). Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 20.0,
+      "explanation": "Resultado exacto o aproximado según se indica: 20. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_variation",
+        "prerrequisito_b1s_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L02-02",
+      "lesson_id": "B1S-Q01-L02",
+      "type": "numeric",
+      "prompt": "En Variaciones y combinaciones contextualizadas: De 5 objetos distintos elige 2 SIN ORDEN ni repetición. Cuenta combinaciones C(n,k). Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 10.0,
+      "explanation": "Resultado exacto o aproximado según se indica: 10. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_combination",
+        "prerrequisito_b1s_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L02-03",
+      "lesson_id": "B1S-Q01-L02",
+      "type": "numeric",
+      "prompt": "En Variaciones y combinaciones contextualizadas: Calcula número de permutaciones de 4 objetos distintos, n!. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 24.0,
+      "explanation": "Resultado exacto o aproximado según se indica: 24. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_factorial",
+        "prerrequisito_b1s_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L02-04",
+      "lesson_id": "B1S-Q01-L02",
+      "type": "choice",
+      "prompt": "En Variaciones y combinaciones contextualizadas: ¿Elegir DOS integrantes sin cargos es el mismo recuento que elegir presidente y secretario? Sí/No. Elige la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto o aproximado según se indica: No. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_team_equal_roles_no",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "No necesariamente",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L02-05",
+      "lesson_id": "B1S-Q01-L02",
+      "type": "choice",
+      "prompt": "En Variaciones y combinaciones contextualizadas: De 4 objetos distintos elige 2 SIN ORDEN ni repetición. Cuenta combinaciones C(n,k). Elige la opción matemáticamente justificada.",
+      "answer": "6",
+      "explanation": "Resultado exacto o aproximado según se indica: 6. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_combination",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "6",
+        "7",
+        "5"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L03-01",
+      "lesson_id": "B1S-Q01-L03",
+      "type": "choice",
+      "prompt": "En Laplace: Dos dados ideales distinguibles: con 36 pares equiprobables, calcula P(suma=7). Elige la opción matemáticamente justificada.",
+      "answer": "1/6",
+      "explanation": "Resultado exacto o aproximado según se indica: 1/6. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_dice_sum",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "1/6",
+        "1/12",
+        "0,25"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L03-02",
+      "lesson_id": "B1S-Q01-L03",
+      "type": "choice",
+      "prompt": "En Laplace: Dos dados ideales distinguibles: con 36 pares equiprobables, calcula P(suma=2). Elige la opción matemáticamente justificada.",
+      "answer": "1/36",
+      "explanation": "Resultado exacto o aproximado según se indica: 1/36. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_dice_sum",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "0",
+        "0,0625",
+        "1/36"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L03-03",
+      "lesson_id": "B1S-Q01-L03",
+      "type": "choice",
+      "prompt": "En Laplace: Dos dados ideales distinguibles: calcula P(no sumar 7) por complemento. Elige la opción matemáticamente justificada.",
+      "answer": "5/6",
+      "explanation": "Resultado exacto o aproximado según se indica: 5/6. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_dice_not_sum",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "0,9",
+        "5/6",
+        "0,8"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L03-04",
+      "lesson_id": "B1S-Q01-L03",
+      "type": "choice",
+      "prompt": "En Laplace: ¿Las once SUMAS posibles de dos dados ideales son equiprobables? Sí/No. Elige la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto o aproximado según se indica: No. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_dice_sums_uniform_no",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No necesariamente"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L03-05",
+      "lesson_id": "B1S-Q01-L03",
+      "type": "choice",
+      "prompt": "En Laplace: Dos monedas equilibradas independientes: calcula P(exactamente una cara), sumando las rutas CX y XC. Elige la opción matemáticamente justificada.",
+      "answer": "0,5",
+      "explanation": "Resultado exacto o aproximado según se indica: 0,5. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_coin_exact_one",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "0,45",
+        "0,4",
+        "0,5"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L04-01",
+      "lesson_id": "B1S-Q01-L04",
+      "type": "choice",
+      "prompt": "En Uniones e intersecciones: Dado equilibrado: A=par {2,4,6}, B=mayor que 4 {5,6}. Calcula P(A∪B) restando solapamiento. Elige la opción matemáticamente justificada.",
+      "answer": "2/3",
+      "explanation": "Resultado exacto o aproximado según se indica: 2/3. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_union_dice",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "0,6",
+        "0,75",
+        "2/3"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L04-02",
+      "lesson_id": "B1S-Q01-L04",
+      "type": "choice",
+      "prompt": "En Uniones e intersecciones: Dado equilibrado: A={2,4,6}, B={5,6}. Calcula P(A∩B). Elige la opción matemáticamente justificada.",
+      "answer": "1/6",
+      "explanation": "Resultado exacto o aproximado según se indica: 1/6. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_intersection_dice",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "0,25",
+        "1/6",
+        "1/12"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L04-03",
+      "lesson_id": "B1S-Q01-L04",
+      "type": "choice",
+      "prompt": "En Uniones e intersecciones: Dado ideal A=par y B=>4. Calcula P(B|A) dado que salió un número par. Elige la opción matemáticamente justificada.",
+      "answer": "1/3",
+      "explanation": "Resultado exacto o aproximado según se indica: 1/3. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_conditional_b_given_a",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "1/3",
+        "0,3125",
+        "0,375"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L04-04",
+      "lesson_id": "B1S-Q01-L04",
+      "type": "choice",
+      "prompt": "En Uniones e intersecciones: ¿Dos sucesos INCOMPATIBLES de probabilidades positivas son independientes? Sí/No. Elige la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto o aproximado según se indica: No. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_incompatible_independent_no",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "Sí",
+        "No necesariamente",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L04-05",
+      "lesson_id": "B1S-Q01-L04",
+      "type": "choice",
+      "prompt": "En Uniones e intersecciones: En 6 casos equiprobables, dos sucesos disjuntos tienen 2 y 2 casos. Calcula P(unión). Elige la opción matemáticamente justificada.",
+      "answer": "2/3",
+      "explanation": "Resultado exacto o aproximado según se indica: 2/3. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_disjoint_laplace",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "0,75",
+        "2/3",
+        "0,6"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L05-01",
+      "lesson_id": "B1S-Q01-L05",
+      "type": "choice",
+      "prompt": "En Probabilidad de experimentos compuestos: Urna 2 rojas y 1 azul SIN reemplazo: calcula P(RR) con rama condicionada. Elige la opción matemáticamente justificada.",
+      "answer": "1/3",
+      "explanation": "Resultado exacto o aproximado según se indica: 1/3. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_urn_rr",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "0,375",
+        "1/3",
+        "0,3125"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L05-02",
+      "lesson_id": "B1S-Q01-L05",
+      "type": "choice",
+      "prompt": "En Probabilidad de experimentos compuestos: Urna 2 rojas y 1 azul SIN reemplazo: calcula P(AR), azul después roja. Elige la opción matemáticamente justificada.",
+      "answer": "1/3",
+      "explanation": "Resultado exacto o aproximado según se indica: 1/3. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_urn_ar",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "1/3",
+        "0,3125",
+        "0,375"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L05-03",
+      "lesson_id": "B1S-Q01-L05",
+      "type": "numeric",
+      "prompt": "En Probabilidad de experimentos compuestos: Urna 2 rojas y 1 azul SIN reemplazo: calcula P(AA), dos azules. Introduce el número exacto o el decimal redondeado que se indica.",
+      "answer": 0.0,
+      "explanation": "Resultado exacto o aproximado según se indica: 0. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_urn_aa",
+        "prerrequisito_b1s_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L05-04",
+      "lesson_id": "B1S-Q01-L05",
+      "type": "choice",
+      "prompt": "En Probabilidad de experimentos compuestos: ¿En urna 2R y 1A SIN reemplazo es válida la independencia de dos extracciones? Sí/No. Elige la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado exacto o aproximado según se indica: No. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_replacement_independent_no",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "No necesariamente",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-Q01-L05-05",
+      "lesson_id": "B1S-Q01-L05",
+      "type": "choice",
+      "prompt": "En Probabilidad de experimentos compuestos: Dos monedas equilibradas independientes: calcula P(exactamente una cara), sumando las rutas CX y XC. Elige la opción matemáticamente justificada.",
+      "answer": "0,5",
+      "explanation": "Resultado exacto o aproximado según se indica: 0,5. Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad. Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados. Comprueba condiciones de modelo, denominadores, unidades y sesgo de extrapolación antes de generalizar.",
+      "hint": "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_coin_exact_one",
+        "prerrequisito_b1s_q01"
+      ],
+      "choices": [
+        "0,5",
+        "0,45",
+        "0,4"
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B1S-Q01-L01-01": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "variation",
+        "params": [
+          4,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: variation"
+    },
+    "F3-B1S-Q01-L01-02": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "with_replacement",
+        "params": [
+          4,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: with_replacement"
+    },
+    "F3-B1S-Q01-L01-03": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "disjoint_sum",
+        "params": [
+          3,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: disjoint_sum"
+    },
+    "F3-B1S-Q01-L01-04": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "add_instead_product_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: add_instead_product_no"
+    },
+    "F3-B1S-Q01-L01-05": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "combination",
+        "params": [
+          4,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: combination"
+    },
+    "F3-B1S-Q01-L02-01": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "variation",
+        "params": [
+          5,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: variation"
+    },
+    "F3-B1S-Q01-L02-02": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "combination",
+        "params": [
+          5,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: combination"
+    },
+    "F3-B1S-Q01-L02-03": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "factorial",
+        "params": [
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: factorial"
+    },
+    "F3-B1S-Q01-L02-04": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "team_equal_roles_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: team_equal_roles_no"
+    },
+    "F3-B1S-Q01-L02-05": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "combination",
+        "params": [
+          4,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: combination"
+    },
+    "F3-B1S-Q01-L03-01": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "dice_sum",
+        "params": [
+          7
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: dice_sum"
+    },
+    "F3-B1S-Q01-L03-02": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "dice_sum",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: dice_sum"
+    },
+    "F3-B1S-Q01-L03-03": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "dice_not_sum",
+        "params": [
+          7
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: dice_not_sum"
+    },
+    "F3-B1S-Q01-L03-04": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "dice_sums_uniform_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: dice_sums_uniform_no"
+    },
+    "F3-B1S-Q01-L03-05": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "coin_exact_one",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: coin_exact_one"
+    },
+    "F3-B1S-Q01-L04-01": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "union_dice",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: union_dice"
+    },
+    "F3-B1S-Q01-L04-02": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "intersection_dice",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: intersection_dice"
+    },
+    "F3-B1S-Q01-L04-03": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "conditional_b_given_a",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: conditional_b_given_a"
+    },
+    "F3-B1S-Q01-L04-04": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "incompatible_independent_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: incompatible_independent_no"
+    },
+    "F3-B1S-Q01-L04-05": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "disjoint_laplace",
+        "params": [
+          2,
+          6,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: disjoint_laplace"
+    },
+    "F3-B1S-Q01-L05-01": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "urn_rr",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: urn_rr"
+    },
+    "F3-B1S-Q01-L05-02": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "urn_ar",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: urn_ar"
+    },
+    "F3-B1S-Q01-L05-03": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "urn_aa",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: urn_aa"
+    },
+    "F3-B1S-Q01-L05-04": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "replacement_independent_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: replacement_independent_no"
+    },
+    "F3-B1S-Q01-L05-05": {
+      "hints": [
+        "Declara si el orden importa, si hay reemplazo y cuál es el espacio elemental; antes de Laplace verifica equiprobabilidad.",
+        "Para combinaciones usa C(n,k)=n!/[k!(n−k)!]; en una ruta multiplica probabilidades condicionadas y entre rutas disjuntas suma sin duplicados."
+      ],
+      "math_check": {
+        "kind": "coin_exact_one",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confundir condicionadas, correlación/causalidad, combinatoria, hipótesis binomial o aproximación normal: coin_exact_one"
+    }
+  }
+}

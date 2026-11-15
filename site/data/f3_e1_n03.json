@@ -1,0 +1,528 @@
+{
+  "unit_id": "E1-N03",
+  "unit_title": "Divisibilidad",
+  "product_phase": "F3_OLA5",
+  "version": "0.5.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Distinguir múltiplo de divisor.",
+    "Aplicar criterios de divisibilidad para 2, 3, 5, 9 y 10.",
+    "Distinguir números primos y compuestos."
+  ],
+  "warnings": [
+    "Contenido editorial sintético pendiente de revisión humana.",
+    "Distribución entre 1.º y 3.º de ESO no prescrita universalmente por curso.",
+    "No se ha validado adecuación autonómica ni eficacia pedagógica."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Multiplicación y división natural",
+      "lesson_id": "E1-N01-L03",
+      "href": "#/curso/E1/unidad/E1-N01/leccion/E1-N01-L03"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 sin calibrar",
+    "rule": "Recuerda antes de consultar la respuesta y repasa de manera optativa."
+  },
+  "source_note": "RD 217/2022 anexo II; asignación por curso editorial. Cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E1-N03-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N03:C01"
+      ],
+      "objectives": [
+        "Distinguir múltiplo de divisor.",
+        "Identificar divisores positivos y múltiplos naturales."
+      ],
+      "prerequisites": [
+        "E1-N01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un número b es divisor de a cuando existe un natural k con a = b × k; b no puede ser cero. Por tanto, a es múltiplo de b. Todo natural positivo tiene al menos los divisores 1 y él mismo, que pueden coincidir cuando a=1. Los múltiplos no terminan; los divisores positivos de un natural mayor que cero son finitos."
+        },
+        {
+          "type": "example",
+          "body": "24 es múltiplo de 6 porque 24 = 6 × 4; a la vez, 6 es divisor de 24."
+        },
+        {
+          "type": "example",
+          "body": "Los divisores positivos de 12 son 1, 2, 3, 4, 6 y 12; 5 no lo es porque deja resto 2."
+        },
+        {
+          "type": "figure",
+          "body": "Parejas de factores de 24. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "Parejas de factores de 24. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "divisor_pairs",
+            "number": 24,
+            "title": "Parejas de factores de 24"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Cero puede ser divisor de 12?||No: dividir entre cero no está definido y ningún cociente lo hace válido."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: Un número b es divisor de a cuando existe un natural k con a = b × k; b no puede ser cero. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N03-L01-01",
+        "F3-E1-N03-L01-02",
+        "F3-E1-N03-L01-03",
+        "F3-E1-N03-L01-04",
+        "F3-E1-N03-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N03-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N03:C02"
+      ],
+      "objectives": [
+        "Aplicar criterios de divisibilidad para 2, 3, 5, 9 y 10.",
+        "Comprobar criterios calculando restos cuando sea necesario."
+      ],
+      "prerequisites": [
+        "E1-N03-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un natural es divisible por 2 si termina en cifra par; por 5 si termina en 0 o 5; y por 10 si termina en 0. Es divisible por 3 cuando la suma de sus cifras es múltiplo de 3, y por 9 cuando esa suma es múltiplo de 9. Son criterios distintos: terminar en 3 no garantiza divisibilidad por 3. Para otros divisores puede usarse el resto."
+        },
+        {
+          "type": "example",
+          "body": "234 es divisible por 3 porque 2 + 3 + 4 = 9, que es múltiplo de 3; no es divisible por 5."
+        },
+        {
+          "type": "example",
+          "body": "4 590 es divisible por 10, 5, 2, 3 y 9 porque acaba en cero y sus cifras suman 18."
+        },
+        {
+          "type": "figure",
+          "body": "Divisores y criterios en 90. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "Divisores y criterios en 90. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "divisor_pairs",
+            "number": 90,
+            "title": "Divisores y criterios en 90"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué 124 no es divisible por 3 aunque termine en 4?||Porque 1 + 2 + 4 = 7, que no es múltiplo de 3; la última cifra no decide la divisibilidad por 3."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: Un natural es divisible por 2 si termina en cifra par; por 5 si termina en 0 o 5; y por 10 si termina en 0. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N03-L02-01",
+        "F3-E1-N03-L02-02",
+        "F3-E1-N03-L02-03",
+        "F3-E1-N03-L02-04",
+        "F3-E1-N03-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N03-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N03:C03"
+      ],
+      "objectives": [
+        "Distinguir números primos y compuestos.",
+        "Justificar primalidad comprobando divisores suficientes."
+      ],
+      "prerequisites": [
+        "E1-N03-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un número primo es un natural mayor que 1 que solo admite como divisores positivos 1 y él mismo. Un compuesto mayor que 1 tiene otros divisores. El número 1 no es primo ni compuesto. Para verificar que n es primo basta descartar divisores primos hasta la raíz cuadrada de n; si tuviera dos factores no triviales, al menos uno no superaría esa raíz."
+        },
+        {
+          "type": "example",
+          "body": "29 es primo: no es divisible por 2, 3 ni 5 y √29 está entre 5 y 6."
+        },
+        {
+          "type": "example",
+          "body": "39 es compuesto porque 3 × 13 = 39; la suma de cifras 3 + 9 = 12 revela divisibilidad por 3."
+        },
+        {
+          "type": "figure",
+          "body": "El 29 tiene una pareja de factores. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "El 29 tiene una pareja de factores. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "divisor_pairs",
+            "number": 29,
+            "title": "El 29 tiene una pareja de factores"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es 1 un número primo?||No: la definición exige exactamente dos divisores positivos distintos y 1 solo tiene uno."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: Un número primo es un natural mayor que 1 que solo admite como divisores positivos 1 y él mismo. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N03-L03-01",
+        "F3-E1-N03-L03-02",
+        "F3-E1-N03-L03-03",
+        "F3-E1-N03-L03-04",
+        "F3-E1-N03-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N03-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N03:C04"
+      ],
+      "objectives": [
+        "Descomponer un natural mayor que 1 en factores primos.",
+        "Comprobar la descomposición mediante el producto."
+      ],
+      "prerequisites": [
+        "E1-N03-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Todo número natural mayor que 1 se expresa como producto de primos, y esa factorización es única salvo el orden de los factores. Divide repetidamente por un primo divisor hasta obtener 1; expresa factores repetidos mediante exponentes, por ejemplo 2 × 2 × 3 = 2² × 3. No confundir la suma de factores con su producto; 1 no interviene como factor primo."
+        },
+        {
+          "type": "example",
+          "body": "72 = 2 × 2 × 2 × 3 × 3 = 2³ × 3²; 8 × 9 confirma 72."
+        },
+        {
+          "type": "example",
+          "body": "84 = 2² × 3 × 7. La comprobación es 4 × 3 × 7 = 84."
+        },
+        {
+          "type": "figure",
+          "body": "Factores de 72. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "Factores de 72. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "divisor_pairs",
+            "number": 72,
+            "title": "Factores de 72"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué 12 = 2 + 2 + 3 no es una factorización?||La factorización es un producto: 12 = 2 × 2 × 3; la suma indicada solo vale 7."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: Todo número natural mayor que 1 se expresa como producto de primos, y esa factorización es única salvo el orden de los factores. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N03-L04-01",
+        "F3-E1-N03-L04-02",
+        "F3-E1-N03-L04-03",
+        "F3-E1-N03-L04-04",
+        "F3-E1-N03-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N03-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N03:C05"
+      ],
+      "objectives": [
+        "Calcular el máximo común divisor de naturales positivos.",
+        "Interpretar el MCD en repartos iguales sin restos."
+      ],
+      "prerequisites": [
+        "E1-N03-L04",
+        "E1-N01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El máximo común divisor (MCD) de dos enteros positivos es el mayor natural que divide exactamente a ambos. Puede obtenerse comparando divisores o tomando los factores primos comunes con sus menores exponentes. En un problema de lotes idénticos sin sobrantes, el MCD da el número máximo de lotes; cada lote contiene entonces a/MCD y b/MCD elementos de cada tipo."
+        },
+        {
+          "type": "example",
+          "body": "MCD(18, 24) = 6 porque 18 = 2 × 3² y 24 = 2³ × 3: los factores comunes son 2 × 3."
+        },
+        {
+          "type": "example",
+          "body": "Con 18 lápices rojos y 24 azules se pueden hacer como máximo seis lotes iguales sin sobrar ninguno: tres rojos y cuatro azules por lote."
+        },
+        {
+          "type": "figure",
+          "body": "Divisores de 24 para contrastar el MCD. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "Divisores de 24 para contrastar el MCD. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "divisor_pairs",
+            "number": 24,
+            "title": "Divisores de 24 para contrastar el MCD"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué MCD(12, 18) no puede ser 12?||Porque 12 no divide exactamente a 18; el mayor divisor compartido es 6."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: El máximo común divisor (MCD) de dos enteros positivos es el mayor natural que divide exactamente a ambos. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N03-L05-01",
+        "F3-E1-N03-L05-02",
+        "F3-E1-N03-L05-03",
+        "F3-E1-N03-L05-04",
+        "F3-E1-N03-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N03-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N03:C06"
+      ],
+      "objectives": [
+        "Calcular el mínimo común múltiplo de naturales positivos.",
+        "Interpretar coincidencias periódicas mediante el MCM."
+      ],
+      "prerequisites": [
+        "E1-N03-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El mínimo común múltiplo (MCM) de dos naturales positivos es el menor número positivo que es múltiplo de ambos. Usando factores primos se toman todos los primos implicados con el mayor exponente. Para actividades que se repiten cada cierto número de minutos, el MCM determina la primera coincidencia posterior al instante inicial, suponiendo que ambos ciclos empiezan juntos."
+        },
+        {
+          "type": "example",
+          "body": "MCM(6, 8) = 24: los múltiplos positivos de 6 son 6, 12, 18, 24…, y los de 8 son 8, 16, 24…"
+        },
+        {
+          "type": "example",
+          "body": "Si dos señales se repiten cada 12 y 18 minutos, vuelven a coincidir a los 36 minutos después de comenzar juntas."
+        },
+        {
+          "type": "figure",
+          "body": "Factores de 36 para contrastar múltiplos. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "Factores de 36 para contrastar múltiplos. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "divisor_pairs",
+            "number": 36,
+            "title": "Factores de 36 para contrastar múltiplos"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué no usamos el MCD para encontrar la primera coincidencia de ciclos?||Porque necesitamos un número que sea múltiplo de ambos periodos; elegimos el menor positivo."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: El mínimo común múltiplo (MCM) de dos naturales positivos es el menor número positivo que es múltiplo de ambos. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N03-L06-01",
+        "F3-E1-N03-L06-02",
+        "F3-E1-N03-L06-03",
+        "F3-E1-N03-L06-04",
+        "F3-E1-N03-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

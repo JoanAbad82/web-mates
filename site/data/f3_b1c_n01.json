@@ -1,0 +1,749 @@
+{
+  "unit_id": "B1C-N01",
+  "unit_title": "Reales y números complejos",
+  "product_phase": "F3-28",
+  "version": "0.28.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Operar con intervalos reales y sus intersecciones con extremos exactos.",
+    "Traducir desigualdades y valores absolutos a intervalos."
+  ],
+  "warnings": [
+    "Datos sintéticos EN REVISIÓN. No homologado ni publicado.",
+    "Radicales, logaritmos, complejos y geometría requieren dominios, unidades y validación territorial; revisión pendiente."
+  ],
+  "prerequisite_links": [
+    "B1C-N01-L01",
+    "B1C-N01-L02",
+    "B1C-N01-L03",
+    "B1C-N01-L04",
+    "E3-G01-L01",
+    "E3-G01-L02",
+    "E3-N01-L03",
+    "E4B-A01-L01",
+    "E4B-N01-L01",
+    "E4B-N01-L02",
+    "E4B-N01-L05"
+  ],
+  "recall_policy": "f2-spaced-v1.0.0",
+  "source_note": "Guía LOMLOE local; RD 217/2022 ESO o RD 243/2022 Bachillerato; cotejo territorial pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1C-N01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-N01:C01"
+      ],
+      "objectives": [
+        "Operar con intervalos reales y sus intersecciones con extremos exactos.",
+        "Traducir desigualdades y valores absolutos a intervalos."
+      ],
+      "prerequisites": [
+        "E4B-N01-L02",
+        "E3-N01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Los números reales están ordenados y se representan por puntos de la recta. La notación [a,b] incluye extremos y (a,b) los excluye, con variantes semiabiertas. Si dos intervalos representan condiciones simultáneas, su intersección reúne los valores que cumplen ambas. Para una distancia respecto a c, |x−c|≤r con r≥0 equivale a c−r≤x≤c+r. La solución |x−2|≤3 es [−1,5]. Esta propiedad interpreta valor absoluto como distancia sobre la recta, sin confundirlo con una ecuación que tenga siempre dos raíces aisladas. Los números complejos se introducirán después, pero no poseen un orden lineal compatible con las operaciones de campo como los reales."
+        },
+        {
+          "type": "example",
+          "body": "Resolver |x−2|≤3 conduce a −3≤x−2≤3 y, sumando 2, a −1≤x≤5; por tanto [−1,5]."
+        },
+        {
+          "type": "example",
+          "body": "La intersección (−2,6]∩[1,8) es [1,6]: el 1 pertenece al segundo y al primero, mientras el 6 pertenece a ambos."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Reales e intervalos. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Reales e intervalos",
+            "kind": "numberline",
+            "model": {
+              "labels": [
+                "−2",
+                "−1",
+                "1",
+                "5",
+                "6",
+                "8"
+              ],
+              "values": [
+                -2,
+                -1,
+                1,
+                5,
+                6,
+                8
+              ]
+            },
+            "rows": [
+              [
+                "Centro c",
+                "2"
+              ],
+              [
+                "Radio r",
+                "3"
+              ],
+              [
+                "Valor absoluto",
+                "|x−2|≤3"
+              ],
+              [
+                "Intervalo solución",
+                "[−1,5]"
+              ],
+              [
+                "Intersección",
+                "(−2,6] ∩ [1,8)=[1,6]"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es |x−2|≤3 un conjunto de exactamente dos números?||No; es todo el intervalo de distancia como máximo 3 a 2."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Operar con intervalos reales y sus intersecciones con extremos exactos. Lee |x−c| como distancia horizontal a c. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-N01-L01-01",
+        "F3-B1C-N01-L01-02",
+        "F3-B1C-N01-L01-03",
+        "F3-B1C-N01-L01-04",
+        "F3-B1C-N01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas I de 1.º Bachillerato; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-N01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-N01:C02"
+      ],
+      "objectives": [
+        "Transformar radicales, potencias racionales y logaritmos bajo dominios correctos.",
+        "Usar identidades de potencias y logaritmos para simplificar expresiones."
+      ],
+      "prerequisites": [
+        "B1C-N01-L01",
+        "E4B-N01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Las potencias de exponentes reales de base positiva permiten enlazar radicales y logaritmos: a^(1/n)=ⁿ√a para a>0 y n positivo. Los logaritmos reales log_b(x) exigen b>0, b≠1 y x>0; son inversos de la exponencial de base b. Por ejemplo log_3(81)=4 porque 3^4=81, y 81^(1/4)=3. La propiedad log_b(xy)=log_b(x)+log_b(y) requiere argumentos positivos, pero la misma separación es falsa para sumas. Al simplificar expresiones radicales no se pueden sumar radicandos sin justificar una identidad; √a+√b no equivale en general a √(a+b). Este puente sostiene operaciones reales que más tarde se distinguirán de las operaciones complejas."
+        },
+        {
+          "type": "example",
+          "body": "De 81=3⁴ se deduce 81^(1/4)=3 y log_3(81)=4; ambas descripciones se refieren a la misma relación de potencias."
+        },
+        {
+          "type": "example",
+          "body": "Para base 2, log₂(8×4)=log₂(32)=5=3+2. En cambio log₂(8+4) no es igual a 3+2."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Potencias, radicales y logaritmos de apoyo. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Potencias, radicales y logaritmos de apoyo",
+            "kind": "powers",
+            "model": {
+              "labels": [
+                "3^0",
+                "3^1",
+                "3^2",
+                "3^4"
+              ],
+              "values": [
+                0,
+                1,
+                2,
+                4
+              ]
+            },
+            "rows": [
+              [
+                "81^(1/4)",
+                "3"
+              ],
+              [
+                "log₃ 81",
+                "4"
+              ],
+              [
+                "log₂ 8",
+                "3"
+              ],
+              [
+                "log₂ 4",
+                "2"
+              ],
+              [
+                "log₂ 32",
+                "5"
+              ],
+              [
+                "Dominios",
+                "a>0, b>0, b≠1, x>0"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es log_b(x+y)=log_b x+log_b y una identidad?||No; la propiedad válida de suma de logaritmos requiere producto de argumentos."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Transformar radicales, potencias racionales y logaritmos bajo dominios correctos. Revisa dominios antes de transformar. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-N01-L02-01",
+        "F3-B1C-N01-L02-02",
+        "F3-B1C-N01-L02-03",
+        "F3-B1C-N01-L02-04",
+        "F3-B1C-N01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas I de 1.º Bachillerato; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-N01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-N01:C03"
+      ],
+      "objectives": [
+        "Justificar la introducción de i mediante una ecuación sin solución real.",
+        "Distinguir raíces reales de soluciones complejas básicas."
+      ],
+      "prerequisites": [
+        "B1C-N01-L02",
+        "E4B-N01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En los números reales, el cuadrado de cualquier valor es no negativo, de modo que x²+1=0 carece de solución real. Se amplía el sistema numérico a los complejos, definiendo una unidad imaginaria i con i²=−1. Así, las soluciones de x²+1=0 son x=±i. Es importante no convertir en real la raíz de un número negativo: √(−9) no es un número real, y su raíz cuadrada principal en complejos se expresa 3i. Si una ecuación x²=−a con a>0, entonces las dos soluciones complejas son ±i√a. La definición algebraica de i no implica que las cantidades físicas sean imaginarias ni atribuye orden usual a los complejos."
+        },
+        {
+          "type": "example",
+          "body": "La ecuación x²+9=0 implica x²=−9; las soluciones complejas son 3i y −3i, porque (3i)²=−9."
+        },
+        {
+          "type": "example",
+          "body": "La ecuación x²+1=0 no tiene raíces reales, pero x=i verifica i²+1=−1+1=0. Análogamente x=−i."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Necesidad de complejos. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Necesidad de complejos",
+            "kind": "plane",
+            "model": {
+              "labels": [
+                "Re(i)",
+                "Im(i)"
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "rows": [
+              [
+                "Unidad imaginaria",
+                "i²=−1"
+              ],
+              [
+                "Sin solución real",
+                "x²+1=0"
+              ],
+              [
+                "Soluciones complejas",
+                "±i"
+              ],
+              [
+                "Ecuación",
+                "x²+9=0"
+              ],
+              [
+                "Soluciones",
+                "±3i"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es i un número real situado entre −1 y 0?||No; es una unidad compleja con cuadrado −1."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Justificar la introducción de i mediante una ecuación sin solución real. Si x²=−a con a>0, no hay raíces reales. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-N01-L03-01",
+        "F3-B1C-N01-L03-02",
+        "F3-B1C-N01-L03-03",
+        "F3-B1C-N01-L03-04",
+        "F3-B1C-N01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas I de 1.º Bachillerato; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-N01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-N01:C04"
+      ],
+      "objectives": [
+        "Expresar un complejo en forma a+bi identificando partes reales e imaginarias.",
+        "Calcular conjugados y módulos con representación euclídea."
+      ],
+      "prerequisites": [
+        "B1C-N01-L03",
+        "E3-G01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un complejo se expresa en forma binómica z=a+bi, donde a,b son reales e i²=−1. Su parte real es Re(z)=a y su parte imaginaria es Im(z)=b, que es un número real, no bi. El conjugado de z es z̄=a−bi y cambia el signo de la parte imaginaria. El módulo |z|=√(a²+b²) es la distancia del punto (a,b) al origen en el plano complejo. Si z=3+4i, entonces |z|=5; z̄=3−4i y z·z̄=25, siempre real no negativo. Conjugado y opuesto no son lo mismo: el opuesto −z cambia ambos signos. Ninguna de estas magnitudes es un orden sobre los complejos."
+        },
+        {
+          "type": "example",
+          "body": "Para z=3+4i, Re(z)=3, Im(z)=4, z̄=3−4i y |z|=√(9+16)=5. Comprueba la igualdad con las operaciones inversas y revisa las condiciones del ejemplo."
+        },
+        {
+          "type": "example",
+          "body": "Para w=−2+i, el conjugado es −2−i y el módulo √5. La parte imaginaria es 1, no i."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Forma binómica. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Forma binómica",
+            "kind": "plane",
+            "model": {
+              "labels": [
+                "Real",
+                "Imaginaria"
+              ],
+              "values": [
+                3,
+                4
+              ]
+            },
+            "rows": [
+              [
+                "z",
+                "3+4i"
+              ],
+              [
+                "Re(z)",
+                "3"
+              ],
+              [
+                "Im(z)",
+                "4"
+              ],
+              [
+                "Conjugado",
+                "3−4i"
+              ],
+              [
+                "Módulo",
+                "5"
+              ],
+              [
+                "Producto zz̄",
+                "25"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es la parte imaginaria de 3+4i el término 4i?||No; Im(z)=4, el coeficiente real de i."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Expresar un complejo en forma a+bi identificando partes reales e imaginarias. Representa a y b como coordenadas de un punto. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-N01-L04-01",
+        "F3-B1C-N01-L04-02",
+        "F3-B1C-N01-L04-03",
+        "F3-B1C-N01-L04-04",
+        "F3-B1C-N01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas I de 1.º Bachillerato; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-N01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-N01:C05"
+      ],
+      "objectives": [
+        "Realizar suma, producto y cociente de complejos en forma binómica.",
+        "Justificar el uso de i²=−1 y del conjugado para dividir."
+      ],
+      "prerequisites": [
+        "B1C-N01-L04",
+        "E4B-A01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Los complejos se suman componente a componente: (a+bi)+(c+di)=(a+c)+(b+d)i. Para multiplicarlos se aplica distributividad y se sustituye i² por −1, resultando (ac−bd)+(ad+bc)i. Al dividir por un complejo distinto de cero puede multiplicarse numerador y denominador por el conjugado del divisor; el nuevo denominador es c²+d²>0. Por ejemplo, (3+i)/(1−i)=(3+i)(1+i)/2=1+2i. El cociente no se obtiene dividiendo por separado partes reales e imaginarias, ya que en general eso es falso. Debe identificarse un posible divisor cero antes de operar."
+        },
+        {
+          "type": "example",
+          "body": "(2+i)(3−2i)=6−4i+3i−2i²=8−i. La parte real incorpora −2i²=+2. Comprueba la igualdad con las operaciones inversas y revisa las condiciones del ejemplo."
+        },
+        {
+          "type": "example",
+          "body": "(3+i)/(1−i)=(3+i)(1+i)/(1+1)=(2+4i)/2=1+2i; el conjugado elimina i del denominador."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Operaciones con complejos. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Operaciones con complejos",
+            "kind": "plane",
+            "model": {
+              "labels": [
+                "Real",
+                "Imaginaria"
+              ],
+              "values": [
+                8,
+                -1
+              ]
+            },
+            "rows": [
+              [
+                "Producto",
+                "(2+i)(3−2i)"
+              ],
+              [
+                "Resultado",
+                "8−i"
+              ],
+              [
+                "Cociente",
+                "(3+i)/(1−i)"
+              ],
+              [
+                "Conjugado del divisor",
+                "1+i"
+              ],
+              [
+                "Resultado cociente",
+                "1+2i"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es (3+i)/(1−i) igual a 3−i por dividir coeficientes?||No; se usa conjugado y se obtiene 1+2i."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Realizar suma, producto y cociente de complejos en forma binómica. Sustituye siempre i² por −1 antes de agrupar. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-N01-L05-01",
+        "F3-B1C-N01-L05-02",
+        "F3-B1C-N01-L05-03",
+        "F3-B1C-N01-L05-04",
+        "F3-B1C-N01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas I de 1.º Bachillerato; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-N01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-N01:C06"
+      ],
+      "objectives": [
+        "Representar complejos como puntos/vectores del plano de Argand.",
+        "Relacionar simetrías geométricas con conjugado, opuesto y módulo."
+      ],
+      "prerequisites": [
+        "B1C-N01-L04",
+        "E3-G01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El plano complejo utiliza la coordenada horizontal para Re(z) y la vertical para Im(z). Así, z=2+3i corresponde al punto (2,3), con módulo √13. El conjugado 2−3i se obtiene por reflexión respecto al eje real, mientras el opuesto −2−3i corresponde a un giro de 180° alrededor del origen. Sumar complejos equivale a sumar vectores en el plano, aunque multiplicar complejos introduce además escalado y giro. Para z distinto de cero, su argumento es la dirección del vector desde el eje real positivo y requiere especificar cuadrante y unidad angular. Por ejemplo, i tiene argumento π/2 radianes o 90°, pero un complejo con parte real negativa no siempre admite usar una arctangente simple sin corregir cuadrante."
+        },
+        {
+          "type": "example",
+          "body": "Para z=2+3i, su punto es (2,3) y su conjugado (2,−3), simétrico respecto al eje real; ambos tienen módulo √13."
+        },
+        {
+          "type": "example",
+          "body": "El número i está en (0,1) con módulo 1 y argumento 90°; −i está en (0,−1) y su argumento puede indicarse como −90°."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Representación en plano complejo. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Representación en plano complejo",
+            "kind": "plane",
+            "model": {
+              "labels": [
+                "Real",
+                "Imaginaria"
+              ],
+              "values": [
+                2,
+                3
+              ]
+            },
+            "rows": [
+              [
+                "Complejo z",
+                "2+3i"
+              ],
+              [
+                "Punto",
+                "(2,3)"
+              ],
+              [
+                "Conjugado",
+                "2−3i"
+              ],
+              [
+                "Reflexión",
+                "eje real"
+              ],
+              [
+                "Módulo",
+                "√13"
+              ],
+              [
+                "arg(i)",
+                "90°"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El conjugado de 2+3i es −2−3i?||No; el conjugado es 2−3i y el opuesto −2−3i."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Representar complejos como puntos/vectores del plano de Argand. El eje real es horizontal; el imaginario, vertical. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-N01-L06-01",
+        "F3-B1C-N01-L06-02",
+        "F3-B1C-N01-L06-03",
+        "F3-B1C-N01-L06-04",
+        "F3-B1C-N01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, Anexo II, Matemáticas I de 1.º Bachillerato; marco curricular estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Normativa pública de contexto, sin atribución de competencias/códigos o correspondencia autonómica sin cotejo."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,763 @@
+{
+  "unit_id": "B1C-F02",
+  "unit_title": "Límites y continuidad",
+  "product_phase": "F3_OLA13",
+  "version": "0.13.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Comprender el límite finito de una función en un punto.",
+    "Calcular límites laterales y decidir si el bilateral existe.",
+    "Evaluar límites al infinito de cocientes polinómicos por grados."
+  ],
+  "warnings": [
+    "Contenido sintético original editorial EN REVISIÓN: no homologado y no publicable.",
+    "Conexiones editoriales en f3_wave13_priority_plan.json diferenciadas de las 20 canónicas.",
+    "Gráficas SVG ilustrativas y tablas semánticas exactas; no interpretar color o grosor como demostración.",
+    "Códigos curriculares autonómicos, revisión humana y WCAG integral NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Familias de funciones",
+      "lesson_id": "B1C-F01-L06",
+      "href": "#/curso/B1C/unidad/B1C-F01/leccion/B1C-F01-L06"
+    },
+    {
+      "label": "Funciones racionales",
+      "lesson_id": "B1C-F01-L02",
+      "href": "#/curso/B1C/unidad/B1C-F01/leccion/B1C-F01-L02"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Comprensión guiada, recuperación activa sin pistas, feedback y repaso optativo espaciado."
+  },
+  "source_note": "Marco RD 217/2022 ESO y RD 243/2022 Matemáticas I; correspondencia territorial por comprobar.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1C-F02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F02:C01"
+      ],
+      "objectives": [
+        "Comprender el límite finito de una función en un punto.",
+        "Calcular límites por sustitución en polinomios y racionales continuas en el punto."
+      ],
+      "prerequisites": [
+        "B1C-F01-L02",
+        "E4B-A01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El límite lim(x→a)f(x)=L expresa que las salidas se aproximan arbitrariamente a L cuando las entradas se aproximan a a, independientemente de que f(a) exista o coincida con L. Los polinomios son continuos y permiten sustituir directamente. Los cocientes de polinomios también, si el denominador no vale cero en a. Si se obtiene 0/0, la sustitución no determina el límite y hay que transformar la expresión sin modificar el dominio inicial; no puede concluirse que el límite sea cero o no exista. El proceso de aproximación exige considerar ambos lados del punto para hablar de límite bilateral. Un punto aislado ausente no impide necesariamente un límite finito."
+        },
+        {
+          "type": "example",
+          "body": "lim(x→2)(x²+3x)=4+6=10, por continuidad de la función polinómica."
+        },
+        {
+          "type": "example",
+          "body": "lim(x→1)(x²−1)/(x−1) = lim(x→1)(x+1)=2; la expresión inicial no está definida en x=1."
+        },
+        {
+          "type": "figure",
+          "body": "Límite de un polinomio por sustitución. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Límite de un polinomio por sustitución. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "quadratic",
+            "title": "Límite de un polinomio por sustitución",
+            "rows": [
+              [
+                "Función",
+                "f(x)=x²"
+              ],
+              [
+                "a",
+                "2"
+              ],
+              [
+                "Límite en 2",
+                "4"
+              ],
+              [
+                "Valor f(2)",
+                "4"
+              ],
+              [
+                "Propiedad",
+                "Polinomio continuo"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 0,
+              "k": 0
+            },
+            "domain": [
+              -1,
+              4
+            ],
+            "marks": [
+              [
+                "A",
+                2,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La inexistencia de f(a) implica que no exista lim(x→a)f(x)?||No: puede existir un límite finito a pesar de que falte el valor puntual."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El límite lim(x→a)f(x)=L expresa que las salidas se aproximan arbitrariamente a L cuando las entradas se aproximan a a, independientemente de que f(a) exista o coincida con L. Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F02-L01-01",
+        "F3-B1C-F02-L01-02",
+        "F3-B1C-F02-L01-03",
+        "F3-B1C-F02-L01-04",
+        "F3-B1C-F02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-F02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F02:C02"
+      ],
+      "objectives": [
+        "Calcular límites laterales y decidir si el bilateral existe.",
+        "Distinguir valor de la función y límites laterales en puntos de unión."
+      ],
+      "prerequisites": [
+        "B1C-F01-L06",
+        "B1C-F02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El límite por la izquierda lim(x→a⁻)f(x) examina valores con x<a; el de la derecha lim(x→a⁺)f(x) examina x>a. El límite bilateral finito existe exactamente cuando ambos laterales existen y son iguales. En la función f(x)=x+1 si x<0 y f(x)=x² si x≥0, el límite izquierdo en cero es 1 y el derecho es 0, por lo que el bilateral no existe aunque f(0)=0. Un punto definido separadamente puede tener valor distinto de ambos límites sin alterar su existencia. En funciones a trozos conviene anotar desigualdades estrictas y no estrictas antes de sustituir para no mezclar ramas."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=x+1 (x<0), x² (x≥0), lim(x→0⁻)f(x)=1 y lim(x→0⁺)f(x)=0; no hay límite bilateral."
+        },
+        {
+          "type": "example",
+          "body": "En g(x)=|x|/x para x≠0, el límite izquierdo en 0 es −1 y el derecho es +1; g(0) no está definida."
+        },
+        {
+          "type": "figure",
+          "body": "Salto de función a trozos en x=0. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Salto de función a trozos en x=0. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "piecewise",
+            "title": "Salto de función a trozos en x=0",
+            "rows": [
+              [
+                "Izquierda",
+                "x+1, x<0"
+              ],
+              [
+                "Derecha",
+                "x², x≥0"
+              ],
+              [
+                "Límite izquierdo",
+                "1"
+              ],
+              [
+                "Límite derecho",
+                "0"
+              ],
+              [
+                "Bilateral",
+                "No existe"
+              ]
+            ],
+            "model": {
+              "kind": "piecewise",
+              "branch": "jump"
+            },
+            "domain": [
+              -4,
+              4
+            ],
+            "marks": [
+              [
+                "D",
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Si los laterales son diferentes puede existir un límite bilateral real?||No, la igualdad de ambos es condición necesaria del límite bilateral."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El límite por la izquierda lim(x→a⁻)f(x) examina valores con x<a; el de la derecha lim(x→a⁺)f(x) examina x>a. Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F02-L02-01",
+        "F3-B1C-F02-L02-02",
+        "F3-B1C-F02-L02-03",
+        "F3-B1C-F02-L02-04",
+        "F3-B1C-F02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-F02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F02:C03"
+      ],
+      "objectives": [
+        "Evaluar límites al infinito de cocientes polinómicos por grados.",
+        "Distinguir comportamientos divergentes y límites horizontales finitos."
+      ],
+      "prerequisites": [
+        "B1C-F01-L02",
+        "B1C-F02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para una función racional P(x)/Q(x), el límite cuando x→±∞ se obtiene comparando los grados. Si el numerador tiene menor grado, el cociente tiende a 0; si los grados coinciden, tiende al cociente de coeficientes principales; si el numerador tiene grado mayor, hay crecimiento no acotado cuyo signo debe estudiarse según el extremo. Dividir términos por la potencia dominante facilita justificar estos resultados. Un límite igual a 0 describe tendencia asintótica y no exige que la función sea cero para algún x finito. Para exponenciales con base mayor que uno, a^x→+∞ cuando x→+∞ y a^x→0 cuando x→−∞."
+        },
+        {
+          "type": "example",
+          "body": "lim(x→+∞)(3x²+1)/(2x²+5)=3/2 por cociente de coeficientes líderes."
+        },
+        {
+          "type": "example",
+          "body": "lim(x→+∞)(2x+1)/(x²+4)=0, porque el grado del denominador es mayor."
+        },
+        {
+          "type": "figure",
+          "body": "Cociente racional con asíntota horizontal. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Cociente racional con asíntota horizontal. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "rational",
+            "title": "Cociente racional con asíntota horizontal",
+            "rows": [
+              [
+                "Función",
+                "1/(x−1)"
+              ],
+              [
+                "x→+∞",
+                "0⁺"
+              ],
+              [
+                "x→−∞",
+                "0⁻"
+              ],
+              [
+                "Asíntota horizontal",
+                "y=0"
+              ],
+              [
+                "Asíntota vertical",
+                "x=1"
+              ]
+            ],
+            "model": {
+              "kind": "rational",
+              "a": 1,
+              "shift": 1,
+              "vertical": 0
+            },
+            "domain": [
+              -5,
+              7
+            ],
+            "marks": [
+              [
+                "AV",
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La asíntota horizontal y=2 impide que la gráfica cruce esa recta?||No. Una asíntota horizontal describe el límite en infinito, no un valor prohibido de la función."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para una función racional P(x)/Q(x), el límite cuando x→±∞ se obtiene comparando los grados. Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F02-L03-01",
+        "F3-B1C-F02-L03-02",
+        "F3-B1C-F02-L03-03",
+        "F3-B1C-F02-L03-04",
+        "F3-B1C-F02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-F02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F02:C04"
+      ],
+      "objectives": [
+        "Resolver indeterminaciones 0/0 mediante factorización o racionalización elementales.",
+        "Justificar la transformación sin inventar el valor en un punto excluido."
+      ],
+      "prerequisites": [
+        "B1C-F02-L01",
+        "B1C-F01-L04",
+        "E4B-A01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La expresión 0/0 no es un valor de límite: indica que la sustitución directa no decide. Si P(a)=Q(a)=0, se puede factorizar y cancelar el factor común x−a SOLO para x≠a, lo cual preserva el límite al acercarse al punto. Por ejemplo (x²−4)/(x−2) coincide con x+2 para x≠2 y su límite en 2 es 4. En cocientes con raíces cuadradas, racionalizar multiplicando por el conjugado permite cancelar factores de forma válida cerca del punto, como [√(x+1)−1]/x =1/[√(x+1)+1] para x≠0. Debe distinguirse el límite de la inexistencia de la función en el punto."
+        },
+        {
+          "type": "example",
+          "body": "lim(x→2)(x²−4)/(x−2)=lim(x→2)(x+2)=4, aunque la primera expresión no está definida en 2."
+        },
+        {
+          "type": "example",
+          "body": "lim(x→0)(√(1+x)−1)/x=1/(√1+1)=1/2 tras racionalizar por el conjugado."
+        },
+        {
+          "type": "figure",
+          "body": "Cancelación de factor para calcular un límite. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Cancelación de factor para calcular un límite. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "quadratic",
+            "title": "Cancelación de factor para calcular un límite",
+            "rows": [
+              [
+                "Cociente",
+                "(x²−4)/(x−2)"
+              ],
+              [
+                "Dominio original",
+                "x≠2"
+              ],
+              [
+                "Cerca del punto",
+                "x+2"
+              ],
+              [
+                "Límite x→2",
+                "4"
+              ],
+              [
+                "Valor original en 2",
+                "Indefinido"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 1,
+              "b": 2
+            },
+            "domain": [
+              -2,
+              5
+            ],
+            "marks": [
+              [
+                "Hueco",
+                2,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es correcto decir que 0/0 vale 1 por tener numerador y denominador nulos?||No. Es indeterminación; el valor depende del comportamiento de las funciones cerca del punto."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La expresión 0/0 no es un valor de límite: indica que la sustitución directa no decide. Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F02-L04-01",
+        "F3-B1C-F02-L04-02",
+        "F3-B1C-F02-L04-03",
+        "F3-B1C-F02-L04-04",
+        "F3-B1C-F02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-F02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F02:C05"
+      ],
+      "objectives": [
+        "Identificar asíntotas verticales y horizontales a partir de límites.",
+        "Diferenciar asíntota vertical de agujero removible."
+      ],
+      "prerequisites": [
+        "B1C-F02-L03",
+        "B1C-F02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una recta vertical x=a es asíntota de f si al menos uno de los límites laterales al acercarse a a es infinito positivo o negativo. Una recta y=L es asíntota horizontal si f(x)→L cuando x tiende a +∞ o −∞. La función 1/(x−2) posee AV x=2 y AH y=0. Un factor cancelable puede producir un límite finito con un agujero, que no es una asíntota vertical. El signo del denominador determina si cada lateral diverge a +∞ o −∞: para 1/(x−2), desde la izquierda tiende a −∞ y desde la derecha a +∞. Las asíntotas no equivalen a líneas que la gráfica tenga prohibido cruzar en cualquier punto."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=3+1/(x−2) tiene asíntotas x=2 e y=3; no está definida en x=2."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=(x²−4)/(x−2), x≠2, tiene agujero en (2,4), pero carece de asíntota vertical en x=2."
+        },
+        {
+          "type": "figure",
+          "body": "Asíntotas vertical y horizontal. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Asíntotas vertical y horizontal. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "rational",
+            "title": "Asíntotas vertical y horizontal",
+            "rows": [
+              [
+                "Función",
+                "1/(x−2)+3"
+              ],
+              [
+                "AV",
+                "x=2"
+              ],
+              [
+                "AH",
+                "y=3"
+              ],
+              [
+                "Lateral izquierdo en 2",
+                "−∞"
+              ],
+              [
+                "Lateral derecho en 2",
+                "+∞"
+              ]
+            ],
+            "model": {
+              "kind": "rational",
+              "a": 1,
+              "shift": 2,
+              "vertical": 3
+            },
+            "domain": [
+              -4,
+              7
+            ],
+            "marks": [
+              [
+                "AV",
+                2,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El límite finito 4 en un punto excluido demuestra una asíntota vertical allí?||No. Es una discontinuidad evitable, no comportamiento infinito."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una recta vertical x=a es asíntota de f si al menos uno de los límites laterales al acercarse a a es infinito positivo o negativo. Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F02-L05-01",
+        "F3-B1C-F02-L05-02",
+        "F3-B1C-F02-L05-03",
+        "F3-B1C-F02-L05-04",
+        "F3-B1C-F02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-F02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F02:C06"
+      ],
+      "objectives": [
+        "Determinar continuidad por límites y valor puntual en funciones a trozos.",
+        "Clasificar discontinuidades evitables, de salto e infinitas."
+      ],
+      "prerequisites": [
+        "B1C-F02-L02",
+        "B1C-F02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una función es continua en x=a si está definida en a, existe lim(x→a)f(x) y dicho límite coincide con f(a). Si los límites laterales finitos son distintos, hay discontinuidad de salto. Si el límite común es finito pero f(a) falta o difiere, la discontinuidad es evitable: puede corregirse redefiniendo un solo valor. Si el límite se hace infinito en al menos un lateral, existe discontinuidad infinita, no reparable asignando un valor finito al punto. Para garantizar continuidad de una función a trozos en su unión debe resolverse el parámetro que iguala ambos límites y el valor definido. No confundir continuidad de la gráfica en un dibujo con una demostración de límites."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=x+1 si x<0 y f(x)=k si x≥0 es continua en cero solo para k=1."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=(x²−1)/(x−1) para x≠1, con g(1)=2, es continua en 1 porque el límite vale 2."
+        },
+        {
+          "type": "figure",
+          "body": "Salto y continuidad por tramos. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Salto y continuidad por tramos. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "piecewise",
+            "title": "Salto y continuidad por tramos",
+            "rows": [
+              [
+                "Para x<0",
+                "f(x)=x+1"
+              ],
+              [
+                "Para x≥0",
+                "f(x)=x²"
+              ],
+              [
+                "Límite izquierdo",
+                "1"
+              ],
+              [
+                "Límite derecho",
+                "0"
+              ],
+              [
+                "Clasificación",
+                "Discontinuidad de salto"
+              ]
+            ],
+            "model": {
+              "kind": "piecewise",
+              "branch": "jump"
+            },
+            "domain": [
+              -4,
+              4
+            ],
+            "marks": [
+              [
+                "D",
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Basta asignar un valor a una función con límites laterales desiguales para hacerla continua?||No. Primero deben coincidir los límites laterales, y el valor solo puede igualar ese límite común."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una función es continua en x=a si está definida en a, existe lim(x→a)f(x) y dicho límite coincide con f(a). Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F02-L06-01",
+        "F3-B1C-F02-L06-02",
+        "F3-B1C-F02-L06-03",
+        "F3-B1C-F02-L06-04",
+        "F3-B1C-F02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

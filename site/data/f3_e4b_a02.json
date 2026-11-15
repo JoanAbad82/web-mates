@@ -1,0 +1,704 @@
+{
+  "unit_id": "E4B-A02",
+  "unit_title": "Ecuaciones, sistemas e inecuaciones",
+  "product_phase": "F3_OLA11",
+  "version": "0.11.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Resolver ecuaciones lineales y cuadráticas respetando restricciones.",
+    "Resolver ecuaciones polinómicas por extracción de factor común.",
+    "Resolver ecuaciones con denominadores sin introducir valores prohibidos."
+  ],
+  "warnings": [
+    "Lecciones y ejercicios sintéticos editoriales EN REVISIÓN; sin homologación.",
+    "B2C-A01/B2C-A02/B2C-G02 siguen sin desarrollar; esta ola cubre solo la cadena de Matemáticas I.",
+    "Logaritmos sencillos explicados autónomamente; prerrequisito E4B-F01 no se da por desarrollado.",
+    "Mapeo regional, revisión humana y WCAG integral NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Polinomios y factorización",
+      "lesson_id": "E4B-A01-L02",
+      "href": "#/curso/E4B/unidad/E4B-A01/leccion/E4B-A01-L02"
+    },
+    {
+      "label": "Ecuaciones de tercero",
+      "lesson_id": "E3-A02-L04",
+      "href": "#/curso/E3/unidad/E3-A02/leccion/E3-A02-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Comprender antes de memorizar, recuperación sin ayuda y reestudio de errores."
+  },
+  "source_note": "RD 217/2022 ESO y RD 243/2022 Bachillerato; distribución editorial y cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E4B-A02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-A02:C01"
+      ],
+      "objectives": [
+        "Resolver ecuaciones lineales y cuadráticas respetando restricciones.",
+        "Verificar raíces en las ecuaciones originales."
+      ],
+      "prerequisites": [
+        "E3-A02-L01",
+        "E4B-A01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Resolver una ecuación significa determinar todos los valores del dominio que verifican la igualdad. Una lineal ax+b=c, con a≠0, tiene solución x=(c−b)/a. Una cuadrática ax²+bx+c=0, con a≠0, tiene discriminante Δ=b²−4ac y raíces reales (−b±√Δ)/(2a) si Δ≥0. Si Δ<0 no hay soluciones reales; si Δ=0 hay una raíz real doble. Factorizar suele facilitar el cálculo cuando el trinomio tiene raíces enteras. Un paso algebraico exige comprobar signos y coeficientes: no dividir por una expresión desconocida que puede ser cero sin analizar el caso."
+        },
+        {
+          "type": "example",
+          "body": "x²−5x+6=0 se factoriza (x−2)(x−3)=0, por lo que x=2 o x=3."
+        },
+        {
+          "type": "example",
+          "body": "3x+5=20 implica 3x=15 y x=5; sustituir da 3·5+5=20."
+        },
+        {
+          "type": "figure",
+          "body": "Ceros de una ecuación cuadrática. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Ceros de una ecuación cuadrática. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "roots",
+            "title": "Ceros de una ecuación cuadrática",
+            "rows": [
+              [
+                "Ecuación",
+                "x²−5x+6=0"
+              ],
+              [
+                "Discriminante",
+                "25−24=1"
+              ],
+              [
+                "Raíces",
+                "2, 3"
+              ],
+              [
+                "Verificación",
+                "Ambas anulan el polinomio"
+              ]
+            ],
+            "points": [],
+            "lines": [],
+            "marks": [
+              2,
+              3
+            ],
+            "area": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un discriminante negativo implica dos raíces reales negativas?||No. Indica ausencia de raíces reales de la ecuación cuadrática."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Resolver una ecuación significa determinar todos los valores del dominio que verifican la igualdad. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-A02-L01-01",
+        "F3-E4B-A02-L01-02",
+        "F3-E4B-A02-L01-03",
+        "F3-E4B-A02-L01-04",
+        "F3-E4B-A02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-A02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-A02:C02"
+      ],
+      "objectives": [
+        "Resolver ecuaciones polinómicas por extracción de factor común.",
+        "Aplicar la propiedad del producto nulo sin dividir por una incógnita."
+      ],
+      "prerequisites": [
+        "E4B-A01-L03",
+        "E4B-A02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si el producto de factores reales vale cero, al menos uno de los factores debe ser cero. En x(x−2)(x+3)=0, los candidatos son x=0, x=2 y x=−3; dividir inicialmente por x perdería la solución cero. Para ecuaciones de grado mayor que dos conviene extraer factores comunes y usar raíces ya comprobadas; la factorización debe multiplicarse para verificar la identidad. El grado del polinomio limita el número de raíces distintas, pero puede haber multiplicidades. Desarrollar y reordenar es útil solo si preserva todos los términos y sus signos."
+        },
+        {
+          "type": "example",
+          "body": "x³−4x=x(x²−4)=x(x−2)(x+2)=0, con tres raíces reales −2,0,2."
+        },
+        {
+          "type": "example",
+          "body": "x²(x−3)=0 tiene raíces distintas 0 y 3, aunque la primera tiene multiplicidad dos."
+        },
+        {
+          "type": "figure",
+          "body": "Producto nulo y ceros de un polinomio. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Producto nulo y ceros de un polinomio. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "roots",
+            "title": "Producto nulo y ceros de un polinomio",
+            "rows": [
+              [
+                "Polinomio",
+                "x(x−2)(x+3)"
+              ],
+              [
+                "Factor 1",
+                "x"
+              ],
+              [
+                "Factor 2",
+                "x−2"
+              ],
+              [
+                "Factor 3",
+                "x+3"
+              ],
+              [
+                "Raíces",
+                "0, 2, −3"
+              ]
+            ],
+            "points": [],
+            "lines": [],
+            "marks": [
+              -3,
+              0,
+              2
+            ],
+            "area": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué dividir x(x−2)=0 entre x puede perder soluciones?||Porque x puede valer cero y nunca se divide entre una expresión que puede anularse."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Si el producto de factores reales vale cero, al menos uno de los factores debe ser cero. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-A02-L02-01",
+        "F3-E4B-A02-L02-02",
+        "F3-E4B-A02-L02-03",
+        "F3-E4B-A02-L02-04",
+        "F3-E4B-A02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-A02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-A02:C03"
+      ],
+      "objectives": [
+        "Resolver ecuaciones con denominadores sin introducir valores prohibidos.",
+        "Distinguir simplificación formal de equivalencia sobre el dominio original."
+      ],
+      "prerequisites": [
+        "E4B-A01-L04",
+        "E4B-A02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una ecuación racional P(x)/Q(x)=R(x)/S(x) exige Q(x)≠0 y S(x)≠0 desde el inicio. Para eliminar denominadores se puede multiplicar por su producto común solo en el dominio permitido y resolver la ecuación resultante; después deben descartarse candidatos que anulen denominadores. Cancelar (x−a) no legitima sustituir x=a. En ecuaciones con dos denominadores distintos, escribir las restricciones antes de operar previene errores. Las soluciones deben verificarse en las fracciones originales, no solo en el polinomio final."
+        },
+        {
+          "type": "example",
+          "body": "(x+1)/(x−1)=2 exige x≠1. Multiplicamos: x+1=2x−2, de donde x=3, válida."
+        },
+        {
+          "type": "example",
+          "body": "(x²−9)/(x−3)=6 con x≠3 simplifica a x+3=6, dando x=3; como está excluido, la ecuación original NO tiene solución."
+        },
+        {
+          "type": "figure",
+          "body": "Ecuación racional y exclusión. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Ecuación racional y exclusión. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "rational_hole",
+            "title": "Ecuación racional y exclusión",
+            "rows": [
+              [
+                "Ecuación",
+                "(x+1)/(x−1)=2"
+              ],
+              [
+                "Exclusión",
+                "x≠1"
+              ],
+              [
+                "Cálculo",
+                "x+1=2x−2"
+              ],
+              [
+                "Resultado",
+                "x=3"
+              ]
+            ],
+            "points": [],
+            "lines": [],
+            "marks": [
+              1,
+              3
+            ],
+            "area": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si el cálculo algebraico produce x=3 cuando el denominador original es x−3, ¿se acepta?||No: esa candidata viola el dominio y debe descartarse."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Una ecuación racional P(x)/Q(x)=R(x)/S(x) exige Q(x)≠0 y S(x)≠0 desde el inicio. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-A02-L03-01",
+        "F3-E4B-A02-L03-02",
+        "F3-E4B-A02-L03-03",
+        "F3-E4B-A02-L03-04",
+        "F3-E4B-A02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-A02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-A02:C04"
+      ],
+      "objectives": [
+        "Resolver sistemas lineales de dos ecuaciones por sustitución o eliminación.",
+        "Interpretar soluciones únicas, sistemas incompatibles y coincidentes."
+      ],
+      "prerequisites": [
+        "E3-A02-L04",
+        "E4B-A02-L01",
+        "E3-G01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un sistema de dos ecuaciones lineales en dos incógnitas puede escribirse ax+by=e y cx+dy=f. Si su determinante D=ad−bc es distinto de cero, existe una solución única, comprobable por sustitución en ambas ecuaciones. Cuando D=0, el sistema puede no tener solución (rectas paralelas distintas) o tener infinitas (coincidentes); no se permite aplicar una fórmula que divida entre cero. Para resolver por eliminación, multiplica ecuaciones de manera equivalente y resta para cancelar una variable. Los sistemas no lineales sencillos pueden combinar una recta y una parábola, con cero, una o dos intersecciones reales."
+        },
+        {
+          "type": "example",
+          "body": "El sistema x+y=5, x−y=1 da por suma 2x=6, luego x=3 e y=2. Las dos igualdades se comprueban."
+        },
+        {
+          "type": "example",
+          "body": "El sistema x+y=2, 2x+2y=5 no tiene solución: las izquierdas son proporcionales pero los resultados no."
+        },
+        {
+          "type": "figure",
+          "body": "Corte de dos rectas en un punto. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Corte de dos rectas en un punto. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "system_lines",
+            "title": "Corte de dos rectas en un punto",
+            "rows": [
+              [
+                "Recta primera",
+                "x+y=5"
+              ],
+              [
+                "Recta segunda",
+                "x−y=1"
+              ],
+              [
+                "Corte",
+                "(3, 2)"
+              ],
+              [
+                "Verificación",
+                "3+2=5 y 3−2=1"
+              ]
+            ],
+            "points": [
+              [
+                "S",
+                3,
+                2
+              ]
+            ],
+            "lines": [
+              [
+                -1,
+                5
+              ],
+              [
+                1,
+                -1
+              ]
+            ],
+            "marks": [],
+            "area": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Si D=0 podemos concluir automáticamente que el sistema no tiene solución?||No. Puede ser incompatible o tener infinitas soluciones; hay que comparar también los términos independientes."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Un sistema de dos ecuaciones lineales en dos incógnitas puede escribirse ax+by=e y cx+dy=f. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-A02-L04-01",
+        "F3-E4B-A02-L04-02",
+        "F3-E4B-A02-L04-03",
+        "F3-E4B-A02-L04-04",
+        "F3-E4B-A02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-A02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-A02:C05"
+      ],
+      "objectives": [
+        "Resolver inecuaciones lineales invirtiendo el signo si procede.",
+        "Representar intervalos y su intersección con extremos abiertos o cerrados."
+      ],
+      "prerequisites": [
+        "E3-A03-L02",
+        "E4B-A02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una inecuación compara expresiones mediante <, ≤, > o ≥. Se pueden sumar o restar los mismos términos en ambos miembros sin cambiar el sentido. Al multiplicar o dividir por un número negativo, la desigualdad se invierte: −2x<6 equivale a x>−3. Los sistemas de inecuaciones requieren INTERSECCIÓN de sus conjuntos solución y no unión, salvo que el enunciado indique alternativa. Las desigualdades estrictas excluyen el extremo; las no estrictas lo incluyen. Los signos de polinomios de grado mayor deben estudiarse mediante sus ceros y el signo de intervalos, no dividiendo por factores variables sin analizar el signo."
+        },
+        {
+          "type": "example",
+          "body": "−2x<6 implica x>−3, pues dividimos por −2 y se invierte el signo de comparación."
+        },
+        {
+          "type": "example",
+          "body": "El sistema x≥1 y x<4 produce el intervalo [1,4), incluido 1 y excluido 4."
+        },
+        {
+          "type": "figure",
+          "body": "Intersección de dos desigualdades. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Intersección de dos desigualdades. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "number_line",
+            "title": "Intersección de dos desigualdades",
+            "rows": [
+              [
+                "Primera",
+                "x≥1"
+              ],
+              [
+                "Segunda",
+                "x<4"
+              ],
+              [
+                "Intersección",
+                "[1,4)"
+              ],
+              [
+                "Extremo 1",
+                "Incluido"
+              ],
+              [
+                "Extremo 4",
+                "Excluido"
+              ]
+            ],
+            "points": [],
+            "lines": [],
+            "marks": [
+              1,
+              4
+            ],
+            "area": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es equivalente −x<2 a x<−2?||No: al multiplicar por −1 se invierte la desigualdad; la solución es x>−2."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Una inecuación compara expresiones mediante <, ≤, > o ≥. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-A02-L05-01",
+        "F3-E4B-A02-L05-02",
+        "F3-E4B-A02-L05-03",
+        "F3-E4B-A02-L05-04",
+        "F3-E4B-A02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-A02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-A02:C06"
+      ],
+      "objectives": [
+        "Clasificar ecuaciones y sistemas por cantidad de soluciones admitidas.",
+        "Verificar raíces candidatas y detectar soluciones extrañas por restricción."
+      ],
+      "prerequisites": [
+        "E4B-A02-L03",
+        "E4B-A02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La discusión de soluciones comienza en el dominio y condiciones originales. Una ecuación lineal ax=b tiene única solución si a≠0, infinitas si a=0 y b=0, y ninguna si a=0 y b≠0. En sistemas lineales de dos incógnitas, D≠0 implica solución única; con D=0 hay que determinar si las dos ecuaciones son compatibles o contradictorias. En ecuaciones racionales y radicales, una candidata obtenida por pasos no equivalentes puede ser falsa; siempre se sustituye en el enunciado inicial. En problemas contextuales también se exigen unidades, rango y signo admisibles."
+        },
+        {
+          "type": "example",
+          "body": "2x+4=2x+4 es verdadera para todos los reales: infinitas soluciones, no una única."
+        },
+        {
+          "type": "example",
+          "body": "2x+4=2x+5 se reduce a 4=5, contradicción: no tiene solución."
+        },
+        {
+          "type": "figure",
+          "body": "Discusión del número de soluciones. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Discusión del número de soluciones. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "logic",
+            "title": "Discusión del número de soluciones",
+            "rows": [
+              [
+                "Caso a≠0",
+                "Una solución de ax=b"
+              ],
+              [
+                "Caso 0x=0",
+                "Infinitas soluciones"
+              ],
+              [
+                "Caso 0x=1",
+                "Sin solución"
+              ],
+              [
+                "Chequeo",
+                "Sustituir siempre en origen"
+              ]
+            ],
+            "points": [],
+            "lines": [],
+            "marks": [
+              0
+            ],
+            "area": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si tras elevar al cuadrado aparece una raíz que no satisface la ecuación original, ¿qué hacemos?||Se descarta y se documenta por qué falló la equivalencia."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: La discusión de soluciones comienza en el dominio y condiciones originales. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-A02-L06-01",
+        "F3-E4B-A02-L06-02",
+        "F3-E4B-A02-L06-03",
+        "F3-E4B-A02-L06-04",
+        "F3-E4B-A02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

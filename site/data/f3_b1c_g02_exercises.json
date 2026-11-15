@@ -1,0 +1,1101 @@
+{
+  "unit_id": "B1C-G02",
+  "version": "0.9.0",
+  "status": "revision",
+  "notice": "Actividades deterministas sintéticas pendientes de revisión humana.",
+  "activities": [
+    {
+      "exercise_id": "F3-B1C-G02-L01-01",
+      "lesson_id": "B1C-G02-L01",
+      "type": "choice",
+      "prompt": "Dados A=(-1, 2) y B=(3, 5), calcula las componentes del vector AB de A hacia B. Selecciona la respuesta exacta.",
+      "answer": "(4, 3)",
+      "explanation": "Procedimiento y verificación: B−A=(3−(-1),5−(2))=(4,3); cambiar orden invierte el sentido. Resultado: (4, 3). Un vector de A a B se obtiene restando coordenadas finales menos iniciales. Calcula B−A para AB y A−B para BA; no mezcles componentes. La respuesta exacta es (4, 3). Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Un vector de A a B se obtiene restando coordenadas finales menos iniciales.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_vector",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "(3, 4)",
+        "(-4, -3)",
+        "(4, 3)"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L01-02",
+      "lesson_id": "B1C-G02-L01",
+      "type": "numeric",
+      "prompt": "Calcula el módulo exacto del vector v=(3, 4).",
+      "answer": 5.0,
+      "explanation": "Procedimiento y verificación: Cuadrado del módulo=3²+4²=25. Módulo positivo o cuadrado, según la pregunta: 5. Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes. Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos. La respuesta exacta es 5. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_norm",
+        "prerrequisito_b1c_g02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L01-03",
+      "lesson_id": "B1C-G02-L01",
+      "type": "choice",
+      "prompt": "¿Son equipolentes los vectores de componentes (4, 3) y (4, 3)? Selecciona la respuesta exacta.",
+      "answer": "Sí",
+      "explanation": "Procedimiento y verificación: Aplicando la comparación de direcciones, signos o combinación por componentes se obtiene exactamente Sí. Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo. Paralelismo por pendientes iguales, perpendicularidad por producto −1 o producto escalar cero; equipolencia por componentes iguales. La respuesta exacta es Sí. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_vector_eq",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "Sí",
+        "No",
+        "No puede determinarse"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L01-04",
+      "lesson_id": "B1C-G02-L01",
+      "type": "choice",
+      "prompt": "Calcula el CUADRADO del módulo del vector v=(5, 12). Selecciona la respuesta exacta.",
+      "answer": "169",
+      "explanation": "Procedimiento y verificación: Cuadrado del módulo=5²+12²=169. Módulo positivo o cuadrado, según la pregunta: 169. Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes. Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos. La respuesta exacta es 169. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_norm_sq",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "170",
+        "168",
+        "169"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L01-05",
+      "lesson_id": "B1C-G02-L01",
+      "type": "choice",
+      "prompt": "¿Son equipolentes los vectores de componentes (1, 2) y (2, 1)? Selecciona la respuesta exacta.",
+      "answer": "No",
+      "explanation": "Procedimiento y verificación: Aplicando la comparación de direcciones, signos o combinación por componentes se obtiene exactamente No. Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo. Paralelismo por pendientes iguales, perpendicularidad por producto −1 o producto escalar cero; equipolencia por componentes iguales. La respuesta exacta es No. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_vector_eq",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "No puede determinarse",
+        "Sí",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L02-01",
+      "lesson_id": "B1C-G02-L02",
+      "type": "choice",
+      "prompt": "Suma los vectores u=(2, 1) y v=(-1, 3). Responde (x, y). Selecciona la respuesta exacta.",
+      "answer": "(1, 4)",
+      "explanation": "Procedimiento y verificación: Aplicando la comparación de direcciones, signos o combinación por componentes se obtiene exactamente (1, 4). Opera las componentes con el mismo orden de ejes, respetando signos. Para suma o resta combina cada componente; para producto por escalar multiplica ambas componentes. La respuesta exacta es (1, 4). Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Opera las componentes con el mismo orden de ejes, respetando signos.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_vector_add",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "(-1, -4)",
+        "(1, 4)",
+        "(4, 1)"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L02-02",
+      "lesson_id": "B1C-G02-L02",
+      "type": "choice",
+      "prompt": "Resta los vectores u=(2, 1) menos v=(-1, 3). Responde (x, y). Selecciona la respuesta exacta.",
+      "answer": "(3, -2)",
+      "explanation": "Procedimiento y verificación: Aplicando la comparación de direcciones, signos o combinación por componentes se obtiene exactamente (3, -2). Opera las componentes con el mismo orden de ejes, respetando signos. Para suma o resta combina cada componente; para producto por escalar multiplica ambas componentes. La respuesta exacta es (3, -2). Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Opera las componentes con el mismo orden de ejes, respetando signos.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_vector_sub",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "(3, -2)",
+        "(-2, 3)",
+        "(-3, 2)"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L02-03",
+      "lesson_id": "B1C-G02-L02",
+      "type": "choice",
+      "prompt": "Multiplica el vector v=(2, -3) por el escalar λ=-2. Responde (x, y). Selecciona la respuesta exacta.",
+      "answer": "(-4, 6)",
+      "explanation": "Procedimiento y verificación: Aplicando la comparación de direcciones, signos o combinación por componentes se obtiene exactamente (-4, 6). Opera las componentes con el mismo orden de ejes, respetando signos. Para suma o resta combina cada componente; para producto por escalar multiplica ambas componentes. La respuesta exacta es (-4, 6). Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Opera las componentes con el mismo orden de ejes, respetando signos.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_vector_scale",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "(6, -4)",
+        "(4, -6)",
+        "(-4, 6)"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L02-04",
+      "lesson_id": "B1C-G02-L02",
+      "type": "choice",
+      "prompt": "Calcula la coordenada x de u+v con u=(2, 1) y v=(-1, 3). Selecciona la respuesta exacta.",
+      "answer": "1",
+      "explanation": "Procedimiento y verificación: Aplicando la comparación de direcciones, signos o combinación por componentes se obtiene exactamente 1. Opera las componentes con el mismo orden de ejes, respetando signos. Para suma o resta combina cada componente; para producto por escalar multiplica ambas componentes. La respuesta exacta es 1. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Opera las componentes con el mismo orden de ejes, respetando signos.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_vec_sum_x",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L02-05",
+      "lesson_id": "B1C-G02-L02",
+      "type": "choice",
+      "prompt": "Multiplica el vector v=(-1, 2) por el escalar λ=3. Responde (x, y). Selecciona la respuesta exacta.",
+      "answer": "(-3, 6)",
+      "explanation": "Procedimiento y verificación: Aplicando la comparación de direcciones, signos o combinación por componentes se obtiene exactamente (-3, 6). Opera las componentes con el mismo orden de ejes, respetando signos. Para suma o resta combina cada componente; para producto por escalar multiplica ambas componentes. La respuesta exacta es (-3, 6). Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Opera las componentes con el mismo orden de ejes, respetando signos.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_vector_scale",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "(-3, 6)",
+        "(6, -3)",
+        "(3, -6)"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L03-01",
+      "lesson_id": "B1C-G02-L03",
+      "type": "numeric",
+      "prompt": "Calcula el producto escalar de u=(3, 1) y v=(-1, 3).",
+      "answer": 0.0,
+      "explanation": "Procedimiento y verificación: Producto escalar = 3×-1+1×3 = 0; es un escalar. Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes. Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos. La respuesta exacta es 0. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_dot",
+        "prerrequisito_b1c_g02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L03-02",
+      "lesson_id": "B1C-G02-L03",
+      "type": "choice",
+      "prompt": "¿Son ortogonales los vectores no nulos u=(3, 1) y v=(-1, 3)? Selecciona la respuesta exacta.",
+      "answer": "Sí",
+      "explanation": "Procedimiento y verificación: Producto escalar = 3×-1+1×3 = 0; ambos vectores son no nulos. Respuesta: Sí. Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo. Paralelismo por pendientes iguales, perpendicularidad por producto −1 o producto escalar cero; equipolencia por componentes iguales. La respuesta exacta es Sí. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_orthogonal",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "No",
+        "No puede determinarse",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L03-03",
+      "lesson_id": "B1C-G02-L03",
+      "type": "numeric",
+      "prompt": "Calcula el producto escalar de u=(2, -1) y v=(4, 3).",
+      "answer": 5.0,
+      "explanation": "Procedimiento y verificación: Producto escalar = 2×4+-1×3 = 5; es un escalar. Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes. Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos. La respuesta exacta es 5. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_dot",
+        "prerrequisito_b1c_g02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L03-04",
+      "lesson_id": "B1C-G02-L03",
+      "type": "choice",
+      "prompt": "¿Son ortogonales los vectores no nulos u=(2, 3) y v=(6, -4)? Selecciona la respuesta exacta.",
+      "answer": "Sí",
+      "explanation": "Procedimiento y verificación: Producto escalar = 2×6+3×-4 = 0; ambos vectores son no nulos. Respuesta: Sí. Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo. Paralelismo por pendientes iguales, perpendicularidad por producto −1 o producto escalar cero; equipolencia por componentes iguales. La respuesta exacta es Sí. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_orthogonal",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "Sí",
+        "No",
+        "No puede determinarse"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L03-05",
+      "lesson_id": "B1C-G02-L03",
+      "type": "choice",
+      "prompt": "Calcula el producto escalar de u=(-2, 5) y v=(3, 1). Selecciona la respuesta exacta.",
+      "answer": "-1",
+      "explanation": "Procedimiento y verificación: Producto escalar = -2×3+5×1 = -1; es un escalar. Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes. Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos. La respuesta exacta es -1. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_dot",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "1",
+        "0",
+        "-1"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L04-01",
+      "lesson_id": "B1C-G02-L04",
+      "type": "numeric",
+      "prompt": "Calcula el módulo exacto del vector v=(3, 4).",
+      "answer": 5.0,
+      "explanation": "Procedimiento y verificación: Cuadrado del módulo=3²+4²=25. Módulo positivo o cuadrado, según la pregunta: 5. Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes. Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos. La respuesta exacta es 5. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_norm",
+        "prerrequisito_b1c_g02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L04-02",
+      "lesson_id": "B1C-G02-L04",
+      "type": "numeric",
+      "prompt": "Calcula el coseno exacto del ángulo entre los vectores no nulos u=(3, 4) y v=(5, 0).",
+      "answer": 0.6,
+      "explanation": "Procedimiento y verificación: u·v=15; |u|²=25; |v|²=25; cos θ=(u·v)/(|u||v|)=0,6. Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes. Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos. La respuesta exacta es 0,6. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cos_between",
+        "prerrequisito_b1c_g02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L04-03",
+      "lesson_id": "B1C-G02-L04",
+      "type": "numeric",
+      "prompt": "Calcula el CUADRADO del módulo del vector v=(2, -3).",
+      "answer": 13.0,
+      "explanation": "Procedimiento y verificación: Cuadrado del módulo=2²+-3²=13. Módulo positivo o cuadrado, según la pregunta: 13. Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes. Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos. La respuesta exacta es 13. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_norm_sq",
+        "prerrequisito_b1c_g02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L04-04",
+      "lesson_id": "B1C-G02-L04",
+      "type": "choice",
+      "prompt": "Calcula el coseno exacto del ángulo entre los vectores no nulos u=(2, 0) y v=(-3, 0). Selecciona la respuesta exacta.",
+      "answer": "-1",
+      "explanation": "Procedimiento y verificación: u·v=-6; |u|²=4; |v|²=9; cos θ=(u·v)/(|u||v|)=-1. Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes. Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos. La respuesta exacta es -1. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cos_between",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "1",
+        "0",
+        "-1"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L04-05",
+      "lesson_id": "B1C-G02-L04",
+      "type": "choice",
+      "prompt": "Calcula el módulo exacto del vector v=(5, 12). Selecciona la respuesta exacta.",
+      "answer": "13",
+      "explanation": "Procedimiento y verificación: Cuadrado del módulo=5²+12²=169. Módulo positivo o cuadrado, según la pregunta: 13. Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes. Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos. La respuesta exacta es 13. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_norm",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "12",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L05-01",
+      "lesson_id": "B1C-G02-L05",
+      "type": "choice",
+      "prompt": "Una recta tiene parametrización x=1+2t, y=2+-1t. ¿Qué punto corresponde al parámetro t=3? Selecciona la respuesta exacta.",
+      "answer": "(7, -1)",
+      "explanation": "Procedimiento y verificación: En x=1+2t e y=2+-1t debe usarse el mismo t; resultado (7, -1) y comprobación en las dos coordenadas. La recta paramétrica debe usar el mismo parámetro para x e y. Sustituye t para obtener el punto, o despeja t en una ecuación y verifica la otra. La respuesta exacta es (7, -1). Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "La recta paramétrica debe usar el mismo parámetro para x e y.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_param_point",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "(-7, 1)",
+        "(7, -1)",
+        "(-1, 7)"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L05-02",
+      "lesson_id": "B1C-G02-L05",
+      "type": "numeric",
+      "prompt": "Una recta tiene x=1+2t, y=2+-1t. ¿Qué t corresponde al punto (3, 1)?",
+      "answer": 1.0,
+      "explanation": "Procedimiento y verificación: En x=1+2t e y=2+-1t debe usarse el mismo t; resultado 1 y comprobación en las dos coordenadas. La recta paramétrica debe usar el mismo parámetro para x e y. Sustituye t para obtener el punto, o despeja t en una ecuación y verifica la otra. La respuesta exacta es 1. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "La recta paramétrica debe usar el mismo parámetro para x e y.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_param_t",
+        "prerrequisito_b1c_g02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L05-03",
+      "lesson_id": "B1C-G02-L05",
+      "type": "choice",
+      "prompt": "Una recta tiene parametrización x=-2+1t, y=1+3t. ¿Qué punto corresponde al parámetro t=2? Selecciona la respuesta exacta.",
+      "answer": "(0, 7)",
+      "explanation": "Procedimiento y verificación: En x=-2+1t e y=1+3t debe usarse el mismo t; resultado (0, 7) y comprobación en las dos coordenadas. La recta paramétrica debe usar el mismo parámetro para x e y. Sustituye t para obtener el punto, o despeja t en una ecuación y verifica la otra. La respuesta exacta es (0, 7). Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "La recta paramétrica debe usar el mismo parámetro para x e y.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_param_point",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "(7, 0)",
+        "(0, -7)",
+        "(0, 7)"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L05-04",
+      "lesson_id": "B1C-G02-L05",
+      "type": "choice",
+      "prompt": "Una recta tiene x=0+1t, y=0+2t. ¿Qué t corresponde al punto (4, 8)? Selecciona la respuesta exacta.",
+      "answer": "4",
+      "explanation": "Procedimiento y verificación: En x=0+1t e y=0+2t debe usarse el mismo t; resultado 4 y comprobación en las dos coordenadas. La recta paramétrica debe usar el mismo parámetro para x e y. Sustituye t para obtener el punto, o despeja t en una ecuación y verifica la otra. La respuesta exacta es 4. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "La recta paramétrica debe usar el mismo parámetro para x e y.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_param_t",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L05-05",
+      "lesson_id": "B1C-G02-L05",
+      "type": "choice",
+      "prompt": "Una recta tiene parametrización x=2+-1t, y=-1+2t. ¿Qué punto corresponde al parámetro t=3? Selecciona la respuesta exacta.",
+      "answer": "(-1, 5)",
+      "explanation": "Procedimiento y verificación: En x=2+-1t e y=-1+2t debe usarse el mismo t; resultado (-1, 5) y comprobación en las dos coordenadas. La recta paramétrica debe usar el mismo parámetro para x e y. Sustituye t para obtener el punto, o despeja t en una ecuación y verifica la otra. La respuesta exacta es (-1, 5). Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "La recta paramétrica debe usar el mismo parámetro para x e y.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_param_point",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "(-1, 5)",
+        "(5, -1)",
+        "(1, -5)"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L06-01",
+      "lesson_id": "B1C-G02-L06",
+      "type": "choice",
+      "prompt": "Resuelve el punto de intersección de las rectas y=1x+1 e y=-1x+3. Responde con el par (x, y). Selecciona la respuesta exacta.",
+      "answer": "(1, 2)",
+      "explanation": "Procedimiento y verificación: Igualamos 1x+1=-1x+3; despejamos x y sustituimos en ambas ecuaciones. Corte: (1, 2). Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente. Sustituye x e y; para intersección iguala las dos ecuaciones y comprueba; para vertical usa x=constante. La respuesta exacta es (1, 2). Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_line_intersection",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "(1, 2)",
+        "(2, 1)",
+        "(-1, -2)"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L06-02",
+      "lesson_id": "B1C-G02-L06",
+      "type": "numeric",
+      "prompt": "Calcula la distancia desde P=(2, 5) a la recta horizontal y=1.",
+      "answer": 4.0,
+      "explanation": "Procedimiento y verificación: Distancia mínima medida perpendicularmente a la recta del eje pertinente: 4. La distancia punto-recta sigue la perpendicular más corta, no cualquier segmento. A la recta y=k usa |yp−k|; a x=k usa |xp−k|. La respuesta exacta es 4. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "La distancia punto-recta sigue la perpendicular más corta, no cualquier segmento.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_point_line_horizontal",
+        "prerrequisito_b1c_g02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L06-03",
+      "lesson_id": "B1C-G02-L06",
+      "type": "choice",
+      "prompt": "¿Dos rectas NO VERTICALES con pendientes m₁=2 y m₂=2 son paralelas o coincidentes por su dirección? Selecciona la respuesta exacta.",
+      "answer": "Sí",
+      "explanation": "Procedimiento y verificación: Aplicando la comparación de direcciones, signos o combinación por componentes se obtiene exactamente Sí. Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo. Paralelismo por pendientes iguales, perpendicularidad por producto −1 o producto escalar cero; equipolencia por componentes iguales. La respuesta exacta es Sí. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_parallel_slopes",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "No puede determinarse",
+        "Sí",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L06-04",
+      "lesson_id": "B1C-G02-L06",
+      "type": "choice",
+      "prompt": "Calcula la distancia desde P=(5, -2) a la recta vertical x=1. Selecciona la respuesta exacta.",
+      "answer": "4",
+      "explanation": "Procedimiento y verificación: Distancia mínima medida perpendicularmente a la recta del eje pertinente: 4. La distancia punto-recta sigue la perpendicular más corta, no cualquier segmento. A la recta y=k usa |yp−k|; a x=k usa |xp−k|. La respuesta exacta es 4. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "La distancia punto-recta sigue la perpendicular más corta, no cualquier segmento.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_point_line_vertical",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "4",
+        "5",
+        "3"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-G02-L06-05",
+      "lesson_id": "B1C-G02-L06",
+      "type": "choice",
+      "prompt": "Resuelve el punto de intersección de las rectas y=2x-1 e y=-1x+5. Responde con el par (x, y). Selecciona la respuesta exacta.",
+      "answer": "(2, 3)",
+      "explanation": "Procedimiento y verificación: Igualamos 2x-1=-1x+5; despejamos x y sustituimos en ambas ecuaciones. Corte: (2, 3). Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente. Sustituye x e y; para intersección iguala las dos ecuaciones y comprueba; para vertical usa x=constante. La respuesta exacta es (2, 3). Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_line_intersection",
+        "prerrequisito_b1c_g02"
+      ],
+      "choices": [
+        "(3, 2)",
+        "(-2, -3)",
+        "(2, 3)"
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B1C-G02-L01-01": {
+      "hints": [
+        "Un vector de A a B se obtiene restando coordenadas finales menos iniciales.",
+        "Calcula B−A para AB y A−B para BA; no mezcles componentes."
+      ],
+      "math_check": {
+        "kind": "vector",
+        "params": [
+          -1,
+          2,
+          3,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de vector"
+    },
+    "F3-B1C-G02-L01-02": {
+      "hints": [
+        "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+        "Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos."
+      ],
+      "math_check": {
+        "kind": "norm",
+        "params": [
+          3,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de norm"
+    },
+    "F3-B1C-G02-L01-03": {
+      "hints": [
+        "Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo.",
+        "Paralelismo por pendientes iguales, perpendicularidad por producto −1 o producto escalar cero; equipolencia por componentes iguales."
+      ],
+      "math_check": {
+        "kind": "vector_eq",
+        "params": [
+          4,
+          3,
+          4,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de vector_eq"
+    },
+    "F3-B1C-G02-L01-04": {
+      "hints": [
+        "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+        "Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos."
+      ],
+      "math_check": {
+        "kind": "norm_sq",
+        "params": [
+          5,
+          12
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de norm_sq"
+    },
+    "F3-B1C-G02-L01-05": {
+      "hints": [
+        "Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo.",
+        "Paralelismo por pendientes iguales, perpendicularidad por producto −1 o producto escalar cero; equipolencia por componentes iguales."
+      ],
+      "math_check": {
+        "kind": "vector_eq",
+        "params": [
+          1,
+          2,
+          2,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de vector_eq"
+    },
+    "F3-B1C-G02-L02-01": {
+      "hints": [
+        "Opera las componentes con el mismo orden de ejes, respetando signos.",
+        "Para suma o resta combina cada componente; para producto por escalar multiplica ambas componentes."
+      ],
+      "math_check": {
+        "kind": "vector_add",
+        "params": [
+          2,
+          1,
+          -1,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de vector_add"
+    },
+    "F3-B1C-G02-L02-02": {
+      "hints": [
+        "Opera las componentes con el mismo orden de ejes, respetando signos.",
+        "Para suma o resta combina cada componente; para producto por escalar multiplica ambas componentes."
+      ],
+      "math_check": {
+        "kind": "vector_sub",
+        "params": [
+          2,
+          1,
+          -1,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de vector_sub"
+    },
+    "F3-B1C-G02-L02-03": {
+      "hints": [
+        "Opera las componentes con el mismo orden de ejes, respetando signos.",
+        "Para suma o resta combina cada componente; para producto por escalar multiplica ambas componentes."
+      ],
+      "math_check": {
+        "kind": "vector_scale",
+        "params": [
+          -2,
+          2,
+          -3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de vector_scale"
+    },
+    "F3-B1C-G02-L02-04": {
+      "hints": [
+        "Opera las componentes con el mismo orden de ejes, respetando signos.",
+        "Para suma o resta combina cada componente; para producto por escalar multiplica ambas componentes."
+      ],
+      "math_check": {
+        "kind": "vec_sum_x",
+        "params": [
+          2,
+          1,
+          -1,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de vec_sum_x"
+    },
+    "F3-B1C-G02-L02-05": {
+      "hints": [
+        "Opera las componentes con el mismo orden de ejes, respetando signos.",
+        "Para suma o resta combina cada componente; para producto por escalar multiplica ambas componentes."
+      ],
+      "math_check": {
+        "kind": "vector_scale",
+        "params": [
+          3,
+          -1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de vector_scale"
+    },
+    "F3-B1C-G02-L03-01": {
+      "hints": [
+        "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+        "Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos."
+      ],
+      "math_check": {
+        "kind": "dot",
+        "params": [
+          3,
+          1,
+          -1,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de dot"
+    },
+    "F3-B1C-G02-L03-02": {
+      "hints": [
+        "Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo.",
+        "Paralelismo por pendientes iguales, perpendicularidad por producto −1 o producto escalar cero; equipolencia por componentes iguales."
+      ],
+      "math_check": {
+        "kind": "orthogonal",
+        "params": [
+          3,
+          1,
+          -1,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de orthogonal"
+    },
+    "F3-B1C-G02-L03-03": {
+      "hints": [
+        "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+        "Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos."
+      ],
+      "math_check": {
+        "kind": "dot",
+        "params": [
+          2,
+          -1,
+          4,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de dot"
+    },
+    "F3-B1C-G02-L03-04": {
+      "hints": [
+        "Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo.",
+        "Paralelismo por pendientes iguales, perpendicularidad por producto −1 o producto escalar cero; equipolencia por componentes iguales."
+      ],
+      "math_check": {
+        "kind": "orthogonal",
+        "params": [
+          2,
+          3,
+          6,
+          -4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de orthogonal"
+    },
+    "F3-B1C-G02-L03-05": {
+      "hints": [
+        "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+        "Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos."
+      ],
+      "math_check": {
+        "kind": "dot",
+        "params": [
+          -2,
+          5,
+          3,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de dot"
+    },
+    "F3-B1C-G02-L04-01": {
+      "hints": [
+        "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+        "Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos."
+      ],
+      "math_check": {
+        "kind": "norm",
+        "params": [
+          3,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de norm"
+    },
+    "F3-B1C-G02-L04-02": {
+      "hints": [
+        "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+        "Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos."
+      ],
+      "math_check": {
+        "kind": "cos_between",
+        "params": [
+          3,
+          4,
+          5,
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de cos_between"
+    },
+    "F3-B1C-G02-L04-03": {
+      "hints": [
+        "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+        "Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos."
+      ],
+      "math_check": {
+        "kind": "norm_sq",
+        "params": [
+          2,
+          -3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de norm_sq"
+    },
+    "F3-B1C-G02-L04-04": {
+      "hints": [
+        "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+        "Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos."
+      ],
+      "math_check": {
+        "kind": "cos_between",
+        "params": [
+          2,
+          0,
+          -3,
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de cos_between"
+    },
+    "F3-B1C-G02-L04-05": {
+      "hints": [
+        "Las operaciones sobre vectores se hacen con componentes y magnitudes diferentes.",
+        "Producto escalar: ux·vx+uy·vy; módulo: raíz de suma de cuadrados; coseno: producto escalar dividido por módulos no nulos."
+      ],
+      "math_check": {
+        "kind": "norm",
+        "params": [
+          5,
+          12
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de norm"
+    },
+    "F3-B1C-G02-L05-01": {
+      "hints": [
+        "La recta paramétrica debe usar el mismo parámetro para x e y.",
+        "Sustituye t para obtener el punto, o despeja t en una ecuación y verifica la otra."
+      ],
+      "math_check": {
+        "kind": "param_point",
+        "params": [
+          1,
+          2,
+          2,
+          -1,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de param_point"
+    },
+    "F3-B1C-G02-L05-02": {
+      "hints": [
+        "La recta paramétrica debe usar el mismo parámetro para x e y.",
+        "Sustituye t para obtener el punto, o despeja t en una ecuación y verifica la otra."
+      ],
+      "math_check": {
+        "kind": "param_t",
+        "params": [
+          1,
+          2,
+          2,
+          -1,
+          3,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de param_t"
+    },
+    "F3-B1C-G02-L05-03": {
+      "hints": [
+        "La recta paramétrica debe usar el mismo parámetro para x e y.",
+        "Sustituye t para obtener el punto, o despeja t en una ecuación y verifica la otra."
+      ],
+      "math_check": {
+        "kind": "param_point",
+        "params": [
+          -2,
+          1,
+          1,
+          3,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de param_point"
+    },
+    "F3-B1C-G02-L05-04": {
+      "hints": [
+        "La recta paramétrica debe usar el mismo parámetro para x e y.",
+        "Sustituye t para obtener el punto, o despeja t en una ecuación y verifica la otra."
+      ],
+      "math_check": {
+        "kind": "param_t",
+        "params": [
+          0,
+          0,
+          1,
+          2,
+          4,
+          8
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de param_t"
+    },
+    "F3-B1C-G02-L05-05": {
+      "hints": [
+        "La recta paramétrica debe usar el mismo parámetro para x e y.",
+        "Sustituye t para obtener el punto, o despeja t en una ecuación y verifica la otra."
+      ],
+      "math_check": {
+        "kind": "param_point",
+        "params": [
+          2,
+          -1,
+          -1,
+          2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de param_point"
+    },
+    "F3-B1C-G02-L06-01": {
+      "hints": [
+        "Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente.",
+        "Sustituye x e y; para intersección iguala las dos ecuaciones y comprueba; para vertical usa x=constante."
+      ],
+      "math_check": {
+        "kind": "line_intersection",
+        "params": [
+          1,
+          1,
+          -1,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de line_intersection"
+    },
+    "F3-B1C-G02-L06-02": {
+      "hints": [
+        "La distancia punto-recta sigue la perpendicular más corta, no cualquier segmento.",
+        "A la recta y=k usa |yp−k|; a x=k usa |xp−k|."
+      ],
+      "math_check": {
+        "kind": "point_line_horizontal",
+        "params": [
+          2,
+          5,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de point_line_horizontal"
+    },
+    "F3-B1C-G02-L06-03": {
+      "hints": [
+        "Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo.",
+        "Paralelismo por pendientes iguales, perpendicularidad por producto −1 o producto escalar cero; equipolencia por componentes iguales."
+      ],
+      "math_check": {
+        "kind": "parallel_slopes",
+        "params": [
+          2,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de parallel_slopes"
+    },
+    "F3-B1C-G02-L06-04": {
+      "hints": [
+        "La distancia punto-recta sigue la perpendicular más corta, no cualquier segmento.",
+        "A la recta y=k usa |yp−k|; a x=k usa |xp−k|."
+      ],
+      "math_check": {
+        "kind": "point_line_vertical",
+        "params": [
+          5,
+          -2,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de point_line_vertical"
+    },
+    "F3-B1C-G02-L06-05": {
+      "hints": [
+        "Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente.",
+        "Sustituye x e y; para intersección iguala las dos ecuaciones y comprueba; para vertical usa x=constante."
+      ],
+      "math_check": {
+        "kind": "line_intersection",
+        "params": [
+          2,
+          -1,
+          -1,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de line_intersection"
+    }
+  }
+}

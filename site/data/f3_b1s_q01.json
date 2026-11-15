@@ -1,0 +1,681 @@
+{
+  "unit_id": "B1S-Q01",
+  "unit_title": "Combinatoria y probabilidad",
+  "product_phase": "F3_OLA24",
+  "version": "0.24.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Enumerar sistemáticamente resultados elementales y justificar el principio multiplicativo.",
+    "Calcular variaciones y combinaciones sin repetición con hipótesis precisas.",
+    "Aplicar la regla de Laplace solo con resultados elementales equiprobables."
+  ],
+  "warnings": [
+    "Todos los datos son sintéticos y el contenido permanece EN REVISIÓN.",
+    "Pearson y R² son medidas descriptivas, no prueba causal ni de extrapolación.",
+    "Binomial exige ensayos independientes, n fijo y p constante; normal requiere modelo adecuado.",
+    "Criterios np≥10 y n(1−p)≥10 son umbrales editoriales, nunca garantía universal de error.",
+    "WCAG 2.2 AA, currículo autonómico, revisión humana y dispositivo físico NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Probabilidad 4.º ESO A",
+      "lesson_id": "E4A-Q01-L03",
+      "href": "#/curso/E4A/unidad/E4A-Q01/leccion/E4A-Q01-L03"
+    },
+    {
+      "label": "Probabilidad 4.º ESO B",
+      "lesson_id": "E4B-Q01-L05",
+      "href": "#/curso/E4B/unidad/E4B-Q01/leccion/E4B-Q01-L05"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 sin calibrar",
+    "rule": "Recuperación y repaso solamente con almacenamiento local voluntario."
+  },
+  "source_note": "Marco RD 217/2022 y RD 243/2022; asignaciones editoriales no homologadas territorialmente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1S-Q01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-Q01:C01"
+      ],
+      "objectives": [
+        "Enumerar sistemáticamente resultados elementales y justificar el principio multiplicativo.",
+        "Reconocer cuándo sumar alternativas y cuándo multiplicar etapas ordenadas."
+      ],
+      "prerequisites": [
+        "E4A-Q01-L02",
+        "E4B-Q01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Contar requiere identificar la unidad de resultado y las opciones disponibles en cada etapa. Si se elige una clave de dos posiciones de cuatro símbolos distintos sin repetición, hay 4·3=12 claves ordenadas; con reemplazo hay 4²=16. Si se escoge un único libro entre dos estanterías disjuntas con 3 y 2 ejemplares, hay 5 opciones por suma. El número de rutas de un árbol no prueba equiprobabilidad: un procedimiento puede favorecer unas ramas. Para probabilidad, primero se fija el espacio muestral y luego se asignan pesos justificados. Tampoco una pareja elegida sin orden equivale a elegir dos cargos diferentes. Una tabla de recuento es alternativa accesible al dibujo y permite comprobar que no se repiten ni omiten casos."
+        },
+        {
+          "type": "example",
+          "body": "Claves de dos letras ordenadas entre A,B,C,D sin repetir: cuatro elecciones iniciales y tres finales, total 4·3=12."
+        },
+        {
+          "type": "example",
+          "body": "Elegir exactamente un ejemplar de una estantería con 3 libros o de otra disjunta con 2 produce 3+2=5 alternativas."
+        },
+        {
+          "type": "figure",
+          "body": "Árbol de elección de dos posiciones sin repetir. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "Árbol de elección de dos posiciones sin repetir. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "prob_tree",
+            "title": "Árbol de elección de dos posiciones sin repetir",
+            "rows": [
+              [
+                "Símbolos",
+                "4 distintos"
+              ],
+              [
+                "Primera etapa",
+                "4 opciones"
+              ],
+              [
+                "Segunda etapa",
+                "3 opciones"
+              ],
+              [
+                "Claves ordenadas",
+                "12"
+              ],
+              [
+                "Con reemplazo",
+                "16"
+              ]
+            ],
+            "model": {
+              "kind": "prob_tree",
+              "first": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "weights": [
+                "3",
+                "3",
+                "3",
+                "3"
+              ]
+            },
+            "domain": [
+              0,
+              4
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Para dos elecciones sucesivas con cuatro y tres opciones se aplica automáticamente la suma 4+3?||No; si son etapas consecutivas se multiplican."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Contar requiere identificar la unidad de resultado y las opciones disponibles en cada etapa. Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-Q01-L01-01",
+        "F3-B1S-Q01-L01-02",
+        "F3-B1S-Q01-L01-03",
+        "F3-B1S-Q01-L01-04",
+        "F3-B1S-Q01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-Q01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-Q01:C02"
+      ],
+      "objectives": [
+        "Calcular variaciones y combinaciones sin repetición con hipótesis precisas.",
+        "Determinar si el orden altera el resultado de un problema contextualizado."
+      ],
+      "prerequisites": [
+        "B1S-Q01-L01",
+        "E4B-Q01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para n objetos distintos, elegir k sin repetición y con orden conduce a variaciones V(n,k)=n!/(n−k)!, 0≤k≤n. Si el orden no importa se usa C(n,k)=n!/[k!(n−k)!]. Entre cinco candidaturas, asignar presidencia y secretaría produce V(5,2)=5·4=20 maneras; elegir dos representantes con iguales funciones produce C(5,2)=10 equipos. Contar equipos mediante variaciones duplicaría cada pareja exactamente 2! veces. La distinción entre permutación, variación y combinación depende del significado real del problema, no solo del número de elementos. Repetición permitida requiere reglas diferentes. Usar resultados equiprobables para obtener probabilidades supone además un mecanismo de selección uniforme; la combinatoria sola no lo prueba."
+        },
+        {
+          "type": "example",
+          "body": "Cinco personas, dos cargos distintos: V(5,2)=5!/(5−2)!=20 asignaciones ordenadas."
+        },
+        {
+          "type": "example",
+          "body": "Cinco personas, comisión de dos sin cargos: C(5,2)=5!/(2!·3!)=10 grupos; cada pareja se contó dos veces en V(5,2)."
+        },
+        {
+          "type": "figure",
+          "body": "Cargos ordenados frente a comisión sin cargos. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "Cargos ordenados frente a comisión sin cargos. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "stats_bars",
+            "title": "Cargos ordenados frente a comisión sin cargos",
+            "rows": [
+              [
+                "Personas",
+                "5"
+              ],
+              [
+                "Cargos distintos",
+                "V(5,2)=20"
+              ],
+              [
+                "Comisión",
+                "C(5,2)=10"
+              ],
+              [
+                "Relación",
+                "20/2!=10"
+              ],
+              [
+                "Condición",
+                "Sin repetición"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                20,
+                10
+              ],
+              "labels": [
+                "V(5,2)",
+                "C(5,2)"
+              ]
+            },
+            "domain": [
+              0,
+              22
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una comisión sin cargos se cuenta con V(n,k) como si el orden distinguiese resultados?||No; se cuentan combinaciones."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para n objetos distintos, elegir k sin repetición y con orden conduce a variaciones V(n,k)=n!/(n−k)!, 0≤k≤n. Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-Q01-L02-01",
+        "F3-B1S-Q01-L02-02",
+        "F3-B1S-Q01-L02-03",
+        "F3-B1S-Q01-L02-04",
+        "F3-B1S-Q01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-Q01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-Q01:C03"
+      ],
+      "objectives": [
+        "Aplicar la regla de Laplace solo con resultados elementales equiprobables.",
+        "Enumerar combinaciones de resultados de dos dados y usar complementarios."
+      ],
+      "prerequisites": [
+        "B1S-Q01-L02",
+        "E4A-Q01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La regla P(A)=casos favorables/casos posibles se aplica directamente cuando el espacio elemental es finito y equiprobable. Dos dados ideales distinguibles generan 36 parejas ordenadas; la suma 7 aparece en seis, y la suma 2 en una, por lo que sus probabilidades son 1/6 y 1/36. El suceso complementario de sumar 7 tiene probabilidad 1−1/6=5/6. No es legítimo asignar probabilidad 1/11 a cada suma entre 2 y 12: esas sumas tienen multiplicidades distintas. Un dado cargado precisa pesos no uniformes. En una extracción sin reemplazo, puede resultar equiprobable seleccionar parejas etiquetadas, pero hay que definir la unidad elemental y la mecánica, no asumir uniformidad entre categorías agregadas."
+        },
+        {
+          "type": "example",
+          "body": "Dos dados equilibrados, suma 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1), seis parejas de 36, P=1/6."
+        },
+        {
+          "type": "example",
+          "body": "Suma 2 solo (1,1): P=1/36; no sumar 7 tiene P=1−1/6=5/6, por complemento."
+        },
+        {
+          "type": "figure",
+          "body": "Frecuencia de sumas de dos dados ideales. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "Frecuencia de sumas de dos dados ideales. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "stats_bars",
+            "title": "Frecuencia de sumas de dos dados ideales",
+            "rows": [
+              [
+                "Pares ordenados",
+                "36"
+              ],
+              [
+                "Suma 2",
+                "1 caso, P=1/36"
+              ],
+              [
+                "Suma 7",
+                "6 casos, P=1/6"
+              ],
+              [
+                "No sumar 7",
+                "5/6"
+              ],
+              [
+                "Hipótesis",
+                "Dados independientes y equilibrados"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ],
+              "labels": [
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12"
+              ]
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Son equiprobables las once sumas de dos dados ideales porque hay once valores?||No; la multiplicidad por suma es diferente."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La regla P(A)=casos favorables/casos posibles se aplica directamente cuando el espacio elemental es finito y equiprobable. Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-Q01-L03-01",
+        "F3-B1S-Q01-L03-02",
+        "F3-B1S-Q01-L03-03",
+        "F3-B1S-Q01-L03-04",
+        "F3-B1S-Q01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-Q01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-Q01:C04"
+      ],
+      "objectives": [
+        "Calcular unión e intersección de sucesos y el complemento.",
+        "Distinguir incompatibilidad de independencia con probabilidades positivas."
+      ],
+      "prerequisites": [
+        "B1S-Q01-L03",
+        "E3-Q01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La fórmula general P(A∪B)=P(A)+P(B)−P(A∩B) evita contar dos veces los elementos compartidos. En un dado ideal A=par={2,4,6} y B=>4={5,6}, la intersección es {6} de probabilidad 1/6 y la unión {2,4,5,6}, con probabilidad 4/6=2/3. Si los sucesos son incompatibles la intersección es vacía y se suman probabilidades sin corrección. Incompatibles no significa independientes: dos sucesos de probabilidad positiva incompatibles cumplen P(A∩B)=0, mientras P(A)P(B)>0. Si P(A)>0, la probabilidad condicionada P(B|A)=P(A∩B)/P(A). Los gráficos de frecuencias son ilustrativos; la tabla exacta presenta los conjuntos, operaciones y condiciones."
+        },
+        {
+          "type": "example",
+          "body": "En un dado ideal, para A={2,4,6} y B={5,6}, P(A∪B)=3/6+2/6−1/6=4/6=2/3; P(A∩B)=1/6."
+        },
+        {
+          "type": "example",
+          "body": "Los sucesos dado=1 y dado=6 son incompatibles y ambos de probabilidad 1/6; su producto positivo descarta independencia."
+        },
+        {
+          "type": "figure",
+          "body": "Unión e intersección de dos sucesos de dado. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "Unión e intersección de dos sucesos de dado. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "stats_bars",
+            "title": "Unión e intersección de dos sucesos de dado",
+            "rows": [
+              [
+                "A par",
+                "2,4,6"
+              ],
+              [
+                "B mayor que cuatro",
+                "5,6"
+              ],
+              [
+                "A∩B",
+                "6"
+              ],
+              [
+                "A∪B",
+                "2,4,5,6"
+              ],
+              [
+                "Probabilidad unión",
+                "2/3"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                3,
+                2,
+                1,
+                4
+              ],
+              "labels": [
+                "A",
+                "B",
+                "A∩B",
+                "A∪B"
+              ]
+            },
+            "domain": [
+              0,
+              5
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Dos sucesos incompatibles con probabilidades positivas son independientes?||No; su intersección vale cero y el producto no."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La fórmula general P(A∪B)=P(A)+P(B)−P(A∩B) evita contar dos veces los elementos compartidos. Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-Q01-L04-01",
+        "F3-B1S-Q01-L04-02",
+        "F3-B1S-Q01-L04-03",
+        "F3-B1S-Q01-L04-04",
+        "F3-B1S-Q01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-Q01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.24.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-Q01:C05"
+      ],
+      "objectives": [
+        "Resolver probabilidades de experimentos compuestos mediante condicionales.",
+        "Distinguir independencia de extracción sin reemplazo y sumar rutas incompatibles."
+      ],
+      "prerequisites": [
+        "B1S-Q01-L04",
+        "E4B-Q01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La probabilidad conjunta satisface P(A∩B)=P(A)P(B|A) si P(A)>0; la forma P(A)P(B) solo procede con independencia. Dos monedas equilibradas independientes dan P(CC)=1/4. En urna de dos fichas rojas y una azul, extrayendo dos sin reemplazo, P(RR)=2/3·1/2=1/3, mientras P(azul primero, roja después)=1/3·1=1/3; P(AA)=0 porque solo hay una azul. En un árbol completo las probabilidades salientes de cada nodo deben sumar uno y cada ruta multiplica los pesos condicionados. Para calcular un suceso con varias rutas incompatibles se suman las probabilidades de todas ellas. No inferir independencia solo por repetirse una acción. Estos son experimentos modelo con datos fijos sintéticos."
+        },
+        {
+          "type": "example",
+          "body": "Urna con 2 rojas y 1 azul, extrayendo sin reemplazo: P(RR)=2/3×1/2=1/3 y P(AR)=1/3×1=1/3."
+        },
+        {
+          "type": "example",
+          "body": "Dos monedas independientes ideales: CC,CX,XC,XX tienen P=1/4 cada una; exactamente una cara suma 2/4=1/2."
+        },
+        {
+          "type": "figure",
+          "body": "Extracción condicionada de urna pequeña. SVG local acompañado de tabla semántica exacta con condiciones explícitas.",
+          "alt": "Extracción condicionada de urna pequeña. La tabla HTML enumera cifras, supuestos, probabilidades, error de aproximación y límites sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave24",
+            "kind": "prob_tree",
+            "title": "Extracción condicionada de urna pequeña",
+            "rows": [
+              [
+                "Bolsa inicial",
+                "2 rojas y 1 azul"
+              ],
+              [
+                "Primera roja",
+                "2/3"
+              ],
+              [
+                "Segunda roja tras roja",
+                "1/2"
+              ],
+              [
+                "P(RR)",
+                "1/3"
+              ],
+              [
+                "P(AA)",
+                "0"
+              ]
+            ],
+            "model": {
+              "kind": "prob_tree",
+              "first": [
+                "R",
+                "A"
+              ],
+              "weights": [
+                "2/3",
+                "1/3"
+              ],
+              "second": [
+                "R|R",
+                "A|R"
+              ],
+              "second_weights": [
+                "1/2",
+                "1/2"
+              ]
+            },
+            "domain": [
+              0,
+              2
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se conserva P(roja)=2/3 en la segunda extracción sin reemplazo después de sacar una roja?||No; queda una roja de dos fichas."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La probabilidad conjunta satisface P(A∩B)=P(A)P(B|A) si P(A)>0; la forma P(A)P(B) solo procede con independencia. Justifica las hipótesis antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-Q01-L05-01",
+        "F3-B1S-Q01-L05-02",
+        "F3-B1S-Q01-L05-03",
+        "F3-B1S-Q01-L05-04",
+        "F3-B1S-Q01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos propuesta editorial sin cotejo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, mapeo competencial y territorial pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

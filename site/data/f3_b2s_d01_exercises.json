@@ -1,0 +1,997 @@
+{
+  "unit_id": "B2S-D01",
+  "version": "0.26.0",
+  "status": "revision",
+  "notice": "30 ejercicios sintéticos por unidad; revisión matemática y pedagógica humana F4 pendiente.",
+  "activities": [
+    {
+      "exercise_id": "F3-B2S-D01-L01-01",
+      "lesson_id": "B2S-D01-L01",
+      "type": "numeric",
+      "prompt": "Un marco tiene N=500 registros y se eligen n=50 al azar. ¿Fracción de muestreo n/N?",
+      "answer": 0.1,
+      "explanation": "50/500=0,10. Es fracción de selección, no porcentaje de respuestas.",
+      "hint": "Determina el conjunto objetivo y el marco antes de elegir denominadores.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L01-02",
+      "lesson_id": "B2S-D01-L01",
+      "type": "numeric",
+      "prompt": "En cuatro observaciones ficticias 5,7,9,11 calcula la media muestral.",
+      "answer": 8,
+      "explanation": "x̄=(5+7+9+11)/4=8. No se conoce μ. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Determina el conjunto objetivo y el marco antes de elegir denominadores.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L01-03",
+      "lesson_id": "B2S-D01-L01",
+      "type": "numeric",
+      "prompt": "En una muestra de 60 personas, 15 contestan sí. Calcula la proporción p̂.",
+      "answer": 0.25,
+      "explanation": "15/60=0,25. Es estadístico, no parámetro conocido.",
+      "hint": "Determina el conjunto objetivo y el marco antes de elegir denominadores.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L01-04",
+      "lesson_id": "B2S-D01-L01",
+      "type": "choice",
+      "prompt": "¿Cuál de estas afirmaciones distingue correctamente μ y x̄?",
+      "answer": "μ describe la población; x̄ se calcula en la muestra.",
+      "explanation": "El parámetro μ es fijo para la población definida; el estadístico x̄ puede variar.",
+      "hint": "Determina el conjunto objetivo y el marco antes de elegir denominadores.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "x̄ es un parámetro fijo conocido por definición.",
+        "μ describe la población; x̄ se calcula en la muestra.",
+        "μ es siempre el tamaño muestral.",
+        "Los dos cambian cada vez que se repite el muestreo."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L01-05",
+      "lesson_id": "B2S-D01-L01",
+      "type": "choice",
+      "prompt": "Si el marco deja fuera a un sector de la población, ¿qué se puede concluir?",
+      "answer": "Puede haber subcobertura incluso si la muestra es grande.",
+      "explanation": "El diseño de selección determina la cobertura y no lo corrige automáticamente aumentar n.",
+      "hint": "Determina el conjunto objetivo y el marco antes de elegir denominadores.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Puede haber subcobertura incluso si la muestra es grande.",
+        "La media muestral se convierte en media exacta poblacional.",
+        "Un n grande elimina toda subcobertura.",
+        "La población objetivo deja de existir."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L02-01",
+      "lesson_id": "B2S-D01-L02",
+      "type": "numeric",
+      "prompt": "En una selección aleatoria simple sin reemplazo de n=40 entre N=200, ¿P(inclusión individual)?",
+      "answer": 0.2,
+      "explanation": "Cada unidad del marco tiene probabilidad 40/200=0,20 de entrar.",
+      "hint": "Comprueba si se sortea sin reemplazo y si el marco incluye a la población.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L02-02",
+      "lesson_id": "B2S-D01-L02",
+      "type": "numeric",
+      "prompt": "Una muestra proporcional de tamaño 40 tiene un estrato A de 300 entre N=400. ¿Cuántos de A?",
+      "answer": 30,
+      "explanation": "40×300/400=30 personas del estrato A. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Comprueba si se sortea sin reemplazo y si el marco incluye a la población.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L02-03",
+      "lesson_id": "B2S-D01-L02",
+      "type": "numeric",
+      "prompt": "En una población N=250 se sortean n=25 sin reemplazo. ¿Probabilidad individual de inclusión?",
+      "answer": 0.1,
+      "explanation": "Cada elemento puede entrar con 25/250=0,1 aunque las inclusiones no sean independientes.",
+      "hint": "Comprueba si se sortea sin reemplazo y si el marco incluye a la población.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L02-04",
+      "lesson_id": "B2S-D01-L02",
+      "type": "choice",
+      "prompt": "¿Qué afirmación es correcta para una muestra aleatoria simple sin reemplazo?",
+      "answer": "Cada unidad tiene n/N de inclusión, aunque las selecciones dependan.",
+      "explanation": "Sin reemplazo, después de una selección cambia el conjunto disponible.",
+      "hint": "Comprueba si se sortea sin reemplazo y si el marco incluye a la población.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "El orden del sorteo modifica el parámetro μ.",
+        "La inclusión de cada unidad es independiente de las demás.",
+        "Cada unidad tiene n/N de inclusión, aunque las selecciones dependan.",
+        "La probabilidad individual siempre es 1/2."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L02-05",
+      "lesson_id": "B2S-D01-L02",
+      "type": "choice",
+      "prompt": "¿Qué diseño exige especial cuidado al comparar tasas entre estratos?",
+      "answer": "Estratos con tamaños y asignaciones distintos; pueden requerir ponderación.",
+      "explanation": "La ponderación depende de las probabilidades de inclusión y la asignación.",
+      "hint": "Comprueba si se sortea sin reemplazo y si el marco incluye a la población.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Una muestra voluntaria tiene necesariamente inclusiones equiprobables.",
+        "Estratos con tamaños y asignaciones distintos; pueden requerir ponderación.",
+        "Sorteo con pesos correctos y marco íntegro siempre elimina todo error.",
+        "Un recuento completo de la población definida no requiere ningún denominador."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L03-01",
+      "lesson_id": "B2S-D01-L03",
+      "type": "numeric",
+      "prompt": "Se invita a 250 personas y responden 175. Calcula la tasa de respuesta en decimal.",
+      "answer": 0.7,
+      "explanation": "175/250=0,70, no la proporción de respuesta afirmativa.",
+      "hint": "Pregunta quién podía entrar en la muestra y quién decidió responder.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L03-02",
+      "lesson_id": "B2S-D01-L03",
+      "type": "numeric",
+      "prompt": "De 175 respondentes, 70 contestan sí. ¿Qué proporción de respondentes dijo sí?",
+      "answer": 0.4,
+      "explanation": "70/175=0,40, limitada al conjunto de quienes respondieron.",
+      "hint": "Pregunta quién podía entrar en la muestra y quién decidió responder.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L03-03",
+      "lesson_id": "B2S-D01-L03",
+      "type": "numeric",
+      "prompt": "De 250 invitadas, 175 responden. ¿Qué fracción de invitadas no respondió?",
+      "answer": 0.3,
+      "explanation": "75/250=0,30 de invitadas no respondió; su opinión no es conocida.",
+      "hint": "Pregunta quién podía entrar en la muestra y quién decidió responder.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L03-04",
+      "lesson_id": "B2S-D01-L03",
+      "type": "choice",
+      "prompt": "¿Qué sucede con el sesgo de autoselección al aumentar n sin cambiar el procedimiento?",
+      "answer": "No desaparece necesariamente, aunque el error aleatorio pueda bajar.",
+      "explanation": "El sesgo sistemático del marco y de la respuesta no está cubierto por aumentar n.",
+      "hint": "Pregunta quién podía entrar en la muestra y quién decidió responder.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Se vuelve matemáticamente cero.",
+        "La muestra pasa automáticamente a ser censal.",
+        "Permite atribuir causalidad a cualquier asociación.",
+        "No desaparece necesariamente, aunque el error aleatorio pueda bajar."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L03-05",
+      "lesson_id": "B2S-D01-L03",
+      "type": "choice",
+      "prompt": "Una encuesta en una app pretende describir a toda una ciudad. ¿Cuál es el riesgo principal?",
+      "answer": "Puede excluir sistemáticamente a residentes que no usan la app.",
+      "explanation": "No todos los habitantes tienen la misma oportunidad de acceso al marco.",
+      "hint": "Pregunta quién podía entrar en la muestra y quién decidió responder.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Puede excluir sistemáticamente a residentes que no usan la app.",
+        "La respuesta voluntaria constituye selección aleatoria simple.",
+        "La distribución es siempre exactamente binomial.",
+        "No existe ningún problema si se consiguen muchos resultados."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L04-01",
+      "lesson_id": "B2S-D01-L04",
+      "type": "numeric",
+      "prompt": "Para tiempos de 10,12,14,16 minutos, calcula x̄ en minutos.",
+      "answer": 13,
+      "explanation": "52/4=13 min; es media muestral. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Clasifica si los datos son medidas o respuestas binarias.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L04-02",
+      "lesson_id": "B2S-D01-L04",
+      "type": "numeric",
+      "prompt": "En n=80 casos se observan k=28 éxitos. Calcula p̂.",
+      "answer": 0.35,
+      "explanation": "28/80=0,35. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Clasifica si los datos son medidas o respuestas binarias.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L04-03",
+      "lesson_id": "B2S-D01-L04",
+      "type": "numeric",
+      "prompt": "Una muestra de 6 datos es 2,4,6,8,10,12. Halla la media.",
+      "answer": 7,
+      "explanation": "Sumar 42 y dividir entre 6 da 7. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Clasifica si los datos son medidas o respuestas binarias.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L04-04",
+      "lesson_id": "B2S-D01-L04",
+      "type": "choice",
+      "prompt": "¿Qué condición permite escribir E[x̄]=μ en el modelo expuesto?",
+      "answer": "Observaciones iid con esperanza μ finita.",
+      "explanation": "La igualdad teórica se obtiene de hipótesis sobre la extracción y esperanza.",
+      "hint": "Clasifica si los datos son medidas o respuestas binarias.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Observaciones iid con esperanza μ finita.",
+        "Usar cualquier marco incompleto.",
+        "Elegir siempre los tres primeros voluntarios.",
+        "Redondear x̄ a muchos decimales."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L04-05",
+      "lesson_id": "B2S-D01-L04",
+      "type": "choice",
+      "prompt": "La proporción p̂=0,35 de una muestra representa:",
+      "answer": "Un estadístico observado que estima un parámetro desconocido.",
+      "explanation": "Un estimador produce un número, pero no elimina incertidumbre.",
+      "hint": "Clasifica si los datos son medidas o respuestas binarias.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "La certeza de que p poblacional vale exactamente 0,35.",
+        "Un estadístico observado que estima un parámetro desconocido.",
+        "La desviación típica poblacional.",
+        "La probabilidad de no respuesta necesariamente."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L05-01",
+      "lesson_id": "B2S-D01-L05",
+      "type": "numeric",
+      "prompt": "Con medidas iid, σ=12 y n=36, ¿cuánto vale SD(x̄)?",
+      "answer": 2,
+      "explanation": "SE=12/√36=2, mientras cada observación tiene σ=12.",
+      "hint": "Piensa en repetir todo el sorteo, no en contar los valores de una muestra.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L05-02",
+      "lesson_id": "B2S-D01-L05",
+      "type": "numeric",
+      "prompt": "Para Bernoulli iid con p=0,5 y n=100, calcula SD(p̂).",
+      "answer": 0.05,
+      "explanation": "√(0,5×0,5/100)=0,05. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Piensa en repetir todo el sorteo, no en contar los valores de una muestra.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L05-03",
+      "lesson_id": "B2S-D01-L05",
+      "type": "numeric",
+      "prompt": "En observaciones iid, σ=9 y n=81, calcula SD(x̄).",
+      "answer": 1,
+      "explanation": "9/√81=1. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Piensa en repetir todo el sorteo, no en contar los valores de una muestra.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L05-04",
+      "lesson_id": "B2S-D01-L05",
+      "type": "choice",
+      "prompt": "¿Qué es una distribución muestral?",
+      "answer": "La distribución de un estadístico al repetir el diseño de muestreo.",
+      "explanation": "Se imagina repetir muestras completas, no reorganizar una sola muestra.",
+      "hint": "Piensa en repetir todo el sorteo, no en contar los valores de una muestra.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "La certeza de que μ coincide con x̄.",
+        "El conjunto de todas las variables demográficas.",
+        "La distribución de un estadístico al repetir el diseño de muestreo.",
+        "Los valores observados en una sola muestra."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L05-05",
+      "lesson_id": "B2S-D01-L05",
+      "type": "choice",
+      "prompt": "¿Cuándo se distribuye exactamente normal x̄ de datos iid?",
+      "answer": "Cuando las variables originales son normales con varianza finita.",
+      "explanation": "La normalidad exacta de la media se deduce en el modelo de variables normales iid.",
+      "hint": "Piensa en repetir todo el sorteo, no en contar los valores de una muestra.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Siempre que la muestra sea por conveniencia.",
+        "Cuando las variables originales son normales con varianza finita.",
+        "Solo cuando no se conoce σ.",
+        "Siempre, incluso para cualquier n y distribución."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L06-01",
+      "lesson_id": "B2S-D01-L06",
+      "type": "numeric",
+      "prompt": "Si σ=18 y n=81 iid, calcula SE de la media.",
+      "answer": 2,
+      "explanation": "18/√81=2. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Determina si se busca σ de datos o SD de un estimador.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L06-02",
+      "lesson_id": "B2S-D01-L06",
+      "type": "numeric",
+      "prompt": "Para p=0,5 y n=400 Bernoulli iid, calcula SE de p̂.",
+      "answer": 0.025,
+      "explanation": "√(0,25/400)=0,025. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Determina si se busca σ de datos o SD de un estimador.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L06-03",
+      "lesson_id": "B2S-D01-L06",
+      "type": "numeric",
+      "prompt": "Si σ=18 y n=324 iid, ¿cuánto vale SE de la media?",
+      "answer": 1,
+      "explanation": "18/√324=1; al cuadruplicar n, se reduce SE a la mitad.",
+      "hint": "Determina si se busca σ de datos o SD de un estimador.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L06-04",
+      "lesson_id": "B2S-D01-L06",
+      "type": "choice",
+      "prompt": "¿Qué pasa con SE al cuadruplicar n bajo iid y σ constante?",
+      "answer": "Se reduce a la mitad.",
+      "explanation": "SE=σ/√n, por tanto √4=2. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Determina si se busca σ de datos o SD de un estimador.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Se duplica.",
+        "Se reduce a la mitad.",
+        "Permanece necesariamente igual.",
+        "Queda dividido entre cuatro."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D01-L06-05",
+      "lesson_id": "B2S-D01-L06",
+      "type": "choice",
+      "prompt": "¿El error estándar cuantifica automáticamente un sesgo por no respuesta?",
+      "answer": "No: mide dispersión muestral bajo el modelo de selección.",
+      "explanation": "Debe distinguirse variación aleatoria del sesgo sistemático del mecanismo.",
+      "hint": "Determina si se busca σ de datos o SD de un estimador.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d01_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Es idéntico a σ de las observaciones.",
+        "No: mide dispersión muestral bajo el modelo de selección.",
+        "Sí: es la diferencia absoluta garantizada con μ.",
+        "Sí: siempre corrige subcobertura."
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B2S-D01-L01-01": {
+      "hints": [
+        "Determina el conjunto objetivo y el marco antes de elegir denominadores.",
+        "La fracción de muestreo es n/N. Una media muestral suma observaciones y divide entre n."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          50,
+          500
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L01-02": {
+      "hints": [
+        "Determina el conjunto objetivo y el marco antes de elegir denominadores.",
+        "La fracción de muestreo es n/N. Una media muestral suma observaciones y divide entre n."
+      ],
+      "math_check": {
+        "kind": "mean",
+        "params": [
+          [
+            5,
+            7,
+            9,
+            11
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L01-03": {
+      "hints": [
+        "Determina el conjunto objetivo y el marco antes de elegir denominadores.",
+        "La fracción de muestreo es n/N. Una media muestral suma observaciones y divide entre n."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          15,
+          60
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L01-04": {
+      "hints": [
+        "Determina el conjunto objetivo y el marco antes de elegir denominadores.",
+        "La fracción de muestreo es n/N. Una media muestral suma observaciones y divide entre n."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L01-05": {
+      "hints": [
+        "Determina el conjunto objetivo y el marco antes de elegir denominadores.",
+        "La fracción de muestreo es n/N. Una media muestral suma observaciones y divide entre n."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L02-01": {
+      "hints": [
+        "Comprueba si se sortea sin reemplazo y si el marco incluye a la población.",
+        "Para probabilidad individual n/N; para estratos proporcionales n·N_h/N."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          40,
+          200
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L02-02": {
+      "hints": [
+        "Comprueba si se sortea sin reemplazo y si el marco incluye a la población.",
+        "Para probabilidad individual n/N; para estratos proporcionales n·N_h/N."
+      ],
+      "math_check": {
+        "kind": "ratio_product",
+        "params": [
+          40,
+          300,
+          400
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L02-03": {
+      "hints": [
+        "Comprueba si se sortea sin reemplazo y si el marco incluye a la población.",
+        "Para probabilidad individual n/N; para estratos proporcionales n·N_h/N."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          25,
+          250
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L02-04": {
+      "hints": [
+        "Comprueba si se sortea sin reemplazo y si el marco incluye a la población.",
+        "Para probabilidad individual n/N; para estratos proporcionales n·N_h/N."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L02-05": {
+      "hints": [
+        "Comprueba si se sortea sin reemplazo y si el marco incluye a la población.",
+        "Para probabilidad individual n/N; para estratos proporcionales n·N_h/N."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L03-01": {
+      "hints": [
+        "Pregunta quién podía entrar en la muestra y quién decidió responder.",
+        "La tasa de respuesta usa respondentes/invitados; no equivale a probabilidad de opinión."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          175,
+          250
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L03-02": {
+      "hints": [
+        "Pregunta quién podía entrar en la muestra y quién decidió responder.",
+        "La tasa de respuesta usa respondentes/invitados; no equivale a probabilidad de opinión."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          70,
+          175
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L03-03": {
+      "hints": [
+        "Pregunta quién podía entrar en la muestra y quién decidió responder.",
+        "La tasa de respuesta usa respondentes/invitados; no equivale a probabilidad de opinión."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          75,
+          250
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L03-04": {
+      "hints": [
+        "Pregunta quién podía entrar en la muestra y quién decidió responder.",
+        "La tasa de respuesta usa respondentes/invitados; no equivale a probabilidad de opinión."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L03-05": {
+      "hints": [
+        "Pregunta quién podía entrar en la muestra y quién decidió responder.",
+        "La tasa de respuesta usa respondentes/invitados; no equivale a probabilidad de opinión."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L04-01": {
+      "hints": [
+        "Clasifica si los datos son medidas o respuestas binarias.",
+        "Para x̄ divide la suma entre n; para p̂ divide éxitos entre n."
+      ],
+      "math_check": {
+        "kind": "mean",
+        "params": [
+          [
+            10,
+            12,
+            14,
+            16
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L04-02": {
+      "hints": [
+        "Clasifica si los datos son medidas o respuestas binarias.",
+        "Para x̄ divide la suma entre n; para p̂ divide éxitos entre n."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          28,
+          80
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L04-03": {
+      "hints": [
+        "Clasifica si los datos son medidas o respuestas binarias.",
+        "Para x̄ divide la suma entre n; para p̂ divide éxitos entre n."
+      ],
+      "math_check": {
+        "kind": "mean",
+        "params": [
+          [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L04-04": {
+      "hints": [
+        "Clasifica si los datos son medidas o respuestas binarias.",
+        "Para x̄ divide la suma entre n; para p̂ divide éxitos entre n."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L04-05": {
+      "hints": [
+        "Clasifica si los datos son medidas o respuestas binarias.",
+        "Para x̄ divide la suma entre n; para p̂ divide éxitos entre n."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L05-01": {
+      "hints": [
+        "Piensa en repetir todo el sorteo, no en contar los valores de una muestra.",
+        "Bajo iid, SD(media)=σ/√n y SD(proporción)=√(p(1−p)/n)."
+      ],
+      "math_check": {
+        "kind": "se_mean",
+        "params": [
+          12,
+          36
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L05-02": {
+      "hints": [
+        "Piensa en repetir todo el sorteo, no en contar los valores de una muestra.",
+        "Bajo iid, SD(media)=σ/√n y SD(proporción)=√(p(1−p)/n)."
+      ],
+      "math_check": {
+        "kind": "se_prop",
+        "params": [
+          0.5,
+          100
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L05-03": {
+      "hints": [
+        "Piensa en repetir todo el sorteo, no en contar los valores de una muestra.",
+        "Bajo iid, SD(media)=σ/√n y SD(proporción)=√(p(1−p)/n)."
+      ],
+      "math_check": {
+        "kind": "se_mean",
+        "params": [
+          9,
+          81
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L05-04": {
+      "hints": [
+        "Piensa en repetir todo el sorteo, no en contar los valores de una muestra.",
+        "Bajo iid, SD(media)=σ/√n y SD(proporción)=√(p(1−p)/n)."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L05-05": {
+      "hints": [
+        "Piensa en repetir todo el sorteo, no en contar los valores de una muestra.",
+        "Bajo iid, SD(media)=σ/√n y SD(proporción)=√(p(1−p)/n)."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L06-01": {
+      "hints": [
+        "Determina si se busca σ de datos o SD de un estimador.",
+        "SE(media)=σ/√n; con p fijo, SE(p̂)=√(p(1−p)/n)."
+      ],
+      "math_check": {
+        "kind": "se_mean",
+        "params": [
+          18,
+          81
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L06-02": {
+      "hints": [
+        "Determina si se busca σ de datos o SD de un estimador.",
+        "SE(media)=σ/√n; con p fijo, SE(p̂)=√(p(1−p)/n)."
+      ],
+      "math_check": {
+        "kind": "se_prop",
+        "params": [
+          0.5,
+          400
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L06-03": {
+      "hints": [
+        "Determina si se busca σ de datos o SD de un estimador.",
+        "SE(media)=σ/√n; con p fijo, SE(p̂)=√(p(1−p)/n)."
+      ],
+      "math_check": {
+        "kind": "se_mean",
+        "params": [
+          18,
+          324
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L06-04": {
+      "hints": [
+        "Determina si se busca σ de datos o SD de un estimador.",
+        "SE(media)=σ/√n; con p fijo, SE(p̂)=√(p(1−p)/n)."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D01-L06-05": {
+      "hints": [
+        "Determina si se busca σ de datos o SD de un estimador.",
+        "SE(media)=σ/√n; con p fijo, SE(p̂)=√(p(1−p)/n)."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    }
+  }
+}

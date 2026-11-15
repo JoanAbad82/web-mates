@@ -1,0 +1,67 @@
+{
+  "version": "0.13.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "E4B-F01",
+      "priority": 1,
+      "why": "Arista canónica E3-F01→E4B-F01, modelos de 3º y álgebra E4B-A01 cubiertos."
+    },
+    {
+      "unit_id": "B1C-F01",
+      "priority": 2,
+      "why": "Arista canónica E4B-F01→B1C-F01; trigonometría B1C-G01 ya cubierta."
+    },
+    {
+      "unit_id": "B1C-F02",
+      "priority": 3,
+      "why": "Familias de funciones B1C-F01 cubiertas secuencialmente en esta ola."
+    }
+  ],
+  "canonical_edges_highlight": [
+    {
+      "from": "E3-F01",
+      "to": "E4B-F01"
+    },
+    {
+      "from": "E4B-F01",
+      "to": "B1C-F01"
+    }
+  ],
+  "new_editorial_edges": [
+    {
+      "from": "E4B-A01",
+      "to": "E4B-F01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Factorización y fracciones racionales de cuarto para estudio funcional."
+    },
+    {
+      "from": "B1C-G01",
+      "to": "B1C-F01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Ángulos/radianes y trigonometría previa para familias trigonométricas."
+    },
+    {
+      "from": "B1C-F01",
+      "to": "B1C-F02",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Dominio, familias, racionales y trozos antes de límites y continuidad."
+    }
+  ],
+  "not_selected": [
+    {
+      "unit_id": "B1C-F03",
+      "why": "Depende de límites B1C-F02, solo disponible al cerrar esta ola."
+    },
+    {
+      "unit_id": "B2C-F01",
+      "why": "Requiere además derivadas de Matemáticas I B1C-F03, todavía incompletas."
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 34,
+  "regional_mapping": "NO VERIFICADO; relaciones nuevas exclusivamente editoriales"
+}

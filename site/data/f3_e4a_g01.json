@@ -1,0 +1,736 @@
+{
+  "unit_id": "E4A-G01",
+  "unit_title": "Geometría aplicada",
+  "product_phase": "F3-28",
+  "version": "0.28.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Resolver distancias geométricas con Pitágoras y justificar triángulos rectángulos.",
+    "Aplicar semejanza a longitudes homólogas en planos y objetos."
+  ],
+  "warnings": [
+    "Datos sintéticos EN REVISIÓN. No homologado ni publicado.",
+    "Radicales, logaritmos, complejos y geometría requieren dominios, unidades y validación territorial; revisión pendiente."
+  ],
+  "prerequisite_links": [
+    "E2-G01-L03",
+    "E2-G01-L04",
+    "E3-G01-L03",
+    "E3-G01-L04",
+    "E3-G02-L01",
+    "E3-G02-L02",
+    "E3-G02-L03",
+    "E3-G02-L06",
+    "E4A-G01-L01",
+    "E4A-G01-L02"
+  ],
+  "recall_policy": "f2-spaced-v1.0.0",
+  "source_note": "Guía LOMLOE local; RD 217/2022 ESO o RD 243/2022 Bachillerato; cotejo territorial pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E4A-G01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-G01:C01"
+      ],
+      "objectives": [
+        "Resolver distancias geométricas con Pitágoras y justificar triángulos rectángulos.",
+        "Aplicar semejanza a longitudes homólogas en planos y objetos."
+      ],
+      "prerequisites": [
+        "E3-G02-L01",
+        "E2-G01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El teorema de Pitágoras establece a²+b²=c² para un triángulo rectángulo donde c es la hipotenusa; no vale como igualdad general para cualquier triángulo. Para lados perpendiculares de 3 y 4 unidades se obtiene diagonal 5, ya que 9+16=25. En semejanza, ángulos correspondientes se mantienen y todos los lados homólogos cambian según la misma razón k>0. Si un lado pasa de 3 a 6, la razón lineal es 2 y un lado correspondiente de 4 pasará a 8. Una prueba contextual debe distinguir longitud, superficie y volumen y explicitar unidades de medida. Con datos aproximados, la solución final puede requerir redondeo proporcional a la precisión de entrada."
+        },
+        {
+          "type": "example",
+          "body": "Una pantalla rectangular mide 6 cm por 8 cm. Su diagonal es √(6²+8²)=10 cm, porque los bordes son perpendiculares."
+        },
+        {
+          "type": "example",
+          "body": "Dos triángulos semejantes tienen lados correspondientes 3↔6 y 4↔8 cm; la razón k=2 y los ángulos son iguales. La hipotenusa 5↔10."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Teorema de Pitágoras y semejanza en contextos. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Teorema de Pitágoras y semejanza en contextos",
+            "kind": "triangle",
+            "model": {
+              "labels": [
+                "Cateto horizontal",
+                "Cateto vertical"
+              ],
+              "values": [
+                6,
+                8
+              ]
+            },
+            "rows": [
+              [
+                "Cateto 1",
+                "6 cm"
+              ],
+              [
+                "Cateto 2",
+                "8 cm"
+              ],
+              [
+                "Hipotenusa",
+                "10 cm"
+              ],
+              [
+                "Razón de semejanza",
+                "2"
+              ],
+              [
+                "Lados homólogos",
+                "3→6, 4→8"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede usarse c²=a²+b² en un triángulo no rectángulo sin más?||No; Pitágoras exige un ángulo recto."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Resolver distancias geométricas con Pitágoras y justificar triángulos rectángulos. Marca un ángulo de 90° y distingue catetos de hipotenusa. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-G01-L01-01",
+        "F3-E4A-G01-L01-02",
+        "F3-E4A-G01-L01-03",
+        "F3-E4A-G01-L01-04",
+        "F3-E4A-G01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-G01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-G01:C02"
+      ],
+      "objectives": [
+        "Interpretar escalas lineales de planos con conversiones coherentes.",
+        "Calcular áreas reales a partir de escalas de longitud elevadas al cuadrado."
+      ],
+      "prerequisites": [
+        "E3-G02-L06",
+        "E2-G01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una escala 1:s significa que una unidad de longitud del plano representa s unidades reales de la misma clase. Un segmento de 4 cm en un dibujo 1:500 corresponde a 2000 cm reales, es decir 20 metros. La escala no se traslada directamente de forma lineal a superficies: un área de 3 cm² en el plano representa 3×500² cm²=750000 cm²=75 m² reales. La conversión entre cm² y m² usa 10 000, no 100. Si la escala no es uniforme o el plano está deformado, estas fórmulas no serían válidas. Una representación fiable incluye unidades, escala gráfica o numérica y una estimación razonable del error de medición."
+        },
+        {
+          "type": "example",
+          "body": "Un plano a 1:500 muestra un lado de 4 cm: longitud real 4×500=2000 cm=20 m."
+        },
+        {
+          "type": "example",
+          "body": "La superficie de un rectángulo de 2 cm×3 cm en ese plano es 6 cm²; en terreno equivale a 6×500²/10000=150 m²."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Escalas de planos. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Escalas de planos",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "Plan cm",
+                "Real m"
+              ],
+              "values": [
+                4,
+                20
+              ]
+            },
+            "rows": [
+              [
+                "Escala",
+                "1:500"
+              ],
+              [
+                "Plano",
+                "4 cm"
+              ],
+              [
+                "Real",
+                "20 m"
+              ],
+              [
+                "Área de plano",
+                "6 cm²"
+              ],
+              [
+                "Área real",
+                "150 m²"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Si un plano amplía distancias 500 veces, multiplica superficies también por 500?||No, el área escala por 500²."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Interpretar escalas lineales de planos con conversiones coherentes. Primero convierte longitudes conservando la misma unidad. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-G01-L02-01",
+        "F3-E4A-G01-L02-02",
+        "F3-E4A-G01-L02-03",
+        "F3-E4A-G01-L02-04",
+        "F3-E4A-G01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-G01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-G01:C03"
+      ],
+      "objectives": [
+        "Calcular pendientes de rectas no verticales a partir de coordenadas.",
+        "Relacionar pendiente con ángulo e identificar rectas horizontales y verticales."
+      ],
+      "prerequisites": [
+        "E3-G01-L04",
+        "E3-G01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La pendiente de la recta que pasa por (x₁,y₁) y (x₂,y₂) con x₁≠x₂ es m=(y₂−y₁)/(x₂−x₁). Una recta horizontal tiene pendiente cero; para una recta vertical el denominador es cero y no se define pendiente finita. La pendiente m es igual a tan(θ) para el ángulo θ de inclinación respecto a la horizontal positiva, con convenciones angulares claras. Una pendiente de 1 corresponde a 45°, y m=√3 a 60° en el primer cuadrante. Las pendientes de dos rectas no verticales perpendiculares satisfacen m₁m₂=−1. Los ejes, el sentido positivo y las unidades deben constar en el gráfico."
+        },
+        {
+          "type": "example",
+          "body": "Entre P=(1,2) y Q=(4,8), la pendiente m=(8−2)/(4−1)=6/3=2. El ángulo de inclinación es arctan(2)≈63,435°."
+        },
+        {
+          "type": "example",
+          "body": "Una recta de pendiente 1 forma 45° con horizontal positiva. Para pendiente −1 su ángulo orientado se puede expresar como 135°, no 45°."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Pendiente y ángulos. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Pendiente y ángulos",
+            "kind": "plane",
+            "model": {
+              "labels": [
+                "Pendiente",
+                "Desnivel"
+              ],
+              "values": [
+                3,
+                6
+              ]
+            },
+            "rows": [
+              [
+                "P",
+                "(1,2)"
+              ],
+              [
+                "Q",
+                "(4,8)"
+              ],
+              [
+                "Δy",
+                "6"
+              ],
+              [
+                "Δx",
+                "3"
+              ],
+              [
+                "Pendiente",
+                "2"
+              ],
+              [
+                "Ángulo aprox.",
+                "63,435°"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La pendiente de una recta vertical es cero?||No: es indefinida; la pendiente cero corresponde a recta horizontal."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Calcular pendientes de rectas no verticales a partir de coordenadas. Resta en el mismo orden numerador y denominador. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-G01-L03-01",
+        "F3-E4A-G01-L03-02",
+        "F3-E4A-G01-L03-03",
+        "F3-E4A-G01-L03-04",
+        "F3-E4A-G01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-G01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-G01:C04"
+      ],
+      "objectives": [
+        "Relacionar una recta no vertical con la ecuación y=mx+b.",
+        "Calcular intersecciones y verificar puntos sustituyéndolos en ecuaciones."
+      ],
+      "prerequisites": [
+        "E3-G01-L03",
+        "E3-G01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La ecuación explícita y=mx+b describe una recta no vertical de pendiente m y corte con el eje vertical b. Si se conocen un punto (x₀,y₀) y la pendiente, puede escribirse y−y₀=m(x−x₀). Para intersecar dos rectas se igualan sus expresiones de y y se resuelve x; después se comprueba y en ambas ecuaciones. Por ejemplo, y=2x+1 y y=x+4 se cortan en x=3, y=7. Si las pendientes son iguales y sus cortes diferentes, son paralelas y no se intersecan. Las rectas verticales se expresan x=c, no con m infinito numérico. Una representación con ejes y unidades ayuda a detectar soluciones incoherentes."
+        },
+        {
+          "type": "example",
+          "body": "Para y=2x+1 y y=x+4, igualar da 2x+1=x+4, x=3 y y=7. El punto (3,7) satisface ambas."
+        },
+        {
+          "type": "example",
+          "body": "La recta por (1,3) con pendiente 2 cumple y−3=2(x−1), es decir y=2x+1. Su corte con el eje vertical es 1."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Coordenadas y rectas. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Coordenadas y rectas",
+            "kind": "plane",
+            "model": {
+              "labels": [
+                "x",
+                "y"
+              ],
+              "values": [
+                3,
+                7
+              ]
+            },
+            "rows": [
+              [
+                "Recta 1",
+                "y=2x+1"
+              ],
+              [
+                "Recta 2",
+                "y=x+4"
+              ],
+              [
+                "Intersección",
+                "(3,7)"
+              ],
+              [
+                "Pendientes",
+                "2 y 1"
+              ],
+              [
+                "Corte vertical recta 1",
+                "1"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Tienen siempre un punto de corte dos rectas con pendiente igual pero distinto corte vertical?||No; son paralelas sin intersección."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Relacionar una recta no vertical con la ecuación y=mx+b. Iguala las dos expresiones de y; verifica el par resultante en las dos. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-G01-L04-01",
+        "F3-E4A-G01-L04-02",
+        "F3-E4A-G01-L04-03",
+        "F3-E4A-G01-L04-04",
+        "F3-E4A-G01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-G01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-G01:C05"
+      ],
+      "objectives": [
+        "Identificar traslaciones, giros, reflexiones y homotecias de figuras.",
+        "Calcular coordenadas transformadas y distinguir isometrías de cambios de escala."
+      ],
+      "prerequisites": [
+        "E3-G02-L02",
+        "E3-G02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una traslación de vector (a,b) convierte P=(x,y) en P′=(x+a,y+b). La reflexión respecto del eje x produce (x,−y) y un giro de 90° antihorario alrededor del origen produce (−y,x). Estas tres transformaciones son isometrías y conservan distancias, aunque una reflexión invierte la orientación de las figuras. Una homotecia de centro origen y razón k transforma (x,y) en (kx,ky), cambiando longitudes por |k| y áreas por k². Es esencial declarar el centro, eje y sentido de la transformación; sin estos datos no existe una respuesta única. En un problema combinado se aplica el orden indicado, pues ciertas composiciones no conmutan."
+        },
+        {
+          "type": "example",
+          "body": "Trasladar P=(3,−1) por v=(−2,4) da P′=(1,3). La distancia entre puntos correspondiente es la longitud del vector v=√20."
+        },
+        {
+          "type": "example",
+          "body": "El giro antihorario de 90° de Q=(2,1) da Q′=(−1,2), mientras reflejar Q en el eje x da (2,−1)."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Transformaciones geométricas. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Transformaciones geométricas",
+            "kind": "plane",
+            "model": {
+              "labels": [
+                "x final",
+                "y final"
+              ],
+              "values": [
+                1,
+                3
+              ]
+            },
+            "rows": [
+              [
+                "P inicial",
+                "(3,−1)"
+              ],
+              [
+                "Vector",
+                "(−2,4)"
+              ],
+              [
+                "P final",
+                "(1,3)"
+              ],
+              [
+                "Q inicial",
+                "(2,1)"
+              ],
+              [
+                "Giro 90° antihorario",
+                "(−1,2)"
+              ],
+              [
+                "Reflexión eje x",
+                "(2,−1)"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La reflexión sobre eje x invierte también el signo de x?||No; conserva x y cambia el signo de y."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Identificar traslaciones, giros, reflexiones y homotecias de figuras. Fija el origen o centro antes de operar. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-G01-L05-01",
+        "F3-E4A-G01-L05-02",
+        "F3-E4A-G01-L05-03",
+        "F3-E4A-G01-L05-04",
+        "F3-E4A-G01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-G01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.28.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-G01:C06"
+      ],
+      "objectives": [
+        "Planificar mediciones geométricas contextualizadas con unidades y escala.",
+        "Verificar dimensiones, resultados y fuentes de error de medidas."
+      ],
+      "prerequisites": [
+        "E4A-G01-L02",
+        "E4A-G01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una medición aplicada necesita un modelo geométrico explícito, escala, unidades y tolerancia. Para un terreno rectangular de 4 m×3 m, la superficie es 12 m² y su perímetro 14 m; ambas magnitudes no deben confundirse. Si el dibujo está a escala 1:200, una distancia de 3 cm representa 600 cm=6 m. El redondeo debe reflejar precisión de medidas, y una superficie construida a partir de longitudes aproximadas hereda incertidumbre. Los problemas de proyecto incluyen estimar materiales, delimitar restricciones y explicar por qué se usa un modelo de rectángulo, triángulo o círculo. No se deben convertir unidades cuadradas mediante factores lineales ni presentar precisión no respaldada por el instrumento."
+        },
+        {
+          "type": "example",
+          "body": "Un huerto rectangular de lados 4 m y 3 m requiere 14 m de cerca (perímetro) y tiene superficie 12 m²; cada cifra responde a preguntas distintas."
+        },
+        {
+          "type": "example",
+          "body": "En un plano a escala 1:200, un segmento de 3 cm representa 600 cm reales, equivalentes a 6 m; sin la conversión final la unidad queda mal."
+        },
+        {
+          "type": "figure",
+          "body": "Esquema matemático local ilustrativo; la tabla accesible contiene cifras, hipótesis y límites.",
+          "alt": "Medición en proyectos. Figura ilustrativa y alternativa tabular exacta sin dependencia de color.",
+          "visual_spec": {
+            "render_family": "wave28",
+            "title": "Medición en proyectos",
+            "kind": "triangle",
+            "model": {
+              "labels": [
+                "Lado 1",
+                "Lado 2"
+              ],
+              "values": [
+                4,
+                3
+              ]
+            },
+            "rows": [
+              [
+                "Largo huerto",
+                "4 m"
+              ],
+              [
+                "Ancho",
+                "3 m"
+              ],
+              [
+                "Perímetro",
+                "14 m"
+              ],
+              [
+                "Superficie",
+                "12 m²"
+              ],
+              [
+                "Escala",
+                "1:200"
+              ],
+              [
+                "3 cm en plano",
+                "6 m reales"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La superficie del rectángulo de 4×3 se expresa en metros lineales?||No; son 12 metros cuadrados."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Planificar mediciones geométricas contextualizadas con unidades y escala. Distingue magnitudes lineales y cuadráticas antes del cálculo. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-G01-L06-01",
+        "F3-E4A-G01-L06-02",
+        "F3-E4A-G01-L06-03",
+        "F3-E4A-G01-L06-04",
+        "F3-E4A-G01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, Anexo II, Matemáticas de Educación Secundaria Obligatoria; marco estatal.",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial de contexto; sin asignar códigos autonómicos no cotejados."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

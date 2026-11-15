@@ -1,0 +1,550 @@
+{
+  "unit_id": "E3-N01",
+  "unit_title": "Números reales y aproximaciones",
+  "product_phase": "F3_OLA6",
+  "version": "0.6.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Distinguir racionales de irracionales.",
+    "Clasificar números en naturales, enteros, racionales no enteros e irracionales.",
+    "Situar racionales y raíces aproximadas en la recta real."
+  ],
+  "warnings": [
+    "Material original editorial sintético en revisión humana; no homologado.",
+    "Ubicación de unidades y saberes de 1.º–3.º ESO: propuesta editorial.",
+    "No inventar criterios autonómicos; ejercicios deterministas no equivalen a revisión humana."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Potencias y raíces",
+      "lesson_id": "E2-N01-L04",
+      "href": "#/curso/E2/unidad/E2-N01/leccion/E2-N01-L04"
+    },
+    {
+      "label": "Aproximación decimal",
+      "lesson_id": "E2-N02-L03",
+      "href": "#/curso/E2/unidad/E2-N02/leccion/E2-N02-L03"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrada",
+    "rule": "Resolver sin ayuda después de comprender y repetir en sesiones breves."
+  },
+  "source_note": "RD 217/2022, Matemáticas ESO, sentido numérico; ubicación editorial y cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E3-N01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-N01:C01"
+      ],
+      "objectives": [
+        "Distinguir racionales de irracionales.",
+        "Identificar raíces no exactas y el número π como irracionales."
+      ],
+      "prerequisites": [
+        "E2-N01-L04",
+        "E2-N02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un racional puede escribirse como cociente de enteros con denominador no nulo; su decimal termina o es periódico. Un irracional no admite esa expresión y tiene desarrollo decimal infinito no periódico. π y √2 son irracionales, mientras que √9=3 es racional. Una cifra decimal truncada que aproxima √2 es racional, pero no convierte la raíz en racional."
+        },
+        {
+          "type": "example",
+          "body": "√2 es irracional, aunque 1,414 sea una aproximación racional a su valor."
+        },
+        {
+          "type": "example",
+          "body": "√49=7 es racional; el símbolo raíz no garantiza irracionalidad si el radicando es cuadrado perfecto."
+        },
+        {
+          "type": "figure",
+          "body": "Aproximaciones racionales a √2 (sin igualdad exacta). El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "Aproximaciones racionales a √2 (sin igualdad exacta). Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "rational_line",
+            "min": 1,
+            "max": 2,
+            "points": [
+              [
+                7,
+                5
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "title": "Aproximaciones racionales a √2 (sin igualdad exacta)"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un decimal finito puede ser irracional?||No: cualquier decimal finito es una fracción con denominador potencia de diez."
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: Un racional puede escribirse como cociente de enteros con denominador no nulo; su decimal termina o es periódico. Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-N01-L01-01",
+        "F3-E3-N01-L01-02",
+        "F3-E3-N01-L01-03",
+        "F3-E3-N01-L01-04",
+        "F3-E3-N01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-N01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-N01:C02"
+      ],
+      "objectives": [
+        "Clasificar números en naturales, enteros, racionales no enteros e irracionales.",
+        "Explicar la inclusión de conjuntos numéricos."
+      ],
+      "prerequisites": [
+        "E3-N01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Los naturales positivos están entre los enteros; los enteros forman parte de los racionales y estos pertenecen a los reales. Los irracionales son reales que no son racionales. Al clasificar con la categoría más pequeña de una lista dada, usa primero el valor exacto: √16=4 es natural, −5 es entero no natural, −3/2 es racional no entero y π irracional. La inclusión entre conjuntos no crea categorías disjuntas por sí sola."
+        },
+        {
+          "type": "example",
+          "body": "8 es natural y también entero, racional y real; la categoría más específica de las propuestas es natural."
+        },
+        {
+          "type": "example",
+          "body": "−3/2 es racional no entero; no existe natural o entero igual a −1,5."
+        },
+        {
+          "type": "figure",
+          "body": "N ⊂ Z ⊂ Q ⊂ R; irracionales fuera de Q. El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "N ⊂ Z ⊂ Q ⊂ R; irracionales fuera de Q. Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "set_nesting",
+            "title": "N ⊂ Z ⊂ Q ⊂ R; irracionales fuera de Q"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Todo entero es racional?||Sí: cualquier entero z se representa exactamente como z/1."
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: Los naturales positivos están entre los enteros; los enteros forman parte de los racionales y estos pertenecen a los reales. Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-N01-L02-01",
+        "F3-E3-N01-L02-02",
+        "F3-E3-N01-L02-03",
+        "F3-E3-N01-L02-04",
+        "F3-E3-N01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-N01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-N01:C03"
+      ],
+      "objectives": [
+        "Situar racionales y raíces aproximadas en la recta real.",
+        "Interpretar intervalos abiertos y cerrados."
+      ],
+      "prerequisites": [
+        "E3-N01-L02",
+        "E2-N01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En la recta real cada punto corresponde a un real y el orden es creciente hacia la derecha. Un intervalo (a,b) excluye sus extremos; [a,b] los incluye. La notación [a,b) incluye a pero no b. Para decidir pertenencia compara exactamente con ambos límites; una aproximación decimal no sustituye una desigualdad rigurosa cerca de los bordes."
+        },
+        {
+          "type": "example",
+          "body": "1,5 pertenece a [1,2), pero 2 no pertenece porque el extremo derecho está abierto."
+        },
+        {
+          "type": "example",
+          "body": "√2 pertenece a (1,2) porque 1²<2<2² y la raíz principal conserva ese orden."
+        },
+        {
+          "type": "figure",
+          "body": "Intervalo (1,3]. El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "Intervalo (1,3]. Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "interval_line",
+            "left": 1,
+            "right": 3,
+            "left_closed": false,
+            "right_closed": true,
+            "title": "Intervalo (1,3]"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El número 3 pertenece a (1,3]?||Sí, porque el extremo derecho 3 está incluido, mientras que 1 no."
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: En la recta real cada punto corresponde a un real y el orden es creciente hacia la derecha. Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-N01-L03-01",
+        "F3-E3-N01-L03-02",
+        "F3-E3-N01-L03-03",
+        "F3-E3-N01-L03-04",
+        "F3-E3-N01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-N01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-N01:C04"
+      ],
+      "objectives": [
+        "Acotar raíces entre enteros consecutivos.",
+        "Distinguir igualdad exacta y valor aproximado."
+      ],
+      "prerequisites": [
+        "E3-N01-L03",
+        "E2-N01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si n es positivo y k²<n<(k+1)², entonces k<√n<k+1. Para raíces de cuadrados perfectos la raíz principal es el entero exacto. Las aproximaciones decimales de raíces no perfectas deben marcarse con ≈ y precisión declarada: por ejemplo √2≈1,41, nunca √2=1,41. Comparar cuadrados permite acotar sin usar un cálculo decimal arbitrario."
+        },
+        {
+          "type": "example",
+          "body": "Como 5²=25<30<36=6², se deduce 5<√30<6."
+        },
+        {
+          "type": "example",
+          "body": "√64=8 exactamente; los límites enteros coinciden cuando el radicando es un cuadrado perfecto."
+        },
+        {
+          "type": "figure",
+          "body": "5² = 25 como referencia para √30. El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "5² = 25 como referencia para √30. Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "square_area",
+            "side": 5,
+            "title": "5² = 25 como referencia para √30"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué √17 está entre 4 y 5?||Porque 16<17<25 y elevar al cuadrado conserva el orden para valores no negativos."
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: Si n es positivo y k²<n<(k+1)², entonces k<√n<k+1. Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-N01-L04-01",
+        "F3-E3-N01-L04-02",
+        "F3-E3-N01-L04-03",
+        "F3-E3-N01-L04-04",
+        "F3-E3-N01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-N01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-N01:C05"
+      ],
+      "objectives": [
+        "Calcular error absoluto de una aproximación.",
+        "Interpretar error relativo respecto de un valor de referencia no nulo."
+      ],
+      "prerequisites": [
+        "E2-N02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El error absoluto entre valor aproximado a y referencia r es |a−r|, medido en las unidades de la magnitud. Para r distinto de cero, el error relativo es |a−r|/|r|; multiplicar por cien lo expresa en porcentaje. Si r=0, el error relativo no está definido. Nunca interpretes un valor relativo en porcentaje sin identificar correctamente el denominador de referencia."
+        },
+        {
+          "type": "example",
+          "body": "Si una distancia real es 100 m y la aproximación 98 m, el error absoluto es 2 m y el relativo es 2%."
+        },
+        {
+          "type": "example",
+          "body": "Si la referencia son 40 g y la lectura 42 g, el error relativo es 2/40=0,05=5%."
+        },
+        {
+          "type": "figure",
+          "body": "Valor aproximado 98 frente a referencia 100. El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "Valor aproximado 98 frente a referencia 100. Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "error_band",
+            "center": 98,
+            "resolution": 4,
+            "title": "Valor aproximado 98 frente a referencia 100"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se puede dividir por la referencia cero para calcular error relativo?||No; habría división entre cero, por lo que ese indicador no se define."
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: El error absoluto entre valor aproximado a y referencia r es |a−r|, medido en las unidades de la magnitud. Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-N01-L05-01",
+        "F3-E3-N01-L05-02",
+        "F3-E3-N01-L05-03",
+        "F3-E3-N01-L05-04",
+        "F3-E3-N01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-N01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-N01:C06"
+      ],
+      "objectives": [
+        "Contar cifras significativas con ceros iniciales y finales.",
+        "Redondear con un número declarado de cifras significativas."
+      ],
+      "prerequisites": [
+        "E3-N01-L05",
+        "E2-N02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Las cifras significativas comunican la precisión de una medida. Los ceros iniciales de 0,00450 no cuentan; las cifras 4, 5 y el cero final tras el decimal sí, de modo que tiene tres cifras significativas. En 7,00 son significativas las tres cifras. Para redondear a n cifras significativas, conserva desde el primer dígito no nulo y observa el siguiente; declara la regla de empate utilizada y no confundas cifras significativas con posiciones decimales."
+        },
+        {
+          "type": "example",
+          "body": "0,00450 contiene tres cifras significativas (4, 5 y el último 0)."
+        },
+        {
+          "type": "example",
+          "body": "12,345 redondeado a tres cifras significativas es 12,3, ya que la siguiente cifra es 4."
+        },
+        {
+          "type": "figure",
+          "body": "Ceros iniciales frente a cero significativo final. El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "Ceros iniciales frente a cero significativo final. Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "significant_digits",
+            "value": "0,00450",
+            "title": "Ceros iniciales frente a cero significativo final"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Cuántas cifras significativas tiene 7,00?||Tres: 7 y los dos ceros después de la coma indican precisión registrada."
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: Las cifras significativas comunican la precisión de una medida. Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-N01-L06-01",
+        "F3-E3-N01-L06-02",
+        "F3-E3-N01-L06-03",
+        "F3-E3-N01-L06-04",
+        "F3-E3-N01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

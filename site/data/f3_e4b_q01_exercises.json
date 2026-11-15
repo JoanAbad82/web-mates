@@ -1,0 +1,977 @@
+{
+  "unit_id": "E4B-Q01",
+  "version": "0.23.0",
+  "status": "revision",
+  "notice": "Cinco ejercicios sintéticos y deterministas por lección canónica. EN REVISIÓN.",
+  "activities": [
+    {
+      "exercise_id": "F3-E4B-Q01-L01-01",
+      "lesson_id": "E4B-Q01-L01",
+      "type": "numeric",
+      "prompt": "En Espacios muestrales: Dos monedas lanzadas en orden: cuenta las rutas de Ω={CC,CX,XC,XX}. Introduce valor numérico exacto sin unidades.",
+      "answer": 4.0,
+      "explanation": "Resultado comprobado por aritmética exacta: 4. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_coin_space",
+        "prerrequisito_e4b_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L01-02",
+      "lesson_id": "E4B-Q01-L01",
+      "type": "numeric",
+      "prompt": "En Espacios muestrales: Dos monedas equilibradas independientes: calcula P(exactamente una cara), sumando las rutas CX y XC. Introduce valor numérico exacto sin unidades.",
+      "answer": 0.5,
+      "explanation": "Resultado comprobado por aritmética exacta: 0,5. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_coin_exact_one",
+        "prerrequisito_e4b_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L01-03",
+      "lesson_id": "E4B-Q01-L01",
+      "type": "choice",
+      "prompt": "En Espacios muestrales: Dos dados ideales distinguibles: con 36 pares equiprobables, calcula P(suma=7). Selecciona la opción matemáticamente justificada.",
+      "answer": "1/6",
+      "explanation": "Resultado comprobado por aritmética exacta: 1/6. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_dice_sum",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "1/6",
+        "1/12",
+        "0,25"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L01-04",
+      "lesson_id": "E4B-Q01-L01",
+      "type": "choice",
+      "prompt": "En Espacios muestrales: ¿La enumeración sola de Ω PRUEBA que todos los resultados son equiprobables? Sí/No. Selecciona la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado comprobado por aritmética exacta: No. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_enumerate_equiprob_no",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "Sí",
+        "No necesariamente",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L01-05",
+      "lesson_id": "E4B-Q01-L01",
+      "type": "choice",
+      "prompt": "En Espacios muestrales: Dos dados equilibrados distinguibles: cuenta parejas ordenadas elementales, no sumas. Selecciona la opción matemáticamente justificada.",
+      "answer": "36",
+      "explanation": "Resultado comprobado por aritmética exacta: 36. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_dice_space",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "35",
+        "36",
+        "37"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L02-01",
+      "lesson_id": "E4B-Q01-L02",
+      "type": "numeric",
+      "prompt": "En Recuento sistemático: De 4 objetos distintos elige 2 en ORDEN, SIN repetición. Cuenta variaciones V(n,k). Introduce valor numérico exacto sin unidades.",
+      "answer": 12.0,
+      "explanation": "Resultado comprobado por aritmética exacta: 12. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_variation",
+        "prerrequisito_e4b_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L02-02",
+      "lesson_id": "E4B-Q01-L02",
+      "type": "numeric",
+      "prompt": "En Recuento sistemático: De 4 objetos distintos elige 2 SIN ORDEN ni repetición. Cuenta combinaciones C(n,k). Introduce valor numérico exacto sin unidades.",
+      "answer": 6.0,
+      "explanation": "Resultado comprobado por aritmética exacta: 6. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_combination",
+        "prerrequisito_e4b_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L02-03",
+      "lesson_id": "E4B-Q01-L02",
+      "type": "numeric",
+      "prompt": "En Recuento sistemático: Elige EXACTAMENTE una opción de dos conjuntos disjuntos con 3 y 2 opciones. Calcula total. Introduce valor numérico exacto sin unidades.",
+      "answer": 5.0,
+      "explanation": "Resultado comprobado por aritmética exacta: 5. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_disjoint_sum",
+        "prerrequisito_e4b_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L02-04",
+      "lesson_id": "E4B-Q01-L02",
+      "type": "choice",
+      "prompt": "En Recuento sistemático: ¿Para DOS ETAPAS sucesivas con 4 y 3 opciones debe sumarse 4+3 en lugar de multiplicar? Sí/No. Selecciona la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado comprobado por aritmética exacta: No. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_add_instead_product_no",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "No necesariamente",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L02-05",
+      "lesson_id": "E4B-Q01-L02",
+      "type": "choice",
+      "prompt": "En Recuento sistemático: Se rellenan 2 posiciones ordenadas eligiendo entre 4 símbolos CON repetición permitida. Cuenta resultados. Selecciona la opción matemáticamente justificada.",
+      "answer": "16",
+      "explanation": "Resultado comprobado por aritmética exacta: 16. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_with_replacement",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "16",
+        "17",
+        "15"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L03-01",
+      "lesson_id": "E4B-Q01-L03",
+      "type": "numeric",
+      "prompt": "En Experimentos compuestos: Dos monedas equilibradas independientes: calcula P(CC), dos caras. Introduce valor numérico exacto sin unidades.",
+      "answer": 0.25,
+      "explanation": "Resultado comprobado por aritmética exacta: 0,25. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_coin_both_heads",
+        "prerrequisito_e4b_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L03-02",
+      "lesson_id": "E4B-Q01-L03",
+      "type": "choice",
+      "prompt": "En Experimentos compuestos: Urna 2 rojas y 1 azul SIN reemplazo: calcula P(RR) con rama condicionada. Selecciona la opción matemáticamente justificada.",
+      "answer": "1/3",
+      "explanation": "Resultado comprobado por aritmética exacta: 1/3. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_urn_rr",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "0,4",
+        "0,25",
+        "1/3"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L03-03",
+      "lesson_id": "E4B-Q01-L03",
+      "type": "choice",
+      "prompt": "En Experimentos compuestos: Urna 2 rojas y 1 azul SIN reemplazo: calcula P(AR), azul después roja. Selecciona la opción matemáticamente justificada.",
+      "answer": "1/3",
+      "explanation": "Resultado comprobado por aritmética exacta: 1/3. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_urn_ar",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "0,25",
+        "1/3",
+        "0,4"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L03-04",
+      "lesson_id": "E4B-Q01-L03",
+      "type": "choice",
+      "prompt": "En Experimentos compuestos: ¿En dos extracciones SIN reemplazo se conserva la misma probabilidad marginal de la primera? Sí/No. Selecciona la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado comprobado por aritmética exacta: No. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_replacement_independent_no",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No necesariamente"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L03-05",
+      "lesson_id": "E4B-Q01-L03",
+      "type": "choice",
+      "prompt": "En Experimentos compuestos: Urna con 2 rojas y 1 azul: calcula P(roja en primera extracción). Selecciona la opción matemáticamente justificada.",
+      "answer": "2/3",
+      "explanation": "Resultado comprobado por aritmética exacta: 2/3. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_urn_first_red",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "0,6",
+        "0,8",
+        "2/3"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L04-01",
+      "lesson_id": "E4B-Q01-L04",
+      "type": "numeric",
+      "prompt": "En Diagramas de árbol: Dos monedas equilibradas independientes: calcula P(exactamente una cara), sumando las rutas CX y XC. Introduce valor numérico exacto sin unidades.",
+      "answer": 0.5,
+      "explanation": "Resultado comprobado por aritmética exacta: 0,5. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_coin_exact_one",
+        "prerrequisito_e4b_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L04-02",
+      "lesson_id": "E4B-Q01-L04",
+      "type": "numeric",
+      "prompt": "En Diagramas de árbol: Dos monedas equilibradas independientes: calcula P(primera cara, segunda cruz) en ruta CX. Introduce valor numérico exacto sin unidades.",
+      "answer": 0.25,
+      "explanation": "Resultado comprobado por aritmética exacta: 0,25. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_coin_route",
+        "prerrequisito_e4b_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L04-03",
+      "lesson_id": "E4B-Q01-L04",
+      "type": "choice",
+      "prompt": "En Diagramas de árbol: Urna 2 rojas y 1 azul SIN reemplazo: calcula P(RA), roja después azul. Selecciona la opción matemáticamente justificada.",
+      "answer": "1/3",
+      "explanation": "Resultado comprobado por aritmética exacta: 1/3. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_urn_ra",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "1/3",
+        "0,4",
+        "0,25"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L04-04",
+      "lesson_id": "E4B-Q01-L04",
+      "type": "choice",
+      "prompt": "En Diagramas de árbol: ¿Al unir rutas del MISMO experimento que son disjuntas se pueden SUMAR sus probabilidades? Sí/No. Selecciona la opción matemáticamente justificada.",
+      "answer": "Sí",
+      "explanation": "Resultado comprobado por aritmética exacta: Sí. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_sum_disjoint_yes",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "No",
+        "No necesariamente",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L04-05",
+      "lesson_id": "E4B-Q01-L04",
+      "type": "choice",
+      "prompt": "En Diagramas de árbol: Urna 2 rojas y 1 azul SIN reemplazo: calcula P(AA), dos azules. Selecciona la opción matemáticamente justificada.",
+      "answer": "0",
+      "explanation": "Resultado comprobado por aritmética exacta: 0. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_urn_aa",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "1/18",
+        "0",
+        "1/36"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L05-01",
+      "lesson_id": "E4B-Q01-L05",
+      "type": "choice",
+      "prompt": "En Regla de Laplace: Dos dados ideales distinguibles: con 36 pares equiprobables, calcula P(suma=7). Selecciona la opción matemáticamente justificada.",
+      "answer": "1/6",
+      "explanation": "Resultado comprobado por aritmética exacta: 1/6. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_dice_sum",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "0,25",
+        "1/6",
+        "1/12"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L05-02",
+      "lesson_id": "E4B-Q01-L05",
+      "type": "choice",
+      "prompt": "En Regla de Laplace: Dos dados ideales distinguibles: con 36 pares equiprobables, calcula P(suma=2). Selecciona la opción matemáticamente justificada.",
+      "answer": "1/36",
+      "explanation": "Resultado comprobado por aritmética exacta: 1/36. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_dice_sum",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "1/36",
+        "0",
+        "1/18"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L05-03",
+      "lesson_id": "E4B-Q01-L05",
+      "type": "choice",
+      "prompt": "En Regla de Laplace: Dos dados ideales distinguibles: calcula P(no sumar 7) por complemento. Selecciona la opción matemáticamente justificada.",
+      "answer": "5/6",
+      "explanation": "Resultado comprobado por aritmética exacta: 5/6. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_dice_not_sum",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "0,8",
+        "2/3",
+        "5/6"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L05-04",
+      "lesson_id": "E4B-Q01-L05",
+      "type": "choice",
+      "prompt": "En Regla de Laplace: ¿Las once SUMAS 2 a 12 de dos dados ideales son todas equiprobables? Sí/No. Selecciona la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado comprobado por aritmética exacta: No. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_dice_sums_uniform_no",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "No necesariamente",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L05-05",
+      "lesson_id": "E4B-Q01-L05",
+      "type": "choice",
+      "prompt": "En Regla de Laplace: Dada P(A)=1/6, calcula P(A complementario). Selecciona la opción matemáticamente justificada.",
+      "answer": "5/6",
+      "explanation": "Resultado comprobado por aritmética exacta: 5/6. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_complement",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "5/6",
+        "0,8",
+        "2/3"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L06-01",
+      "lesson_id": "E4B-Q01-L06",
+      "type": "numeric",
+      "prompt": "En Técnicas de muestreo e inferencias básicas: Calcula proporción exacta de 24 resultados favorables de 60 observados. Introduce valor numérico exacto sin unidades.",
+      "answer": 0.4,
+      "explanation": "Resultado comprobado por aritmética exacta: 0,4. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_fraction",
+        "prerrequisito_e4b_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L06-02",
+      "lesson_id": "E4B-Q01-L06",
+      "type": "numeric",
+      "prompt": "En Técnicas de muestreo e inferencias básicas: El porcentaje pasa de 40 % a 45 %. Calcula aumento en PUNTOS porcentuales. Introduce valor numérico exacto sin unidades.",
+      "answer": 5.0,
+      "explanation": "Resultado comprobado por aritmética exacta: 5. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_percentage_points",
+        "prerrequisito_e4b_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L06-03",
+      "lesson_id": "E4B-Q01-L06",
+      "type": "numeric",
+      "prompt": "En Técnicas de muestreo e inferencias básicas: El porcentaje pasa de 40 % a 45 %. Calcula incremento RELATIVO como fracción del inicial. Introduce valor numérico exacto sin unidades.",
+      "answer": 0.125,
+      "explanation": "Resultado comprobado por aritmética exacta: 0,125. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_relative_growth",
+        "prerrequisito_e4b_q01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L06-04",
+      "lesson_id": "E4B-Q01-L06",
+      "type": "choice",
+      "prompt": "En Técnicas de muestreo e inferencias básicas: ¿Una muestra de VOLUNTARIOS representa automáticamente a la población si aumenta n? Sí/No. Selecciona la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado comprobado por aritmética exacta: No. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_volunteer_unbiased_no",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No necesariamente"
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-Q01-L06-05",
+      "lesson_id": "E4B-Q01-L06",
+      "type": "choice",
+      "prompt": "En Técnicas de muestreo e inferencias básicas: ¿Una proporción muestral 2/5 determina EXACTAMENTE el parámetro poblacional sin diseño? Sí/No. Selecciona la opción matemáticamente justificada.",
+      "answer": "No",
+      "explanation": "Resultado comprobado por aritmética exacta: No. Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas. Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables. Comprueba hipótesis, denominador, orden, dominio del modelo y la naturaleza de la conclusión.",
+      "hint": "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_population_equal_no",
+        "prerrequisito_e4b_q01"
+      ],
+      "choices": [
+        "Sí",
+        "No necesariamente",
+        "No"
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-E4B-Q01-L01-01": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "coin_space",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: coin_space"
+    },
+    "F3-E4B-Q01-L01-02": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "coin_exact_one",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: coin_exact_one"
+    },
+    "F3-E4B-Q01-L01-03": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "dice_sum",
+        "params": [
+          7
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: dice_sum"
+    },
+    "F3-E4B-Q01-L01-04": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "enumerate_equiprob_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: enumerate_equiprob_no"
+    },
+    "F3-E4B-Q01-L01-05": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "dice_space",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: dice_space"
+    },
+    "F3-E4B-Q01-L02-01": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "variation",
+        "params": [
+          4,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: variation"
+    },
+    "F3-E4B-Q01-L02-02": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "combination",
+        "params": [
+          4,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: combination"
+    },
+    "F3-E4B-Q01-L02-03": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "disjoint_sum",
+        "params": [
+          3,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: disjoint_sum"
+    },
+    "F3-E4B-Q01-L02-04": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "add_instead_product_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: add_instead_product_no"
+    },
+    "F3-E4B-Q01-L02-05": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "with_replacement",
+        "params": [
+          4,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: with_replacement"
+    },
+    "F3-E4B-Q01-L03-01": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "coin_both_heads",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: coin_both_heads"
+    },
+    "F3-E4B-Q01-L03-02": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "urn_rr",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: urn_rr"
+    },
+    "F3-E4B-Q01-L03-03": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "urn_ar",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: urn_ar"
+    },
+    "F3-E4B-Q01-L03-04": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "replacement_independent_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: replacement_independent_no"
+    },
+    "F3-E4B-Q01-L03-05": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "urn_first_red",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: urn_first_red"
+    },
+    "F3-E4B-Q01-L04-01": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "coin_exact_one",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: coin_exact_one"
+    },
+    "F3-E4B-Q01-L04-02": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "coin_route",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: coin_route"
+    },
+    "F3-E4B-Q01-L04-03": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "urn_ra",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: urn_ra"
+    },
+    "F3-E4B-Q01-L04-04": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "sum_disjoint_yes",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: sum_disjoint_yes"
+    },
+    "F3-E4B-Q01-L04-05": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "urn_aa",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: urn_aa"
+    },
+    "F3-E4B-Q01-L05-01": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "dice_sum",
+        "params": [
+          7
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: dice_sum"
+    },
+    "F3-E4B-Q01-L05-02": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "dice_sum",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: dice_sum"
+    },
+    "F3-E4B-Q01-L05-03": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "dice_not_sum",
+        "params": [
+          7
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: dice_not_sum"
+    },
+    "F3-E4B-Q01-L05-04": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "dice_sums_uniform_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: dice_sums_uniform_no"
+    },
+    "F3-E4B-Q01-L05-05": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "complement",
+        "params": [
+          1,
+          6
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: complement"
+    },
+    "F3-E4B-Q01-L06-01": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "fraction",
+        "params": [
+          24,
+          60
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: fraction"
+    },
+    "F3-E4B-Q01-L06-02": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "percentage_points",
+        "params": [
+          40,
+          45
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: percentage_points"
+    },
+    "F3-E4B-Q01-L06-03": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "relative_growth",
+        "params": [
+          40,
+          45
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: relative_growth"
+    },
+    "F3-E4B-Q01-L06-04": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "volunteer_unbiased_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: volunteer_unbiased_no"
+    },
+    "F3-E4B-Q01-L06-05": {
+      "hints": [
+        "Define resultados elementales, orden, reemplazo y equiprobabilidad; decide si sumas rutas disjuntas o multiplicas etapas.",
+        "Para combinaciones C(n,k)=n!/[k!(n−k)!]; para rutas usa probabilidades condicionadas. Una muestra no identifica el parámetro y Laplace exige resultados elementales equiprobables."
+      ],
+      "math_check": {
+        "kind": "population_equal_no",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de orden, equiprobabilidad, condicionamiento, fórmula combinatoria, residuos, asociación o inferencia: population_equal_no"
+    }
+  }
+}

@@ -1,0 +1,765 @@
+{
+  "unit_id": "E4A-A02",
+  "unit_title": "Ecuaciones, sistemas e inecuaciones aplicadas",
+  "product_phase": "F3_OLA16",
+  "version": "0.16.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Resolver ecuaciones lineales y detectar equivalencias, contradicciones e identidades.",
+    "Resolver ecuaciones cuadráticas por factorización y fórmula general.",
+    "Resolver sistemas lineales 2×2 usando eliminación o sustitución."
+  ],
+  "warnings": [
+    "Ejercicios y lecciones sintéticos EN REVISIÓN. No homologados ni publicables.",
+    "Porcentajes dependen de la base; los ejemplos financieros son escolares y omiten condiciones contractuales reales.",
+    "B1S-N01 no desarrollada: los logaritmos imprescindibles se definen en B1S-A01-L03; revisión curricular pendiente.",
+    "Mapeo autonómico, accesibilidad integral y móviles físicos NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Modelos algebraicos 4.º ESO A",
+      "lesson_id": "E4A-A01-L06",
+      "href": "#/curso/E4A/unidad/E4A-A01/leccion/E4A-A01-L06"
+    },
+    {
+      "label": "Ecuaciones de tercero",
+      "lesson_id": "E3-A02-L03",
+      "href": "#/curso/E3/unidad/E3-A02/leccion/E3-A02-L03"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Comprensión guiada, recuperación sin pistas, feedback y repaso voluntario, nunca datos identificativos de menores."
+  },
+  "source_note": "RD 217/2022 ESO 4A y RD 243/2022 MACS I; relación curricular autonómica por revisar.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E4A-A02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-A02:C01"
+      ],
+      "objectives": [
+        "Resolver ecuaciones lineales y detectar equivalencias, contradicciones e identidades.",
+        "Verificar soluciones en la igualdad original y respetar el dominio de los modelos."
+      ],
+      "prerequisites": [
+        "E4A-A01-L02",
+        "E3-A02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una ecuación lineal ax+b=c con a distinto de cero posee solución x=(c−b)/a. Las operaciones equivalentes incluyen sumar la misma cantidad a ambos miembros y multiplicar por una constante no nula. Si al simplificar desaparece x, una identidad como 2(x+1)=2x+2 posee todos los reales como soluciones, mientras que 2x+1=2x+3 es imposible y no tiene ninguna. En una situación de tarifa, una solución negativa puede satisfacer la ecuación formal pero quedar fuera del dominio de cantidades admisibles. Siempre se sustituye la solución en la expresión original, evitando dividir por una expresión que pudiera anularse. Un problema contextual requiere además indicar la unidad de la variable."
+        },
+        {
+          "type": "example",
+          "body": "Resolver 3x+5=20 da 3x=15 y x=5; comprobar 3·5+5=20 confirma la igualdad."
+        },
+        {
+          "type": "example",
+          "body": "La ecuación 2(x+1)=2x+2 reduce a 2=2, verdadera para todo x. En cambio, 2x+1=2x+3 produce 1=3, sin solución."
+        },
+        {
+          "type": "figure",
+          "body": "Intersección de dos expresiones afines. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Intersección de dos expresiones afines. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "linear",
+            "title": "Intersección de dos expresiones afines",
+            "rows": [
+              [
+                "Ecuación",
+                "3x+5=20"
+              ],
+              [
+                "Transformación",
+                "3x=15"
+              ],
+              [
+                "Solución",
+                "x=5"
+              ],
+              [
+                "Comprobación",
+                "3·5+5=20"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 3,
+              "b": 5
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": [
+              [
+                "S",
+                5,
+                20
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Dividir una ecuación por una expresión con x que puede valer cero preserva siempre las soluciones?||No; puede eliminar valores válidos o provocar división por cero."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una ecuación lineal ax+b=c con a distinto de cero posee solución x=(c−b)/a. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-A02-L01-01",
+        "F3-E4A-A02-L01-02",
+        "F3-E4A-A02-L01-03",
+        "F3-E4A-A02-L01-04",
+        "F3-E4A-A02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-A02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-A02:C02"
+      ],
+      "objectives": [
+        "Resolver ecuaciones cuadráticas por factorización y fórmula general.",
+        "Interpretar discriminante y filtrar soluciones incompatibles con el contexto."
+      ],
+      "prerequisites": [
+        "E4A-A02-L01",
+        "E3-A02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una ecuación cuadrática ax²+bx+c=0 con a≠0 se estudia con el discriminante Δ=b²−4ac. Si Δ>0 aparecen dos raíces reales distintas, si Δ=0 una raíz doble y si Δ<0 no hay raíces reales. Para x²−5x+6=0 se factoriza (x−2)(x−3)=0, por tanto x=2 o x=3. En problemas de medidas una raíz negativa puede ser algebraicamente correcta y geométricamente inadmisible. La fórmula general x=[−b±√Δ]/(2a) solo produce raíces reales cuando Δ≥0. Tras despejar, se sustituye cada candidata en la ecuación original y se comprueba que no se hayan introducido raíces espurias por elevar al cuadrado."
+        },
+        {
+          "type": "example",
+          "body": "x²−5x+6=0 se escribe (x−2)(x−3)=0. Sus dos soluciones reales son 2 y 3, comprobables por sustitución."
+        },
+        {
+          "type": "example",
+          "body": "x²+4=0 tiene Δ=0−16<0; no admite raíces reales, aunque sí complejas fuera del alcance de este caso."
+        },
+        {
+          "type": "figure",
+          "body": "Cortes de una cuadrática en sus raíces. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Cortes de una cuadrática en sus raíces. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "quadratic",
+            "title": "Cortes de una cuadrática en sus raíces",
+            "rows": [
+              [
+                "Función",
+                "x²−5x+6"
+              ],
+              [
+                "Factorización",
+                "(x−2)(x−3)"
+              ],
+              [
+                "Raíces",
+                "2 y 3"
+              ],
+              [
+                "Discriminante",
+                "1 >0"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 2.5,
+              "k": -0.25
+            },
+            "domain": [
+              0,
+              5
+            ],
+            "marks": [
+              [
+                "A",
+                2,
+                0
+              ],
+              [
+                "B",
+                3,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Discriminante negativo implica dos soluciones reales?||No; una cuadrática real con Δ<0 carece de raíces reales."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una ecuación cuadrática ax²+bx+c=0 con a≠0 se estudia con el discriminante Δ=b²−4ac. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-A02-L02-01",
+        "F3-E4A-A02-L02-02",
+        "F3-E4A-A02-L02-03",
+        "F3-E4A-A02-L02-04",
+        "F3-E4A-A02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-A02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-A02:C03"
+      ],
+      "objectives": [
+        "Resolver sistemas lineales 2×2 usando eliminación o sustitución.",
+        "Reconocer determinante nulo y sistemas compatibles indeterminados o incompatibles."
+      ],
+      "prerequisites": [
+        "E4A-A02-L01",
+        "E4B-A02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un sistema de dos ecuaciones ax+by=e y cx+dy=f puede resolverse con eliminación o sustitución. Si D=ad−bc≠0, la solución única es x=(ed−bf)/D, y=(af−ec)/D; comprobar ambas ecuaciones evita errores de signos. Con D=0 la fórmula no se puede aplicar: las rectas pueden coincidir (infinitas soluciones) o ser paralelas distintas (ninguna solución). Por ejemplo x+y=5 y 2x−y=1 tienen solución (2,3), puesto que 2+3=5 y 4−3=1. Para 2x+2y=4 y x+y=2 hay infinitas soluciones; cambiar la segunda a x+y=3 produce contradicción. El modelo contextual puede exigir x,y no negativos."
+        },
+        {
+          "type": "example",
+          "body": "Resolver x+y=5 y 2x−y=1: sumando da 3x=6, x=2 y y=3; verifica 2+3=5 y 2·2−3=1."
+        },
+        {
+          "type": "example",
+          "body": "Las ecuaciones x+y=2 y 2x+2y=4 describen la misma recta: hay infinitos pares solución, no una solución única."
+        },
+        {
+          "type": "figure",
+          "body": "Rectas de un sistema compatible determinado. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Rectas de un sistema compatible determinado. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "linear",
+            "title": "Rectas de un sistema compatible determinado",
+            "rows": [
+              [
+                "Primera",
+                "x+y=5"
+              ],
+              [
+                "Segunda",
+                "2x−y=1"
+              ],
+              [
+                "Solución",
+                "(2,3)"
+              ],
+              [
+                "Comprobación",
+                "5 y 1"
+              ],
+              [
+                "Determinante",
+                "−3≠0"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": -1,
+              "b": 5,
+              "second_a": 2,
+              "second_b": -1
+            },
+            "domain": [
+              0,
+              5
+            ],
+            "marks": [
+              [
+                "S",
+                2,
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede aplicarse Cramer dividiendo por D=ad−bc cuando D vale cero?||No; hay que estudiar la compatibilidad por equivalencia o rango."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un sistema de dos ecuaciones ax+by=e y cx+dy=f puede resolverse con eliminación o sustitución. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-A02-L03-01",
+        "F3-E4A-A02-L03-02",
+        "F3-E4A-A02-L03-03",
+        "F3-E4A-A02-L03-04",
+        "F3-E4A-A02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-A02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-A02:C04"
+      ],
+      "objectives": [
+        "Resolver inecuaciones lineales indicando intervalos y fronteras abiertas o cerradas.",
+        "Cambiar correctamente el sentido de desigualdad al multiplicar por negativos."
+      ],
+      "prerequisites": [
+        "E4A-A02-L01",
+        "E3-A01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Resolver una inecuación lineal exige operaciones de equivalencia sobre desigualdades. Sumar el mismo valor no altera la relación, pero multiplicar o dividir por un número estrictamente negativo invierte el signo: −2x+3>7 equivale a −2x>4 y después x<−2. Las desigualdades estrictas excluyen la frontera y las no estrictas la incluyen. El conjunto solución se comunica mediante intervalo y representación exacta: x<−2 es (−∞,−2), mientras que x≤−2 es (−∞,−2]. Si una condición económica exige cantidades no negativas, se intersecta el conjunto matemático con x≥0, pudiendo resultar vacío. No es correcto multiplicar por una expresión cuyo signo depende de x sin separar casos."
+        },
+        {
+          "type": "example",
+          "body": "−2x+3>7 implica −2x>4; al dividir por −2, el sentido se invierte: x<−2."
+        },
+        {
+          "type": "example",
+          "body": "La restricción 3x+2≤11 equivale a x≤3. Si x≥0, las soluciones contextuales son x∈[0,3]."
+        },
+        {
+          "type": "figure",
+          "body": "Frontera de una inecuación lineal. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Frontera de una inecuación lineal. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "linear",
+            "title": "Frontera de una inecuación lineal",
+            "rows": [
+              [
+                "Desigualdad",
+                "3x+2≤11"
+              ],
+              [
+                "Solución",
+                "x≤3"
+              ],
+              [
+                "Con x≥0",
+                "[0,3]"
+              ],
+              [
+                "Frontera",
+                "3 incluida"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 3,
+              "b": 2
+            },
+            "domain": [
+              0,
+              5
+            ],
+            "marks": [
+              [
+                "F",
+                3,
+                11
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Al dividir una inecuación por −2 se conserva el sentido del símbolo?||No, hay que invertirlo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Resolver una inecuación lineal exige operaciones de equivalencia sobre desigualdades. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-A02-L04-01",
+        "F3-E4A-A02-L04-02",
+        "F3-E4A-A02-L04-03",
+        "F3-E4A-A02-L04-04",
+        "F3-E4A-A02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-A02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-A02:C05"
+      ],
+      "objectives": [
+        "Traducir restricciones de recursos y presupuestos a inecuaciones.",
+        "Determinar regiones factibles simples y comprobar soluciones candidatas."
+      ],
+      "prerequisites": [
+        "E4A-A02-L04",
+        "E4A-A01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una decisión con recursos limitados se modeliza mediante restricciones. Si fabricar x unidades consume 2 horas cada una y hay 12 horas disponibles, la condición es 2x≤12, junto con x≥0 y x entero si las unidades son indivisibles; por tanto 0≤x≤6 en enteros. Si existen dos productos x e y con tiempo 2x+3y≤12, la región factible está en el primer cuadrante bajo una recta, incluyendo la frontera cuando se permite agotar el recurso. Una solución algebraicamente óptima fuera de la región no es admisible. No debe interpretarse una recta dibujada como la totalidad de las restricciones: el dominio y todas las inecuaciones simultáneas delimitan las decisiones. Comprobar candidatos mediante sustitución directa es más fiable que una inspección visual imprecisa."
+        },
+        {
+          "type": "example",
+          "body": "Con 12 horas y 2 horas por unidad, 2x≤12 y x entero no negativo permiten producir como máximo 6 unidades."
+        },
+        {
+          "type": "example",
+          "body": "En 2x+3y≤12 con x,y≥0, el plan x=3,y=2 usa 6+6=12 horas y es factible; x=4,y=2 consumiría 14 y no lo es."
+        },
+        {
+          "type": "figure",
+          "body": "Restricción de capacidad. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Restricción de capacidad. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "linear",
+            "title": "Restricción de capacidad",
+            "rows": [
+              [
+                "Recurso disponible",
+                "12 horas"
+              ],
+              [
+                "Consumo por unidad",
+                "2 horas"
+              ],
+              [
+                "Restricción",
+                "2x≤12"
+              ],
+              [
+                "Dominio",
+                "x entero ≥0"
+              ],
+              [
+                "Máximo",
+                "x=6"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 2,
+              "b": 0
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": [
+              [
+                "F",
+                6,
+                12
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un plan que supera una restricción sigue siendo válido porque satisface las demás?||No; todas las restricciones deben cumplirse simultáneamente."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una decisión con recursos limitados se modeliza mediante restricciones. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-A02-L05-01",
+        "F3-E4A-A02-L05-02",
+        "F3-E4A-A02-L05-03",
+        "F3-E4A-A02-L05-04",
+        "F3-E4A-A02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-A02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-A02:C06"
+      ],
+      "objectives": [
+        "Verificar soluciones de ecuaciones, sistemas e inecuaciones en el problema original.",
+        "Distinguir errores algebraicos de incompatibilidad con unidades y dominio."
+      ],
+      "prerequisites": [
+        "E4A-A02-L02",
+        "E4A-A02-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La comprobación final de una solución abarca tres niveles: igualdad o desigualdad algebraica original, todas las restricciones contextuales y unidades del resultado. Para un sistema de dos tarifas, la solución de igualdad puede ser negativa y por tanto irrelevante si x representa servicios prestados. Para una inecuación de presupuesto 5+2n≤15 y n entero no negativo, resulta n≤5 y el máximo viable es n=5; comprobar 5+2·5=15 permite aceptar la frontera. Si una ecuación cuadrática tiene raíces 3 y −3 para una longitud, se conserva solo 3. Nunca se aceptan extracciones de raíces, denominadores anulados o soluciones aproximadas que no satisfagan las ecuaciones originales. En condiciones de enteros es necesario redondear en la dirección compatible con la inecuación, no arbitrariamente."
+        },
+        {
+          "type": "example",
+          "body": "Para 5+2n≤15 y n≥0 entero, n≤5. El máximo viable es 5 porque 5+2·5=15; 6 da 17>15."
+        },
+        {
+          "type": "example",
+          "body": "Si x²=9 representa una longitud, las soluciones algebraicas son ±3, pero x=−3 se excluye por la restricción x>0."
+        },
+        {
+          "type": "figure",
+          "body": "Raíz negativa incompatible con longitud. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Raíz negativa incompatible con longitud. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "quadratic",
+            "title": "Raíz negativa incompatible con longitud",
+            "rows": [
+              [
+                "Ecuación",
+                "x²=9"
+              ],
+              [
+                "Raíces reales",
+                "−3 y 3"
+              ],
+              [
+                "Restricción física",
+                "x>0"
+              ],
+              [
+                "Solución válida",
+                "x=3"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 0,
+              "k": -9
+            },
+            "domain": [
+              -4,
+              4
+            ],
+            "marks": [
+              [
+                "V",
+                -3,
+                0
+              ],
+              [
+                "S",
+                3,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Basta obtener una raíz algebraica sin comprobar el dominio del enunciado?||No; además de verificar la ecuación debe pertenecer al dominio contextual."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La comprobación final de una solución abarca tres niveles: igualdad o desigualdad algebraica original, todas las restricciones contextuales y unidades del resultado. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-A02-L06-01",
+        "F3-E4A-A02-L06-02",
+        "F3-E4A-A02-L06-03",
+        "F3-E4A-A02-L06-04",
+        "F3-E4A-A02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

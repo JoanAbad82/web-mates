@@ -1,0 +1,1024 @@
+{
+  "unit_id": "B2S-A02",
+  "version": "0.20.0",
+  "status": "revision",
+  "notice": "Ejercicios sintéticos deterministas EN REVISIÓN, validación humana pendiente.",
+  "activities": [
+    {
+      "exercise_id": "F3-B2S-A02-L01-01",
+      "lesson_id": "B2S-A02-L01",
+      "type": "numeric",
+      "prompt": "En Variables de decisión: En Z=3x+5y euros, calcula el objetivo en (x,y)=(2,1). Introduce resultado numérico exacto sin unidades.",
+      "answer": 11.0,
+      "explanation": "Solución verificada con aritmética exacta: 11. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_objective",
+        "prerrequisito_b2s_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L01-02",
+      "lesson_id": "B2S-A02-L01",
+      "type": "numeric",
+      "prompt": "En Variables de decisión: En Z=3x+5y euros, calcula el objetivo en (x,y)=(4,2). Introduce resultado numérico exacto sin unidades.",
+      "answer": 22.0,
+      "explanation": "Solución verificada con aritmética exacta: 22. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_objective",
+        "prerrequisito_b2s_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L01-03",
+      "lesson_id": "B2S-A02-L01",
+      "type": "numeric",
+      "prompt": "En Variables de decisión: En Z=5x+3y euros, calcula el objetivo en (x,y)=(3,3). Introduce resultado numérico exacto sin unidades.",
+      "answer": 24.0,
+      "explanation": "Solución verificada con aritmética exacta: 24. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_objective",
+        "prerrequisito_b2s_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L01-04",
+      "lesson_id": "B2S-A02-L01",
+      "type": "choice",
+      "prompt": "En Variables de decisión: ¿El par (-1,2) satisface x≥0 e y≥0? Sí/No. Elige la opción válida.",
+      "answer": "No",
+      "explanation": "Solución verificada con aritmética exacta: No. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_lp_nonnegative",
+        "prerrequisito_b2s_a02"
+      ],
+      "choices": [
+        "Sí",
+        "No necesariamente",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L01-05",
+      "lesson_id": "B2S-A02-L01",
+      "type": "choice",
+      "prompt": "En Variables de decisión: ¿La función objetivo Z=3x+5y constituye por sí sola un conjunto suficiente de restricciones de recursos? Sí/No. Elige la opción válida.",
+      "answer": "No",
+      "explanation": "Solución verificada con aritmética exacta: No. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_lp_objective_is_constraint",
+        "prerrequisito_b2s_a02"
+      ],
+      "choices": [
+        "No necesariamente",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L02-01",
+      "lesson_id": "B2S-A02-L02",
+      "type": "choice",
+      "prompt": "En Restricciones lineales: ¿Es factible (2,3) para la inecuación 2x+1y≤8? Sí/No. Elige la opción válida.",
+      "answer": "Sí",
+      "explanation": "Solución verificada con aritmética exacta: Sí. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_constraint_check",
+        "prerrequisito_b2s_a02"
+      ],
+      "choices": [
+        "No necesariamente",
+        "Sí",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L02-02",
+      "lesson_id": "B2S-A02-L02",
+      "type": "choice",
+      "prompt": "En Restricciones lineales: ¿Es factible (4,1) para la inecuación 2x+1y≤8? Sí/No. Elige la opción válida.",
+      "answer": "No",
+      "explanation": "Solución verificada con aritmética exacta: No. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_constraint_check",
+        "prerrequisito_b2s_a02"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No necesariamente"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L02-03",
+      "lesson_id": "B2S-A02-L02",
+      "type": "numeric",
+      "prompt": "En Restricciones lineales: Calcula holgura de 2x+1y≤8 para (2,3): c−ax−by. Introduce resultado numérico exacto sin unidades.",
+      "answer": 1.0,
+      "explanation": "Solución verificada con aritmética exacta: 1. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_constraint_slack",
+        "prerrequisito_b2s_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L02-04",
+      "lesson_id": "B2S-A02-L02",
+      "type": "choice",
+      "prompt": "En Restricciones lineales: ¿Satisface (2,3) simultáneamente 2x+1y≤8, 1x+1y≤6, x,y≥0? Sí/No. Elige la opción válida.",
+      "answer": "Sí",
+      "explanation": "Solución verificada con aritmética exacta: Sí. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_constraint_aggregate",
+        "prerrequisito_b2s_a02"
+      ],
+      "choices": [
+        "No necesariamente",
+        "Sí",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L02-05",
+      "lesson_id": "B2S-A02-L02",
+      "type": "choice",
+      "prompt": "En Restricciones lineales: ¿Debe un punto factible satisfacer TODAS las restricciones simultáneas del modelo lineal? Sí/No. Elige la opción válida.",
+      "answer": "Sí",
+      "explanation": "Solución verificada con aritmética exacta: Sí. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_lp_all_constraints",
+        "prerrequisito_b2s_a02"
+      ],
+      "choices": [
+        "Sí",
+        "No",
+        "No necesariamente"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L03-01",
+      "lesson_id": "B2S-A02-L03",
+      "type": "numeric",
+      "prompt": "En Región factible: Intersección de x=4 con x+y=6. Calcula coordenada y. Introduce resultado numérico exacto sin unidades.",
+      "answer": 2.0,
+      "explanation": "Solución verificada con aritmética exacta: 2. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_vertex_intersection_y",
+        "prerrequisito_b2s_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L03-02",
+      "lesson_id": "B2S-A02-L03",
+      "type": "numeric",
+      "prompt": "En Región factible: Intersección de y=3 con x+y=6. Calcula coordenada x. Introduce resultado numérico exacto sin unidades.",
+      "answer": 3.0,
+      "explanation": "Solución verificada con aritmética exacta: 3. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_vertex_intersection_x",
+        "prerrequisito_b2s_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L03-03",
+      "lesson_id": "B2S-A02-L03",
+      "type": "choice",
+      "prompt": "En Región factible: ¿Es factible (4,3) para la inecuación 1x+1y≤6? Sí/No. Elige la opción válida.",
+      "answer": "No",
+      "explanation": "Solución verificada con aritmética exacta: No. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_constraint_check",
+        "prerrequisito_b2s_a02"
+      ],
+      "choices": [
+        "No necesariamente",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L03-04",
+      "lesson_id": "B2S-A02-L03",
+      "type": "choice",
+      "prompt": "En Región factible: ¿La intersección de dos fronteras es forzosamente factible para todas las demás inecuaciones? Sí/No. Elige la opción válida.",
+      "answer": "No",
+      "explanation": "Solución verificada con aritmética exacta: No. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_lp_intersection_always_feasible",
+        "prerrequisito_b2s_a02"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No necesariamente"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L03-05",
+      "lesson_id": "B2S-A02-L03",
+      "type": "choice",
+      "prompt": "En Región factible: Para x,y≥0, x≤4, y≤3, x+y≤6, ¿cuántos VÉRTICES distintos tiene la región poligonal? Elige la opción válida.",
+      "answer": "5",
+      "explanation": "Solución verificada con aritmética exacta: 5. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_polygon_vertex_count",
+        "prerrequisito_b2s_a02"
+      ],
+      "choices": [
+        "6",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L04-01",
+      "lesson_id": "B2S-A02-L04",
+      "type": "numeric",
+      "prompt": "En Vértices y función objetivo: En Z=3x+5y euros, calcula el objetivo en (x,y)=(4,2). Introduce resultado numérico exacto sin unidades.",
+      "answer": 22.0,
+      "explanation": "Solución verificada con aritmética exacta: 22. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_objective",
+        "prerrequisito_b2s_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L04-02",
+      "lesson_id": "B2S-A02-L04",
+      "type": "numeric",
+      "prompt": "En Vértices y función objetivo: En Z=3x+5y euros, calcula el objetivo en (x,y)=(3,3). Introduce resultado numérico exacto sin unidades.",
+      "answer": 24.0,
+      "explanation": "Solución verificada con aritmética exacta: 24. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_objective",
+        "prerrequisito_b2s_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L04-03",
+      "lesson_id": "B2S-A02-L04",
+      "type": "numeric",
+      "prompt": "En Vértices y función objetivo: Maximiza Z=3x+5y sobre vértices (0,0),(4,0),(4,2),(3,3),(0,3). Calcula VALOR máximo. Introduce resultado numérico exacto sin unidades.",
+      "answer": 24.0,
+      "explanation": "Solución verificada con aritmética exacta: 24. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_optimum_polygon",
+        "prerrequisito_b2s_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L04-04",
+      "lesson_id": "B2S-A02-L04",
+      "type": "choice",
+      "prompt": "En Vértices y función objetivo: Maximiza Z=3x+5y sobre vértices (0,0),(4,0),(4,2),(3,3),(0,3). Identifica vértice óptimo: 3,3; 4,2; 0,3. Elige la opción válida.",
+      "answer": "3,3",
+      "explanation": "Solución verificada con aritmética exacta: 3,3. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_optimum_polygon_vertex",
+        "prerrequisito_b2s_a02"
+      ],
+      "choices": [
+        "4,2",
+        "0,3",
+        "3,3"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L04-05",
+      "lesson_id": "B2S-A02-L04",
+      "type": "choice",
+      "prompt": "En Vértices y función objetivo: ¿Toda región factible NO ACOTADA garantiza un máximo FINITO de una función lineal? Sí/No. Elige la opción válida.",
+      "answer": "No",
+      "explanation": "Solución verificada con aritmética exacta: No. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_lp_unbounded_guarantees_max",
+        "prerrequisito_b2s_a02"
+      ],
+      "choices": [
+        "No necesariamente",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L05-01",
+      "lesson_id": "B2S-A02-L05",
+      "type": "numeric",
+      "prompt": "En Optimización gráfica: Maximiza Z=1x+1y sobre vértices (0,0),(4,0),(4,2),(3,3),(0,3). Calcula VALOR máximo. Introduce resultado numérico exacto sin unidades.",
+      "answer": 6.0,
+      "explanation": "Solución verificada con aritmética exacta: 6. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_optimum_polygon",
+        "prerrequisito_b2s_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L05-02",
+      "lesson_id": "B2S-A02-L05",
+      "type": "numeric",
+      "prompt": "En Optimización gráfica: En Z=1x+1y euros, calcula el objetivo en (x,y)=(4,2). Introduce resultado numérico exacto sin unidades.",
+      "answer": 6.0,
+      "explanation": "Solución verificada con aritmética exacta: 6. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_objective",
+        "prerrequisito_b2s_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L05-03",
+      "lesson_id": "B2S-A02-L05",
+      "type": "numeric",
+      "prompt": "En Optimización gráfica: En Z=1x+1y euros, calcula el objetivo en (x,y)=(3,3). Introduce resultado numérico exacto sin unidades.",
+      "answer": 6.0,
+      "explanation": "Solución verificada con aritmética exacta: 6. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_objective",
+        "prerrequisito_b2s_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L05-04",
+      "lesson_id": "B2S-A02-L05",
+      "type": "choice",
+      "prompt": "En Optimización gráfica: Si Z=x+y se maximiza con x+y≤6, x≤4, y≤3, x,y≥0, ¿hay obligatoriamente óptimo ÚNICO? Sí/No. Elige la opción válida.",
+      "answer": "No",
+      "explanation": "Solución verificada con aritmética exacta: No. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_lp_unique_optimum",
+        "prerrequisito_b2s_a02"
+      ],
+      "choices": [
+        "No necesariamente",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L05-05",
+      "lesson_id": "B2S-A02-L05",
+      "type": "choice",
+      "prompt": "En Optimización gráfica: Si las restricciones lineales forman una región factible VACÍA, ¿puede existir solución factible? Sí/No. Elige la opción válida.",
+      "answer": "No",
+      "explanation": "Solución verificada con aritmética exacta: No. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_lp_empty_has_solution",
+        "prerrequisito_b2s_a02"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No necesariamente"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L06-01",
+      "lesson_id": "B2S-A02-L06",
+      "type": "numeric",
+      "prompt": "En Interpretación económica y sensibilidad inicial: Maximiza Z=5x+3y sobre vértices (0,0),(4,0),(4,2),(3,3),(0,3). Calcula VALOR máximo. Introduce resultado numérico exacto sin unidades.",
+      "answer": 26.0,
+      "explanation": "Solución verificada con aritmética exacta: 26. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_optimum_polygon",
+        "prerrequisito_b2s_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L06-02",
+      "lesson_id": "B2S-A02-L06",
+      "type": "numeric",
+      "prompt": "En Interpretación económica y sensibilidad inicial: En Z=5x+3y euros, calcula el objetivo en (x,y)=(4,2). Introduce resultado numérico exacto sin unidades.",
+      "answer": 26.0,
+      "explanation": "Solución verificada con aritmética exacta: 26. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_objective",
+        "prerrequisito_b2s_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L06-03",
+      "lesson_id": "B2S-A02-L06",
+      "type": "numeric",
+      "prompt": "En Interpretación económica y sensibilidad inicial: En Z=5x+3y euros, calcula el objetivo en (x,y)=(3,3). Introduce resultado numérico exacto sin unidades.",
+      "answer": 24.0,
+      "explanation": "Solución verificada con aritmética exacta: 24. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_objective",
+        "prerrequisito_b2s_a02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L06-04",
+      "lesson_id": "B2S-A02-L06",
+      "type": "choice",
+      "prompt": "En Interpretación económica y sensibilidad inicial: ¿Cambiar Z=3x+5y por Z=5x+3y conserva NECESARIAMENTE el mismo vértice óptimo? Sí/No. Elige la opción válida.",
+      "answer": "No",
+      "explanation": "Solución verificada con aritmética exacta: No. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_lp_changed_objective_same_optimum",
+        "prerrequisito_b2s_a02"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No necesariamente"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-A02-L06-05",
+      "lesson_id": "B2S-A02-L06",
+      "type": "choice",
+      "prompt": "En Interpretación económica y sensibilidad inicial: ¿Una solución óptima FRACCIONARIA de programación lineal continua representa siempre un número válido de piezas indivisibles? Sí/No. Elige la opción válida.",
+      "answer": "No",
+      "explanation": "Solución verificada con aritmética exacta: No. Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones. Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_lp_continuous_always_integer",
+        "prerrequisito_b2s_a02"
+      ],
+      "choices": [
+        "Sí",
+        "No necesariamente",
+        "No"
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B2S-A02-L01-01": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "objective",
+        "params": [
+          3,
+          5,
+          2,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: objective"
+    },
+    "F3-B2S-A02-L01-02": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "objective",
+        "params": [
+          3,
+          5,
+          4,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: objective"
+    },
+    "F3-B2S-A02-L01-03": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "objective",
+        "params": [
+          5,
+          3,
+          3,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: objective"
+    },
+    "F3-B2S-A02-L01-04": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "lp_nonnegative",
+        "params": [
+          -1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: lp_nonnegative"
+    },
+    "F3-B2S-A02-L01-05": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "lp_objective_is_constraint",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: lp_objective_is_constraint"
+    },
+    "F3-B2S-A02-L02-01": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "constraint_check",
+        "params": [
+          2,
+          1,
+          8,
+          2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: constraint_check"
+    },
+    "F3-B2S-A02-L02-02": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "constraint_check",
+        "params": [
+          2,
+          1,
+          8,
+          4,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: constraint_check"
+    },
+    "F3-B2S-A02-L02-03": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "constraint_slack",
+        "params": [
+          2,
+          1,
+          8,
+          2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: constraint_slack"
+    },
+    "F3-B2S-A02-L02-04": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "constraint_aggregate",
+        "params": [
+          2,
+          1,
+          8,
+          1,
+          1,
+          6,
+          2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: constraint_aggregate"
+    },
+    "F3-B2S-A02-L02-05": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "lp_all_constraints",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: lp_all_constraints"
+    },
+    "F3-B2S-A02-L03-01": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "vertex_intersection_y",
+        "params": [
+          4,
+          6
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: vertex_intersection_y"
+    },
+    "F3-B2S-A02-L03-02": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "vertex_intersection_x",
+        "params": [
+          3,
+          6
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: vertex_intersection_x"
+    },
+    "F3-B2S-A02-L03-03": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "constraint_check",
+        "params": [
+          1,
+          1,
+          6,
+          4,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: constraint_check"
+    },
+    "F3-B2S-A02-L03-04": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "lp_intersection_always_feasible",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: lp_intersection_always_feasible"
+    },
+    "F3-B2S-A02-L03-05": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "polygon_vertex_count",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: polygon_vertex_count"
+    },
+    "F3-B2S-A02-L04-01": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "objective",
+        "params": [
+          3,
+          5,
+          4,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: objective"
+    },
+    "F3-B2S-A02-L04-02": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "objective",
+        "params": [
+          3,
+          5,
+          3,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: objective"
+    },
+    "F3-B2S-A02-L04-03": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "optimum_polygon",
+        "params": [
+          3,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: optimum_polygon"
+    },
+    "F3-B2S-A02-L04-04": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "optimum_polygon_vertex",
+        "params": [
+          3,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: optimum_polygon_vertex"
+    },
+    "F3-B2S-A02-L04-05": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "lp_unbounded_guarantees_max",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: lp_unbounded_guarantees_max"
+    },
+    "F3-B2S-A02-L05-01": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "optimum_polygon",
+        "params": [
+          1,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: optimum_polygon"
+    },
+    "F3-B2S-A02-L05-02": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "objective",
+        "params": [
+          1,
+          1,
+          4,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: objective"
+    },
+    "F3-B2S-A02-L05-03": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "objective",
+        "params": [
+          1,
+          1,
+          3,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: objective"
+    },
+    "F3-B2S-A02-L05-04": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "lp_unique_optimum",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: lp_unique_optimum"
+    },
+    "F3-B2S-A02-L05-05": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "lp_empty_has_solution",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: lp_empty_has_solution"
+    },
+    "F3-B2S-A02-L06-01": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "optimum_polygon",
+        "params": [
+          5,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: optimum_polygon"
+    },
+    "F3-B2S-A02-L06-02": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "objective",
+        "params": [
+          5,
+          3,
+          4,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: objective"
+    },
+    "F3-B2S-A02-L06-03": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "objective",
+        "params": [
+          5,
+          3,
+          3,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: objective"
+    },
+    "F3-B2S-A02-L06-04": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "lp_changed_objective_same_optimum",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: lp_changed_objective_same_optimum"
+    },
+    "F3-B2S-A02-L06-05": {
+      "hints": [
+        "Escribe todas las inecuaciones, comprueba dominio x,y≥0 y sustituye puntos en las restricciones.",
+        "Calcula las intersecciones exactas, descarta puntos no factibles y compara Z=ax+by en cada vértice; comprueba óptimos múltiples, ausencia de cotas y unidades."
+      ],
+      "math_check": {
+        "kind": "lp_continuous_always_integer",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: lp_continuous_always_integer"
+    }
+  }
+}

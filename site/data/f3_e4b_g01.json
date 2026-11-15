@@ -1,0 +1,654 @@
+{
+  "unit_id": "E4B-G01",
+  "unit_title": "Trigonometría en triángulos",
+  "product_phase": "F3_OLA8",
+  "version": "0.8.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Definir seno, coseno y tangente de un ángulo agudo en triángulo rectángulo.",
+    "Calcular lados con una razón trigonométrica y un ángulo conocido.",
+    "Resolver un triángulo rectángulo con datos suficientes."
+  ],
+  "warnings": [
+    "Material educativo sintético editorial EN REVISIÓN, no homologado.",
+    "No declarar revisión matemática, didáctica ni cotejo autonómico sin evidencias humanas.",
+    "Trabajar con valores exactos y ángulos orientados; el redondeo debe declararse."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Semejanza y Pitágoras de 2.º ESO",
+      "lesson_id": "E2-G01-L04",
+      "href": "#/curso/E2/unidad/E2-G01/leccion/E2-G01-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Comprender, practicar, recuperar sin ayuda y revisar con intervalo voluntario."
+  },
+  "source_note": "RD 217/2022 Matemáticas 4.º ESO y RD 243/2022 Matemáticas I Bachillerato; cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E4B-G01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.8.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-G01:C01"
+      ],
+      "objectives": [
+        "Definir seno, coseno y tangente de un ángulo agudo en triángulo rectángulo.",
+        "Identificar el cateto opuesto y el adyacente respecto del ángulo escogido."
+      ],
+      "prerequisites": [
+        "E2-G01-L04",
+        "E2-G01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para un ángulo agudo θ en un triángulo rectángulo, seno es cateto opuesto dividido por hipotenusa; coseno es cateto adyacente dividido por hipotenusa; tangente es opuesto dividido por adyacente. Hipotenusa es el lado frente al ángulo recto y siempre el mayor. Los papeles de opuesto y adyacente cambian al cambiar θ, pero la hipotenusa no. Los cocientes son adimensionales y dependen del ángulo, no del tamaño del triángulo semejante. Para 0° y 90° algunas razones requieren tratamiento de límites o no están definidas."
+        },
+        {
+          "type": "example",
+          "body": "En el triángulo rectángulo de catetos 3 y 4 e hipotenusa 5, para el ángulo frente al cateto 3: sen θ = 3/5, cos θ = 4/5 y tan θ = 3/4."
+        },
+        {
+          "type": "example",
+          "body": "En el mismo triángulo, para el otro ángulo agudo: sen φ = 4/5 y cos φ = 3/5. Intercambiar el ángulo altera los catetos de referencia."
+        },
+        {
+          "type": "figure",
+          "body": "Razones trigonométricas en triángulo 3–4–5. Representación geométrica con tabla de valores y relaciones matemáticas exactas. Las escalas ilustrativas no sustituyen las condiciones del enunciado.",
+          "alt": "Razones trigonométricas en triángulo 3–4–5. Todos los ángulos, lados, signos y cocientes representados se describen en una tabla semántica alternativa debajo del gráfico.",
+          "visual_spec": {
+            "kind": "right_trig",
+            "title": "Razones trigonométricas en triángulo 3–4–5",
+            "rows": [
+              [
+                "Opuesto a θ",
+                "3"
+              ],
+              [
+                "Adyacente a θ",
+                "4"
+              ],
+              [
+                "Hipotenusa",
+                "5"
+              ],
+              [
+                "sen θ / cos θ / tan θ",
+                "3/5 ; 4/5 ; 3/4"
+              ]
+            ],
+            "a": 4,
+            "b": 3,
+            "c": 5,
+            "angle": "θ"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es siempre el lado 3 el cateto opuesto?||No: depende del ángulo elegido. Para θ opuesto a 3 sí, para el otro ángulo no."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Para un ángulo agudo θ en un triángulo rectángulo, seno es cateto opuesto dividido por hipotenusa; coseno es cateto adyacente dividido por hipotenusa; tangente es opuesto dividido por adyacente. Revisa las condiciones geométricas, el cuadrante o intervalo y la exactitud antes de calcular otro caso sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-G01-L01-01",
+        "F3-E4B-G01-L01-02",
+        "F3-E4B-G01-L01-03",
+        "F3-E4B-G01-L01-04",
+        "F3-E4B-G01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; y RD 243/2022, anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; contenido didáctico original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-G01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.8.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-G01:C02"
+      ],
+      "objectives": [
+        "Calcular lados con una razón trigonométrica y un ángulo conocido.",
+        "Conservar expresiones exactas con raíces en ángulos notables."
+      ],
+      "prerequisites": [
+        "E4B-G01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si se conocen un ángulo agudo y un lado de un triángulo rectángulo, las razones trigonométricas permiten hallar los otros lados. Para 30°, 45° y 60° existen valores exactos: sen 30°=1/2, cos 30°=√3/2, tan 45°=1 y sen 60°=√3/2. Si el lado pedido depende de √3, la expresión exacta se conserva sin sustituirla por 1,73. Antes de multiplicar o dividir comprueba si el dato es cateto opuesto, adyacente o hipotenusa."
+        },
+        {
+          "type": "example",
+          "body": "Hipotenusa 10 cm y ángulo 30°: cateto opuesto = 10×sen 30°=5 cm."
+        },
+        {
+          "type": "example",
+          "body": "Cateto adyacente 6 m y ángulo 45°: cateto opuesto = 6×tan 45°=6 m."
+        },
+        {
+          "type": "figure",
+          "body": "Lados en triángulo 30°, 60°, 90°. Representación geométrica con tabla de valores y relaciones matemáticas exactas. Las escalas ilustrativas no sustituyen las condiciones del enunciado.",
+          "alt": "Lados en triángulo 30°, 60°, 90°. Todos los ángulos, lados, signos y cocientes representados se describen en una tabla semántica alternativa debajo del gráfico.",
+          "visual_spec": {
+            "kind": "right_trig",
+            "title": "Lados en triángulo 30°, 60°, 90°",
+            "rows": [
+              [
+                "Ángulo",
+                "30°"
+              ],
+              [
+                "Hipotenusa",
+                "10 cm"
+              ],
+              [
+                "Cateto opuesto",
+                "5 cm"
+              ],
+              [
+                "Cateto adyacente",
+                "5√3 cm"
+              ]
+            ],
+            "a": 8.660254037844386,
+            "b": 5,
+            "c": 10,
+            "angle": "30°"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué con hipotenusa 12 y ángulo 30° el opuesto no es 24?||Porque el seno es opuesto/hipotenusa: opuesto=12×1/2=6."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Si se conocen un ángulo agudo y un lado de un triángulo rectángulo, las razones trigonométricas permiten hallar los otros lados. Revisa las condiciones geométricas, el cuadrante o intervalo y la exactitud antes de calcular otro caso sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-G01-L02-01",
+        "F3-E4B-G01-L02-02",
+        "F3-E4B-G01-L02-03",
+        "F3-E4B-G01-L02-04",
+        "F3-E4B-G01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; y RD 243/2022, anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; contenido didáctico original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-G01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.8.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-G01:C03"
+      ],
+      "objectives": [
+        "Resolver un triángulo rectángulo con datos suficientes.",
+        "Comprobar lados mediante Pitágoras y complementariedad angular."
+      ],
+      "prerequisites": [
+        "E4B-G01-L02",
+        "E2-G01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Resolver un triángulo rectángulo significa encontrar lados y ángulos desconocidos, siempre partiendo de datos suficientes. Sus dos ángulos agudos suman 90°. Si conocemos ambos catetos, la hipotenusa sale por Pitágoras; si conocemos un ángulo notable y un lado, podemos aplicar seno, coseno o tangente. Comprobar que el resultado respeta desigualdades y unidades evita errores. Si se usa una aproximación de un ángulo no notable, debe declararse el redondeo y no reemplazar un valor aproximado por igualdad exacta."
+        },
+        {
+          "type": "example",
+          "body": "Catetos 6 y 8 cm: hipotenusa 10 cm por Pitágoras; la razón opuesto/adyacente desde el cateto 6 es 6/8=3/4."
+        },
+        {
+          "type": "example",
+          "body": "Un triángulo rectángulo con ángulo agudo de 35° tiene el otro ángulo agudo de 55°, pues 35+55=90."
+        },
+        {
+          "type": "figure",
+          "body": "Triángulo rectángulo de catetos 6 y 8. Representación geométrica con tabla de valores y relaciones matemáticas exactas. Las escalas ilustrativas no sustituyen las condiciones del enunciado.",
+          "alt": "Triángulo rectángulo de catetos 6 y 8. Todos los ángulos, lados, signos y cocientes representados se describen en una tabla semántica alternativa debajo del gráfico.",
+          "visual_spec": {
+            "kind": "right_trig",
+            "title": "Triángulo rectángulo de catetos 6 y 8",
+            "rows": [
+              [
+                "Cateto 1",
+                "6"
+              ],
+              [
+                "Cateto 2",
+                "8"
+              ],
+              [
+                "Hipotenusa",
+                "10"
+              ],
+              [
+                "Comprobación",
+                "6²+8²=10²"
+              ]
+            ],
+            "a": 8,
+            "b": 6,
+            "c": 10,
+            "angle": "θ"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se pueden tener ángulos 60°, 40° y 90° en un triángulo rectángulo?||No; suman 190°, pero deben sumar 180°."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Resolver un triángulo rectángulo significa encontrar lados y ángulos desconocidos, siempre partiendo de datos suficientes. Revisa las condiciones geométricas, el cuadrante o intervalo y la exactitud antes de calcular otro caso sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-G01-L03-01",
+        "F3-E4B-G01-L03-02",
+        "F3-E4B-G01-L03-03",
+        "F3-E4B-G01-L03-04",
+        "F3-E4B-G01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; y RD 243/2022, anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; contenido didáctico original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-G01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.8.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-G01:C04"
+      ],
+      "objectives": [
+        "Relacionar pendiente de una recta con tangente del ángulo de inclinación.",
+        "Distinguir pendiente positiva, negativa, nula e indefinida."
+      ],
+      "prerequisites": [
+        "E4B-G01-L01",
+        "E2-F01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La pendiente de una recta no vertical es cambio vertical dividido entre cambio horizontal, con unidades compatibles. Es igual a la tangente de su ángulo de inclinación α respecto del semieje horizontal positivo cuando α está entre 0° y 180°, excluido 90° para rectas verticales. Para una subida de 3 m por cada 4 m horizontales, pendiente=3/4 y su inclinación es aguda. Una pendiente negativa describe una recta descendente de izquierda a derecha, y una recta vertical tiene pendiente indefinida; la pendiente no equivale al porcentaje salvo tras multiplicar por cien."
+        },
+        {
+          "type": "example",
+          "body": "Una rampa sube 2 m por cada 10 m horizontales: pendiente 2/10=0,2 y pendiente porcentual 20%."
+        },
+        {
+          "type": "example",
+          "body": "Una recta a 45° respecto del eje horizontal positivo tiene pendiente tan 45°=1."
+        },
+        {
+          "type": "figure",
+          "body": "Pendiente = desnivel / distancia horizontal. Representación geométrica con tabla de valores y relaciones matemáticas exactas. Las escalas ilustrativas no sustituyen las condiciones del enunciado.",
+          "alt": "Pendiente = desnivel / distancia horizontal. Todos los ángulos, lados, signos y cocientes representados se describen en una tabla semántica alternativa debajo del gráfico.",
+          "visual_spec": {
+            "kind": "slope",
+            "title": "Pendiente = desnivel / distancia horizontal",
+            "rows": [
+              [
+                "Desnivel vertical",
+                "3 m"
+              ],
+              [
+                "Recorrido horizontal",
+                "4 m"
+              ],
+              [
+                "Pendiente",
+                "3/4"
+              ],
+              [
+                "Pendiente porcentual",
+                "75%"
+              ]
+            ],
+            "rise": 3,
+            "run": 4
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una pendiente del 12% equivale a un ángulo de 12°?||No; significa desnivel/horizontal=0,12 y el ángulo requiere una tangente inversa."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: La pendiente de una recta no vertical es cambio vertical dividido entre cambio horizontal, con unidades compatibles. Revisa las condiciones geométricas, el cuadrante o intervalo y la exactitud antes de calcular otro caso sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-G01-L04-01",
+        "F3-E4B-G01-L04-02",
+        "F3-E4B-G01-L04-03",
+        "F3-E4B-G01-L04-04",
+        "F3-E4B-G01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; y RD 243/2022, anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; contenido didáctico original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-G01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.8.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-G01:C05"
+      ],
+      "objectives": [
+        "Modelizar alturas y distancias con un triángulo rectángulo.",
+        "Identificar nivel de observación y perpendicularidad en el modelo."
+      ],
+      "prerequisites": [
+        "E4B-G01-L04",
+        "E2-G01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para medir una altura inaccesible se puede formar un triángulo rectángulo con la horizontal, una vertical y la línea de visión. La tangente del ángulo de elevación relaciona la altura por encima de los ojos del observador con la distancia horizontal. Si el instrumento está a una altura conocida sobre el suelo, se suma esa altura al desnivel calculado. El ángulo de depresión también se mide desde la horizontal; no desde la vertical. La superficie ha de ser aproximadamente horizontal y el objeto vertical para usar el modelo simple."
+        },
+        {
+          "type": "example",
+          "body": "A 12 m horizontales de una pared y con elevación 45°: el desnivel sobre los ojos es 12×tan45°=12 m."
+        },
+        {
+          "type": "example",
+          "body": "Si los ojos están a 1,5 m del suelo, y el desnivel observado es 12 m, la altura total de la pared es 13,5 m."
+        },
+        {
+          "type": "figure",
+          "body": "Altura de pared por elevación de 45°. Representación geométrica con tabla de valores y relaciones matemáticas exactas. Las escalas ilustrativas no sustituyen las condiciones del enunciado.",
+          "alt": "Altura de pared por elevación de 45°. Todos los ángulos, lados, signos y cocientes representados se describen en una tabla semántica alternativa debajo del gráfico.",
+          "visual_spec": {
+            "kind": "elevation",
+            "title": "Altura de pared por elevación de 45°",
+            "rows": [
+              [
+                "Distancia horizontal",
+                "12 m"
+              ],
+              [
+                "Ángulo de elevación",
+                "45°"
+              ],
+              [
+                "Desnivel sobre observador",
+                "12 m"
+              ],
+              [
+                "Altura de ojos en otro ejemplo",
+                "1,5 m"
+              ]
+            ],
+            "rise": 12,
+            "run": 12
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si el ángulo es 45° y el observador está a 8 m, ¿la altura calculada se refiere directamente al suelo?||No siempre: primero se calcula la diferencia de altura respecto al nivel de observación."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Para medir una altura inaccesible se puede formar un triángulo rectángulo con la horizontal, una vertical y la línea de visión. Revisa las condiciones geométricas, el cuadrante o intervalo y la exactitud antes de calcular otro caso sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-G01-L05-01",
+        "F3-E4B-G01-L05-02",
+        "F3-E4B-G01-L05-03",
+        "F3-E4B-G01-L05-04",
+        "F3-E4B-G01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; y RD 243/2022, anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; contenido didáctico original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-G01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.8.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-G01:C06"
+      ],
+      "objectives": [
+        "Resolver problemas de trigonometría con conversión de unidades.",
+        "Comprobar que lados y resultados corresponden a la magnitud solicitada."
+      ],
+      "prerequisites": [
+        "E4B-G01-L02",
+        "E1-M01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En problemas trigonométricos contextualizados identifica primero qué mide cada dato, convierte todas las distancias a una unidad coherente y después aplica la razón apropiada. Las razones de seno, coseno y tangente son adimensionales, pero los lados y alturas resultantes deben llevar unidades. Si se emplea una razón trigonométrica con ángulo de 30° o 45°, conserva el resultado exacto siempre que sea posible. No confundas un trayecto por catetos con una línea de visión oblicua."
+        },
+        {
+          "type": "example",
+          "body": "Una rampa de 10 m inclinada 30° alcanza un desnivel de 10×sen30°=5 m."
+        },
+        {
+          "type": "example",
+          "body": "Una escalera de 500 cm apoyada a 30° sobre el suelo alcanza 250 cm = 2,5 m de altura."
+        },
+        {
+          "type": "figure",
+          "body": "Hipotenusa y altura con unidades coherentes. Representación geométrica con tabla de valores y relaciones matemáticas exactas. Las escalas ilustrativas no sustituyen las condiciones del enunciado.",
+          "alt": "Hipotenusa y altura con unidades coherentes. Todos los ángulos, lados, signos y cocientes representados se describen en una tabla semántica alternativa debajo del gráfico.",
+          "visual_spec": {
+            "kind": "right_trig",
+            "title": "Hipotenusa y altura con unidades coherentes",
+            "rows": [
+              [
+                "Hipotenusa",
+                "10 m"
+              ],
+              [
+                "Ángulo respecto al suelo",
+                "30°"
+              ],
+              [
+                "Altura perpendicular",
+                "5 m"
+              ],
+              [
+                "Recorrido horizontal",
+                "5√3 m"
+              ]
+            ],
+            "a": 8.660254037844386,
+            "b": 5,
+            "c": 10,
+            "angle": "30°"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué una hipotenusa de 6 m y ángulo de 30° no da una altura de 6 m?||Porque la altura opuesta se calcula con 6×sen30°=3 m."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: En problemas trigonométricos contextualizados identifica primero qué mide cada dato, convierte todas las distancias a una unidad coherente y después aplica la razón apropiada. Revisa las condiciones geométricas, el cuadrante o intervalo y la exactitud antes de calcular otro caso sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-G01-L06-01",
+        "F3-E4B-G01-L06-02",
+        "F3-E4B-G01-L06-03",
+        "F3-E4B-G01-L06-04",
+        "F3-E4B-G01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; y RD 243/2022, anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; contenido didáctico original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

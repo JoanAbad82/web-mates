@@ -1,0 +1,66 @@
+{
+  "version": "0.15.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "B2C-F03",
+      "priority": 1,
+      "why": "Funciones/derivadas B2C-F02 desarrolladas F3-14."
+    },
+    {
+      "unit_id": "E4A-A01",
+      "priority": 2,
+      "why": "Álgebra E3-A01 y funciones E3-F01 desarrolladas; base de modelos para Matemáticas 4ºA."
+    },
+    {
+      "unit_id": "E4A-F01",
+      "priority": 3,
+      "why": "E3-F01→E4A-F01 arista canónica y E4A-A01 completada antes en F3-15."
+    }
+  ],
+  "not_selected": [
+    {
+      "unit_id": "B1S-F01",
+      "why": "Álgebra y porcentajes: E4A-A02, E4A-P01 y B1S-A01 siguen sin desarrollo suficiente; no se supone que E4A-F01 cubra todos."
+    }
+  ],
+  "canonical_edges_highlight": [
+    {
+      "from": "E3-F01",
+      "to": "E4A-F01"
+    }
+  ],
+  "new_editorial_edges": [
+    {
+      "from": "E3-A01",
+      "to": "E4A-A01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Lenguaje algebraico previo para modelización cotidiana."
+    },
+    {
+      "from": "E3-F01",
+      "to": "E4A-A01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Funciones de 3º para modelos lineales, cuadráticos y lectura de gráficas."
+    },
+    {
+      "from": "E4A-A01",
+      "to": "E4A-F01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Las funciones contextualizadas requieren modelos algebraicos E4A-A01."
+    },
+    {
+      "from": "B2C-F02",
+      "to": "B2C-F03",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Integración como operación inversa de derivación y preparación de áreas."
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 40,
+  "regional_mapping": "NO VERIFICADO: relaciones editoriales, no equivalen a requisitos oficiales."
+}

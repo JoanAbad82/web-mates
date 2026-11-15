@@ -1,0 +1,117 @@
+{
+  "version": "2026-11-14-F3-28",
+  "source_of_truth": "sources/Catalogo_Matematicas_LOMLOE_85_unidades_2026.json",
+  "base_f3_27_sha256": "479fd16d0d395cf7acbf668991e8e1a86f72fb2250fd9d1e6fb60b5f02c02656",
+  "baseline": {
+    "courses": 9,
+    "units": 85,
+    "canonical_lessons": 505,
+    "covered_units": 80,
+    "covered_lessons": 475,
+    "exercises_created": 2375,
+    "units_remaining": 5,
+    "lessons_remaining": 30
+  },
+  "wave28_plan": {
+    "selected_in_dependency_order": [
+      "E4B-N01",
+      "B1C-N01",
+      "E4A-G01"
+    ],
+    "lessons": 18,
+    "exercises": 90,
+    "proposed_editorial_edges": [
+      {
+        "from": "E3-N01",
+        "to": "E4B-N01",
+        "status": "propuesta_editorial",
+        "why": "Números reales, intervalos y aproximaciones de 3.º previos a reales y radicales 4.º B."
+      },
+      {
+        "from": "E4B-N01",
+        "to": "B1C-N01",
+        "status": "propuesta_editorial",
+        "why": "Reales, radicales y logaritmos de apoyo 4.º B preceden a complejos de Matemáticas I."
+      },
+      {
+        "from": "E4B-A01",
+        "to": "B1C-N01",
+        "status": "propuesta_editorial",
+        "why": "Polinomios y transformaciones algebraicas de 4.º B para raíces y operaciones de complejos."
+      },
+      {
+        "from": "E3-G01",
+        "to": "E4A-G01",
+        "status": "propuesta_editorial",
+        "why": "Coordenadas, distancia y pendientes de 3.º para geometría aplicada de 4.º A."
+      }
+    ]
+  },
+  "after_wave28_if_all_gates_pass": {
+    "covered_units": 83,
+    "covered_lessons": 493,
+    "exercises_created": 2465,
+    "units_remaining": 2,
+    "lessons_remaining": 12,
+    "content_state": "EN REVISION; F4 no verificada"
+  },
+  "remaining_units": [
+    {
+      "unit_id": "B2C-G03",
+      "title": "Métrica espacial",
+      "course_code": "B2C",
+      "lesson_count": 6,
+      "prerequisites_text": "Rectas y planos",
+      "canonical_predecessors": [],
+      "status_at_F3_23": "solo_titulo",
+      "target_F3_24": false,
+      "status_after_F3_24_if_verified": "solo_titulo",
+      "workstream": "Precursores numéricos, medidas y geometría"
+    },
+    {
+      "unit_id": "B1S-P01",
+      "title": "Matemática financiera I",
+      "course_code": "B1S",
+      "lesson_count": 6,
+      "prerequisites_text": "Proporcionalidad y potencias",
+      "canonical_predecessors": [],
+      "status_at_F3_23": "solo_titulo",
+      "target_F3_24": false,
+      "status_after_F3_24_if_verified": "solo_titulo",
+      "workstream": "Cadena cuarto ESO A y MACS I"
+    }
+  ],
+  "phase_F4_acceptance_gates": [
+    {
+      "id": "F4-CURR",
+      "goal": "Revisión humana matemática, didáctica y mapeo oficial por territorio de todas las unidades",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Actas y resultados identificados por lección/versión/currículo; cotejo RD y Cataluña, sin inventar códigos"
+    },
+    {
+      "id": "F4-ACCESS",
+      "goal": "Accesibilidad WCAG 2.2 AA, lectores de pantalla y móvil físico",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Pruebas con teclado, zoom, contraste, lectores, Android/iOS, 320px, dispositivos y hallazgos corregidos"
+    },
+    {
+      "id": "F4-SEC",
+      "goal": "Privacidad y seguridad sin datos personales de menores no autorizados",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Inventario de flujos, rechazo entradas, borrado local, permisos, dependencias, control red e incidentes"
+    },
+    {
+      "id": "F4-LEARN",
+      "goal": "Pruebas de aprendizaje, distractores, feedback, espaciado y revisión de todas las soluciones",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Oráculos independientes, muestras revisadas, pruebas usuario proporcionadas voluntariamente sin identificar menores"
+    },
+    {
+      "id": "F4-RELEASE",
+      "goal": "Preparación de despliegue reversible, rendimiento, pruebas integrales y autorización de publicar",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Build reproducible, hashes, rollback y pruebas multidispositivo; permiso específico posterior antes de publicar"
+    }
+  ],
+  "publication_state": "BLOQUEADA HASTA F4 Y AUTORIZACIÓN EXPRESA"
+}

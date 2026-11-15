@@ -1,0 +1,980 @@
+{
+  "unit_id": "E3-G02",
+  "version": "0.27.0",
+  "status": "revision",
+  "notice": "Cinco ejercicios por lección; contenidos sintéticos con revisión humana F4 pendiente.",
+  "activities": [
+    {
+      "exercise_id": "F3-E3-G02-L01-01",
+      "lesson_id": "E3-G02-L01",
+      "type": "numeric",
+      "prompt": "Homotecia de razón k=2 sobre un segmento de 3 cm: ¿longitud final en cm?",
+      "answer": 6,
+      "explanation": "3×|2|=6 cm. Los lados se multiplican por |k|.",
+      "hint": "Identifica el centro y los lados homólogos.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-G02-L01-02",
+      "lesson_id": "E3-G02-L01",
+      "type": "numeric",
+      "prompt": "Homotecia k=−0,5 sobre segmento de 5 cm. ¿Longitud transformada?",
+      "answer": 2.5,
+      "explanation": "Longitud=5×0,5=2,5 cm; el signo afecta a posición.",
+      "hint": "Identifica el centro y los lados homólogos.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-G02-L01-03",
+      "lesson_id": "E3-G02-L01",
+      "type": "numeric",
+      "prompt": "Homotecia de razón k=2: ¿factor multiplicativo de las áreas?",
+      "answer": 4,
+      "explanation": "Las áreas se multiplican por k²=4. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Identifica el centro y los lados homólogos.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-G02-L01-04",
+      "lesson_id": "E3-G02-L01",
+      "type": "choice",
+      "prompt": "En una homotecia de razón negativa, ¿qué pasa con las longitudes?",
+      "answer": "Se multiplican por el valor absoluto de la razón.",
+      "explanation": "Una distancia es no negativa; el signo de k describe disposición respecto del centro.",
+      "hint": "Identifica el centro y los lados homólogos.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Se multiplican por el valor absoluto de la razón.",
+        "Quedan divididas siempre por la razón sin signo.",
+        "Se conservan siempre con independencia de |k|.",
+        "Pasan a ser negativas."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G02-L01-05",
+      "lesson_id": "E3-G02-L01",
+      "type": "choice",
+      "prompt": "¿Qué condición caracteriza lados homólogos de figuras semejantes?",
+      "answer": "Mantienen una misma razón de longitudes y ángulos correspondientes iguales.",
+      "explanation": "La semejanza conserva forma y escala longitudes por un único factor.",
+      "hint": "Identifica el centro y los lados homólogos.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Mantienen una misma razón de longitudes y ángulos correspondientes iguales.",
+        "Todos los lados de todas las figuras son iguales.",
+        "Las áreas son iguales aunque el factor sea 3.",
+        "Cada figura tiene necesariamente el mismo perímetro."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G02-L02-01",
+      "lesson_id": "E3-G02-L02",
+      "type": "numeric",
+      "prompt": "Gira el punto (2,3) 90° antihorario respecto al origen. ¿Coordenada x final?",
+      "answer": -3,
+      "explanation": "En un giro de 90° antihorario x final = −y = −3.",
+      "hint": "Fija explícitamente centro, eje y sentido del giro.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-G02-L02-02",
+      "lesson_id": "E3-G02-L02",
+      "type": "numeric",
+      "prompt": "Gira (2,3) 90° antihorario respecto al origen. ¿Coordenada y final?",
+      "answer": 2,
+      "explanation": "y final = x original = 2. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Fija explícitamente centro, eje y sentido del giro.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-G02-L02-03",
+      "lesson_id": "E3-G02-L02",
+      "type": "numeric",
+      "prompt": "Refleja Q=(4,−1) respecto al eje horizontal. ¿Coordenada y final?",
+      "answer": 1,
+      "explanation": "La reflexión (x,y)→(x,−y) convierte −1 en 1.",
+      "hint": "Fija explícitamente centro, eje y sentido del giro.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-G02-L02-04",
+      "lesson_id": "E3-G02-L02",
+      "type": "choice",
+      "prompt": "¿Qué transformación corresponde a (x,y)→(−y,x)?",
+      "answer": "Giro de 90° antihorario alrededor del origen.",
+      "explanation": "Al girar antihorario x pasa a −y y y pasa a x.",
+      "hint": "Fija explícitamente centro, eje y sentido del giro.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Giro de 90° horario.",
+        "Homotecia de razón 2 respecto al origen.",
+        "Reflexión respecto del eje horizontal.",
+        "Giro de 90° antihorario alrededor del origen."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G02-L02-05",
+      "lesson_id": "E3-G02-L02",
+      "type": "choice",
+      "prompt": "¿Qué conservan reflexión y rotación de una figura?",
+      "answer": "Distancias y ángulos, aunque la reflexión invierte orientación.",
+      "explanation": "Ambas son isometrías; la reflexión invierte orientación.",
+      "hint": "Fija explícitamente centro, eje y sentido del giro.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Distancias y ángulos, aunque la reflexión invierte orientación.",
+        "Las coordenadas x e y de todos los puntos.",
+        "Únicamente el área pero no las distancias.",
+        "La orientación en cualquier reflexión."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G02-L03-01",
+      "lesson_id": "E3-G02-L03",
+      "type": "numeric",
+      "prompt": "P=(2,−3) trasladado por v=(−1,5). ¿Coordenada x final?",
+      "answer": 1,
+      "explanation": "2+(−1)=1. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Resta punto final menos inicial para hallar el vector.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-G02-L03-02",
+      "lesson_id": "E3-G02-L03",
+      "type": "numeric",
+      "prompt": "P=(2,−3) trasladado por v=(−1,5). ¿Coordenada y final?",
+      "answer": 2,
+      "explanation": "−3+5=2. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Resta punto final menos inicial para hallar el vector.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-G02-L03-03",
+      "lesson_id": "E3-G02-L03",
+      "type": "numeric",
+      "prompt": "Compón las traslaciones v1=(3,−2), v2=(−1,4). ¿Componente x total?",
+      "answer": 2,
+      "explanation": "Las componentes se suman 3−1=2. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Resta punto final menos inicial para hallar el vector.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-G02-L03-04",
+      "lesson_id": "E3-G02-L03",
+      "type": "choice",
+      "prompt": "¿Qué representa el vector entre P y su imagen P′ por traslación?",
+      "answer": "Es el mismo vector de desplazamiento aplicado a todos los puntos.",
+      "explanation": "Una traslación desplaza uniformemente todos los puntos.",
+      "hint": "Resta punto final menos inicial para hallar el vector.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "El doble del perímetro de la figura.",
+        "Una razón de homotecia variable.",
+        "Una rotación arbitraria diferente en cada vértice.",
+        "Es el mismo vector de desplazamiento aplicado a todos los puntos."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G02-L03-05",
+      "lesson_id": "E3-G02-L03",
+      "type": "choice",
+      "prompt": "¿Cuál es una propiedad de la traslación?",
+      "answer": "Conserva áreas, distancias y orientación.",
+      "explanation": "La traslación es una isometría orientada.",
+      "hint": "Resta punto final menos inicial para hallar el vector.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Conserva áreas, distancias y orientación.",
+        "Invierte siempre la orientación.",
+        "Convierte cada recta en su perpendicular.",
+        "Multiplica toda longitud por un número arbitrario."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G02-L04-01",
+      "lesson_id": "E3-G02-L04",
+      "type": "numeric",
+      "prompt": "Homotecia k=3: área inicial 4 cm². ¿Área semejante en cm²?",
+      "answer": 36,
+      "explanation": "Multiplicar por k²=9: 4×9=36 cm². El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Clasifica la magnitud en longitud, superficie o volumen.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-G02-L04-02",
+      "lesson_id": "E3-G02-L04",
+      "type": "numeric",
+      "prompt": "Sólidos semejantes k=3: volumen inicial 2 cm³. ¿Volumen final?",
+      "answer": 54,
+      "explanation": "Multiplicar por |k|³=27: 2×27=54 cm³. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Clasifica la magnitud en longitud, superficie o volumen.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-G02-L04-03",
+      "lesson_id": "E3-G02-L04",
+      "type": "numeric",
+      "prompt": "Homotecia k=0,5: área inicial 20 cm². ¿Área final?",
+      "answer": 5,
+      "explanation": "El factor de área es 0,5²=0,25; 20×0,25=5.",
+      "hint": "Clasifica la magnitud en longitud, superficie o volumen.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-G02-L04-04",
+      "lesson_id": "E3-G02-L04",
+      "type": "choice",
+      "prompt": "¿Cómo cambia el volumen de un cuerpo semejante al triplicar todas sus dimensiones?",
+      "answer": "Se multiplica por 27.",
+      "explanation": "Tres dimensiones multiplicadas por 3 generan el factor 3³=27.",
+      "hint": "Clasifica la magnitud en longitud, superficie o volumen.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Se multiplica por 3.",
+        "Se multiplica por 6.",
+        "Se multiplica por 27.",
+        "Se multiplica por 9."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G02-L04-05",
+      "lesson_id": "E3-G02-L04",
+      "type": "choice",
+      "prompt": "Si una semejanza espacial tiene razón lineal 1/2, ¿factor de áreas?",
+      "answer": "1/4.",
+      "explanation": "Las superficies son bidimensionales y se multiplican por (1/2)².",
+      "hint": "Clasifica la magnitud en longitud, superficie o volumen.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "1/8, porque las superficies tienen tres dimensiones.",
+        "1/2, como las longitudes.",
+        "1/4.",
+        "2, porque es una reducción."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G02-L05-01",
+      "lesson_id": "E3-G02-L05",
+      "type": "numeric",
+      "prompt": "Cilindro recto r=2 cm, h=5 cm. Calcula volumen en cm³ usando π; decimal a 3 cifras.",
+      "answer": 62.832,
+      "explanation": "Volumen=π×r²×h=20π≈62,832 cm³. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Dibuja y separa bases y superficie lateral antes de sumar áreas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 0.0006
+    },
+    {
+      "exercise_id": "F3-E3-G02-L05-02",
+      "lesson_id": "E3-G02-L05",
+      "type": "numeric",
+      "prompt": "Cilindro recto r=2 cm, h=5 cm. Área total en cm², decimal a 3 cifras.",
+      "answer": 87.965,
+      "explanation": "Área total=2π×4+2π×2×5=28π≈87,965 cm². El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Dibuja y separa bases y superficie lateral antes de sumar áreas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 0.0006
+    },
+    {
+      "exercise_id": "F3-E3-G02-L05-03",
+      "lesson_id": "E3-G02-L05",
+      "type": "numeric",
+      "prompt": "Cubo de arista 4 cm. ¿Área total en cm²?",
+      "answer": 96,
+      "explanation": "A=6a²=6×4²=96 cm². El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Dibuja y separa bases y superficie lateral antes de sumar áreas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-G02-L05-04",
+      "lesson_id": "E3-G02-L05",
+      "type": "choice",
+      "prompt": "¿Cuál es la fórmula de volumen de un cilindro circular recto?",
+      "answer": "πr²h.",
+      "explanation": "El volumen es el área circular de base multiplicada por la altura.",
+      "hint": "Dibuja y separa bases y superficie lateral antes de sumar áreas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "πr²h.",
+        "2πr²+2πrh, que es el área total.",
+        "2πrh, que es el área lateral.",
+        "πr² sin altura."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G02-L05-05",
+      "lesson_id": "E3-G02-L05",
+      "type": "choice",
+      "prompt": "¿Qué unidad corresponde al volumen de un cuerpo medido en centímetros?",
+      "answer": "Centímetros cúbicos (cm³).",
+      "explanation": "El volumen se obtiene multiplicando tres longitudes.",
+      "hint": "Dibuja y separa bases y superficie lateral antes de sumar áreas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Centímetros lineales (cm).",
+        "Centímetros a la cuarta potencia (cm⁴).",
+        "Centímetros cúbicos (cm³).",
+        "Centímetros cuadrados (cm²)."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G02-L06-01",
+      "lesson_id": "E3-G02-L06",
+      "type": "numeric",
+      "prompt": "Plano de escala 1:25000. Una distancia de 3 cm representa ¿cuántos metros?",
+      "answer": 750,
+      "explanation": "3×25000 cm=75000 cm=750 m. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Dibuja las figuras y anota correspondencias y unidades.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-G02-L06-02",
+      "lesson_id": "E3-G02-L06",
+      "type": "numeric",
+      "prompt": "Triángulo de base 6 cm y altura 4 cm. ¿Área en cm²?",
+      "answer": 12,
+      "explanation": "A=(6×4)/2=12 cm². El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Dibuja las figuras y anota correspondencias y unidades.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-G02-L06-03",
+      "lesson_id": "E3-G02-L06",
+      "type": "numeric",
+      "prompt": "Triángulo semejante de área original 12 cm², k=1,5. ¿Área nueva?",
+      "answer": 27,
+      "explanation": "12×(1,5)²=12×2,25=27 cm². El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Dibuja las figuras y anota correspondencias y unidades.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E3-G02-L06-04",
+      "lesson_id": "E3-G02-L06",
+      "type": "choice",
+      "prompt": "En un plano escala 1:25000, ¿qué cálculo representa 3 cm reales?",
+      "answer": "3 cm medidos representan 75000 cm reales, o 750 m.",
+      "explanation": "La escala lineal transforma 3×25000 cm y después se convierte a metros.",
+      "hint": "Dibuja las figuras y anota correspondencias y unidades.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "3 cm equivalen a 25000 m sin multiplicar por 3.",
+        "3 cm representan solo 750 cm reales.",
+        "3 cm medidos representan 75000 cm reales, o 750 m.",
+        "La escala se aplica directamente como factor de área 25000²."
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G02-L06-05",
+      "lesson_id": "E3-G02-L06",
+      "type": "choice",
+      "prompt": "¿Cómo escala el área entre dos triángulos semejantes de factor lineal k?",
+      "answer": "Por k², porque también se escala la altura.",
+      "explanation": "Área=base×altura/2, y ambas dimensiones cambian con k.",
+      "hint": "Dibuja las figuras y anota correspondencias y unidades.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e3_g02_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Por k, como si el área fuera longitud.",
+        "No cambia si el ángulo es el mismo.",
+        "Por k², porque también se escala la altura.",
+        "Por k³, como si el triángulo fuera un sólido."
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-E3-G02-L01-01": {
+      "hints": [
+        "Identifica el centro y los lados homólogos.",
+        "Longitud nueva = longitud inicial×|k|; área nueva = área inicial×k²."
+      ],
+      "math_check": {
+        "kind": "scale_length",
+        "params": [
+          3,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L01-02": {
+      "hints": [
+        "Identifica el centro y los lados homólogos.",
+        "Longitud nueva = longitud inicial×|k|; área nueva = área inicial×k²."
+      ],
+      "math_check": {
+        "kind": "scale_length",
+        "params": [
+          5,
+          -0.5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L01-03": {
+      "hints": [
+        "Identifica el centro y los lados homólogos.",
+        "Longitud nueva = longitud inicial×|k|; área nueva = área inicial×k²."
+      ],
+      "math_check": {
+        "kind": "scale_factor_area",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L01-04": {
+      "hints": [
+        "Identifica el centro y los lados homólogos.",
+        "Longitud nueva = longitud inicial×|k|; área nueva = área inicial×k²."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L01-05": {
+      "hints": [
+        "Identifica el centro y los lados homólogos.",
+        "Longitud nueva = longitud inicial×|k|; área nueva = área inicial×k²."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L02-01": {
+      "hints": [
+        "Fija explícitamente centro, eje y sentido del giro.",
+        "90° antihorario: (x,y)→(−y,x); espejo horizontal: (x,y)→(x,−y)."
+      ],
+      "math_check": {
+        "kind": "rot90_x",
+        "params": [
+          2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L02-02": {
+      "hints": [
+        "Fija explícitamente centro, eje y sentido del giro.",
+        "90° antihorario: (x,y)→(−y,x); espejo horizontal: (x,y)→(x,−y)."
+      ],
+      "math_check": {
+        "kind": "rot90_y",
+        "params": [
+          2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L02-03": {
+      "hints": [
+        "Fija explícitamente centro, eje y sentido del giro.",
+        "90° antihorario: (x,y)→(−y,x); espejo horizontal: (x,y)→(x,−y)."
+      ],
+      "math_check": {
+        "kind": "reflect_horizontal_y",
+        "params": [
+          4,
+          -1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L02-04": {
+      "hints": [
+        "Fija explícitamente centro, eje y sentido del giro.",
+        "90° antihorario: (x,y)→(−y,x); espejo horizontal: (x,y)→(x,−y)."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L02-05": {
+      "hints": [
+        "Fija explícitamente centro, eje y sentido del giro.",
+        "90° antihorario: (x,y)→(−y,x); espejo horizontal: (x,y)→(x,−y)."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L03-01": {
+      "hints": [
+        "Resta punto final menos inicial para hallar el vector.",
+        "Traslación: (x,y)+(a,b)=(x+a,y+b); los desplazamientos se suman."
+      ],
+      "math_check": {
+        "kind": "shift",
+        "params": [
+          2,
+          -1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L03-02": {
+      "hints": [
+        "Resta punto final menos inicial para hallar el vector.",
+        "Traslación: (x,y)+(a,b)=(x+a,y+b); los desplazamientos se suman."
+      ],
+      "math_check": {
+        "kind": "shift",
+        "params": [
+          -3,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L03-03": {
+      "hints": [
+        "Resta punto final menos inicial para hallar el vector.",
+        "Traslación: (x,y)+(a,b)=(x+a,y+b); los desplazamientos se suman."
+      ],
+      "math_check": {
+        "kind": "shift",
+        "params": [
+          3,
+          -1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L03-04": {
+      "hints": [
+        "Resta punto final menos inicial para hallar el vector.",
+        "Traslación: (x,y)+(a,b)=(x+a,y+b); los desplazamientos se suman."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L03-05": {
+      "hints": [
+        "Resta punto final menos inicial para hallar el vector.",
+        "Traslación: (x,y)+(a,b)=(x+a,y+b); los desplazamientos se suman."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L04-01": {
+      "hints": [
+        "Clasifica la magnitud en longitud, superficie o volumen.",
+        "Multiplica por |k|, k² o |k|³ respectivamente."
+      ],
+      "math_check": {
+        "kind": "scale_area_value",
+        "params": [
+          4,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L04-02": {
+      "hints": [
+        "Clasifica la magnitud en longitud, superficie o volumen.",
+        "Multiplica por |k|, k² o |k|³ respectivamente."
+      ],
+      "math_check": {
+        "kind": "scale_volume_value",
+        "params": [
+          2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L04-03": {
+      "hints": [
+        "Clasifica la magnitud en longitud, superficie o volumen.",
+        "Multiplica por |k|, k² o |k|³ respectivamente."
+      ],
+      "math_check": {
+        "kind": "scale_area_value",
+        "params": [
+          20,
+          0.5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L04-04": {
+      "hints": [
+        "Clasifica la magnitud en longitud, superficie o volumen.",
+        "Multiplica por |k|, k² o |k|³ respectivamente."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L04-05": {
+      "hints": [
+        "Clasifica la magnitud en longitud, superficie o volumen.",
+        "Multiplica por |k|, k² o |k|³ respectivamente."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L05-01": {
+      "hints": [
+        "Dibuja y separa bases y superficie lateral antes de sumar áreas.",
+        "Cilindro: V=πr²h; A=2πr²+2πrh; cubo A=6a², V=a³."
+      ],
+      "math_check": {
+        "kind": "cylinder_volume",
+        "params": [
+          2,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L05-02": {
+      "hints": [
+        "Dibuja y separa bases y superficie lateral antes de sumar áreas.",
+        "Cilindro: V=πr²h; A=2πr²+2πrh; cubo A=6a², V=a³."
+      ],
+      "math_check": {
+        "kind": "cylinder_area",
+        "params": [
+          2,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L05-03": {
+      "hints": [
+        "Dibuja y separa bases y superficie lateral antes de sumar áreas.",
+        "Cilindro: V=πr²h; A=2πr²+2πrh; cubo A=6a², V=a³."
+      ],
+      "math_check": {
+        "kind": "cube_area",
+        "params": [
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L05-04": {
+      "hints": [
+        "Dibuja y separa bases y superficie lateral antes de sumar áreas.",
+        "Cilindro: V=πr²h; A=2πr²+2πrh; cubo A=6a², V=a³."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L05-05": {
+      "hints": [
+        "Dibuja y separa bases y superficie lateral antes de sumar áreas.",
+        "Cilindro: V=πr²h; A=2πr²+2πrh; cubo A=6a², V=a³."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L06-01": {
+      "hints": [
+        "Dibuja las figuras y anota correspondencias y unidades.",
+        "Escala lineal usa s; superficies usan k²; convierte cm→m al finalizar."
+      ],
+      "math_check": {
+        "kind": "map_meters",
+        "params": [
+          3,
+          25000
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L06-02": {
+      "hints": [
+        "Dibuja las figuras y anota correspondencias y unidades.",
+        "Escala lineal usa s; superficies usan k²; convierte cm→m al finalizar."
+      ],
+      "math_check": {
+        "kind": "triangle_area",
+        "params": [
+          6,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L06-03": {
+      "hints": [
+        "Dibuja las figuras y anota correspondencias y unidades.",
+        "Escala lineal usa s; superficies usan k²; convierte cm→m al finalizar."
+      ],
+      "math_check": {
+        "kind": "scale_area_value",
+        "params": [
+          12,
+          1.5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L06-04": {
+      "hints": [
+        "Dibuja las figuras y anota correspondencias y unidades.",
+        "Escala lineal usa s; superficies usan k²; convierte cm→m al finalizar."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    },
+    "F3-E3-G02-L06-05": {
+      "hints": [
+        "Dibuja las figuras y anota correspondencias y unidades.",
+        "Escala lineal usa s; superficies usan k²; convierte cm→m al finalizar."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre probabilidad, exponentes, unidades, razones y transformaciones; revisión humana F4 pendiente."
+    }
+  }
+}

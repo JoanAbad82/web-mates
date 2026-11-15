@@ -1,0 +1,1015 @@
+{
+  "unit_id": "B2C-F03",
+  "version": "0.15.0",
+  "status": "revision",
+  "notice": "Ejercicios sintéticos deterministas EN REVISIÓN pendientes de evaluación humana.",
+  "activities": [
+    {
+      "exercise_id": "F3-B2C-F03-L01-01",
+      "lesson_id": "B2C-F03-L01",
+      "type": "numeric",
+      "prompt": "En ∫(6x^2)dx = A·x^3+C, calcula el COEFICIENTE exacto A para la familia de primitivas, n≥0. Escribe el valor numérico exacto sin unidades.",
+      "answer": 2.0,
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: 2. Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad. Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0. Respuesta comprobable: 2. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_primitive_power_coeff",
+        "prerequisite_b2c_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L01-02",
+      "lesson_id": "B2C-F03-L01",
+      "type": "numeric",
+      "prompt": "En ∫(9x^2)dx = A·x^3+C, calcula el COEFICIENTE exacto A para la familia de primitivas, n≥0. Escribe el valor numérico exacto sin unidades.",
+      "answer": 3.0,
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: 3. Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad. Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0. Respuesta comprobable: 3. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_primitive_power_coeff",
+        "prerequisite_b2c_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L01-03",
+      "lesson_id": "B2C-F03-L01",
+      "type": "numeric",
+      "prompt": "En ∫(5x^4)dx = A·x^5+C, calcula el COEFICIENTE exacto A para la familia de primitivas, n≥0. Escribe el valor numérico exacto sin unidades.",
+      "answer": 1.0,
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: 1. Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad. Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0. Respuesta comprobable: 1. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_primitive_power_coeff",
+        "prerequisite_b2c_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L01-04",
+      "lesson_id": "B2C-F03-L01",
+      "type": "choice",
+      "prompt": "En un intervalo sin cero, elige la primitiva GENERAL de f(x)=1/x, incluyendo C. Selecciona exactamente una respuesta.",
+      "answer": "ln|x|+C",
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: ln|x|+C. Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad. Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0. Respuesta comprobable: ln|x|+C. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_primitive_log",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "x²/2+C",
+        "1/x+C",
+        "ln|x|+C"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L01-05",
+      "lesson_id": "B2C-F03-L01",
+      "type": "choice",
+      "prompt": "¿Es obligatorio expresar la constante libre C cuando se escribe la FAMILIA de primitivas de una función (Sí/No)? Selecciona exactamente una respuesta.",
+      "answer": "Sí",
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: Sí. Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad. Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0. Respuesta comprobable: Sí. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_integration_constant",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "No se puede concluir",
+        "Sí",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L02-01",
+      "lesson_id": "B2C-F03-L02",
+      "type": "numeric",
+      "prompt": "La función f(x)=2x+(3) admite una primitiva F(x)=2x²/2+(3)x+C. Con C=0, calcula F(2). Escribe el valor numérico exacto sin unidades.",
+      "answer": 10.0,
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: 10. Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad. Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0. Respuesta comprobable: 10. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_primitive_linear_eval",
+        "prerequisite_b2c_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L02-02",
+      "lesson_id": "B2C-F03-L02",
+      "type": "numeric",
+      "prompt": "Integra f(x)=6x²+(-8)x+(5), fija C_integración=0 y evalúa su primitiva F(1). Escribe el valor numérico exacto sin unidades.",
+      "answer": 3.0,
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: 3. Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad. Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0. Respuesta comprobable: 3. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_primitive_poly_eval",
+        "prerequisite_b2c_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L02-03",
+      "lesson_id": "B2C-F03-L02",
+      "type": "numeric",
+      "prompt": "En ∫12x^2dx=A·x^3+C, ¿cuál es el coeficiente exacto A? Escribe el valor numérico exacto sin unidades.",
+      "answer": 4.0,
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: 4. Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad. Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0. Respuesta comprobable: 4. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_primitive_poly_coeff",
+        "prerequisite_b2c_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L02-04",
+      "lesson_id": "B2C-F03-L02",
+      "type": "choice",
+      "prompt": "¿Es válida en general la igualdad ∫(f(x)g(x))dx=(∫f(x)dx)(∫g(x)dx) (Sí/No)? Selecciona exactamente una respuesta.",
+      "answer": "No",
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: No. Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad. Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0. Respuesta comprobable: No. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_linearity_statement",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "No se puede concluir",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L02-05",
+      "lesson_id": "B2C-F03-L02",
+      "type": "choice",
+      "prompt": "La función f(x)=4x+(-2) admite una primitiva F(x)=4x²/2+(-2)x+C. Con C=0, calcula F(3). Selecciona exactamente una respuesta.",
+      "answer": "12",
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: 12. Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad. Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0. Respuesta comprobable: 12. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_primitive_linear_eval",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "12",
+        "13",
+        "11"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L03-01",
+      "lesson_id": "B2C-F03-L03",
+      "type": "numeric",
+      "prompt": "En ∫2x(x²+1)^3dx=A(x²+1)^4+C, determina el factor A de la sustitución u=x²+1. Escribe el valor numérico exacto sin unidades.",
+      "answer": 0.25,
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: 0,25. Busca una función interior u=g(x) cuya derivada multiplica al integrando. Con du=g′(x)dx, integra en u y vuelve a x; comprueba derivando el resultado y mantén las restricciones del denominador. Respuesta comprobable: 0,25. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Busca una función interior u=g(x) cuya derivada multiplica al integrando.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_substitution_coeff",
+        "prerequisite_b2c_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L03-02",
+      "lesson_id": "B2C-F03-L03",
+      "type": "numeric",
+      "prompt": "En ∫2x(x²+1)^4dx=A(x²+1)^5+C, determina el factor A de la sustitución u=x²+1. Escribe el valor numérico exacto sin unidades.",
+      "answer": 0.2,
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: 0,2. Busca una función interior u=g(x) cuya derivada multiplica al integrando. Con du=g′(x)dx, integra en u y vuelve a x; comprueba derivando el resultado y mantén las restricciones del denominador. Respuesta comprobable: 0,2. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Busca una función interior u=g(x) cuya derivada multiplica al integrando.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_substitution_coeff",
+        "prerequisite_b2c_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L03-03",
+      "lesson_id": "B2C-F03-L03",
+      "type": "choice",
+      "prompt": "Si u=g(x) y aparece exactamente g′(x)dx en ∫f(g(x))g′(x)dx, ¿puede aplicarse sustitución u (Sí/No)? Selecciona exactamente una respuesta.",
+      "answer": "Sí",
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: Sí. Busca una función interior u=g(x) cuya derivada multiplica al integrando. Con du=g′(x)dx, integra en u y vuelve a x; comprueba derivando el resultado y mantén las restricciones del denominador. Respuesta comprobable: Sí. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Busca una función interior u=g(x) cuya derivada multiplica al integrando.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_substitution_rule",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "No se puede concluir",
+        "Sí",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L03-04",
+      "lesson_id": "B2C-F03-L03",
+      "type": "choice",
+      "prompt": "En ∫1/(2x+1)dx=A ln|2x+1|+C, halla el coeficiente A y excluye el cero del denominador. Selecciona exactamente una respuesta.",
+      "answer": "0,5",
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: 0,5. Busca una función interior u=g(x) cuya derivada multiplica al integrando. Con du=g′(x)dx, integra en u y vuelve a x; comprueba derivando el resultado y mantén las restricciones del denominador. Respuesta comprobable: 0,5. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Busca una función interior u=g(x) cuya derivada multiplica al integrando.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_log_linear_coeff",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "0,5",
+        "1,5",
+        "-0,5"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L03-05",
+      "lesson_id": "B2C-F03-L03",
+      "type": "choice",
+      "prompt": "En ∫2x(x²+1)^2dx=A(x²+1)^3+C, determina el factor A de la sustitución u=x²+1. Selecciona exactamente una respuesta.",
+      "answer": "1/3",
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: 1/3. Busca una función interior u=g(x) cuya derivada multiplica al integrando. Con du=g′(x)dx, integra en u y vuelve a x; comprueba derivando el resultado y mantén las restricciones del denominador. Respuesta comprobable: 1/3. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Busca una función interior u=g(x) cuya derivada multiplica al integrando.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_substitution_coeff",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "4/3",
+        "-2/3",
+        "1/3"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L04-01",
+      "lesson_id": "B2C-F03-L04",
+      "type": "choice",
+      "prompt": "Elige la familia CORRECTA de primitivas para ∫x·e^x dx mediante integración por partes. Selecciona exactamente una respuesta.",
+      "answer": "e^x(x−1)+C",
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: e^x(x−1)+C. Selecciona u y dv de forma que derivar u simplifique el producto. Por partes ∫u dv=uv−∫v du. Comprueba el signo y deriva la primitiva obtenida para verificar el integrando. Respuesta comprobable: e^x(x−1)+C. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Selecciona u y dv de forma que derivar u simplifique el producto.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_parts_exp_formula",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "e^x(x+1)+C",
+        "x e^x+C",
+        "e^x(x−1)+C"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L04-02",
+      "lesson_id": "B2C-F03-L04",
+      "type": "numeric",
+      "prompt": "Para F(x)=e^x(x−1) primitiva de x·e^x, calcula F′(0), derivando mediante producto. Escribe el valor numérico exacto sin unidades.",
+      "answer": 0.0,
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: 0. Selecciona u y dv de forma que derivar u simplifique el producto. Por partes ∫u dv=uv−∫v du. Comprueba el signo y deriva la primitiva obtenida para verificar el integrando. Respuesta comprobable: 0. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Selecciona u y dv de forma que derivar u simplifique el producto.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_parts_exp_derivative0",
+        "prerequisite_b2c_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L04-03",
+      "lesson_id": "B2C-F03-L04",
+      "type": "choice",
+      "prompt": "En la identidad ∫u dv=u v ±∫v du, ¿cuál es el signo correcto delante de la segunda integral: Menos o Más? Selecciona exactamente una respuesta.",
+      "answer": "Menos",
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: Menos. Selecciona u y dv de forma que derivar u simplifique el producto. Por partes ∫u dv=uv−∫v du. Comprueba el signo y deriva la primitiva obtenida para verificar el integrando. Respuesta comprobable: Menos. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Selecciona u y dv de forma que derivar u simplifique el producto.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_parts_sign",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "Menos",
+        "Más",
+        "No hay segunda integral"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L04-04",
+      "lesson_id": "B2C-F03-L04",
+      "type": "choice",
+      "prompt": "Elige la primitiva general de ∫x cos(x)dx usando u=x y dv=cos(x)dx (argumento en radianes). Selecciona exactamente una respuesta.",
+      "answer": "x sen(x)+cos(x)+C",
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: x sen(x)+cos(x)+C. Selecciona u y dv de forma que derivar u simplifique el producto. Por partes ∫u dv=uv−∫v du. Comprueba el signo y deriva la primitiva obtenida para verificar el integrando. Respuesta comprobable: x sen(x)+cos(x)+C. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Selecciona u y dv de forma que derivar u simplifique el producto.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_parts_sin_formula",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "x sen(x)−cos(x)+C",
+        "sen(x)+C",
+        "x sen(x)+cos(x)+C"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L04-05",
+      "lesson_id": "B2C-F03-L04",
+      "type": "choice",
+      "prompt": "Para F(x)=e^x(x−1) primitiva de x·e^x, calcula F′(0), derivando mediante producto. Selecciona exactamente una respuesta.",
+      "answer": "0",
+      "explanation": "Justificación: Elige una primitiva con regla válida, añade C cuando sea indefinida y DIFERENCIA para recuperar el integrando. Resultado exacto: 0. Selecciona u y dv de forma que derivar u simplifique el producto. Por partes ∫u dv=uv−∫v du. Comprueba el signo y deriva la primitiva obtenida para verificar el integrando. Respuesta comprobable: 0. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "Selecciona u y dv de forma que derivar u simplifique el producto.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_parts_exp_derivative0",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L05-01",
+      "lesson_id": "B2C-F03-L05",
+      "type": "choice",
+      "prompt": "Calcula por Barrow ∫[0,2] (2x²+(0)x+(0)) dx, como número exacto CON SIGNO. Selecciona exactamente una respuesta.",
+      "answer": "16/3",
+      "explanation": "Justificación: Calcula F(b)−F(a) con la orientación correcta; para área divide en ceros o cruces y suma magnitudes. Resultado exacto: 16/3. En la integral definida calcula F(b)−F(a), conservando la orientación de límites. Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área. Respuesta comprobable: 16/3. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_definite_poly",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "13/3",
+        "16/3",
+        "19/3"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L05-02",
+      "lesson_id": "B2C-F03-L05",
+      "type": "choice",
+      "prompt": "Calcula por Barrow ∫[-1,1] (1x²+(0)x+(0)) dx, como número exacto CON SIGNO. Selecciona exactamente una respuesta.",
+      "answer": "2/3",
+      "explanation": "Justificación: Calcula F(b)−F(a) con la orientación correcta; para área divide en ceros o cruces y suma magnitudes. Resultado exacto: 2/3. En la integral definida calcula F(b)−F(a), conservando la orientación de límites. Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área. Respuesta comprobable: 2/3. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_definite_poly",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "2/3",
+        "5/3",
+        "-1/3"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L05-03",
+      "lesson_id": "B2C-F03-L05",
+      "type": "numeric",
+      "prompt": "Calcula ∫[-1,1] 1x dx como integral definida CON SIGNO, sin sustituir por el área. Escribe el valor numérico exacto sin unidades.",
+      "answer": 0.0,
+      "explanation": "Justificación: Calcula F(b)−F(a) con la orientación correcta; para área divide en ceros o cruces y suma magnitudes. Resultado exacto: 0. En la integral definida calcula F(b)−F(a), conservando la orientación de límites. Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área. Respuesta comprobable: 0. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_definite_linear",
+        "prerequisite_b2c_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L05-04",
+      "lesson_id": "B2C-F03-L05",
+      "type": "choice",
+      "prompt": "¿Cuánto vale exactamente ∫[3,3] f(x)dx para una función continua cualquiera en ese punto? Selecciona exactamente una respuesta.",
+      "answer": "0",
+      "explanation": "Justificación: Calcula F(b)−F(a) con la orientación correcta; para área divide en ceros o cruces y suma magnitudes. Resultado exacto: 0. En la integral definida calcula F(b)−F(a), conservando la orientación de límites. Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área. Respuesta comprobable: 0. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_definite_same",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L05-05",
+      "lesson_id": "B2C-F03-L05",
+      "type": "choice",
+      "prompt": "Si f(x)=2x≥0 en [0,2], ¿la integral de 2 a 0 tiene signo Positivo o Negativo? Selecciona exactamente una respuesta.",
+      "answer": "Negativo",
+      "explanation": "Justificación: Calcula F(b)−F(a) con la orientación correcta; para área divide en ceros o cruces y suma magnitudes. Resultado exacto: Negativo. En la integral definida calcula F(b)−F(a), conservando la orientación de límites. Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área. Respuesta comprobable: Negativo. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_definite_orientation",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "Negativo",
+        "Positivo",
+        "Cero"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L06-01",
+      "lesson_id": "B2C-F03-L06",
+      "type": "numeric",
+      "prompt": "Calcula el ÁREA geométrica ∫[-2,1]|x|dx, separando por x=0; devuelve un número exacto no negativo. Escribe el valor numérico exacto sin unidades.",
+      "answer": 2.5,
+      "explanation": "Justificación: Calcula F(b)−F(a) con la orientación correcta; para área divide en ceros o cruces y suma magnitudes. Resultado exacto: 2,5. En la integral definida calcula F(b)−F(a), conservando la orientación de límites. Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área. Respuesta comprobable: 2,5. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_absolute_linear_area",
+        "prerequisite_b2c_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L06-02",
+      "lesson_id": "B2C-F03-L06",
+      "type": "choice",
+      "prompt": "En [0,2], calcula el área bajo y=x² y sobre el eje x: ∫[0,2]x² dx. Selecciona exactamente una respuesta.",
+      "answer": "8/3",
+      "explanation": "Justificación: Calcula F(b)−F(a) con la orientación correcta; para área divide en ceros o cruces y suma magnitudes. Resultado exacto: 8/3. En la integral definida calcula F(b)−F(a), conservando la orientación de límites. Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área. Respuesta comprobable: 8/3. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_unsigned_square_area",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "11/3",
+        "5/3",
+        "8/3"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L06-03",
+      "lesson_id": "B2C-F03-L06",
+      "type": "choice",
+      "prompt": "Calcula el área geométrica ENTRE las curvas y=x e y=x² en el intervalo [0,1]; integra la superior menos la inferior. Selecciona exactamente una respuesta.",
+      "answer": "1/6",
+      "explanation": "Justificación: Calcula F(b)−F(a) con la orientación correcta; para área divide en ceros o cruces y suma magnitudes. Resultado exacto: 1/6. En la integral definida calcula F(b)−F(a), conservando la orientación de límites. Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área. Respuesta comprobable: 1/6. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_between_linear_square",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "-5/6",
+        "1/6",
+        "7/6"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L06-04",
+      "lesson_id": "B2C-F03-L06",
+      "type": "choice",
+      "prompt": "Calcula ∫[-1,1] x dx CON SIGNO (no el área total entre curva y eje). Selecciona exactamente una respuesta.",
+      "answer": "0",
+      "explanation": "Justificación: Calcula F(b)−F(a) con la orientación correcta; para área divide en ceros o cruces y suma magnitudes. Resultado exacto: 0. En la integral definida calcula F(b)−F(a), conservando la orientación de límites. Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área. Respuesta comprobable: 0. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_signed_linear_integral",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "0",
+        "1",
+        "-1"
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-F03-L06-05",
+      "lesson_id": "B2C-F03-L06",
+      "type": "choice",
+      "prompt": "Calcula el ÁREA geométrica ∫[-1,2]|x|dx, separando por x=0; devuelve un número exacto no negativo. Selecciona exactamente una respuesta.",
+      "answer": "2,5",
+      "explanation": "Justificación: Calcula F(b)−F(a) con la orientación correcta; para área divide en ceros o cruces y suma magnitudes. Resultado exacto: 2,5. En la integral definida calcula F(b)−F(a), conservando la orientación de límites. Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área. Respuesta comprobable: 2,5. No extrapoles fuera del dominio; distingue una integral firmada de un área y comprueba las condiciones de los procedimientos.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concept_absolute_linear_area",
+        "prerequisite_b2c_f03"
+      ],
+      "choices": [
+        "3,5",
+        "1,5",
+        "2,5"
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B2C-F03-L01-01": {
+      "hints": [
+        "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+        "Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0."
+      ],
+      "math_check": {
+        "kind": "primitive_power_coeff",
+        "params": [
+          6,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de primitive_power_coeff"
+    },
+    "F3-B2C-F03-L01-02": {
+      "hints": [
+        "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+        "Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0."
+      ],
+      "math_check": {
+        "kind": "primitive_power_coeff",
+        "params": [
+          9,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de primitive_power_coeff"
+    },
+    "F3-B2C-F03-L01-03": {
+      "hints": [
+        "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+        "Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0."
+      ],
+      "math_check": {
+        "kind": "primitive_power_coeff",
+        "params": [
+          5,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de primitive_power_coeff"
+    },
+    "F3-B2C-F03-L01-04": {
+      "hints": [
+        "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+        "Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0."
+      ],
+      "math_check": {
+        "kind": "primitive_log",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de primitive_log"
+    },
+    "F3-B2C-F03-L01-05": {
+      "hints": [
+        "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+        "Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0."
+      ],
+      "math_check": {
+        "kind": "integration_constant",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de integration_constant"
+    },
+    "F3-B2C-F03-L02-01": {
+      "hints": [
+        "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+        "Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0."
+      ],
+      "math_check": {
+        "kind": "primitive_linear_eval",
+        "params": [
+          2,
+          3,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de primitive_linear_eval"
+    },
+    "F3-B2C-F03-L02-02": {
+      "hints": [
+        "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+        "Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0."
+      ],
+      "math_check": {
+        "kind": "primitive_poly_eval",
+        "params": [
+          6,
+          -8,
+          5,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de primitive_poly_eval"
+    },
+    "F3-B2C-F03-L02-03": {
+      "hints": [
+        "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+        "Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0."
+      ],
+      "math_check": {
+        "kind": "primitive_poly_coeff",
+        "params": [
+          12,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de primitive_poly_coeff"
+    },
+    "F3-B2C-F03-L02-04": {
+      "hints": [
+        "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+        "Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0."
+      ],
+      "math_check": {
+        "kind": "linearity_statement",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de linearity_statement"
+    },
+    "F3-B2C-F03-L02-05": {
+      "hints": [
+        "Una primitiva F satisface F′=f: aplica la regla inversa de potencias o linealidad.",
+        "Para n≠−1, ∫a·xⁿdx=a·x⁽ⁿ⁺¹⁾/(n+1)+C; para 1/x usa ln|x|+C en un intervalo sin 0."
+      ],
+      "math_check": {
+        "kind": "primitive_linear_eval",
+        "params": [
+          4,
+          -2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de primitive_linear_eval"
+    },
+    "F3-B2C-F03-L03-01": {
+      "hints": [
+        "Busca una función interior u=g(x) cuya derivada multiplica al integrando.",
+        "Con du=g′(x)dx, integra en u y vuelve a x; comprueba derivando el resultado y mantén las restricciones del denominador."
+      ],
+      "math_check": {
+        "kind": "substitution_coeff",
+        "params": [
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de substitution_coeff"
+    },
+    "F3-B2C-F03-L03-02": {
+      "hints": [
+        "Busca una función interior u=g(x) cuya derivada multiplica al integrando.",
+        "Con du=g′(x)dx, integra en u y vuelve a x; comprueba derivando el resultado y mantén las restricciones del denominador."
+      ],
+      "math_check": {
+        "kind": "substitution_coeff",
+        "params": [
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de substitution_coeff"
+    },
+    "F3-B2C-F03-L03-03": {
+      "hints": [
+        "Busca una función interior u=g(x) cuya derivada multiplica al integrando.",
+        "Con du=g′(x)dx, integra en u y vuelve a x; comprueba derivando el resultado y mantén las restricciones del denominador."
+      ],
+      "math_check": {
+        "kind": "substitution_rule",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de substitution_rule"
+    },
+    "F3-B2C-F03-L03-04": {
+      "hints": [
+        "Busca una función interior u=g(x) cuya derivada multiplica al integrando.",
+        "Con du=g′(x)dx, integra en u y vuelve a x; comprueba derivando el resultado y mantén las restricciones del denominador."
+      ],
+      "math_check": {
+        "kind": "log_linear_coeff",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de log_linear_coeff"
+    },
+    "F3-B2C-F03-L03-05": {
+      "hints": [
+        "Busca una función interior u=g(x) cuya derivada multiplica al integrando.",
+        "Con du=g′(x)dx, integra en u y vuelve a x; comprueba derivando el resultado y mantén las restricciones del denominador."
+      ],
+      "math_check": {
+        "kind": "substitution_coeff",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de substitution_coeff"
+    },
+    "F3-B2C-F03-L04-01": {
+      "hints": [
+        "Selecciona u y dv de forma que derivar u simplifique el producto.",
+        "Por partes ∫u dv=uv−∫v du. Comprueba el signo y deriva la primitiva obtenida para verificar el integrando."
+      ],
+      "math_check": {
+        "kind": "parts_exp_formula",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de parts_exp_formula"
+    },
+    "F3-B2C-F03-L04-02": {
+      "hints": [
+        "Selecciona u y dv de forma que derivar u simplifique el producto.",
+        "Por partes ∫u dv=uv−∫v du. Comprueba el signo y deriva la primitiva obtenida para verificar el integrando."
+      ],
+      "math_check": {
+        "kind": "parts_exp_derivative0",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de parts_exp_derivative0"
+    },
+    "F3-B2C-F03-L04-03": {
+      "hints": [
+        "Selecciona u y dv de forma que derivar u simplifique el producto.",
+        "Por partes ∫u dv=uv−∫v du. Comprueba el signo y deriva la primitiva obtenida para verificar el integrando."
+      ],
+      "math_check": {
+        "kind": "parts_sign",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de parts_sign"
+    },
+    "F3-B2C-F03-L04-04": {
+      "hints": [
+        "Selecciona u y dv de forma que derivar u simplifique el producto.",
+        "Por partes ∫u dv=uv−∫v du. Comprueba el signo y deriva la primitiva obtenida para verificar el integrando."
+      ],
+      "math_check": {
+        "kind": "parts_sin_formula",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de parts_sin_formula"
+    },
+    "F3-B2C-F03-L04-05": {
+      "hints": [
+        "Selecciona u y dv de forma que derivar u simplifique el producto.",
+        "Por partes ∫u dv=uv−∫v du. Comprueba el signo y deriva la primitiva obtenida para verificar el integrando."
+      ],
+      "math_check": {
+        "kind": "parts_exp_derivative0",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de parts_exp_derivative0"
+    },
+    "F3-B2C-F03-L05-01": {
+      "hints": [
+        "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+        "Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área."
+      ],
+      "math_check": {
+        "kind": "definite_poly",
+        "params": [
+          2,
+          0,
+          0,
+          0,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de definite_poly"
+    },
+    "F3-B2C-F03-L05-02": {
+      "hints": [
+        "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+        "Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área."
+      ],
+      "math_check": {
+        "kind": "definite_poly",
+        "params": [
+          1,
+          0,
+          0,
+          -1,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de definite_poly"
+    },
+    "F3-B2C-F03-L05-03": {
+      "hints": [
+        "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+        "Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área."
+      ],
+      "math_check": {
+        "kind": "definite_linear",
+        "params": [
+          1,
+          -1,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de definite_linear"
+    },
+    "F3-B2C-F03-L05-04": {
+      "hints": [
+        "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+        "Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área."
+      ],
+      "math_check": {
+        "kind": "definite_same",
+        "params": [
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de definite_same"
+    },
+    "F3-B2C-F03-L05-05": {
+      "hints": [
+        "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+        "Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área."
+      ],
+      "math_check": {
+        "kind": "definite_orientation",
+        "params": [
+          1,
+          0,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de definite_orientation"
+    },
+    "F3-B2C-F03-L06-01": {
+      "hints": [
+        "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+        "Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área."
+      ],
+      "math_check": {
+        "kind": "absolute_linear_area",
+        "params": [
+          -2,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de absolute_linear_area"
+    },
+    "F3-B2C-F03-L06-02": {
+      "hints": [
+        "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+        "Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área."
+      ],
+      "math_check": {
+        "kind": "unsigned_square_area",
+        "params": [
+          0,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de unsigned_square_area"
+    },
+    "F3-B2C-F03-L06-03": {
+      "hints": [
+        "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+        "Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área."
+      ],
+      "math_check": {
+        "kind": "between_linear_square",
+        "params": [
+          0,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de between_linear_square"
+    },
+    "F3-B2C-F03-L06-04": {
+      "hints": [
+        "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+        "Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área."
+      ],
+      "math_check": {
+        "kind": "signed_linear_integral",
+        "params": [
+          -1,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de signed_linear_integral"
+    },
+    "F3-B2C-F03-L06-05": {
+      "hints": [
+        "En la integral definida calcula F(b)−F(a), conservando la orientación de límites.",
+        "Área geométrica requiere |f| o superior−inferior separando cruces; una integral con signo puede cancelarse aunque exista área."
+      ],
+      "math_check": {
+        "kind": "absolute_linear_area",
+        "params": [
+          -1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Error de dominio, signo, hipótesis, unidades, constante o viabilidad de absolute_linear_area"
+    }
+  }
+}

@@ -1,0 +1,779 @@
+{
+  "unit_id": "B2C-F01",
+  "unit_title": "Límites, continuidad y derivabilidad",
+  "product_phase": "F3_OLA14",
+  "version": "0.14.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Resolver límites polinómicos y racionales en puntos regulares y en infinito.",
+    "Resolver límites 0/0 mediante cancelación y conjugados bajo condiciones de dominio.",
+    "Hallar asíntotas verticales y horizontales justificando límites."
+  ],
+  "warnings": [
+    "Contenido original determinista EN REVISIÓN, no homologado ni publicable.",
+    "Teoremas requieren continuidad, derivabilidad y condiciones de intervalo; aplicar solo bajo sus hipótesis.",
+    "Gráficas SVG ilustrativas; tablas HTML exactas son alternativa semántica.",
+    "Revisión humana, correspondencia autonómica, WCAG integral y móviles físicos no verificados."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Límites y continuidad de Matemáticas I",
+      "lesson_id": "B1C-F02-L06",
+      "href": "#/curso/B1C/unidad/B1C-F02/leccion/B1C-F02-L06"
+    },
+    {
+      "label": "Derivadas en Matemáticas I",
+      "lesson_id": "B1C-F03-L05",
+      "href": "#/curso/B1C/unidad/B1C-F03/leccion/B1C-F03-L05"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Primero comprensión y ejercicios guiados, después recuperación activa, revisión de errores e intercalado voluntario."
+  },
+  "source_note": "RD 243/2022, Matemáticas I/II; distribución editorial y normativa autonómica por cotejar.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B2C-F01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F01:C01"
+      ],
+      "objectives": [
+        "Resolver límites polinómicos y racionales en puntos regulares y en infinito.",
+        "Distinguir convergencia finita, divergencia e indeterminaciones."
+      ],
+      "prerequisites": [
+        "B1C-F02-L01",
+        "B1C-F02-L03",
+        "B1C-F02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Los límites revisan el comportamiento cerca de un punto y en los extremos de la recta real. Un polinomio es continuo y permite sustituir directamente. En una fracción racional con denominador distinto de cero en a también se sustituye. Si se obtiene 0/0, esa escritura representa una indeterminación y exige factorización, racionalización u otra transformación válida para valores próximos pero distintos de a; no constituye el valor del límite. En el infinito se comparan los grados: si coinciden, el límite es el cociente de coeficientes principales; con numerador de grado menor, vale cero. Si el grado mayor está arriba, se analiza signo y dirección de infinito. El límite bilateral exige acuerdo de laterales, aunque f(a) no esté definida."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=(3x²+1)/(2x²+5), al tender x a +∞ los términos dominantes dan 3/2. No se sustituye infinito como un número real."
+        },
+        {
+          "type": "example",
+          "body": "Para g(x)=(x²−4)/(x−2), x≠2, factorizar permite g(x)=x+2 cerca de 2; por tanto lim(x→2)g(x)=4 aunque g(2) no exista."
+        },
+        {
+          "type": "figure",
+          "body": "Límite en un agujero. Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Límite en un agujero. Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "limit",
+            "title": "Límite en un agujero",
+            "rows": [
+              [
+                "Función",
+                "(x²−4)/(x−2), x≠2"
+              ],
+              [
+                "Forma próxima",
+                "x+2"
+              ],
+              [
+                "Límite x→2",
+                "4"
+              ],
+              [
+                "Valor puntual",
+                "No definido"
+              ],
+              [
+                "Tipo",
+                "Discontinuidad evitable"
+              ]
+            ],
+            "model": {
+              "kind": "hole",
+              "a": 1,
+              "b": 2,
+              "hole": 2,
+              "tangent_x": 2
+            },
+            "domain": [
+              -1,
+              5
+            ],
+            "marks": [
+              [
+                "Hueco",
+                2,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿0/0 demuestra que el límite de una función es cero?||No; señala una indeterminación que debe resolverse transformando la expresión en su dominio."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Los límites revisan el comportamiento cerca de un punto y en los extremos de la recta real. Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F01-L01-01",
+        "F3-B2C-F01-L01-02",
+        "F3-B2C-F01-L01-03",
+        "F3-B2C-F01-L01-04",
+        "F3-B2C-F01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-F01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F01:C02"
+      ],
+      "objectives": [
+        "Resolver límites 0/0 mediante cancelación y conjugados bajo condiciones de dominio.",
+        "Explicar qué transformaciones no modifican el límite lateral o bilateral."
+      ],
+      "prerequisites": [
+        "B1C-F02-L04",
+        "B1C-F01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El cociente (x²−a²)/(x−a) coincide con x+a solo cuando x≠a; la transformación permite hallar su límite 2a, pero no autoriza asignar un valor al punto excluido sin declaración. En una expresión radical como [√(c+x)−√c]/x, con c>0 y x cercano a cero, racionalizar da 1/[√(c+x)+√c] y límite 1/(2√c). Es esencial multiplicar simultáneamente numerador y denominador por el conjugado. Nunca se divide entre una expresión que podría anularse en el dominio de aproximación. El hecho de encontrar 0/0 tras sustituir no permite aplicar cancelaciones inexistentes o concluir que cualquier número sea límite; se debe exhibir una igualdad válida en el entorno puncturado."
+        },
+        {
+          "type": "example",
+          "body": "lim(x→3)(x²−9)/(x−3)=lim(x→3)(x+3)=6; el valor de la función original en x=3 continúa indefinido."
+        },
+        {
+          "type": "example",
+          "body": "lim(x→0)(√(4+x)−2)/x=lim(x→0)1/(√(4+x)+2)=1/4, tras multiplicar por el conjugado."
+        },
+        {
+          "type": "figure",
+          "body": "Racionalización de un límite radical. Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Racionalización de un límite radical. Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "limit",
+            "title": "Racionalización de un límite radical",
+            "rows": [
+              [
+                "Expresión",
+                "(√(4+x)−2)/x"
+              ],
+              [
+                "Multiplicar",
+                "Conjugado √(4+x)+2"
+              ],
+              [
+                "Forma para x≠0",
+                "1/(√(4+x)+2)"
+              ],
+              [
+                "Límite x→0",
+                "1/4"
+              ]
+            ],
+            "model": {
+              "kind": "sqrt",
+              "shift": -4,
+              "scale": 1,
+              "vertical": -2
+            },
+            "domain": [
+              -3,
+              5
+            ],
+            "marks": [
+              [
+                "A",
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué cancelar x−a no implica que la función original esté definida en x=a?||Porque la identidad simplificada solo se establece donde el denominador inicial no vale cero."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: El cociente (x²−a²)/(x−a) coincide con x+a solo cuando x≠a; la transformación permite hallar su límite 2a, pero no autoriza asignar un valor al punto excluido sin declaración. Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F01-L02-01",
+        "F3-B2C-F01-L02-02",
+        "F3-B2C-F01-L02-03",
+        "F3-B2C-F01-L02-04",
+        "F3-B2C-F01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-F01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F01:C03"
+      ],
+      "objectives": [
+        "Hallar asíntotas verticales y horizontales justificando límites.",
+        "Distinguir asíntotas oblicuas de líneas horizontales y de agujeros."
+      ],
+      "prerequisites": [
+        "B1C-F02-L05",
+        "B2C-F01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una asíntota vertical x=a existe si algún límite lateral en a es infinito; un agujero con límite finito no cumple esa definición. Una asíntota horizontal y=L se obtiene si f(x)−L→0 al tender x a +∞ o −∞. Una oblicua y=mx+n, m≠0, requiere lim(x→±∞)[f(x)−(mx+n)]=0 en la dirección considerada, no basta con que la gráfica parezca recta. El cociente de polinomios con grado del numerador uno mayor que el denominador puede tener asíntota oblicua calculada por división. Para f(x)=(x²+1)/x=x+1/x, x≠0, y=x es una asíntota oblicua en ±∞, y x=0 es vertical. Ninguna asíntota obliga a que la función no cruce su recta en algún otro punto."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=1/(x−2)+3 posee AV x=2 y AH y=3: el segundo sumando gobierna el límite al infinito."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=(x²+1)/x=x+1/x tiene asíntota oblicua y=x cuando |x|→∞, pues g(x)−x=1/x→0."
+        },
+        {
+          "type": "figure",
+          "body": "Asíntotas vertical y horizontal. Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Asíntotas vertical y horizontal. Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "asymptote",
+            "title": "Asíntotas vertical y horizontal",
+            "rows": [
+              [
+                "Función",
+                "1/(x−2)+3"
+              ],
+              [
+                "AV",
+                "x=2"
+              ],
+              [
+                "AH",
+                "y=3"
+              ],
+              [
+                "Lateral izquierdo",
+                "−∞"
+              ],
+              [
+                "Lateral derecho",
+                "+∞"
+              ]
+            ],
+            "model": {
+              "kind": "rational",
+              "a": 1,
+              "shift": 2,
+              "vertical": 3
+            },
+            "domain": [
+              -3,
+              6
+            ],
+            "marks": [
+              [
+                "AV",
+                2,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un límite finito en x=a demuestra una asíntota vertical allí?||No. Para vertical debe divergir al menos un límite lateral."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Una asíntota vertical x=a existe si algún límite lateral en a es infinito; un agujero con límite finito no cumple esa definición. Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F01-L03-01",
+        "F3-B2C-F01-L03-02",
+        "F3-B2C-F01-L03-03",
+        "F3-B2C-F01-L03-04",
+        "F3-B2C-F01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-F01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F01:C04"
+      ],
+      "objectives": [
+        "Establecer continuidad en puntos de unión de funciones a trozos.",
+        "Calcular parámetros que igualan límites laterales y valor de la función."
+      ],
+      "prerequisites": [
+        "B1C-F02-L02",
+        "B1C-F02-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La continuidad en a requiere simultáneamente que f(a) esté definida, que exista un límite bilateral finito y que coincida con f(a). En una función a trozos, primero se determina qué fórmula se aplica en el punto y después se calculan los límites laterales con sus ramas respectivas. Para f(x)=x+2 si x<1 y f(x)=kx si x≥1, el límite izquierdo es 3 y el derecho k, igual al valor puntual k; hay continuidad solo cuando k=3. Si los laterales no coinciden, no basta modificar f(a). Si los laterales coinciden y falta únicamente el valor puntual, se trata de discontinuidad evitable. Si uno diverge, la discontinuidad es infinita. El criterio no requiere que las dos expresiones coincidan en todo el dominio."
+        },
+        {
+          "type": "example",
+          "body": "En f(x)=x+2 para x<1 y kx para x≥1, al llegar a 1 por la izquierda da 3; por la derecha da k. Resolver 3=k garantiza continuidad."
+        },
+        {
+          "type": "example",
+          "body": "En g(x)=x+1 para x<0 y x² para x≥0, los laterales en 0 son 1 y 0; ningún cambio de g(0) basta para eliminar el salto."
+        },
+        {
+          "type": "figure",
+          "body": "Unión de funciones a trozos. Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Unión de funciones a trozos. Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "piecewise",
+            "title": "Unión de funciones a trozos",
+            "rows": [
+              [
+                "Para x<1",
+                "x+2"
+              ],
+              [
+                "Para x≥1",
+                "k·x"
+              ],
+              [
+                "Límite izquierdo",
+                "3"
+              ],
+              [
+                "Límite derecho",
+                "k"
+              ],
+              [
+                "Continuidad",
+                "k=3"
+              ]
+            ],
+            "model": {
+              "kind": "piecewise",
+              "branch": "continuous",
+              "join": 1,
+              "k": 3
+            },
+            "domain": [
+              -2,
+              4
+            ],
+            "marks": [
+              [
+                "U",
+                1,
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puedo asegurar continuidad comprobando solo que f(a) está definida?||No. También debe existir el límite bilateral y coincidir exactamente con f(a)."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: La continuidad en a requiere simultáneamente que f(a) esté definida, que exista un límite bilateral finito y que coincida con f(a). Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F01-L04-01",
+        "F3-B2C-F01-L04-02",
+        "F3-B2C-F01-L04-03",
+        "F3-B2C-F01-L04-04",
+        "F3-B2C-F01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-F01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F01:C05"
+      ],
+      "objectives": [
+        "Analizar derivabilidad mediante cocientes incrementales laterales.",
+        "Distinguir esquinas, cúspides y discontinuidades de una tangente ordinaria."
+      ],
+      "prerequisites": [
+        "B1C-F03-L02",
+        "B1C-F02-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La derivabilidad bilateral de f en a exige que los límites laterales finitos del cociente [f(a+h)−f(a)]/h coincidan. La derivabilidad implica continuidad, de modo que un salto excluye derivada. El valor absoluto |x| es continuo en 0, pero las derivadas laterales son −1 y +1: existe esquina y no derivada. La función |x|^(2/3) es continua en 0, pero sus pendientes divergen con signos opuestos; es una cúspide. No deben identificarse pendientes infinitas con una derivada real finita. Para una función a trozos de polinomios, primero se comprueba continuidad en el enlace y luego la igualdad de derivadas laterales; la igualdad de pendientes sin continuidad tampoco basta."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=|x|: el cociente incremental en a=0 vale −1 si h<0 y +1 si h>0; por tanto no tiene derivada bilateral."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=x² si x≤0 y 2x² si x>0 es continua en cero y tiene derivadas laterales 0 y 0; sí es derivable en cero."
+        },
+        {
+          "type": "figure",
+          "body": "Punto continuo pero no derivable. Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Punto continuo pero no derivable. Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "corner",
+            "title": "Punto continuo pero no derivable",
+            "rows": [
+              [
+                "Función",
+                "f(x)=|x|"
+              ],
+              [
+                "Punto",
+                "x=0"
+              ],
+              [
+                "Continuidad",
+                "Sí"
+              ],
+              [
+                "Derivada izquierda",
+                "−1"
+              ],
+              [
+                "Derivada derecha",
+                "+1"
+              ],
+              [
+                "Derivabilidad",
+                "No"
+              ]
+            ],
+            "model": {
+              "kind": "absolute",
+              "shift": 0
+            },
+            "domain": [
+              -3,
+              3
+            ],
+            "marks": [
+              [
+                "V",
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una función continua es automáticamente derivable en el mismo punto?||No; una esquina como la de |x| en cero demuestra que continuidad no implica derivabilidad."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: La derivabilidad bilateral de f en a exige que los límites laterales finitos del cociente [f(a+h)−f(a)]/h coincidan. Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F01-L05-01",
+        "F3-B2C-F01-L05-02",
+        "F3-B2C-F01-L05-03",
+        "F3-B2C-F01-L05-04",
+        "F3-B2C-F01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-F01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F01:C06"
+      ],
+      "objectives": [
+        "Aplicar correctamente Fermat, Rolle y valor medio según sus hipótesis.",
+        "Reconocer contraejemplos cuando falla continuidad o derivabilidad."
+      ],
+      "prerequisites": [
+        "B1C-F03-L01",
+        "B1C-F03-L02",
+        "B2C-F01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Fermat afirma que, en un extremo local interior donde f es derivable, f′(a)=0; la condición es necesaria, no suficiente. Rolle exige continuidad de f en [a,b], derivabilidad en (a,b) e igualdad f(a)=f(b); entonces existe c interior con f′(c)=0. El teorema del valor medio exige continuidad en [a,b] y derivabilidad en (a,b), y garantiza algún c con f′(c)=[f(b)−f(a)]/(b−a). Ninguno afirma unicidad del c. No se pueden aplicar estos teoremas omitiendo las hipótesis de intervalo cerrado, interior o derivabilidad. En f(x)=|x| sobre [−1,1], los extremos tienen el mismo valor, pero falla la derivabilidad en cero; Rolle no obliga a un c con derivada cero."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=x² en [−1,1], f(−1)=f(1)=1 y f es continua/derivable: Rolle produce c=0, ya que f′(0)=0."
+        },
+        {
+          "type": "example",
+          "body": "Para g(x)=x² en [1,3], la pendiente secante es (9−1)/(3−1)=4. El valor medio se cumple con c=2 porque g′(2)=4."
+        },
+        {
+          "type": "figure",
+          "body": "Teorema del valor medio para y=x². Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Teorema del valor medio para y=x². Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "secant",
+            "title": "Teorema del valor medio para y=x²",
+            "rows": [
+              [
+                "Intervalo",
+                "[1,3]"
+              ],
+              [
+                "Pendiente secante",
+                "4"
+              ],
+              [
+                "Punto garantizado",
+                "c=2"
+              ],
+              [
+                "Derivada en c",
+                "4"
+              ],
+              [
+                "Hipótesis",
+                "Continua y derivable"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 0,
+              "k": 0,
+              "secant": [
+                1,
+                3
+              ],
+              "tangent_x": 2
+            },
+            "domain": [
+              -1,
+              4
+            ],
+            "marks": [
+              [
+                "C",
+                2,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede aplicarse Rolle a |x| en [−1,1] solo porque los extremos valen lo mismo?||No; falla la derivabilidad en x=0, punto interior del intervalo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Fermat afirma que, en un extremo local interior donde f es derivable, f′(a)=0; la condición es necesaria, no suficiente. Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F01-L06-01",
+        "F3-B2C-F01-L06-02",
+        "F3-B2C-F01-L06-03",
+        "F3-B2C-F01-L06-04",
+        "F3-B2C-F01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

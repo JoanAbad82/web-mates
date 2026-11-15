@@ -1,0 +1,953 @@
+{
+  "unit_id": "B1S-F03",
+  "version": "0.18.0",
+  "status": "revision",
+  "notice": "Ejercicios sintéticos deterministas EN REVISIÓN; sin validación humana.",
+  "activities": [
+    {
+      "exercise_id": "F3-B1S-F03-L01-01",
+      "lesson_id": "B1S-F03-L01",
+      "type": "numeric",
+      "prompt": "En Tasa de cambio media: Para f(x)=x² y extremos 1 y 4, calcula tasa de cambio MEDIA [f(b)−f(a)]/(b−a). Introduce el resultado numérico exacto sin unidades.",
+      "answer": 5.0,
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 5. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 5.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_average_square",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L01-02",
+      "lesson_id": "B1S-F03-L01",
+      "type": "numeric",
+      "prompt": "En Tasa de cambio media: Para coste C(q)=q²+10q+100, calcula la tasa media entre q=2 y q=4 €/unidad. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 16.0,
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 16. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 16.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_average_cost",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L01-03",
+      "lesson_id": "B1S-F03-L01",
+      "type": "numeric",
+      "prompt": "En Tasa de cambio media: Para C(q)=5q+20, ¿qué tasa MEDIA produce entre q=2 y q=8, siendo distintos? Introduce el resultado numérico exacto sin unidades.",
+      "answer": 5.0,
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 5. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 5.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_average_linear",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L01-04",
+      "lesson_id": "B1S-F03-L01",
+      "type": "choice",
+      "prompt": "En Tasa de cambio media: ¿Puede calcularse tasa media (f(b)−f(a))/(b−a) sin límites con b=a dividiendo entre cero (Sí/No)? Elige la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: No. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: No.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_average_zero_interval",
+        "prerequisito_b1s_f03"
+      ],
+      "choices": [
+        "Sí",
+        "No se puede concluir",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L01-05",
+      "lesson_id": "B1S-F03-L01",
+      "type": "choice",
+      "prompt": "En Tasa de cambio media: Una recta que pasa por los puntos (a,f(a)) y (b,f(b)), a≠b, es una recta: Secante, Tangente o Vertical. Elige la opción matemáticamente correcta.",
+      "answer": "Secante",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: Secante. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: Secante.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_secant_type",
+        "prerequisito_b1s_f03"
+      ],
+      "choices": [
+        "Vertical",
+        "Secante",
+        "Tangente"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L02-01",
+      "lesson_id": "B1S-F03-L02",
+      "type": "numeric",
+      "prompt": "En Derivada en un punto: Calcula derivada f′(3) de f(x)=x² usando límite de cociente incremental o regla demostrada. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 6.0,
+      "explanation": "Explicación matemática: Regla de derivación bajo sus hipótesis, sustitución y cotejo del dominio; resultado contrastado: 6. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 6.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_derivative_square",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L02-02",
+      "lesson_id": "B1S-F03-L02",
+      "type": "numeric",
+      "prompt": "En Derivada en un punto: Calcula la pendiente de secante lateral IZQUIERDA que aproxima f(x)=|x| en x=0. Introduce el resultado numérico exacto sin unidades.",
+      "answer": -1.0,
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: -1. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: -1.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_absolute_left_slope",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L02-03",
+      "lesson_id": "B1S-F03-L02",
+      "type": "numeric",
+      "prompt": "En Derivada en un punto: Calcula la pendiente de secante lateral DERECHA que aproxima f(x)=|x| en x=0. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 1.0,
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 1. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 1.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_absolute_right_slope",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L02-04",
+      "lesson_id": "B1S-F03-L02",
+      "type": "choice",
+      "prompt": "En Derivada en un punto: ¿Existe f′(0) bilateral para f(x)=|x|, cuyas pendientes laterales son −1 y 1 (Sí/No)? Elige la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Explicación matemática: Regla de derivación bajo sus hipótesis, sustitución y cotejo del dominio; resultado contrastado: No. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: No.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_absolute_derivative_exists",
+        "prerequisito_b1s_f03"
+      ],
+      "choices": [
+        "No se puede concluir",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L02-05",
+      "lesson_id": "B1S-F03-L02",
+      "type": "choice",
+      "prompt": "En Derivada en un punto: ¿Ser derivable en un punto implica necesariamente continuidad en ese punto (Sí/No)? Elige la opción matemáticamente correcta.",
+      "answer": "Sí",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: Sí. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: Sí.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_derivability_implies_continuity",
+        "prerequisito_b1s_f03"
+      ],
+      "choices": [
+        "Sí",
+        "No",
+        "No se puede concluir"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L03-01",
+      "lesson_id": "B1S-F03-L03",
+      "type": "numeric",
+      "prompt": "En Regla de derivación elemental: Para f(x)=3x³−2x²+5x−7, calcula f′(1) mediante derivación término a término. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 10.0,
+      "explanation": "Explicación matemática: Regla de derivación bajo sus hipótesis, sustitución y cotejo del dominio; resultado contrastado: 10. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 10.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_polynomial_derivative_at",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L03-02",
+      "lesson_id": "B1S-F03-L03",
+      "type": "numeric",
+      "prompt": "En Regla de derivación elemental: Para g(x)=(2x+1)², calcula g′(2) aplicando regla de la cadena. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 20.0,
+      "explanation": "Explicación matemática: Regla de derivación bajo sus hipótesis, sustitución y cotejo del dominio; resultado contrastado: 20. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 20.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_chain_derivative_at",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L03-03",
+      "lesson_id": "B1S-F03-L03",
+      "type": "numeric",
+      "prompt": "En Regla de derivación elemental: Para f(x)=3x³−2x²+5x−7, calcula f′(0) mediante derivación término a término. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 5.0,
+      "explanation": "Explicación matemática: Regla de derivación bajo sus hipótesis, sustitución y cotejo del dominio; resultado contrastado: 5. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 5.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_polynomial_derivative_at",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L03-04",
+      "lesson_id": "B1S-F03-L03",
+      "type": "choice",
+      "prompt": "En Regla de derivación elemental: ¿Es en general (uv)′=u′v′ para funciones derivables u,v (Sí/No)? Elige la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Explicación matemática: Regla de derivación bajo sus hipótesis, sustitución y cotejo del dominio; resultado contrastado: No. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: No.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_product_derivative_wrong",
+        "prerequisito_b1s_f03"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No se puede concluir"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L03-05",
+      "lesson_id": "B1S-F03-L03",
+      "type": "choice",
+      "prompt": "En Regla de derivación elemental: Calcula la derivada de la función CONSTANTE f(x)=17 en cualquier x real. Elige la opción matemáticamente correcta.",
+      "answer": "0",
+      "explanation": "Explicación matemática: Regla de derivación bajo sus hipótesis, sustitución y cotejo del dominio; resultado contrastado: 0. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 0.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_constant_derivative",
+        "prerequisito_b1s_f03"
+      ],
+      "choices": [
+        "1",
+        "-1",
+        "0"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L04-01",
+      "lesson_id": "B1S-F03-L04",
+      "type": "numeric",
+      "prompt": "En Tangente: Para f(x)=x², calcula la pendiente de la tangente en a=2. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 4.0,
+      "explanation": "Explicación matemática: Regla de derivación bajo sus hipótesis, sustitución y cotejo del dominio; resultado contrastado: 4. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 4.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_tangent_square_slope",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L04-02",
+      "lesson_id": "B1S-F03-L04",
+      "type": "numeric",
+      "prompt": "En Tangente: La tangente de f(x)=x² en a=2 es y=mx+b. Calcula el término independiente b EXACTO. Introduce el resultado numérico exacto sin unidades.",
+      "answer": -4.0,
+      "explanation": "Explicación matemática: Regla de derivación bajo sus hipótesis, sustitución y cotejo del dominio; resultado contrastado: -4. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: -4.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_tangent_square_intercept",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L04-03",
+      "lesson_id": "B1S-F03-L04",
+      "type": "numeric",
+      "prompt": "En Tangente: Para g(x)=x²+1, la tangente en x=0 es y=b horizontal. Calcula b. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 1.0,
+      "explanation": "Explicación matemática: Regla de derivación bajo sus hipótesis, sustitución y cotejo del dominio; resultado contrastado: 1. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 1.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_tangent_plus1_at0",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L04-04",
+      "lesson_id": "B1S-F03-L04",
+      "type": "choice",
+      "prompt": "En Tangente: ¿Existe tangente ordinaria única de pendiente finita para f(x)=|x| en x=0 (Sí/No)? Elige la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Explicación matemática: Regla de derivación bajo sus hipótesis, sustitución y cotejo del dominio; resultado contrastado: No. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: No.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_abs_tangent_exists",
+        "prerequisito_b1s_f03"
+      ],
+      "choices": [
+        "Sí",
+        "No se puede concluir",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L04-05",
+      "lesson_id": "B1S-F03-L04",
+      "type": "choice",
+      "prompt": "En Tangente: Elige la ecuación exacta de la tangente a y=x² en x=2: y=4x−4, y=2x+2 o y=4x+4. Elige la opción matemáticamente correcta.",
+      "answer": "y=4x−4",
+      "explanation": "Explicación matemática: Regla de derivación bajo sus hipótesis, sustitución y cotejo del dominio; resultado contrastado: y=4x−4. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: y=4x−4.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_tangent_equation",
+        "prerequisito_b1s_f03"
+      ],
+      "choices": [
+        "y=4x+4",
+        "y=4x−4",
+        "y=2x+2"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L05-01",
+      "lesson_id": "B1S-F03-L05",
+      "type": "numeric",
+      "prompt": "En Crecimiento y extremos iniciales: Para f(x)=(x−2)²+1, calcula la ABSCISA del mínimo. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 2.0,
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 2. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 2.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_min_vertex_x",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L05-02",
+      "lesson_id": "B1S-F03-L05",
+      "type": "numeric",
+      "prompt": "En Crecimiento y extremos iniciales: Para f(x)=(x−2)²+1, calcula el valor mínimo que toma la parábola. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 1.0,
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 1. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 1.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_min_vertex_value",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L05-03",
+      "lesson_id": "B1S-F03-L05",
+      "type": "choice",
+      "prompt": "En Crecimiento y extremos iniciales: ¿La condición f′(a)=0 basta POR SÍ SOLA para asegurar máximo o mínimo (Sí/No)? Elige la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: No. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: No.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_stationary_always_extreme",
+        "prerequisito_b1s_f03"
+      ],
+      "choices": [
+        "Sí",
+        "No se puede concluir",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L05-04",
+      "lesson_id": "B1S-F03-L05",
+      "type": "choice",
+      "prompt": "En Crecimiento y extremos iniciales: ¿Es x=0 máximo o mínimo local de f(x)=x³, pese a tener derivada cero (Sí/No)? Elige la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: No. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: No.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cubic_stationary_extreme",
+        "prerequisito_b1s_f03"
+      ],
+      "choices": [
+        "No se puede concluir",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L05-05",
+      "lesson_id": "B1S-F03-L05",
+      "type": "choice",
+      "prompt": "En Crecimiento y extremos iniciales: Para f(x)=(x−2)²+1, clasifica el signo de f′(3): Positiva, Negativa o Cero. Elige la opción matemáticamente correcta.",
+      "answer": "Positiva",
+      "explanation": "Explicación matemática: Regla de derivación bajo sus hipótesis, sustitución y cotejo del dominio; resultado contrastado: Positiva. Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio. Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: Positiva.",
+      "hint": "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_quadratic_derivative_sign",
+        "prerequisito_b1s_f03"
+      ],
+      "choices": [
+        "Positiva",
+        "Negativa",
+        "Cero"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L06-01",
+      "lesson_id": "B1S-F03-L06",
+      "type": "numeric",
+      "prompt": "En Interpretación marginal de cambio: Con coste C(q)=q²+10q+100, calcula el marginal CONTINUO C′(4) en €/unidad. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 18.0,
+      "explanation": "Explicación matemática: Regla de derivación bajo sus hipótesis, sustitución y cotejo del dominio; resultado contrastado: 18. Separa el marginal continuo del cambio finito de una unidad y comprueba la capacidad del modelo. Deriva la expresión para tasa local, pero calcula C(q+1)−C(q) o B(q+1)−B(q) para incremento discreto. Compara valores dentro del dominio admitido. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 18.",
+      "hint": "Separa el marginal continuo del cambio finito de una unidad y comprueba la capacidad del modelo.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cost_marginal",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L06-02",
+      "lesson_id": "B1S-F03-L06",
+      "type": "numeric",
+      "prompt": "En Interpretación marginal de cambio: Con C(q)=q²+10q+100, calcula cambio FINITO exacto C(5)−C(4) en €. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 19.0,
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 19. Separa el marginal continuo del cambio finito de una unidad y comprueba la capacidad del modelo. Deriva la expresión para tasa local, pero calcula C(q+1)−C(q) o B(q+1)−B(q) para incremento discreto. Compara valores dentro del dominio admitido. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 19.",
+      "hint": "Separa el marginal continuo del cambio finito de una unidad y comprueba la capacidad del modelo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cost_discrete_increment",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L06-03",
+      "lesson_id": "B1S-F03-L06",
+      "type": "numeric",
+      "prompt": "En Interpretación marginal de cambio: Con C(q)=q²+10q+100, evalúa C(4) en euros. Introduce el resultado numérico exacto sin unidades.",
+      "answer": 156.0,
+      "explanation": "Explicación matemática: Evaluación simbólica exacta, comprobación en la expresión original y restricciones pertinentes; resultado: 156. Separa el marginal continuo del cambio finito de una unidad y comprueba la capacidad del modelo. Deriva la expresión para tasa local, pero calcula C(q+1)−C(q) o B(q+1)−B(q) para incremento discreto. Compara valores dentro del dominio admitido. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: 156.",
+      "hint": "Separa el marginal continuo del cambio finito de una unidad y comprueba la capacidad del modelo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cost_value",
+        "prerequisito_b1s_f03"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L06-04",
+      "lesson_id": "B1S-F03-L06",
+      "type": "choice",
+      "prompt": "En Interpretación marginal de cambio: ¿Coinciden necesariamente C′(4) y C(5)−C(4) para C(q)=q²+10q+100 (Sí/No)? Elige la opción matemáticamente correcta.",
+      "answer": "No",
+      "explanation": "Explicación matemática: Regla de derivación bajo sus hipótesis, sustitución y cotejo del dominio; resultado contrastado: No. Separa el marginal continuo del cambio finito de una unidad y comprueba la capacidad del modelo. Deriva la expresión para tasa local, pero calcula C(q+1)−C(q) o B(q+1)−B(q) para incremento discreto. Compara valores dentro del dominio admitido. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: No.",
+      "hint": "Separa el marginal continuo del cambio finito de una unidad y comprueba la capacidad del modelo.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cost_derivative_equals_increment",
+        "prerequisito_b1s_f03"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No se puede concluir"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-F03-L06-05",
+      "lesson_id": "B1S-F03-L06",
+      "type": "choice",
+      "prompt": "En Interpretación marginal de cambio: Si C se mide en euros y q en unidades, C′(q) se mide en: €/unidad, Euros o Unidades. Elige la opción matemáticamente correcta.",
+      "answer": "€/unidad",
+      "explanation": "Explicación matemática: Regla de derivación bajo sus hipótesis, sustitución y cotejo del dominio; resultado contrastado: €/unidad. Separa el marginal continuo del cambio finito de una unidad y comprueba la capacidad del modelo. Deriva la expresión para tasa local, pero calcula C(q+1)−C(q) o B(q+1)−B(q) para incremento discreto. Compara valores dentro del dominio admitido. Comprueba límite lateral, continuidad, punto no derivable, dominio, signo, unidades y diferencia discreta cuando corresponda. Solución verificable: €/unidad.",
+      "hint": "Separa el marginal continuo del cambio finito de una unidad y comprueba la capacidad del modelo.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_marginal_units",
+        "prerequisito_b1s_f03"
+      ],
+      "choices": [
+        "Euros",
+        "Unidades",
+        "€/unidad"
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B1S-F03-L01-01": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "average_square",
+        "params": [
+          1,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: average_square"
+    },
+    "F3-B1S-F03-L01-02": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "average_cost",
+        "params": [
+          2,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: average_cost"
+    },
+    "F3-B1S-F03-L01-03": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "average_linear",
+        "params": [
+          5,
+          2,
+          8
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: average_linear"
+    },
+    "F3-B1S-F03-L01-04": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "average_zero_interval",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: average_zero_interval"
+    },
+    "F3-B1S-F03-L01-05": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "secant_type",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: secant_type"
+    },
+    "F3-B1S-F03-L02-01": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "derivative_square",
+        "params": [
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: derivative_square"
+    },
+    "F3-B1S-F03-L02-02": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "absolute_left_slope",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: absolute_left_slope"
+    },
+    "F3-B1S-F03-L02-03": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "absolute_right_slope",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: absolute_right_slope"
+    },
+    "F3-B1S-F03-L02-04": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "absolute_derivative_exists",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: absolute_derivative_exists"
+    },
+    "F3-B1S-F03-L02-05": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "derivability_implies_continuity",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: derivability_implies_continuity"
+    },
+    "F3-B1S-F03-L03-01": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "polynomial_derivative_at",
+        "params": [
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: polynomial_derivative_at"
+    },
+    "F3-B1S-F03-L03-02": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "chain_derivative_at",
+        "params": [
+          2,
+          1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: chain_derivative_at"
+    },
+    "F3-B1S-F03-L03-03": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "polynomial_derivative_at",
+        "params": [
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: polynomial_derivative_at"
+    },
+    "F3-B1S-F03-L03-04": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "product_derivative_wrong",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: product_derivative_wrong"
+    },
+    "F3-B1S-F03-L03-05": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "constant_derivative",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: constant_derivative"
+    },
+    "F3-B1S-F03-L04-01": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "tangent_square_slope",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: tangent_square_slope"
+    },
+    "F3-B1S-F03-L04-02": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "tangent_square_intercept",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: tangent_square_intercept"
+    },
+    "F3-B1S-F03-L04-03": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "tangent_plus1_at0",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: tangent_plus1_at0"
+    },
+    "F3-B1S-F03-L04-04": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "abs_tangent_exists",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: abs_tangent_exists"
+    },
+    "F3-B1S-F03-L04-05": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "tangent_equation",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: tangent_equation"
+    },
+    "F3-B1S-F03-L05-01": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "min_vertex_x",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: min_vertex_x"
+    },
+    "F3-B1S-F03-L05-02": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "min_vertex_value",
+        "params": [
+          2,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: min_vertex_value"
+    },
+    "F3-B1S-F03-L05-03": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "stationary_always_extreme",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: stationary_always_extreme"
+    },
+    "F3-B1S-F03-L05-04": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "cubic_stationary_extreme",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: cubic_stationary_extreme"
+    },
+    "F3-B1S-F03-L05-05": {
+      "hints": [
+        "Distingue tasa de cambio media, derivada por límite y tangente; revisa hipótesis y dominio.",
+        "Tasa media=(f(b)−f(a))/(b−a), a≠b. Para x² la derivada es 2x; en una esquina |x| las pendientes laterales −1 y 1 no coinciden. f′=0 no implica por sí solo extremo."
+      ],
+      "math_check": {
+        "kind": "quadratic_derivative_sign",
+        "params": [
+          3,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: quadratic_derivative_sign"
+    },
+    "F3-B1S-F03-L06-01": {
+      "hints": [
+        "Separa el marginal continuo del cambio finito de una unidad y comprueba la capacidad del modelo.",
+        "Deriva la expresión para tasa local, pero calcula C(q+1)−C(q) o B(q+1)−B(q) para incremento discreto. Compara valores dentro del dominio admitido."
+      ],
+      "math_check": {
+        "kind": "cost_marginal",
+        "params": [
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: cost_marginal"
+    },
+    "F3-B1S-F03-L06-02": {
+      "hints": [
+        "Separa el marginal continuo del cambio finito de una unidad y comprueba la capacidad del modelo.",
+        "Deriva la expresión para tasa local, pero calcula C(q+1)−C(q) o B(q+1)−B(q) para incremento discreto. Compara valores dentro del dominio admitido."
+      ],
+      "math_check": {
+        "kind": "cost_discrete_increment",
+        "params": [
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: cost_discrete_increment"
+    },
+    "F3-B1S-F03-L06-03": {
+      "hints": [
+        "Separa el marginal continuo del cambio finito de una unidad y comprueba la capacidad del modelo.",
+        "Deriva la expresión para tasa local, pero calcula C(q+1)−C(q) o B(q+1)−B(q) para incremento discreto. Compara valores dentro del dominio admitido."
+      ],
+      "math_check": {
+        "kind": "cost_value",
+        "params": [
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: cost_value"
+    },
+    "F3-B1S-F03-L06-04": {
+      "hints": [
+        "Separa el marginal continuo del cambio finito de una unidad y comprueba la capacidad del modelo.",
+        "Deriva la expresión para tasa local, pero calcula C(q+1)−C(q) o B(q+1)−B(q) para incremento discreto. Compara valores dentro del dominio admitido."
+      ],
+      "math_check": {
+        "kind": "cost_derivative_equals_increment",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: cost_derivative_equals_increment"
+    },
+    "F3-B1S-F03-L06-05": {
+      "hints": [
+        "Separa el marginal continuo del cambio finito de una unidad y comprueba la capacidad del modelo.",
+        "Deriva la expresión para tasa local, pero calcula C(q+1)−C(q) o B(q+1)−B(q) para incremento discreto. Compara valores dentro del dominio admitido."
+      ],
+      "math_check": {
+        "kind": "marginal_units",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Fallo de dominio, límite, continuidad, no derivabilidad, incremento marginal, signo o frontera: marginal_units"
+    }
+  }
+}

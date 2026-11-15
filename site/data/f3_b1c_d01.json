@@ -1,0 +1,712 @@
+{
+  "unit_id": "B1C-D01",
+  "unit_title": "Estadística bivariante",
+  "product_phase": "F3_OLA23",
+  "version": "0.23.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Describir distribuciones bidimensionales con pares ordenados y tablas marginales.",
+    "Calcular covarianza descriptiva y correlación lineal de Pearson en datos exactos.",
+    "Obtener recta de regresión y sobre x por mínimos cuadrados exactos."
+  ],
+  "warnings": [
+    "Todos los ejemplos son sintéticos, el contenido permanece EN REVISIÓN.",
+    "Regresión cuadrática exige diseño de rango 3; buen ajuste en muestra no prueba causalidad ni generalización.",
+    "Laplace solo con resultados elementales equiprobables; sin reemplazo, probabilidades condicionadas.",
+    "La proporción muestral no determina el parámetro poblacional ni garantiza precisión.",
+    "WCAG 2.2 AA, currículo autonómico, revisión humana y dispositivo físico NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Regresión lineal 4.º B",
+      "lesson_id": "E4B-D01-L04",
+      "href": "#/curso/E4B/unidad/E4B-D01/leccion/E4B-D01-L04"
+    },
+    {
+      "label": "Correlación 4.º B",
+      "lesson_id": "E4B-D01-L03",
+      "href": "#/curso/E4B/unidad/E4B-D01/leccion/E4B-D01-L03"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 sin calibración",
+    "rule": "Actividades de recuperación y repaso solo en almacenamiento local con consentimiento."
+  },
+  "source_note": "RD 217/2022 y RD 243/2022 solo marco; lecciones y secuencia editorial sin validación autonómica.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1C-D01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.23.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-D01:C01"
+      ],
+      "objectives": [
+        "Describir distribuciones bidimensionales con pares ordenados y tablas marginales.",
+        "Diferenciar frecuencia conjunta, condicionada y covariación en variables cuantitativas."
+      ],
+      "prerequisites": [
+        "E4B-D01-L01",
+        "E4B-D01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una distribución bidimensional registra pares (xᵢ,yᵢ) sobre las mismas unidades de observación. La tabla de pares (0,1),(1,3),(2,5) tiene tres individuos y dos variables; media x̄=1 y media ȳ=3. Si las variables son categóricas, una tabla de contingencia como filas A:(8,2), B:(4,6) informa 20 observaciones, marginales Sí=12, No=8 y proporciones condicionales P(Sí|A)=8/10 frente a P(A|Sí)=8/12. Estas probabilidades describen frecuencias observadas y no prueban causalidad. Si se dispone de pares cuantitativos, la dispersión en el plano revela posibles asociaciones, que pueden ser lineales o no. El orden de los datos y la definición exacta de cada variable condicionan cualquier análisis posterior. No es correcto usar una medida lineal de correlación en variables nominales codificadas arbitrariamente."
+        },
+        {
+          "type": "example",
+          "body": "Con pares (0,1),(1,3),(2,5), n=3, suma x=3, suma y=9: x̄=1 y ȳ=3."
+        },
+        {
+          "type": "example",
+          "body": "Tabla A:(8,2), B:(4,6) total 20, marginal Sí=8+4=12; dentro de fila A, la frecuencia relativa de Sí es 8/10."
+        },
+        {
+          "type": "figure",
+          "body": "Distribución conjunta y marginal. SVG didáctico, acompañado de tabla HTML semántica exacta y supuestos.",
+          "alt": "Distribución conjunta y marginal. La tabla presenta datos exactos, hipótesis y límites sin depender de colores ni representación visual.",
+          "visual_spec": {
+            "render_family": "wave23",
+            "kind": "contingency",
+            "title": "Distribución conjunta y marginal",
+            "rows": [
+              [
+                "A",
+                "8 sí; 2 no; n=10"
+              ],
+              [
+                "B",
+                "4 sí; 6 no; n=10"
+              ],
+              [
+                "Total sí",
+                "12"
+              ],
+              [
+                "Total no",
+                "8"
+              ],
+              [
+                "Total n",
+                "20"
+              ]
+            ],
+            "model": {
+              "kind": "contingency",
+              "matrix": [
+                [
+                  8,
+                  2
+                ],
+                [
+                  4,
+                  6
+                ]
+              ],
+              "row_labels": [
+                "A",
+                "B"
+              ],
+              "col_labels": [
+                "Sí",
+                "No"
+              ]
+            },
+            "domain": [
+              0,
+              20
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una tabla de contingencia de dos variables demuestra que una causa la otra?||No; describe asociación o recuentos observados."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una distribución bidimensional registra pares (xᵢ,yᵢ) sobre las mismas unidades de observación. Justifica al menos una condición de aplicación antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-D01-L01-01",
+        "F3-B1C-D01-L01-02",
+        "F3-B1C-D01-L01-03",
+        "F3-B1C-D01-L01-04",
+        "F3-B1C-D01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos y mapeo autonómico propuestas editoriales no homologadas.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, cotejo oficial competencial y autonómico pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-D01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.23.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-D01:C02"
+      ],
+      "objectives": [
+        "Calcular covarianza descriptiva y correlación lineal de Pearson en datos exactos.",
+        "Interpretar coeficientes y reconocer supuestos, escala y casos de varianza cero."
+      ],
+      "prerequisites": [
+        "B1C-D01-L01",
+        "E4B-D01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La covarianza descriptiva poblacional es cov(X,Y)=Σ(xᵢ−x̄)(yᵢ−ȳ)/n. Para x=(1,2,3) e y=(2,4,6), las medias 2 y 4 dan Σ productos centrados=4 y cov=4/3. Con y=(6,4,2), cov=−4/3. Pearson r=Σ(xᵢ−x̄)(yᵢ−ȳ)/√(Σ(xᵢ−x̄)²·Σ(yᵢ−ȳ)²), siempre que las dos sumas de cuadrados sean positivas. En series perfectamente alineadas crecientes r=1 y decrecientes r=−1; cambiar las unidades con factor positivo altera covarianza pero no r. Si una variable es constante, r no existe. Un r cercano a cero solo indica escasa relación lineal, no independencia; un r alto no prueba causalidad ni garantiza predicciones futuras."
+        },
+        {
+          "type": "example",
+          "body": "Para (x,y)=(1,2),(2,4),(3,6), la covarianza es 4/3, y r=1 por alineación lineal creciente perfecta."
+        },
+        {
+          "type": "example",
+          "body": "Para (1,6),(2,4),(3,2), la covarianza es −4/3 y r=−1; ninguna conclusión causal se deduce del signo."
+        },
+        {
+          "type": "figure",
+          "body": "Covarianza y correlación con tres pares. SVG didáctico, acompañado de tabla HTML semántica exacta y supuestos.",
+          "alt": "Covarianza y correlación con tres pares. La tabla presenta datos exactos, hipótesis y límites sin depender de colores ni representación visual.",
+          "visual_spec": {
+            "render_family": "wave23",
+            "kind": "scatter",
+            "title": "Covarianza y correlación con tres pares",
+            "rows": [
+              [
+                "x",
+                "1,2,3"
+              ],
+              [
+                "y",
+                "2,4,6"
+              ],
+              [
+                "Covarianza",
+                "4/3"
+              ],
+              [
+                "Pearson r",
+                "+1"
+              ],
+              [
+                "Condición",
+                "Varianzas positivas"
+              ]
+            ],
+            "model": {
+              "kind": "scatter",
+              "points": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  6
+                ]
+              ]
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Pearson r está definido si todos los valores de x son iguales?||No; la desviación típica de x es cero."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La covarianza descriptiva poblacional es cov(X,Y)=Σ(xᵢ−x̄)(yᵢ−ȳ)/n. Justifica al menos una condición de aplicación antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-D01-L02-01",
+        "F3-B1C-D01-L02-02",
+        "F3-B1C-D01-L02-03",
+        "F3-B1C-D01-L02-04",
+        "F3-B1C-D01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos y mapeo autonómico propuestas editoriales no homologadas.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, cotejo oficial competencial y autonómico pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-D01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.23.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-D01:C03"
+      ],
+      "objectives": [
+        "Obtener recta de regresión y sobre x por mínimos cuadrados exactos.",
+        "Interpretar intercepto, pendiente, residuos y casos degenerados."
+      ],
+      "prerequisites": [
+        "B1C-D01-L02",
+        "E4B-D01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El ajuste lineal ŷ=a+bx minimiza Σ(yᵢ−a−bxᵢ)². Si Σ(xᵢ−x̄)²>0, se obtiene b=Σ(xᵢ−x̄)(yᵢ−ȳ)/Σ(xᵢ−x̄)² y a=ȳ−bx̄. Para (0,1),(1,3),(2,5), x̄=1 y ȳ=3, sumas Sxx=2 y Sxy=4: b=2, a=1, con residuos cero. En datos no exactamente alineados, el ajuste es aproximado y el residuo yᵢ−ŷᵢ puede tener signo. Una recta dibujada a ojo no equivale necesariamente a la solución del problema de mínimos cuadrados; intercambiar variables altera el ajuste. Si x no varía, Sxx=0 y la pendiente de este modelo no es identificable. La calidad de ajuste en la muestra no permite extrapolar arbitrariamente ni probar causalidad."
+        },
+        {
+          "type": "example",
+          "body": "Con (0,1),(1,3),(2,5), b=4/2=2 y a=3−2·1=1; la recta ŷ=1+2x pasa por todos los puntos."
+        },
+        {
+          "type": "example",
+          "body": "Con (0,2),(1,4),(2,6), b=2 y a=2, recta ŷ=2+2x; para x=2 el valor ajustado es 6."
+        },
+        {
+          "type": "figure",
+          "body": "Regresión lineal exacta. SVG didáctico, acompañado de tabla HTML semántica exacta y supuestos.",
+          "alt": "Regresión lineal exacta. La tabla presenta datos exactos, hipótesis y límites sin depender de colores ni representación visual.",
+          "visual_spec": {
+            "render_family": "wave23",
+            "kind": "scatter",
+            "title": "Regresión lineal exacta",
+            "rows": [
+              [
+                "Pares",
+                "(0,1),(1,3),(2,5)"
+              ],
+              [
+                "Sxx",
+                "2"
+              ],
+              [
+                "Sxy",
+                "4"
+              ],
+              [
+                "Pendiente b",
+                "2"
+              ],
+              [
+                "Intercepto a",
+                "1"
+              ]
+            ],
+            "model": {
+              "kind": "scatter",
+              "points": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  2,
+                  5
+                ]
+              ],
+              "line": [
+                1,
+                2
+              ]
+            },
+            "domain": [
+              0,
+              6
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Con todos los x constantes se puede dividir por Sxx para determinar la pendiente b?||No; Sxx es cero."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El ajuste lineal ŷ=a+bx minimiza Σ(yᵢ−a−bxᵢ)². Justifica al menos una condición de aplicación antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-D01-L03-01",
+        "F3-B1C-D01-L03-02",
+        "F3-B1C-D01-L03-03",
+        "F3-B1C-D01-L03-04",
+        "F3-B1C-D01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos y mapeo autonómico propuestas editoriales no homologadas.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, cotejo oficial competencial y autonómico pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-D01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.23.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-D01:C04"
+      ],
+      "objectives": [
+        "Reconocer y ajustar un modelo cuadrático ŷ=a+bx+cx² en datos sintéticos.",
+        "Distinguir coeficientes, grado de modelo, residuos y falta de identificación con abscisas insuficientes."
+      ],
+      "prerequisites": [
+        "B1C-D01-L03",
+        "E4B-D01-L03",
+        "E4B-A01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una recta no describe siempre un patrón curvo. El modelo cuadrático ŷ=a+bx+cx² puede estimarse por mínimos cuadrados si las columnas 1, x, x² del diseño tienen rango completo (al menos tres abscisas distintas). Con puntos (−2,4),(−1,1),(0,0),(1,1),(2,4), los valores coinciden exactamente con y=x²: a=0, b=0, c=1, por lo que la suma de residuos cuadrados es cero. Para y=1+x², a=1, b=0, c=1. En datos ruidosos las ecuaciones normales se obtienen minimizando Σ(yᵢ−a−bxᵢ−cxᵢ²)², pero un ajuste perfecto con pocas observaciones no demuestra generalización. Comparar grados de polinomio exige considerar complejidad, residuos y validación fuera de la muestra. Una parábola no es una recta y Pearson r=0 puede coexistir con dependencia cuadrática fuerte en un diseño simétrico."
+        },
+        {
+          "type": "example",
+          "body": "Puntos x=−2,−1,0,1,2 e y=4,1,0,1,4: el polinomio de segundo grado ajustado exacto es ŷ=x², con c=1 y a=b=0."
+        },
+        {
+          "type": "example",
+          "body": "Para x=−2,−1,0,1,2 e y=5,2,1,2,5: el ajuste exacto es ŷ=1+x², con a=1, b=0, c=1."
+        },
+        {
+          "type": "figure",
+          "body": "Regresión cuadrática exacta. SVG didáctico, acompañado de tabla HTML semántica exacta y supuestos.",
+          "alt": "Regresión cuadrática exacta. La tabla presenta datos exactos, hipótesis y límites sin depender de colores ni representación visual.",
+          "visual_spec": {
+            "render_family": "wave23",
+            "kind": "scatter",
+            "title": "Regresión cuadrática exacta",
+            "rows": [
+              [
+                "Abscisas",
+                "−2,−1,0,1,2"
+              ],
+              [
+                "Ordenadas",
+                "4,1,0,1,4"
+              ],
+              [
+                "Modelo",
+                "ŷ=x²"
+              ],
+              [
+                "Coeficientes (a,b,c)",
+                "(0,0,1)"
+              ],
+              [
+                "Residuos",
+                "0 en las cinco observaciones"
+              ]
+            ],
+            "model": {
+              "kind": "scatter",
+              "points": [
+                [
+                  -2,
+                  4
+                ],
+                [
+                  -1,
+                  1
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  4
+                ]
+              ],
+              "quadratic": [
+                0,
+                0,
+                1
+              ]
+            },
+            "domain": [
+              -3,
+              3
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Pearson r=0 descarta la dependencia cuadrática y=x² en una muestra simétrica?||No; es una relación no lineal aunque no haya covariación lineal."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una recta no describe siempre un patrón curvo. Justifica al menos una condición de aplicación antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-D01-L04-01",
+        "F3-B1C-D01-L04-02",
+        "F3-B1C-D01-L04-03",
+        "F3-B1C-D01-L04-04",
+        "F3-B1C-D01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos y mapeo autonómico propuestas editoriales no homologadas.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, cotejo oficial competencial y autonómico pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-D01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.23.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-D01:C05"
+      ],
+      "objectives": [
+        "Comparar residuos de modelos lineales y cuadráticos en datos curvos.",
+        "Reconocer sobreajuste y límites de extrapolación y causalidad."
+      ],
+      "prerequisites": [
+        "B1C-D01-L04",
+        "B1C-D01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El residuo de una observación es eᵢ=yᵢ−ŷᵢ y la suma de cuadrados de residuos SSE=Σeᵢ². Para puntos (−2,4),(−1,1),(0,0),(1,1),(2,4), la mejor recta por simetría tiene pendiente 0 e intercepto 2, con residuos 2,−1,−2,−1,2 y SSE=4+1+4+1+4=14. El modelo cuadrático ŷ=x² ajusta exactamente esos cinco datos y SSE=0, pero no por ello garantiza predicción fuera de [−2,2]. Agregar términos polinómicos siempre puede mejorar o mantener el ajuste en muestra y causar sobreajuste; comparar requiere validación y justificar el fenómeno. El gráfico debe declarar dominio observado, unidades, residuos y si un valor es interpolado o extrapolado. Ni las curvas ni los coeficientes prueban causalidad por sí solos."
+        },
+        {
+          "type": "example",
+          "body": "En y=x² para x=−2,−1,0,1,2, la media y=2; la recta constante ŷ=2 da residuos 2,−1,−2,−1,2 y SSE=14."
+        },
+        {
+          "type": "example",
+          "body": "El cuadrático ŷ=x² reproduce las cinco ordenadas y tiene SSE=0; predecir en x=10 daría 100, pero sería extrapolación no verificada."
+        },
+        {
+          "type": "figure",
+          "body": "Residuos lineales frente a parábola. SVG didáctico, acompañado de tabla HTML semántica exacta y supuestos.",
+          "alt": "Residuos lineales frente a parábola. La tabla presenta datos exactos, hipótesis y límites sin depender de colores ni representación visual.",
+          "visual_spec": {
+            "render_family": "wave23",
+            "kind": "scatter",
+            "title": "Residuos lineales frente a parábola",
+            "rows": [
+              [
+                "Datos",
+                "(−2,4),(−1,1),(0,0),(1,1),(2,4)"
+              ],
+              [
+                "Recta MCO",
+                "ŷ=2"
+              ],
+              [
+                "SSE lineal",
+                "14"
+              ],
+              [
+                "Cuadrático",
+                "ŷ=x²"
+              ],
+              [
+                "SSE cuadrático",
+                "0"
+              ]
+            ],
+            "model": {
+              "kind": "scatter",
+              "points": [
+                [
+                  -2,
+                  4
+                ],
+                [
+                  -1,
+                  1
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  4
+                ]
+              ],
+              "quadratic": [
+                0,
+                0,
+                1
+              ]
+            },
+            "domain": [
+              -3,
+              3
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿SSE=0 en cinco puntos garantiza que un modelo cuadrático prediga perfectamente fuera de la muestra?||No; el ajuste observado no valida la extrapolación."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El residuo de una observación es eᵢ=yᵢ−ŷᵢ y la suma de cuadrados de residuos SSE=Σeᵢ². Justifica al menos una condición de aplicación antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-D01-L05-01",
+        "F3-B1C-D01-L05-02",
+        "F3-B1C-D01-L05-03",
+        "F3-B1C-D01-L05-04",
+        "F3-B1C-D01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos y mapeo autonómico propuestas editoriales no homologadas.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, cotejo oficial competencial y autonómico pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

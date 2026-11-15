@@ -1,0 +1,917 @@
+{
+  "unit_id": "B1S-F01",
+  "unit_title": "Funciones en contextos sociales",
+  "product_phase": "F3_OLA17",
+  "version": "0.17.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Distinguir dominio algebraico de dominio económicamente viable.",
+    "Comparar funciones afines y cuadráticas en escenarios económicos con restricciones.",
+    "Determinar el dominio y las asíntotas de funciones racionales sociales."
+  ],
+  "warnings": [
+    "Lecciones y ejercicios sintéticos EN REVISIÓN, sin publicación ni homologación.",
+    "E3-N02 y E3-G02 siguen solo título: las escalas esenciales se explican explícitamente sin declararlas cubiertas.",
+    "Modelos de funciones sociales son ilustrativos, no pronósticos económicos reales.",
+    "Mapeo autonómico, WCAG 2.2 AA completo, dispositivos físicos y revisión humana NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Base numérica y logarítmica MACS I",
+      "lesson_id": "B1S-N01-L03",
+      "href": "#/curso/B1S/unidad/B1S-N01/leccion/B1S-N01-L03"
+    },
+    {
+      "label": "Álgebra y restricciones",
+      "lesson_id": "B1S-A01-L06",
+      "href": "#/curso/B1S/unidad/B1S-A01/leccion/B1S-A01-L06"
+    },
+    {
+      "label": "Porcentajes y capitalización",
+      "lesson_id": "E4A-P01-L03",
+      "href": "#/curso/E4A/unidad/E4A-P01/leccion/E4A-P01-L03"
+    },
+    {
+      "label": "Funciones básicas de ESO 4A",
+      "lesson_id": "E4A-F01-L07",
+      "href": "#/curso/E4A/unidad/E4A-F01/leccion/E4A-F01-L07"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recuperación sin pistas, feedback específico y repaso local voluntario."
+  },
+  "source_note": "RD 217/2022 y RD 243/2022: marco estatal, secuencia editorial no oficial.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1S-F01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F01:C01"
+      ],
+      "objectives": [
+        "Distinguir dominio algebraico de dominio económicamente viable.",
+        "Construir e interpretar funciones de una variable en datos sociales sin extrapolar."
+      ],
+      "prerequisites": [
+        "B1S-A01-L06",
+        "E4A-F01-L01",
+        "B1S-N01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una función de una variable asigna una salida a cada entrada admitida. En modelos sociales, el dominio puede ser más estrecho que el dominio algebraico: C(n)=20+5n admite todo número real como fórmula, pero si n cuenta entradas compradas, entonces n es entero no negativo. En f(x)=12/(x−2), el dominio algebraico excluye x=2; si x es número de clientes además excluimos cantidades negativas o fraccionarias. La expresión con raíz cuadrada g(t)=√(t−3) requiere t≥3. Es fundamental distinguir una tabla de observaciones de una función causal exacta: interpolar no prueba que un comportamiento continúe indefinidamente. Las unidades de la entrada y salida deben declararse, las restricciones de capacidad y presupuesto se intersectan con el dominio, y las visualizaciones muestran hipótesis, no medidas externas verificadas."
+        },
+        {
+          "type": "example",
+          "body": "Una tarifa C(n)=20+5n euros se usa solo con n entero no negativo. Para cuatro viajes, C(4)=40 €, pero 4,5 viajes no es una entrada válida del modelo."
+        },
+        {
+          "type": "example",
+          "body": "La expresión f(x)=12/(x−2) no admite x=2. Si x representa personas, tampoco valores negativos ni fraccionarios."
+        },
+        {
+          "type": "figure",
+          "body": "Dominio discreto en una tarifa contextual. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Dominio discreto en una tarifa contextual. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "linear",
+            "title": "Dominio discreto en una tarifa contextual",
+            "rows": [
+              [
+                "Función",
+                "C(n)=20+5n"
+              ],
+              [
+                "Dominio",
+                "n entero no negativo"
+              ],
+              [
+                "C(4)",
+                "40 €"
+              ],
+              [
+                "C(4,5)",
+                "Sin significado como entradas"
+              ],
+              [
+                "Salida",
+                "Euros"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 5,
+              "b": 20
+            },
+            "domain": [
+              0,
+              8
+            ],
+            "marks": [
+              [
+                "A",
+                4,
+                40
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Que una fórmula acepte x=−3 garantiza que una cantidad de personas negativa tiene sentido?||No; hay que imponer el dominio contextual y la unidad de la variable."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una función de una variable asigna una salida a cada entrada admitida. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F01-L01-01",
+        "F3-B1S-F01-L01-02",
+        "F3-B1S-F01-L01-03",
+        "F3-B1S-F01-L01-04",
+        "F3-B1S-F01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-F01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F01:C02"
+      ],
+      "objectives": [
+        "Comparar funciones afines y cuadráticas en escenarios económicos con restricciones.",
+        "Localizar intersecciones y extremos por métodos algebraicos exactos."
+      ],
+      "prerequisites": [
+        "B1S-F01-L01",
+        "E4A-F01-L03",
+        "B1S-A01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El modelo afín C(q)=mq+b describe variación constante m y cuota fija b. En cambio una función cuadrática R(q)=−q²+10q puede modelizar un ingreso simplificado que primero crece y luego decrece. Su vértice q=5, R(5)=25 representa un máximo dentro de 0≤q≤10. Para comparar dos tarifas C1(q)=5+2q y C2(q)=1+3q, se igualan y resulta q=4; antes de ese valor es menor la segunda y después la primera. Los puntos de corte visuales no sustituyen a resolver las ecuaciones. Si q debe ser entero, las decisiones se toman sobre los enteros factibles. Ningún ajuste algebraico implica causalidad o rentabilidad futura sin datos y supuestos; debe comunicarse la diferencia entre explicación de un modelo sintético y predicción."
+        },
+        {
+          "type": "example",
+          "body": "Dos planes de coste A(q)=5+2q y B(q)=1+3q coinciden cuando 5+2q=1+3q; q=4 y coste 13 €."
+        },
+        {
+          "type": "example",
+          "body": "Un ingreso R(q)=−q²+10q=25−(q−5)² tiene máximo 25 unidades monetarias en q=5, siempre dentro del dominio 0≤q≤10."
+        },
+        {
+          "type": "figure",
+          "body": "Ingreso cuadrático y máximo factible. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Ingreso cuadrático y máximo factible. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "quadratic",
+            "title": "Ingreso cuadrático y máximo factible",
+            "rows": [
+              [
+                "Modelo",
+                "R(q)=−q²+10q"
+              ],
+              [
+                "Dominio",
+                "0≤q≤10"
+              ],
+              [
+                "Vértice",
+                "(5,25)"
+              ],
+              [
+                "Máximo",
+                "25"
+              ],
+              [
+                "Restricción",
+                "q entero cuando proceda"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": -1,
+              "h": 5,
+              "k": 25
+            },
+            "domain": [
+              0,
+              10
+            ],
+            "marks": [
+              [
+                "M",
+                5,
+                25
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Debe aceptarse un máximo de parábola situado fuera del intervalo de cantidades permitidas?||No; hay que comparar el máximo factible y las fronteras del dominio."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El modelo afín C(q)=mq+b describe variación constante m y cuota fija b. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F01-L02-01",
+        "F3-B1S-F01-L02-02",
+        "F3-B1S-F01-L02-03",
+        "F3-B1S-F01-L02-04",
+        "F3-B1S-F01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-F01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F01:C03"
+      ],
+      "objectives": [
+        "Determinar el dominio y las asíntotas de funciones racionales sociales.",
+        "Diferenciar hueco evitable y asíntota vertical mediante límites y denominadores."
+      ],
+      "prerequisites": [
+        "B1S-A01-L01",
+        "B1S-F01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Las funciones racionales son cocientes de polinomios y no están definidas donde su denominador se anula. Una cuota fija de 120 € repartida entre n personas se modeliza como p(n)=120/n, con n entero positivo en el contexto. En la extensión matemática real, la función tiene asíntota vertical n=0 y horizontal p=0 a medida que n crece sin límite; no se interpreta como infinitas personas reales. En cambio g(x)=(x²−4)/(x−2) es igual a x+2 para x≠2, pero la expresión original no admite x=2: allí aparece un hueco evitable y no una asíntota vertical. Cancelar factores no restaura el punto excluido. Para interpretar la gráfica se debe distinguir dominio, comportamiento cercano a puntos prohibidos y unidades; no se infieren datos económicos reales a partir de una curva."
+        },
+        {
+          "type": "example",
+          "body": "La cuota p(n)=120/n para n entero positivo da p(3)=40 €, p(6)=20 €, y no permite n=0. El producto n·p(n)=120 permanece fijo."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=(x²−4)/(x−2) se simplifica a x+2 solo si x≠2. El límite al acercarse a 2 vale 4, pero g(2) no existe."
+        },
+        {
+          "type": "figure",
+          "body": "Reparto inversamente proporcional. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Reparto inversamente proporcional. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "inverse",
+            "title": "Reparto inversamente proporcional",
+            "rows": [
+              [
+                "Coste fijo",
+                "120 €"
+              ],
+              [
+                "Cuota",
+                "p(n)=120/n"
+              ],
+              [
+                "n=3",
+                "40 €"
+              ],
+              [
+                "n=6",
+                "20 €"
+              ],
+              [
+                "n=0",
+                "Prohibido"
+              ]
+            ],
+            "model": {
+              "kind": "inverse",
+              "k": 120
+            },
+            "domain": [
+              1,
+              12
+            ],
+            "marks": [
+              [
+                "A",
+                3,
+                40
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Cancelar un factor del denominador convierte automáticamente el punto excluido en definido?||No; el dominio de la expresión original conserva la exclusión."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Las funciones racionales son cocientes de polinomios y no están definidas donde su denominador se anula. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F01-L03-01",
+        "F3-B1S-F01-L03-02",
+        "F3-B1S-F01-L03-03",
+        "F3-B1S-F01-L03-04",
+        "F3-B1S-F01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-F01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F01:C04"
+      ],
+      "objectives": [
+        "Comparar crecimiento exponencial con funciones logarítmicas inversas.",
+        "Calcular tiempos de duplicación o umbrales en modelos con tasas periódicas."
+      ],
+      "prerequisites": [
+        "B1S-N01-L03",
+        "E4A-P01-L03",
+        "B1S-F01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una evolución con tasa efectiva constante r por período se modeliza como N(t)=N0(1+r)^t, con N0>0 y factor 1+r>0. Una tasa del 10 % anual produce factor 1,10, no sumar 10 unidades cada año. Para N0=100 y t=2, N(2)=121. La función logarítmica log_a(x) invierte a^t para a>0, a≠1, y solo admite argumento positivo. Si se pretende saber cuándo 2^t=32, se obtiene t=log_2(32)=5. En contextos de población o ventas, el dominio puede limitar t≥0 y exigir enteros cuando se registran períodos completos. El crecimiento exponencial indefinido es una hipótesis matemática, no un pronóstico garantizado; saturación, capacidad y cambios en tasas pueden invalidarla."
+        },
+        {
+          "type": "example",
+          "body": "Partiendo de 100 unidades, una subida compuesta del 10 % por período produce N(2)=100·(1,1)²=121 al cabo de dos períodos."
+        },
+        {
+          "type": "example",
+          "body": "Resolver 2^t=32: como 32=2⁵, t=5. También se escribe t=log₂(32), con argumento y base válidos."
+        },
+        {
+          "type": "figure",
+          "body": "Crecimiento porcentual compuesto. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Crecimiento porcentual compuesto. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "exponential",
+            "title": "Crecimiento porcentual compuesto",
+            "rows": [
+              [
+                "Cantidad inicial",
+                "100"
+              ],
+              [
+                "Tasa periódica",
+                "10 %"
+              ],
+              [
+                "Factor",
+                "1,1"
+              ],
+              [
+                "Tras dos períodos",
+                "121"
+              ],
+              [
+                "Hipótesis",
+                "Tasa constante"
+              ]
+            ],
+            "model": {
+              "kind": "exponential",
+              "a": 100,
+              "factor": 1.1
+            },
+            "domain": [
+              0,
+              4
+            ],
+            "marks": [
+              [
+                "A",
+                2,
+                121
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El modelo 100·1,1^t equivale a sumar siempre 10 unidades por período?||No; el incremento es proporcional al valor acumulado y varía."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una evolución con tasa efectiva constante r por período se modeliza como N(t)=N0(1+r)^t, con N0>0 y factor 1+r>0. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F01-L04-01",
+        "F3-B1S-F01-L04-02",
+        "F3-B1S-F01-L04-03",
+        "F3-B1S-F01-L04-04",
+        "F3-B1S-F01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-F01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F01:C05"
+      ],
+      "objectives": [
+        "Representar tarifas y reglas sociales mediante funciones definidas por tramos.",
+        "Comprobar continuidad, valores frontera y saltos en tramos con dominio."
+      ],
+      "prerequisites": [
+        "B1S-F01-L01",
+        "E4A-F01-L07",
+        "B1S-A01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una función a trozos utiliza expresiones diferentes en intervalos definidos. Ejemplo de tarifa: C(x)=5+2x para 0≤x≤3 y C(x)=11+3(x−3) para x>3. Ambas expresiones coinciden en x=3, donde la primera vale 11 y el límite derecho también es 11, así que el modelo es continuo allí. Si el segundo tramo comenzase con cuota adicional 4, existiría un salto. Las desigualdades que delimitan tramos deben cubrir el dominio sin ambigüedad, y cada x debe recibir exactamente una salida. En cantidades indivisibles quizá los valores intermedios no representen operaciones reales; una continuidad de la extensión matemática no transforma el problema discreto en continuo. Para calcular C(5), debe elegirse la rama x>3, no extrapolar la inicial."
+        },
+        {
+          "type": "example",
+          "body": "En C(x)=5+2x para x≤3 y C(x)=11+3(x−3) para x>3, C(3)=11 y C(5)=17. Las ramas concuerdan en el umbral."
+        },
+        {
+          "type": "example",
+          "body": "Si una tarifa cobra 10 € para 0≤n≤2 y 15 € para n>2, al pasar de 2 a valores apenas mayores de 2 aparece un salto de 5 € en el modelo continuo."
+        },
+        {
+          "type": "figure",
+          "body": "Tarifa por tramos con continuidad en la frontera. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Tarifa por tramos con continuidad en la frontera. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "piecewise",
+            "title": "Tarifa por tramos con continuidad en la frontera",
+            "rows": [
+              [
+                "Tramo 1",
+                "5+2x, 0≤x≤3"
+              ],
+              [
+                "Tramo 2",
+                "11+3(x−3), x>3"
+              ],
+              [
+                "C(3)",
+                "11"
+              ],
+              [
+                "C(5)",
+                "17"
+              ],
+              [
+                "Límite al umbral",
+                "Ambos 11"
+              ]
+            ],
+            "model": {
+              "kind": "piecewise",
+              "threshold": 3,
+              "left_a": 2,
+              "left_b": 5,
+              "right_a": 3,
+              "right_b": 2
+            },
+            "domain": [
+              0,
+              6
+            ],
+            "marks": [
+              [
+                "U",
+                3,
+                11
+              ],
+              [
+                "B",
+                5,
+                17
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puedo evaluar el segundo tramo en x=2 cuando su condición exige x>3?||No; cada expresión solo se aplica a los valores de su propio intervalo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una función a trozos utiliza expresiones diferentes en intervalos definidos. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F01-L05-01",
+        "F3-B1S-F01-L05-02",
+        "F3-B1S-F01-L05-03",
+        "F3-B1S-F01-L05-04",
+        "F3-B1S-F01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-F01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F01:C06"
+      ],
+      "objectives": [
+        "Interpretar amplitud y período de modelos periódicos sencillos.",
+        "Evitar inferir periodicidad real de pocos datos y controlar las unidades angulares."
+      ],
+      "prerequisites": [
+        "B1S-F01-L01",
+        "E4B-G02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una función periódica cumple f(t+T)=f(t) para todo t de su dominio y algún T>0. Un ejemplo matemático es f(t)=10+3 sin(2πt/12), donde la amplitud es 3 unidades, la línea media 10 y el período fundamental 12 unidades de tiempo. La función toma valores entre 7 y 13. Se utiliza radianes en el argumento trigonométrico; t puede representar meses en un modelo estacional ilustrativo, pero doce datos aislados no prueban que el futuro repita exactamente la misma forma. Los modelos periódicos pueden tener fases y traslaciones, y no todas las señales económicas siguen un seno simple. Un máximo se alcanza cuando el seno vale 1 y un mínimo cuando vale −1; se interpretan dentro del intervalo del fenómeno."
+        },
+        {
+          "type": "example",
+          "body": "Para f(t)=10+3sen(2πt/12), la línea media es 10 y el rango exacto es [7,13], porque sen está entre −1 y 1."
+        },
+        {
+          "type": "example",
+          "body": "La función g(t)=2sen(πt/4) tiene período 2π/(π/4)=8 unidades temporales y amplitud 2."
+        },
+        {
+          "type": "figure",
+          "body": "Modelo periódico ilustrativo de amplitud tres. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Modelo periódico ilustrativo de amplitud tres. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "sine",
+            "title": "Modelo periódico ilustrativo de amplitud tres",
+            "rows": [
+              [
+                "Modelo",
+                "10+3sen(2πt/12)"
+              ],
+              [
+                "Media",
+                "10"
+              ],
+              [
+                "Amplitud",
+                "3"
+              ],
+              [
+                "Período",
+                "12"
+              ],
+              [
+                "Rango",
+                "[7,13]"
+              ]
+            ],
+            "model": {
+              "kind": "sine",
+              "amplitude": 3,
+              "frequency": 0.5235987755982988,
+              "midline": 10
+            },
+            "domain": [
+              0,
+              12
+            ],
+            "marks": [
+              [
+                "M",
+                3,
+                13
+              ],
+              [
+                "m",
+                9,
+                7
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El período de 10+3sen(2πt/12) es 2π meses?||No, el período en la variable t es 12 unidades de tiempo; 2π es el ciclo del argumento en radianes."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una función periódica cumple f(t+T)=f(t) para todo t de su dominio y algún T>0. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F01-L06-01",
+        "F3-B1S-F01-L06-02",
+        "F3-B1S-F01-L06-03",
+        "F3-B1S-F01-L06-04",
+        "F3-B1S-F01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-F01-L07",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F01:C07"
+      ],
+      "objectives": [
+        "Distinguir traslaciones verticales y horizontales de gráficas.",
+        "Determinar transformaciones y extremos contextualizados sin alterar el dominio inadvertidamente."
+      ],
+      "prerequisites": [
+        "B1S-F01-L02",
+        "B1S-N01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "A partir de una función base f, sumar una constante k a la salida produce g(x)=f(x)+k, desplazamiento vertical de k unidades. Reemplazar x por x−h genera g(x)=f(x−h), desplazamiento horizontal h unidades a la derecha cuando h>0. Reflejar respecto al eje horizontal corresponde a −f(x); cambiar f(x) por f(−x) refleja respecto al eje vertical. Para f(x)=x², g(x)=(x−2)²+3 tiene vértice (2,3) y mínimo 3. Estos cambios afectan también a restricciones: si el dominio base era x≥0, al trasladar f(x−2) el dominio pasa a x≥2. Una representación visual no sustituye el cálculo del vértice, raíces o puntos notables; la tabla alternativa conserva valores exactos."
+        },
+        {
+          "type": "example",
+          "body": "Desde f(x)=x², la curva g(x)=(x−2)²+3 se traslada dos unidades a la derecha y tres arriba; su vértice es (2,3)."
+        },
+        {
+          "type": "example",
+          "body": "Si f(t)=√t solo admite t≥0, entonces g(t)=√(t−4) exige t≥4. El traslado a la derecha también desplaza el dominio."
+        },
+        {
+          "type": "figure",
+          "body": "Transformación de parábola por traslación. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Transformación de parábola por traslación. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "quadratic",
+            "title": "Transformación de parábola por traslación",
+            "rows": [
+              [
+                "Base",
+                "f(x)=x²"
+              ],
+              [
+                "Transformada",
+                "g(x)=(x−2)²+3"
+              ],
+              [
+                "Traslado horizontal",
+                "+2 derecha"
+              ],
+              [
+                "Vertical",
+                "+3 arriba"
+              ],
+              [
+                "Vértice",
+                "(2,3)"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 2,
+              "k": 3
+            },
+            "domain": [
+              -1,
+              6
+            ],
+            "marks": [
+              [
+                "V",
+                2,
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La expresión f(x−2) traslada una gráfica dos unidades a la izquierda?||No; traslada la gráfica dos unidades a la derecha."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: A partir de una función base f, sumar una constante k a la salida produce g(x)=f(x)+k, desplazamiento vertical de k unidades. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F01-L07-01",
+        "F3-B1S-F01-L07-02",
+        "F3-B1S-F01-L07-03",
+        "F3-B1S-F01-L07-04",
+        "F3-B1S-F01-L07-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

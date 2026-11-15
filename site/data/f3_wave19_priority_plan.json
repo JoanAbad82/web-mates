@@ -1,0 +1,53 @@
+{
+  "version": "0.19.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "B2S-F02",
+      "priority": 1,
+      "why": "El estudio de funciones B2S-F01 tiene seis lecciones desde F3-18."
+    },
+    {
+      "unit_id": "B2S-F03",
+      "priority": 2,
+      "why": "B2S-F01 y derivadas MACS I y II completas permiten primitivas e integrales sin depender de B2S-F02."
+    },
+    {
+      "unit_id": "B2S-A01",
+      "priority": 3,
+      "why": "B1S-A01 álgebra y sistemas de MACS I cubierta en F3-16, permite matrices y álgebra de MACS II."
+    }
+  ],
+  "not_selected": [
+    {
+      "unit_id": "B2S-A02",
+      "why": "La unidad posterior requiere inecuaciones y sistemas. Se pospone por límite de tres, sin presumir completar su cobertura."
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 56,
+  "new_editorial_edges": [
+    {
+      "from": "B2S-F01",
+      "to": "B2S-F02",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Optimización de funciones requiere estudio de sus extremos."
+    },
+    {
+      "from": "B2S-F01",
+      "to": "B2S-F03",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Integración definida requiere dominio, continuidad y funciones derivables."
+    },
+    {
+      "from": "B1S-A01",
+      "to": "B2S-A01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Álgebra de MACS I desarrollada en F3-16 antes de álgebra MACS II."
+    }
+  ],
+  "regional_mapping": "NO VERIFICADO, enlaces de secuenciación pedagógica únicamente."
+}

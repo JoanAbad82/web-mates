@@ -1,0 +1,896 @@
+{
+  "unit_id": "E4B-F01",
+  "unit_title": "Funciones y tasa de variación",
+  "product_phase": "F3_OLA13",
+  "version": "0.13.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Identificar dominio y recorrido de funciones polinómicas y racionales sencillas.",
+    "Determinar puntos de corte con ejes resolviendo ecuaciones.",
+    "Interpretar ceros y vértices de funciones polinómicas de primer y segundo grado."
+  ],
+  "warnings": [
+    "Contenido sintético original editorial EN REVISIÓN: no homologado y no publicable.",
+    "Conexiones editoriales en f3_wave13_priority_plan.json diferenciadas de las 20 canónicas.",
+    "Gráficas SVG ilustrativas y tablas semánticas exactas; no interpretar color o grosor como demostración.",
+    "Códigos curriculares autonómicos, revisión humana y WCAG integral NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Funciones 3º ESO",
+      "lesson_id": "E3-F01-L05",
+      "href": "#/curso/E3/unidad/E3-F01/leccion/E3-F01-L05"
+    },
+    {
+      "label": "Manipulación algebraica",
+      "lesson_id": "E4B-A01-L04",
+      "href": "#/curso/E4B/unidad/E4B-A01/leccion/E4B-A01-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Comprensión guiada, recuperación activa sin pistas, feedback y repaso optativo espaciado."
+  },
+  "source_note": "Marco RD 217/2022 ESO y RD 243/2022 Matemáticas I; correspondencia territorial por comprobar.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E4B-F01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-F01:C01"
+      ],
+      "objectives": [
+        "Identificar dominio y recorrido de funciones polinómicas y racionales sencillas.",
+        "Justificar restricciones de denominadores y de raíces cuadradas reales."
+      ],
+      "prerequisites": [
+        "E3-F01-L01",
+        "E4B-A01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El dominio de una función es el conjunto de entradas para las que está definida; el recorrido contiene solo las salidas efectivamente obtenidas. Los polinomios admiten cualquier x real; en una función racional se excluyen los ceros del denominador ORIGINAL aunque se cancele un factor. Para f(x)=1/(x−2) se tiene dominio R sin 2 y recorrido R sin 0. Para g(x)=√(x+1) el radicando debe ser no negativo, por lo que x≥−1 y su recorrido es y≥0. Una gráfica no prueba por sí sola el dominio si tiene puntos abiertos o restricciones contextuales. El dominio contextual, por ejemplo tiempo no negativo, puede ser más pequeño que el puramente algebraico."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=(x+1)/(x−3), x=3 queda excluido; f(4)=5. Esta exclusión persiste aunque transformemos la expresión."
+        },
+        {
+          "type": "example",
+          "body": "Para g(x)=(x−1)²+2, el dominio es todo R y el recorrido es [2,+∞): el cuadrado nunca es negativo."
+        },
+        {
+          "type": "figure",
+          "body": "Función racional con asíntota y punto excluido. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Función racional con asíntota y punto excluido. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "rational",
+            "title": "Función racional con asíntota y punto excluido",
+            "rows": [
+              [
+                "Función",
+                "f(x)=1/(x−2)"
+              ],
+              [
+                "Dominio",
+                "R excepto 2"
+              ],
+              [
+                "Recorrido",
+                "R excepto 0"
+              ],
+              [
+                "Asíntota vertical",
+                "x=2"
+              ],
+              [
+                "Asíntota horizontal",
+                "y=0"
+              ]
+            ],
+            "model": {
+              "kind": "rational",
+              "a": 1,
+              "shift": 2,
+              "vertical": 0
+            },
+            "domain": [
+              -4,
+              6
+            ],
+            "marks": [
+              [
+                "AV",
+                2,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué no basta simplificar un cociente para recuperar una entrada anulada?||Porque el denominador de la fórmula original sigue siendo cero en esa entrada."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El dominio de una función es el conjunto de entradas para las que está definida; el recorrido contiene solo las salidas efectivamente obtenidas. Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-F01-L01-01",
+        "F3-E4B-F01-L01-02",
+        "F3-E4B-F01-L01-03",
+        "F3-E4B-F01-L01-04",
+        "F3-E4B-F01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-F01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-F01:C02"
+      ],
+      "objectives": [
+        "Determinar puntos de corte con ejes resolviendo ecuaciones.",
+        "Describir monotonía mediante el signo de la variación, sin inferirla de pocos puntos."
+      ],
+      "prerequisites": [
+        "E3-F01-L05",
+        "E4B-A02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Los cortes con el eje x de y=f(x) satisfacen f(x)=0, siempre dentro del dominio; el corte con el eje y, si existe, es (0,f(0)). Para una parábola y=x²−4, los cortes horizontales son x=−2 y x=2, y el vertical (0,−4). Una función es creciente en un intervalo si al aumentar x aumenta f(x), y decreciente si disminuye. La parábola x² decrece para x≤0 y crece para x≥0, sin ser estrictamente monótona en todo R. Las raíces, máximos, mínimos y tramos no deben deducirse únicamente del grosor de una curva dibujada; el álgebra y la definición dan el criterio exacto."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=x²−4: la condición f(x)=0 lleva a x²=4, con raíces −2 y 2; f(0)=−4."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=(x−1)²+3 tiene mínimo 3 en x=1; decrece antes y crece después."
+        },
+        {
+          "type": "figure",
+          "body": "Parábola y cortes con los ejes. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Parábola y cortes con los ejes. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "quadratic",
+            "title": "Parábola y cortes con los ejes",
+            "rows": [
+              [
+                "f(x)",
+                "x²−4"
+              ],
+              [
+                "Raíces",
+                "−2 y 2"
+              ],
+              [
+                "Corte eje y",
+                "(0,−4)"
+              ],
+              [
+                "Mínimo",
+                "(0,−4)"
+              ],
+              [
+                "Monotonía",
+                "Decrece hasta 0, crece desde 0"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 0,
+              "k": -4
+            },
+            "domain": [
+              -4,
+              4
+            ],
+            "marks": [
+              [
+                "R₁",
+                -2,
+                0
+              ],
+              [
+                "R₂",
+                2,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Si una función decrece hasta un mínimo, puede afirmarse que decrece en toda R?||No. Tras el mínimo puede aumentar; hay que especificar intervalos."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Los cortes con el eje x de y=f(x) satisfacen f(x)=0, siempre dentro del dominio; el corte con el eje y, si existe, es (0,f(0)). Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-F01-L02-01",
+        "F3-E4B-F01-L02-02",
+        "F3-E4B-F01-L02-03",
+        "F3-E4B-F01-L02-04",
+        "F3-E4B-F01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-F01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-F01:C03"
+      ],
+      "objectives": [
+        "Interpretar ceros y vértices de funciones polinómicas de primer y segundo grado.",
+        "Comparar signo, concavidad y crecimiento de modelos polinómicos sencillos."
+      ],
+      "prerequisites": [
+        "E3-F01-L05",
+        "E4B-A01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una función polinómica es combinación finita de potencias enteras no negativas de x. Las afines tienen forma mx+b y pendiente constante; para m>0 crecen en todo el dominio y para m<0 decrecen. Las cuadráticas se representan como parábolas; si a>0 abren hacia arriba y si a<0 hacia abajo. El vértice de f(x)=a(x−h)²+k es (h,k), que corresponde a mínimo si a>0 y máximo si a<0. Las raíces deben calcularse resolviendo f(x)=0 y pueden no existir en R. El crecimiento en valores tabulados no basta para justificar la forma fuera del intervalo observado."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=2(x−3)²−5 tiene vértice (3,−5), mínimo global −5 y eje de simetría x=3."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=−x²+4 presenta máximo 4 en x=0 y raíces −2 y 2."
+        },
+        {
+          "type": "figure",
+          "body": "Parábola en forma de vértice. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Parábola en forma de vértice. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "quadratic",
+            "title": "Parábola en forma de vértice",
+            "rows": [
+              [
+                "g(x)",
+                "2(x−1)²−3"
+              ],
+              [
+                "Vértice",
+                "(1,−3)"
+              ],
+              [
+                "Eje de simetría",
+                "x=1"
+              ],
+              [
+                "Apertura",
+                "Hacia arriba"
+              ],
+              [
+                "Valor mínimo",
+                "−3"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 2,
+              "h": 1,
+              "k": -3
+            },
+            "domain": [
+              -3,
+              5
+            ],
+            "marks": [
+              [
+                "V",
+                1,
+                -3
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Cómo cambia el extremo al sustituir a positivo por a negativo en una cuadrática?||Con a<0 el vértice es un máximo en lugar de un mínimo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una función polinómica es combinación finita de potencias enteras no negativas de x. Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-F01-L03-01",
+        "F3-E4B-F01-L03-02",
+        "F3-E4B-F01-L03-03",
+        "F3-E4B-F01-L03-04",
+        "F3-E4B-F01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-F01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-F01:C04"
+      ],
+      "objectives": [
+        "Analizar dominios y ceros de cocientes de polinomios.",
+        "Distinguir asíntotas verticales de discontinuidades evitables."
+      ],
+      "prerequisites": [
+        "E4B-A01-L04",
+        "E4B-F01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En una función racional f(x)=P(x)/Q(x), el dominio excluye todos los x con Q(x)=0. Un cero de P solo es raíz de f si Q no se anula allí. Para f(x)=1/(x−2), x=2 es una asíntota vertical: la magnitud crece sin cota al acercarnos. Pero (x²−1)/(x−1)=x+1 para x≠1 tiene un agujero en (1,2), no una asíntota vertical; el límite al acercarse es finito. La cancelación de factores sirve para calcular el límite, no para redefinir silenciosamente el valor en el punto excluido. Una asíntota horizontal describe comportamiento cuando x tiende a infinito y no es una prohibición de cruce general."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=(x−2)/(x−3) vale 0 en x=2, está indefinida en x=3 y su límite al infinito es 1."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=(x²−1)/(x−1) coincide con x+1 salvo x=1; la curva tiene agujero (1,2)."
+        },
+        {
+          "type": "figure",
+          "body": "Asíntota vertical de una función racional. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Asíntota vertical de una función racional. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "rational",
+            "title": "Asíntota vertical de una función racional",
+            "rows": [
+              [
+                "Función",
+                "1/(x−2)"
+              ],
+              [
+                "Dominio",
+                "R excepto 2"
+              ],
+              [
+                "AV",
+                "x=2"
+              ],
+              [
+                "AH",
+                "y=0"
+              ],
+              [
+                "Signo",
+                "Positivo si x>2; negativo si x<2"
+              ]
+            ],
+            "model": {
+              "kind": "rational",
+              "a": 1,
+              "shift": 2,
+              "vertical": 0
+            },
+            "domain": [
+              -4,
+              6
+            ],
+            "marks": [
+              [
+                "AV",
+                2,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Todo cero del denominador produce una asíntota vertical?||No: un factor cancelable puede generar un agujero con límite finito."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: En una función racional f(x)=P(x)/Q(x), el dominio excluye todos los x con Q(x)=0. Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-F01-L04-01",
+        "F3-E4B-F01-L04-02",
+        "F3-E4B-F01-L04-03",
+        "F3-E4B-F01-L04-04",
+        "F3-E4B-F01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-F01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-F01:C05"
+      ],
+      "objectives": [
+        "Describir crecimiento exponencial y su dominio/recorrido.",
+        "Resolver logaritmos elementales por definición de operación inversa cuando proceda."
+      ],
+      "prerequisites": [
+        "E3-N01-L04",
+        "E4B-A02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para a>0 y a≠1, la función exponencial f(x)=a^x tiene dominio R, recorrido (0,+∞), y pasa por (0,1). Si a>1 crece y si 0<a<1 decrece. La función logarítmica log_a(x) está definida solo para x>0, tiene recorrido R y satisface log_a(a^t)=t. No se debe confundir log_a(0) con 0: no existe logaritmo real de cero. Las potencias exponenciales modelizan multiplicación por un factor constante en cada unidad de tiempo, no adición de una cantidad fija. El estudio del logaritmo aquí es introductorio y editorial, sin atribuir obligatoriedad universal a la unidad de cuarto."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=2^x: f(−1)=1/2, f(0)=1 y f(3)=8; el resultado siempre es positivo."
+        },
+        {
+          "type": "example",
+          "body": "log₂(8)=3 porque 2³=8. log₂(x−1)=3 exigiría x>1 y daría x=9."
+        },
+        {
+          "type": "figure",
+          "body": "Crecimiento exponencial de base 2. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Crecimiento exponencial de base 2. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "exponential",
+            "title": "Crecimiento exponencial de base 2",
+            "rows": [
+              [
+                "Función",
+                "2^x"
+              ],
+              [
+                "Dominio",
+                "R"
+              ],
+              [
+                "Recorrido",
+                "(0,+∞)"
+              ],
+              [
+                "f(0)",
+                "1"
+              ],
+              [
+                "f(3)",
+                "8"
+              ]
+            ],
+            "model": {
+              "kind": "exponential",
+              "base": 2
+            },
+            "domain": [
+              -3,
+              4
+            ],
+            "marks": [
+              [
+                "C",
+                0,
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede la exponencial 2^x producir exactamente cero para un x real finito?||No. Se aproxima a cero hacia −∞, pero permanece estrictamente positiva."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para a>0 y a≠1, la función exponencial f(x)=a^x tiene dominio R, recorrido (0,+∞), y pasa por (0,1). Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-F01-L05-01",
+        "F3-E4B-F01-L05-02",
+        "F3-E4B-F01-L05-03",
+        "F3-E4B-F01-L05-04",
+        "F3-E4B-F01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-F01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-F01:C06"
+      ],
+      "objectives": [
+        "Calcular tasas medias de variación y conservar unidades del cociente.",
+        "Comparar el crecimiento medio de funciones afines y cuadráticas."
+      ],
+      "prerequisites": [
+        "E3-F01-L03",
+        "E4B-F01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La tasa de variación media de f en [a,b], con a≠b, es (f(b)−f(a))/(b−a). Representa la pendiente de la recta secante que une los puntos (a,f(a)) y (b,f(b)). Para una función afín f(x)=mx+c, cualquier intervalo ofrece la misma tasa m; para una cuadrática puede variar según los extremos. Las unidades son las de salida por unidad de entrada, no unidades de área ni longitud por sí solas. Una tasa media nula no implica que la función sea constante entre los extremos. Si a=b, la expresión no está definida como cociente medio."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=x²: entre 1 y 3, la tasa es (9−1)/(3−1)=4; entre 2 y 4 resulta (16−4)/2=6."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=−3x+2: en [−2,5], la tasa media es −3 sin necesidad de calcular ambos valores por separado."
+        },
+        {
+          "type": "figure",
+          "body": "Tasa media como pendiente secante. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Tasa media como pendiente secante. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "quadratic",
+            "title": "Tasa media como pendiente secante",
+            "rows": [
+              [
+                "Función",
+                "x²"
+              ],
+              [
+                "Intervalo",
+                "[1,3]"
+              ],
+              [
+                "f(1)",
+                "1"
+              ],
+              [
+                "f(3)",
+                "9"
+              ],
+              [
+                "Tasa media",
+                "4 unidades de salida por entrada"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 0,
+              "k": 0
+            },
+            "domain": [
+              -1,
+              4
+            ],
+            "marks": [
+              [
+                "A",
+                1,
+                1
+              ],
+              [
+                "B",
+                3,
+                9
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una tasa media de cero implica variación nula en todos los instantes?||No. Solo informa que el valor final coincide con el inicial."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La tasa de variación media de f en [a,b], con a≠b, es (f(b)−f(a))/(b−a). Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-F01-L06-01",
+        "F3-E4B-F01-L06-02",
+        "F3-E4B-F01-L06-03",
+        "F3-E4B-F01-L06-04",
+        "F3-E4B-F01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-F01-L07",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-F01:C07"
+      ],
+      "objectives": [
+        "Interpretar traslaciones y reflexiones de gráficas mediante fórmulas.",
+        "Reconocer cambios de dominio y recorrido tras transformaciones."
+      ],
+      "prerequisites": [
+        "E4B-F01-L03",
+        "E4B-F01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Transformar f(x) a f(x−h)+k desplaza su gráfica h unidades horizontalmente a la derecha si h>0, y k unidades verticalmente hacia arriba si k>0. La expresión −f(x) refleja los valores respecto al eje horizontal; f(−x) refleja las abscisas. En el vértice de una parábola f(x)=(x−h)²+k, la transformación permite leer directamente (h,k). No se debe invertir el signo de la traslación horizontal por analogía con la vertical: dentro del argumento, x−3 desplaza a la derecha tres. Las transformaciones afectan también a dominios restringidos, asíntotas, ceros y recorridos, aunque la forma de la curva pueda mantenerse."
+        },
+        {
+          "type": "example",
+          "body": "Desde y=x², y=(x−3)²+2 desplaza el vértice (0,0) a (3,2)."
+        },
+        {
+          "type": "example",
+          "body": "Desde y=1/x, y=1/(x−2)+4 tiene asíntota vertical x=2 y horizontal y=4."
+        },
+        {
+          "type": "figure",
+          "body": "Traslación de una parábola. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Traslación de una parábola. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "quadratic",
+            "title": "Traslación de una parábola",
+            "rows": [
+              [
+                "Original",
+                "f(x)=x²"
+              ],
+              [
+                "Nueva",
+                "(x−3)²+2"
+              ],
+              [
+                "Traslación horizontal",
+                "3 a la derecha"
+              ],
+              [
+                "Traslación vertical",
+                "2 hacia arriba"
+              ],
+              [
+                "Nuevo vértice",
+                "(3,2)"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 3,
+              "k": 2
+            },
+            "domain": [
+              -1,
+              6
+            ],
+            "marks": [
+              [
+                "V",
+                3,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué f(x−2) desplaza la curva dos unidades a la derecha?||Porque el mismo valor interno de f se obtiene cuando la nueva x es dos unidades mayor."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Transformar f(x) a f(x−h)+k desplaza su gráfica h unidades horizontalmente a la derecha si h>0, y k unidades verticalmente hacia arriba si k>0. Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-F01-L07-01",
+        "F3-E4B-F01-L07-02",
+        "F3-E4B-F01-L07-03",
+        "F3-E4B-F01-L07-04",
+        "F3-E4B-F01-L07-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

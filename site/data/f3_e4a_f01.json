@@ -1,0 +1,905 @@
+{
+  "unit_id": "E4A-F01",
+  "unit_title": "Funciones y variación",
+  "product_phase": "F3_OLA15",
+  "version": "0.15.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Determinar dominios realistas y distinguirlos de dominios algebraicos.",
+    "Identificar pendiente, crecimiento y cuota fija de modelos afines.",
+    "Localizar vértices y extremos en funciones cuadráticas contextualizadas."
+  ],
+  "warnings": [
+    "Contenido determinista y editorial EN REVISIÓN, sin aprobación humana ni publicación.",
+    "Los modelos contextuales tienen dominios físicos; las integrales con signo difieren del área geométrica.",
+    "Mapeo territorial, accesibilidad WCAG integral y dispositivos físicos NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Modelos algebraicos 4º ESO A",
+      "lesson_id": "E4A-A01-L06",
+      "href": "#/curso/E4A/unidad/E4A-A01/leccion/E4A-A01-L06"
+    },
+    {
+      "label": "Funciones 3º ESO",
+      "lesson_id": "E3-F01-L05",
+      "href": "#/curso/E3/unidad/E3-F01/leccion/E3-F01-L05"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Explicación y ejemplos, recuperación activa sin pistas, feedback y repaso voluntario."
+  },
+  "source_note": "RD 243/2022 y RD 217/2022; secuencia editorial, revisión territorial pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E4A-F01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.15.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-F01:C01"
+      ],
+      "objectives": [
+        "Determinar dominios realistas y distinguirlos de dominios algebraicos.",
+        "Explicar restricciones de cantidades, tiempos y precios con unidades y contexto."
+      ],
+      "prerequisites": [
+        "E4A-A01-L01",
+        "E3-F01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una función asigna una única salida a cada entrada del dominio. El dominio algebraico de f(x)=10−2x es todo R, pero si x representa unidades producidas y f precio no negativo, el modelo contextual puede limitarse a 0≤x≤5 y a valores enteros. En un cociente f(x)=12/x se excluye x=0 incluso antes de imponer que el número de personas sea positivo. El recorrido contextual se obtiene evaluando la función sobre las entradas admisibles, no sobre números fuera del problema. Para estudiar gráficas de medidas, se deben especificar ejes, unidades, precisión y si los puntos entre observaciones tienen significado. No toda curva continua representa un fenómeno definido para cualquier real; la interpretación antecede al cálculo."
+        },
+        {
+          "type": "example",
+          "body": "Si C(n)=5+3n para n entradas enteras no negativas, n=4 produce C(4)=17 €. El valor C(4,5) carece de sentido si n cuenta entradas indivisibles."
+        },
+        {
+          "type": "example",
+          "body": "Para p(x)=20−2x precio en euros, exigir p≥0 y x≥0 da 0≤x≤10; no se extrapola a precios negativos."
+        },
+        {
+          "type": "figure",
+          "body": "Dominio realista de una tarifa. Gráfico SVG original y tabla HTML semántica con expresiones exactas y dominios; ilustración, no demostración.",
+          "alt": "Dominio realista de una tarifa. Los datos exactos, restricciones y resultados se ofrecen también en tabla accesible, sin depender de color o imagen.",
+          "visual_spec": {
+            "render_family": "wave15",
+            "kind": "linear",
+            "title": "Dominio realista de una tarifa",
+            "rows": [
+              [
+                "Función",
+                "C(n)=5+3n"
+              ],
+              [
+                "Dominio",
+                "n entero no negativo"
+              ],
+              [
+                "C(4)",
+                "17 €"
+              ],
+              [
+                "Magnitud",
+                "Coste monetario"
+              ],
+              [
+                "Alcance",
+                "Modelo contextual"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 3,
+              "b": 5
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": [
+              [
+                "A",
+                4,
+                17
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es siempre válido considerar números negativos de unidades vendidas solo porque una fórmula afín los acepta?||No; el dominio físico puede restringirse a enteros no negativos."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una función asigna una única salida a cada entrada del dominio. Comprueba el dominio, repite un cálculo sin pistas y explica un error típico."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-F01-L01-01",
+        "F3-E4A-F01-L01-02",
+        "F3-E4A-F01-L01-03",
+        "F3-E4A-F01-L01-04",
+        "F3-E4A-F01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022 Matemáticas II; RD 217/2022 ESO 4A: marco curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa no homologación de correspondencia territorial ni unidad editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-F01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.15.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-F01:C02"
+      ],
+      "objectives": [
+        "Identificar pendiente, crecimiento y cuota fija de modelos afines.",
+        "Resolver intersecciones de rectas para comparar tarifas bajo un dominio."
+      ],
+      "prerequisites": [
+        "E4A-A01-L02",
+        "E4A-F01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una función afín f(x)=mx+b tiene pendiente constante m y valor inicial b si x=0 es admisible. Si m>0 la recta crece y si m<0 decrece; si m=0 es constante. Comparar dos tarifas exige igualar expresiones: A(x)=5+2x y B(x)=1+3x son iguales cuando x=4. Esto marca un umbral económico, pero para x que cuenta productos solo se usan enteros. Las coordenadas del punto de corte deben acompañarse de unidades; una solución negativa puede ser matemáticamente válida y socialmente inadmisible. La tasa de variación media de una función afín siempre coincide con su pendiente, pero no ocurre así en modelos no lineales."
+        },
+        {
+          "type": "example",
+          "body": "Para dos planes A(x)=5+2x y B(x)=1+3x, la igualdad es 5+2x=1+3x y x=4, con coste 13 €."
+        },
+        {
+          "type": "example",
+          "body": "Si f(t)=20−3t, la pendiente es −3 unidades por tiempo y f(2)=14; el modelo solo es realista antes de valores negativos."
+        },
+        {
+          "type": "figure",
+          "body": "Umbral de dos planes de coste. Gráfico SVG original y tabla HTML semántica con expresiones exactas y dominios; ilustración, no demostración.",
+          "alt": "Umbral de dos planes de coste. Los datos exactos, restricciones y resultados se ofrecen también en tabla accesible, sin depender de color o imagen.",
+          "visual_spec": {
+            "render_family": "wave15",
+            "kind": "linear",
+            "title": "Umbral de dos planes de coste",
+            "rows": [
+              [
+                "Plan A",
+                "5+2x"
+              ],
+              [
+                "Plan B",
+                "1+3x"
+              ],
+              [
+                "Punto de igualdad",
+                "x=4"
+              ],
+              [
+                "Coste común",
+                "13"
+              ],
+              [
+                "Interpretación",
+                "Comparar según x"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 2,
+              "b": 5,
+              "second_a": 3,
+              "second_b": 1
+            },
+            "domain": [
+              0,
+              8
+            ],
+            "marks": [
+              [
+                "I",
+                4,
+                13
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿En C(n)=5+2n cuál es la cuota fija y cuál el incremento?||Cuota fija 5; incremento 2 por cada unidad de n."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una función afín f(x)=mx+b tiene pendiente constante m y valor inicial b si x=0 es admisible. Comprueba el dominio, repite un cálculo sin pistas y explica un error típico."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-F01-L02-01",
+        "F3-E4A-F01-L02-02",
+        "F3-E4A-F01-L02-03",
+        "F3-E4A-F01-L02-04",
+        "F3-E4A-F01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022 Matemáticas II; RD 217/2022 ESO 4A: marco curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa no homologación de correspondencia territorial ni unidad editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-F01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.15.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-F01:C03"
+      ],
+      "objectives": [
+        "Localizar vértices y extremos en funciones cuadráticas contextualizadas.",
+        "Distinguir máximo algebraico de máximo restringido a un intervalo de viabilidad."
+      ],
+      "prerequisites": [
+        "E4A-A01-L03",
+        "E4A-F01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una cuadrática f(x)=a(x−h)²+k tiene vértice (h,k) y eje de simetría x=h. Si a<0, el vértice es máximo global sobre R; si a>0, mínimo. En problemas de ingresos, la variable puede estar restringida a cantidades no negativas y quizá a un intervalo cerrado: en tal caso se compara el vértice cuando está dentro y las fronteras. Para R(q)=−q²+10q con 0≤q≤10, la forma 25−(q−5)² muestra ingreso máximo 25 en q=5. Si el producto solo puede venderse en unidades enteras, se consideran enteros cercanos al vértice. Los cortes con el eje no siempre equivalen a soluciones económicamente válidas fuera del dominio físico."
+        },
+        {
+          "type": "example",
+          "body": "Si R(q)=−q²+10q, el vértice es q=5 e ingreso R(5)=25; en los extremos 0 y 10 el ingreso es 0."
+        },
+        {
+          "type": "example",
+          "body": "Para C(x)=(x−3)²+4 y x∈[0,5], C(3)=4 es mínimo. Comparar también C(0)=13 y C(5)=8 confirma el resultado."
+        },
+        {
+          "type": "figure",
+          "body": "Ingreso máximo en una parábola. Gráfico SVG original y tabla HTML semántica con expresiones exactas y dominios; ilustración, no demostración.",
+          "alt": "Ingreso máximo en una parábola. Los datos exactos, restricciones y resultados se ofrecen también en tabla accesible, sin depender de color o imagen.",
+          "visual_spec": {
+            "render_family": "wave15",
+            "kind": "quadratic",
+            "title": "Ingreso máximo en una parábola",
+            "rows": [
+              [
+                "Ingreso",
+                "R(q)=−q²+10q"
+              ],
+              [
+                "Dominio",
+                "0≤q≤10"
+              ],
+              [
+                "Vértice",
+                "(5,25)"
+              ],
+              [
+                "Ingreso máximo",
+                "25"
+              ],
+              [
+                "Tipo",
+                "Cóncava hacia abajo"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": -1,
+              "h": 5,
+              "k": 25
+            },
+            "domain": [
+              0,
+              10
+            ],
+            "marks": [
+              [
+                "M",
+                5,
+                25
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un vértice fuera del dominio de ventas puede aceptarse automáticamente como máximo factible?||No: solo importan los valores permitidos, incluido el borde."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una cuadrática f(x)=a(x−h)²+k tiene vértice (h,k) y eje de simetría x=h. Comprueba el dominio, repite un cálculo sin pistas y explica un error típico."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-F01-L03-01",
+        "F3-E4A-F01-L03-02",
+        "F3-E4A-F01-L03-03",
+        "F3-E4A-F01-L03-04",
+        "F3-E4A-F01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022 Matemáticas II; RD 217/2022 ESO 4A: marco curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa no homologación de correspondencia territorial ni unidad editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-F01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.15.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-F01:C04"
+      ],
+      "objectives": [
+        "Interpretar funciones inversamente proporcionales y sus asíntotas.",
+        "Comparar modelos de coste por persona y efectos de duplicar entradas."
+      ],
+      "prerequisites": [
+        "E4A-A01-L04",
+        "E4A-F01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En un reparto uniforme de coste fijo K entre n participantes, p(n)=K/n con n>0 y normalmente n entero. Si K=24 €, con n=3 cada persona paga 8 €, y con n=6 paga 4 €. El producto n·p(n)=K se mantiene constante, pero la cuota por persona disminuye con n. La función matemática tiene una asíntota vertical en x=0 y una horizontal y=0, sin que se pueda emplear x=0 en el reparto. En contextos físicos no se utiliza la rama de números negativos si no representan participantes. No debe confundirse reducción a la mitad del precio individual con reducción del coste total; el modelo mantiene el total K."
+        },
+        {
+          "type": "example",
+          "body": "Una cena de 24 € se divide por partes iguales: p(n)=24/n. Con 8 personas se pagan 3 € por persona."
+        },
+        {
+          "type": "example",
+          "body": "Con un mismo trabajo de 12 horas-persona, t(n)=12/n y t(3)=4 h; duplicar trabajadores a 6 reduce el tiempo modelo a 2 h."
+        },
+        {
+          "type": "figure",
+          "body": "Cuota individual de un gasto fijo. Gráfico SVG original y tabla HTML semántica con expresiones exactas y dominios; ilustración, no demostración.",
+          "alt": "Cuota individual de un gasto fijo. Los datos exactos, restricciones y resultados se ofrecen también en tabla accesible, sin depender de color o imagen.",
+          "visual_spec": {
+            "render_family": "wave15",
+            "kind": "inverse",
+            "title": "Cuota individual de un gasto fijo",
+            "rows": [
+              [
+                "Coste total",
+                "24 €"
+              ],
+              [
+                "Modelo",
+                "p(n)=24/n"
+              ],
+              [
+                "n=3",
+                "8 €"
+              ],
+              [
+                "n=6",
+                "4 €"
+              ],
+              [
+                "Dominio",
+                "n entero positivo"
+              ]
+            ],
+            "model": {
+              "kind": "inverse",
+              "k": 24
+            },
+            "domain": [
+              1,
+              10
+            ],
+            "marks": [
+              [
+                "A",
+                3,
+                8
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Si duplicamos participantes cambia el coste total K en K/n?||No, el coste total permanece K; cambia la cuota individual."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: En un reparto uniforme de coste fijo K entre n participantes, p(n)=K/n con n>0 y normalmente n entero. Comprueba el dominio, repite un cálculo sin pistas y explica un error típico."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-F01-L04-01",
+        "F3-E4A-F01-L04-02",
+        "F3-E4A-F01-L04-03",
+        "F3-E4A-F01-L04-04",
+        "F3-E4A-F01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022 Matemáticas II; RD 217/2022 ESO 4A: marco curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa no homologación de correspondencia territorial ni unidad editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-F01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.15.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-F01:C05"
+      ],
+      "objectives": [
+        "Distinguir funciones crecientes, decrecientes y constantes por intervalos.",
+        "Reconocer que una tasa global nula no descarta cambios interiores."
+      ],
+      "prerequisites": [
+        "E4A-F01-L03",
+        "E3-F01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una función es creciente en un intervalo si al aumentar las entradas no disminuyen las salidas; la versión estricta exige aumento. Para una parábola (x−2)², la función decrece hasta x=2 y crece después, por lo que no puede calificarse de creciente en todo R. En una función afín m>0 implica crecimiento constante y m<0 decrecimiento. Una comparación de solo dos valores permite obtener la variación neta, pero no demuestra monotonía en todo el intervalo. Los máximos y mínimos se justifican por el modelo, no solo por los píxeles de una gráfica. En contextos de precios, el dominio restringido puede alterar los tramos pertinentes, por ejemplo limitarse a q≥0."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=(x−2)² tiene mínimo 0 en x=2: decrece en (−∞,2] y crece en [2,+∞)."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=−2x+10 decrece en todo R porque su pendiente es −2, aunque en el contexto no se acepten precios negativos."
+        },
+        {
+          "type": "figure",
+          "body": "Dos intervalos de monotonía. Gráfico SVG original y tabla HTML semántica con expresiones exactas y dominios; ilustración, no demostración.",
+          "alt": "Dos intervalos de monotonía. Los datos exactos, restricciones y resultados se ofrecen también en tabla accesible, sin depender de color o imagen.",
+          "visual_spec": {
+            "render_family": "wave15",
+            "kind": "quadratic",
+            "title": "Dos intervalos de monotonía",
+            "rows": [
+              [
+                "Función",
+                "(x−2)²"
+              ],
+              [
+                "Mínimo",
+                "(2,0)"
+              ],
+              [
+                "x<2",
+                "Decrece"
+              ],
+              [
+                "x>2",
+                "Crece"
+              ],
+              [
+                "Extremos simétricos",
+                "f(0)=f(4)=4"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 2,
+              "k": 0
+            },
+            "domain": [
+              -1,
+              5
+            ],
+            "marks": [
+              [
+                "V",
+                2,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué podemos concluir de f(0)=f(4) para f(x)=(x−2)²?||Solo igualdad de extremos; f primero decrece y después crece."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una función es creciente en un intervalo si al aumentar las entradas no disminuyen las salidas; la versión estricta exige aumento. Comprueba el dominio, repite un cálculo sin pistas y explica un error típico."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-F01-L05-01",
+        "F3-E4A-F01-L05-02",
+        "F3-E4A-F01-L05-03",
+        "F3-E4A-F01-L05-04",
+        "F3-E4A-F01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022 Matemáticas II; RD 217/2022 ESO 4A: marco curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa no homologación de correspondencia territorial ni unidad editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-F01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.15.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-F01:C06"
+      ],
+      "objectives": [
+        "Calcular tasas medias de cambio exactas en modelos lineales y cuadráticos.",
+        "Interpretar el signo, unidades y límites de una tasa promedio."
+      ],
+      "prerequisites": [
+        "E4A-A01-L02",
+        "E4A-F01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La tasa media de variación de f sobre [a,b] con a≠b es [f(b)−f(a)]/(b−a), que coincide con la pendiente de una recta secante. Si f expresa ingresos en euros y x cantidad, la tasa tiene unidades de euros por unidad de producto. Para f(x)=x², entre x=1 y x=3 la tasa vale (9−1)/2=4, mientras que entre 2 y 4 vale (16−4)/2=6; por tanto no es constante. Para f(x)=3x+5, la tasa es siempre 3, independientemente del intervalo. Un promedio negativo expresa descenso neto, pero no indica necesariamente que la función decrezca en todos los instantes. Si los valores de los extremos coinciden, la tasa media es cero, aunque internamente pueda haber un máximo o un mínimo."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=x² en [1,3] se obtiene tasa media (9−1)/(3−1)=4 unidades de salida por entrada."
+        },
+        {
+          "type": "example",
+          "body": "Para C(x)=5+2x en [2,7], la tasa media es [19−9]/5=2 euros por unidad, igual a la pendiente."
+        },
+        {
+          "type": "figure",
+          "body": "Secante y tasa media cuadrática. Gráfico SVG original y tabla HTML semántica con expresiones exactas y dominios; ilustración, no demostración.",
+          "alt": "Secante y tasa media cuadrática. Los datos exactos, restricciones y resultados se ofrecen también en tabla accesible, sin depender de color o imagen.",
+          "visual_spec": {
+            "render_family": "wave15",
+            "kind": "quadratic",
+            "title": "Secante y tasa media cuadrática",
+            "rows": [
+              [
+                "Modelo",
+                "x²"
+              ],
+              [
+                "Intervalo",
+                "[1,3]"
+              ],
+              [
+                "f(1)",
+                "1"
+              ],
+              [
+                "f(3)",
+                "9"
+              ],
+              [
+                "Tasa media",
+                "4"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 0,
+              "k": 0,
+              "secant": [
+                1,
+                3
+              ]
+            },
+            "domain": [
+              -1,
+              4
+            ],
+            "marks": [
+              [
+                "A",
+                1,
+                1
+              ],
+              [
+                "B",
+                3,
+                9
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una tasa media 0 prueba que no hubo variaciones intermedias?||No, solo que los valores final e inicial coinciden."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La tasa media de variación de f sobre [a,b] con a≠b es [f(b)−f(a)]/(b−a), que coincide con la pendiente de una recta secante. Comprueba el dominio, repite un cálculo sin pistas y explica un error típico."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-F01-L06-01",
+        "F3-E4A-F01-L06-02",
+        "F3-E4A-F01-L06-03",
+        "F3-E4A-F01-L06-04",
+        "F3-E4A-F01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022 Matemáticas II; RD 217/2022 ESO 4A: marco curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa no homologación de correspondencia territorial ni unidad editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-F01-L07",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.15.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-F01:C07"
+      ],
+      "objectives": [
+        "Leer puntos e intervalos relevantes de una gráfica contextual con datos exactos.",
+        "Detectar incertidumbre de interpolación, unidades, saltos y escalas de ejes."
+      ],
+      "prerequisites": [
+        "E4A-F01-L06",
+        "E4A-A01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una gráfica de datos reales se interpreta leyendo primero qué representan los ejes, en qué unidades, con qué escala y si los datos son puntos aislados o mediciones continuas. La pendiente entre dos observaciones es una tasa media, pero no demuestra evolución lineal entre ellas salvo que el modelo lo justifique. Un gráfico puede mostrar el coste de un servicio con cuota fija, la distancia recorrida por un vehículo o ventas mensuales; cada uno impone dominios distintos. La presencia de un salto puede deberse a tarifas por tramos y un punto aislado no basta para inferir máximos globales. Para un modelo afín conocido, los valores exactos se obtienen de la ecuación y se contrastan con la tabla alternativa, no midiendo visualmente la posición del punto."
+        },
+        {
+          "type": "example",
+          "body": "El gráfico de C(x)=5+2x, x≥0, muestra C(0)=5 y C(4)=13. El coste por unidad es 2 y la cuota fija 5, con euros como unidad."
+        },
+        {
+          "type": "example",
+          "body": "Dos datos (1,7) y (3,11) dan una tasa media (11−7)/(3−1)=2; no garantizan que el fenómeno sea siempre lineal."
+        },
+        {
+          "type": "figure",
+          "body": "Lectura exacta de una gráfica de costes. Gráfico SVG original y tabla HTML semántica con expresiones exactas y dominios; ilustración, no demostración.",
+          "alt": "Lectura exacta de una gráfica de costes. Los datos exactos, restricciones y resultados se ofrecen también en tabla accesible, sin depender de color o imagen.",
+          "visual_spec": {
+            "render_family": "wave15",
+            "kind": "linear",
+            "title": "Lectura exacta de una gráfica de costes",
+            "rows": [
+              [
+                "Modelo",
+                "C(x)=5+2x"
+              ],
+              [
+                "Cuota fija",
+                "5 €"
+              ],
+              [
+                "Pendiente",
+                "2 €/unidad"
+              ],
+              [
+                "C(0)",
+                "5 €"
+              ],
+              [
+                "C(4)",
+                "13 €"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 2,
+              "b": 5
+            },
+            "domain": [
+              0,
+              8
+            ],
+            "marks": [
+              [
+                "A",
+                0,
+                5
+              ],
+              [
+                "B",
+                4,
+                13
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una recta que une dos observaciones demuestra causalidad o evolución exacta entre ellas?||No, es una representación o hipótesis de interpolación, no una prueba causal."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una gráfica de datos reales se interpreta leyendo primero qué representan los ejes, en qué unidades, con qué escala y si los datos son puntos aislados o mediciones continuas. Comprueba el dominio, repite un cálculo sin pistas y explica un error típico."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-F01-L07-01",
+        "F3-E4A-F01-L07-02",
+        "F3-E4A-F01-L07-03",
+        "F3-E4A-F01-L07-04",
+        "F3-E4A-F01-L07-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022 Matemáticas II; RD 217/2022 ESO 4A: marco curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa no homologación de correspondencia territorial ni unidad editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

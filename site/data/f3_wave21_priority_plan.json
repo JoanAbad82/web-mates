@@ -1,0 +1,60 @@
+{
+  "version": "0.21.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "E3-D01",
+      "priority": 1,
+      "why": "E2-D01 completa F3-20 desbloquea distribuciones y lectura crítica en 3.º ESO."
+    },
+    {
+      "unit_id": "E2-Q01",
+      "priority": 2,
+      "why": "E1-D01 y E1-N04 cubren frecuencia y fracciones; tiene exactamente cinco lecciones canónicas."
+    },
+    {
+      "unit_id": "E3-Q01",
+      "priority": 3,
+      "why": "E2-Q01 se desarrolla antes de probabilidad compuesta de 3.º ESO en la misma oleada."
+    }
+  ],
+  "not_selected": [
+    {
+      "unit_id": "E4A-D01",
+      "why": "Posterior cadena estadística; límite de tres unidades, verificar grafo antes de proponerla."
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 63,
+  "new_editorial_edges": [
+    {
+      "from": "E2-D01",
+      "to": "E3-D01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Estadística descriptiva 2.º antes de distribuciones 3.º."
+    },
+    {
+      "from": "E1-D01",
+      "to": "E2-Q01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Frecuencias y azar de 1.º antes de probabilidad elemental."
+    },
+    {
+      "from": "E1-N04",
+      "to": "E2-Q01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Fracciones y proporciones para probabilidades."
+    },
+    {
+      "from": "E2-Q01",
+      "to": "E3-Q01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Probabilidad elemental antes de probabilidad compuesta."
+    }
+  ],
+  "regional_mapping": "NO VERIFICADO; relaciones pedagógicas SOLO editoriales"
+}

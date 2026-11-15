@@ -1,0 +1,482 @@
+{
+  "unit_id": "E3-A03",
+  "unit_title": "Inecuaciones y restricciones iniciales",
+  "product_phase": "F3_OLA3",
+  "version": "0.3.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "editorial_extension": true,
+  "warnings": [
+    "AMPLIACIÓN EDITORIAL / puente hacia 4.º ESO: la ubicación en 3.º no es una exigencia universal del currículo estatal.",
+    "Secuenciación 1.º–3.º ESO editorial; pendiente cotejo autonómico y humano.",
+    "Algunos prerrequisitos de fracciones, enteros y medida aún conservan solo índice, no contenido desarrollado.",
+    "Las respuestas se comprueban mediante reglas matemáticas deterministas; no se evalúa expresión simbólica libre."
+  ],
+  "unit_objectives": [
+    "Resolver y verificar desigualdades sencillas con control de signos.",
+    "Representar conjuntos de soluciones como intervalos e intersecciones.",
+    "Modelizar umbrales de la vida cotidiana y restringir el dominio a valores admisibles."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Ecuaciones de primer grado",
+      "lesson_id": "E3-A02-L01",
+      "href": "#/curso/E3/unidad/E3-A02/leccion/E3-A02-L01"
+    },
+    {
+      "label": "Desigualdades y signos de enteros",
+      "lesson_id": "E1-N02-L04",
+      "href": "#/curso/E1/unidad/E1-N02/leccion/E1-N02-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "rule": "Explica sin mirar, comprueba con ejemplos y alterna problemas, dos pistas graduadas y feedback.",
+    "cadence_proposal": "D+1/3/7/14/30, heurística no calibrada"
+  },
+  "source_note": "RD 217/2022 Matemáticas ESO. Familias de saberes, distribución editorial. AMPLIACIÓN en 3.º ESO.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E3-A03-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Interpretar desigualdades y distinguir signos estrictos o inclusivos.",
+        "Predecir el cambio de sentido al multiplicar por un número negativo."
+      ],
+      "concept_ids": [
+        "E3-A03:C01"
+      ],
+      "prerequisites": [
+        "E3-A02-L01",
+        "E1-N02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una desigualdad compara valores: < y > excluyen la igualdad; ≤ y ≥ la admiten. Sumar o restar lo mismo conserva su sentido. Multiplicar o dividir por un número negativo obliga a invertir el signo de comparación. Es importante justificarlo con un ejemplo numérico y no aplicarlo cuando el factor es positivo."
+        },
+        {
+          "type": "example",
+          "body": "De 2<5 se obtiene −2>−5 al multiplicar por −1: el signo se invierte para conservar una afirmación verdadera."
+        },
+        {
+          "type": "example",
+          "body": "Si x≤4, entonces x+3≤7; sumar tres a ambos lados conserva el sentido de la desigualdad."
+        },
+        {
+          "type": "figure",
+          "body": "Recta numérica propuesta: x<4 incluye todos los puntos a la izquierda de 4 sin incluir el extremo 4.",
+          "alt": "Recta numérica propuesta: x<4 incluye todos los puntos a la izquierda de 4 sin incluir el extremo 4.",
+          "visual_spec": {
+            "kind": "number_line",
+            "operator": "<",
+            "threshold": 4,
+            "upper": null,
+            "lower_inclusive": false,
+            "upper_inclusive": true,
+            "domain": null,
+            "title": "Representación de un conjunto de soluciones en la recta numérica"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué en −2x<6, al dividir por −2, se obtiene x>−3?||Porque dividir una desigualdad por un número negativo invierte su sentido; se puede comprobar con valores a cada lado del límite."
+        },
+        {
+          "type": "summary",
+          "body": "Sumar/restar conserva el signo; multiplicar/dividir por negativo lo invierte. Un extremo estricto se excluye."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-A03-L01-01",
+        "F3-E3-A03-L01-02",
+        "F3-E3-A03-L01-03",
+        "F3-E3-A03-L01-04",
+        "F3-E3-A03-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-A03-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Resolver inecuaciones lineales de una variable.",
+        "Comprobar valores dentro y fuera de la solución y tratar correctamente los signos negativos."
+      ],
+      "concept_ids": [
+        "E3-A03:C02"
+      ],
+      "prerequisites": [
+        "E3-A03-L01",
+        "E2-A02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una inecuación tiene normalmente un conjunto de soluciones. Para resolverla, simplifica ambos miembros conservando la equivalencia; al multiplicar o dividir por un negativo invierte el signo. Verifica con al menos un valor que satisface y otro que no satisface la desigualdad original."
+        },
+        {
+          "type": "example",
+          "body": "3x+2<11 → 3x<9 → x<3. x=2 sí cumple (8<11); x=4 no cumple (14<11 es falso)."
+        },
+        {
+          "type": "example",
+          "body": "−2x+4≥10 → −2x≥6 → x≤−3 al dividir por −2 e invertir el signo. x=−4 cumple: 12≥10."
+        },
+        {
+          "type": "figure",
+          "body": "Gráfica: el conjunto x<3 incluye números menores que 3, pero no el 3. El borde queda abierto.",
+          "alt": "Gráfica: el conjunto x<3 incluye números menores que 3, pero no el 3. El borde queda abierto.",
+          "visual_spec": {
+            "kind": "number_line",
+            "operator": "<",
+            "threshold": 3,
+            "upper": null,
+            "lower_inclusive": false,
+            "upper_inclusive": true,
+            "domain": null,
+            "title": "Representación de un conjunto de soluciones en la recta numérica"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La respuesta de 2x>6 es un solo número x=3?||No; es el conjunto x>3. El 3 queda excluido y cualquier valor mayor cumple."
+        },
+        {
+          "type": "summary",
+          "body": "Aísla x, invierte al operar con negativos, marca límite incluido/excluido y contrasta dos valores."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-A03-L02-01",
+        "F3-E3-A03-L02-02",
+        "F3-E3-A03-L02-03",
+        "F3-E3-A03-L02-04",
+        "F3-E3-A03-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-A03-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Expresar soluciones de desigualdades mediante intervalos.",
+        "Representar extremos abiertos/cerrados y comprender que infinito no es un extremo alcanzable."
+      ],
+      "concept_ids": [
+        "E3-A03:C03"
+      ],
+      "prerequisites": [
+        "E3-A03-L02",
+        "E1-F01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En la recta real x≥2 se escribe [2,+∞): el corchete incluye 2 y el paréntesis en infinito es obligatorio. Para x<−1 se escribe (−∞,−1), porque ni −1 ni infinito están incluidos. Un intervalo limitado como 1<x≤4 se escribe (1,4]."
+        },
+        {
+          "type": "example",
+          "body": "x≥2 incluye 2, 2,5 y 3, pero excluye 1,9. Su extremo en 2 es cerrado."
+        },
+        {
+          "type": "example",
+          "body": "1<x≤4 se representa por (1,4]; no incluye 1, pero sí incluye 4. Probar los extremos evita confusiones."
+        },
+        {
+          "type": "figure",
+          "body": "Recta numérica de x≥2: punto cerrado en 2 y prolongación hacia la derecha.",
+          "alt": "Recta numérica de x≥2: punto cerrado en 2 y prolongación hacia la derecha.",
+          "visual_spec": {
+            "kind": "number_line",
+            "operator": ">=",
+            "threshold": 2,
+            "upper": null,
+            "lower_inclusive": false,
+            "upper_inclusive": true,
+            "domain": null,
+            "title": "Representación de un conjunto de soluciones en la recta numérica"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se escribe [+2,+∞] para x≥2?||No. El infinito nunca se incluye como un valor real concreto; el intervalo es [2,+∞)."
+        },
+        {
+          "type": "summary",
+          "body": "Símbolo ≥ o ≤ incluye el límite; > o < lo excluye; infinito siempre entre paréntesis."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-A03-L03-01",
+        "F3-E3-A03-L03-02",
+        "F3-E3-A03-L03-03",
+        "F3-E3-A03-L03-04",
+        "F3-E3-A03-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-A03-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Resolver sistemas sencillos de restricciones por intersección.",
+        "Representar conjuntos vacíos y extremos incluidos o excluidos."
+      ],
+      "concept_ids": [
+        "E3-A03:C04"
+      ],
+      "prerequisites": [
+        "E3-A03-L03",
+        "E3-A03-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un sistema de restricciones pide los valores que satisfacen todas las desigualdades a la vez: debes tomar la intersección. x>1 y x≤4 produce 1<x≤4, es decir, (1,4]. x<2 y x≥5 no admiten ningún valor simultáneamente: conjunto vacío. No confundas «y» (intersección) con «o» (unión)."
+        },
+        {
+          "type": "example",
+          "body": "x>1 junto con x≤4 → (1,4]. x=1 no cumple la primera y x=4 sí cumple ambas."
+        },
+        {
+          "type": "example",
+          "body": "x<2 y x≥5 no tienen soluciones en común, por lo que se representa ∅."
+        },
+        {
+          "type": "figure",
+          "body": "Recta numérica: tramo sombreado desde 1 (abierto) hasta 4 (cerrado). Tabla de prueba: 1 no, 2 sí, 4 sí, 5 no.",
+          "alt": "Recta numérica: tramo sombreado desde 1 (abierto) hasta 4 (cerrado). Tabla de prueba: 1 no, 2 sí, 4 sí, 5 no.",
+          "visual_spec": {
+            "kind": "number_line",
+            "operator": "between",
+            "threshold": 1,
+            "upper": 4,
+            "lower_inclusive": false,
+            "upper_inclusive": true,
+            "domain": null,
+            "title": "Representación de un conjunto de soluciones en la recta numérica"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Para x>1 y x≤4 hay que dibujar dos regiones separadas?||No: se toman los valores comunes a las dos condiciones, el intervalo (1,4]."
+        },
+        {
+          "type": "summary",
+          "body": "En sistemas con «y», busca la intersección. Dos restricciones incompatibles dan conjunto vacío."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-A03-L04-01",
+        "F3-E3-A03-L04-02",
+        "F3-E3-A03-L04-03",
+        "F3-E3-A03-L04-04",
+        "F3-E3-A03-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-A03-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Traducir límites de presupuesto, aforo y cantidad a inecuaciones.",
+        "Restringir soluciones reales a enteros no negativos cuando el contexto lo exige."
+      ],
+      "concept_ids": [
+        "E3-A03:C05"
+      ],
+      "prerequisites": [
+        "E3-A03-L04",
+        "E2-F01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una restricción contextual permite identificar qué respuestas son válidas. En un presupuesto, coste≤máximo; en un mínimo de participantes, cantidad≥mínimo. Si n cuenta objetos, los valores admisibles son enteros no negativos. Resolver en reales es solo un primer paso: después hay que comprobar las unidades y seleccionar cantidades enteras factibles."
+        },
+        {
+          "type": "example",
+          "body": "Con presupuesto de 15 € y coste C(n)=5+2n, la condición 5+2n≤15 lleva a n≤5. Si n es cantidad de viajes, n puede ser 0,1,2,3,4 o 5."
+        },
+        {
+          "type": "example",
+          "body": "Un taller requiere al menos 12 participantes: n≥12, con n entero. 11 no cumple y 12 sí. La expresión «al menos» incluye el límite."
+        },
+        {
+          "type": "figure",
+          "body": "Recta de restricción n≤5 (enteros no negativos): se admiten los valores 0, 1, 2, 3, 4 y 5, no 6.",
+          "alt": "Recta de restricción n≤5 (enteros no negativos): se admiten los valores 0, 1, 2, 3, 4 y 5, no 6.",
+          "visual_spec": {
+            "kind": "number_line",
+            "operator": "between",
+            "threshold": 0,
+            "upper": 5,
+            "lower_inclusive": true,
+            "upper_inclusive": true,
+            "domain": "integers",
+            "title": "Representación de un conjunto de soluciones en la recta numérica"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "En 5+2n≤15, ¿sería válida n=−1 por satisfacer la desigualdad?||No. Aunque pueda satisfacer la desigualdad algebraica, −1 viajes no tiene sentido: el contexto exige n≥0 entero."
+        },
+        {
+          "type": "summary",
+          "body": "Traduce palabra-clave a signo, despeja, cruza con el dominio real del problema y comprueba."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-A03-L05-01",
+        "F3-E3-A03-L05-02",
+        "F3-E3-A03-L05-03",
+        "F3-E3-A03-L05-04",
+        "F3-E3-A03-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

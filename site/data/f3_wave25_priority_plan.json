@@ -1,0 +1,57 @@
+{
+  "version": "0.25.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "B1S-D02",
+      "priority": 1,
+      "why": "B1S-D01, E4A-D01 y E4B-D01 redactados; abre B2S-D01→B2S-D02."
+    },
+    {
+      "unit_id": "B2S-Q01",
+      "priority": 2,
+      "why": "B1S-Q01 y B1S-Q02 redactados; fundamentos de probabilidad MACS I."
+    },
+    {
+      "unit_id": "B2S-Q02",
+      "priority": 3,
+      "why": "B1S-Q02 cubre arista canónica de distribuciones."
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 80,
+  "new_editorial_edges": [
+    {
+      "from": "B1S-D01",
+      "to": "B1S-D02",
+      "status": "propuesta_editorial",
+      "why": "Estadística descriptiva y bivariante de MACS I antes de muestreo y estimación."
+    },
+    {
+      "from": "B1S-Q01",
+      "to": "B2S-Q01",
+      "status": "propuesta_editorial",
+      "why": "Probabilidad y combinatoria MACS I antes de condicionamiento y Bayes."
+    },
+    {
+      "from": "B1S-Q02",
+      "to": "B2S-Q01",
+      "status": "propuesta_editorial",
+      "why": "Distribuciones y probabilidad de MACS I como repaso previo a MACS II."
+    }
+  ],
+  "verified_DAG_edges": 103,
+  "confirmed_predecessors": {
+    "B1S-D02": [
+      "B1S-D01"
+    ],
+    "B2S-Q01": [
+      "B1S-Q01",
+      "B1S-Q02"
+    ],
+    "B2S-Q02": [
+      "B1S-Q02"
+    ]
+  },
+  "regional_mapping": "NO VERIFICADO; relaciones nuevas exclusivamente editoriales"
+}

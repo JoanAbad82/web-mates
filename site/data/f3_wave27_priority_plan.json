@@ -1,0 +1,57 @@
+{
+  "version": "0.27.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "B2C-Q02",
+      "priority": 1,
+      "prerequisites_verified_in_sequence": [
+        "B2C-Q01"
+      ]
+    },
+    {
+      "unit_id": "E3-N02",
+      "priority": 2,
+      "prerequisites_verified_in_sequence": [
+        "E3-N01"
+      ]
+    },
+    {
+      "unit_id": "E3-G02",
+      "priority": 3,
+      "prerequisites_verified_in_sequence": [
+        "E2-G01"
+      ]
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 85,
+  "new_editorial_edges": [
+    {
+      "from": "B2C-Q01",
+      "to": "B2C-Q02",
+      "status": "propuesta_editorial",
+      "why": "Probabilidad condicionada de Matemáticas II fundamenta distribuciones."
+    },
+    {
+      "from": "E3-N01",
+      "to": "E3-N02",
+      "status": "propuesta_editorial",
+      "why": "Aproximaciones y potencias previas fundamentan notación científica."
+    },
+    {
+      "from": "E2-G01",
+      "to": "E3-G02",
+      "status": "propuesta_editorial",
+      "why": "Semejanza y medidas de 2.º anteceden a transformaciones de 3.º."
+    },
+    {
+      "from": "E3-G02",
+      "to": "E4A-G01",
+      "status": "propuesta_editorial",
+      "why": "Semejanza de 3.º es prerrequisito editorial de geometría aplicada 4.º A."
+    }
+  ],
+  "verified_DAG_edges": 109,
+  "regional_mapping": "NO VERIFICADO; nuevas aristas solo editoriales"
+}

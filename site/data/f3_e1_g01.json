@@ -1,0 +1,626 @@
+{
+  "unit_id": "E1-G01",
+  "unit_title": "Figuras y áreas planas",
+  "product_phase": "F3_OLA7",
+  "version": "0.7.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Distinguir punto, segmento, semirrecta y recta.",
+    "Clasificar triángulos por lados y ángulos.",
+    "Reconocer propiedades de cuadriláteros."
+  ],
+  "warnings": [
+    "Material editorial sintético EN REVISIÓN; pendiente revisión humana independiente.",
+    "No atribuir al Estado un orden obligatorio por curso de ESO 1.º–3.º.",
+    "No verificar accesibilidad integral o equivalencia curricular autonómica sin pruebas específicas."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Unidades y perímetros",
+      "lesson_id": "E1-M01-L05",
+      "href": "#/curso/E1/unidad/E1-M01/leccion/E1-M01-L05"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 sin calibración",
+    "rule": "Comprender, recuperar y practicar sin ayuda antes de repasar."
+  },
+  "source_note": "RD 217/2022 anexo II Matemáticas ESO: sentido espacial y de la medida, secuencia editorial; cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E1-G01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-G01:C01"
+      ],
+      "objectives": [
+        "Distinguir punto, segmento, semirrecta y recta.",
+        "Clasificar ángulos y calcular complementarios y suplementarios."
+      ],
+      "prerequisites": [
+        "E1-M01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una recta se extiende indefinidamente en ambas direcciones; una semirrecta tiene origen y una dirección; un segmento tiene dos extremos. Dos semirrectas con origen común determinan un ángulo cuya abertura se mide en grados. Un ángulo agudo mide menos de 90°, uno recto 90° y uno obtuso entre 90° y 180°. Los complementarios suman 90° y los suplementarios 180°, pero no tienen por qué ser adyacentes."
+        },
+        {
+          "type": "example",
+          "body": "El complemento de un ángulo de 37° es 90°−37°=53°; los dos forman 90° al sumarlos."
+        },
+        {
+          "type": "example",
+          "body": "Un ángulo de 115° es obtuso; su suplemento es 180°−115°=65°."
+        },
+        {
+          "type": "figure",
+          "body": "Ángulo agudo de 60°. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Ángulo agudo de 60°. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "angle",
+            "title": "Ángulo agudo de 60°",
+            "rows": [
+              [
+                "Vértice",
+                "O"
+              ],
+              [
+                "Ángulo dibujado",
+                "60°"
+              ],
+              [
+                "Clasificación",
+                "Agudo"
+              ]
+            ],
+            "degrees": 60
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es obligatorio que dos ángulos suplementarios compartan un lado?||No: suplementarios significa que sus medidas suman 180°, aunque estén separados."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: Una recta se extiende indefinidamente en ambas direcciones; una semirrecta tiene origen y una dirección; un segmento tiene dos extremos. Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-G01-L01-01",
+        "F3-E1-G01-L01-02",
+        "F3-E1-G01-L01-03",
+        "F3-E1-G01-L01-04",
+        "F3-E1-G01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-G01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-G01:C02"
+      ],
+      "objectives": [
+        "Clasificar triángulos por lados y ángulos.",
+        "Aplicar desigualdad triangular y suma de ángulos interiores."
+      ],
+      "prerequisites": [
+        "E1-G01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La suma de los tres ángulos interiores de un triángulo euclídeo es 180°. Por lados, un equilátero tiene tres lados iguales; un isósceles, al menos dos; un escaleno, todos diferentes. Por ángulos, un triángulo puede ser acutángulo, rectángulo u obtusángulo. Tres longitudes positivas forman triángulo no degenerado solo si cada una es menor que la suma de las otras dos; si hay igualdad, los puntos quedan alineados."
+        },
+        {
+          "type": "example",
+          "body": "Si dos ángulos miden 48° y 72°, el tercero mide 180°−48°−72°=60°."
+        },
+        {
+          "type": "example",
+          "body": "Las longitudes 2, 3 y 6 no forman triángulo: 2+3<6."
+        },
+        {
+          "type": "figure",
+          "body": "Tres vértices y tres lados. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Tres vértices y tres lados. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "triangle",
+            "title": "Tres vértices y tres lados",
+            "rows": [
+              [
+                "Lado AB",
+                "5 cm"
+              ],
+              [
+                "Lado BC",
+                "4 cm"
+              ],
+              [
+                "Lado CA",
+                "3 cm"
+              ]
+            ],
+            "sides": [
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Pueden ser 50°, 60° y 80° ángulos de un triángulo?||No, suman 190° y los interiores deben sumar 180°."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: La suma de los tres ángulos interiores de un triángulo euclídeo es 180°. Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-G01-L02-01",
+        "F3-E1-G01-L02-02",
+        "F3-E1-G01-L02-03",
+        "F3-E1-G01-L02-04",
+        "F3-E1-G01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-G01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-G01:C03"
+      ],
+      "objectives": [
+        "Reconocer propiedades de cuadriláteros.",
+        "Calcular perímetros de polígonos a partir de sus lados."
+      ],
+      "prerequisites": [
+        "E1-G01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un polígono es una figura plana cerrada formada por segmentos. Un cuadrilátero tiene cuatro lados y sus ángulos interiores suman 360°. Un paralelogramo posee dos pares de lados opuestos paralelos; un rectángulo es un paralelogramo con cuatro ángulos rectos; un cuadrado también tiene cuatro lados iguales. En algunas clasificaciones el término trapecio cambia de definición según se exija exactamente un par paralelo; se debe declarar la convención."
+        },
+        {
+          "type": "example",
+          "body": "Un rectángulo de lados 6 cm y 3 cm suma 6+3+6+3=18 cm de perímetro."
+        },
+        {
+          "type": "example",
+          "body": "Los ángulos interiores de un cuadrilátero son 90°, 80°, 100° y 90°: suman 360°, como corresponde."
+        },
+        {
+          "type": "figure",
+          "body": "Rectángulo y cuadrado como familias. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Rectángulo y cuadrado como familias. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "rectangle",
+            "title": "Rectángulo y cuadrado como familias",
+            "rows": [
+              [
+                "Dos pares de lados opuestos",
+                "Iguales y paralelos"
+              ],
+              [
+                "Cuatro ángulos",
+                "90° cada uno"
+              ],
+              [
+                "Ejemplo representado",
+                "Rectángulo 6 × 3"
+              ]
+            ],
+            "width": 6,
+            "height": 3
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué todo cuadrado es un rectángulo?||Porque tiene cuatro ángulos rectos; además, es un caso especial con lados iguales."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: Un polígono es una figura plana cerrada formada por segmentos. Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-G01-L03-01",
+        "F3-E1-G01-L03-02",
+        "F3-E1-G01-L03-03",
+        "F3-E1-G01-L03-04",
+        "F3-E1-G01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-G01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-G01:C04"
+      ],
+      "objectives": [
+        "Diferenciar circunferencia y círculo.",
+        "Relacionar radio, diámetro y longitud de la circunferencia."
+      ],
+      "prerequisites": [
+        "E1-G01-L01",
+        "E1-M01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La circunferencia es la línea cuyos puntos están a una distancia fija r del centro; el círculo incluye la región interior y su borde. El radio une centro y circunferencia; el diámetro une dos puntos de la circunferencia pasando por el centro, de modo que d=2r. La longitud de la circunferencia es L=2πr=πd y se mide en unidades lineales. π es irracional; 3,14 es una aproximación, nunca una igualdad exacta."
+        },
+        {
+          "type": "example",
+          "body": "Una circunferencia de radio 4 cm tiene diámetro 8 cm y longitud exacta 8π cm."
+        },
+        {
+          "type": "example",
+          "body": "Si el diámetro mide 10 m, el radio mide 5 m y el perímetro de la circunferencia es 10π m."
+        },
+        {
+          "type": "figure",
+          "body": "Radio, diámetro y circunferencia. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Radio, diámetro y circunferencia. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "circle",
+            "title": "Radio, diámetro y circunferencia",
+            "rows": [
+              [
+                "Radio",
+                "4 cm"
+              ],
+              [
+                "Diámetro",
+                "8 cm"
+              ],
+              [
+                "Longitud exacta",
+                "8π cm"
+              ]
+            ],
+            "radius": 4
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es lo mismo la longitud de la circunferencia que el área del círculo?||No: longitud mide el borde en m, mientras área mide la superficie en m²."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: La circunferencia es la línea cuyos puntos están a una distancia fija r del centro; el círculo incluye la región interior y su borde. Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-G01-L04-01",
+        "F3-E1-G01-L04-02",
+        "F3-E1-G01-L04-03",
+        "F3-E1-G01-L04-04",
+        "F3-E1-G01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-G01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-G01:C05"
+      ],
+      "objectives": [
+        "Calcular áreas de rectángulos, triángulos y círculos.",
+        "Distinguir dimensiones y unidades de áreas y perímetros."
+      ],
+      "prerequisites": [
+        "E1-G01-L04",
+        "E1-M01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El área mide la superficie interior en unidades cuadradas. Para un rectángulo A=base×altura; para un triángulo A=base×altura perpendicular/2; para un paralelogramo A=base×altura perpendicular. El área del círculo es πr², que se conserva en forma exacta cuando interviene π. En cambio, un perímetro suma longitudes y se mide en unidades lineales. Nunca uses la longitud de un lado oblicuo como altura si no es perpendicular a la base."
+        },
+        {
+          "type": "example",
+          "body": "Triángulo de base 10 cm y altura perpendicular 6 cm: A=10×6/2=30 cm²."
+        },
+        {
+          "type": "example",
+          "body": "Círculo de radio 3 cm: A=9π cm² exactamente; el perímetro sería 6π cm, distinta magnitud."
+        },
+        {
+          "type": "figure",
+          "body": "Área del triángulo: mitad de un rectángulo. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Área del triángulo: mitad de un rectángulo. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "triangle",
+            "title": "Área del triángulo: mitad de un rectángulo",
+            "rows": [
+              [
+                "Base",
+                "10 cm"
+              ],
+              [
+                "Altura perpendicular",
+                "6 cm"
+              ],
+              [
+                "Área",
+                "30 cm²"
+              ]
+            ],
+            "base": 10,
+            "height": 6
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué sucede con el área de un cuadrado si duplicamos su lado?||El área se multiplica por cuatro: (2s)²=4s²."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: El área mide la superficie interior en unidades cuadradas. Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-G01-L05-01",
+        "F3-E1-G01-L05-02",
+        "F3-E1-G01-L05-03",
+        "F3-E1-G01-L05-04",
+        "F3-E1-G01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-G01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-G01:C06"
+      ],
+      "objectives": [
+        "Descomponer figuras compuestas en figuras simples.",
+        "Restar huecos o sumar piezas sin contar superficies dos veces."
+      ],
+      "prerequisites": [
+        "E1-G01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El área de una figura compuesta puede encontrarse dividiéndola en rectángulos, triángulos o círculos sin solapamientos, o restando de un contorno mayor una región vacía bien identificada. La resta solo es válida si la zona quitada está contenida en el contorno. Etiqueta dimensiones y unidades; en un perímetro de figura con entrante deben contarse también los segmentos del entrante. Comprueba que el área resultante sea positiva y no supere al rectángulo exterior."
+        },
+        {
+          "type": "example",
+          "body": "Placa de 8×6 cm con hueco rectangular interior de 3×2 cm: área = 48−6=42 cm²."
+        },
+        {
+          "type": "example",
+          "body": "Dos rectángulos sin solapamiento de 4×3 cm y 2×5 cm tienen área total 12+10=22 cm²."
+        },
+        {
+          "type": "figure",
+          "body": "Área exterior menos hueco interior. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Área exterior menos hueco interior. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "composite",
+            "title": "Área exterior menos hueco interior",
+            "rows": [
+              [
+                "Rectángulo exterior",
+                "8 × 6 = 48 cm²"
+              ],
+              [
+                "Hueco interior",
+                "3 × 2 = 6 cm²"
+              ],
+              [
+                "Área material",
+                "42 cm²"
+              ]
+            ],
+            "outer": [
+              8,
+              6
+            ],
+            "hole": [
+              3,
+              2
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se pueden sumar sin más las áreas de dos rectángulos superpuestos?||No; se contaría dos veces la zona común, que hay que restar una vez."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: El área de una figura compuesta puede encontrarse dividiéndola en rectángulos, triángulos o círculos sin solapamientos, o restando de un contorno mayor una región vacía bien identificada. Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-G01-L06-01",
+        "F3-E1-G01-L06-02",
+        "F3-E1-G01-L06-03",
+        "F3-E1-G01-L06-04",
+        "F3-E1-G01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

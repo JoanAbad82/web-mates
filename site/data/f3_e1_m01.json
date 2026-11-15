@@ -1,0 +1,622 @@
+{
+  "unit_id": "E1-M01",
+  "unit_title": "Magnitudes y medida",
+  "product_phase": "F3_OLA7",
+  "version": "0.7.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Reconocer unidades adecuadas para longitud, masa, capacidad y tiempo.",
+    "Convertir entre unidades de una misma magnitud.",
+    "Estimar la magnitud de una medida razonable."
+  ],
+  "warnings": [
+    "Material editorial sintético EN REVISIÓN; pendiente revisión humana independiente.",
+    "No atribuir al Estado un orden obligatorio por curso de ESO 1.º–3.º.",
+    "No verificar accesibilidad integral o equivalencia curricular autonómica sin pruebas específicas."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Proporcionalidad directa de 1.º",
+      "lesson_id": "E1-P01-L04",
+      "href": "#/curso/E1/unidad/E1-P01/leccion/E1-P01-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 sin calibración",
+    "rule": "Comprender, recuperar y practicar sin ayuda antes de repasar."
+  },
+  "source_note": "RD 217/2022 anexo II Matemáticas ESO: sentido espacial y de la medida, secuencia editorial; cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E1-M01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-M01:C01"
+      ],
+      "objectives": [
+        "Reconocer unidades adecuadas para longitud, masa, capacidad y tiempo.",
+        "Distinguir valor numérico, unidad y magnitud."
+      ],
+      "prerequisites": [
+        "E1-P01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Medir consiste en comparar una magnitud con una unidad de referencia. Longitud se expresa en metros, masa en kilogramos, capacidad en litros y tiempo en segundos; otras unidades de la misma magnitud permiten expresar cantidades grandes o pequeñas con comodidad. Una medida sin unidad puede resultar ambigua. No se suman magnitudes incompatibles, por ejemplo 3 m + 2 kg. Un litro mide capacidad, no longitud."
+        },
+        {
+          "type": "example",
+          "body": "La longitud de un pasillo puede ser 12 m; expresarla como 12 kg sería incorrecto porque kilogramos miden masa."
+        },
+        {
+          "type": "example",
+          "body": "Una botella de 1,5 L contiene una capacidad de un litro y medio; 90 min representa una duración de hora y media."
+        },
+        {
+          "type": "figure",
+          "body": "Magnitudes y unidades de referencia. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Magnitudes y unidades de referencia. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "unit_bar",
+            "title": "Magnitudes y unidades de referencia",
+            "rows": [
+              [
+                "Longitud",
+                "metro (m)"
+              ],
+              [
+                "Masa",
+                "kilogramo (kg)"
+              ],
+              [
+                "Capacidad",
+                "litro (L)"
+              ],
+              [
+                "Tiempo",
+                "segundo (s)"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué 5 m + 3 cm es una suma admisible, pero 5 m + 3 kg no?||Metros y centímetros representan longitud y se convierten a la misma unidad; kilogramos representan masa."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: Medir consiste en comparar una magnitud con una unidad de referencia. Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-M01-L01-01",
+        "F3-E1-M01-L01-02",
+        "F3-E1-M01-L01-03",
+        "F3-E1-M01-L01-04",
+        "F3-E1-M01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-M01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-M01:C02"
+      ],
+      "objectives": [
+        "Convertir entre unidades de una misma magnitud.",
+        "Verificar el sentido de los factores de conversión."
+      ],
+      "prerequisites": [
+        "E1-M01-L01",
+        "E1-N05-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Las conversiones métricas siguen equivalencias exactas: 1 km = 1000 m, 1 m = 100 cm, 1 kg = 1000 g y 1 L = 1000 mL. Para convertir entre unidades multiplicamos por un factor igual a uno expresado como razón de unidades; así cancelamos la unidad de partida. El tiempo no sigue por completo la escala decimal: 1 h = 60 min. Una longitud expresada en centímetros tendrá más unidades numéricas que la misma longitud en metros."
+        },
+        {
+          "type": "example",
+          "body": "2,4 km × (1000 m / 1 km) = 2400 m; km se cancela y queda m."
+        },
+        {
+          "type": "example",
+          "body": "750 g × (1 kg / 1000 g) = 0,75 kg; reducir la unidad incrementa el valor numérico y aumentarla lo reduce."
+        },
+        {
+          "type": "figure",
+          "body": "Equivalencias entre unidades. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Equivalencias entre unidades. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "unit_bar",
+            "title": "Equivalencias entre unidades",
+            "rows": [
+              [
+                "1 km",
+                "1000 m"
+              ],
+              [
+                "1 m",
+                "100 cm"
+              ],
+              [
+                "1 L",
+                "1000 mL"
+              ],
+              [
+                "1 h",
+                "60 min"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Cuántos metros son 0,35 km?||350 m porque 0,35 × 1000 = 350."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: Las conversiones métricas siguen equivalencias exactas: 1 km = 1000 m, 1 m = 100 cm, 1 kg = 1000 g y 1 L = 1000 mL. Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-M01-L02-01",
+        "F3-E1-M01-L02-02",
+        "F3-E1-M01-L02-03",
+        "F3-E1-M01-L02-04",
+        "F3-E1-M01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-M01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-M01:C03"
+      ],
+      "objectives": [
+        "Estimar la magnitud de una medida razonable.",
+        "Separar precisión del redondeo y exactitud del instrumento."
+      ],
+      "prerequisites": [
+        "E1-M01-L02",
+        "E1-N01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una estimación es una aproximación útil para decidir si un resultado tiene sentido: la altura de una puerta es del orden de metros, no kilómetros. Redondear una lectura decimal a décimas puede introducir hasta 0,05 unidades de error de redondeo bajo la convención de empate al alza. Esta cota no es una certificación de precisión del aparato. Expresa el número de decimales apropiado, conserva la unidad y evita presentar una aproximación como medida exacta."
+        },
+        {
+          "type": "example",
+          "body": "La lectura 2,34 m redondeada a décimas es 2,3 m; el error de redondeo en este ejemplo es 0,04 m."
+        },
+        {
+          "type": "example",
+          "body": "Una cinta con divisiones de un centímetro no permite justificar por sí misma una lectura exacta de 1,234567 m."
+        },
+        {
+          "type": "figure",
+          "body": "Medida expresada a décimas. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Medida expresada a décimas. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "measure_band",
+            "title": "Medida expresada a décimas",
+            "rows": [
+              [
+                "Lectura de referencia",
+                "2,3 m"
+              ],
+              [
+                "Intervalo por redondeo",
+                "[2,25; 2,35) m"
+              ],
+              [
+                "Límite adicional del instrumento",
+                "No determinado"
+              ]
+            ],
+            "value": 2.3,
+            "resolution": 0.1
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una medida anotada 7,2 cm garantiza un error instrumental máximo de 0,05 cm?||No: 0,05 cm es solo la mitad de la resolución decimal informada, no una garantía del aparato."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: Una estimación es una aproximación útil para decidir si un resultado tiene sentido: la altura de una puerta es del orden de metros, no kilómetros. Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-M01-L03-01",
+        "F3-E1-M01-L03-02",
+        "F3-E1-M01-L03-03",
+        "F3-E1-M01-L03-04",
+        "F3-E1-M01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-M01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-M01:C04"
+      ],
+      "objectives": [
+        "Interpretar la escala de un plano expresada como 1:n.",
+        "Calcular longitudes reales y representadas conservando unidades."
+      ],
+      "prerequisites": [
+        "E1-P01-L04",
+        "E1-M01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una escala de mapa 1:n significa que una unidad en el dibujo equivale a n unidades iguales en la realidad. Si el plano mide 3 cm a escala 1:50 000, la longitud real es 150 000 cm = 1500 m. Antes de usar una fórmula, unifica unidades. Una escala de ampliación, por ejemplo 2:1, indica dibujo mayor que el objeto; no se debe confundir con 1:2. La escala debe corresponder al documento reproducido sin redimensionarlo."
+        },
+        {
+          "type": "example",
+          "body": "Mapa a 1:25 000: 4 cm representan 4 × 25 000 cm = 100 000 cm = 1000 m."
+        },
+        {
+          "type": "example",
+          "body": "Una longitud real de 500 m son 50 000 cm; a escala 1:10 000 se dibuja con 5 cm."
+        },
+        {
+          "type": "figure",
+          "body": "Interpretación de escala 1:25 000. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Interpretación de escala 1:25 000. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "scale_bar",
+            "title": "Interpretación de escala 1:25 000",
+            "rows": [
+              [
+                "Dibujo",
+                "4 cm"
+              ],
+              [
+                "Razón",
+                "1 : 25 000"
+              ],
+              [
+                "Realidad",
+                "100 000 cm = 1000 m"
+              ]
+            ],
+            "scale": 25000
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿A escala 1:100, una distancia de 3 cm en papel son 300 cm reales o 300 m?||Son 300 cm = 3 m; debe respetarse la unidad de partida."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: Una escala de mapa 1:n significa que una unidad en el dibujo equivale a n unidades iguales en la realidad. Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-M01-L04-01",
+        "F3-E1-M01-L04-02",
+        "F3-E1-M01-L04-03",
+        "F3-E1-M01-L04-04",
+        "F3-E1-M01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-M01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-M01:C05"
+      ],
+      "objectives": [
+        "Determinar perímetros sumando longitudes de contorno.",
+        "Distinguir unidades lineales de unidades cuadradas."
+      ],
+      "prerequisites": [
+        "E1-M01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El perímetro es la longitud total del contorno de una figura cerrada y se mide en unidades de longitud (cm, m, etc.). En un rectángulo de lados a y b, P = 2(a + b); en un cuadrado de lado s, P = 4s. No confundas el contorno con la superficie interior: área y perímetro tienen magnitudes y unidades distintas. Una figura irregular puede medirse sumando todos sus segmentos exteriores, sin contar cortes internos."
+        },
+        {
+          "type": "example",
+          "body": "Rectángulo 7 cm por 4 cm: perímetro = 2×(7+4)=22 cm; el área, que no se pide, sería 28 cm²."
+        },
+        {
+          "type": "example",
+          "body": "Cuadrado de lado 6 m: perímetro = 6 + 6 + 6 + 6 = 24 m."
+        },
+        {
+          "type": "figure",
+          "body": "Perímetro de rectángulo de 7 × 4. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Perímetro de rectángulo de 7 × 4. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "rectangle",
+            "title": "Perímetro de rectángulo de 7 × 4",
+            "rows": [
+              [
+                "Lado horizontal",
+                "7 cm"
+              ],
+              [
+                "Lado vertical",
+                "4 cm"
+              ],
+              [
+                "Contorno",
+                "22 cm"
+              ]
+            ],
+            "width": 7,
+            "height": 4
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si duplicas los lados de un rectángulo, ¿qué sucede con su perímetro?||Se duplica: 2(2a+2b)=2×2(a+b)."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: El perímetro es la longitud total del contorno de una figura cerrada y se mide en unidades de longitud (cm, m, etc.). Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-M01-L05-01",
+        "F3-E1-M01-L05-02",
+        "F3-E1-M01-L05-03",
+        "F3-E1-M01-L05-04",
+        "F3-E1-M01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-M01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.7.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-M01:C06"
+      ],
+      "objectives": [
+        "Resolver problemas de medida con más de una conversión.",
+        "Explicar qué resultado y unidad exige el contexto."
+      ],
+      "prerequisites": [
+        "E1-M01-L05",
+        "E1-M01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En un problema de medida primero identifica la magnitud solicitada y las unidades originales; después convierte a una unidad común y realiza las operaciones. Anota magnitudes parciales e interpreta el resultado: para una valla necesitas longitud, para cubrir suelo necesitas superficie, y para llenar un recipiente necesitas capacidad. Redondea solo cuando el contexto lo requiera. Una suma de metros y centímetros solo es válida después de convertirlos a la misma unidad."
+        },
+        {
+          "type": "example",
+          "body": "Se unen cintas de 2,5 m y 75 cm: 75 cm=0,75 m; longitud total = 3,25 m."
+        },
+        {
+          "type": "example",
+          "body": "Un paseo tiene tramos de 1,2 km y 850 m: 1200 m + 850 m = 2050 m = 2,05 km."
+        },
+        {
+          "type": "figure",
+          "body": "Problema de conversión y suma. La tabla proporciona los datos textuales exactos para comprender la representación sin depender de color o posición.",
+          "alt": "Problema de conversión y suma. Los elementos, valores y unidades representados están recogidos de forma equivalente en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "unit_bar",
+            "title": "Problema de conversión y suma",
+            "rows": [
+              [
+                "Cinta A",
+                "2,5 m = 250 cm"
+              ],
+              [
+                "Cinta B",
+                "75 cm"
+              ],
+              [
+                "Longitud total",
+                "325 cm = 3,25 m"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué error hay en afirmar que 2 m + 50 cm = 52 m?||Se sumaron números sin convertir: 2 m + 0,5 m = 2,5 m."
+        },
+        {
+          "type": "summary",
+          "body": "Recuerda la condición principal: En un problema de medida primero identifica la magnitud solicitada y las unidades originales; después convierte a una unidad común y realiza las operaciones. Comprueba qué magnitud se calcula y en qué unidades; ensaya otro problema sin ver los pasos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-M01-L06-01",
+        "F3-E1-M01-L06-02",
+        "F3-E1-M01-L06-03",
+        "F3-E1-M01-L06-04",
+        "F3-E1-M01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial; contenidos didácticos originales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

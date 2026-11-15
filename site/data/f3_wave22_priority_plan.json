@@ -1,0 +1,60 @@
+{
+  "version": "0.22.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "E4A-D01",
+      "priority": 1,
+      "why": "E3-D01 estadística de 3.º ESO completa F3-21, habilita bidimensional y regresión inicial."
+    },
+    {
+      "unit_id": "E4B-D01",
+      "priority": 2,
+      "why": "E3-D01 de F3-21 aporta estadística, dispersión y muestreo."
+    },
+    {
+      "unit_id": "E4A-Q01",
+      "priority": 3,
+      "why": "E3-Q01 probabilidad compuesta y E3-D01 muestreo completos en F3-21."
+    }
+  ],
+  "not_selected": [
+    {
+      "unit_id": "E4B-Q01",
+      "why": "Posible siguiente ola desde E3-Q01; límite de tres unidades y catálogo debe verificarse."
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 67,
+  "new_editorial_edges": [
+    {
+      "from": "E3-D01",
+      "to": "E4A-D01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Estadística 3.º antes de bivariante A 4.º."
+    },
+    {
+      "from": "E3-D01",
+      "to": "E4B-D01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Estadística y dispersión 3.º antes de bivariante B 4.º."
+    },
+    {
+      "from": "E3-Q01",
+      "to": "E4A-Q01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Probabilidad y recuento de 3.º."
+    },
+    {
+      "from": "E3-D01",
+      "to": "E4A-Q01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Muestreo y sesgos de 3.º para inferencia inicial."
+    }
+  ],
+  "regional_mapping": "NO VERIFICADO; relaciones añadidas exclusivamente editoriales."
+}

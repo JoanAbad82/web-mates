@@ -1,0 +1,596 @@
+{
+  "unit_id": "E1-P01",
+  "unit_title": "Razones y proporcionalidad directa",
+  "product_phase": "F3_OLA3",
+  "version": "0.3.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "editorial_extension": false,
+  "warnings": [
+    "Secuenciación 1.º–3.º ESO editorial; pendiente cotejo autonómico y humano.",
+    "Algunos prerrequisitos de fracciones, enteros y medida aún conservan solo índice, no contenido desarrollado.",
+    "Las respuestas se comprueban mediante reglas matemáticas deterministas; no se evalúa expresión simbólica libre."
+  ],
+  "unit_objectives": [
+    "Interpretar razones, proporciones y constantes con unidades.",
+    "Completar tablas y resolver problemas de precio, escala y recetas sin confundir modelos no proporcionales.",
+    "Recuperar la regla de proporcionalidad y justificarla en nuevos ejemplos."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Fracciones: significado",
+      "lesson_id": "E1-N04-L01",
+      "href": "#/curso/E1/unidad/E1-N04/leccion/E1-N04-L01"
+    },
+    {
+      "label": "Porcentaje como razón",
+      "lesson_id": "E1-N05-L04",
+      "href": "#/curso/E1/unidad/E1-N05/leccion/E1-N05-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "rule": "Explica sin mirar, comprueba con ejemplos y alterna problemas, dos pistas graduadas y feedback.",
+    "cadence_proposal": "D+1/3/7/14/30, heurística no calibrada"
+  },
+  "source_note": "RD 217/2022 Matemáticas ESO. Familias de saberes, distribución editorial. Pendiente mapeo territorial.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E1-P01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Expresar la relación entre dos cantidades mediante una razón.",
+        "Identificar proporciones equivalentes con denominadores no nulos."
+      ],
+      "concept_ids": [
+        "E1-P01:C01"
+      ],
+      "prerequisites": [
+        "E1-N04-L01",
+        "E1-N04-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una razón a:b compara dos cantidades en el orden indicado: a/b, con b distinto de cero. En una proporción dos razones son iguales. Antes de comparar, expresa las magnitudes en las mismas unidades si corresponde. Afirmar igualdad de razones requiere comprobar la relación, no solo que ambas cifras aumentan."
+        },
+        {
+          "type": "example",
+          "body": "En una mezcla con 2 vasos de zumo por 3 de agua, la razón zumo:agua es 2:3. Duplicando ambos, 4:6 sigue siendo la misma razón."
+        },
+        {
+          "type": "example",
+          "body": "La razón 6:9 se simplifica a 2:3 dividiendo ambos términos entre 3. En cambio 6:8 equivale a 3:4, no a 2:3."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla de proporciones: pares (2,3), (4,6), (6,9) mantienen la razón 2/3. El orden de las cantidades importa.",
+          "alt": "Tabla de proporciones: pares (2,3), (4,6), (6,9) mantienen la razón 2/3. El orden de las cantidades importa.",
+          "graph_spec": {
+            "kind": "line",
+            "coefficients": [
+              0,
+              1.5
+            ],
+            "x_values": [
+              0,
+              2,
+              4,
+              6
+            ],
+            "title": "Relación y = 1.5x + 0 (tabla y curva ilustrativas)"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si la razón rojo:azul es 2:3, ¿rojo:azul es igual a 3:2?||No. Invertir el orden cambia la comparación: 2:3 no equivale a 3:2."
+        },
+        {
+          "type": "summary",
+          "body": "Razón = comparación ordenada. Proporción = igualdad entre razones; verifica dividiendo o simplificando."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-P01-L01-01",
+        "F3-E1-P01-L01-02",
+        "F3-E1-P01-L01-03",
+        "F3-E1-P01-L01-04",
+        "F3-E1-P01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-P01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Reconocer relaciones de proporcionalidad directa usando una razón constante.",
+        "Descartar relaciones con un término fijo o datos incoherentes."
+      ],
+      "concept_ids": [
+        "E1-P01:C02"
+      ],
+      "prerequisites": [
+        "E1-P01-L01",
+        "E1-A01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Dos magnitudes son directamente proporcionales cuando y=kx con una misma constante k: si se duplica una, se duplica la otra. La tabla debe admitir (0,0). Una tarifa con fijo b distinto de cero, y=kx+b, no es directa. El contexto limita qué valores pueden usarse."
+        },
+        {
+          "type": "example",
+          "body": "Cada lápiz cuesta 2 €. Para 1, 2 y 3 lápices pagamos 2, 4 y 6 €: la razón precio/cantidad es 2 para cada cantidad no nula."
+        },
+        {
+          "type": "example",
+          "body": "Una tarifa de taxi de 4 € más 2 € por kilómetro cuesta 6 € para 1 km y 8 € para 2 km; 6/1 y 8/2 son distintos, no es proporcionalidad directa."
+        },
+        {
+          "type": "figure",
+          "body": "Compara tablas: y=2x genera (0,0),(1,2),(2,4),(3,6); y=4+2x genera (0,4),(1,6),(2,8),(3,10).",
+          "alt": "Compara tablas: y=2x genera (0,0),(1,2),(2,4),(3,6); y=4+2x genera (0,4),(1,6),(2,8),(3,10).",
+          "graph_spec": {
+            "kind": "line",
+            "coefficients": [
+              0,
+              2
+            ],
+            "x_values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "title": "Relación y = 2x + 0 (tabla y curva ilustrativas)"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si al pasar de 2 a 4 unidades el precio pasa de 7 a 11 €, ¿se ha duplicado el precio?||No: 11 no es el doble de 7; esos dos pares no confirman una proporcionalidad directa."
+        },
+        {
+          "type": "summary",
+          "body": "Compara varias razones y el valor inicial, no solo el aspecto de una recta."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-P01-L02-01",
+        "F3-E1-P01-L02-02",
+        "F3-E1-P01-L02-03",
+        "F3-E1-P01-L02-04",
+        "F3-E1-P01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-P01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Completar tablas de proporcionalidad a partir de un par de datos.",
+        "Usar la misma constante en todas las filas y comprobar unidades."
+      ],
+      "concept_ids": [
+        "E1-P01:C03"
+      ],
+      "prerequisites": [
+        "E1-P01-L02",
+        "E1-N04-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En una tabla de proporcionalidad directa cada fila debe verificar y/x=k para x distinto de cero. Puedes hallar k a partir de un par conocido y rellenar las demás filas por multiplicación. Si las magnitudes cambian de unidad, conviértelas antes de comparar."
+        },
+        {
+          "type": "example",
+          "body": "Si 2 kg de fruta cuestan 6 €, el precio es 3 €/kg. La tabla para 1, 2, 3 y 5 kg tendrá 3, 6, 9 y 15 €."
+        },
+        {
+          "type": "example",
+          "body": "Si 4 libretas cuestan 10 €, una vale 2,50 € y 6 costarán 15 €. El precio por unidad debe mantenerse constante."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla accesible: cantidad 0 | 1 | 2 | 3 | 5; coste a 3 €/ud: 0 | 3 | 6 | 9 | 15.",
+          "alt": "Tabla accesible: cantidad 0 | 1 | 2 | 3 | 5; coste a 3 €/ud: 0 | 3 | 6 | 9 | 15.",
+          "graph_spec": {
+            "kind": "line",
+            "coefficients": [
+              0,
+              3
+            ],
+            "x_values": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ],
+            "title": "Relación y = 3x + 0 (tabla y curva ilustrativas)"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué no calculamos y/x para la fila x=0?||Porque no se puede dividir entre cero. En el modelo y=kx, esa fila tiene salida y=0."
+        },
+        {
+          "type": "summary",
+          "body": "Para rellenar: halla k con un par no nulo, calcula y=kx y revisa cada unidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-P01-L03-01",
+        "F3-E1-P01-L03-02",
+        "F3-E1-P01-L03-03",
+        "F3-E1-P01-L03-04",
+        "F3-E1-P01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-P01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Calcular e interpretar la constante k=y/x en un contexto.",
+        "Detectar si varios pares tienen una razón constante."
+      ],
+      "concept_ids": [
+        "E1-P01:C04"
+      ],
+      "prerequisites": [
+        "E1-P01-L03",
+        "E1-N05-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La constante de proporcionalidad k indica cuántas unidades de salida corresponden a una unidad de entrada. En el modelo y=kx se obtiene como y/x si x no es cero. Sus unidades son unidad de y dividida por unidad de x: euros por kilogramo, kilómetros por hora, etcétera."
+        },
+        {
+          "type": "example",
+          "body": "Un ciclista recorre 12 km en 3 h a velocidad uniforme. La constante de distancia respecto al tiempo es k=12/3=4 km/h."
+        },
+        {
+          "type": "example",
+          "body": "Si 5 m de cinta cuestan 7,50 €, el coste por metro es 7,50/5=1,50 €/m. Para 2 m, el coste sería 3 €."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla x=1 | 2 | 3 | 4; salida y=4x: 4 | 8 | 12 | 16; el cociente y/x es siempre 4.",
+          "alt": "Tabla x=1 | 2 | 3 | 4; salida y=4x: 4 | 8 | 12 | 16; el cociente y/x es siempre 4.",
+          "graph_spec": {
+            "kind": "line",
+            "coefficients": [
+              0,
+              4
+            ],
+            "x_values": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "title": "Relación y = 4x + 0 (tabla y curva ilustrativas)"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede hallarse k como x/y sin cambiar su significado?||No. x/y tiene las unidades inversas; para y=kx, se utiliza k=y/x."
+        },
+        {
+          "type": "summary",
+          "body": "Constante k = salida/entrada (entrada no nula), con unidades y comprobación en varias filas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-P01-L04-01",
+        "F3-E1-P01-L04-02",
+        "F3-E1-P01-L04-03",
+        "F3-E1-P01-L04-04",
+        "F3-E1-P01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-P01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Aplicar proporcionalidad a escalas manteniendo unidades coherentes.",
+        "Redimensionar cantidades de una receta usando un mismo factor."
+      ],
+      "concept_ids": [
+        "E1-P01:C05"
+      ],
+      "prerequisites": [
+        "E1-P01-L04",
+        "E1-M01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una receta proporcional usa un factor para multiplicar todas las cantidades de ingredientes. En planos y mapas, una escala 1:n indica que una unidad en el dibujo equivale a n unidades reales. Convierte después a metros o kilómetros. Si cambias solo una cantidad, rompes la proporción."
+        },
+        {
+          "type": "example",
+          "body": "Una receta para 3 personas utiliza 6 tomates. Para 9 personas, el factor es 9/3=3 y harán falta 18 tomates."
+        },
+        {
+          "type": "example",
+          "body": "Un plano a escala 1:100 muestra 3 cm: la distancia real es 300 cm, es decir, 3 m. No confundas centímetros con metros."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla receta: comensales 3 | 6 | 9; tomates 6 | 12 | 18. El mismo factor se aplica a todos los ingredientes.",
+          "alt": "Tabla receta: comensales 3 | 6 | 9; tomates 6 | 12 | 18. El mismo factor se aplica a todos los ingredientes.",
+          "graph_spec": {
+            "kind": "line",
+            "coefficients": [
+              0,
+              2
+            ],
+            "x_values": [
+              0,
+              3,
+              6,
+              9
+            ],
+            "title": "Relación y = 2x + 0 (tabla y curva ilustrativas)"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si duplicamos las raciones, ¿podemos multiplicar por 2 el agua y dejar sin cambio la harina?||No, para conservar la receta se multiplica cada ingrediente por el mismo factor, salvo que se desee modificarla deliberadamente."
+        },
+        {
+          "type": "summary",
+          "body": "Receta: factor personas nuevas/antiguas. Escala: longitud real = longitud en dibujo × denominador, tras convertir unidades."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-P01-L05-01",
+        "F3-E1-P01-L05-02",
+        "F3-E1-P01-L05-03",
+        "F3-E1-P01-L05-04",
+        "F3-E1-P01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-P01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Resolver problemas de precio y cantidad con coste unitario constante.",
+        "Interpretar cuándo descuentos o costes fijos invalidan un modelo proporcional."
+      ],
+      "concept_ids": [
+        "E1-P01:C06"
+      ],
+      "prerequisites": [
+        "E1-P01-L03",
+        "E1-P01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Con precio unitario fijo p y cantidad n, el coste es C(n)=pn. El número de artículos suele ser entero y no negativo; un descuento por volumen o cuota fija puede cambiar la relación. Para comparar productos usa la misma unidad, y para comprobar el coste multiplica cantidad por precio por unidad."
+        },
+        {
+          "type": "example",
+          "body": "Si una botella cuesta 1,50 €, cuatro botellas cuestan 6 €. Con cero botellas, el coste es 0 €."
+        },
+        {
+          "type": "example",
+          "body": "Tres cuadernos por 7,50 € equivalen a 2,50 € por cuaderno. Cinco cuadernos al mismo precio costarán 12,50 €."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla de precio a 2,50 €/cuaderno: unidades 0 | 1 | 2 | 3 | 5; euros 0 | 2,50 | 5 | 7,50 | 12,50.",
+          "alt": "Tabla de precio a 2,50 €/cuaderno: unidades 0 | 1 | 2 | 3 | 5; euros 0 | 2,50 | 5 | 7,50 | 12,50.",
+          "graph_spec": {
+            "kind": "line",
+            "coefficients": [
+              0,
+              2.5
+            ],
+            "x_values": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ],
+            "title": "Relación y = 2.5x + 0 (tabla y curva ilustrativas)"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una cuota fija de 3 € más 2 € por compra da proporcionalidad directa?||No. Al comprar cero el coste ya sería 3 €, así que el modelo es afín con término fijo."
+        },
+        {
+          "type": "summary",
+          "body": "Coste total = precio por unidad × unidades; verifica descuentos, mínimos, impuestos y dominio."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-P01-L06-01",
+        "F3-E1-P01-L06-02",
+        "F3-E1-P01-L06-03",
+        "F3-E1-P01-L06-04",
+        "F3-E1-P01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

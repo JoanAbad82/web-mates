@@ -1,0 +1,800 @@
+{
+  "unit_id": "B2C-F02",
+  "unit_title": "Cálculo diferencial y optimización",
+  "product_phase": "F3_OLA14",
+  "version": "0.14.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Diferenciar funciones mediante reglas de potencia, producto, cociente y cadena.",
+    "Calcular derivadas sucesivas de polinomios y funciones exponenciales.",
+    "Resolver intervalos de crecimiento y decrecimiento a partir de f′."
+  ],
+  "warnings": [
+    "Contenido original determinista EN REVISIÓN, no homologado ni publicable.",
+    "Teoremas requieren continuidad, derivabilidad y condiciones de intervalo; aplicar solo bajo sus hipótesis.",
+    "Gráficas SVG ilustrativas; tablas HTML exactas son alternativa semántica.",
+    "Revisión humana, correspondencia autonómica, WCAG integral y móviles físicos no verificados."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Derivabilidad de Matemáticas II",
+      "lesson_id": "B2C-F01-L05",
+      "href": "#/curso/B2C/unidad/B2C-F01/leccion/B2C-F01-L05"
+    },
+    {
+      "label": "Derivadas de Matemáticas I",
+      "lesson_id": "B1C-F03-L04",
+      "href": "#/curso/B1C/unidad/B1C-F03/leccion/B1C-F03-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Primero comprensión y ejercicios guiados, después recuperación activa, revisión de errores e intercalado voluntario."
+  },
+  "source_note": "RD 243/2022, Matemáticas I/II; distribución editorial y normativa autonómica por cotejar.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B2C-F02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F02:C01"
+      ],
+      "objectives": [
+        "Diferenciar funciones mediante reglas de potencia, producto, cociente y cadena.",
+        "Respetar dominio y condiciones de no anulación en derivadas racionales."
+      ],
+      "prerequisites": [
+        "B1C-F03-L04",
+        "B2C-F01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Las reglas operativas para funciones derivables son (f+g)′=f′+g′, (fg)′=f′g+fg′ y (f/g)′=(f′g−fg′)/g², siempre que g≠0. La regla de la cadena establece (F∘u)′=(F′∘u)u′: para (3x−1)^4, la derivada es 12(3x−1)^3. La derivada de ln x es 1/x solo para x>0, la de e^x es e^x, y las reglas trigonométricas usuales requieren argumentos en radianes. El método correcto depende de la estructura de la expresión, no de memorizar un patrón de signos. La regla de cociente no significa f′/g′. La derivada calculada solo es válida en puntos donde la función original y las reglas tienen sentido."
+        },
+        {
+          "type": "example",
+          "body": "Si h(x)=(x²+1)(x−2), entonces h′=2x(x−2)+(x²+1), y h′(2)=5. No se multiplican solo las derivadas de los factores."
+        },
+        {
+          "type": "example",
+          "body": "Para q(x)=(3x+1)², la regla de la cadena produce q′=2(3x+1)·3=6(3x+1); en x=1 vale 24."
+        },
+        {
+          "type": "figure",
+          "body": "Regla de la cadena en una parábola. Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Regla de la cadena en una parábola. Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "tangent",
+            "title": "Regla de la cadena en una parábola",
+            "rows": [
+              [
+                "q(x)",
+                "(3x+1)²"
+              ],
+              [
+                "q′(x)",
+                "6(3x+1)"
+              ],
+              [
+                "q′(1)",
+                "24"
+              ],
+              [
+                "Condición",
+                "Polinómica: dominio R"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 9,
+              "h": -0.3333333333333333,
+              "k": 0,
+              "tangent_x": 1
+            },
+            "domain": [
+              -2,
+              3
+            ],
+            "marks": [
+              [
+                "P",
+                1,
+                16
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se puede derivar un cociente como f′/g′?||No. Se usa (f′g−fg′)/g² en los puntos donde g es distinto de cero."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Las reglas operativas para funciones derivables son (f+g)′=f′+g′, (fg)′=f′g+fg′ y (f/g)′=(f′g−fg′)/g², siempre que g≠0. Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F02-L01-01",
+        "F3-B2C-F02-L01-02",
+        "F3-B2C-F02-L01-03",
+        "F3-B2C-F02-L01-04",
+        "F3-B2C-F02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-F02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F02:C02"
+      ],
+      "objectives": [
+        "Calcular derivadas sucesivas de polinomios y funciones exponenciales.",
+        "Relacionar segunda derivada con aceleración y concavidad sin confundir signos."
+      ],
+      "prerequisites": [
+        "B1C-F03-L03",
+        "B2C-F02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si f es derivable y f′ también lo es, la segunda derivada f″ es la derivada de f′. Para un polinomio f(x)=ax³+bx²+cx+d, se obtiene f′=3ax²+2bx+c y f″=6ax+2b. La derivada tercera de un cúbico es constante 6a y la cuarta es cero. Si s(t) es posición, s′ es velocidad y s″ aceleración, siempre con unidades coherentes. Una segunda derivada positiva indica concavidad hacia arriba en intervalos donde existe; no implica por sí sola que la función sea creciente. Por ejemplo f(x)=x² tiene f″=2>0 en todo R, pero decrece cuando x<0. Las derivadas sucesivas se evalúan después de diferenciarlas correctamente, sin reutilizar el valor numérico de un orden previo."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=x³−3x²+2: f′(x)=3x²−6x, f″(x)=6x−6 y f‴(x)=6. En x=2, f″(2)=6."
+        },
+        {
+          "type": "example",
+          "body": "Una posición s(t)=2t²−3t+1 m produce velocidad v(t)=4t−3 m/s y aceleración a(t)=4 m/s², constante."
+        },
+        {
+          "type": "figure",
+          "body": "Segunda derivada de un polinomio cúbico. Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Segunda derivada de un polinomio cúbico. Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "curvature",
+            "title": "Segunda derivada de un polinomio cúbico",
+            "rows": [
+              [
+                "f(x)",
+                "x³−3x²+2"
+              ],
+              [
+                "f′(x)",
+                "3x²−6x"
+              ],
+              [
+                "f″(x)",
+                "6x−6"
+              ],
+              [
+                "f‴(x)",
+                "6"
+              ],
+              [
+                "f″(2)",
+                "6"
+              ]
+            ],
+            "model": {
+              "kind": "cubic",
+              "a": 1,
+              "b": -3,
+              "c": 0,
+              "d": 2
+            },
+            "domain": [
+              -1,
+              4
+            ],
+            "marks": [
+              [
+                "A",
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Si f″(x)>0 en un intervalo, necesariamente f crece allí?||No. Significa concavidad hacia arriba; el signo de f′ determina crecimiento."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Si f es derivable y f′ también lo es, la segunda derivada f″ es la derivada de f′. Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F02-L02-01",
+        "F3-B2C-F02-L02-02",
+        "F3-B2C-F02-L02-03",
+        "F3-B2C-F02-L02-04",
+        "F3-B2C-F02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-F02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F02:C03"
+      ],
+      "objectives": [
+        "Resolver intervalos de crecimiento y decrecimiento a partir de f′.",
+        "Detectar y clasificar extremos locales y absolutos en intervalos cerrados."
+      ],
+      "prerequisites": [
+        "B1C-F03-L06",
+        "B2C-F02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El estudio de monotonía empieza identificando dominio, puntos donde f′=0 y puntos donde f′ no existe. Se construye una tabla de signos de f′ en los intervalos determinados por los puntos críticos. Un cambio de + a − caracteriza máximo local; de − a + mínimo local. Si no cambia el signo, no hay extremo por ese criterio. Para extremos absolutos en un intervalo cerrado [a,b] con continuidad se comparan los valores de todos los críticos interiores y de ambos extremos del intervalo. La condición f′(x)=0 no basta para máximo ni mínimo; un punto de discontinuidad tampoco puede examinarse mediante reglas de derivación que no son aplicables allí. Ninguna conclusión fuera del dominio está justificada."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=x³−3x tiene f′=3x²−3=3(x−1)(x+1). Es creciente fuera de [−1,1] y decreciente entre −1 y 1; máximo local en −1 (2), mínimo en 1 (−2)."
+        },
+        {
+          "type": "example",
+          "body": "En f(x)=x² y [−1,2], el mínimo absoluto es 0 en x=0; el máximo absoluto es 4 en x=2, que es extremo de intervalo."
+        },
+        {
+          "type": "figure",
+          "body": "Signos de f′ en un cúbico. Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Signos de f′ en un cúbico. Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "sign",
+            "title": "Signos de f′ en un cúbico",
+            "rows": [
+              [
+                "f(x)",
+                "x³−3x"
+              ],
+              [
+                "f′(x)",
+                "3(x²−1)"
+              ],
+              [
+                "x<−1",
+                "Crece"
+              ],
+              [
+                "−1<x<1",
+                "Decrece"
+              ],
+              [
+                "x>1",
+                "Crece"
+              ],
+              [
+                "Extremos",
+                "Máximo (−1,2); mínimo (1,−2)"
+              ]
+            ],
+            "model": {
+              "kind": "cubic",
+              "a": 1,
+              "b": 0,
+              "c": -3,
+              "d": 0
+            },
+            "domain": [
+              -3,
+              3
+            ],
+            "marks": [
+              [
+                "M",
+                -1,
+                2
+              ],
+              [
+                "m",
+                1,
+                -2
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Para el máximo absoluto en [a,b] basta evaluar los puntos con f′=0?||No. Hay que incluir a y b y cualquier punto interior donde no exista f′."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: El estudio de monotonía empieza identificando dominio, puntos donde f′=0 y puntos donde f′ no existe. Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F02-L03-01",
+        "F3-B2C-F02-L03-02",
+        "F3-B2C-F02-L03-03",
+        "F3-B2C-F02-L03-04",
+        "F3-B2C-F02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-F02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F02:C04"
+      ],
+      "objectives": [
+        "Clasificar concavidad mediante la segunda derivada en intervalos.",
+        "Detectar inflexiones por cambio de concavidad, no solo f″=0."
+      ],
+      "prerequisites": [
+        "B2C-F02-L02",
+        "B2C-F02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si f″(x)>0 en un intervalo, la gráfica es cóncava hacia arriba (convexa en sentido elemental); si f″(x)<0 es cóncava hacia abajo. Un punto de inflexión requiere cambio de concavidad al atravesarlo; que f″(a)=0 es condición candidata, no suficiente. Para f(x)=x³, f″=6x cambia de negativo a positivo en cero, por lo que existe una inflexión en (0,0). Para g(x)=x^4, g″(x)=12x² se anula en cero pero no cambia de signo, así que no hay inflexión allí. Es necesario estudiar también puntos donde f″ no existe, pero con continuidad adecuada del modelo. La prueba de la segunda derivada f″(a)>0 en un punto estacionario permite identificar mínimo local; con f″(a)<0, máximo; f″(a)=0 no decide."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=x³−3x: f″=6x, negativa para x<0 y positiva para x>0; (0,0) es punto de inflexión."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=x⁴: g″=12x²≥0 en ambos lados de cero, así que f″(0)=0 no produce punto de inflexión."
+        },
+        {
+          "type": "figure",
+          "body": "Cambio de concavidad en x³. Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Cambio de concavidad en x³. Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "curvature",
+            "title": "Cambio de concavidad en x³",
+            "rows": [
+              [
+                "f(x)",
+                "x³"
+              ],
+              [
+                "f″(x)",
+                "6x"
+              ],
+              [
+                "x<0",
+                "Cóncava hacia abajo"
+              ],
+              [
+                "x>0",
+                "Cóncava hacia arriba"
+              ],
+              [
+                "Inflexión",
+                "(0,0)"
+              ]
+            ],
+            "model": {
+              "kind": "cubic",
+              "a": 1,
+              "b": 0,
+              "c": 0,
+              "d": 0
+            },
+            "domain": [
+              -2,
+              2
+            ],
+            "marks": [
+              [
+                "I",
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Siempre que f″(a)=0 hay un punto de inflexión?||No. La concavidad debe cambiar de signo entre los lados de a."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Si f″(x)>0 en un intervalo, la gráfica es cóncava hacia arriba (convexa en sentido elemental); si f″(x)<0 es cóncava hacia abajo. Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F02-L04-01",
+        "F3-B2C-F02-L04-02",
+        "F3-B2C-F02-L04-03",
+        "F3-B2C-F02-L04-04",
+        "F3-B2C-F02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-F02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F02:C05"
+      ],
+      "objectives": [
+        "Representar gráficas combinando dominio, cortes, asíntotas y derivadas.",
+        "Justificar extremos, monotonía y concavidad a partir de signos, no de apariencia."
+      ],
+      "prerequisites": [
+        "B2C-F01-L03",
+        "B2C-F02-L03",
+        "B2C-F02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un análisis gráfico completo sigue un orden: determinar dominio y simetrías, localizar cortes con ejes, calcular límites y asíntotas, estudiar f′ para crecimiento/extremos y f″ para concavidad/inflexiones. Las características deben ser compatibles entre sí: una asíntota vertical se justifica por un límite infinito y un mínimo interior derivable exige pendiente cero. Para f(x)=x³−3x, las raíces son 0 y ±√3, la derivada es 3x²−3 y la segunda 6x. Tiene máximo local en x=−1, mínimo en x=1 e inflexión en cero, y no posee asíntotas finitas al infinito. Las gráficas SVG son ilustrativas; las tablas con valores exactos y condiciones son fuente accesible de comprobación, no una prueba automática de exactitud matemática."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=x²−4, dominio R, cortes x=±2, mínimo (0,−4), f′=2x y f″=2>0; decrece antes de cero y crece después."
+        },
+        {
+          "type": "example",
+          "body": "Para g(x)=1/(x−1), dominio R\\{1}, AV x=1, AH y=0 y g′=−1/(x−1)²<0 a cada lado de la asíntota, sin extremo local."
+        },
+        {
+          "type": "figure",
+          "body": "Gráfica de cúbica con extremos e inflexión. Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Gráfica de cúbica con extremos e inflexión. Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "curvature",
+            "title": "Gráfica de cúbica con extremos e inflexión",
+            "rows": [
+              [
+                "f(x)",
+                "x³−3x"
+              ],
+              [
+                "Máximo local",
+                "(−1,2)"
+              ],
+              [
+                "Mínimo local",
+                "(1,−2)"
+              ],
+              [
+                "Inflexión",
+                "(0,0)"
+              ],
+              [
+                "Asíntotas",
+                "Ninguna"
+              ]
+            ],
+            "model": {
+              "kind": "cubic",
+              "a": 1,
+              "b": 0,
+              "c": -3,
+              "d": 0
+            },
+            "domain": [
+              -3,
+              3
+            ],
+            "marks": [
+              [
+                "M",
+                -1,
+                2
+              ],
+              [
+                "I",
+                0,
+                0
+              ],
+              [
+                "m",
+                1,
+                -2
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una curva aparentemente horizontal al infinito demuestra que existe asíntota?||No. Se debe calcular el límite y controlar su valor finito."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Un análisis gráfico completo sigue un orden: determinar dominio y simetrías, localizar cortes con ejes, calcular límites y asíntotas, estudiar f′ para crecimiento/extremos y f″ para concavidad/inflexiones. Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F02-L05-01",
+        "F3-B2C-F02-L05-02",
+        "F3-B2C-F02-L05-03",
+        "F3-B2C-F02-L05-04",
+        "F3-B2C-F02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-F02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.14.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-F02:C06"
+      ],
+      "objectives": [
+        "Modelizar problemas de optimización con variable, dominio y restricciones.",
+        "Comprobar extremos interiores y de frontera interpretando unidades y factibilidad."
+      ],
+      "prerequisites": [
+        "B2C-F02-L03",
+        "B2C-F02-L04",
+        "B1C-A01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Optimizar significa maximizar o minimizar una función objetivo bajo un dominio factible. Antes de derivar hay que establecer qué variable representa cada magnitud y qué restricciones físicas (longitudes no negativas, presupuesto, intervalos) delimitan el conjunto admisible. Para un rectángulo de perímetro 20, si x es un lado, el otro vale 10−x y el área es A(x)=x(10−x), con 0<x<10 para un rectángulo no degenerado; su máximo se alcanza en x=5 y vale 25. En un intervalo cerrado se deben evaluar extremos de frontera además de críticos, si forman parte del dominio. Un punto crítico fuera del dominio se rechaza. La segunda derivada o el cambio de signo verifican la clase de extremo, pero el resultado ha de comprobarse frente a las restricciones y unidades de área."
+        },
+        {
+          "type": "example",
+          "body": "Con 20 m de perímetro, A(x)=10x−x², A′=10−2x; se anula en x=5 m, A″=−2<0 y A(5)=25 m², máximo factible."
+        },
+        {
+          "type": "example",
+          "body": "Para minimizar C(x)=(x−3)²+4 en [0,5], C′=2(x−3)=0 en 3 y C(3)=4; en fronteras C(0)=13 y C(5)=8, así el mínimo global vale 4."
+        },
+        {
+          "type": "figure",
+          "body": "Área máxima de un rectángulo con perímetro fijo. Gráfica SVG matemática declarativa original con tabla alternativa de datos exactos y condiciones; la curva ilustra, no sustituye demostración.",
+          "alt": "Área máxima de un rectángulo con perímetro fijo. Tabla con definiciones, resultados exactos, dominio e hipótesis disponible sin interpretar color, imagen ni gestos.",
+          "visual_spec": {
+            "render_family": "wave14",
+            "kind": "optimization",
+            "title": "Área máxima de un rectángulo con perímetro fijo",
+            "rows": [
+              [
+                "Perímetro",
+                "20 m"
+              ],
+              [
+                "Lados",
+                "x y 10−x"
+              ],
+              [
+                "Dominio físico",
+                "0<x<10"
+              ],
+              [
+                "Área",
+                "A(x)=10x−x²"
+              ],
+              [
+                "Óptimo",
+                "x=5 m"
+              ],
+              [
+                "Área máxima",
+                "25 m²"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": -1,
+              "h": 5,
+              "k": 25,
+              "tangent_x": 5
+            },
+            "domain": [
+              0,
+              10
+            ],
+            "marks": [
+              [
+                "V",
+                5,
+                25
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede aceptarse un extremo crítico que viola el presupuesto o el dominio de longitudes?||No. Solo los candidatos factibles y las fronteras admisibles pueden optimizar el problema."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Optimizar significa maximizar o minimizar una función objetivo bajo un dominio factible. Resuelve un caso de transferencia sin ayuda, contrasta hipótesis y registra errores importantes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-F02-L06-01",
+        "F3-B2C-F02-L06-02",
+        "F3-B2C-F02-L06-03",
+        "F3-B2C-F02-L06-04",
+        "F3-B2C-F02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 243/2022, anexo II, Matemáticas I y Matemáticas II, referencia curricular estatal",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa de referencia; secuencia editorial propia sin verificación autonómica ni códigos específicos oficiales."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

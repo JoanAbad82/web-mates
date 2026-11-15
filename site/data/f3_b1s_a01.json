@@ -1,0 +1,776 @@
+{
+  "unit_id": "B1S-A01",
+  "unit_title": "Álgebra y restricciones",
+  "product_phase": "F3_OLA16",
+  "version": "0.16.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Simplificar polinomios y fracciones algebraicas preservando el dominio original.",
+    "Resolver ecuaciones y sistemas según su número de soluciones.",
+    "Resolver ecuaciones exponenciales sencillas reduciendo a potencias de la misma base."
+  ],
+  "warnings": [
+    "Ejercicios y lecciones sintéticos EN REVISIÓN. No homologados ni publicables.",
+    "Porcentajes dependen de la base; los ejemplos financieros son escolares y omiten condiciones contractuales reales.",
+    "B1S-N01 no desarrollada: los logaritmos imprescindibles se definen en B1S-A01-L03; revisión curricular pendiente.",
+    "Mapeo autonómico, accesibilidad integral y móviles físicos NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Sistemas y restricciones de 4.º ESO A",
+      "lesson_id": "E4A-A02-L06",
+      "href": "#/curso/E4A/unidad/E4A-A02/leccion/E4A-A02-L06"
+    },
+    {
+      "label": "Porcentajes de 4.º ESO A",
+      "lesson_id": "E4A-P01-L03",
+      "href": "#/curso/E4A/unidad/E4A-P01/leccion/E4A-P01-L03"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Comprensión guiada, recuperación sin pistas, feedback y repaso voluntario, nunca datos identificativos de menores."
+  },
+  "source_note": "RD 217/2022 ESO 4A y RD 243/2022 MACS I; relación curricular autonómica por revisar.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1S-A01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-A01:C01"
+      ],
+      "objectives": [
+        "Simplificar polinomios y fracciones algebraicas preservando el dominio original.",
+        "Detectar factores cancelables sin recuperar denominadores anulados."
+      ],
+      "prerequisites": [
+        "E4A-A02-L01",
+        "E3-A01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Las expresiones algebraicas racionales requieren registrar los valores que anulan cualquier denominador original. Por ejemplo (x²−1)/(x−1) es igual a x+1 solo donde x≠1, porque se ha cancelado el factor (x−1) en un dominio que ya excluía ese punto. La simplificación no redefine automáticamente el valor en x=1. Para sumar fracciones, se busca un denominador común y se comprueban todas las restricciones; nunca se suman numeradores y denominadores por separado. Los polinomios se operan con distributiva, productos notables y factorización. Una igualdad de expresiones racionales se establece en un dominio común, mientras que resolver una ecuación racional exige descartar cualquier candidata que anule un denominador. El uso en modelos económicos requiere además x≥0 o cantidades enteras cuando corresponda."
+        },
+        {
+          "type": "example",
+          "body": "La expresión (x²−9)/(x−3) se simplifica a x+3 para x≠3; al evaluar x=4 da 7, pero el valor original en x=3 no existe."
+        },
+        {
+          "type": "example",
+          "body": "1/x+1/(x+1)=(2x+1)/[x(x+1)] siempre que x≠0 y x≠−1; se comprueba multiplicando por el denominador común."
+        },
+        {
+          "type": "figure",
+          "body": "Agujero de una fracción simplificable. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Agujero de una fracción simplificable. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "rational",
+            "title": "Agujero de una fracción simplificable",
+            "rows": [
+              [
+                "Original",
+                "(x²−9)/(x−3)"
+              ],
+              [
+                "Simplificada",
+                "x+3, x≠3"
+              ],
+              [
+                "Valor x=4",
+                "7"
+              ],
+              [
+                "Valor x=3",
+                "No definido en la original"
+              ]
+            ],
+            "model": {
+              "kind": "hole",
+              "a": 1,
+              "b": 3,
+              "hole": 3
+            },
+            "domain": [
+              0,
+              6
+            ],
+            "marks": [
+              [
+                "Hueco",
+                3,
+                6
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Cancelar x−3 en una fracción permite después evaluar la expresión original en x=3?||No; el valor x=3 continúa excluido del dominio."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Las expresiones algebraicas racionales requieren registrar los valores que anulan cualquier denominador original. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-A01-L01-01",
+        "F3-B1S-A01-L01-02",
+        "F3-B1S-A01-L01-03",
+        "F3-B1S-A01-L01-04",
+        "F3-B1S-A01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-A01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-A01:C02"
+      ],
+      "objectives": [
+        "Resolver ecuaciones y sistemas según su número de soluciones.",
+        "Aplicar Cramer en casos no degenerados y diagnosticar rangos simples cuando el determinante sea cero."
+      ],
+      "prerequisites": [
+        "E4A-A02-L03",
+        "E4A-A02-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para un sistema de dos ecuaciones ax+by=e y cx+dy=f, el determinante D=ad−bc controla la solución única: cuando D≠0 se aplican eliminación o Cramer, x=(ed−bf)/D e y=(af−ec)/D. Si D=0 la regla no vale y debe comprobarse si las filas representan ecuaciones equivalentes o contradictorias. En un modelo de ventas dos incógnitas pueden representar cantidades, cuyos valores reales deben verificarse después como enteros no negativos. Si las variables son cantidades indivisibles, resolver sobre reales no basta. Para una ecuación cuadrática, el discriminante clasifica raíces reales y se cotejan restricciones de denominador. Nunca se declara solución única por un sistema mal condicionado con determinante exactamente cero."
+        },
+        {
+          "type": "example",
+          "body": "El sistema x+y=7 y 2x−y=2 tiene D=−3, solución x=3 e y=4; comprueba 3+4=7 y 6−4=2."
+        },
+        {
+          "type": "example",
+          "body": "El sistema x+2y=4 y 2x+4y=8 tiene ecuaciones equivalentes, infinitas soluciones, y D=0; dividir por D sería imposible."
+        },
+        {
+          "type": "figure",
+          "body": "Punto de equilibrio de sistema 2×2. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Punto de equilibrio de sistema 2×2. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "linear",
+            "title": "Punto de equilibrio de sistema 2×2",
+            "rows": [
+              [
+                "Sistema",
+                "x+y=7"
+              ],
+              [
+                "Segunda",
+                "2x−y=2"
+              ],
+              [
+                "Determinante",
+                "−3"
+              ],
+              [
+                "Solución",
+                "(3,4)"
+              ],
+              [
+                "Comprobación",
+                "7 y 2"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": -1,
+              "b": 7,
+              "second_a": 2,
+              "second_b": -2
+            },
+            "domain": [
+              0,
+              6
+            ],
+            "marks": [
+              [
+                "S",
+                3,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Determinante cero implica siempre que un sistema no tiene solución?||No; puede haber infinitas soluciones si las ecuaciones son equivalentes."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para un sistema de dos ecuaciones ax+by=e y cx+dy=f, el determinante D=ad−bc controla la solución única: cuando D≠0 se aplican eliminación o Cramer, x=(ed−bf)/D e y=(af−ec)/D. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-A01-L02-01",
+        "F3-B1S-A01-L02-02",
+        "F3-B1S-A01-L02-03",
+        "F3-B1S-A01-L02-04",
+        "F3-B1S-A01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-A01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-A01:C03"
+      ],
+      "objectives": [
+        "Resolver ecuaciones exponenciales sencillas reduciendo a potencias de la misma base.",
+        "Introducir logaritmo como exponente inverso y especificar base y dominio."
+      ],
+      "prerequisites": [
+        "E3-N01-L05",
+        "E4A-P01-L03",
+        "E4A-A02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una ecuación exponencial contiene la incógnita en un exponente; si los miembros pueden escribirse con la misma base positiva a≠1, se igualan los exponentes. Así 2^(x+1)=16=2^4 implica x+1=4 y x=3. El logaritmo log_a(b) es el único exponente y que satisface a^y=b, con a>0, a≠1 y b>0. Esta definición se introduce aquí de forma autosuficiente, porque el catálogo B1S-N01 (logaritmos) sigue pendiente y no debe suponerse desarrollado. Ejemplo log_2(8)=3 porque 2³=8. Una ecuación log_a(x)=c se transforma en x=a^c y exige x>0; logaritmos de valores no positivos no están definidos sobre los reales. En ecuaciones con expresiones, se comprueba dominio antes de transformarlas, y no se confunde log(x+y) con log x+log y."
+        },
+        {
+          "type": "example",
+          "body": "2^(x+1)=16 equivale a 2^(x+1)=2^4: los exponentes coinciden y x=3."
+        },
+        {
+          "type": "example",
+          "body": "log_3(x)=2 significa 3²=x; la solución es x=9>0, que satisface el dominio del logaritmo."
+        },
+        {
+          "type": "figure",
+          "body": "Potencia y logaritmo como operaciones inversas. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Potencia y logaritmo como operaciones inversas. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "exponential",
+            "title": "Potencia y logaritmo como operaciones inversas",
+            "rows": [
+              [
+                "Exponencial",
+                "2^(x+1)=16"
+              ],
+              [
+                "Potencias iguales",
+                "2^4=16"
+              ],
+              [
+                "Solución",
+                "x=3"
+              ],
+              [
+                "Logaritmo",
+                "log₂(8)=3"
+              ],
+              [
+                "Dominio log",
+                "argumento >0"
+              ]
+            ],
+            "model": {
+              "kind": "exponential",
+              "a": 1,
+              "factor": 2
+            },
+            "domain": [
+              0,
+              5
+            ],
+            "marks": [
+              [
+                "P",
+                4,
+                16
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se puede evaluar log_2(−8) en los números reales?||No; su argumento debe ser estrictamente positivo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una ecuación exponencial contiene la incógnita en un exponente; si los miembros pueden escribirse con la misma base positiva a≠1, se igualan los exponentes. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-A01-L03-01",
+        "F3-B1S-A01-L03-02",
+        "F3-B1S-A01-L03-03",
+        "F3-B1S-A01-L03-04",
+        "F3-B1S-A01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-A01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-A01:C04"
+      ],
+      "objectives": [
+        "Resolver inecuaciones lineales y cuadráticas mediante signos.",
+        "Expresar conjuntos solución incluyendo fronteras según desigualdades estrictas."
+      ],
+      "prerequisites": [
+        "E4A-A02-L04",
+        "E4A-A02-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una inecuación cuadrática como (x−2)(x−5)≤0 se resuelve localizando sus ceros x=2 y x=5 y estudiando el signo en los intervalos que separan. El producto de dos factores lineales ordenados tiene signo negativo entre las raíces, por lo que las soluciones son [2,5] e incluyen fronteras por el símbolo ≤. Con >0 las raíces se excluyen y se toman los tramos exteriores. En inecuaciones racionales, los puntos de denominador cero nunca se incluyen aunque el signo permita valores vecinos. Una inecuación lineal invierte sentido al dividir por número negativo; multiplicar por un factor con signo desconocido obliga a separar casos. En problemas económicos se intersecta el conjunto solución con el dominio de tiempo, cantidad y presupuesto."
+        },
+        {
+          "type": "example",
+          "body": "Resolver (x−2)(x−5)≤0 da x∈[2,5] porque los factores tienen signos opuestos entre las raíces y el producto se anula en extremos."
+        },
+        {
+          "type": "example",
+          "body": "Para x²−4>0, los puntos críticos son −2 y 2; el producto es positivo fuera: x<−2 o x>2, sin incluir las raíces."
+        },
+        {
+          "type": "figure",
+          "body": "Intervalo solución de una inecuación cuadrática. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Intervalo solución de una inecuación cuadrática. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "quadratic",
+            "title": "Intervalo solución de una inecuación cuadrática",
+            "rows": [
+              [
+                "Inecuación",
+                "(x−2)(x−5)≤0"
+              ],
+              [
+                "Ceros",
+                "2 y 5"
+              ],
+              [
+                "Solución",
+                "[2,5]"
+              ],
+              [
+                "Fronteras",
+                "Incluidas por ≤"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 3.5,
+              "k": -2.25
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": [
+              [
+                "A",
+                2,
+                0
+              ],
+              [
+                "B",
+                5,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Para (x−2)(x−5)≤0 se debe excluir x=2 y x=5?||No; el producto es cero allí y la desigualdad admite igualdad."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una inecuación cuadrática como (x−2)(x−5)≤0 se resuelve localizando sus ceros x=2 y x=5 y estudiando el signo en los intervalos que separan. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-A01-L04-01",
+        "F3-B1S-A01-L04-02",
+        "F3-B1S-A01-L04-03",
+        "F3-B1S-A01-L04-04",
+        "F3-B1S-A01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-A01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-A01:C05"
+      ],
+      "objectives": [
+        "Traducir costes e ingresos a funciones y resolver el umbral de beneficio.",
+        "Distinguir beneficio, facturación y viabilidad de cantidades enteras."
+      ],
+      "prerequisites": [
+        "E4A-A02-L05",
+        "E4A-A01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En un modelo económico elemental el ingreso I(q) puede ser el precio de venta por cantidad, el coste C(q) suma coste fijo y variable, y el beneficio B(q)=I(q)−C(q). Si I(q)=8q y C(q)=50+3q, entonces B(q)=5q−50; el punto de equilibrio ocurre en q=10 y se exige q>10 para beneficio positivo. Si q cuenta unidades indivisibles, la primera cantidad estrictamente rentable es q=11. Los ingresos no equivalen al beneficio porque no descuentan costes. Los ejemplos son sintéticos y no incorporan impuestos, costes escalonados ni elasticidad de demanda. Todas las decisiones se restringen a q entero no negativo y se comprueban sustituyendo en I y C; una solución negativa no se usa."
+        },
+        {
+          "type": "example",
+          "body": "Con I(q)=8q y C(q)=50+3q, el equilibrio 8q=50+3q da q=10, donde ingresos y costes valen 80."
+        },
+        {
+          "type": "example",
+          "body": "En ese mismo modelo B(q)=5q−50>0 implica q>10. Como la cantidad es entera, la primera rentable es q=11."
+        },
+        {
+          "type": "figure",
+          "body": "Intersección de ingresos y costes. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Intersección de ingresos y costes. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "linear",
+            "title": "Intersección de ingresos y costes",
+            "rows": [
+              [
+                "Ingreso",
+                "I(q)=8q"
+              ],
+              [
+                "Coste",
+                "C(q)=50+3q"
+              ],
+              [
+                "Beneficio",
+                "5q−50"
+              ],
+              [
+                "Equilibrio",
+                "q=10"
+              ],
+              [
+                "Primera unidad rentable",
+                "q=11"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 8,
+              "b": 0,
+              "second_a": 3,
+              "second_b": 50
+            },
+            "domain": [
+              0,
+              15
+            ],
+            "marks": [
+              [
+                "E",
+                10,
+                80
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Facturar 80 € significa ganar 80 € de beneficio si hay costes?||No; el beneficio es ingresos menos costes."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: En un modelo económico elemental el ingreso I(q) puede ser el precio de venta por cantidad, el coste C(q) suma coste fijo y variable, y el beneficio B(q)=I(q)−C(q). Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-A01-L05-01",
+        "F3-B1S-A01-L05-02",
+        "F3-B1S-A01-L05-03",
+        "F3-B1S-A01-L05-04",
+        "F3-B1S-A01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-A01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-A01:C06"
+      ],
+      "objectives": [
+        "Combinar restricciones de coste, capacidad e inecuaciones en decisiones sociales.",
+        "Comprobar soluciones de frontera y justificar su viabilidad física y algebraica."
+      ],
+      "prerequisites": [
+        "B1S-A01-L05",
+        "E4A-A02-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un problema de elección requiere especificar variables, restricciones simultáneas y un criterio para aceptar una respuesta. Si un taller puede producir como máximo 12 unidades y tiene beneficio modelizado B(q)=5q−50, para lograr beneficio estrictamente positivo necesita q>10 y, con 0≤q≤12 y q entero, solo q=11 o q=12 resultan rentables. La igualdad q=10 es equilibrio con beneficio cero, y q=13 sería rentable en la fórmula pero no factible por capacidad. En varias variables se representa la intersección de semiplanos, comprobando cada inecuación y la no negatividad; las decisiones enteras pueden ser más restrictivas que la región continua. Los parámetros del modelo son supuestos y no demuestran la viabilidad real del negocio; no se extienden tasas y costes lineales indefinidamente."
+        },
+        {
+          "type": "example",
+          "body": "Si B(q)=5q−50, 0≤q≤12 entero y B(q)>0, entonces 10<q≤12: los únicos valores factibles rentables son 11 y 12."
+        },
+        {
+          "type": "example",
+          "body": "Un plan con 15 productos viola una capacidad máxima de 12 aunque su beneficio teórico fuera positivo; se descarta por restricción."
+        },
+        {
+          "type": "figure",
+          "body": "Beneficio y restricción de capacidad. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Beneficio y restricción de capacidad. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "linear",
+            "title": "Beneficio y restricción de capacidad",
+            "rows": [
+              [
+                "Beneficio",
+                "B(q)=5q−50"
+              ],
+              [
+                "Beneficio positivo",
+                "q>10"
+              ],
+              [
+                "Capacidad",
+                "q≤12"
+              ],
+              [
+                "Dominio",
+                "q entero ≥0"
+              ],
+              [
+                "Soluciones factibles",
+                "11 y 12"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 5,
+              "b": -50
+            },
+            "domain": [
+              0,
+              14
+            ],
+            "marks": [
+              [
+                "E",
+                10,
+                0
+              ],
+              [
+                "V",
+                12,
+                10
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es válido escoger q=13 por maximizar beneficio si la capacidad máxima es 12?||No; incumple la restricción de capacidad, que es parte del modelo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un problema de elección requiere especificar variables, restricciones simultáneas y un criterio para aceptar una respuesta. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-A01-L06-01",
+        "F3-B1S-A01-L06-02",
+        "F3-B1S-A01-L06-03",
+        "F3-B1S-A01-L06-04",
+        "F3-B1S-A01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

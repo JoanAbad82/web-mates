@@ -1,0 +1,664 @@
+{
+  "unit_id": "B2C-A02",
+  "unit_title": "Determinantes y sistemas lineales",
+  "product_phase": "F3_OLA12",
+  "version": "0.12.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Calcular determinantes 2×2 y 3×3 exactos.",
+    "Aplicar propiedades del determinante ante operaciones elementales.",
+    "Relacionar rango, invertibilidad y determinante."
+  ],
+  "warnings": [
+    "Borrador sintético determinista EN REVISIÓN; no homologado.",
+    "Aristas B1C-A01→B2C-A01→B2C-A02→B2C-G02 y B2C-G01→B2C-G02 son editoriales.",
+    "Revisión territorial, matemática/didáctica humana y WCAG integral no verificadas."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Matrices y rango",
+      "lesson_id": "B2C-A01-L05",
+      "href": "#/curso/B2C/unidad/B2C-A01/leccion/B2C-A01-L05"
+    },
+    {
+      "label": "Inversa y determinante",
+      "lesson_id": "B2C-A01-L03",
+      "href": "#/curso/B2C/unidad/B2C-A01/leccion/B2C-A01-L03"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Practicar sentido antes que fórmula, recuperar sin pistas y espaciar errores voluntariamente."
+  },
+  "source_note": "RD 243/2022 Matemáticas II; secuencia editorial y normativa autonómica sin cotejo.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B2C-A02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.12.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-A02:C01"
+      ],
+      "objectives": [
+        "Calcular determinantes 2×2 y 3×3 exactos.",
+        "Reconocer que el determinante es un escalar y no una matriz."
+      ],
+      "prerequisites": [
+        "B2C-A01-L03",
+        "B2C-A01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El determinante de [[a,b],[c,d]] es ad−bc. Para una 3×3, se expande por cofactores con signos alternos o se emplea una regla válida como Sarrus exclusivamente en orden tres. Una matriz diagonal o triangular tiene determinante igual al producto de sus entradas diagonales. El determinante nulo indica dependencia lineal de filas o columnas; para matrices cuadradas equivale a no invertibilidad. Cambiar el orden de las operaciones en una expansión puede invertir signos: es recomendable comprobar con un caso diagonal o una permutación. No existe determinante usual de una matriz rectangular."
+        },
+        {
+          "type": "example",
+          "body": "det([[2,1],[3,4]])=2·4−1·3=5. Es escalar, no una matriz 2×2."
+        },
+        {
+          "type": "example",
+          "body": "det([[1,2,0],[0,3,1],[0,0,4]])=1·3·4=12 porque es triangular superior."
+        },
+        {
+          "type": "figure",
+          "body": "Determinantes y diagonal de matrices. Diagrama matemático declarativo; la tabla semántica adjunta especifica de forma independiente dimensiones, valores exactos, condiciones y ecuaciones.",
+          "alt": "Determinantes y diagonal de matrices. La tabla accesible aporta todos los valores y condiciones sin necesidad de interpretar el dibujo.",
+          "visual_spec": {
+            "kind": "matrix",
+            "title": "Determinantes y diagonal de matrices",
+            "rows": [
+              [
+                "Matriz A",
+                "[[2,1],[3,4]]"
+              ],
+              [
+                "Fórmula",
+                "ad−bc"
+              ],
+              [
+                "Determinante",
+                "5"
+              ],
+              [
+                "Rango",
+                "2"
+              ]
+            ],
+            "points": [],
+            "arrows": [],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Podemos aplicar Sarrus sin cambios a una matriz 4×4?||No. Es una regla particular para 3×3; para 4×4 usamos cofactores o eliminación."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: El determinante de [[a,b],[c,d]] es ad−bc. Explica el procedimiento sin ayuda, distingue los casos degenerados y revisa un ejercicio de transferencia."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-A02-L01-01",
+        "F3-B2C-A02-L01-02",
+        "F3-B2C-A02-L01-03",
+        "F3-B2C-A02-L01-04",
+        "F3-B2C-A02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, anexo II, Matemáticas II; marco RD 217/2022 ESO como prerrequisito",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa; ubicación editorial de unidades, mapeo territorial no verificado."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-A02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.12.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-A02:C02"
+      ],
+      "objectives": [
+        "Aplicar propiedades del determinante ante operaciones elementales.",
+        "Demostrar criterios de singularidad por filas proporcionales."
+      ],
+      "prerequisites": [
+        "B2C-A02-L01",
+        "B2C-A01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Intercambiar dos filas cambia el signo del determinante; multiplicar una fila por λ multiplica el determinante por λ; sumar a una fila un múltiplo de otra no lo altera. En general det(AB)=det(A)det(B) para matrices cuadradas del mismo orden, pero det(A+B) no es normalmente la suma de determinantes. Las matrices triangulares tienen determinante producto de pivotes diagonales. Dos filas iguales o proporcionales implican determinante nulo y rango menor que el orden. Para un sistema con determinante cero no basta concluir que es incompatible: se examina también la matriz ampliada."
+        },
+        {
+          "type": "example",
+          "body": "det([[1,2],[3,4]])=−2. Si permutamos filas, la nueva matriz tiene determinante +2."
+        },
+        {
+          "type": "example",
+          "body": "A=[[1,0],[0,2]], B=[[3,0],[0,4]]: det(AB)=24=det(A)det(B)=2·12."
+        },
+        {
+          "type": "figure",
+          "body": "Propiedades de operaciones por filas. Diagrama matemático declarativo; la tabla semántica adjunta especifica de forma independiente dimensiones, valores exactos, condiciones y ecuaciones.",
+          "alt": "Propiedades de operaciones por filas. La tabla accesible aporta todos los valores y condiciones sin necesidad de interpretar el dibujo.",
+          "visual_spec": {
+            "kind": "matrix",
+            "title": "Propiedades de operaciones por filas",
+            "rows": [
+              [
+                "Matriz",
+                "[[1,2],[3,4]]"
+              ],
+              [
+                "det inicial",
+                "−2"
+              ],
+              [
+                "Permutar filas",
+                "det pasa a +2"
+              ],
+              [
+                "Sumar múltiplo",
+                "det sin cambio"
+              ]
+            ],
+            "points": [],
+            "arrows": [],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Añadir tres veces la primera fila a la segunda cambia el determinante?||No, una suma de múltiplos de filas mantiene el determinante."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Intercambiar dos filas cambia el signo del determinante; multiplicar una fila por λ multiplica el determinante por λ; sumar a una fila un múltiplo de otra no lo altera. Explica el procedimiento sin ayuda, distingue los casos degenerados y revisa un ejercicio de transferencia."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-A02-L02-01",
+        "F3-B2C-A02-L02-02",
+        "F3-B2C-A02-L02-03",
+        "F3-B2C-A02-L02-04",
+        "F3-B2C-A02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, anexo II, Matemáticas II; marco RD 217/2022 ESO como prerrequisito",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa; ubicación editorial de unidades, mapeo territorial no verificado."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-A02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.12.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-A02:C03"
+      ],
+      "objectives": [
+        "Relacionar rango, invertibilidad y determinante.",
+        "Calcular la matriz inversa mediante adjunta cuando el determinante sea no nulo."
+      ],
+      "prerequisites": [
+        "B2C-A02-L02",
+        "B2C-A01-L03",
+        "B2C-A01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una matriz cuadrada A tiene inversa exactamente cuando su determinante es no nulo y su rango coincide con el orden. En dimensión dos se obtiene A⁻¹=(1/det)[[d,−b],[−c,a]], verificando AA⁻¹=I. Para n mayor, la fórmula A⁻¹=adj(A)/det(A) exige construir cofactores y trasponerlos; alternativamente puede aplicarse Gauss-Jordan sobre [A|I]. Si det(A)=0 no puede dividirse para construir inversa y ningún sistema cuadrado asociado tiene solución única para todos los términos independientes. Un menor distinto de cero puede demostrar rango sin calcular toda la inversa."
+        },
+        {
+          "type": "example",
+          "body": "A=[[1,1],[1,2]] tiene det=1 e inversa [[2,−1],[−1,1]]."
+        },
+        {
+          "type": "example",
+          "body": "La matriz [[1,2],[2,4]] tiene determinante cero y rango uno; cualquier intento de inversa falla."
+        },
+        {
+          "type": "figure",
+          "body": "Inversa y condición de rango completo. Diagrama matemático declarativo; la tabla semántica adjunta especifica de forma independiente dimensiones, valores exactos, condiciones y ecuaciones.",
+          "alt": "Inversa y condición de rango completo. La tabla accesible aporta todos los valores y condiciones sin necesidad de interpretar el dibujo.",
+          "visual_spec": {
+            "kind": "matrix",
+            "title": "Inversa y condición de rango completo",
+            "rows": [
+              [
+                "A",
+                "[[1,1],[1,2]]"
+              ],
+              [
+                "det(A)",
+                "1"
+              ],
+              [
+                "A⁻¹",
+                "[[2,−1],[−1,1]]"
+              ],
+              [
+                "AA⁻¹",
+                "I"
+              ]
+            ],
+            "points": [],
+            "arrows": [],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una matriz singular puede tener solución para Ax=b?||Sí, para algunos b puede tener infinitas; lo que no tiene es inversa y solución única general."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Una matriz cuadrada A tiene inversa exactamente cuando su determinante es no nulo y su rango coincide con el orden. Explica el procedimiento sin ayuda, distingue los casos degenerados y revisa un ejercicio de transferencia."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-A02-L03-01",
+        "F3-B2C-A02-L03-02",
+        "F3-B2C-A02-L03-03",
+        "F3-B2C-A02-L03-04",
+        "F3-B2C-A02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, anexo II, Matemáticas II; marco RD 217/2022 ESO como prerrequisito",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa; ubicación editorial de unidades, mapeo territorial no verificado."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-A02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.12.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-A02:C04"
+      ],
+      "objectives": [
+        "Clasificar sistemas lineales por rangos de matriz y ampliada.",
+        "Distinguir sistemas compatibles determinados, indeterminados e incompatibles."
+      ],
+      "prerequisites": [
+        "B2C-A02-L03",
+        "B1C-A01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El teorema de Rouché-Frobenius establece que Ax=b es compatible si y solo si rango(A)=rango([A|b]). Si además ese rango iguala el número de incógnitas, la solución es única; si es menor hay infinitas soluciones sobre los reales. Si los rangos son diferentes, el sistema es incompatible. El determinante no nulo de una matriz cuadrada garantiza solución única, pero cuando es cero hay que examinar rangos, no asumir incompatibilidad. Reducir filas mediante operaciones reversibles preserva el conjunto de soluciones. Un vector b incompatible con el espacio columna no puede expresarse como combinación lineal de las columnas de A."
+        },
+        {
+          "type": "example",
+          "body": "Para x+y=2 y 2x+2y=4, rango A=rango ampliada=1 con 2 incógnitas: infinitas soluciones."
+        },
+        {
+          "type": "example",
+          "body": "Para x+y=2 y 2x+2y=5, rango A=1 pero rango ampliada=2: incompatible."
+        },
+        {
+          "type": "figure",
+          "body": "Comparación de rangos por Gauss. Diagrama matemático declarativo; la tabla semántica adjunta especifica de forma independiente dimensiones, valores exactos, condiciones y ecuaciones.",
+          "alt": "Comparación de rangos por Gauss. La tabla accesible aporta todos los valores y condiciones sin necesidad de interpretar el dibujo.",
+          "visual_spec": {
+            "kind": "matrix",
+            "title": "Comparación de rangos por Gauss",
+            "rows": [
+              [
+                "Coeficientes",
+                "[[1,1],[2,2]]"
+              ],
+              [
+                "Rango A",
+                "1"
+              ],
+              [
+                "b=(2,4)",
+                "Infinitas soluciones"
+              ],
+              [
+                "b=(2,5)",
+                "Sin solución"
+              ]
+            ],
+            "points": [],
+            "arrows": [],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Basta det(A)=0 para afirmar que el sistema no tiene solución?||No. Puede ser compatible indeterminado o incompatible según el rango de la ampliada."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: El teorema de Rouché-Frobenius establece que Ax=b es compatible si y solo si rango(A)=rango([A|b]). Explica el procedimiento sin ayuda, distingue los casos degenerados y revisa un ejercicio de transferencia."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-A02-L04-01",
+        "F3-B2C-A02-L04-02",
+        "F3-B2C-A02-L04-03",
+        "F3-B2C-A02-L04-04",
+        "F3-B2C-A02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, anexo II, Matemáticas II; marco RD 217/2022 ESO como prerrequisito",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa; ubicación editorial de unidades, mapeo territorial no verificado."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-A02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.12.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-A02:C05"
+      ],
+      "objectives": [
+        "Aplicar eliminación de Gauss con operaciones elementales reversibles.",
+        "Resolver sistemas 3×3 y detectar pivotes nulos o redundantes."
+      ],
+      "prerequisites": [
+        "B2C-A02-L04",
+        "B2C-A01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El método de Gauss transforma la matriz ampliada [A|b] mediante intercambio de filas, multiplicación de una fila por un escalar no nulo y adición de múltiplos de otra fila. Al obtener un sistema triangular se resuelve por sustitución hacia atrás. Si aparece la fila 0=nonzero el sistema es incompatible; una fila 0=0 señala redundancia y se comparan pivotes con el número de variables. Nunca se divide por un pivote nulo: hay que buscar intercambio o discutir rango. Para reducir fracciones con exactitud conviene usar racionales, no redondeos prematuros que alteren compatibilidad."
+        },
+        {
+          "type": "example",
+          "body": "x+y+z=6; y+z=5; z=3 es triangular: z=3, y=2, x=1."
+        },
+        {
+          "type": "example",
+          "body": "De x+y=2 y 2x+2y=5, restar dos veces la primera fila a la segunda produce 0=1, prueba de incompatibilidad."
+        },
+        {
+          "type": "figure",
+          "body": "Eliminación de Gauss y sustitución. Diagrama matemático declarativo; la tabla semántica adjunta especifica de forma independiente dimensiones, valores exactos, condiciones y ecuaciones.",
+          "alt": "Eliminación de Gauss y sustitución. La tabla accesible aporta todos los valores y condiciones sin necesidad de interpretar el dibujo.",
+          "visual_spec": {
+            "kind": "matrix",
+            "title": "Eliminación de Gauss y sustitución",
+            "rows": [
+              [
+                "Fila 1",
+                "x+y+z=6"
+              ],
+              [
+                "Fila 2",
+                "y+z=5"
+              ],
+              [
+                "Fila 3",
+                "z=3"
+              ],
+              [
+                "Resultado",
+                "(1,2,3)"
+              ]
+            ],
+            "points": [],
+            "arrows": [],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si una fila se reduce a [0,0,0|0], ¿el sistema no tiene solución?||No: es una ecuación redundante. La compatibilidad depende de las otras filas."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: El método de Gauss transforma la matriz ampliada [A|b] mediante intercambio de filas, multiplicación de una fila por un escalar no nulo y adición de múltiplos de otra fila. Explica el procedimiento sin ayuda, distingue los casos degenerados y revisa un ejercicio de transferencia."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-A02-L05-01",
+        "F3-B2C-A02-L05-02",
+        "F3-B2C-A02-L05-03",
+        "F3-B2C-A02-L05-04",
+        "F3-B2C-A02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, anexo II, Matemáticas II; marco RD 217/2022 ESO como prerrequisito",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa; ubicación editorial de unidades, mapeo territorial no verificado."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-A02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.12.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-A02:C06"
+      ],
+      "objectives": [
+        "Aplicar la regla de Cramer cuando el determinante sea no nulo.",
+        "Identificar casos singulares donde Cramer no es aplicable."
+      ],
+      "prerequisites": [
+        "B2C-A02-L01",
+        "B2C-A02-L04",
+        "B2C-A02-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La regla de Cramer resuelve un sistema cuadrado Ax=b solo cuando det(A)≠0. Su componente i es xᵢ=det(Aᵢ)/det(A), donde Aᵢ se obtiene reemplazando la columna i de A por b. Si el determinante es cero, no puede dividirse por él y debe analizarse la compatibilidad con Gauss o rangos. Aunque Cramer es útil para demostrar fórmulas y resolver sistemas pequeños, Gauss suele ser más eficiente en sistemas grandes. Las soluciones se comprueban sustituyendo en todas las ecuaciones; no se aceptan valores aproximados cuando el problema admite racionales exactos."
+        },
+        {
+          "type": "example",
+          "body": "Para x+y=5 y x−y=1, det(A)=−2; det(Aₓ)=−6 y det(Aᵧ)=−4, así x=3,y=2."
+        },
+        {
+          "type": "example",
+          "body": "En x+y=2 y 2x+2y=4, det(A)=0; Cramer no procede y el sistema tiene infinitas soluciones."
+        },
+        {
+          "type": "figure",
+          "body": "Cramer de dos incógnitas. Diagrama matemático declarativo; la tabla semántica adjunta especifica de forma independiente dimensiones, valores exactos, condiciones y ecuaciones.",
+          "alt": "Cramer de dos incógnitas. La tabla accesible aporta todos los valores y condiciones sin necesidad de interpretar el dibujo.",
+          "visual_spec": {
+            "kind": "matrix",
+            "title": "Cramer de dos incógnitas",
+            "rows": [
+              [
+                "Sistema",
+                "x+y=5; x−y=1"
+              ],
+              [
+                "det(A)",
+                "−2"
+              ],
+              [
+                "det(Aₓ)",
+                "−6"
+              ],
+              [
+                "det(Aᵧ)",
+                "−4"
+              ],
+              [
+                "Solución",
+                "(3,2)"
+              ]
+            ],
+            "points": [],
+            "arrows": [],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Podemos aplicar Cramer cuando el denominador det(A) vale cero?||No. Debemos clasificar el sistema mediante rangos o eliminación."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: La regla de Cramer resuelve un sistema cuadrado Ax=b solo cuando det(A)≠0. Explica el procedimiento sin ayuda, distingue los casos degenerados y revisa un ejercicio de transferencia."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-A02-L06-01",
+        "F3-B2C-A02-L06-02",
+        "F3-B2C-A02-L06-03",
+        "F3-B2C-A02-L06-04",
+        "F3-B2C-A02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, anexo II, Matemáticas II; marco RD 217/2022 ESO como prerrequisito",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa; ubicación editorial de unidades, mapeo territorial no verificado."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1029 @@
+{
+  "unit_id": "B1C-F02",
+  "version": "0.13.0",
+  "status": "revision",
+  "notice": "Actividades sintéticas deterministas EN REVISIÓN, pendientes de aprobación humana.",
+  "activities": [
+    {
+      "exercise_id": "F3-B1C-F02-L01-01",
+      "lesson_id": "B1C-F02-L01",
+      "type": "numeric",
+      "prompt": "Calcula el límite lim(t→2)[1t²+(0)t+(0)] usando continuidad polinómica. Escribe el resultado numérico EXACTO, sin unidades.",
+      "answer": 4.0,
+      "explanation": "Procedimiento y comprobación: Sustituye los datos en la definición o fórmula apropiada; comprueba dominio, signos, extremos y valor exacto. Resultado: 4. Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir. Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido. Solución exacta: 4. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_limit_poly",
+        "prerrequisito_b1c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L01-02",
+      "lesson_id": "B1C-F02-L01",
+      "type": "numeric",
+      "prompt": "Calcula el límite cuando x→1 de (x²−(1))/(x−(1))+(0), simplificando solo cerca de x=1 (no en el punto). Escribe el resultado numérico EXACTO, sin unidades.",
+      "answer": 2.0,
+      "explanation": "Procedimiento y comprobación: El denominador original debe ser distinto de cero. Una cancelación preserva el límite pero no define el valor excluido. Resultado: 2. Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir. Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido. Solución exacta: 2. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_hole_limit",
+        "prerrequisito_b1c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L01-03",
+      "lesson_id": "B1C-F02-L01",
+      "type": "numeric",
+      "prompt": "Calcula lim(t→1)[(1t+(2))/(1t+(3))], sabiendo que el denominador no se anula. Escribe el resultado numérico EXACTO, sin unidades.",
+      "answer": 0.75,
+      "explanation": "Procedimiento y comprobación: Sustituye los datos en la definición o fórmula apropiada; comprueba dominio, signos, extremos y valor exacto. Resultado: 0,75. Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir. Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido. Solución exacta: 0,75. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_rat_limit_direct",
+        "prerrequisito_b1c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L01-04",
+      "lesson_id": "B1C-F02-L01",
+      "type": "choice",
+      "prompt": "Calcula el límite lim(t→2)[2t²+(3)t+(4)] usando continuidad polinómica. Selecciona la respuesta EXACTA.",
+      "answer": "18",
+      "explanation": "Procedimiento y comprobación: Sustituye los datos en la definición o fórmula apropiada; comprueba dominio, signos, extremos y valor exacto. Resultado: 18. Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir. Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido. Solución exacta: 18. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_limit_poly",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "19",
+        "17",
+        "18"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L01-05",
+      "lesson_id": "B1C-F02-L01",
+      "type": "choice",
+      "prompt": "Para f(x)=(x²−(1))/(x−(1)), ¿existe un límite bilateral FINITO cuando x→1 aunque f(1) sea indefinida? Sí/No. Selecciona la respuesta EXACTA.",
+      "answer": "Sí",
+      "explanation": "Procedimiento y comprobación: El denominador original debe ser distinto de cero. Una cancelación preserva el límite pero no define el valor excluido. Resultado: Sí. Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir. Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido. Solución exacta: Sí. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_limit_at_hole",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "No se puede concluir",
+        "Sí",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L02-01",
+      "lesson_id": "B1C-F02-L02",
+      "type": "numeric",
+      "prompt": "Dada f(x)=x+1 si x<0, y x² si x≥0, calcula lim(x→0⁻)f(x). Escribe el resultado numérico EXACTO, sin unidades.",
+      "answer": 1.0,
+      "explanation": "Procedimiento y comprobación: Calcula cada límite lateral desde su fórmula y compara con el valor puntual de la rama correspondiente. Resultado 1. Identifica el lado desde el que te acercas y la condición exacta de cada tramo. Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a). Solución exacta: 1. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_piecewise_left",
+        "prerrequisito_b1c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L02-02",
+      "lesson_id": "B1C-F02-L02",
+      "type": "numeric",
+      "prompt": "Dada f(x)=x+1 si x<0, y x² si x≥0, calcula lim(x→0⁺)f(x). Escribe el resultado numérico EXACTO, sin unidades.",
+      "answer": 0.0,
+      "explanation": "Procedimiento y comprobación: Calcula cada límite lateral desde su fórmula y compara con el valor puntual de la rama correspondiente. Resultado 0. Identifica el lado desde el que te acercas y la condición exacta de cada tramo. Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a). Solución exacta: 0. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_piecewise_right",
+        "prerrequisito_b1c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L02-03",
+      "lesson_id": "B1C-F02-L02",
+      "type": "choice",
+      "prompt": "Para f(x)=x+1 (x<0), x² (x≥0), ¿cuál es el límite BILATERAL en 0: No existe, 0 o 1? Selecciona la respuesta EXACTA.",
+      "answer": "No existe",
+      "explanation": "Procedimiento y comprobación: Calcula cada límite lateral desde su fórmula y compara con el valor puntual de la rama correspondiente. Resultado No existe. Identifica el lado desde el que te acercas y la condición exacta de cada tramo. Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a). Solución exacta: No existe. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_piecewise_bilateral",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "0",
+        "1",
+        "No existe"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L02-04",
+      "lesson_id": "B1C-F02-L02",
+      "type": "choice",
+      "prompt": "Dada f(x)=|x|/x para x≠0, calcula lim(x→0⁻)f(x). Selecciona la respuesta EXACTA.",
+      "answer": "-1",
+      "explanation": "Procedimiento y comprobación: Sustituye los datos en la definición o fórmula apropiada; comprueba dominio, signos, extremos y valor exacto. Resultado: -1. Identifica el lado desde el que te acercas y la condición exacta de cada tramo. Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a). Solución exacta: -1. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_sign_side",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "-2",
+        "-1",
+        "0"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L02-05",
+      "lesson_id": "B1C-F02-L02",
+      "type": "choice",
+      "prompt": "Dada f(x)=|x|/x para x≠0, calcula lim(x→0⁺)f(x). Selecciona la respuesta EXACTA.",
+      "answer": "1",
+      "explanation": "Procedimiento y comprobación: Sustituye los datos en la definición o fórmula apropiada; comprueba dominio, signos, extremos y valor exacto. Resultado: 1. Identifica el lado desde el que te acercas y la condición exacta de cada tramo. Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a). Solución exacta: 1. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_sign_side",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "1",
+        "2",
+        "0"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L03-01",
+      "lesson_id": "B1C-F02-L03",
+      "type": "numeric",
+      "prompt": "Calcula el límite al infinito de (3x²+1)/(2x²+4), expresado exactamente. Escribe el resultado numérico EXACTO, sin unidades.",
+      "answer": 1.5,
+      "explanation": "Procedimiento y comprobación: Compara términos dominantes al crecer |x|, considerando su signo y el sentido del infinito. Resultado 1,5. En infinito compara los grados y signos de los términos dominantes. Si grados coinciden, divide coeficientes principales; si grado denominador mayor, límite cero; si numerador domina, analiza signo hacia +∞ o −∞. Solución exacta: 1,5. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "En infinito compara los grados y signos de los términos dominantes.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_infinity_ratio",
+        "prerrequisito_b1c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L03-02",
+      "lesson_id": "B1C-F02-L03",
+      "type": "numeric",
+      "prompt": "Calcula lim(x→+∞)(2x+(1))/(x²+(4)) por comparación de grados. Escribe el resultado numérico EXACTO, sin unidades.",
+      "answer": 0.0,
+      "explanation": "Procedimiento y comprobación: Compara términos dominantes al crecer |x|, considerando su signo y el sentido del infinito. Resultado 0. En infinito compara los grados y signos de los términos dominantes. Si grados coinciden, divide coeficientes principales; si grado denominador mayor, límite cero; si numerador domina, analiza signo hacia +∞ o −∞. Solución exacta: 0. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "En infinito compara los grados y signos de los términos dominantes.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_infinity_lower",
+        "prerrequisito_b1c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L03-03",
+      "lesson_id": "B1C-F02-L03",
+      "type": "numeric",
+      "prompt": "Calcula el límite al infinito de (5x²+1)/(2x²+4), expresado exactamente. Escribe el resultado numérico EXACTO, sin unidades.",
+      "answer": 2.5,
+      "explanation": "Procedimiento y comprobación: Compara términos dominantes al crecer |x|, considerando su signo y el sentido del infinito. Resultado 2,5. En infinito compara los grados y signos de los términos dominantes. Si grados coinciden, divide coeficientes principales; si grado denominador mayor, límite cero; si numerador domina, analiza signo hacia +∞ o −∞. Solución exacta: 2,5. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "En infinito compara los grados y signos de los términos dominantes.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_infinity_ratio",
+        "prerrequisito_b1c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L03-04",
+      "lesson_id": "B1C-F02-L03",
+      "type": "choice",
+      "prompt": "Calcula lim(x→−∞) 2^x, base 2>1. Selecciona la respuesta EXACTA.",
+      "answer": "0",
+      "explanation": "Procedimiento y comprobación: Compara términos dominantes al crecer |x|, considerando su signo y el sentido del infinito. Resultado 0. Distingue exponencial positiva de logaritmo, definido solo con argumento >0. log_a(t)=s equivale a a^s=t con a>0 y a≠1; para a>1, a^x→0 al tender x→−∞. Solución exacta: 0. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Distingue exponencial positiva de logaritmo, definido solo con argumento >0.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_exp_infty",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "0",
+        "1",
+        "-1"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L03-05",
+      "lesson_id": "B1C-F02-L03",
+      "type": "choice",
+      "prompt": "Calcula lim(x→+∞)(3x^2) indicando +∞ o −∞. Selecciona la respuesta EXACTA.",
+      "answer": "+∞",
+      "explanation": "Procedimiento y comprobación: Compara términos dominantes al crecer |x|, considerando su signo y el sentido del infinito. Resultado +∞. En infinito compara los grados y signos de los términos dominantes. Si grados coinciden, divide coeficientes principales; si grado denominador mayor, límite cero; si numerador domina, analiza signo hacia +∞ o −∞. Solución exacta: +∞. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "En infinito compara los grados y signos de los términos dominantes.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_infinity_polynomial",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "−∞",
+        "0",
+        "+∞"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L04-01",
+      "lesson_id": "B1C-F02-L04",
+      "type": "numeric",
+      "prompt": "Calcula el límite cuando x→2 de (x²−(4))/(x−(2))+(0), simplificando solo cerca de x=2 (no en el punto). Escribe el resultado numérico EXACTO, sin unidades.",
+      "answer": 4.0,
+      "explanation": "Procedimiento y comprobación: El denominador original debe ser distinto de cero. Una cancelación preserva el límite pero no define el valor excluido. Resultado: 4. Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir. Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido. Solución exacta: 4. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_hole_limit",
+        "prerrequisito_b1c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L04-02",
+      "lesson_id": "B1C-F02-L04",
+      "type": "numeric",
+      "prompt": "Calcula lim(x→0)[√(1+x)−(1)]/x mediante conjugado; resultado exacto. Escribe el resultado numérico EXACTO, sin unidades.",
+      "answer": 0.5,
+      "explanation": "Procedimiento y comprobación: Racionaliza multiplicando por el conjugado; para x≠0 obtienes 1/[√(a²+x)+a] y al acercarse a cero vale 0,5. Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir. Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido. Solución exacta: 0,5. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_conjugate_limit",
+        "prerrequisito_b1c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L04-03",
+      "lesson_id": "B1C-F02-L04",
+      "type": "choice",
+      "prompt": "La función g(x)=(x²−(4))/(x−(2)) no ha sido redefinida en x=2. ¿Cuál es su VALOR puntual: Indefinido, 4 o 0? Selecciona la respuesta EXACTA.",
+      "answer": "Indefinido",
+      "explanation": "Procedimiento y comprobación: El denominador original debe ser distinto de cero. Una cancelación preserva el límite pero no define el valor excluido. Resultado: Indefinido. Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir. Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido. Solución exacta: Indefinido. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_hole_value",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "Indefinido",
+        "4",
+        "0"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L04-04",
+      "lesson_id": "B1C-F02-L04",
+      "type": "choice",
+      "prompt": "Calcula el límite cuando x→3 de (x²−(9))/(x−(3))+(1), simplificando solo cerca de x=3 (no en el punto). Selecciona la respuesta EXACTA.",
+      "answer": "7",
+      "explanation": "Procedimiento y comprobación: El denominador original debe ser distinto de cero. Una cancelación preserva el límite pero no define el valor excluido. Resultado: 7. Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir. Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido. Solución exacta: 7. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_hole_limit",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "8",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L04-05",
+      "lesson_id": "B1C-F02-L04",
+      "type": "choice",
+      "prompt": "Calcula lim(x→0)[√(4+x)−(2)]/x mediante conjugado; resultado exacto. Selecciona la respuesta EXACTA.",
+      "answer": "0,25",
+      "explanation": "Procedimiento y comprobación: Racionaliza multiplicando por el conjugado; para x≠0 obtienes 1/[√(a²+x)+a] y al acercarse a cero vale 0,25. Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir. Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido. Solución exacta: 0,25. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_conjugate_limit",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "-0,75",
+        "0,25",
+        "1,25"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L05-01",
+      "lesson_id": "B1C-F02-L05",
+      "type": "choice",
+      "prompt": "Para f(x)=1/(x−(2)), identifica la ecuación EXACTA de su asíntota vertical. Selecciona la respuesta EXACTA.",
+      "answer": "x=2",
+      "explanation": "Procedimiento y comprobación: Sustituye los datos en la definición o fórmula apropiada; comprueba dominio, signos, extremos y valor exacto. Resultado: x=2. Separa dominio, ceros y tendencia: un denominador nulo excluye la entrada original. Factoriza antes de cancelar, comprueba restricciones de origen y diferencia un agujero de una asíntota vertical con límites laterales. Solución exacta: x=2. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Separa dominio, ceros y tendencia: un denominador nulo excluye la entrada original.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_rat_asymptote_x",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "y=2",
+        "x=2",
+        "x=3"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L05-02",
+      "lesson_id": "B1C-F02-L05",
+      "type": "choice",
+      "prompt": "Para f(x)=1/(x−2)+(3), identifica la ecuación EXACTA de su asíntota horizontal. Selecciona la respuesta EXACTA.",
+      "answer": "y=3",
+      "explanation": "Procedimiento y comprobación: Sustituye los datos en la definición o fórmula apropiada; comprueba dominio, signos, extremos y valor exacto. Resultado: y=3. Separa dominio, ceros y tendencia: un denominador nulo excluye la entrada original. Factoriza antes de cancelar, comprueba restricciones de origen y diferencia un agujero de una asíntota vertical con límites laterales. Solución exacta: y=3. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Separa dominio, ceros y tendencia: un denominador nulo excluye la entrada original.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_rat_asymptote_y",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "y=3",
+        "x=3",
+        "y=4"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L05-03",
+      "lesson_id": "B1C-F02-L05",
+      "type": "choice",
+      "prompt": "Calcula el límite izquierdo de 1/(x−(2)) cuando x→2, como ±∞. Selecciona la respuesta EXACTA.",
+      "answer": "−∞",
+      "explanation": "Procedimiento y comprobación: Sustituye los datos en la definición o fórmula apropiada; comprueba dominio, signos, extremos y valor exacto. Resultado: −∞. Distingue aproximación lateral desde x<a o x>a: el denominador cambia de signo. Para 1/(x−a), al acercarse desde la izquierda el límite es −∞ y desde la derecha +∞. Solución exacta: −∞. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Distingue aproximación lateral desde x<a o x>a: el denominador cambia de signo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_infinite_side",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "+∞",
+        "0",
+        "−∞"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L05-04",
+      "lesson_id": "B1C-F02-L05",
+      "type": "choice",
+      "prompt": "Calcula el límite derecho de 1/(x−(2)) cuando x→2, como ±∞. Selecciona la respuesta EXACTA.",
+      "answer": "+∞",
+      "explanation": "Procedimiento y comprobación: Sustituye los datos en la definición o fórmula apropiada; comprueba dominio, signos, extremos y valor exacto. Resultado: +∞. Distingue aproximación lateral desde x<a o x>a: el denominador cambia de signo. Para 1/(x−a), al acercarse desde la izquierda el límite es −∞ y desde la derecha +∞. Solución exacta: +∞. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Distingue aproximación lateral desde x<a o x>a: el denominador cambia de signo.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_infinite_side",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "0",
+        "+∞",
+        "−∞"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L05-05",
+      "lesson_id": "B1C-F02-L05",
+      "type": "choice",
+      "prompt": "La función (x²−(4))/(x−(2)) no está definida en x=2, pero simplifica para otros x. ¿Es el punto un Agujero o una Asíntota vertical? Selecciona la respuesta EXACTA.",
+      "answer": "Agujero",
+      "explanation": "Procedimiento y comprobación: El denominador original debe ser distinto de cero. Una cancelación preserva el límite pero no define el valor excluido. Resultado: Agujero. Separa dominio, ceros y tendencia: un denominador nulo excluye la entrada original. Factoriza antes de cancelar, comprueba restricciones de origen y diferencia un agujero de una asíntota vertical con límites laterales. Solución exacta: Agujero. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Separa dominio, ceros y tendencia: un denominador nulo excluye la entrada original.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_rat_hole_type",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "Agujero",
+        "Asíntota vertical",
+        "Continua"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L06-01",
+      "lesson_id": "B1C-F02-L06",
+      "type": "numeric",
+      "prompt": "La función f(x)=x+(1) si x<0 y f(x)=k si x≥0 es continua en 0. Calcula el parámetro real k. Escribe el resultado numérico EXACTO, sin unidades.",
+      "answer": 1.0,
+      "explanation": "Procedimiento y comprobación: Calcula cada límite lateral desde su fórmula y compara con el valor puntual de la rama correspondiente. Resultado 1. Identifica el lado desde el que te acercas y la condición exacta de cada tramo. Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a). Solución exacta: 1. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_continuity_param",
+        "prerrequisito_b1c_f02"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L06-02",
+      "lesson_id": "B1C-F02-L06",
+      "type": "choice",
+      "prompt": "En f(x)=x+1 para x<0 y x² para x≥0, los laterales en x=0 difieren. Clasifica la discontinuidad: Salto, Evitable o Infinita. Selecciona la respuesta EXACTA.",
+      "answer": "Salto",
+      "explanation": "Procedimiento y comprobación: Calcula cada límite lateral desde su fórmula y compara con el valor puntual de la rama correspondiente. Resultado Salto. Identifica el lado desde el que te acercas y la condición exacta de cada tramo. Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a). Solución exacta: Salto. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_piecewise_discontinuity",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "Evitable",
+        "Infinita",
+        "Salto"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L06-03",
+      "lesson_id": "B1C-F02-L06",
+      "type": "choice",
+      "prompt": "En x=2, la función g(x) coincide con (x²−(4))/(x−(2)) para x≠2 y se define g(2)=4. ¿Es CONTINUA en 2? Selecciona la respuesta EXACTA.",
+      "answer": "Sí",
+      "explanation": "Procedimiento y comprobación: Calcula cada límite lateral desde su fórmula y compara con el valor puntual de la rama correspondiente. Resultado Sí. Identifica el lado desde el que te acercas y la condición exacta de cada tramo. Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a). Solución exacta: Sí. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_hole_continuous",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "No se puede concluir",
+        "Sí",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L06-04",
+      "lesson_id": "B1C-F02-L06",
+      "type": "choice",
+      "prompt": "En x=2, la función g(x) coincide con (x²−(4))/(x−(2)) para x≠2 y se define g(2)=3. ¿Es CONTINUA en 2? Selecciona la respuesta EXACTA.",
+      "answer": "No",
+      "explanation": "Procedimiento y comprobación: Calcula cada límite lateral desde su fórmula y compara con el valor puntual de la rama correspondiente. Resultado No. Identifica el lado desde el que te acercas y la condición exacta de cada tramo. Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a). Solución exacta: No. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_hole_continuous",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No se puede concluir"
+      ]
+    },
+    {
+      "exercise_id": "F3-B1C-F02-L06-05",
+      "lesson_id": "B1C-F02-L06",
+      "type": "choice",
+      "prompt": "¿Qué clase de discontinuidad presenta f(x)=1/(x−(1)) en x=1: Evitable, Salto o Infinita? Selecciona la respuesta EXACTA.",
+      "answer": "Infinita",
+      "explanation": "Procedimiento y comprobación: Sustituye los datos en la definición o fórmula apropiada; comprueba dominio, signos, extremos y valor exacto. Resultado: Infinita. Identifica el lado desde el que te acercas y la condición exacta de cada tramo. Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a). Solución exacta: Infinita. Comprueba dominio, signos, orientación de los límites, continuidad y justificación, no solo la apariencia de una gráfica.",
+      "hint": "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_infinite_discontinuity",
+        "prerrequisito_b1c_f02"
+      ],
+      "choices": [
+        "Salto",
+        "Evitable",
+        "Infinita"
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B1C-F02-L01-01": {
+      "hints": [
+        "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+        "Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido."
+      ],
+      "math_check": {
+        "kind": "limit_poly",
+        "params": [
+          1,
+          0,
+          0,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral limit_poly"
+    },
+    "F3-B1C-F02-L01-02": {
+      "hints": [
+        "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+        "Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido."
+      ],
+      "math_check": {
+        "kind": "hole_limit",
+        "params": [
+          1,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral hole_limit"
+    },
+    "F3-B1C-F02-L01-03": {
+      "hints": [
+        "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+        "Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido."
+      ],
+      "math_check": {
+        "kind": "rat_limit_direct",
+        "params": [
+          1,
+          2,
+          1,
+          3,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral rat_limit_direct"
+    },
+    "F3-B1C-F02-L01-04": {
+      "hints": [
+        "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+        "Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido."
+      ],
+      "math_check": {
+        "kind": "limit_poly",
+        "params": [
+          2,
+          3,
+          4,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral limit_poly"
+    },
+    "F3-B1C-F02-L01-05": {
+      "hints": [
+        "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+        "Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido."
+      ],
+      "math_check": {
+        "kind": "limit_at_hole",
+        "params": [
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral limit_at_hole"
+    },
+    "F3-B1C-F02-L02-01": {
+      "hints": [
+        "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+        "Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a)."
+      ],
+      "math_check": {
+        "kind": "piecewise_left",
+        "params": [
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral piecewise_left"
+    },
+    "F3-B1C-F02-L02-02": {
+      "hints": [
+        "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+        "Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a)."
+      ],
+      "math_check": {
+        "kind": "piecewise_right",
+        "params": [
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral piecewise_right"
+    },
+    "F3-B1C-F02-L02-03": {
+      "hints": [
+        "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+        "Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a)."
+      ],
+      "math_check": {
+        "kind": "piecewise_bilateral",
+        "params": [
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral piecewise_bilateral"
+    },
+    "F3-B1C-F02-L02-04": {
+      "hints": [
+        "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+        "Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a)."
+      ],
+      "math_check": {
+        "kind": "sign_side",
+        "params": [
+          -1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral sign_side"
+    },
+    "F3-B1C-F02-L02-05": {
+      "hints": [
+        "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+        "Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a)."
+      ],
+      "math_check": {
+        "kind": "sign_side",
+        "params": [
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral sign_side"
+    },
+    "F3-B1C-F02-L03-01": {
+      "hints": [
+        "En infinito compara los grados y signos de los términos dominantes.",
+        "Si grados coinciden, divide coeficientes principales; si grado denominador mayor, límite cero; si numerador domina, analiza signo hacia +∞ o −∞."
+      ],
+      "math_check": {
+        "kind": "infinity_ratio",
+        "params": [
+          3,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral infinity_ratio"
+    },
+    "F3-B1C-F02-L03-02": {
+      "hints": [
+        "En infinito compara los grados y signos de los términos dominantes.",
+        "Si grados coinciden, divide coeficientes principales; si grado denominador mayor, límite cero; si numerador domina, analiza signo hacia +∞ o −∞."
+      ],
+      "math_check": {
+        "kind": "infinity_lower",
+        "params": [
+          2,
+          1,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral infinity_lower"
+    },
+    "F3-B1C-F02-L03-03": {
+      "hints": [
+        "En infinito compara los grados y signos de los términos dominantes.",
+        "Si grados coinciden, divide coeficientes principales; si grado denominador mayor, límite cero; si numerador domina, analiza signo hacia +∞ o −∞."
+      ],
+      "math_check": {
+        "kind": "infinity_ratio",
+        "params": [
+          5,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral infinity_ratio"
+    },
+    "F3-B1C-F02-L03-04": {
+      "hints": [
+        "Distingue exponencial positiva de logaritmo, definido solo con argumento >0.",
+        "log_a(t)=s equivale a a^s=t con a>0 y a≠1; para a>1, a^x→0 al tender x→−∞."
+      ],
+      "math_check": {
+        "kind": "exp_infty",
+        "params": [
+          2,
+          -1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral exp_infty"
+    },
+    "F3-B1C-F02-L03-05": {
+      "hints": [
+        "En infinito compara los grados y signos de los términos dominantes.",
+        "Si grados coinciden, divide coeficientes principales; si grado denominador mayor, límite cero; si numerador domina, analiza signo hacia +∞ o −∞."
+      ],
+      "math_check": {
+        "kind": "infinity_polynomial",
+        "params": [
+          3,
+          2,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral infinity_polynomial"
+    },
+    "F3-B1C-F02-L04-01": {
+      "hints": [
+        "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+        "Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido."
+      ],
+      "math_check": {
+        "kind": "hole_limit",
+        "params": [
+          2,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral hole_limit"
+    },
+    "F3-B1C-F02-L04-02": {
+      "hints": [
+        "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+        "Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido."
+      ],
+      "math_check": {
+        "kind": "conjugate_limit",
+        "params": [
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral conjugate_limit"
+    },
+    "F3-B1C-F02-L04-03": {
+      "hints": [
+        "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+        "Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido."
+      ],
+      "math_check": {
+        "kind": "hole_value",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral hole_value"
+    },
+    "F3-B1C-F02-L04-04": {
+      "hints": [
+        "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+        "Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido."
+      ],
+      "math_check": {
+        "kind": "hole_limit",
+        "params": [
+          3,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral hole_limit"
+    },
+    "F3-B1C-F02-L04-05": {
+      "hints": [
+        "Límite no es lo mismo que valor puntual: comprueba el denominador al sustituir.",
+        "Si obtienes 0/0, simplifica o racionaliza para x≠a y solo después acerca x→a; conserva el punto excluido."
+      ],
+      "math_check": {
+        "kind": "conjugate_limit",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral conjugate_limit"
+    },
+    "F3-B1C-F02-L05-01": {
+      "hints": [
+        "Separa dominio, ceros y tendencia: un denominador nulo excluye la entrada original.",
+        "Factoriza antes de cancelar, comprueba restricciones de origen y diferencia un agujero de una asíntota vertical con límites laterales."
+      ],
+      "math_check": {
+        "kind": "rat_asymptote_x",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral rat_asymptote_x"
+    },
+    "F3-B1C-F02-L05-02": {
+      "hints": [
+        "Separa dominio, ceros y tendencia: un denominador nulo excluye la entrada original.",
+        "Factoriza antes de cancelar, comprueba restricciones de origen y diferencia un agujero de una asíntota vertical con límites laterales."
+      ],
+      "math_check": {
+        "kind": "rat_asymptote_y",
+        "params": [
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral rat_asymptote_y"
+    },
+    "F3-B1C-F02-L05-03": {
+      "hints": [
+        "Distingue aproximación lateral desde x<a o x>a: el denominador cambia de signo.",
+        "Para 1/(x−a), al acercarse desde la izquierda el límite es −∞ y desde la derecha +∞."
+      ],
+      "math_check": {
+        "kind": "infinite_side",
+        "params": [
+          2,
+          -1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral infinite_side"
+    },
+    "F3-B1C-F02-L05-04": {
+      "hints": [
+        "Distingue aproximación lateral desde x<a o x>a: el denominador cambia de signo.",
+        "Para 1/(x−a), al acercarse desde la izquierda el límite es −∞ y desde la derecha +∞."
+      ],
+      "math_check": {
+        "kind": "infinite_side",
+        "params": [
+          2,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral infinite_side"
+    },
+    "F3-B1C-F02-L05-05": {
+      "hints": [
+        "Separa dominio, ceros y tendencia: un denominador nulo excluye la entrada original.",
+        "Factoriza antes de cancelar, comprueba restricciones de origen y diferencia un agujero de una asíntota vertical con límites laterales."
+      ],
+      "math_check": {
+        "kind": "rat_hole_type",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral rat_hole_type"
+    },
+    "F3-B1C-F02-L06-01": {
+      "hints": [
+        "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+        "Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a)."
+      ],
+      "math_check": {
+        "kind": "continuity_param",
+        "params": [
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral continuity_param"
+    },
+    "F3-B1C-F02-L06-02": {
+      "hints": [
+        "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+        "Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a)."
+      ],
+      "math_check": {
+        "kind": "piecewise_discontinuity",
+        "params": [
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral piecewise_discontinuity"
+    },
+    "F3-B1C-F02-L06-03": {
+      "hints": [
+        "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+        "Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a)."
+      ],
+      "math_check": {
+        "kind": "hole_continuous",
+        "params": [
+          2,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral hole_continuous"
+    },
+    "F3-B1C-F02-L06-04": {
+      "hints": [
+        "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+        "Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a)."
+      ],
+      "math_check": {
+        "kind": "hole_continuous",
+        "params": [
+          2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral hole_continuous"
+    },
+    "F3-B1C-F02-L06-05": {
+      "hints": [
+        "Identifica el lado desde el que te acercas y la condición exacta de cada tramo.",
+        "Existe límite bilateral finito solo si ambos laterales coinciden; continuidad exige además f(a)=ese límite. Un salto no se repara asignando f(a)."
+      ],
+      "math_check": {
+        "kind": "infinite_discontinuity",
+        "params": [
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Dominio, signo, asíntota, monotonía, discontinuidad o límite lateral infinite_discontinuity"
+    }
+  }
+}

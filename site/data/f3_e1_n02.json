@@ -1,0 +1,577 @@
+{
+  "unit_id": "E1-N02",
+  "unit_title": "Números enteros",
+  "product_phase": "F3_OLA5",
+  "version": "0.5.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Representar situaciones por enteros positivos, negativos y cero.",
+    "Comparar enteros mediante su posición en la recta.",
+    "Situar enteros en una recta con escala uniforme."
+  ],
+  "warnings": [
+    "Contenido editorial sintético pendiente de revisión humana.",
+    "Distribución entre 1.º y 3.º de ESO no prescrita universalmente por curso.",
+    "No se ha validado adecuación autonómica ni eficacia pedagógica."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Cálculo con naturales",
+      "lesson_id": "E1-N01-L03",
+      "href": "#/curso/E1/unidad/E1-N01/leccion/E1-N01-L03"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 sin calibrar",
+    "rule": "Recuerda antes de consultar la respuesta y repasa de manera optativa."
+  },
+  "source_note": "RD 217/2022 anexo II; asignación por curso editorial. Cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E1-N02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N02:C01"
+      ],
+      "objectives": [
+        "Representar situaciones por enteros positivos, negativos y cero.",
+        "Interpretar cambios como desplazamientos con signo."
+      ],
+      "prerequisites": [
+        "E1-N01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Los enteros amplían los naturales con los números negativos y el cero. Un signo negativo puede representar deudas, temperaturas bajo cero o alturas inferiores a una referencia; su interpretación depende de la unidad y del origen escogido. Un cambio positivo aumenta el valor y uno negativo lo reduce. No confundas signo de una cantidad con la operación que la modifica."
+        },
+        {
+          "type": "example",
+          "body": "Si la temperatura es −3 °C y aumenta 5 °C, pasa a 2 °C."
+        },
+        {
+          "type": "example",
+          "body": "Una deuda de 12 € se expresa como saldo −12 €; ingresar 7 € deja un saldo de −5 €."
+        },
+        {
+          "type": "figure",
+          "body": "Temperaturas y referencia cero. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "Temperaturas y referencia cero. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "integer_line",
+            "minimum": -6,
+            "maximum": 6,
+            "points": [
+              -3,
+              0,
+              2
+            ],
+            "title": "Temperaturas y referencia cero"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una temperatura de −4 °C es mayor o menor que 0 °C?||Es menor; se sitúa cuatro unidades a la izquierda de cero en la recta numérica."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: Los enteros amplían los naturales con los números negativos y el cero. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N02-L01-01",
+        "F3-E1-N02-L01-02",
+        "F3-E1-N02-L01-03",
+        "F3-E1-N02-L01-04",
+        "F3-E1-N02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N02:C02"
+      ],
+      "objectives": [
+        "Comparar enteros mediante su posición en la recta.",
+        "Calcular el valor absoluto como distancia al cero."
+      ],
+      "prerequisites": [
+        "E1-N02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En la recta numérica los números crecen de izquierda a derecha. Entre dos enteros negativos, el más próximo al cero es mayor: −2 > −7. El valor absoluto |a| es la distancia no negativa desde a hasta 0; por ello |−7| = 7 y |7| = 7. Distancia y signo no expresan lo mismo y no deben confundirse."
+        },
+        {
+          "type": "example",
+          "body": "−8 < −3 porque −8 está más a la izquierda; en cambio |−8| = 8 > 3."
+        },
+        {
+          "type": "example",
+          "body": "Los puntos −5 y 3 distan 8 unidades: |3 − (−5)| = |8| = 8."
+        },
+        {
+          "type": "figure",
+          "body": "Orden y valor absoluto. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "Orden y valor absoluto. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "integer_line",
+            "minimum": -8,
+            "maximum": 5,
+            "points": [
+              -8,
+              -3,
+              0
+            ],
+            "title": "Orden y valor absoluto"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué |−6| no es −6?||Porque el valor absoluto mide distancia al cero y las distancias nunca son negativas."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: En la recta numérica los números crecen de izquierda a derecha. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N02-L02-01",
+        "F3-E1-N02-L02-02",
+        "F3-E1-N02-L02-03",
+        "F3-E1-N02-L02-04",
+        "F3-E1-N02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N02:C03"
+      ],
+      "objectives": [
+        "Situar enteros en una recta con escala uniforme.",
+        "Calcular desplazamientos y distancia entre posiciones."
+      ],
+      "prerequisites": [
+        "E1-N02-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Cada marca consecutiva de una recta de enteros representa una unidad idéntica de longitud. Desplazarse a la derecha suma una cantidad positiva y a la izquierda suma una negativa. La distancia entre posiciones a y b es |b − a|, siempre no negativa. La diferencia orientada b − a puede ser positiva o negativa aunque la distancia sea la misma en ambas direcciones."
+        },
+        {
+          "type": "example",
+          "body": "Partir de −4 y avanzar 7 unidades lleva a 3: −4 + 7 = 3."
+        },
+        {
+          "type": "example",
+          "body": "Entre −6 y 2 hay ocho unidades, tanto si caminas de izquierda a derecha como a la inversa."
+        },
+        {
+          "type": "figure",
+          "body": "De −4 a 3: siete unidades. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "De −4 a 3: siete unidades. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "integer_line",
+            "minimum": -7,
+            "maximum": 7,
+            "points": [
+              -4,
+              3
+            ],
+            "title": "De −4 a 3: siete unidades"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es lo mismo desplazamiento que distancia de −2 a 4?||El desplazamiento es +6; la distancia es 6 unidades, sin signo."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: Cada marca consecutiva de una recta de enteros representa una unidad idéntica de longitud. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N02-L03-01",
+        "F3-E1-N02-L03-02",
+        "F3-E1-N02-L03-03",
+        "F3-E1-N02-L03-04",
+        "F3-E1-N02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N02:C04"
+      ],
+      "objectives": [
+        "Sumar enteros con signos iguales o diferentes.",
+        "Transformar restas en sumas del opuesto."
+      ],
+      "prerequisites": [
+        "E1-N02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Sumar dos enteros con el mismo signo conserva ese signo y suma las magnitudes. Con signos distintos se restan magnitudes y queda el signo del mayor valor absoluto, salvo empate que da cero. Restar un entero equivale a sumar su opuesto: a − b = a + (−b). Los paréntesis evitan confundir el signo de un número con el signo de la operación."
+        },
+        {
+          "type": "example",
+          "body": "(−9) + (+4) = −5; la magnitud nueve domina a cuatro."
+        },
+        {
+          "type": "example",
+          "body": "6 − (−3) = 6 + 3 = 9, pues se suma el opuesto de −3."
+        },
+        {
+          "type": "figure",
+          "body": "Suma con signos diferentes. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "Suma con signos diferentes. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "integer_line",
+            "minimum": -10,
+            "maximum": 6,
+            "points": [
+              -9,
+              -5,
+              0,
+              4
+            ],
+            "title": "Suma con signos diferentes"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué −5 − (−2) es −3?||Porque restar −2 equivale a sumar +2: −5 + 2 = −3."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: Sumar dos enteros con el mismo signo conserva ese signo y suma las magnitudes. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N02-L04-01",
+        "F3-E1-N02-L04-02",
+        "F3-E1-N02-L04-03",
+        "F3-E1-N02-L04-04",
+        "F3-E1-N02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N02:C05"
+      ],
+      "objectives": [
+        "Aplicar la regla de signos al multiplicar y dividir enteros.",
+        "Comprobar cocientes exactos con una multiplicación."
+      ],
+      "prerequisites": [
+        "E1-N02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En un producto de dos factores distintos de cero, signos iguales dan resultado positivo y signos diferentes dan negativo. La misma regla vale para la división exacta de enteros, pero nunca se divide entre cero. El producto que incluye un factor cero es cero. Una regla de signos no reemplaza calcular correctamente las magnitudes absolutas."
+        },
+        {
+          "type": "example",
+          "body": "(−6) × (−4) = +24 porque dos factores negativos producen un positivo."
+        },
+        {
+          "type": "example",
+          "body": "−42 ÷ 7 = −6; comprueba: −6 × 7 = −42. No se puede dividir 42 entre 0."
+        },
+        {
+          "type": "figure",
+          "body": "Producto de signos. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "Producto de signos. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "steps",
+            "title": "Producto de signos",
+            "rows": [
+              [
+                "Magnitudes",
+                "6 × 4 = 24"
+              ],
+              [
+                "Signos",
+                "(−) × (−) = (+)"
+              ],
+              [
+                "Resultado",
+                "+24"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un producto con tres factores negativos es positivo o negativo?||Negativo, porque hay un número impar de factores negativos."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: En un producto de dos factores distintos de cero, signos iguales dan resultado positivo y signos diferentes dan negativo. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N02-L05-01",
+        "F3-E1-N02-L05-02",
+        "F3-E1-N02-L05-03",
+        "F3-E1-N02-L05-04",
+        "F3-E1-N02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.5.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N02:C06"
+      ],
+      "objectives": [
+        "Resolver operaciones combinadas con enteros.",
+        "Justificar el signo y la prioridad de cada paso."
+      ],
+      "prerequisites": [
+        "E1-N02-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Con números enteros se mantiene la jerarquía de operaciones: paréntesis, multiplicación y división, suma y resta, de izquierda a derecha en cada nivel. Calcula primero productos y cocientes con su signo; después suma o resta. Distingue −(3 + 4) de (−3) + 4, que no son expresiones equivalentes. Comprueba sustituyendo el resultado en la operación original."
+        },
+        {
+          "type": "example",
+          "body": "En −7 + 3 × (−2), primero 3 × (−2) = −6; después −7 + (−6) = −13."
+        },
+        {
+          "type": "example",
+          "body": "(−7 + 3) × (−2) = (−4) × (−2) = 8. Los paréntesis cambian el resultado."
+        },
+        {
+          "type": "figure",
+          "body": "Orden de cálculo con enteros. Usa la tabla alternativa para leer valores exactos, independientemente del gráfico.",
+          "alt": "Orden de cálculo con enteros. Todos los datos de esta representación aparecen también en una tabla semántica.",
+          "visual_spec": {
+            "kind": "steps",
+            "title": "Orden de cálculo con enteros",
+            "rows": [
+              [
+                "Producto",
+                "3 × (−2) = −6"
+              ],
+              [
+                "Suma",
+                "−7 + (−6)"
+              ],
+              [
+                "Resultado",
+                "−13"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué debe hacerse primero en −5 + 2 × (−4)?||Multiplicar 2 × (−4) = −8; después sumar −5 + (−8) = −13."
+        },
+        {
+          "type": "summary",
+          "body": "Idea esencial: Con números enteros se mantiene la jerarquía de operaciones: paréntesis, multiplicación y división, suma y resta, de izquierda a derecha en cada nivel. Identifica el procedimiento, explícalo y contrasta un ejemplo nuevo sin mirar las pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N02-L06-01",
+        "F3-E1-N02-L06-02",
+        "F3-E1-N02-L06-03",
+        "F3-E1-N02-L06-04",
+        "F3-E1-N02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial enlazada; redacción didáctica original en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

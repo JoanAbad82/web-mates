@@ -1,0 +1,80 @@
+{
+  "version": "0.16.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "E4A-P01",
+      "priority": 1,
+      "why": "Proporcionalidad E2-P01 y potencias E3-N01 con contenido previo, no se requiere unidad pendiente."
+    },
+    {
+      "unit_id": "E4A-A02",
+      "priority": 2,
+      "why": "Modelos algebraicos E4A-A01 desarrollados F3-15 y arista canónica E3-A02→E4A-A02."
+    },
+    {
+      "unit_id": "B1S-A01",
+      "priority": 3,
+      "why": "Ecuaciones/sistemas E4A-A02 completados secuencialmente; logaritmos necesarios introducidos en B1S-A01-L03, sin afirmar B1S-N01 terminada."
+    }
+  ],
+  "not_selected": [
+    {
+      "unit_id": "B1S-F01",
+      "why": "No adelantar: evaluar junto a B1S-N01 y resto de bases de MACS I tras cierre de F3-16."
+    }
+  ],
+  "canonical_edges_highlight": [
+    {
+      "from": "E3-A02",
+      "to": "E4A-A02"
+    }
+  ],
+  "new_editorial_edges": [
+    {
+      "from": "E2-P01",
+      "to": "E4A-P01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Proporcionalidad y porcentajes antes de finanzas 4.º ESO A."
+    },
+    {
+      "from": "E3-N01",
+      "to": "E4A-P01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Potencias y crecimiento multiplicativo previo a compuesto."
+    },
+    {
+      "from": "E4A-A01",
+      "to": "E4A-A02",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Modelos de 4.º ESO A anteriores a ecuaciones/sistemas aplicados."
+    },
+    {
+      "from": "E4A-A02",
+      "to": "B1S-A01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Sistemas e inecuaciones de 4.º previos a álgebra MACS I."
+    },
+    {
+      "from": "E4A-P01",
+      "to": "B1S-F01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Porcentajes de 4.º como base contextual de funciones de MACS I (unidad aún sin desarrollar)."
+    },
+    {
+      "from": "B1S-A01",
+      "to": "B1S-F01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Álgebra y restricciones como base de funciones MACS I (unidad aún sin desarrollar)."
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 44,
+  "regional_mapping": "NO VERIFICADO: vínculos editorialmente justificados, no obligatorios por norma estatal."
+}

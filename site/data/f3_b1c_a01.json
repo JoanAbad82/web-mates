@@ -1,0 +1,715 @@
+{
+  "unit_id": "B1C-A01",
+  "unit_title": "Ecuaciones, sistemas e inecuaciones",
+  "product_phase": "F3_OLA11",
+  "version": "0.11.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Resolver ecuaciones polinómicas mediante factores y discriminante.",
+    "Resolver ecuaciones con radicales verificando restricciones de signo.",
+    "Resolver sistemas lineales de dos incógnitas por reducción y discutir compatibilidad."
+  ],
+  "warnings": [
+    "Lecciones y ejercicios sintéticos editoriales EN REVISIÓN; sin homologación.",
+    "B2C-A01/B2C-A02/B2C-G02 siguen sin desarrollar; esta ola cubre solo la cadena de Matemáticas I.",
+    "Logaritmos sencillos explicados autónomamente; prerrequisito E4B-F01 no se da por desarrollado.",
+    "Mapeo regional, revisión humana y WCAG integral NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Sistemas de cuarto",
+      "lesson_id": "E4B-A02-L04",
+      "href": "#/curso/E4B/unidad/E4B-A02/leccion/E4B-A02-L04"
+    },
+    {
+      "label": "Factorización cuarto",
+      "lesson_id": "E4B-A01-L02",
+      "href": "#/curso/E4B/unidad/E4B-A01/leccion/E4B-A01-L02"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Comprender antes de memorizar, recuperación sin ayuda y reestudio de errores."
+  },
+  "source_note": "RD 217/2022 ESO y RD 243/2022 Bachillerato; distribución editorial y cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1C-A01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-A01:C01"
+      ],
+      "objectives": [
+        "Resolver ecuaciones polinómicas mediante factores y discriminante.",
+        "Resolver ecuaciones racionales no lineales con control de denominadores."
+      ],
+      "prerequisites": [
+        "E4B-A02-L03",
+        "E4B-A01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En Matemáticas I se combinan factorización polinómica, división por factores y el análisis sistemático del dominio. Si P(x)=0, la descomposición en factores permite enumerar raíces reales y multiplicidades; si la fórmula cuadrática tiene discriminante negativo, no hay raíces reales. Para expresiones racionales, los denominadores originales no pueden anularse; el producto de ellos se usa para eliminar fracciones solo sobre el dominio admitido. Un factor cancelado no recupera el punto excluido y una ecuación algebraicamente simplificada puede introducir soluciones prohibidas. Es imprescindible verificar las raíces en el problema original y distinguir soluciones reales de complejas cuando la tarea está restringida a R."
+        },
+        {
+          "type": "example",
+          "body": "x³−6x²+11x−6=(x−1)(x−2)(x−3). Sus raíces reales son 1, 2 y 3."
+        },
+        {
+          "type": "example",
+          "body": "(x²−1)/(x−1)=2, con x≠1, simplifica a x+1=2 y produce x=1, que es inválida: no tiene solución."
+        },
+        {
+          "type": "figure",
+          "body": "Polinomio cúbico y ceros reales. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Polinomio cúbico y ceros reales. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "roots",
+            "title": "Polinomio cúbico y ceros reales",
+            "rows": [
+              [
+                "P(x)",
+                "x³−6x²+11x−6"
+              ],
+              [
+                "Factores",
+                "(x−1)(x−2)(x−3)"
+              ],
+              [
+                "Raíces",
+                "1, 2, 3"
+              ],
+              [
+                "Dominio",
+                "R"
+              ]
+            ],
+            "points": [],
+            "lines": [],
+            "marks": [
+              1,
+              2,
+              3
+            ],
+            "area": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué una raíz que anula el denominador original nunca se admite tras una cancelación?||Porque la expresión de partida estaba indefinida en ese valor."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: En Matemáticas I se combinan factorización polinómica, división por factores y el análisis sistemático del dominio. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-A01-L01-01",
+        "F3-B1C-A01-L01-02",
+        "F3-B1C-A01-L01-03",
+        "F3-B1C-A01-L01-04",
+        "F3-B1C-A01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-A01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-A01:C02"
+      ],
+      "objectives": [
+        "Resolver ecuaciones con radicales verificando restricciones de signo.",
+        "Reconocer la definición y las restricciones de logaritmos sencillos."
+      ],
+      "prerequisites": [
+        "E4B-A01-L05",
+        "E4B-A02-L06",
+        "E3-N01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para √F(x)=G(x) se requiere F(x)≥0 y G(x)≥0, y solo después se puede elevar al cuadrado; las raíces de la ecuación cuadrada son candidatas y deben comprobarse. Para logaritmos reales se requiere argumento estrictamente positivo y base a>0, a≠1; log_a(t)=k significa a^k=t. En una ecuación log_2(x−1)=3, la restricción x>1 antecede a x−1=8, que da x=9. La definición de logaritmo como operación inversa de la exponenciación se expone aquí de forma autónoma; su estudio previo detallado en E4B-F01 todavía no se da por desarrollado. No se puede aplicar el logaritmo a cero o números negativos en R."
+        },
+        {
+          "type": "example",
+          "body": "√(x+1)=x−1 produce x=0 y x=3 al cuadrar; solo x=3 verifica signos y la ecuación inicial."
+        },
+        {
+          "type": "example",
+          "body": "log₂(x−1)=3 implica x−1=2³=8 y x=9, que satisface x>1."
+        },
+        {
+          "type": "figure",
+          "body": "Dominio de raíz y logaritmo. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Dominio de raíz y logaritmo. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "domain",
+            "title": "Dominio de raíz y logaritmo",
+            "rows": [
+              [
+                "Radical",
+                "√(x+1)=x−1"
+              ],
+              [
+                "Restricción derecha",
+                "x≥1"
+              ],
+              [
+                "Raíz verificada",
+                "3"
+              ],
+              [
+                "Log₂(x−1)",
+                "Argumento x>1"
+              ]
+            ],
+            "points": [],
+            "lines": [],
+            "marks": [
+              1,
+              3,
+              9
+            ],
+            "area": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se permite x=1 en log₂(x−1)=3?||No. El argumento sería cero y los logaritmos reales exigen argumento positivo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Para √F(x)=G(x) se requiere F(x)≥0 y G(x)≥0, y solo después se puede elevar al cuadrado; las raíces de la ecuación cuadrada son candidatas y deben comprobarse. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-A01-L02-01",
+        "F3-B1C-A01-L02-02",
+        "F3-B1C-A01-L02-03",
+        "F3-B1C-A01-L02-04",
+        "F3-B1C-A01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-A01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-A01:C03"
+      ],
+      "objectives": [
+        "Resolver sistemas lineales de dos incógnitas por reducción y discutir compatibilidad.",
+        "Resolver sistemas sencillos de recta y parábola controlando todas las intersecciones."
+      ],
+      "prerequisites": [
+        "E4B-A02-L04",
+        "B1C-G02-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En un sistema lineal A·(x,y)^T=b con matriz 2×2, el determinante Δ=ad−bc clasifica la unicidad si Δ≠0; si Δ=0 hay que comparar filas y términos independientes para determinar infinitas soluciones o inconsistencia. Gauss aplica operaciones elementales reversibles a las ecuaciones: intercambiar filas, sumar múltiplos de otra o escalar por un número no nulo. Un sistema lineal y cuadrático puede producir dos intersecciones, una tangencia o ninguna en R; sustituir la expresión lineal en la parábola y resolver evita leer soluciones aproximadas de una gráfica. Toda pareja solución debe cumplir ambas ecuaciones originales."
+        },
+        {
+          "type": "example",
+          "body": "x+y=5 y 2x−y=1 llevan a 3x=6, por tanto x=2 e y=3, comprobables en ambas."
+        },
+        {
+          "type": "example",
+          "body": "El sistema y=x² e y=x+2 implica x²−x−2=0, así que las soluciones son (−1,1) y (2,4)."
+        },
+        {
+          "type": "figure",
+          "body": "Sistemas lineales y no lineales. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Sistemas lineales y no lineales. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "system_lines",
+            "title": "Sistemas lineales y no lineales",
+            "rows": [
+              [
+                "Lineal 1",
+                "x+y=5"
+              ],
+              [
+                "Lineal 2",
+                "2x−y=1"
+              ],
+              [
+                "Solución lineal",
+                "(2, 3)"
+              ],
+              [
+                "No lineal",
+                "y=x² e y=x+2"
+              ],
+              [
+                "Cortes",
+                "(−1,1), (2,4)"
+              ]
+            ],
+            "points": [
+              [
+                "S",
+                2,
+                3
+              ]
+            ],
+            "lines": [
+              [
+                -1,
+                5
+              ],
+              [
+                2,
+                -1
+              ]
+            ],
+            "marks": [],
+            "area": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un sistema con determinante cero es siempre incompatible?||No. La proporcionalidad de las ecuaciones completas puede producir infinitas soluciones."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: En un sistema lineal A·(x,y)^T=b con matriz 2×2, el determinante Δ=ad−bc clasifica la unicidad si Δ≠0; si Δ=0 hay que comparar filas y términos independientes para determinar infinitas soluciones o inconsistencia. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-A01-L03-01",
+        "F3-B1C-A01-L03-02",
+        "F3-B1C-A01-L03-03",
+        "F3-B1C-A01-L03-04",
+        "F3-B1C-A01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-A01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-A01:C04"
+      ],
+      "objectives": [
+        "Resolver inecuaciones polinómicas mediante tablas de signo.",
+        "Combinar conjuntos solución con intersección o unión justificadas."
+      ],
+      "prerequisites": [
+        "E4B-A02-L05",
+        "B1C-A01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En una desigualdad polinómica como (x−2)(x−3)≥0, los ceros dividen el eje en intervalos de signo constante. Para un cuadrático mónico con dos raíces simples 2 y 3, el producto es no negativo fuera del intervalo intermedio: x≤2 o x≥3. Un sistema de desigualdades corresponde a la intersección de conjuntos solución; una disyunción se expresa como unión. En expresiones racionales también son puntos de corte los ceros del denominador, que siempre se excluyen. Multiplicar por una expresión cuyo signo se desconoce sin dividir por casos puede invertir o no la desigualdad, y no es un paso seguro."
+        },
+        {
+          "type": "example",
+          "body": "(x−2)(x−3)≥0 equivale a x≤2 o x≥3. Los extremos están incluidos porque la comparación es ≥."
+        },
+        {
+          "type": "example",
+          "body": "El sistema x>1, x≤4 tiene intervalo (1,4], distinto de la unión de ambas desigualdades."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla de signos de un producto. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Tabla de signos de un producto. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "number_line",
+            "title": "Tabla de signos de un producto",
+            "rows": [
+              [
+                "Polinomio",
+                "(x−2)(x−3)"
+              ],
+              [
+                "Raíces",
+                "2 y 3"
+              ],
+              [
+                "Signo no negativo",
+                "x≤2 o x≥3"
+              ],
+              [
+                "Signo negativo",
+                "2<x<3"
+              ]
+            ],
+            "points": [],
+            "lines": [],
+            "marks": [
+              2,
+              3
+            ],
+            "area": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Al resolver (x−2)(x−3)<0 se admiten x=2 y x=3?||No: el producto vale cero y la desigualdad es estricta; resulta 2<x<3."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: En una desigualdad polinómica como (x−2)(x−3)≥0, los ceros dividen el eje en intervalos de signo constante. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-A01-L04-01",
+        "F3-B1C-A01-L04-02",
+        "F3-B1C-A01-L04-03",
+        "F3-B1C-A01-L04-04",
+        "F3-B1C-A01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-A01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-A01:C05"
+      ],
+      "objectives": [
+        "Traducir situaciones contextualizadas a sistemas lineales.",
+        "Distinguir resultados algebraicos de soluciones físicamente admisibles."
+      ],
+      "prerequisites": [
+        "B1C-A01-L03",
+        "E4B-A02-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una modelización algebraica define primero las incógnitas con unidades y después construye las ecuaciones de conservación (precio, cantidad, masa o tiempo). En el sistema x+y=12 y 2x+3y=30, x e y pueden representar cantidades de productos; resolver produce x=6, y=6, ambos no negativos y compatibles con la primera igualdad. Si un resultado es negativo para una magnitud que no puede serlo, hay que revisar el modelo o descartarlo, no aceptar ciegamente la solución matemática. Comprobar los resultados en el enunciado, interpretar unidades y evaluar si hay suficientes ecuaciones evita confundir soluciones múltiples con una respuesta única."
+        },
+        {
+          "type": "example",
+          "body": "En una venta se adquieren 12 objetos: unos cuestan 2 € y otros 3 €. Si se pagan 30 €, x+y=12, 2x+3y=30; hay 6 de cada clase."
+        },
+        {
+          "type": "example",
+          "body": "En una mezcla de 10 L con 4 L del primer componente, el segundo aporta 6 L, calculados por conservación de volumen."
+        },
+        {
+          "type": "figure",
+          "body": "Modelo de dos precios y dos cantidades. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Modelo de dos precios y dos cantidades. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "system_lines",
+            "title": "Modelo de dos precios y dos cantidades",
+            "rows": [
+              [
+                "Cantidad total",
+                "x+y=12"
+              ],
+              [
+                "Precio total",
+                "2x+3y=30"
+              ],
+              [
+                "Tipo de 2 €",
+                "x=6"
+              ],
+              [
+                "Tipo de 3 €",
+                "y=6"
+              ]
+            ],
+            "points": [
+              [
+                "M",
+                6,
+                6
+              ]
+            ],
+            "lines": [
+              [
+                -1,
+                12
+              ],
+              [
+                -0.6666666666666666,
+                10
+              ]
+            ],
+            "marks": [],
+            "area": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es válido aceptar una solución x=−4 para un número de entradas vendidas?||No, aunque pueda satisfacer una ecuación abstracta: el contexto exige cantidad no negativa."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Una modelización algebraica define primero las incógnitas con unidades y después construye las ecuaciones de conservación (precio, cantidad, masa o tiempo). Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-A01-L05-01",
+        "F3-B1C-A01-L05-02",
+        "F3-B1C-A01-L05-03",
+        "F3-B1C-A01-L05-04",
+        "F3-B1C-A01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-A01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.11.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-A01:C06"
+      ],
+      "objectives": [
+        "Comprobar restricciones y equivalencias de ecuaciones racionales, radicales y sistemas.",
+        "Diagnosticar soluciones extrañas sin perder las válidas."
+      ],
+      "prerequisites": [
+        "B1C-A01-L02",
+        "B1C-A01-L03",
+        "B1C-A01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La solución final de un problema algebraico no es simplemente la lista de raíces de un polinomio obtenido: debe intersectarse con el dominio original y comprobarse en cada ecuación. Para √(x+1)=x−1 se exige x≥1; elevar al cuadrado produce x(x−3)=0 y la candidata x=0 falla, por lo que la solución es x=3. Para (x²−9)/(x−3)=6 el dominio excluye x=3, y la solución del polinomio transformado cae fuera de él, así que no existe solución. En sistemas deben cumplirse todas las ecuaciones simultáneamente. Los pasos de squaring, cancelación y eliminación de denominadores se anotan como implicaciones condicionadas, no como equivalencias sin restricciones."
+        },
+        {
+          "type": "example",
+          "body": "(x+2)/(x−2)=3 exige x≠2, multiplicar por x−2 da x+2=3x−6 y x=4, válida."
+        },
+        {
+          "type": "example",
+          "body": "√(x+1)=x−1: se prueban 0 y 3 en origen, se descarta 0 y se conserva 3."
+        },
+        {
+          "type": "figure",
+          "body": "Control final de dominio y equivalencia. Recurso gráfico simbólico y cartesiano con alternativa tabular semántica exacta; no se requiere interpretar el color o la posición visual para resolver.",
+          "alt": "Control final de dominio y equivalencia. La tabla semántica identifica expresiones, restricciones y raíces exactas, independientemente de la imagen.",
+          "visual_spec": {
+            "kind": "restrictions",
+            "title": "Control final de dominio y equivalencia",
+            "rows": [
+              [
+                "Ecuación racional",
+                "(x²−9)/(x−3)=6"
+              ],
+              [
+                "Restricción",
+                "x≠3"
+              ],
+              [
+                "Candidato algebraico",
+                "3"
+              ],
+              [
+                "Resultado",
+                "Sin solución en origen"
+              ]
+            ],
+            "points": [],
+            "lines": [],
+            "marks": [
+              0,
+              3
+            ],
+            "area": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es suficiente sustituir una raíz en la ecuación transformada?||No: debes comprobarla en la original, incluidos denominadores, radicales, signos y contexto."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: La solución final de un problema algebraico no es simplemente la lista de raíces de un polinomio obtenido: debe intersectarse con el dominio original y comprobarse en cada ecuación. Reproduce la explicación de memoria, anota hipótesis y comprueba una variante sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-A01-L06-01",
+        "F3-B1C-A01-L06-02",
+        "F3-B1C-A01-L06-03",
+        "F3-B1C-A01-L06-04",
+        "F3-B1C-A01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco estatal de referencia; actividades y secuencia editoriales, pendientes de cotejo humano y autonómico."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

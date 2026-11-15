@@ -1,0 +1,814 @@
+{
+  "unit_id": "E4B-Q01",
+  "unit_title": "Probabilidad compuesta e inferencia inicial",
+  "product_phase": "F3_OLA23",
+  "version": "0.23.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Enumerar espacios muestrales de experiencias de varias etapas con resultados elementales.",
+    "Aplicar principios aditivo y multiplicativo para contar sin omisiones.",
+    "Calcular probabilidades compuestas con independencia explícita o condicionamiento."
+  ],
+  "warnings": [
+    "Todos los ejemplos son sintéticos, el contenido permanece EN REVISIÓN.",
+    "Regresión cuadrática exige diseño de rango 3; buen ajuste en muestra no prueba causalidad ni generalización.",
+    "Laplace solo con resultados elementales equiprobables; sin reemplazo, probabilidades condicionadas.",
+    "La proporción muestral no determina el parámetro poblacional ni garantiza precisión.",
+    "WCAG 2.2 AA, currículo autonómico, revisión humana y dispositivo físico NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Probabilidad compuesta 3.º",
+      "lesson_id": "E3-Q01-L05",
+      "href": "#/curso/E3/unidad/E3-Q01/leccion/E3-Q01-L05"
+    },
+    {
+      "label": "Sucesos 3.º",
+      "lesson_id": "E3-Q01-L06",
+      "href": "#/curso/E3/unidad/E3-Q01/leccion/E3-Q01-L06"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 sin calibración",
+    "rule": "Actividades de recuperación y repaso solo en almacenamiento local con consentimiento."
+  },
+  "source_note": "RD 217/2022 y RD 243/2022 solo marco; lecciones y secuencia editorial sin validación autonómica.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E4B-Q01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.23.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-Q01:C01"
+      ],
+      "objectives": [
+        "Enumerar espacios muestrales de experiencias de varias etapas con resultados elementales.",
+        "Distinguir equiprobabilidad de simple enumeración y reconocer orden en los resultados."
+      ],
+      "prerequisites": [
+        "E3-Q01-L01",
+        "E3-Q01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un espacio muestral es el conjunto de resultados elementales del experimento tal como se ha definido. Dos lanzamientos ordenados de una moneda con cara C y cruz X tienen Ω={CC,CX,XC,XX}; las cuatro rutas son equiprobables únicamente si las monedas son ideales e independientes. En dos dados distinguibles, los resultados elementales son 36 parejas (i,j), no las once sumas 2 a 12. La suma 7 tiene seis rutas y la 2 una, de modo que las sumas no son equiprobables. El suceso A se representa como subconjunto de Ω; su complemento es Ω sin A. Si los ensayos están correlacionados o el dado está cargado, el espacio de resultados puede ser igual pero las probabilidades de sus elementos cambian. Es esencial declarar si el orden cuenta y si hay reemplazo antes de calcular."
+        },
+        {
+          "type": "example",
+          "body": "Dos monedas independientes equilibradas: Ω={CC,CX,XC,XX}; el suceso exactamente una cara es {CX,XC}, con 2 rutas y probabilidad 1/2."
+        },
+        {
+          "type": "example",
+          "body": "Dos dados ideales distinguibles: Ω tiene 6·6=36 parejas; suma 7 incluye (1,6),(2,5),(3,4),(4,3),(5,2),(6,1)."
+        },
+        {
+          "type": "figure",
+          "body": "Rutas ordenadas de dos monedas. SVG didáctico, acompañado de tabla HTML semántica exacta y supuestos.",
+          "alt": "Rutas ordenadas de dos monedas. La tabla presenta datos exactos, hipótesis y límites sin depender de colores ni representación visual.",
+          "visual_spec": {
+            "render_family": "wave23",
+            "kind": "prob_tree",
+            "title": "Rutas ordenadas de dos monedas",
+            "rows": [
+              [
+                "Espacio muestral",
+                "CC, CX, XC, XX"
+              ],
+              [
+                "Rutas con una cara",
+                "CX, XC"
+              ],
+              [
+                "P(una cara)",
+                "2/4"
+              ],
+              [
+                "Hipótesis",
+                "Monedas independientes y equilibradas"
+              ],
+              [
+                "Orden",
+                "Importa"
+              ]
+            ],
+            "model": {
+              "kind": "prob_tree",
+              "first": [
+                "C",
+                "X"
+              ],
+              "weights": [
+                "1/2",
+                "1/2"
+              ],
+              "second": [
+                "C",
+                "X"
+              ],
+              "second_weights": [
+                "1/2",
+                "1/2"
+              ]
+            },
+            "domain": [
+              0,
+              2
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Enumerar los resultados posibles asegura por sí solo que todos son equiprobables?||No; depende del modelo físico y las hipótesis."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un espacio muestral es el conjunto de resultados elementales del experimento tal como se ha definido. Justifica al menos una condición de aplicación antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-Q01-L01-01",
+        "F3-E4B-Q01-L01-02",
+        "F3-E4B-Q01-L01-03",
+        "F3-E4B-Q01-L01-04",
+        "F3-E4B-Q01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos y mapeo autonómico propuestas editoriales no homologadas.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, cotejo oficial competencial y autonómico pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-Q01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.23.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-Q01:C02"
+      ],
+      "objectives": [
+        "Aplicar principios aditivo y multiplicativo para contar sin omisiones.",
+        "Distinguir selección ordenada con o sin reemplazo en casos sencillos."
+      ],
+      "prerequisites": [
+        "E4B-Q01-L01",
+        "E3-Q01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El principio multiplicativo cuenta etapas sucesivas: con 3 opciones para la primera elección y 2 disponibles para la segunda en cada caso, hay 3·2=6 secuencias. El principio aditivo suma alternativas que son disjuntas: elegir exactamente uno entre 3 billetes de tipo A o 2 del tipo B da 5 opciones. Si se eligen dos objetos distintos de un conjunto de 4 y el orden importa, sin reemplazo hay 4·3=12 pares; con reemplazo habría 4·4=16. No confundir parejas ordenadas AB y BA con la misma combinación sin orden. Los diagramas de árbol deben mostrar todas las ramas, mientras una tabla puede justificar el conteo sin depender del dibujo. Contar secuencias no prueba que todas sean igual de probables; para usar Laplace hay que verificar equiprobabilidad elemental."
+        },
+        {
+          "type": "example",
+          "body": "Elegir 2 posiciones ordenadas entre 4 fichas distintas sin reemplazo produce 4·3=12 secuencias, no 4²=16."
+        },
+        {
+          "type": "example",
+          "body": "Elegir entre un grupo disjunto con 3 cartas o otro con 2 permite 3+2=5 opciones únicas, porque es una alternativa y no dos etapas."
+        },
+        {
+          "type": "figure",
+          "body": "Conteo de primeras y segundas etapas. SVG didáctico, acompañado de tabla HTML semántica exacta y supuestos.",
+          "alt": "Conteo de primeras y segundas etapas. La tabla presenta datos exactos, hipótesis y límites sin depender de colores ni representación visual.",
+          "visual_spec": {
+            "render_family": "wave23",
+            "kind": "prob_tree",
+            "title": "Conteo de primeras y segundas etapas",
+            "rows": [
+              [
+                "Elementos distintos",
+                "4"
+              ],
+              [
+                "Primera extracción",
+                "4 opciones"
+              ],
+              [
+                "Segunda sin reemplazo",
+                "3 opciones"
+              ],
+              [
+                "Secuencias ordenadas",
+                "12"
+              ],
+              [
+                "Sin orden",
+                "6 pares"
+              ]
+            ],
+            "model": {
+              "kind": "prob_tree",
+              "first": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "weights": [
+                "3",
+                "3",
+                "3",
+                "3"
+              ]
+            },
+            "domain": [
+              0,
+              4
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se debe sumar 4+3 para contar dos extracciones consecutivas sin reemplazo con orden?||No; se multiplican 4·3."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El principio multiplicativo cuenta etapas sucesivas: con 3 opciones para la primera elección y 2 disponibles para la segunda en cada caso, hay 3·2=6 secuencias. Justifica al menos una condición de aplicación antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-Q01-L02-01",
+        "F3-E4B-Q01-L02-02",
+        "F3-E4B-Q01-L02-03",
+        "F3-E4B-Q01-L02-04",
+        "F3-E4B-Q01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos y mapeo autonómico propuestas editoriales no homologadas.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, cotejo oficial competencial y autonómico pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-Q01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.23.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-Q01:C03"
+      ],
+      "objectives": [
+        "Calcular probabilidades compuestas con independencia explícita o condicionamiento.",
+        "Usar complementarios y rechazar la independencia automática en extracciones sin reemplazo."
+      ],
+      "prerequisites": [
+        "E4B-Q01-L02",
+        "E3-Q01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para dos sucesos A y B siempre se cumple P(A∩B)=P(A)P(B|A) cuando P(A)>0. Si además son independientes, P(B|A)=P(B) y se puede multiplicar P(A)P(B). Dos monedas ideales independientes dan P(CC)=1/4. Una bolsa contiene 2 fichas rojas y una azul; en dos extracciones sin reemplazo P(primera roja)=2/3 y P(segunda roja|primera roja)=1/2, luego P(RR)=1/3. El producto (2/3)² sería incorrecto porque el contenido de la bolsa cambia. El complementario de un suceso A tiene probabilidad 1−P(A). En árboles, la suma de probabilidades de todas las ramas salientes de cada nodo condicionado debe ser 1; no se pueden mezclar ramas bajo condiciones diferentes."
+        },
+        {
+          "type": "example",
+          "body": "Dos monedas equilibradas independientes: P(CC)=P(C primero)P(C segundo)=1/2·1/2=1/4."
+        },
+        {
+          "type": "example",
+          "body": "Urna con dos rojas y una azul sin reemplazo: P(RR)=2/3·1/2=1/3; P(azul primero, roja después)=1/3·1=1/3."
+        },
+        {
+          "type": "figure",
+          "body": "Condicionamiento en urna sin reemplazo. SVG didáctico, acompañado de tabla HTML semántica exacta y supuestos.",
+          "alt": "Condicionamiento en urna sin reemplazo. La tabla presenta datos exactos, hipótesis y límites sin depender de colores ni representación visual.",
+          "visual_spec": {
+            "render_family": "wave23",
+            "kind": "prob_tree",
+            "title": "Condicionamiento en urna sin reemplazo",
+            "rows": [
+              [
+                "Bolsa",
+                "2 rojas y 1 azul"
+              ],
+              [
+                "P(R primera)",
+                "2/3"
+              ],
+              [
+                "P(R segunda|R)",
+                "1/2"
+              ],
+              [
+                "P(RR)",
+                "1/3"
+              ],
+              [
+                "Modelo",
+                "Sin reemplazo"
+              ]
+            ],
+            "model": {
+              "kind": "prob_tree",
+              "first": [
+                "R",
+                "A"
+              ],
+              "weights": [
+                "2/3",
+                "1/3"
+              ],
+              "second": [
+                "R|R",
+                "A|R"
+              ],
+              "second_weights": [
+                "1/2",
+                "1/2"
+              ]
+            },
+            "domain": [
+              0,
+              2
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿P(RR)=(2/3)² para dos extracciones sin reemplazo de dos rojas y una azul?||No; la segunda probabilidad ya no es 2/3."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para dos sucesos A y B siempre se cumple P(A∩B)=P(A)P(B|A) cuando P(A)>0. Justifica al menos una condición de aplicación antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-Q01-L03-01",
+        "F3-E4B-Q01-L03-02",
+        "F3-E4B-Q01-L03-03",
+        "F3-E4B-Q01-L03-04",
+        "F3-E4B-Q01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos y mapeo autonómico propuestas editoriales no homologadas.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, cotejo oficial competencial y autonómico pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-Q01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.23.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-Q01:C04"
+      ],
+      "objectives": [
+        "Interpretar árboles completos y probabilidades de rutas ordenadas.",
+        "Distinguir intersección de etapas y unión de caminos disjuntos."
+      ],
+      "prerequisites": [
+        "E4B-Q01-L03",
+        "E3-Q01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Los árboles dibujan secuencias: cada ruta combina sucesos de etapas, y su probabilidad es el producto de probabilidades locales condicionadas. En dos lanzamientos independientes de una moneda equilibrada, las rutas CC,CX,XC,XX tienen peso 1/4 cada una. Exactamente una cara es una unión de caminos disjuntos, CX o XC, con probabilidad 1/2; dos caras es una sola ruta con probabilidad 1/4. En dos extracciones sin reemplazo de una urna con dos rojas R y una azul A, las rutas RR, RA y AR tienen probabilidad 1/3 cada una; AA es imposible. Esta enumeración se obtiene tratando las dos fichas rojas como fichas individuales distinguibles y sumando sus casos. El diagrama SVG muestra un esquema parcial; la tabla exacta especifica supuestos y probabilidades completas."
+        },
+        {
+          "type": "example",
+          "body": "Dos monedas independientes: P(exactamente una cara)=P(CX)+P(XC)=1/4+1/4=1/2."
+        },
+        {
+          "type": "example",
+          "body": "Urna dos rojas y una azul sin reemplazo: P(RA)=2/3·1/2=1/3 y P(AR)=1/3·1=1/3."
+        },
+        {
+          "type": "figure",
+          "body": "Árbol de dos monedas. SVG didáctico, acompañado de tabla HTML semántica exacta y supuestos.",
+          "alt": "Árbol de dos monedas. La tabla presenta datos exactos, hipótesis y límites sin depender de colores ni representación visual.",
+          "visual_spec": {
+            "render_family": "wave23",
+            "kind": "prob_tree",
+            "title": "Árbol de dos monedas",
+            "rows": [
+              [
+                "Rutas",
+                "CC, CX, XC, XX"
+              ],
+              [
+                "Cada ruta",
+                "1/4"
+              ],
+              [
+                "Una cara",
+                "CX o XC"
+              ],
+              [
+                "P(una cara)",
+                "1/2"
+              ],
+              [
+                "Hipótesis",
+                "Independencia y equilibrio"
+              ]
+            ],
+            "model": {
+              "kind": "prob_tree",
+              "first": [
+                "C",
+                "X"
+              ],
+              "weights": [
+                "1/2",
+                "1/2"
+              ],
+              "second": [
+                "C",
+                "X"
+              ],
+              "second_weights": [
+                "1/2",
+                "1/2"
+              ]
+            },
+            "domain": [
+              0,
+              2
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Para sumar dos rutas debe comprobarse que representan resultados mutuamente excluyentes?||Sí; si se solapan hay que restar la intersección."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Los árboles dibujan secuencias: cada ruta combina sucesos de etapas, y su probabilidad es el producto de probabilidades locales condicionadas. Justifica al menos una condición de aplicación antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-Q01-L04-01",
+        "F3-E4B-Q01-L04-02",
+        "F3-E4B-Q01-L04-03",
+        "F3-E4B-Q01-L04-04",
+        "F3-E4B-Q01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos y mapeo autonómico propuestas editoriales no homologadas.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, cotejo oficial competencial y autonómico pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-Q01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.23.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-Q01:C05"
+      ],
+      "objectives": [
+        "Aplicar Laplace solo a espacios finitos con resultados equiprobables.",
+        "Utilizar complementos y reconocer que las sumas de dados tienen pesos distintos."
+      ],
+      "prerequisites": [
+        "E4B-Q01-L01",
+        "E4B-Q01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La regla de Laplace P(A)=|A|/|Ω| se deduce del modelo equiprobable para resultados elementales finitos. En dos dados equilibrados e independientes distinguibles hay 36 parejas igualmente probables. El suceso suma 7 incluye seis parejas y tiene P=6/36=1/6; el suceso suma 2 solo (1,1), P=1/36. La probabilidad de NO sumar 7 es 1−1/6=5/6. No puede contarse la lista de sumas 2 a 12 como once resultados igualmente probables: son valores agregados con multiplicidades distintas. Si el dado está cargado, debe usarse una distribución de probabilidades y no Laplace por recuento simple. Los sucesos A∪B requieren restar P(A∩B) si se solapan. El recuento sistemático evita errores, pero no reemplaza las hipótesis del modelo."
+        },
+        {
+          "type": "example",
+          "body": "Dos dados ideales: la suma 7 aparece en seis de 36 parejas; P(suma=7)=1/6 y su complemento P(suma≠7)=5/6."
+        },
+        {
+          "type": "example",
+          "body": "Suma 2 solo ocurre en (1,1) entre las 36 parejas; P(suma=2)=1/36 y no 1/11."
+        },
+        {
+          "type": "figure",
+          "body": "Multiplicidades de las sumas de dos dados. SVG didáctico, acompañado de tabla HTML semántica exacta y supuestos.",
+          "alt": "Multiplicidades de las sumas de dos dados. La tabla presenta datos exactos, hipótesis y límites sin depender de colores ni representación visual.",
+          "visual_spec": {
+            "render_family": "wave23",
+            "kind": "stats_bars",
+            "title": "Multiplicidades de las sumas de dos dados",
+            "rows": [
+              [
+                "Pares ordenados",
+                "36"
+              ],
+              [
+                "Suma 2",
+                "1/36"
+              ],
+              [
+                "Suma 7",
+                "6/36=1/6"
+              ],
+              [
+                "No suma 7",
+                "5/6"
+              ],
+              [
+                "Hipótesis",
+                "Dados ideales e independientes"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ],
+              "labels": [
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12"
+              ]
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La suma 7 y la suma 2 tienen igual probabilidad con dos dados ideales?||No; tienen 6 y 1 rutas favorables."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La regla de Laplace P(A)=|A|/|Ω| se deduce del modelo equiprobable para resultados elementales finitos. Justifica al menos una condición de aplicación antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-Q01-L05-01",
+        "F3-E4B-Q01-L05-02",
+        "F3-E4B-Q01-L05-03",
+        "F3-E4B-Q01-L05-04",
+        "F3-E4B-Q01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos y mapeo autonómico propuestas editoriales no homologadas.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, cotejo oficial competencial y autonómico pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-Q01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.23.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-Q01:C06"
+      ],
+      "objectives": [
+        "Diferenciar población, muestra, selección aleatoria y conveniencia.",
+        "Comunicar proporciones muestrales sin inferencia injustificada sobre parámetros."
+      ],
+      "prerequisites": [
+        "E4B-Q01-L05",
+        "E3-D01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una proporción muestral p̂=k/n describe una muestra de n>0 observaciones, no prueba que el parámetro de una población sea idéntico. Por ejemplo, 24 respuestas favorables entre 60 observaciones sintéticas dan p̂=24/60=0,4; esta cifra no determina p de la población sin un diseño inferencial adecuado. Una muestra de voluntarios puede estar sesgada, incluso si el número de respuestas aumenta. El muestreo aleatorio simple ideal selecciona unidades con probabilidades conocidas, pero no elimina por sí solo el error muestral ni la no respuesta. Para atribuir un margen de error hay que declarar metodología, tamaño, nivel y condiciones, que aquí no se proporcionan. El cambio de 40 % a 45 % son 5 puntos porcentuales y un incremento relativo 5/40=12,5 %, cantidades distintas. La unidad utiliza exclusivamente datos fijos sintéticos, no obtiene respuestas de menores."
+        },
+        {
+          "type": "example",
+          "body": "Una muestra sintética de n=60 presenta k=24 respuestas favorables; p̂=24/60=2/5, sin afirmar el valor de p poblacional."
+        },
+        {
+          "type": "example",
+          "body": "De 40 % a 45 % hay 5 puntos porcentuales, mientras el crecimiento relativo es (45−40)/40=1/8=12,5 %."
+        },
+        {
+          "type": "figure",
+          "body": "Frecuencias sintéticas de una muestra. SVG didáctico, acompañado de tabla HTML semántica exacta y supuestos.",
+          "alt": "Frecuencias sintéticas de una muestra. La tabla presenta datos exactos, hipótesis y límites sin depender de colores ni representación visual.",
+          "visual_spec": {
+            "render_family": "wave23",
+            "kind": "stats_bars",
+            "title": "Frecuencias sintéticas de una muestra",
+            "rows": [
+              [
+                "Encuestados sintéticos",
+                "60"
+              ],
+              [
+                "Respuestas favorables",
+                "24"
+              ],
+              [
+                "Otras",
+                "36"
+              ],
+              [
+                "Proporción muestral",
+                "2/5"
+              ],
+              [
+                "Población objetivo",
+                "No estimada con garantía"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                24,
+                36
+              ],
+              "labels": [
+                "Favorables",
+                "Otras"
+              ]
+            },
+            "domain": [
+              0,
+              40
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una muestra por voluntarios garantiza representar a la población solo porque n es elevado?||No; el sesgo de selección puede persistir."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una proporción muestral p̂=k/n describe una muestra de n>0 observaciones, no prueba que el parámetro de una población sea idéntico. Justifica al menos una condición de aplicación antes de responder."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-Q01-L06-01",
+        "F3-E4B-Q01-L06-02",
+        "F3-E4B-Q01-L06-03",
+        "F3-E4B-Q01-L06-04",
+        "F3-E4B-Q01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; asignación por cursos y mapeo autonómico propuestas editoriales no homologadas.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa de contexto, cotejo oficial competencial y autonómico pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

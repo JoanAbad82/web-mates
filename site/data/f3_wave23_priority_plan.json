@@ -1,0 +1,60 @@
+{
+  "version": "0.23.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "E4B-Q01",
+      "priority": 1,
+      "why": "Probabilidad E3-Q01 de 3.º ESO desarrollada F3-21."
+    },
+    {
+      "unit_id": "B1C-D01",
+      "priority": 2,
+      "why": "E4B-D01 bivariante de 4.º ESO B desarrollada F3-22, con regresión lineal y covarianza."
+    },
+    {
+      "unit_id": "B1C-Q01",
+      "priority": 3,
+      "why": "E4B-Q01 se desarrolla antes dentro de F3-23; respeta dependencia curricular."
+    }
+  ],
+  "not_selected": [
+    {
+      "unit_id": "B1S-Q01",
+      "why": "Temario MACS pendiente de sus requisitos específicos: no anticipar por similitud."
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 71,
+  "new_editorial_edges": [
+    {
+      "from": "E3-Q01",
+      "to": "E4B-Q01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Probabilidad de 3.º antes de 4.º B."
+    },
+    {
+      "from": "E4B-D01",
+      "to": "B1C-D01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Estadística bivariante 4.º B antes de Matemáticas I."
+    },
+    {
+      "from": "E4B-Q01",
+      "to": "B1C-Q01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Probabilidad 4.º B antes de Matemáticas I."
+    },
+    {
+      "from": "E3-D01",
+      "to": "E4B-Q01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Muestreo y sesgos de 3.º antes de inferencia inicial 4.º B."
+    }
+  ],
+  "regional_mapping": "NO VERIFICADO, relaciones SOLO EDITORIALES"
+}

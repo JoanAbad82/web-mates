@@ -1,0 +1,907 @@
+{
+  "unit_id": "E3-G01",
+  "version": "0.9.0",
+  "status": "revision",
+  "notice": "Actividades deterministas sintéticas pendientes de revisión humana.",
+  "activities": [
+    {
+      "exercise_id": "F3-E3-G01-L01-01",
+      "lesson_id": "E3-G01-L01",
+      "type": "numeric",
+      "prompt": "Dados A=(1, 1) y B=(4, 5), calcula la distancia euclídea exacta entre A y B.",
+      "answer": 5.0,
+      "explanation": "Procedimiento y verificación: Δx=4−(1)=3 y Δy=5−(1)=4; Δx²+Δy²=25. Resultado exacto: 5. Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo. Eleva al cuadrado Δx y Δy, suma y toma raíz SOLO si se pide la distancia; la distancia al cuadrado no lleva raíz. La respuesta exacta es 5. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_distance",
+        "prerrequisito_e3_g01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L01-02",
+      "lesson_id": "E3-G01-L01",
+      "type": "numeric",
+      "prompt": "Dados A=(-3, 2) y B=(1, 2), calcula la distancia euclídea exacta entre A y B.",
+      "answer": 4.0,
+      "explanation": "Procedimiento y verificación: Δx=1−(-3)=4 y Δy=2−(2)=0; Δx²+Δy²=16. Resultado exacto: 4. Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo. Eleva al cuadrado Δx y Δy, suma y toma raíz SOLO si se pide la distancia; la distancia al cuadrado no lleva raíz. La respuesta exacta es 4. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_distance",
+        "prerrequisito_e3_g01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L01-03",
+      "lesson_id": "E3-G01-L01",
+      "type": "numeric",
+      "prompt": "Dados A=(0, 0) y B=(5, 12), calcula el CUADRADO de la distancia euclídea entre A y B.",
+      "answer": 169.0,
+      "explanation": "Procedimiento y verificación: Δx=5−(0)=5 y Δy=12−(0)=12; Δx²+Δy²=169. Resultado exacto: 169. Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo. Eleva al cuadrado Δx y Δy, suma y toma raíz SOLO si se pide la distancia; la distancia al cuadrado no lleva raíz. La respuesta exacta es 169. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_distance_sq",
+        "prerrequisito_e3_g01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L01-04",
+      "lesson_id": "E3-G01-L01",
+      "type": "choice",
+      "prompt": "Dados A=(1, 1) y B=(3, 4), calcula la distancia euclídea exacta entre A y B. Selecciona la respuesta exacta.",
+      "answer": "√13",
+      "explanation": "Procedimiento y verificación: Δx=3−(1)=2 y Δy=4−(1)=3; Δx²+Δy²=13. Resultado exacto: √13. Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo. Eleva al cuadrado Δx y Δy, suma y toma raíz SOLO si se pide la distancia; la distancia al cuadrado no lleva raíz. La respuesta exacta es √13. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_distance",
+        "prerrequisito_e3_g01"
+      ],
+      "choices": [
+        "2√13",
+        "13",
+        "√13"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L01-05",
+      "lesson_id": "E3-G01-L01",
+      "type": "choice",
+      "prompt": "Dados A=(2, -1) y B=(2, 4), calcula la distancia euclídea exacta entre A y B. Selecciona la respuesta exacta.",
+      "answer": "5",
+      "explanation": "Procedimiento y verificación: Δx=2−(2)=0 y Δy=4−(-1)=5; Δx²+Δy²=25. Resultado exacto: 5. Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo. Eleva al cuadrado Δx y Δy, suma y toma raíz SOLO si se pide la distancia; la distancia al cuadrado no lleva raíz. La respuesta exacta es 5. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_distance",
+        "prerrequisito_e3_g01"
+      ],
+      "choices": [
+        "6",
+        "5",
+        "25"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L02-01",
+      "lesson_id": "E3-G01-L02",
+      "type": "choice",
+      "prompt": "Dados A=(-2, 1) y B=(4, 5), calcula el punto medio M del segmento AB. Selecciona la respuesta exacta.",
+      "answer": "(1, 3)",
+      "explanation": "Procedimiento y verificación: M=((-2+(4))/2,(1+(5))/2). Componente solicitada o punto completo: (1, 3). El punto medio queda a igual distancia de los extremos y está sobre el segmento. Promedia x con x y y con y, dividiendo ambas sumas entre dos. La respuesta exacta es (1, 3). Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "El punto medio queda a igual distancia de los extremos y está sobre el segmento.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_midpoint",
+        "prerrequisito_e3_g01"
+      ],
+      "choices": [
+        "(-1, -3)",
+        "(1, 3)",
+        "(3, 1)"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L02-02",
+      "lesson_id": "E3-G01-L02",
+      "type": "choice",
+      "prompt": "Dados A=(1, 2) y B=(4, 7), calcula el punto medio M del segmento AB. Selecciona la respuesta exacta.",
+      "answer": "(5/2, 9/2)",
+      "explanation": "Procedimiento y verificación: M=((1+(4))/2,(2+(7))/2). Componente solicitada o punto completo: (5/2, 9/2). El punto medio queda a igual distancia de los extremos y está sobre el segmento. Promedia x con x y y con y, dividiendo ambas sumas entre dos. La respuesta exacta es (5/2, 9/2). Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "El punto medio queda a igual distancia de los extremos y está sobre el segmento.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_midpoint",
+        "prerrequisito_e3_g01"
+      ],
+      "choices": [
+        "(5/2, 9/2)",
+        "(9/2, 5/2)",
+        "(-5/2, -9/2)"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L02-03",
+      "lesson_id": "E3-G01-L02",
+      "type": "numeric",
+      "prompt": "Dados A=(-3, 4) y B=(5, 4), calcula la abscisa (coordenada x) del punto medio M de AB.",
+      "answer": 1.0,
+      "explanation": "Procedimiento y verificación: M=((-3+(5))/2,(4+(4))/2). Componente solicitada o punto completo: 1. El punto medio queda a igual distancia de los extremos y está sobre el segmento. Promedia x con x y y con y, dividiendo ambas sumas entre dos. La respuesta exacta es 1. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "El punto medio queda a igual distancia de los extremos y está sobre el segmento.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_mid_x",
+        "prerrequisito_e3_g01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L02-04",
+      "lesson_id": "E3-G01-L02",
+      "type": "choice",
+      "prompt": "Dados A=(1, -2) y B=(4, 6), calcula la ordenada (coordenada y) del punto medio M de AB. Selecciona la respuesta exacta.",
+      "answer": "2",
+      "explanation": "Procedimiento y verificación: M=((1+(4))/2,(-2+(6))/2). Componente solicitada o punto completo: 2. El punto medio queda a igual distancia de los extremos y está sobre el segmento. Promedia x con x y y con y, dividiendo ambas sumas entre dos. La respuesta exacta es 2. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "El punto medio queda a igual distancia de los extremos y está sobre el segmento.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_mid_y",
+        "prerrequisito_e3_g01"
+      ],
+      "choices": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L02-05",
+      "lesson_id": "E3-G01-L02",
+      "type": "choice",
+      "prompt": "Dados A=(-4, 2) y B=(2, 6), calcula el punto medio M del segmento AB. Selecciona la respuesta exacta.",
+      "answer": "(-1, 4)",
+      "explanation": "Procedimiento y verificación: M=((-4+(2))/2,(2+(6))/2). Componente solicitada o punto completo: (-1, 4). El punto medio queda a igual distancia de los extremos y está sobre el segmento. Promedia x con x y y con y, dividiendo ambas sumas entre dos. La respuesta exacta es (-1, 4). Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "El punto medio queda a igual distancia de los extremos y está sobre el segmento.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_midpoint",
+        "prerrequisito_e3_g01"
+      ],
+      "choices": [
+        "(-1, 4)",
+        "(4, -1)",
+        "(1, -4)"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L03-01",
+      "lesson_id": "E3-G01-L03",
+      "type": "numeric",
+      "prompt": "En la recta y=2x+1, calcula la ordenada y para x=3.",
+      "answer": 7.0,
+      "explanation": "Procedimiento y verificación: Se parte de los datos de la recta, sustituyendo coordenadas o despejando el término independiente; resultado: 7. Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente. Sustituye x e y; para intersección iguala las dos ecuaciones y comprueba; para vertical usa x=constante. La respuesta exacta es 7. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_line_value",
+        "prerrequisito_e3_g01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L03-02",
+      "lesson_id": "E3-G01-L03",
+      "type": "choice",
+      "prompt": "¿El punto P=(3, 8) pertenece a la recta y=2x+1? Selecciona la respuesta exacta.",
+      "answer": "No",
+      "explanation": "Procedimiento y verificación: Se parte de los datos de la recta, sustituyendo coordenadas o despejando el término independiente; resultado: No. Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente. Sustituye x e y; para intersección iguala las dos ecuaciones y comprueba; para vertical usa x=constante. La respuesta exacta es No. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_line_member",
+        "prerrequisito_e3_g01"
+      ],
+      "choices": [
+        "No",
+        "No puede determinarse",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L03-03",
+      "lesson_id": "E3-G01-L03",
+      "type": "numeric",
+      "prompt": "En la recta y=-2x+4, calcula la ordenada del corte con el eje y.",
+      "answer": 4.0,
+      "explanation": "Procedimiento y verificación: Se parte de los datos de la recta, sustituyendo coordenadas o despejando el término independiente; resultado: 4. Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente. Sustituye x e y; para intersección iguala las dos ecuaciones y comprueba; para vertical usa x=constante. La respuesta exacta es 4. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_line_intercept",
+        "prerrequisito_e3_g01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L03-04",
+      "lesson_id": "E3-G01-L03",
+      "type": "choice",
+      "prompt": "En la recta y=-1x+3, calcula la ordenada y para x=-2. Selecciona la respuesta exacta.",
+      "answer": "5",
+      "explanation": "Procedimiento y verificación: Se parte de los datos de la recta, sustituyendo coordenadas o despejando el término independiente; resultado: 5. Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente. Sustituye x e y; para intersección iguala las dos ecuaciones y comprueba; para vertical usa x=constante. La respuesta exacta es 5. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_line_value",
+        "prerrequisito_e3_g01"
+      ],
+      "choices": [
+        "5",
+        "6",
+        "4"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L03-05",
+      "lesson_id": "E3-G01-L03",
+      "type": "choice",
+      "prompt": "¿El punto P=(1, 3) pertenece a la recta y=2x+1? Selecciona la respuesta exacta.",
+      "answer": "Sí",
+      "explanation": "Procedimiento y verificación: Se parte de los datos de la recta, sustituyendo coordenadas o despejando el término independiente; resultado: Sí. Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente. Sustituye x e y; para intersección iguala las dos ecuaciones y comprueba; para vertical usa x=constante. La respuesta exacta es Sí. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_line_member",
+        "prerrequisito_e3_g01"
+      ],
+      "choices": [
+        "No",
+        "No puede determinarse",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L04-01",
+      "lesson_id": "E3-G01-L04",
+      "type": "numeric",
+      "prompt": "Dados A=(1, 2) y B=(3, 6), calcula la pendiente de la recta AB; si es vertical, indica que no está definida.",
+      "answer": 2.0,
+      "explanation": "Procedimiento y verificación: m=(6−(2))/(3−(1)) = 4/2 salvo Δx=0, cuando no está definida. Resultado: 2. La pendiente es el cociente de incrementos orientados vertical/horizontal. Calcula Δy/Δx; si Δx es cero la pendiente no está definida. La respuesta exacta es 2. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "La pendiente es el cociente de incrementos orientados vertical/horizontal.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_slope",
+        "prerrequisito_e3_g01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L04-02",
+      "lesson_id": "E3-G01-L04",
+      "type": "numeric",
+      "prompt": "Dados A=(0, 4) y B=(2, 0), calcula la pendiente de la recta AB; si es vertical, indica que no está definida.",
+      "answer": -2.0,
+      "explanation": "Procedimiento y verificación: m=(0−(4))/(2−(0)) = -4/2 salvo Δx=0, cuando no está definida. Resultado: -2. La pendiente es el cociente de incrementos orientados vertical/horizontal. Calcula Δy/Δx; si Δx es cero la pendiente no está definida. La respuesta exacta es -2. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "La pendiente es el cociente de incrementos orientados vertical/horizontal.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_slope",
+        "prerrequisito_e3_g01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L04-03",
+      "lesson_id": "E3-G01-L04",
+      "type": "choice",
+      "prompt": "¿Dos rectas NO VERTICALES con pendientes m₁=2 y m₂=2 son paralelas o coincidentes por su dirección? Selecciona la respuesta exacta.",
+      "answer": "Sí",
+      "explanation": "Procedimiento y verificación: Aplicando la comparación de direcciones, signos o combinación por componentes se obtiene exactamente Sí. Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo. Paralelismo por pendientes iguales, perpendicularidad por producto −1 o producto escalar cero; equipolencia por componentes iguales. La respuesta exacta es Sí. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_parallel_slopes",
+        "prerrequisito_e3_g01"
+      ],
+      "choices": [
+        "Sí",
+        "No",
+        "No puede determinarse"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L04-04",
+      "lesson_id": "E3-G01-L04",
+      "type": "choice",
+      "prompt": "Dados A=(3, 2) y B=(3, 7), calcula la pendiente de la recta AB; si es vertical, indica que no está definida. Selecciona la respuesta exacta.",
+      "answer": "No definida",
+      "explanation": "Procedimiento y verificación: m=(7−(2))/(3−(3)) = 5/0 salvo Δx=0, cuando no está definida. Resultado: No definida. La pendiente es el cociente de incrementos orientados vertical/horizontal. Calcula Δy/Δx; si Δx es cero la pendiente no está definida. La respuesta exacta es No definida. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "La pendiente es el cociente de incrementos orientados vertical/horizontal.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_slope",
+        "prerrequisito_e3_g01"
+      ],
+      "choices": [
+        "0",
+        "1",
+        "No definida"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L04-05",
+      "lesson_id": "E3-G01-L04",
+      "type": "choice",
+      "prompt": "¿Dos rectas NO VERTICALES con pendientes m₁=2 y m₂=-2 son paralelas o coincidentes por su dirección? Selecciona la respuesta exacta.",
+      "answer": "No",
+      "explanation": "Procedimiento y verificación: Aplicando la comparación de direcciones, signos o combinación por componentes se obtiene exactamente No. Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo. Paralelismo por pendientes iguales, perpendicularidad por producto −1 o producto escalar cero; equipolencia por componentes iguales. La respuesta exacta es No. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_parallel_slopes",
+        "prerrequisito_e3_g01"
+      ],
+      "choices": [
+        "No puede determinarse",
+        "Sí",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L05-01",
+      "lesson_id": "E3-G01-L05",
+      "type": "numeric",
+      "prompt": "Dados A=(0, 0) y B=(3, 4), calcula la distancia euclídea exacta entre A y B.",
+      "answer": 5.0,
+      "explanation": "Procedimiento y verificación: Δx=3−(0)=3 y Δy=4−(0)=4; Δx²+Δy²=25. Resultado exacto: 5. Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo. Eleva al cuadrado Δx y Δy, suma y toma raíz SOLO si se pide la distancia; la distancia al cuadrado no lleva raíz. La respuesta exacta es 5. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_distance",
+        "prerrequisito_e3_g01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L05-02",
+      "lesson_id": "E3-G01-L05",
+      "type": "choice",
+      "prompt": "Dados A=(0, 0) y B=(6, 0), calcula el punto medio M del segmento AB. Selecciona la respuesta exacta.",
+      "answer": "(3, 0)",
+      "explanation": "Procedimiento y verificación: M=((0+(6))/2,(0+(0))/2). Componente solicitada o punto completo: (3, 0). El punto medio queda a igual distancia de los extremos y está sobre el segmento. Promedia x con x y y con y, dividiendo ambas sumas entre dos. La respuesta exacta es (3, 0). Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "El punto medio queda a igual distancia de los extremos y está sobre el segmento.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_midpoint",
+        "prerrequisito_e3_g01"
+      ],
+      "choices": [
+        "(3, 0)",
+        "(0, 3)",
+        "(-3, 0)"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L05-03",
+      "lesson_id": "E3-G01-L05",
+      "type": "choice",
+      "prompt": "Resuelve el punto de intersección de las rectas y=1x+1 e y=-1x+5. Responde con el par (x, y). Selecciona la respuesta exacta.",
+      "answer": "(2, 3)",
+      "explanation": "Procedimiento y verificación: Igualamos 1x+1=-1x+5; despejamos x y sustituimos en ambas ecuaciones. Corte: (2, 3). Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente. Sustituye x e y; para intersección iguala las dos ecuaciones y comprueba; para vertical usa x=constante. La respuesta exacta es (2, 3). Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_line_intersection",
+        "prerrequisito_e3_g01"
+      ],
+      "choices": [
+        "(3, 2)",
+        "(-2, -3)",
+        "(2, 3)"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L05-04",
+      "lesson_id": "E3-G01-L05",
+      "type": "choice",
+      "prompt": "Dados A=(0, 0) y B=(3, 3), calcula la pendiente de la recta AB; si es vertical, indica que no está definida. Selecciona la respuesta exacta.",
+      "answer": "1",
+      "explanation": "Procedimiento y verificación: m=(3−(0))/(3−(0)) = 3/3 salvo Δx=0, cuando no está definida. Resultado: 1. La pendiente es el cociente de incrementos orientados vertical/horizontal. Calcula Δy/Δx; si Δx es cero la pendiente no está definida. La respuesta exacta es 1. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "La pendiente es el cociente de incrementos orientados vertical/horizontal.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_slope",
+        "prerrequisito_e3_g01"
+      ],
+      "choices": [
+        "2",
+        "1",
+        "-1"
+      ]
+    },
+    {
+      "exercise_id": "F3-E3-G01-L05-05",
+      "lesson_id": "E3-G01-L05",
+      "type": "choice",
+      "prompt": "Dados A=(-1, -2) y B=(2, 2), calcula la distancia euclídea exacta entre A y B. Selecciona la respuesta exacta.",
+      "answer": "5",
+      "explanation": "Procedimiento y verificación: Δx=2−(-1)=3 y Δy=2−(-2)=4; Δx²+Δy²=25. Resultado exacto: 5. Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo. Eleva al cuadrado Δx y Δy, suma y toma raíz SOLO si se pide la distancia; la distancia al cuadrado no lleva raíz. La respuesta exacta es 5. Comprueba los signos, el orden de coordenadas y las condiciones del método antes de continuar.",
+      "hint": "Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_distance",
+        "prerrequisito_e3_g01"
+      ],
+      "choices": [
+        "5",
+        "7",
+        "25"
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-E3-G01-L01-01": {
+      "hints": [
+        "Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo.",
+        "Eleva al cuadrado Δx y Δy, suma y toma raíz SOLO si se pide la distancia; la distancia al cuadrado no lleva raíz."
+      ],
+      "math_check": {
+        "kind": "distance",
+        "params": [
+          1,
+          1,
+          4,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de distance"
+    },
+    "F3-E3-G01-L01-02": {
+      "hints": [
+        "Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo.",
+        "Eleva al cuadrado Δx y Δy, suma y toma raíz SOLO si se pide la distancia; la distancia al cuadrado no lleva raíz."
+      ],
+      "math_check": {
+        "kind": "distance",
+        "params": [
+          -3,
+          2,
+          1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de distance"
+    },
+    "F3-E3-G01-L01-03": {
+      "hints": [
+        "Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo.",
+        "Eleva al cuadrado Δx y Δy, suma y toma raíz SOLO si se pide la distancia; la distancia al cuadrado no lleva raíz."
+      ],
+      "math_check": {
+        "kind": "distance_sq",
+        "params": [
+          0,
+          0,
+          5,
+          12
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de distance_sq"
+    },
+    "F3-E3-G01-L01-04": {
+      "hints": [
+        "Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo.",
+        "Eleva al cuadrado Δx y Δy, suma y toma raíz SOLO si se pide la distancia; la distancia al cuadrado no lleva raíz."
+      ],
+      "math_check": {
+        "kind": "distance",
+        "params": [
+          1,
+          1,
+          3,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de distance"
+    },
+    "F3-E3-G01-L01-05": {
+      "hints": [
+        "Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo.",
+        "Eleva al cuadrado Δx y Δy, suma y toma raíz SOLO si se pide la distancia; la distancia al cuadrado no lleva raíz."
+      ],
+      "math_check": {
+        "kind": "distance",
+        "params": [
+          2,
+          -1,
+          2,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de distance"
+    },
+    "F3-E3-G01-L02-01": {
+      "hints": [
+        "El punto medio queda a igual distancia de los extremos y está sobre el segmento.",
+        "Promedia x con x y y con y, dividiendo ambas sumas entre dos."
+      ],
+      "math_check": {
+        "kind": "midpoint",
+        "params": [
+          -2,
+          1,
+          4,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de midpoint"
+    },
+    "F3-E3-G01-L02-02": {
+      "hints": [
+        "El punto medio queda a igual distancia de los extremos y está sobre el segmento.",
+        "Promedia x con x y y con y, dividiendo ambas sumas entre dos."
+      ],
+      "math_check": {
+        "kind": "midpoint",
+        "params": [
+          1,
+          2,
+          4,
+          7
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de midpoint"
+    },
+    "F3-E3-G01-L02-03": {
+      "hints": [
+        "El punto medio queda a igual distancia de los extremos y está sobre el segmento.",
+        "Promedia x con x y y con y, dividiendo ambas sumas entre dos."
+      ],
+      "math_check": {
+        "kind": "mid_x",
+        "params": [
+          -3,
+          4,
+          5,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de mid_x"
+    },
+    "F3-E3-G01-L02-04": {
+      "hints": [
+        "El punto medio queda a igual distancia de los extremos y está sobre el segmento.",
+        "Promedia x con x y y con y, dividiendo ambas sumas entre dos."
+      ],
+      "math_check": {
+        "kind": "mid_y",
+        "params": [
+          1,
+          -2,
+          4,
+          6
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de mid_y"
+    },
+    "F3-E3-G01-L02-05": {
+      "hints": [
+        "El punto medio queda a igual distancia de los extremos y está sobre el segmento.",
+        "Promedia x con x y y con y, dividiendo ambas sumas entre dos."
+      ],
+      "math_check": {
+        "kind": "midpoint",
+        "params": [
+          -4,
+          2,
+          2,
+          6
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de midpoint"
+    },
+    "F3-E3-G01-L03-01": {
+      "hints": [
+        "Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente.",
+        "Sustituye x e y; para intersección iguala las dos ecuaciones y comprueba; para vertical usa x=constante."
+      ],
+      "math_check": {
+        "kind": "line_value",
+        "params": [
+          2,
+          1,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de line_value"
+    },
+    "F3-E3-G01-L03-02": {
+      "hints": [
+        "Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente.",
+        "Sustituye x e y; para intersección iguala las dos ecuaciones y comprueba; para vertical usa x=constante."
+      ],
+      "math_check": {
+        "kind": "line_member",
+        "params": [
+          2,
+          1,
+          3,
+          8
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de line_member"
+    },
+    "F3-E3-G01-L03-03": {
+      "hints": [
+        "Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente.",
+        "Sustituye x e y; para intersección iguala las dos ecuaciones y comprueba; para vertical usa x=constante."
+      ],
+      "math_check": {
+        "kind": "line_intercept",
+        "params": [
+          -2,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de line_intercept"
+    },
+    "F3-E3-G01-L03-04": {
+      "hints": [
+        "Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente.",
+        "Sustituye x e y; para intersección iguala las dos ecuaciones y comprueba; para vertical usa x=constante."
+      ],
+      "math_check": {
+        "kind": "line_value",
+        "params": [
+          -1,
+          3,
+          -2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de line_value"
+    },
+    "F3-E3-G01-L03-05": {
+      "hints": [
+        "Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente.",
+        "Sustituye x e y; para intersección iguala las dos ecuaciones y comprueba; para vertical usa x=constante."
+      ],
+      "math_check": {
+        "kind": "line_member",
+        "params": [
+          2,
+          1,
+          1,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de line_member"
+    },
+    "F3-E3-G01-L04-01": {
+      "hints": [
+        "La pendiente es el cociente de incrementos orientados vertical/horizontal.",
+        "Calcula Δy/Δx; si Δx es cero la pendiente no está definida."
+      ],
+      "math_check": {
+        "kind": "slope",
+        "params": [
+          1,
+          2,
+          3,
+          6
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de slope"
+    },
+    "F3-E3-G01-L04-02": {
+      "hints": [
+        "La pendiente es el cociente de incrementos orientados vertical/horizontal.",
+        "Calcula Δy/Δx; si Δx es cero la pendiente no está definida."
+      ],
+      "math_check": {
+        "kind": "slope",
+        "params": [
+          0,
+          4,
+          2,
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de slope"
+    },
+    "F3-E3-G01-L04-03": {
+      "hints": [
+        "Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo.",
+        "Paralelismo por pendientes iguales, perpendicularidad por producto −1 o producto escalar cero; equipolencia por componentes iguales."
+      ],
+      "math_check": {
+        "kind": "parallel_slopes",
+        "params": [
+          2,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de parallel_slopes"
+    },
+    "F3-E3-G01-L04-04": {
+      "hints": [
+        "La pendiente es el cociente de incrementos orientados vertical/horizontal.",
+        "Calcula Δy/Δx; si Δx es cero la pendiente no está definida."
+      ],
+      "math_check": {
+        "kind": "slope",
+        "params": [
+          3,
+          2,
+          3,
+          7
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de slope"
+    },
+    "F3-E3-G01-L04-05": {
+      "hints": [
+        "Comprueba la relación matemática pertinente entre direcciones o componentes, no solo el dibujo.",
+        "Paralelismo por pendientes iguales, perpendicularidad por producto −1 o producto escalar cero; equipolencia por componentes iguales."
+      ],
+      "math_check": {
+        "kind": "parallel_slopes",
+        "params": [
+          2,
+          -2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de parallel_slopes"
+    },
+    "F3-E3-G01-L05-01": {
+      "hints": [
+        "Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo.",
+        "Eleva al cuadrado Δx y Δy, suma y toma raíz SOLO si se pide la distancia; la distancia al cuadrado no lleva raíz."
+      ],
+      "math_check": {
+        "kind": "distance",
+        "params": [
+          0,
+          0,
+          3,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de distance"
+    },
+    "F3-E3-G01-L05-02": {
+      "hints": [
+        "El punto medio queda a igual distancia de los extremos y está sobre el segmento.",
+        "Promedia x con x y y con y, dividiendo ambas sumas entre dos."
+      ],
+      "math_check": {
+        "kind": "midpoint",
+        "params": [
+          0,
+          0,
+          6,
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de midpoint"
+    },
+    "F3-E3-G01-L05-03": {
+      "hints": [
+        "Relaciona ecuación de recta, puntos conocidos y coordenadas de manera coherente.",
+        "Sustituye x e y; para intersección iguala las dos ecuaciones y comprueba; para vertical usa x=constante."
+      ],
+      "math_check": {
+        "kind": "line_intersection",
+        "params": [
+          1,
+          1,
+          -1,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de line_intersection"
+    },
+    "F3-E3-G01-L05-04": {
+      "hints": [
+        "La pendiente es el cociente de incrementos orientados vertical/horizontal.",
+        "Calcula Δy/Δx; si Δx es cero la pendiente no está definida."
+      ],
+      "math_check": {
+        "kind": "slope",
+        "params": [
+          0,
+          0,
+          3,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de slope"
+    },
+    "F3-E3-G01-L05-05": {
+      "hints": [
+        "Identifica los cambios horizontal y vertical; las coordenadas tienen un orden fijo.",
+        "Eleva al cuadrado Δx y Δy, suma y toma raíz SOLO si se pide la distancia; la distancia al cuadrado no lleva raíz."
+      ],
+      "math_check": {
+        "kind": "distance",
+        "params": [
+          -1,
+          -2,
+          2,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Revisar orden, signos, exactitud y condiciones de distance"
+    }
+  }
+}

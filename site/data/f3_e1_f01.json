@@ -1,0 +1,641 @@
+{
+  "unit_id": "E1-F01",
+  "unit_title": "Coordenadas y primeras gráficas",
+  "product_phase": "F3_OLA3",
+  "version": "0.3.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "editorial_extension": false,
+  "warnings": [
+    "Secuenciación 1.º–3.º ESO editorial; pendiente cotejo autonómico y humano.",
+    "Algunos prerrequisitos de fracciones, enteros y medida aún conservan solo índice, no contenido desarrollado.",
+    "Las respuestas se comprueban mediante reglas matemáticas deterministas; no se evalúa expresión simbólica libre."
+  ],
+  "unit_objectives": [
+    "Identificar ejes, coordenadas y puntos sin intercambiar su orden.",
+    "Traducir historias y tablas a puntos y leer variaciones positivas, negativas y constantes.",
+    "Explicar límites de una gráfica y su dominio contextual."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Patrones y lenguaje simbólico",
+      "lesson_id": "E1-A01-L01",
+      "href": "#/curso/E1/unidad/E1-A01/leccion/E1-A01-L01"
+    },
+    {
+      "label": "Proporcionalidad directa",
+      "lesson_id": "E1-P01-L02",
+      "href": "#/curso/E1/unidad/E1-P01/leccion/E1-P01-L02"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "rule": "Explica sin mirar, comprueba con ejemplos y alterna problemas, dos pistas graduadas y feedback.",
+    "cadence_proposal": "D+1/3/7/14/30, heurística no calibrada"
+  },
+  "source_note": "RD 217/2022 Matemáticas ESO. Familias de saberes, distribución editorial. Pendiente mapeo territorial.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E1-F01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Distinguir el eje horizontal x y el eje vertical y.",
+        "Leer coordenadas positivas y negativas desde el origen."
+      ],
+      "concept_ids": [
+        "E1-F01:C01"
+      ],
+      "prerequisites": [
+        "E1-A01-L01",
+        "E1-N02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El plano cartesiano utiliza un eje horizontal x y un eje vertical y, que se cruzan en el origen (0,0). Un punto (x,y) se localiza primero avanzando sobre el eje x y después en vertical para y. Los signos señalan izquierda/derecha y abajo/arriba; cambiar el orden cambia el punto."
+        },
+        {
+          "type": "example",
+          "body": "El punto (3,2) está tres unidades a la derecha y dos hacia arriba del origen. No coincide con (2,3)."
+        },
+        {
+          "type": "example",
+          "body": "El punto (−2,3) está dos unidades a la izquierda y tres arriba. El punto (0,−1) está sobre el eje vertical, bajo el origen."
+        },
+        {
+          "type": "figure",
+          "body": "Plano descrito: O(0,0), A(3,2), B(−2,3), C(0,−1). Primer valor horizontal; segundo vertical.",
+          "alt": "Plano descrito: O(0,0), A(3,2), B(−2,3), C(0,−1). Primer valor horizontal; segundo vertical.",
+          "visual_spec": {
+            "kind": "point_plot",
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                -2,
+                3
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "title": "Origen y puntos con coordenadas positivas y negativas"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El punto (0,4) está en un cuadrante?||No; está sobre el eje y porque su coordenada x es cero."
+        },
+        {
+          "type": "summary",
+          "body": "Orden de lectura: primero x horizontal, luego y vertical; el origen pertenece a ambos ejes."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-F01-L01-01",
+        "F3-E1-F01-L01-02",
+        "F3-E1-F01-L01-03",
+        "F3-E1-F01-L01-04",
+        "F3-E1-F01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-F01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Interpretar pares ordenados como entradas y salidas.",
+        "Relacionar cada par con una fila de una tabla y con sus unidades."
+      ],
+      "concept_ids": [
+        "E1-F01:C02"
+      ],
+      "prerequisites": [
+        "E1-F01-L01",
+        "E1-A01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un par ordenado (x,y) conserva la posición de los valores: primero la entrada x y después la salida y. En una tabla de tiempos y distancias, (2,6) puede significar 2 horas y 6 kilómetros. Intercambiar las coordenadas cambia el significado y las unidades."
+        },
+        {
+          "type": "example",
+          "body": "Un ciclista avanza 3 km por hora: a las 2 h ha recorrido 6 km, por lo que el par (2,6) representa tiempo y distancia."
+        },
+        {
+          "type": "example",
+          "body": "Si una tabla registra entradas x=0,1,2 y salidas y=1,4,7, los pares son (0,1), (1,4), (2,7)."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla tiempo (h): 0 | 1 | 2 | 3; distancia (km): 0 | 3 | 6 | 9. Los puntos representan (0,0),(1,3),(2,6),(3,9).",
+          "alt": "Tabla tiempo (h): 0 | 1 | 2 | 3; distancia (km): 0 | 3 | 6 | 9. Los puntos representan (0,0),(1,3),(2,6),(3,9).",
+          "visual_spec": {
+            "kind": "point_plot",
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                9
+              ]
+            ],
+            "title": "Pares tiempo-distancia"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué (2,6) y (6,2) no cuentan lo mismo en un contexto?||Porque la primera coordenada representa tiempo y la segunda distancia; invertirlas intercambia las magnitudes."
+        },
+        {
+          "type": "summary",
+          "body": "Par (x,y): la entrada va antes; escribe unidades de cada eje para que el dibujo tenga sentido."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-F01-L02-01",
+        "F3-E1-F01-L02-02",
+        "F3-E1-F01-L02-03",
+        "F3-E1-F01-L02-04",
+        "F3-E1-F01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-F01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Construir tablas de dependencia desde una regla o historia.",
+        "Comprobar que para cada entrada haya una salida en un modelo funcional."
+      ],
+      "concept_ids": [
+        "E1-F01:C03"
+      ],
+      "prerequisites": [
+        "E1-F01-L02",
+        "E1-P01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una tabla de dependencia reúne valores de una cantidad x y de otra y asociada. En una función, cada entrada permitida aparece con una sola salida. La tabla puede mostrar solo entradas concretas; una línea entre puntos exige justificar si tiene sentido considerar valores intermedios."
+        },
+        {
+          "type": "example",
+          "body": "En un aparcamiento de 2 € por hora completa, la tabla de horas enteras x=0,1,2,3 da coste y=0,2,4,6 €."
+        },
+        {
+          "type": "example",
+          "body": "Una regla y=2x+1 genera los pares (0,1),(1,3),(2,5),(3,7). El coste inicial sería 1 unidad cuando x=0."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla ejemplo: x 0 | 1 | 2 | 3; y 1 | 3 | 5 | 7. De 0 a 1, la salida aumenta 2.",
+          "alt": "Tabla ejemplo: x 0 | 1 | 2 | 3; y 1 | 3 | 5 | 7. De 0 a 1, la salida aumenta 2.",
+          "visual_spec": {
+            "kind": "point_plot",
+            "points": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                7
+              ]
+            ],
+            "title": "Tabla y puntos discretos de y=2x+1"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una tabla con x=2 e y=5 permite conocer automáticamente y para x=2,5?||No sin una regla o información adicional sobre el modelo y su dominio."
+        },
+        {
+          "type": "summary",
+          "body": "Identifica entrada, salida, unidades y dominio. Completa solo los datos que autoriza la regla."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-F01-L03-01",
+        "F3-E1-F01-L03-02",
+        "F3-E1-F01-L03-03",
+        "F3-E1-F01-L03-04",
+        "F3-E1-F01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-F01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Ubicar puntos de una tabla en el plano de coordenadas.",
+        "Distinguir un gráfico de puntos discretos de una curva continua."
+      ],
+      "concept_ids": [
+        "E1-F01:C04"
+      ],
+      "prerequisites": [
+        "E1-F01-L01",
+        "E1-F01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para representar un par (x,y), busca x en el eje horizontal y desde allí desplázate hasta la altura y. Etiqueta ejes y escala. Los puntos que representan números de entradas, personas o libros son discretos; no conviene unirlos si los valores intermedios no tienen sentido."
+        },
+        {
+          "type": "example",
+          "body": "Representa (1,2),(2,4),(3,6): al aumentar una unidad la entrada, y aumenta dos. Si x cuenta cuadernos, las entradas deben ser enteras."
+        },
+        {
+          "type": "example",
+          "body": "El punto (−1,2) se coloca una unidad a la izquierda y dos arriba; (2,−1) está a la derecha y abajo."
+        },
+        {
+          "type": "figure",
+          "body": "Puntos a representar: (−1,2),(0,0),(1,2),(2,−1). La tabla puede recorrerse por teclado sin arrastrar puntos.",
+          "alt": "Puntos a representar: (−1,2),(0,0),(1,2),(2,−1). La tabla puede recorrerse por teclado sin arrastrar puntos.",
+          "visual_spec": {
+            "kind": "point_plot",
+            "points": [
+              [
+                -1,
+                2
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                -1
+              ]
+            ],
+            "title": "Puntos discretos en los cuatro cuadrantes y ejes"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Deberías unir con una línea continua el número de hermanos y una cantidad asociada?||No necesariamente: un recuento de hermanos solo admite enteros; una línea podría sugerir valores imposibles."
+        },
+        {
+          "type": "summary",
+          "body": "Sitúa x antes que y, usa escala coherente y conecta puntos solo si el contexto admite valores intermedios."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-F01-L04-01",
+        "F3-E1-F01-L04-02",
+        "F3-E1-F01-L04-03",
+        "F3-E1-F01-L04-04",
+        "F3-E1-F01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-F01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Leer valores, máximos y tramos constantes en gráficas contextualizadas.",
+        "Distinguir observación directa de extrapolación no justificada."
+      ],
+      "concept_ids": [
+        "E1-F01:C05"
+      ],
+      "prerequisites": [
+        "E1-F01-L03",
+        "E1-F01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En una gráfica contextual, el eje horizontal suele representar la variable independiente, pero hay que leer etiquetas y unidades antes de interpretar. Para conocer un valor, busca la entrada y sigue hasta la altura de la salida. Un tramo horizontal significa salida constante, no necesariamente que la situación haya terminado."
+        },
+        {
+          "type": "example",
+          "body": "Un depósito contiene 5 litros en t=0, 8 en t=1 y 8 en t=2: entre 1 y 2 la cantidad no cambió en las observaciones."
+        },
+        {
+          "type": "example",
+          "body": "Si un gráfico de distancia muestra (0,0),(1,4),(2,4),(3,7), el segundo tramo es horizontal; entre t=1 y t=2 la distancia permanece en 4."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla horas 0 | 1 | 2 | 3; volumen (L) 0 | 4 | 4 | 7. La secuencia muestra subida, pausa y nueva subida.",
+          "alt": "Tabla horas 0 | 1 | 2 | 3; volumen (L) 0 | 4 | 4 | 7. La secuencia muestra subida, pausa y nueva subida.",
+          "visual_spec": {
+            "kind": "point_plot",
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                7
+              ]
+            ],
+            "title": "Serie temporal con tramo constante"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un valor máximo de 7 en una tabla garantiza que nunca se superará después?||No. Solo es el máximo observado entre los valores representados; fuera del intervalo no hay información suficiente."
+        },
+        {
+          "type": "summary",
+          "body": "Primero lee título, ejes y unidades; luego tramos, valores y límites del conjunto de datos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-F01-L05-01",
+        "F3-E1-F01-L05-02",
+        "F3-E1-F01-L05-03",
+        "F3-E1-F01-L05-04",
+        "F3-E1-F01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-F01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.3.0",
+      "status": "revision",
+      "objectives": [
+        "Reconocer aumentos, descensos y constancias en una tabla o gráfica.",
+        "Calcular la variación y₂−y₁ e interpretar su signo."
+      ],
+      "concept_ids": [
+        "E1-F01:C06"
+      ],
+      "prerequisites": [
+        "E1-F01-L05",
+        "E1-N02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La variación de salida entre dos momentos es Δy=y_final−y_inicial. Si es positiva la magnitud aumentó, si es negativa disminuyó y si es cero quedó igual. Una salida negativa no implica necesariamente descenso: hay que comparar dos valores, no mirar solo el signo de uno."
+        },
+        {
+          "type": "example",
+          "body": "La temperatura pasa de 5 °C a 2 °C: ΔT=2−5=−3 °C. Ha disminuido 3 grados."
+        },
+        {
+          "type": "example",
+          "body": "Una cantidad pasa de −4 a −1: Δy=−1−(−4)=+3; aunque ambos valores son negativos, la magnitud ha aumentado."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla t 0 | 1 | 2 | 3; y 2 | 5 | 5 | 1. Cambios sucesivos: +3, 0 y −4.",
+          "alt": "Tabla t 0 | 1 | 2 | 3; y 2 | 5 | 5 | 1. Cambios sucesivos: +3, 0 y −4.",
+          "visual_spec": {
+            "kind": "point_plot",
+            "points": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "title": "Subida, tramo horizontal y descenso de una serie"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede una función crecer mientras sus valores son negativos?||Sí. Al pasar de −4 a −1 aumenta 3, aunque ambas salidas están por debajo de cero."
+        },
+        {
+          "type": "summary",
+          "body": "Compara valores: cambio final menos inicial. Signo del cambio ≠ signo de la salida."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-F01-L06-01",
+        "F3-E1-F01-L06-02",
+        "F3-E1-F01-L06-03",
+        "F3-E1-F01-L06-04",
+        "F3-E1-F01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

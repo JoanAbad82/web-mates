@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071219">
+  <meta name="description" content="MATEVOLT: prototipo visual provisional de matemáticas para ESO y Bachillerato. Material educativo sintético en revisión; sin publicar.">
+  <link rel="icon" href="data:,">
+  <title>MATEVOLT · Enciende tu lógica · Prototipo visual</title>
+  <link rel="stylesheet" href="./assets/app.css">
+  <link rel="stylesheet" href="./assets/neo-matrix.css">
+  <script type="module" src="./assets/app.js"></script>
+  <script defer src="./assets/neo-theme.js"></script>
+  <script defer src="./assets/privacy-erase.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="topbar">
+    <div class="header-inner">
+      <a class="brand" href="#/" aria-label="MATEVOLT, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">∑</span>
+        <span class="brand-wordmark">
+          <span>MATE<span>VOLT</span></span>
+          <small>ENCIENDE TU LÓGICA</small>
+        </span>
+      </a>
+      <div class="header-actions">
+        <nav aria-label="Navegación principal">
+          <a href="#/">Cursos</a>
+          <a href="#/repaso">Repaso</a>
+          <a href="#/acerca">Proyecto</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="true" aria-label="Activar modo claro">
+          <span class="theme-icon" aria-hidden="true">☼</span>
+          <span class="theme-label">Claro</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <div class="shell"><p role="status">Cargando catálogo…</p></div>
+  </main>
+  <footer class="site-footer">
+    <span class="footer-brand">MATEVOLT <span aria-hidden="true">·</span> NEO-MATRIX · MARCA PROVISIONAL</span>
+    <span>Proyecto y desarrollo web: Joan · Base técnica WEB_MATES. Prototipo no publicado, sin cuentas ni analítica.</span>
+    <span>Código y materiales originales bajo MIT · Repositorio abierto en GitHub · Web educativa aún sin desplegar.</span>
+    <span>505 lecciones sintéticas en revisión. Cinco gates F4 NO VERIFICADO.</span>
+    <section class="privacy-zone" aria-labelledby="privacy-local-heading">
+      <h2 id="privacy-local-heading">Privacidad en este navegador</h2>
+      <p>Esta variante no guarda resultados educativos nuevos: aciertos, errores y fechas existen solo durante la sesión y desaparecen al recargar. El repaso entre días es manual. Si utilizaste una versión anterior, pueden quedar datos locales antiguos en este perfil; puedes eliminarlos con el control siguiente. No se borran automáticamente.</p>
+      <button id="clear-webmates-local" class="subtle" type="button">Borrar datos legados de repaso de versiones anteriores</button>
+      <p id="clear-webmates-status" role="status" aria-live="polite"></p>
+    </section>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,549 @@
+{
+  "unit_id": "E1-N05",
+  "unit_title": "Decimales y porcentajes iniciales",
+  "product_phase": "F3_OLA4",
+  "version": "0.4.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Leer y comparar números decimales atendiendo al valor posicional.",
+    "Convertir fracciones sencillas a decimales por división de numerador entre denominador.",
+    "Calcular porcentajes de cantidades por multiplicación del total y la razón porcentual."
+  ],
+  "warnings": [
+    "Contenidos originales editoriales en revisión; no homologados.",
+    "La distribución por cursos del tramo 1.º–3.º ESO es editorial, no una prescripción estatal universal.",
+    "Algunos prerrequisitos numéricos precedentes siguen solo en el índice y no se declara dominio de ellos."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Fracciones y equivalencias",
+      "lesson_id": "E1-N04-L02",
+      "href": "#/curso/E1/unidad/E1-N04/leccion/E1-N04-L02"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrada",
+    "rule": "Recuperación sin ayuda tras ejemplos, práctica determinista y repetición diferida optativa."
+  },
+  "source_note": "RD 217/2022, anexo II, Matemáticas ESO: decimales y porcentajes; ubicación editorial con cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E1-N05-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N05:C01"
+      ],
+      "objectives": [
+        "Leer y comparar números decimales atendiendo al valor posicional.",
+        "Ordenar decimales positivos agregando ceros finales sin cambiar su valor."
+      ],
+      "prerequisites": [
+        "E1-N04-L01",
+        "E1-N01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En la notación decimal, cada cifra tiene valor según su posición: unidades, décimas, centésimas, milésimas. Añadir ceros a la derecha de la parte decimal no cambia el número. Para comparar, iguala la cantidad de cifras decimales y contrasta de izquierda a derecha. No elijas como mayor el número con más dígitos sin analizar su valor."
+        },
+        {
+          "type": "example",
+          "body": "0,7=0,70. Comparado con 0,65, 0,70 es mayor aunque se escriba con igual número de centésimas."
+        },
+        {
+          "type": "example",
+          "body": "1,08 es menor que 1,1, porque 1,08<1,10. La cifra 8 representa centésimas, no décimas."
+        },
+        {
+          "type": "figure",
+          "body": "Cuadrícula de cien celdas: setenta coloreadas corresponden a 0,70 de unidad.",
+          "alt": "Cuadrícula de cien celdas: setenta coloreadas corresponden a 0,70 de unidad.",
+          "visual_spec": {
+            "kind": "hundred_grid",
+            "percent": 70,
+            "title": "Setenta centésimas representan 0,70"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué 0,9 es mayor que 0,12 aunque 12 sea mayor que 9 como entero?||Porque 0,9 equivale a 0,90 y noventa centésimas superan a doce centésimas."
+        },
+        {
+          "type": "summary",
+          "body": "Compara igualando posiciones: 0,9=0,90; no compares las cadenas de dígitos como enteros."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N05-L01-01",
+        "F3-E1-N05-L01-02",
+        "F3-E1-N05-L01-03",
+        "F3-E1-N05-L01-04",
+        "F3-E1-N05-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N05-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N05:C02"
+      ],
+      "objectives": [
+        "Sumar, restar, multiplicar y dividir decimales con control del valor posicional.",
+        "Estimar resultados antes de operar y comprobar unidades y órdenes de magnitud."
+      ],
+      "prerequisites": [
+        "E1-N05-L01",
+        "E1-N04-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En sumas y restas, coloca decimales por columnas respetando unidades, décimas y centésimas. En productos, multiplica como enteros y sitúa las posiciones decimales; al dividir por 10 o 100 desplaza el valor posicional. Evita reglas mecánicas sin estimación: 2,5·0,4 es aproximadamente 1, no 10."
+        },
+        {
+          "type": "example",
+          "body": "2,35+1,4=3,75; se puede escribir 1,4 como 1,40 para alinear centésimas."
+        },
+        {
+          "type": "example",
+          "body": "2,5·0,4=1,0. Al contar decimales se obtiene 100/100=1, coherente con multiplicar por menos que uno."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla de entradas 1, 2, 3 y salidas 1,25; 2,50; 3,75 para una tarifa proporcional de 1,25 € por unidad.",
+          "alt": "Tabla de entradas 1, 2, 3 y salidas 1,25; 2,50; 3,75 para una tarifa proporcional de 1,25 € por unidad.",
+          "visual_spec": {
+            "kind": "relation_table",
+            "pairs": [
+              [
+                1,
+                1.25
+              ],
+              [
+                2,
+                2.5
+              ],
+              [
+                3,
+                3.75
+              ]
+            ],
+            "title": "Precio decimal proporcional",
+            "x_label": "Artículos",
+            "y_label": "Precio (€)",
+            "continuous": false
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué 0,4·2,5 no debe ser 10?||Porque multiplicar por 0,4 reduce la cantidad; el resultado correcto es 1."
+        },
+        {
+          "type": "summary",
+          "body": "Alinea posiciones al sumar/restar; en multiplicación y división estima antes y comprueba la escala."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N05-L02-01",
+        "F3-E1-N05-L02-02",
+        "F3-E1-N05-L02-03",
+        "F3-E1-N05-L02-04",
+        "F3-E1-N05-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N05-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N05:C03"
+      ],
+      "objectives": [
+        "Convertir fracciones sencillas a decimales por división de numerador entre denominador.",
+        "Distinguir decimales exactos de periódicos y reconocer cuándo una aproximación no es exacta."
+      ],
+      "prerequisites": [
+        "E1-N04-L01",
+        "E1-N05-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para convertir una fracción a decimal se divide numerador entre denominador distinto de cero. Algunas fracciones producen decimales finitos, como 3/4=0,75; otras son periódicas, como 1/3=0,333… No escribas una aproximación redondeada como igualdad exacta sin indicarlo. La fracción mantiene el valor exacto."
+        },
+        {
+          "type": "example",
+          "body": "3/4=0,75 porque 3÷4=0,75. En una cuadrícula de cien, corresponde a 75 celdas coloreadas."
+        },
+        {
+          "type": "example",
+          "body": "1/8=0,125 es exacto. Sin embargo 1/3≈0,333 al redondear a tres decimales: el resultado exacto es 1/3."
+        },
+        {
+          "type": "figure",
+          "body": "Cuadrícula con 75 de 100 celdas: representa 0,75=3/4.",
+          "alt": "Cuadrícula con 75 de 100 celdas: representa 0,75=3/4.",
+          "visual_spec": {
+            "kind": "hundred_grid",
+            "percent": 75,
+            "title": "Tres cuartos expresados como setenta y cinco centésimas"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es correcto escribir 1/3=0,33 como igualdad exacta?||No. 0,33 es una aproximación a centésimas, mientras 1/3 tiene desarrollo decimal periódico."
+        },
+        {
+          "type": "summary",
+          "body": "Fracción a decimal: divide. Diferencia entre igualdad exacta y aproximación; conserva fracciones periódicas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N05-L03-01",
+        "F3-E1-N05-L03-02",
+        "F3-E1-N05-L03-03",
+        "F3-E1-N05-L03-04",
+        "F3-E1-N05-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N05-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N05:C04"
+      ],
+      "objectives": [
+        "Interpretar p % como p de cada 100 y convertir entre porcentaje, fracción y decimal.",
+        "Relacionar visualmente el porcentaje con una cuadrícula de cien y distinguir la unidad base."
+      ],
+      "prerequisites": [
+        "E1-N05-L03",
+        "E1-N04-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El porcentaje p % representa la razón p/100; por ejemplo 25%=25/100=1/4=0,25. Para convertir a decimal divide entre cien y para pasar de decimal a porcentaje multiplica por cien. Un porcentaje necesita una referencia: 25% de qué cantidad. No identifiques siempre «25%» con «25 unidades», porque depende del total."
+        },
+        {
+          "type": "example",
+          "body": "40%=40/100=0,4=2/5. Una cuadrícula de 100 celdas muestra cuarenta coloreadas."
+        },
+        {
+          "type": "example",
+          "body": "0,125 equivale al 12,5%; corresponde a doce celdas y media de cien en representación ideal, por eso una cuadrícula de celdas enteras solo es aproximación visual."
+        },
+        {
+          "type": "figure",
+          "body": "Cuadrícula de cien: 40 celdas coloreadas muestran cuarenta por ciento de una unidad.",
+          "alt": "Cuadrícula de cien: 40 celdas coloreadas muestran cuarenta por ciento de una unidad.",
+          "visual_spec": {
+            "kind": "hundred_grid",
+            "percent": 40,
+            "title": "Cuarenta por ciento de cien celdas"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es cierto que 25% significa 25 objetos sin conocer el total?||No. Significa una cuarta parte de una cantidad tomada como cien por ciento; el total debe estar especificado."
+        },
+        {
+          "type": "summary",
+          "body": "Porcentaje p %=p/100, decimal p/100, fracción equivalente tras simplificar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N05-L04-01",
+        "F3-E1-N05-L04-02",
+        "F3-E1-N05-L04-03",
+        "F3-E1-N05-L04-04",
+        "F3-E1-N05-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N05-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N05:C05"
+      ],
+      "objectives": [
+        "Calcular porcentajes de cantidades por multiplicación del total y la razón porcentual.",
+        "Reconstruir total o parte en ejemplos sencillos y comprobar la plausibilidad."
+      ],
+      "prerequisites": [
+        "E1-N05-L04",
+        "E1-P01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para calcular p % de una cantidad N multiplica N·p/100. Si p está entre cero y cien, el resultado está entre cero y N cuando N es no negativo. La estrategia de 10% como una décima parte permite estimar rápidamente. Distingue el porcentaje de la cantidad obtenida y expresa la unidad."
+        },
+        {
+          "type": "example",
+          "body": "15% de 200 € son 200·15/100=30 €. Una estimación: 10% son 20 y 5% son 10."
+        },
+        {
+          "type": "example",
+          "body": "30% de 50 personas son 15 personas. La misma razón aplicada a un total de 100 daría 30."
+        },
+        {
+          "type": "figure",
+          "body": "Cuadrícula de 100 celdas con 30 coloreadas, representación de un 30%.",
+          "alt": "Cuadrícula de 100 celdas con 30 coloreadas, representación de un 30%.",
+          "visual_spec": {
+            "kind": "hundred_grid",
+            "percent": 30,
+            "title": "Treinta por ciento, tres décimas partes"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿30% de 50 es siempre lo mismo que 30% de 100?||No. El porcentaje es una proporción y la cantidad obtenida depende del total de referencia."
+        },
+        {
+          "type": "summary",
+          "body": "Cantidad porcentual = total·porcentaje/100, con unidades y estimación de rango."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N05-L05-01",
+        "F3-E1-N05-L05-02",
+        "F3-E1-N05-L05-03",
+        "F3-E1-N05-L05-04",
+        "F3-E1-N05-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-N05-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.4.0",
+      "status": "revision",
+      "concept_ids": [
+        "E1-N05:C06"
+      ],
+      "objectives": [
+        "Calcular precios tras aumentos y descuentos porcentuales sencillos.",
+        "Distinguir el importe del cambio del valor final y explicar qué base se utiliza."
+      ],
+      "prerequisites": [
+        "E1-N05-L05",
+        "E1-P01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un descuento del p % sobre P implica precio final P·(1−p/100), mientras un aumento da P·(1+p/100). El porcentaje se aplica sobre el precio original en cada operación. Un descuento del 20% no significa pagar un 20%, sino pagar el 80%. Si encadenas cambios, la nueva base cambia y los porcentajes opuestos no suelen anularse."
+        },
+        {
+          "type": "example",
+          "body": "Un artículo de 50 € con 20% de descuento cuesta 50·0,80=40 €; el descuento es 10 €."
+        },
+        {
+          "type": "example",
+          "body": "Una cuota de 80 € que sube 10% pasa a 88 €. Si después baja 10% de 88, queda en 79,20 €, no en 80."
+        },
+        {
+          "type": "figure",
+          "body": "Cuadrícula con 80 de 100 celdas coloreadas: proporción del precio que se paga tras un descuento del 20%.",
+          "alt": "Cuadrícula con 80 de 100 celdas coloreadas: proporción del precio que se paga tras un descuento del 20%.",
+          "visual_spec": {
+            "kind": "hundred_grid",
+            "percent": 80,
+            "title": "Ochenta por ciento del precio permanece"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Tras descontar 20% de 60 € el precio final es 12 €?||No. Doce euros es el importe descontado; el precio final es 48 €."
+        },
+        {
+          "type": "summary",
+          "body": "Aumento: multiplica por 1+p/100; descuento: por 1−p/100; comprueba siempre la nueva base."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-N05-L06-01",
+        "F3-E1-N05-L06-02",
+        "F3-E1-N05-L06-03",
+        "F3-E1-N05-L06-04",
+        "F3-E1-N05-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, Anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Cita y enlace al texto normativo oficial; explicaciones originales"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

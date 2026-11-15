@@ -1,0 +1,506 @@
+{
+  "unit_id": "E1-A01",
+  "unit_title": "Patrones, lenguaje algebraico y ecuaciones iniciales",
+  "product_phase": "F3_OLA2",
+  "version": "0.2.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "warnings": [
+    "Tramo 1.º–3.º ESO y distribución por curso: propuesta editorial.",
+    "Revisión humana matemática, curricular y accesibilidad pendientes.",
+    "Algunos prerrequisitos de 1.º ESO conservan índice pero aún no tienen lección desarrollada."
+  ],
+  "unit_objectives": [
+    "Describir y generalizar patrones sin confundir una regla con una lista de ejemplos.",
+    "Representar relaciones sencillas mediante expresiones con letras y verificar igualdades.",
+    "Resolver ecuaciones iniciales y comprobar resultados con unidades y restricciones."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Números naturales y cálculo",
+      "lesson_id": "E1-N01-L03",
+      "href": "#/curso/E1/unidad/E1-N01/leccion/E1-N01-L03"
+    },
+    {
+      "label": "Números enteros",
+      "lesson_id": "E1-N02-L02",
+      "href": "#/curso/E1/unidad/E1-N02/leccion/E1-N02-L02"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "rule": "Intentar recuperar reglas y ejemplos sin mirar y volver a problemas con ayudas graduadas.",
+    "cadence_proposal": "D+1/3/7/14/30 como heurística no calibrada."
+  },
+  "source_note": "Material original redactado para WEB MATES, alineación genérica RD 217/2022. Distribución editorial, cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E1-A01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Identificar y continuar patrones numéricos y geométricos sencillos.",
+        "Explicar cómo cambia cada término y expresar un patrón con una regla."
+      ],
+      "concept_ids": [
+        "E1-A01:C_01"
+      ],
+      "prerequisites": [
+        "E1-N01-L03",
+        "E1-N02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un patrón es una regularidad que permite predecir términos. Primero observa las diferencias entre valores sucesivos; si son constantes, puedes expresar el término n como una cantidad fija más una parte que se repite n veces. Comprueba la regla con más de un término; tres ejemplos compatibles no prueban que sea la única regla."
+        },
+        {
+          "type": "example",
+          "body": "Serie 4, 7, 10, 13: la diferencia es +3. Si la primera posición corresponde a n=1, el término n es 3n+1. Para n=5 vale 16."
+        },
+        {
+          "type": "example",
+          "body": "Un mosaico comienza con 2 cuadrados y añade 4 en cada etapa: 2, 6, 10, 14. Su término n es 4n−2 (n≥1). Para n=3: 10 cuadrados."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla accesible: posición n: 1 | 2 | 3 | 4; cantidad: 4 | 7 | 10 | 13. La diferencia en cada paso es +3.",
+          "alt": "Representación verbal y tabla accesible del concepto"
+        },
+        {
+          "type": "reflection",
+          "body": "Si una serie aumenta 3 en cada paso, ¿es correcto afirmar sin más que su término n es 3n?||No. Hay que comprobar la primera posición; en 4, 7, 10 la regla es 3n+1."
+        },
+        {
+          "type": "summary",
+          "body": "Localiza cambio → determina qué vale para n=1 → escribe una regla → verifica varias posiciones."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-A01-L01-01",
+        "F3-E1-A01-L01-02",
+        "F3-E1-A01-L01-03",
+        "F3-E1-A01-L01-04",
+        "F3-E1-A01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa, sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-A01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Reconocer letras como cantidades que pueden variar.",
+        "Escribir expresiones con coeficientes y constantes en situaciones sencillas."
+      ],
+      "concept_ids": [
+        "E1-A01:C_02"
+      ],
+      "prerequisites": [
+        "E1-A01-L01",
+        "E1-N01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una letra puede representar una cantidad desconocida o variable. En 3x, el 3 es un coeficiente que multiplica a x; 3x+2 suma dos unidades. La expresión no es una ecuación porque no contiene una igualdad. Escribe siempre qué significa la letra y la unidad de medida si existe."
+        },
+        {
+          "type": "example",
+          "body": "Tres entradas de precio x y una comisión fija de 2 € cuestan 3x+2 €. Si x=4 €, el total es 14 €."
+        },
+        {
+          "type": "example",
+          "body": "Un rectángulo de ancho x y largo x+2 tiene perímetro 2x+2(x+2)=4x+4, no 2x+2."
+        },
+        {
+          "type": "figure",
+          "body": "Representa x mediante una caja: 3x+2 son tres cajas idénticas y dos fichas adicionales. Las fichas no se multiplican por x.",
+          "alt": "Representación verbal y tabla accesible del concepto"
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué 5x no significa 5+x?||Porque la escritura sin símbolo indica multiplicación: 5x = 5·x."
+        },
+        {
+          "type": "summary",
+          "body": "Define la letra, conserva las unidades y distingue término con letra de cantidad fija."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-A01-L02-01",
+        "F3-E1-A01-L02-02",
+        "F3-E1-A01-L02-03",
+        "F3-E1-A01-L02-04",
+        "F3-E1-A01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa, sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-A01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Traducir expresiones del lenguaje cotidiano a símbolos algebraicos.",
+        "Distinguir frases donde los paréntesis cambian el resultado."
+      ],
+      "concept_ids": [
+        "E1-A01:C_03"
+      ],
+      "prerequisites": [
+        "E1-A01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para traducir un enunciado identifica primero la cantidad de referencia. «El triple de un número más 4» se expresa 3x+4 si el +4 se aplica al triple; «el triple de la suma del número y 4» se escribe 3(x+4). El orden de las acciones importa."
+        },
+        {
+          "type": "example",
+          "body": "Una tarifa fija de 5 € más 2 € por uso: C(n)=5+2n, con n número de usos. Para 3 usos son 11 €."
+        },
+        {
+          "type": "example",
+          "body": "«Cuatro menos el doble de un número» es 4−2x, mientras que «el doble de cuatro menos un número» se interpretaría 2(4−x) si se refiere a toda la diferencia."
+        },
+        {
+          "type": "figure",
+          "body": "Dos diagramas verbales: multiplicar x por 3 y después sumar 4 → 3x+4; sumar 4 a x y multiplicar el total por 3 → 3(x+4).",
+          "alt": "Representación verbal y tabla accesible del concepto"
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué diferencia hay entre 3x+4 y 3(x+4)?||La segunda expresión multiplica también el 4 por 3; difieren en 8 para cualquier x."
+        },
+        {
+          "type": "summary",
+          "body": "Subraya cantidad, operación y alcance de cada paréntesis. Verifica la traducción con un valor concreto."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-A01-L03-01",
+        "F3-E1-A01-L03-02",
+        "F3-E1-A01-L03-03",
+        "F3-E1-A01-L03-04",
+        "F3-E1-A01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa, sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-A01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Calcular valores de expresiones sencillas al sustituir una letra.",
+        "Respetar paréntesis, potencias y signos durante la evaluación."
+      ],
+      "concept_ids": [
+        "E1-A01:C_04"
+      ],
+      "prerequisites": [
+        "E1-A01-L02",
+        "E1-N02-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para hallar un valor numérico sustituye la letra por su número. Si el valor es negativo escríbelo entre paréntesis, sobre todo ante potencias. Después respeta la jerarquía: paréntesis, potencias, multiplicaciones y sumas."
+        },
+        {
+          "type": "example",
+          "body": "Para x=−2, en x²+3 se calcula (−2)²+3=4+3=7; sin paréntesis −2² se interpretaría como −4."
+        },
+        {
+          "type": "example",
+          "body": "Si a=5, 3(a+2)=3·7=21; en cambio 3a+2=17. Los paréntesis modifican qué se multiplica."
+        },
+        {
+          "type": "figure",
+          "body": "Una máquina de cálculo recibe x=4, duplica x y resta 5: 2·4−5=3. El orden de las operaciones explica el resultado.",
+          "alt": "Representación verbal y tabla accesible del concepto"
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué al sustituir x=−3 en x² debemos escribir (−3)²?||Porque el signo negativo también forma parte de la base; (-3)²=9."
+        },
+        {
+          "type": "summary",
+          "body": "Sustituye con paréntesis, calcula potencias y productos primero y comprueba si el signo final es razonable."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-A01-L04-01",
+        "F3-E1-A01-L04-02",
+        "F3-E1-A01-L04-03",
+        "F3-E1-A01-L04-04",
+        "F3-E1-A01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa, sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-A01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Interpretar una igualdad como equilibrio entre dos miembros.",
+        "Reconocer transformaciones equivalentes y comprobar valores sencillos."
+      ],
+      "concept_ids": [
+        "E1-A01:C_05"
+      ],
+      "prerequisites": [
+        "E1-A01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una igualdad afirma que dos expresiones tienen el mismo valor. Sumar o restar la misma cantidad en ambos miembros la conserva. Dos expresiones son equivalentes si coinciden para todos los valores permitidos. Comprobar solo un valor puede refutar una identidad, pero no demostrarla."
+        },
+        {
+          "type": "example",
+          "body": "3x+2=14. Restar 2 a ambos miembros da 3x=12; dividir ambos por 3 da x=4. Se comprueba: 3·4+2=14."
+        },
+        {
+          "type": "example",
+          "body": "2(x+3)=2x+6 para cualquier x: al distribuir el 2 en ambos sumandos, no se altera la expresión."
+        },
+        {
+          "type": "figure",
+          "body": "Imagina una balanza con igual peso en dos platillos. Retirar la misma cantidad de cada lado conserva el equilibrio; retirarla solo en uno lo rompe.",
+          "alt": "Representación verbal y tabla accesible del concepto"
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es suficiente que 2x y x+1 coincidan para x=1 para considerarlas equivalentes?||No; para x=2 dan 4 y 3, respectivamente. Coincidir en un valor no prueba una identidad."
+        },
+        {
+          "type": "summary",
+          "body": "La igualdad se mantiene operando igual en ambos lados; comprobar soluciones siempre en la igualdad original."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-A01-L05-01",
+        "F3-E1-A01-L05-02",
+        "F3-E1-A01-L05-03",
+        "F3-E1-A01-L05-04",
+        "F3-E1-A01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa, sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E1-A01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Resolver ecuaciones lineales sencillas de un paso o dos.",
+        "Comprobar que la solución satisface el enunciado original."
+      ],
+      "concept_ids": [
+        "E1-A01:C_06"
+      ],
+      "prerequisites": [
+        "E1-A01-L05",
+        "E1-N02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Resolver una ecuación consiste en encontrar los valores que hacen verdadera una igualdad. Para x+7=12, deshaz la suma restando 7 a ambos miembros; para 3x=18, deshaz el producto dividiendo por 3, que no es cero. Sustituye al final."
+        },
+        {
+          "type": "example",
+          "body": "x+7=12 → x=5. Comprobación: 5+7=12."
+        },
+        {
+          "type": "example",
+          "body": "2x+4=12 → resta 4: 2x=8 → divide por 2: x=4. Comprueba: 2·4+4=12."
+        },
+        {
+          "type": "figure",
+          "body": "Una balanza tiene dos cajas x y cuatro fichas en un platillo, y doce fichas en el otro. Quitar cuatro fichas de ambos platillos y repartir las ocho restantes en dos cajas da x=4.",
+          "alt": "Representación verbal y tabla accesible del concepto"
+        },
+        {
+          "type": "reflection",
+          "body": "Si 3x=18, ¿por qué dividir entre 3 y no restar 3?||Porque 3x representa tres veces x: su operación inversa es dividir por 3."
+        },
+        {
+          "type": "summary",
+          "body": "Deshaz operaciones en orden inverso, hazlo en ambos miembros y comprueba sustituyendo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E1-A01-L06-01",
+        "F3-E1-A01-L06-02",
+        "F3-E1-A01-L06-03",
+        "F3-E1-A01-L06-04",
+        "F3-E1-A01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Matemáticas ESO, anexo II",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia pública a normativa, sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

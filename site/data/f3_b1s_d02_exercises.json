@@ -1,0 +1,993 @@
+{
+  "unit_id": "B1S-D02",
+  "version": "0.25.0",
+  "status": "revision",
+  "notice": "90 ejercicios totales sintéticos F3-25, validados por reglas deterministas con revisión humana pendiente.",
+  "activities": [
+    {
+      "exercise_id": "F3-B1S-D02-L01-01",
+      "lesson_id": "B1S-D02-L01",
+      "type": "numeric",
+      "prompt": "En un marco completo de 600 matrículas se sortean 60. Calcula n/N en decimal.",
+      "answer": 0.1,
+      "explanation": "n/N=60/600=0,10; no es el porcentaje de respuestas favorables.",
+      "hint": "Identifica primero a quién se pretende describir y quién aparece en el marco.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_01",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L01-02",
+      "lesson_id": "B1S-D02-L01",
+      "type": "numeric",
+      "prompt": "Un marco tiene 200 personas y se observan 18. ¿Qué porcentaje del marco está en la muestra? Da el porcentaje, no la proporción.",
+      "answer": 9,
+      "explanation": "100×18/200=9 %, si las 18 se seleccionaron del marco de 200.",
+      "hint": "Identifica primero a quién se pretende describir y quién aparece en el marco.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_01",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L01-03",
+      "lesson_id": "B1S-D02-L01",
+      "type": "numeric",
+      "prompt": "Se seleccionan 75 de 500 personas de una lista. ¿Cuál es la fracción de muestreo en decimal?",
+      "answer": 0.15,
+      "explanation": "La fracción n/N=75/500=0,15.",
+      "hint": "Identifica primero a quién se pretende describir y quién aparece en el marco.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_01",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L01-04",
+      "lesson_id": "B1S-D02-L01",
+      "type": "choice",
+      "prompt": "Un cuestionario dirigido a todo un centro se envía solo a usuarios del comedor. ¿Qué describe mejor el problema?",
+      "answer": "El marco excluye a parte de la población objetivo.",
+      "explanation": "La población objetivo declarada sigue siendo todo el centro; el marco no la cubre.",
+      "hint": "Identifica primero a quién se pretende describir y quién aparece en el marco.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_01",
+        "prerrequisito_b1s_d02"
+      ],
+      "choices": [
+        "La población objetivo pasa automáticamente a ser solo el comedor.",
+        "El marco excluye a parte de la población objetivo.",
+        "El tamaño grande elimina la subcobertura.",
+        "Es un censo válido de todo el centro."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L01-05",
+      "lesson_id": "B1S-D02-L01",
+      "type": "choice",
+      "prompt": "¿Cuál es la muestra en un estudio de toda una ciudad que entrevista a 80 habitantes?",
+      "answer": "Los 80 habitantes entrevistados.",
+      "explanation": "La muestra es el conjunto de unidades observadas, no la población ni un resultado.",
+      "hint": "Identifica primero a quién se pretende describir y quién aparece en el marco.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_01",
+        "prerrequisito_b1s_d02"
+      ],
+      "choices": [
+        "Los 80 habitantes entrevistados.",
+        "El porcentaje de respuestas afirmativas.",
+        "Todas las personas de la ciudad.",
+        "La lista completa de direcciones usada para seleccionar."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L02-01",
+      "lesson_id": "B1S-D02-L02",
+      "type": "numeric",
+      "prompt": "Un marco contiene 300 personas del grupo A y 100 del B. Se planean 40 entrevistas proporcionales. ¿Cuántas corresponden a A?",
+      "answer": 30,
+      "explanation": "40×300/400=30 participantes del grupo A.",
+      "hint": "Busca qué personas nunca pudieron ser seleccionadas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_02",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L02-02",
+      "lesson_id": "B1S-D02-L02",
+      "type": "numeric",
+      "prompt": "De una muestra proporcional de 40, diez son del grupo B. ¿Qué proporción de la muestra representa B?",
+      "answer": 0.25,
+      "explanation": "10/40=0,25.",
+      "hint": "Busca qué personas nunca pudieron ser seleccionadas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_02",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L02-03",
+      "lesson_id": "B1S-D02-L02",
+      "type": "numeric",
+      "prompt": "Se reservan 15 plazas de muestra para un grupo entre 60 plazas. ¿Qué fracción de muestra será de ese grupo?",
+      "answer": 0.25,
+      "explanation": "15/60=1/4=0,25, sin afirmar que sea representativo por sí solo.",
+      "hint": "Busca qué personas nunca pudieron ser seleccionadas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_02",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L02-04",
+      "lesson_id": "B1S-D02-L02",
+      "type": "choice",
+      "prompt": "¿Qué diseño ofrece mejor justificación inicial para estudiar a todos los alumnos de un instituto?",
+      "answer": "Sorteo desde un listado completo y control de no respuesta.",
+      "explanation": "Un marco completo con selección probabilística y seguimiento de no respuesta ofrece mejor justificación, aunque no garantiza ausencia de sesgos.",
+      "hint": "Busca qué personas nunca pudieron ser seleccionadas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_02",
+        "prerrequisito_b1s_d02"
+      ],
+      "choices": [
+        "Solo voluntarios del club de matemáticas.",
+        "Solo quienes contesten en el recreo.",
+        "Sorteo desde un listado completo y control de no respuesta.",
+        "Primeros visitantes de la web escolar."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L02-05",
+      "lesson_id": "B1S-D02-L02",
+      "type": "choice",
+      "prompt": "Si una muestra de 10.000 voluntarios excluye a quienes no usan internet, ¿qué se puede asegurar?",
+      "answer": "El tamaño no corrige automáticamente el sesgo de cobertura.",
+      "explanation": "La selección voluntaria y el marco incompleto siguen siendo problemas, incluso con n elevado.",
+      "hint": "Busca qué personas nunca pudieron ser seleccionadas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_02",
+        "prerrequisito_b1s_d02"
+      ],
+      "choices": [
+        "Todas las unidades tuvieron igual probabilidad de entrar.",
+        "La incertidumbre y el sesgo son exactamente cero.",
+        "El tamaño no corrige automáticamente el sesgo de cobertura.",
+        "Es representativa por el tamaño."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L03-01",
+      "lesson_id": "B1S-D02-L03",
+      "type": "numeric",
+      "prompt": "En un sorteo simple sin reemplazo, N=250 y n=25. ¿Probabilidad de inclusión de una persona concreta?",
+      "answer": 0.1,
+      "explanation": "Cada persona del marco tiene probabilidad de inclusión n/N=25/250.",
+      "hint": "Comprueba si se sortean personas, hogares o grupos y si existe reemplazo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_03",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L03-02",
+      "lesson_id": "B1S-D02-L03",
+      "type": "numeric",
+      "prompt": "Un marco con 10 personas elige 2 por muestreo aleatorio simple sin reemplazo. ¿Probabilidad individual de inclusión?",
+      "answer": 0.2,
+      "explanation": "n/N=2/10=0,20.",
+      "hint": "Comprueba si se sortean personas, hogares o grupos y si existe reemplazo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_03",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L03-03",
+      "lesson_id": "B1S-D02-L03",
+      "type": "numeric",
+      "prompt": "De N=400 registros, una muestra aleatoria simple selecciona n=32. ¿Probabilidad individual de inclusión?",
+      "answer": 0.08,
+      "explanation": "32/400=0,08, sin atribuir independencia a las inclusiones.",
+      "hint": "Comprueba si se sortean personas, hogares o grupos y si existe reemplazo.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_03",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L03-04",
+      "lesson_id": "B1S-D02-L03",
+      "type": "choice",
+      "prompt": "¿Qué ocurre con las inclusiones al sortear sin reemplazo?",
+      "answer": "La inclusión de una unidad afecta la probabilidad de otras.",
+      "explanation": "Seleccionar sin reemplazo modifica el conjunto disponible; no equivale a selección independiente.",
+      "hint": "Comprueba si se sortean personas, hogares o grupos y si existe reemplazo.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_03",
+        "prerrequisito_b1s_d02"
+      ],
+      "choices": [
+        "Siempre hay sesgo por definición.",
+        "Ninguna unidad tuvo probabilidad positiva.",
+        "Todas las inclusiones son independientes.",
+        "La inclusión de una unidad afecta la probabilidad de otras."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L03-05",
+      "lesson_id": "B1S-D02-L03",
+      "type": "choice",
+      "prompt": "¿Qué ejemplo describe una muestra de conveniencia?",
+      "answer": "Preguntar solo a quienes entran primero en una biblioteca.",
+      "explanation": "Se selecciona por accesibilidad, no con una probabilidad de inclusión controlada.",
+      "hint": "Comprueba si se sortean personas, hogares o grupos y si existe reemplazo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_03",
+        "prerrequisito_b1s_d02"
+      ],
+      "choices": [
+        "Sortear registros desde un marco completo.",
+        "Seleccionar proporcionalmente con sorteo en estratos.",
+        "Enumerar todos los miembros de la población.",
+        "Preguntar solo a quienes entran primero en una biblioteca."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L04-01",
+      "lesson_id": "B1S-D02-L04",
+      "type": "numeric",
+      "prompt": "En la muestra sintética 4, 6, 8 y 10 minutos, ¿cuál es la media muestral?",
+      "answer": 7,
+      "explanation": "x̄=(4+6+8+10)/4=7 min; μ poblacional sigue desconocida.",
+      "hint": "Decide si el número se conoce por todas las unidades o solo por una muestra.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_04",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L04-02",
+      "lesson_id": "B1S-D02-L04",
+      "type": "numeric",
+      "prompt": "En una muestra de 60, 18 contestan sí. ¿Qué proporción muestral representa sí?",
+      "answer": 0.3,
+      "explanation": "p̂=18/60=0,30, no el parámetro poblacional p.",
+      "hint": "Decide si el número se conoce por todas las unidades o solo por una muestra.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_04",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L04-03",
+      "lesson_id": "B1S-D02-L04",
+      "type": "numeric",
+      "prompt": "Una muestra de tres valores es 12, 14, 16. Halla la media muestral.",
+      "answer": 14,
+      "explanation": "x̄=(12+14+16)/3=14.",
+      "hint": "Decide si el número se conoce por todas las unidades o solo por una muestra.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_04",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L04-04",
+      "lesson_id": "B1S-D02-L04",
+      "type": "choice",
+      "prompt": "Se calcula una media de 7 en 4 observaciones. ¿Qué símbolo corresponde a ese número?",
+      "answer": "x̄, media muestral.",
+      "explanation": "La media calculada con n observaciones es un estadístico.",
+      "hint": "Decide si el número se conoce por todas las unidades o solo por una muestra.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_04",
+        "prerrequisito_b1s_d02"
+      ],
+      "choices": [
+        "μ, media exacta de toda la población.",
+        "N, tamaño poblacional.",
+        "p, proporción poblacional.",
+        "x̄, media muestral."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L04-05",
+      "lesson_id": "B1S-D02-L04",
+      "type": "choice",
+      "prompt": "¿En qué se diferencia estimador de estimación?",
+      "answer": "El estimador es la regla; la estimación, su valor en una muestra.",
+      "explanation": "Una regla aleatoria aplicada a datos produce un resultado observado.",
+      "hint": "Decide si el número se conoce por todas las unidades o solo por una muestra.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_04",
+        "prerrequisito_b1s_d02"
+      ],
+      "choices": [
+        "El estimador es la regla; la estimación, su valor en una muestra.",
+        "La estimación elimina toda incertidumbre.",
+        "El estimador es siempre el tamaño N.",
+        "Son sinónimos del parámetro conocido."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L05-01",
+      "lesson_id": "B1S-D02-L05",
+      "type": "numeric",
+      "prompt": "De 80 respuestas de muestra, 28 son positivas. Calcula p̂.",
+      "answer": 0.35,
+      "explanation": "La estimación puntual es 28/80=0,35, sin margen de error.",
+      "hint": "El estimador está definido por una operación; su valor no trae intervalo incorporado.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_05",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L05-02",
+      "lesson_id": "B1S-D02-L05",
+      "type": "numeric",
+      "prompt": "Para la muestra 10, 12, 14, calcula la media puntual de μ.",
+      "answer": 12,
+      "explanation": "La media es 36/3=12, no una afirmación de que μ=12.",
+      "hint": "El estimador está definido por una operación; su valor no trae intervalo incorporado.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_05",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L05-03",
+      "lesson_id": "B1S-D02-L05",
+      "type": "numeric",
+      "prompt": "Se observan 13 respuestas afirmativas de n=50. Calcula la proporción puntual.",
+      "answer": 0.26,
+      "explanation": "p̂=13/50=0,26, o 26 %.",
+      "hint": "El estimador está definido por una operación; su valor no trae intervalo incorporado.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_05",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L05-04",
+      "lesson_id": "B1S-D02-L05",
+      "type": "choice",
+      "prompt": "Un informe presenta p̂=0,35 y declara «margen de error del 1 %» sin método. ¿Qué falta?",
+      "answer": "Diseño, hipótesis y un cálculo justificable del error.",
+      "explanation": "Una estimación puntual no determina un margen de error.",
+      "hint": "El estimador está definido por una operación; su valor no trae intervalo incorporado.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_05",
+        "prerrequisito_b1s_d02"
+      ],
+      "choices": [
+        "Diseño, hipótesis y un cálculo justificable del error.",
+        "Suponer que el margen siempre es 1 %.",
+        "Convertir 0,35 en 35 sin símbolo de porcentaje.",
+        "Solo añadir más decimales a p̂."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L05-05",
+      "lesson_id": "B1S-D02-L05",
+      "type": "choice",
+      "prompt": "¿Cuál es la comunicación responsable de una estimación?",
+      "answer": "Informar población, marco, n, selección, no respuesta y límites.",
+      "explanation": "El diseño y los límites son necesarios para interpretar la estimación.",
+      "hint": "El estimador está definido por una operación; su valor no trae intervalo incorporado.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_05",
+        "prerrequisito_b1s_d02"
+      ],
+      "choices": [
+        "Informar población, marco, n, selección, no respuesta y límites.",
+        "Declarar certeza del 100 %.",
+        "Omitir que el resultado es de una muestra.",
+        "Afirmar causalidad a partir de una proporción."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L06-01",
+      "lesson_id": "B1S-D02-L06",
+      "type": "numeric",
+      "prompt": "Se invitó a 200 personas y respondieron 120. ¿Qué fracción de invitadas respondió?",
+      "answer": 0.6,
+      "explanation": "La tasa de respuesta es 120/200=0,60.",
+      "hint": "Separa porcentaje de respuesta y porcentaje de opinión entre respondentes.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_06",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L06-02",
+      "lesson_id": "B1S-D02-L06",
+      "type": "numeric",
+      "prompt": "De 120 respuestas obtenidas, 84 fueron afirmativas. ¿Qué proporción de respondentes dijo sí?",
+      "answer": 0.7,
+      "explanation": "84/120=0,70, restringida a quienes respondieron.",
+      "hint": "Separa porcentaje de respuesta y porcentaje de opinión entre respondentes.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_06",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L06-03",
+      "lesson_id": "B1S-D02-L06",
+      "type": "numeric",
+      "prompt": "Hubo 84 respuestas afirmativas entre 200 invitados. ¿Qué proporción de invitados representa ese recuento, sin inferir las opiniones de no respondentes?",
+      "answer": 0.42,
+      "explanation": "84/200=0,42 de invitados emitieron un sí; los restantes pueden no haber contestado.",
+      "hint": "Separa porcentaje de respuesta y porcentaje de opinión entre respondentes.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_06",
+        "prerrequisito_b1s_d02"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L06-04",
+      "lesson_id": "B1S-D02-L06",
+      "type": "choice",
+      "prompt": "Un estudio observacional halla asociación entre estudiar y nota. ¿Qué conclusión está justificada?",
+      "answer": "Hay asociación observada, sin prueba causal por sí sola.",
+      "explanation": "Una asociación no identifica un efecto causal sin diseño y supuestos adicionales.",
+      "hint": "Separa porcentaje de respuesta y porcentaje de opinión entre respondentes.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_06",
+        "prerrequisito_b1s_d02"
+      ],
+      "choices": [
+        "Hay asociación observada, sin prueba causal por sí sola.",
+        "Estudiar causó exactamente toda la diferencia.",
+        "La correlación prueba un mecanismo físico.",
+        "No puede existir ningún factor de confusión."
+      ]
+    },
+    {
+      "exercise_id": "F3-B1S-D02-L06-05",
+      "lesson_id": "B1S-D02-L06",
+      "type": "choice",
+      "prompt": "De 120 respondentes, el 70 % dice sí. ¿Cuál es una advertencia necesaria?",
+      "answer": "No se conoce directamente la opinión de los 80 que no respondieron.",
+      "explanation": "La no respuesta puede cambiar la estimación entre invitados.",
+      "hint": "Separa porcentaje de respuesta y porcentaje de opinión entre respondentes.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b1s_d02_06",
+        "prerrequisito_b1s_d02"
+      ],
+      "choices": [
+        "No se conoce directamente la opinión de los 80 que no respondieron.",
+        "El resultado está libre de sesgo necesariamente.",
+        "El 70 % corresponde al parámetro poblacional verdadero.",
+        "El 70 % representa exactamente a todos los invitados."
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B1S-D02-L01-01": {
+      "hints": [
+        "Identifica primero a quién se pretende describir y quién aparece en el marco.",
+        "Para la fracción de muestreo divide n entre N; no la confundas con el porcentaje de respuestas afirmativas."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          60,
+          600
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L01-02": {
+      "hints": [
+        "Identifica primero a quién se pretende describir y quién aparece en el marco.",
+        "Para la fracción de muestreo divide n entre N; no la confundas con el porcentaje de respuestas afirmativas."
+      ],
+      "math_check": {
+        "kind": "percent",
+        "params": [
+          18,
+          200
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L01-03": {
+      "hints": [
+        "Identifica primero a quién se pretende describir y quién aparece en el marco.",
+        "Para la fracción de muestreo divide n entre N; no la confundas con el porcentaje de respuestas afirmativas."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          75,
+          500
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L01-04": {
+      "hints": [
+        "Identifica primero a quién se pretende describir y quién aparece en el marco.",
+        "Para la fracción de muestreo divide n entre N; no la confundas con el porcentaje de respuestas afirmativas."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L01-05": {
+      "hints": [
+        "Identifica primero a quién se pretende describir y quién aparece en el marco.",
+        "Para la fracción de muestreo divide n entre N; no la confundas con el porcentaje de respuestas afirmativas."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L02-01": {
+      "hints": [
+        "Busca qué personas nunca pudieron ser seleccionadas.",
+        "Una asignación proporcional se obtiene con n×N_grupo/N_total; el diseño real exige más controles."
+      ],
+      "math_check": {
+        "kind": "ratio_product",
+        "params": [
+          40,
+          300,
+          400
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L02-02": {
+      "hints": [
+        "Busca qué personas nunca pudieron ser seleccionadas.",
+        "Una asignación proporcional se obtiene con n×N_grupo/N_total; el diseño real exige más controles."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          10,
+          40
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L02-03": {
+      "hints": [
+        "Busca qué personas nunca pudieron ser seleccionadas.",
+        "Una asignación proporcional se obtiene con n×N_grupo/N_total; el diseño real exige más controles."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          15,
+          60
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L02-04": {
+      "hints": [
+        "Busca qué personas nunca pudieron ser seleccionadas.",
+        "Una asignación proporcional se obtiene con n×N_grupo/N_total; el diseño real exige más controles."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L02-05": {
+      "hints": [
+        "Busca qué personas nunca pudieron ser seleccionadas.",
+        "Una asignación proporcional se obtiene con n×N_grupo/N_total; el diseño real exige más controles."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L03-01": {
+      "hints": [
+        "Comprueba si se sortean personas, hogares o grupos y si existe reemplazo.",
+        "En aleatorio simple con N y n conocidos, la probabilidad de inclusión es n/N."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          25,
+          250
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L03-02": {
+      "hints": [
+        "Comprueba si se sortean personas, hogares o grupos y si existe reemplazo.",
+        "En aleatorio simple con N y n conocidos, la probabilidad de inclusión es n/N."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          2,
+          10
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L03-03": {
+      "hints": [
+        "Comprueba si se sortean personas, hogares o grupos y si existe reemplazo.",
+        "En aleatorio simple con N y n conocidos, la probabilidad de inclusión es n/N."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          32,
+          400
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L03-04": {
+      "hints": [
+        "Comprueba si se sortean personas, hogares o grupos y si existe reemplazo.",
+        "En aleatorio simple con N y n conocidos, la probabilidad de inclusión es n/N."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L03-05": {
+      "hints": [
+        "Comprueba si se sortean personas, hogares o grupos y si existe reemplazo.",
+        "En aleatorio simple con N y n conocidos, la probabilidad de inclusión es n/N."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L04-01": {
+      "hints": [
+        "Decide si el número se conoce por todas las unidades o solo por una muestra.",
+        "Media: suma/n. Proporción: casos favorables/n. Indica qué sigue desconocido."
+      ],
+      "math_check": {
+        "kind": "mean",
+        "params": [
+          [
+            4,
+            6,
+            8,
+            10
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L04-02": {
+      "hints": [
+        "Decide si el número se conoce por todas las unidades o solo por una muestra.",
+        "Media: suma/n. Proporción: casos favorables/n. Indica qué sigue desconocido."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          18,
+          60
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L04-03": {
+      "hints": [
+        "Decide si el número se conoce por todas las unidades o solo por una muestra.",
+        "Media: suma/n. Proporción: casos favorables/n. Indica qué sigue desconocido."
+      ],
+      "math_check": {
+        "kind": "mean",
+        "params": [
+          [
+            12,
+            14,
+            16
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L04-04": {
+      "hints": [
+        "Decide si el número se conoce por todas las unidades o solo por una muestra.",
+        "Media: suma/n. Proporción: casos favorables/n. Indica qué sigue desconocido."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L04-05": {
+      "hints": [
+        "Decide si el número se conoce por todas las unidades o solo por una muestra.",
+        "Media: suma/n. Proporción: casos favorables/n. Indica qué sigue desconocido."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L05-01": {
+      "hints": [
+        "El estimador está definido por una operación; su valor no trae intervalo incorporado.",
+        "Para p̂ utiliza éxitos/n y comunica la población y el marco."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          28,
+          80
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L05-02": {
+      "hints": [
+        "El estimador está definido por una operación; su valor no trae intervalo incorporado.",
+        "Para p̂ utiliza éxitos/n y comunica la población y el marco."
+      ],
+      "math_check": {
+        "kind": "mean",
+        "params": [
+          [
+            10,
+            12,
+            14
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L05-03": {
+      "hints": [
+        "El estimador está definido por una operación; su valor no trae intervalo incorporado.",
+        "Para p̂ utiliza éxitos/n y comunica la población y el marco."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          13,
+          50
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L05-04": {
+      "hints": [
+        "El estimador está definido por una operación; su valor no trae intervalo incorporado.",
+        "Para p̂ utiliza éxitos/n y comunica la población y el marco."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L05-05": {
+      "hints": [
+        "El estimador está definido por una operación; su valor no trae intervalo incorporado.",
+        "Para p̂ utiliza éxitos/n y comunica la población y el marco."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L06-01": {
+      "hints": [
+        "Separa porcentaje de respuesta y porcentaje de opinión entre respondentes.",
+        "Indica explícitamente el denominador y evita inferencias causales sin diseño."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          120,
+          200
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L06-02": {
+      "hints": [
+        "Separa porcentaje de respuesta y porcentaje de opinión entre respondentes.",
+        "Indica explícitamente el denominador y evita inferencias causales sin diseño."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          84,
+          120
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L06-03": {
+      "hints": [
+        "Separa porcentaje de respuesta y porcentaje de opinión entre respondentes.",
+        "Indica explícitamente el denominador y evita inferencias causales sin diseño."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          84,
+          200
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L06-04": {
+      "hints": [
+        "Separa porcentaje de respuesta y porcentaje de opinión entre respondentes.",
+        "Indica explícitamente el denominador y evita inferencias causales sin diseño."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B1S-D02-L06-05": {
+      "hints": [
+        "Separa porcentaje de respuesta y porcentaje de opinión entre respondentes.",
+        "Indica explícitamente el denominador y evita inferencias causales sin diseño."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    }
+  }
+}

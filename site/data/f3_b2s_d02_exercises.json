@@ -1,0 +1,992 @@
+{
+  "unit_id": "B2S-D02",
+  "version": "0.26.0",
+  "status": "revision",
+  "notice": "30 ejercicios sintéticos por unidad; revisión matemática y pedagógica humana F4 pendiente.",
+  "activities": [
+    {
+      "exercise_id": "F3-B2S-D02-L01-01",
+      "lesson_id": "B2S-D02-L01",
+      "type": "numeric",
+      "prompt": "Con σ=10 conocida, n=25 iid normales y x̄=50, ¿error estándar de x̄?",
+      "answer": 2,
+      "explanation": "SE=10/√25=2, bajo normal iid y σ conocida.",
+      "hint": "Define población, muestreo y modelo antes de insertar cifras.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L01-02",
+      "lesson_id": "B2S-D02-L01",
+      "type": "numeric",
+      "prompt": "Con SE=2 y z=1,96, calcula el margen bilateral del intervalo.",
+      "answer": 3.92,
+      "explanation": "Margen≈1,96×2=3,92. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Define población, muestreo y modelo antes de insertar cifras.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L01-03",
+      "lesson_id": "B2S-D02-L01",
+      "type": "numeric",
+      "prompt": "Para x̄=50 y margen=3,92, ¿extremo inferior del intervalo?",
+      "answer": 46.08,
+      "explanation": "50−3,92=46,08. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Define población, muestreo y modelo antes de insertar cifras.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L01-04",
+      "lesson_id": "B2S-D02-L01",
+      "type": "choice",
+      "prompt": "¿Qué es una estimación puntual?",
+      "answer": "Un valor calculado de la muestra para aproximar un parámetro.",
+      "explanation": "p̂ y x̄ son estimaciones puntuales; no incluyen una cobertura por sí mismas.",
+      "hint": "Define población, muestreo y modelo antes de insertar cifras.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Un intervalo que garantiza incluir siempre el parámetro.",
+        "Un valor calculado de la muestra para aproximar un parámetro.",
+        "Una decisión que suprime la variabilidad muestral.",
+        "Una explicación causal de las diferencias observadas."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L01-05",
+      "lesson_id": "B2S-D02-L01",
+      "type": "choice",
+      "prompt": "¿Qué condición hace apropiado el intervalo z exacto para la media planteado aquí?",
+      "answer": "Datos normales iid y σ poblacional conocida.",
+      "explanation": "Sin hipótesis sobre distribución, diseño y σ, no se garantiza el modelo.",
+      "hint": "Define población, muestreo y modelo antes de insertar cifras.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "σ desconocida sustituida por un dato arbitrario.",
+        "Cualquier muestra de voluntarios.",
+        "Ausencia de observaciones individuales.",
+        "Datos normales iid y σ poblacional conocida."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L02-01",
+      "lesson_id": "B2S-D02-L02",
+      "type": "numeric",
+      "prompt": "Bajo normal estándar, si z≈1,96 delimita cobertura central 95 %, ¿qué porcentaje queda en cada cola?",
+      "answer": 2.5,
+      "explanation": "Fuera queda 5 %, mitad en cada cola: 2,5 %.",
+      "hint": "La aleatoriedad en inferencia frecuentista reside en la muestra y el intervalo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L02-02",
+      "lesson_id": "B2S-D02-L02",
+      "type": "numeric",
+      "prompt": "SE=2 y cuantil z=1,645 para intervalo nominal 90 %. Calcula margen.",
+      "answer": 3.29,
+      "explanation": "1,645×2=3,29; aproximadamente. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "La aleatoriedad en inferencia frecuentista reside en la muestra y el intervalo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L02-03",
+      "lesson_id": "B2S-D02-L02",
+      "type": "numeric",
+      "prompt": "De 100 intervalos nominales 95 % construidos con el método correcto, ¿cuántos cubren μ en promedio?",
+      "answer": 95,
+      "explanation": "Esperanza 100×0,95=95; no asegura exactamente 95 en cada experimento.",
+      "hint": "La aleatoriedad en inferencia frecuentista reside en la muestra y el intervalo.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L02-04",
+      "lesson_id": "B2S-D02-L02",
+      "type": "choice",
+      "prompt": "¿Cómo se interpreta un nivel frecuentista del 95 %?",
+      "answer": "Como cobertura del procedimiento al repetir el muestreo bajo el modelo.",
+      "explanation": "El intervalo es aleatorio antes de observar la muestra; μ es fijo.",
+      "hint": "La aleatoriedad en inferencia frecuentista reside en la muestra y el intervalo.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Como garantía de que todo intervalo particular cubra μ.",
+        "Como probabilidad posterior del 95 % de un μ fijo tras calcular un intervalo.",
+        "Como cobertura del procedimiento al repetir el muestreo bajo el modelo.",
+        "Como porcentaje de datos individuales dentro de un intervalo de media."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L02-05",
+      "lesson_id": "B2S-D02-L02",
+      "type": "choice",
+      "prompt": "Al subir el nivel nominal de 90 % a 95 %, con mismos datos y SE, el intervalo:",
+      "answer": "Suele ensancharse por usar un cuantil mayor.",
+      "explanation": "Con z de 1,645 a 1,96 el margen aumenta.",
+      "hint": "La aleatoriedad en inferencia frecuentista reside en la muestra y el intervalo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Cambia la media poblacional real.",
+        "Suele ensancharse por usar un cuantil mayor.",
+        "Deja de depender del error estándar.",
+        "Se hace necesariamente más estrecho."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L03-01",
+      "lesson_id": "B2S-D02-L03",
+      "type": "numeric",
+      "prompt": "Para n=400 Bernoulli iid y 200 éxitos, ¿cuánto es p̂?",
+      "answer": 0.5,
+      "explanation": "p̂=200/400=0,5. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Comprueba independencia, marco y si ambos recuentos de éxito y fracaso son suficientes.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L03-02",
+      "lesson_id": "B2S-D02-L03",
+      "type": "numeric",
+      "prompt": "Con n=400 y p̂=0,5, estima SE de proporción.",
+      "answer": 0.025,
+      "explanation": "SE≈√(0,5×0,5/400)=0,025. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Comprueba independencia, marco y si ambos recuentos de éxito y fracaso son suficientes.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L03-03",
+      "lesson_id": "B2S-D02-L03",
+      "type": "numeric",
+      "prompt": "Con p̂=0,5, n=400 y z≈1,96, calcula límite inferior Wald 95 %.",
+      "answer": 0.451,
+      "explanation": "0,5−1,96×0,025=0,451. Aproximado. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Comprueba independencia, marco y si ambos recuentos de éxito y fracaso son suficientes.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L03-04",
+      "lesson_id": "B2S-D02-L03",
+      "type": "choice",
+      "prompt": "¿Qué limitación tiene el intervalo de Wald para p?",
+      "answer": "Puede cubrir mal con n pequeño o p̂ cerca de 0 o 1.",
+      "explanation": "La aproximación normal de proporciones puede fallar en casos extremos.",
+      "hint": "Comprueba independencia, marco y si ambos recuentos de éxito y fracaso son suficientes.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Es exacto para toda población y todo tamaño.",
+        "No depende del número de observaciones.",
+        "Garantiza ausencia de sesgo por no respuesta.",
+        "Puede cubrir mal con n pequeño o p̂ cerca de 0 o 1."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L03-05",
+      "lesson_id": "B2S-D02-L03",
+      "type": "choice",
+      "prompt": "Si en n=10 hay 1 éxito, ¿qué enfoque es más riguroso?",
+      "answer": "Advertir limitaciones de Wald y considerar Wilson o un método exacto.",
+      "explanation": "La muestra pequeña y el resultado extremo requieren métodos adecuados.",
+      "hint": "Comprueba independencia, marco y si ambos recuentos de éxito y fracaso son suficientes.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Advertir limitaciones de Wald y considerar Wilson o un método exacto.",
+        "Cambiar p̂ artificialmente hasta obtener un intervalo corto.",
+        "Interpretar el resultado como una probabilidad posterior de p.",
+        "Declarar cobertura exacta del 95 % sin revisar supuestos."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L04-01",
+      "lesson_id": "B2S-D02-L04",
+      "type": "numeric",
+      "prompt": "Media x̄=80, σ poblacional=12 conocida y n=36 iid normales. ¿SE?",
+      "answer": 2,
+      "explanation": "SE=12/√36=2. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Declara σ conocida y muestreo iid normal o aproximación justificada.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L04-02",
+      "lesson_id": "B2S-D02-L04",
+      "type": "numeric",
+      "prompt": "Para x̄=80, SE=2 y z≈1,96, calcula límite superior bilateral.",
+      "answer": 83.92,
+      "explanation": "80+1,96×2=83,92. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Declara σ conocida y muestreo iid normal o aproximación justificada.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L04-03",
+      "lesson_id": "B2S-D02-L04",
+      "type": "numeric",
+      "prompt": "Con x̄=20, σ conocida=6 y n=9 iid normales, ¿extremo inferior 95 % z?",
+      "answer": 16.08,
+      "explanation": "20−1,96×6/3=16,08, bajo hipótesis normales iid.",
+      "hint": "Declara σ conocida y muestreo iid normal o aproximación justificada.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L04-04",
+      "lesson_id": "B2S-D02-L04",
+      "type": "choice",
+      "prompt": "Si σ poblacional es desconocida y n es pequeña, ¿qué advertencia corresponde?",
+      "answer": "La fórmula z no es automáticamente exacta; puede corresponder t de Student.",
+      "explanation": "Con normalidad y σ estimada, normalmente se usa t con n−1 grados de libertad.",
+      "hint": "Declara σ conocida y muestreo iid normal o aproximación justificada.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "No hace falta comprobar independencia.",
+        "Cualquier distribución de los datos es normal por definición.",
+        "El intervalo se obtiene siempre ignorando σ.",
+        "La fórmula z no es automáticamente exacta; puede corresponder t de Student."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L04-05",
+      "lesson_id": "B2S-D02-L04",
+      "type": "choice",
+      "prompt": "¿Qué puede cambiar el SE clásico además de σ y n?",
+      "answer": "Dependencia entre observaciones y un diseño por conglomerados.",
+      "explanation": "El diseño determina estructura de correlaciones y varianzas.",
+      "hint": "Declara σ conocida y muestreo iid normal o aproximación justificada.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "El número de decimales del informe.",
+        "El nombre del archivo JSON del ejercicio.",
+        "El orden alfabético de las unidades.",
+        "Dependencia entre observaciones y un diseño por conglomerados."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L05-01",
+      "lesson_id": "B2S-D02-L05",
+      "type": "numeric",
+      "prompt": "Para σ conocida=20, n=100 iid normales y z=1,96, ¿margen bilateral?",
+      "answer": 3.92,
+      "explanation": "Margen=1,96×20/√100=3,92. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Diferencia la dispersión estadística de los posibles sesgos.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L05-02",
+      "lesson_id": "B2S-D02-L05",
+      "type": "numeric",
+      "prompt": "Con σ conocida=20 y n=400 iid normales, ¿margen bilateral z=1,96?",
+      "answer": 1.96,
+      "explanation": "Margen=1,96×20/20=1,96. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Diferencia la dispersión estadística de los posibles sesgos.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L05-03",
+      "lesson_id": "B2S-D02-L05",
+      "type": "numeric",
+      "prompt": "Para p̂=0,5, n=400 y z=1,96, calcula margen de Wald.",
+      "answer": 0.049,
+      "explanation": "Margen≈1,96√(0,25/400)=0,049. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Diferencia la dispersión estadística de los posibles sesgos.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L05-04",
+      "lesson_id": "B2S-D02-L05",
+      "type": "choice",
+      "prompt": "Si se cuadruplica n bajo el mismo diseño iid, con σ constante, el margen z:",
+      "answer": "Se reduce aproximadamente a la mitad.",
+      "explanation": "La dependencia es 1/√n; otros sesgos no están cubiertos.",
+      "hint": "Diferencia la dispersión estadística de los posibles sesgos.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Se reduce aproximadamente a la mitad.",
+        "Se duplica necesariamente.",
+        "Se reduce automáticamente a cero.",
+        "Se divide siempre entre cuatro."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L05-05",
+      "lesson_id": "B2S-D02-L05",
+      "type": "choice",
+      "prompt": "¿Un margen numérico pequeño garantiza inexistencia de sesgo de cobertura?",
+      "answer": "No, el margen modela variabilidad bajo supuestos.",
+      "explanation": "Un sesgo sistemático no está necesariamente contenido en un SE convencional.",
+      "hint": "Diferencia la dispersión estadística de los posibles sesgos.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Sí, cuanto menor más representativa es cualquier muestra.",
+        "Sí, el error sistemático se elimina automáticamente.",
+        "No, el margen modela variabilidad bajo supuestos.",
+        "Sí, porque los cuestionarios de voluntarios son iid de toda población."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L06-01",
+      "lesson_id": "B2S-D02-L06",
+      "type": "numeric",
+      "prompt": "De 300 respuestas sintéticas hay 180 afirmativas. Calcula p̂.",
+      "answer": 0.6,
+      "explanation": "p̂=180/300=0,60; comunicar el denominador.",
+      "hint": "Separar lo observado, lo estimado y lo no verificado.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L06-02",
+      "lesson_id": "B2S-D02-L06",
+      "type": "numeric",
+      "prompt": "De 300 respuestas, 120 son negativas. ¿Qué proporción de respuestas negativas hay?",
+      "answer": 0.4,
+      "explanation": "120/300=0,4 de respondentes, no de todos los invitados.",
+      "hint": "Separar lo observado, lo estimado y lo no verificado.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L06-03",
+      "lesson_id": "B2S-D02-L06",
+      "type": "numeric",
+      "prompt": "Un informe tiene una estimación puntual 0,60 y un margen aproximado 0,05. ¿Límite inferior?",
+      "answer": 0.55,
+      "explanation": "0,60−0,05=0,55 bajo un intervalo simétrico; su validez depende del método.",
+      "hint": "Separar lo observado, lo estimado y lo no verificado.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L06-04",
+      "lesson_id": "B2S-D02-L06",
+      "type": "choice",
+      "prompt": "¿Qué afirma correctamente un intervalo de confianza frecuente?",
+      "answer": "Que un procedimiento válido tiene cobertura nominal en repeticiones.",
+      "explanation": "Cobertura y causalidad son conceptos diferentes; el modelo y el diseño importan.",
+      "hint": "Separar lo observado, lo estimado y lo no verificado.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Que el parámetro fijo tiene una probabilidad posterior sin modelo bayesiano.",
+        "Que la variable estudiada es causada por la selección.",
+        "Que un procedimiento válido tiene cobertura nominal en repeticiones.",
+        "Que cualquier marco garantiza muestras representativas."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-D02-L06-05",
+      "lesson_id": "B2S-D02-L06",
+      "type": "choice",
+      "prompt": "¿Qué debe incluir un informe responsable de inferencia?",
+      "answer": "Población, marco, selección, n, respuesta, supuestos e incertidumbre.",
+      "explanation": "Los límites y el origen de los datos son parte del resultado.",
+      "hint": "Separar lo observado, lo estimado y lo no verificado.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_d02_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Población, marco, selección, n, respuesta, supuestos e incertidumbre.",
+        "El número de decimales como certificación de validez.",
+        "Solo el extremo inferior, sin contexto.",
+        "Una afirmación de causalidad sin aleatorización ni control."
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B2S-D02-L01-01": {
+      "hints": [
+        "Define población, muestreo y modelo antes de insertar cifras.",
+        "Bajo normal iid y σ conocida: x̄ ± z·σ/√n."
+      ],
+      "math_check": {
+        "kind": "se_mean",
+        "params": [
+          10,
+          25
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L01-02": {
+      "hints": [
+        "Define población, muestreo y modelo antes de insertar cifras.",
+        "Bajo normal iid y σ conocida: x̄ ± z·σ/√n."
+      ],
+      "math_check": {
+        "kind": "margin_from_se",
+        "params": [
+          1.96,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L01-03": {
+      "hints": [
+        "Define población, muestreo y modelo antes de insertar cifras.",
+        "Bajo normal iid y σ conocida: x̄ ± z·σ/√n."
+      ],
+      "math_check": {
+        "kind": "ci_endpoint",
+        "params": [
+          50,
+          3.92,
+          -1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L01-04": {
+      "hints": [
+        "Define población, muestreo y modelo antes de insertar cifras.",
+        "Bajo normal iid y σ conocida: x̄ ± z·σ/√n."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L01-05": {
+      "hints": [
+        "Define población, muestreo y modelo antes de insertar cifras.",
+        "Bajo normal iid y σ conocida: x̄ ± z·σ/√n."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L02-01": {
+      "hints": [
+        "La aleatoriedad en inferencia frecuentista reside en la muestra y el intervalo.",
+        "Para z=1,96, la región central normal es aproximadamente 95 %; el margen es z×SE."
+      ],
+      "math_check": {
+        "kind": "tail_percent",
+        "params": [
+          95
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L02-02": {
+      "hints": [
+        "La aleatoriedad en inferencia frecuentista reside en la muestra y el intervalo.",
+        "Para z=1,96, la región central normal es aproximadamente 95 %; el margen es z×SE."
+      ],
+      "math_check": {
+        "kind": "margin_from_se",
+        "params": [
+          1.645,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L02-03": {
+      "hints": [
+        "La aleatoriedad en inferencia frecuentista reside en la muestra y el intervalo.",
+        "Para z=1,96, la región central normal es aproximadamente 95 %; el margen es z×SE."
+      ],
+      "math_check": {
+        "kind": "expected_coverage",
+        "params": [
+          100,
+          0.95
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L02-04": {
+      "hints": [
+        "La aleatoriedad en inferencia frecuentista reside en la muestra y el intervalo.",
+        "Para z=1,96, la región central normal es aproximadamente 95 %; el margen es z×SE."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L02-05": {
+      "hints": [
+        "La aleatoriedad en inferencia frecuentista reside en la muestra y el intervalo.",
+        "Para z=1,96, la región central normal es aproximadamente 95 %; el margen es z×SE."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L03-01": {
+      "hints": [
+        "Comprueba independencia, marco y si ambos recuentos de éxito y fracaso son suficientes.",
+        "Calcula p̂=k/n, SE≈√(p̂(1−p̂)/n), margen≈1,96×SE."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          200,
+          400
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L03-02": {
+      "hints": [
+        "Comprueba independencia, marco y si ambos recuentos de éxito y fracaso son suficientes.",
+        "Calcula p̂=k/n, SE≈√(p̂(1−p̂)/n), margen≈1,96×SE."
+      ],
+      "math_check": {
+        "kind": "se_prop",
+        "params": [
+          0.5,
+          400
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L03-03": {
+      "hints": [
+        "Comprueba independencia, marco y si ambos recuentos de éxito y fracaso son suficientes.",
+        "Calcula p̂=k/n, SE≈√(p̂(1−p̂)/n), margen≈1,96×SE."
+      ],
+      "math_check": {
+        "kind": "wald_endpoint",
+        "params": [
+          0.5,
+          400,
+          1.96,
+          -1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L03-04": {
+      "hints": [
+        "Comprueba independencia, marco y si ambos recuentos de éxito y fracaso son suficientes.",
+        "Calcula p̂=k/n, SE≈√(p̂(1−p̂)/n), margen≈1,96×SE."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L03-05": {
+      "hints": [
+        "Comprueba independencia, marco y si ambos recuentos de éxito y fracaso son suficientes.",
+        "Calcula p̂=k/n, SE≈√(p̂(1−p̂)/n), margen≈1,96×SE."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L04-01": {
+      "hints": [
+        "Declara σ conocida y muestreo iid normal o aproximación justificada.",
+        "SE=σ/√n; margen≈1,96×SE para 95 %."
+      ],
+      "math_check": {
+        "kind": "se_mean",
+        "params": [
+          12,
+          36
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L04-02": {
+      "hints": [
+        "Declara σ conocida y muestreo iid normal o aproximación justificada.",
+        "SE=σ/√n; margen≈1,96×SE para 95 %."
+      ],
+      "math_check": {
+        "kind": "ci_endpoint",
+        "params": [
+          80,
+          3.92,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L04-03": {
+      "hints": [
+        "Declara σ conocida y muestreo iid normal o aproximación justificada.",
+        "SE=σ/√n; margen≈1,96×SE para 95 %."
+      ],
+      "math_check": {
+        "kind": "normal_mean_ci",
+        "params": [
+          20,
+          6,
+          9,
+          1.96,
+          -1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L04-04": {
+      "hints": [
+        "Declara σ conocida y muestreo iid normal o aproximación justificada.",
+        "SE=σ/√n; margen≈1,96×SE para 95 %."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L04-05": {
+      "hints": [
+        "Declara σ conocida y muestreo iid normal o aproximación justificada.",
+        "SE=σ/√n; margen≈1,96×SE para 95 %."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L05-01": {
+      "hints": [
+        "Diferencia la dispersión estadística de los posibles sesgos.",
+        "Margen=z×SE; cuadruplicar n reduce SE a la mitad manteniendo hipótesis."
+      ],
+      "math_check": {
+        "kind": "normal_margin",
+        "params": [
+          20,
+          100,
+          1.96
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L05-02": {
+      "hints": [
+        "Diferencia la dispersión estadística de los posibles sesgos.",
+        "Margen=z×SE; cuadruplicar n reduce SE a la mitad manteniendo hipótesis."
+      ],
+      "math_check": {
+        "kind": "normal_margin",
+        "params": [
+          20,
+          400,
+          1.96
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L05-03": {
+      "hints": [
+        "Diferencia la dispersión estadística de los posibles sesgos.",
+        "Margen=z×SE; cuadruplicar n reduce SE a la mitad manteniendo hipótesis."
+      ],
+      "math_check": {
+        "kind": "wald_margin",
+        "params": [
+          0.5,
+          400,
+          1.96
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L05-04": {
+      "hints": [
+        "Diferencia la dispersión estadística de los posibles sesgos.",
+        "Margen=z×SE; cuadruplicar n reduce SE a la mitad manteniendo hipótesis."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L05-05": {
+      "hints": [
+        "Diferencia la dispersión estadística de los posibles sesgos.",
+        "Margen=z×SE; cuadruplicar n reduce SE a la mitad manteniendo hipótesis."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L06-01": {
+      "hints": [
+        "Separar lo observado, lo estimado y lo no verificado.",
+        "Anota n, marco, selección, intervalos y límites; no atribuyas probabilidad posterior a μ fija."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          180,
+          300
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L06-02": {
+      "hints": [
+        "Separar lo observado, lo estimado y lo no verificado.",
+        "Anota n, marco, selección, intervalos y límites; no atribuyas probabilidad posterior a μ fija."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          120,
+          300
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L06-03": {
+      "hints": [
+        "Separar lo observado, lo estimado y lo no verificado.",
+        "Anota n, marco, selección, intervalos y límites; no atribuyas probabilidad posterior a μ fija."
+      ],
+      "math_check": {
+        "kind": "ci_endpoint",
+        "params": [
+          0.6,
+          0.05,
+          -1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L06-04": {
+      "hints": [
+        "Separar lo observado, lo estimado y lo no verificado.",
+        "Anota n, marco, selección, intervalos y límites; no atribuyas probabilidad posterior a μ fija."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    },
+    "F3-B2S-D02-L06-05": {
+      "hints": [
+        "Separar lo observado, lo estimado y lo no verificado.",
+        "Anota n, marco, selección, intervalos y límites; no atribuyas probabilidad posterior a μ fija."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre observación, modelo, condicional, precisión y sesgo: revisión humana F4 pendiente."
+    }
+  }
+}

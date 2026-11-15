@@ -1,0 +1,793 @@
+{
+  "unit_id": "E4A-P01",
+  "unit_title": "Porcentajes y matemática financiera",
+  "product_phase": "F3_OLA16",
+  "version": "0.16.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Calcular variaciones porcentuales encadenadas mediante factores multiplicativos.",
+    "Calcular tasas relativas y distinguir puntos porcentuales.",
+    "Distinguir interés simple y compuesto con períodos coherentes."
+  ],
+  "warnings": [
+    "Ejercicios y lecciones sintéticos EN REVISIÓN. No homologados ni publicables.",
+    "Porcentajes dependen de la base; los ejemplos financieros son escolares y omiten condiciones contractuales reales.",
+    "B1S-N01 no desarrollada: los logaritmos imprescindibles se definen en B1S-A01-L03; revisión curricular pendiente.",
+    "Mapeo autonómico, accesibilidad integral y móviles físicos NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Proporcionalidad de ESO",
+      "lesson_id": "E2-P01-L01",
+      "href": "#/curso/E2/unidad/E2-P01/leccion/E2-P01-L01"
+    },
+    {
+      "label": "Potencias de tercero",
+      "lesson_id": "E3-N01-L05",
+      "href": "#/curso/E3/unidad/E3-N01/leccion/E3-N01-L05"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Comprensión guiada, recuperación sin pistas, feedback y repaso voluntario, nunca datos identificativos de menores."
+  },
+  "source_note": "RD 217/2022 ESO 4A y RD 243/2022 MACS I; relación curricular autonómica por revisar.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E4A-P01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-P01:C01"
+      ],
+      "objectives": [
+        "Calcular variaciones porcentuales encadenadas mediante factores multiplicativos.",
+        "Demostrar que aumentos y descuentos iguales no se cancelan en general."
+      ],
+      "prerequisites": [
+        "E2-P01-L01",
+        "E3-N01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un porcentaje representa una proporción respecto a una base indicada. Un aumento del p % multiplica por 1+p/100 y una disminución del q % por 1−q/100. Si se aplican sucesivamente dos cambios, los factores se multiplican: para subir 20 % y bajar 20 % se obtiene 1,2·0,8=0,96, por lo que el resultado final es 4 % menor que el inicial, no igual. Los porcentajes encadenados no deben sumarse salvo como aproximación cuando expresamente se permita y su error se controle. El orden de dos factores escalares no altera el resultado final, pero sí la magnitud intermedia sobre la que se calcula cada cambio. Hay que diferenciar puntos porcentuales de variación relativa respecto a la nueva base."
+        },
+        {
+          "type": "example",
+          "body": "Un precio de 100 € sube 20 % hasta 120 €. Luego baja el 20 % de 120 €, es decir 24 €, y queda en 96 €. El cambio neto es −4 %."
+        },
+        {
+          "type": "example",
+          "body": "Un presupuesto de 200 € baja 10 % y luego sube 10 %: 200·0,90·1,10=198 €. No se recupera el importe inicial."
+        },
+        {
+          "type": "figure",
+          "body": "Variación de precio por factores compuestos. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Variación de precio por factores compuestos. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "percent",
+            "title": "Variación de precio por factores compuestos",
+            "rows": [
+              [
+                "Precio inicial",
+                "100 €"
+              ],
+              [
+                "Primera operación",
+                "+20 % → factor 1,20"
+              ],
+              [
+                "Segunda operación",
+                "−20 % → factor 0,80"
+              ],
+              [
+                "Factor conjunto",
+                "0,96"
+              ],
+              [
+                "Precio final",
+                "96 €"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": -4,
+              "b": 100
+            },
+            "domain": [
+              0,
+              1
+            ],
+            "marks": [
+              [
+                "Inicio",
+                0,
+                100
+              ],
+              [
+                "Final",
+                1,
+                96
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una subida del 20 % seguida de una bajada del 20 % devuelve siempre el precio original?||No; los cambios utilizan bases distintas y su factor conjunto es 0,96."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un porcentaje representa una proporción respecto a una base indicada. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-P01-L01-01",
+        "F3-E4A-P01-L01-02",
+        "F3-E4A-P01-L01-03",
+        "F3-E4A-P01-L01-04",
+        "F3-E4A-P01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-P01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-P01:C02"
+      ],
+      "objectives": [
+        "Calcular tasas relativas y distinguir puntos porcentuales.",
+        "Reconstruir bases y explicar porcentajes según el denominador correcto."
+      ],
+      "prerequisites": [
+        "E4A-P01-L01",
+        "E2-P01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La variación porcentual entre un valor inicial a≠0 y uno final b se calcula como 100(b−a)/a. La base es siempre el valor inicial especificado: pasar de 80 a 100 implica subida 25 %, mientras que volver de 100 a 80 supone bajada 20 %. Si una proporción sube del 30 % al 35 %, cambia cinco puntos porcentuales; la variación relativa es 5/30≈16,67 %, que no debe confundirse con cinco por ciento. Una tasa puede expresarse por período o unidad temporal, y no es correcto compararlas sin normalizar el tiempo. En problemas económicos se anotan magnitud, periodo, base y unidad, y se verifica si el cálculo puede realizarse cuando la base es cero."
+        },
+        {
+          "type": "example",
+          "body": "El número de usuarios pasa de 80 a 100: (100−80)/80·100=25 %. Regresar a 80 desde 100 representa (80−100)/100·100=−20 %."
+        },
+        {
+          "type": "example",
+          "body": "La tasa de participación pasa del 30 % al 35 %: subida de 5 puntos porcentuales y aumento relativo de 5/30≈16,67 %."
+        },
+        {
+          "type": "figure",
+          "body": "Tasa relativa frente a puntos porcentuales. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Tasa relativa frente a puntos porcentuales. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "percent",
+            "title": "Tasa relativa frente a puntos porcentuales",
+            "rows": [
+              [
+                "Proporción inicial",
+                "30 %"
+              ],
+              [
+                "Proporción final",
+                "35 %"
+              ],
+              [
+                "Puntos porcentuales",
+                "+5 p. p."
+              ],
+              [
+                "Variación relativa",
+                "5/30 = 16⅔ %"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 5,
+              "b": 30
+            },
+            "domain": [
+              0,
+              1
+            ],
+            "marks": [
+              [
+                "A",
+                0,
+                30
+              ],
+              [
+                "B",
+                1,
+                35
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿De 30 % a 35 % hay un crecimiento relativo del 5 %?||No; hay cinco puntos porcentuales, pero el crecimiento relativo es aproximadamente 16,67 %."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La variación porcentual entre un valor inicial a≠0 y uno final b se calcula como 100(b−a)/a. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-P01-L02-01",
+        "F3-E4A-P01-L02-02",
+        "F3-E4A-P01-L02-03",
+        "F3-E4A-P01-L02-04",
+        "F3-E4A-P01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-P01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-P01:C03"
+      ],
+      "objectives": [
+        "Distinguir interés simple y compuesto con períodos coherentes.",
+        "Calcular capital final y reconocer la tasa efectiva del intervalo."
+      ],
+      "prerequisites": [
+        "E4A-P01-L01",
+        "E3-N01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El interés simple sobre capital inicial C a tipo periódico i durante n períodos es C(1+ni), mientras que el interés compuesto con reinversión periódica es C(1+i)^n. Las dos expresiones requieren que i y n se refieran al mismo período; no se convierte una tasa anual a mensual dividiéndola entre 12 sin especificar si es nominal o efectiva. Para C=1000 € al 10 % anual durante dos años, el simple da 1200 € y el compuesto 1210 €. Estos modelos didácticos no incluyen impuestos, gastos, impagos ni inflación. Para comparar productos reales hacen falta condiciones contractuales y coste efectivo total, no únicamente el tipo anunciado. Si no existe reinversión, no procede usar potencia n."
+        },
+        {
+          "type": "example",
+          "body": "Con C=1000 €, i=0,10 anual y n=2 años, el interés simple genera 1000(1+0,10·2)=1200 €."
+        },
+        {
+          "type": "example",
+          "body": "Con el mismo capital y reinversión, el interés compuesto produce 1000·1,1²=1210 €; el segundo año se calcula también sobre intereses previos."
+        },
+        {
+          "type": "figure",
+          "body": "Interés simple y compuesto en dos períodos. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Interés simple y compuesto en dos períodos. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "compound",
+            "title": "Interés simple y compuesto en dos períodos",
+            "rows": [
+              [
+                "Capital inicial",
+                "1000 €"
+              ],
+              [
+                "Tipo anual",
+                "10 %"
+              ],
+              [
+                "Duración",
+                "2 años"
+              ],
+              [
+                "Interés simple final",
+                "1200 €"
+              ],
+              [
+                "Interés compuesto final",
+                "1210 €"
+              ]
+            ],
+            "model": {
+              "kind": "exponential",
+              "a": 1000,
+              "factor": 1.1
+            },
+            "domain": [
+              0,
+              2
+            ],
+            "marks": [
+              [
+                "Inicio",
+                0,
+                1000
+              ],
+              [
+                "Compuesto",
+                2,
+                1210
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué el segundo año compuesto puede generar más interés que el simple?||Porque el capital base incluye los intereses previamente acumulados."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El interés simple sobre capital inicial C a tipo periódico i durante n períodos es C(1+ni), mientras que el interés compuesto con reinversión periódica es C(1+i)^n. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-P01-L03-01",
+        "F3-E4A-P01-L03-02",
+        "F3-E4A-P01-L03-03",
+        "F3-E4A-P01-L03-04",
+        "F3-E4A-P01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-P01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-P01:C04"
+      ],
+      "objectives": [
+        "Modelizar ahorro regular con capitalización y plazos declarados.",
+        "Explicar la diferencia entre saldo, cuotas y coste de financiación sin asesorar sobre préstamos reales."
+      ],
+      "prerequisites": [
+        "E4A-P01-L03",
+        "E4A-A01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En un ahorro sin depósitos adicionales, con capital inicial C y una tasa efectiva periódica i durante n períodos, el saldo compuesto es C(1+i)^n. Si hay aportaciones periódicas, el momento de cada depósito importa y hay que modelizarlo por separado; no se puede usar la misma fórmula de un único capital. Un préstamo no es ingreso gratuito: al comparar devolución y capital prestado se distinguen intereses, gastos y calendario de amortización. En un ejemplo muy simplificado, pedir 500 € y devolver 550 € un año después implica 50 € de coste adicional, equivalente al 10 % del principal antes de gastos. No se extrapolan estas fórmulas a ofertas reales sin conocer TAE, comisiones y condiciones. Los cálculos educativos usan importes y períodos declarados, sin decisiones financieras personales."
+        },
+        {
+          "type": "example",
+          "body": "Un ahorro de 200 € al 5 % anual durante dos años, sin aportaciones, resulta 200·1,05²=220,50 €."
+        },
+        {
+          "type": "example",
+          "body": "Un préstamo hipotético de 500 € que se devuelve con pago único de 550 € exige 50 € adicionales; 50/500=10 % del principal, sin incluir otros gastos."
+        },
+        {
+          "type": "figure",
+          "body": "Saldo sin depósitos adicionales. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Saldo sin depósitos adicionales. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "compound",
+            "title": "Saldo sin depósitos adicionales",
+            "rows": [
+              [
+                "Ahorro inicial",
+                "200 €"
+              ],
+              [
+                "Interés anual",
+                "5 % efectivo"
+              ],
+              [
+                "Años",
+                "2"
+              ],
+              [
+                "Saldo compuesto",
+                "220,50 €"
+              ],
+              [
+                "Depósitos extra",
+                "Ninguno"
+              ]
+            ],
+            "model": {
+              "kind": "exponential",
+              "a": 200,
+              "factor": 1.05
+            },
+            "domain": [
+              0,
+              2
+            ],
+            "marks": [
+              [
+                "Inicio",
+                0,
+                200
+              ],
+              [
+                "Final",
+                2,
+                220.5
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La fórmula C(1+i)^n contempla automáticamente depósitos mensuales adicionales?||No; cada aportación tiene distinto tiempo de capitalización y debe modelizarse explícitamente."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: En un ahorro sin depósitos adicionales, con capital inicial C y una tasa efectiva periódica i durante n períodos, el saldo compuesto es C(1+i)^n. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-P01-L04-01",
+        "F3-E4A-P01-L04-02",
+        "F3-E4A-P01-L04-03",
+        "F3-E4A-P01-L04-04",
+        "F3-E4A-P01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-P01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-P01:C05"
+      ],
+      "objectives": [
+        "Interpretar líneas de recibos, impuestos y descuentos por bases correctas.",
+        "Comparar ofertas verificando precio final, unidades y condiciones."
+      ],
+      "prerequisites": [
+        "E4A-P01-L01",
+        "E4A-P01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un recibo puede incluir precio base, descuento, impuestos y gastos. Para reconstruirlo se identifica exactamente sobre qué magnitud se aplica cada porcentaje y en qué orden. Si un artículo cuesta 100 € antes de impuesto, recibe un descuento del 10 % y luego un impuesto del 21 % sobre los 90 € descontados, el total es 100·0,90·1,21=108,90 €. Aplicar porcentajes a bases distintas sin explicitarlo produce errores. La suma final también puede incluir gastos fijos no sujetos al mismo impuesto: entonces hay que separar conceptos conforme al enunciado, no asumir reglas fiscales universales. Las ofertas de dos artículos deben compararse por precio por unidad y cantidad efectiva, especialmente si se anuncian descuentos por lotes."
+        },
+        {
+          "type": "example",
+          "body": "Un producto de 100 € tiene descuento 10 % antes de impuesto 21 % sobre el descuento: se pagan 90·1,21=108,90 €."
+        },
+        {
+          "type": "example",
+          "body": "Un envase de 500 g cuesta 3 € y otro de 750 g cuesta 4,20 €. Precios por kg: 6 €/kg y 5,60 €/kg, respectivamente."
+        },
+        {
+          "type": "figure",
+          "body": "Descuento seguido de impuesto. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Descuento seguido de impuesto. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "percent",
+            "title": "Descuento seguido de impuesto",
+            "rows": [
+              [
+                "Precio inicial",
+                "100 €"
+              ],
+              [
+                "Descuento",
+                "−10 % → 90 €"
+              ],
+              [
+                "Impuesto",
+                "+21 % sobre 90 €"
+              ],
+              [
+                "Precio final",
+                "108,90 €"
+              ],
+              [
+                "Factor neto",
+                "0,90×1,21"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 8.9,
+              "b": 100
+            },
+            "domain": [
+              0,
+              1
+            ],
+            "marks": [
+              [
+                "A",
+                0,
+                100
+              ],
+              [
+                "B",
+                1,
+                108.9
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede aplicarse el 21 % sobre 100 € si el enunciado indica que la base imponible es 90 €?||No; la base es el importe descontado especificado."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un recibo puede incluir precio base, descuento, impuestos y gastos. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-P01-L05-01",
+        "F3-E4A-P01-L05-02",
+        "F3-E4A-P01-L05-03",
+        "F3-E4A-P01-L05-04",
+        "F3-E4A-P01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-P01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.16.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-P01:C06"
+      ],
+      "objectives": [
+        "Detectar porcentajes engañosos por cambios de base y selección de períodos.",
+        "Comunicar incertidumbre y límites de comparaciones financieras o estadísticas."
+      ],
+      "prerequisites": [
+        "E4A-P01-L01",
+        "E4A-P01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un porcentaje aislado carece de significado completo si no se especifican base, período, muestra y condiciones de cálculo. Una reducción del 50 % sobre 20 € deja 10 €, pero recuperar 20 € requiere después aumentar el 100 % sobre 10 €. Una publicidad que suma descuentos sucesivos del 20 % y del 30 % como si fuera una rebaja del 50 % omite que el factor correcto es 0,80·0,70=0,56, una reducción real del 44 %. Comparar rentabilidades de plazos distintos sin anualización justificada o mezclar tipos nominales y efectivos puede inducir a error. En gráficos con ejes recortados hay que consultar los datos originales; incluso una variación porcentual correcta puede exagerarse visualmente. Las conclusiones se limitan a los supuestos y datos disponibles."
+        },
+        {
+          "type": "example",
+          "body": "Un precio de 100 € recibe descuentos sucesivos del 20 % y 30 %: el final es 100·0,80·0,70=56 €, rebaja total 44 %, no 50 %."
+        },
+        {
+          "type": "example",
+          "body": "Tras reducir 20 € a 10 € hay una bajada del 50 %; volver a 20 € representa una subida de (20−10)/10=100 %."
+        },
+        {
+          "type": "figure",
+          "body": "Dos descuentos acumulados frente a suma equivocada. Gráfico SVG original con alternativa tabular semántica de valores exactos y condiciones, no constituye prueba matemática.",
+          "alt": "Dos descuentos acumulados frente a suma equivocada. Tabla accesible con valores exactos, dominio y consecuencias, independiente de color o interpretación visual.",
+          "visual_spec": {
+            "render_family": "wave16",
+            "kind": "percent",
+            "title": "Dos descuentos acumulados frente a suma equivocada",
+            "rows": [
+              [
+                "Precio inicial",
+                "100 €"
+              ],
+              [
+                "Descuentos",
+                "20 % y 30 %"
+              ],
+              [
+                "Factor final",
+                "0,8×0,7 = 0,56"
+              ],
+              [
+                "Precio final",
+                "56 €"
+              ],
+              [
+                "Rebaja efectiva",
+                "44 %"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": -44,
+              "b": 100
+            },
+            "domain": [
+              0,
+              1
+            ],
+            "marks": [
+              [
+                "Inicial",
+                0,
+                100
+              ],
+              [
+                "Final",
+                1,
+                56
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Dos descuentos encadenados del 20 % y del 30 % equivalen siempre a uno único del 50 %?||No; el factor conjunto 0,80×0,70 deja el 56 % del precio original."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un porcentaje aislado carece de significado completo si no se especifican base, período, muestra y condiciones de cálculo. Comprueba una solución diferente y explica un error de base, signo o restricción."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-P01-L06-01",
+        "F3-E4A-P01-L06-02",
+        "F3-E4A-P01-L06-03",
+        "F3-E4A-P01-L06-04",
+        "F3-E4A-P01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022; referencias estatales para Matemáticas ESO 4A y MACS I.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Marco normativo de referencia: secuencia editorial sin cotejo autonómico ni homologación."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

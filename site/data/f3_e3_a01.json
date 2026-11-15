@@ -1,0 +1,507 @@
+{
+  "unit_id": "E3-A01",
+  "unit_title": "Polinomios e identidades",
+  "product_phase": "F3",
+  "version": "0.1.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "warnings": [
+    "Secuencia editorial del tramo estatal 1.º–3.º ESO; mapeo autonómico fino pendiente.",
+    "Actividades y ejemplos F3 comprobables técnicamente pero pendientes de revisión humana.",
+    "Fracciones algebraicas E3-A01-L06 etiquetadas como ampliación, no obligación oficial."
+  ],
+  "unit_objectives": [
+    "Operar polinomios con corrección de signos y grados.",
+    "Reconocer productos notables, factor común e identidades.",
+    "Factorizar expresiones sencillas y respetar restricciones en fracciones algebraicas de ampliación."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Polinomios elementales de 2.º ESO",
+      "lesson_id": "E2-A01-L03",
+      "href": "#/curso/E2/unidad/E2-A01/leccion/E2-A01-L03"
+    },
+    {
+      "label": "Productos y potencias de 2.º ESO",
+      "lesson_id": "E2-A01-L02",
+      "href": "#/curso/E2/unidad/E2-A01/leccion/E2-A01-L02"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "rule": "Recuperación sin mostrar inicialmente la respuesta; práctica guiada con pistas; revisión de errores y repaso espaciado solo con consentimiento local.",
+    "cadence_proposal": "D+1, D+3, D+7, D+14, D+30 como heurística editorial, no garantía científica."
+  },
+  "source_note": "Contenido original F3, distribución editorial. Competencias y criterios autonómicos pendientes de cotejo.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E3-A01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Sumar, restar y multiplicar polinomios sencillos.",
+        "Comprobar resultados mediante sustitución numérica."
+      ],
+      "concept_ids": [
+        "E3-A01:C_01"
+      ],
+      "prerequisites": [
+        "E2-A01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para sumar o restar polinomios reúne términos de igual exponente. Para multiplicar, cada término de un factor multiplica a cada término del otro; después agrupa términos semejantes. La multiplicación es distributiva, no se multiplican solo primeros y últimos."
+        },
+        {
+          "type": "example",
+          "body": "(x+2)(x+3) = x²+3x+2x+6 = x²+5x+6."
+        },
+        {
+          "type": "example",
+          "body": "(2x²+x−1)+(3x²−4x+5)=5x²−3x+4. Comprobación opcional: en x=1 ambas expresiones valen 6."
+        },
+        {
+          "type": "figure",
+          "body": "Una cuadrícula de productos parciales: x·x=x²; x·3=3x; 2·x=2x; 2·3=6. Agrupa las cuatro casillas.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué (x+2)(x+3) no es x²+6?||Porque faltan los productos cruzados 3x y 2x, que suman 5x."
+        },
+        {
+          "type": "summary",
+          "body": "En productos: distribuye todos contra todos → suma semejantes → comprueba con un valor."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-A01-L01-01",
+        "F3-E3-A01-L01-02",
+        "F3-E3-A01-L01-03",
+        "F3-E3-A01-L01-04",
+        "F3-E3-A01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-A01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Aplicar el cuadrado de una suma, el de una diferencia y la diferencia de cuadrados.",
+        "Distinguir las condiciones de cada identidad."
+      ],
+      "concept_ids": [
+        "E3-A01:C_02"
+      ],
+      "prerequisites": [
+        "E2-A01-L05",
+        "E3-A01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Los productos notables son multiplicaciones especiales que conviene reconocer, no atajos arbitrarios. (a+b)²=a²+2ab+b², (a−b)²=a²−2ab+b² y (a+b)(a−b)=a²−b². El término central del cuadrado no desaparece salvo casos particulares."
+        },
+        {
+          "type": "example",
+          "body": "(x+4)²=x²+8x+16. El término central es 2·x·4."
+        },
+        {
+          "type": "example",
+          "body": "(2x−3)(2x+3)=(2x)²−3²=4x²−9. Son conjugados y cancelan los términos cruzados."
+        },
+        {
+          "type": "figure",
+          "body": "Área verbal de un cuadrado de lado a+b: cuatro partes, a², dos rectángulos ab y b². Esta figura explica el doble producto.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "En (x+5)², ¿por qué no basta escribir x²+25?||Porque el área de las dos regiones rectangulares suma 10x; el cuadrado completo es x²+10x+25."
+        },
+        {
+          "type": "summary",
+          "body": "Cuadrados: primero² ± doble producto + segundo². Conjugados: primero² − segundo²."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-A01-L02-01",
+        "F3-E3-A01-L02-02",
+        "F3-E3-A01-L02-03",
+        "F3-E3-A01-L02-04",
+        "F3-E3-A01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-A01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Reconocer un factor compartido por todos los términos.",
+        "Extraer el máximo factor común sencillo y comprobar multiplicando."
+      ],
+      "concept_ids": [
+        "E3-A01:C_03"
+      ],
+      "prerequisites": [
+        "E2-A01-L02",
+        "E2-A01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Factorizar por factor común es escribir una suma como un producto: invierte la propiedad distributiva. Busca coeficientes y potencias de letras presentes en todos los términos. Al extraer x, revisa si dentro del paréntesis queda 1."
+        },
+        {
+          "type": "example",
+          "body": "6x²+9x=3x(2x+3). Distribuir confirma 6x²+9x."
+        },
+        {
+          "type": "example",
+          "body": "4x³−8x²=4x²(x−2). El factor x² está en ambos términos; el signo menos permanece dentro."
+        },
+        {
+          "type": "figure",
+          "body": "En una tabla de factores, 6x² se compone de 3x·2x y 9x de 3x·3; comparten la pieza 3x.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué 5x²−5x no puede escribirse como 5x(x−x)?||Porque al dividir el primer término por 5x queda x, y el segundo por 5x queda 1: resultado 5x(x−1)."
+        },
+        {
+          "type": "summary",
+          "body": "Busca el máximo divisor de coeficientes y la menor potencia de cada letra común; divide cada término y comprueba."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-A01-L03-01",
+        "F3-E3-A01-L03-02",
+        "F3-E3-A01-L03-03",
+        "F3-E3-A01-L03-04",
+        "F3-E3-A01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-A01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Reconocer una identidad como igualdad válida para todo valor permitido.",
+        "Justificar desarrollos y decidir si una propuesta es identidad o ecuación."
+      ],
+      "concept_ids": [
+        "E3-A01:C_04"
+      ],
+      "prerequisites": [
+        "E3-A01-L01",
+        "E2-A01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una identidad conserva la igualdad para todo valor permitido: cada transformación debe ser reversible en ese dominio. La igualdad (x+3)²=x²+6x+9 es una identidad; x²=9 solo es cierta para ciertos x. Comprobar un valor sirve para refutar, pero no prueba una identidad por sí solo."
+        },
+        {
+          "type": "example",
+          "body": "(a+b)²−(a−b)² = (a²+2ab+b²)−(a²−2ab+b²) = 4ab."
+        },
+        {
+          "type": "example",
+          "body": "(x+1)(x−1)+1 = x²−1+1 = x². Las expresiones son equivalentes para todo x real."
+        },
+        {
+          "type": "figure",
+          "body": "Una identidad equivale a dos procedimientos distintos que producen siempre la misma salida. Una ecuación puede igualar salidas solo en puntos particulares.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "Si dos expresiones coinciden en x=2, ¿es suficiente para afirmar que son idénticas?||No. Hace falta justificar algebraicamente la equivalencia para todos los valores permitidos."
+        },
+        {
+          "type": "summary",
+          "body": "Desarrolla y reduce ambos lados; si el resultado coincide algebraicamente, tienes identidad. Un solo ejemplo no demuestra generalidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-A01-L04-01",
+        "F3-E3-A01-L04-02",
+        "F3-E3-A01-L04-03",
+        "F3-E3-A01-L04-04",
+        "F3-E3-A01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-A01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Elegir entre factor común y diferencia de cuadrados.",
+        "Verificar factorizaciones al desarrollar el producto."
+      ],
+      "concept_ids": [
+        "E3-A01:C_05"
+      ],
+      "prerequisites": [
+        "E3-A01-L02",
+        "E3-A01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Factorizar es transformar un polinomio en producto. Primero comprueba factor común; después reconoce patrones como a²−b²=(a−b)(a+b). No confundas diferencia de cuadrados con suma de cuadrados, que no se factoriza así sobre los reales."
+        },
+        {
+          "type": "example",
+          "body": "x²−25=(x−5)(x+5). Comprueba: x²+5x−5x−25=x²−25."
+        },
+        {
+          "type": "example",
+          "body": "2x²+6x=2x(x+3). Extraer el factor común simplifica antes de buscar otros patrones."
+        },
+        {
+          "type": "figure",
+          "body": "Dos cuadrados de áreas x² y 25: su diferencia se expresa como dos longitudes conjugadas multiplicadas, (x−5)(x+5).",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede factorizarse x²+16 como (x−4)(x+4) en números reales?||No: ese producto es x²−16, no x²+16. La identidad exige una resta de cuadrados."
+        },
+        {
+          "type": "summary",
+          "body": "Factor común primero; si queda resta de cuadrados, usa conjugados. Multiplica para comprobar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-A01-L05-01",
+        "F3-E3-A01-L05-02",
+        "F3-E3-A01-L05-03",
+        "F3-E3-A01-L05-04",
+        "F3-E3-A01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-A01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Simplificar fracciones con factores comunes bajo restricciones explícitas.",
+        "Recordar que un valor que anulaba el denominador inicial sigue excluido."
+      ],
+      "concept_ids": [
+        "E3-A01:C_06"
+      ],
+      "prerequisites": [
+        "E3-A01-L05",
+        "E2-N01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "AMPLIACIÓN EDITORIAL: una fracción algebraica tiene expresiones con letras en numerador y denominador. Puedes cancelar factores iguales solo si no valen cero; nunca canceles términos sueltos de una suma. El dominio de la expresión inicial debe conservarse tras simplificar."
+        },
+        {
+          "type": "example",
+          "body": "(x²−9)/(x−3)=(x−3)(x+3)/(x−3)=x+3 solo para x ≠ 3. En x=5 vale 8."
+        },
+        {
+          "type": "example",
+          "body": "(2x²+4x)/(2x)=2x(x+2)/(2x)=x+2 para x≠0. En x=2 vale 4."
+        },
+        {
+          "type": "figure",
+          "body": "Visualización verbal: el factor x−3 aparece tanto arriba como abajo; se cancela solo cuando no es cero. En x=3 el cociente original es 0/0, indefinido.",
+          "alt": "Representación alternativa descrita textualmente"
+        },
+        {
+          "type": "reflection",
+          "body": "Si una simplificación da x+3, ¿por qué no admite x=3 cuando la expresión inicial era (x²−9)/(x−3)?||Porque el denominador original se anula en 3; simplificar no recupera un punto excluido."
+        },
+        {
+          "type": "summary",
+          "body": "Factoriza numerador y denominador, anota primero exclusiones, cancela factores no nulos y evalúa solo en valores permitidos."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-A01-L06-01",
+        "F3-E3-A01-L06-02",
+        "F3-E3-A01-L06-03",
+        "F3-E3-A01-L06-04",
+        "F3-E3-A01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial BOE; sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

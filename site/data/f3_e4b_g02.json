@@ -1,0 +1,782 @@
+{
+  "unit_id": "E4B-G02",
+  "unit_title": "Geometría analítica del plano",
+  "product_phase": "F3_OLA9",
+  "version": "0.9.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Interpretar un vector libre como desplazamiento orientado entre puntos.",
+    "Situar puntos en los cuatro cuadrantes.",
+    "Calcular distancias exactas entre puntos del plano."
+  ],
+  "warnings": [
+    "Ejercicios y teoría originales sintéticos EN REVISIÓN; no homologados.",
+    "La cadena entre E3-G01 y E4B-G02 es editorial; E4B-G02→B1C-G02 es canónica.",
+    "Cotejo territorial, revisión humana y WCAG integral NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Geometría de coordenadas",
+      "lesson_id": "E3-G01-L01",
+      "href": "#/curso/E3/unidad/E3-G01/leccion/E3-G01-L01"
+    },
+    {
+      "label": "Pendiente de rectas",
+      "lesson_id": "E3-G01-L04",
+      "href": "#/curso/E3/unidad/E3-G01/leccion/E3-G01-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Comprender, recuperar sin pistas y practicar errores con intervalos voluntarios."
+  },
+  "source_note": "RD 217/2022 y RD 243/2022, saberes espaciales y métricos; asignación de lecciones editorial y cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E4B-G02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-G02:C01"
+      ],
+      "objectives": [
+        "Interpretar un vector libre como desplazamiento orientado entre puntos.",
+        "Calcular sus componentes restando las coordenadas en el orden correcto."
+      ],
+      "prerequisites": [
+        "E3-G01-L01",
+        "E3-G01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un vector es un desplazamiento con dirección, sentido y módulo. Entre A=(x₁,y₁) y B=(x₂,y₂), el vector AB tiene componentes (x₂−x₁,y₂−y₁). Los vectores iguales pueden trasladarse paralelamente sin cambiar componentes; no dependen del punto de aplicación cuando son libres. El vector BA es el opuesto de AB y el vector nulo (0,0) no posee dirección única. El orden de los extremos importa y se comprueba reconstruyendo B=A+AB."
+        },
+        {
+          "type": "example",
+          "body": "De A=(−2,1) a B=(3,4), AB=(3−(−2),4−1)=(5,3)."
+        },
+        {
+          "type": "example",
+          "body": "De B a A, BA=(−5,−3), distinto de AB; los dos tienen el mismo módulo."
+        },
+        {
+          "type": "figure",
+          "body": "Desplazamiento de A a B. Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Desplazamiento de A a B. Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "vector",
+            "title": "Desplazamiento de A a B",
+            "rows": [
+              [
+                "Origen A",
+                "(−2, 1)"
+              ],
+              [
+                "Extremo B",
+                "(3, 4)"
+              ],
+              [
+                "Componentes AB",
+                "(5, 3)"
+              ],
+              [
+                "Componentes BA",
+                "(−5, −3)"
+              ]
+            ],
+            "points": [
+              [
+                "A",
+                -2,
+                1
+              ],
+              [
+                "B",
+                3,
+                4
+              ]
+            ],
+            "arrows": [
+              [
+                -2,
+                1,
+                3,
+                4
+              ]
+            ],
+            "segments": [],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Son AB y BA el mismo vector?||No, tienen igual longitud pero sentido contrario: BA=−AB."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Un vector es un desplazamiento con dirección, sentido y módulo. Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-G02-L01-01",
+        "F3-E4B-G02-L01-02",
+        "F3-E4B-G02-L01-03",
+        "F3-E4B-G02-L01-04",
+        "F3-E4B-G02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-G02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-G02:C02"
+      ],
+      "objectives": [
+        "Situar puntos en los cuatro cuadrantes.",
+        "Reconocer vectores de posición y traslaciones en coordenadas."
+      ],
+      "prerequisites": [
+        "E4B-G02-L01",
+        "E3-G01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Cada punto del plano cartesiano se representa mediante un par ordenado (x,y), con signo y orden relevantes. Los cuadrantes se numeran en sentido antihorario desde x positivo e y positivo: I (+,+), II (−,+), III (−,−), IV (+,−). Los puntos de los ejes no pertenecen a ningún cuadrante abierto. El vector de posición OP comparte componentes con las coordenadas de P. Una traslación por v=(a,b) transforma P=(x,y) en P+v=(x+a,y+b)."
+        },
+        {
+          "type": "example",
+          "body": "P=(−3,2) pertenece al cuadrante II y su vector de posición es OP=(−3,2)."
+        },
+        {
+          "type": "example",
+          "body": "Trasladar (1,−2) por v=(3,4) produce (4,2), sumando cada coordenada de manera independiente."
+        },
+        {
+          "type": "figure",
+          "body": "Puntos en cuadrantes y vector de posición. Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Puntos en cuadrantes y vector de posición. Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "coordinates",
+            "title": "Puntos en cuadrantes y vector de posición",
+            "rows": [
+              [
+                "P",
+                "(−3, 2), cuadrante II"
+              ],
+              [
+                "Q",
+                "(1, −2), cuadrante IV"
+              ],
+              [
+                "P trasladado por (3,1)",
+                "(0, 3)"
+              ]
+            ],
+            "points": [
+              [
+                "P",
+                -3,
+                2
+              ],
+              [
+                "Q",
+                1,
+                -2
+              ],
+              [
+                "R",
+                0,
+                3
+              ]
+            ],
+            "arrows": [
+              [
+                -3,
+                2,
+                0,
+                3
+              ]
+            ],
+            "segments": [],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El punto (0,3) pertenece al cuadrante II?||No: está exactamente sobre el eje vertical y no pertenece a ningún cuadrante."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Cada punto del plano cartesiano se representa mediante un par ordenado (x,y), con signo y orden relevantes. Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-G02-L02-01",
+        "F3-E4B-G02-L02-02",
+        "F3-E4B-G02-L02-03",
+        "F3-E4B-G02-L02-04",
+        "F3-E4B-G02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-G02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-G02:C03"
+      ],
+      "objectives": [
+        "Calcular distancias exactas entre puntos del plano.",
+        "Aplicar el punto medio y comprobar simetrías."
+      ],
+      "prerequisites": [
+        "E3-G01-L01",
+        "E3-G01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La distancia euclídea entre A y B es √((x₂−x₁)²+(y₂−y₁)²), raíz principal no negativa. Si la suma de cuadrados no es un cuadrado perfecto, se conserva la expresión radical exacta, por ejemplo √13, sin sustituirla silenciosamente por un decimal aproximado. El punto medio M promedia las abscisas y las ordenadas, respectivamente. En un eje de simetría, los puntos reflejados tienen punto medio en el eje; hay que comprobarlo con coordenadas y no por aspecto visual."
+        },
+        {
+          "type": "example",
+          "body": "Entre A=(1,1) y B=(3,4), la distancia es √(2²+3²)=√13 unidades, exacta."
+        },
+        {
+          "type": "example",
+          "body": "Para P=(−4,2) y Q=(2,6), el punto medio es (−1,4); ambos extremos distan lo mismo de él."
+        },
+        {
+          "type": "figure",
+          "body": "Distancia exacta no entera entre puntos. Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Distancia exacta no entera entre puntos. Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "distance",
+            "title": "Distancia exacta no entera entre puntos",
+            "rows": [
+              [
+                "A",
+                "(1, 1)"
+              ],
+              [
+                "B",
+                "(3, 4)"
+              ],
+              [
+                "Δx",
+                "2"
+              ],
+              [
+                "Δy",
+                "3"
+              ],
+              [
+                "Distancia",
+                "√13"
+              ]
+            ],
+            "points": [
+              [
+                "A",
+                1,
+                1
+              ],
+              [
+                "B",
+                3,
+                4
+              ]
+            ],
+            "arrows": [],
+            "segments": [
+              [
+                1,
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                1,
+                3,
+                4
+              ],
+              [
+                1,
+                1,
+                3,
+                4
+              ]
+            ],
+            "lines": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es siempre entero el punto medio de dos puntos con coordenadas enteras?||No: las medias de números de distinta paridad pueden ser semienteras."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: La distancia euclídea entre A y B es √((x₂−x₁)²+(y₂−y₁)²), raíz principal no negativa. Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-G02-L03-01",
+        "F3-E4B-G02-L03-02",
+        "F3-E4B-G02-L03-03",
+        "F3-E4B-G02-L03-04",
+        "F3-E4B-G02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-G02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-G02:C04"
+      ],
+      "objectives": [
+        "Obtener ecuaciones de rectas a partir de puntos y vectores directores.",
+        "Distinguir formas explícita, general y ecuación vertical."
+      ],
+      "prerequisites": [
+        "E3-G01-L04",
+        "E4B-G02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una recta puede describirse por un punto P=(x₀,y₀) y un vector director no nulo (a,b): (x,y)=P+t(a,b), t real. Si a≠0, la pendiente es b/a y puede expresarse y−y₀=(b/a)(x−x₀). En forma general Ax+By+C=0, los coeficientes A y B no pueden ser ambos cero. Las rectas verticales se representan x=k y no tienen pendiente finita, aunque sí admiten forma vectorial y general. Comprobar un punto consiste en sustituir sus coordenadas."
+        },
+        {
+          "type": "example",
+          "body": "La recta por (1,2) y (3,6) tiene pendiente 2 y ecuación y−2=2(x−1), equivalente a y=2x."
+        },
+        {
+          "type": "example",
+          "body": "Por (2,−1) y (2,4) pasa la recta vertical x=2; escribir y=mx+n para ella exigiría dividir entre cero."
+        },
+        {
+          "type": "figure",
+          "body": "Recta con pendiente 2 y vector director (1,2). Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Recta con pendiente 2 y vector director (1,2). Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "line",
+            "title": "Recta con pendiente 2 y vector director (1,2)",
+            "rows": [
+              [
+                "Punto",
+                "(1, 2)"
+              ],
+              [
+                "Director",
+                "(1, 2)"
+              ],
+              [
+                "Ecuación",
+                "y = 2x"
+              ],
+              [
+                "Punto comprobado",
+                "(3, 6)"
+              ]
+            ],
+            "points": [
+              [
+                "P",
+                1,
+                2
+              ],
+              [
+                "Q",
+                2,
+                4
+              ]
+            ],
+            "arrows": [
+              [
+                1,
+                2,
+                2,
+                4
+              ]
+            ],
+            "segments": [],
+            "lines": [
+              [
+                2,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede el vector (0,0) ser director de una recta?||No: no define dirección ni permite generar una recta al variar el parámetro."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Una recta puede describirse por un punto P=(x₀,y₀) y un vector director no nulo (a,b): (x,y)=P+t(a,b), t real. Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-G02-L04-01",
+        "F3-E4B-G02-L04-02",
+        "F3-E4B-G02-L04-03",
+        "F3-E4B-G02-L04-04",
+        "F3-E4B-G02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-G02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-G02:C05"
+      ],
+      "objectives": [
+        "Decidir paralelismo y perpendicularidad de dos rectas.",
+        "Comprobar la condición de pendientes o vectores sin dividir entre cero."
+      ],
+      "prerequisites": [
+        "E4B-G02-L04",
+        "E3-G01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Dos rectas son paralelas si tienen vectores directores proporcionales no nulos; cuando se expresan por y=mx+n, tienen pendiente igual. Dos rectas no verticales son perpendiculares cuando sus pendientes finitas cumplen m₁m₂=−1. La condición general robusta para perpendicularidad es que los vectores directores tengan producto escalar cero. Una recta vertical es perpendicular a una horizontal, aunque la vertical no tenga pendiente definida. Igualdad de pendientes no distingue rectas coincidentes de paralelas distintas sin otra información."
+        },
+        {
+          "type": "example",
+          "body": "Las rectas y=2x+1 e y=−x/2+3 son perpendiculares porque 2×(−1/2)=−1."
+        },
+        {
+          "type": "example",
+          "body": "Las rectas x=2 y y=3 se cortan perpendicularmente sin necesidad de calcular pendiente infinita."
+        },
+        {
+          "type": "figure",
+          "body": "Dos rectas perpendiculares en el plano. Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Dos rectas perpendiculares en el plano. Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "perpendicular",
+            "title": "Dos rectas perpendiculares en el plano",
+            "rows": [
+              [
+                "Recta A",
+                "y = 2x"
+              ],
+              [
+                "Recta B",
+                "y = −x/2"
+              ],
+              [
+                "Pendientes",
+                "2 y −1/2"
+              ],
+              [
+                "Producto",
+                "−1"
+              ]
+            ],
+            "points": [],
+            "arrows": [],
+            "segments": [],
+            "lines": [
+              [
+                2,
+                0
+              ],
+              [
+                -0.5,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Son perpendiculares dos rectas de pendientes 2 y 1/2?||No; el producto vale 1, mientras que para perpendiculares no verticales debe ser −1."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: Dos rectas son paralelas si tienen vectores directores proporcionales no nulos; cuando se expresan por y=mx+n, tienen pendiente igual. Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-G02-L05-01",
+        "F3-E4B-G02-L05-02",
+        "F3-E4B-G02-L05-03",
+        "F3-E4B-G02-L05-04",
+        "F3-E4B-G02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4B-G02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.9.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4B-G02:C06"
+      ],
+      "objectives": [
+        "Resolver problemas contextualizados mediante representaciones coordenadas.",
+        "Verificar soluciones de rectas y distancias por sustitución y unidades."
+      ],
+      "prerequisites": [
+        "E4B-G02-L05",
+        "E4B-G02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La geometría coordenada permite representar trayectorias, posiciones, cambios de pendiente e intersecciones sin depender de un dibujo a escala. Para hallar dónde se cruzan dos rectas, se resuelve su sistema de ecuaciones y se comprueba la solución en ambas. Las rectas paralelas distintas no se cortan; las coincidentes tienen infinitos puntos comunes. La distancia entre posiciones se calcula como longitud euclídea y no como suma de incrementos si se solicita el trayecto directo. Cada paso debe conservar las unidades del problema."
+        },
+        {
+          "type": "example",
+          "body": "Las rectas y=x+1 e y=−x+5 se cortan en (2,3), pues al igualarlas 2x=4 y ambas dan y=3."
+        },
+        {
+          "type": "example",
+          "body": "Entre A=(0,0) y B=(3,4), la distancia directa es 5 unidades y el recorrido por ejes mide 7."
+        },
+        {
+          "type": "figure",
+          "body": "Intersección de dos rectas. Diagrama cartesiano declarativo complementado por tabla semántica exacta: no se requiere percibir colores ni geometría a escala para conocer los valores.",
+          "alt": "Intersección de dos rectas. Las coordenadas, relaciones y valores matemáticos de la ilustración figuran también en la tabla semántica siguiente.",
+          "visual_spec": {
+            "kind": "intersection",
+            "title": "Intersección de dos rectas",
+            "rows": [
+              [
+                "Recta primera",
+                "y = x + 1"
+              ],
+              [
+                "Recta segunda",
+                "y = −x + 5"
+              ],
+              [
+                "Corte",
+                "(2, 3)"
+              ],
+              [
+                "Comprobación",
+                "3 = 2+1 = −2+5"
+              ]
+            ],
+            "points": [
+              [
+                "I",
+                2,
+                3
+              ]
+            ],
+            "arrows": [],
+            "segments": [],
+            "lines": [
+              [
+                1,
+                1
+              ],
+              [
+                -1,
+                5
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Basta encontrar x=2 para asegurar la intersección de dos rectas?||No: también hay que calcular y y comprobar que el punto satisface ambas ecuaciones."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación: La geometría coordenada permite representar trayectorias, posiciones, cambios de pendiente e intersecciones sin depender de un dibujo a escala. Relaciona cada respuesta con un dato, verifica signos y condiciones antes de pasar a otra actividad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4B-G02-L06-01",
+        "F3-E4B-G02-L06-02",
+        "F3-E4B-G02-L06-03",
+        "F3-E4B-G02-L06-04",
+        "F3-E4B-G02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, Anexo II, Matemáticas ESO; RD 243/2022, Anexo II, Matemáticas I Bachillerato",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa oficial; secuencia y materiales originales editoriales en revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

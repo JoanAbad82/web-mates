@@ -1,0 +1,794 @@
+{
+  "unit_id": "B2C-G01",
+  "unit_title": "Vectores en el espacio",
+  "product_phase": "F3_OLA10",
+  "version": "0.10.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Representar puntos y vectores en un sistema cartesiano de tres dimensiones.",
+    "Sumar, restar y escalar vectores tridimensionales por componentes.",
+    "Calcular productos escalares y ángulos entre vectores espaciales no nulos."
+  ],
+  "warnings": [
+    "Material sintético editorial EN REVISIÓN; no homologado, no publicable.",
+    "Producto mixto cuando proceda: desarrollo de ampliación editorial, no obligatorio universal.",
+    "La relación de prerrequisitos E1-G01 y E2-G01 hacia E2-M01 es editorial.",
+    "Revisión humana, autonómica y WCAG integral NO VERIFICADAS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Vectores y producto escalar 2D",
+      "lesson_id": "B1C-G02-L03",
+      "href": "#/curso/B1C/unidad/B1C-G02/leccion/B1C-G02-L03"
+    },
+    {
+      "label": "Producto vectorial desde coordenadas",
+      "lesson_id": "B1C-G02-L01",
+      "href": "#/curso/B1C/unidad/B1C-G02/leccion/B1C-G02-L01"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Comprensión guiada, recuperación sin ayuda y repetición espaciada voluntaria."
+  },
+  "source_note": "Marco normativo estatal RD 217/2022 y RD 243/2022; asignación editorial, cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B2C-G01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.10.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G01:C01"
+      ],
+      "objectives": [
+        "Representar puntos y vectores en un sistema cartesiano de tres dimensiones.",
+        "Calcular diferencias y distancias espaciales mediante componentes exactas."
+      ],
+      "prerequisites": [
+        "B1C-G02-L01",
+        "B1C-G02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En un sistema cartesiano tridimensional, P=(x,y,z) es una terna ordenada de coordenadas respecto de tres ejes perpendiculares. El vector AB desde A=(a₁,a₂,a₃) hasta B=(b₁,b₂,b₃) se calcula restando extremo menos origen, componente a componente: B−A. La longitud AB es la raíz principal de la suma de los cuadrados de sus tres incrementos; por ello nunca es negativa y solo es cero si A=B. Los vectores libres con las mismas componentes son equivalentes aunque partan de puntos diferentes. No confundas el eje z con una segunda componente del plano."
+        },
+        {
+          "type": "example",
+          "body": "A=(1,−2,3) y B=(4,2,3): AB=(3,4,0); la distancia es √(9+16)=5 unidades."
+        },
+        {
+          "type": "example",
+          "body": "A=(−1,2,0) y B=(1,−1,6): AB=(2,−3,6) y la distancia es √(4+9+36)=7."
+        },
+        {
+          "type": "figure",
+          "body": "Desplazamiento en tres ejes. Diagrama conceptual declarativo: todas las medidas exactas y relaciones se ofrecen de nuevo en una tabla textual independiente, sin requerir color o percepción espacial.",
+          "alt": "Desplazamiento en tres ejes. La tabla semántica identifica con exactitud todas las coordenadas, dimensiones, unidades y resultados de esta representación.",
+          "visual_spec": {
+            "kind": "space_vector",
+            "title": "Desplazamiento en tres ejes",
+            "rows": [
+              [
+                "A",
+                "(1, −2, 3)"
+              ],
+              [
+                "B",
+                "(4, 2, 3)"
+              ],
+              [
+                "AB",
+                "(3, 4, 0)"
+              ],
+              [
+                "|AB|",
+                "5"
+              ]
+            ],
+            "points": [
+              [
+                "A",
+                1,
+                -2,
+                3
+              ],
+              [
+                "B",
+                4,
+                2,
+                3
+              ]
+            ],
+            "vectors": [
+              [
+                1,
+                -2,
+                3,
+                4,
+                2,
+                3
+              ]
+            ],
+            "shape": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si cambiamos el orden de extremos A y B, ¿qué ocurre con el vector?||Se invierte el sentido: BA=−AB, aunque la distancia AB permanece igual."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: En un sistema cartesiano tridimensional, P=(x,y,z) es una terna ordenada de coordenadas respecto de tres ejes perpendiculares. Justifica cada resultado, comprueba las unidades y resuelve después una variación sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G01-L01-01",
+        "F3-B2C-G01-L01-02",
+        "F3-B2C-G01-L01-03",
+        "F3-B2C-G01-L01-04",
+        "F3-B2C-G01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; RD 243/2022, anexo II, Matemáticas II",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; contenido y secuencia editorial originales pendientes de revisión."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-G01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.10.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G01:C02"
+      ],
+      "objectives": [
+        "Sumar, restar y escalar vectores tridimensionales por componentes.",
+        "Interpretar combinaciones lineales y direcciones proporcionales."
+      ],
+      "prerequisites": [
+        "B2C-G01-L01",
+        "B1C-G02-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para vectores tridimensionales, la suma u+v, la resta u−v y el producto λu se definen componente a componente. La multiplicación por λ altera la longitud por |λ| y, si λ es negativa, invierte el sentido; el vector nulo permanece nulo. Una combinación lineal αu+βv tiene tres coordenadas, obtenidas con los mismos coeficientes en todas las componentes. Dos vectores no nulos son paralelos si uno es múltiplo escalar del otro, incluida la dirección opuesta. No se deben sumar módulos como si fueran coordenadas ni asumir que vectores de igual longitud son iguales."
+        },
+        {
+          "type": "example",
+          "body": "u=(2,−1,3), v=(−1,4,0): u+v=(1,3,3), mientras u−v=(3,−5,3)."
+        },
+        {
+          "type": "example",
+          "body": "Si u=(2,−1,3), entonces −2u=(−4,2,−6); invierte el sentido y duplica el módulo."
+        },
+        {
+          "type": "figure",
+          "body": "Suma vectorial en tres dimensiones. Diagrama conceptual declarativo: todas las medidas exactas y relaciones se ofrecen de nuevo en una tabla textual independiente, sin requerir color o percepción espacial.",
+          "alt": "Suma vectorial en tres dimensiones. La tabla semántica identifica con exactitud todas las coordenadas, dimensiones, unidades y resultados de esta representación.",
+          "visual_spec": {
+            "kind": "space_sum",
+            "title": "Suma vectorial en tres dimensiones",
+            "rows": [
+              [
+                "u",
+                "(2, −1, 3)"
+              ],
+              [
+                "v",
+                "(−1, 4, 0)"
+              ],
+              [
+                "u+v",
+                "(1, 3, 3)"
+              ],
+              [
+                "u−v",
+                "(3, −5, 3)"
+              ]
+            ],
+            "points": [],
+            "vectors": [
+              [
+                0,
+                0,
+                0,
+                2,
+                -1,
+                3
+              ],
+              [
+                2,
+                -1,
+                3,
+                1,
+                3,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                3,
+                3
+              ]
+            ],
+            "shape": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es |u+v| siempre igual a |u|+|v|?||No. Solo ocurre en casos particulares de alineación y sentido; normalmente se cumple la desigualdad triangular."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para vectores tridimensionales, la suma u+v, la resta u−v y el producto λu se definen componente a componente. Justifica cada resultado, comprueba las unidades y resuelve después una variación sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G01-L02-01",
+        "F3-B2C-G01-L02-02",
+        "F3-B2C-G01-L02-03",
+        "F3-B2C-G01-L02-04",
+        "F3-B2C-G01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; RD 243/2022, anexo II, Matemáticas II",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; contenido y secuencia editorial originales pendientes de revisión."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-G01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.10.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G01:C03"
+      ],
+      "objectives": [
+        "Calcular productos escalares y ángulos entre vectores espaciales no nulos.",
+        "Diagnosticar ortogonalidad y evitar la normalización del vector nulo."
+      ],
+      "prerequisites": [
+        "B1C-G02-L03",
+        "B2C-G01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El producto escalar de u=(u₁,u₂,u₃) y v=(v₁,v₂,v₃) es el número real u₁v₁+u₂v₂+u₃v₃. También cumple u·v=|u||v|cosθ si ambos vectores son no nulos, con θ entre 0° y 180°. Un producto escalar cero indica ortogonalidad de direcciones cuando ambos vectores son no nulos; si alguno es nulo, la igualdad cero no permite atribuirle dirección. La norma satisface |u|²=u·u. Por Cauchy-Schwarz, el cociente de coseno siempre está entre −1 y 1 en vectores admisibles."
+        },
+        {
+          "type": "example",
+          "body": "u=(1,2,2) y v=(2,−1,0): u·v=2−2+0=0. Ambos son no nulos, luego son perpendiculares."
+        },
+        {
+          "type": "example",
+          "body": "u=(1,0,0) y v=(1,1,0) tienen coseno 1/√2 y un ángulo de 45°, sin calcular coordenadas polares."
+        },
+        {
+          "type": "figure",
+          "body": "Producto escalar y ortogonalidad. Diagrama conceptual declarativo: todas las medidas exactas y relaciones se ofrecen de nuevo en una tabla textual independiente, sin requerir color o percepción espacial.",
+          "alt": "Producto escalar y ortogonalidad. La tabla semántica identifica con exactitud todas las coordenadas, dimensiones, unidades y resultados de esta representación.",
+          "visual_spec": {
+            "kind": "space_dot",
+            "title": "Producto escalar y ortogonalidad",
+            "rows": [
+              [
+                "u",
+                "(1, 2, 2)"
+              ],
+              [
+                "v",
+                "(2, −1, 0)"
+              ],
+              [
+                "u·v",
+                "2−2+0=0"
+              ],
+              [
+                "Condición",
+                "Ambos vectores no nulos"
+              ]
+            ],
+            "points": [],
+            "vectors": [
+              [
+                0,
+                0,
+                0,
+                1,
+                2,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                -1,
+                0
+              ]
+            ],
+            "shape": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué no se divide por el módulo de (0,0,0) para hallar un ángulo?||Porque su módulo es cero y el vector nulo no define dirección; el ángulo no está definido."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El producto escalar de u=(u₁,u₂,u₃) y v=(v₁,v₂,v₃) es el número real u₁v₁+u₂v₂+u₃v₃. Justifica cada resultado, comprueba las unidades y resuelve después una variación sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G01-L03-01",
+        "F3-B2C-G01-L03-02",
+        "F3-B2C-G01-L03-03",
+        "F3-B2C-G01-L03-04",
+        "F3-B2C-G01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; RD 243/2022, anexo II, Matemáticas II",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; contenido y secuencia editorial originales pendientes de revisión."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-G01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.10.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G01:C04"
+      ],
+      "objectives": [
+        "Calcular el producto vectorial con la orientación correcta.",
+        "Relacionar su módulo con el área de un paralelogramo."
+      ],
+      "prerequisites": [
+        "B2C-G01-L03",
+        "B1C-G02-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En el espacio orientado de base derecha, el producto vectorial u×v es el vector (u₂v₃−u₃v₂, u₃v₁−u₁v₃, u₁v₂−u₂v₁). Es perpendicular a u y v y su sentido sigue la regla de la mano derecha. No es conmutativo: v×u=−(u×v). Su módulo satisface |u×v|=|u||v|senθ y equivale al área del paralelogramo de lados u y v. Si los vectores son paralelos, el producto es cero y el área nula. Distingue producto escalar (número) de producto vectorial (terna)."
+        },
+        {
+          "type": "example",
+          "body": "Para u=(1,0,0), v=(0,1,0), resulta u×v=(0,0,1). En sentido inverso v×u=(0,0,−1)."
+        },
+        {
+          "type": "example",
+          "body": "Si u=(2,0,0) y v=(0,3,0), entonces u×v=(0,0,6); el área del paralelogramo es 6 unidades cuadradas."
+        },
+        {
+          "type": "figure",
+          "body": "Producto vectorial y área orientada. Diagrama conceptual declarativo: todas las medidas exactas y relaciones se ofrecen de nuevo en una tabla textual independiente, sin requerir color o percepción espacial.",
+          "alt": "Producto vectorial y área orientada. La tabla semántica identifica con exactitud todas las coordenadas, dimensiones, unidades y resultados de esta representación.",
+          "visual_spec": {
+            "kind": "space_cross",
+            "title": "Producto vectorial y área orientada",
+            "rows": [
+              [
+                "u",
+                "(2, 0, 0)"
+              ],
+              [
+                "v",
+                "(0, 3, 0)"
+              ],
+              [
+                "u×v",
+                "(0, 0, 6)"
+              ],
+              [
+                "Área del paralelogramo",
+                "6 u²"
+              ]
+            ],
+            "points": [],
+            "vectors": [
+              [
+                0,
+                0,
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                3,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                6
+              ]
+            ],
+            "shape": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si se invierte el orden u×v, ¿cambia su módulo?||No, se invierte el signo de cada componente, pero ambos productos tienen el mismo módulo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: En el espacio orientado de base derecha, el producto vectorial u×v es el vector (u₂v₃−u₃v₂, u₃v₁−u₁v₃, u₁v₂−u₂v₁). Justifica cada resultado, comprueba las unidades y resuelve después una variación sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G01-L04-01",
+        "F3-B2C-G01-L04-02",
+        "F3-B2C-G01-L04-03",
+        "F3-B2C-G01-L04-04",
+        "F3-B2C-G01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; RD 243/2022, anexo II, Matemáticas II",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; contenido y secuencia editorial originales pendientes de revisión."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-G01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.10.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G01:C05"
+      ],
+      "objectives": [
+        "Obtener el producto mixto de tres vectores y reconocer su signo orientado.",
+        "Calcular volúmenes y coplanaridad donde proceda usando valor absoluto."
+      ],
+      "prerequisites": [
+        "B2C-G01-L04",
+        "B2C-G01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El producto mixto de tres vectores u,v,w se define como u·(v×w), igual al determinante 3×3 de sus componentes por filas con la misma orientación. Su valor es escalar con signo y cambia de signo al permutar dos vectores; su valor absoluto expresa el volumen del paralelepípedo construido sobre ellos. Si es cero, los vectores son linealmente dependientes y el volumen es nulo; equivalen a direcciones coplanares. El volumen de un tetraedro con esos tres vectores desde un vértice es |u·(v×w)|/6. Este contenido, “cuando proceda”, se etiqueta como propuesta editorial, no como saber obligatorio universal."
+        },
+        {
+          "type": "example",
+          "body": "Con u=(1,0,0), v=(0,2,0) y w=(0,0,3), el producto mixto es 6, volumen del paralelepípedo 6 y del tetraedro 1."
+        },
+        {
+          "type": "example",
+          "body": "Si w=u+v, entonces u·(v×w)=0 porque los tres vectores están contenidos en el plano generado por u y v."
+        },
+        {
+          "type": "figure",
+          "body": "Producto mixto: orientación y volumen. Diagrama conceptual declarativo: todas las medidas exactas y relaciones se ofrecen de nuevo en una tabla textual independiente, sin requerir color o percepción espacial.",
+          "alt": "Producto mixto: orientación y volumen. La tabla semántica identifica con exactitud todas las coordenadas, dimensiones, unidades y resultados de esta representación.",
+          "visual_spec": {
+            "kind": "space_triple",
+            "title": "Producto mixto: orientación y volumen",
+            "rows": [
+              [
+                "u",
+                "(1, 0, 0)"
+              ],
+              [
+                "v",
+                "(0, 2, 0)"
+              ],
+              [
+                "w",
+                "(0, 0, 3)"
+              ],
+              [
+                "Mixto",
+                "6"
+              ],
+              [
+                "Volumen",
+                "6 u³"
+              ]
+            ],
+            "points": [],
+            "vectors": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ]
+            ],
+            "shape": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede ser negativo el volumen aunque el producto mixto sea negativo?||No. El producto es orientado; el volumen físico es su valor absoluto."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El producto mixto de tres vectores u,v,w se define como u·(v×w), igual al determinante 3×3 de sus componentes por filas con la misma orientación. Justifica cada resultado, comprueba las unidades y resuelve después una variación sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G01-L05-01",
+        "F3-B2C-G01-L05-02",
+        "F3-B2C-G01-L05-03",
+        "F3-B2C-G01-L05-04",
+        "F3-B2C-G01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; RD 243/2022, anexo II, Matemáticas II",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; contenido y secuencia editorial originales pendientes de revisión."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2C-G01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.10.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2C-G01:C06"
+      ],
+      "objectives": [
+        "Modelizar áreas, distancias y volúmenes con vectores espaciales.",
+        "Verificar unidades, perpendicularidad y resultados degenerados."
+      ],
+      "prerequisites": [
+        "B2C-G01-L05",
+        "B2C-G01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Las herramientas vectoriales resuelven problemas espaciales seleccionando la operación pertinente: diferencia de posiciones para desplazamientos, norma para distancias, producto escalar para perpendicularidad, módulo del producto vectorial para áreas y valor absoluto del mixto para volúmenes. Para el triángulo formado por dos vectores desde un vértice, el área es |u×v|/2; para el tetraedro, el volumen es |u·(v×w)|/6. Los resultados de área llevan unidades cuadradas y los de volumen cúbicas. Vectores degenerados generan área o volumen cero y no deben convertirse en valores negativos."
+        },
+        {
+          "type": "example",
+          "body": "Con u=(3,0,0) y v=(0,4,0), |u×v|=12; el triángulo tiene área 6 u²."
+        },
+        {
+          "type": "example",
+          "body": "Con u=(2,0,0), v=(0,3,0), w=(0,0,4), el paralelepípedo tiene volumen 24 u³ y el tetraedro 4 u³."
+        },
+        {
+          "type": "figure",
+          "body": "Área triangular mediante producto vectorial. Diagrama conceptual declarativo: todas las medidas exactas y relaciones se ofrecen de nuevo en una tabla textual independiente, sin requerir color o percepción espacial.",
+          "alt": "Área triangular mediante producto vectorial. La tabla semántica identifica con exactitud todas las coordenadas, dimensiones, unidades y resultados de esta representación.",
+          "visual_spec": {
+            "kind": "space_area",
+            "title": "Área triangular mediante producto vectorial",
+            "rows": [
+              [
+                "u",
+                "(3, 0, 0)"
+              ],
+              [
+                "v",
+                "(0, 4, 0)"
+              ],
+              [
+                "|u×v|",
+                "12 u²"
+              ],
+              [
+                "Área triángulo",
+                "6 u²"
+              ]
+            ],
+            "points": [],
+            "vectors": [
+              [
+                0,
+                0,
+                0,
+                3,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                4,
+                0
+              ]
+            ],
+            "shape": {}
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si la figura es un triángulo, ¿por qué se divide el módulo vectorial entre dos?||Porque |u×v| da el área del paralelogramo, que contiene dos triángulos congruentes."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Las herramientas vectoriales resuelven problemas espaciales seleccionando la operación pertinente: diferencia de posiciones para desplazamientos, norma para distancias, producto escalar para perpendicularidad, módulo del producto vectorial para áreas y valor absoluto del mixto para volúmenes. Justifica cada resultado, comprueba las unidades y resuelve después una variación sin pistas."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2C-G01-L06-01",
+        "F3-B2C-G01-L06-02",
+        "F3-B2C-G01-L06-03",
+        "F3-B2C-G01-L06-04",
+        "F3-B2C-G01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; RD 243/2022, anexo II, Matemáticas II",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; contenido y secuencia editorial originales pendientes de revisión."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

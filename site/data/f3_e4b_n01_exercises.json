@@ -1,0 +1,985 @@
+{
+  "unit_id": "E4B-N01",
+  "version": "0.28.0",
+  "status": "revision",
+  "notice": "Cinco ejercicios por lección; contenidos sintéticos con revisión humana F4 pendiente.",
+  "activities": [
+    {
+      "exercise_id": "F3-E4B-N01-L01-01",
+      "lesson_id": "E4B-N01-L01",
+      "type": "numeric",
+      "prompt": "Calcula √9 exactamente.",
+      "answer": 3,
+      "explanation": "√9=3 porque 3²=9; es una raíz exacta, a diferencia de √2.",
+      "hint": "Clasifica primero: fracción de enteros, decimal periódico o raíz no exacta.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L01-02",
+      "lesson_id": "E4B-N01-L01",
+      "type": "numeric",
+      "prompt": "Expresa 3/8 como decimal.",
+      "answer": 0.375,
+      "explanation": "La división 3÷8=0,375 es racional y termina.",
+      "hint": "Clasifica primero: fracción de enteros, decimal periódico o raíz no exacta.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L01-03",
+      "lesson_id": "E4B-N01-L01",
+      "type": "numeric",
+      "prompt": "Aproxima √3 a cuatro decimales.",
+      "answer": 1.7321,
+      "explanation": "√3≈1,7320508; redondeado a 4 decimales es 1,7321.",
+      "hint": "Clasifica primero: fracción de enteros, decimal periódico o raíz no exacta.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 6e-05
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L01-04",
+      "lesson_id": "E4B-N01-L01",
+      "type": "choice",
+      "prompt": "¿Qué afirma correctamente la clasificación de √2?",
+      "answer": "Es irracional aunque escribamos una aproximación decimal.",
+      "explanation": "Una aproximación finita representa a √2 sin cambiar su naturaleza exacta.",
+      "hint": "Clasifica primero: fracción de enteros, decimal periódico o raíz no exacta.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Es racional únicamente si se redondea a centésimas.",
+        "Es irracional aunque escribamos una aproximación decimal.",
+        "Es entero porque es una raíz cuadrada.",
+        "Es racional porque la calculadora muestra decimales."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L01-05",
+      "lesson_id": "E4B-N01-L01",
+      "type": "choice",
+      "prompt": "¿Cómo comparas √3 y 1,8 sin truncar?",
+      "answer": "Como ambos son positivos, compara 3 con 1,8².",
+      "explanation": "Se obtiene 3<3,24 y por tanto √3<1,8. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Clasifica primero: fracción de enteros, decimal periódico o raíz no exacta.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "√3 siempre es mayor que cualquier decimal.",
+        "Debes redondear √3 obligatoriamente a un entero.",
+        "No es posible ordenar números irracionales y racionales.",
+        "Como ambos son positivos, compara 3 con 1,8²."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L02-01",
+      "lesson_id": "E4B-N01-L02",
+      "type": "numeric",
+      "prompt": "Resuelve 2x−3≤5. ¿Cuál es el máximo x permitido?",
+      "answer": 4,
+      "explanation": "2x≤8 implica x≤4; se permite el extremo.",
+      "hint": "Comprueba cada extremo contra todas las condiciones simultáneamente.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L02-02",
+      "lesson_id": "E4B-N01-L02",
+      "type": "numeric",
+      "prompt": "¿Longitud del intervalo (3,5] en la recta real?",
+      "answer": 2,
+      "explanation": "La longitud es 5−3=2; la inclusión de extremos no altera la longitud.",
+      "hint": "Comprueba cada extremo contra todas las condiciones simultáneamente.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L02-03",
+      "lesson_id": "E4B-N01-L02",
+      "type": "numeric",
+      "prompt": "Resuelve −2x<6. ¿Valor frontera que queda excluido?",
+      "answer": -3,
+      "explanation": "Al dividir por −2 se invierte el signo: x>−3, frontera −3.",
+      "hint": "Comprueba cada extremo contra todas las condiciones simultáneamente.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L02-04",
+      "lesson_id": "E4B-N01-L02",
+      "type": "choice",
+      "prompt": "La intersección [1,5]∩(3,7) es:",
+      "answer": "(3,5], abierto en 3 y cerrado en 5.",
+      "explanation": "Para pertenecer a ambos deben cumplirse x>3 y x≤5.",
+      "hint": "Comprueba cada extremo contra todas las condiciones simultáneamente.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "[3,5], porque el 3 es común.",
+        "(3,5], abierto en 3 y cerrado en 5.",
+        "(5,7), porque la intersección excluye todos los extremos.",
+        "(1,7), porque basta pertenecer a uno."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L02-05",
+      "lesson_id": "E4B-N01-L02",
+      "type": "choice",
+      "prompt": "¿Qué sucede con el signo al dividir una desigualdad por un número negativo?",
+      "answer": "Se invierte la dirección del signo.",
+      "explanation": "Dividir por negativo invierte el orden en la recta real.",
+      "hint": "Comprueba cada extremo contra todas las condiciones simultáneamente.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Siempre se conserva igual.",
+        "Se invierte la dirección del signo.",
+        "La desigualdad deja de tener solución.",
+        "Se convierte necesariamente en una igualdad."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L03-01",
+      "lesson_id": "E4B-N01-L03",
+      "type": "numeric",
+      "prompt": "En √72=coeficiente×√2, ¿cuánto vale el coeficiente positivo?",
+      "answer": 6,
+      "explanation": "72=36×2; por tanto √72=6√2. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Descompón el radicando como cuadrado perfecto por resto.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L03-02",
+      "lesson_id": "E4B-N01-L03",
+      "type": "numeric",
+      "prompt": "En √18+√8=coeficiente×√2, ¿qué coeficiente resulta?",
+      "answer": 5,
+      "explanation": "√18=3√2 y √8=2√2; suma 5√2. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Descompón el radicando como cuadrado perfecto por resto.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L03-03",
+      "lesson_id": "E4B-N01-L03",
+      "type": "numeric",
+      "prompt": "Calcula 1/√2 aproximadamente a cuatro decimales.",
+      "answer": 0.7071,
+      "explanation": "1/√2=√2/2≈0,7071068; redondea a 0,7071. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Descompón el radicando como cuadrado perfecto por resto.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 6e-05
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L03-04",
+      "lesson_id": "E4B-N01-L03",
+      "type": "choice",
+      "prompt": "¿Qué igualdad general entre raíces de no negativos es válida?",
+      "answer": "√(ab)=√a·√b, con a,b≥0.",
+      "explanation": "La multiplicación de radicandos admite descomposición, la suma no.",
+      "hint": "Descompón el radicando como cuadrado perfecto por resto.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "√(a+b)=√a+√b para todos los valores.",
+        "√(ab)=√a·√b, con a,b≥0.",
+        "√(a²)=a para cualquier a negativo.",
+        "√(a−b)=√a−√b sin restricciones."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L03-05",
+      "lesson_id": "E4B-N01-L03",
+      "type": "choice",
+      "prompt": "Para x real negativo, √(x²) vale:",
+      "answer": "|x|, que es positivo.",
+      "explanation": "La raíz cuadrada principal es no negativa, así que √(x²)=|x|.",
+      "hint": "Descompón el radicando como cuadrado perfecto por resto.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "x siempre, aunque sea negativo.",
+        "|x|, que es positivo.",
+        "i×x necesariamente.",
+        "Cero porque la raíz no está definida."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L04-01",
+      "lesson_id": "E4B-N01-L04",
+      "type": "numeric",
+      "prompt": "Evalúa 27 elevado a 2/3 con base positiva.",
+      "answer": 9,
+      "explanation": "La raíz cúbica de 27 es 3 y 3²=9. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Expresa primero la fracción de exponente como raíz y potencia.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L04-02",
+      "lesson_id": "E4B-N01-L04",
+      "type": "numeric",
+      "prompt": "Evalúa 16 elevado a 3/4.",
+      "answer": 8,
+      "explanation": "La cuarta raíz positiva de 16 es 2 y su cubo 8.",
+      "hint": "Expresa primero la fracción de exponente como raíz y potencia.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L04-03",
+      "lesson_id": "E4B-N01-L04",
+      "type": "numeric",
+      "prompt": "Evalúa 81 elevado a 1/2.",
+      "answer": 9,
+      "explanation": "81^(1/2)=√81=9, no 40,5. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Expresa primero la fracción de exponente como raíz y potencia.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L04-04",
+      "lesson_id": "E4B-N01-L04",
+      "type": "choice",
+      "prompt": "En 27^(2/3), el denominador 3 del exponente indica:",
+      "answer": "La raíz cúbica de la base.",
+      "explanation": "a^(m/n)=(raíz n-ésima de a)^m para base positiva.",
+      "hint": "Expresa primero la fracción de exponente como raíz y potencia.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Una raíz cuadrada independientemente del denominador.",
+        "Que se divide 27 entre 3 y se multiplica por 2.",
+        "La raíz cúbica de la base.",
+        "Que la base debe ser negativa."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L04-05",
+      "lesson_id": "E4B-N01-L04",
+      "type": "choice",
+      "prompt": "Para la base positiva a, ¿qué significa a^0?",
+      "answer": "Uno, siempre que a sea distinto de cero.",
+      "explanation": "El exponente cero en una base no nula produce la unidad multiplicativa.",
+      "hint": "Expresa primero la fracción de exponente como raíz y potencia.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Uno, siempre que a sea distinto de cero.",
+        "Cero en todas las bases.",
+        "La raíz n-ésima de a automáticamente.",
+        "a multiplicado por cero."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L05-01",
+      "lesson_id": "E4B-N01-L05",
+      "type": "numeric",
+      "prompt": "¿Cuánto vale log₂(8)?",
+      "answer": 3,
+      "explanation": "2³=8, así que log₂(8)=3. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Reescribe log_b(x)=y en forma exponencial b^y=x.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L05-02",
+      "lesson_id": "E4B-N01-L05",
+      "type": "numeric",
+      "prompt": "¿Cuánto vale log₃(81)?",
+      "answer": 4,
+      "explanation": "3⁴=81, por tanto log₃(81)=4. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Reescribe log_b(x)=y en forma exponencial b^y=x.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L05-03",
+      "lesson_id": "E4B-N01-L05",
+      "type": "numeric",
+      "prompt": "¿Cuánto vale log₁₀(1000)?",
+      "answer": 3,
+      "explanation": "10³=1000; el logaritmo es su exponente. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Reescribe log_b(x)=y en forma exponencial b^y=x.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L05-04",
+      "lesson_id": "E4B-N01-L05",
+      "type": "choice",
+      "prompt": "¿Qué dominio exige log₂(x) en números reales?",
+      "answer": "x>0.",
+      "explanation": "El argumento del logaritmo real debe ser estrictamente positivo.",
+      "hint": "Reescribe log_b(x)=y en forma exponencial b^y=x.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Solo x<0.",
+        "x>0.",
+        "Todo x, incluso negativos y cero.",
+        "Solo enteros no negativos."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L05-05",
+      "lesson_id": "E4B-N01-L05",
+      "type": "choice",
+      "prompt": "¿Cuál propiedad de logaritmos es válida con x,y>0 y base correcta?",
+      "answer": "log_b(xy)=log_b(x)+log_b(y).",
+      "explanation": "Los logaritmos convierten productos en sumas de exponentes.",
+      "hint": "Reescribe log_b(x)=y en forma exponencial b^y=x.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "log_b(x+y)=log_b(x)+log_b(y) siempre.",
+        "log_b(x)=b×x para toda base.",
+        "log_b(xy)=log_b(x)×log_b(y).",
+        "log_b(xy)=log_b(x)+log_b(y)."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L06-01",
+      "lesson_id": "E4B-N01-L06",
+      "type": "numeric",
+      "prompt": "Referente 10 cm, medida 9,8 cm. ¿Error absoluto en cm?",
+      "answer": 0.2,
+      "explanation": "|9,8−10|=0,2 cm. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Separar el valor observado de la referencia antes de restar.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L06-02",
+      "lesson_id": "E4B-N01-L06",
+      "type": "numeric",
+      "prompt": "Referente 10 cm, medida 9,8 cm. ¿Error relativo decimal?",
+      "answer": 0.02,
+      "explanation": "Error relativo=0,2/10=0,02. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Separar el valor observado de la referencia antes de restar.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L06-03",
+      "lesson_id": "E4B-N01-L06",
+      "type": "numeric",
+      "prompt": "Referente 10 cm, medida 9,8 cm. ¿Error relativo en porcentaje (número)?",
+      "answer": 2,
+      "explanation": "0,02×100=2 %, no 0,02 %. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Separar el valor observado de la referencia antes de restar.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L06-04",
+      "lesson_id": "E4B-N01-L06",
+      "type": "choice",
+      "prompt": "¿Qué necesita el cálculo de error absoluto real?",
+      "answer": "Un valor de referencia fiable.",
+      "explanation": "El error absoluto compara medida con una referencia conocida.",
+      "hint": "Separar el valor observado de la referencia antes de restar.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Solo muchos decimales de la calculadora.",
+        "Un valor de referencia fiable.",
+        "Una base logarítmica distinta de uno.",
+        "Una medición sin unidad ni instrumento."
+      ]
+    },
+    {
+      "exercise_id": "F3-E4B-N01-L06-05",
+      "lesson_id": "E4B-N01-L06",
+      "type": "choice",
+      "prompt": "Si se redondea 12,34 cm a décimas, ¿qué es correcto?",
+      "answer": "12,3 cm es una representación redondeada, no una medida exacta nueva.",
+      "explanation": "La aproximación decimal no garantiza exactitud de los datos físicos.",
+      "hint": "Separar el valor observado de la referencia antes de restar.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_e4b_n01_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "12,3 cm es una representación redondeada, no una medida exacta nueva.",
+        "El objeto cambia físicamente de longitud.",
+        "El redondeo elimina automáticamente el error de lectura.",
+        "Ahora el instrumento tiene precisión infinita."
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-E4B-N01-L01-01": {
+      "hints": [
+        "Clasifica primero: fracción de enteros, decimal periódico o raíz no exacta.",
+        "Compara cuadrados de positivos sin asumir que un truncamiento es igualdad exacta."
+      ],
+      "math_check": {
+        "kind": "sqrt",
+        "params": [
+          9
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L01-02": {
+      "hints": [
+        "Clasifica primero: fracción de enteros, decimal periódico o raíz no exacta.",
+        "Compara cuadrados de positivos sin asumir que un truncamiento es igualdad exacta."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          3,
+          8
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L01-03": {
+      "hints": [
+        "Clasifica primero: fracción de enteros, decimal periódico o raíz no exacta.",
+        "Compara cuadrados de positivos sin asumir que un truncamiento es igualdad exacta."
+      ],
+      "math_check": {
+        "kind": "sqrt",
+        "params": [
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L01-04": {
+      "hints": [
+        "Clasifica primero: fracción de enteros, decimal periódico o raíz no exacta.",
+        "Compara cuadrados de positivos sin asumir que un truncamiento es igualdad exacta."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L01-05": {
+      "hints": [
+        "Clasifica primero: fracción de enteros, decimal periódico o raíz no exacta.",
+        "Compara cuadrados de positivos sin asumir que un truncamiento es igualdad exacta."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L02-01": {
+      "hints": [
+        "Comprueba cada extremo contra todas las condiciones simultáneamente.",
+        "Al dividir entre un coeficiente negativo, invierte el signo de la desigualdad."
+      ],
+      "math_check": {
+        "kind": "linear_bound",
+        "params": [
+          2,
+          -3,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L02-02": {
+      "hints": [
+        "Comprueba cada extremo contra todas las condiciones simultáneamente.",
+        "Al dividir entre un coeficiente negativo, invierte el signo de la desigualdad."
+      ],
+      "math_check": {
+        "kind": "interval_span",
+        "params": [
+          3,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L02-03": {
+      "hints": [
+        "Comprueba cada extremo contra todas las condiciones simultáneamente.",
+        "Al dividir entre un coeficiente negativo, invierte el signo de la desigualdad."
+      ],
+      "math_check": {
+        "kind": "linear_bound",
+        "params": [
+          -2,
+          0,
+          6
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L02-04": {
+      "hints": [
+        "Comprueba cada extremo contra todas las condiciones simultáneamente.",
+        "Al dividir entre un coeficiente negativo, invierte el signo de la desigualdad."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L02-05": {
+      "hints": [
+        "Comprueba cada extremo contra todas las condiciones simultáneamente.",
+        "Al dividir entre un coeficiente negativo, invierte el signo de la desigualdad."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L03-01": {
+      "hints": [
+        "Descompón el radicando como cuadrado perfecto por resto.",
+        "√(s²·a)=|s|√a; suma solo radicales semejantes."
+      ],
+      "math_check": {
+        "kind": "radical_coeff",
+        "params": [
+          72,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L03-02": {
+      "hints": [
+        "Descompón el radicando como cuadrado perfecto por resto.",
+        "√(s²·a)=|s|√a; suma solo radicales semejantes."
+      ],
+      "math_check": {
+        "kind": "radical_add_coeff",
+        "params": [
+          18,
+          8,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L03-03": {
+      "hints": [
+        "Descompón el radicando como cuadrado perfecto por resto.",
+        "√(s²·a)=|s|√a; suma solo radicales semejantes."
+      ],
+      "math_check": {
+        "kind": "reciprocal_sqrt",
+        "params": [
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L03-04": {
+      "hints": [
+        "Descompón el radicando como cuadrado perfecto por resto.",
+        "√(s²·a)=|s|√a; suma solo radicales semejantes."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L03-05": {
+      "hints": [
+        "Descompón el radicando como cuadrado perfecto por resto.",
+        "√(s²·a)=|s|√a; suma solo radicales semejantes."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L04-01": {
+      "hints": [
+        "Expresa primero la fracción de exponente como raíz y potencia.",
+        "Si a>0, a^(m/n)=(ⁿ√a)^m."
+      ],
+      "math_check": {
+        "kind": "rational_pow",
+        "params": [
+          27,
+          2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L04-02": {
+      "hints": [
+        "Expresa primero la fracción de exponente como raíz y potencia.",
+        "Si a>0, a^(m/n)=(ⁿ√a)^m."
+      ],
+      "math_check": {
+        "kind": "rational_pow",
+        "params": [
+          16,
+          3,
+          4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L04-03": {
+      "hints": [
+        "Expresa primero la fracción de exponente como raíz y potencia.",
+        "Si a>0, a^(m/n)=(ⁿ√a)^m."
+      ],
+      "math_check": {
+        "kind": "rational_pow",
+        "params": [
+          81,
+          1,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L04-04": {
+      "hints": [
+        "Expresa primero la fracción de exponente como raíz y potencia.",
+        "Si a>0, a^(m/n)=(ⁿ√a)^m."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L04-05": {
+      "hints": [
+        "Expresa primero la fracción de exponente como raíz y potencia.",
+        "Si a>0, a^(m/n)=(ⁿ√a)^m."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L05-01": {
+      "hints": [
+        "Reescribe log_b(x)=y en forma exponencial b^y=x.",
+        "Revisa siempre base positiva distinta de 1 y argumento positivo."
+      ],
+      "math_check": {
+        "kind": "log_base",
+        "params": [
+          2,
+          8
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L05-02": {
+      "hints": [
+        "Reescribe log_b(x)=y en forma exponencial b^y=x.",
+        "Revisa siempre base positiva distinta de 1 y argumento positivo."
+      ],
+      "math_check": {
+        "kind": "log_base",
+        "params": [
+          3,
+          81
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L05-03": {
+      "hints": [
+        "Reescribe log_b(x)=y en forma exponencial b^y=x.",
+        "Revisa siempre base positiva distinta de 1 y argumento positivo."
+      ],
+      "math_check": {
+        "kind": "log_base",
+        "params": [
+          10,
+          1000
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L05-04": {
+      "hints": [
+        "Reescribe log_b(x)=y en forma exponencial b^y=x.",
+        "Revisa siempre base positiva distinta de 1 y argumento positivo."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L05-05": {
+      "hints": [
+        "Reescribe log_b(x)=y en forma exponencial b^y=x.",
+        "Revisa siempre base positiva distinta de 1 y argumento positivo."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L06-01": {
+      "hints": [
+        "Separar el valor observado de la referencia antes de restar.",
+        "Error absoluto=|x−r|; relativo=|x−r|/|r| con r≠0."
+      ],
+      "math_check": {
+        "kind": "absolute_error",
+        "params": [
+          9.8,
+          10
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L06-02": {
+      "hints": [
+        "Separar el valor observado de la referencia antes de restar.",
+        "Error absoluto=|x−r|; relativo=|x−r|/|r| con r≠0."
+      ],
+      "math_check": {
+        "kind": "relative_error",
+        "params": [
+          9.8,
+          10
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L06-03": {
+      "hints": [
+        "Separar el valor observado de la referencia antes de restar.",
+        "Error absoluto=|x−r|; relativo=|x−r|/|r| con r≠0."
+      ],
+      "math_check": {
+        "kind": "relative_percent",
+        "params": [
+          9.8,
+          10
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L06-04": {
+      "hints": [
+        "Separar el valor observado de la referencia antes de restar.",
+        "Error absoluto=|x−r|; relativo=|x−r|/|r| con r≠0."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    },
+    "F3-E4B-N01-L06-05": {
+      "hints": [
+        "Separar el valor observado de la referencia antes de restar.",
+        "Error absoluto=|x−r|; relativo=|x−r|/|r| con r≠0."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre dominios, complejos, signos, precisión, pendiente y unidades; revisión humana F4 pendiente."
+    }
+  }
+}

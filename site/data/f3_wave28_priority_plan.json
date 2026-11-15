@@ -1,0 +1,59 @@
+{
+  "version": "0.28.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "E4B-N01",
+      "priority": 1,
+      "prerequisites_verified_in_sequence": [
+        "E3-N01"
+      ]
+    },
+    {
+      "unit_id": "B1C-N01",
+      "priority": 2,
+      "prerequisites_verified_in_sequence": [
+        "E4B-N01",
+        "E4B-A01"
+      ]
+    },
+    {
+      "unit_id": "E4A-G01",
+      "priority": 3,
+      "prerequisites_verified_in_sequence": [
+        "E3-G02",
+        "E3-G01"
+      ]
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 89,
+  "new_editorial_edges": [
+    {
+      "from": "E3-N01",
+      "to": "E4B-N01",
+      "status": "propuesta_editorial",
+      "why": "Números reales, intervalos y aproximaciones de 3.º previos a reales y radicales 4.º B."
+    },
+    {
+      "from": "E4B-N01",
+      "to": "B1C-N01",
+      "status": "propuesta_editorial",
+      "why": "Reales, radicales y logaritmos de apoyo 4.º B preceden a complejos de Matemáticas I."
+    },
+    {
+      "from": "E4B-A01",
+      "to": "B1C-N01",
+      "status": "propuesta_editorial",
+      "why": "Polinomios y transformaciones algebraicas de 4.º B para raíces y operaciones de complejos."
+    },
+    {
+      "from": "E3-G01",
+      "to": "E4A-G01",
+      "status": "propuesta_editorial",
+      "why": "Coordenadas, distancia y pendientes de 3.º para geometría aplicada de 4.º A."
+    }
+  ],
+  "verified_DAG_edges": 113,
+  "regional_mapping": "NO VERIFICADO; nuevas aristas solo editoriales"
+}

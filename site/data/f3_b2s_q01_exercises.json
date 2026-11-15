@@ -1,0 +1,1012 @@
+{
+  "unit_id": "B2S-Q01",
+  "version": "0.25.0",
+  "status": "revision",
+  "notice": "90 ejercicios totales sintéticos F3-25, validados por reglas deterministas con revisión humana pendiente.",
+  "activities": [
+    {
+      "exercise_id": "F3-B2S-Q01-L01-01",
+      "lesson_id": "B2S-Q01-L01",
+      "type": "numeric",
+      "prompt": "Una urna tiene 3 bolas rojas y 2 azules. Se extraen dos sin reemplazo. Halla P(roja,roja).",
+      "answer": 0.3,
+      "explanation": "P(RR)=(3/5)(2/4)=3/10=0,30.",
+      "hint": "Dibuja las dos etapas y determina si hay reemplazo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_01",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L01-02",
+      "lesson_id": "B2S-Q01-L01",
+      "type": "numeric",
+      "prompt": "Si P(A)=0,6, P(B)=0,5 y P(A∩B)=0,2, halla P(A∪B).",
+      "answer": 0.9,
+      "explanation": "P(A∪B)=0,6+0,5−0,2=0,9.",
+      "hint": "Dibuja las dos etapas y determina si hay reemplazo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_01",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L01-03",
+      "lesson_id": "B2S-Q01-L01",
+      "type": "numeric",
+      "prompt": "Con 3 rojas y 2 azules, dos extracciones sin reemplazo: P(primera roja, segunda azul).",
+      "answer": 0.3,
+      "explanation": "P(RA)=(3/5)(2/4)=3/10.",
+      "hint": "Dibuja las dos etapas y determina si hay reemplazo.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_01",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L01-04",
+      "lesson_id": "B2S-Q01-L01",
+      "type": "choice",
+      "prompt": "Dos sucesos tienen intersección vacía y probabilidades positivas. ¿Cuál es correcta?",
+      "answer": "Son incompatibles y no independientes.",
+      "explanation": "Para A y B positivos, P(A)P(B)>0 mientras P(A∩B)=0.",
+      "hint": "Dibuja las dos etapas y determina si hay reemplazo.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_01",
+        "prerrequisito_b2s_q01"
+      ],
+      "choices": [
+        "Son incompatibles y no independientes.",
+        "Siempre suman una probabilidad mayor que uno.",
+        "La probabilidad de su unión es su producto.",
+        "Son independientes por no coincidir."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L01-05",
+      "lesson_id": "B2S-Q01-L01",
+      "type": "choice",
+      "prompt": "¿Qué operación corresponde a dos etapas sucesivas en una misma ruta?",
+      "answer": "Multiplicar probabilidades condicionadas.",
+      "explanation": "La regla del producto usa P(A∩B)=P(A)P(B|A).",
+      "hint": "Dibuja las dos etapas y determina si hay reemplazo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_01",
+        "prerrequisito_b2s_q01"
+      ],
+      "choices": [
+        "Restar siempre los tamaños de las ramas.",
+        "Dividir por el número de rutas.",
+        "Multiplicar probabilidades condicionadas.",
+        "Sumar cualquier par de porcentajes."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L02-01",
+      "lesson_id": "B2S-Q01-L02",
+      "type": "numeric",
+      "prompt": "Entre 100 casos sintéticos, 30 cumplen B y 12 cumplen también A. Calcula P(A|B).",
+      "answer": 0.4,
+      "explanation": "P(A|B)=12/30=0,40.",
+      "hint": "La barra vertical en P(A|B) indica el denominador.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_02",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L02-02",
+      "lesson_id": "B2S-Q01-L02",
+      "type": "numeric",
+      "prompt": "En los mismos 100 casos, 12 tienen A y B. Calcula P(A∩B).",
+      "answer": 0.12,
+      "explanation": "La conjunta divide la celda por el total general: 12/100.",
+      "hint": "La barra vertical en P(A|B) indica el denominador.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_02",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L02-03",
+      "lesson_id": "B2S-Q01-L02",
+      "type": "numeric",
+      "prompt": "En otra tabla de 100, 40 cumplen A y 12 cumplen A∩B. Calcula P(B|A).",
+      "answer": 0.3,
+      "explanation": "P(B|A)=12/40=0,30, no 12/100.",
+      "hint": "La barra vertical en P(A|B) indica el denominador.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_02",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L02-04",
+      "lesson_id": "B2S-Q01-L02",
+      "type": "choice",
+      "prompt": "Una tasa P(positivo|enfermedad) es 0,9. ¿Qué se puede afirmar sobre P(enfermedad|positivo)?",
+      "answer": "No se deduce sin prevalencia y falsos positivos.",
+      "explanation": "El denominador cambia al invertir la condición.",
+      "hint": "La barra vertical en P(A|B) indica el denominador.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_02",
+        "prerrequisito_b2s_q01"
+      ],
+      "choices": [
+        "Es la probabilidad de la intersección.",
+        "Debe valer 0,1 siempre.",
+        "No se deduce sin prevalencia y falsos positivos.",
+        "También vale 0,9 siempre."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L02-05",
+      "lesson_id": "B2S-Q01-L02",
+      "type": "choice",
+      "prompt": "¿Qué denominador se usa para P(A|B) en una tabla?",
+      "answer": "El total de los casos que cumplen B.",
+      "explanation": "La condición B define el universo de referencia.",
+      "hint": "La barra vertical en P(A|B) indica el denominador.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_02",
+        "prerrequisito_b2s_q01"
+      ],
+      "choices": [
+        "El total de los casos que cumplen B.",
+        "El número de filas de la tabla.",
+        "Los casos que cumplen A.",
+        "Todos los casos incluso si B no ocurrió."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L03-01",
+      "lesson_id": "B2S-Q01-L03",
+      "type": "numeric",
+      "prompt": "Si P(A)=0,4 y P(B)=0,5, bajo independencia calcula P(A∩B).",
+      "answer": 0.2,
+      "explanation": "Bajo independencia, P(A∩B)=0,4×0,5=0,20.",
+      "hint": "Independencia es una igualdad comprobable, no una intuición.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_03",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L03-02",
+      "lesson_id": "B2S-Q01-L03",
+      "type": "numeric",
+      "prompt": "Si P(A∩B)=0,2 y P(B)=0,5, calcula P(A|B).",
+      "answer": 0.4,
+      "explanation": "P(A|B)=0,2/0,5=0,4, igual a P(A) en el modelo independiente.",
+      "hint": "Independencia es una igualdad comprobable, no una intuición.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_03",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L03-03",
+      "lesson_id": "B2S-Q01-L03",
+      "type": "numeric",
+      "prompt": "Si el producto P(A)P(B) vale 0,2 y P(A∩B)=0,1, ¿cuánto difieren en valor absoluto?",
+      "answer": 0.1,
+      "explanation": "|0,2−0,1|=0,1; no se cumple igualdad de independencia.",
+      "hint": "Independencia es una igualdad comprobable, no una intuición.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_03",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L03-04",
+      "lesson_id": "B2S-Q01-L03",
+      "type": "choice",
+      "prompt": "¿Cuál es el criterio matemático de independencia?",
+      "answer": "P(A∩B)=P(A)P(B).",
+      "explanation": "La igualdad del producto define independencia.",
+      "hint": "Independencia es una igualdad comprobable, no una intuición.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_03",
+        "prerrequisito_b2s_q01"
+      ],
+      "choices": [
+        "P(A∩B)=P(A)P(B).",
+        "P(A)=P(B) necesariamente.",
+        "A y B tienen que llamarse distinto.",
+        "P(A∩B)=0 en todos los casos."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L03-05",
+      "lesson_id": "B2S-Q01-L03",
+      "type": "choice",
+      "prompt": "¿Son independientes dos eventos incompatibles con P(A)>0 y P(B)>0?",
+      "answer": "No, porque el producto es positivo pero la intersección es cero.",
+      "explanation": "Incompatibilidad positiva excluye independencia.",
+      "hint": "Independencia es una igualdad comprobable, no una intuición.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_03",
+        "prerrequisito_b2s_q01"
+      ],
+      "choices": [
+        "Sí, porque no se solapan.",
+        "No se puede decir nada aunque los datos son exactos.",
+        "Sí, porque sus probabilidades se suman.",
+        "No, porque el producto es positivo pero la intersección es cero."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L04-01",
+      "lesson_id": "B2S-Q01-L04",
+      "type": "numeric",
+      "prompt": "Tabla 2×2: A∩B=20, no A∩B=10. Calcula P(A|B).",
+      "answer": 0.6666666666666666,
+      "explanation": "Total con B=20+10=30; P(A|B)=20/30=2/3.",
+      "hint": "Localiza la intersección y dibuja los totales marginales.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_04",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L04-02",
+      "lesson_id": "B2S-Q01-L04",
+      "type": "numeric",
+      "prompt": "En la misma tabla, A∩B=20 y A∩no B=30. Calcula P(B|A).",
+      "answer": 0.4,
+      "explanation": "Total con A=20+30=50; P(B|A)=20/50=0,4.",
+      "hint": "Localiza la intersección y dibuja los totales marginales.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_04",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L04-03",
+      "lesson_id": "B2S-Q01-L04",
+      "type": "numeric",
+      "prompt": "Tabla de N=100 con 20 casos A∩B. Calcula P(A∩B).",
+      "answer": 0.2,
+      "explanation": "La conjunta =20/100=0,20.",
+      "hint": "Localiza la intersección y dibuja los totales marginales.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_04",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L04-04",
+      "lesson_id": "B2S-Q01-L04",
+      "type": "choice",
+      "prompt": "¿Qué error ocurre al calcular P(A|B) dividiendo A∩B por N?",
+      "answer": "Se obtiene la conjunta en lugar de la condicionada.",
+      "explanation": "La conjunta usa N; la condicionada usa el total B.",
+      "hint": "Localiza la intersección y dibuja los totales marginales.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_04",
+        "prerrequisito_b2s_q01"
+      ],
+      "choices": [
+        "Se obtiene la complementaria de B.",
+        "Se obtiene la conjunta en lugar de la condicionada.",
+        "Se obtiene P(B|A) correctamente.",
+        "El cálculo es siempre idéntico."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L04-05",
+      "lesson_id": "B2S-Q01-L04",
+      "type": "choice",
+      "prompt": "Si la suma de cuatro celdas 2×2 no coincide con el N informado, ¿qué hacer?",
+      "answer": "Revisar recuentos y totales antes de calcular.",
+      "explanation": "La integridad de las tablas es prerrequisito.",
+      "hint": "Localiza la intersección y dibuja los totales marginales.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_04",
+        "prerrequisito_b2s_q01"
+      ],
+      "choices": [
+        "Normalizar un valor sin documentarlo.",
+        "Calcular Bayes directamente con datos inconsistentes.",
+        "Ignorar la discrepancia si es pequeña.",
+        "Revisar recuentos y totales antes de calcular."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L05-01",
+      "lesson_id": "B2S-Q01-L05",
+      "type": "numeric",
+      "prompt": "P(A)=0,2, P(B|A)=0,8 y P(B|no A)=0,1. Calcula P(B).",
+      "answer": 0.24,
+      "explanation": "P(B)=0,2×0,8+0,8×0,1=0,24.",
+      "hint": "Enumera una partición que cubra todos los casos.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_05",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L05-02",
+      "lesson_id": "B2S-Q01-L05",
+      "type": "numeric",
+      "prompt": "Con pesos P(A)=0,9 y P(no A)=0,1, tasas de B de 0,2 y 0,9 respectivamente, calcula P(B).",
+      "answer": 0.27,
+      "explanation": "P(B)=0,9×0,2+0,1×0,9=0,27.",
+      "hint": "Enumera una partición que cubra todos los casos.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_05",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L05-03",
+      "lesson_id": "B2S-Q01-L05",
+      "type": "numeric",
+      "prompt": "Si P(A)=0,2 y P(B|A)=0,8, calcula P(A∩B).",
+      "answer": 0.16,
+      "explanation": "La ruta conjunta tiene probabilidad 0,2×0,8=0,16.",
+      "hint": "Enumera una partición que cubra todos los casos.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_05",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L05-04",
+      "lesson_id": "B2S-Q01-L05",
+      "type": "choice",
+      "prompt": "¿Cuándo es correcto promediar al 50 % dos tasas condicionadas?",
+      "answer": "Cuando los dos grupos de la partición tienen pesos iguales.",
+      "explanation": "Probabilidad total exige ponderar por P(A) y P(no A).",
+      "hint": "Enumera una partición que cubra todos los casos.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_05",
+        "prerrequisito_b2s_q01"
+      ],
+      "choices": [
+        "Cuando los dos grupos de la partición tienen pesos iguales.",
+        "Solo si las tasas superan 50 %.",
+        "Solo si A y B son incompatibles.",
+        "Siempre, aunque sus pesos sean distintos."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L05-05",
+      "lesson_id": "B2S-Q01-L05",
+      "type": "choice",
+      "prompt": "¿Exige independencia la ley de la probabilidad total?",
+      "answer": "No; permite combinar probabilidades condicionadas distintas.",
+      "explanation": "No se exige independencia, sino una partición y condicionales válidas.",
+      "hint": "Enumera una partición que cubra todos los casos.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_05",
+        "prerrequisito_b2s_q01"
+      ],
+      "choices": [
+        "Sí, de otro modo P(B)=0.",
+        "No; permite combinar probabilidades condicionadas distintas.",
+        "Solo vale para sucesos imposibles.",
+        "Sí, de otro modo el producto es inválido."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L06-01",
+      "lesson_id": "B2S-Q01-L06",
+      "type": "numeric",
+      "prompt": "Si P(A)=0,01, P(+|A)=0,90 y P(+|no A)=0,10, calcula P(+).",
+      "answer": 0.108,
+      "explanation": "P(+)=0,01×0,90+0,99×0,10=0,108.",
+      "hint": "Identifica el evento que se observa y el que se quiere inferir.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_06",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L06-02",
+      "lesson_id": "B2S-Q01-L06",
+      "type": "numeric",
+      "prompt": "Con las mismas tasas, calcula P(A|+). Da decimal con 4 cifras.",
+      "answer": 0.0833,
+      "explanation": "P(A|+)=0,009/0,108=1/12≈0,0833; no es 0,90.",
+      "hint": "Identifica el evento que se observa y el que se quiere inferir.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_06",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 0.00015
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L06-03",
+      "lesson_id": "B2S-Q01-L06",
+      "type": "numeric",
+      "prompt": "Bajo el mismo modelo, calcula P(no A|+). Da 4 decimales.",
+      "answer": 0.9167,
+      "explanation": "P(no A|+)=0,099/0,108=11/12≈0,9167.",
+      "hint": "Identifica el evento que se observa y el que se quiere inferir.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_06",
+        "prerrequisito_b2s_q01"
+      ],
+      "tolerance": 0.00015
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L06-04",
+      "lesson_id": "B2S-Q01-L06",
+      "type": "choice",
+      "prompt": "Si una prueba es muy sensible y la prevalencia baja, ¿qué es posible?",
+      "answer": "Que el valor predictivo positivo sea bajo por falsos positivos.",
+      "explanation": "Bayes incorpora tasa base y falsos positivos.",
+      "hint": "Identifica el evento que se observa y el que se quiere inferir.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_06",
+        "prerrequisito_b2s_q01"
+      ],
+      "choices": [
+        "Que la prevalencia ya no importe.",
+        "Que nunca haya falsos positivos.",
+        "Que el valor predictivo positivo sea bajo por falsos positivos.",
+        "Que P(A|+) sea igual a sensibilidad siempre."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2S-Q01-L06-05",
+      "lesson_id": "B2S-Q01-L06",
+      "type": "choice",
+      "prompt": "¿Qué representa el denominador de Bayes al calcular P(A|B)?",
+      "answer": "P(B), suma de todas las rutas que hacen ocurrir B.",
+      "explanation": "La probabilidad total normaliza las rutas que producen B.",
+      "hint": "Identifica el evento que se observa y el que se quiere inferir.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2s_q01_06",
+        "prerrequisito_b2s_q01"
+      ],
+      "choices": [
+        "La tasa de verdaderos negativos únicamente.",
+        "P(A) siempre.",
+        "P(B), suma de todas las rutas que hacen ocurrir B.",
+        "P(B|A) sin ponderar."
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B2S-Q01-L01-01": {
+      "hints": [
+        "Dibuja las dos etapas y determina si hay reemplazo.",
+        "En una ruta multiplica condicionadas; en una unión resta la intersección una vez."
+      ],
+      "math_check": {
+        "kind": "product",
+        "params": [
+          [
+            3,
+            5
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L01-02": {
+      "hints": [
+        "Dibuja las dos etapas y determina si hay reemplazo.",
+        "En una ruta multiplica condicionadas; en una unión resta la intersección una vez."
+      ],
+      "math_check": {
+        "kind": "union",
+        "params": [
+          0.6,
+          0.5,
+          0.2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L01-03": {
+      "hints": [
+        "Dibuja las dos etapas y determina si hay reemplazo.",
+        "En una ruta multiplica condicionadas; en una unión resta la intersección una vez."
+      ],
+      "math_check": {
+        "kind": "product",
+        "params": [
+          [
+            3,
+            5
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L01-04": {
+      "hints": [
+        "Dibuja las dos etapas y determina si hay reemplazo.",
+        "En una ruta multiplica condicionadas; en una unión resta la intersección una vez."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L01-05": {
+      "hints": [
+        "Dibuja las dos etapas y determina si hay reemplazo.",
+        "En una ruta multiplica condicionadas; en una unión resta la intersección una vez."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L02-01": {
+      "hints": [
+        "La barra vertical en P(A|B) indica el denominador.",
+        "Usa la intersección dividida por el total condicionado, siempre positivo."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          12,
+          30
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L02-02": {
+      "hints": [
+        "La barra vertical en P(A|B) indica el denominador.",
+        "Usa la intersección dividida por el total condicionado, siempre positivo."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          12,
+          100
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L02-03": {
+      "hints": [
+        "La barra vertical en P(A|B) indica el denominador.",
+        "Usa la intersección dividida por el total condicionado, siempre positivo."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          12,
+          40
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L02-04": {
+      "hints": [
+        "La barra vertical en P(A|B) indica el denominador.",
+        "Usa la intersección dividida por el total condicionado, siempre positivo."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L02-05": {
+      "hints": [
+        "La barra vertical en P(A|B) indica el denominador.",
+        "Usa la intersección dividida por el total condicionado, siempre positivo."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L03-01": {
+      "hints": [
+        "Independencia es una igualdad comprobable, no una intuición.",
+        "Multiplica las marginales y compara con la intersección; distingue población de muestra."
+      ],
+      "math_check": {
+        "kind": "product",
+        "params": [
+          [
+            0.4,
+            1
+          ],
+          [
+            0.5,
+            1
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L03-02": {
+      "hints": [
+        "Independencia es una igualdad comprobable, no una intuición.",
+        "Multiplica las marginales y compara con la intersección; distingue población de muestra."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          0.2,
+          0.5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L03-03": {
+      "hints": [
+        "Independencia es una igualdad comprobable, no una intuición.",
+        "Multiplica las marginales y compara con la intersección; distingue población de muestra."
+      ],
+      "math_check": {
+        "kind": "absdiff",
+        "params": [
+          0.2,
+          0.1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L03-04": {
+      "hints": [
+        "Independencia es una igualdad comprobable, no una intuición.",
+        "Multiplica las marginales y compara con la intersección; distingue población de muestra."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L03-05": {
+      "hints": [
+        "Independencia es una igualdad comprobable, no una intuición.",
+        "Multiplica las marginales y compara con la intersección; distingue población de muestra."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L04-01": {
+      "hints": [
+        "Localiza la intersección y dibuja los totales marginales.",
+        "Condicionada = celda/total de la condición; conjunta = celda/N."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          20,
+          30
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L04-02": {
+      "hints": [
+        "Localiza la intersección y dibuja los totales marginales.",
+        "Condicionada = celda/total de la condición; conjunta = celda/N."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          20,
+          50
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L04-03": {
+      "hints": [
+        "Localiza la intersección y dibuja los totales marginales.",
+        "Condicionada = celda/total de la condición; conjunta = celda/N."
+      ],
+      "math_check": {
+        "kind": "ratio",
+        "params": [
+          20,
+          100
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L04-04": {
+      "hints": [
+        "Localiza la intersección y dibuja los totales marginales.",
+        "Condicionada = celda/total de la condición; conjunta = celda/N."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L04-05": {
+      "hints": [
+        "Localiza la intersección y dibuja los totales marginales.",
+        "Condicionada = celda/total de la condición; conjunta = celda/N."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L05-01": {
+      "hints": [
+        "Enumera una partición que cubra todos los casos.",
+        "Multiplica peso por condicional en cada rama y suma; verifica que el resultado esté en [0,1]."
+      ],
+      "math_check": {
+        "kind": "total",
+        "params": [
+          0.2,
+          0.8,
+          0.1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L05-02": {
+      "hints": [
+        "Enumera una partición que cubra todos los casos.",
+        "Multiplica peso por condicional en cada rama y suma; verifica que el resultado esté en [0,1]."
+      ],
+      "math_check": {
+        "kind": "total",
+        "params": [
+          0.9,
+          0.2,
+          0.9
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L05-03": {
+      "hints": [
+        "Enumera una partición que cubra todos los casos.",
+        "Multiplica peso por condicional en cada rama y suma; verifica que el resultado esté en [0,1]."
+      ],
+      "math_check": {
+        "kind": "product",
+        "params": [
+          [
+            0.2,
+            1
+          ],
+          [
+            0.8,
+            1
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L05-04": {
+      "hints": [
+        "Enumera una partición que cubra todos los casos.",
+        "Multiplica peso por condicional en cada rama y suma; verifica que el resultado esté en [0,1]."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L05-05": {
+      "hints": [
+        "Enumera una partición que cubra todos los casos.",
+        "Multiplica peso por condicional en cada rama y suma; verifica que el resultado esté en [0,1]."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L06-01": {
+      "hints": [
+        "Identifica el evento que se observa y el que se quiere inferir.",
+        "Calcula primero P(B) con dos ramas; luego divide P(B|A)P(A) entre ese total."
+      ],
+      "math_check": {
+        "kind": "total",
+        "params": [
+          0.01,
+          0.9,
+          0.1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L06-02": {
+      "hints": [
+        "Identifica el evento que se observa y el que se quiere inferir.",
+        "Calcula primero P(B) con dos ramas; luego divide P(B|A)P(A) entre ese total."
+      ],
+      "math_check": {
+        "kind": "bayes",
+        "params": [
+          0.01,
+          0.9,
+          0.1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L06-03": {
+      "hints": [
+        "Identifica el evento que se observa y el que se quiere inferir.",
+        "Calcula primero P(B) con dos ramas; luego divide P(B|A)P(A) entre ese total."
+      ],
+      "math_check": {
+        "kind": "complement_bayes",
+        "params": [
+          0.01,
+          0.9,
+          0.1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L06-04": {
+      "hints": [
+        "Identifica el evento que se observa y el que se quiere inferir.",
+        "Calcula primero P(B) con dos ramas; luego divide P(B|A)P(A) entre ese total."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    },
+    "F3-B2S-Q01-L06-05": {
+      "hints": [
+        "Identifica el evento que se observa y el que se quiere inferir.",
+        "Calcula primero P(B) con dos ramas; luego divide P(B|A)P(A) entre ese total."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Explicación específica en exercise.explanation; contraste matemático/revisión humana pendiente en F4."
+    }
+  }
+}

@@ -1,0 +1,746 @@
+{
+  "unit_id": "B2S-Q02",
+  "unit_title": "Distribuciones de probabilidad",
+  "product_phase": "F3-25",
+  "version": "0.25.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Definir distribuciones discretas, esperanza y varianza.",
+    "Verificar que las probabilidades de una tabla suman uno."
+  ],
+  "warnings": [
+    "Contenido sintético y editorial EN REVISIÓN. No validación curricular autonómica ni resultados reales.",
+    "No suponer representatividad, independencia, aproximación exacta ni causalidad sin hipótesis."
+  ],
+  "prerequisite_links": [
+    "B1S-Q01-L03",
+    "B1S-Q02-L01",
+    "B1S-Q02-L02",
+    "B1S-Q02-L03",
+    "B1S-Q02-L04",
+    "B1S-Q02-L05",
+    "B1S-Q02-L06",
+    "B2S-Q01-L03",
+    "B2S-Q02-L01",
+    "B2S-Q02-L02"
+  ],
+  "recall_policy": "f2-spaced-v1.0.0",
+  "source_note": "Guía LOMLOE local y RD 243/2022 como marco sin mapeo fino.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B2S-Q02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.25.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-Q02:C01"
+      ],
+      "objectives": [
+        "Definir distribuciones discretas, esperanza y varianza.",
+        "Verificar que las probabilidades de una tabla suman uno."
+      ],
+      "prerequisites": [
+        "B1S-Q02-L01",
+        "B1S-Q02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una variable aleatoria asocia un número a cada resultado y tiene una distribución. Para X discreta, sus masas son no negativas y suman uno. La esperanza E[X]=Σx·P(X=x) es un promedio teórico, no necesariamente un valor posible. La varianza es E[(X−μ)²]=E[X²]−μ² y no puede ser negativa. Conviene comparar media y dispersión antes de escoger un modelo. Las probabilidades aquí son hipotéticas, sin datos personales, y no representan una población real."
+        },
+        {
+          "type": "example",
+          "body": "Si X toma 0, 1 y 2 con probabilidades 1/4, 1/2 y 1/4: E[X]=0×1/4+1×1/2+2×1/4=1."
+        },
+        {
+          "type": "example",
+          "body": "Para la misma X, E[X²]=0+1/2+4/4=1,5; Var(X)=1,5−1²=0,5 y desviación típica √0,5≈0,7071."
+        },
+        {
+          "type": "figure",
+          "body": "Representación matemática ilustrativa con tabla de valores, denominadores y límites. Los símbolos y cifras exactos se consultan en la tabla accesible.",
+          "alt": "Variables aleatorias y parámetros. Visual de apoyo; la tabla HTML semántica contiene todos los datos y advertencias.",
+          "visual_spec": {
+            "render_family": "wave25",
+            "title": "Variables aleatorias y parámetros",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "X=0",
+                "X=1",
+                "X=2"
+              ],
+              "values": [
+                0.25,
+                0.5,
+                0.25
+              ]
+            },
+            "rows": [
+              [
+                "X",
+                "0 / 1 / 2"
+              ],
+              [
+                "Probabilidades",
+                "1/4 / 1/2 / 1/4"
+              ],
+              [
+                "Suma",
+                "1"
+              ],
+              [
+                "E[X]",
+                "1"
+              ],
+              [
+                "Var(X)",
+                "0,5"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede E[X]=1,5 aunque X solo tome enteros?||Sí: es un promedio ponderado, no necesariamente un resultado observable."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Definir distribuciones discretas, esperanza y varianza. Comprueba masas ≥0 y suma igual a uno antes de calcular. Repite al día siguiente y después de 3, 7, 14 y 30 días solo como pauta editorial, no como eficacia validada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-Q02-L01-01",
+        "F3-B2S-Q02-L01-02",
+        "F3-B2S-Q02-L01-03",
+        "F3-B2S-Q02-L01-04",
+        "F3-B2S-Q02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I y II (marco estatal, mapeo fino pendiente).",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Referencia oficial para contexto curricular; transposición a criterios y Cataluña NO VERIFICADA."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-Q02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.25.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-Q02:C02"
+      ],
+      "objectives": [
+        "Elegir binomial o normal según la naturaleza de la variable y las hipótesis.",
+        "Calcular masas binomiales y propiedades elementales de una normal."
+      ],
+      "prerequisites": [
+        "B1S-Q02-L02",
+        "B1S-Q02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La binomial B(n,p) modela un número de éxitos en n ensayos independientes con probabilidad fija p. Su masa es C(n,k)p^k(1−p)^(n−k). Si no hay independencia o p cambia, la fórmula puede ser incorrecta. La normal N(μ,σ²) modela valores continuos con densidad en forma de campana y σ>0; la probabilidad de un punto exacto es cero y las probabilidades de intervalos son áreas. No se pasa de binomial a normal solo porque aparezca una gráfica suave."
+        },
+        {
+          "type": "example",
+          "body": "Con cuatro ensayos independientes y p=1/2, P(X=2)=C(4,2)(1/2)^4=6/16=0,375. Hay seis ordenaciones con dos éxitos."
+        },
+        {
+          "type": "example",
+          "body": "Para una normal con media μ=50 y desviación σ=10, P(X<50)=0,5 por simetría; P(X=50)=0, no 0,5."
+        },
+        {
+          "type": "figure",
+          "body": "Representación matemática ilustrativa con tabla de valores, denominadores y límites. Los símbolos y cifras exactos se consultan en la tabla accesible.",
+          "alt": "Binomial y normal. Visual de apoyo; la tabla HTML semántica contiene todos los datos y advertencias.",
+          "visual_spec": {
+            "render_family": "wave25",
+            "title": "Binomial y normal",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "values": [
+                0.0625,
+                0.25,
+                0.375,
+                0.25,
+                0.0625
+              ]
+            },
+            "rows": [
+              [
+                "Binomial B(4,1/2)",
+                "n=4, p=0,5"
+              ],
+              [
+                "P(X=2)",
+                "6/16=0,375"
+              ],
+              [
+                "Normal N(50,100)",
+                "σ=10"
+              ],
+              [
+                "P(X<50)",
+                "0,5"
+              ],
+              [
+                "P(X=50)",
+                "0"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es P(X=50)=0,5 para una normal centrada en 50?||No: 0,5 corresponde a cada semirrecta; en un punto P=0."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Elegir binomial o normal según la naturaleza de la variable y las hipótesis. Cuenta ensayos, comprueba independencia y p constante. Repite al día siguiente y después de 3, 7, 14 y 30 días solo como pauta editorial, no como eficacia validada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-Q02-L02-01",
+        "F3-B2S-Q02-L02-02",
+        "F3-B2S-Q02-L02-03",
+        "F3-B2S-Q02-L02-04",
+        "F3-B2S-Q02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I y II (marco estatal, mapeo fino pendiente).",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Referencia oficial para contexto curricular; transposición a criterios y Cataluña NO VERIFICADA."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-Q02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.25.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-Q02:C03"
+      ],
+      "objectives": [
+        "Identificar distribución uniforme discreta o continua en situaciones delimitadas.",
+        "Diferenciar masa sobre resultados equiprobables de densidad constante."
+      ],
+      "prerequisites": [
+        "B2S-Q02-L02",
+        "B1S-Q01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "AMPLIACIÓN EDITORIAL CONDICIONAL, no obligación curricular afirmada. Uniforme discreta en m resultados equiprobables asigna probabilidad 1/m a cada resultado. Uniforme continua U(a,b) tiene densidad 1/(b−a) en el intervalo y P(c≤X≤d)=(d−c)/(b−a) para a≤c≤d≤b. En la continua P(X=c)=0 aunque la densidad sea positiva. Igualdad de probabilidades discretas no se deduce del hecho de que existan m etiquetas: hace falta una hipótesis de equiprobabilidad justificada."
+        },
+        {
+          "type": "example",
+          "body": "Un dado ideal de seis caras tiene P(X=4)=1/6 y P(X∈{4,5})=2/6=1/3. Se han supuesto seis resultados equiprobables."
+        },
+        {
+          "type": "example",
+          "body": "Si T se modela uniforme continua U(0,10), P(2≤T≤5)=(5−2)/(10−0)=3/10=0,30. P(T=2)=0."
+        },
+        {
+          "type": "figure",
+          "body": "Representación matemática ilustrativa con tabla de valores, denominadores y límites. Los símbolos y cifras exactos se consultan en la tabla accesible.",
+          "alt": "Distribución uniforme cuando proceda. Visual de apoyo; la tabla HTML semántica contiene todos los datos y advertencias.",
+          "visual_spec": {
+            "render_family": "wave25",
+            "title": "Distribución uniforme cuando proceda",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+              ],
+              "values": [
+                0.16666666666666666,
+                0.16666666666666666,
+                0.16666666666666666,
+                0.16666666666666666,
+                0.16666666666666666,
+                0.16666666666666666
+              ]
+            },
+            "rows": [
+              [
+                "Uniforme discreta",
+                "6 resultados ideales"
+              ],
+              [
+                "P(4)",
+                "1/6"
+              ],
+              [
+                "U(0,10) continua",
+                "densidad 0,1"
+              ],
+              [
+                "P(2≤T≤5)",
+                "3/10"
+              ],
+              [
+                "P(T=2)",
+                "0"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué P(T=2)=0 en U(0,10) pero la densidad es 0,1?||La densidad no es la masa puntual: un punto tiene anchura cero."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Identificar distribución uniforme discreta o continua en situaciones delimitadas. Aclara si cuentas resultados discretos o mides una magnitud continua. Repite al día siguiente y después de 3, 7, 14 y 30 días solo como pauta editorial, no como eficacia validada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-Q02-L03-01",
+        "F3-B2S-Q02-L03-02",
+        "F3-B2S-Q02-L03-03",
+        "F3-B2S-Q02-L03-04",
+        "F3-B2S-Q02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I y II (marco estatal, mapeo fino pendiente).",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Referencia oficial para contexto curricular; transposición a criterios y Cataluña NO VERIFICADA."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-Q02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.25.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-Q02:C04"
+      ],
+      "objectives": [
+        "Leer función de distribución acumulada y cuantiles de modelos discretos y normales.",
+        "Usar el complemento y la estandarización con umbrales explícitos."
+      ],
+      "prerequisites": [
+        "B2S-Q02-L01",
+        "B1S-Q02-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La función acumulada F(x)=P(X≤x) es creciente en sentido no estricto. En una variable discreta puede tener saltos; un cuantil inferior de nivel q es el menor x con F(x)≥q. En una variable normal, los cuantiles se leen en una CDF continua: si Z es normal estándar, Φ(0)=0,5 y aproximadamente Φ(1,645)=0,95. No se interpreta el cuantil 95 % como una probabilidad de que la media cambie. Deben indicarse valores aproximados y la tolerancia de redondeo."
+        },
+        {
+          "type": "example",
+          "body": "Para X discreta con masas P(0)=0,2, P(1)=0,5 y P(2)=0,3: F(0)=0,2, F(1)=0,7 y F(2)=1; el cuantil inferior de nivel 0,60 es 1."
+        },
+        {
+          "type": "example",
+          "body": "Para una normal N(100,15²), la probabilidad P(X≤100)=Φ(0)=0,5. Su cuantil aproximado 95 % es 100+1,645×15=124,675."
+        },
+        {
+          "type": "figure",
+          "body": "Representación matemática ilustrativa con tabla de valores, denominadores y límites. Los símbolos y cifras exactos se consultan en la tabla accesible.",
+          "alt": "Probabilidades y cuantiles. Visual de apoyo; la tabla HTML semántica contiene todos los datos y advertencias.",
+          "visual_spec": {
+            "render_family": "wave25",
+            "title": "Probabilidades y cuantiles",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "0",
+                "1",
+                "2"
+              ],
+              "values": [
+                0.2,
+                0.5,
+                0.3
+              ]
+            },
+            "rows": [
+              [
+                "X",
+                "0 / 1 / 2"
+              ],
+              [
+                "Masas",
+                "0,2 / 0,5 / 0,3"
+              ],
+              [
+                "F(1)",
+                "0,7"
+              ],
+              [
+                "Cuantil discreto 0,60",
+                "1"
+              ],
+              [
+                "Normal P(X≤μ)",
+                "0,5"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿F(1)=P(X=1)?||No: F(1) acumula las probabilidades de los valores ≤1."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Leer función de distribución acumulada y cuantiles de modelos discretos y normales. Decide si se busca masa, acumulada o cuantil. Repite al día siguiente y después de 3, 7, 14 y 30 días solo como pauta editorial, no como eficacia validada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-Q02-L04-01",
+        "F3-B2S-Q02-L04-02",
+        "F3-B2S-Q02-L04-03",
+        "F3-B2S-Q02-L04-04",
+        "F3-B2S-Q02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I y II (marco estatal, mapeo fino pendiente).",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Referencia oficial para contexto curricular; transposición a criterios y Cataluña NO VERIFICADA."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-Q02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.25.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-Q02:C05"
+      ],
+      "objectives": [
+        "Comparar probabilidad binomial exacta con aproximación normal con corrección de continuidad.",
+        "Declarar hipótesis y carácter aproximado de la respuesta."
+      ],
+      "prerequisites": [
+        "B1S-Q02-L06",
+        "B2S-Q02-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para X~B(n,p) con condiciones de regularidad, se puede aproximar mediante N(np,np(1−p)), pero no es igualdad exacta. La corrección de continuidad transforma, por ejemplo, P(X≤k) en P(Y≤k+0,5). La regla orientativa np≥10 y n(1−p)≥10 ayuda a evitar distribuciones demasiado asimétricas, pero no garantiza un error dado. Si p es muy pequeño, n pequeño o hay dependencia, conviene usar la binomial exacta. El resultado aproximado se debe etiquetar y comparar con el exacto cuando sea viable."
+        },
+        {
+          "type": "example",
+          "body": "Con X~B(100,1/2), μ=50, σ=5: P(X≤55)≈P(Y≤55,5) y z=(55,5−50)/5=1,1; Φ(1,1)≈0,8643."
+        },
+        {
+          "type": "example",
+          "body": "Para B(10,0,05) se obtiene np=0,5, muy lejos de 10. No se justifica aquí usar automáticamente la aproximación normal."
+        },
+        {
+          "type": "figure",
+          "body": "Representación matemática ilustrativa con tabla de valores, denominadores y límites. Los símbolos y cifras exactos se consultan en la tabla accesible.",
+          "alt": "Aproximaciones. Visual de apoyo; la tabla HTML semántica contiene todos los datos y advertencias.",
+          "visual_spec": {
+            "render_family": "wave25",
+            "title": "Aproximaciones",
+            "kind": "normal",
+            "model": {
+              "labels": [
+                "μ",
+                "σ",
+                "umbral"
+              ],
+              "values": [
+                50,
+                5,
+                55.5
+              ]
+            },
+            "rows": [
+              [
+                "Binomial",
+                "n=100, p=0,5"
+              ],
+              [
+                "Media / σ",
+                "50 / 5"
+              ],
+              [
+                "Corrección X≤55",
+                "Y≤55,5"
+              ],
+              [
+                "z",
+                "1,10"
+              ],
+              [
+                "Valor normal aprox.",
+                "0,8643"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿0,8643 es el valor exacto de P(B(100,0,5)≤55)?||No: es una aproximación normal con continuidad; el valor exacto se suma binomialmente."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Comparar probabilidad binomial exacta con aproximación normal con corrección de continuidad. Comprueba n, p, independencia y regularidad. Repite al día siguiente y después de 3, 7, 14 y 30 días solo como pauta editorial, no como eficacia validada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-Q02-L05-01",
+        "F3-B2S-Q02-L05-02",
+        "F3-B2S-Q02-L05-03",
+        "F3-B2S-Q02-L05-04",
+        "F3-B2S-Q02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I y II (marco estatal, mapeo fino pendiente).",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Referencia oficial para contexto curricular; transposición a criterios y Cataluña NO VERIFICADA."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-Q02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.25.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-Q02:C06"
+      ],
+      "objectives": [
+        "Justificar la elección de un modelo antes de calcular.",
+        "Rechazar binomial o normal cuando fallan sus supuestos."
+      ],
+      "prerequisites": [
+        "B2S-Q02-L02",
+        "B2S-Q01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un modelo es una hipótesis explícita sobre el mecanismo generador, no un truco para encajar datos. Para una binomial hace falta número fijo de ensayos, dicotomía éxito/fracaso, independencia y probabilidad constante. Para una normal continua son relevantes forma de distribución, escala, contexto y parámetros estimados con fundamento. Un conjunto de variables categóricas no se vuelve normal al aumentar n; la distribución de ciertas medias puede aproximarse a normal bajo condiciones distintas y no debe confundirse con la distribución de observaciones individuales. Al interpretar un resultado documenta el modelo, su alcance y si hay evidencia suficiente."
+        },
+        {
+          "type": "example",
+          "body": "En 8 extracciones sin reemplazo desde una urna pequeña, la probabilidad de roja cambia y no hay independencia: contar rojas no sigue, en general, B(8,p) con p fijo."
+        },
+        {
+          "type": "example",
+          "body": "Con 100 lanzamientos independientes de moneda ideal, X=número de caras sí admite B(100,1/2); sus parámetros μ=50 y σ=5 son teóricos del modelo, no inferidos de datos observados."
+        },
+        {
+          "type": "figure",
+          "body": "Representación matemática ilustrativa con tabla de valores, denominadores y límites. Los símbolos y cifras exactos se consultan en la tabla accesible.",
+          "alt": "Selección del modelo bajo supuestos. Visual de apoyo; la tabla HTML semántica contiene todos los datos y advertencias.",
+          "visual_spec": {
+            "render_family": "wave25",
+            "title": "Selección del modelo bajo supuestos",
+            "kind": "bars",
+            "model": {
+              "labels": [
+                "p1",
+                "p2",
+                "p3"
+              ],
+              "values": [
+                0.75,
+                0.7,
+                0.65
+              ]
+            },
+            "rows": [
+              [
+                "Caso A",
+                "8 extracciones sin reemplazo"
+              ],
+              [
+                "Independencia",
+                "No"
+              ],
+              [
+                "Caso B",
+                "100 monedas independientes"
+              ],
+              [
+                "Modelo B",
+                "B(100,0,5)"
+              ],
+              [
+                "Límite",
+                "Solo válido con hipótesis declaradas"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Contar éxitos siempre justifica una binomial?||No: p puede cambiar y los ensayos pueden depender unos de otros."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Justificar la elección de un modelo antes de calcular. Enumera ensayos, independencia, p constante y naturaleza continua o discreta. Repite al día siguiente y después de 3, 7, 14 y 30 días solo como pauta editorial, no como eficacia validada."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-Q02-L06-01",
+        "F3-B2S-Q02-L06-02",
+        "F3-B2S-Q02-L06-03",
+        "F3-B2S-Q02-L06-04",
+        "F3-B2S-Q02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 243/2022, Anexo II, Matemáticas Aplicadas a las Ciencias Sociales I y II (marco estatal, mapeo fino pendiente).",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521",
+          "license": "Referencia oficial para contexto curricular; transposición a criterios y Cataluña NO VERIFICADA."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

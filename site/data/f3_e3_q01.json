@@ -1,0 +1,808 @@
+{
+  "unit_id": "E3-Q01",
+  "unit_title": "Probabilidad y recuento",
+  "product_phase": "F3_OLA21",
+  "version": "0.21.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Distinguir experiencias simples y compuestas y sus espacios muestrales.",
+    "Aplicar los principios aditivo y multiplicativo de recuento.",
+    "Calcular probabilidades con Laplace en resultados elementales equiprobables."
+  ],
+  "warnings": [
+    "Datos exclusivamente sintéticos, EN REVISIÓN, no representan alumnado ni resultados reales.",
+    "Las probabilidades se condicionan a la equiprobabilidad, independencia o información previa cuando corresponda.",
+    "Frecuencia empírica no prueba probabilidad teórica; correlación no demuestra causalidad.",
+    "Las asignaciones a cursos y relaciones nuevas son editoriales, no obligaciones normativas.",
+    "WCAG 2.2 AA integral, currículo autonómico, revisión humana y móvil físico NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Probabilidad de 2.º ESO",
+      "lesson_id": "E2-Q01-L05",
+      "href": "#/curso/E2/unidad/E2-Q01/leccion/E2-Q01-L05"
+    },
+    {
+      "label": "Regla de Laplace de 2.º ESO",
+      "lesson_id": "E2-Q01-L03",
+      "href": "#/curso/E2/unidad/E2-Q01/leccion/E2-Q01-L03"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recuperar sin pistas y repasar con explicaciones, registro local solo si se consiente."
+  },
+  "source_note": "Referencia estatal RD 217/2022 y RD 243/2022; distribución editorial no homologada por autonomía.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E3-Q01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-Q01:C01"
+      ],
+      "objectives": [
+        "Distinguir experiencias simples y compuestas y sus espacios muestrales.",
+        "Reconocer el orden de resultados en experimentos con varias etapas."
+      ],
+      "prerequisites": [
+        "E2-Q01-L04",
+        "E2-Q01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un experimento simple observa una etapa; uno compuesto incluye varias etapas que pueden depender entre sí. Dos lanzamientos de moneda se representan por pares ordenados CC,CX,XC,XX. Contar CX y XC como un solo resultado es incorrecto si el orden temporal importa, aunque el suceso exactamente una cara los reúna. Si cada lanzamiento es ideal e independiente, las cuatro parejas son equiprobables; si la moneda está sesgada, el espacio muestral sigue siendo el mismo pero cambian sus pesos. Un árbol enumera rutas y la tabla las agrupa sin asumir automáticamente igual probabilidad. La independencia es una hipótesis sobre probabilidades, no parte automática de la definición del experimento compuesto. Un mismo evento se puede describir verbalmente y como subconjunto del espacio de resultados para comprobar coherencia."
+        },
+        {
+          "type": "example",
+          "body": "Dos lanzamientos independientes de moneda equilibrada: Ω={CC,CX,XC,XX}. El suceso una cara es {CX,XC} y contiene dos casos."
+        },
+        {
+          "type": "example",
+          "body": "Con dados distinguibles, (1,2) y (2,1) son parejas distintas y deben contarse por separado al registrar primero y segundo dado."
+        },
+        {
+          "type": "figure",
+          "body": "Secuencias ordenadas de dos monedas. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Secuencias ordenadas de dos monedas. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "prob_tree",
+            "title": "Secuencias ordenadas de dos monedas",
+            "rows": [
+              [
+                "Ω",
+                "CC,CX,XC,XX"
+              ],
+              [
+                "CX",
+                "Cara luego Cruz"
+              ],
+              [
+                "XC",
+                "Cruz luego Cara"
+              ],
+              [
+                "Una cara",
+                "{CX,XC}"
+              ],
+              [
+                "Hipótesis",
+                "Independientes si se usan pesos 1/4"
+              ]
+            ],
+            "model": {
+              "kind": "prob_tree",
+              "first": [
+                "C",
+                "X"
+              ],
+              "weights": [
+                "1/2",
+                "1/2"
+              ],
+              "second": [
+                "C",
+                "X"
+              ],
+              "second_weights": [
+                "1/2",
+                "1/2"
+              ]
+            },
+            "domain": [
+              0,
+              2
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede fusionarse CX y XC cuando importa el orden de los lanzamientos?||No; representan resultados ordenados diferentes."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un experimento simple observa una etapa; uno compuesto incluye varias etapas que pueden depender entre sí. Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-Q01-L01-01",
+        "F3-E3-Q01-L01-02",
+        "F3-E3-Q01-L01-03",
+        "F3-E3-Q01-L01-04",
+        "F3-E3-Q01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-Q01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-Q01:C02"
+      ],
+      "objectives": [
+        "Aplicar los principios aditivo y multiplicativo de recuento.",
+        "Diferenciar casos disjuntos, alternativas sucesivas y resultados ordenados."
+      ],
+      "prerequisites": [
+        "E3-Q01-L01",
+        "E2-Q01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El principio multiplicativo cuenta secuencias: con 3 camisetas y 2 pantalones hay 3·2=6 atuendos distintos. El principio aditivo cuenta alternativas mutuamente excluyentes: elegir exactamente uno entre 3 cupones tipo A o 2 tipo B, sin duplicados, ofrece 3+2=5 opciones. Si las alternativas disponibles en la segunda etapa dependen de la primera, se cuentan las ramas por separado y se suman; no siempre sirve un producto uniforme. Dos monedas generan cuatro secuencias ordenadas, pero la variable número de caras tiene tres posibles valores con multiplicidades 1,2,1, no tres resultados equiprobables. El reemplazo y el orden son condiciones del problema que cambian el recuento. Definir el espacio elemental evita dobles conteos y omisiones en diagramas de árbol."
+        },
+        {
+          "type": "example",
+          "body": "Tres camisetas y dos pantalones se combinan de seis formas porque cada camiseta puede emparejarse con dos pantalones."
+        },
+        {
+          "type": "example",
+          "body": "Elegir un único cupón entre tres del grupo A o dos del B da cinco opciones por suma, siempre que no se solapen."
+        },
+        {
+          "type": "figure",
+          "body": "Recuento de combinaciones. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Recuento de combinaciones. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "prob_tree",
+            "title": "Recuento de combinaciones",
+            "rows": [
+              [
+                "Etapa 1",
+                "3 camisetas"
+              ],
+              [
+                "Etapa 2",
+                "2 pantalones"
+              ],
+              [
+                "Combinaciones",
+                "3·2=6"
+              ],
+              [
+                "Alternativa disjunta",
+                "3+2=5"
+              ],
+              [
+                "Atención",
+                "Orden y reemplazo importan"
+              ]
+            ],
+            "model": {
+              "kind": "prob_tree",
+              "first": [
+                "A",
+                "B",
+                "C"
+              ],
+              "weights": [
+                "2",
+                "2",
+                "2"
+              ]
+            },
+            "domain": [
+              0,
+              3
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Para escoger una sola opción entre grupos disjuntos de 3 y 2 debe multiplicarse 3·2?||No; se suman 3+2."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El principio multiplicativo cuenta secuencias: con 3 camisetas y 2 pantalones hay 3·2=6 atuendos distintos. Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-Q01-L02-01",
+        "F3-E3-Q01-L02-02",
+        "F3-E3-Q01-L02-03",
+        "F3-E3-Q01-L02-04",
+        "F3-E3-Q01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-Q01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-Q01:C03"
+      ],
+      "objectives": [
+        "Calcular probabilidades con Laplace en resultados elementales equiprobables.",
+        "Evitar suponer equiprobables las sumas de dos dados."
+      ],
+      "prerequisites": [
+        "E3-Q01-L02",
+        "E2-Q01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si los resultados elementales de un espacio finito son igualmente probables, P(A)=|A|/|Ω|. Para dos dados ideales distinguibles e independientes, las 36 parejas ordenadas son equiprobables. La suma 7 se obtiene con seis parejas: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1), por lo que P(suma=7)=6/36=1/6. La suma 2 solo aparece con (1,1) y tiene probabilidad 1/36. No se puede asumir que las once sumas 2,...,12 sean equiprobables; se estaría confundiendo los valores de una variable con el espacio de resultados elementales. Si un dado está cargado, el recuento simple no determina probabilidades. Una partición de sucesos disjuntos y exhaustivos tiene probabilidad total 1. Las hipótesis físicas se declaran en vez de deducirse de la imagen."
+        },
+        {
+          "type": "example",
+          "body": "Con dos dados ideales distinguibles hay 36 parejas. Seis suman 7, así que P(suma=7)=6/36=1/6."
+        },
+        {
+          "type": "example",
+          "body": "La suma 2 necesita que ambos dados den 1. Es una pareja sobre 36, con probabilidad 1/36 en el modelo ideal."
+        },
+        {
+          "type": "figure",
+          "body": "Multiplicidades de sumas de dos dados. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Multiplicidades de sumas de dos dados. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "stats_bars",
+            "title": "Multiplicidades de sumas de dos dados",
+            "rows": [
+              [
+                "Espacio",
+                "36 parejas"
+              ],
+              [
+                "Suma 2",
+                "1 caso"
+              ],
+              [
+                "Suma 7",
+                "6 casos"
+              ],
+              [
+                "P(suma 7)",
+                "1/6"
+              ],
+              [
+                "Hipótesis",
+                "Dados independientes y equilibrados"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ],
+              "labels": [
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12"
+              ]
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Son equiprobables las sumas 2 y 7 de dos dados equilibrados?||No; tienen una y seis parejas favorables."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Si los resultados elementales de un espacio finito son igualmente probables, P(A)=|A|/|Ω|. Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-Q01-L03-01",
+        "F3-E3-Q01-L03-02",
+        "F3-E3-Q01-L03-03",
+        "F3-E3-Q01-L03-04",
+        "F3-E3-Q01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-Q01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-Q01:C04"
+      ],
+      "objectives": [
+        "Relacionar frecuencia experimental y probabilidad teórica.",
+        "Explicar fluctuaciones en muestras finitas sin afirmar convergencia exacta."
+      ],
+      "prerequisites": [
+        "E3-Q01-L03",
+        "E2-Q01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una probabilidad teórica pertenece al modelo de experimento, mientras la frecuencia empírica es una proporción observada. En una moneda ideal P(cara)=1/2 aunque en 40 tiradas sintéticas se registren 18 caras: la frecuencia relativa es 18/40=9/20=0,45. La diferencia frente a la teoría es 0,05 y no demuestra por sí sola un sesgo físico del instrumento. La ley de los grandes números describe el acercamiento probabilístico al aumentar ensayos independientes y estables, pero no asegura resultado exacto tras un número fijo ni una evolución monótona. Si los ensayos dependen entre sí o se seleccionan resultados de forma sesgada, el modelo cambia. Una ilustración de ensayos no equivale a una evaluación experimental de una moneda real y no usa datos personales."
+        },
+        {
+          "type": "example",
+          "body": "En 40 lanzamientos sintéticos aparecen 18 caras: f=18/40=9/20=0,45, frente a P ideal=1/2."
+        },
+        {
+          "type": "example",
+          "body": "Con 8 caras en 20 ensayos, frecuencia experimental 8/20=0,4, que no prueba una probabilidad verdadera de 0,4."
+        },
+        {
+          "type": "figure",
+          "body": "Observación frente a modelo. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Observación frente a modelo. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "stats_bars",
+            "title": "Observación frente a modelo",
+            "rows": [
+              [
+                "Ensayos sintéticos",
+                "40"
+              ],
+              [
+                "Caras",
+                "18"
+              ],
+              [
+                "Cruces",
+                "22"
+              ],
+              [
+                "Frecuencia cara",
+                "18/40=0,45"
+              ],
+              [
+                "Probabilidad ideal",
+                "1/2"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                18,
+                22
+              ],
+              "labels": [
+                "Cara",
+                "Cruz"
+              ]
+            },
+            "domain": [
+              0,
+              25
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una frecuencia empírica de 0,45 prueba que una moneda ideal tiene P(cara)=0,45?||No; una muestra finita fluctúa."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una probabilidad teórica pertenece al modelo de experimento, mientras la frecuencia empírica es una proporción observada. Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-Q01-L04-01",
+        "F3-E3-Q01-L04-02",
+        "F3-E3-Q01-L04-03",
+        "F3-E3-Q01-L04-04",
+        "F3-E3-Q01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-Q01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-Q01:C05"
+      ],
+      "objectives": [
+        "Construir árboles con probabilidades condicionales por rama.",
+        "Resolver extracciones dependientes sin aplicar independencia erróneamente."
+      ],
+      "prerequisites": [
+        "E2-Q01-L05",
+        "E3-Q01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un árbol de dos etapas etiqueta cada rama con la probabilidad condicionada a resultados anteriores. Una bolsa contiene 2 fichas rojas y 1 azul; al sacar dos sin reemplazo P(R1)=2/3. Tras una roja quedan 1 roja y 1 azul, de modo que P(R2|R1)=1/2 y P(RR)=(2/3)(1/2)=1/3. La ruta roja-azul tiene probabilidad 1/3, y la ruta azul-roja también 1/3, pues tras sacar la azul quedan dos rojas con probabilidad 1. La ruta azul-azul tiene probabilidad 0; todas las rutas exhaustivas suman 1. Multiplicar (2/3)² para dos rojas correspondería a un modelo con reemplazo, distinto del enunciado. La suma de las ramas salientes de un nodo con información fija siempre vale 1 y no debe mezclarse con sumas de probabilidades de rutas completas."
+        },
+        {
+          "type": "example",
+          "body": "Bolsa de 2 rojas y 1 azul sin reemplazo: P(RR)=P(R1)P(R2|R1)=(2/3)(1/2)=1/3."
+        },
+        {
+          "type": "example",
+          "body": "En la misma bolsa P(azul y luego roja)=(1/3)·1=1/3 porque después de extraer la azul solo quedan rojas."
+        },
+        {
+          "type": "figure",
+          "body": "Árbol condicionado sin reemplazo. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Árbol condicionado sin reemplazo. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "prob_tree",
+            "title": "Árbol condicionado sin reemplazo",
+            "rows": [
+              [
+                "Bolsa",
+                "2 R, 1 A"
+              ],
+              [
+                "P(R primera)",
+                "2/3"
+              ],
+              [
+                "P(R segunda|R)",
+                "1/2"
+              ],
+              [
+                "P(RR)",
+                "1/3"
+              ],
+              [
+                "P(AR)",
+                "1/3"
+              ]
+            ],
+            "model": {
+              "kind": "prob_tree",
+              "first": [
+                "R",
+                "A"
+              ],
+              "weights": [
+                "2/3",
+                "1/3"
+              ],
+              "second": [
+                "R|R",
+                "A|R"
+              ],
+              "second_weights": [
+                "1/2",
+                "1/2"
+              ]
+            },
+            "domain": [
+              0,
+              2
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es correcto calcular (2/3)² para obtener dos rojas sin reemplazo?||No; la segunda probabilidad pasa a 1/2."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un árbol de dos etapas etiqueta cada rama con la probabilidad condicionada a resultados anteriores. Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-Q01-L05-01",
+        "F3-E3-Q01-L05-02",
+        "F3-E3-Q01-L05-03",
+        "F3-E3-Q01-L05-04",
+        "F3-E3-Q01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-Q01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.21.0",
+      "status": "revision",
+      "concept_ids": [
+        "E3-Q01:C06"
+      ],
+      "objectives": [
+        "Distinguir sucesos compatibles, incompatibles y complementarios.",
+        "Aplicar fórmula de unión restando intersección cuando corresponda."
+      ],
+      "prerequisites": [
+        "E3-Q01-L03",
+        "E2-Q01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Dos sucesos son incompatibles si A∩B=∅; son compatibles si pueden ocurrir simultáneamente. Para cualesquiera sucesos P(A∪B)=P(A)+P(B)−P(A∩B). Solo cuando son incompatibles la intersección tiene probabilidad cero. En un dado ideal A=par={2,4,6}, B=mayor que 4={5,6}; la intersección es {6} y la unión {2,4,5,6}, luego P(A∪B)=3/6+2/6−1/6=4/6=2/3. Sumar 3/6+2/6 sin restar la intersección contaría dos veces el resultado 6. Los sucesos complementarios son incompatibles, su unión es Ω y sus probabilidades suman 1. Compatibilidad e independencia son propiedades diferentes: poder coincidir no acredita independencia probabilística. Las tablas de resultados permiten comprobar el cálculo incluso sin dibujo."
+        },
+        {
+          "type": "example",
+          "body": "Dado ideal: A=par con 3 casos, B=>4 con 2, intersección {6} con 1; unión tiene 3+2−1=4 casos, P=2/3."
+        },
+        {
+          "type": "example",
+          "body": "Los sucesos A={1,2} y C={4,5} son incompatibles en un dado ideal; la unión tiene cuatro casos, P=4/6=2/3."
+        },
+        {
+          "type": "figure",
+          "body": "Sucesos compatibles en un dado ideal. SVG didáctico con alternativa tabular semántica de valores y condiciones exactos.",
+          "alt": "Sucesos compatibles en un dado ideal. Datos, denominadores, hipótesis y conclusiones accesibles en tabla sin depender de colores ni formas.",
+          "visual_spec": {
+            "render_family": "wave21",
+            "kind": "stats_bars",
+            "title": "Sucesos compatibles en un dado ideal",
+            "rows": [
+              [
+                "A=par",
+                "{2,4,6}"
+              ],
+              [
+                "B=>4",
+                "{5,6}"
+              ],
+              [
+                "Intersección",
+                "{6}"
+              ],
+              [
+                "Unión",
+                "{2,4,5,6}"
+              ],
+              [
+                "P(unión)",
+                "4/6=2/3"
+              ]
+            ],
+            "model": {
+              "kind": "stats_bars",
+              "counts": [
+                3,
+                2,
+                1,
+                4
+              ],
+              "labels": [
+                "A",
+                "B",
+                "A∩B",
+                "A∪B"
+              ]
+            },
+            "domain": [
+              0,
+              5
+            ],
+            "marks": []
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede omitirse siempre la intersección al sumar probabilidades de sucesos compatibles?||No; se contaría dos veces su solapamiento."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Dos sucesos son incompatibles si A∩B=∅; son compatibles si pueden ocurrir simultáneamente. Antes de resolver otra cuestión identifica una hipótesis o sesgo que podría alterar el resultado."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-Q01-L06-01",
+        "F3-E3-Q01-L06-02",
+        "F3-E3-Q01-L06-03",
+        "F3-E3-Q01-L06-04",
+        "F3-E3-Q01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 y RD 243/2022, marco estatal; orden de unidades y mapeo autonómico editoriales no homologados.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente normativa de contexto sin homologación editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

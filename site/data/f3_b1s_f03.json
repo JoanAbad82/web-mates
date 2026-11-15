@@ -1,0 +1,796 @@
+{
+  "unit_id": "B1S-F03",
+  "unit_title": "Derivadas y cambios marginales",
+  "product_phase": "F3_OLA18",
+  "version": "0.18.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Calcular tasa de variación media entre dos puntos con unidades.",
+    "Definir la derivada mediante límite del cociente incremental.",
+    "Aplicar la regla de la potencia a polinomios y constantes."
+  ],
+  "warnings": [
+    "Material sintético EN REVISIÓN; no homologado ni publicable.",
+    "La continuidad no implica derivabilidad; f′=0 no asegura extremo y f′′=0 no asegura inflexión.",
+    "El marginal continuo no equivale automáticamente al incremento discreto de una unidad.",
+    "Revisión humana, normativa autonómica, accesibilidad integral y dispositivos físicos NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Límites y continuidad MACS I",
+      "lesson_id": "B1S-F02-L06",
+      "href": "#/curso/B1S/unidad/B1S-F02/leccion/B1S-F02-L06"
+    },
+    {
+      "label": "Álgebra de funciones",
+      "lesson_id": "B1S-F01-L02",
+      "href": "#/curso/B1S/unidad/B1S-F01/leccion/B1S-F01-L02"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recuperación sin pistas con feedback, revisión local y guardado voluntario."
+  },
+  "source_note": "Marco estatal RD 217/2022 y RD 243/2022, secuencia editorial, mapeo territorial pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1S-F03-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F03:C01"
+      ],
+      "objectives": [
+        "Calcular tasa de variación media entre dos puntos con unidades.",
+        "Distinguir secantes de derivadas locales y cambio total de tasa media."
+      ],
+      "prerequisites": [
+        "B1S-F02-L04",
+        "B1S-F01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La tasa de cambio media de f entre a y b, con b≠a, es (f(b)−f(a))/(b−a). Su unidad es unidad de salida por unidad de entrada, no la de la función original. Para el coste C(q)=q²+10q+100, de q=2 a q=4 se obtienen C(2)=124 y C(4)=156; la tasa media vale (156−124)/(4−2)=16 euros por unidad. Una tasa media negativa indica descenso neto en el intervalo, pero no garantiza que el comportamiento fuese decreciente en todos sus puntos. La secante atraviesa dos puntos distintos; para hablar de derivada en a se estudia el límite de secantes al acercar b a a, cuando ese límite existe. En variables discretas, las diferencias finitas pueden ser más pertinentes que una derivada de la extensión real."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=x², entre a=1 y b=4 la tasa media es (16−1)/(4−1)=5 unidades de f por unidad de x."
+        },
+        {
+          "type": "example",
+          "body": "Para C(q)=5q+20, entre q=2 y q=8 la tasa media es 5 €/servicio, independiente de los extremos porque el modelo es afín."
+        },
+        {
+          "type": "figure",
+          "body": "Secante entre dos puntos de parábola. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Secante entre dos puntos de parábola. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "quadratic",
+            "title": "Secante entre dos puntos de parábola",
+            "rows": [
+              [
+                "Función",
+                "f(x)=x²"
+              ],
+              [
+                "Intervalo",
+                "[1,4]"
+              ],
+              [
+                "Cambio total",
+                "16−1=15"
+              ],
+              [
+                "Variación x",
+                "4−1=3"
+              ],
+              [
+                "Tasa media",
+                "5"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 0,
+              "k": 0,
+              "secant": [
+                1,
+                4
+              ]
+            },
+            "domain": [
+              0,
+              5
+            ],
+            "marks": [
+              [
+                "A",
+                1,
+                1
+              ],
+              [
+                "B",
+                4,
+                16
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede calcularse (f(b)−f(a))/(b−a) con a=b dividiendo por cero?||No; la tasa media entre dos entradas exige a≠b."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La tasa de cambio media de f entre a y b, con b≠a, es (f(b)−f(a))/(b−a). Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F03-L01-01",
+        "F3-B1S-F03-L01-02",
+        "F3-B1S-F03-L01-03",
+        "F3-B1S-F03-L01-04",
+        "F3-B1S-F03-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-F03-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F03:C02"
+      ],
+      "objectives": [
+        "Definir la derivada mediante límite del cociente incremental.",
+        "Detectar falta de derivabilidad ante pendientes laterales diferentes o discontinuidad."
+      ],
+      "prerequisites": [
+        "B1S-F03-L01",
+        "B1S-F02-L02",
+        "B1S-F02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La derivada de f en a se define, si existe límite finito, como f′(a)=lim(h→0)[f(a+h)−f(a)]/h; en el límite se toman h distintos de cero. Para f(x)=x², el cociente en a es [(a+h)²−a²]/h=2a+h y su límite es 2a. Derivabilidad implica continuidad en el punto, pero continuidad no implica derivabilidad: f(x)=|x| es continua en 0 y sus pendientes laterales son −1 y +1, por tanto f′(0) no existe. Una discontinuidad de salto impide la derivabilidad. Un gráfico puede sugerir una esquina, pero solo el análisis de cocientes laterales justifica la no derivabilidad. No deben emplearse reglas de derivación donde la expresión o la función carecen de definición en el punto."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=x² en a=3, el cociente es [(3+h)²−9]/h=6+h y la derivada f′(3)=6 al hacer h→0."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=|x| en 0, la secante con h<0 tiene pendiente −1 y con h>0 pendiente +1; no hay derivada bilateral."
+        },
+        {
+          "type": "figure",
+          "body": "Esquina continua sin derivada bilateral. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Esquina continua sin derivada bilateral. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "absolute",
+            "title": "Esquina continua sin derivada bilateral",
+            "rows": [
+              [
+                "Función",
+                "|x|"
+              ],
+              [
+                "Punto",
+                "x=0"
+              ],
+              [
+                "Continua",
+                "Sí"
+              ],
+              [
+                "Derivada izquierda",
+                "−1"
+              ],
+              [
+                "Derivada derecha",
+                "+1"
+              ],
+              [
+                "Derivable",
+                "No"
+              ]
+            ],
+            "model": {
+              "kind": "absolute",
+              "a": 1,
+              "h": 0,
+              "k": 0
+            },
+            "domain": [
+              -4,
+              4
+            ],
+            "marks": [
+              [
+                "V",
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Continuidad en un punto garantiza que allí existe derivada?||No; |x| es continua en 0 pero presenta pendientes laterales distintas."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La derivada de f en a se define, si existe límite finito, como f′(a)=lim(h→0)[f(a+h)−f(a)]/h; en el límite se toman h distintos de cero. Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F03-L02-01",
+        "F3-B1S-F03-L02-02",
+        "F3-B1S-F03-L02-03",
+        "F3-B1S-F03-L02-04",
+        "F3-B1S-F03-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-F03-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F03:C03"
+      ],
+      "objectives": [
+        "Aplicar la regla de la potencia a polinomios y constantes.",
+        "Distinguir regla de producto y cadena en casos donde hacen falta."
+      ],
+      "prerequisites": [
+        "B1S-F03-L02",
+        "B1S-A01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si f(x)=x^n para n natural positivo, f′(x)=n·x^(n−1); la derivada de una constante es cero y se derivan sumas y múltiplos constantes término a término. Por ejemplo, para f(x)=3x³−2x²+5x−7, la derivada es 9x²−4x+5. La regla de potencia presupone que se trata de una potencia diferenciable en el dominio considerado: no se puede extrapolar a |x| en 0. La derivada de un producto no es generalmente producto de derivadas; se utiliza (uv)′=u′v+uv′. Para (2x+1)², la regla de la cadena da derivada 2(2x+1)·2=4(2x+1). Las fórmulas se comprueban derivando o simplificando ejemplos, sin sustituir la discusión previa de continuidad y puntos no derivables."
+        },
+        {
+          "type": "example",
+          "body": "Deriva f(x)=3x³−2x²+5x−7: f′(x)=9x²−4x+5; en x=1 el valor de la derivada es 10."
+        },
+        {
+          "type": "example",
+          "body": "Para g(x)=(2x+1)², aplica cadena: g′(x)=2(2x+1)·2=4(2x+1), que en x=2 vale 20."
+        },
+        {
+          "type": "figure",
+          "body": "Polinomio y tasa de cambio instantánea. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Polinomio y tasa de cambio instantánea. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "cubic",
+            "title": "Polinomio y tasa de cambio instantánea",
+            "rows": [
+              [
+                "Función",
+                "3x³−2x²+5x−7"
+              ],
+              [
+                "Derivada",
+                "9x²−4x+5"
+              ],
+              [
+                "En x=1",
+                "10"
+              ],
+              [
+                "Constante derivada",
+                "0"
+              ]
+            ],
+            "model": {
+              "kind": "cubic",
+              "a": 3,
+              "b": -2,
+              "c": 5,
+              "d": -7
+            },
+            "domain": [
+              -1,
+              3
+            ],
+            "marks": [
+              [
+                "P",
+                1,
+                -1
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es siempre (u·v)′ igual a u′·v′?||No; se requiere la suma u′v+uv′."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Si f(x)=x^n para n natural positivo, f′(x)=n·x^(n−1); la derivada de una constante es cero y se derivan sumas y múltiplos constantes término a término. Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F03-L03-01",
+        "F3-B1S-F03-L03-02",
+        "F3-B1S-F03-L03-03",
+        "F3-B1S-F03-L03-04",
+        "F3-B1S-F03-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-F03-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F03:C04"
+      ],
+      "objectives": [
+        "Calcular ecuaciones tangentes con pendiente derivada y paso por el punto.",
+        "Rechazar fórmulas de tangente ordinaria cuando no existe derivada."
+      ],
+      "prerequisites": [
+        "B1S-F03-L02",
+        "B1S-F03-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si f es derivable en a, la recta tangente ordinaria en (a,f(a)) tiene ecuación y=f(a)+f′(a)(x−a), cuya pendiente es la derivada f′(a). Para f(x)=x² en a=2, f(2)=4 y f′(2)=4, por tanto la tangente es y=4+4(x−2)=4x−4. No basta conocer la pendiente sin el punto de contacto. En un máximo o mínimo interior derivable la pendiente tangente puede ser cero, pero el recíproco no asegura un extremo. En una esquina como |x| en a=0, las pendientes laterales difieren y no existe tangente única de la forma ordinaria. En datos financieros una recta tangente aproxima el modelo matemático localmente: no implica que una tarifa realmente cambie linealmente para grandes variaciones."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=x² y a=2: f(2)=4, f′(2)=4 y la tangente es y−4=4(x−2), o y=4x−4."
+        },
+        {
+          "type": "example",
+          "body": "Para g(x)=x²+1 en a=0: g(0)=1 y g′(0)=0; la tangente horizontal es y=1."
+        },
+        {
+          "type": "figure",
+          "body": "Punto de tangencia de una parábola. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Punto de tangencia de una parábola. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "quadratic",
+            "title": "Punto de tangencia de una parábola",
+            "rows": [
+              [
+                "f(x)",
+                "x²"
+              ],
+              [
+                "Contacto",
+                "a=2"
+              ],
+              [
+                "f(a)",
+                "4"
+              ],
+              [
+                "f′(a)",
+                "4"
+              ],
+              [
+                "Tangente",
+                "y=4x−4"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 0,
+              "k": 0,
+              "tangent_x": 2
+            },
+            "domain": [
+              -1,
+              5
+            ],
+            "marks": [
+              [
+                "T",
+                2,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puedo asignar a |x| en 0 una única tangente de pendiente 0?||No; en la esquina no existe derivada bilateral."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Si f es derivable en a, la recta tangente ordinaria en (a,f(a)) tiene ecuación y=f(a)+f′(a)(x−a), cuya pendiente es la derivada f′(a). Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F03-L04-01",
+        "F3-B1S-F03-L04-02",
+        "F3-B1S-F03-L04-03",
+        "F3-B1S-F03-L04-04",
+        "F3-B1S-F03-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-F03-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F03:C05"
+      ],
+      "objectives": [
+        "Estudiar crecimiento y extremos con el signo de la derivada y restricciones.",
+        "Distinguir punto crítico, extremo, frontera de dominio y punto estacionario sin extremo."
+      ],
+      "prerequisites": [
+        "B1S-F03-L03",
+        "B1S-F02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si f′(x)>0 en un intervalo, f es estrictamente creciente allí; si f′(x)<0, decreciente. Para f(x)=(x−2)²+1 se tiene f′(x)=2(x−2), negativa a la izquierda de 2 y positiva a la derecha: el punto x=2 es mínimo con valor 1. Para x³, la derivada es 3x², se anula en x=0 pero la función sigue creciente a ambos lados; una derivada cero no garantiza extremo. En intervalos cerrados se comparan puntos críticos interiores y valores de frontera para buscar extremos absolutos. También pueden existir extremos en puntos donde la derivada no está definida, siempre que el punto pertenezca al dominio. El análisis debe respetar la escala y las restricciones del fenómeno modelizado."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=(x−2)²+1, la derivada 2x−4 cambia de negativa a positiva en x=2: mínimo f(2)=1."
+        },
+        {
+          "type": "example",
+          "body": "Para g(x)=x³, g′(0)=0, pero g(−1)=−1<g(0)=0<g(1)=1: no hay extremo local en 0."
+        },
+        {
+          "type": "figure",
+          "body": "Mínimo cuadrático y cambio de signo de derivada. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Mínimo cuadrático y cambio de signo de derivada. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "quadratic",
+            "title": "Mínimo cuadrático y cambio de signo de derivada",
+            "rows": [
+              [
+                "f(x)",
+                "(x−2)²+1"
+              ],
+              [
+                "f′(x)",
+                "2x−4"
+              ],
+              [
+                "Crítico",
+                "x=2"
+              ],
+              [
+                "Antes",
+                "Decrece"
+              ],
+              [
+                "Después",
+                "Crece"
+              ],
+              [
+                "Mínimo",
+                "1"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": 2,
+              "k": 1
+            },
+            "domain": [
+              -1,
+              5
+            ],
+            "marks": [
+              [
+                "M",
+                2,
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Basta encontrar f′(a)=0 para declarar máximo o mínimo?||No; hace falta comprobar cambio de signo o comparar valores y fronteras."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Si f′(x)>0 en un intervalo, f es estrictamente creciente allí; si f′(x)<0, decreciente. Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F03-L05-01",
+        "F3-B1S-F03-L05-02",
+        "F3-B1S-F03-L05-03",
+        "F3-B1S-F03-L05-04",
+        "F3-B1S-F03-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1S-F03-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.18.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1S-F03:C06"
+      ],
+      "objectives": [
+        "Interpretar el coste o beneficio marginal como derivada de un modelo continuo.",
+        "Distinguir derivada local de incremento exacto de una unidad en contextos discretos."
+      ],
+      "prerequisites": [
+        "B1S-F03-L01",
+        "B1S-F03-L03",
+        "B1S-A01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En una extensión diferenciable del coste C(q)=q²+10q+100 para q≥0, la derivada C′(q)=2q+10 se interpreta como coste marginal en euros por unidad: aproxima el cambio de coste por una pequeña variación alrededor de q. En q=4, C′(4)=18 €/unidad. Sin embargo, si producir una unidad adicional es un salto discreto, la diferencia exacta C(5)−C(4)=19 €, no 18 €; no debe confundirse una derivada con la diferencia finita de tamaño uno. El marginal puede perder validez si hay escalones, capacidad máxima o indivisibilidad. Un beneficio B(q)=I(q)−C(q) tiene derivada marginal B′=I′−C′ donde ambas funciones son derivables. Las unidades y dominio deben acompañar el resultado y las interpretaciones no constituyen asesoramiento económico real."
+        },
+        {
+          "type": "example",
+          "body": "Para C(q)=q²+10q+100, C′(4)=2·4+10=18 €/unidad como coste marginal local en q=4."
+        },
+        {
+          "type": "example",
+          "body": "El aumento exacto de pasar de q=4 a q=5 es C(5)−C(4)=(25+50+100)−(16+40+100)=19 €, una unidad más que el marginal 18."
+        },
+        {
+          "type": "figure",
+          "body": "Coste marginal continuo frente a unidad adicional. SVG local declarativo y tabla semántica de valores y restricciones exactos. La ilustración no sustituye la demostración.",
+          "alt": "Coste marginal continuo frente a unidad adicional. La tabla accesible expone dominio, cálculos, hipótesis y conclusiones sin requerir interpretación de colores.",
+          "visual_spec": {
+            "render_family": "wave18",
+            "kind": "quadratic",
+            "title": "Coste marginal continuo frente a unidad adicional",
+            "rows": [
+              [
+                "Coste",
+                "C(q)=q²+10q+100"
+              ],
+              [
+                "Derivada",
+                "C′(q)=2q+10"
+              ],
+              [
+                "En q=4",
+                "18 €/unidad"
+              ],
+              [
+                "Incremento C(5)−C(4)",
+                "19 €"
+              ],
+              [
+                "Diferencia conceptual",
+                "Derivada ≠ incremento finito"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": -5,
+              "k": 75,
+              "tangent_x": 4
+            },
+            "domain": [
+              0,
+              8
+            ],
+            "marks": [
+              [
+                "Q4",
+                4,
+                156
+              ],
+              [
+                "Q5",
+                5,
+                175
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La derivada C′(4)=18 € garantiza que el coste exacto de fabricar la quinta unidad sea 18 €?||No; el salto discreto exacto del modelo es 19 €."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: En una extensión diferenciable del coste C(q)=q²+10q+100 para q≥0, la derivada C′(q)=2q+10 se interpreta como coste marginal en euros por unidad: aproxima el cambio de coste por una pequeña variación alrededor de q. Resuelve un caso variado y justifica por qué fallaría una hipótesis antes de aceptar el cálculo."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1S-F03-L06-01",
+        "F3-B1S-F03-L06-02",
+        "F3-B1S-F03-L06-03",
+        "F3-B1S-F03-L06-04",
+        "F3-B1S-F03-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022; organización editorial no cotejada con currículo autonómico.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal de referencia: no se atribuyen oficialmente aristas ni códigos pendientes."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

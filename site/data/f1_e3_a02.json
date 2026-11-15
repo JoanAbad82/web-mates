@@ -1,0 +1,519 @@
+{
+  "unit_id": "E3-A02",
+  "unit_title": "Ecuaciones cuadráticas y sistemas",
+  "product_phase": "F1",
+  "version": "0.1.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "warnings": [
+    "Secuencia de 3.º ESO editorial; mapeo autonómico y revisión humana pendientes.",
+    "Los 30 ejercicios son contenido F1 en revisión, no examen homologado.",
+    "Sin almacenamiento de datos ni cuentas."
+  ],
+  "unit_objectives": [
+    "Elegir método al distinguir ecuaciones lineales, cuadráticas incompletas y completas.",
+    "Resolver y comprobar ecuaciones cuadráticas e interpretar el discriminante.",
+    "Resolver sistemas 2×2 y usar modelos algebraicos en contextos con restricciones."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Ecuaciones lineales de 2.º ESO",
+      "href": "#/curso/E2/unidad/E2-A02/leccion/E2-A02-L01",
+      "lesson_id": "E2-A02-L01"
+    },
+    {
+      "label": "Factor común y polinomios",
+      "href": "#/curso/E3/unidad/E3-A01/leccion/E3-A01-L03",
+      "lesson_id": "E3-A01-L03"
+    },
+    {
+      "label": "Sistemas sencillos de 2.º ESO",
+      "href": "#/curso/E2/unidad/E2-A02/leccion/E2-A02-L05",
+      "lesson_id": "E2-A02-L05"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "volatile_only",
+    "rule": "Intentar recordar antes de mostrar la respuesta. La pantalla de repaso permite volver a resolver ítems fallados de esta sesión; sin calendario ni persistencia.",
+    "cadence_proposal": "D+1, D+3, D+7, D+14, D+30 es propuesta futura, no activada."
+  },
+  "source_note": "Contenido original redactado para WEB MATES; secuenciación editorial E3, pendiente de cotejo autonómico.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E3-A02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Resolver ecuaciones lineales con paréntesis, fracciones sencillas y términos en ambos miembros.",
+        "Comprobar una solución sustituyendo y reconocer contradicciones."
+      ],
+      "concept_ids": [
+        "E3-A02:C_EQUIVALENCIA",
+        "E3-A02:C_ECUACION_LINEAL"
+      ],
+      "prerequisites": [
+        "E2-A02-L01",
+        "E2-A02-L02",
+        "E2-A01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una ecuación expresa que dos cantidades son iguales. Puedes sumar, restar, multiplicar o dividir ambos miembros por la misma cantidad distinta de cero sin cambiar sus soluciones. Distribuye los paréntesis, elimina denominadores multiplicando ambos lados por el mínimo común múltiplo y reúne las x en un miembro. Comprueba siempre sustituyendo en la ecuación original."
+        },
+        {
+          "type": "example",
+          "body": "3(x − 2) = 12.\n1. Distribuye: 3x − 6 = 12.\n2. Suma 6 en ambos lados: 3x = 18.\n3. Divide por 3: x = 6.\n4. Comprueba: 3(6 − 2) = 12."
+        },
+        {
+          "type": "example",
+          "body": "(x + 5)/2 = 7.\n1. Multiplica ambos miembros por 2: x + 5 = 14.\n2. Resta 5: x = 9.\n3. Comprueba: (9 + 5)/2 = 7."
+        },
+        {
+          "type": "text",
+          "body": "Si tras simplificar obtienes 0 = 5, no existe ninguna solución. Si obtienes 0 = 0, todos los valores permitidos son soluciones. No dividas nunca por una expresión que podría valer cero."
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué debemos operar en ambos miembros y comprobar al final?||Porque solo las operaciones equivalentes conservan las soluciones; sustituir detecta errores de signos o de distribución."
+        },
+        {
+          "type": "summary",
+          "body": "Ruta rápida: paréntesis → denominadores → términos semejantes → despejar → comprobar. Si una operación implica dividir, el divisor no puede ser cero."
+        }
+      ],
+      "exercise_refs": [
+        "F1-E3-A02-L01-01",
+        "F1-E3-A02-L01-02",
+        "F1-E3-A02-L01-03",
+        "F1-E3-A02-L01-04",
+        "F1-E3-A02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, enseñanzas mínimas de ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia a normativa oficial del BOE (sin reproducción extensa)"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-A02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Distinguir cuadráticas incompletas de completas.",
+        "Resolver ax² + c = 0 y ax² + bx = 0 con métodos adecuados.",
+        "Identificar cuándo no hay raíces reales."
+      ],
+      "concept_ids": [
+        "E3-A02:C_CUADRATICA_INCOMPLETA",
+        "E3-A02:C_PRODUCTO_CERO"
+      ],
+      "prerequisites": [
+        "E3-A01-L03",
+        "E3-A01-L05",
+        "E2-A02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una ecuación cuadrática se escribe ax² + bx + c = 0, con a ≠ 0. Es incompleta si falta el término lineal (b = 0) o el término independiente (c = 0). Primero lleva todo a un miembro. Si falta b, aísla x² y comprueba el signo. Si falta c, extrae x como factor común y aplica el producto nulo."
+        },
+        {
+          "type": "example",
+          "body": "x² − 25 = 0.\n1. Aísla x² = 25.\n2. Toma ambas posibilidades: x = 5 y x = −5.\n3. Comprueba: 5² − 25 = 0 y (−5)² − 25 = 0."
+        },
+        {
+          "type": "example",
+          "body": "3x² − 12x = 0.\n1. Extrae factor común: 3x(x − 4) = 0.\n2. Producto cero: x = 0 o x − 4 = 0.\n3. Soluciones: 0 y 4."
+        },
+        {
+          "type": "text",
+          "body": "Si x² = −9 no hay soluciones reales, porque el cuadrado de un número real no es negativo. No confundas «no hay soluciones reales» con «no hay soluciones» en otros conjuntos numéricos."
+        },
+        {
+          "type": "reflection",
+          "body": "En 4x² − 20x = 0, ¿es correcto dividir primero por x?||No: x podría ser 0 y se perdería una solución. Primero extraemos 4x y aplicamos el producto nulo."
+        },
+        {
+          "type": "summary",
+          "body": "Si b = 0: despejar x² y estudiar su signo. Si c = 0: factor común x; nunca dividir por x sin comprobar x = 0."
+        }
+      ],
+      "exercise_refs": [
+        "F1-E3-A02-L02-01",
+        "F1-E3-A02-L02-02",
+        "F1-E3-A02-L02-03",
+        "F1-E3-A02-L02-04",
+        "F1-E3-A02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, enseñanzas mínimas de ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia a normativa oficial del BOE (sin reproducción extensa)"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-A02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Resolver cuadráticas completas por factorización cuando sea sencilla.",
+        "Aplicar correctamente la fórmula general y comprobar las raíces."
+      ],
+      "concept_ids": [
+        "E3-A02:C_FORMULA_GENERAL",
+        "E3-A02:C_RAICES"
+      ],
+      "prerequisites": [
+        "E3-A01-L05",
+        "E3-A02-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una cuadrática completa tiene la forma ax² + bx + c = 0, con a ≠ 0 y, normalmente, b y c distintos de cero. Si es fácil hallar dos factores, puedes usar la factorización. En todos los casos reales puedes estudiar el discriminante D = b² − 4ac y, si D ≥ 0, usar x = (−b ± √D)/(2a). Coloca cada coeficiente con su signo."
+        },
+        {
+          "type": "example",
+          "body": "x² − 5x + 6 = 0.\n1. Busca dos números que sumen 5 y multipliquen 6: 2 y 3.\n2. Factoriza: (x − 2)(x − 3) = 0.\n3. Raíces: x = 2 o x = 3.\n4. Sustituye ambas en la ecuación inicial."
+        },
+        {
+          "type": "example",
+          "body": "2x² + 3x − 2 = 0.\n1. a = 2, b = 3, c = −2.\n2. D = 3² − 4·2·(−2) = 25.\n3. x = (−3 ± 5)/4.\n4. Raíces: −2 y 1/2; comprueba ambas."
+        },
+        {
+          "type": "text",
+          "body": "La barra de la fórmula divide todo el numerador entre 2a, no solamente la raíz. Si D < 0 no hay soluciones reales. Si D = 0 aparece una única raíz real, contada dos veces algebraicamente."
+        },
+        {
+          "type": "reflection",
+          "body": "¿Qué hay que escribir primero para evitar errores de signo al usar la fórmula?||Identificar a, b y c con sus signos; calcular D con paréntesis y dividir el numerador completo entre 2a."
+        },
+        {
+          "type": "summary",
+          "body": "Orden seguro: forma estándar → a, b, c → D → raíces (si D ≥ 0) → sustitución. No memorices la fórmula sin comprender cada coeficiente."
+        }
+      ],
+      "exercise_refs": [
+        "F1-E3-A02-L03-01",
+        "F1-E3-A02-L03-02",
+        "F1-E3-A02-L03-03",
+        "F1-E3-A02-L03-04",
+        "F1-E3-A02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, enseñanzas mínimas de ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia a normativa oficial del BOE (sin reproducción extensa)"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-A02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Calcular el discriminante D = b² − 4ac.",
+        "Predecir el número de soluciones reales distintas y relacionarlo con la parábola."
+      ],
+      "concept_ids": [
+        "E3-A02:C_DISCRIMINANTE",
+        "E3-A02:C_PARABOLA_CORTES"
+      ],
+      "prerequisites": [
+        "E3-A02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El discriminante de ax² + bx + c = 0 es D = b² − 4ac. Sin resolver la ecuación ya puedes prever cuántas raíces reales distintas hay. D > 0: dos raíces; D = 0: una raíz doble; D < 0: ninguna raíz real."
+        },
+        {
+          "type": "figure",
+          "body": "Imagina la gráfica y = ax² + bx + c: dos cortes con el eje x si D > 0; un contacto tangente si D = 0; ningún corte si D < 0. Este esquema verbal es alternativa accesible a la gráfica interactiva futura."
+        },
+        {
+          "type": "example",
+          "body": "x² − 6x + 9 = 0.\nD = (−6)² − 4·1·9 = 36 − 36 = 0. Una única raíz real distinta (x = 3)."
+        },
+        {
+          "type": "example",
+          "body": "2x² + 4x + 5 = 0.\nD = 4² − 4·2·5 = 16 − 40 = −24. No tiene raíces reales."
+        },
+        {
+          "type": "reflection",
+          "body": "Si D = 0, ¿hay cero raíces o una raíz real distinta?||Hay una raíz real distinta, doble algebraicamente. La parábola toca el eje horizontal."
+        },
+        {
+          "type": "summary",
+          "body": "Signo de D: positivo → 2; cero → 1; negativo → 0 raíces reales distintas. Primero calcula D, después decide si procede resolver."
+        }
+      ],
+      "exercise_refs": [
+        "F1-E3-A02-L04-01",
+        "F1-E3-A02-L04-02",
+        "F1-E3-A02-L04-03",
+        "F1-E3-A02-L04-04",
+        "F1-E3-A02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, enseñanzas mínimas de ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia a normativa oficial del BOE (sin reproducción extensa)"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-A02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Resolver sistemas lineales 2×2 por sustitución y reducción.",
+        "Comprobar un par ordenado en las dos ecuaciones.",
+        "Reconocer sistemas con ninguna o infinitas soluciones."
+      ],
+      "concept_ids": [
+        "E3-A02:C_SISTEMAS_2X2",
+        "E3-A02:C_SUSTITUCION"
+      ],
+      "prerequisites": [
+        "E2-A02-L05",
+        "E2-A02-L06",
+        "E3-A02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un sistema 2×2 reúne dos ecuaciones lineales con incógnitas x e y. La solución (x, y) debe cumplir ambas. Por sustitución, despeja una incógnita e introdúcela en la otra. Por reducción, combina ecuaciones para eliminar una incógnita. La comprobación siempre usa las dos ecuaciones originales."
+        },
+        {
+          "type": "example",
+          "body": "2x + y = 8; x − y = 1.\n1. Suma las ecuaciones: 3x = 9.\n2. x = 3.\n3. Sustituye en x − y = 1: y = 2.\n4. Comprueba: 2·3 + 2 = 8 y 3 − 2 = 1."
+        },
+        {
+          "type": "example",
+          "body": "3x + 2y = 8; x − y = 1.\n1. De la segunda: x = y + 1.\n2. Sustituye: 3(y + 1) + 2y = 8.\n3. 5y = 5 → y = 1; luego x = 2.\n4. Verifica las dos ecuaciones."
+        },
+        {
+          "type": "text",
+          "body": "En la interpretación gráfica, una solución única es una intersección de rectas. Si son paralelas distintas, no hay solución; si son la misma recta, hay infinitas soluciones. No confundas coordenadas (x,y) con dos raíces intercambiables."
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué (2, 3) no equivale a (3, 2) en un sistema?||Porque x e y representan cantidades diferentes; debes sustituir cada una en su posición y en ambas ecuaciones."
+        },
+        {
+          "type": "summary",
+          "body": "Elegir sustitución o reducción → resolver una incógnita → encontrar la otra → comprobar ambas ecuaciones. Si una variable desaparece, analizar compatibilidad."
+        }
+      ],
+      "exercise_refs": [
+        "F1-E3-A02-L05-01",
+        "F1-E3-A02-L05-02",
+        "F1-E3-A02-L05-03",
+        "F1-E3-A02-L05-04",
+        "F1-E3-A02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, enseñanzas mínimas de ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia a normativa oficial del BOE (sin reproducción extensa)"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-A02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.1.0",
+      "status": "revision",
+      "objectives": [
+        "Traducir un contexto a una ecuación cuadrática o a un sistema.",
+        "Interpretar las raíces y descartar las imposibles según unidades y restricciones.",
+        "Comunicar y comprobar la solución en el problema original."
+      ],
+      "concept_ids": [
+        "E3-A02:C_MODELIZACION",
+        "E3-A02:C_RESTRICCIONES"
+      ],
+      "prerequisites": [
+        "E3-A02-L03",
+        "E3-A02-L05",
+        "E2-A01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Resolver un problema algebraico requiere cuatro decisiones: elegir incógnitas con unidades, traducir relaciones, resolver de forma exacta y comprobar cuáles soluciones tienen sentido en el contexto. Una raíz algebraica correcta puede ser imposible como longitud o cantidad de objetos."
+        },
+        {
+          "type": "example",
+          "body": "Un rectángulo tiene lados x y x + 2 cm, y área 24 cm².\n1. Modelo: x(x + 2) = 24.\n2. x² + 2x − 24 = 0 → (x + 6)(x − 4) = 0.\n3. Raíces −6 y 4; descarta −6 porque una longitud debe ser positiva.\n4. Lados: 4 cm y 6 cm; área 24 cm²."
+        },
+        {
+          "type": "example",
+          "body": "Dos cuadernos y tres bolígrafos cuestan 13 €, y un cuaderno y dos bolígrafos cuestan 7 €.\n1. x = precio cuaderno, y = precio bolígrafo.\n2. 2x + 3y = 13; x + 2y = 7.\n3. Al resolver: y = 1, x = 5.\n4. Verifica 2·5 + 3·1 = 13 y 5 + 2·1 = 7."
+        },
+        {
+          "type": "text",
+          "body": "Si un enunciado exige números enteros, comprueba integridad. Si exige un número positivo, excluye cero y negativos. Escribe una respuesta con sus unidades y una frase que interprete el resultado."
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué no basta con obtener x = −6 o x = 4 en el problema del rectángulo?||Porque hay que volver al contexto: −6 cm no es una longitud válida; la respuesta es 4 cm y 6 cm."
+        },
+        {
+          "type": "summary",
+          "body": "Plan: incógnitas + unidades → relaciones → ecuación/sistema → soluciones → restricciones → comprobación y frase final."
+        }
+      ],
+      "exercise_refs": [
+        "F1-E3-A02-L06-01",
+        "F1-E3-A02-L06-02",
+        "F1-E3-A02-L06-03",
+        "F1-E3-A02-L06-04",
+        "F1-E3-A02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, enseñanzas mínimas de ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia a normativa oficial del BOE (sin reproducción extensa)"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

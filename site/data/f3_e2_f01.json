@@ -1,0 +1,600 @@
+{
+  "unit_id": "E2-F01",
+  "unit_title": "Funciones y modelos lineales",
+  "product_phase": "F3_OLA2",
+  "version": "0.2.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "warnings": [
+    "Secuencia editorial 2.º ESO; el Estado fija los saberes por tramo 1.º–3.º, no por unidad.",
+    "E1-P01 y E1-F01 son prerrequisitos de catálogo aún sin contenido completo; los ejemplos incorporan apoyos, sin afirmar cobertura íntegra.",
+    "Revisión académica, normativa autonómica y accesibilidad integral pendientes."
+  ],
+  "unit_objectives": [
+    "Distinguir variables y relacionar tablas, expresiones y gráficas de rectas.",
+    "Calcular y explicar pendiente y ordenada en el origen.",
+    "Modelizar proporcionalidad, tarifas y movimientos con unidades y dominio."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Ecuaciones de 2.º ESO",
+      "lesson_id": "E2-A02-L01",
+      "href": "#/curso/E2/unidad/E2-A02/leccion/E2-A02-L01"
+    },
+    {
+      "label": "Proporcionalidad directa de 1.º ESO",
+      "lesson_id": "E1-P01-L01",
+      "href": "#/curso/E1/unidad/E1-P01/leccion/E1-P01-L01"
+    },
+    {
+      "label": "Tablas y gráficas de 1.º ESO",
+      "lesson_id": "E1-F01-L03",
+      "href": "#/curso/E1/unidad/E1-F01/leccion/E1-F01-L03"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "rule": "Recuperación de ideas, interpretación de tablas y mezcla de ejercicios con dos pistas.",
+    "cadence_proposal": "D+1/3/7/14/30, sin validación empírica."
+  },
+  "source_note": "Alcance estatal RD 217/2022 sentido algebraico (relaciones y funciones), distribución editorial.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E2-F01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Distinguir variable independiente y dependiente en situaciones cotidianas.",
+        "Calcular una salida a partir de una entrada y describir restricciones realistas."
+      ],
+      "concept_ids": [
+        "E2-F01:C_01"
+      ],
+      "prerequisites": [
+        "E1-A01-L02",
+        "E1-F01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una función asigna a cada valor permitido de la variable independiente x un único valor y. En un coste que depende de kilómetros recorridos, x son kilómetros (entrada) e y es precio (salida). La cantidad y depende de x. El dominio real puede restringirse: no existen kilómetros negativos ni medias entradas en un recuento."
+        },
+        {
+          "type": "example",
+          "body": "Un taxi cobra 4 € fijos más 2 € por kilómetro: C(x)=4+2x. Para x=3 km el coste es 10 €. La distancia es independiente, el coste depende de ella."
+        },
+        {
+          "type": "example",
+          "body": "Una máquina calcula y=3x−1. Para x=0 devuelve −1 y para x=4 devuelve 11. Cada entrada tiene solo una salida."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla: kilómetros 0 | 1 | 2 | 3; coste (€) 4 | 6 | 8 | 10. La entrada crece de 1 en 1 y la salida de 2 en 2.",
+          "alt": "Tarifa C(x)=4+2x; valores detallados en la tabla verbal.",
+          "graph_spec": {
+            "kind": "line",
+            "coefficients": [
+              4,
+              2
+            ],
+            "x_values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "title": "Tarifa C(x)=4+2x"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede la misma entrada x=2 tener simultáneamente dos valores de salida distintos en una función?||No. Para ser función, cada x admitido tiene exactamente una imagen y; distintos x sí pueden compartir una salida."
+        },
+        {
+          "type": "summary",
+          "body": "Entrada x → regla → salida y. Define unidades y dominio; no confundas qué cambia con qué depende."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-F01-L01-01",
+        "F3-E2-F01-L01-02",
+        "F3-E2-F01-L01-03",
+        "F3-E2-F01-L01-04",
+        "F3-E2-F01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-F01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Construir tablas de valores de funciones sencillas a partir de una regla.",
+        "Relacionar tabla, expresión algebraica, pares y gráfica sin perder las unidades."
+      ],
+      "concept_ids": [
+        "E2-F01:C_02"
+      ],
+      "prerequisites": [
+        "E2-F01-L01",
+        "E1-F01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una función puede describirse con palabras, tabla, fórmula y gráfica. Todas las representaciones deben hablar de los mismos pares (x,y). Para dibujar una recta basta calcular dos puntos diferentes; para comprobar una tabla, sustituye sus valores en la fórmula."
+        },
+        {
+          "type": "example",
+          "body": "Para y=2x+1: x=0 da y=1; x=1 da y=3; x=2 da y=5. Los pares (0,1), (1,3) y (2,5) están alineados."
+        },
+        {
+          "type": "example",
+          "body": "Para y=4−x: si x=0,1,2,3, las salidas son 4,3,2,1. La gráfica desciende una unidad por cada unidad que avanza x."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla accesible: x: 0 | 1 | 2 | 3; y=2x+1: 1 | 3 | 5 | 7. Un punto (x,y) se lee primero horizontal y luego vertical.",
+          "alt": "Recta y=2x+1; valores detallados en la tabla verbal.",
+          "graph_spec": {
+            "kind": "line",
+            "coefficients": [
+              1,
+              2
+            ],
+            "x_values": [
+              -1,
+              0,
+              1,
+              2,
+              3
+            ],
+            "title": "Recta y=2x+1"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si el punto (2,5) pertenece a y=2x+1, ¿qué comprobación permite verificarlo?||Sustituir x=2: 2·2+1=5, que coincide con la coordenada y del punto."
+        },
+        {
+          "type": "summary",
+          "body": "De fórmula a tabla: elige x → calcula y. De tabla a gráfica: representa cada pareja. De gráfica a fórmula: identifica regularidad y compruébala."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-F01-L02-01",
+        "F3-E2-F01-L02-02",
+        "F3-E2-F01-L02-03",
+        "F3-E2-F01-L02-04",
+        "F3-E2-F01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-F01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Interpretar la pendiente como cambio vertical por unidad de cambio horizontal.",
+        "Calcular pendientes entre dos puntos y distinguir crecimiento, descenso y constancia."
+      ],
+      "concept_ids": [
+        "E2-F01:C_03"
+      ],
+      "prerequisites": [
+        "E2-F01-L02",
+        "E2-A02-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La pendiente m de una recta mide cuánto cambia y cuando x aumenta una unidad. Entre dos puntos con x diferentes: m=(y₂−y₁)/(x₂−x₁). Si m>0 la recta sube de izquierda a derecha; si m<0 baja; si m=0 es horizontal. Si x₂=x₁, la recta es vertical y esa razón no está definida."
+        },
+        {
+          "type": "example",
+          "body": "Puntos (1,2) y (3,6): y crece 4 mientras x crece 2; m=4/2=2."
+        },
+        {
+          "type": "example",
+          "body": "Puntos (0,5) y (2,1): la variación y es −4 y la de x es +2; m=−2. La función decrece."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla de cambios: de (1,2) a (3,6), paso horizontal +2 y vertical +4. Divide variación vertical por horizontal para obtener 2.",
+          "alt": "Pendiente negativa m=−2; valores detallados en la tabla verbal.",
+          "graph_spec": {
+            "kind": "line",
+            "coefficients": [
+              0,
+              -2
+            ],
+            "x_values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "title": "Pendiente negativa m=−2"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué en la pendiente no se puede dividir por x₂−x₁=0?||Porque sería dividir por cero: una recta vertical no representa y como función de x con una sola salida para cada x."
+        },
+        {
+          "type": "summary",
+          "body": "Pendiente = Δy/Δx (Δx no nulo). Positiva sube, negativa baja, cero es horizontal."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-F01-L03-01",
+        "F3-E2-F01-L03-02",
+        "F3-E2-F01-L03-03",
+        "F3-E2-F01-L03-04",
+        "F3-E2-F01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-F01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Identificar la ordenada en el origen en y=mx+b.",
+        "Deducir dónde corta una recta al eje vertical y distinguir pendiente de intercepto."
+      ],
+      "concept_ids": [
+        "E2-F01:C_04"
+      ],
+      "prerequisites": [
+        "E2-F01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En la función afín y=mx+b, el número b es el valor de y cuando x=0: es la ordenada en el origen y corresponde al punto (0,b). m expresa la inclinación de la recta. Dos rectas con igual m son paralelas si sus b son distintos."
+        },
+        {
+          "type": "example",
+          "body": "En y=2x+5, cuando x=0, y=5. La recta pasa por (0,5); su pendiente es 2."
+        },
+        {
+          "type": "example",
+          "body": "La recta y=−3x+7 empieza en y=7 cuando x=0 y desciende 3 unidades al avanzar x una unidad."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla: y=−x+3, para x=0 el valor es 3; para x=1 es 2; para x=2 es 1. El corte con el eje y es (0,3).",
+          "alt": "Recta y=−x+3; valores detallados en la tabla verbal.",
+          "graph_spec": {
+            "kind": "line",
+            "coefficients": [
+              3,
+              -1
+            ],
+            "x_values": [
+              -1,
+              0,
+              1,
+              2,
+              3
+            ],
+            "title": "Recta y=−x+3"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es b la coordenada x del corte con el eje vertical?||No. El corte con el eje vertical tiene x=0 y coordenada y=b."
+        },
+        {
+          "type": "summary",
+          "body": "En y=mx+b: m es pendiente y b es altura al cortar el eje y. Sustituye x=0 para hallarla."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-F01-L04-01",
+        "F3-E2-F01-L04-02",
+        "F3-E2-F01-L04-03",
+        "F3-E2-F01-L04-04",
+        "F3-E2-F01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-F01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Reconocer una proporcionalidad directa como y=kx.",
+        "Distinguir un modelo proporcional de uno afín con término fijo."
+      ],
+      "concept_ids": [
+        "E2-F01:C_05"
+      ],
+      "prerequisites": [
+        "E2-F01-L04",
+        "E1-P01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Si y es directamente proporcional a x, y=kx y, para x>0, la razón y/x permanece constante k. Su gráfica pasa por el origen (0,0). Una función y=kx+b con b≠0 no representa proporcionalidad directa, aunque dibuje una recta; tiene una cantidad inicial no nula."
+        },
+        {
+          "type": "example",
+          "body": "A 3 € por cuaderno, 1 cuesta 3 €, 2 cuestan 6 € y 4 cuestan 12 €. Modelo C(n)=3n; al comprar cero, el coste es cero."
+        },
+        {
+          "type": "example",
+          "body": "Un servicio cobra 5 € fijos más 3 € por uso: C(n)=5+3n. No es proporcionalidad directa porque C(0)=5."
+        },
+        {
+          "type": "figure",
+          "body": "Comparación de tablas: proporcional y=3x: x 0|1|2 → y 0|3|6; afín y=3x+5: x 0|1|2 → y 5|8|11.",
+          "alt": "Proporcionalidad y=3x; valores detallados en la tabla verbal.",
+          "graph_spec": {
+            "kind": "line",
+            "coefficients": [
+              0,
+              3
+            ],
+            "x_values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "title": "Proporcionalidad y=3x"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué y=4x+2 no es proporcionalidad directa aunque sea una recta?||Porque con x=0 la salida es 2 y no 0; la razón y/x no se mantiene constante."
+        },
+        {
+          "type": "summary",
+          "body": "Proporcionalidad directa: y=kx y pasa por (0,0). Tarifa fija distinta de cero → función afín, no directamente proporcional."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-F01-L05-01",
+        "F3-E2-F01-L05-02",
+        "F3-E2-F01-L05-03",
+        "F3-E2-F01-L05-04",
+        "F3-E2-F01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-F01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Construir modelos afines de tarifas y movimientos uniformes.",
+        "Interpretar pendiente, coste inicial y unidades; comparar dos modelos."
+      ],
+      "concept_ids": [
+        "E2-F01:C_06"
+      ],
+      "prerequisites": [
+        "E2-F01-L05",
+        "E2-A02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En una tarifa C(x)=b+mx, b es el coste inicial y m el coste por unidad. En movimiento uniforme s(t)=s₀+vt, s₀ es posición inicial y v velocidad (distancia por tiempo). Especifica unidades y un dominio razonable: no tiene sentido una distancia recorrida negativa."
+        },
+        {
+          "type": "example",
+          "body": "Plan A: 4 € fijos y 2 €/viaje; para 5 viajes C_A(5)=4+2·5=14 €. Plan B: 8 € fijos y 1 €/viaje; C_B(5)=13 €."
+        },
+        {
+          "type": "example",
+          "body": "Una persona parte del kilómetro 3 y avanza a 5 km/h: s(t)=3+5t. A las 2 h está en el km 13. La distancia recorrida sería 10 km, distinta de la posición 13."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla tarifa A: viajes 0|1|2|4|5, precio 4|6|8|12|14. Se ve tanto el cargo inicial como el incremento fijo.",
+          "alt": "Tarifa de 4 € fijos y 2 €/uso; valores detallados en la tabla verbal.",
+          "graph_spec": {
+            "kind": "line",
+            "coefficients": [
+              4,
+              2
+            ],
+            "x_values": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "title": "Tarifa de 4 € fijos y 2 €/uso"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si una tarifa tiene 4 € de fijo y 2 € por uso, ¿cuánto cuesta aunque no haya ningún uso?||Cuesta 4 €: es la ordenada en el origen y se conserva con x=0."
+        },
+        {
+          "type": "summary",
+          "body": "Modelo = valor inicial + tasa·cantidad. Comprueba pendiente, unidades, intercepto y límites del contexto."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-F01-L06-01",
+        "F3-E2-F01-L06-02",
+        "F3-E2-F01-L06-03",
+        "F3-E2-F01-L06-04",
+        "F3-E2-F01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa oficial sin reproducción literal extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

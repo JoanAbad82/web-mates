@@ -1,0 +1,30 @@
+{
+  "version": "0.8.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "E4B-G01",
+      "priority": 1,
+      "why": "Arista canónica E2-G01→E4B-G01 y prerrequisitos de Pitágoras y semejanza cubiertos en F3-7."
+    },
+    {
+      "unit_id": "B1C-G01",
+      "priority": 2,
+      "why": "Arista canónica E4B-G01→B1C-G01 y prerrequisito trigonométrico cubierto dentro de F3-8."
+    }
+  ],
+  "new_editorial_edges": [],
+  "preserved": "20 relaciones canónicas + 23 editoriales previas; la secuencia trigonométrica es canónica, no crea aristas nuevas",
+  "canonical_edge_highlights": [
+    {
+      "from": "E2-G01",
+      "to": "E4B-G01"
+    },
+    {
+      "from": "E4B-G01",
+      "to": "B1C-G01"
+    }
+  ],
+  "excluded": "B1C-G02 requiere E4B-G02, una rama analítica sin contenido, y no se incorpora sin cerrar esa base.",
+  "regional_mapping": "PENDIENTE, criterios y competencias no inventados"
+}

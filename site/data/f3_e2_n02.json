@@ -1,0 +1,495 @@
+{
+  "unit_id": "E2-N02",
+  "unit_title": "Cálculo, aproximación y notación numérica",
+  "product_phase": "F3_OLA6",
+  "version": "0.6.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Distinguir decimales exactos, periódicos puros y mixtos.",
+    "Convertir fracciones a decimales sin perder exactitud.",
+    "Estimar y redondear decimales con precisión explícita."
+  ],
+  "warnings": [
+    "Material original editorial sintético en revisión humana; no homologado.",
+    "Ubicación de unidades y saberes de 1.º–3.º ESO: propuesta editorial.",
+    "No inventar criterios autonómicos; ejercicios deterministas no equivalen a revisión humana."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Racionales y sus operaciones",
+      "lesson_id": "E2-N01-L05",
+      "href": "#/curso/E2/unidad/E2-N01/leccion/E2-N01-L05"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrada",
+    "rule": "Resolver sin ayuda después de comprender y repetir en sesiones breves."
+  },
+  "source_note": "RD 217/2022, Matemáticas ESO, sentido numérico; ubicación editorial y cotejo autonómico pendiente.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E2-N02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-N02:C01"
+      ],
+      "objectives": [
+        "Distinguir decimales exactos, periódicos puros y mixtos.",
+        "Vincular periodo decimal con denominador irreducible."
+      ],
+      "prerequisites": [
+        "E2-N01-L05",
+        "E1-N03-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Toda fracción racional tiene desarrollo decimal exacto o periódico. Después de simplificarla, su decimal es exacto si el denominador solo tiene factores 2 y 5. Es periódico puro si el denominador es coprimo con 10 y periódico mixto cuando combina algún factor 2 o 5 con otros primos. Un periodo infinito no es un decimal finito aproximado y no debe confundirse con un valor irracional."
+        },
+        {
+          "type": "example",
+          "body": "1/3 = 0,333… es periódico puro; el 3 se repite desde el primer decimal."
+        },
+        {
+          "type": "example",
+          "body": "1/6 = 0,1666… es periódico mixto: 1 no se repite y a continuación se repite el 6."
+        },
+        {
+          "type": "figure",
+          "body": "Primeros decimales de 1/6; el 6 continúa sin fin. El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "Primeros decimales de 1/6; el 6 continúa sin fin. Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "decimal_cycle",
+            "numerator": 1,
+            "denominator": 6,
+            "digits": 10,
+            "title": "Primeros decimales de 1/6; el 6 continúa sin fin"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué 3/20 tiene decimal exacto?||Porque 20 = 2²×5, por lo que 3/20=0,15 termina."
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: Toda fracción racional tiene desarrollo decimal exacto o periódico. Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-N02-L01-01",
+        "F3-E2-N02-L01-02",
+        "F3-E2-N02-L01-03",
+        "F3-E2-N02-L01-04",
+        "F3-E2-N02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-N02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-N02:C02"
+      ],
+      "objectives": [
+        "Convertir fracciones a decimales sin perder exactitud.",
+        "Reconocer cuándo un decimal expresa un racional exacto."
+      ],
+      "prerequisites": [
+        "E2-N02-L01",
+        "E1-N04-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una fracción es un cociente: para convertirla a decimal se divide numerador entre denominador. Cuando el decimal termina, el número decimal con todas sus cifras representa exactamente la fracción; si aparece un periodo, los puntos suspensivos indican infinitud. Por ejemplo 1/8=0,125 exactamente, mientras que 1/3≠0,333 porque falta una cola infinita de cifras."
+        },
+        {
+          "type": "example",
+          "body": "7/8 = 0,875 exacto; basta dividir siete entre ocho."
+        },
+        {
+          "type": "example",
+          "body": "0,45 = 45/100 = 9/20 después de simplificar por el máximo común divisor."
+        },
+        {
+          "type": "figure",
+          "body": "Fracciones y decimales exactos. El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "Fracciones y decimales exactos. Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "rational_line",
+            "min": 0,
+            "max": 1,
+            "points": [
+              [
+                1,
+                8
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                7,
+                8
+              ]
+            ],
+            "title": "Fracciones y decimales exactos"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿0,333 es igual exactamente a 1/3?||No, 0,333 tiene tres cifras decimales; 1/3 es el decimal periódico infinito 0,333…"
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: Una fracción es un cociente: para convertirla a decimal se divide numerador entre denominador. Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-N02-L02-01",
+        "F3-E2-N02-L02-02",
+        "F3-E2-N02-L02-03",
+        "F3-E2-N02-L02-04",
+        "F3-E2-N02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-N02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-N02:C03"
+      ],
+      "objectives": [
+        "Estimar y redondear decimales con precisión explícita.",
+        "Controlar los efectos de redondeos prematuros."
+      ],
+      "prerequisites": [
+        "E2-N02-L02",
+        "E1-N01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Redondear a décimas o centésimas aproxima al múltiplo más próximo de 0,1 o 0,01. Para cantidades positivas, un empate exacto entre dos múltiplos se resuelve hacia arriba según la regla editorial adoptada; otras convenciones deben declararse. Conserva decimales suficientes al operar y redondea solo al final, pues redondear valores parciales puede acumular errores."
+        },
+        {
+          "type": "example",
+          "body": "7,246 redondeado a centésimas es 7,25 porque la cifra siguiente es 6."
+        },
+        {
+          "type": "example",
+          "body": "3,141 redondeado a décimas es 3,1; el valor original pertenece al intervalo de valores que redondean a 3,1."
+        },
+        {
+          "type": "figure",
+          "body": "3,141 y sus valores redondeados. El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "3,141 y sus valores redondeados. Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "rational_line",
+            "min": 3,
+            "max": 4,
+            "points": [
+              [
+                3141,
+                1000
+              ],
+              [
+                31,
+                10
+              ],
+              [
+                315,
+                100
+              ]
+            ],
+            "title": "3,141 y sus valores redondeados"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué no conviene redondear todas las cifras antes de calcular?||Porque cada aproximación puede introducir error y modificar el resultado final."
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: Redondear a décimas o centésimas aproxima al múltiplo más próximo de 0,1 o 0,01. Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-N02-L03-01",
+        "F3-E2-N02-L03-02",
+        "F3-E2-N02-L03-03",
+        "F3-E2-N02-L03-04",
+        "F3-E2-N02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-N02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-N02:C04"
+      ],
+      "objectives": [
+        "Interpretar resolución y margen de redondeo de una medida.",
+        "Calcular diferencias y errores absolutos."
+      ],
+      "prerequisites": [
+        "E2-N02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una medida comunicada a décimas, redondeada al más cercano, introduce como máximo medio décimo de incertidumbre de redondeo, sin considerar incertidumbres instrumentales adicionales. La diferencia absoluta entre un valor medido y uno de referencia es |m−r| y nunca negativa. Especificar unidad y procedimiento es esencial; una lectura de 12,4 cm no garantiza por sí sola una exactitud instrumental de ±0,05 cm."
+        },
+        {
+          "type": "example",
+          "body": "Para un valor 12,4 cm redondeado a décimas, el intervalo teórico por redondeo es [12,35,12,45) cm con la convención usada."
+        },
+        {
+          "type": "example",
+          "body": "Si la lectura es 5,2 m y la referencia 5,0 m, la diferencia absoluta es |5,2−5,0| = 0,2 m."
+        },
+        {
+          "type": "figure",
+          "body": "Intervalo teórico de redondeo de 12,4 cm. El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "Intervalo teórico de redondeo de 12,4 cm. Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "error_band",
+            "center": 12.4,
+            "resolution": 0.1,
+            "title": "Intervalo teórico de redondeo de 12,4 cm"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una anotación a décimas asegura que el aparato mida con precisión de 0,05?||No; el límite de redondeo solo describe la representación, no todos los errores del instrumento."
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: Una medida comunicada a décimas, redondeada al más cercano, introduce como máximo medio décimo de incertidumbre de redondeo, sin considerar incertidumbres instrumentales adicionales. Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-N02-L04-01",
+        "F3-E2-N02-L04-02",
+        "F3-E2-N02-L04-03",
+        "F3-E2-N02-L04-04",
+        "F3-E2-N02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E2-N02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.6.0",
+      "status": "revision",
+      "concept_ids": [
+        "E2-N02:C05"
+      ],
+      "objectives": [
+        "Convertir unidades de longitud, masa y tiempo.",
+        "Comprobar coherencia dimensional en cálculos."
+      ],
+      "prerequisites": [
+        "E2-N02-L04",
+        "E1-N05-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Cambiar de unidad no modifica la magnitud física: 1 km=1000 m, 1 m=100 cm, 1 m=1000 mm, 1 kg=1000 g y 1 h=60 min. Multiplica o divide por el factor que corresponda a la dirección de conversión, no solo por memoria de una escalera. Anota la unidad junto al dato y comprueba que el resultado de expresar la misma longitud en una unidad pequeña sea numéricamente mayor."
+        },
+        {
+          "type": "example",
+          "body": "2,4 km = 2400 m porque cada kilómetro equivale a 1000 metros."
+        },
+        {
+          "type": "example",
+          "body": "750 g = 0,75 kg porque hay mil gramos en un kilogramo."
+        },
+        {
+          "type": "figure",
+          "body": "Escalas de unidades de longitud. El gráfico presenta datos indicativos; la tabla alternativa muestra sus valores o expresiones explícitas.",
+          "alt": "Escalas de unidades de longitud. Los valores, etiquetas y relaciones representados aparecen asimismo en la tabla adyacente.",
+          "visual_spec": {
+            "kind": "unit_scale",
+            "title": "Escalas de unidades de longitud",
+            "rows": [
+              [
+                "1 km",
+                "1000 m"
+              ],
+              [
+                "1 m",
+                "100 cm"
+              ],
+              [
+                "1 cm",
+                "10 mm"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué 45 minutos no equivalen a 0,45 horas?||Porque una hora contiene 60 minutos: 45/60 = 0,75 horas."
+        },
+        {
+          "type": "summary",
+          "body": "Recupera la idea fundamental sin mirar: Cambiar de unidad no modifica la magnitud física: 1 km=1000 m, 1 m=100 cm, 1 m=1000 mm, 1 kg=1000 g y 1 h=60 min. Aplica la regla a un caso nuevo y contrasta la validez de la condición."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E2-N02-L05-01",
+        "F3-E2-N02-L05-02",
+        "F3-E2-N02-L05-03",
+        "F3-E2-N02-L05-04",
+        "F3-E2-N02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia normativa; material didáctico original pendiente de revisión"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

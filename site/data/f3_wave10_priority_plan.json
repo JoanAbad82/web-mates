@@ -1,0 +1,40 @@
+{
+  "version": "0.10.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "B2C-G01",
+      "priority": 1,
+      "why": "Arista canónica B1C-G02→B2C-G01; vectores 2D ya desarrollados en F3-9."
+    },
+    {
+      "unit_id": "E2-M01",
+      "priority": 2,
+      "why": "Prerrequisitos textuales áreas y Pitágoras desarrollados en E1-G01 y E2-G01."
+    }
+  ],
+  "new_editorial_edges": [
+    {
+      "from": "E1-G01",
+      "to": "E2-M01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Áreas planas desarrolladas en E1-G01 son base de superficies compuestas y sólidos."
+    },
+    {
+      "from": "E2-G01",
+      "to": "E2-M01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Pitágoras de E2-G01 se usa al calcular alturas, diagonales y generatrices."
+    }
+  ],
+  "canonical_edge_highlight": {
+    "from": "B1C-G02",
+    "to": "B2C-G01",
+    "status": "canonica_ya_existente"
+  },
+  "excluded": "B2C-G02 exige vectores 3D Y sistemas; el catálogo ubica sistemas previos en Matemáticas I, aún sin desarrollo completo. No adelantarse a esa dependencia.",
+  "preserved": "20 aristas canónicas originales, 24 editoriales previas; 2 nuevas editoriales distintas.",
+  "regional_mapping": "PENDIENTE; no atribuir códigos no verificados"
+}

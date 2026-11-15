@@ -1,0 +1,652 @@
+{
+  "unit_id": "E4A-N01",
+  "unit_title": "Números reales, estimación y medida",
+  "product_phase": "F3_OLA17",
+  "version": "0.17.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Representar y comparar intervalos de reales con extremos abiertos o cerrados.",
+    "Operar potencias con exponentes enteros y raíces principales.",
+    "Calcular cotas de error absoluto a partir de redondeos."
+  ],
+  "warnings": [
+    "Lecciones y ejercicios sintéticos EN REVISIÓN, sin publicación ni homologación.",
+    "E3-N02 y E3-G02 siguen solo título: las escalas esenciales se explican explícitamente sin declararlas cubiertas.",
+    "Modelos de funciones sociales son ilustrativos, no pronósticos económicos reales.",
+    "Mapeo autonómico, WCAG 2.2 AA completo, dispositivos físicos y revisión humana NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Reales y error de medida de 3.º ESO",
+      "lesson_id": "E3-N01-L06",
+      "href": "#/curso/E3/unidad/E3-N01/leccion/E3-N01-L06"
+    },
+    {
+      "label": "Magnitudes y medidas",
+      "lesson_id": "E2-M01-L05",
+      "href": "#/curso/E2/unidad/E2-M01/leccion/E2-M01-L05"
+    },
+    {
+      "label": "Proporcionalidad y escalas",
+      "lesson_id": "E2-P01-L02",
+      "href": "#/curso/E2/unidad/E2-P01/leccion/E2-P01-L02"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recuperación sin pistas, feedback específico y repaso local voluntario."
+  },
+  "source_note": "RD 217/2022 y RD 243/2022: marco estatal, secuencia editorial no oficial.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E4A-N01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-N01:C01"
+      ],
+      "objectives": [
+        "Representar y comparar intervalos de reales con extremos abiertos o cerrados.",
+        "Traducir condiciones de medida a conjuntos de valores y operaciones de intersección."
+      ],
+      "prerequisites": [
+        "E3-N01-L03",
+        "E3-N01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Los números reales incluyen racionales e irracionales, y pueden ordenarse en una recta numérica orientada. Un intervalo [a,b] contiene ambos extremos, mientras que (a,b) no contiene ninguno; el infinito nunca se incluye como un número real. La condición x≥2 se escribe [2,+∞), y 2<x≤5 corresponde a (2,5]. Intersecar dos restricciones equivale a exigir ambas: [1,6]∩(3,8)=(3,6]. La unión representa cumplir al menos una. En contextos de duración y longitud, un intervalo describe rango de medidas posibles; no convierte automáticamente una cantidad indivisible en continua. Al dibujar, la posición aproximada de un punto no sustituye al significado exacto de corchetes y paréntesis. La recta de reales permite comparar irracionales como √2 entre 1 y 2 sin redondearlos a fracciones exactas."
+        },
+        {
+          "type": "example",
+          "body": "Si una medida exige x≥2 y x<5, la intersección es [2,5). El valor 2 se admite, pero 5 no cumple la segunda desigualdad."
+        },
+        {
+          "type": "example",
+          "body": "Los intervalos [1,6] y (3,8) se intersectan en (3,6]. El número 3 queda excluido por el segundo y el 6 permanece admitido."
+        },
+        {
+          "type": "figure",
+          "body": "Intervalo exacto y representación auxiliar. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Intervalo exacto y representación auxiliar. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "linear",
+            "title": "Intervalo exacto y representación auxiliar",
+            "rows": [
+              [
+                "Condición A",
+                "x≥2"
+              ],
+              [
+                "Condición B",
+                "x<5"
+              ],
+              [
+                "Intersección",
+                "[2,5)"
+              ],
+              [
+                "2",
+                "Incluido"
+              ],
+              [
+                "5",
+                "Excluido"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 1,
+              "b": 0
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": [
+              [
+                "I",
+                2,
+                2
+              ],
+              [
+                "F",
+                5,
+                5
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué +∞ nunca lleva corchete en notación de intervalos?||Porque el infinito no es un número real alcanzable como extremo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Los números reales incluyen racionales e irracionales, y pueden ordenarse en una recta numérica orientada. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-N01-L01-01",
+        "F3-E4A-N01-L01-02",
+        "F3-E4A-N01-L01-03",
+        "F3-E4A-N01-L01-04",
+        "F3-E4A-N01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-N01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-N01:C02"
+      ],
+      "objectives": [
+        "Operar potencias con exponentes enteros y raíces principales.",
+        "Distinguir potencias racionales y restricciones de radicandos reales."
+      ],
+      "prerequisites": [
+        "E3-N01-L04",
+        "E2-N02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Las leyes de potencias a^m·a^n=a^(m+n) y a^m/a^n=a^(m−n) requieren que las expresiones estén definidas y que el denominador no sea cero. La raíz cuadrada principal √a es no negativa cuando a≥0; por eso √(x²)=|x|, no x para cualquier signo. La raíz cúbica real admite radicando negativo. Para a>0, a^(p/q) se interpreta como raíz q-ésima principal de a^p cuando q>0; este convenio evita ambigüedad de raíces pares reales. Una aproximación decimal a una raíz irracional no es igualdad exacta; √8=2√2, mientras que √8≈2,828. Las potencias con bases negativas y exponentes no enteros necesitan un análisis de definición, y no se deben aplicar mecánicamente propiedades de logaritmos o exponentes fuera de su dominio."
+        },
+        {
+          "type": "example",
+          "body": "Simplifica √72: √(36·2)=6√2. La respuesta exacta no equivale a escribir 8,49 sin especificar que es aproximación."
+        },
+        {
+          "type": "example",
+          "body": "Para x=−3, √(x²)=√9=3=|−3|. Es falso que √(x²)=x cuando x es negativo."
+        },
+        {
+          "type": "figure",
+          "body": "Raíz principal como función no negativa. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Raíz principal como función no negativa. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "radical",
+            "title": "Raíz principal como función no negativa",
+            "rows": [
+              [
+                "x",
+                "−3"
+              ],
+              [
+                "x²",
+                "9"
+              ],
+              [
+                "√(x²)",
+                "3"
+              ],
+              [
+                "Expresión correcta",
+                "|x|"
+              ],
+              [
+                "Resultado",
+                "No negativo"
+              ]
+            ],
+            "model": {
+              "kind": "absolute",
+              "a": 1,
+              "h": 0,
+              "k": 0
+            },
+            "domain": [
+              -4,
+              4
+            ],
+            "marks": [
+              [
+                "A",
+                -3,
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede reemplazarse siempre √(x²) por x?||No; la raíz cuadrada principal es |x| y puede cambiar el signo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Las leyes de potencias a^m·a^n=a^(m+n) y a^m/a^n=a^(m−n) requieren que las expresiones estén definidas y que el denominador no sea cero. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-N01-L02-01",
+        "F3-E4A-N01-L02-02",
+        "F3-E4A-N01-L02-03",
+        "F3-E4A-N01-L02-04",
+        "F3-E4A-N01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-N01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-N01:C03"
+      ],
+      "objectives": [
+        "Calcular cotas de error absoluto a partir de redondeos.",
+        "Diferenciar error absoluto, relativo y número de cifras significativas."
+      ],
+      "prerequisites": [
+        "E3-N01-L05",
+        "E3-N01-L06",
+        "E1-M01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una medida redondeada al entero más cercano representa un intervalo de posibles valores de anchura una unidad: si se anuncia 12 m y se aplicó redondeo habitual al entero, el error absoluto máximo teórico es 0,5 m, y el valor real se encuentra aproximadamente entre 11,5 m y 12,5 m, con cuidado con las reglas de empate en los extremos. Si se redondea a dos decimales, la cota es 0,005 unidades. El error absoluto es |x_real−x_aprox|; el relativo divide por |x_real| cuando x_real≠0. Las cifras significativas dependen de la precisión de la medición, y un resultado calculado no puede declararse más preciso sin una justificación. Una cota determina un conjunto de valores plausibles y no afirma dónde está el valor real exacto. Se distingue instrumento, precisión indicada y aproximación numérica."
+        },
+        {
+          "type": "example",
+          "body": "Se mide 12,3 cm redondeando a décimas: el error absoluto del redondeo es como máximo 0,05 cm, sin saber si el valor real está por encima o debajo."
+        },
+        {
+          "type": "example",
+          "body": "Una longitud real de 50 cm se aproxima como 49 cm: error absoluto 1 cm y relativo 1/50=2 % respecto al valor real."
+        },
+        {
+          "type": "figure",
+          "body": "Cota de redondeo con intervalo de posibles valores. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Cota de redondeo con intervalo de posibles valores. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "error",
+            "title": "Cota de redondeo con intervalo de posibles valores",
+            "rows": [
+              [
+                "Dato anunciado",
+                "12,3 cm"
+              ],
+              [
+                "Precisión",
+                "Una décima"
+              ],
+              [
+                "Cota",
+                "0,05 cm"
+              ],
+              [
+                "Intervalo",
+                "[12,25;12,35] aproximadamente"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 1,
+              "b": 0
+            },
+            "domain": [
+              11,
+              14
+            ],
+            "marks": [
+              [
+                "Anuncio",
+                12.3,
+                12.3
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Un dato redondeado a centésimas asegura que su error absoluto es cero?||No; la cota habitual del redondeo es media centésima, 0,005 unidades."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una medida redondeada al entero más cercano representa un intervalo de posibles valores de anchura una unidad: si se anuncia 12 m y se aplicó redondeo habitual al entero, el error absoluto máximo teórico es 0,5 m, y el valor real se encuentra aproximadamente entre 11,5 m y 12,5 m, con cuidado con las reglas de empate en los extremos. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-N01-L03-01",
+        "F3-E4A-N01-L03-02",
+        "F3-E4A-N01-L03-03",
+        "F3-E4A-N01-L03-04",
+        "F3-E4A-N01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-N01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-N01:C04"
+      ],
+      "objectives": [
+        "Comparar magnitudes mediante razones con unidades coherentes.",
+        "Calcular razones de escala y contrastar conversiones dimensionales."
+      ],
+      "prerequisites": [
+        "E1-M01-L04",
+        "E2-M01-L05",
+        "E3-N01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una magnitud física se expresa con un número y una unidad. Para comparar 2,5 km y 800 m hay que convertir a la misma unidad: 2500 m frente a 800 m, razón 2500/800=25/8. Una razón entre magnitudes homogéneas puede no tener unidades, mientras que velocidad=distancia/tiempo tiene unidades de m/s o km/h. Multiplicar una longitud por 100 al convertir metros a centímetros no autoriza multiplicar un área por 100, porque 1 m²=10 000 cm². En volúmenes, el factor se eleva al cubo. Las comparaciones requieren condiciones y escala de medida homogéneas; mezclar cantidades en unidades diferentes sin conversión produce resultados incorrectos. Se consideran aproximaciones solo cuando los datos son aproximados y se explica la precisión de salida."
+        },
+        {
+          "type": "example",
+          "body": "Compara 2,5 km y 800 m: 2,5 km=2500 m. Su razón es 2500/800=25/8=3,125, por lo que la primera longitud es mayor."
+        },
+        {
+          "type": "example",
+          "body": "Un rectángulo de 2 m² tiene 20 000 cm², pues 1 m²=(100 cm)²=10 000 cm²."
+        },
+        {
+          "type": "figure",
+          "body": "Comparación de magnitudes en unidades compatibles. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Comparación de magnitudes en unidades compatibles. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "scale",
+            "title": "Comparación de magnitudes en unidades compatibles",
+            "rows": [
+              [
+                "Longitud A",
+                "2,5 km"
+              ],
+              [
+                "Longitud B",
+                "800 m"
+              ],
+              [
+                "Conversión",
+                "2500 m y 800 m"
+              ],
+              [
+                "Razón exacta",
+                "25/8 = 3,125"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 1,
+              "b": 0
+            },
+            "domain": [
+              0,
+              4
+            ],
+            "marks": [
+              [
+                "A",
+                3.125,
+                3.125
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Para pasar de m² a cm² basta multiplicar el valor por 100?||No; la conversión de área multiplica por 100²=10 000."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una magnitud física se expresa con un número y una unidad. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-N01-L04-01",
+        "F3-E4A-N01-L04-02",
+        "F3-E4A-N01-L04-03",
+        "F3-E4A-N01-L04-04",
+        "F3-E4A-N01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E4A-N01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.17.0",
+      "status": "revision",
+      "concept_ids": [
+        "E4A-N01:C05"
+      ],
+      "objectives": [
+        "Resolver problemas de escalas y proporcionalidad directa con unidades.",
+        "Distinguir efectos de factores lineales, superficiales y volumétricos."
+      ],
+      "prerequisites": [
+        "E2-P01-L02",
+        "E2-M01-L05",
+        "E2-G01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una escala 1:n en un plano significa que una unidad de longitud dibujada representa n unidades reales de la misma magnitud. En un mapa a escala 1:50 000, 2 cm representan 100 000 cm=1 km. Antes de calcular hay que convertir a unidades homogéneas; la escala afecta a longitudes, no directamente a áreas. Si una figura semejante se amplía por factor k>0, su perímetro se multiplica por k, el área por k² y el volumen de un sólido semejante por k³. Una tasa de cambio proporcional y=mx con m constante conserva el cociente y/x para x≠0; no debe confundirse con reparto inversamente proporcional. Estos conceptos se desarrollan aquí con apoyo en proporcionalidad, medida y semejanza anteriores, sin suponer terminada E3-N02 ni E3-G02."
+        },
+        {
+          "type": "example",
+          "body": "En escala 1:50 000, 2 cm de plano equivalen a 100 000 cm reales, esto es 1000 m=1 km."
+        },
+        {
+          "type": "example",
+          "body": "Una maqueta se amplía linealmente al triple: la superficie correspondiente aumenta por factor 3²=9 y el volumen por 3³=27."
+        },
+        {
+          "type": "figure",
+          "body": "Escala lineal y factor de volumen. SVG local original de apoyo, tabla HTML semántica con magnitudes exactas, unidades y restricciones; el dibujo no sustituye la demostración.",
+          "alt": "Escala lineal y factor de volumen. Los resultados numéricos, dominios y restricciones constan en la tabla accesible sin depender de color.",
+          "visual_spec": {
+            "render_family": "wave17",
+            "kind": "scale",
+            "title": "Escala lineal y factor de volumen",
+            "rows": [
+              [
+                "Escala",
+                "1:50 000"
+              ],
+              [
+                "Medida plano",
+                "2 cm"
+              ],
+              [
+                "Longitud real",
+                "100 000 cm"
+              ],
+              [
+                "Equivalencia",
+                "1 km"
+              ],
+              [
+                "Factor volumen para k=2",
+                "8"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": 2,
+              "b": 0
+            },
+            "domain": [
+              0,
+              4
+            ],
+            "marks": [
+              [
+                "D",
+                2,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Si duplicas la escala lineal de un sólido semejante, duplicas su volumen?||No; el volumen aumenta por factor 2³=8."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una escala 1:n en un plano significa que una unidad de longitud dibujada representa n unidades reales de la misma magnitud. Calcula otro ejemplo sin pistas, señala un error de dominio y recupera la idea al día siguiente."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E4A-N01-L05-01",
+        "F3-E4A-N01-L05-02",
+        "F3-E4A-N01-L05-03",
+        "F3-E4A-N01-L05-04",
+        "F3-E4A-N01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "RD 217/2022 ESO 4A y RD 243/2022 MACS I: marco estatal y distribución editorial pendiente de revisión territorial.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia estatal sin atribuir aristas editoriales como obligaciones oficiales ni validación autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

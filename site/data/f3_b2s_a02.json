@@ -1,0 +1,892 @@
+{
+  "unit_id": "B2S-A02",
+  "unit_title": "Programación lineal",
+  "product_phase": "F3_OLA20",
+  "version": "0.20.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Elegir variables de decisión y función objetivo con unidades coherentes.",
+    "Traducir límites de materias primas y capacidad en inecuaciones.",
+    "Construir la región factible mediante intersección de semiplanos."
+  ],
+  "warnings": [
+    "Material sintético EN REVISIÓN, sin revisión humana o publicación.",
+    "Las aristas de prerrequisitos añadidas son editoriales, no normativa oficial.",
+    "La muestra no equivale a la población; frecuencia relativa observada no es probabilidad teórica.",
+    "El óptimo lineal continuo puede no ser entero o único; las restricciones y unidades prevalecen.",
+    "WCAG 2.2 AA integral, normativa autonómica y teléfonos físicos NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Inecuaciones MACS I",
+      "lesson_id": "B1S-A01-L04",
+      "href": "#/curso/B1S/unidad/B1S-A01/leccion/B1S-A01-L04"
+    },
+    {
+      "label": "Sistemas y matrices MACS II",
+      "lesson_id": "B2S-A01-L03",
+      "href": "#/curso/B2S/unidad/B2S-A01/leccion/B2S-A01-L03"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recordar sin pistas y revisar explicaciones, progreso local solo por consentimiento."
+  },
+  "source_note": "Referencias estatales RD 217/2022 y RD 243/2022, asignaciones de itinerarios editoriales sin cotejo autonómico.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B2S-A02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-A02:C01"
+      ],
+      "objectives": [
+        "Elegir variables de decisión y función objetivo con unidades coherentes.",
+        "Distinguir hipótesis de divisibilidad y no negatividad en un modelo lineal."
+      ],
+      "prerequisites": [
+        "B1S-A01-L05",
+        "B2S-A01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La programación lineal optimiza una función objetivo lineal sujeta a desigualdades lineales. Primero se declaran variables de decisión con significado y unidades: x = cantidad del producto A, y = cantidad del producto B. Para un margen de 3 € por A y 5 € por B, el objetivo es maximizar Z=3x+5y euros; la sola función objetivo no determina el óptimo sin restricciones. Las cantidades no negativas cumplen x≥0, y≥0. El modelo de programación lineal continua admite cantidades fraccionarias; si son piezas indivisibles se requiere después comprobar soluciones enteras o usar programación entera, que es un problema diferente. Un coeficiente 3 € por pieza no representa precio de venta si se ha definido como beneficio. Toda decisión derivada del modelo es ilustrativa y no sustituye datos económicos revisados."
+        },
+        {
+          "type": "example",
+          "body": "Se venden lotes A y B; x e y indican lotes y el beneficio por lote es 3 € y 5 €. El objetivo es Z=3x+5y, y si x=2 e y=1 se obtienen 11 €."
+        },
+        {
+          "type": "example",
+          "body": "Si hay 4 lotes A y 2 lotes B, Z=3·4+5·2=22 €. La expresión Z=5x+3y invertiría erróneamente los márgenes declarados."
+        },
+        {
+          "type": "figure",
+          "body": "Variables, objetivo y no negatividad. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Variables, objetivo y no negatividad. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "lp_axes",
+            "title": "Variables, objetivo y no negatividad",
+            "rows": [
+              [
+                "Variables",
+                "x lotes A; y lotes B"
+              ],
+              [
+                "Objetivo",
+                "Z=3x+5y euros"
+              ],
+              [
+                "No negatividad",
+                "x≥0; y≥0"
+              ],
+              [
+                "Ejemplo x=2,y=1",
+                "Z=11 €"
+              ],
+              [
+                "Hipótesis",
+                "Lotes continuos en modelo LP"
+              ]
+            ],
+            "model": {
+              "kind": "lp_axes",
+              "objective": [
+                3,
+                5
+              ]
+            },
+            "domain": [
+              0,
+              5
+            ],
+            "marks": [
+              [
+                "Ejemplo",
+                2,
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede declararse viable cualquier par de cantidades positivas sin comprobar recursos disponibles?||No; faltan las restricciones del modelo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La programación lineal optimiza una función objetivo lineal sujeta a desigualdades lineales. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-A02-L01-01",
+        "F3-B2S-A02-L01-02",
+        "F3-B2S-A02-L01-03",
+        "F3-B2S-A02-L01-04",
+        "F3-B2S-A02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-A02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-A02:C02"
+      ],
+      "objectives": [
+        "Traducir límites de materias primas y capacidad en inecuaciones.",
+        "Distinguir semiplano permitido de su frontera lineal y comprobar puntos."
+      ],
+      "prerequisites": [
+        "B2S-A02-L01",
+        "B1S-A01-L04",
+        "B2S-A01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una restricción lineal como 2x+y≤8 describe un semiplano cerrado, incluida la recta frontera 2x+y=8. Si además x+y≤6 y x,y≥0, la región factible es la intersección de todos los semiplanos; cada restricción debe mantenerse, no basta comprobar solo una. El par (x,y)=(2,3) satisface 2·2+3=7≤8 y 2+3=5≤6. El par (4,1) viola 2·4+1=9>8 aunque cumpla x+y≤6. Las desigualdades ≥ imponen un mínimo en lugar de máximo, y cambiar su sentido transforma el conjunto factible. En situaciones reales, la cantidad puede ser entera y la matriz de recursos puede incluir costes fijos no lineales: las soluciones del modelo continuo son proposiciones condicionadas."
+        },
+        {
+          "type": "example",
+          "body": "Restricciones 2x+y≤8, x+y≤6, x≥0, y≥0. Para (2,3) se comprueba 7≤8 y 5≤6, luego es factible."
+        },
+        {
+          "type": "example",
+          "body": "Para (4,1), 2·4+1=9 supera 8; el punto es inviable aunque 4+1=5 no supera el segundo límite."
+        },
+        {
+          "type": "figure",
+          "body": "Intersección de restricciones lineales. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Intersección de restricciones lineales. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "linear_program",
+            "title": "Intersección de restricciones lineales",
+            "rows": [
+              [
+                "Restricción I",
+                "2x+y≤8"
+              ],
+              [
+                "Restricción II",
+                "x+y≤6"
+              ],
+              [
+                "No negatividad",
+                "x,y≥0"
+              ],
+              [
+                "Punto (2,3)",
+                "Factible"
+              ],
+              [
+                "Punto (4,1)",
+                "No factible"
+              ]
+            ],
+            "model": {
+              "kind": "linear_program",
+              "polygon": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  0,
+                  6
+                ]
+              ],
+              "objective": [
+                3,
+                5
+              ]
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": [
+              [
+                "Factible",
+                2,
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Basta satisfacer una sola de las restricciones cuando el sistema exige varias simultáneamente?||No; un punto factible satisface todas."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una restricción lineal como 2x+y≤8 describe un semiplano cerrado, incluida la recta frontera 2x+y=8. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-A02-L02-01",
+        "F3-B2S-A02-L02-02",
+        "F3-B2S-A02-L02-03",
+        "F3-B2S-A02-L02-04",
+        "F3-B2S-A02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-A02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-A02:C03"
+      ],
+      "objectives": [
+        "Construir la región factible mediante intersección de semiplanos.",
+        "Identificar vértices por intersecciones exactas y no por inspección visual."
+      ],
+      "prerequisites": [
+        "B2S-A02-L02",
+        "B2S-A01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para x≥0, y≥0, x≤4, y≤3 y x+y≤6, la región factible es un polígono convexo cerrado y acotado. Sus vértices se obtienen cruzando pares de fronteras y descartando intersecciones que incumplen alguna desigualdad: (0,0), (4,0), (4,2), (3,3), (0,3). No es válido aceptar (4,3), porque 4+3=7>6. Un dibujo con ejes aproximados ayuda a identificar la región, pero los valores y la inclusión de las fronteras se justifican por sustitución exacta. La región puede resultar vacía (restricciones incompatibles), no acotada, o reducirse a un segmento o punto. Solo si el conjunto es no vacío y compacto una función objetivo continua alcanza extremos globales, aunque los óptimos pueden no ser únicos."
+        },
+        {
+          "type": "example",
+          "body": "Con x≤4, y≤3, x+y≤6, x,y≥0, la intersección de x=4 con x+y=6 es (4,2), que satisface y≤3."
+        },
+        {
+          "type": "example",
+          "body": "La intersección de y=3 con x+y=6 es (3,3). En cambio (4,3) viola x+y≤6, por tanto no es vértice factible."
+        },
+        {
+          "type": "figure",
+          "body": "Región factible exacta de cinco vértices. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Región factible exacta de cinco vértices. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "linear_program",
+            "title": "Región factible exacta de cinco vértices",
+            "rows": [
+              [
+                "x",
+                "0≤x≤4"
+              ],
+              [
+                "y",
+                "0≤y≤3"
+              ],
+              [
+                "Acoplamiento",
+                "x+y≤6"
+              ],
+              [
+                "Vértices",
+                "(0,0),(4,0),(4,2),(3,3),(0,3)"
+              ],
+              [
+                "Punto (4,3)",
+                "Excluido"
+              ]
+            ],
+            "model": {
+              "kind": "linear_program",
+              "polygon": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  0,
+                  3
+                ]
+              ],
+              "objective": [
+                3,
+                5
+              ]
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": [
+              [
+                "Vértice",
+                4,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La intersección de dos rectas frontera es siempre vértice factible del sistema entero?||No; debe satisfacer las demás inecuaciones."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para x≥0, y≥0, x≤4, y≤3 y x+y≤6, la región factible es un polígono convexo cerrado y acotado. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-A02-L03-01",
+        "F3-B2S-A02-L03-02",
+        "F3-B2S-A02-L03-03",
+        "F3-B2S-A02-L03-04",
+        "F3-B2S-A02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-A02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-A02:C04"
+      ],
+      "objectives": [
+        "Evaluar una función objetivo en vértices factibles.",
+        "Explicar por qué un óptimo lineal acotado se alcanza en algún vértice."
+      ],
+      "prerequisites": [
+        "B2S-A02-L03",
+        "B2S-F02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para un polígono convexo no vacío, cerrado y acotado definido por restricciones lineales, una función objetivo lineal alcanza máximo y mínimo en al menos un vértice; puede alcanzar un mismo valor sobre una arista completa. En la región x≥0,y≥0,x≤4,y≤3,x+y≤6, con vértices (0,0),(4,0),(4,2),(3,3),(0,3), el objetivo Z=3x+5y toma respectivamente 0,12,22,24,15 euros. El máximo es 24 en (3,3). Comprobar solamente el intercepto más lejano de una recta no demuestra optimalidad. La gráfica de rectas de nivel 3x+5y=c se desplaza paralelamente hasta contactar el último punto factible, pero la tabla de valores exactos es la prueba. Si un dominio no está acotado, puede no existir máximo: no extrapolar el criterio sin sus hipótesis."
+        },
+        {
+          "type": "example",
+          "body": "Evalúa Z=3x+5y: en (4,2) vale 3·4+5·2=22; en (3,3) vale 9+15=24, mayor."
+        },
+        {
+          "type": "example",
+          "body": "En (0,3) Z=15 y en (4,0) Z=12. Comparados los cinco vértices, el mayor resultado es 24 en (3,3)."
+        },
+        {
+          "type": "figure",
+          "body": "Máximo de objetivo lineal en polígono. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Máximo de objetivo lineal en polígono. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "linear_program",
+            "title": "Máximo de objetivo lineal en polígono",
+            "rows": [
+              [
+                "Objetivo",
+                "3x+5y"
+              ],
+              [
+                "Z(4,2)",
+                "22 €"
+              ],
+              [
+                "Z(3,3)",
+                "24 €"
+              ],
+              [
+                "Z(0,3)",
+                "15 €"
+              ],
+              [
+                "Óptimo",
+                "(3,3), valor 24 €"
+              ]
+            ],
+            "model": {
+              "kind": "linear_program",
+              "polygon": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  0,
+                  3
+                ]
+              ],
+              "objective": [
+                3,
+                5
+              ]
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": [
+              [
+                "Máximo",
+                3,
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede declararse máximo sin evaluar la función objetivo en todos los vértices relevantes?||No; es necesario comparar candidatos o demostrar una cota."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para un polígono convexo no vacío, cerrado y acotado definido por restricciones lineales, una función objetivo lineal alcanza máximo y mínimo en al menos un vértice; puede alcanzar un mismo valor sobre una arista completa. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-A02-L04-01",
+        "F3-B2S-A02-L04-02",
+        "F3-B2S-A02-L04-03",
+        "F3-B2S-A02-L04-04",
+        "F3-B2S-A02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-A02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-A02:C05"
+      ],
+      "objectives": [
+        "Resolver una optimización lineal bidimensional con región acotada.",
+        "Comprobar posibilidades de óptimos múltiples e inexistencia de máximo."
+      ],
+      "prerequisites": [
+        "B2S-A02-L04",
+        "B2S-A02-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El método gráfico consiste en escribir variables y unidades, formular desigualdades, hallar región factible, enumerar vértices exactos, evaluar el objetivo y comprobar la solución. Con x+y≤6, x≤4, y≤3 y no negatividad, el objetivo Z=x+y es máximo 6 en toda la arista entre (4,2) y (3,3): no hay una única solución aunque ambos extremos sean vértices óptimos. Si se maximiza Z=3x+5y, el óptimo único en esos vértices es (3,3) con 24. Cuando el sistema es no acotado y objetivo aumenta indefinidamente en una dirección permitida no existe máximo finito; cuando la intersección de restricciones es vacía no existe solución factible. Es esencial diferenciar estos casos, y no afirmar siempre que el método produce un único vértice."
+        },
+        {
+          "type": "example",
+          "body": "Con Z=x+y bajo x+y≤6, x≤4, y≤3, x,y≥0, tanto (4,2) como (3,3) dan 6; todo segmento de la arista es óptimo."
+        },
+        {
+          "type": "example",
+          "body": "Maximizando Z=3x+5y, Z(3,3)=24 y Z(4,2)=22; el óptimo ya no es una arista completa sino el vértice (3,3)."
+        },
+        {
+          "type": "figure",
+          "body": "Óptimos múltiples sobre una arista. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Óptimos múltiples sobre una arista. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "linear_program",
+            "title": "Óptimos múltiples sobre una arista",
+            "rows": [
+              [
+                "Restricción activa",
+                "x+y=6"
+              ],
+              [
+                "Arista",
+                "(4,2) a (3,3)"
+              ],
+              [
+                "Objetivo",
+                "Z=x+y"
+              ],
+              [
+                "Valor máximo",
+                "6"
+              ],
+              [
+                "Número de óptimos",
+                "Infinitos puntos del segmento"
+              ]
+            ],
+            "model": {
+              "kind": "linear_program",
+              "polygon": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  0,
+                  3
+                ]
+              ],
+              "objective": [
+                1,
+                1
+              ]
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": [
+              [
+                "Vértice A",
+                4,
+                2
+              ],
+              [
+                "Vértice B",
+                3,
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿El método de los vértices garantiza siempre un único punto óptimo?||No; puede haber un segmento óptimo, región vacía o objetivo no acotado."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El método gráfico consiste en escribir variables y unidades, formular desigualdades, hallar región factible, enumerar vértices exactos, evaluar el objetivo y comprobar la solución. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-A02-L05-01",
+        "F3-B2S-A02-L05-02",
+        "F3-B2S-A02-L05-03",
+        "F3-B2S-A02-L05-04",
+        "F3-B2S-A02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-A02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.20.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-A02:C06"
+      ],
+      "objectives": [
+        "Interpretar soluciones continuas, enteras y cambios en parámetros con límites de validez.",
+        "Comprobar factibilidad y condiciones antes de trasladar un óptimo a decisiones reales."
+      ],
+      "prerequisites": [
+        "B2S-A02-L05",
+        "B2S-F02-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un problema de producción con dos productos, recursos limitados y objetivo lineal puede representarse en una región convexa continua. Su óptimo (3,3) para Z=3x+5y y la región x+y≤6,x≤4,y≤3,x,y≥0 es factible e íntegro. Si el objetivo cambiara a Z=5x+3y, los vértices darían máximo en (4,2) con 26 frente a (3,3) con 24; modificar coeficientes puede desplazar el óptimo. Una pequeña variación en la capacidad x+y≤6 puede alterar región y vértices, por lo que la solución previa ya no está garantizada. En problemas de bienes indivisibles, un óptimo fraccionario del modelo continuo exige contrastar candidatos enteros, no redondear automáticamente. Los coeficientes y recursos son sintéticos y no justifican recomendaciones de negocios reales ni decisiones sin datos y revisión humana."
+        },
+        {
+          "type": "example",
+          "body": "Con Z=5x+3y, Z(4,2)=20+6=26 y Z(3,3)=15+9=24; el mayor entre ambos es 26 en (4,2)."
+        },
+        {
+          "type": "example",
+          "body": "Con Z=3x+5y, el máximo del mismo conjunto se obtiene en (3,3) y vale 24. Cambiar márgenes puede cambiar la decisión."
+        },
+        {
+          "type": "figure",
+          "body": "Sensibilidad al vector objetivo. SVG local de apoyo con tabla matemática semántica de resultados exactos y condiciones.",
+          "alt": "Sensibilidad al vector objetivo. La tabla exacta incluye datos, restricciones, convenciones y resultados sin depender de percepción del color.",
+          "visual_spec": {
+            "render_family": "wave20",
+            "kind": "linear_program",
+            "title": "Sensibilidad al vector objetivo",
+            "rows": [
+              [
+                "Misma región",
+                "x+y≤6,x≤4,y≤3,x,y≥0"
+              ],
+              [
+                "Objetivo inicial",
+                "3x+5y"
+              ],
+              [
+                "Máximo inicial",
+                "24 en (3,3)"
+              ],
+              [
+                "Objetivo modificado",
+                "5x+3y"
+              ],
+              [
+                "Nuevo máximo",
+                "26 en (4,2)"
+              ]
+            ],
+            "model": {
+              "kind": "linear_program",
+              "polygon": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  0,
+                  3
+                ]
+              ],
+              "objective": [
+                5,
+                3
+              ]
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": [
+              [
+                "Nuevo máximo",
+                4,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se mantiene forzosamente el óptimo original al cambiar el beneficio unitario?||No; debe volver a evaluarse el objetivo sobre los vértices factibles."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un problema de producción con dos productos, recursos limitados y objetivo lineal puede representarse en una región convexa continua. Resuelve un caso de transferencia y argumenta por qué una hipótesis podría fallar."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-A02-L06-01",
+        "F3-B2S-A02-L06-02",
+        "F3-B2S-A02-L06-03",
+        "F3-B2S-A02-L06-04",
+        "F3-B2S-A02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin asignar secuencia obligatoria ni mapeo autonómico verificado.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Fuente legal; la secuencia educativa es propuesta editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

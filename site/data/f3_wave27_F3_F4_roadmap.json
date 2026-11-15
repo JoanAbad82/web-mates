@@ -1,0 +1,153 @@
+{
+  "version": "2026-11-14-F3-27",
+  "source_of_truth": "sources/Catalogo_Matematicas_LOMLOE_85_unidades_2026.json",
+  "base_f3_26_sha256": "a4727b6a86d7f135d3cb0473232164bfc57114985de41cf86f1d1ec7914346d8",
+  "baseline": {
+    "courses": 9,
+    "units": 85,
+    "canonical_lessons": 505,
+    "covered_units": 77,
+    "covered_lessons": 458,
+    "exercises_created": 2290,
+    "units_remaining": 8,
+    "lessons_remaining": 47
+  },
+  "wave27_plan": {
+    "selected_in_dependency_order": [
+      "B2C-Q02",
+      "E3-N02",
+      "E3-G02"
+    ],
+    "lessons": 17,
+    "exercises": 85,
+    "proposed_editorial_edges": [
+      {
+        "from": "B2C-Q01",
+        "to": "B2C-Q02",
+        "status": "propuesta_editorial",
+        "why": "Probabilidad condicionada de Matemáticas II fundamenta distribuciones."
+      },
+      {
+        "from": "E3-N01",
+        "to": "E3-N02",
+        "status": "propuesta_editorial",
+        "why": "Aproximaciones y potencias previas fundamentan notación científica."
+      },
+      {
+        "from": "E2-G01",
+        "to": "E3-G02",
+        "status": "propuesta_editorial",
+        "why": "Semejanza y medidas de 2.º anteceden a transformaciones de 3.º."
+      },
+      {
+        "from": "E3-G02",
+        "to": "E4A-G01",
+        "status": "propuesta_editorial",
+        "why": "Semejanza de 3.º es prerrequisito editorial de geometría aplicada 4.º A."
+      }
+    ]
+  },
+  "after_wave27_if_all_gates_pass": {
+    "covered_units": 80,
+    "covered_lessons": 475,
+    "exercises_created": 2375,
+    "units_remaining": 5,
+    "lessons_remaining": 30,
+    "content_state": "EN REVISION; F4 no verificada"
+  },
+  "remaining_units": [
+    {
+      "unit_id": "E4A-G01",
+      "title": "Geometría aplicada",
+      "course_code": "E4A",
+      "lesson_count": 6,
+      "prerequisites_text": "Semejanza y coordenadas 3.º",
+      "canonical_predecessors": [],
+      "status_at_F3_23": "solo_titulo",
+      "target_F3_24": false,
+      "status_after_F3_24_if_verified": "solo_titulo",
+      "workstream": "Precursores numéricos, medidas y geometría"
+    },
+    {
+      "unit_id": "E4B-N01",
+      "title": "Reales, radicales y precisión",
+      "course_code": "E4B",
+      "lesson_count": 6,
+      "prerequisites_text": "Números reales de 3.º",
+      "canonical_predecessors": [],
+      "status_at_F3_23": "solo_titulo",
+      "target_F3_24": false,
+      "status_after_F3_24_if_verified": "solo_titulo",
+      "workstream": "Precursores numéricos, medidas y geometría"
+    },
+    {
+      "unit_id": "B1C-N01",
+      "title": "Reales y números complejos",
+      "course_code": "B1C",
+      "lesson_count": 6,
+      "prerequisites_text": "Reales y álgebra 4.º B",
+      "canonical_predecessors": [],
+      "status_at_F3_23": "solo_titulo",
+      "target_F3_24": false,
+      "status_after_F3_24_if_verified": "solo_titulo",
+      "workstream": "Precursores numéricos, medidas y geometría"
+    },
+    {
+      "unit_id": "B2C-G03",
+      "title": "Métrica espacial",
+      "course_code": "B2C",
+      "lesson_count": 6,
+      "prerequisites_text": "Rectas y planos",
+      "canonical_predecessors": [],
+      "status_at_F3_23": "solo_titulo",
+      "target_F3_24": false,
+      "status_after_F3_24_if_verified": "solo_titulo",
+      "workstream": "Precursores numéricos, medidas y geometría"
+    },
+    {
+      "unit_id": "B1S-P01",
+      "title": "Matemática financiera I",
+      "course_code": "B1S",
+      "lesson_count": 6,
+      "prerequisites_text": "Proporcionalidad y potencias",
+      "canonical_predecessors": [],
+      "status_at_F3_23": "solo_titulo",
+      "target_F3_24": false,
+      "status_after_F3_24_if_verified": "solo_titulo",
+      "workstream": "Cadena cuarto ESO A y MACS I"
+    }
+  ],
+  "phase_F4_acceptance_gates": [
+    {
+      "id": "F4-CURR",
+      "goal": "Revisión humana matemática, didáctica y mapeo oficial por territorio de todas las unidades",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Actas y resultados identificados por lección/versión/currículo; cotejo RD y Cataluña, sin inventar códigos"
+    },
+    {
+      "id": "F4-ACCESS",
+      "goal": "Accesibilidad WCAG 2.2 AA, lectores de pantalla y móvil físico",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Pruebas con teclado, zoom, contraste, lectores, Android/iOS, 320px, dispositivos y hallazgos corregidos"
+    },
+    {
+      "id": "F4-SEC",
+      "goal": "Privacidad y seguridad sin datos personales de menores no autorizados",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Inventario de flujos, rechazo entradas, borrado local, permisos, dependencias, control red e incidentes"
+    },
+    {
+      "id": "F4-LEARN",
+      "goal": "Pruebas de aprendizaje, distractores, feedback, espaciado y revisión de todas las soluciones",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Oráculos independientes, muestras revisadas, pruebas usuario proporcionadas voluntariamente sin identificar menores"
+    },
+    {
+      "id": "F4-RELEASE",
+      "goal": "Preparación de despliegue reversible, rendimiento, pruebas integrales y autorización de publicar",
+      "state": "NO VERIFICADO",
+      "evidence_required": "Build reproducible, hashes, rollback y pruebas multidispositivo; permiso específico posterior antes de publicar"
+    }
+  ],
+  "publication_state": "BLOQUEADA HASTA F4 Y AUTORIZACIÓN EXPRESA"
+}

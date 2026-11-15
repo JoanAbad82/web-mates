@@ -1,0 +1,761 @@
+{
+  "unit_id": "B1C-F01",
+  "unit_title": "Familias de funciones",
+  "product_phase": "F3_OLA13",
+  "version": "0.13.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Determinar dominio y recorrido de familias habituales de funciones reales.",
+    "Comparar el comportamiento de polinomios y funciones racionales.",
+    "Describir y comparar funciones exponenciales y logarítmicas."
+  ],
+  "warnings": [
+    "Contenido sintético original editorial EN REVISIÓN: no homologado y no publicable.",
+    "Conexiones editoriales en f3_wave13_priority_plan.json diferenciadas de las 20 canónicas.",
+    "Gráficas SVG ilustrativas y tablas semánticas exactas; no interpretar color o grosor como demostración.",
+    "Códigos curriculares autonómicos, revisión humana y WCAG integral NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Funciones 4º ESO B",
+      "lesson_id": "E4B-F01-L04",
+      "href": "#/curso/E4B/unidad/E4B-F01/leccion/E4B-F01-L04"
+    },
+    {
+      "label": "Trigonometría de Matemáticas I",
+      "lesson_id": "B1C-G01-L04",
+      "href": "#/curso/B1C/unidad/B1C-G01/leccion/B1C-G01-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Comprensión guiada, recuperación activa sin pistas, feedback y repaso optativo espaciado."
+  },
+  "source_note": "Marco RD 217/2022 ESO y RD 243/2022 Matemáticas I; correspondencia territorial por comprobar.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B1C-F01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F01:C01"
+      ],
+      "objectives": [
+        "Determinar dominio y recorrido de familias habituales de funciones reales.",
+        "Diferenciar restricciones algebraicas, gráficas y contextuales con justificación."
+      ],
+      "prerequisites": [
+        "E4B-F01-L01",
+        "E4B-F01-L05",
+        "B1C-A01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El dominio de un polinomio es todo R, mientras que una función racional excluye los ceros de su denominador original, una raíz cuadrada real exige radicando ≥0 y un logaritmo real exige argumento >0. El recorrido exige analizar qué valores se alcanzan: la cuadrática y=(x−2)²+1 tiene recorrido [1,+∞); una exponencial a^x tiene recorrido (0,+∞) y no alcanza cero. La composición de funciones añade restricciones: el valor de la función interior debe pertenecer al dominio de la exterior. En intervalos contextuales de tiempo o cantidades, la interpretación física puede imponer límites adicionales. Un gráfico puede sugerir pero no sustituir la demostración algebraica del conjunto de valores."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=√(x−3) exige x≥3 y produce y≥0; la entrada 2 no es admisible en los reales."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=(x−1)²+4 toma mínimo 4 en x=1, por lo que su recorrido es [4,+∞)."
+        },
+        {
+          "type": "figure",
+          "body": "Dominio y recorrido de una función radical. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Dominio y recorrido de una función radical. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "sqrt",
+            "title": "Dominio y recorrido de una función radical",
+            "rows": [
+              [
+                "Función",
+                "√(x−1)"
+              ],
+              [
+                "Dominio",
+                "[1,+∞)"
+              ],
+              [
+                "Recorrido",
+                "[0,+∞)"
+              ],
+              [
+                "Punto inicial",
+                "(1,0)"
+              ]
+            ],
+            "model": {
+              "kind": "sqrt",
+              "shift": 1,
+              "scale": 1
+            },
+            "domain": [
+              -1,
+              6
+            ],
+            "marks": [
+              [
+                "I",
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una exponencial con recorrido positivo incluye el valor cero?||No. Puede aproximarse arbitrariamente a cero sin alcanzarlo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El dominio de un polinomio es todo R, mientras que una función racional excluye los ceros de su denominador original, una raíz cuadrada real exige radicando ≥0 y un logaritmo real exige argumento >0. Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F01-L01-01",
+        "F3-B1C-F01-L01-02",
+        "F3-B1C-F01-L01-03",
+        "F3-B1C-F01-L01-04",
+        "F3-B1C-F01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-F01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F01:C02"
+      ],
+      "objectives": [
+        "Comparar el comportamiento de polinomios y funciones racionales.",
+        "Identificar ceros, asíntotas y discontinuidades evitables mediante factorización."
+      ],
+      "prerequisites": [
+        "E4B-F01-L04",
+        "E4B-A01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Un polinomio es continuo en todos los reales y su comportamiento para |x| grande depende del término de mayor grado. En f(x)=P(x)/Q(x), los ceros reales de Q se excluyen incluso si un factor común se cancela. Una raíz de P solo es corte con el eje x cuando pertenece al dominio. La función (x²−1)/(x−1) coincide con x+1 para x≠1 y tiene discontinuidad evitable en (1,2), no asíntota vertical. En cambio 1/(x−1) se hace no acotada al aproximarse a 1 y posee asíntota vertical. En un cociente de polinomios del mismo grado, el límite en ±∞ es el cociente de coeficientes líderes si ambos son no nulos."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=(2x²+1)/(x²+4): cuando x→∞, el cociente tiende a 2, porque dominan 2x² y x²."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=(x²−4)/(x−2) tiene agujero en x=2 con límite 4; no se define en ese punto."
+        },
+        {
+          "type": "figure",
+          "body": "Función racional y asíntotas. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Función racional y asíntotas. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "rational",
+            "title": "Función racional y asíntotas",
+            "rows": [
+              [
+                "Función",
+                "1/(x−1)"
+              ],
+              [
+                "Dominio",
+                "R excepto 1"
+              ],
+              [
+                "AV",
+                "x=1"
+              ],
+              [
+                "AH",
+                "y=0"
+              ],
+              [
+                "Cambio de signo",
+                "En x=1, no definida"
+              ]
+            ],
+            "model": {
+              "kind": "rational",
+              "a": 1,
+              "shift": 1,
+              "vertical": 0
+            },
+            "domain": [
+              -4,
+              6
+            ],
+            "marks": [
+              [
+                "AV",
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Una cancelación convierte automáticamente el punto prohibido en parte del dominio?||No. Solo simplifica la expresión en su dominio; el hueco sigue excluido."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Un polinomio es continuo en todos los reales y su comportamiento para |x| grande depende del término de mayor grado. Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F01-L02-01",
+        "F3-B1C-F01-L02-02",
+        "F3-B1C-F01-L02-03",
+        "F3-B1C-F01-L02-04",
+        "F3-B1C-F01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-F01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F01:C03"
+      ],
+      "objectives": [
+        "Describir y comparar funciones exponenciales y logarítmicas.",
+        "Utilizar su relación inversa para evaluar potencias y logaritmos exactos."
+      ],
+      "prerequisites": [
+        "E4B-F01-L05",
+        "B1C-A01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para base a>0, a≠1, la exponencial a^x está definida para cualquier real y siempre es positiva. El logaritmo log_a(x) es su función inversa, definida solo en x>0 y con recorrido R. Las identidades log_a(a^x)=x y a^(log_a x)=x (esta última para x>0) permiten comprobar resultados sin calculadora. Con a>1 ambas funciones crecen; con 0<a<1 decrecen. Las asíntotas de 2^x y log₂(x) son, respectivamente, y=0 al retroceder indefinidamente y x=0. No debe confundirse el crecimiento multiplicativo exponencial con crecimiento lineal ni tratar log de número negativo como valor real."
+        },
+        {
+          "type": "example",
+          "body": "log₂(32)=5 porque 2⁵=32, mientras que log₂(1/4)=−2 porque 2^(−2)=1/4."
+        },
+        {
+          "type": "example",
+          "body": "Si 3^x=81, la igualdad inversa produce x=log₃(81)=4."
+        },
+        {
+          "type": "figure",
+          "body": "Logaritmo en base 2. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Logaritmo en base 2. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "logarithmic",
+            "title": "Logaritmo en base 2",
+            "rows": [
+              [
+                "Función",
+                "log₂(x)"
+              ],
+              [
+                "Dominio",
+                "(0,+∞)"
+              ],
+              [
+                "Recorrido",
+                "R"
+              ],
+              [
+                "Corte eje x",
+                "(1,0)"
+              ],
+              [
+                "Asíntota vertical",
+                "x=0"
+              ]
+            ],
+            "model": {
+              "kind": "logarithmic",
+              "base": 2,
+              "shift": 0
+            },
+            "domain": [
+              -1,
+              9
+            ],
+            "marks": [
+              [
+                "C",
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Para qué valores reales de x tiene sentido log₂(x−5)?||Solo x>5, porque el argumento debe ser estrictamente positivo."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para base a>0, a≠1, la exponencial a^x está definida para cualquier real y siempre es positiva. Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F01-L03-01",
+        "F3-B1C-F01-L03-02",
+        "F3-B1C-F01-L03-03",
+        "F3-B1C-F01-L03-04",
+        "F3-B1C-F01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-F01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F01:C04"
+      ],
+      "objectives": [
+        "Determinar el dominio y recorrido de funciones radicales.",
+        "Relacionar transformaciones de raíces con su punto inicial y monotonía."
+      ],
+      "prerequisites": [
+        "B1C-F01-L01",
+        "E4B-F01-L07"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La función √(x−h)+k está definida para x≥h; su recorrido es [k,+∞), porque la raíz principal siempre es no negativa. Si aparece un factor a<0 delante de la raíz, el recorrido pasa a (−∞,k], y la gráfica es decreciente. Para resolver √(x−h)=q se requiere q≥0 antes de elevar al cuadrado; no se aceptan raíces extrañas originadas al perder el signo. Componer raíces con expresiones polinómicas puede producir dominios disjuntos, por lo que deben resolverse inequaciones del radicando. Los números que hacen el radicando negativo quedan excluidos del campo real, aunque un gráfico esquemático no los muestre."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=√(x−4)+2 comienza en (4,2), tiene dominio [4,+∞) y recorrido [2,+∞)."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=−√(x+1)+3 tiene dominio [−1,+∞), recorrido (−∞,3] y máximo 3 cuando x=−1."
+        },
+        {
+          "type": "figure",
+          "body": "Raíz cuadrada trasladada. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Raíz cuadrada trasladada. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "sqrt",
+            "title": "Raíz cuadrada trasladada",
+            "rows": [
+              [
+                "Función",
+                "√(x−4)+2"
+              ],
+              [
+                "Dominio",
+                "[4,+∞)"
+              ],
+              [
+                "Recorrido",
+                "[2,+∞)"
+              ],
+              [
+                "Punto inicial",
+                "(4,2)"
+              ]
+            ],
+            "model": {
+              "kind": "sqrt",
+              "shift": 4,
+              "scale": 1,
+              "vertical": 2
+            },
+            "domain": [
+              1,
+              10
+            ],
+            "marks": [
+              [
+                "I",
+                4,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿La función √(x−4)+2 está definida en x=3?||No. Su radicando sería −1, negativo en los reales."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: La función √(x−h)+k está definida para x≥h; su recorrido es [k,+∞), porque la raíz principal siempre es no negativa. Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F01-L04-01",
+        "F3-B1C-F01-L04-02",
+        "F3-B1C-F01-L04-03",
+        "F3-B1C-F01-L04-04",
+        "F3-B1C-F01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-F01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F01:C05"
+      ],
+      "objectives": [
+        "Reconocer dominio, rango y periodicidad de seno y coseno.",
+        "Calcular valores trigonométricos exactos en ángulos notables."
+      ],
+      "prerequisites": [
+        "B1C-G01-L04",
+        "E4B-G01-L04",
+        "B1C-F01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Seno y coseno se definen en todos los reales, son periódicas con periodo 2π radianes y tienen recorrido [−1,1]. Sus valores pueden obtenerse de la circunferencia unidad: sen 0=0, sen(π/2)=1, cos 0=1 y cos π=−1. Un desplazamiento horizontal modifica la fase, mientras que multiplicar por a cambia la amplitud a |a| sin modificar el periodo de sen(x) si el argumento sigue siendo x. Para sen(2x), el periodo pasa a π. No se debe confundir grados y radianes en las evaluaciones; 90° y π/2 rad son el mismo ángulo, pero 90 rad no lo es. La tangente está indefinida cuando cos x=0."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=2sen(x) tiene amplitud 2 y periodo 2π; su recorrido es [−2,2]."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=cos(2x) tiene periodo π. g(0)=1 y g(π/2)=−1."
+        },
+        {
+          "type": "figure",
+          "body": "Función seno y valores notables. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Función seno y valores notables. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "sine",
+            "title": "Función seno y valores notables",
+            "rows": [
+              [
+                "Función",
+                "sen(x)"
+              ],
+              [
+                "Periodo",
+                "2π"
+              ],
+              [
+                "Dominio",
+                "R"
+              ],
+              [
+                "Recorrido",
+                "[−1,1]"
+              ],
+              [
+                "sen(0)",
+                "0"
+              ],
+              [
+                "sen(π/2)",
+                "1"
+              ]
+            ],
+            "model": {
+              "kind": "sine",
+              "amplitude": 1,
+              "frequency": 1,
+              "shift": 0
+            },
+            "domain": [
+              -6,
+              7
+            ],
+            "marks": [
+              [
+                "0",
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué sen(x) y cos(x) no tienen como recorrido todos los reales?||Porque representan coordenadas de puntos de la circunferencia unidad, entre −1 y 1."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Seno y coseno se definen en todos los reales, son periódicas con periodo 2π radianes y tienen recorrido [−1,1]. Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F01-L05-01",
+        "F3-B1C-F01-L05-02",
+        "F3-B1C-F01-L05-03",
+        "F3-B1C-F01-L05-04",
+        "F3-B1C-F01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B1C-F01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.13.0",
+      "status": "revision",
+      "concept_ids": [
+        "B1C-F01:C06"
+      ],
+      "objectives": [
+        "Evaluar funciones definidas a trozos respetando desigualdades de cada tramo.",
+        "Interpretar traslaciones, reflexiones y saltos de una gráfica por partes."
+      ],
+      "prerequisites": [
+        "E4B-F01-L07",
+        "B1C-F01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una función a trozos utiliza distintas fórmulas en regiones del dominio especificadas por desigualdades. Para f(x)=x+1 si x<0 y x² si x≥0, el valor f(0)=0 procede únicamente del segundo tramo, mientras que al acercarse por la izquierda los valores tienden a 1; hay un salto en x=0. Dibujar puntos abiertos y cerrados es imprescindible para reflejar el valor exacto en el borde. Las transformaciones f(x−h)+k se aplican a todas las ramas y a sus condiciones de dominio. La función valor absoluto |x| es un caso a trozos continuo: −x si x<0 y x si x≥0. Debe distinguirse valor puntual de tendencia lateral."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=x+1 (x<0), x² (x≥0): f(−2)=−1, f(0)=0 y límite por la izquierda en 0 igual a 1."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=|x−2| tiene mínimo cero en x=2 y se representa por dos rectas con pendiente −1 y +1."
+        },
+        {
+          "type": "figure",
+          "body": "Función a trozos con salto en cero. Gráfica original SVG declarativa con tabla HTML semántica de datos exactos y condiciones de dominio. La visualización es ilustrativa, no sustituye la demostración algebraica.",
+          "alt": "Función a trozos con salto en cero. La tabla exacta contiene dominio, puntos relevantes, restricciones y límites sin depender de color, visión ni gestos.",
+          "visual_spec": {
+            "kind": "piecewise",
+            "title": "Función a trozos con salto en cero",
+            "rows": [
+              [
+                "Para x<0",
+                "f(x)=x+1"
+              ],
+              [
+                "Para x≥0",
+                "f(x)=x²"
+              ],
+              [
+                "f(0)",
+                "0"
+              ],
+              [
+                "Límite izquierdo en 0",
+                "1"
+              ],
+              [
+                "Límite derecho en 0",
+                "0"
+              ]
+            ],
+            "model": {
+              "kind": "piecewise",
+              "branch": "jump"
+            },
+            "domain": [
+              -4,
+              4
+            ],
+            "marks": [
+              [
+                "A",
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se puede usar la rama x<0 para evaluar f(0)?||No. El punto 0 pertenece al tramo x≥0; usar la otra fórmula introduce un valor falso."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una función a trozos utiliza distintas fórmulas en regiones del dominio especificadas por desigualdades. Resuelve después una variación sin pistas y revisa los casos de dominio y discontinuidad."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B1C-F01-L06-01",
+        "F3-B1C-F01-L06-02",
+        "F3-B1C-F01-L06-03",
+        "F3-B1C-F01-L06-04",
+        "F3-B1C-F01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas; Real Decreto 243/2022, anexo II, Matemáticas I",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Normativa estatal de referencia; secuencia, ejemplos y ejercicios editoriales pendientes de revisión curricular y autonómica."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

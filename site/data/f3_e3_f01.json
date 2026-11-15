@@ -1,0 +1,608 @@
+{
+  "unit_id": "E3-F01",
+  "unit_title": "Funciones lineales y cuadráticas",
+  "product_phase": "F3_OLA2",
+  "version": "0.2.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "warnings": [
+    "Desarrollada tras E2-F01 y E3-A02; algunos antecedentes de coordenadas de E1-F01 continúan solo como índice.",
+    "Distribución de 1.º–3.º ESO editorial y revisión jurídica autonómica pendiente.",
+    "Gráficas locales SVG y tablas alternativas sin red externa; WCAG 2.2 AA integral no verificado."
+  ],
+  "unit_objectives": [
+    "Analizar funciones y sus dominios mediante representaciones coherentes.",
+    "Calcular tasas medias, interceptos, vértices y raíces interpretando su significado.",
+    "Distinguir y comparar modelos afines y cuadráticos en contextos con restricciones."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Modelos lineales de 2.º ESO",
+      "lesson_id": "E2-F01-L03",
+      "href": "#/curso/E2/unidad/E2-F01/leccion/E2-F01-L03"
+    },
+    {
+      "label": "Ecuaciones de segundo grado de 3.º ESO",
+      "lesson_id": "E3-A02-L03",
+      "href": "#/curso/E3/unidad/E3-A02/leccion/E3-A02-L03"
+    },
+    {
+      "label": "Discriminante y raíces de ecuaciones",
+      "lesson_id": "E3-A02-L04",
+      "href": "#/curso/E3/unidad/E3-A02/leccion/E3-A02-L04"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "rule": "Recuperar conceptos y practicar sin solución previa, con representación gráfica y alternativa textual.",
+    "cadence_proposal": "D+1/3/7/14/30, propuesta editorial no calibrada."
+  },
+  "source_note": "Relaciones lineales y no lineales del sentido algebraico de RD 217/2022. Distribución por curso editorial.",
+  "lesson_documents": [
+    {
+      "lesson_id": "E3-F01-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Distinguir relaciones de funciones y definir dominio en contextos sencillos.",
+        "Identificar entradas admisibles y justificar restricciones de unidades o cantidades."
+      ],
+      "concept_ids": [
+        "E3-F01:C_01"
+      ],
+      "prerequisites": [
+        "E2-F01-L01",
+        "E2-A02-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una relación asigna valores a otros valores; para que sea función, cada entrada admitida debe tener una sola salida. El dominio es el conjunto de entradas permitidas. En una tarifa de horas se pueden admitir h≥0; al contar asistentes se requieren enteros no negativos. El dominio contextual puede ser menor que el dominio algebraico de la fórmula."
+        },
+        {
+          "type": "example",
+          "body": "En y=2x+1, para cada x real hay una sola salida. Si x=3, y=7. Si la variable representa entradas vendidas, solo tienen sentido x=0,1,2,…"
+        },
+        {
+          "type": "example",
+          "body": "Una relación que asigna a x=2 tanto y=3 como y=5 no es función de x. En cambio x=1 y x=2 pueden compartir y=3 sin problema."
+        },
+        {
+          "type": "figure",
+          "body": "Pares ordenados de una función: (0,1), (1,3), (2,5). Cada x aparece con una sola y. Un ejemplo no funcional incluiría (1,3) y (1,8).",
+          "alt": "y=2x+1 para entradas x no negativas; tabla accesible incluida.",
+          "graph_spec": {
+            "kind": "line",
+            "coefficients": [
+              1,
+              2
+            ],
+            "x_values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "title": "y=2x+1 para entradas x no negativas"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Puede el mismo valor y=4 corresponder a dos x distintos y seguir siendo función?||Sí. Lo prohibido es que una misma entrada x tenga dos salidas distintas."
+        },
+        {
+          "type": "summary",
+          "body": "Función: una salida por entrada permitida. Dominio contextual: entradas con sentido y unidades compatibles."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-F01-L01-01",
+        "F3-E3-F01-L01-02",
+        "F3-E3-F01-L01-03",
+        "F3-E3-F01-L01-04",
+        "F3-E3-F01-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia a norma estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-F01-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Interpretar simultáneamente tabla, fórmula, gráfica y descripción de una función.",
+        "Comprobar si un punto pertenece a una curva a partir de su ecuación."
+      ],
+      "concept_ids": [
+        "E3-F01:C_02"
+      ],
+      "prerequisites": [
+        "E2-F01-L02",
+        "E3-F01-L01"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Tabla, expresión, gráfico y relato describen la misma relación si representan los mismos pares (x,y). Para comprobar un punto (a,b) en y=f(x), calcula f(a) y compara con b. Las tablas son discretas y no describen por sí mismas los valores intermedios; una línea dibujada supone un modelo continuo que debe justificarse en contexto."
+        },
+        {
+          "type": "example",
+          "body": "Una tabla x: 0,1,2 y: 3,5,7 coincide con y=2x+3. El punto (2,7) pertenece a la recta."
+        },
+        {
+          "type": "example",
+          "body": "Para y=x², los pares (−2,4),(−1,1),(0,0),(1,1),(2,4) forman una parábola, no una recta. La tabla es simétrica respecto de x=0."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla de y=x²: x −2 | −1 | 0 | 1 | 2; y 4 | 1 | 0 | 1 | 4. Los extremos tienen la misma altura.",
+          "alt": "Parábola y=x²; tabla accesible incluida.",
+          "graph_spec": {
+            "kind": "quadratic",
+            "coefficients": [
+              0,
+              0,
+              1
+            ],
+            "x_values": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "title": "Parábola y=x²"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si una tabla solo muestra x=0,1,2, ¿puedo asegurar que la función es lineal entre ellos?||No sin un modelo o dato adicional. Una función no lineal podría coincidir en esos tres puntos."
+        },
+        {
+          "type": "summary",
+          "body": "Conecta fórmula, tabla y gráfica. Sustituye para comprobar puntos; evita extrapolar fuera del dominio conocido."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-F01-L02-01",
+        "F3-E3-F01-L02-02",
+        "F3-E3-F01-L02-03",
+        "F3-E3-F01-L02-04",
+        "F3-E3-F01-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia a norma estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-F01-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Calcular tasas medias de variación entre dos valores de una función.",
+        "Comparar el cambio constante de una recta con el cambio variable de una parábola."
+      ],
+      "concept_ids": [
+        "E3-F01:C_03"
+      ],
+      "prerequisites": [
+        "E2-F01-L03",
+        "E3-F01-L02"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La tasa media de variación entre x=a y x=b, con b distinto de a, es [f(b)−f(a)]/(b−a). En una recta es siempre su pendiente m. En una parábola puede variar según el intervalo: por eso es importante indicar entre qué valores se calcula y qué unidades tiene."
+        },
+        {
+          "type": "example",
+          "body": "En f(x)=2x+3, de x=1 a x=4 se obtiene (11−5)/(4−1)=6/3=2 por unidad."
+        },
+        {
+          "type": "example",
+          "body": "En g(x)=x², de x=1 a x=3 se obtiene (9−1)/(3−1)=8/2=4; de x=0 a x=2 se obtiene (4−0)/2=2. No es una tasa constante."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla de y=x²: paso 0→1 cambia +1; 1→2 cambia +3; 2→3 cambia +5. La curva se hace más inclinada al avanzar x positivo.",
+          "alt": "y=x² y cambios sucesivos; tabla accesible incluida.",
+          "graph_spec": {
+            "kind": "quadratic",
+            "coefficients": [
+              0,
+              0,
+              1
+            ],
+            "x_values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "title": "y=x² y cambios sucesivos"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿En qué se diferencia la pendiente de una recta de la tasa media de una parábola?||La recta mantiene una pendiente fija en todos los intervalos; la parábola puede tener tasas medias diferentes."
+        },
+        {
+          "type": "summary",
+          "body": "Tasa media = Δy/Δx con Δx≠0; indica intervalo, unidades y signo del cambio."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-F01-L03-01",
+        "F3-E3-F01-L03-02",
+        "F3-E3-F01-L03-03",
+        "F3-E3-F01-L03-04",
+        "F3-E3-F01-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia a norma estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-F01-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Distinguir y=mx de y=mx+b con b no nulo usando convenciones explícitas.",
+        "Interpretar pendiente e intercepto sin equiparar proporción y función afín."
+      ],
+      "concept_ids": [
+        "E3-F01:C_04"
+      ],
+      "prerequisites": [
+        "E2-F01-L04",
+        "E2-F01-L05"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Usaremos «función lineal de proporcionalidad» para y=mx, que pasa por el origen, y «función afín» para y=mx+b. En algunas convenciones escolares se llama lineal también a la afín; por eso conviene señalar siempre la fórmula. Una recta con pendiente m=0 es constante, no creciente."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=3x es proporcional: f(0)=0; con x=2 produce 6."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=3x+2 es afín: g(0)=2 y g(2)=8. Aunque tiene la misma pendiente 3, no pasa por el origen."
+        },
+        {
+          "type": "figure",
+          "body": "Para x=0,1,2: f=3x da 0,3,6; g=3x+2 da 2,5,8. Las rectas son paralelas y se separan siempre 2 unidades.",
+          "alt": "Afín y=3x+2; tabla accesible incluida.",
+          "graph_spec": {
+            "kind": "line",
+            "coefficients": [
+              2,
+              3
+            ],
+            "x_values": [
+              -1,
+              0,
+              1,
+              2
+            ],
+            "title": "Afín y=3x+2"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es y=3x+2 proporcionalidad directa?||No, porque y=2 cuando x=0; incorpora una cantidad inicial y por tanto no pasa por el origen."
+        },
+        {
+          "type": "summary",
+          "body": "Compara el término b y la tabla para x=0: b=0 → proporcional; b≠0 → afín no proporcional."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-F01-L04-01",
+        "F3-E3-F01-L04-02",
+        "F3-E3-F01-L04-03",
+        "F3-E3-F01-L04-04",
+        "F3-E3-F01-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia a norma estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-F01-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Identificar apertura, vértice, eje de simetría y raíces de una parábola.",
+        "Relacionar intersecciones con el eje x y soluciones de ecuaciones cuadráticas."
+      ],
+      "concept_ids": [
+        "E3-F01:C_05"
+      ],
+      "prerequisites": [
+        "E3-A02-L03",
+        "E3-A02-L04",
+        "E3-F01-L04"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "La gráfica de y=ax²+bx+c, con a≠0, es una parábola: abre hacia arriba si a>0 y hacia abajo si a<0. Su vértice tiene coordenada x=−b/(2a). Las raíces reales son los puntos donde y=0. Puede haber dos, una tangente o ninguna, según la ecuación cuadrática. La parábola sigue existiendo aunque no corte el eje x."
+        },
+        {
+          "type": "example",
+          "body": "f(x)=x²−4 tiene vértice (0,−4), abre hacia arriba y corta el eje x en x=−2 y x=2."
+        },
+        {
+          "type": "example",
+          "body": "g(x)=(x−2)²−1 tiene vértice (2,−1), abre hacia arriba y corta el eje x en x=1 y x=3."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla de f(x)=x²−4: x −3 | −2 | 0 | 2 | 3; y 5 | 0 | −4 | 0 | 5. La curva es simétrica respecto de x=0.",
+          "alt": "Parábola y=x²−4; tabla accesible incluida.",
+          "graph_spec": {
+            "kind": "quadratic",
+            "coefficients": [
+              -4,
+              0,
+              1
+            ],
+            "x_values": [
+              -3,
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3
+            ],
+            "title": "Parábola y=x²−4"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "Si una parábola no cruza el eje x, ¿deja de tener función?||No. Sigue siendo una función; simplemente su ecuación f(x)=0 no tiene raíces reales."
+        },
+        {
+          "type": "summary",
+          "body": "Coeficiente a → apertura; vértice → extremo; f(x)=0 → raíces reales (si las hay)."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-F01-L05-01",
+        "F3-E3-F01-L05-02",
+        "F3-E3-F01-L05-03",
+        "F3-E3-F01-L05-04",
+        "F3-E3-F01-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia a norma estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "E3-F01-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.2.0",
+      "status": "revision",
+      "objectives": [
+        "Comparar un modelo afín con uno cuadrático mediante cambios y tablas.",
+        "Elegir modelos según las unidades y describir puntos de igualdad o cruce."
+      ],
+      "concept_ids": [
+        "E3-F01:C_06"
+      ],
+      "prerequisites": [
+        "E3-F01-L03",
+        "E3-F01-L05",
+        "E2-F01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El modelo lineal/afín tiene cambios iguales para pasos iguales de x, mientras que uno cuadrático puede tener variaciones crecientes. Para comparar modelos evalúa ambos en las mismas entradas y resuelve dónde tienen igual salida. Los cruces de curvas representan igualdad de cantidades, pero deben cumplir el dominio contextual."
+        },
+        {
+          "type": "example",
+          "body": "A(x)=2x y B(x)=x²: para x=3, A=6 y B=9; para x=2 ambos valen 4. También coinciden en x=0; si x representa tiempo, solo importan x≥0."
+        },
+        {
+          "type": "example",
+          "body": "La tarifa C(x)=5+3x sube 3 € por uso, siempre; el área de un cuadrado A(x)=x² crece +1,+3,+5,… para lados x=0,1,2,3. No comparten unidades, así que no deben igualarse directamente sin contexto común."
+        },
+        {
+          "type": "figure",
+          "body": "Tabla de comparación con x 0 | 1 | 2 | 3: 2x produce 0|2|4|6 y x² produce 0|1|4|9. Cruces en x=0 y x=2.",
+          "alt": "Parábola y=x²; la recta y=2x se describe en la tabla comparativa; tabla accesible incluida.",
+          "graph_spec": {
+            "kind": "quadratic",
+            "coefficients": [
+              0,
+              0,
+              1
+            ],
+            "x_values": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "title": "Parábola y=x²; la recta y=2x se describe en la tabla comparativa"
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Por qué no basta que dos funciones tengan el mismo valor en x=2 para afirmar que son idénticas?||Porque pueden coincidir en un punto y diferir en otros: 2x y x² coinciden en 2, pero en 3 valen 6 y 9."
+        },
+        {
+          "type": "summary",
+          "body": "Compara modelos con la misma entrada, las mismas unidades y el dominio válido; distingue cambio constante de variable."
+        }
+      ],
+      "exercise_refs": [
+        "F3-E3-F01-L06-01",
+        "F3-E3-F01-L06-02",
+        "F3-E3-F01-L06-03",
+        "F3-E3-F01-L06-04",
+        "F3-E3-F01-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Real Decreto 217/2022, anexo II, Matemáticas ESO",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
+          "license": "Referencia a norma estatal sin reproducción extensa"
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

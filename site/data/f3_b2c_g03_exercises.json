@@ -1,0 +1,1142 @@
+{
+  "unit_id": "B2C-G03",
+  "version": "0.29.0",
+  "status": "revision",
+  "notice": "Cinco ejercicios por lección; contenidos sintéticos con revisión humana F4 pendiente.",
+  "activities": [
+    {
+      "exercise_id": "F3-B2C-G03-L01-01",
+      "lesson_id": "B2C-G03-L01",
+      "type": "numeric",
+      "prompt": "Producto escalar u·v para u=(1,2,2), v=(2,1,2).",
+      "answer": 8,
+      "explanation": "Multiplica y suma coordenadas: 1×2+2×1+2×2=8.",
+      "hint": "Calcula por separado el producto escalar y las dos normas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L01-02",
+      "lesson_id": "B2C-G03-L01",
+      "type": "numeric",
+      "prompt": "Norma de u=(1,2,2) en unidades.",
+      "answer": 3,
+      "explanation": "|u|=√(1+4+4)=3. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Calcula por separado el producto escalar y las dos normas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L01-03",
+      "lesson_id": "B2C-G03-L01",
+      "type": "numeric",
+      "prompt": "Coseno del ángulo de (1,0,0) y (1,1,0), con cuatro decimales.",
+      "answer": 0.7071,
+      "explanation": "cosθ=1/√2≈0,70710678; redondeo a cuatro decimales.",
+      "hint": "Calcula por separado el producto escalar y las dos normas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l01",
+        "model_assumptions"
+      ],
+      "tolerance": 6e-05
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L01-04",
+      "lesson_id": "B2C-G03-L01",
+      "type": "choice",
+      "prompt": "Si u y v son no nulos y u·v=0, ¿qué implica?",
+      "answer": "Los vectores son perpendiculares.",
+      "explanation": "Con normas no nulas, cosθ=0 corresponde a θ=90°.",
+      "hint": "Calcula por separado el producto escalar y las dos normas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Cada vector tiene módulo igual a cero.",
+        "Siempre son paralelos, porque el producto vale cero.",
+        "Los vectores son perpendiculares.",
+        "La distancia entre sus extremos es obligatoriamente cero."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L01-05",
+      "lesson_id": "B2C-G03-L01",
+      "type": "choice",
+      "prompt": "¿Por qué no se asigna un ángulo a un vector cero?",
+      "answer": "Su norma es nula y carece de dirección definida.",
+      "explanation": "La fórmula angular divide por producto de normas y no admite norma cero.",
+      "hint": "Calcula por separado el producto escalar y las dos normas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l01",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Porque el vector cero solo existe en dos dimensiones.",
+        "Porque su producto escalar con otro vector es siempre uno.",
+        "Porque la ley del coseno prohíbe los vectores negativos.",
+        "Su norma es nula y carece de dirección definida."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L02-01",
+      "lesson_id": "B2C-G03-L02",
+      "type": "numeric",
+      "prompt": "Ángulo agudo entre direcciones (1,0,0) y (0,1,0), en grados.",
+      "answer": 90,
+      "explanation": "El producto escalar es cero y las normas son uno; 90°.",
+      "hint": "Aclara si se comparan vectores, rectas sin orientación o recta contra plano.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L02-02",
+      "lesson_id": "B2C-G03-L02",
+      "type": "numeric",
+      "prompt": "Ángulo agudo entre recta dirección (1,0,1) y plano z=0, en grados.",
+      "answer": 45,
+      "explanation": "senα=|(1,0,1)·(0,0,1)|/(√2×1)=1/√2; α=45°.",
+      "hint": "Aclara si se comparan vectores, rectas sin orientación o recta contra plano.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L02-03",
+      "lesson_id": "B2C-G03-L02",
+      "type": "numeric",
+      "prompt": "Ángulo agudo entre planos con normales (1,0,0) y (1,1,0), en grados.",
+      "answer": 45,
+      "explanation": "cosθ=1/√2; los planos forman un ángulo agudo de 45°.",
+      "hint": "Aclara si se comparan vectores, rectas sin orientación o recta contra plano.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l02",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L02-04",
+      "lesson_id": "B2C-G03-L02",
+      "type": "choice",
+      "prompt": "¿Cómo se calcula el ángulo de una recta con un plano?",
+      "answer": "Con el seno del ángulo entre dirección de recta y normal del plano.",
+      "explanation": "El ángulo recta-plano es complementario al de su dirección y la normal.",
+      "hint": "Aclara si se comparan vectores, rectas sin orientación o recta contra plano.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Con el coseno directo de la dirección y la normal sin complemento.",
+        "Con el seno del ángulo entre dirección de recta y normal del plano.",
+        "Con la distancia del origen al plano, sin dirección.",
+        "Siempre asignando 90° por estar en tres dimensiones."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L02-05",
+      "lesson_id": "B2C-G03-L02",
+      "type": "choice",
+      "prompt": "¿Por qué suele usarse el valor absoluto en el ángulo menor entre rectas no orientadas?",
+      "answer": "Para que invertir un director no cambie el ángulo agudo.",
+      "explanation": "Las rectas no orientadas identifican vectores directores opuestos.",
+      "hint": "Aclara si se comparan vectores, rectas sin orientación o recta contra plano.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l02",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Para que invertir un director no cambie el ángulo agudo.",
+        "Para que todas las rectas resulten perpendiculares.",
+        "Para eliminar las normas de los vectores.",
+        "Para convertir un plano en una recta."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L03-01",
+      "lesson_id": "B2C-G03-L03",
+      "type": "numeric",
+      "prompt": "Distancia P=(1,2,5) al plano z=2 en unidades.",
+      "answer": 3,
+      "explanation": "Distancia=|5−2|/1=3. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Identifica normal del plano o dirección de la recta antes de calcular.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L03-02",
+      "lesson_id": "B2C-G03-L03",
+      "type": "numeric",
+      "prompt": "Distancia P=(0,3,0) a la recta x=(t,0,0), en unidades.",
+      "answer": 3,
+      "explanation": "|(P−A)×u|/|u|=3 para el eje x. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Identifica normal del plano o dirección de la recta antes de calcular.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L03-03",
+      "lesson_id": "B2C-G03-L03",
+      "type": "numeric",
+      "prompt": "Distancia P=(1,2,3) al plano z=0 en unidades.",
+      "answer": 3,
+      "explanation": "Distancia=|3|=3, perpendicular al plano.",
+      "hint": "Identifica normal del plano o dirección de la recta antes de calcular.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l03",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L03-04",
+      "lesson_id": "B2C-G03-L03",
+      "type": "choice",
+      "prompt": "¿Qué requisito necesita la fórmula de distancia punto-plano?",
+      "answer": "Una normal (a,b,c) no nula.",
+      "explanation": "Se divide por |n|; una normal nula no define un plano.",
+      "hint": "Identifica normal del plano o dirección de la recta antes de calcular.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Que las coordenadas del punto sean todas positivas.",
+        "Una normal (a,b,c) no nula.",
+        "Que el plano contenga siempre el origen.",
+        "Que se elimine la raíz del denominador."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L03-05",
+      "lesson_id": "B2C-G03-L03",
+      "type": "choice",
+      "prompt": "¿Por qué aparece valor absoluto en el numerador de distancia punto-plano?",
+      "answer": "Porque una distancia euclídea no puede ser negativa.",
+      "explanation": "El signo de la ecuación del plano no representa distancia orientada.",
+      "hint": "Identifica normal del plano o dirección de la recta antes de calcular.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l03",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Porque una distancia euclídea no puede ser negativa.",
+        "Porque la normal de un plano se considera nula.",
+        "Porque cualquier distancia queda igual a uno.",
+        "Porque solo se admiten planos con d positivo."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L04-01",
+      "lesson_id": "B2C-G03-L04",
+      "type": "numeric",
+      "prompt": "Distancia entre los planos paralelos z=0 y z=4.",
+      "answer": 4,
+      "explanation": "Con normal idéntica (0,0,1), distancia=|0−(−4)|=4.",
+      "hint": "Determina primero si son coincidentes, paralelas, incidentes o cruzadas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L04-02",
+      "lesson_id": "B2C-G03-L04",
+      "type": "numeric",
+      "prompt": "Distancia entre rectas cruzadas A+(t,0,0), A=(0,0,0), y B+(0,s,0), B=(0,3,4).",
+      "answer": 4,
+      "explanation": "El producto mixto con u×v=(0,0,1) da 4; normas unitarias.",
+      "hint": "Determina primero si son coincidentes, paralelas, incidentes o cruzadas.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L04-03",
+      "lesson_id": "B2C-G03-L04",
+      "type": "numeric",
+      "prompt": "Distancia entre la recta eje x y su paralela y=5,z=0.",
+      "answer": 5,
+      "explanation": "Distancia perpendicular del punto (0,5,0) al eje x: 5.",
+      "hint": "Determina primero si son coincidentes, paralelas, incidentes o cruzadas.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l04",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L04-04",
+      "lesson_id": "B2C-G03-L04",
+      "type": "choice",
+      "prompt": "En 3D, dos rectas con directores no paralelos pueden ser:",
+      "answer": "Cruzadas y sin punto de corte.",
+      "explanation": "La posición cruzada es posible en el espacio aunque no en el plano.",
+      "hint": "Determina primero si son coincidentes, paralelas, incidentes o cruzadas.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Paralelas por definición en cualquier espacio.",
+        "Coincidentes necesariamente.",
+        "Obligatoriamente perpendiculares y secantes.",
+        "Cruzadas y sin punto de corte."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L04-05",
+      "lesson_id": "B2C-G03-L04",
+      "type": "choice",
+      "prompt": "Para usar directamente distancia entre planos con d₁,d₂, ¿qué debe cumplirse?",
+      "answer": "Que ambos tengan los mismos coeficientes de normal tras normalización.",
+      "explanation": "Si son proporcionales, primero hay que escribir las ecuaciones con normal común.",
+      "hint": "Determina primero si son coincidentes, paralelas, incidentes o cruzadas.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l04",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Que uno de los planos pase siempre por el origen.",
+        "Que ambos tengan los mismos coeficientes de normal tras normalización.",
+        "Que sus normales sean ortogonales.",
+        "Que se resten términos d sin mirar la normal."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L05-01",
+      "lesson_id": "B2C-G03-L05",
+      "type": "numeric",
+      "prompt": "Longitud de proyección de v=(3,4,0) sobre dirección del eje x.",
+      "answer": 3,
+      "explanation": "proy_x(v)=(3,0,0), cuyo módulo es 3. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Calcula u·u antes de dividir y verifica que u no sea nulo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L05-02",
+      "lesson_id": "B2C-G03-L05",
+      "type": "numeric",
+      "prompt": "Longitud del residual al proyectar (3,4,0) ortogonalmente sobre eje x.",
+      "answer": 4,
+      "explanation": "El residual es (0,4,0) y su módulo vale 4.",
+      "hint": "Calcula u·u antes de dividir y verifica que u no sea nulo.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L05-03",
+      "lesson_id": "B2C-G03-L05",
+      "type": "numeric",
+      "prompt": "Distancia de w=(2,3,6) al plano z=0 al proyectarlo ortogonalmente.",
+      "answer": 6,
+      "explanation": "La componente perpendicular al plano es z=6.",
+      "hint": "Calcula u·u antes de dividir y verifica que u no sea nulo.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l05",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L05-04",
+      "lesson_id": "B2C-G03-L05",
+      "type": "choice",
+      "prompt": "¿Qué satisface el residual v−proy_u(v) de una proyección ortogonal?",
+      "answer": "Es perpendicular a u si u no es nulo.",
+      "explanation": "Su producto escalar con u es cero por definición de la proyección.",
+      "hint": "Calcula u·u antes de dividir y verifica que u no sea nulo.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Es necesariamente paralelo a u.",
+        "Siempre es igual al vector cero.",
+        "Es perpendicular a u si u no es nulo.",
+        "Tiene siempre norma igual al doble de la de v."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L05-05",
+      "lesson_id": "B2C-G03-L05",
+      "type": "choice",
+      "prompt": "¿Cuál es la condición para proyectar sobre una dirección u usando (v·u)/(u·u)?",
+      "answer": "u debe ser distinto del vector cero.",
+      "explanation": "El denominador u·u se anula si y solo si u es cero.",
+      "hint": "Calcula u·u antes de dividir y verifica que u no sea nulo.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l05",
+        "model_assumptions"
+      ],
+      "choices": [
+        "v debe ser nulo para evitar divisiones.",
+        "u debe ser distinto del vector cero.",
+        "u debe tener componente x estrictamente positiva.",
+        "u y v deben tener exactamente tres componentes iguales."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L06-01",
+      "lesson_id": "B2C-G03-L06",
+      "type": "numeric",
+      "prompt": "Distancia del origen al punto P=(3,4,12) en unidades.",
+      "answer": 13,
+      "explanation": "√(9+16+144)=√169=13. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Identifica claramente la magnitud y sus unidades antes de escoger fórmula.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L06-02",
+      "lesson_id": "B2C-G03-L06",
+      "type": "numeric",
+      "prompt": "Distancia del origen al plano x+y+z=6 a cuatro decimales.",
+      "answer": 3.4641,
+      "explanation": "Distancia=6/√3=2√3≈3,4641016; redondea a cuatro decimales.",
+      "hint": "Identifica claramente la magnitud y sus unidades antes de escoger fórmula.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 6e-05
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L06-03",
+      "lesson_id": "B2C-G03-L06",
+      "type": "numeric",
+      "prompt": "Volumen del paralelepípedo u=(1,0,0), v=(0,2,0), w=(0,0,3).",
+      "answer": 6,
+      "explanation": "Volumen=|u·(v×w)|=6 unidades cúbicas. El resultado se obtiene bajo los supuestos del ejemplo; no garantiza representatividad ni elimina incertidumbre.",
+      "hint": "Identifica claramente la magnitud y sus unidades antes de escoger fórmula.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l06",
+        "model_assumptions"
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L06-04",
+      "lesson_id": "B2C-G03-L06",
+      "type": "choice",
+      "prompt": "¿Cómo se interpreta el signo negativo de un producto mixto?",
+      "answer": "El volumen geométrico usa valor absoluto; el signo indica orientación.",
+      "explanation": "El valor absoluto del producto mixto da el volumen no negativo.",
+      "hint": "Identifica claramente la magnitud y sus unidades antes de escoger fórmula.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "Indica un volumen físicamente negativo.",
+        "Implica que no existe sistema de referencia euclídeo.",
+        "El volumen geométrico usa valor absoluto; el signo indica orientación.",
+        "Demuestra que los tres vectores son nulos."
+      ]
+    },
+    {
+      "exercise_id": "F3-B2C-G03-L06-05",
+      "lesson_id": "B2C-G03-L06",
+      "type": "choice",
+      "prompt": "Si el producto mixto de tres vectores es cero, ¿qué ocurre?",
+      "answer": "Los vectores son linealmente dependientes y el volumen es cero.",
+      "explanation": "Un producto mixto nulo indica que no generan volumen tridimensional.",
+      "hint": "Identifica claramente la magnitud y sus unidades antes de escoger fórmula.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "error_b2c_g03_l06",
+        "model_assumptions"
+      ],
+      "choices": [
+        "El paralelepípedo debe ser un cubo de volumen uno.",
+        "Los vectores son linealmente dependientes y el volumen es cero.",
+        "El volumen no se puede calcular sin un cuarto vector.",
+        "Los tres vectores forman necesariamente una base ortonormal."
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-B2C-G03-L01-01": {
+      "hints": [
+        "Calcula por separado el producto escalar y las dos normas.",
+        "Aplica cosθ=(u·v)/(|u||v|), verificando que las normas no sean cero."
+      ],
+      "math_check": {
+        "kind": "dot3",
+        "params": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            1,
+            2
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L01-02": {
+      "hints": [
+        "Calcula por separado el producto escalar y las dos normas.",
+        "Aplica cosθ=(u·v)/(|u||v|), verificando que las normas no sean cero."
+      ],
+      "math_check": {
+        "kind": "norm3",
+        "params": [
+          [
+            1,
+            2,
+            2
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L01-03": {
+      "hints": [
+        "Calcula por separado el producto escalar y las dos normas.",
+        "Aplica cosθ=(u·v)/(|u||v|), verificando que las normas no sean cero."
+      ],
+      "math_check": {
+        "kind": "cos3",
+        "params": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L01-04": {
+      "hints": [
+        "Calcula por separado el producto escalar y las dos normas.",
+        "Aplica cosθ=(u·v)/(|u||v|), verificando que las normas no sean cero."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L01-05": {
+      "hints": [
+        "Calcula por separado el producto escalar y las dos normas.",
+        "Aplica cosθ=(u·v)/(|u||v|), verificando que las normas no sean cero."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L02-01": {
+      "hints": [
+        "Aclara si se comparan vectores, rectas sin orientación o recta contra plano.",
+        "Recta-plano: usa el seno con la normal; recta-recta y plano-plano: coseno con valor absoluto."
+      ],
+      "math_check": {
+        "kind": "line_angle3",
+        "params": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L02-02": {
+      "hints": [
+        "Aclara si se comparan vectores, rectas sin orientación o recta contra plano.",
+        "Recta-plano: usa el seno con la normal; recta-recta y plano-plano: coseno con valor absoluto."
+      ],
+      "math_check": {
+        "kind": "line_plane_angle3",
+        "params": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L02-03": {
+      "hints": [
+        "Aclara si se comparan vectores, rectas sin orientación o recta contra plano.",
+        "Recta-plano: usa el seno con la normal; recta-recta y plano-plano: coseno con valor absoluto."
+      ],
+      "math_check": {
+        "kind": "planes_angle3",
+        "params": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L02-04": {
+      "hints": [
+        "Aclara si se comparan vectores, rectas sin orientación o recta contra plano.",
+        "Recta-plano: usa el seno con la normal; recta-recta y plano-plano: coseno con valor absoluto."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L02-05": {
+      "hints": [
+        "Aclara si se comparan vectores, rectas sin orientación o recta contra plano.",
+        "Recta-plano: usa el seno con la normal; recta-recta y plano-plano: coseno con valor absoluto."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L03-01": {
+      "hints": [
+        "Identifica normal del plano o dirección de la recta antes de calcular.",
+        "P-plano: |ax₀+by₀+cz₀+d|/|n|. P-recta: |(P−A)×u|/|u|."
+      ],
+      "math_check": {
+        "kind": "point_plane_distance",
+        "params": [
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          -2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L03-02": {
+      "hints": [
+        "Identifica normal del plano o dirección de la recta antes de calcular.",
+        "P-plano: |ax₀+by₀+cz₀+d|/|n|. P-recta: |(P−A)×u|/|u|."
+      ],
+      "math_check": {
+        "kind": "point_line_distance",
+        "params": [
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L03-03": {
+      "hints": [
+        "Identifica normal del plano o dirección de la recta antes de calcular.",
+        "P-plano: |ax₀+by₀+cz₀+d|/|n|. P-recta: |(P−A)×u|/|u|."
+      ],
+      "math_check": {
+        "kind": "point_plane_distance",
+        "params": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L03-04": {
+      "hints": [
+        "Identifica normal del plano o dirección de la recta antes de calcular.",
+        "P-plano: |ax₀+by₀+cz₀+d|/|n|. P-recta: |(P−A)×u|/|u|."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L03-05": {
+      "hints": [
+        "Identifica normal del plano o dirección de la recta antes de calcular.",
+        "P-plano: |ax₀+by₀+cz₀+d|/|n|. P-recta: |(P−A)×u|/|u|."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L04-01": {
+      "hints": [
+        "Determina primero si son coincidentes, paralelas, incidentes o cruzadas.",
+        "Para planos con idéntica normal, distancia=|d₂−d₁|/|n|; para cruzadas usa triple producto."
+      ],
+      "math_check": {
+        "kind": "parallel_plane_distance",
+        "params": [
+          [
+            0,
+            0,
+            1
+          ],
+          0,
+          -4
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L04-02": {
+      "hints": [
+        "Determina primero si son coincidentes, paralelas, incidentes o cruzadas.",
+        "Para planos con idéntica normal, distancia=|d₂−d₁|/|n|; para cruzadas usa triple producto."
+      ],
+      "math_check": {
+        "kind": "skew_lines_distance",
+        "params": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L04-03": {
+      "hints": [
+        "Determina primero si son coincidentes, paralelas, incidentes o cruzadas.",
+        "Para planos con idéntica normal, distancia=|d₂−d₁|/|n|; para cruzadas usa triple producto."
+      ],
+      "math_check": {
+        "kind": "parallel_lines_distance",
+        "params": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            5,
+            0
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L04-04": {
+      "hints": [
+        "Determina primero si son coincidentes, paralelas, incidentes o cruzadas.",
+        "Para planos con idéntica normal, distancia=|d₂−d₁|/|n|; para cruzadas usa triple producto."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L04-05": {
+      "hints": [
+        "Determina primero si son coincidentes, paralelas, incidentes o cruzadas.",
+        "Para planos con idéntica normal, distancia=|d₂−d₁|/|n|; para cruzadas usa triple producto."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L05-01": {
+      "hints": [
+        "Calcula u·u antes de dividir y verifica que u no sea nulo.",
+        "proy_u(v)=((v·u)/(u·u))u; residual=v−proy_u(v), ortogonal a u."
+      ],
+      "math_check": {
+        "kind": "projection_norm",
+        "params": [
+          [
+            3,
+            4,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L05-02": {
+      "hints": [
+        "Calcula u·u antes de dividir y verifica que u no sea nulo.",
+        "proy_u(v)=((v·u)/(u·u))u; residual=v−proy_u(v), ortogonal a u."
+      ],
+      "math_check": {
+        "kind": "projection_residual_norm",
+        "params": [
+          [
+            3,
+            4,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L05-03": {
+      "hints": [
+        "Calcula u·u antes de dividir y verifica que u no sea nulo.",
+        "proy_u(v)=((v·u)/(u·u))u; residual=v−proy_u(v), ortogonal a u."
+      ],
+      "math_check": {
+        "kind": "point_plane_distance",
+        "params": [
+          [
+            2,
+            3,
+            6
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          0
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L05-04": {
+      "hints": [
+        "Calcula u·u antes de dividir y verifica que u no sea nulo.",
+        "proy_u(v)=((v·u)/(u·u))u; residual=v−proy_u(v), ortogonal a u."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L05-05": {
+      "hints": [
+        "Calcula u·u antes de dividir y verifica que u no sea nulo.",
+        "proy_u(v)=((v·u)/(u·u))u; residual=v−proy_u(v), ortogonal a u."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L06-01": {
+      "hints": [
+        "Identifica claramente la magnitud y sus unidades antes de escoger fórmula.",
+        "Norma=√(Σcomponente²); distancia a plano normalizada; volumen=|producto mixto|."
+      ],
+      "math_check": {
+        "kind": "norm3",
+        "params": [
+          [
+            3,
+            4,
+            12
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L06-02": {
+      "hints": [
+        "Identifica claramente la magnitud y sus unidades antes de escoger fórmula.",
+        "Norma=√(Σcomponente²); distancia a plano normalizada; volumen=|producto mixto|."
+      ],
+      "math_check": {
+        "kind": "point_plane_distance",
+        "params": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          -6
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L06-03": {
+      "hints": [
+        "Identifica claramente la magnitud y sus unidades antes de escoger fórmula.",
+        "Norma=√(Σcomponente²); distancia a plano normalizada; volumen=|producto mixto|."
+      ],
+      "math_check": {
+        "kind": "mixed_volume",
+        "params": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            3
+          ]
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L06-04": {
+      "hints": [
+        "Identifica claramente la magnitud y sus unidades antes de escoger fórmula.",
+        "Norma=√(Σcomponente²); distancia a plano normalizada; volumen=|producto mixto|."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    },
+    "F3-B2C-G03-L06-05": {
+      "hints": [
+        "Identifica claramente la magnitud y sus unidades antes de escoger fórmula.",
+        "Norma=√(Σcomponente²); distancia a plano normalizada; volumen=|producto mixto|."
+      ],
+      "math_check": {
+        "kind": "choice_review_pending"
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión de normalización, ángulos y geometría 3D o bases y periodos de tipos financieros; revisión F4."
+    }
+  }
+}

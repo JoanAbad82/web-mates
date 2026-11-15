@@ -1,0 +1,1034 @@
+{
+  "unit_id": "E2-D01",
+  "version": "0.20.0",
+  "status": "revision",
+  "notice": "Ejercicios sintéticos deterministas EN REVISIÓN, validación humana pendiente.",
+  "activities": [
+    {
+      "exercise_id": "F3-E2-D01-L01-01",
+      "lesson_id": "E2-D01-L01",
+      "type": "numeric",
+      "prompt": "En Tablas agrupadas: Calcula MARCA de clase del intervalo [10,20) como media de extremos. Introduce resultado numérico exacto sin unidades.",
+      "answer": 15.0,
+      "explanation": "Solución verificada con aritmética exacta: 15. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_midpoint",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L01-02",
+      "lesson_id": "E2-D01-L01",
+      "type": "numeric",
+      "prompt": "En Tablas agrupadas: Una tabla presenta frecuencias absolutas [2, 3, 5]. Calcula tamaño n total. Introduce resultado numérico exacto sin unidades.",
+      "answer": 10.0,
+      "explanation": "Solución verificada con aritmética exacta: 10. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_total_frequency",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L01-03",
+      "lesson_id": "E2-D01-L01",
+      "type": "numeric",
+      "prompt": "En Tablas agrupadas: Se observan 5 casos entre 10 ensayos. Calcula FRECUENCIA relativa exacta. Introduce resultado numérico exacto sin unidades.",
+      "answer": 0.5,
+      "explanation": "Solución verificada con aritmética exacta: 0,5. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_relative_frequency_counts",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L01-04",
+      "lesson_id": "E2-D01-L01",
+      "type": "choice",
+      "prompt": "En Tablas agrupadas: ¿La media calculada por MARCAS de intervalos reconstruye siempre la media EXACTA original? Sí/No. Elige la opción válida.",
+      "answer": "No",
+      "explanation": "Solución verificada con aritmética exacta: No. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_grouped_mean_exact",
+        "prerrequisito_e2_d01"
+      ],
+      "choices": [
+        "Sí",
+        "No necesariamente",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L01-05",
+      "lesson_id": "E2-D01-L01",
+      "type": "choice",
+      "prompt": "En Tablas agrupadas: Frecuencias por clases [2, 3, 5]. Calcula frecuencia ACUMULADA hasta clase índice 1 (base 0) inclusive. Elige la opción válida.",
+      "answer": "5",
+      "explanation": "Solución verificada con aritmética exacta: 5. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_cumulative_frequency",
+        "prerrequisito_e2_d01"
+      ],
+      "choices": [
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L02-01",
+      "lesson_id": "E2-D01-L02",
+      "type": "numeric",
+      "prompt": "En Media, mediana y moda: Valores y frecuencias alternadas [1, 2, 2, 1, 3, 2]: calcula MEDIA ponderada Σ(x·n)/Σn. Introduce resultado numérico exacto sin unidades.",
+      "answer": 2.0,
+      "explanation": "Solución verificada con aritmética exacta: 2. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_weighted_mean",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L02-02",
+      "lesson_id": "E2-D01-L02",
+      "type": "numeric",
+      "prompt": "En Media, mediana y moda: Ordena los datos [1, 1, 2, 3, 3] y calcula MEDIANA exacta. Introduce resultado numérico exacto sin unidades.",
+      "answer": 2.0,
+      "explanation": "Solución verificada con aritmética exacta: 2. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_median",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L02-03",
+      "lesson_id": "E2-D01-L02",
+      "type": "numeric",
+      "prompt": "En Media, mediana y moda: En datos [1, 1, 2, 3, 3], calcula FRECUENCIA absoluta máxima de sus modas. Introduce resultado numérico exacto sin unidades.",
+      "answer": 2.0,
+      "explanation": "Solución verificada con aritmética exacta: 2. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_mode_count",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L02-04",
+      "lesson_id": "E2-D01-L02",
+      "type": "choice",
+      "prompt": "En Media, mediana y moda: ¿La media calculada por MARCAS de intervalos reconstruye siempre la media EXACTA original? Sí/No. Elige la opción válida.",
+      "answer": "No",
+      "explanation": "Solución verificada con aritmética exacta: No. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_grouped_mean_exact",
+        "prerrequisito_e2_d01"
+      ],
+      "choices": [
+        "No necesariamente",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L02-05",
+      "lesson_id": "E2-D01-L02",
+      "type": "choice",
+      "prompt": "En Media, mediana y moda: Valores y frecuencias alternadas [2, 1, 4, 1]: calcula MEDIA ponderada Σ(x·n)/Σn. Elige la opción válida.",
+      "answer": "3",
+      "explanation": "Solución verificada con aritmética exacta: 3. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_weighted_mean",
+        "prerrequisito_e2_d01"
+      ],
+      "choices": [
+        "3",
+        "4",
+        "2"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L03-01",
+      "lesson_id": "E2-D01-L03",
+      "type": "numeric",
+      "prompt": "En Rango y dispersión elemental: Para los datos [1, 2, 3], calcula RANGO máximo−mínimo. Introduce resultado numérico exacto sin unidades.",
+      "answer": 2.0,
+      "explanation": "Solución verificada con aritmética exacta: 2. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_range",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L03-02",
+      "lesson_id": "E2-D01-L03",
+      "type": "choice",
+      "prompt": "En Rango y dispersión elemental: Calcula VARIANZA POBLACIONAL exacta de [1, 2, 3] usando divisor n, no n−1. Elige la opción válida.",
+      "answer": "2/3",
+      "explanation": "Solución verificada con aritmética exacta: 2/3. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_population_variance",
+        "prerrequisito_e2_d01"
+      ],
+      "choices": [
+        "5/3",
+        "-1/3",
+        "2/3"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L03-03",
+      "lesson_id": "E2-D01-L03",
+      "type": "numeric",
+      "prompt": "En Rango y dispersión elemental: Para los datos [2, 2, 2], calcula RANGO máximo−mínimo. Introduce resultado numérico exacto sin unidades.",
+      "answer": 0.0,
+      "explanation": "Solución verificada con aritmética exacta: 0. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_range",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L03-04",
+      "lesson_id": "E2-D01-L03",
+      "type": "choice",
+      "prompt": "En Rango y dispersión elemental: ¿La varianza poblacional de medidas en cm tiene también unidad cm en vez de cm²? Sí/No. Elige la opción válida.",
+      "answer": "No",
+      "explanation": "Solución verificada con aritmética exacta: No. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_variance_same_units",
+        "prerrequisito_e2_d01"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No necesariamente"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L03-05",
+      "lesson_id": "E2-D01-L03",
+      "type": "choice",
+      "prompt": "En Rango y dispersión elemental: Calcula VARIANZA POBLACIONAL exacta de [2, 2, 2] usando divisor n, no n−1. Elige la opción válida.",
+      "answer": "0",
+      "explanation": "Solución verificada con aritmética exacta: 0. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_population_variance",
+        "prerrequisito_e2_d01"
+      ],
+      "choices": [
+        "1",
+        "-1",
+        "0"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L04-01",
+      "lesson_id": "E2-D01-L04",
+      "type": "numeric",
+      "prompt": "En Diagramas de barras, sectores y cajas de forma introductoria: Datos ordenados [1, 2, 3, 4, 5, 6, 7, 8]. Cuartiles por MEDIANAS DE MITADES: calcula Q1. Introduce resultado numérico exacto sin unidades.",
+      "answer": 2.5,
+      "explanation": "Solución verificada con aritmética exacta: 2,5. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_quartile1",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L04-02",
+      "lesson_id": "E2-D01-L04",
+      "type": "numeric",
+      "prompt": "En Diagramas de barras, sectores y cajas de forma introductoria: Datos ordenados [1, 2, 3, 4, 5, 6, 7, 8]. Cuartiles por MEDIANAS DE MITADES: calcula Q3. Introduce resultado numérico exacto sin unidades.",
+      "answer": 6.5,
+      "explanation": "Solución verificada con aritmética exacta: 6,5. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_quartile3",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L04-03",
+      "lesson_id": "E2-D01-L04",
+      "type": "numeric",
+      "prompt": "En Diagramas de barras, sectores y cajas de forma introductoria: Datos ordenados [1, 2, 3, 4, 5, 6, 7, 8]. Cuartiles por MEDIANAS DE MITADES: calcula IQR=Q3−Q1. Introduce resultado numérico exacto sin unidades.",
+      "answer": 4.0,
+      "explanation": "Solución verificada con aritmética exacta: 4. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_iqr",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L04-04",
+      "lesson_id": "E2-D01-L04",
+      "type": "choice",
+      "prompt": "En Diagramas de barras, sectores y cajas de forma introductoria: ¿Todas las convenciones matemáticas de cuartiles tienen que dar siempre el mismo Q1 y Q3? Sí/No. Elige la opción válida.",
+      "answer": "No",
+      "explanation": "Solución verificada con aritmética exacta: No. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_quartiles_all_conventions_same",
+        "prerrequisito_e2_d01"
+      ],
+      "choices": [
+        "Sí",
+        "No necesariamente",
+        "No"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L04-05",
+      "lesson_id": "E2-D01-L04",
+      "type": "choice",
+      "prompt": "En Diagramas de barras, sectores y cajas de forma introductoria: Ordena los datos [1, 2, 3, 4, 5, 6, 7, 8] y calcula MEDIANA exacta. Elige la opción válida.",
+      "answer": "4,5",
+      "explanation": "Solución verificada con aritmética exacta: 4,5. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_median",
+        "prerrequisito_e2_d01"
+      ],
+      "choices": [
+        "3,5",
+        "4,5",
+        "5,5"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L05-01",
+      "lesson_id": "E2-D01-L05",
+      "type": "numeric",
+      "prompt": "En Comparación de distribuciones: Calcula MEDIA aritmética exacta de la lista de datos [4, 5, 6]. Introduce resultado numérico exacto sin unidades.",
+      "answer": 5.0,
+      "explanation": "Solución verificada con aritmética exacta: 5. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_mean",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L05-02",
+      "lesson_id": "E2-D01-L05",
+      "type": "numeric",
+      "prompt": "En Comparación de distribuciones: Para los datos [4, 5, 6], calcula RANGO máximo−mínimo. Introduce resultado numérico exacto sin unidades.",
+      "answer": 2.0,
+      "explanation": "Solución verificada con aritmética exacta: 2. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_range",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L05-03",
+      "lesson_id": "E2-D01-L05",
+      "type": "numeric",
+      "prompt": "En Comparación de distribuciones: Para los datos [0, 5, 10], calcula RANGO máximo−mínimo. Introduce resultado numérico exacto sin unidades.",
+      "answer": 10.0,
+      "explanation": "Solución verificada con aritmética exacta: 10. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_range",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L05-04",
+      "lesson_id": "E2-D01-L05",
+      "type": "choice",
+      "prompt": "En Comparación de distribuciones: ¿Igual MEDIA aritmética obliga a tener igual rango y varianza? Sí/No. Elige la opción válida.",
+      "answer": "No",
+      "explanation": "Solución verificada con aritmética exacta: No. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_equal_mean_same_spread",
+        "prerrequisito_e2_d01"
+      ],
+      "choices": [
+        "No necesariamente",
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L05-05",
+      "lesson_id": "E2-D01-L05",
+      "type": "choice",
+      "prompt": "En Comparación de distribuciones: Calcula VARIANZA POBLACIONAL exacta de [0, 5, 10] usando divisor n, no n−1. Elige la opción válida.",
+      "answer": "50/3",
+      "explanation": "Solución verificada con aritmética exacta: 50/3. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_population_variance",
+        "prerrequisito_e2_d01"
+      ],
+      "choices": [
+        "50/3",
+        "53/3",
+        "47/3"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L06-01",
+      "lesson_id": "E2-D01-L06",
+      "type": "numeric",
+      "prompt": "En Gráficos engañosos: Una tasa del 20 % sobre n=10 observaciones representa ¿cuántos casos? Introduce resultado numérico exacto sin unidades.",
+      "answer": 2.0,
+      "explanation": "Solución verificada con aritmética exacta: 2. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 1,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_percentage_count",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L06-02",
+      "lesson_id": "E2-D01-L06",
+      "type": "numeric",
+      "prompt": "En Gráficos engañosos: Una tasa del 20 % sobre n=100 observaciones representa ¿cuántos casos? Introduce resultado numérico exacto sin unidades.",
+      "answer": 20.0,
+      "explanation": "Solución verificada con aritmética exacta: 20. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 2,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_percentage_count",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L06-03",
+      "lesson_id": "E2-D01-L06",
+      "type": "numeric",
+      "prompt": "En Gráficos engañosos: Calcula DIFERENCIA absoluta de los recuentos 52−48. Introduce resultado numérico exacto sin unidades.",
+      "answer": 4.0,
+      "explanation": "Solución verificada con aritmética exacta: 4. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 3,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_difference",
+        "prerrequisito_e2_d01"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L06-04",
+      "lesson_id": "E2-D01-L06",
+      "type": "choice",
+      "prompt": "En Gráficos engañosos: ¿Toda muestra coincide necesariamente con la población completa? Sí/No. Elige la opción válida.",
+      "answer": "No",
+      "explanation": "Solución verificada con aritmética exacta: No. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 4,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_sample_always_population",
+        "prerrequisito_e2_d01"
+      ],
+      "choices": [
+        "No",
+        "Sí",
+        "No necesariamente"
+      ]
+    },
+    {
+      "exercise_id": "F3-E2-D01-L06-05",
+      "lesson_id": "E2-D01-L06",
+      "type": "choice",
+      "prompt": "En Gráficos engañosos: Una tasa del 25 % sobre n=80 observaciones representa ¿cuántos casos? Elige la opción válida.",
+      "answer": "20",
+      "explanation": "Solución verificada con aritmética exacta: 20. Identifica el conjunto y su total n y especifica la medida descriptiva que se pide. Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención. Comprueba las condiciones y el significado del denominador, unidad, intervalo o polígono.",
+      "hint": "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+      "difficulty": 5,
+      "review_status": "borrador",
+      "misconception_codes": [
+        "concepto_percentage_count",
+        "prerrequisito_e2_d01"
+      ],
+      "choices": [
+        "21",
+        "19",
+        "20"
+      ]
+    }
+  ],
+  "validation_metadata": {
+    "F3-E2-D01-L01-01": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "midpoint",
+        "params": [
+          10,
+          20
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: midpoint"
+    },
+    "F3-E2-D01-L01-02": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "total_frequency",
+        "params": [
+          2,
+          3,
+          5
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: total_frequency"
+    },
+    "F3-E2-D01-L01-03": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "relative_frequency_counts",
+        "params": [
+          5,
+          10
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: relative_frequency_counts"
+    },
+    "F3-E2-D01-L01-04": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "grouped_mean_exact",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: grouped_mean_exact"
+    },
+    "F3-E2-D01-L01-05": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "cumulative_frequency",
+        "params": [
+          2,
+          3,
+          5,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: cumulative_frequency"
+    },
+    "F3-E2-D01-L02-01": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "weighted_mean",
+        "params": [
+          1,
+          2,
+          2,
+          1,
+          3,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: weighted_mean"
+    },
+    "F3-E2-D01-L02-02": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "median",
+        "params": [
+          1,
+          1,
+          2,
+          3,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: median"
+    },
+    "F3-E2-D01-L02-03": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "mode_count",
+        "params": [
+          1,
+          1,
+          2,
+          3,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: mode_count"
+    },
+    "F3-E2-D01-L02-04": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "grouped_mean_exact",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: grouped_mean_exact"
+    },
+    "F3-E2-D01-L02-05": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "weighted_mean",
+        "params": [
+          2,
+          1,
+          4,
+          1
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: weighted_mean"
+    },
+    "F3-E2-D01-L03-01": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "range",
+        "params": [
+          1,
+          2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: range"
+    },
+    "F3-E2-D01-L03-02": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "population_variance",
+        "params": [
+          1,
+          2,
+          3
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: population_variance"
+    },
+    "F3-E2-D01-L03-03": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "range",
+        "params": [
+          2,
+          2,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: range"
+    },
+    "F3-E2-D01-L03-04": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "variance_same_units",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: variance_same_units"
+    },
+    "F3-E2-D01-L03-05": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "population_variance",
+        "params": [
+          2,
+          2,
+          2
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: population_variance"
+    },
+    "F3-E2-D01-L04-01": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "quartile1",
+        "params": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: quartile1"
+    },
+    "F3-E2-D01-L04-02": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "quartile3",
+        "params": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: quartile3"
+    },
+    "F3-E2-D01-L04-03": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "iqr",
+        "params": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: iqr"
+    },
+    "F3-E2-D01-L04-04": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "quartiles_all_conventions_same",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: quartiles_all_conventions_same"
+    },
+    "F3-E2-D01-L04-05": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "median",
+        "params": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: median"
+    },
+    "F3-E2-D01-L05-01": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "mean",
+        "params": [
+          4,
+          5,
+          6
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: mean"
+    },
+    "F3-E2-D01-L05-02": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "range",
+        "params": [
+          4,
+          5,
+          6
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: range"
+    },
+    "F3-E2-D01-L05-03": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "range",
+        "params": [
+          0,
+          5,
+          10
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: range"
+    },
+    "F3-E2-D01-L05-04": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "equal_mean_same_spread",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: equal_mean_same_spread"
+    },
+    "F3-E2-D01-L05-05": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "population_variance",
+        "params": [
+          0,
+          5,
+          10
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: population_variance"
+    },
+    "F3-E2-D01-L06-01": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "percentage_count",
+        "params": [
+          20,
+          10
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: percentage_count"
+    },
+    "F3-E2-D01-L06-02": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "percentage_count",
+        "params": [
+          20,
+          100
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: percentage_count"
+    },
+    "F3-E2-D01-L06-03": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "difference",
+        "params": [
+          48,
+          52
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: difference"
+    },
+    "F3-E2-D01-L06-04": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "sample_always_population",
+        "params": []
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: sample_always_population"
+    },
+    "F3-E2-D01-L06-05": {
+      "hints": [
+        "Identifica el conjunto y su total n y especifica la medida descriptiva que se pide.",
+        "Media ponderada Σxn/Σn, varianza poblacional Σ(x−media)²/n, rango max−min. Para cuartiles aplica medianas de mitades y declara la convención."
+      ],
+      "math_check": {
+        "kind": "percentage_count",
+        "params": [
+          25,
+          80
+        ]
+      },
+      "validator": "f2_deterministic",
+      "synthetic": true,
+      "error_pattern": "Confusión entre valor y frecuencia, unidades, porcentaje, muestra, vértices, región factible o dispersión: percentage_count"
+    }
+  }
+}

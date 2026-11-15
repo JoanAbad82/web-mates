@@ -1,0 +1,782 @@
+{
+  "unit_id": "B2S-F02",
+  "unit_title": "Optimización social y económica",
+  "product_phase": "F3_OLA19",
+  "version": "0.19.0",
+  "locale": "es-ES",
+  "jurisdiction": "ES",
+  "status": "revision",
+  "mapping_status": "propuesta_editorial",
+  "unit_objectives": [
+    "Identificar coste total, medio, fijo y variable según unidades y dominio.",
+    "Construir beneficio como diferencia entre ingresos y costes.",
+    "Definir elasticidad-precio puntual en demanda diferenciable y positiva."
+  ],
+  "warnings": [
+    "Ejercicios sintéticos EN REVISIÓN, sin revisión humana ni publicación.",
+    "Modelos económicos educativos no predicen finanzas ni datos reales.",
+    "Integral definida acumula con signo; área geométrica requiere valor absoluto y particiones.",
+    "Matrices: producto no conmutativo; inversa solo si det≠0; solución real no asegura viabilidad.",
+    "WCAG 2.2 AA integral, mapeo autonómico y móviles físicos NO VERIFICADOS."
+  ],
+  "prerequisite_links": [
+    {
+      "label": "Estudio de funciones",
+      "lesson_id": "B2S-F01-L06",
+      "href": "#/curso/B2S/unidad/B2S-F01/leccion/B2S-F01-L06"
+    },
+    {
+      "label": "Derivadas en MACS I",
+      "lesson_id": "B1S-F03-L06",
+      "href": "#/curso/B1S/unidad/B1S-F03/leccion/B1S-F03-L06"
+    }
+  ],
+  "recall_policy": {
+    "implementation": "f2_review_optional",
+    "cadence_proposal": "D+1/3/7/14/30 no calibrado",
+    "rule": "Recordar sin pistas, con corrección y repaso local voluntario."
+  },
+  "source_note": "RD 217/2022 y RD 243/2022 estatales; secuencia editorial sujeta a revisión territorial.",
+  "lesson_documents": [
+    {
+      "lesson_id": "B2S-F02-L01",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F02:C01"
+      ],
+      "objectives": [
+        "Identificar coste total, medio, fijo y variable según unidades y dominio.",
+        "Relacionar ingresos con precio unitario y cantidad vendida evitando confundir funciones."
+      ],
+      "prerequisites": [
+        "B2S-F01-L06",
+        "B1S-F03-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En un modelo económico sintético el coste total C(q) puede descomponerse en coste fijo C(0) y parte variable. Por ejemplo C(q)=q²+4q+20 para 0≤q≤10: el coste fijo es 20 €, y el coste marginal continuo C′(q)=2q+4 €/unidad. El coste medio C(q)/q solo está definido para q>0; nunca se divide por cero al evaluar q=0. Con precio unitario constante p, el ingreso es I(q)=pq, mientras que con demanda precio-dependiente p(q)=12−q puede ser I(q)=q(12−q), dentro del intervalo donde precio y cantidad tengan sentido. Los modelos continuos se usan para derivadas y los pedidos reales pueden exigir q entero. Una igualdad de curvas no acredita datos de mercado ni garantiza que una solución sea viable sin restricciones de capacidad."
+        },
+        {
+          "type": "example",
+          "body": "Para C(q)=q²+4q+20, C(0)=20 € y C(3)=9+12+20=41 €. El coste medio en q=3 es 41/3 €, no 41 €."
+        },
+        {
+          "type": "example",
+          "body": "Con precio p(q)=12−q, ingreso I(q)=q(12−q)=12q−q²; en q=4 el ingreso es 32 €, mientras que el precio unitario es 8 €/unidad."
+        },
+        {
+          "type": "figure",
+          "body": "Modelo sintético de coste total. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Modelo sintético de coste total. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "quadratic",
+            "title": "Modelo sintético de coste total",
+            "rows": [
+              [
+                "C(q)",
+                "q²+4q+20"
+              ],
+              [
+                "q=0",
+                "20 € fijo"
+              ],
+              [
+                "q=3",
+                "41 €"
+              ],
+              [
+                "Coste medio en 3",
+                "41/3 €/unidad"
+              ],
+              [
+                "C′(q)",
+                "2q+4"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": 1,
+              "h": -2,
+              "k": 16
+            },
+            "domain": [
+              0,
+              8
+            ],
+            "marks": [
+              [
+                "C3",
+                3,
+                41
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se puede definir coste medio C(0)/0 como cero por convenio sin comprobar?||No; la división por cero no está definida."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: En un modelo económico sintético el coste total C(q) puede descomponerse en coste fijo C(0) y parte variable. Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F02-L01-01",
+        "F3-B2S-F02-L01-02",
+        "F3-B2S-F02-L01-03",
+        "F3-B2S-F02-L01-04",
+        "F3-B2S-F02-L01-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-F02-L02",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F02:C02"
+      ],
+      "objectives": [
+        "Construir beneficio como diferencia entre ingresos y costes.",
+        "Distinguir margen total, medio y derivada marginal en un intervalo viable."
+      ],
+      "prerequisites": [
+        "B2S-F02-L01",
+        "B2S-F01-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "El beneficio modelizado es B(q)=I(q)−C(q), con ambas magnitudes en la misma unidad monetaria. Si I(q)=12q−q² y C(q)=2q+8, entonces B(q)=−q²+10q−8, y su derivada B′(q)=10−2q determina el beneficio marginal continuo. Se puede definir margen por unidad B(q)/q solo para q>0, pero no es igual a la derivada de B; también puede distinguirse margen sobre ventas B(q)/I(q) si I(q)>0. La condición B(q)>0 no asegura automáticamente liquidez ni corresponde a una contabilidad real, porque el modelo simplifica ingresos y costes. Para localizar máximos se comprueban puntos críticos y extremos del dominio. Si q es entero, se cotejan cantidades enteras cercanas al óptimo continuo sin prometer divisibilidad de productos."
+        },
+        {
+          "type": "example",
+          "body": "Con I(q)=12q−q² y C(q)=2q+8, B(q)=−q²+10q−8. En q=4: B(4)=−16+40−8=16 €."
+        },
+        {
+          "type": "example",
+          "body": "La misma función tiene marginal B′(q)=10−2q. En q=4 vale 2 €/unidad, mientras B(5)−B(4)=1 €, diferencia finita exacta."
+        },
+        {
+          "type": "figure",
+          "body": "Beneficio cuadrático y margen decreciente. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Beneficio cuadrático y margen decreciente. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "quadratic",
+            "title": "Beneficio cuadrático y margen decreciente",
+            "rows": [
+              [
+                "B(q)",
+                "−q²+10q−8"
+              ],
+              [
+                "B′(q)",
+                "10−2q"
+              ],
+              [
+                "B(4)",
+                "16 €"
+              ],
+              [
+                "B′(4)",
+                "2 €/unidad"
+              ],
+              [
+                "B(5)−B(4)",
+                "1 €"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": -1,
+              "h": 5,
+              "k": 17
+            },
+            "domain": [
+              0,
+              10
+            ],
+            "marks": [
+              [
+                "Q4",
+                4,
+                16
+              ],
+              [
+                "Máx",
+                5,
+                17
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Beneficio marginal B′(q) es exactamente igual a B(q+1)−B(q) para toda función?||No; solo coinciden en modelos adecuados, no en general para cuadráticas."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: El beneficio modelizado es B(q)=I(q)−C(q), con ambas magnitudes en la misma unidad monetaria. Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F02-L02-01",
+        "F3-B2S-F02-L02-02",
+        "F3-B2S-F02-L02-03",
+        "F3-B2S-F02-L02-04",
+        "F3-B2S-F02-L02-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-F02-L03",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F02:C03"
+      ],
+      "objectives": [
+        "Definir elasticidad-precio puntual en demanda diferenciable y positiva.",
+        "Interpretar signo y magnitud sin confundir porcentaje con unidades."
+      ],
+      "prerequisites": [
+        "B2S-F02-L02",
+        "B1S-F03-L03"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Para una curva de demanda q(p)>0 y derivable respecto al precio p>0, la elasticidad-precio puntual es E(p)=p·q′(p)/q(p). No tiene unidades. En una demanda decreciente E suele ser negativa; a veces se comunica |E| para comparar respuestas. Si q(p)=100−5p en 0<p<20, su derivada vale −5 y E(10)=10·(−5)/50=−1. No está definida en p=20 porque q(20)=0; la expresión tampoco autoriza precios negativos ni exceder la región de demanda positiva. En valor absoluto |E|>1 se denomina demanda elástica localmente y |E|<1 inelástica bajo esta convención, pero la clasificación describe sensibilidad matemática puntual, no una ley inevitable del consumidor. Diferenciar elasticidad de pendiente: −5 unidades demandadas por unidad monetaria no es −1 adimensional."
+        },
+        {
+          "type": "example",
+          "body": "Demanda q(p)=100−5p. En p=10, q=50, q′=−5 y E(10)=10·(−5)/50=−1, elasticidad unitaria en valor absoluto."
+        },
+        {
+          "type": "example",
+          "body": "Para q(p)=80−2p, p=10 da q=60 y E=10·(−2)/60=−1/3. La demanda es inelástica localmente según |E|<1."
+        },
+        {
+          "type": "figure",
+          "body": "Demanda lineal y elasticidad puntual. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Demanda lineal y elasticidad puntual. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "linear",
+            "title": "Demanda lineal y elasticidad puntual",
+            "rows": [
+              [
+                "q(p)",
+                "100−5p"
+              ],
+              [
+                "Dominio",
+                "0<p<20"
+              ],
+              [
+                "q(10)",
+                "50 unidades"
+              ],
+              [
+                "q′(10)",
+                "−5 unidades/€"
+              ],
+              [
+                "E(10)",
+                "−1 sin unidades"
+              ]
+            ],
+            "model": {
+              "kind": "linear",
+              "a": -5,
+              "b": 100
+            },
+            "domain": [
+              0,
+              19
+            ],
+            "marks": [
+              [
+                "Precio 10",
+                10,
+                50
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Se puede calcular E(p)=p·q′(p)/q(p) cuando q(p)=0?||No; falta denominador positivo y el punto queda fuera del dominio de esa elasticidad."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Para una curva de demanda q(p)>0 y derivable respecto al precio p>0, la elasticidad-precio puntual es E(p)=p·q′(p)/q(p). Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F02-L03-01",
+        "F3-B2S-F02-L03-02",
+        "F3-B2S-F02-L03-03",
+        "F3-B2S-F02-L03-04",
+        "F3-B2S-F02-L03-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-F02-L04",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F02:C04"
+      ],
+      "objectives": [
+        "Optimizar funciones cuadráticas comprobando naturaleza del extremo.",
+        "Comparar puntos interiores, extremos de un intervalo y cantidades discretas viables."
+      ],
+      "prerequisites": [
+        "B2S-F01-L03",
+        "B2S-F01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "En un intervalo compacto una función continua alcanza máximo y mínimo absolutos. Para un polinomio diferenciable, se evalúan extremos del dominio y puntos críticos interiores donde f′=0; la derivada segunda puede ayudar a clasificar, pero su valor nulo no prueba el tipo. Para B(q)=−q²+12q−20 sobre 0≤q≤10, B′(q)=12−2q se anula en 6 y B′′=−2<0, así que el máximo es B(6)=16. Las fronteras B(0)=−20 y B(10)=0 son inferiores. Si solo se permiten enteros, q=6 sigue siendo factible; en otros modelos habría que comparar enteros vecinos. No se resuelve un máximo económico si la cantidad óptima viola capacidad o un beneficio sin definición monetaria coherente."
+        },
+        {
+          "type": "example",
+          "body": "B(q)=−q²+12q−20 en [0,10]. Candidato interior q=6, B(6)=16; fronteras B(0)=−20 y B(10)=0. Máximo absoluto 16."
+        },
+        {
+          "type": "example",
+          "body": "Para f(x)=(x−3)²+2 en [0,5], el mínimo es f(3)=2; el máximo es f(0)=11, tras comparar ambos extremos y el vértice."
+        },
+        {
+          "type": "figure",
+          "body": "Óptimo sujeto a capacidad. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Óptimo sujeto a capacidad. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "quadratic",
+            "title": "Óptimo sujeto a capacidad",
+            "rows": [
+              [
+                "B(q)",
+                "−q²+12q−20"
+              ],
+              [
+                "Dominio",
+                "0≤q≤10"
+              ],
+              [
+                "B′(q)",
+                "12−2q"
+              ],
+              [
+                "B(6)",
+                "16 máximo"
+              ],
+              [
+                "B(0)",
+                "−20"
+              ],
+              [
+                "B(10)",
+                "0"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": -1,
+              "h": 6,
+              "k": 16
+            },
+            "domain": [
+              0,
+              10
+            ],
+            "marks": [
+              [
+                "Máximo",
+                6,
+                16
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Basta resolver f′(q)=0 para asegurar el máximo global con restricciones?||No; hay que comparar valores de frontera y puntos no derivables si existen."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: En un intervalo compacto una función continua alcanza máximo y mínimo absolutos. Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F02-L04-01",
+        "F3-B2S-F02-L04-02",
+        "F3-B2S-F02-L04-03",
+        "F3-B2S-F02-L04-04",
+        "F3-B2S-F02-L04-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-F02-L05",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F02:C05"
+      ],
+      "objectives": [
+        "Resolver optimización en intervalos cerrados y con condiciones de capacidad.",
+        "Descartar puntos críticos fuera del dominio y verificar soluciones enteras."
+      ],
+      "prerequisites": [
+        "B2S-F02-L04",
+        "B1S-A01-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Las restricciones de capacidad, presupuesto y no negatividad forman el dominio factible de una función objetivo. Para B(q)=−(q−6)²+16 y 0≤q≤4, el vértice q=6 está fuera del dominio; la derivada es positiva en todo [0,4], así que el máximo factible se sitúa en q=4 y vale 12. No es correcto informar el máximo no factible B(6)=16. Si q debe ser entero, la optimización es sobre el conjunto {0,1,2,3,4} y se pueden evaluar esos cinco valores sin usar límites inexistentes entre enteros. La validez matemática del extremo depende de que la función sea continua en el intervalo cerrado; si el dominio es abierto, un supremo no tiene por qué alcanzarse. Un sistema de restricciones puede incluso dejar el conjunto vacío, caso sin solución factible."
+        },
+        {
+          "type": "example",
+          "body": "Beneficio B(q)=−(q−6)²+16 con q en [0,4]. La función crece en ese tramo; B(4)=−4+16=12, máximo real y entero permitido."
+        },
+        {
+          "type": "example",
+          "body": "Con f(q)=−(q−3)²+9 y capacidad 0≤q≤2, el óptimo formal q=3 no es viable. Se evalúa q=2, f(2)=8."
+        },
+        {
+          "type": "figure",
+          "body": "Máximo restringido antes del vértice. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Máximo restringido antes del vértice. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "quadratic",
+            "title": "Máximo restringido antes del vértice",
+            "rows": [
+              [
+                "Objetivo",
+                "−(q−6)²+16"
+              ],
+              [
+                "Dominio permitido",
+                "0≤q≤4"
+              ],
+              [
+                "Vértice algebraico",
+                "q=6, no factible"
+              ],
+              [
+                "Óptimo factible",
+                "q=4"
+              ],
+              [
+                "Valor",
+                "12"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": -1,
+              "h": 6,
+              "k": 16
+            },
+            "domain": [
+              0,
+              7
+            ],
+            "marks": [
+              [
+                "Frontera",
+                4,
+                12
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Es lícito recomendar q=6 si la restricción documental indica q≤4?||No; el modelo debe optimizarse sobre su dominio factible."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Las restricciones de capacidad, presupuesto y no negatividad forman el dominio factible de una función objetivo. Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F02-L05-01",
+        "F3-B2S-F02-L05-02",
+        "F3-B2S-F02-L05-03",
+        "F3-B2S-F02-L05-04",
+        "F3-B2S-F02-L05-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    },
+    {
+      "lesson_id": "B2S-F02-L06",
+      "locale": "es-ES",
+      "jurisdiction": "ES",
+      "version": "0.19.0",
+      "status": "revision",
+      "concept_ids": [
+        "B2S-F02:C06"
+      ],
+      "objectives": [
+        "Validar unidades, restricciones y sensibilidad de soluciones.",
+        "Separar el valor exacto del óptimo de la plausibilidad del modelo y la calidad de los datos."
+      ],
+      "prerequisites": [
+        "B2S-F02-L05",
+        "B1S-F03-L06"
+      ],
+      "content_blocks": [
+        {
+          "type": "text",
+          "body": "Una solución optimizada solo puede interpretarse si las variables, unidades y restricciones representan el problema original. Si un coste marginal es C′(q)=2q+4 €/unidad, no es un ingreso en euros ni el coste total C(q). Para q entero, la derivada aproxima una tendencia local de la extensión continua; el incremento discreto exacto es C(q+1)−C(q)=2q+5 €. Un cambio en precio fijo, coste de materias primas o capacidad modifica el modelo y potencialmente su óptimo, lo que exige volver a calcular en vez de extrapolar el resultado anterior. En el caso B(q)=−q²+12q−20, el margen en q=6 es cero, pero el beneficio total es 16 €, no cero. Debe notificarse cuándo una proyección sintética no dispone de validación empírica ni justifica una decisión empresarial real."
+        },
+        {
+          "type": "example",
+          "body": "Para C(q)=q²+4q+20, marginal C′(3)=2·3+4=10 €/unidad; incremento discreto C(4)−C(3)=11 €, que no coincide."
+        },
+        {
+          "type": "example",
+          "body": "En B(q)=−q²+12q−20, la derivada es 12−2q. En q=6, B′(6)=0 pero B(6)=16 €; margen nulo no implica beneficio nulo."
+        },
+        {
+          "type": "figure",
+          "body": "Beneficio total frente al beneficio marginal. Gráfica SVG local de apoyo con tabla HTML semántica exacta que proporciona el significado matemático completo.",
+          "alt": "Beneficio total frente al beneficio marginal. Los datos, dominios, restricciones, fórmulas, valores y unidades se incluyen en la tabla textual accesible sin depender de colores.",
+          "visual_spec": {
+            "render_family": "wave19",
+            "kind": "quadratic",
+            "title": "Beneficio total frente al beneficio marginal",
+            "rows": [
+              [
+                "Función",
+                "B(q)=−q²+12q−20"
+              ],
+              [
+                "B(6)",
+                "16 €"
+              ],
+              [
+                "B′(q)",
+                "12−2q"
+              ],
+              [
+                "B′(6)",
+                "0 €/unidad"
+              ],
+              [
+                "Modelo",
+                "Sintético, no pronóstico"
+              ]
+            ],
+            "model": {
+              "kind": "quadratic",
+              "a": -1,
+              "h": 6,
+              "k": 16
+            },
+            "domain": [
+              0,
+              10
+            ],
+            "marks": [
+              [
+                "Óptimo",
+                6,
+                16
+              ]
+            ]
+          }
+        },
+        {
+          "type": "reflection",
+          "body": "¿Que la derivada marginal sea cero en el óptimo garantiza que el beneficio total vale cero?||No; derivada y valor de la función son magnitudes distintas."
+        },
+        {
+          "type": "summary",
+          "body": "Recuperación activa: Una solución optimizada solo puede interpretarse si las variables, unidades y restricciones representan el problema original. Resuelve sin pistas otro ejemplo y explica una condición que invalidaría el método."
+        }
+      ],
+      "exercise_refs": [
+        "F3-B2S-F02-L06-01",
+        "F3-B2S-F02-L06-02",
+        "F3-B2S-F02-L06-03",
+        "F3-B2S-F02-L06-04",
+        "F3-B2S-F02-L06-05"
+      ],
+      "mapping_status": "propuesta_editorial",
+      "sources": [
+        {
+          "title": "Marco estatal RD 217/2022 y RD 243/2022, sin validar asignación autonómica ni aristas editoriales.",
+          "url": "https://www.boe.es/legislacion/",
+          "license": "Referencia normativa estatal, no homologación ni obligación del orden editorial."
+        }
+      ],
+      "reviews": [
+        {
+          "role": "matematica",
+          "result": "pending"
+        },
+        {
+          "role": "didactica",
+          "result": "pending"
+        },
+        {
+          "role": "curricular",
+          "result": "pending"
+        },
+        {
+          "role": "accesibilidad",
+          "result": "pending"
+        }
+      ]
+    }
+  ]
+}

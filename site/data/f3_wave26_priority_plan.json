@@ -1,0 +1,48 @@
+{
+  "version": "0.26.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "B2S-D01",
+      "priority": 1,
+      "prerequisites_verified_in_sequence": [
+        "B1S-D02"
+      ]
+    },
+    {
+      "unit_id": "B2S-D02",
+      "priority": 2,
+      "prerequisites_verified_in_sequence": [
+        "B2S-D01",
+        "B2S-Q02"
+      ]
+    },
+    {
+      "unit_id": "B2C-Q01",
+      "priority": 3,
+      "prerequisites_verified_in_sequence": [
+        "B1C-Q01"
+      ]
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "prior_editorial_edge_count_preserved": 83,
+  "new_editorial_edges": [
+    {
+      "from": "B2S-Q02",
+      "to": "B2S-D02",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Distribuciones MACS II como base para inferencia e intervalos."
+    },
+    {
+      "from": "B1C-Q01",
+      "to": "B2C-Q01",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "Recuento y probabilidad de Matemáticas I preceden a condicionadas y Bayes de Matemáticas II."
+    }
+  ],
+  "verified_DAG_edges": 105,
+  "regional_mapping": "NO VERIFICADO; nuevas aristas solo editoriales"
+}

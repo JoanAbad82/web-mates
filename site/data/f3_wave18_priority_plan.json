@@ -1,0 +1,45 @@
+{
+  "version": "0.18.0",
+  "state": "propuesta_editorial",
+  "sequence": [
+    {
+      "unit_id": "B1S-F02",
+      "priority": 1,
+      "why": "B1S-F01 familias de funciones desarrolladas en F3-17."
+    },
+    {
+      "unit_id": "B1S-F03",
+      "priority": 2,
+      "why": "B1S-F02 límites y continuidad cubiertos secuencialmente; se añade enlace editorial."
+    },
+    {
+      "unit_id": "B2S-F01",
+      "priority": 3,
+      "why": "B1S-F03 desarrollada secuencialmente y arista canónica B1S-F03→B2S-F01 preservada."
+    }
+  ],
+  "not_selected": [
+    {
+      "unit_id": "B2S-F02",
+      "why": "Unidad posterior: fuera del máximo tres y requiere prerrequisitos específicos que deben verificarse en su momento."
+    }
+  ],
+  "canonical_edge_count_preserved": 20,
+  "canonical_highlight": [
+    {
+      "from": "B1S-F03",
+      "to": "B2S-F01"
+    }
+  ],
+  "prior_editorial_edge_count_preserved": 55,
+  "new_editorial_edges": [
+    {
+      "from": "B1S-F02",
+      "to": "B1S-F03",
+      "type": "prerrequisito",
+      "status": "propuesta_editorial",
+      "why": "La derivada por límite y los puntos no derivables requieren límites y continuidad previos."
+    }
+  ],
+  "regional_mapping": "NO VERIFICADO. Arista editorial no normativa."
+}
