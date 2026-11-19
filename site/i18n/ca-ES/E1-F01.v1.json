@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E1-F01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e1_f01.json": "3ee8a5c95bbabbf7fe0b2e4bc2af1b42fc976e167ada6996f1ad752d030a7275",
+    "data/f3_e1_f01_exercises.json": "d2d03c0b8697df9a8348103d0d8630d2680b14858c6b59b3b6818b8a949c0629"
+  },
+  "lessons": {
+    "E1-F01-L01": {
+      "title": "Eixos i coordenades",
+      "objectives": [
+        "Distingir l’eix horitzontal x de l’eix vertical y.",
+        "Llegir coordenades positives i negatives a partir de l’origen."
+      ],
+      "content_blocks": [
+        {
+          "body": "El pla cartesià utilitza un eix horitzontal x i un eix vertical y, que es tallen a l’origen (0,0). Un punt (x,y) es localitza avançant primer per l’eix x i després en vertical per a y. Els signes indiquen esquerra/dreta i avall/amunt; intercanviar-ne l’ordre canvia el punt."
+        },
+        {
+          "body": "El punt (3,2) és tres unitats a la dreta i dues cap amunt respecte de l’origen. No coincideix amb (2,3)."
+        },
+        {
+          "body": "El punt (−2,3) és dues unitats a l’esquerra i tres cap amunt. El punt (0,−1) és a l’eix vertical, per sota de l’origen."
+        },
+        {
+          "body": "Pla descrit: O(0,0), A(3,2), B(−2,3), C(0,−1). Primer valor horitzontal; segon, vertical.",
+          "alt": "Pla descrit: O(0,0), A(3,2), B(−2,3), C(0,−1). Primer valor horitzontal; segon, vertical.",
+          "visual_spec": {
+            "title": "Origen i punts amb coordenades positives i negatives"
+          }
+        },
+        {
+          "body": "El punt (0,4) és en un quadrant?||No; és a l’eix y perquè la coordenada x és zero."
+        },
+        {
+          "body": "Ordre de lectura: primer x horitzontal, després y vertical; l’origen pertany a tots dos eixos."
+        }
+      ]
+    },
+    "E1-F01-L02": {
+      "title": "Parells de valors",
+      "objectives": [
+        "Interpretar parells ordenats com a entrades i sortides.",
+        "Relacionar cada parell amb una fila d’una taula i amb les unitats corresponents."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un parell ordenat (x,y) manté la posició dels valors: primer l’entrada x i després la sortida y. En una taula de temps i distàncies, (2,6) pot significar 2 hores i 6 quilòmetres. Intercanviar les coordenades en canvia el significat i les unitats."
+        },
+        {
+          "body": "Un ciclista avança 3 km per hora: després de 2 h ha recorregut 6 km, de manera que el parell (2,6) representa temps i distància."
+        },
+        {
+          "body": "Si una taula registra entrades x=0,1,2 i sortides y=1,4,7, els parells són (0,1), (1,4), (2,7)."
+        },
+        {
+          "body": "Taula temps (h): 0 | 1 | 2 | 3; distància (km): 0 | 3 | 6 | 9. Els punts representen (0,0),(1,3),(2,6),(3,9).",
+          "alt": "Taula temps (h): 0 | 1 | 2 | 3; distància (km): 0 | 3 | 6 | 9. Els punts representen (0,0),(1,3),(2,6),(3,9).",
+          "visual_spec": {
+            "title": "Parells temps-distància"
+          }
+        },
+        {
+          "body": "Per què (2,6) i (6,2) no signifiquen el mateix en un context?||Perquè la primera coordenada representa el temps i la segona, la distància; invertir-les intercanvia les magnituds."
+        },
+        {
+          "body": "Parell (x,y): l’entrada va abans; escriu les unitats de cada eix perquè la representació tingui sentit."
+        }
+      ]
+    },
+    "E1-F01-L03": {
+      "title": "Taules de dependència",
+      "objectives": [
+        "Construir taules de dependència a partir d’una regla o situació.",
+        "Comprovar que cada entrada té una única sortida en un model funcional."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una taula de dependència recull valors d’una quantitat x i d’una altra y associada. En una funció, cada entrada permesa correspon a una sola sortida. La taula pot mostrar només entrades concretes; traçar una línia entre punts exigeix justificar si té sentit considerar valors intermedis."
+        },
+        {
+          "body": "En un aparcament de 2 € per hora completa, la taula d’hores enteres x=0,1,2,3 dona el cost y=0,2,4,6 €."
+        },
+        {
+          "body": "Una regla y=2x+1 genera els parells (0,1),(1,3),(2,5),(3,7). El cost inicial seria d’1 unitat quan x=0."
+        },
+        {
+          "body": "Taula d’exemple: x 0 | 1 | 2 | 3; y 1 | 3 | 5 | 7. De 0 a 1, la sortida augmenta 2.",
+          "alt": "Taula d’exemple: x 0 | 1 | 2 | 3; y 1 | 3 | 5 | 7. De 0 a 1, la sortida augmenta 2.",
+          "visual_spec": {
+            "title": "Taula i punts discrets de y=2x+1"
+          }
+        },
+        {
+          "body": "Una taula amb x=2 i y=5 permet conèixer automàticament y per a x=2,5?||No, si no tenim una regla o informació addicional sobre el model i el seu domini."
+        },
+        {
+          "body": "Identifica entrada, sortida, unitats i domini. Completa només les dades que autoritza la regla."
+        }
+      ]
+    },
+    "E1-F01-L04": {
+      "title": "Representació de punts",
+      "objectives": [
+        "Situar punts d’una taula al pla de coordenades.",
+        "Distingir una representació de punts discrets d’una corba contínua."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per representar un parell (x,y), busca x a l’eix horitzontal i des d’allí desplaça’t fins a l’altura y. Etiqueta els eixos i l’escala. Els punts que representen quantitats d’entrades, persones o llibres són discrets; no convé unir-los si els valors intermedis no tenen sentit."
+        },
+        {
+          "body": "Representa (1,2),(2,4),(3,6): quan l’entrada augmenta una unitat, y augmenta dues unitats. Si x compta quaderns, les entrades han de ser enteres."
+        },
+        {
+          "body": "El punt (−1,2) se situa una unitat a l’esquerra i dues cap amunt; (2,−1) és a la dreta i avall."
+        },
+        {
+          "body": "Punts per representar: (−1,2),(0,0),(1,2),(2,−1). Es pot recórrer la taula amb el teclat sense arrossegar punts.",
+          "alt": "Punts per representar: (−1,2),(0,0),(1,2),(2,−1). Es pot recórrer la taula amb el teclat sense arrossegar punts.",
+          "visual_spec": {
+            "title": "Punts discrets als quatre quadrants i als eixos"
+          }
+        },
+        {
+          "body": "Convé unir amb una línia contínua el nombre de germans i una quantitat associada?||No necessàriament: el recompte de germans només admet enters; una línia podria suggerir valors impossibles."
+        },
+        {
+          "body": "Situa x abans que y, fes servir una escala coherent i uneix punts només si el context admet valors intermedis."
+        }
+      ]
+    },
+    "E1-F01-L05": {
+      "title": "Lectura de gràfiques contextualitzades",
+      "objectives": [
+        "Llegir valors, màxims i trams constants en gràfiques contextualitzades.",
+        "Distingir l’observació directa de l’extrapolació no justificada."
+      ],
+      "content_blocks": [
+        {
+          "body": "En una gràfica contextual, l’eix horitzontal acostuma a representar la variable independent, però cal llegir les etiquetes i les unitats abans d’interpretar-la. Per conèixer un valor, busca l’entrada i segueix fins a l’altura de la sortida. Un tram horitzontal indica una sortida constant, no necessàriament que la situació hagi acabat."
+        },
+        {
+          "body": "Un dipòsit conté 5 litres en t=0, 8 en t=1 i 8 en t=2: entre 1 i 2 la quantitat no va canviar en les observacions."
+        },
+        {
+          "body": "Si una gràfica de distància mostra (0,0),(1,4),(2,4),(3,7), el segon tram és horitzontal; entre t=1 i t=2 la distància es manté en 4."
+        },
+        {
+          "body": "Taula hores 0 | 1 | 2 | 3; volum (L) 0 | 4 | 4 | 7. La successió mostra una pujada, una pausa i una nova pujada.",
+          "alt": "Taula hores 0 | 1 | 2 | 3; volum (L) 0 | 4 | 4 | 7. La successió mostra una pujada, una pausa i una nova pujada.",
+          "visual_spec": {
+            "title": "Sèrie temporal amb un tram constant"
+          }
+        },
+        {
+          "body": "Un valor màxim de 7 en una taula garanteix que no se superarà més endavant?||No. Només és el màxim observat entre els valors representats; fora de l’interval no tenim prou informació."
+        },
+        {
+          "body": "Llegeix primer el títol, els eixos i les unitats; després els trams, els valors i els límits del conjunt de dades."
+        }
+      ]
+    },
+    "E1-F01-L06": {
+      "title": "Variacions positives i negatives",
+      "objectives": [
+        "Reconèixer increments, disminucions i valors constants en una taula o gràfica.",
+        "Calcular la variació y₂−y₁ i interpretar-ne el signe."
+      ],
+      "content_blocks": [
+        {
+          "body": "La variació de la sortida entre dos moments és Δy=y_final−y_inicial. Si és positiva, la magnitud ha augmentat; si és negativa, ha disminuït; i si és zero, s’ha mantingut igual. Una sortida negativa no implica necessàriament una disminució: cal comparar dos valors, no només mirar el signe d’un."
+        },
+        {
+          "body": "La temperatura passa de 5 °C a 2 °C: ΔT=2−5=−3 °C. Ha disminuït 3 graus."
+        },
+        {
+          "body": "Una quantitat passa de −4 a −1: Δy=−1−(−4)=+3; tot i que tots dos valors són negatius, la magnitud ha augmentat."
+        },
+        {
+          "body": "Taula t 0 | 1 | 2 | 3; y 2 | 5 | 5 | 1. Canvis successius: +3, 0 i −4.",
+          "alt": "Taula t 0 | 1 | 2 | 3; y 2 | 5 | 5 | 1. Canvis successius: +3, 0 i −4.",
+          "visual_spec": {
+            "title": "Pujada, tram horitzontal i descens d’una sèrie"
+          }
+        },
+        {
+          "body": "Pot créixer una funció mentre els seus valors són negatius?||Sí. Quan passa de −4 a −1 augmenta 3, encara que totes dues sortides estiguin per sota de zero."
+        },
+        {
+          "body": "Compara valors: variació final menys inicial. Signe de la variació ≠ signe de la sortida."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E1-F01-L01-01": {
+      "prompt": "Al punt A=(3,2), quina és la seva coordenada horitzontal x?",
+      "hint": "El primer nombre del parell ordenat representa x.",
+      "explanation": "El parell (3,2) té coordenada x=3 i coordenada y=2; l’ordre no es pot intercanviar."
+    },
+    "F3-E1-F01-L01-02": {
+      "prompt": "Per a B=(−2,3), quina és la seva coordenada vertical y?",
+      "hint": "La posició vertical la dona el segon nombre.",
+      "explanation": "El punt B és dues unitats a l’esquerra i tres cap amunt; la coordenada y és 3."
+    },
+    "F3-E1-F01-L01-03": {
+      "prompt": "En quin quadrant se situa el punt (−2,3)?",
+      "hint": "Un valor x negatiu se situa a l’esquerra de l’eix vertical.",
+      "explanation": "El punt (−2,3) té x negativa i y positiva; per tant, pertany al quadrant II."
+    },
+    "F3-E1-F01-L01-04": {
+      "prompt": "On és el punt (0,−1)?",
+      "hint": "Quan una coordenada val zero, el punt es troba sobre un eix.",
+      "explanation": "El punt (0,−1) és sobre l’eix y, no pas dins d’un quadrant."
+    },
+    "F3-E1-F01-L01-05": {
+      "prompt": "Tres unitats a la dreta i dues cap amunt: quin és el parell ordenat?",
+      "hint": "Cap a la dreta significa coordenada x positiva.",
+      "explanation": "El desplaçament correspon a (3,2); (2,3) intercanvia els eixos."
+    },
+    "F3-E1-F01-L02-01": {
+      "prompt": "Una bicicleta avança a 3 km/h. Quants quilòmetres ha recorregut després de 2 hores?",
+      "hint": "El temps és la primera coordenada i la distància, la sortida.",
+      "explanation": "En el parell (2,6), 2 són hores i 6 són quilòmetres; 3·2=6."
+    },
+    "F3-E1-F01-L02-02": {
+      "prompt": "Per a 2 hores i 6 km, quin parell ordenat (temps,distància) és correcte?",
+      "hint": "El temps es representa primer, a l’eix horitzontal.",
+      "explanation": "El parell (2,6) respecta l’ordre indicat: primer el temps, després la distància."
+    },
+    "F3-E1-F01-L02-03": {
+      "prompt": "Per a la regla distància=3t, quina distància hi ha en t=3 hores?",
+      "hint": "La sortida s’obté multiplicant l’entrada per 3.",
+      "explanation": "La regla dona 3·3=9 km; el parell corresponent és (3,9)."
+    },
+    "F3-E1-F01-L02-04": {
+      "prompt": "Els parells (2,6) i (6,2) representen el mateix punt?",
+      "hint": "Compara el primer valor de cada parell.",
+      "explanation": "No: canviar l’ordre de les coordenades acostuma a canviar la posició i el significat."
+    },
+    "F3-E1-F01-L02-05": {
+      "prompt": "En una taula x: 0,1,2; y: 1,4,7, quin parell correspon a x=2?",
+      "hint": "Busca primer la fila on x val 2.",
+      "explanation": "El valor x=2 està associat a y=7; el parell (2,7) conserva l’ordre de les columnes."
+    },
+    "F3-E1-F01-L03-01": {
+      "prompt": "En y=2x+1, quina sortida y correspon a x=3?",
+      "hint": "La regla multiplica l’entrada per dos i hi suma u.",
+      "explanation": "Substituint-hi obtenim y=2·3+1=7, el darrer valor de la taula."
+    },
+    "F3-E1-F01-L03-02": {
+      "prompt": "Per a y=2x+1, quina sortida correspon a l’entrada x=0?",
+      "hint": "Posa l’entrada zero a la fórmula.",
+      "explanation": "La sortida inicial és y=1; correspon al punt (0,1)."
+    },
+    "F3-E1-F01-L03-03": {
+      "prompt": "La taula (0,1), (1,3), (2,5) és compatible amb la fórmula y=2x+1?",
+      "hint": "Substitueix cada entrada de la taula a la fórmula.",
+      "explanation": "Els tres parells compleixen y=2x+1, de manera que la taula és compatible amb aquest model."
+    },
+    "F3-E1-F01-L03-04": {
+      "prompt": "Un aparcament cobra 2 € per hora completa. Quin cost correspon a 3 hores completes?",
+      "hint": "L’entrada és el nombre d’hores completes.",
+      "explanation": "El cost és de 6 €. El domini indicat fa servir hores completes, no pas qualsevol fracció."
+    },
+    "F3-E1-F01-L03-05": {
+      "prompt": "És una funció la relació {(2,5),(2,7),(3,9)} de x a y?",
+      "hint": "Busca entrades repetides amb dues sortides diferents.",
+      "explanation": "No: una funció no pot assignar dues imatges diferents a una mateixa entrada."
+    },
+    "F3-E1-F01-L04-01": {
+      "prompt": "En representar P=(−1,2), quin nombre cal marcar a l’eix horitzontal?",
+      "hint": "Localitza la coordenada horitzontal de P.",
+      "explanation": "A l’eix x cal assenyalar −1 abans de desplaçar-se dues unitats cap amunt."
+    },
+    "F3-E1-F01-L04-02": {
+      "prompt": "En Q=(2,−1), quin valor correspon a l’eix vertical?",
+      "hint": "La coordenada vertical ocupa la segona posició.",
+      "explanation": "El punt Q té coordenada vertical −1, una unitat per sota de l’eix horitzontal."
+    },
+    "F3-E1-F01-L04-03": {
+      "prompt": "Un punt té x negativa i y negativa. Quin quadrant ocupa?",
+      "hint": "Dos signes negatius indiquen esquerra i avall.",
+      "explanation": "Els punts amb x<0 i y<0 pertanyen al tercer quadrant."
+    },
+    "F3-E1-F01-L04-04": {
+      "prompt": "Convé unir amb una línia contínua punts que representen un nombre enter de germans?",
+      "hint": "Entre dos enters hi ha valors que no són quantitats vàlides de germans.",
+      "explanation": "No cal ni és correcte suggerir mitges persones amb una línia contínua en un recompte discret."
+    },
+    "F3-E1-F01-L04-05": {
+      "prompt": "Són iguals els punts (1,2) i (2,1)?",
+      "hint": "La suma de les coordenades no determina la posició d’un punt.",
+      "explanation": "No: (1,2) i (2,1) ocupen posicions diferents, encara que tinguin la mateixa suma."
+    },
+    "F3-E1-F01-L05-01": {
+      "prompt": "La taula de volum indica 0,4,4,7 litres a les hores 0,1,2,3. Quant n’hi ha a l’hora 2?",
+      "hint": "Busca l’entrada horitzontal de l’hora 2.",
+      "explanation": "A l’hora 2 el dipòsit conté 4 litres; entre les hores 1 i 2 no va canviar."
+    },
+    "F3-E1-F01-L05-02": {
+      "prompt": "A la taula 0,4,4,7 litres, quin és el valor màxim observat?",
+      "hint": "Compara tots els volums registrats.",
+      "explanation": "El màxim observat en aquestes quatre lectures és de 7 litres; no permet extrapolar al futur."
+    },
+    "F3-E1-F01-L05-03": {
+      "prompt": "Si entre t=1 i t=2 una gràfica manté y=4, què va passar en aquest interval?",
+      "hint": "Calcula la diferència y_final−y_inicial.",
+      "explanation": "El tram horitzontal indica que la quantitat representada no va canviar en aquest interval."
+    },
+    "F3-E1-F01-L05-04": {
+      "prompt": "Si només hi ha dades fins a t=3, pots assegurar el valor del volum en t=5 sense més informació?",
+      "hint": "Comprova si l’entrada demanada apareix a les observacions.",
+      "explanation": "No: extrapolar requereix un model i una justificació addicional; uns quants punts no basten."
+    },
+    "F3-E1-F01-L05-05": {
+      "prompt": "Si la taula dona un volum de 7 litres en t=3, quina quantitat es registra a l’hora 3?",
+      "hint": "Selecciona la fila del tercer instant horari.",
+      "explanation": "La taula registra 7 litres quan han passat tres hores."
+    },
+    "F3-E1-F01-L06-01": {
+      "prompt": "La temperatura baixa de 5 °C a 2 °C. Quina és la variació final menys inicial?",
+      "hint": "Resta la temperatura inicial de la final.",
+      "explanation": "La variació és −3 °C: el signe negatiu indica una disminució de tres graus."
+    },
+    "F3-E1-F01-L06-02": {
+      "prompt": "Una quantitat passa de −4 a −1. Quina és la variació?",
+      "hint": "No confonguis un resultat negatiu amb una disminució.",
+      "explanation": "La variació val +3: tot i que tots dos valors són negatius, la quantitat ha augmentat."
+    },
+    "F3-E1-F01-L06-03": {
+      "prompt": "Una magnitud es manté en 5 unitats al principi i al final. Quina variació hi ha hagut?",
+      "hint": "Calcula sempre el valor final menys l’inicial.",
+      "explanation": "La variació és zero i, per tant, el valor s’ha mantingut constant."
+    },
+    "F3-E1-F01-L06-04": {
+      "prompt": "Si una sortida passa de −4 a −1, la gràfica creix en aquest tram?",
+      "hint": "Compara −1 i −4 a la recta numèrica.",
+      "explanation": "Sí: el canvi és positiu (+3), encara que els dos valors de sortida siguin negatius."
+    },
+    "F3-E1-F01-L06-05": {
+      "prompt": "En una taula y=2,5,5,1 per a x=0,1,2,3, com evoluciona l’últim tram?",
+      "hint": "Compara els dos darrers valors de la taula.",
+      "explanation": "L’últim tram disminueix quatre unitats, encara que en el tram anterior no canviava."
+    }
+  }
+}

@@ -2,7 +2,7 @@
 """Conservative invariants for all ca-ES packages: numeric tokens and math operators."""
 import re
 NUM=re.compile(r'(?<!\w)(?:-|−)?\d{1,3}(?:[ \u00a0]\d{3})+|(?<!\w)(?:-|−)?\d+(?!\w)')
-OPS=re.compile(r'[+×÷=<>−%≈≠√²³]|(?<![lL])·|·(?![lL])')
+OPS=re.compile(r'[+×÷=<>−%≈≠√²³^π±≤≥°Δθ]|(?<![lL])·|·(?![lL])')
 MATH_DIV=re.compile(r'(?<=\d)/|/(?=\d)|(?<=[a-z])/(?=[a-z](?![a-z]))')
 def math_ops(text):return OPS.findall(text)+MATH_DIV.findall(text)
 def numbers(text):

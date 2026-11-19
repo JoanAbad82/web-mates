@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Catalan overlays E1: mathematical token, stable IDs and data invariants; not human semantic review."""
+"""All translated units: mathematical token, stable ID and original-data invariants; not semantic review."""
 from pathlib import Path
 from hashlib import sha256
 import json,re,collections
+from i18n_coverage import CAT,SITE,loaded
 R=Path(__file__).resolve().parents[1]
 num=re.compile(r'(?<!\w)(?:-|−)?\d{1,3}(?:[ \u00a0]\d{3})+|(?<!\w)(?:-|−)?\d+(?!\w)')
-operators=re.compile(r'[+×÷=<>−%≈≠√²³]|(?<![lL])·|·(?![lL])')
+operators=re.compile(r'[+×÷=<>−%≈≠√²³^π±≤≥°Δθ]|(?<![lL])·|·(?![lL])')
 math_div=re.compile(r'(?<=\d)/|/(?=\d)|(?<=[a-z])/(?=[a-z](?![a-z]))')
 def math_ops(text):return operators.findall(text)+math_div.findall(text)
 def nums(s):return [v.replace(' ','').replace('\u00a0','') for v in num.findall(s)]
@@ -21,12 +22,11 @@ def invariant(src,dst,context):
  if math_ops(src)!=math_ops(dst):raise AssertionError((context,'operators_changed',src,dst))
  return 1
 count=0
-for uid in ('E1-N01','E1-N02','E1-N03','E1-N04','E1-N05','E1-P01','E1-M01','E1-G01'):
- suffix=uid.lower().replace('-','_')
- docfile=R/'site/data'/('f3_'+suffix+'.json')
- bankfile=R/'site/data'/('f3_'+suffix+'_exercises.json')
- doc=json.loads(docfile.read_text(encoding='utf8'))
- bank=json.loads(bankfile.read_text(encoding='utf8'))
+units=[u['unit_id'] for c in CAT['courses'] for u in c['units']
+       if (SITE/'i18n/ca-ES'/(u['unit_id']+'.v1.json')).is_file()]
+assert units,'No translated unit packages available'
+for uid in units:
+ docfile,bankfile,doc,bank=loaded(uid)
  trans=json.loads((R/'site/i18n/ca-ES'/(uid+'.v1.json')).read_text(encoding='utf8'))
  assert trans['unit_id']==uid and trans['locale']=='ca-ES' and trans['translation_status']=='draft_unreviewed'
  assert trans['source_files_sha256']=={'data/'+docfile.name:sha256(docfile.read_bytes()).hexdigest(),

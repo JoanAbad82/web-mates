@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E2-N01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e2_n01.json": "b9023a0b4373a9e53a2c690ee6b3a8889a6af461d46db507a00b7e87560546cd",
+    "data/f3_e2_n01_exercises.json": "cf7cd153d36d3de4f3a21af112efa67a8f9941dc86a54071b71c7849a794952a"
+  },
+  "lessons": {
+    "E2-N01-L01": {
+      "title": "Potències d’exponent natural",
+      "objectives": [
+        "Interpretar potències de base entera amb exponent natural.",
+        "Distingir el signe d’una base negativa del signe exterior."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una potència a^n amb exponent natural positiu multiplica n factors iguals a a. Si a és negatiu i n és parell, el producte és positiu; si n és imparell, és negatiu. Amb una base no nul·la, a^0 = 1. El signe exterior de −3², sense parèntesis a la base, és diferent del de (−3)²; aquí no es defineix mai 0^0."
+        },
+        {
+          "body": "(−3)^2 = (−3)×(−3) = 9; en canvi, −3² = −(3×3) = −9."
+        },
+        {
+          "body": "5^0 = 1 perquè la base cinc no és zero; 2^4 = 16 en multiplicar quatre dosos."
+        },
+        {
+          "body": "Potències de base −2. La gràfica mostra dades orientatives; la taula alternativa en presenta els valors o les expressions explícites.",
+          "alt": "Potències de base −2. Les dades també apareixen a la taula semàntica.",
+          "visual_spec": {
+            "title": "Potències de base −2"
+          }
+        },
+        {
+          "body": "Per què (−2)^4 és positiu?||Perquè hi ha quatre factors negatius, un nombre parell, i el producte és +16."
+        },
+        {
+          "body": "Recupera la idea fonamental sense mirar: una potència a^n amb exponent natural positiu multiplica n factors iguals a a. Aplica la regla a un cas nou i contrasta la validesa de la condició."
+        }
+      ]
+    },
+    "E2-N01-L02": {
+      "title": "Producte i quocient de potències",
+      "objectives": [
+        "Aplicar el producte de potències de la mateixa base.",
+        "Fer servir el quocient quan la base és diferent de zero."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a potències amb la mateixa base, a^m × a^n = a^(m+n). Si a és diferent de zero i m≥n, a^m ÷ a^n = a^(m−n). Aquestes regles no serveixen per a bases diferents ni permeten dividir entre zero. Per a bases negatives, conserva els parèntesis quan calculis el signe final."
+        },
+        {
+          "body": "2³ × 2⁴ = 2⁷ = 128: sumem els exponents perquè la base és la mateixa."
+        },
+        {
+          "body": "(−3)⁵ ÷ (−3)³ = (−3)² = 9; restem els exponents amb una base no nul·la."
+        },
+        {
+          "body": "Exponents d’una mateixa base. La gràfica mostra dades orientatives; la taula alternativa en presenta els valors o les expressions explícites.",
+          "alt": "Exponents d’una mateixa base. Les dades també apareixen a la taula semàntica.",
+          "visual_spec": {
+            "title": "Exponents d’una mateixa base"
+          }
+        },
+        {
+          "body": "És correcte sumar les bases a 2³×2²?||No, la base continua sent 2 i se sumen els exponents: 2⁵ = 32."
+        },
+        {
+          "body": "Recupera la idea fonamental sense mirar: per a potències amb la mateixa base, a^m × a^n = a^(m+n). Aplica la regla a un cas nou i contrasta la validesa de la condició."
+        }
+      ]
+    },
+    "E2-N01-L03": {
+      "title": "Potència d’una potència",
+      "objectives": [
+        "Calcular una potència d’una altra potència.",
+        "Distingir una potència d’un producte de potències."
+      ],
+      "content_blocks": [
+        {
+          "body": "Elevar una potència a una altra potència multiplica els exponents: (a^m)^n = a^(m×n), per a exponents naturals. No se sumen, perquè el bloc a^m es repeteix n vegades. En canvi, a^m × a^n suma exponents. No confonguis (a^m)^n amb a^(m^n)."
+        },
+        {
+          "body": "(2³)² = 2⁶ = 64, ja que (2³) es multiplica per si mateix dues vegades."
+        },
+        {
+          "body": "((−2)²)³ = (−2)^6 = 64; l’exponent total és sis, un nombre parell."
+        },
+        {
+          "body": "Potència d’una potència. La gràfica mostra dades orientatives; la taula alternativa en presenta els valors o les expressions explícites.",
+          "alt": "Potència d’una potència. Les dades també apareixen a la taula semàntica.",
+          "visual_spec": {
+            "title": "Potència d’una potència"
+          }
+        },
+        {
+          "body": "Per què (3²)³ no és 3⁵?||Perquè multipliquem els exponents, 2×3=6; 3⁶=729."
+        },
+        {
+          "body": "Recupera la idea fonamental sense mirar: elevar una potència a una altra potència multiplica els exponents: (a^m)^n = a^(m×n), per a exponents naturals. Aplica la regla a un cas nou i contrasta la validesa de la condició."
+        }
+      ]
+    },
+    "E2-N01-L04": {
+      "title": "Arrels quadrades principals",
+      "objectives": [
+        "Reconèixer les arrels quadrades principals.",
+        "Relacionar quadrats perfectes, potències i l’operació inversa de l’arrel."
+      ],
+      "content_blocks": [
+        {
+          "body": "L’arrel quadrada principal de x≥0 és l’únic nombre no negatiu el quadrat del qual és x. Per exemple, √49 = 7, no ±7: l’equació t² = 49 té dues solucions, t=7 i t=−7, però el símbol √49 només indica l’arrel principal. Si un natural no és un quadrat perfecte, la seva arrel pot ser irracional i s’estudia mitjançant fites i estimacions sense presentar decimals truncats com a igualtats exactes."
+        },
+        {
+          "body": "√81=9 perquè 9²=81; −9 també resol t²=81 però no és √81."
+        },
+        {
+          "body": "Com que 4²=16 i 5²=25, es compleix 4 < √20 < 5 sense afirmar cap decimal exacte."
+        },
+        {
+          "body": "Àrea d’un quadrat de costat 7. La gràfica mostra dades orientatives; la taula alternativa en presenta els valors o les expressions explícites.",
+          "alt": "Àrea d’un quadrat de costat 7. Les dades també apareixen a la taula semàntica.",
+          "visual_spec": {
+            "title": "Àrea d’un quadrat de costat 7"
+          }
+        },
+        {
+          "body": "És √36 igual a ±6?||No: √36 representa l’arrel principal, 6; l’equació x²=36 admet ±6."
+        },
+        {
+          "body": "Recupera la idea fonamental sense mirar: l’arrel quadrada principal de x≥0 és l’únic nombre no negatiu el quadrat del qual és x. Aplica la regla a un cas nou i contrasta la validesa de la condició."
+        }
+      ]
+    },
+    "E2-N01-L05": {
+      "title": "Nombres racionals amb signe",
+      "objectives": [
+        "Representar racionals positius i negatius com a quocients.",
+        "Operar i comparar fraccions mantenint equivalències exactes."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un racional es pot expressar com a/b amb a i b enters i b diferent de zero. El signe pot situar-se davant de la fracció, al numerador o al denominador, però es prefereix un denominador positiu. Per sumar es fa servir un denominador comú; per multiplicar es multipliquen els numeradors i els denominadors. Es simplifica dividint tots dos termes pel mateix factor no nul."
+        },
+        {
+          "body": "−1/2 + 3/4 = −2/4 + 3/4 = 1/4, sense arrodoniment decimal."
+        },
+        {
+          "body": "Compara −2/3 i −3/4: −2/3 > −3/4 perquè −8/12 > −9/12."
+        },
+        {
+          "body": "Fraccions amb signe a la recta. La gràfica mostra dades orientatives; la taula alternativa en presenta els valors o les expressions explícites.",
+          "alt": "Fraccions amb signe a la recta. Les dades també apareixen a la taula semàntica.",
+          "visual_spec": {
+            "title": "Fraccions amb signe a la recta"
+          }
+        },
+        {
+          "body": "Per què 1/2 + 1/3 no és 2/5?||Perquè cal utilitzar un denominador comú: 3/6 + 2/6 = 5/6."
+        },
+        {
+          "body": "Recupera la idea fonamental sense mirar: un racional es pot expressar com a/b amb a i b enters i b diferent de zero. Aplica la regla a un cas nou i contrasta la validesa de la condició."
+        }
+      ]
+    },
+    "E2-N01-L06": {
+      "title": "Operacions combinades amb potències i racionals",
+      "objectives": [
+        "Resoldre expressions amb parèntesis, potències i nombres racionals.",
+        "Comprovar equivalències amb càlcul exacte."
+      ],
+      "content_blocks": [
+        {
+          "body": "La jerarquia situa els parèntesis i les potències abans de les multiplicacions/divisions, i aquestes abans de les sumes/restes. Amb fraccions, conserva el quocient exacte i no arrodoneixis els passos intermedis. Una potència negativa amb la base entre parèntesis conserva les regles dels signes. El resultat racional admet una representació simplificada i es pot introduir com a fracció si la interfície ho permet."
+        },
+        {
+          "body": "(−2)² + 1/2 = 4 + 1/2 = 9/2; no és 4/2 ni una suma de bases."
+        },
+        {
+          "body": "2³ − (3/4 × 4) = 8 − 3 = 5. La multiplicació del parèntesi va abans que la resta."
+        },
+        {
+          "body": "Calcula les potències abans de sumar. La gràfica mostra dades orientatives; la taula alternativa en presenta els valors o les expressions explícites.",
+          "alt": "Calcula les potències abans de sumar. Les dades també apareixen a la taula semàntica.",
+          "visual_spec": {
+            "title": "Calcula les potències abans de sumar"
+          }
+        },
+        {
+          "body": "Quant val (−3)² − 4?||Val 9 − 4 = 5: la potència de base negativa amb exponent parell és positiva."
+        },
+        {
+          "body": "Recupera la idea fonamental sense mirar: la jerarquia situa els parèntesis i les potències abans de les multiplicacions/divisions, i aquestes abans de les sumes/restes. Aplica la regla a un cas nou i contrasta la validesa de la condició."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E2-N01-L01-01": {
+      "prompt": "Calcula el valor de (-3)^2.",
+      "hint": "Multiplica la base per si mateixa tantes vegades com indica l’exponent.",
+      "explanation": "Mètode: Multiplica la base per si mateixa tantes vegades com indica l’exponent. Si la base és negativa, el signe depèn de la paritat de l’exponent. Resposta exacta: 9. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L01-02": {
+      "prompt": "Calcula el valor de (-2)^3.",
+      "hint": "Multiplica la base per si mateixa tantes vegades com indica l’exponent.",
+      "explanation": "Mètode: Multiplica la base per si mateixa tantes vegades com indica l’exponent. Si la base és negativa, el signe depèn de la paritat de l’exponent. Resposta exacta: -8. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L01-03": {
+      "prompt": "Calcula el valor de (5)^0.",
+      "hint": "Multiplica la base per si mateixa tantes vegades com indica l’exponent.",
+      "explanation": "Mètode: Multiplica la base per si mateixa tantes vegades com indica l’exponent. Si la base és negativa, el signe depèn de la paritat de l’exponent. Resposta exacta: 1. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L01-04": {
+      "prompt": "Calcula el valor de (-2)^4. Tria el valor exacte correcte.",
+      "hint": "Multiplica la base per si mateixa tantes vegades com indica l’exponent.",
+      "explanation": "Mètode: Multiplica la base per si mateixa tantes vegades com indica l’exponent. Si la base és negativa, el signe depèn de la paritat de l’exponent. Resposta exacta: 16. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L01-05": {
+      "prompt": "Calcula el valor de (3)^4. Tria el valor exacte correcte.",
+      "hint": "Multiplica la base per si mateixa tantes vegades com indica l’exponent.",
+      "explanation": "Mètode: Multiplica la base per si mateixa tantes vegades com indica l’exponent. Si la base és negativa, el signe depèn de la paritat de l’exponent. Resposta exacta: 81. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L02-01": {
+      "prompt": "Calcula el valor de (2)^3 × (2)^4.",
+      "hint": "Per multiplicar potències de la mateixa base, sumem els exponents.",
+      "explanation": "Mètode: Per multiplicar potències de la mateixa base, sumem els exponents. La base es manté inalterada i el signe es determina al final. Resposta exacta: 128. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L02-02": {
+      "prompt": "Calcula el valor de (3)^5 ÷ (3)^3.",
+      "hint": "Amb una base no nul·la, resta el segon exponent del primer.",
+      "explanation": "Mètode: Amb una base no nul·la, resta el segon exponent del primer. Comprova el quocient mitjançant l’operació inversa. Resposta exacta: 9. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L02-03": {
+      "prompt": "Calcula el valor de (-2)^2 × (-2)^3.",
+      "hint": "Per multiplicar potències de la mateixa base, sumem els exponents.",
+      "explanation": "Mètode: Per multiplicar potències de la mateixa base, sumem els exponents. La base es manté inalterada i el signe es determina al final. Resposta exacta: -32. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L02-04": {
+      "prompt": "Calcula el valor de (-3)^4 ÷ (-3)^2. Tria el valor exacte correcte.",
+      "hint": "Amb una base no nul·la, resta el segon exponent del primer.",
+      "explanation": "Mètode: Amb una base no nul·la, resta el segon exponent del primer. Comprova el quocient mitjançant l’operació inversa. Resposta exacta: 9. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L02-05": {
+      "prompt": "Calcula el valor de (5)^1 × (5)^2. Tria el valor exacte correcte.",
+      "hint": "Per multiplicar potències de la mateixa base, sumem els exponents.",
+      "explanation": "Mètode: Per multiplicar potències de la mateixa base, sumem els exponents. La base es manté inalterada i el signe es determina al final. Resposta exacta: 125. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L03-01": {
+      "prompt": "Calcula el valor de [(2)^3]^2.",
+      "hint": "Multiplica els exponents, sense sumar-los.",
+      "explanation": "Mètode: Multiplica els exponents, sense sumar-los. Aplica la regla dels signes a l’exponent total. Resposta exacta: 64. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L03-02": {
+      "prompt": "Calcula el valor de [(-2)^2]^3.",
+      "hint": "Multiplica els exponents, sense sumar-los.",
+      "explanation": "Mètode: Multiplica els exponents, sense sumar-los. Aplica la regla dels signes a l’exponent total. Resposta exacta: 64. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L03-03": {
+      "prompt": "Calcula el valor de [(3)^1]^3.",
+      "hint": "Multiplica els exponents, sense sumar-los.",
+      "explanation": "Mètode: Multiplica els exponents, sense sumar-los. Aplica la regla dels signes a l’exponent total. Resposta exacta: 27. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L03-04": {
+      "prompt": "Calcula el valor de [(-3)^2]^2. Tria el valor exacte correcte.",
+      "hint": "Multiplica els exponents, sense sumar-los.",
+      "explanation": "Mètode: Multiplica els exponents, sense sumar-los. Aplica la regla dels signes a l’exponent total. Resposta exacta: 81. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L03-05": {
+      "prompt": "Calcula el valor de [(2)^2]^4. Tria el valor exacte correcte.",
+      "hint": "Multiplica els exponents, sense sumar-los.",
+      "explanation": "Mètode: Multiplica els exponents, sense sumar-los. Aplica la regla dels signes a l’exponent total. Resposta exacta: 256. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L04-01": {
+      "prompt": "Quina és l’arrel quadrada principal de 81?",
+      "hint": "Troba el nombre no negatiu el quadrat del qual és el radicand.",
+      "explanation": "Mètode: Troba el nombre no negatiu el quadrat del qual és el radicand. No escriguis les dues solucions de l’equació quadràtica. Resposta exacta: 9. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L04-02": {
+      "prompt": "Quina és l’arrel quadrada principal de 49?",
+      "hint": "Troba el nombre no negatiu el quadrat del qual és el radicand.",
+      "explanation": "Mètode: Troba el nombre no negatiu el quadrat del qual és el radicand. No escriguis les dues solucions de l’equació quadràtica. Resposta exacta: 7. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L04-03": {
+      "prompt": "Quin enter positiu és la part entera de √20, és a dir, l’enter més gran k amb k² ≤ 20?",
+      "hint": "Busca dos quadrats perfectes consecutius entre els quals es trobi el radicand.",
+      "explanation": "Mètode: Busca dos quadrats perfectes consecutius entre els quals es trobi el radicand. No substitueixis l’arrel irracional per una igualtat decimal aproximada. Resposta exacta: 4. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L04-04": {
+      "prompt": "Quin enter positiu és la part entera de √30, és a dir, l’enter més gran k amb k² ≤ 30? Tria el valor exacte correcte.",
+      "hint": "Busca dos quadrats perfectes consecutius entre els quals es trobi el radicand.",
+      "explanation": "Mètode: Busca dos quadrats perfectes consecutius entre els quals es trobi el radicand. No substitueixis l’arrel irracional per una igualtat decimal aproximada. Resposta exacta: 5. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L04-05": {
+      "prompt": "Quina és l’arrel quadrada principal de 144? Tria el valor exacte correcte.",
+      "hint": "Troba el nombre no negatiu el quadrat del qual és el radicand.",
+      "explanation": "Mètode: Troba el nombre no negatiu el quadrat del qual és el radicand. No escriguis les dues solucions de l’equació quadràtica. Resposta exacta: 12. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L05-01": {
+      "prompt": "Calcula el valor de (-1/2) + (3/4).",
+      "hint": "Busca el denominador comú i opera els numeradors tenint en compte els signes.",
+      "explanation": "Mètode: Busca el denominador comú i opera els numeradors tenint en compte els signes. Simplifica la fracció resultant sense arrodonir. Resposta exacta: 0,25. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L05-02": {
+      "prompt": "Calcula el valor de (2/5) × (5/4).",
+      "hint": "Multiplica els numeradors i els denominadors.",
+      "explanation": "Mètode: Multiplica els numeradors i els denominadors. Simplifica els factors comuns abans o després del producte. Resposta exacta: 0,5. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L05-03": {
+      "prompt": "Calcula el valor de (1/2) + (1/4).",
+      "hint": "Busca el denominador comú i opera els numeradors tenint en compte els signes.",
+      "explanation": "Mètode: Busca el denominador comú i opera els numeradors tenint en compte els signes. Simplifica la fracció resultant sense arrodonir. Resposta exacta: 0,75. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L05-04": {
+      "prompt": "Compara -2/3 i -3/4; tria <, = o >.",
+      "hint": "Expressa totes dues fraccions amb un mateix denominador positiu.",
+      "explanation": "Mètode: Expressa totes dues fraccions amb un mateix denominador positiu. Compara els numeradors amb el signe correcte. Categoria correcta: >. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L05-05": {
+      "prompt": "Calcula el valor de (1/3) + (1/6). Tria el valor exacte correcte.",
+      "hint": "Busca el denominador comú i opera els numeradors tenint en compte els signes.",
+      "explanation": "Mètode: Busca el denominador comú i opera els numeradors tenint en compte els signes. Simplifica la fracció resultant sense arrodonir. Resposta exacta: 0,5. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L06-01": {
+      "prompt": "Calcula el valor de (-2)^2 + (1/2).",
+      "hint": "Calcula la potència abans de sumar el racional.",
+      "explanation": "Mètode: Calcula la potència abans de sumar el racional. Mantén la fracció exacta i fes servir un denominador comú si cal. Resposta exacta: 4,5. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L06-02": {
+      "prompt": "Calcula el valor de (3)^2 + (-1/4).",
+      "hint": "Calcula la potència abans de sumar el racional.",
+      "explanation": "Mètode: Calcula la potència abans de sumar el racional. Mantén la fracció exacta i fes servir un denominador comú si cal. Resposta exacta: 8,75. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L06-03": {
+      "prompt": "Calcula el valor de (-3)^2 + (-4/1).",
+      "hint": "Calcula la potència abans de sumar el racional.",
+      "explanation": "Mètode: Calcula la potència abans de sumar el racional. Mantén la fracció exacta i fes servir un denominador comú si cal. Resposta exacta: 5. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L06-04": {
+      "prompt": "Calcula el valor de (2)^3 + (1/4). Tria el valor exacte correcte.",
+      "hint": "Calcula la potència abans de sumar el racional.",
+      "explanation": "Mètode: Calcula la potència abans de sumar el racional. Mantén la fracció exacta i fes servir un denominador comú si cal. Resposta exacta: 8,25. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    },
+    "F3-E2-N01-L06-05": {
+      "prompt": "Calcula el valor de (-2)^4 + (-3/2). Tria el valor exacte correcte.",
+      "hint": "Calcula la potència abans de sumar el racional.",
+      "explanation": "Mètode: Calcula la potència abans de sumar el racional. Mantén la fracció exacta i fes servir un denominador comú si cal. Resposta exacta: 14,5. Compara el procediment amb la teoria d’aquesta lliçó, no només amb el resultat."
+    }
+  }
+}
