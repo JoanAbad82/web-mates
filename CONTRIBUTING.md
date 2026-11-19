@@ -22,14 +22,19 @@ Los pull requests no se despliegan automáticamente. El proyecto utiliza
 versionado, pruebas y revisión de cambios; es posible añadir futuras
 secciones sin alterar silenciosamente los identificadores actuales.
 
-## Catal? (prioritat actual)
+## Català (prioritat actual)
 
-Per col?laborar en la traducci? completa al catal?, presenta't i indica els IDs de la
+Per col·laborar en la traducció completa al català, presenta't i indica els IDs de la
 unitat que vols traduir a [l'Issue #1](https://github.com/JoanAbad82/web-mates/issues/1).
-Consulta el [contracte de localitzaci?](docs/i18n/CA_ES_PLAN_Y_CONTRATO.md).
+Consulta el [contracte de localització](docs/i18n/PAQUETES_CA_ES_V1.md).
 
-**Mant?n intactos** els IDs, les solucions, els validadors i el graf de prerequisits.
-No confonguis cobertura de traducci? amb revisi? matem?tica ni ling??stica.
-Marca els textos tradu?ts com a esborrany, revisi? o validat amb evid?ncies.
-No introdueixis dades personals de menors ni obres de tercers sense drets MIT.
-Les contribucions es tramiten per Pull Request i no impliquen un desplegament autom?tic.
+Pots obtenir una plantilla sense traduir amb:
+python tests/i18n_scaffold.py --unit E2-A02 --lesson E2-A02-L01 --output C:/temp/E2-A02.template.json.
+Completa tots els textos, conserva IDs, respostes, opcions i validadors,
+afegeix el paquet versionat i regenera el manifest amb
+python tests/i18n_coverage.py --write.
+
+No confonguis cobertura de traducció amb revisió matemàtica ni lingüística.
+Marca els textos com a esborrany, revisió o validat només amb les evidències i
+l'esquema aplicable. No introdueixis dades de menors ni obres de tercers
+sense una llicència compatible amb MIT. Les Pull Requests no es despleguen automàticament.

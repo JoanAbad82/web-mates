@@ -107,8 +107,40 @@ let server,browser;
   pageTitle:document.querySelector('#main h1')?.textContent,
   bannerVisible:!document.querySelector('#locale-partial').hidden
  }));
- check('F3_LESSON_ORIGINAL_SPANISH_FALLBACK',f3.mainLang==='es'&&f3.selected==='ca'&&f3.hasF3Content&&f3.bannerVisible,
-  f3,'F3 lesson remains readable in Spanish with language attribution');
+ check('F3_LESSON_CA_DRAFT',f3.mainLang==='ca'&&f3.selected==='ca'&&
+   f3.pageTitle.startsWith('Valor posicional i')&&f3.bannerVisible,
+  f3,'First fully translated draft lesson has lang ca');
+ const caExercise=await page.$eval('.f1-question-prompt',e=>e.textContent);
+ check('F3_DRAFT_EXERCISE_PROMPT_CA',caExercise.startsWith('Quina xifra ocupa'),
+   caExercise,'Source first prompt localized to ca');
+ await page.click('#f3-answer');
+ await page.keyboard.type('8');
+ await page.click('.f3-question button[type=submit]');
+ const response=await page.$eval('.f3-feedback',e=>e.textContent);
+ check('F3_DRAFT_EXERCISE_VALIDATOR_UNCHANGED',response.includes('Correcte.')&&response.includes('Resultat: 8'),
+   response.slice(0,170),'Engine correct + localized explanation in draft');
+ await page.select('#locale-select','es');
+ const restored=await page.evaluate(()=>({
+  lang:document.querySelector('#main').lang,
+  lesson:document.querySelector('#main h1')?.textContent,
+  prompt:document.querySelector('.f1-question-prompt')?.textContent
+ }));
+ check('ES_RESTORES_LESSON_AND_PROMPT',restored.lang==='es'&&
+   restored.lesson.startsWith('Valor posicional y')&&restored.prompt.includes('100 unidades'),
+  restored,'Original Spanish lesson restored');
+ await page.select('#locale-select','ca');
+ const back=await page.$eval('.f1-question-prompt',e=>e.textContent);
+ check('CA_SWITCH_BACK_SAME_ROUTE',back.includes('Quina xifra'),back,'Catalan restored');
+ await page.goto(base+'?lang=ca#/curso/E1/unidad/E1-N01/leccion/E1-N01-L02',{waitUntil:'networkidle0'});
+ await page.waitForSelector('.f1-question-prompt',{timeout:12000});
+ const pending=await page.evaluate(()=>({
+  mainLang:document.querySelector('#main').lang,
+  prompt:document.querySelector('.f1-question-prompt')?.textContent,
+  bannerVisible:!document.querySelector('#locale-partial').hidden
+ }));
+ check('UNTRANSLATED_LESSON_ES_FALLBACK',pending.mainLang==='es'&&pending.bannerVisible,
+  pending,'All still-pending lessons correctly attribute Spanish');
+
  check('NO_JS_OR_EXTERNAL',results.jsErrors.length===0&&results.external.length===0&&results.httpErrors.length===0,
   {jsErrors:results.jsErrors,external:results.external,httpErrors:results.httpErrors},'no errors/requests');
  }catch(e){results.jsErrors.push('FATAL '+e.stack);console.log('FATAL',e.stack);}

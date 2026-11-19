@@ -2,6 +2,7 @@
 // La UI i els 85 títols d'unitat estan en ca-ES com a esborrany.
 // Els textos de lliçons i exercicis segueixen en es-ES fins que hi hagi recursos revisats.
 import {CA_UNIT_TITLES,CA_COURSE_NAMES} from './i18n_ca_catalog.js';
+import {translateUnitText,ensureUnitOverlay,loadLocaleManifest,setCanonicalLessonTitles,localizedLessonIds,configureRedraw} from './i18n_unit_overlays.js';
 
 const ui = Object.freeze({
   'Saltar al contenido':'Ves al contingut',
@@ -102,12 +103,21 @@ function translate(original){
   if(count)return `${count[1]} unitats · ${count[2]} lliçons`;
   const lessonCount=/^(\d+) lecciones · (.+)$/.exec(trim);
   if(lessonCount)return `${lessonCount[1]} lliçons · ${lessonCount[2]}`;
-  return raw;
+  const countActivities=/^Practica lo aprendido · (\d+) actividades$/.exec(trim);
+  if(countActivities)return `Practica el que has après · ${countActivities[1]} activitats`;
+  const activityIndex=/^Actividad (\d+) de (\d+)(.*)$/.exec(trim);
+  if(activityIndex)return `Activitat ${activityIndex[1]} de ${activityIndex[2]}${activityIndex[3]}`;
+  let resolved=raw;
+  for(const [src,ca] of [['Correcto. ','Correcte. '],['Aún no. ','Encara no. '],['Solución explicada: ','Solució explicada: ']]){
+    if(resolved.startsWith(src)){resolved=ca+resolved.slice(src.length);break;}
+  }
+  return translateUnitText(resolved);
 }
 function currentLang(){
   const hash=location.hash.replace(/^#\/?/,'').split('/').filter(Boolean);
   // Les pàgines amb lliçons F1/F3 encara són en castellà: etiqueta d'idioma correcta.
-  return locale==='ca'&&(hash.length===0||(hash[0]==='curso'&&hash.length===2))?'ca':'es';
+  return locale==='ca'&&(hash.length===0||(hash[0]==='curso'&&hash.length===2)||
+    (hash.length===6&&hash[4]==='leccion'&&localizedLessonIds.has(hash[5])))?'ca':'es';
 }
 function markLanguage(){
   document.documentElement.lang=locale==='ca'?'ca':'es';
@@ -156,8 +166,16 @@ function setLocale(next){
   const banner=document.querySelector('#locale-partial');
   if(banner)banner.hidden=locale!=='ca';
   applyTo(document.body);
+  if(locale==='ca'){
+    const hash=location.hash.slice(1).split('/').filter(Boolean);
+    const unit=hash[0]==='curso'&&hash[2]==='unidad'?hash[3]:null;
+    if(unit)ensureUnitOverlay(unit,locale).catch(e=>console.warn('ca-ES fallback:',e.message));
+  }
 }
-export function initI18n(catalog){
+export async function initI18n(catalog){
+  setCanonicalLessonTitles(catalog);
+  const coverage=await loadLocaleManifest();
+  configureRedraw(()=>applyTo(document.body));
   titles.clear();
   const counters={units:0,lessons:0};
   for(const c of catalog.courses){
@@ -188,7 +206,12 @@ export function initI18n(catalog){
   banner.id='locale-partial'; banner.className='locale-partial';
   banner.lang='ca';banner.setAttribute('role','note');
   const info=document.createElement('span');
-  info.textContent='Català en construcció: navegació i 85 títols d’unitat en esborrany. Les 505 lliçons i els 2.525 exercicis continuen en castellà fins a la traducció i revisió.';
+  const numLessons=coverage.counts.translated_lesson_drafts;
+  const numActivities=coverage.counts.translated_activity_drafts;
+  info.textContent='Català en construcció: '+numLessons+' '+(numLessons===1?'lliçó':'lliçons')+
+   ' i '+numActivities+' activitats traduïdes en esborrany de '+coverage.counts.lessons+
+   ' lliçons i '+coverage.counts.activities+
+   ' activitats totals. La resta continua en castellà fins a la traducció i revisió.';
   const link=document.createElement('a');
   link.href='https://github.com/JoanAbad82/web-mates/issues/1';
   link.textContent='Col·labora en la traducció';
@@ -205,7 +228,14 @@ export function initI18n(catalog){
     markLanguage();
   });
   observer.observe(document.body,{childList:true,characterData:true,subtree:true});
-  window.addEventListener('hashchange',markLanguage);
+  const updateRouteLocale=()=>{
+    markLanguage();
+    const hash=location.hash.slice(1).split('/').filter(Boolean);
+    const uid=hash[0]==='curso'&&hash[2]==='unidad'?hash[3]:null;
+    if(uid&&locale==='ca')ensureUnitOverlay(uid,locale).catch(e=>console.warn('ca-ES fallback:',e.message));
+  };
+  window.addEventListener('hashchange',updateRouteLocale);
   applyTo(document.body);
+  updateRouteLocale();
 }
 export const getLanguage=()=>locale;

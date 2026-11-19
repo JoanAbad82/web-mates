@@ -64,19 +64,26 @@ El nombre visible MATEVOLT sigue provisional, pendiente de un examen de
 semejanzas; no se considera una marca disponible por incluirla en un repositorio.
 GitHub Pages no está activado: el código fuente público no significa que la web esté desplegada.
 
-## Idiomas y traducci?n: prioridad al catal?n (19/11/2026)
+## Idiomas: prioridad al catalán — 19/11/2026
 
-**C?digo abierto ya publicado; traducci?n al catal?n en desarrollo.**
-La web dispone de selector ?Catal? (beta) / Castellano? y mantiene los IDs can?nicos.
-Se han preparado los nombres de los 9 itinerarios y los t?tulos de las 85 unidades en catal?n,
-como borrador ling??stico. **Las 505 lecciones y 2.525 actividades siguen en castellano**:
-no se anuncian como traducidas ni validadas. El contenido original permanece en revisi?n.
+**Repositorio público MIT; traducción al catalán en desarrollo.**
+La aplicación ofrece el selector «Català (beta) / Castellano», con 9 itinerarios y
+85 títulos de unidad traducidos al catalán en borrador. El manifiesto incluye las
+85 unidades, sus 505 lecciones y las 2.525 actividades con cobertura verificable.
 
-La interfaz puede abrirse con los par?metros de URL ?lang=ca o ?lang=es; la elecci?n no se
-guarda en cookies ni en localStorage. El fallback muestra un aviso expl?cito y conserva
-lang=es en las lecciones no traducidas, para no desorientar a los lectores de pantalla.
+**Cobertura real actual:** 1 lección (E1-N01-L01) y sus 5 actividades contienen
+textos catalanes en un paquete versionado, sin revisión lingüística humana.
+Las otras 504 lecciones y 2.520 actividades continúan en castellano.
+La interfaz F1/F3 todavía mezcla algunas etiquetas de ambos idiomas.
+No se presentan traducciones pendientes como terminadas ni homologadas.
 
-Para participar: [traducci?n catalana, Issue #1](https://github.com/JoanAbad82/web-mates/issues/1).
-Consulta [plan y contrato i18n](docs/i18n/CA_ES_PLAN_Y_CONTRATO.md).
-El ingl?s se a?adir? en una fase posterior; a?n no est? implementado.
-Esta actualizaci?n del repositorio no activa GitHub Pages ni publica una web accesible a alumnado.
+La preferencia se pasa por URL (?lang=ca o ?lang=es), sin cookies ni localStorage.
+El contenido no traducido conserva una marca explícita de idioma para lector de pantalla.
+
+**Contribuir:** [Issue #1](https://github.com/JoanAbad82/web-mates/issues/1).
+[Contrato y generador de paquetes](docs/i18n/PAQUETES_CA_ES_V1.md) y
+[plan de localización](docs/i18n/CA_ES_PLAN_Y_CONTRATO.md).
+Las nuevas traducciones se aceptan mediante Pull Requests con pruebas de integridad.
+El inglés queda para más adelante.
+
+Este cambio publica **código fuente**, no despliega la web: GitHub Pages sigue desactivado.
