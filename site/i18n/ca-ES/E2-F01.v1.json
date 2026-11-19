@@ -1,0 +1,333 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E2-F01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e2_f01.json": "a8d929162d7bb5b216043d0aa67326572269e730044ad0b101063f9ccbd7d79e",
+    "data/f3_e2_f01_exercises.json": "c0db845cc45a6f23533d8c514a74929cce008d9d6f6e207940029d99eeb6570e"
+  },
+  "lessons": {
+    "E2-F01-L01": {
+      "title": "Variable independent i dependent",
+      "objectives": [
+        "Distingir variable independent i dependent en situacions quotidianes.",
+        "Calcula una sortida a partir d'una entrada i descriu les restriccions realistes."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una funció assigna a cada valor permès de la variable independent x un únic valor y. En un cost que depèn de quilòmetres recorreguts, x són quilòmetres (entrada) i i és preu (sortida). La quantitat i depèn de x. El domini real pot restringir-se: no existeixen quilòmetres negatius ni mitjanes entrades en un recompte."
+        },
+        {
+          "body": "Un taxi cobra 4 € fixos més 2 € per quilòmetre: C(x)=4+2x. Per a x=3 km el cost és 10 €. La distància és independent, el cost depèn d'ella."
+        },
+        {
+          "body": "Una màquina calcula y=3x−1. Per x=0 retorna −1 i per x=4 retorna 11. Cada entrada només té una sortida."
+        },
+        {
+          "body": "Taula: quilòmetres 0 1 2 3; cost (€) 4 6 8 10. L'entrada creix de 1 a 1 i la sortida de 2 a 2.",
+          "alt": "Tarifa C(x)=4+2x; valors detallats a la taula verbal."
+        },
+        {
+          "body": "Pot la mateixa entrada x=2 tenir simultàniament dos valors de sortida diferents en una funció?||No. Per ser funció, cada x admès té exactament una imatge i; diferents x sí que poden compartir una sortida."
+        },
+        {
+          "body": "Entrada x → regla → sortida i. Defineix unitats i domini; no confones què canvia amb què depèn."
+        }
+      ]
+    },
+    "E2-F01-L02": {
+      "title": "Taula, fórmula i gràfica",
+      "objectives": [
+        "Construeix taules de valors de funcions senzilles a partir d'una regla.",
+        "Relacionar taula, expressió algebraica, parells i gràfica sense perdre les unitats."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una funció pot descriure's amb paraules, taula, fórmula i gràfica. Totes les representacions han de parlar dels mateixos parells (x,y). Per a dibuixar una recta només cal calcular dos punts diferents, per a comprovar una taula, substitueix els seus valors en la fórmula."
+        },
+        {
+          "body": "Per a y=2x+1: x=0 dóna y=1; x=1 dóna y=3; x=2 dóna y=5. Els parells (0,1), (1,3) i (2,5) estan alineats."
+        },
+        {
+          "body": "Per a y=4−x: si x=0,1, 2,3, les sortides són 4,3, 2,1. La gràfica descendeix una unitat per cada unitat que avança x."
+        },
+        {
+          "body": "Taula accessible: x: 0 1 2 3; y=2x+1: 1 3 5 7. Un punt (x,y) es llegeix primer horitzontal i després vertical.",
+          "alt": "Recta y=2x+1; valors detallats en la taula verbal."
+        },
+        {
+          "body": "Si el punt (2,5) pertany a y=2x+1, quina comprovació permet verificar-lo?||Substituir x=2: 2·2+1=5, que coincideix amb la coordenada i del punt."
+        },
+        {
+          "body": "De fórmula a taula: tria x → calcula i. De taula a gràfica: representa cada parella. De gràfica a fórmula: identifica regularitat i comprova-la."
+        }
+      ]
+    },
+    "E2-F01-L03": {
+      "title": "Rectes i pendent",
+      "objectives": [
+        "Interpretar el pendent com a canvi vertical per unitat de canvi horitzontal.",
+        "Calcular pendents entre dos punts i distingir creixement, descens i constància."
+      ],
+      "content_blocks": [
+        {
+          "body": "El pendent m d'una recta mesura quant canvia i quan x augmenta una unitat. Entre dos punts amb x diferents: m=(y₂−y₁)/(x₂−x₁). Si m>0 la recta puja d'esquerra a dreta; si m<0 baixa; si m=0 és horitzontal. Si x₂=x₁, la recta és vertical i aquesta raó no està definida."
+        },
+        {
+          "body": "Punts (1,2) i (3,6): i creix 4 mentre x creix 2; m=4/2=2."
+        },
+        {
+          "body": "Punts (0,5) i (2,1): la variació i és −4 i la de x és +2; m=−2. La funció decreix."
+        },
+        {
+          "body": "Taula de canvis: de (1,2) a (3,6), pas horitzontal +2 i vertical +4. Divideix variació vertical per horitzontal per obtenir 2.",
+          "alt": "Pendent negativa m=−2; valors detallats en la taula verbal."
+        },
+        {
+          "body": "Per què en el pendent no es pot dividir per x₂−x₁=0?||Perquè seria dividir per zero: una recta vertical no representa i com a funció de x amb una sola sortida per a cada x."
+        },
+        {
+          "body": "Pendent = Δy/Δx (Δx no nul). Positiva puja, negativa baixa, zero és horitzontal."
+        }
+      ]
+    },
+    "E2-F01-L04": {
+      "title": "Ordenada a l'origen",
+      "objectives": [
+        "Identificar l'ordenada a l'origen en y= mx +b.",
+        "Deduir on talla una recta a l'eix vertical i distingir pendent d'intercepte."
+      ],
+      "content_blocks": [
+        {
+          "body": "En la funció afí y= mx +b, el nombre b és el valor de i quan x=0: és l'ordenada en l'origen i correspon al punt (0,b). m expressa la inclinació de la recta. Dues rectes amb igual m són paral·leles si els seus b són diferents."
+        },
+        {
+          "body": "En y=2x+5, quan x=0, y=5. La recta passa per (0,5); el seu pendent és 2."
+        },
+        {
+          "body": "La recta y=−3x+7 comença en y=7 quan x=0 i descendeix 3 unitats en avançar x una unitat."
+        },
+        {
+          "body": "Taula: y=−x+3, per x=0 el valor és 3; per x=1 és 2; per x=2 és 1. El tall amb l'eix i és (0,3).",
+          "alt": "Recta y=−x+3; valors detallats en la taula verbal."
+        },
+        {
+          "body": "És b la coordenada x del tall amb l'eix vertical?||No. El tall amb l'eix vertical té x=0 i coordenada y=b."
+        },
+        {
+          "body": "En y= mx +b: m és pendent i b és alçada en tallar l'eix y. Substitueix x=0 per trobar-la."
+        }
+      ]
+    },
+    "E2-F01-L05": {
+      "title": "Proporcionalitat i funció lineal",
+      "objectives": [
+        "Reconèixer una proporcionalitat directa com y= kx.",
+        "Distingir un model proporcional d'un afí amb terme fix."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si i és directament proporcional a x, y= kx i, per x>0, la raó y/x roman constant k. La seva gràfica passa per l'origen (0,0). Una funció y= kx +b amb b≠0 no representa proporcionalitat directa, encara que dibuixi una recta; té una quantitat inicial no nul·la."
+        },
+        {
+          "body": "A 3 € per quadern, 1 costa 3 €, 2 costen 6 € i 4 costen 12 €. Model C(n)=3n; en comprar zero, el cost és zero."
+        },
+        {
+          "body": "Un servei cobra 5 € fixos més 3 € per ús: C(n)=5+3n. No és proporcionalitat directa perquè C(0)=5."
+        },
+        {
+          "body": "Comparació de taules: proporcional y=3x: x 0 1 2 → i 0 3 6; afí y=3x+5: x 0 1 2 → i 5 8 11.",
+          "alt": "Proporcionalitat y=3x; valors detallats en la taula verbal."
+        },
+        {
+          "body": "Per què y=4x+2 no és proporcionalitat directa encara que sigui una recta?||Perquè amb x=0 la sortida és 2 i no 0; la raó y/x no es manté constant."
+        },
+        {
+          "body": "Proporcionalitat directa: y= kx i passa per (0,0). Tarifa fixa diferent de zero → funció afí, no directament proporcional."
+        }
+      ]
+    },
+    "E2-F01-L06": {
+      "title": "Models de tarifes i moviments",
+      "objectives": [
+        "Construir models afins de tarifes i moviments uniformes.",
+        "Interpretar pendent, cost inicial i unitats; comparar dos models."
+      ],
+      "content_blocks": [
+        {
+          "body": "En una tarifa C(x)=b+ mx, b és el cost inicial i m el cost per unitat. En moviment uniforme s(t)=s₀+ vt, s₀ és posició inicial i v velocitat (distància per temps). Especifica unitats i un domini raonable: no té sentit una distància recorreguda negativa."
+        },
+        {
+          "body": "Pla A: 4 € fixos i 2 €/ viatge; per a 5 viatges C_ A(5)=4+2·5=14 €. Pla B: 8 € fixos i 1 €/ viatge; C_ B(5)=13 €."
+        },
+        {
+          "body": "Una persona parteix del quilòmetre 3 i avança a 5 km/h: s(t)=3+5t. A les 2 h està al km 13. La distància recorreguda seria 10 km, diferent de la posició 13."
+        },
+        {
+          "body": "Taula tarifa A: viatges 0 1 2 4 5, preu 4 6 8 12 14. Es veu tant el càrrec inicial com l'increment fix.",
+          "alt": "Tarifa de 4 € fixos i 2 €/ ús; valors detallats a la taula verbal."
+        },
+        {
+          "body": "Si una tarifa té 4 € de fix i 2 € per ús, quant costa encara que no hi hagi cap ús?||Costa 4 €: és l'ordenada en l'origen i es conserva amb x=0."
+        },
+        {
+          "body": "Model = valor inicial + taxa·quantitat. Comprova pendent, unitats, intercepte i límits del context."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E2-F01-L01-01": {
+      "prompt": "Un taxi té C(x)=4+2x euros. Preu per a 3 km?",
+      "hint": "x és la distància, mesurada en km.",
+      "explanation": "El cost és 10 €."
+    },
+    "F3-E2-F01-L01-02": {
+      "prompt": "Per a y=3x−1, quant val i si x=4?",
+      "hint": "Aplica la regla de la màquina.",
+      "explanation": "Sortida 11. Procediment: 3·4−1. Comprova que correspon a l'enunciat original."
+    },
+    "F3-E2-F01-L01-03": {
+      "prompt": "En C(k)=4+2k, quina variable pot triar-se com a entrada independent?",
+      "hint": "El cost es calcula a partir d'una distància introduïda.",
+      "explanation": "L'entrada és quilòmetres."
+    },
+    "F3-E2-F01-L01-04": {
+      "prompt": "Relació: (1,2), (1,4), (2,6). És funció de x?",
+      "hint": "Fixa't si la mateixa entrada x es repeteix amb sortides diferents.",
+      "explanation": "No és funció de x."
+    },
+    "F3-E2-F01-L01-05": {
+      "prompt": "Una tarifa C(x)=4+2x, quin cost té amb 0 km?",
+      "hint": "El terme fix és el cost inicial.",
+      "explanation": "El cost continua sent 4 €."
+    },
+    "F3-E2-F01-L02-01": {
+      "prompt": "En y=2x+1, calcula i per x=3.",
+      "hint": "Substitueix x per 3.",
+      "explanation": "El valor és 7."
+    },
+    "F3-E2-F01-L02-02": {
+      "prompt": "En y=4−x, calcula i per x=3.",
+      "hint": "Pista: Resta 3 a 4.",
+      "explanation": "La sortida val 1."
+    },
+    "F3-E2-F01-L02-03": {
+      "prompt": "Taula x=0,1, 2 e y=1,3, 5: quina fórmula coincideix?",
+      "hint": "Cada pas horitzontal +1 produeix pas vertical +2.",
+      "explanation": "y=2x+1 genera 1,3, 5."
+    },
+    "F3-E2-F01-L02-04": {
+      "prompt": "Pertany (2,5) a la recta y=2x+1?",
+      "hint": "Substitueix la coordenada x.",
+      "explanation": "Sí, el parell compleix la fórmula."
+    },
+    "F3-E2-F01-L02-05": {
+      "prompt": "Per a la regla y=6−2x, calcula i quan x=2.",
+      "hint": "Primer multiplica 2x.",
+      "explanation": "y=2. Procediment: 6−4. Comprova que correspon a l'enunciat original."
+    },
+    "F3-E2-F01-L03-01": {
+      "prompt": "Pendent entre els punts (1,2) i (3,6).",
+      "hint": "Calcula Δy=6−2 i Δx=3−1.",
+      "explanation": "El pendent és 2."
+    },
+    "F3-E2-F01-L03-02": {
+      "prompt": "Pendent entre (0,5) i (2,1).",
+      "hint": "La sortida disminueix de 5 a 1.",
+      "explanation": "El pendent és −2."
+    },
+    "F3-E2-F01-L03-03": {
+      "prompt": "Pendent entre (0,3) i (3,3).",
+      "hint": "No hi ha canvi vertical.",
+      "explanation": "m=0, recta horitzontal."
+    },
+    "F3-E2-F01-L03-04": {
+      "prompt": "La recta y=−3x+4, creu o decreix en augmentar x?",
+      "hint": "Observa el signe del coeficient de x.",
+      "explanation": "És decreixent."
+    },
+    "F3-E2-F01-L03-05": {
+      "prompt": "La recta y=3x+1 té pendent…",
+      "hint": "El pendent és el coeficient de x.",
+      "explanation": "Pendent +3."
+    },
+    "F3-E2-F01-L04-01": {
+      "prompt": "Per a y=2x+5, quina és l'ordenada en l'origen?",
+      "hint": "Posa x=0.",
+      "explanation": "El tall vertical està en (0,5)."
+    },
+    "F3-E2-F01-L04-02": {
+      "prompt": "Per a y=−3x+7, quina és l'ordenada en l'origen?",
+      "hint": "Observa el terme sense x.",
+      "explanation": "b=7. Procediment: Pon x=0. Comprova que correspon a l'enunciat original."
+    },
+    "F3-E2-F01-L04-03": {
+      "prompt": "Per a y=−x+3, quin és el valor d'i quan x=0?",
+      "hint": "Eix vertical significa x=0.",
+      "explanation": "El tall vertical és y=3."
+    },
+    "F3-E2-F01-L04-04": {
+      "prompt": "Una recta passa per (0,4) i té pendent 2: quina és la seva ordenada en l'origen?",
+      "hint": "El tall vertical té x=0.",
+      "explanation": "El terme b és 4."
+    },
+    "F3-E2-F01-L04-05": {
+      "prompt": "En y=4x+1, quin nombre és l'ordenada en l'origen?",
+      "hint": "No confonens pendent i tall vertical.",
+      "explanation": "b=1. Procediment: Pon x=0 i calcula i. Comprova que correspon a l'enunciat original."
+    },
+    "F3-E2-F01-L05-01": {
+      "prompt": "Quaderns a 3 € cadascun: quant costen 4 quaderns sense cost fix?",
+      "hint": "És proporcional a la quantitat.",
+      "explanation": "Cost 12 €. Procediment: 3·4. Comprova que correspon a l'enunciat original."
+    },
+    "F3-E2-F01-L05-02": {
+      "prompt": "Si x=3 produeix y=12 en y= kx, quant val k?",
+      "hint": "Divideix i entre x.",
+      "explanation": "La constant de proporcionalitat és 4."
+    },
+    "F3-E2-F01-L05-03": {
+      "prompt": "És y=4x+2 una proporcionalitat directa?",
+      "hint": "La directa ha de passar per l'origen.",
+      "explanation": "No és proporcionalitat directa."
+    },
+    "F3-E2-F01-L05-04": {
+      "prompt": "És y=5x una proporcionalitat directa?",
+      "hint": "Comprova la sortida per a x=0.",
+      "explanation": "Sí, és y= kx."
+    },
+    "F3-E2-F01-L05-05": {
+      "prompt": "Si y=2,5x, quant és i amb x=4?",
+      "hint": "Multiplica el valor d'entrada per 2,5.",
+      "explanation": "y=10. Procediment: 2,5·4. Comprova que correspon a l'enunciat original."
+    },
+    "F3-E2-F01-L06-01": {
+      "prompt": "Pla A: 4 € fixos i 2 € per viatge. Cost de 5 viatges?",
+      "hint": "Suma terme fix i variable.",
+      "explanation": "Total 14 €. Procediment: 4+2·5. Comprova que correspon a l'enunciat original."
+    },
+    "F3-E2-F01-L06-02": {
+      "prompt": "La posició s(t)=3+5t km, amb t en h. Posició després de 2 h?",
+      "hint": "Substitueix t=2.",
+      "explanation": "Quilòmetre 13."
+    },
+    "F3-E2-F01-L06-03": {
+      "prompt": "Pla B: 8 € fixos i 1 € per viatge. Cost de 5 viatges?",
+      "hint": "Ús 8+1·5.",
+      "explanation": "Total 13 €. Procediment: 8+5. Comprova que correspon a l'enunciat original."
+    },
+    "F3-E2-F01-L06-04": {
+      "prompt": "Per a 5 viatges, Pla A=4+2x i Pla B=8+x. Quin pla és més barat?",
+      "hint": "Avalua ambdós per a x=5.",
+      "explanation": "B costa 1 € menys."
+    },
+    "F3-E2-F01-L06-05": {
+      "prompt": "Per 4 viatges, A=4+2x i B=8+x. Quina comparació és correcta?",
+      "hint": "Substitueix el mateix x en ambdues tarifes.",
+      "explanation": "Tots dos plans costen 12 €."
+    }
+  }
+}

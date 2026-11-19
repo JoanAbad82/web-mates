@@ -2,10 +2,11 @@
 """Deterministic ca-ES manifest/coverage/contract checker: --write updates manifest; default checks."""
 from pathlib import Path
 from hashlib import sha256
-import json,sys,re
+import json,sys,re,os
 from i18n_math_guard import math_guard
 R=Path(__file__).resolve().parents[1]
-SITE=R/'site'
+SITE=Path(os.environ['WEBMATES_SITE_DIR']).resolve() if os.environ.get('WEBMATES_SITE_DIR') else R/'site'
+if not SITE.is_dir():raise RuntimeError('Site directory unavailable: '+str(SITE))
 CAT=json.loads((SITE/'data/catalogo.json').read_text(encoding='utf8'))
 OUT=SITE/'i18n/ca-ES/manifest.v1.json'
 PENDING='pending_translation'

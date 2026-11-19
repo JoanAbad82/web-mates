@@ -27,7 +27,7 @@ units=[u['unit_id'] for c in CAT['courses'] for u in c['units']
 assert units,'No translated unit packages available'
 for uid in units:
  docfile,bankfile,doc,bank=loaded(uid)
- trans=json.loads((R/'site/i18n/ca-ES'/(uid+'.v1.json')).read_text(encoding='utf8'))
+ trans=json.loads((SITE/'i18n/ca-ES'/(uid+'.v1.json')).read_text(encoding='utf8'))
  assert trans['unit_id']==uid and trans['locale']=='ca-ES' and trans['translation_status']=='draft_unreviewed'
  assert trans['source_files_sha256']=={'data/'+docfile.name:sha256(docfile.read_bytes()).hexdigest(),
   'data/'+bankfile.name:sha256(bankfile.read_bytes()).hexdigest()}

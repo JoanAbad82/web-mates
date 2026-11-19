@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E4A-P01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e4a_p01.json": "7a7c1ac657fbd5da2a0146f5d942d6c91aba799219cf31dc784c8cd565c6b6e1",
+    "data/f3_e4a_p01_exercises.json": "0beb0dc1dfa9220ef29adc62b23ed78a893b65b60885068d7cfba03f4f116d02"
+  },
+  "lessons": {
+    "E4A-P01-L01": {
+      "title": "Percentatges encadenats",
+      "objectives": [
+        "Calcula variacions percentuals encadenades mitjançant factors multiplicatius.",
+        "Demostrar que augments i descomptes iguals no es cancel·len en general."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un percentatge representa una proporció respecte a una base indicada. Un augment del p % multiplica per 1+p/100 i una disminució del q % per 1−q/100. Si s'apliquen successivament dos canvis, els factors es multipliquen: per pujar 20 % i baixar 20 % s'obté 1,2·0,8=0,96, per la qual cosa el resultat final és 4 % menor que l'inicial, no igual. Els percentatges encadenats no han de sumar-se excepte com a aproximació quan expressament es permeti i el seu error es controli. L'ordre de dos factors escalars no altera el resultat final, però sí la magnitud intermèdia sobre la qual es calcula cada canvi. Cal diferenciar punts percentuals de variació relativa respecte a la nova base."
+        },
+        {
+          "body": "Un preu de 100 € puja 20 % fins a 120 €. Després baixa el 20 % de 120 €, és a dir 24 €, i queda en 96 €. El canvi net és −4 %."
+        },
+        {
+          "body": "Un pressupost de 200 € baixa 10 % i després puja 10 %: 200·0,90·1,10=198 €. No es recupera l'import inicial."
+        },
+        {
+          "body": "Variació de preu per factors compostos. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Variació de preu per factors compostos. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Variació de preu per factors composts"
+          }
+        },
+        {
+          "body": "Una pujada del 20 % seguida d'una baixada del 20 % retorna sempre el preu original?||No; els canvis utilitzen bases diferents i el seu factor conjunt és 0,96."
+        },
+        {
+          "body": "Recuperació activa: Un percentatge representa una proporció respecte a una base indicada. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    },
+    "E4A-P01-L02": {
+      "title": "Variació percentual i taxes",
+      "objectives": [
+        "Calcular taxes relatives i distingir punts percentuals.",
+        "Reconstruir bases i explicar percentatges segons el denominador correcte."
+      ],
+      "content_blocks": [
+        {
+          "body": "La variació percentual entre un valor inicial a≠0 i un final b es calcula com 100(b−a)/a. La base és sempre el valor inicial especificat: passar de 80 a 100 implica pujada 25 %, mentre que tornar de 100 a 80 suposa baixada 20 %. Si una proporció puja del 30 % al 35 %, canvia cinc punts percentuals; la variació relativa és 5/30≈16,67 %, que no ha de confondre's amb cinc per cent. Una taxa pot expressar-se per període o unitat temporal, i no és correcte comparar-les sense normalitzar el temps. En problemes econòmics s'anoten magnitud, període, base i unitat, i es verifica si el càlcul pot realitzar-se quan la base és zero."
+        },
+        {
+          "body": "El nombre d'usuaris passa de 80 a 100: (100−80)/80·100=25 %. Tornar a 80 des de 100 representa (80−100)/100·100=−20 %."
+        },
+        {
+          "body": "La taxa de participació passa del 30 % al 35 %: pujada de 5 punts percentuals i augment relatiu de 5/30≈16,67 %."
+        },
+        {
+          "body": "Taxa relativa enfront de punts percentuals. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Taxa relativa enfront de punts percentuals. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Taxa relativa enfront de punts percentuals"
+          }
+        },
+        {
+          "body": "De 30 % a 35 % hi ha un creixement relatiu del 5 %?||No; hi ha cinc punts percentuals, però el creixement relatiu és aproximadament 16,67 %."
+        },
+        {
+          "body": "Recuperació activa: La variació percentual entre un valor inicial a≠0 i un final b es calcula com 100(b−a)/a. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    },
+    "E4A-P01-L03": {
+      "title": "Interès simple i compost",
+      "objectives": [
+        "Distingir interès simple i compost amb períodes coherents.",
+        "Calcula la capital final i reconeix la taxa efectiva de l'interval."
+      ],
+      "content_blocks": [
+        {
+          "body": "L'interès simple sobre capital inicial C a tipus periòdic i durant n períodes és C(1+ ni), mentre que l'interès compost amb reinversió periòdica és C(1+i)^n. Les dues expressions requereixen que i n es refereixin al mateix període; no es converteix una taxa anual a mensual dividint-la entre 12 sense especificar si és nominal o efectiva. Per C=1000 € al 10 % anual durant dos anys, el simple dóna 1200 € i el compost 1210 €. Aquests models didàctics no inclouen impostos, despeses, impagaments ni inflació. Per a comparar productes reals fan falta condicions contractuals i cost efectiu total, no únicament el tipus anunciat. Si no existeix reinversió, no procedeix usar potència n."
+        },
+        {
+          "body": "Amb C=1000 €, i=0,10 anual i n=2 anys, l'interès simple genera 1000(1+0,10·2)=1200 €."
+        },
+        {
+          "body": "Amb el mateix capital i reinversió, l'interès compost produeix 1000·1,1²=1210 €; el segon any es calcula també sobre interessos previs."
+        },
+        {
+          "body": "Interès simple i compost en dos períodes. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Interès simple i compost en dos períodes. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Interès simple i compost en dos períodes"
+          }
+        },
+        {
+          "body": "Per què el segon any compost pot generar més interès que el simple?||Perquè el capital basi inclou els interessos prèviament acumulats."
+        },
+        {
+          "body": "Recuperació activa: L'interès simple sobre capital inicial C a tipus periòdic i durant n períodes és C(1+ ni), mentre que l'interès compost amb reinversió periòdica és C(1+i)^n. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    },
+    "E4A-P01-L04": {
+      "title": "Estalvi i préstecs",
+      "objectives": [
+        "Modelitzar estalvi regular amb capitalització i terminis declarats.",
+        "Explicar la diferència entre saldo, quotes i cost de finançament sense assessorar sobre préstecs reals."
+      ],
+      "content_blocks": [
+        {
+          "body": "En un estalvi sense dipòsits addicionals, amb capital inicial C i una taxa efectiva periòdica i durant n períodes, el saldo compost és C(1+i)^n. Si hi ha aportacions periòdiques, el moment de cada dipòsit importa i cal modelitzar-lo per separat; no es pot usar la mateixa fórmula d'un únic capital. Un préstec no és ingrés gratuït: en comparar devolució i capital prestat es distingeixen interessos, despeses i calendari d'amortització. En un exemple molt simplificat, demanar 500 € i retornar 550 € un any després implica 50 € de cost addicional, equivalent al 10 % del principal abans de despeses. No s'extrapolen aquestes fórmules a ofertes reals sense conèixer TAE, comissions i condicions. Els càlculs educatius usen imports i períodes declarats, sense decisions financeres personals."
+        },
+        {
+          "body": "Un estalvi de 200 € al 5 % anual durant dos anys, sense aportacions, resulta 200·1,05²=220,50 €."
+        },
+        {
+          "body": "Un préstec hipotètic de 500 € que es retorna amb pagament únic de 550 € exigeix 50 € addicionals; 50/500=10 % del principal, sense incloure altres despeses."
+        },
+        {
+          "body": "Saldo sense dipòsits addicionals. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Saldo sense dipòsits addicionals. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Saldo sense dipòsits addicionals"
+          }
+        },
+        {
+          "body": "La fórmula C(1+i)^n contempla automàticament dipòsits mensuals addicionals?||No; cada aportació té diferent temps de capitalització i ha de modelitzar-se explícitament."
+        },
+        {
+          "body": "Recuperació activa: En un estalvi sense dipòsits addicionals, amb capital inicial C i una taxa efectiva periòdica i durant n períodes, el saldo compost és C(1+i)^n. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    },
+    "E4A-P01-L05": {
+      "title": "Interpretació de rebuts i ofertes",
+      "objectives": [
+        "Interpretar línies de rebuts, impostos i descomptes per bases correctes.",
+        "Comparar ofertes verificant preu final, unitats i condicions."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un rebut pot incloure preu base, descompte, impostos i despeses. Per reconstruir-ho s'identifica exactament sobre quina magnitud s'aplica cada percentatge i en quin ordre. Si un article costa 100 € abans d'impost, rep un descompte del 10 % i després un impost del 21 % sobre els 90 € descomptats, el total és 100·0,90·1,21=108,90 €. Aplicar percentatges a bases diferents sense explicitar-ho produeix errors. La suma final també pot incloure despeses fixes no subjectes al mateix impost: llavors cal separar conceptes conforme a l'enunciat, no assumir regles fiscals universals. Les ofertes de dos articles han de comparar-se per preu per unitat i quantitat efectiva, especialment si s'anuncien descomptes per lots."
+        },
+        {
+          "body": "Un producte de 100 € té descompte 10 % abans d'impost 21 % sobre el descompte: es paguen 90·1,21=108,90 €."
+        },
+        {
+          "body": "Un envàs de 500 g costa 3 € i un altre de 750 g costa 4,20 €. Preus per kg: 6 €/ kg i 5,60 €/ kg, respectivament."
+        },
+        {
+          "body": "Descompte seguit d'impost. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Descompte seguit d'impost. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Descompte seguit d'impost"
+          }
+        },
+        {
+          "body": "Pot aplicar-se el 21 % sobre 100 € si l'enunciat indica que la base imposable és 90 €?||No; la base és l'import descomptat especificat."
+        },
+        {
+          "body": "Recuperació activa: Un rebut pot incloure preu base, descompte, impostos i despeses. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    },
+    "E4A-P01-L06": {
+      "title": "Riscos de percentatges enganyosos",
+      "objectives": [
+        "Detectar percentatges enganyosos per canvis de base i selecció de períodes.",
+        "Comunicar incertesa i límits de comparacions financeres o estadístiques."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un percentatge aïllat manca de significat complet si no s'especifiquen base, període, mostra i condicions de càlcul. Una reducció del 50 % sobre 20 € deixa 10 €, però recuperar 20 € requereix després augmentar el 100 % sobre 10 €. Una publicitat que suma descomptes successius del 20 % i del 30 % com si fos una rebaixa del 50 % omet que el factor correcte és 0,80·0,70=0,56, una reducció real del 44 %. Comparar rendibilitats de terminis diferents sense anualització justificada o barrejar tipus nominals i efectius pot induir a error. En gràfics amb eixos retallats cal consultar les dades originals; fins i tot una variació percentual correcta pot exagerar-se visualment. Les conclusions es limiten als supòsits i dades disponibles."
+        },
+        {
+          "body": "Un preu de 100 € rep descomptes successius del 20 % i 30 %: el final és 100·0,80·0,70=56 €, rebaixa total 44 %, no 50 %."
+        },
+        {
+          "body": "Després de reduir 20 € a 10 € hi ha una baixada del 50 %; tornar a 20 € representa una pujada de (20−10)/10=100 %."
+        },
+        {
+          "body": "Dos descomptes acumulats enfront de summa equivocada. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Dos descomptes acumulats enfront de summa equivocada. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Dos descomptes acumulats enfront de summa equivocada"
+          }
+        },
+        {
+          "body": "Dos descomptes encadenats del 20 % i del 30 % equivalen sempre a un únic del 50 %?||No; el factor conjunt 0,80×0,70 deixa el 56 % del preu original."
+        },
+        {
+          "body": "Recuperació activa: Un percentatge aïllat manca de significat complet si no s'especifiquen base, període, mostra i condicions de càlcul. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E4A-P01-L01-01": {
+      "prompt": "En la lliçó Percentatges encadenats: Un preu inicial de 100 € canvia successivament +20% i -20%. Calcula l'import final exacte en euros amb factors multiplicatius. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 96. Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes. Augment p %: multiplicar per 1+p/100; descompte q %: multiplicar per 1−q/100. Aplica els factors successivament i compara amb la base inicial. Resultat matemàtic contrastable: 96. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L01-02": {
+      "prompt": "En la lliçó Percentatges encadenats: Un preu inicial de 200 € canvia successivament -10% y +10%. Calcula l'import final exacte en euros amb factors multiplicatius. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 198. Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes. Augment p %: multiplicar per 1+p/100; descompte q %: multiplicar per 1−q/100. Aplica els factors successivament i compara amb la base inicial. Resultat matemàtic contrastable: 198. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L01-03": {
+      "prompt": "En la lliçó Percentatges encadenats: Un preu augmenta 20% i després canvia -20%. Calcula el percentatge NET amb signe respecte a la base inicial. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat -4. Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes. Augment p %: multiplicar per 1+p/100; descompte q %: multiplicar per 1−q/100. Aplica els factors successivament i compara amb la base inicial. Resultat matemàtic contrastable: -4. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L01-04": {
+      "prompt": "En la lliçó Percentatges encadenats: És correcte sumar sempre les dues taxes de percentatges consecutius per a obtenir el canvi net (Sí / No)? Tria una resposta exacta.",
+      "hint": "Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat No. Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes. Augment p %: multiplicar per 1+p/100; descompte q %: multiplicar per 1−q/100. Aplica els factors successivament i compara amb la base inicial. Resultat matemàtic contrastable: No. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L01-05": {
+      "prompt": "En la lliçó Percentatges encadenats: Un preu inicial de 80 € canvia successivament +25% i -20%. Calcula l'import final exacte en euros amb factors multiplicatius. Tria una resposta exacta.",
+      "hint": "Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 80. Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes. Augment p %: multiplicar per 1+p/100; descompte q %: multiplicar per 1−q/100. Aplica els factors successivament i compara amb la base inicial. Resultat matemàtic contrastable: 80. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L02-01": {
+      "prompt": "En la lliçó Variació percentual i taxes: El valor inicial és 80 i el final és 100. Calcula la variació RELATIVA amb signe en percentatge prenent com a base l'inici. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Separa la variació relativa (%) dels punts percentuals i comprova el denominador.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 25. Separa la variació relativa (%) dels punts percentuals i comprova el denominador. La taxa relativa =100·( final − inicial )/ inicial si inicial ≠0; els punts percentuals són diferència entre taxes ja percentuals. Resultat matemàtic contrastable: 25. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L02-02": {
+      "prompt": "En la lliçó Variació percentual i taxes: El valor inicial és 100 i el final és 80. Calcula la variació RELATIVA amb signe en percentatge prenent com a base l'inici. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Separa la variació relativa (%) dels punts percentuals i comprova el denominador.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat -20. Separa la variació relativa (%) dels punts percentuals i comprova el denominador. La taxa relativa =100·( final − inicial )/ inicial si inicial ≠0; els punts percentuals són diferència entre taxes ja percentuals. Resultat matemàtic contrastable: -20. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L02-03": {
+      "prompt": "En la lliçó Variació percentual i taxes: Una proporció augmenta del 30% al 35%. Quants PUNTS PERCENTUALS canvia? Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Separa la variació relativa (%) dels punts percentuals i comprova el denominador.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 5. Separa la variació relativa (%) dels punts percentuals i comprova el denominador. La taxa relativa =100·( final − inicial )/ inicial si inicial ≠0; els punts percentuals són diferència entre taxes ja percentuals. Resultat matemàtic contrastable: 5. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L02-04": {
+      "prompt": "En la lliçó Variació percentual i taxes: El valor inicial és 30 i el final és 35. Calcula la variació RELATIVA amb signe en percentatge prenent com a base l'inici. Tria una resposta exacta.",
+      "hint": "Separa la variació relativa (%) dels punts percentuals i comprova el denominador.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 50/3. Separa la variació relativa (%) dels punts percentuals i comprova el denominador. La taxa relativa =100·( final − inicial )/ inicial si inicial ≠0; els punts percentuals són diferència entre taxes ja percentuals. Resultat matemàtic contrastable: 50/3. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L02-05": {
+      "prompt": "En la lliçó Variació percentual i taxes: Si el valor inicial és 0, la fórmula 100( final − inicial )/ inicial defineix una taxa percentual real finita? Tria una resposta exacta.",
+      "hint": "Separa la variació relativa (%) dels punts percentuals i comprova el denominador.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat No definida. Separa la variació relativa (%) dels punts percentuals i comprova el denominador. La taxa relativa =100·( final − inicial )/ inicial si inicial ≠0; els punts percentuals són diferència entre taxes ja percentuals. Resultat matemàtic contrastable: No definida. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L03-01": {
+      "prompt": "A la lliçó Interès simple i compost: Interès SIMPLE: capital inicial 1000 €, tipus efectiu anual 10% i 2 anys sense despeses. Calcula capital final en €. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula.",
+      "explanation": "Explicació: Comprova taxa efectiva per període, capital, temps i tractament d'interessos; valor exacte 1200. Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula. Interès simple: C(1+n·i). Compost: C(1+i)^n; l'excés pagat és devolució menys principal i el seu % divideix entre el principal. Resultat matemàtic contrastable: 1200. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L03-02": {
+      "prompt": "A la lliçó Interès simple i compost: Interès COMPOST amb reinversió: capital inicial 1000 €, tipus efectiu per període 10% i 2 períodes. Calcula la capital final exacta. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula.",
+      "explanation": "Explicació: Comprova taxa efectiva per període, capital, temps i tractament d'interessos; valor exacte 1210. Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula. Interès simple: C(1+n·i). Compost: C(1+i)^n; l'excés pagat és devolució menys principal i el seu % divideix entre el principal. Resultat matemàtic contrastable: 1210. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L03-03": {
+      "prompt": "En la lliçó Interès simple i compost: Per a capital 1000 €, tipus anual 10% i 2 anys, quants € més produeix el compost que el simple? Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula.",
+      "explanation": "Explicació: Comprova taxa efectiva per període, capital, temps i tractament d'interessos; valor exacte 10. Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula. Interès simple: C(1+n·i). Compost: C(1+i)^n; l'excés pagat és devolució menys principal i el seu % divideix entre el principal. Resultat matemàtic contrastable: 10. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L03-04": {
+      "prompt": "En la lliçó Interès simple i compost: Amb C>0, interès anual positiu i dos anys, quin model sol donar major saldo: Simple, Compost o Iguals? Tria una resposta exacta.",
+      "hint": "Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat Compost. Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula. Interès simple: C(1+n·i). Compost: C(1+i)^n; l'excés pagat és devolució menys principal i el seu % divideix entre el principal. Resultat matemàtic contrastable: Compost. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L03-05": {
+      "prompt": "A la lliçó Interès simple i compost: Interès COMPOST amb reinversió: capital inicial 200 €, tipus efectiu per període 5% i 2 períodes. Calcula la capital final exacta. Tria una resposta exacta.",
+      "hint": "Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula.",
+      "explanation": "Explicació: Comprova taxa efectiva per període, capital, temps i tractament d'interessos; valor exacte 220,5. Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula. Interès simple: C(1+n·i). Compost: C(1+i)^n; l'excés pagat és devolució menys principal i el seu % divideix entre el principal. Resultat matemàtic contrastable: 220,5. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L04-01": {
+      "prompt": "A la lliçó Estalvi i préstecs: Interès compost amb reinversió: capital inicial 200 €, tipus efectiu per període 5% i 3 períodes. Calcula la capital final exacta. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula.",
+      "explanation": "Explicació: Comprova taxa efectiva per període, capital, temps i tractament d'interessos; valor exacte 231,525. Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula. Interès simple: C(1+n·i). Compost: C(1+i)^n; l'excés pagat és devolució menys principal i el seu % divideix entre el principal. Resultat matemàtic contrastable: 231,525. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L04-02": {
+      "prompt": "En la lliçó Estalvi i préstecs: Un préstec didàctic lliura 500 € i exigeix 550 € en un pagament final. Calcula els euros EXTRA retornats, sense altres despeses. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula.",
+      "explanation": "Explicació: Comprova taxa efectiva per període, capital, temps i tractament d'interessos; valor exacte 50. Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula. Interès simple: C(1+n·i). Compost: C(1+i)^n; l'excés pagat és devolució menys principal i el seu % divideix entre el principal. Resultat matemàtic contrastable: 50. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L04-03": {
+      "prompt": "En la lliçó Estalvi i préstecs: Es presten 500 € i es retornen 550 € a l'any següent, sense altres condicions. Quin percentatge addicional representa la diferència respecte al principal? Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula.",
+      "explanation": "Explicació: Comprova taxa efectiva per període, capital, temps i tractament d'interessos; valor exacte 10. Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula. Interès simple: C(1+n·i). Compost: C(1+i)^n; l'excés pagat és devolució menys principal i el seu % divideix entre el principal. Resultat matemàtic contrastable: 10. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L04-04": {
+      "prompt": "En la lliçó Estalvi i préstecs: Es pot convertir sempre una TAE anual a taxa mensual dividint entre 12 sense comprovar el tipus de taxa (Sí / No)? Tria una resposta exacta.",
+      "hint": "Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula.",
+      "explanation": "Explicació: Comprova taxa efectiva per període, capital, temps i tractament d'interessos; valor exacte No. Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula. Interès simple: C(1+n·i). Compost: C(1+i)^n; l'excés pagat és devolució menys principal i el seu % divideix entre el principal. Resultat matemàtic contrastable: No. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L04-05": {
+      "prompt": "A la lliçó Estalvi i préstecs: Interès compost amb reinversió: capital inicial 500 €, tipus efectiu per període 4% i 3 períodes. Calcula la capital final exacta. Tria una resposta exacta.",
+      "hint": "Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula.",
+      "explanation": "Explicació: Comprova taxa efectiva per període, capital, temps i tractament d'interessos; valor exacte 562,432. Distingeix capital original, taxa per període i nombre de períodes abans d'aplicar una fórmula. Interès simple: C(1+n·i). Compost: C(1+i)^n; l'excés pagat és devolució menys principal i el seu % divideix entre el principal. Resultat matemàtic contrastable: 562,432. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L05-01": {
+      "prompt": "En la lliçó Interpretació de rebuts i ofertes: Preu 100 €, descompte 10% i després impost 21% SOBRE L'IMPORT DESCOMPTAT. Calcula el total exacte. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 108,9. Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes. Augment p %: multiplicar per 1+p/100; descompte q %: multiplicar per 1−q/100. Aplica els factors successivament i compara amb la base inicial. Resultat matemàtic contrastable: 108,9. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L05-02": {
+      "prompt": "En la lliçó Interpretació de rebuts i ofertes: Un envàs de 500 g costa 3 €; calcula preu exacte en €/ kg. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Expressa preu total en euros i massa en quilograms abans de comparar.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 6. Expressa preu total en euros i massa en quilograms abans de comparar. Transforma cèntims a euros i grams a kg: €/ kg =( cèntims /100)·(1000/ grams), mantenint les unitats. Resultat matemàtic contrastable: 6. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L05-03": {
+      "prompt": "En la lliçó Interpretació de rebuts i ofertes: Un envàs de 750 g costa 21/5 €; calcula preu exacte en €/ kg. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Expressa preu total en euros i massa en quilograms abans de comparar.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 5,6. Expressa preu total en euros i massa en quilograms abans de comparar. Transforma cèntims a euros i grams a kg: €/ kg =( cèntims /100)·(1000/ grams), mantenint les unitats. Resultat matemàtic contrastable: 5,6. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L05-04": {
+      "prompt": "En la lliçó Interpretació de rebuts i ofertes: Preu 200 €, descompte 25% i després impost 10% SOBRE L'IMPORT DESCOMPTAT. Calcula el total exacte. Tria una resposta exacta.",
+      "hint": "Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 165. Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes. Augment p %: multiplicar per 1+p/100; descompte q %: multiplicar per 1−q/100. Aplica els factors successivament i compara amb la base inicial. Resultat matemàtic contrastable: 165. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L05-05": {
+      "prompt": "En la lliçó Interpretació de rebuts i ofertes: Abans d'impost s'aplica descompte 10% a una base de 100 €. Quina és la base resultant descomptada? Tria una resposta exacta.",
+      "hint": "Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 90. Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes. Augment p %: multiplicar per 1+p/100; descompte q %: multiplicar per 1−q/100. Aplica els factors successivament i compara amb la base inicial. Resultat matemàtic contrastable: 90. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L06-01": {
+      "prompt": "En la lliçó Riscos de percentatges enganyosos: Dos descomptes consecutius són 20% i 30%. Calcula la rebaixa efectiva total (%) respecte al preu inicial. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 44. Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes. Augment p %: multiplicar per 1+p/100; descompte q %: multiplicar per 1−q/100. Aplica els factors successivament i compara amb la base inicial. Resultat matemàtic contrastable: 44. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L06-02": {
+      "prompt": "En la lliçó Riscos de percentatges enganyosos: Un preu cau de 20 € a 10 €. Calcula quin percentatge cal PUJAR des del segon preu per a tornar al primer. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Separa la variació relativa (%) dels punts percentuals i comprova el denominador.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 100. Separa la variació relativa (%) dels punts percentuals i comprova el denominador. La taxa relativa =100·( final − inicial )/ inicial si inicial ≠0; els punts percentuals són diferència entre taxes ja percentuals. Resultat matemàtic contrastable: 100. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L06-03": {
+      "prompt": "En la lliçó Riscos de percentatges enganyosos: Un preu de 100 € té descomptes successius del 20% i 30%. Quant es paga finalment? Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 56. Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes. Augment p %: multiplicar per 1+p/100; descompte q %: multiplicar per 1−q/100. Aplica els factors successivament i compara amb la base inicial. Resultat matemàtic contrastable: 56. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L06-04": {
+      "prompt": "En la lliçó Riscos de percentatges enganyosos: Dos descomptes del 20% i 30% equivalen necessàriament a un descompte únic del 50% (Sí / No)? Tria una resposta exacta.",
+      "hint": "Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat No. Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes. Augment p %: multiplicar per 1+p/100; descompte q %: multiplicar per 1−q/100. Aplica els factors successivament i compara amb la base inicial. Resultat matemàtic contrastable: No. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-P01-L06-05": {
+      "prompt": "En la lliçó Riscos de percentatges enganyosos: Dos descomptes consecutius són 10% i 10%. Calcula la rebaixa efectiva total (%) respecte al preu inicial. Tria una resposta exacta.",
+      "hint": "Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 19. Identifica la base original i escriu els canvis percentuals com a factors, no com a sumes. Augment p %: multiplicar per 1+p/100; descompte q %: multiplicar per 1−q/100. Aplica els factors successivament i compara amb la base inicial. Resultat matemàtic contrastable: 19. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    }
+  }
+}

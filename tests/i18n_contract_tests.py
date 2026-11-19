@@ -10,7 +10,7 @@ units=[u['unit_id'] for c in CAT['courses'] for u in c['units']
 assert units,'No translated unit packages'
 for unit_id in units:
  src_a,src_b,data,bank=loaded(unit_id)
- file=R/'site/i18n/ca-ES'/(unit_id+'.v1.json')
+ file=SITE/'i18n/ca-ES'/(unit_id+'.v1.json')
  original=json.loads(file.read_text(encoding='utf8'))
  pos=verify_package(unit_id,file,data,bank,src_a,src_b)
  assert pos['lessons_translated']==len(data['lesson_documents']) and pos['activities_translated']==len(bank['activities']),unit_id

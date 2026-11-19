@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E2-M01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e2_m01.json": "0a56dd27fa2a7c25776416dd755ce70165af45029b6ec192132d716e3434bfb4",
+    "data/f3_e2_m01_exercises.json": "79bc5e0cdb746c1d3c274d6351a37534441a41e38185e05dc4fc7835bd3624d0"
+  },
+  "lessons": {
+    "E2-M01-L01": {
+      "title": "Polígons i circumferència",
+      "objectives": [
+        "Calcular àrees i perímetres de polígons i circumferències amb unitats coherents.",
+        "Distingir àrea, longitud de contorn i aproximació del nombre π."
+      ],
+      "content_blocks": [
+        {
+          "body": "El perímetre mesura el contorn (unitats de longitud) i l'àrea mesura superfície (unitats quadrades). Per rectangles, àrea =b·h; per triangles, àrea =b·h/2 amb alçada perpendicular a la base. L'àrea d'un cercle és πr² i la longitud de la seva circumferència és 2πr; el radi és la meitat del diàmetre. En problemes amb π convé conservar resultats com múltiples exactes de π i només aproximar quan se sol·liciti. No confondre cercle (regió) amb circumferència (contorn), ni emprar radis en centímetres amb resultats en metres quadrats."
+        },
+        {
+          "body": "Un cercle de radi 3 cm té àrea 9π cm ² i perímetre 6π cm."
+        },
+        {
+          "body": "Un triangle amb base 8 m i altura perpendicular de 5 m té àrea (8×5)/2=20 m²."
+        },
+        {
+          "body": "Àrea circular i longitud de circumferència. Diagrama conceptual declaratiu: totes les mesures exactes i relacions s'ofereixen de nou en una taula textual independent, sense requerir color o percepció espacial.",
+          "alt": "Àrea circular i longitud de circumferència. La taula semàntica identifica amb exactitud totes les coordenades, dimensions, unitats i resultats d'aquesta representació.",
+          "visual_spec": {
+            "title": "Àrea circular i longitud de circumferència"
+          }
+        },
+        {
+          "body": "Per què no és correcte dir que l'àrea d'un cercle de radi 3 val 6π?||6π correspon a longitud de circumferència; l'àrea és π×3²=9π."
+        },
+        {
+          "body": "Recuperació activa: El perímetre mesura el contorn (unitats de longitud) i l'àrea mesura superfície (unitats quadrades). Justifica cada resultat, comprova les unitats i resol després una variació sense pistes."
+        }
+      ]
+    },
+    "E2-M01-L02": {
+      "title": "Àrees de figures compostes",
+      "objectives": [
+        "Descompondre figures compostes en peces d'àrea coneguda.",
+        "Restar buits i verificar unitats quadrades i no negativitat."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una figura composta pot resoldre's sumant àrees de regions sense solapament, o restant un buit interior d'un contorn conegut. Dibuixa una partició i etiqueta cada mesura evita sumar zones dues vegades. L'àrea d'un trapezi de bases paral·leles B,b i altura perpendicular h és (B+b)h/2; un semicercle de radi r té àrea πr²/2. Si s'extreu un quadrat d'un altre, les àrees es resten, no es resten primer longituds per després elevar-les al quadrat. L'àrea mai no és negativa i necessita unitats quadrades."
+        },
+        {
+          "body": "Un pati rectangular de 10×8 m amb un estany rectangular de 3×2 m té superfície útil 80−6=74 m²."
+        },
+        {
+          "body": "Un trapezi de bases 8 i 4 cm i altura 3 cm té àrea (8+4)×3/2=18 cm ²."
+        },
+        {
+          "body": "Superfície rectangular amb buit. Diagrama conceptual declaratiu: totes les mesures exactes i relacions s'ofereixen de nou en una taula textual independent, sense requerir color o percepció espacial.",
+          "alt": "Superfície rectangular amb buit. La taula semàntica identifica amb exactitud totes les coordenades, dimensions, unitats i resultats d'aquesta representació.",
+          "visual_spec": {
+            "title": "Superfície rectangular amb buit"
+          }
+        },
+        {
+          "body": "L'àrea útil d'un quadrat de costat 10 amb buit de costat 2 és (10−2)²?||No. Es resten àrees: 10²−2²=96, no 64."
+        },
+        {
+          "body": "Recuperació activa: Una figura composta pot resoldre's sumant àrees de regions sense solapament, o restant un buit interior d'un contorn conegut. Justifica cada resultat, comprova les unitats i resol després una variació sense pistes."
+        }
+      ]
+    },
+    "E2-M01-L03": {
+      "title": "Prismes i piràmides",
+      "objectives": [
+        "Calcular volums de prismes i piràmides amb l'alçada perpendicular.",
+        "Distingir volum de superfície i aplicar el factor un terç en piràmides."
+      ],
+      "content_blocks": [
+        {
+          "body": "El volum d'un prisma recte o de qualsevol prisma amb seccions paral·leles congruents es calcula com a àrea de la base per altura perpendicular, V=A _base·h. Una piràmide amb base d'àrea A i altura perpendicular h té volum V=A·h/3. L'altura d'una piràmide no és necessàriament la longitud d'una aresta inclinada. En un ortoedre de llarg a, ample b i alt c, V= abc i l'àrea total és 2( ab + ac + bc), magnitud diferent. Les unitats del volum són cúbiques; les de la superfície exterior són quadrades."
+        },
+        {
+          "body": "Un prisma rectangular de 4×3×5 cm té volum 4×3×5=60 cm ³."
+        },
+        {
+          "body": "Una piràmide de base rectangular 6×4 m i alçada perpendicular 3 m ocupa (24×3)/3=24 m³."
+        },
+        {
+          "body": "Volum de prisma rectangular. Diagrama conceptual declaratiu: totes les mesures exactes i relacions s'ofereixen de nou en una taula textual independent, sense requerir color o percepció espacial.",
+          "alt": "Volum de prisma rectangular. La taula semàntica identifica amb exactitud totes les coordenades, dimensions, unitats i resultats d'aquesta representació.",
+          "visual_spec": {
+            "title": "Volum de prisma rectangular"
+          }
+        },
+        {
+          "body": "Una piràmide d'igual base i altura que un prisma té idèntic volum?||No, el volum de la piràmide és un terç del prisma corresponent."
+        },
+        {
+          "body": "Recuperació activa: El volum d'un prisma recte o de qualsevol prisma amb seccions paral·leles congruents es calcula com a àrea de la base per altura perpendicular, V=A _base·h. Justifica cada resultat, comprova les unitats i resol després una variació sense pistes."
+        }
+      ]
+    },
+    "E2-M01-L04": {
+      "title": "Cilindres i cons",
+      "objectives": [
+        "Calcular volums de cilindres i cons i distingir generatriu d'alçada.",
+        "Aplicar correctament la fórmula de l'àrea lateral quan es coneix la generatriu."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un cilindre circular de radi r i altura perpendicular h té volum πr²h i àrea lateral 2π rh. La seva àrea total afegeix dues bases: 2π rh +2πr². Un con circular recte amb igual base i alçada té volum πr²h/3. L'àrea lateral d'un con és πrg, on g és la generatriu obliqua i compleix g²=r²+h² en el con recte; la generatriu no ha de substituir-se per h. Es conserven múltiples exactes de π per evitar errors d'arrodoniment. Per comparar volums, comprova que els radis i altures estiguin en unitats iguals."
+        },
+        {
+          "body": "Un cilindre de radi 2 cm i altura 5 cm té volum 20π cm ³ i àrea lateral 20π cm ²."
+        },
+        {
+          "body": "Un con de radi 3 cm i altura 4 cm té generatriu 5 cm, volum 12π cm ³ i àrea lateral 15π cm ²."
+        },
+        {
+          "body": "Cilindre de radi dos i altura cinc. Diagrama conceptual declaratiu: totes les mesures exactes i relacions s'ofereixen de nou en una taula textual independent, sense requerir color o percepció espacial.",
+          "alt": "Cilindre de radi dos i altura cinc. La taula semàntica identifica amb exactitud totes les coordenades, dimensions, unitats i resultats d'aquesta representació.",
+          "visual_spec": {
+            "title": "Cilindre de radi dos i altura cinc"
+          }
+        },
+        {
+          "body": "És el volum del con πr²g/3?||No. En el volum intervé l'alçada perpendicular h, no la generatriu g."
+        },
+        {
+          "body": "Recuperació activa: Un cilindre circular de radi r i alçada perpendicular h té volum πr²h i àrea lateral 2π rh. Justifica cada resultat, comprova les unitats i resol després una variació sense pistes."
+        }
+      ]
+    },
+    "E2-M01-L05": {
+      "title": "Unitats de superfície i volum",
+      "objectives": [
+        "Convertir unitats de superfície i volum mitjançant factors al quadrat o al cub.",
+        "Relacionar litres, mil·lilitres i decímetres cúbics amb exactitud."
+      ],
+      "content_blocks": [
+        {
+          "body": "El factor entre unitats de superfície és el quadrat del factor lineal: 1 m²=10 000 cm ², mentre 1 m³=1 000 000 cm ³ perquè el factor lineal cent s'eleva al cub. Un litre equival exactament a 1 dm ³, això és, 1 000 cm ³; 1 mL equival a 1 cm ³, i 1 m³ són 1 000 L. Per convertir una quantitat, comprova primer si és longitud, superfície, volum o capacitat. És erroni aplicar multiplicació per 100 a un canvi d'unitat de volum entre metres i centímetres, perquè exigeix el cub de 100."
+        },
+        {
+          "body": "2,5 m² equivalen a 25 000 cm ²; cada metre quadrat conté cent per cent centímetres quadrats."
+        },
+        {
+          "body": "3 500 cm ³ equivalen a 3,5 L, perquè 1 L = 1 000 cm ³."
+        },
+        {
+          "body": "Volum i unitats cúbiques. Diagrama conceptual declaratiu: totes les mesures exactes i relacions s'ofereixen de nou en una taula textual independent, sense requerir color o percepció espacial.",
+          "alt": "Volum i unitats cúbiques. La taula semàntica identifica amb exactitud totes les coordenades, dimensions, unitats i resultats d'aquesta representació.",
+          "visual_spec": {
+            "title": "Volum i unitats cúbiques"
+          }
+        },
+        {
+          "body": "Per què 1 m³ no correspon a 100 cm ³?||Perquè es converteixen tres dimensions: 100³=1 000 000 cm ³."
+        },
+        {
+          "body": "Recuperació activa: El factor entre unitats de superfície és el quadrat del factor lineal: 1 m²=10 000 cm ², mentre 1 m³=1 000 000 cm ³ perquè el factor lineal cent s'eleva al cub. Justifica cada resultat, comprova les unitats i resol després una variació sense pistes."
+        }
+      ]
+    },
+    "E2-M01-L06": {
+      "title": "Problemes de capacitat i volum",
+      "objectives": [
+        "Resoldre problemes de capacitat i volum amb conversions explícites.",
+        "Distingir volum interior disponible, percentatge d'ompliment i desplaçament."
+      ],
+      "content_blocks": [
+        {
+          "body": "En problemes de dipòsits i recipients, calcula primer el volum geomètric interior, converteix a la unitat de capacitat sol·licitada i aplica, si escau, la fracció d'ompliment. Un dipòsit rectangular de dimensions internes a,b,h en decímetres té volum abc litres; la seva capacitat útil pot ser menor si no s'omple completament. Si es demana l'aigua necessària per passar d'un percentatge a un altre, aplica la diferència de fraccions, no el percentatge final com si estigués buit. Per a sòlids submergits, l'augment de volum desplaçat coincideix amb el volum submergit quan no hi ha pèrdues ni buits. No confonen dimensions externes amb capacitat interna."
+        },
+        {
+          "body": "Un dipòsit interior de 5×4×3 dm conté 60 L en omplir-se; al 75 % conté 45 L."
+        },
+        {
+          "body": "De 20 % a 70 % d'un recipient de 80 L s'afegeixen 0,50×80=40 L, no 56 L."
+        },
+        {
+          "body": "Dipòsit rectangular amb omplert parcial. Diagrama conceptual declaratiu: totes les mesures exactes i relacions s'ofereixen de nou en una taula textual independent, sense requerir color o percepció espacial.",
+          "alt": "Dipòsit rectangular amb omplert parcial. La taula semàntica identifica amb exactitud totes les coordenades, dimensions, unitats i resultats d'aquesta representació.",
+          "visual_spec": {
+            "title": "Dipòsit rectangular amb omplert parcial"
+          }
+        },
+        {
+          "body": "Si una piscina de 1000 L està al 40 % i s'emporta al 70 %, s'afegeixen 700 L?||No. S'agrega el 30 % de la seva capacitat: 300 L."
+        },
+        {
+          "body": "Recuperació activa: En problemes de dipòsits i recipients, calcula primer el volum geomètric interior, converteix a la unitat de capacitat sol·licitada i aplica, si escau, la fracció d'ompliment. Justifica cada resultat, comprova les unitats i resol després una variació sense pistes."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E2-M01-L01-01": {
+      "prompt": "Un rectangle mesura 6 cm de llarg i 4 cm d'ample. Calcula la seva àrea en cm ². Escriu un nombre exacte sense unitats.",
+      "hint": "Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 24. Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic. Rectangle = base × alçada, triangle = base × alçada /2; prisma = àrea base × alçada, piràmide = un terç; per buits resta àrees. Solució exacta: 24. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L01-02": {
+      "prompt": "Un triangle té base 8 m i altura perpendicular a aquesta base 5 m. Calcula la seva àrea en m². Escriu un nombre exacte sense unitats.",
+      "hint": "Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 20. Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic. Rectangle = base × alçada, triangle = base × alçada /2; prisma = àrea base × alçada, piràmide = un terç; per buits resta àrees. Solució exacta: 20. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L01-03": {
+      "prompt": "Un cercle té un radi de 3 cm. Calcula l'àrea exacta en cm ², expressada com a múltiple de π. Selecciona la resposta exacta.",
+      "hint": "Identifica si es demana longitud, superfície o volum; utilitza radi, no diàmetre.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 9π. Identifica si es demana longitud, superfície o volum; utilitza ràdio, no diàmetre. Cercle =πr²; perímetre =2πr; cilindre V=πr²h; con V=πr²h/3; lateral cilindre =2π rh; lateral con =π rg. Solució exacta: 9π. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L01-04": {
+      "prompt": "Una circumferència té un radi de 3 cm. Calcula la seva longitud exacta en cm, com a múltiple de π. Selecciona la resposta exacta.",
+      "hint": "Identifica si es demana longitud, superfície o volum; utilitza radi, no diàmetre.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 6π. Identifica si es demana longitud, superfície o volum; utilitza ràdio, no diàmetre. Cercle =πr²; perímetre =2πr; cilindre V=πr²h; con V=πr²h/3; lateral cilindre =2π rh; lateral con =π rg. Solució exacta: 6π. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L01-05": {
+      "prompt": "Un trapezi té bases paral·leles de 8 cm i 4 cm, i altura PERPENDICULAR 3 cm. Quina és la seva àrea en cm ²? Selecciona la resposta exacta.",
+      "hint": "Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 18. Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic. Rectangle = base × alçada, triangle = base × alçada /2; prisma = àrea base × alçada, piràmide = un terç; per buits resta àrees. Solució exacta: 18. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L02-01": {
+      "prompt": "Un pati rectangular mesura 10 m per 8 m. Es retira una zona interior no solapada de 3 m per 2 m. Quina és l'àrea restant en m²? Escriu un nombre exacte sense unitats.",
+      "hint": "Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic.",
+      "explanation": "Procediment: El resultat 74 s'obté aplicant definicions geomètriques i comprovació dimensional exactes. Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic. Rectangle = base × altura, triangle = base × altura /2; prisma = àrea base × altura, piràmide = un terç; per a buits resta àrees. Solució exacta: 74. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L02-02": {
+      "prompt": "Un trapezi té bases paral·leles de 8 cm i 4 cm, i altura PERPENDICULAR 3 cm. Quina és la seva àrea en cm ²? Escriu un nombre exacte sense unitats.",
+      "hint": "Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 18. Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic. Rectangle = base × alçada, triangle = base × alçada /2; prisma = àrea base × alçada, piràmide = un terç; per buits resta àrees. Solució exacta: 18. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L02-03": {
+      "prompt": "Dos rectangles SENSE SOLAPAR-SE mesuren 4×3 cm i 5×2 cm. Calcula l'àrea TOTAL conjunta en cm ². Escriu un nombre exacte sense unitats.",
+      "hint": "Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic.",
+      "explanation": "Procediment: El resultat 22 s'obté aplicant definicions geomètriques i comprovació dimensional exactes. Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic. Rectangle = base × altura, triangle = base × altura /2; prisma = àrea base × altura, piràmide = un terç; per a buits resta àrees. Solució exacta: 22. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L02-04": {
+      "prompt": "Una regió és un semicercle de radi 4 cm. Calcula la seva àrea exacta com a múltiple de π, en cm ². Selecciona la resposta exacta.",
+      "hint": "Identifica si es demana longitud, superfície o volum; utilitza radi, no diàmetre.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 8π. Identifica si es demana longitud, superfície o volum; utilitza ràdio, no diàmetre. Cercle =πr²; perímetre =2πr; cilindre V=πr²h; con V=πr²h/3; lateral cilindre =2π rh; lateral con =π rg. Solució exacta: 8π. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L02-05": {
+      "prompt": "Un quadrat de costat 10 m té un buit quadrat interior de costat 2 m. Calcula l'àrea útil (en m²) restant àrees, no longituds. Selecciona la resposta exacta.",
+      "hint": "Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic.",
+      "explanation": "Procediment: El resultat 96 s'obté aplicant definicions geomètriques i comprovació dimensional exactes. Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic. Rectangle = base × altura, triangle = base × altura /2; prisma = àrea base × altura, piràmide = un terç; per a buits resta àrees. Solució exacta: 96. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L03-01": {
+      "prompt": "Un prisma rectangular té dimensions interiors 4×3×5 cm. Calcula el VOLUM en cm ³. Escriu un nombre exacte sense unitats.",
+      "hint": "Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 60. Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic. Rectangle = base × alçada, triangle = base × alçada /2; prisma = àrea base × alçada, piràmide = un terç; per buits resta àrees. Solució exacta: 60. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L03-02": {
+      "prompt": "Una piràmide té base rectangular de 6 m ×4 m i ALÇADA PERPENDICULAR 3 m. Calcula el volum en m³. Escriu un nombre exacte sense unitats.",
+      "hint": "Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 24. Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic. Rectangle = base × alçada, triangle = base × alçada /2; prisma = àrea base × alçada, piràmide = un terç; per buits resta àrees. Solució exacta: 24. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L03-03": {
+      "prompt": "Un prisma rectangular tancat té dimensions 2×3×4 cm. Calcula la seva ÀREA TOTAL EXTERIOR en cm ². Escriu un nombre exacte sense unitats.",
+      "hint": "Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 52. Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic. Rectangle = base × alçada, triangle = base × alçada /2; prisma = àrea base × alçada, piràmide = un terç; per buits resta àrees. Solució exacta: 52. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L03-04": {
+      "prompt": "Una piràmide té base rectangular de 8 m ×3 m i ALÇADA PERPENDICULAR 6 m. Calcula el volum en m³. Selecciona la resposta exacta.",
+      "hint": "Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 48. Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic. Rectangle = base × alçada, triangle = base × alçada /2; prisma = àrea base × alçada, piràmide = un terç; per buits resta àrees. Solució exacta: 48. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L03-05": {
+      "prompt": "Calcula l'ÀREA TOTAL EXTERIOR d'un cub tancat de costat 4 cm (en cm ²) ). Selecciona la resposta exacta.",
+      "hint": "Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 96. Selecciona la fórmula de la magnitud demanada: àrea quadrada o volum cúbic. Rectangle = base × alçada, triangle = base × alçada /2; prisma = àrea base × alçada, piràmide = un terç; per buits resta àrees. Solució exacta: 96. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L04-01": {
+      "prompt": "Un cilindre circular recte de radi 2 cm i altura 5 cm: calcula el VOLUM exacte en cm ³ com a múltiple de π. Selecciona la resposta exacta.",
+      "hint": "Identifica si es demana longitud, superfície o volum; utilitza radi, no diàmetre.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 20π. Identifica si es demana longitud, superfície o volum; utilitza ràdio, no diàmetre. Cercle =πr²; perímetre =2πr; cilindre V=πr²h; con V=πr²h/3; lateral cilindre =2π rh; lateral con =π rg. Solució exacta: 20π. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L04-02": {
+      "prompt": "Un con circular recte té radi 3 cm i altura PERPENDICULAR 4 cm: calcula el seu volum exacte en cm ³, en múltiples de π. Selecciona la resposta exacta.",
+      "hint": "Identifica si es demana longitud, superfície o volum; utilitza radi, no diàmetre.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 12π. Identifica si es demana longitud, superfície o volum; utilitza ràdio, no diàmetre. Cercle =πr²; perímetre =2πr; cilindre V=πr²h; con V=πr²h/3; lateral cilindre =2π rh; lateral con =π rg. Solució exacta: 12π. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L04-03": {
+      "prompt": "Un cilindre recte de radi 2 cm i altura 5 cm: calcula només l'ÀREA LATERAL exacta en cm ², en múltiples de π. Selecciona la resposta exacta.",
+      "hint": "Identifica si es demana longitud, superfície o volum; utilitza radi, no diàmetre.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 20π. Identifica si es demana longitud, superfície o volum; utilitza ràdio, no diàmetre. Cercle =πr²; perímetre =2πr; cilindre V=πr²h; con V=πr²h/3; lateral cilindre =2π rh; lateral con =π rg. Solució exacta: 20π. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L04-04": {
+      "prompt": "Un con circular recte té radi 3 cm i GENERATRIU 5 cm: calcula només l'ÀREA LATERAL exacta en cm ², en múltiples de π. Selecciona la resposta exacta.",
+      "hint": "Identifica si es demana longitud, superfície o volum; utilitza radi, no diàmetre.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 15π. Identifica si es demana longitud, superfície o volum; utilitza ràdio, no diàmetre. Cercle =πr²; perímetre =2πr; cilindre V=πr²h; con V=πr²h/3; lateral cilindre =2π rh; lateral con =π rg. Solució exacta: 15π. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L04-05": {
+      "prompt": "Un cilindre tancat de radi 2 cm i altura 5 cm: calcula la seva ÀREA TOTAL, incloent les DUES bases, exacta en cm ². Selecciona la resposta exacta.",
+      "hint": "Identifica si es demana longitud, superfície o volum; utilitza radi, no diàmetre.",
+      "explanation": "Procediment: Aplica la fórmula geomètrica corresponent i conserva les unitats i factors de π exactes. Resultat 28π. Identifica si es demana longitud, superfície o volum; utilitza ràdio, no diàmetre. Cercle =πr²; perímetre =2πr; cilindre V=πr²h; con V=πr²h/3; lateral cilindre =2π rh; lateral con =π rg. Solució exacta: 28π. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L05-01": {
+      "prompt": "Converteix exactament 5/2 m² a cm ². Escriu el nombre de cm ². Escriu un nombre exacte sense unitats.",
+      "hint": "Les conversions depenen de si la mesura és superfície o volum, no només dels prefixos.",
+      "explanation": "Procediment: Multiplica o divideix per la potència de deu associada a unitats quadrades/cúbiques; conversió exacta 25000. Les conversions depenen de si la mesura és superfície o volum, no només dels prefixos: 1 m²=10000 cm ²; 1 m³=1000000 cm ³=1000 L i 1 L=1000 cm ³. Aplica el factor corresponent. Solució exacta: 25000. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L05-02": {
+      "prompt": "Converteix exactament 2 m³ a cm ³. Escriu el nombre de cm ³. Escriu un nombre exacte sense unitats.",
+      "hint": "Les conversions depenen de si la mesura és superfície o volum, no només dels prefixos.",
+      "explanation": "Procediment: Multiplica o divideix per la potència de deu associada a unitats quadrades/cúbiques; conversió exacta 2000000. Les conversions depenen de si la mesura és superfície o volum, no només dels prefixos: 1 m²=10000 cm ²; 1 m³=1000000 cm ³=1000 L i 1 L=1000 cm ³. Aplica el factor corresponent. Solució exacta: 2000000. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L05-03": {
+      "prompt": "Converteix 3500 cm ³ a litres (L), usant 1 L=1000 cm ³. Escriu un nombre exacte sense unitats.",
+      "hint": "Les conversions depenen de si la mesura és superfície o volum, no només dels prefixos.",
+      "explanation": "Procediment: Multiplica o divideix per la potència de deu associada a unitats quadrades/cúbiques; conversió exacta 3,5. Les conversions depenen de si la mesura és superfície o volum, no només dels prefixos: 1 m²=10000 cm ²; 1 m³=1000000 cm ³=1000 L i 1 L=1000 cm ³. Aplica el factor corresponent. Solució exacta: 3,5. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L05-04": {
+      "prompt": "Converteix 3/2 m³ a litres (L), sabent que 1 m³=1000 L. Selecciona la resposta exacta.",
+      "hint": "Les conversions depenen de si la mesura és superfície o volum, no només dels prefixos.",
+      "explanation": "Procediment: Multiplica o divideix per la potència de deu associada a unitats quadrades/cúbiques; conversió exacta 1500. Les conversions depenen de si la mesura és superfície o volum, no només dels prefixos: 1 m²=10000 cm ²; 1 m³=1000000 cm ³=1000 L i 1 L=1000 cm ³. Aplica el factor corresponent. Solució exacta: 1500. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L05-05": {
+      "prompt": "Converteix 25000 cm ² a m² amb el factor quadràtic correcte. Selecciona la resposta exacta.",
+      "hint": "Les conversions depenen de si la mesura és superfície o volum, no només dels prefixos.",
+      "explanation": "Procediment: Multiplica o divideix per la potència de deu associada a unitats quadrades/cúbiques; conversió exacta 2,5. Les conversions depenen de si la mesura és superfície o volum, no només dels prefixos: 1 m²=10000 cm ²; 1 m³=1000000 cm ³=1000 L i 1 L=1000 cm ³. Aplica el factor corresponent. Solució exacta: 2,5. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L06-01": {
+      "prompt": "Un dipòsit rectangular mesura INTERIORment 5×4×3 dm. Està ple al 75 %. Quants litres conté? Escriu un nombre exacte sense unitats.",
+      "hint": "Distingeix volum interior total de la fracció plena o de l'increment percentual sol·licitat.",
+      "explanation": "Procediment: Volum interior o volum desplaçat i fracció d'ompliment calculats amb equivalències dm ³=L i cm ³= mL; resultat 45. Distingeix volum interior total de la fracció plena o de l'increment percentual sol·licitat. Els dm ³ equivalen a litres; per a augmentar omplert multiplica capacitat per diferència de percentatges, no percentatge final. Solució exacta: 45. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L06-02": {
+      "prompt": "Un dipòsit de capacitat 80 L està al 20 % i ha d'arribar al 70 %. Quants litres cal AFEGIR, no quants tindrà al final? Escriu un nombre exacte sense unitats.",
+      "hint": "Distingeix volum interior total de la fracció plena o de l'increment percentual sol·licitat.",
+      "explanation": "Procediment: Volum interior o volum desplaçat i fracció d'ompliment calculats amb equivalències dm ³=L i cm ³= mL; resultat 40. Distingeix volum interior total de la fracció plena o de l'increment percentual sol·licitat. Els dm ³ equivalen a litres; per a augmentar omplert multiplica capacitat per diferència de percentatges, no percentatge final. Solució exacta: 40. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L06-03": {
+      "prompt": "Un sòlid totalment submergit desplaça 2500 cm ³ d'aigua. Sense pèrdues, quants litres d'aigua desplaça? Escriu un nombre exacte sense unitats.",
+      "hint": "Distingeix volum interior total de la fracció plena o de l'increment percentual sol·licitat.",
+      "explanation": "Procediment: Volum interior o volum desplaçat i fracció d'ompliment calculats amb equivalències dm ³=L i cm ³= mL; resultat 2,5. Distingeix volum interior total de la fracció plena o de l'increment percentual sol·licitat. Els dm ³ equivalen a litres; per a augmentar omplert multiplica capacitat per diferència de percentatges, no percentatge final. Solució exacta: 2,5. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L06-04": {
+      "prompt": "Un dipòsit rectangular mesura INTERIORment 4×3×2 dm. Està ple al 50 %. Quants litres conté? Selecciona la resposta exacta.",
+      "hint": "Distingeix volum interior total de la fracció plena o de l'increment percentual sol·licitat.",
+      "explanation": "Procediment: Volum interior o volum desplaçat i fracció d'ompliment calculats amb equivalències dm ³=L i cm ³= mL; resultat 12. Distingeix volum interior total de la fracció plena o de l'increment percentual sol·licitat. Els dm ³ equivalen a litres; per a augmentar omplert multiplica capacitat per diferència de percentatges, no percentatge final. Solució exacta: 12. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-E2-M01-L06-05": {
+      "prompt": "Un dipòsit de capacitat 1000 L està al 40 % i ha d'arribar al 70 %. Quants litres cal AFEGIR, no quants tindrà al final? Selecciona la resposta exacta.",
+      "hint": "Distingeix volum interior total de la fracció plena o de l'increment percentual sol·licitat.",
+      "explanation": "Procediment: Volum interior o volum desplaçat i fracció d'ompliment calculats amb equivalències dm ³=L i cm ³= mL; resultat 300. Distingeix volum interior total de la fracció plena o de l'increment percentual sol·licitat. Els dm ³ equivalen a litres; per a augmentar omplert multiplica capacitat per diferència de percentatges, no percentatge final. Solució exacta: 300. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    }
+  }
+}

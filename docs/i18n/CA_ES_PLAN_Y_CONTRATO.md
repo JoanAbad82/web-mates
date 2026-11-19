@@ -66,3 +66,9 @@ Propuestas y distribución de trabajo: https://github.com/JoanAbad82/web-mates/i
 Prueba en Chrome de 390px, con emulación táctil (no móvil real), ruta de curso, selector ca/es y fallback de lección. Se ejecuta únicamente contra un servidor de loopback y bloquea accesos externos. Los resultados deben archivarse en el expediente F4 independiente antes de incorporar cambios a main.
 
 **Publicación de código abierto ≠ despliegue web público.** El repositorio está publicado bajo MIT. El despliegue de una web para menores sigue condicionado a los gates reales de seguridad, privacidad, accesibilidad, revisión educativa y una decisión específica de publicación.
+
+
+## Estado de la oleada especializada 19/11/2026
+
+30/85 unidades, 179/505 lecciones y 895/2.525 actividades (todos `draft_unreviewed`, 0 revisiones lingüísticas humanas). Pendientes: 55 unidades, 326 lecciones y 1630 actividades.
+Paquetes nuevos: B1C-A01, B1C-F02, B1C-G01, E2-A01, E2-A02, E2-F01, E2-G01, E2-M01, E2-N02, E2-P01, E3-G01, E4A-G01, E4A-N01, E4A-P01, E4B-A01, E4B-A02, E4B-F01, E4B-G01. Candidatos aislados, revisión humana pendiente y publicación de código por Pull Request; GitHub Pages no activado.

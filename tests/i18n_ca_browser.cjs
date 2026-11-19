@@ -1,8 +1,10 @@
 'use strict';
 // ca-ES browser smoke: no network beyond ephemeral loopback; no tests of linguistic correctness implied.
 const fs=require('fs'),path=require('path'),http=require('http');
-const root=path.resolve(__dirname,'..'),site=path.join(root,'site');
-const evidence=path.resolve(root,'../evidencias');
+const root=path.resolve(__dirname,'..'),site=process.env.WEBMATES_SITE_DIR ?
+ path.resolve(process.env.WEBMATES_SITE_DIR):path.join(root,'site');
+const evidence=process.env.WEBMATES_EVIDENCE_DIR ?
+ path.resolve(process.env.WEBMATES_EVIDENCE_DIR):path.resolve(root,'../evidencias');
 fs.mkdirSync(evidence,{recursive:true});
 let puppeteer;
 try{puppeteer=require('puppeteer-core');}
@@ -258,15 +260,23 @@ let server,browser;
  const e2Feedback=await page.$eval('.f3-feedback',e=>e.textContent);
  check('E2_N01_VALIDATOR_CA',e2Feedback.includes('Correcte.')&&e2Feedback.includes('Resposta exacta: 9'),
   e2Feedback.slice(0,240),'Signed power calculator preserves canonical answer');
- await page.goto(base+'?lang=ca#/curso/E2/unidad/E2-N02/leccion/E2-N02-L01',{waitUntil:'networkidle0'});
- await page.waitForSelector('.f1-question-prompt',{timeout:12000});
- const pending=await page.evaluate(()=>({
-  mainLang:document.querySelector('#main').lang,
-  prompt:document.querySelector('.f1-question-prompt')?.textContent,
-  bannerVisible:!document.querySelector('#locale-partial').hidden
- }));
- check('UNTRANSLATED_E2_N02_ES_FALLBACK',pending.mainLang==='es'&&pending.bannerVisible,
-  pending,'Pending unit still attributed Spanish');
+ const manifest=JSON.parse(fs.readFileSync(path.join(site,'i18n/ca-ES/manifest.v1.json'),'utf8'));
+ const pendingRef=manifest.units.find(x=>!x.package);
+ if(pendingRef){
+  const courseCode=pendingRef.unit_id.split('-')[0];
+  const unitRef=units.find(u=>u.unit_id===pendingRef.unit_id);
+  const lessonId=unitRef?.lessons?.[0]?.lesson_id;
+  await page.goto(base+'?lang=ca#/curso/'+courseCode+'/unidad/'+pendingRef.unit_id+'/leccion/'+lessonId,
+   {waitUntil:'networkidle0'});
+  await page.waitForSelector('.f1-question-prompt',{timeout:12000});
+  const pending=await page.evaluate(()=>({
+   mainLang:document.querySelector('#main').lang,
+   prompt:document.querySelector('.f1-question-prompt')?.textContent,
+   bannerVisible:!document.querySelector('#locale-partial').hidden
+  }));
+  check('UNTRANSLATED_DYNAMIC_ES_FALLBACK',pending.mainLang==='es'&&pending.bannerVisible,
+   {unit:pendingRef.unit_id,...pending},'Pending unit still attributed Spanish');
+ }
 
  check('NO_JS_OR_EXTERNAL',results.jsErrors.length===0&&results.external.length===0&&results.httpErrors.length===0,
   {jsErrors:results.jsErrors,external:results.external,httpErrors:results.httpErrors},'no errors/requests');

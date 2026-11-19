@@ -11,7 +11,7 @@ ES_MARKER=re.compile(r'[¿¡]|\b(?:fracción|comprobación|datos utilizados|resu
 checks=0
 for uid in UIDS:
  _a,_b,source,ex=loaded(uid)
- p=json.loads((ROOT/'site/i18n/ca-ES'/(uid+'.v1.json')).read_text(encoding='utf8'))
+ p=json.loads((SITE/'i18n/ca-ES'/(uid+'.v1.json')).read_text(encoding='utf8'))
  orig_l={x['lesson_id']:x for x in source['lesson_documents']}
  orig_a={x['exercise_id']:x for x in ex['activities']}
  assert len(orig_l)==len(p['lessons'])
@@ -37,5 +37,5 @@ for uid in UIDS:
    assert val.strip() and val!=o[key],(eid,key)
    assert not ES_MARKER.search(val),(eid,key,val)
    checks+=1
- print('EDITORIAL_DRAFT_SCREEN_PASS',uid,'lessons',6,'activities',30)
+ print('EDITORIAL_DRAFT_SCREEN_PASS',uid,'lessons',len(orig_l),'activities',len(orig_a))
 print('SPANISH_RESIDUAL_SCREEN_PASS',checks,'text-field checks (not linguistic sign-off)')

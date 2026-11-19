@@ -1,0 +1,333 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E2-A01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e2_a01.json": "40acb33c9727a2d66d9fd19d76fa72f167c2e537adca2551722ee1ae71dbb2b8",
+    "data/f3_e2_a01_exercises.json": "acea6c67ddb9e055eca812265f1409bfc6a71bbdb80ab13540c640a200d37c4b"
+  },
+  "lessons": {
+    "E2-A01-L01": {
+      "title": "Monomis i termes semblants",
+      "objectives": [
+        "Distingir el coeficient i la part literal d'un monomi.",
+        "Reduir monomis que tenen les mateixes lletres amb idèntics exponents."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un monomi és un producte d'un nombre (coeficient) per lletres elevades a exponents naturals. Dos termes són semblants només si la seva part literal és exactament igual. Podem sumar els seus coeficients sense alterar la part literal; 3x i 3x² no són semblants."
+        },
+        {
+          "body": "5x + 2x − 4x: tots contenen x. Opera els coeficients 5 + 2 − 4 = 3 i conserva x. Resultat: 3x."
+        },
+        {
+          "body": "4a² − 7a² + a²: (4 − 7 + 1)a² = −2a². No canviïs l'exponent en sumar."
+        },
+        {
+          "body": "Visualitza tres caixes marcades x: cinc caixes més dues caixes menys quatre caixes deixen tres caixes x. No es pot unir una caixa x² amb una caixa x: representen quantitats diferents.",
+          "alt": "Representació alternativa descrita textualment"
+        },
+        {
+          "body": "Per què 5x i 5x² no es redueixen a 10x³?||Perquè en sumar termes l'exponent no se suma: les parts literals són diferents i no són termes semblants."
+        },
+        {
+          "body": "Per reduir: compara part literal → agrupa semblants → suma coeficients. Un signe menys pertany al coeficient."
+        }
+      ]
+    },
+    "E2-A01-L02": {
+      "title": "Operacions amb monomis",
+      "objectives": [
+        "Multiplicar i dividir monomis usant les propietats de les potències.",
+        "Distingir les regles de producte, quocient i potència de potència."
+      ],
+      "content_blocks": [
+        {
+          "body": "En multiplicar monomis, multiplica coeficients i suma exponents de la mateixa base. En dividir, divideix coeficients i resta exponents, sempre que el divisor no sigui zero. La potència d'una potència multiplica exponents, no els suma."
+        },
+        {
+          "body": "(−3x²)(4x³) = (−3·4)x²⁺³ = −12x⁵. Abans de sumar exponents verifica que ambdues bases són x."
+        },
+        {
+          "body": "18a⁵ / 3a² = 6a³, si a ≠ 0. La divisió exigeix denominador no nul; (x³)² = x⁶."
+        },
+        {
+          "body": "Taula verbal d'operacions: producte → suma d'exponents; quocient → resta; potència de potència → multiplicació. Aquestes regles actuen sobre factors, no sobre termes d'una suma.",
+          "alt": "Representació alternativa descrita textualment"
+        },
+        {
+          "body": "Quina diferència hi ha entre (x²)³ i x²·x³?||La potència de potència produeix x⁶; el producte de dues potències de base x produeix x⁵."
+        },
+        {
+          "body": "Coeficients per separat; després potències d'igual base. Comprova sempre el signe i les restriccions en divisions."
+        }
+      ]
+    },
+    "E2-A01-L03": {
+      "title": "Polinomis senzills",
+      "objectives": [
+        "Identificar termes, grau i terme independent d'un polinomi.",
+        "Sumar i restar polinomis agrupant potències iguals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un polinomi és una suma finita de monomis amb exponents naturals. El grau del polinomi no nul és el major exponent amb coeficient diferent de zero. Per sumar o restar col·loca en columnes les mateixes potències i opera els seus coeficients."
+        },
+        {
+          "body": "Expressió: (2x² + 3x − 1) + (5x² − x + 4) = (2+5)x² + (3−1)x + (−1+4) = 7x² + 2x + 3."
+        },
+        {
+          "body": "Expressió: (4x² − 2x + 1) − (x² + 3x − 2) = 4x²−2x+1−x²−3x+2 = 3x²−5x+3."
+        },
+        {
+          "body": "Una taula de tres columnes x² x constante permet alinear termes de diferent posició. La columna buida equival a coeficient zero.",
+          "alt": "Representació alternativa descrita textualment"
+        },
+        {
+          "body": "Per què en la resta canvia el signe de tots els termes del segon polinomi?||Perquè el signe menys multiplica per −1 a tot el parèntesi, no només al seu primer terme."
+        },
+        {
+          "body": "Ordena per exponents, escriu zeros on faltin potències, reuneix coeficients i comprova amb un valor senzill."
+        }
+      ]
+    },
+    "E2-A01-L04": {
+      "title": "Substitució i valor numèric",
+      "objectives": [
+        "Avaluar expressions substituint lletres per nombres amb claudàtors.",
+        "Evitar errors de signes i ordre d'operacions."
+      ],
+      "content_blocks": [
+        {
+          "body": "El valor numèric d'una expressió es calcula reemplaçant cada lletra per un nombre. Una substitució negativa ha de portar parèntesi: per a x = −2, x² = (−2)² = 4. Després segueix la jerarquia d'operacions."
+        },
+        {
+          "body": "En 2x² − 3x + 1 amb x=−2: 2·(−2)²−3·(−2)+1 = 8+6+1 = 15."
+        },
+        {
+          "body": "En 3(a+2) − a² per a a=4: 3·6−16 = 2. Primer parèntesi i potències; després producte i resta."
+        },
+        {
+          "body": "Representa una màquina: introdueix x, calcula x², duplica aquest valor, resta 3x i suma 1. Canviar l'ordre pot donar una sortida errònia.",
+          "alt": "Representació alternativa descrita textualment"
+        },
+        {
+          "body": "Quin error apareix si escrius −2² en comptes de (−2)² per a x² quan x=−2?||−2² sol significar −(2²)=−4, mentre que (−2)²=4; per això se substitueixen negatius entre parèntesis."
+        },
+        {
+          "body": "Reemplaça cada aparició de la lletra; usa parèntesis amb negatius; respecta potències i operacions; estima si el resultat té sentit."
+        }
+      ]
+    },
+    "E2-A01-L05": {
+      "title": "Identitats i equivalència",
+      "objectives": [
+        "Reconèixer expressions equivalents mitjançant la propietat distributiva.",
+        "Verificar una identitat i distingir-la d'una igualtat certa només per a alguns valors."
+      ],
+      "content_blocks": [
+        {
+          "body": "Dues expressions són equivalents quan donen el mateix valor per a tota substitució permesa. La distributiva a(b+c)= ab + ac genera identitats. Comprovar en un sol nombre ajuda a detectar errors, però no demostra equivalència general."
+        },
+        {
+          "body": "3(x+2)=3x+6 per tot x: cada terme del parèntesi rep el factor 3."
+        },
+        {
+          "body": "2(x−4)+x=2x−8+x=3x−8. Si proves x=5, ambdós costats valen 7; la igualtat es justifica amb la distributiva."
+        },
+        {
+          "body": "Un dibuix de 3 grups amb una x i dues unitats mostra 3x i sis unitats. És una explicació visual de la distributiva.",
+          "alt": "Representació alternativa descrita textualment"
+        },
+        {
+          "body": "Fins a provar x=1 per a demostrar que dues expressions són idèntiques?||No. Coincidir per a un valor no basta; cal justificar transformacions vàlides per a tot valor permès."
+        },
+        {
+          "body": "Transformació equivalent: distribueix, agrupa i contrasta. Mai distribueixes a(b+c) com ab +c."
+        }
+      ]
+    },
+    "E2-A01-L06": {
+      "title": "Modelització d'enunciats",
+      "objectives": [
+        "Traduir costos, perímetres i patrons a expressions algebraiques.",
+        "Avaluar un model i reconèixer el significat de cada terme."
+      ],
+      "content_blocks": [
+        {
+          "body": "Modelitzar significa assignar lletres a magnituds, escriure relacions i comprovar unitats. En preu total = tarifa fixa + cost per unitat, el coeficient representa el preu unitari i la constant representa el cost fix."
+        },
+        {
+          "body": "Una excursió costa 5 € per alumne i 12 € de reserva. Per a n alumnes, C(n)=5n+12; per n=8, C=52 €."
+        },
+        {
+          "body": "Un rectangle té ample x i llarg x+3. El seu perímetre és 2x+2(x+3)=4x+6. Per a x=4, P=22 unitats."
+        },
+        {
+          "body": "Taula verbal: n=0 → tarifa fixa 12; n=1 → 17; n=2 → 22. Cada alumne addicional augmenta el cost cinc euros.",
+          "alt": "Representació alternativa descrita textualment"
+        },
+        {
+          "body": "Si un cost inclou una tarifa fixa, per què no basta multiplicar el nombre d'usos pel preu unitari?||Perquè la tarifa fixa es paga encara que hi hagi zero usos i s'ha d'afegir a part."
+        },
+        {
+          "body": "Identifica variable i unitat, tradueix cada frase, simplifica l'expressió i comprova amb un cas possible. No confones perímetre amb àrea."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E2-A01-L01-01": {
+      "prompt": "En 5x + 2x − 4x, quin és el coeficient resultant de x?",
+      "hint": "Tots tenen la mateixa part literal x.",
+      "explanation": "3x té coeficient 3."
+    },
+    "F3-E2-A01-L01-02": {
+      "prompt": "Redueix 4a² − 7a² + a². Escriu només el coeficient.",
+      "hint": "El coeficient de a² és 1 en l'últim terme.",
+      "explanation": "4−7+1=−2; l'expressió és −2a²."
+    },
+    "F3-E2-A01-L01-03": {
+      "prompt": "Calcula el valor de 4x quan x=3.",
+      "hint": "Multiplica el coeficient pel valor de x.",
+      "explanation": "Càlcul: 4x=4·3=12."
+    },
+    "F3-E2-A01-L01-04": {
+      "prompt": "Són semblants 5x² i −2x²?",
+      "hint": "Compara les lletres i els seus exponents.",
+      "explanation": "Tots dos contenen exactament x²; sí que són semblants."
+    },
+    "F3-E2-A01-L01-05": {
+      "prompt": "Són semblants 3x² i 3x?",
+      "hint": "Observa que x² i x no tenen el mateix exponent.",
+      "explanation": "Les potències són diferents, per això no es redueixen com a semblants."
+    },
+    "F3-E2-A01-L02-01": {
+      "prompt": "Quin és el coeficient de (−3x²)(4x³)?",
+      "hint": "Multiplica els coeficients.",
+      "explanation": "La part numèrica és −12 i la literal x⁵."
+    },
+    "F3-E2-A01-L02-02": {
+      "prompt": "Quin exponent té x en (2x²)(−5x⁴)?",
+      "hint": "En multiplicar potències de la mateixa base, suma exponents.",
+      "explanation": "La part literal és x⁶."
+    },
+    "F3-E2-A01-L02-03": {
+      "prompt": "Quin és el coeficient de (18x⁵)/(3x²), si x ≠ 0?",
+      "hint": "Divideix 18 entre 3.",
+      "explanation": "Càlcul: (18/3)x⁵⁻²=6x³."
+    },
+    "F3-E2-A01-L02-04": {
+      "prompt": "A quin exponent s'eleva x en (x³)²?",
+      "hint": "Potència de potència: multiplica exponents.",
+      "explanation": "Càlcul: (x³)²=x⁶."
+    },
+    "F3-E2-A01-L02-05": {
+      "prompt": "Quina expressió és (3x)(2x²)?",
+      "hint": "Multiplica coeficients i suma exponents.",
+      "explanation": "El resultat és 6x³."
+    },
+    "F3-E2-A01-L03-01": {
+      "prompt": "Coeficient de x² en (2x²+3x−1)+(5x²−x+4).",
+      "hint": "Reuneix els coeficients de x².",
+      "explanation": "7x² és el terme quadràtic."
+    },
+    "F3-E2-A01-L03-02": {
+      "prompt": "Terme independent de (2x²+3x−1)+(5x²−x+4).",
+      "hint": "El terme independent no porta lletra.",
+      "explanation": "El terme independent és 3."
+    },
+    "F3-E2-A01-L03-03": {
+      "prompt": "Quin grau té el polinomi 7x³−2x+4?",
+      "hint": "Cerca el major exponent amb coeficient no nul.",
+      "explanation": "Grau 3."
+    },
+    "F3-E2-A01-L03-04": {
+      "prompt": "Calcula 2x²+3x−1 per x=2.",
+      "hint": "Primer calcula x².",
+      "explanation": "Càlcul: 8+6−1=13."
+    },
+    "F3-E2-A01-L03-05": {
+      "prompt": "Quin és (4x²−2x+1)−(x²+3x−2)?",
+      "hint": "Resta cada coeficient del segon polinomi.",
+      "explanation": "Resultat 3x²−5x+3."
+    },
+    "F3-E2-A01-L04-01": {
+      "prompt": "Calcula 2x²−3x+1 quan x=−2.",
+      "hint": "Substitueix x per (−2).",
+      "explanation": "Càlcul: 8+6+1=15."
+    },
+    "F3-E2-A01-L04-02": {
+      "prompt": "Calcula x² per x=−3.",
+      "hint": "Escriu (−3)² amb parèntesi.",
+      "explanation": "Càlcul: (−3)²=9."
+    },
+    "F3-E2-A01-L04-03": {
+      "prompt": "Calcula 5−2x per x=4.",
+      "hint": "Substitueix x=4.",
+      "explanation": "El valor és −3."
+    },
+    "F3-E2-A01-L04-04": {
+      "prompt": "Calcula 3x²−2 per x=2.",
+      "hint": "Eleva x al quadrat abans de multiplicar.",
+      "explanation": "El resultat és 10."
+    },
+    "F3-E2-A01-L04-05": {
+      "prompt": "Quant val x²−x quan x=−2?",
+      "hint": "Substitueix usant parèntesis per a x=−2.",
+      "explanation": "El valor numèric és 6."
+    },
+    "F3-E2-A01-L05-01": {
+      "prompt": "Avalua 3(x+2) per a x=4.",
+      "hint": "Suma primer 4+2.",
+      "explanation": "S'obté 18, igual que 3x+6."
+    },
+    "F3-E2-A01-L05-02": {
+      "prompt": "Avalua 3x−8 per a x=5.",
+      "hint": "Multiplica 3 per 5.",
+      "explanation": "El resultat és 7."
+    },
+    "F3-E2-A01-L05-03": {
+      "prompt": "Són equivalents 3(x+2) i 3x+6?",
+      "hint": "Pista: Aplica la distributiva.",
+      "explanation": "Sí: ambdues expressions són idèntiques."
+    },
+    "F3-E2-A01-L05-04": {
+      "prompt": "Són equivalents 2x i 3x per a tot x?",
+      "hint": "Cerca un valor com x=1.",
+      "explanation": "No hi ha identitat entre 2x i 3x."
+    },
+    "F3-E2-A01-L05-05": {
+      "prompt": "Quina és la forma reduïda de 2(x−4)+x?",
+      "hint": "Distribueix el 2.",
+      "explanation": "La forma reduïda és 3x−8."
+    },
+    "F3-E2-A01-L06-01": {
+      "prompt": "Una excursió cobra 5 € per alumne i 12 € de reserva. Total per a 8 alumnes, en €?",
+      "hint": "Cost total = 5n+12.",
+      "explanation": "Càlcul: 5·8+12=52 €."
+    },
+    "F3-E2-A01-L06-02": {
+      "prompt": "Un rectangle té ample x i llarg x+3. Perímetre quan x=4?",
+      "hint": "Pista: P=2x+2(x+3).",
+      "explanation": "4·4+6=22 unitats."
+    },
+    "F3-E2-A01-L06-03": {
+      "prompt": "Una tarifa de 7 € fixos més 2 € per servei. Cost de 3 serveis?",
+      "hint": "Suma cost fix i cost variable.",
+      "explanation": "Càlcul: 13 €."
+    },
+    "F3-E2-A01-L06-04": {
+      "prompt": "Preu de 4 € per entrada més 10 € fixos: quina expressió descriu n entrades?",
+      "hint": "El cost fix no depèn de n.",
+      "explanation": "La fórmula és 4n+10."
+    },
+    "F3-E2-A01-L06-05": {
+      "prompt": "Un taxi cobra 2 € de baixada de bandera i 3 € per km. Preu de 5 km?",
+      "hint": "El cost fix no es multiplica per quilòmetres.",
+      "explanation": "Càlcul: Total 17 €."
+    }
+  }
+}

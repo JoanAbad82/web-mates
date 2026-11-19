@@ -1,0 +1,295 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E4A-N01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e4a_n01.json": "029f7d1f19aea6071bd05901403420b529351701da553d22b363915313bf8e51",
+    "data/f3_e4a_n01_exercises.json": "1d0a01bc7684b21d1e36f34a561f8abb14b3bf2b3642cbe3274edf99bf3e9c06"
+  },
+  "lessons": {
+    "E4A-N01-L01": {
+      "title": "Reals i intervals",
+      "objectives": [
+        "Representar i comparar intervals de reals amb extrems oberts o tancats.",
+        "Traduir condicions de mesura a conjunts de valors i operacions d'intersecció."
+      ],
+      "content_blocks": [
+        {
+          "body": "Els nombres reals inclouen racionals i irracionals, i poden ordenar-se en una recta numèrica orientada. Un interval [a,b] conté ambdós extrems, mentre que (a,b) no en conté cap; l'infinit mai no s'inclou com un nombre real. La condició x≥2 s'escriu [2, +∞), i 2<x≤5 correspon a (2,5]. Intersecar dues restriccions equival a exigir ambdues: [1,6]∩(3,8)=(3,6]. La unió representa complir almenys una. En contextos de durada i longitud, un interval descriu rang de mesures possibles; no converteix automàticament una quantitat indivisible en contínua. En dibuixar, la posició aproximada d'un punt no substitueix el significat exacte de claudàtors i parèntesis. La recta de reals permet comparar irracionals com √2 entre 1 i 2 sense arrodonir-los a fraccions exactes."
+        },
+        {
+          "body": "Si una mesura exigeix x≥2 i x<5, la intersecció és [2,5). El valor 2 s'admet, però 5 no compleix la segona desigualtat."
+        },
+        {
+          "body": "Els intervals [1,6] i (3,8) s'intersequen en (3,6]. El nombre 3 queda exclòs pel segon i el 6 roman admès."
+        },
+        {
+          "body": "Interval exacte i representació auxiliar. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "Interval exacte i representació auxiliar. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "Interval exacte i representació auxiliar"
+          }
+        },
+        {
+          "body": "Per què +∞ mai porta corxet en notació d'intervals?||Perquè l'infinit no és un nombre real assolible com a extrem."
+        },
+        {
+          "body": "Recuperació activa: Els nombres reals inclouen racionals i irracionals, i poden ordenar-se en una recta numèrica orientada. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    },
+    "E4A-N01-L02": {
+      "title": "Potències, arrels i arrodoniment",
+      "objectives": [
+        "Operar potències amb exponents sencers i arrels principals.",
+        "Distingir potències racionals i restriccions de radicants reals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Les lleis de potències a^m·a^n=a^(m+n) i a^m/a^n=a^(m−n) requereixen que les expressions estiguin definides i que el denominador no sigui zero. L'arrel quadrada principal √a és no negativa quan a≥0; per això √(x²)= x, no x per a qualsevol signe. L'arrel cúbica real admet radicant negatiu. Per a>0, a^(p/q) s'interpreta com a arrel q-èsima principal de a^p quan q>0; aquest conveni evita ambigüitat d'arrels parells reals. Una aproximació decimal a una arrel irracional no és igualtat exacta; √8=2√2, mentre que √8≈2,828. Les potències amb bases negatives i exponents no enters necessiten una anàlisi de definició, i no s'han d'aplicar mecànicament propietats de logaritmes o exponents fora del seu domini."
+        },
+        {
+          "body": "Simplifica √72: √(36·2)=6√2. La resposta exacta no equival a escriure 8,49 sense especificar que és aproximació."
+        },
+        {
+          "body": "Per a x=−3, √(x²)=√9=3=, −3. És fals que √(x²)=x quan x és negatiu."
+        },
+        {
+          "body": "Arrel principal com a funció no negativa. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "Arrel principal com a funció no negativa. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "Arrel principal com a funció no negativa"
+          }
+        },
+        {
+          "body": "Pot substituir-se sempre √(x²) per x?||No; l'arrel quadrada principal és x i pot canviar el signe."
+        },
+        {
+          "body": "Recuperació activa: Les lleis de potències a^m·a^n=a^(m+n) i a^m/a^n=a^(m−n) requereixen que les expressions estiguin definides i que el denominador no sigui zero. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    },
+    "E4A-N01-L03": {
+      "title": "Error i cotes en mesuraments",
+      "objectives": [
+        "Calcula cotes d'error absolut a partir d'arrodoniment.",
+        "Diferenciar error absolut, relatiu i nombre de xifres significatives."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una mesura arrodonida a l'enter més proper representa un interval de possibles valors d'amplada una unitat: si s'anuncia 12 m i es va aplicar arrodoniment habitual a l'enter, l'error absolut màxim teòric és 0,5 m, i el valor real es troba aproximadament entre 11,5 m i 12,5 m, amb compte amb les regles d'empat en els extrems. Si s'arrodoneix a dos decimals, la cota és 0,005 unitats. L'error absolut és x_real −x; el relatiu divideix per x_real quan x_real ≠0. Les xifres significatives depenen de la precisió del mesurament, i un resultat calculat no pot declarar-se més precís sense una justificació. Una cota determina un conjunt de valors plausibles i no afirma on és el valor real exacte. Es distingeix instrument, precisió indicada i aproximació numèrica."
+        },
+        {
+          "body": "Es mesura 12,3 cm arrodonint a dècimes: l'error absolut de l'arrodoniment és com a màxim 0,05 cm, sense saber si el valor real està per damunt o sota."
+        },
+        {
+          "body": "Una longitud real de 50 cm s'aproxima com 49 cm: error absolut 1 cm i relatiu 1/50=2 % respecte al valor real."
+        },
+        {
+          "body": "Cota d'arrodoniment amb interval de possibles valors. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "Cota d'arrodoniment amb interval de possibles valors. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "Cota d'arrodoniment amb l'interval de valors possibles"
+          }
+        },
+        {
+          "body": "Una dada arrodonida a centèsimes assegura que el seu error absolut és zero?||No; la cota habitual de l'arrodoniment és mitjana centèsima, 0,005 unitats."
+        },
+        {
+          "body": "Recuperació activa: Una mesura arrodonida a l'enter més proper representa un interval de possibles valors d'amplària una unitat: si s'anuncia 12 m i es va aplicar arrodoniment habitual a l'enter, l'error absolut màxim teòric és 0,5 m, i el valor real es troba aproximadament entre 11,5 m i 12,5 m, amb cura amb les regles d'empat en els extrems. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    },
+    "E4A-N01-L04": {
+      "title": "Comparacions de magnituds",
+      "objectives": [
+        "Comparar magnituds mitjançant raons amb unitats coherents.",
+        "Calcular raons d'escala i contrastar conversions dimensionals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una magnitud física s'expressa amb un nombre i una unitat. Per comparar 2,5 km i 800 m cal convertir a la mateixa unitat: 2500 m enfront de 800 m, raó 2500/800=25/8. Una raó entre magnituds homogènies pot no tenir unitats, mentre que velocitat = distància/temps té unitats de m/s o km/h. Multiplicar una longitud per 100 en convertir metres a centímetres no autoritza multiplicar una àrea per 100, perquè 1 m²=10 000 cm ². En volums, el factor s'eleva al cub. Les comparacions requereixen condicions i escala de mesura homogènies; barrejar quantitats en unitats diferents sense conversió produeix resultats incorrectes. Es consideren aproximacions només quan les dades són aproximades i s'explica la precisió de sortida."
+        },
+        {
+          "body": "Compara 2,5 km i 800 m: 2,5 km =2500 m. La seva raó és 2500/800=25/8=3,125, per la qual cosa la primera longitud és major."
+        },
+        {
+          "body": "Un rectangle de 2 m² té 20 000 cm ², doncs 1 m²=(100 cm )²=10 000 cm ²."
+        },
+        {
+          "body": "Comparació de magnituds en unitats compatibles. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "Comparació de magnituds en unitats compatibles. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "Comparació de magnituds en unitats compatibles"
+          }
+        },
+        {
+          "body": "Per a passar de m² a cm ² basta multiplicar el valor per 100?||No; la conversió d'àrea multiplica per 100²=10 000."
+        },
+        {
+          "body": "Recuperació activa: Una magnitud física s'expressa amb un nombre i una unitat. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    },
+    "E4A-N01-L05": {
+      "title": "Proporcionalitat i escales aplicades",
+      "objectives": [
+        "Resoldre problemes d'escales i proporcionalitat directa amb unitats.",
+        "Distingir efectes de factors lineals, superficials i volumètrics."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una escala 1:n en un pla significa que una unitat de longitud dibuixada representa n unitats reals de la mateixa magnitud. En un mapa a escala 1: 50 000, 2 cm representen 100 000 cm =1 km. Abans de calcular cal convertir a unitats homogènies; l'escala afecta a longituds, no directament a àrees. Si una figura semblant s'amplia per factor k>0, el seu perímetre es multiplica per k, l'àrea per k² i el volum d'un sòlid semblant per k³. Una taxa de canvi proporcional y= mx amb m constant conserva el quocient y/x per x≠0; no s'ha de confondre amb repartiment inversament proporcional. Aquests conceptes es desenvolupen aquí amb suport en proporcionalitat, mesura i semblança anteriors, sense suposar acabada E3-N02 ni E3-G02."
+        },
+        {
+          "body": "En escala 1: 50 000, 2 cm de pla equivalen a 100 000 cm reals, això és 1000 m=1 km."
+        },
+        {
+          "body": "Una maqueta s'amplia linealment al triple: la superfície corresponent augmenta per factor 3²=9 i el volum per 3³=27."
+        },
+        {
+          "body": "Escala lineal i factor de volum. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "Escala lineal i factor de volum. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "Escala lineal i factor de volum"
+          }
+        },
+        {
+          "body": "Si duplica l'escala lineal d'un sòlid semblant, duplica el seu volum?||No; el volum augmenta per factor 2³=8."
+        },
+        {
+          "body": "Recuperació activa: Una escala 1:n en un pla significa que una unitat de longitud dibuixada representa n unitats reals de la mateixa magnitud. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E4A-N01-L01-01": {
+      "prompt": "En Reals i intervals: Calcula la longitud de l'interval real [2,5) en unitats de la recta, sense confondre obertura de l'extrem amb la seva distància. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Representa les desigualtats en la recta i revisa cada extrem obert o tancat.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 3. Representa les desigualtats en la recta i revisa cada extrem obert o tancat. La intersecció exigeix complir dues condicions; x−c ≤r equival a c−r≤x≤c+r, i x−c >r descriu l'exterior. Resposta contrastable: 3. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L01-02": {
+      "prompt": "En Reals i intervals: Quina és la INTERSECCIÓ exacta de [1,6] i (3,8)? Distingeix límits oberts i tancats. Selecciona una opció exacta.",
+      "hint": "Representa les desigualtats en la recta i revisa cada extrem obert o tancat.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte (3,6]. Representa les desigualtats en la recta i revisa cada extrem obert o tancat. La intersecció exigeix complir dues condicions; x−c ≤r equival a c−r≤x≤c+r, i x−c >r descriu l'exterior. Resposta contrastable: (3,6]. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L01-03": {
+      "prompt": "En Reals i intervals: Està el valor x=2 inclòs en l'interval [2,5) (Sí / No)? Respecta l'extrem obert. Selecciona una opció exacta.",
+      "hint": "Representa les desigualtats en la recta i revisa cada extrem obert o tancat.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte. Representa les desigualtats en la recta i revisa cada extrem obert o tancat. La intersecció exigeix complir dues condicions; x−c ≤r equival a c−r≤x≤c+r, i x−c >r descriu l'exterior. Resposta contrastable: Sí. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L01-04": {
+      "prompt": "En Reals i intervals: Està el valor x=5 inclòs en l'interval [2,5) (Sí / No)? Respecta l'extrem obert. Selecciona una opció exacta.",
+      "hint": "Representa les desigualtats en la recta i revisa cada extrem obert o tancat.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte. Representa les desigualtats en la recta i revisa cada extrem obert o tancat. La intersecció exigeix complir dues condicions; x−c ≤r equival a c−r≤x≤c+r, i x−c >r descriu l'exterior. Resposta contrastable: No. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L01-05": {
+      "prompt": "En Reals i intervals: És +∞ un nombre real que pugui incloure's com a extrem tancat de [2, +∞) (Sí / No)? Selecciona una opció exacta.",
+      "hint": "Representa les desigualtats en la recta i revisa cada extrem obert o tancat.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte. Representa les desigualtats en la recta i revisa cada extrem obert o tancat. La intersecció exigeix complir dues condicions; x−c ≤r equival a c−r≤x≤c+r, i x−c >r descriu l'exterior. Resposta contrastable: No. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L02-01": {
+      "prompt": "En Potències, arrels i arrodoniment: Simplifica exactament √72 com A√2, amb A sencer positiu. Quin és el coeficient A? Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Usa definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 6. Utilitza definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini. √(x²)= x; per a potències a^m·a^n=a^(m+n). Les arrels cúbiques reals admeten signe negatiu. Resposta contrastable: 6. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L02-02": {
+      "prompt": "En Potències, arrels i arrodoniment: Per x=-3, calcula √(x²) com a arrel principal no negativa i no com un signe triat sense justificació. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Usa definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 3. Utilitza definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini. √(x²)= x; per a potències a^m·a^n=a^(m+n). Les arrels cúbiques reals admeten signe negatiu. Resposta contrastable: 3. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L02-03": {
+      "prompt": "En Potències, arrels i arrodoniment: Calcula 2^3·2^4 aplicant suma d'exponents i avalua el nombre exacte. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Usa definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 128. Utilitza definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini. √(x²)= x; per a potències a^m·a^n=a^(m+n). Les arrels cúbiques reals admeten signe negatiu. Resposta contrastable: 128. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L02-04": {
+      "prompt": "En Potències, arrels i arrodoniment: Existeix l'arrel quadrada principal real d'un nombre estrictament negatiu (Sí / No)? Selecciona una opció exacta.",
+      "hint": "Usa definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté No. Utilitza definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini. √(x²)= x; per a potències a^m·a^n=a^(m+n). Les arrels cúbiques reals admeten signe negatiu. Resposta contrastable: No. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L02-05": {
+      "prompt": "En Potències, arrels i arrodoniment: Calcula l'arrel CÚBICA real de -27; a diferència de l'arrel quadrada, admet radicant negatiu. Selecciona una opció exacta.",
+      "hint": "Usa definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte -3. Utilitza definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini. √(x²)= x; per a potències a^m·a^n=a^(m+n). Les arrels cúbiques reals admeten signe negatiu. Resposta contrastable: -3. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L03-01": {
+      "prompt": "En error i cotes en mesuraments: Un nombre s'arrodoneix correctament a 1 posicions decimals. Quina és la cota màxima de l'error absolut en unitats? Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Separa valor real, valor aproximat i cota d'error; conserva les unitats.",
+      "explanation": "Raó matemàtica: Separa error absolut, relatiu i precisió de dades, usant fraccions exactes per confirmar 0,05. Separa valor real, valor aproximat i cota d'error; conserva les unitats. Error absolut: real − aprox; relatiu: real − aprox. / real si real ≠0; en sumar cotes s'usa desigualtat triangular. Resposta contrastable: 0,05. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L03-02": {
+      "prompt": "En Error i cotes en mesuraments: Un mesurament real 50 s'aproxima com 49. Quin és el seu error RELATIU en percentatge prenent {real} com a base? Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Separa valor real, valor aproximat i cota d'error; conserva les unitats.",
+      "explanation": "Raó matemàtica: Separa error absolut, relatiu i precisió de dades, usant fraccions exactes per confirmar 2. Separa valor real, valor aproximat i cota d'error; conserva les unitats. Error absolut: real − aprox; relatiu: real − aprox. / real si real ≠0; en sumar cotes s'usa desigualtat triangular. Resposta contrastable: 2. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L03-03": {
+      "prompt": "En error i cotes en mesuraments: Calcula l'error ABSOLUT entre el valor real 100 i l'aproximació 99, sense percentatges. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Separa valor real, valor aproximat i cota d'error; conserva les unitats.",
+      "explanation": "Raó matemàtica: Separa error absolut, relatiu i precisió de dades, usant fraccions exactes per confirmar 1. Separa valor real, valor aproximat i cota d'error; conserva les unitats. Error absolut: real − aprox; relatiu: real − aprox. / real si real ≠0; en sumar cotes s'usa desigualtat triangular. Resposta contrastable: 1. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L03-04": {
+      "prompt": "En error i cotes en mesuraments: Un nombre s'arrodoneix correctament a 2 posicions decimals. Quina és la cota màxima de l'error absolut en unitats? Selecciona una opció exacta.",
+      "hint": "Separa valor real, valor aproximat i cota d'error; conserva les unitats.",
+      "explanation": "Raó matemàtica: Separa error absolut, relatiu i precisió de dades, usant fraccions exactes per confirmar 0,005. Separa valor real, valor aproximat i cota d'error; conserva les unitats. Error absolut: real − aprox; relatiu: real − aprox. / real si real ≠0; en sumar cotes s'usa desigualtat triangular. Resposta contrastable: 0,005. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L03-05": {
+      "prompt": "En error i cotes en mesuraments: Arrodonir una mesura a centèsimes garanteix error absolut exactament zero (Sí / No)? Selecciona una opció exacta.",
+      "hint": "Separa valor real, valor aproximat i cota d'error; conserva les unitats.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte. Separa valor real, valor aproximat i cota d'error; conserva les unitats. Error absolut: real − aprox; relatiu: real − aprox. / real si real ≠0; en sumar cotes s'usa desigualtat triangular. Resposta contrastable: No. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L04-01": {
+      "prompt": "En Comparacions de magnituds: Converteix la longitud 5/2 km a metres, mantenint el factor 1000 m per km. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 2500. Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum. 1 km =1000 m, 1 m²=10 000 cm ²; una escala lineal k transforma àrees per k² i volums per k³. Resposta contrastable: 2500. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L04-02": {
+      "prompt": "En Comparacions de magnituds: Compara 2500 m amb 800 m: calcula la raó exacta de la primera magnitud entre la segona, sense unitats. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 3,125. Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum. 1 km =1000 m, 1 m²=10 000 cm ²; una escala lineal k transforma àrees per k² i volums per k³. Resposta contrastable: 3,125. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L04-03": {
+      "prompt": "En Comparacions de magnituds: Converteix exactament 2 m² a cm ²: aplica factor (100 cm )² i no un factor lineal. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 20000. Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum. 1 km =1000 m, 1 m²=10 000 cm ²; una escala lineal k transforma àrees per k² i volums per k³. Resposta contrastable: 20000. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L04-04": {
+      "prompt": "En Comparacions de magnituds: Quines unitats té la raó entre dues longituds expressades ambdues en metres: Sense unitats, Metros o Metros quadrats? Selecciona una opció exacta.",
+      "hint": "Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte Sense unitats. Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum. 1 km =1000 m, 1 m²=10 000 cm ²; una escala lineal k transforma àrees per k² i volums per k³. Resposta contrastable: Sense unitats. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L04-05": {
+      "prompt": "En Comparacions de magnituds: Es recorren 150 km en 3 h. Calcula velocitat mitjana en km/h, distingint-la de distància. Selecciona una opció exacta.",
+      "hint": "Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 50. Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum. 1 km =1000 m, 1 m²=10 000 cm ²; una escala lineal k transforma àrees per k² i volums per k³. Resposta contrastable: 50. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L05-01": {
+      "prompt": "En Proporcionalitat i escales aplicades: Mapa a escala 1: 50000. Una longitud de 2 cm en pla representa quants metres reals? Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 1000. Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum. 1 km =1000 m, 1 m²=10 000 cm ²; una escala lineal k transforma àrees per k² i volums per k³. Resposta contrastable: 1000. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L05-02": {
+      "prompt": "En Proporcionalitat i escales aplicades: Una figura plana semblant augmenta les seves longituds per factor k=3. Per quin FACTOR augmenta la seva àrea? Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 9. Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum. 1 km =1000 m, 1 m²=10 000 cm ²; una escala lineal k transforma àrees per k² i volums per k³. Resposta contrastable: 9. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L05-03": {
+      "prompt": "En Proporcionalitat i escales aplicades: Un sòlid semblant augmenta totes les seves longituds per factor k=2. Per quin FACTOR augmenta el seu volum? Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 8. Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum. 1 km =1000 m, 1 m²=10 000 cm ²; una escala lineal k transforma àrees per k² i volums per k³. Resposta contrastable: 8. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L05-04": {
+      "prompt": "En Proporcionalitat i escales aplicades: duplicar totes les dimensions lineals d'un sòlid semblant significa duplicar només el seu volum (Sí / No)? Selecciona una opció exacta.",
+      "hint": "Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte No. Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum. 1 km =1000 m, 1 m²=10 000 cm ²; una escala lineal k transforma àrees per k² i volums per k³. Resposta contrastable: No. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-E4A-N01-L05-05": {
+      "prompt": "En Proporcionalitat i escales aplicades: Mapa a escala 1: 25000. Una longitud de 4 cm en pla representa quants metres reals? Selecciona una opció exacta.",
+      "hint": "Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 1000. Converteix primer a unitats homogènies i identifica si canvia longitud, superfície o volum. 1 km =1000 m, 1 m²=10 000 cm ²; una escala lineal k transforma àrees per k² i volums per k³. Resposta contrastable: 1000. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    }
+  }
+}

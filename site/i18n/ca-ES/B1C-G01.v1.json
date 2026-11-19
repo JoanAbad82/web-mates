@@ -1,0 +1,407 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1C-G01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1c_g01.json": "1e313961ebb10b9002ebad60462428ff8450e5d2ce714e4beea225eca076614f",
+    "data/f3_b1c_g01_exercises.json": "34829ac4c2bf27c215779c235ad3cc68e7f2d15e2e89f12e6acb25b23f59bb3f"
+  },
+  "lessons": {
+    "B1C-G01-L01": {
+      "title": "Radians i graus",
+      "objectives": [
+        "Converteix entre graus i radians mitjançant una igualtat exacta.",
+        "Distingeix la mida angular de les unitats de longitud d'arc."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una volta completa mesura 360° o 2π radiants. Per tant, 180° equivalen exactament a π rad i 1 rad equival a 180/π graus. Per passar de graus a radiants es multiplica per π/180, i per passar de radiants a graus es multiplica per 180/π. El radian és una unitat adimensional de mesura angular que es defineix com a longitud d'arc dividida per radi; no és una longitud. Una aproximació decimal de π no és apropiada per a expressions exactes d'angles notables."
+        },
+        {
+          "body": "60° × π/180 = π/3 rad exactament. En sentit invers 3π/4 rad × 180/π = 135°."
+        },
+        {
+          "body": "Per a un cercle de radi 5 cm, l'arc subestès per 2 rad mesura 2×5=10 cm; s'usa s=rθ amb θ en radiants."
+        },
+        {
+          "body": "Equivalència angular de mitja volta. Representació geomètrica amb taula de valors i relacions matemàtiques exactes. Les escales il·lustratives no substitueixen les condicions de l'enunciat.",
+          "alt": "Equivalència angular de mitja volta. Tots els angles, costats, signes i quocients representats es descriuen en una taula semàntica alternativa sota del gràfic.",
+          "visual_spec": {
+            "title": "Equivalència angular de mitja volta"
+          }
+        },
+        {
+          "body": "A quants radians exactes equivalen 90°?||A π/2 rad, perquè 90/180 = 1/2."
+        },
+        {
+          "body": "Recuperació: Una volta completa mesura 360° o 2π radians. Revisa les condicions geomètriques, el quadrant o interval i l'exactitud abans de calcular un altre cas sense pistes."
+        }
+      ]
+    },
+    "B1C-G01-L02": {
+      "title": "Circumferència goniomètrica",
+      "objectives": [
+        "Interpretar la circumferència unitària com a conjunt d'angles orientats.",
+        "Llegir coordenades de punts mitjançant cosinus i si."
+      ],
+      "content_blocks": [
+        {
+          "body": "La circumferència goniomètrica té radi 1 i centre a l'origen. Partint del punt (1,0), un angle positiu recorre el cercle en sentit antihorari; un de negatiu, en sentit horari. El punt corresponent a l'angle θ té coordenades (cos θ, sin θ). Els signes d'aquestes coordenades depenen del quadrant. Angles que difereixen en voltes completes de 360° o 2π rad comparteixen punt. No confonguis el punt sobre la circumferència amb la inclinació d'una recta, ni el radian amb el radi."
+        },
+        {
+          "body": "A 0°, el punt és (1,0); a 90°, és (0,1), i a 180° és (−1,0)."
+        },
+        {
+          "body": "A 150°, el punt és (−√3/2,1/2): cosinus negatiu per estar en el segon quadrant i si positiu."
+        },
+        {
+          "body": "Circumferència unitària en 150°. Representació geomètrica amb taula de valors i relacions matemàtiques exactes. Les escales il·lustratives no substitueixen les condicions de l'enunciat.",
+          "alt": "Circumferència unitària en 150°. Tots els angles, costats, signes i quocients representats es descriuen en una taula semàntica alternativa sota del gràfic.",
+          "visual_spec": {
+            "title": "Circumferència unitària en 150°"
+          }
+        },
+        {
+          "body": "Quina coordenada correspon al sinus en la circumferència unitària?||La coordenada vertical i, ja que el punt és (cosθ, sinθ)."
+        },
+        {
+          "body": "Recuperació: La circumferència goniomètrica té radi 1 i centre en l'origen. Revisa les condicions geomètriques, el quadrant o interval i l'exactitud abans de calcular un altre cas sense pistes."
+        }
+      ]
+    },
+    "B1C-G01-L03": {
+      "title": "Raons de qualsevol angle",
+      "objectives": [
+        "Calcular sinus, cosinus i tangent en qualsevol quadrant amb angles de referència.",
+        "Reconèixer el domini i les discontinuïtats de la tangent."
+      ],
+      "content_blocks": [
+        {
+          "body": "El sinus i el cosinus de qualsevol angle real es llegeixen com les coordenades de la circumferència unitària i varien entre −1 i 1. L'angle de referència permet aprofitar valors de 30°, 45° i 60° en els quatre quadrants, aplicant signes correctes. La tangent és sense θ/ cosθ i no està definida si cos θ=0, com a 90° i 270°; mai se substitueix per infinit com a valor real. En angles negatius i majors d'una volta s'usa periodicitat: sinus i cosinus tenen període 360°, tangent 180°."
+        },
+        {
+          "body": "sen 150°=1/2 perquè l'angle de referència és 30° i el si és positiu en el quadrant II."
+        },
+        {
+          "body": "cos 240°=−1/2 (quadrant III) i tan 45°=1; no obstant això tan 90° no està definida."
+        },
+        {
+          "body": "Signes trigonomètrics en el tercer quadrant. Representació geomètrica amb taula de valors i relacions matemàtiques exactes. Les escales il·lustratives no substitueixen les condicions de l'enunciat.",
+          "alt": "Signes trigonomètrics en el tercer quadrant. Tots els angles, costats, signes i quocients representats es descriuen en una taula semàntica alternativa sota del gràfic.",
+          "visual_spec": {
+            "title": "Signes trigonomètrics en el tercer quadrant"
+          }
+        },
+        {
+          "body": "És tan 90° una quantitat real molt gran?||No, no està definida: cos 90°=0 i no és possible dividir entre zero."
+        },
+        {
+          "body": "Recuperació: El si i el cosinus de qualsevol angle real es llegeixen com les coordenades de la circumferència unitària i varien entre −1 i 1. Revisa les condicions geomètriques, el quadrant o interval i l'exactitud abans de calcular un altre cas sense pistes."
+        }
+      ]
+    },
+    "B1C-G01-L04": {
+      "title": "Identitats fonamentals",
+      "objectives": [
+        "Aplicar la identitat fonamental sinus ² + cosinus ² = 1.",
+        "Deduir el signe que falta usant el quadrant."
+      ],
+      "content_blocks": [
+        {
+          "body": "La identitat fonamental sense ²θ+ cos ²θ=1 s'obté de Pitàgores aplicat al punt (cosθ, sinθ) de la circumferència unitària. Si coneixem un cosinus racional, el sinus té mòdul √(1− cos ²θ), però el seu signe depèn del quadrant. Per exemple, amb cos θ=3/5 i θ en el quart quadrant, sin θ=−4/5. No s'ha d'escriure sin θ=+4/5 sense informació de signe. Aquesta identitat val per a qualsevol angle real, no només per triangles rectangles amb angle agut."
+        },
+        {
+          "body": "Si cos θ=3/5 i θ està en el primer quadrant, sin θ=√(1−9/25)=4/5."
+        },
+        {
+          "body": "Si cos θ=−3/5 i θ està en el segon quadrant, sin θ=+4/5, per ser positiu el sinus allà."
+        },
+        {
+          "body": "Identitat fonamental per a 3/5 i 4/5. Representació geomètrica amb taula de valors i relacions matemàtiques exactes. Les escales il·lustratives no substitueixen les condicions de l'enunciat.",
+          "alt": "Identitat fonamental per a 3/5 i 4/5. Tots els angles, costats, signes i quocients representats es descriuen en una taula semàntica alternativa sota del gràfic.",
+          "visual_spec": {
+            "title": "Identitat fonamental per a 3/5 i 4/5"
+          }
+        },
+        {
+          "body": "Per què el signe de senθ no s'obté només prenent l'arrel quadrada principal?||Perquè l'arrel aporta el mòdul; el quadrant determina si el sinus és positiu o negatiu."
+        },
+        {
+          "body": "Recuperació: La identitat fonamental sin ²θ+ cos ²θ=1 s'obté de Pitàgores aplicat al punt (cosθ, sinθ) de la circumferència unitària. Revisa les condicions geomètriques, el quadrant o interval i l'exactitud abans de calcular un altre cas sense pistes."
+        }
+      ]
+    },
+    "B1C-G01-L05": {
+      "title": "Equacions trigonomètriques senzilles",
+      "objectives": [
+        "Resol les equacions trigonomètriques senzilles en un interval declarat.",
+        "Distingir arrels múltiples per simetria i periodicitat."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una equació trigonomètrica pot tenir infinites solucions reals per periodicitat, però un interval concret restringeix les respostes. En l'interval 0°≤θ<360°, sen θ=1/2 té dues solucions, 30° i 150°. Per a cos θ=1/2 apareixen 60° i 300°, mentre tan θ=1 té solucions 45° i 225°. L'extrem 360° queda exclòs per evitar duplicar 0°. Les solucions que anul·len cosθ no poden pertànyer al domini de la tangent."
+        },
+        {
+          "body": "En [0°, 360°), sen θ=0 implica θ=0° o θ=180°; 360° no s'inclou."
+        },
+        {
+          "body": "En [0°, 360°), cos θ=0 implica θ=90° o θ=270°, tots dos dins de l'interval."
+        },
+        {
+          "body": "Dues solucions de si igual a 1/2. Representació geomètrica amb taula de valors i relacions matemàtiques exactes. Les escales il·lustratives no substitueixen les condicions de l'enunciat.",
+          "alt": "Dues solucions de si igual a 1/2. Tots els angles, costats, signes i quocients representats es descriuen en una taula semàntica alternativa sota del gràfic.",
+          "visual_spec": {
+            "title": "Dues solucions de si igual a 1/2"
+          }
+        },
+        {
+          "body": "Per què sen θ=1/2 no té una única solució en una volta?||El si és positiu en els quadrants I i II: 30° i 150° tenen la mateixa coordenada vertical."
+        },
+        {
+          "body": "Recuperació: Una equació trigonomètrica pot tenir infinites solucions reals per periodicitat, però un interval concret restringeix les respostes. Revisa les condicions geomètriques, el quadrant o interval i l'exactitud abans de calcular un altre cas sense pistes."
+        }
+      ]
+    },
+    "B1C-G01-L06": {
+      "title": "Teoremes del sinus i cosinus",
+      "objectives": [
+        "Triar i aplicar les lleis del si i del cosinus.",
+        "Reconèixer la limitació del cas ambigu sinus-seno-llat."
+      ],
+      "content_blocks": [
+        {
+          "body": "En qualsevol triangle euclidià, la llei del si afirma a/sen A=b/sen B=c/sen C amb cada costat enfront del seu angle; els angles interns són positius i sumen 180°. La llei del cosinus generalitza Pitàgores: c²=a²+b²−2a b cos C, on C és l'angle inclòs entre a i b. Si C=90°, cos C=0 i recuperem Pitàgores. En un cas amb dos costats i un angle no inclòs pot haver-hi dos triangles, un o cap; no s'ha de forçar una solució única."
+        },
+        {
+          "body": "Amb a=5, b=7 i angle inclòs C=60°, c²=25+49−70×1/2=39; per això c=√39, exacte."
+        },
+        {
+          "body": "Amb a=4 i A=30°, i B=90°, per llei del si b=4× sen90 °/ sen30 °=8."
+        },
+        {
+          "body": "Llei del cosinus amb angle comprès de 60°. Representació geomètrica amb taula de valors i relacions matemàtiques exactes. Les escales il·lustratives no substitueixen les condicions de l'enunciat.",
+          "alt": "Llei del cosinus amb angle comprès de 60°. Tots els angles, costats, signes i quocients representats es descriuen en una taula semàntica alternativa sota del gràfic.",
+          "visual_spec": {
+            "title": "Llei del cosinus amb angle comprès de 60°"
+          }
+        },
+        {
+          "body": "En la llei del cosinus pot usar-se un angle oposat a un dels costats multiplicats?||No: l'angle C de −2a b cos C és el comprès entre els costats a i b."
+        },
+        {
+          "body": "Recuperació: En qualsevol triangle euclidià, la llei del si afirma a/sen A=b/sen B=c/sen C amb cada costat enfront del seu angle; els angles interns són positius i sumen 180°. Revisa les condicions geomètriques, el quadrant o interval i l'exactitud abans de calcular un altre cas sense pistes."
+        }
+      ]
+    },
+    "B1C-G01-L07": {
+      "title": "Resolució de triangles",
+      "objectives": [
+        "Resol triangles no necessàriament rectangles amb dades suficients.",
+        "Seleccionar lleis trigonomètriques, comprovar angles i unitats."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per resoldre un triangle, comprova primer quins costats i angles es coneixen i si el triangle existeix. La suma d'angles és 180°. Amb dos angles i un costat (AAS/ASA), el tercer és immediat i la llei del si proporciona les longituds. Amb dos costats i l'angle inclòs (SAS), s'usa la llei del cosinus per al tercer. Comprova sempre positivitat de longituds, correspondència costat-angle i possibles ambigüitats si es disposa de costat-llat-angle no inclòs."
+        },
+        {
+          "body": "Un triangle amb A=30°, B=60° i costat a=5 té C=90°, i b=5√3, c=10 per llei del si."
+        },
+        {
+          "body": "Un triangle amb costats adjacents 6 i 8 i angle inclòs 90° té tercer costat 10 per la llei del cosinus."
+        },
+        {
+          "body": "Triangle 30° – 60° – 90° i costats homòlegs. Representació geomètrica amb taula de valors i relacions matemàtiques exactes. Les escales il·lustratives no substitueixen les condicions de l'enunciat.",
+          "alt": "Triangle 30° – 60° – 90° i costats homòlegs. Tots els angles, costats, signes i quocients representats es descriuen en una taula semàntica alternativa sota del gràfic.",
+          "visual_spec": {
+            "title": "Triangle 30° – 60° – 90° i costats homòlegs"
+          }
+        },
+        {
+          "body": "És possible un triangle amb angles 90°, 60° i 40°?||No, sumen 190°, major que 180°."
+        },
+        {
+          "body": "Recuperació: Per resoldre un triangle, comprova primer quins costats i angles es coneixen i si el triangle existeix. Revisa les condicions geomètriques, el quadrant o interval i l'exactitud abans de calcular un altre cas sense pistes."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1C-G01-L01-01": {
+      "prompt": "Converteix exactament 60° a radiants; selecciona el múltiple exacte de π.",
+      "hint": "Una volta completa equival a 360° = 2π radians.",
+      "explanation": "Procediment: 60×π/180 = π/3 radians exactes. Una volta completa equival a 360° = 2π radians. Multiplica el nombre de graus per π/180 i simplifica la fracció. Resposta exacta: π/3. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L01-02": {
+      "prompt": "Quants graus corresponen a 3π/4 radians?",
+      "hint": "Converteix multiplicant per 180°/π i cancel·lant els factors π.",
+      "explanation": "Procediment: (3π/4)×(180°/π) = 135°. Converteix multiplicant per 180°/π i cancel·lant els factors π. Multiplica la fracció racional de π per cent vuitanta graus. Resposta exacta: 135. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L01-03": {
+      "prompt": "Converteix exactament 90° a radiants; selecciona el múltiple exacte de π.",
+      "hint": "Una volta completa equival a 360° = 2π radians.",
+      "explanation": "Procediment: 90×π/180 = π/2 radians exactes. Una volta completa equival a 360° = 2π radians. Multiplica el nombre de graus per π/180 i simplifica la fracció. Resposta exacta: π/2. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L01-04": {
+      "prompt": "Un angle central de 2 radians abasta un arc de cercle de ràdio 5 cm. Longitud de l'arc en cm? Selecciona el valor exacte correcte.",
+      "hint": "La longitud d'arc és el radi multiplicat per l'angle en radians.",
+      "explanation": "Procediment: Arc s=rθ = 5 cm × 2 rad = 10 cm. La longitud d'arc és el radi multiplicat per l'angle en radians. No converteixis a graus per a aplicar s=rθ; la mesura ja està en radians. Resposta exacta: 10. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L01-05": {
+      "prompt": "Converteix exactament 135° a radiants; selecciona el múltiple exacte de π.",
+      "hint": "Una volta completa equival a 360° = 2π radians.",
+      "explanation": "Procediment: 135×π/180 = 3π/4 radians exactes. Una volta completa equival a 360° = 2π radians. Multiplica el nombre de graus per π/180 i simplifica la fracció. Resposta exacta: 3π/4. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L02-01": {
+      "prompt": "Calcula EXACTAMENT cos (0°). Si no està definida, tria aquesta resposta.",
+      "hint": "Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària.",
+      "explanation": "Procediment: Coordenada de la circumferència unitària o quocient sen/cos per 0°: 1. Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària. Usa angle de referència i signe de la coordenada; tan = sen/cos i cosinus zero impedeix dividir. Resposta exacta: 1. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L02-02": {
+      "prompt": "Calcula EXACTAMENT sen (90°). Si no està definida, tria aquesta resposta.",
+      "hint": "Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària.",
+      "explanation": "Procediment: Coordenada de la circumferència unitària o quocient sen/cos per 90°: 1. Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària. Usa angle de referència i signe de la coordenada; tan = sen/cos i cosinus zero impedeix dividir. Resposta exacta: 1. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L02-03": {
+      "prompt": "Calcula EXACTAMENT cos (180°). Si no està definida, tria aquesta resposta.",
+      "hint": "Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària.",
+      "explanation": "Procediment: Coordenada de la circumferència unitària o quocient sen/cos per 180°: -1. Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària. Usa angle de referència i signe de la coordenada; tan = sen/cos i cosinus zero impedeix dividir. Resposta exacta: -1. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L02-04": {
+      "prompt": "Calcula EXACTAMENT sen (150°). Si no està definida, tria aquesta resposta. Selecciona el valor exacte correcte.",
+      "hint": "Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària.",
+      "explanation": "Procediment: Coordenada de la circumferència unitària o quocient sen/cos per 150°: 0,5. Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària. Usa angle de referència i signe de la coordenada; tan = sen/cos i cosinus zero impedeix dividir. Resposta exacta: 0,5. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L02-05": {
+      "prompt": "Calcula EXACTAMENT cos (150°). Si no està definida, tria aquesta resposta.",
+      "hint": "Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària.",
+      "explanation": "Procediment: Coordenada de la circumferència unitària o quocient sen/cos per 150°: −√3/2. Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària. Usa angle de referència i signe de la coordenada; tan = sen/cos i cosinus zero impedeix dividir. Resposta exacta: −√3/2. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L03-01": {
+      "prompt": "Calcula EXACTAMENT sen (150°). Si no està definida, tria aquesta resposta.",
+      "hint": "Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària.",
+      "explanation": "Procediment: Coordenada de la circumferència unitària o quocient sen/cos per 150°: 0,5. Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària. Usa angle de referència i signe de la coordenada; tan = sen/cos i cosinus zero impedeix dividir. Resposta exacta: 0,5. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L03-02": {
+      "prompt": "Calcula EXACTAMENT cos (240°). Si no està definida, tria aquesta resposta.",
+      "hint": "Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària.",
+      "explanation": "Procediment: Coordenada de la circumferència unitària o quocient sen/cos per 240°: -0,5. Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària. Usa angle de referència i signe de la coordenada; tan = sen/cos i cosinus zero impedeix dividir. Resposta exacta: -0,5. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L03-03": {
+      "prompt": "Calcula EXACTAMENT tan (45°). Si no està definida, tria aquesta resposta.",
+      "hint": "Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària.",
+      "explanation": "Procediment: Coordenada de la circumferència unitària o quocient sen/cos per 45°: 1. Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària. Usa angle de referència i signe de la coordenada; tan = sen/cos i cosinus zero impedeix dividir. Resposta exacta: 1. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L03-04": {
+      "prompt": "Calcula EXACTAMENT tan (90°). Si no està definida, tria aquesta resposta.",
+      "hint": "Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària.",
+      "explanation": "Procediment: Coordenada de la circumferència unitària o quocient sen/cos per 90°: No definida. Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària. Usa angle de referència i signe de la coordenada; tan = sen/cos i cosinus zero impedeix dividir. Resposta exacta: No definida. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L03-05": {
+      "prompt": "Calcula EXACTAMENT tan (240°). Si no està definida, tria aquesta resposta.",
+      "hint": "Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària.",
+      "explanation": "Procediment: Coordenada de la circumferència unitària o quocient sen/cos per 240°: √3. Col·loca l'angle orientat en el quadrant correcte de la circumferència unitària. Usa angle de referència i signe de la coordenada; tan = sen/cos i cosinus zero impedeix dividir. Resposta exacta: √3. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L04-01": {
+      "prompt": "Se sap que cos θ=3/5 i que θ està en el quadrant I. Calculeu senθ exacte.",
+      "hint": "Aplica la identitat sen ²θ+ cos ²θ=1 i obté el mòdul mitjançant arrel.",
+      "explanation": "Procediment: 1−(3/5)² = 16/25; el quadrant I fixa el signe i sen θ=0,8. Aplica la identitat sen ²θ+ cos ²θ=1 i obté el mòdul mitjançant arrel. Aplica el signe del sinus al quadrant indicat després de calcular el mòdul. Resposta exacta: 0,8. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L04-02": {
+      "prompt": "Se sap que cos θ=3/5 i que θ està en el quadrant IV. Calculeu senθ exacte.",
+      "hint": "Aplica la identitat sen ²θ+ cos ²θ=1 i obté el mòdul mitjançant arrel.",
+      "explanation": "Procediment: 1−(3/5)² = 16/25; el quadrant IV fixa el signe i sen θ=-0,8. Aplica la identitat sen ²θ+ cos ²θ=1 i obté el mòdul mitjançant arrel. Aplica el signe del sinus al quadrant indicat després de calcular el mòdul. Resposta exacta: -0,8. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L04-03": {
+      "prompt": "Se sap que cos θ=-3/5 i que θ està en el quadrant II. Calculeu senθ exacte.",
+      "hint": "Aplica la identitat sen ²θ+ cos ²θ=1 i obté el mòdul mitjançant arrel.",
+      "explanation": "Procediment: 1−(-3/5)² = 16/25; el quadrant II fixa el signe i sen θ=0,8. Aplica la identitat sen ²θ+ cos ²θ=1 i obté el mòdul mitjançant arrel. Aplica el signe del sinus al quadrant indicat després de calcular el mòdul. Resposta exacta: 0,8. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L04-04": {
+      "prompt": "Se sap que sin θ=3/5 i que θ està en el quadrant II. Calculeu cosθ exacte. Selecciona el valor exacte correcte.",
+      "hint": "Mou el quadrat del cosinus a partir de la identitat fonamental.",
+      "explanation": "Procediment: 1−(3/5)² = 16/25; el quadrant II fixa el signe i cos θ=-0,8. Mou el quadrat del cosinus a partir de la identitat fonamental. Determina el signe del cosinus en el quadrant; l'arrel principal només dóna el seu mòdul. Resposta exacta: -0,8. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L04-05": {
+      "prompt": "Si sen θ=3/5 i cos θ=4/5, calcula sen ²θ+ cos ²θ exactament. Selecciona el valor exacte correcte.",
+      "hint": "Eleva cada raó al quadrat abans de realitzar la suma.",
+      "explanation": "Procediment: (3/5)²+(4/5)² = 1, per la identitat fonamental. Eleva cada raó al quadrat abans de realitzar la suma. La identitat fonamental per a un punt de la circumferència unitària produeix un. Resposta exacta: 1. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L05-01": {
+      "prompt": "Resol sen θ=1/2 en l'interval 0°≤θ<360°. Selecciona el conjunt de solucions en graus.",
+      "hint": "Cerca en quins quadrants o eixos compleix la raó el valor indicat.",
+      "explanation": "Procediment: En una volta, amb 360° exclòs, el conjunt complet és 30°; 150°. Cerca en quins quadrants o eixos compleix la raó el valor indicat. Té en compte els signes, la periodicitat i que 360° no pertany a l'interval. Resposta exacta: 30°; 150°. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L05-02": {
+      "prompt": "Resol cos θ=1/2 en l'interval 0°≤θ<360°. Selecciona el conjunt de solucions en graus.",
+      "hint": "Cerca en quins quadrants o eixos compleix la raó el valor indicat.",
+      "explanation": "Procediment: En una volta, amb 360° exclòs, el conjunt complet és 60°; 300°. Cerca en quins quadrants o eixos compleix la raó el valor indicat. Té en compte els signes, la periodicitat i que 360° no pertany a l'interval. Resposta exacta: 60°; 300°. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L05-03": {
+      "prompt": "Torna tan θ=1 en l'interval 0°≤θ<360°. Selecciona el conjunt de solucions en graus.",
+      "hint": "Cerca en quins quadrants o eixos compleix la raó el valor indicat.",
+      "explanation": "Procediment: En una volta, amb 360° exclòs, el conjunt complet és 45°; 225°. Cerca en quins quadrants o eixos compleix la raó el valor indicat. Té en compte els signes, la periodicitat i que 360° no pertany a l'interval. Resposta exacta: 45°; 225°. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L05-04": {
+      "prompt": "Resol cos θ=0 en l'interval 0°≤θ<360°. Selecciona el conjunt de solucions en graus.",
+      "hint": "Cerca en quins quadrants o eixos compleix la raó el valor indicat.",
+      "explanation": "Procediment: En una volta, amb 360° exclòs, el conjunt complet és 90°; 270°. Cerca en quins quadrants o eixos compleix la raó el valor indicat. Té en compte els signes, la periodicitat i que 360° no pertany a l'interval. Resposta exacta: 90°; 270°. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L05-05": {
+      "prompt": "Resol sen θ=0 en l'interval 0°≤θ<360°. Selecciona el conjunt de solucions en graus.",
+      "hint": "Cerca en quins quadrants o eixos compleix la raó el valor indicat.",
+      "explanation": "Procediment: En una volta, amb 360° exclòs, el conjunt complet és 0°; 180°. Cerca en quins quadrants o eixos compleix la raó el valor indicat. Té en compte els signes, la periodicitat i que 360° no pertany a l'interval. Resposta exacta: 0°; 180°. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L06-01": {
+      "prompt": "En un triangle amb costats 5 i 7 cm i angle comprés de 60°, calcula el QUADRAT c² (cm ²) del tercer costat oposat.",
+      "hint": "La llei del cosinus empra l'angle comprès entre els dos costats coneguts.",
+      "explanation": "Procediment: c² = 5²+7²−2×5×7×(0,5) = 39 cm ². La llei del cosinus empra l'angle comprès entre els dos costats coneguts. c²=a²+b²−2a b cos C. Per 60° el cosinus és 1/2 i per 120° és −1/2. Resposta exacta: 39. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L06-02": {
+      "prompt": "En un triangle, el costat a=4 cm està enfront de A=30°; calcula el costat b enfront de B=90°.",
+      "hint": "Usa la llei del si: a/senA =b /senB, amb costats enfront d'angles corresponents.",
+      "explanation": "Procediment: b = 4× sen90 °/ sen30 ° = 4×1/(1/2) = 8 cm. Usa la llei del si: a/senA =b /senB, amb costats enfront d'angles corresponents. Despeja b i utilitza sen30 °=1/2 i sen90 °=1 sense aproximacions. Resposta exacta: 8. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L06-03": {
+      "prompt": "En un triangle amb costats 3 i 5 cm i angle comprés de 60°, calcula el QUADRAT c² (cm ²) del tercer costat oposat.",
+      "hint": "La llei del cosinus empra l'angle comprès entre els dos costats coneguts.",
+      "explanation": "Procediment: c² = 3²+5²−2×3×5×(0,5) = 19 cm ². La llei del cosinus empra l'angle comprès entre els dos costats coneguts. c²=a²+b²−2a b cos C. Per 60° el cosinus és 1/2 i per 120° és −1/2. Resposta exacta: 19. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L06-04": {
+      "prompt": "En un triangle amb costats 5 i 7 cm i angle comprés de 120°, calcula el QUADRAT c² (cm ²) del tercer costat oposat. Selecciona el valor exacte correcte.",
+      "hint": "La llei del cosinus empra l'angle comprès entre els dos costats coneguts.",
+      "explanation": "Procediment: c² = 5²+7²−2×5×7×(-0,5) = 109 cm ². La llei del cosinus empra l'angle comprès entre els dos costats coneguts. c²=a²+b²−2a b cos C. Per 60° el cosinus és 1/2 i per 120° és −1/2. Resposta exacta: 109. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L06-05": {
+      "prompt": "En un triangle, el costat a=6 cm està enfront de A=30°; calcula el costat b enfront de B=90°. Selecciona el valor exacte correcte.",
+      "hint": "Usa la llei del si: a/senA =b /senB, amb costats enfront d'angles corresponents.",
+      "explanation": "Procediment: b = 6× sen90 °/ sen30 ° = 6×1/(1/2) = 12 cm. Usa la llei del si: a/senA =b /senB, amb costats enfront d'angles corresponents. Despeja b i utilitza sen30 °=1/2 i sen90 °=1 sense aproximacions. Resposta exacta: 12. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L07-01": {
+      "prompt": "Els angles d'un triangle mesuren 30°, 60° i C. Quants graus mesura C?",
+      "hint": "Els angles interns d'un triangle euclidià sumen cent vuitanta graus.",
+      "explanation": "Procediment: C = 180°−30°−60° = 90°. Els angles interns d'un triangle euclidià sumen cent vuitanta graus. Resta els angles coneguts a cent vuitanta i comprova que el tercer sigui positiu. Resposta exacta: 90. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L07-02": {
+      "prompt": "En un triangle, el costat a=5 cm està enfront de A=30°; calcula el costat b enfront de B=90°.",
+      "hint": "Usa la llei del si: a/senA =b /senB, amb costats enfront d'angles corresponents.",
+      "explanation": "Procediment: b = 5× sen90 °/ sen30 ° = 5×1/(1/2) = 10 cm. Usa la llei del si: a/senA =b /senB, amb costats enfront d'angles corresponents. Despeja b i utilitza sen30 °=1/2 i sen90 °=1 sense aproximacions. Resposta exacta: 10. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L07-03": {
+      "prompt": "En un triangle rectangle amb catets 6 i 8 cm, calcula la hipotenusa en cm.",
+      "hint": "Eleva al quadrat els dos catets; Pitàgores val per a angles rectes.",
+      "explanation": "Procediment: Pitàgores: √(6²+8²)=√100=10 cm. Eleva al quadrat els dos catets; Pitàgores val per a angles rectes. La hipotenusa és l'arrel principal de la suma dels quadrats dels catets. Resposta exacta: 10. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L07-04": {
+      "prompt": "Els angles d'un triangle mesuren 45°, 75° i C. Quants graus mesura C? Selecciona el valor exacte correcte.",
+      "hint": "Els angles interns d'un triangle euclidià sumen cent vuitanta graus.",
+      "explanation": "Procediment: C = 180°−45°−75° = 60°. Els angles interns d'un triangle euclidià sumen cent vuitanta graus. Resta els angles coneguts a cent vuitanta i comprova que el tercer sigui positiu. Resposta exacta: 60. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-B1C-G01-L07-05": {
+      "prompt": "En un triangle amb costats 6 i 8 cm i angle comprés de 60°, calcula el QUADRAT c² (cm ²) del tercer costat oposat. Selecciona el valor exacte correcte.",
+      "hint": "La llei del cosinus empra l'angle comprès entre els dos costats coneguts.",
+      "explanation": "Procediment: c² = 6²+8²−2×6×8×(0,5) = 52 cm ². La llei del cosinus empra l'angle comprès entre els dos costats coneguts. c²=a²+b²−2a b cos C. Per 60° el cosinus és 1/2 i per 120° és −1/2. Resposta exacta: 52. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    }
+  }
+}

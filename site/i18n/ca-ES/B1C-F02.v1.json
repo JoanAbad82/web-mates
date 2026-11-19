@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1C-F02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1c_f02.json": "6b3ed809decde4ac6b489c91d67c9ad10e25f72c8bef3b99ef578c1088ae1ba3",
+    "data/f3_b1c_f02_exercises.json": "e812320e563ebee496e98e44f1620d114005765fc8c4b8326378f1bb8fa46297"
+  },
+  "lessons": {
+    "B1C-F02-L01": {
+      "title": "Límit en un punt",
+      "objectives": [
+        "Comprendre el límit finit d'una funció en un punt.",
+        "Calcula els límits per substitució en polinomis i racionals continus en el punt."
+      ],
+      "content_blocks": [
+        {
+          "body": "El límit lim (x→a)f(x)=L expressa que les sortides s'aproximen arbitràriament a L quan les entrades s'aproximen a a, independentment que f(a) existeixi o coincideixi amb L. Els polinomis són continus i permeten substituir directament. Els quocients de polinomis també, si el denominador no val zero en a. Si s'obté 0/0, la substitució no determina el límit i cal transformar l'expressió sense modificar el domini inicial; no pot concloure's que el límit sigui zero o no existeixi. El procés d'aproximació exigeix considerar tots dos costats del punt per a parlar de límit bilateral. Un punt aïllat absent no impedeix necessàriament un límit finit."
+        },
+        {
+          "body": "lim (x→2)(x²+3x)=4+6=10, per continuïtat de la funció polinòmica."
+        },
+        {
+          "body": "lim (x→1)(x²−1)/(x−1) = lim (x→1)(x+1)=2; l'expressió inicial no està definida en x=1."
+        },
+        {
+          "body": "Límit d'un polinomi per substitució. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Límit d'un polinomi per substitució. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Límit d'un polinomi per substitució"
+          }
+        },
+        {
+          "body": "La inexistència de f(a) implica que no existeixi lim (x→a)f(x)?||No: pot existir un límit finit a pesar que falti el valor puntual."
+        },
+        {
+          "body": "Recuperació activa: El límit lim (x→a)f(x)=L expressa que les sortides s'aproximen arbitràriament a L quan les entrades s'aproximen a a, independentment que f(a) existeixi o coincideixi amb L. Torna després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    },
+    "B1C-F02-L02": {
+      "title": "Límits laterals",
+      "objectives": [
+        "Calcular límits laterals i decidir si el bilateral existeix.",
+        "Distingir valor de la funció i límits laterals en punts d'unió."
+      ],
+      "content_blocks": [
+        {
+          "body": "El límit per l'esquerra lim (x→a⁻)f(x) examina valors amb x<a; el de la dreta lim (x→a⁺)f(x) examina x>a. El límit bilateral finit existeix exactament quan tots dos laterals existeixen i són iguals. En la funció f(x)=x+1 si x<0 i f(x)=x² si x≥0, el límit esquerre en zero és 1 i el dret és 0, pel que el bilateral no existeix encara que f(0)=0. Un punt definit separadament pot tenir valor diferent d'ambdós límits sense alterar la seva existència. En funcions a trossos convé anotar desigualtats estrictes i no estrictes abans de substituir per a no barrejar branques."
+        },
+        {
+          "body": "Per a f(x)=x+1 (x<0), x² (x≥0), lim (x→0⁻)f(x)=1 i lim (x→0⁺)f(x)=0; no hi ha límit bilateral."
+        },
+        {
+          "body": "En g(x)= x /x per x≠0, el límit esquerre en 0 és −1 i el dret és +1; g(0) no està definida."
+        },
+        {
+          "body": "Salt de funció a trossos en x=0. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Salt de funció a trossos en x=0. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Salt de funció a trossos en x=0"
+          }
+        },
+        {
+          "body": "Si els laterals són diferents pot existir un límit bilateral real?||No, la igualtat de tots dos és condició necessària del límit bilateral."
+        },
+        {
+          "body": "Recuperació activa: El límit per l'esquerra lim (x→a⁻)f(x) examina valors amb x<a; el de la dreta lim (x→a⁺)f(x) examina x>a. Torna després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    },
+    "B1C-F02-L03": {
+      "title": "Límits en infinit",
+      "objectives": [
+        "Avaluar límits a l'infinit de quocients polinòmics per graus.",
+        "Distingir comportaments divergents i límits horitzontals finits."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a una funció racional P(x)/Q(x), el límit quan x→±∞ s'obté comparant els graus. Si el numerador té menor grau, el quocient tendeix a 0; si els graus coincideixen, tendeix al quocient de coeficients principals; si el numerador té grau major, hi ha creixement no acotat el signe del qual s'ha d'estudiar segons l'extrem. Dividir termes per la potència dominant facilita justificar aquests resultats. Un límit igual a 0 descriu tendència asimptòtica i no exigeix que la funció sigui zero per a algun x finit. Per exponencials amb base major que un, a^x→+∞ quan x→+∞ i a^x→0 quan x→−∞."
+        },
+        {
+          "body": "lim (x→+∞)(3x²+1)/(2x²+5)=3/2 per quocient de coeficients líders."
+        },
+        {
+          "body": "lim (x→+∞)(2x+1)/(x²+4)=0, perquè el grau del denominador és major."
+        },
+        {
+          "body": "Socient racional amb asímptota horitzontal. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Socient racional amb asímptota horitzontal. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Socient racional amb asímptota horitzontal"
+          }
+        },
+        {
+          "body": "La asímptota horitzontal y=2 impedeix que la gràfica creui aquesta recta?||No. Una asímptota horitzontal descriu el límit en infinit, no un valor prohibit de la funció."
+        },
+        {
+          "body": "Recuperació activa: Per a una funció racional P(x)/Q(x), el límit quan x→±∞ s'obté comparant els graus. Torna després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    },
+    "B1C-F02-L04": {
+      "title": "Indeterminacions bàsiques",
+      "objectives": [
+        "Resoldre indeterminacions 0/0 mitjançant factorització o racionalització elementals.",
+        "Justificar la transformació sense inventar el valor en un punt exclòs."
+      ],
+      "content_blocks": [
+        {
+          "body": "L'expressió 0/0 no és un valor de límit: indica que la substitució directa no decideix. Si P(a)=Q(a)=0, es pot factoritzar i cancel·lar el factor comú x−a SOL per x≠a, la qual cosa preserva el límit en acostar-se al punt. Per exemple (x²−4)/(x−2) coincideix amb x+2 per x≠2 i el seu límit en 2 és 4. En quocients amb arrels quadrades, racionalitzar multiplicant pel conjugat permet cancel·lar factors de forma vàlida prop del punt, com [√(x+1)−1]/x =1/[√(x+1)+1] per x≠0. Ha de distingir-se el límit de la inexistència de la funció en el punt."
+        },
+        {
+          "body": "lim (x→2)(x²−4)/(x−2)= lim (x→2)(x+2)=4, encara que la primera expressió no està definida en 2."
+        },
+        {
+          "body": "(x→0)(√(1+x)−1)/x=1/(√1+1)=1/2 després de racionalitzar pel conjugat."
+        },
+        {
+          "body": "Cancel·lació de factor per a calcular un límit. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Cancel·lació de factor per a calcular un límit. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Cancel·lació de factor per a calcular un límit"
+          }
+        },
+        {
+          "body": "És correcte dir que 0/0 val 1 per tenir numerador i denominador nuls?||No. És indeterminació; el valor depèn del comportament de les funcions prop del punt."
+        },
+        {
+          "body": "Recuperació activa: L'expressió 0/0 no és un valor de límit: indica que la substitució directa no decideix. Torna després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    },
+    "B1C-F02-L05": {
+      "title": "asímptotes",
+      "objectives": [
+        "Identificar asímptotes verticals i horitzontals, a partir de límits.",
+        "Diferenciar asímptota vertical de forat removible."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una recta vertical x=a és asímptota de f si almenys un dels límits laterals en acostar-se a a és infinit positiu o negatiu. Una recta y=L és asímptota horitzontal si f(x)→L quan x tendeix a +∞ o −∞. La funció 1/(x−2) posseeix AV x=2 i AH y=0. Un factor cancel·lable pot produir un límit finit amb un forat, que no és una asímptota vertical. El signe del denominador determina si cada lateral divergeix a +∞ o −∞: per 1/(x−2), des de l'esquerra tendeix a −∞ i des de la dreta a +∞. Les asímptotes no equivalen a línies que la gràfica tingui prohibit creuar en qualsevol punt."
+        },
+        {
+          "body": "f(x)=3+1/(x−2) té asímptotes x=2 i y=3; no està definida en x=2."
+        },
+        {
+          "body": "g(x)=(x²−4)/(x−2), x≠2, té forat en (2,4), però manca de asímptota vertical en x=2."
+        },
+        {
+          "body": "Asímptotes vertical i horitzontal. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Asímptotes vertical i horitzontal. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Asímptotes vertical i horitzontal"
+          }
+        },
+        {
+          "body": "El límit finit 4 en un punt exclòs demostra una asímptota vertical allí?||No. És una discontinuïtat evitable, no comportament infinit."
+        },
+        {
+          "body": "Recuperació activa: Una recta vertical x=a és asímptota de f si almenys un dels límits laterals en acostar-se a a és infinit positiu o negatiu. Torna després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    },
+    "B1C-F02-L06": {
+      "title": "Continuïtat i discontinuïtats",
+      "objectives": [
+        "Determinar continuïtat per límits i valor puntual en funcions a trossos.",
+        "Classificar discontinuïtats evitables, de salt i infinites."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una funció és contínua en x=a si està definida en a, existeix lim (x→a)f(x) i aquest límit coincideix amb f(a). Si els límits laterals finits són diferents, hi ha discontinuïtat de salt. Si el límit comú és finit però f(a) falta o difereix, la discontinuïtat és evitable: pot corregir-se redefinint un sol valor. Si el límit es fa infinit en almenys un lateral, existeix discontinuïtat infinita, no reparable assignant un valor finit al punt. Per garantir continuïtat d'una funció a trossos en la seva unió s'ha de resoldre el paràmetre que iguala ambdós límits i el valor definit. No confondre continuïtat de la gràfica en un dibuix amb una demostració de límits."
+        },
+        {
+          "body": "f(x)=x+1 si x<0 i f(x)=k si x≥0 és contínua en zero només per k=1."
+        },
+        {
+          "body": "g(x)=(x²−1)/(x−1) per x≠1, amb g(1)=2, és contínua en 1 perquè el límit val 2."
+        },
+        {
+          "body": "Salt i continuïtat per trams. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Salt i continuïtat per trams. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Salt i continuïtat per trams"
+          }
+        },
+        {
+          "body": "Fins a assignar un valor a una funció amb límits laterals desiguals per a fer-la contínua?||No. Primer han de coincidir els límits laterals, i el valor només pot igualar aquest límit comú."
+        },
+        {
+          "body": "Recuperació activa: Una funció és contínua en x=a si està definida en a, existeix lim (x→a)f(x) i aquest límit coincideix amb f(a). Torna després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1C-F02-L01-01": {
+      "prompt": "Calcula el límit lim (t→2)[1t²+(0)t+(0)] usant continuïtat polinòmica. Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Límit no és el mateix que valor puntual: comprova el denominador en substituir.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 4. Límit no és el mateix que valor puntual: comprova el denominador en substituir. Si obtens 0/0, simplifica o racionalitza per x≠a i només després acosta x→a; conserva el punt exclòs. Solució exacta: 4. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F02-L01-02": {
+      "prompt": "Calcula el límit quan x→1 de (x²−(1))/(x−(1))+(0), simplificant només prop de x=1 (no en el punt). Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Límit no és el mateix que valor puntual: comprova el denominador en substituir.",
+      "explanation": "Procediment i comprovació: El denominador original ha de ser diferent de zero. Una cancel·lació preserva el límit però no defineix el valor exclòs. Resultat: 2. Límit no és el mateix que valor puntual: comprova el denominador en substituir. Si obtens 0/0, simplifica o racionalitza per x≠a i només després acosta x→a; conserva el punt exclòs. Solució exacta: 2. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F02-L01-03": {
+      "prompt": "Calcula lim (t→1)[(1t+(2))/(1t+(3))], sabent que el denominador no s'anul·la. Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Límit no és el mateix que valor puntual: comprova el denominador en substituir.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 0,75. Límit no és el mateix que valor puntual: comprova el denominador en substituir. Si obtens 0/0, simplifica o racionalitza per x≠a i només després acosta x→a; conserva el punt exclòs. Solució exacta: 0,75. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F02-L01-04": {
+      "prompt": "Calcula el límit lim (t→2)[2t²+(3)t+(4)] usant continuïtat polinòmica. Selecciona la resposta EXACTA.",
+      "hint": "Límit no és el mateix que valor puntual: comprova el denominador en substituir.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 18. Límit no és el mateix que valor puntual: comprova el denominador en substituir. Si obtens 0/0, simplifica o racionalitza per x≠a i només després acosta x→a; conserva el punt exclòs. Solució exacta: 18. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F02-L01-05": {
+      "prompt": "Per a f(x)=(x²−(1))/(x−(1)), existeix un límit bilateral FINIT quan x→1 encara que f(1) sigui indefinida? Sí / No. Selecciona la resposta EXACTA.",
+      "hint": "Límit no és el mateix que valor puntual: comprova el denominador en substituir.",
+      "explanation": "Procediment i comprovació: El denominador original ha de ser diferent de zero. Una cancel·lació preserva el límit però no defineix el valor exclòs. Resultat: Sí. Límit no és el mateix que valor puntual: comprova el denominador en substituir. Si obtens 0/0, simplifica o racionalitza per x≠a i només després acosta x→a; conserva el punt exclòs. Solució exacta: Sí. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F02-L02-01": {
+      "prompt": "Donada f(x)=x+1 si x<0, i x² si x≥0, calcula lim (x→0⁻)f(x). Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Identifica el costat des del qual t'acosten i la condició exacta de cada tram.",
+      "explanation": "Procediment i comprovació: Calcula cada límit lateral des de la seva fórmula i compara amb el valor puntual de la branca corresponent. Resultat 1. Identifica el costat des del qual t'acosten i la condició exacta de cada tram. Existeix límit bilateral finit només si tots dos laterals coincideixen; continuïtat exigeix a més f(a)= aquest límit. Un salt no es repara assignant f(a). Solució exacta: 1. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F02-L02-02": {
+      "prompt": "Donada f(x)=x+1 si x<0, i x² si x≥0, calcula lim (x→0⁺)f(x). Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Identifica el costat des del qual t'acosten i la condició exacta de cada tram.",
+      "explanation": "Procediment i comprovació: Calcula cada límit lateral des de la seva fórmula i compara amb el valor puntual de la branca corresponent. Resultat 0. Identifica el costat des del qual t'acosten i la condició exacta de cada tram. Existeix límit bilateral finit només si tots dos laterals coincideixen; continuïtat exigeix a més f(a)= aquest límit. Un salt no es repara assignant f(a). Solució exacta: 0. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F02-L02-03": {
+      "prompt": "Per a f(x)=x+1 (x<0), x² (x≥0), quin és el límit BILATERAL en 0: No existeix, 0 o 1? Selecciona la resposta EXACTA.",
+      "hint": "Identifica el costat des del qual t'acosten i la condició exacta de cada tram.",
+      "explanation": "Procediment i comprovació: Calcula cada límit lateral des de la seva fórmula i compara amb el valor puntual de la branca corresponent. Resultat No existeix. Identifica el costat des del qual t'acosten i la condició exacta de cada tram. Existeix límit bilateral finit només si tots dos laterals coincideixen; continuïtat exigeix a més f(a)= aquest límit. Un salt no es repara assignant f(a). Solució exacta: No existeix. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F02-L02-04": {
+      "prompt": "Donada f(x)= x /x per x≠0, calcula lim (x→0⁻)f(x). Selecciona la resposta exacta.",
+      "hint": "Identifica el costat des del qual t'acosten i la condició exacta de cada tram.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: -1. Identifica el costat des del qual t'acosten i la condició exacta de cada tram. Existeix límit bilateral finit només si tots dos laterals coincideixen; continuïtat exigeix a més f(a)= aquest límit. Un salt no es repara assignant f(a). Solució exacta: -1. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F02-L02-05": {
+      "prompt": "Donada f(x)= x /x per x≠0, calcula lim (x→0⁺)f(x). Selecciona la resposta exacta.",
+      "hint": "Identifica el costat des del qual t'acosten i la condició exacta de cada tram.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 1. Identifica el costat des del qual t'acosten i la condició exacta de cada tram. Existeix límit bilateral finit només si tots dos laterals coincideixen; continuïtat exigeix a més f(a)= aquest límit. Un salt no es repara assignant f(a). Solució exacta: 1. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F02-L03-01": {
+      "prompt": "Calcula el límit a l'infinit de (3x²+1)/(2x²+4), expressat exactament. Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "En infinit compara els graus i signes dels termes dominants.",
+      "explanation": "Procediment i comprovació: Compara termes dominants en créixer x, considerant el seu signe i el sentit de l'infinit. Resultat 1,5. En infinit compara els graus i signes dels termes dominants. Si graus coincideixen, divideix coeficients principals; si grau denominador major, límit zero; si numerador domina, analitza signe cap a +∞ o −∞. Solució exacta: 1,5. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F02-L03-02": {
+      "prompt": "Calcula lim (x→+∞)(2x+(1))/(x²+(4)) per comparació de graus. Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "En infinit compara els graus i signes dels termes dominants.",
+      "explanation": "Procediment i comprovació: Compara termes dominants en créixer x, considerant el seu signe i el sentit de l'infinit. Resultat 0. En infinit compara els graus i signes dels termes dominants. Si graus coincideixen, divideix coeficients principals; si grau denominador major, límit zero; si numerador domina, analitza signe cap a +∞ o −∞. Solució exacta: 0. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F02-L03-03": {
+      "prompt": "Calcula el límit a l'infinit de (5x²+1)/(2x²+4), expressat exactament. Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "En infinit compara els graus i signes dels termes dominants.",
+      "explanation": "Procediment i comprovació: Compara termes dominants en créixer x, considerant el seu signe i el sentit de l'infinit. Resultat 2,5. En infinit compara els graus i signes dels termes dominants. Si graus coincideixen, divideix coeficients principals; si grau denominador major, límit zero; si numerador domina, analitza signe cap a +∞ o −∞. Solució exacta: 2,5. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F02-L03-04": {
+      "prompt": "Calcula lim (x→−∞) 2^x, base 2>1. Selecciona la resposta EXACTA.",
+      "hint": "Distingeix exponencial positiva de logaritme, definit només amb argument >0.",
+      "explanation": "Procediment i comprovació: Compara termes dominants en créixer x, considerant el seu signe i el sentit de l'infinit. Resultat 0. Distingeix exponencial positiva de logaritme, definit només amb argument >0. log_ a(t)=s equival a a^s=t amb a>0 i a≠1; per a>1, a^x→0 al tendir x→−∞. Solució exacta: 0. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F02-L03-05": {
+      "prompt": "Calcula lim (x→+∞)(3x^2) indicant +∞ o −∞. Selecciona la resposta EXACTA.",
+      "hint": "En infinit compara els graus i signes dels termes dominants.",
+      "explanation": "Procediment i comprovació: Compara termes dominants en créixer x, considerant el seu signe i el sentit de l'infinit. Resultat +∞. En infinit compara els graus i signes dels termes dominants. Si graus coincideixen, divideix coeficients principals; si grau denominador major, límit zero; si numerador domina, analitza signe cap a +∞ o −∞. Solució exacta: +∞. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F02-L04-01": {
+      "prompt": "Calcula el límit quan x→2 de (x²−(4))/(x−(2))+(0), simplificant només prop de x=2 (no en el punt). Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Límit no és el mateix que valor puntual: comprova el denominador en substituir.",
+      "explanation": "Procediment i comprovació: El denominador original ha de ser diferent de zero. Una cancel·lació preserva el límit però no defineix el valor exclòs. Resultat: 4. Límit no és el mateix que valor puntual: comprova el denominador en substituir. Si obtens 0/0, simplifica o racionalitza per x≠a i només després acosta x→a; conserva el punt exclòs. Solució exacta: 4. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F02-L04-02": {
+      "prompt": "Calcula lim (x→0)[√(1+x)−(1)]/x mitjançant conjugat; resultat exacte. Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Límit no és el mateix que valor puntual: comprova el denominador en substituir.",
+      "explanation": "Procediment i comprovació: Racionalitza multiplicant pel conjugat; per x≠0 obtens 1/[√(a²+x)+a] i en acostar-se a zero val 0,5. Límit no és el mateix que valor puntual: comprova el denominador en substituir. Si obtens 0/0, simplifica o racionalitza per x≠a i només després acosta x→a; conserva el punt exclòs. Solució exacta: 0,5. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F02-L04-03": {
+      "prompt": "La funció g(x)=(x²−(4))/(x−(2)) no ha estat redefinida en x=2. Quin és el seu VALOR puntual: Indefinido, 4 o 0? Selecciona la resposta EXACTA.",
+      "hint": "Límit no és el mateix que valor puntual: comprova el denominador en substituir.",
+      "explanation": "Procediment i comprovació: El denominador original ha de ser diferent de zero. Una cancel·lació preserva el límit però no defineix el valor exclòs. Resultat: Indefinit. Límit no és el mateix que valor puntual: comprova el denominador en substituir. Si obtens 0/0, simplifica o racionalitza per x≠a i només després acosta x→a; conserva el punt exclòs. Solució: Indefinida. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F02-L04-04": {
+      "prompt": "Calcula el límit quan x→3 de (x²−(9))/(x−(3))+(1), simplificant només prop de x=3 (no en el punt). Selecciona la resposta EXACTA.",
+      "hint": "Límit no és el mateix que valor puntual: comprova el denominador en substituir.",
+      "explanation": "Procediment i comprovació: El denominador original ha de ser diferent de zero. Una cancel·lació preserva el límit però no defineix el valor exclòs. Resultat: 7. Límit no és el mateix que valor puntual: comprova el denominador en substituir. Si obtens 0/0, simplifica o racionalitza per x≠a i només després acosta x→a; conserva el punt exclòs. Solució exacta: 7. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F02-L04-05": {
+      "prompt": "Calcula lim (x→0)[√(4+x)−(2)]/x mitjançant conjugat; resultat exacte. Selecciona la resposta EXACTA.",
+      "hint": "Límit no és el mateix que valor puntual: comprova el denominador en substituir.",
+      "explanation": "Procediment i comprovació: Racionalitza multiplicant pel conjugat; per x≠0 obtens 1/[√(a²+x)+a] i en acostar-se a zero val 0,25. Límit no és el mateix que valor puntual: comprova el denominador en substituir. Si obtens 0/0, simplifica o racionalitza per x≠a i només després acosta x→a; conserva el punt exclòs. Solució exacta: 0,25. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F02-L05-01": {
+      "prompt": "Per a f(x)=1/(x−(2)), identifica l'equació EXACTA de la seva asímptota vertical. Selecciona la resposta EXACTA.",
+      "hint": "Separa domini, zeros i tendència: un denominador nul exclou l'entrada original.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: x=2. Separa domini, zeros i tendència: un denominador nul exclou l'entrada original. Factoritza abans de cancel·lar, comprova restriccions d'origen i diferencia un forat d'una asímptota vertical amb límits laterals. Solució exacta: x=2. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F02-L05-02": {
+      "prompt": "Per a f(x)=1/(x−2)+(3), identifica l'equació EXACTA de la seva asímptota horitzontal. Selecciona la resposta EXACTA.",
+      "hint": "Separa domini, zeros i tendència: un denominador nul exclou l'entrada original.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: y=3. Separa domini, zeros i tendència: un denominador nul exclou l'entrada original. Factoritza abans de cancel·lar, comprova restriccions d'origen i diferencia un forat d'una asímptota vertical amb límits laterals. Solució exacta: y=3. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F02-L05-03": {
+      "prompt": "Calcula el límit esquerre de 1/(x−(2)) quan x→2 com ±∞. Selecciona la resposta EXACTA.",
+      "hint": "Distingeix aproximació lateral des de x<a o x>a: el denominador canvia de signe.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: −∞. Distingeix aproximació lateral des de x<a o x>a: el denominador canvia de signe. Per 1/(x−a), en apropar-se des de l'esquerra el límit és −∞ i des de la dreta +∞. Solució exacta: −∞. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F02-L05-04": {
+      "prompt": "Calcula el límit dret de 1/(x−(2)) quan x→2, com ±∞. Selecciona la resposta EXACTA.",
+      "hint": "Distingeix aproximació lateral des de x<a o x>a: el denominador canvia de signe.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: +∞. Distingeix aproximació lateral des de x<a o x>a: el denominador canvia de signe. Per 1/(x−a), en apropar-se des de l'esquerra el límit és −∞ i des de la dreta +∞. Solució exacta: +∞. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F02-L05-05": {
+      "prompt": "La funció (x²−(4))/(x−(2)) no està definida en x=2, però simplifica per a altres x. És el punt un Forat o una asímptota vertical? Selecciona la resposta EXACTA.",
+      "hint": "Separa domini, zeros i tendència: un denominador nul exclou l'entrada original.",
+      "explanation": "Procediment i comprovació: El denominador original ha de ser diferent de zero. Una cancel·lació preserva el límit però no defineix el valor exclòs. Resultat: Forat. Separa domini, zeros i tendència: un denominador nul exclou l'entrada original. Factoritza abans de cancel·lar, comprova restriccions d'origen i diferencia un forat d'una asímptota vertical amb límits laterals. Solució exacta: Forat. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F02-L06-01": {
+      "prompt": "La funció f(x)=x+(1) si x<0 i f(x)=k si x≥0 és contínua en 0. Calcula el paràmetre real k. Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Identifica el costat des del qual t'acosten i la condició exacta de cada tram.",
+      "explanation": "Procediment i comprovació: Calcula cada límit lateral des de la seva fórmula i compara amb el valor puntual de la branca corresponent. Resultat 1. Identifica el costat des del qual t'acosten i la condició exacta de cada tram. Existeix límit bilateral finit només si tots dos laterals coincideixen; continuïtat exigeix a més f(a)= aquest límit. Un salt no es repara assignant f(a). Solució exacta: 1. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F02-L06-02": {
+      "prompt": "En f(x)=x+1 per a x<0 i x² per a x≥0, els laterals en x=0 difereixen. Classifica la discontinuïtat: Salt, Evitable o Infinita. Selecciona la resposta EXACTA.",
+      "hint": "Identifica el costat des del qual t'acosten i la condició exacta de cada tram.",
+      "explanation": "Procediment i comprovació: Calcula cada límit lateral des de la seva fórmula i compara amb el valor puntual de la branca corresponent. Resultat Salt. Identifica el costat des del qual t'acosten i la condició exacta de cada tram. Existeix límit bilateral finit només si tots dos laterals coincideixen; continuïtat exigeix a més f(a)= aquest límit. Un salt no es repara assignant f(a). Solució exacta: Salt. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F02-L06-03": {
+      "prompt": "En x=2, la funció g(x) coincideix amb (x²−(4))/(x−(2)) per x≠2 i es defineix g(2)=4. És CONTÍNUA en 2? Selecciona la resposta EXACTA.",
+      "hint": "Identifica el costat des del qual t'acosten i la condició exacta de cada tram.",
+      "explanation": "Procediment i comprovació: Calcula cada límit lateral des de la seva fórmula i compara amb el valor puntual de la branca corresponent. Resultat Sí. Identifica el costat des del qual t'acosten i la condició exacta de cada tram. Existeix límit bilateral finit només si tots dos laterals coincideixen; continuïtat exigeix a més f(a)= aquest límit. Un salt no es repara assignant f(a). Solució exacta: Sí. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F02-L06-04": {
+      "prompt": "En x=2, la funció g(x) coincideix amb (x²−(4))/(x−(2)) per x≠2 i es defineix g(2)=3. És CONTÍNUA en 2? Selecciona la resposta EXACTA.",
+      "hint": "Identifica el costat des del qual t'acosten i la condició exacta de cada tram.",
+      "explanation": "Procediment i comprovació: Calcula cada límit lateral des de la seva fórmula i compara amb el valor puntual de la branca corresponent. Resultat No. Identifica el costat des del qual t'acosten i la condició exacta de cada tram. Existeix límit bilateral finit només si tots dos laterals coincideixen; continuïtat exigeix a més f(a)= aquest límit. Un salt no es repara assignant f(a). Solució exacta: No. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F02-L06-05": {
+      "prompt": "Quina classe de discontinuïtat presenta f(x)=1/(x−(1)) en x=1: Evitable, Salt o Infinita? Selecciona la resposta EXACTA.",
+      "hint": "Identifica el costat des del qual t'acosten i la condició exacta de cada tram.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: Infinita. Identifica el costat des del qual t'acosten i la condició exacta de cada tram. Existeix límit bilateral finit només si tots dos laterals coincideixen; continuïtat exigeix a més f(a)= aquest límit. Un salt no es repara assignant f(a). Solució exacta: Infinita. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    }
+  }
+}

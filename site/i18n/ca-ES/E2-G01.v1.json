@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E2-G01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e2_g01.json": "4e138da6e3ce9785780ccfb7d93372735cc54174c950da4022801360db005203",
+    "data/f3_e2_g01_exercises.json": "f7f8d337b056629298991bcedb46fa15d100e9af232cc25dd45e0de10adb343e"
+  },
+  "lessons": {
+    "E2-G01-L01": {
+      "title": "Congruència i semblança",
+      "objectives": [
+        "Distingir congruència de semblança en figures planes.",
+        "Comprovar proporcionalitat de costats homòlegs."
+      ],
+      "content_blocks": [
+        {
+          "body": "Dues figures congruents tenen la mateixa forma i la mateixa grandària, encara que estiguin girades o reflectides. Dues figures semblants conserven els seus angles corresponents i tenen costats homòlegs proporcionals per un mateix factor positiu k; k=1 és el cas congruent. En triangles basta el criteri angle-angle per semblança, però només comparar un costat no demostra que dues figures siguin semblants. Cal aparellar correctament els vèrtexs abans de dividir costats."
+        },
+        {
+          "body": "Triangles amb costats 3,4, 5 i 6,8, 10 són semblants amb raó 2, doncs 6/3=8/4=10/5=2."
+        },
+        {
+          "body": "Un triangle 3,4, 5 i un altre 3,4, 6 no són semblants per costats: les tres raons corresponents no són iguals."
+        },
+        {
+          "body": "Triangles semblants, raó 2. La taula proporciona les dades textuals exactes per comprendre la representació sense dependre de color o posició.",
+          "alt": "Triangles semblants, raó 2. Els elements, valors i unitats representats estan recollits de forma equivalent en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Triangles semblants, raó 2"
+          }
+        },
+        {
+          "body": "Congruent implica semblant?||Sí: dues figures congruents són semblants amb raó k=1, a més d'iguals en grandària."
+        },
+        {
+          "body": "Recorda la condició principal: Dues figures congruents tenen la mateixa forma i la mateixa grandària, encara que estiguin girades o reflectides. Comprova quina magnitud es calcula i en quines unitats; assaja un altre problema sense veure els passos."
+        }
+      ]
+    },
+    "E2-G01-L02": {
+      "title": "Raó de semblança",
+      "objectives": [
+        "Calcular longituds mitjançant una raó de semblança.",
+        "Justifica que el perímetre i l'àrea escala de manera diferent."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si una figura semblant s'amplia amb factor lineal k positiu, totes les longituds corresponents i el perímetre es multipliquen per k, però la seva àrea es multiplica per k². Aquesta diferència es deu al fet que les superfícies tenen dues dimensions. Si k=1/2, les àrees es redueixen a la quarta part; si k=3, es multipliquen per nou. Una raó entre costats sense correspondència clara no s'ha d'aplicar a tota la figura."
+        },
+        {
+          "body": "Un rectangle 3×4 s'amplia al triple: queda 9×12, la seva àrea passa de 12 a 108, factor 9."
+        },
+        {
+          "body": "Dos triangles semblants tenen raó de costats 2; si el perímetre petit és 15 cm, el gran és 30 cm."
+        },
+        {
+          "body": "Longitud k, àrea k². La taula proporciona les dades textuals exactes per comprendre la representació sense dependre de color o posició.",
+          "alt": "Longitud k, àrea k². Els elements, valors i unitats representats estan recollits de forma equivalent en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Longitud k, àrea k²"
+          }
+        },
+        {
+          "body": "Si dupliquem la longitud de tots els costats, es duplica l'àrea?||No: es quadruplica perquè el factor superficial és 2²."
+        },
+        {
+          "body": "Recorda la condició principal: Si una figura semblant s'amplia amb factor lineal k positiu, totes les longituds corresponents i el perímetre es multipliquen per k, però la seva àrea es multiplica per k². Comprova quina magnitud es calcula i en quines unitats; assaja un altre problema sense veure els passos."
+        }
+      ]
+    },
+    "E2-G01-L03": {
+      "title": "Escales i plànols",
+      "objectives": [
+        "Aplicar escales a plànols i maquetes.",
+        "Relacionar raons d'escala amb longitud i superfície."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una escala 1: 100 representa una longitud del pla cent vegades menor que la real, si ambdues usen la mateixa unitat. L'escala geomètrica és un cas de semblança: la raó entre longituds representades és constant, i les àrees en el pla canvien amb el quadrat d'aquesta raó. Per passar de cm del pla a m reals, divideix entre cent després d'aplicar el denominador d'escala. No confonguis l'escala d'un pla imprès amb la del mateix pla reescalat digitalment."
+        },
+        {
+          "body": "En un plànol 1: 200, 5 cm equivalen a 1000 cm reals, és a dir, 10 m."
+        },
+        {
+          "body": "Un rectangle de 4×3 cm en pla 1: 100 correspon a 4×3 m reals, superfície de 12 m²."
+        },
+        {
+          "body": "Escala geomètrica 1: 200. La taula proporciona les dades textuals exactes per comprendre la representació sense dependre de color o posició.",
+          "alt": "Escala geomètrica 1: 200. Els elements, valors i unitats representats estan recollits de forma equivalent en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Escala geomètrica 1: 200"
+          }
+        },
+        {
+          "body": "A escala 1: 50, 4 cm del pla equivalen a 200 m?||No: són 4×50=200 cm, que equivalen a 2 m."
+        },
+        {
+          "body": "Recorda la condició principal: Una escala 1: 100 representa una longitud del pla cent vegades menor que la real, si ambdues usen la mateixa unitat. Comprova quina magnitud es calcula i en quines unitats; assaja un altre problema sense veure els passos."
+        }
+      ]
+    },
+    "E2-G01-L04": {
+      "title": "Teorema de Pitàgores",
+      "objectives": [
+        "Identificar hipotenusa i catets en un triangle rectangle.",
+        "Aplicar Pitàgores i el seu recíproc en longituds exactes."
+      ],
+      "content_blocks": [
+        {
+          "body": "El teorema de Pitàgores s'aplica exclusivament a triangles rectangles: la suma dels quadrats dels dos catets coincideix amb el quadrat de la hipotenusa, que és el costat oposat a l'angle de 90° i sempre el major. Per buscar un catet es resta el quadrat de l'altre al quadrat de la hipotenusa i es pren l'arrel principal no negativa. El seu recíproc permet comprovar si un triangle amb tres costats donats és rectangle, usant el major com a candidat a hipotenusa."
+        },
+        {
+          "body": "Catets 3 cm i 4 cm: hipotenusa √(9+16)=√25=5 cm."
+        },
+        {
+          "body": "Hipotenusa 13 cm i catet 5 cm: un altre catet √(169−25)=√144=12 cm."
+        },
+        {
+          "body": "Triangle rectangle de costats 3, 4 i 5. La taula proporciona les dades textuals exactes per comprendre la representació sense dependre de color o posició.",
+          "alt": "Triangle rectangle de costats 3, 4 i 5. Els elements, valors i unitats representats estan recollits de forma equivalent en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Triangle rectangle de costats 3, 4 i 5"
+          }
+        },
+        {
+          "body": "Es pot sumar directament 3+4 per a obtenir la hipotenusa?||No: cal sumar quadrats i extreure arrel principal, per la qual cosa el valor és 5."
+        },
+        {
+          "body": "Recorda la condició principal: El teorema de Pitàgores s'aplica exclusivament a triangles rectangles: la suma dels quadrats dels dos catets coincideix amb el quadrat de la hipotenusa, que és el costat oposat a l'angle de 90° i sempre el major. Comprova quina magnitud es calcula i en quines unitats; assaja un altre problema sense veure els passos."
+        }
+      ]
+    },
+    "E2-G01-L05": {
+      "title": "Aplicacions a distàncies",
+      "objectives": [
+        "Calcular distàncies i diagonals mitjançant triangles rectangles.",
+        "Distingir distància en línia recta de recorregut pels costats."
+      ],
+      "content_blocks": [
+        {
+          "body": "La diagonal d'un rectangle forma un triangle rectangle amb els seus costats, per la qual cosa la seva longitud es calcula mitjançant l'arrel principal de la suma dels quadrats d'ambdós costats. En una quadrícula cartesiana, els canvis horitzontal i vertical són els catets, i la distància directa és la hipotenusa. La ruta per vores suma longituds, i generalment és major que la distància recta. Abans d'aplicar el teorema confirma la perpendicularitat de les direccions."
+        },
+        {
+          "body": "Una pantalla de 6 cm d'ample i 8 cm d'alt té diagonal √(36+64)=10 cm."
+        },
+        {
+          "body": "Entre punts que difereixen 5 unitats horitzontalment i 12 verticalment, la distància recta és 13 unitats."
+        },
+        {
+          "body": "Distància directa enfront de recorregut per vores. La taula proporciona les dades textuals exactes per comprendre la representació sense dependre de color o posició.",
+          "alt": "Distància directa enfront de recorregut per vores. Els elements, valors i unitats representats estan recollits de forma equivalent en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Distància directa enfront de recorregut per vores"
+          }
+        },
+        {
+          "body": "El camí horitzontal 6 més vertical 8 mesura el mateix que la diagonal?||No: el recorregut per costats mesura 14, mentre la diagonal mesura 10."
+        },
+        {
+          "body": "Recorda la condició principal: La diagonal d'un rectangle forma un triangle rectangle amb els seus costats, de manera que la seva longitud es calcula mitjançant l'arrel principal de la suma dels quadrats d'ambdós costats. Comprova quina magnitud es calcula i en quines unitats; assaja un altre problema sense veure els passos."
+        }
+      ]
+    },
+    "E2-G01-L06": {
+      "title": "Elecció d'eina geomètrica",
+      "objectives": [
+        "Triar entre semblança, àrea, perímetre i Pitàgores segons la situació.",
+        "Justificar supòsits geomètrics abans de calcular."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a triar una eina identifica primer l'objectiu i les dades. Un factor constant entre costats homòlegs suggereix semblança; superfície interior es mesura amb àrees; el contorn requereix perímetre; i la distància diagonal en angle recte requereix Pitàgores. Cap dada numèrica autoritza per si sol a aplicar Pitàgores si la perpendicularitat no està garantida. Abans de respondre escriu un esquema amb unitats, assenyala els angles o costats corresponents i contrasta que el resultat sigui raonable."
+        },
+        {
+          "body": "Si una maqueta semblant usa raó 3 i la seva superfície inicial val 8 cm ², l'àrea nova val 3²×8 = 72 cm ²."
+        },
+        {
+          "body": "Si una escala, paret i sòl formen un triangle rectangle amb base 9 m i altura 12 m, l'escala mesura 15 m."
+        },
+        {
+          "body": "Triar procediment geomètric. La taula proporciona les dades textuals exactes per comprendre la representació sense dependre de color o posició.",
+          "alt": "Triar procediment geomètric. Els elements, valors i unitats representats estan recollits de forma equivalent en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Tria el procediment geomètric"
+          }
+        },
+        {
+          "body": "Quina informació mancada per a aplicar Pitàgores a un triangle de costats desconeguts?||Necessites que sigui rectangle o dades suficients per demostrar l'angle recte; no basta una il·lustració."
+        },
+        {
+          "body": "Recorda la condició principal: Per a triar una eina identifica primer l'objectiu i les dades. Comprova quina magnitud es calcula i en quines unitats; assaja un altre problema sense veure els passos."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E2-G01-L01-01": {
+      "prompt": "Dues figures semblants tenen costats homòlegs 3 cm i 6 cm (primera i segona). Quin és el factor de la primera a la segona?",
+      "hint": "Divideix una longitud nova entre la inicial corresponent.",
+      "explanation": "Procediment: 6/3 = 2. Divideix una longitud nova entre la inicial corresponent. La raó ha de ser igual per a tots els costats homòlegs. Resultat correcte: 2. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L01-02": {
+      "prompt": "En triangles semblants, un costat inicial de 3 cm passa a 6 cm. Quant mesura el costat homòleg d'un altre que inicialment mesura 4 cm?",
+      "hint": "Calcula primer la raó entre els costats coneguts.",
+      "explanation": "Procediment: (6/3) × 4 = 8 cm. Calcula primer la raó entre els costats coneguts. Aplica el mateix factor a l'altre costat homòleg. Resultat correcte: 8. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L01-03": {
+      "prompt": "Són semblants pels seus costats els triangles (3,4, 5) i (6,8, 10)?",
+      "hint": "Ordena els costats i compara les raons corresponents.",
+      "explanation": "Procediment: Compara 6/3, 8/4 i 10/5; han de ser idèntiques. Ordena els costats i compara les raons corresponents. Les tres raons han de coincidir i ser positives. Resultat correcte: Sí. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L01-04": {
+      "prompt": "Són semblants pels seus costats els triangles (3,4, 5) i (3,4, 6)?",
+      "hint": "Ordena els costats i compara les raons corresponents.",
+      "explanation": "Procediment: Compara 3/3, 4/4 i 6/5; han de ser idèntiques. Ordena els costats i compara les raons corresponents. Les tres raons han de coincidir i ser positives. Resultat correcte: No. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L01-05": {
+      "prompt": "Dues figures semblants tenen costats homòlegs 5 cm i 15 cm (primera i segona). Quin és el factor de la primera a la segona? Selecciona el valor exacte correcte.",
+      "hint": "Divideix una longitud nova entre la inicial corresponent.",
+      "explanation": "Procediment: 15/5 = 3. Divideix una longitud nova entre la inicial corresponent. La raó ha de ser igual per a tots els costats homòlegs. Resultat correcte: 3. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L02-01": {
+      "prompt": "Una figura s'amplia amb raó lineal 2; un segment inicial mesura 7 cm. Quant mesura ara?",
+      "hint": "Les longituds de figures semblants escales linealment.",
+      "explanation": "Procediment: 7 × 2 = 14 cm. Les longituds de figures semblants escales linealment. Multiplica el segment per la raó de semblança. Resultat correcte: 14. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L02-02": {
+      "prompt": "Una figura té àrea inicial 12 cm ² i s'amplia amb raó lineal 3. Àrea nova en cm ²?",
+      "hint": "Les àrees escales amb el quadrat del factor lineal.",
+      "explanation": "Procediment: 12 × 3² = 108 cm ². Les àrees escales amb el quadrat del factor lineal. Multiplica l'àrea inicial per k², no només per k. Resultat correcte: 108. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L02-03": {
+      "prompt": "Una figura té perímetre 15 cm i s'amplia amb raó lineal 2. Nou perímetre en cm?",
+      "hint": "Els perímetres escales igual que els costats.",
+      "explanation": "Procediment: 15 × 2 = 30 cm. Els perímetres escales igual que els costats. Multiplica el perímetre per k, no per k². Resultat correcte: 30. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L02-04": {
+      "prompt": "Una figura té àrea inicial 24 cm ² i s'amplia amb raó lineal 2. Àrea nova en cm ²? Selecciona el valor exacte correcte.",
+      "hint": "Les àrees escales amb el quadrat del factor lineal.",
+      "explanation": "Procediment: 24 × 2² = 96 cm ². Les àrees escales amb el quadrat del factor lineal. Multiplica l'àrea inicial per k², no només per k. Resultat correcte: 96. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L02-05": {
+      "prompt": "Una figura s'amplia amb raó lineal 3; un segment inicial mesura 18 cm. Quant mesura ara? Selecciona el valor exacte correcte.",
+      "hint": "Les longituds de figures semblants escales linealment.",
+      "explanation": "Procediment: 18 × 3 = 54 cm. Les longituds de figures semblants escales linealment. Multiplica el segment per la raó de semblança. Resultat correcte: 54. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L03-01": {
+      "prompt": "En un pla d'escala 1: 200, una distància de 5 cm, a quants metres reals equival?",
+      "hint": "Multiplica els centímetres del plànol pel denominador de l’escala.",
+      "explanation": "Procediment: 5 cm × 200 = 1000 cm = 10 m. Multiplica els centímetres del pla pel denominador de l'escala. Converteix els centímetres reals a metres dividint entre cent. Resultat correcte: 10. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L03-02": {
+      "prompt": "En un pla a escala 1: 5000, quants centímetres es dibuixen per a 250 metres reals?",
+      "hint": "Converteix primer els metres reals a centímetres.",
+      "explanation": "Procediment: 250 m = 25000 cm; (25000) ÷ 5000 = 5 cm. Passa primer metres reals a centímetres. Divideix la longitud real en centímetres entre la raó d'escala. Resultat correcte: 5. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L03-03": {
+      "prompt": "En un pla d'escala 1: 100, una distància de 3 cm, a quants metres reals equival?",
+      "hint": "Multiplica els centímetres del plànol pel denominador de l’escala.",
+      "explanation": "Procediment: 3 cm × 100 = 300 cm = 3 m. Multiplica els centímetres del pla pel denominador de l'escala. Converteix els centímetres reals a metres dividint entre cent. Resultat correcte: 3. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L03-04": {
+      "prompt": "Un rectangle de 4×3 cm en un pla 1: 100, quina àrea representa en m²? Selecciona el valor exacte correcte.",
+      "hint": "Converteix per separat les dues longituds del pla a metres reals.",
+      "explanation": "Procediment: (4 × 100/100) m × (3 × 100/100) m = 12 m². Converteix per separat les dues longituds del pla a metres reals. Multiplica les longituds reals: les àrees escales amb k². Resultat correcte: 12. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L03-05": {
+      "prompt": "En un pla a escala 1: 30000, quants centímetres es dibuixen per a 600 metres reals? Selecciona el valor exacte correcte.",
+      "hint": "Converteix primer els metres reals a centímetres.",
+      "explanation": "Procediment: 600 m = 60000 cm; (60000) ÷ 30000 = 2 cm. Passa primer metres reals a centímetres. Divideix la longitud real en centímetres entre la raó d'escala. Resultat correcte: 2. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L04-01": {
+      "prompt": "Els catets d'un triangle rectangle mesuren 3 i 4 cm. Quants cm mesura la hipotenusa?",
+      "hint": "Eleva al quadrat cada catet i suma els seus quadrats.",
+      "explanation": "Procediment: √(3² + 4²) = √(25) = 5 cm. Eleva al quadrat cada catet i suma els seus quadrats. Pren l'arrel principal d'aquesta suma; comprova que supera cada catet. Resultat correcte: 5. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L04-02": {
+      "prompt": "En un triangle rectangle la hipotenusa mesura 13 cm i un catet 5 cm. Quant mesura l'altre catet?",
+      "hint": "Resta del quadrat de la hipotenusa el quadrat del catet conegut.",
+      "explanation": "Procediment: √(13² − 5²) = √(144) = 12 cm. Resta del quadrat de la hipotenusa el quadrat del catet conegut. Pren l'arrel principal de la diferència positiva. Resultat correcte: 12. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L04-03": {
+      "prompt": "Els catets d'un triangle rectangle mesuren 5 i 12 cm. Quants cm mesura la hipotenusa?",
+      "hint": "Eleva al quadrat cada catet i suma els seus quadrats.",
+      "explanation": "Procediment: √(5² + 12²) = √(169) = 13 cm. Eleva al quadrat cada catet i suma els seus quadrats. Pren l'arrel principal d'aquesta suma; comprova que supera cada catet. Resultat correcte: 13. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L04-04": {
+      "prompt": "Un triangle de costats 3, 4 i 6 cm (últim el major) és rectangle?",
+      "hint": "Usa el recíproc de Pitàgores amb el costat major.",
+      "explanation": "Procediment: 3² + 4² = 25; 6² = 36. Coincideixen? No. Usa el recíproc de Pitàgores amb el costat major. Comprova si la suma de quadrats dels menors coincideix amb el més gran al quadrat. Resultat correcte: No. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L04-05": {
+      "prompt": "Un triangle de costats 8, 15 i 17 cm (últim el major) és rectangle?",
+      "hint": "Usa el recíproc de Pitàgores amb el costat major.",
+      "explanation": "Procediment: 8² + 15² = 289; 17² = 289. Coincideixen? Sí. Usa el recíproc de Pitàgores amb el costat major. Comprova si la suma de quadrats dels menors coincideix amb el més gran al quadrat. Resultat correcte: Sí. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L05-01": {
+      "prompt": "Els catets d'un triangle rectangle mesuren 6 i 8 cm. Quants cm mesura la hipotenusa?",
+      "hint": "Eleva al quadrat cada catet i suma els seus quadrats.",
+      "explanation": "Procediment: √(6² + 8²) = √(100) = 10 cm. Eleva al quadrat cada catet i suma els seus quadrats. Pren l'arrel principal d'aquesta suma; comprova que supera cada catet. Resultat correcte: 10. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L05-02": {
+      "prompt": "Recorres dos costats perpendiculars de 6 i 8 m. Quant mesura el recorregut per les vores (m), sense diagonal?",
+      "hint": "El recorregut per les vores suma longituds.",
+      "explanation": "Procediment: 6 + 8 = 14 m. El recorregut per les vores suma longituds. No apliques Pitàgores: no es demana distància en línia recta. Resultat correcte: 14. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L05-03": {
+      "prompt": "En un triangle rectangle la hipotenusa mesura 17 cm i un catet 8 cm. Quant mesura l'altre catet?",
+      "hint": "Resta del quadrat de la hipotenusa el quadrat del catet conegut.",
+      "explanation": "Procediment: √(17² − 8²) = √(225) = 15 cm. Resta del quadrat de la hipotenusa el quadrat del catet conegut. Pren l'arrel principal de la diferència positiva. Resultat correcte: 15. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L05-04": {
+      "prompt": "Els catets d'un triangle rectangle mesuren 8 i 15 cm. Quants cm mesura la hipotenusa? Selecciona el valor exacte correcte.",
+      "hint": "Eleva al quadrat cada catet i suma els seus quadrats.",
+      "explanation": "Procediment: √(8² + 15²) = √(289) = 17 cm. Eleva al quadrat cada catet i suma els seus quadrats. Pren l'arrel principal d'aquesta suma; comprova que supera cada catet. Resultat correcte: 17. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L05-05": {
+      "prompt": "Recorres dos costats perpendiculars de 5 i 12 m. Quant mesura el recorregut per les vores (m), sense diagonal? Selecciona el valor exacte correcte.",
+      "hint": "El recorregut per les vores suma longituds.",
+      "explanation": "Procediment: 5 + 12 = 17 m. El recorregut per les vores suma longituds. No apliques Pitàgores: no es demana distància en línia recta. Resultat correcte: 17. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L06-01": {
+      "prompt": "Quin mètode geomètric és apropiat per a: cobrir amb rajoles una superfície interior?",
+      "hint": "Distingeix si es demana superfície, diagonal o costats proporcionals.",
+      "explanation": "Procediment: La magnitud o relació descrita exigeix Àrea. Distingeix si es demana superfície, diagonal o costats proporcionals. L'eina ha de correspondre al tipus de magnitud i supòsit geomètric. Resultat correcte: Àrea. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L06-02": {
+      "prompt": "Quin mètode geomètric és apropiat per a: calcular una diagonal amb dos costats perpendiculars?",
+      "hint": "Distingeix si es demana superfície, diagonal o costats proporcionals.",
+      "explanation": "Procediment: La magnitud o relació descrita exigeix Pitàgores. Distingeix si es demana superfície, diagonal o costats proporcionals. L'eina ha de correspondre al tipus de magnitud i supòsit geomètric. Resultat correcte: Pitàgores. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L06-03": {
+      "prompt": "Quin mètode geomètric és apropiat per a: estimar la longitud corresponent en dos plans semblants?",
+      "hint": "Distingeix si es demana superfície, diagonal o costats proporcionals.",
+      "explanation": "Procediment: La magnitud o relació descrita exigeix Semblança. Distingeix si es demana superfície, diagonal o costats proporcionals. L'eina ha de correspondre al tipus de magnitud i supòsit geomètric. Resultat correcte: Semblança. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L06-04": {
+      "prompt": "Els catets d'un triangle rectangle mesuren 9 i 12 cm. Quants cm mesura la hipotenusa? Selecciona el valor exacte correcte.",
+      "hint": "Eleva al quadrat cada catet i suma els seus quadrats.",
+      "explanation": "Procediment: √(9² + 12²) = √(225) = 15 cm. Eleva al quadrat cada catet i suma els seus quadrats. Pren l'arrel principal d'aquesta suma; comprova que supera cada catet. Resultat correcte: 15. Verifica unitats i condicions geomètriques abans d'avançar."
+    },
+    "F3-E2-G01-L06-05": {
+      "prompt": "Una figura té àrea inicial 8 cm ² i s'amplia amb raó lineal 3. Àrea nova en cm ²? Selecciona el valor exacte correcte.",
+      "hint": "Les àrees escales amb el quadrat del factor lineal.",
+      "explanation": "Procediment: 8 × 3² = 72 cm ². Les àrees escales amb el quadrat del factor lineal. Multiplica l'àrea inicial per k², no només per k. Resultat correcte: 72. Verifica unitats i condicions geomètriques abans d'avançar."
+    }
+  }
+}

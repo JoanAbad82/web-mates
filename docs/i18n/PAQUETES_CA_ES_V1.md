@@ -63,3 +63,14 @@ El primer comando regenera el manifiesto con orden estable, cantidades reales e 
 - El repositorio público MIT no implica despliegue del sitio para alumnado. GitHub Pages y Cloudflare no forman parte de esta entrega.
 
 Participación: https://github.com/JoanAbad82/web-mates/issues/1.
+
+
+## Oleada especializada es→ca — 19/11/2026
+
+- **Cobertura acumulada:** 30/85 unidades, 179/505 lecciones y 895/2.525 actividades (todos `draft_unreviewed`, 0 revisiones lingüísticas humanas). Pendientes: 55 unidades, 326 lecciones y 1630 actividades.
+- **Unidades nuevas:** B1C-A01, B1C-F02, B1C-G01, E2-A01, E2-A02, E2-F01, E2-G01, E2-M01, E2-N02, E2-P01, E3-G01, E4A-G01, E4A-N01, E4A-P01, E4B-A01, E4B-A02, E4B-F01, E4B-G01.
+- Todos los paquetes nuevos tienen cobertura completa por unidad según contrato y estado `draft_unreviewed`; no se publican unidades con campos fallidos.
+- Motores locales especializados, documentación reproducible: `docs/i18n/MOTOR_ES_CA_CANDIDATOS_20261119.md`.
+- Verificación independiente: `tests/i18n_semantic_risk_gate.py`, pruebas de contrato, invariantes matemáticos, cribado editorial, Chrome y fallback. Las negaciones, símbolos, números y algunos términos matemáticos se controlan explícitamente; no es revisión humana.
+- **Pendientes**: E2-D01, E2-Q01, E3-N01, E3-N02, E3-A01, E3-A02, E3-A03, E3-F01, E3-G02, E3-D01, E3-Q01, E4A-A01, E4A-A02, E4A-F01, E4A-D01, E4A-Q01, E4B-N01, E4B-G02, E4B-D01, E4B-Q01, B1C-N01, B1C-G02, B1C-F01, B1C-F03, B1C-D01, B1C-Q01, B2C-A01, B2C-A02, B2C-G01, B2C-G02, B2C-G03, B2C-F01, B2C-F02, B2C-F03, B2C-Q01, B2C-Q02, B1S-N01, B1S-P01, B1S-A01, B1S-F01, B1S-F02, B1S-F03, B1S-D01, B1S-Q01, B1S-Q02, B1S-D02, B2S-A01, B2S-A02, B2S-F01, B2S-F02, B2S-F03, B2S-Q01, B2S-Q02, B2S-D01, B2S-D02.
+- Los datos es-ES originales, opciones, respuestas y validadores permanecen inalterados. Sin GitHub Pages ni cambios Cloudflare.
