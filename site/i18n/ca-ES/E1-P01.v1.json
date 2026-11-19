@@ -1,0 +1,333 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E1-P01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e1_p01.json": "cc830eb118df7134db3565fcb50b66c801f79ed22b522c2a9eac3d367ddf0e42",
+    "data/f3_e1_p01_exercises.json": "81f11bc5f02c237bc9de60d88a44e903c42013029b3cfbfb3c3be79e3190f032"
+  },
+  "lessons": {
+    "E1-P01-L01": {
+      "title": "Raons i proporcions",
+      "objectives": [
+        "Expressar la relació entre dues quantitats mitjançant una raó.",
+        "Identificar proporcions equivalents amb denominadors no nuls."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una raó a:b compara dues quantitats en l’ordre indicat: a/b, amb b diferent de zero. En una proporció dues raons són iguals. Abans de comparar magnituds, expressa-les en les mateixes unitats, si escau. Afirmar que les raons són iguals requereix comprovar la relació, no només que les dues xifres augmenten."
+        },
+        {
+          "body": "En una barreja amb 2 gots de suc per 3 d’aigua, la raó suc:aigua és 2:3. Si dupliquem totes dues quantitats, 4:6 continua sent la mateixa raó."
+        },
+        {
+          "body": "La raó 6:9 es simplifica a 2:3 dividint tots dos termes entre 3. En canvi, 6:8 equival a 3:4, no a 2:3."
+        },
+        {
+          "body": "Taula de proporcions: els parells (2,3), (4,6), (6,9) mantenen la raó 2/3. L’ordre de les quantitats és important.",
+          "alt": "Taula de proporcions: els parells (2,3), (4,6), (6,9) mantenen la raó 2/3. L’ordre de les quantitats és important."
+        },
+        {
+          "body": "Si la raó vermell:blau és 2:3, vermell:blau és igual a 3:2?||No. Invertir-ne l’ordre canvia la comparació: 2:3 no equival a 3:2."
+        },
+        {
+          "body": "Raó = comparació ordenada. Proporció = igualtat entre raons; comprova-ho dividint o simplificant."
+        }
+      ]
+    },
+    "E1-P01-L02": {
+      "title": "Proporcionalitat directa",
+      "objectives": [
+        "Reconèixer relacions de proporcionalitat directa fent servir una raó constant.",
+        "Descartar relacions amb un terme fix o dades incoherents."
+      ],
+      "content_blocks": [
+        {
+          "body": "Dues magnituds són directament proporcionals quan y=kx amb una mateixa constant k: si una es duplica, l’altra també. La taula ha d’admetre (0,0). Una tarifa amb un import fix b diferent de zero, y=kx+b, no és una proporcionalitat directa. El context limita els valors possibles."
+        },
+        {
+          "body": "Cada llapis costa 2 €. Per 1, 2 i 3 llapis paguem 2, 4 i 6 €: la raó preu/quantitat és 2 per a cada quantitat no nul·la."
+        },
+        {
+          "body": "Una tarifa de taxi de 4 € més 2 € per quilòmetre costa 6 € per 1 km i 8 € per 2 km; 6/1 i 8/2 són diferents, de manera que no és proporcionalitat directa."
+        },
+        {
+          "body": "Compara taules: y=2x genera (0,0),(1,2),(2,4),(3,6); y=4+2x genera (0,4),(1,6),(2,8),(3,10).",
+          "alt": "Compara taules: y=2x genera (0,0),(1,2),(2,4),(3,6); y=4+2x genera (0,4),(1,6),(2,8),(3,10)."
+        },
+        {
+          "body": "Si en passar de 2 a 4 unitats el preu passa de 7 a 11 €, s’ha duplicat el preu?||No: 11 no és el doble de 7; aquests dos parells no confirmen una proporcionalitat directa."
+        },
+        {
+          "body": "Compara diverses raons i el valor inicial, no només l’aspecte d’una recta."
+        }
+      ]
+    },
+    "E1-P01-L03": {
+      "title": "Taules de proporcionalitat",
+      "objectives": [
+        "Completar taules de proporcionalitat a partir d’un parell de dades.",
+        "Emprar la mateixa constant en totes les files i comprovar les unitats."
+      ],
+      "content_blocks": [
+        {
+          "body": "En una taula de proporcionalitat directa, cada fila ha de complir y/x=k quan x és diferent de zero. Pots calcular k amb un parell conegut i emplenar les altres files multiplicant. Si les magnituds canvien d’unitat, converteix-les abans de comparar-les."
+        },
+        {
+          "body": "Si 2 kg de fruita costen 6 €, el preu és 3 €/kg. La taula per a 1, 2, 3 i 5 kg tindrà 3, 6, 9 i 15 €."
+        },
+        {
+          "body": "Si 4 llibretes costen 10 €, una val 2,50 € i 6 costaran 15 €. El preu per unitat s’ha de mantenir constant."
+        },
+        {
+          "body": "Taula accessible: quantitat 0 | 1 | 2 | 3 | 5; cost a 3 €/ud: 0 | 3 | 6 | 9 | 15.",
+          "alt": "Taula accessible: quantitat 0 | 1 | 2 | 3 | 5; cost a 3 €/ud: 0 | 3 | 6 | 9 | 15."
+        },
+        {
+          "body": "Per què no calculem y/x per a la fila x=0?||Perquè no podem dividir entre zero. En el model y=kx, aquesta fila té el valor de sortida y=0."
+        },
+        {
+          "body": "Per emplenar la taula: troba k amb un parell no nul, calcula y=kx i revisa cada unitat."
+        }
+      ]
+    },
+    "E1-P01-L04": {
+      "title": "Constant de proporcionalitat",
+      "objectives": [
+        "Calcular i interpretar la constant k=y/x en un context.",
+        "Detectar si diversos parells mantenen una raó constant."
+      ],
+      "content_blocks": [
+        {
+          "body": "La constant de proporcionalitat k indica quantes unitats de sortida corresponen a una unitat d’entrada. En el model y=kx, s’obté com a y/x si x no és zero. Les seves unitats són la unitat de y dividida per la unitat de x: euros per quilogram, quilòmetres per hora, etcètera."
+        },
+        {
+          "body": "Un ciclista recorre 12 km en 3 h a velocitat uniforme. La constant de distància respecte del temps és k=12/3=4 km/h."
+        },
+        {
+          "body": "Si 5 m de cinta costen 7,50 €, el cost per metre és 7,50/5=1,50 €/m. Per 2 m, el cost seria de 3 €."
+        },
+        {
+          "body": "Taula x=1 | 2 | 3 | 4; sortida y=4x: 4 | 8 | 12 | 16; el quocient y/x és sempre 4.",
+          "alt": "Taula x=1 | 2 | 3 | 4; sortida y=4x: 4 | 8 | 12 | 16; el quocient y/x és sempre 4."
+        },
+        {
+          "body": "Es pot calcular k com a x/y sense canviar-ne el significat?||No. x/y té les unitats inverses; per a y=kx, fem servir k=y/x."
+        },
+        {
+          "body": "Constant k = sortida/entrada (entrada no nul·la), amb unitats i comprovació en diverses files."
+        }
+      ]
+    },
+    "E1-P01-L05": {
+      "title": "Escales i receptes proporcionals",
+      "objectives": [
+        "Aplicar la proporcionalitat a les escales mantenint unitats coherents.",
+        "Canviar les quantitats d’una recepta amb un únic factor."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una recepta proporcional utilitza un factor per multiplicar totes les quantitats dels ingredients. En plànols i mapes, una escala 1:n indica que una unitat del dibuix equival a n unitats reals. Després, converteix el resultat a metres o quilòmetres. Si només canvies una quantitat, alteres la proporció."
+        },
+        {
+          "body": "Una recepta per a 3 persones utilitza 6 tomàquets. Per a 9 persones, el factor és 9/3=3 i caldran 18 tomàquets."
+        },
+        {
+          "body": "Un plànol a escala 1:100 mostra 3 cm: la distància real és de 300 cm, és a dir, 3 m. No confonguis centímetres amb metres."
+        },
+        {
+          "body": "Taula de recepta: comensals 3 | 6 | 9; tomàquets 6 | 12 | 18. El mateix factor s’aplica a tots els ingredients.",
+          "alt": "Taula de recepta: comensals 3 | 6 | 9; tomàquets 6 | 12 | 18. El mateix factor s’aplica a tots els ingredients."
+        },
+        {
+          "body": "Si dupliquem les racions, podem multiplicar per 2 l’aigua i deixar igual la farina?||No, per conservar la recepta cal multiplicar cada ingredient pel mateix factor, llevat que vulguem modificar-la expressament."
+        },
+        {
+          "body": "Recepta: factor persones noves/anteriors. Escala: longitud real = longitud al dibuix × denominador, després de convertir les unitats."
+        }
+      ]
+    },
+    "E1-P01-L06": {
+      "title": "Problemes de preu i quantitat",
+      "objectives": [
+        "Resoldre problemes de preu i quantitat amb un cost unitari constant.",
+        "Interpretar quan els descomptes o els costos fixos invaliden un model proporcional."
+      ],
+      "content_blocks": [
+        {
+          "body": "Amb un preu unitari fix p i una quantitat n, el cost és C(n)=pn. El nombre d’articles sol ser enter i no negatiu; un descompte per volum o una quota fixa pot alterar la relació. Per comparar productes utilitza la mateixa unitat, i per comprovar el cost multiplica la quantitat pel preu unitari."
+        },
+        {
+          "body": "Si una ampolla costa 1,50 €, quatre ampolles costen 6 €. Amb zero ampolles, el cost és 0 €."
+        },
+        {
+          "body": "Tres quaderns per 7,50 € equivalen a 2,50 € per quadern. Cinc quaderns al mateix preu costaran 12,50 €."
+        },
+        {
+          "body": "Taula de preus a 2,50 €/quadern: unitats 0 | 1 | 2 | 3 | 5; euros 0 | 2,50 | 5 | 7,50 | 12,50.",
+          "alt": "Taula de preus a 2,50 €/quadern: unitats 0 | 1 | 2 | 3 | 5; euros 0 | 2,50 | 5 | 7,50 | 12,50."
+        },
+        {
+          "body": "Una quota fixa de 3 € més 2 € per compra dona proporcionalitat directa?||No. Amb zero compres, el cost ja seria de 3 €; per tant, el model és afí amb un terme fix."
+        },
+        {
+          "body": "Cost total = preu per unitat × unitats; comprova descomptes, mínims, impostos i domini."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E1-P01-L01-01": {
+      "prompt": "En una capsa hi ha 12 peces vermelles i 4 de blaves. Quant val la raó vermelles/blaves?",
+      "hint": "Escriu primer les peces vermelles i després les blaves.",
+      "explanation": "La raó vermelles/blaves és 12/4=3. L’ordre de les magnituds determina quin quocient calcules."
+    },
+    "F3-E1-P01-L01-02": {
+      "prompt": "Si la raó suc:aigua és 2:3, quants gots d’aigua necessites per a 8 gots de suc?",
+      "hint": "Conserva la relació de 2 gots de suc per 3 d’aigua.",
+      "explanation": "La proporció és 2/3=8/y; el factor és quatre, així que y=3·4=12 gots d’aigua."
+    },
+    "F3-E1-P01-L01-03": {
+      "prompt": "Quina raó és equivalent a 4:6?",
+      "hint": "Simplifica tots dos nombres pel mateix divisor.",
+      "explanation": "4/6 es redueix a 2/3. Les altres raons representen comparacions diferents."
+    },
+    "F3-E1-P01-L01-04": {
+      "prompt": "Si hi ha 2 samarretes vermelles per cada 3 de blaves, quina és la raó vermelles:blaves?",
+      "hint": "La primera paraula de l’enunciat indica el numerador.",
+      "explanation": "La raó demanada vermelles:blaves és 2:3, no la inversa ni una suma."
+    },
+    "F3-E1-P01-L01-05": {
+      "prompt": "Si 6 metres de tela corresponen a 9 unitats de disseny, quantes unitats corresponen a 10 metres al mateix ritme?",
+      "hint": "Mantén constant la raó d’unitats per metre.",
+      "explanation": "La quantitat per metre és 9/6=1,5; per a 10 metres s’obtenen 1,5·10=15 unitats."
+    },
+    "F3-E1-P01-L02-01": {
+      "prompt": "Si cada paquet costa 3 €, quant costen 4 paquets sense càrrecs addicionals?",
+      "hint": "La quantitat i el preu canvien proporcionalment.",
+      "explanation": "La regla és cost=3·n. Amb n=4, el cost és de 12 €, i amb n=0 seria de 0 €."
+    },
+    "F3-E1-P01-L02-02": {
+      "prompt": "La taula de quantitats 1, 2 i 3 dona preus de 2, 4 i 6 €. Segueix una mateixa regla de proporcionalitat directa?",
+      "hint": "Compara el preu dividit per la quantitat a cada fila.",
+      "explanation": "Tots els parells compleixen y=2x, per la qual cosa la taula és compatible amb la proporcionalitat directa."
+    },
+    "F3-E1-P01-L02-03": {
+      "prompt": "La tarifa de 4 € fixos més 2 € per quilòmetre és de proporcionalitat directa?",
+      "hint": "Comprova el cost quan no es recorre cap quilòmetre.",
+      "explanation": "No és proporcionalitat directa: el cost fix de 4 impedeix que la gràfica passi per (0,0)."
+    },
+    "F3-E1-P01-L02-04": {
+      "prompt": "Per als parells (2,8) i (5,20), quina és la constant k en y=kx?",
+      "hint": "Calcula y/x amb una entrada no nul·la.",
+      "explanation": "La constant és 20/5=4, coherent amb l’altre parell: 8/2=4."
+    },
+    "F3-E1-P01-L02-05": {
+      "prompt": "Si 2 articles costen 6 € i 4 articles costen 11 €, tots dos parells compleixen un mateix preu unitari?",
+      "hint": "Comprova totes dues raons cost/quantitat.",
+      "explanation": "No: els costos per article són diferents i no hi ha una constant única per als dos parells."
+    },
+    "F3-E1-P01-L03-01": {
+      "prompt": "Si 2 kg costen 6 €, quant costen 5 kg al mateix preu per quilogram?",
+      "hint": "Esbrina el preu d’un quilogram.",
+      "explanation": "Un quilogram costa 3 €. Cinc quilograms costen 3·5=15 €."
+    },
+    "F3-E1-P01-L03-02": {
+      "prompt": "Si 4 quaderns costen 10 €, quant costen 6 al mateix preu?",
+      "hint": "Calcula el cost per quadern a partir dels 4 inicials.",
+      "explanation": "El preu unitari és de 2,50 € i sis quaderns costen 15 €."
+    },
+    "F3-E1-P01-L03-03": {
+      "prompt": "Per a la regla y=4x, quina sortida correspon a x=3?",
+      "hint": "Cada sortida és quatre vegades l’entrada.",
+      "explanation": "El valor de la taula ha de ser 4·3=12; per això l’opció correcta és 12."
+    },
+    "F3-E1-P01-L03-04": {
+      "prompt": "En y=2x, quina sortida correspon a x=7?",
+      "hint": "El coeficient indica quantes unitats corresponen a una entrada.",
+      "explanation": "La regla directa y=2x dona y=14 quan introduïm x=7."
+    },
+    "F3-E1-P01-L03-05": {
+      "prompt": "Una taula presenta x=1,2,4 i y=3,6,12. Tots els parells compleixen una proporcionalitat directa?",
+      "hint": "Calcula la sortida dividida per l’entrada a les tres files.",
+      "explanation": "Sí: totes les dades segueixen la mateixa regla y=3x."
+    },
+    "F3-E1-P01-L04-01": {
+      "prompt": "Si en recórrer 3 hores es fan 12 km a ritme uniforme, quina és la constant en km/h?",
+      "hint": "La constant relaciona la distància amb el temps.",
+      "explanation": "La constant és de 4 km/h, que indica quatre quilòmetres per hora."
+    },
+    "F3-E1-P01-L04-02": {
+      "prompt": "Cinc metres de cinta costen 7,50 €. Quin és el preu per metre?",
+      "hint": "Expressa el cost dividit per la longitud.",
+      "explanation": "7,50 €/5 m = 1,50 €/m. La unitat confirma el significat del quocient."
+    },
+    "F3-E1-P01-L04-03": {
+      "prompt": "Es paguen 9 € per 6 kg de fruita. Quin és el preu per kg?",
+      "hint": "El quilogram és la unitat de referència.",
+      "explanation": "El preu unitari és 9/6=1,50 €/kg. Multiplicar-lo per 6 permet recuperar 9 €."
+    },
+    "F3-E1-P01-L04-04": {
+      "prompt": "Si k és distància/temps, quina unitat és coherent?",
+      "hint": "La magnitud que queda al numerador del quocient determina la unitat de dalt.",
+      "explanation": "La constant distància/temps es mesura en quilòmetres per hora, km/h."
+    },
+    "F3-E1-P01-L04-05": {
+      "prompt": "En y=kx, pots calcular k com a y/x quan x=0?",
+      "hint": "Recorda quan està definida una divisió.",
+      "explanation": "No: y/0 no està definit. Calcula k amb una fila l’entrada de la qual no sigui zero."
+    },
+    "F3-E1-P01-L05-01": {
+      "prompt": "Per a 3 persones s’utilitzen 6 tomàquets. Quants en necessites per a 9 persones amb la mateixa recepta?",
+      "hint": "Calcula el factor entre el nombre nou i l’original de persones.",
+      "explanation": "Triplicar les racions implica triplicar tots els ingredients: 6·3=18 tomàquets."
+    },
+    "F3-E1-P01-L05-02": {
+      "prompt": "En un plànol a escala 1:100, una distància fa 3 cm. Quants metres reals representa?",
+      "hint": "La distància real en centímetres és 100 vegades la del plànol.",
+      "explanation": "300 cm equivalen a 3 m. L’escala exigeix convertir les unitats abans de respondre."
+    },
+    "F3-E1-P01-L05-03": {
+      "prompt": "A escala 1:200, una longitud de 4 cm del dibuix representa quants metres reals?",
+      "hint": "Multiplica primer pel denominador de l’escala.",
+      "explanation": "La longitud real és de 800 cm=8 m; no confonguis centímetres amb metres."
+    },
+    "F3-E1-P01-L05-04": {
+      "prompt": "Si dupliques una recepta proporcional, quina acció en conserva la composició?",
+      "hint": "Una recepta proporcional conserva la relació entre ingredients.",
+      "explanation": "Per mantenir les proporcions cal duplicar cada ingredient, no només un."
+    },
+    "F3-E1-P01-L05-05": {
+      "prompt": "Amb 2 tasses per a 4 persones, quantes tasses calen per a 10 persones?",
+      "hint": "Calcula quina quantitat correspon a una persona.",
+      "explanation": "La proporció dona 2·10/4=5 tasses per a deu persones."
+    },
+    "F3-E1-P01-L06-01": {
+      "prompt": "Si cada ampolla costa 1,50 €, quant costen quatre ampolles sense càrrecs fixos?",
+      "hint": "El preu total es calcula multiplicant la quantitat pel preu unitari.",
+      "explanation": "El cost és 1,50·4=6 €. Amb zero ampolles seria zero euros."
+    },
+    "F3-E1-P01-L06-02": {
+      "prompt": "Tres quaderns costen 7,50 €; quant costen cinc al mateix preu per unitat?",
+      "hint": "Calcula primer quant val un quadern.",
+      "explanation": "Cinc quaderns al preu unitari de 2,50 € costen 12,50 €."
+    },
+    "F3-E1-P01-L06-03": {
+      "prompt": "Si una llibreta costa 2,50 €, quant costen sis llibretes sense quota fixa?",
+      "hint": "Cada llibreta afegeix la mateixa quantitat al total.",
+      "explanation": "El cost és 2,50·6=15 €, amb una raó cost/quantitat constant."
+    },
+    "F3-E1-P01-L06-04": {
+      "prompt": "Una botiga cobra 3 € fixos més 2 € per comanda. És proporcionalitat directa?",
+      "hint": "En la proporcionalitat directa, zero unitats han de donar zero cost.",
+      "explanation": "No: la quota fixa trenca la proporcionalitat, encara que el cost segueixi una recta."
+    },
+    "F3-E1-P01-L06-05": {
+      "prompt": "Compra A: quatre articles a 1,50 € cadascun. Compra B: tres a 2 €. Quin cost és més gran?",
+      "hint": "Calcula cada compra amb la seva pròpia quantitat.",
+      "explanation": "Totes dues compres costen 6 €. Comparar preus unitaris sense quantitat seria incorrecte."
+    }
+  }
+}

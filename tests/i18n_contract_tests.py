@@ -5,7 +5,7 @@ import json,copy,tempfile
 from i18n_coverage import loaded,verify_package
 R=Path(__file__).resolve().parents[1]
 passed=0
-for unit_id in ('E1-N01','E1-N02','E1-N03','E1-N04','E1-N05'):
+for unit_id in ('E1-N01','E1-N02','E1-N03','E1-N04','E1-N05','E1-P01','E1-M01','E1-G01'):
  src_a,src_b,data,bank=loaded(unit_id)
  file=R/'site/i18n/ca-ES'/(unit_id+'.v1.json')
  original=json.loads(file.read_text(encoding='utf8'))
@@ -50,5 +50,5 @@ for unit_id in ('E1-N01','E1-N02','E1-N03','E1-N04','E1-N05'):
    except (AssertionError,KeyError,TypeError):
     print('REJECT_PASS',unit_id,name);passed+=1
    else:raise AssertionError('Unsafe mutation accepted: '+unit_id+':'+name)
-print('I18N_CONTRACT_PASS',passed,'/ 65')
-assert passed==65
+print('I18N_CONTRACT_PASS',passed,'/ 104')
+assert passed==104

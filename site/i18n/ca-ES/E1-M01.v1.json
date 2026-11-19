@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E1-M01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e1_m01.json": "e77f95818060871d3368982f995c20a0045be195435a2f97efaa161dd5bc3180",
+    "data/f3_e1_m01_exercises.json": "2cc096518dccc1e0eefa4be75050a37633e97d2216c3391d0d4142fbf8a0e261"
+  },
+  "lessons": {
+    "E1-M01-L01": {
+      "title": "Magnituds i unitats de mesura",
+      "objectives": [
+        "Reconèixer unitats adequades de longitud, massa, capacitat i temps.",
+        "Distingir valor numèric, unitat i magnitud."
+      ],
+      "content_blocks": [
+        {
+          "body": "Mesurar consisteix a comparar una magnitud amb una unitat de referència. La longitud s’expressa en metres, la massa en quilograms, la capacitat en litres i el temps en segons; altres unitats de la mateixa magnitud permeten expressar còmodament quantitats grans o petites. Una mesura sense unitat pot ser ambigua. No se sumen magnituds incompatibles, per exemple 3 m + 2 kg. Un litre mesura capacitat, no longitud."
+        },
+        {
+          "body": "La longitud d’un passadís pot ser de 12 m; expressar-la com 12 kg seria incorrecte perquè els quilograms mesuren massa."
+        },
+        {
+          "body": "Una ampolla de 1,5 L té una capacitat d’un litre i mig; 90 min representa una durada d’una hora i mitja."
+        },
+        {
+          "body": "Magnituds i unitats de referència. La taula proporciona les dades textuals exactes per entendre la representació sense dependre del color o de la posició.",
+          "alt": "Magnituds i unitats de referència. Els elements, els valors i les unitats també figuren a la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Magnituds i unitats de referència"
+          }
+        },
+        {
+          "body": "Per què 5 m + 3 cm és una suma admissible però 5 m + 3 kg no?||Els metres i els centímetres representen longitud i es poden convertir a la mateixa unitat; els quilograms representen massa."
+        },
+        {
+          "body": "Recorda la condició principal: mesurar consisteix a comparar una magnitud amb una unitat de referència. Comprova quina magnitud es calcula i en quines unitats; assaja un altre problema sense consultar els passos."
+        }
+      ]
+    },
+    "E1-M01-L02": {
+      "title": "Canvis d’unitats",
+      "objectives": [
+        "Convertir entre unitats d’una mateixa magnitud.",
+        "Verificar el sentit dels factors de conversió."
+      ],
+      "content_blocks": [
+        {
+          "body": "Les conversions mètriques segueixen equivalències exactes: 1 km = 1000 m, 1 m = 100 cm, 1 kg = 1000 g i 1 L = 1000 mL. Per convertir entre unitats multipliquem per un factor igual a u expressat com una raó d’unitats; així cancel·lem la unitat inicial. El temps no segueix completament l’escala decimal: 1 h = 60 min. Una longitud en centímetres tindrà un valor numèric més gran que la mateixa longitud en metres."
+        },
+        {
+          "body": "2,4 km × (1000 m / 1 km) = 2400 m; la unitat km es cancel·la i queda m."
+        },
+        {
+          "body": "750 g × (1 kg / 1000 g) = 0,75 kg; quan utilitzem una unitat més petita augmenta el valor numèric i quan la fem més gran, disminueix."
+        },
+        {
+          "body": "Equivalències entre unitats. La taula proporciona les dades textuals exactes per entendre la representació sense dependre del color o de la posició.",
+          "alt": "Equivalències entre unitats. Els elements, els valors i les unitats també figuren a la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Equivalències entre unitats"
+          }
+        },
+        {
+          "body": "Quants metres són 0,35 km?||350 m perquè 0,35 × 1000 = 350."
+        },
+        {
+          "body": "Recorda la condició principal: les conversions mètriques segueixen equivalències exactes: 1 km = 1000 m, 1 m = 100 cm, 1 kg = 1000 g i 1 L = 1000 mL. Comprova quina magnitud es calcula i en quines unitats; assaja un altre problema sense consultar els passos."
+        }
+      ]
+    },
+    "E1-M01-L03": {
+      "title": "Estimació i precisió",
+      "objectives": [
+        "Estimar l’ordre de magnitud d’una mesura raonable.",
+        "Separar la precisió de l’arrodoniment de l’exactitud de l’instrument."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una estimació és una aproximació útil per decidir si un resultat té sentit: l’altura d’una porta és de l’ordre de metres, no de quilòmetres. Arrodonir una lectura decimal a dècimes pot introduir fins a 0,05 unitats d’error d’arrodoniment amb la convenció d’arrodonir cap amunt en cas d’empat. Aquesta cota no certifica la precisió de l’aparell. Expressa el nombre adequat de decimals, conserva la unitat i no presentis una aproximació com una mesura exacta."
+        },
+        {
+          "body": "La lectura 2,34 m arrodonida a dècimes és 2,3 m; l’error d’arrodoniment en aquest exemple és de 0,04 m."
+        },
+        {
+          "body": "Una cinta amb divisions d’un centímetre no permet justificar tota sola una lectura exacta de 1,234567 m."
+        },
+        {
+          "body": "Mesura expressada en dècimes. La taula proporciona les dades textuals exactes per entendre la representació sense dependre del color o de la posició.",
+          "alt": "Mesura expressada en dècimes. Els elements, els valors i les unitats també figuren a la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Mesura expressada en dècimes"
+          }
+        },
+        {
+          "body": "Una mesura anotada com 7,2 cm garanteix un error instrumental màxim de 0,05 cm?||No: 0,05 cm és només la meitat de la resolució decimal indicada, no una garantia de l’aparell."
+        },
+        {
+          "body": "Recorda la condició principal: una estimació és una aproximació útil per decidir si un resultat té sentit: l’altura d’una porta és de l’ordre de metres, no de quilòmetres. Comprova quina magnitud es calcula i en quines unitats; assaja un altre problema sense consultar els passos."
+        }
+      ]
+    },
+    "E1-M01-L04": {
+      "title": "Escales de plànols i mapes",
+      "objectives": [
+        "Interpretar l’escala d’un plànol expressada com 1:n.",
+        "Calcular longituds reals i representades conservant les unitats."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una escala de mapa 1:n significa que una unitat del dibuix equival a n unitats iguals a la realitat. Si al plànol mesurem 3 cm a escala 1:50 000, la longitud real és 150 000 cm = 1500 m. Abans de fer servir una fórmula, unifica les unitats. Una escala d’ampliació, per exemple 2:1, indica un dibuix més gran que l’objecte; no l’hem de confondre amb 1:2. L’escala ha de correspondre al document reproduït sense haver-lo redimensionat."
+        },
+        {
+          "body": "Mapa a 1:25 000: 4 cm representen 4 × 25 000 cm = 100 000 cm = 1000 m."
+        },
+        {
+          "body": "Una longitud real de 500 m equival a 50 000 cm; a escala 1:10 000 es dibuixa amb 5 cm."
+        },
+        {
+          "body": "Interpretació de l’escala 1:25 000. La taula proporciona les dades textuals exactes per entendre la representació sense dependre del color o de la posició.",
+          "alt": "Interpretació de l’escala 1:25 000. Els elements, els valors i les unitats també figuren a la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Interpretació de l’escala 1:25 000"
+          }
+        },
+        {
+          "body": "A escala 1:100, una distància de 3 cm en paper són 300 cm reals o 300 m?||Són 300 cm = 3 m; cal respectar la unitat inicial."
+        },
+        {
+          "body": "Recorda la condició principal: una escala de mapa 1:n significa que una unitat del dibuix equival a n unitats iguals a la realitat. Comprova quina magnitud es calcula i en quines unitats; assaja un altre problema sense consultar els passos."
+        }
+      ]
+    },
+    "E1-M01-L05": {
+      "title": "Perímetres i unitats",
+      "objectives": [
+        "Determinar perímetres sumant les longituds del contorn.",
+        "Distingir unitats lineals d’unitats quadrades."
+      ],
+      "content_blocks": [
+        {
+          "body": "El perímetre és la longitud total del contorn d’una figura tancada i es mesura en unitats de longitud (cm, m, etc.). En un rectangle de costats a i b, P = 2(a + b); en un quadrat de costat s, P = 4s. No confonguis el contorn amb la superfície interior: àrea i perímetre són magnituds diferents amb unitats diferents. El perímetre d’una figura irregular es calcula sumant tots els segments exteriors, sense comptar els talls interiors."
+        },
+        {
+          "body": "Rectangle de 7 cm per 4 cm: perímetre = 2×(7+4)=22 cm; l’àrea, que no es demana, seria 28 cm²."
+        },
+        {
+          "body": "Quadrat de costat 6 m: perímetre = 6 + 6 + 6 + 6 = 24 m."
+        },
+        {
+          "body": "Perímetre d’un rectangle de 7 × 4. La taula proporciona les dades textuals exactes per entendre la representació sense dependre del color o de la posició.",
+          "alt": "Perímetre d’un rectangle de 7 × 4. Els elements, els valors i les unitats també figuren a la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Perímetre d’un rectangle de 7 × 4"
+          }
+        },
+        {
+          "body": "Si dupliques els costats d’un rectangle, què passa amb el perímetre?||Es duplica: 2(2a+2b)=2×2(a+b)."
+        },
+        {
+          "body": "Recorda la condició principal: el perímetre és la longitud total del contorn d’una figura tancada i es mesura en unitats de longitud (cm, m, etc.). Comprova quina magnitud es calcula i en quines unitats; assaja un altre problema sense consultar els passos."
+        }
+      ]
+    },
+    "E1-M01-L06": {
+      "title": "Problemes de mesura i conversions",
+      "objectives": [
+        "Resoldre problemes de mesura amb més d’una conversió.",
+        "Explicar quin resultat i quina unitat exigeix el context."
+      ],
+      "content_blocks": [
+        {
+          "body": "En un problema de mesura identifica primer la magnitud que es demana i les unitats originals; després converteix a una unitat comuna i fes les operacions. Anota les magnituds parcials i interpreta el resultat: per a una tanca necessites longitud; per cobrir un terra, superfície; per omplir un recipient, capacitat. Arrodoneix només quan el context ho requereixi. Només pots sumar metres i centímetres després de convertir-los a la mateixa unitat."
+        },
+        {
+          "body": "Ajuntem cintes de 2,5 m i 75 cm: 75 cm=0,75 m; la longitud total = 3,25 m."
+        },
+        {
+          "body": "Un passeig té trams de 1,2 km i 850 m: 1200 m + 850 m = 2050 m = 2,05 km."
+        },
+        {
+          "body": "Problema de conversió i suma. La taula proporciona les dades textuals exactes per entendre la representació sense dependre del color o de la posició.",
+          "alt": "Problema de conversió i suma. Els elements, els valors i les unitats també figuren a la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Problema de conversió i suma"
+          }
+        },
+        {
+          "body": "Quin error hi ha a afirmar que 2 m + 50 cm = 52 m?||S’han sumat nombres sense convertir: 2 m + 0,5 m = 2,5 m."
+        },
+        {
+          "body": "Recorda la condició principal: en un problema de mesura identifica primer la magnitud que es demana i les unitats originals; després converteix-les a una unitat comuna i opera. Comprova quina magnitud es calcula i en quines unitats; assaja un altre problema sense consultar els passos."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E1-M01-L01-01": {
+      "prompt": "Tria la unitat adequada per mesurar la longitud d’un passadís.",
+      "hint": "Identifica si la magnitud és longitud, massa, capacitat o temps.",
+      "explanation": "Procediment: Relaciona la magnitud física amb una unitat de la mateixa dimensió. Identifica si la magnitud és longitud, massa, capacitat o temps. No confonguis unitats que representen magnituds diferents. Resultat correcte: metre (m). Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L01-02": {
+      "prompt": "Tria la unitat adequada per mesurar la massa d’una bossa de pomes.",
+      "hint": "Identifica si la magnitud és longitud, massa, capacitat o temps.",
+      "explanation": "Procediment: Relaciona la magnitud física amb una unitat de la mateixa dimensió. Identifica si la magnitud és longitud, massa, capacitat o temps. No confonguis unitats que representen magnituds diferents. Resultat correcte: quilogram (kg). Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L01-03": {
+      "prompt": "Tria la unitat adequada per mesurar la capacitat d’una ampolla.",
+      "hint": "Identifica si la magnitud és longitud, massa, capacitat o temps.",
+      "explanation": "Procediment: Relaciona la magnitud física amb una unitat de la mateixa dimensió. Identifica si la magnitud és longitud, massa, capacitat o temps. No confonguis unitats que representen magnituds diferents. Resultat correcte: litre (L). Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L01-04": {
+      "prompt": "Tria la unitat adequada per mesurar la durada d’una cursa.",
+      "hint": "Identifica si la magnitud és longitud, massa, capacitat o temps.",
+      "explanation": "Procediment: Relaciona la magnitud física amb una unitat de la mateixa dimensió. Identifica si la magnitud és longitud, massa, capacitat o temps. No confonguis unitats que representen magnituds diferents. Resultat correcte: segon (s). Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L01-05": {
+      "prompt": "Tria la unitat adequada per mesurar la massa d’una motxilla.",
+      "hint": "Identifica si la magnitud és longitud, massa, capacitat o temps.",
+      "explanation": "Procediment: Relaciona la magnitud física amb una unitat de la mateixa dimensió. Identifica si la magnitud és longitud, massa, capacitat o temps. No confonguis unitats que representen magnituds diferents. Resultat correcte: quilogram (kg). Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L02-01": {
+      "prompt": "Converteix 2,4 km a m; indica només el valor numèric.",
+      "hint": "Aplica una equivalència exacta i cancel·la la unitat d’origen.",
+      "explanation": "Procediment: Quantitat × factor = (24/10) × (1000/1) = 2400 m. Aplica una equivalència exacta i cancel·la la unitat d’origen. Multiplica la quantitat inicial pel factor de conversió corresponent. Resultat correcte: 2400. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L02-02": {
+      "prompt": "Converteix 750 g a kg; indica només el valor numèric.",
+      "hint": "Aplica una equivalència exacta i cancel·la la unitat d’origen.",
+      "explanation": "Procediment: Quantitat × factor = (750/1) × (1/1000) = 0,75 kg. Aplica una equivalència exacta i cancel·la la unitat d’origen. Multiplica la quantitat inicial pel factor de conversió corresponent. Resultat correcte: 0,75. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L02-03": {
+      "prompt": "Converteix 0,35 km a m; indica només el valor numèric.",
+      "hint": "Aplica una equivalència exacta i cancel·la la unitat d’origen.",
+      "explanation": "Procediment: Quantitat × factor = (35/100) × (1000/1) = 350 m. Aplica una equivalència exacta i cancel·la la unitat d’origen. Multiplica la quantitat inicial pel factor de conversió corresponent. Resultat correcte: 350. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L02-04": {
+      "prompt": "Converteix 75 cm a m; indica només el valor numèric. Selecciona el valor exacte correcte.",
+      "hint": "Aplica una equivalència exacta i cancel·la la unitat d’origen.",
+      "explanation": "Procediment: Quantitat × factor = (75/1) × (1/100) = 0,75 m. Aplica una equivalència exacta i cancel·la la unitat d’origen. Multiplica la quantitat inicial pel factor de conversió corresponent. Resultat correcte: 0,75. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L02-05": {
+      "prompt": "Converteix 90 min a h; indica només el valor numèric. Selecciona el valor exacte correcte.",
+      "hint": "Aplica una equivalència exacta i cancel·la la unitat d’origen.",
+      "explanation": "Procediment: Quantitat × factor = (90/1) × (1/60) = 1,5 h. Aplica una equivalència exacta i cancel·la la unitat d’origen. Multiplica la quantitat inicial pel factor de conversió corresponent. Resultat correcte: 1,5. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L03-01": {
+      "prompt": "Arrodoneix 2,34 m a la dècima de metre més propera.",
+      "hint": "La xifra de les centèsimes determina si canvia la dècima.",
+      "explanation": "Procediment: (234/100) m → arrodoniment al pas 0,1 m = 2,3 m. La xifra de les centèsimes determina si canvia la dècima. En els empats positius, el valor s’arrodoneix cap amunt. Resultat correcte: 2,3. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L03-02": {
+      "prompt": "Arrodoneix 7,86 m a la dècima de metre més propera.",
+      "hint": "La xifra de les centèsimes determina si canvia la dècima.",
+      "explanation": "Procediment: (786/100) m → arrodoniment al pas 0,1 m = 7,9 m. La xifra de les centèsimes determina si canvia la dècima. En els empats positius, el valor s’arrodoneix cap amunt. Resultat correcte: 7,9. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L03-03": {
+      "prompt": "Arrodoneix 1,235 m a la dècima de metre més propera.",
+      "hint": "La xifra de les centèsimes determina si canvia la dècima.",
+      "explanation": "Procediment: (1235/1000) m → arrodoniment al pas 0,1 m = 1,2 m. La xifra de les centèsimes determina si canvia la dècima. En els empats positius, el valor s’arrodoneix cap amunt. Resultat correcte: 1,2. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L03-04": {
+      "prompt": "Quina és la diferència absoluta entre 2,34 i 2,3 (en les mateixes unitats)? Selecciona el valor exacte correcte.",
+      "hint": "Calcula la diferència en qualsevol dels dos ordres.",
+      "explanation": "Procediment: |2,34 − 2,3| = 0,04. Calcula la diferència en qualsevol dels dos ordres. Pren el valor absolut: el resultat no pot ser negatiu. Resultat correcte: 0,04. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L03-05": {
+      "prompt": "Quina és la meitat d’una resolució de 0,1 unitats? Selecciona el valor exacte correcte.",
+      "hint": "Divideix entre dos la mida del pas d’arrodoniment.",
+      "explanation": "Procediment: (1/10) ÷ 2 = 0,05 unidades. Divideix entre dos la mida del pas d’arrodoniment. La meitat d’un interval no certifica la precisió de l’instrument. Resultat correcte: 0,05. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L04-01": {
+      "prompt": "En un plànol d’escala 1:25000, una distància de 4 cm equival a quants metres reals?",
+      "hint": "Multiplica els centímetres del plànol pel denominador de l’escala.",
+      "explanation": "Procediment: 4 cm × 25000 = 100000 cm = 1000 m. Multiplica els centímetres del plànol pel denominador de l’escala. Converteix els centímetres reals a metres dividint per cent. Resultat correcte: 1000. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L04-02": {
+      "prompt": "En un plànol d’escala 1:50000, una distància de 3 cm equival a quants metres reals?",
+      "hint": "Multiplica els centímetres del plànol pel denominador de l’escala.",
+      "explanation": "Procediment: 3 cm × 50000 = 150000 cm = 1500 m. Multiplica els centímetres del plànol pel denominador de l’escala. Converteix els centímetres reals a metres dividint per cent. Resultat correcte: 1500. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L04-03": {
+      "prompt": "En un plànol a escala 1:10000, quants centímetres es dibuixen per a 500 metres reals?",
+      "hint": "Converteix primer els metres reals a centímetres.",
+      "explanation": "Procediment: 500 m = 50000 cm; (50000) ÷ 10000 = 5 cm. Converteix primer els metres reals a centímetres. Divideix la longitud real en centímetres per la raó d’escala. Resultat correcte: 5. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L04-04": {
+      "prompt": "En un plànol d’escala 1:100, una distància de 6 cm equival a quants metres reals? Selecciona el valor exacte correcte.",
+      "hint": "Multiplica els centímetres del plànol pel denominador de l’escala.",
+      "explanation": "Procediment: 6 cm × 100 = 600 cm = 6 m. Multiplica els centímetres del plànol pel denominador de l’escala. Converteix els centímetres reals a metres dividint per cent. Resultat correcte: 6. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L04-05": {
+      "prompt": "En un plànol a escala 1:30000, quants centímetres es dibuixen per a 1200 metres reals? Selecciona el valor exacte correcte.",
+      "hint": "Converteix primer els metres reals a centímetres.",
+      "explanation": "Procediment: 1200 m = 120000 cm; (120000) ÷ 30000 = 4 cm. Converteix primer els metres reals a centímetres. Divideix la longitud real en centímetres per la raó d’escala. Resultat correcte: 4. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L05-01": {
+      "prompt": "Calcula en cm el perímetre d’un rectangle de 7 × 4 cm.",
+      "hint": "Suma els quatre costats exteriors.",
+      "explanation": "Procediment: 2 × (7+4) = 22 cm. Suma els quatre costats exteriors. El perímetre del rectangle és el doble de la suma de la base i l’altura. Resultat correcte: 22. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L05-02": {
+      "prompt": "Quin és el perímetre en cm d’un quadrat de costat 6 cm?",
+      "hint": "Un quadrat té quatre costats iguals.",
+      "explanation": "Procediment: 4 × 6 = 24 cm. Un quadrat té quatre costats iguals. Multiplica el costat per quatre, no l’elevïs al quadrat. Resultat correcte: 24. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L05-03": {
+      "prompt": "Calcula en cm el perímetre d’un rectangle de 12 × 5 cm.",
+      "hint": "Suma els quatre costats exteriors.",
+      "explanation": "Procediment: 2 × (12+5) = 34 cm. Suma els quatre costats exteriors. El perímetre del rectangle és el doble de la suma de la base i l’altura. Resultat correcte: 34. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L05-04": {
+      "prompt": "Un polígon té longituds exteriors 4, 3, 4, 3 cm. Quin és el perímetre en cm? Selecciona el valor exacte correcte.",
+      "hint": "El contorn és la suma dels costats exteriors.",
+      "explanation": "Procediment: 4 + 3 + 4 + 3 = 14 cm. El contorn és la suma dels costats exteriors. No confonguis la longitud de la vora amb l’àrea interior. Resultat correcte: 14. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L05-05": {
+      "prompt": "Quin és el perímetre en cm d’un quadrat de costat 9 cm? Selecciona el valor exacte correcte.",
+      "hint": "Un quadrat té quatre costats iguals.",
+      "explanation": "Procediment: 4 × 9 = 36 cm. Un quadrat té quatre costats iguals. Multiplica el costat per quatre, no l’elevïs al quadrat. Resultat correcte: 36. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L06-01": {
+      "prompt": "Uneix dues cintes: una de 5 m i una altra de 75 cm. Quants metres mesuren juntes?",
+      "hint": "Converteix la segona cinta de centímetres a metres.",
+      "explanation": "Procediment: 5 m + 75/100 m = 5,75 m. Converteix la segona cinta de centímetres a metres. Suma les longituds expressades en una mateixa unitat. Resultat correcte: 5,75. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L06-02": {
+      "prompt": "Un trajecte té 1,2 km i després 850 m. Quants metres sumen?",
+      "hint": "Converteix els quilòmetres a metres abans de sumar.",
+      "explanation": "Procediment: (12/10) × 1000 m + 850 m = 2050 m. Converteix els quilòmetres a metres abans de sumar. Un quilòmetre equival a mil metres. Resultat correcte: 2050. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L06-03": {
+      "prompt": "Uneix dues cintes: una de 3 m i una altra de 40 cm. Quants metres mesuren juntes?",
+      "hint": "Converteix la segona cinta de centímetres a metres.",
+      "explanation": "Procediment: 3 m + 40/100 m = 3,4 m. Converteix la segona cinta de centímetres a metres. Suma les longituds expressades en una mateixa unitat. Resultat correcte: 3,4. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L06-04": {
+      "prompt": "Un trajecte té 2,2 km i després 350 m. Quants metres sumen? Selecciona el valor exacte correcte.",
+      "hint": "Converteix els quilòmetres a metres abans de sumar.",
+      "explanation": "Procediment: (22/10) × 1000 m + 350 m = 2550 m. Converteix els quilòmetres a metres abans de sumar. Un quilòmetre equival a mil metres. Resultat correcte: 2550. Comprova les unitats i les condicions geomètriques abans de continuar."
+    },
+    "F3-E1-M01-L06-05": {
+      "prompt": "Uneix dues cintes: una de 2 m i una altra de 50 cm. Quants metres mesuren juntes? Selecciona el valor exacte correcte.",
+      "hint": "Converteix la segona cinta de centímetres a metres.",
+      "explanation": "Procediment: 2 m + 50/100 m = 2,5 m. Converteix la segona cinta de centímetres a metres. Suma les longituds expressades en una mateixa unitat. Resultat correcte: 2,5. Comprova les unitats i les condicions geomètriques abans de continuar."
+    }
+  }
+}
