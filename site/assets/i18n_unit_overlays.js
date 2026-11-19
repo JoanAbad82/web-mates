@@ -62,6 +62,7 @@ async function loadUnit(unitId){
  ]);
  if(a.unit_id!==unitId||b.unit_id!==unitId)throw Error('Canonical unit mismatch');
  const unitStrings=new Map();
+ const completedLessonIds=[];
  const lessons=new Map(a.lesson_documents.map(d=>[d.lesson_id,d]));
  const acts=new Map(b.activities.map(x=>[x.exercise_id,x]));
  for(const [lid,translated] of Object.entries(p.lessons)){
@@ -87,7 +88,7 @@ async function loadUnit(unitId){
   });
   const expected=doc.exercise_refs||[];
   if(expected.length&&expected.every(x=>p.activities[x]&&Object.keys(p.activities[x]).length===3))
-    localizedLessonIds.add(lid);
+    completedLessonIds.push(lid);
  }
  for(const [aid,t] of Object.entries(p.activities)){
   const x=acts.get(aid);
@@ -96,6 +97,7 @@ async function loadUnit(unitId){
   for(const k of permittedActivityKeys)merge(unitStrings,x[k],t[k]);
  }
  strings.set(unitId,unitStrings);
+ for(const lid of completedLessonIds)localizedLessonIds.add(lid);
  loaded.add(unitId);redraw();
  return true;
 }

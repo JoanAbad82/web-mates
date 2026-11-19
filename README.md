@@ -48,7 +48,7 @@ del funcionamiento efímero.
 ## Participar
 
 Las aportaciones de código y contenido por GitHub Issues/Pull Requests son
-bienvenidas cuando se publique el repositorio. Cada contribución debe
+bienvenidas en el repositorio público. Cada contribución debe
 identificar procedencia, derechos, pruebas y las lecciones afectadas; una
 propuesta no equivale a revisión curricular o pedagógica.
 
@@ -71,9 +71,10 @@ La aplicación ofrece el selector «Català (beta) / Castellano», con 9 itinera
 85 títulos de unidad traducidos al catalán en borrador. El manifiesto incluye las
 85 unidades, sus 505 lecciones y las 2.525 actividades con cobertura verificable.
 
-**Cobertura real actual:** 1 lección (E1-N01-L01) y sus 5 actividades contienen
-textos catalanes en un paquete versionado, sin revisión lingüística humana.
-Las otras 504 lecciones y 2.520 actividades continúan en castellano.
+**Cobertura real actual:** 2 unidades de 1.? ESO (E1-N01 y E1-N02)
+traducidas en borrador, con sus 12 lecciones y 60 actividades.
+Las otras 493 lecciones y 2.465 actividades siguen en castellano;
+ninguna traducci?n ha sido revisada ling??sticamente por una persona.
 La interfaz F1/F3 todavía mezcla algunas etiquetas de ambos idiomas.
 No se presentan traducciones pendientes como terminadas ni homologadas.
 

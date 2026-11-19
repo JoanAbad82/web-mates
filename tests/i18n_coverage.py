@@ -3,6 +3,7 @@
 from pathlib import Path
 from hashlib import sha256
 import json,sys,re
+from i18n_math_guard import math_guard
 R=Path(__file__).resolve().parents[1]
 SITE=R/'site'
 CAT=json.loads((SITE/'data/catalogo.json').read_text(encoding='utf8'))
@@ -42,21 +43,30 @@ def verify_package(unit,path,src_data,src_bank,src_a,src_b):
   require(lid in lesson_map and set(text)==ALLOWED_LESSON,'Unknown lesson/unsafe keys '+lid)
   doc=lesson_map[lid]
   require(isinstance(text['title'],str) and text['title'].strip(),'Empty localized title '+lid)
+  titles={l['lesson_id']:l['title'] for c in CAT['courses'] for u in c['units'] for l in u['lessons']}
+  math_guard(titles[lid],text['title'],lid+':title')
   require(isinstance(text['objectives'],list) and len(text['objectives'])==len(doc['objectives']),'Objective mismatch '+lid)
   require(isinstance(text['content_blocks'],list) and len(text['content_blocks'])==len(doc['content_blocks']),'Block mismatch '+lid)
   for source,target in zip(doc['objectives'],text['objectives']):
    require(isinstance(target,str) and target.strip() and source!=target,'Untranslated objective '+lid)
+   math_guard(source,target,lid+':objective')
   for source,target in zip(doc['content_blocks'],text['content_blocks']):
    require(set(target).issubset(ALLOWED_BLOCK) and isinstance(target.get('body'),str) and target['body'].strip()
       and target['body']!=source['body'],'Invalid untranslated content '+lid)
-   if 'alt' in target:require('alt' in source and isinstance(target['alt'],str),'Alt source mismatch '+lid)
-   if 'visual_spec' in target:require(set(target['visual_spec'])=={'title'} and 'visual_spec' in source,'Visual unsafe field '+lid)
+   math_guard(source['body'],target['body'],lid+':body')
+   if 'alt' in target:
+    require('alt' in source and isinstance(target['alt'],str),'Alt source mismatch '+lid)
+    math_guard(source['alt'],target['alt'],lid+':alt')
+   if 'visual_spec' in target:
+    require(set(target['visual_spec'])=={'title'} and 'visual_spec' in source,'Visual unsafe field '+lid)
+    math_guard(source['visual_spec']['title'],target['visual_spec']['title'],lid+':visual')
   translated.add(lid)
  for aid,text in p['activities'].items():
   require(aid in act_map and set(text)==ALLOWED_ACTIVITY,'Unknown exercise/unsafe fields '+aid)
   require(act_map[aid]['lesson_id'] in translated,'Orphan exercise translation '+aid)
   for k,v in text.items():
    require(isinstance(v,str) and v.strip() and v!=act_map[aid].get(k),'Untranslated exercise text '+aid)
+   math_guard(act_map[aid][k],v,aid+':'+k)
  # Complete lesson requires ALL its original exercises fully translated.
  complete=[lid for lid in translated if all(ref in p['activities'] for ref in lesson_map[lid]['exercise_refs'])]
  return {'lessons_translated':len(complete),'activities_translated':len(p['activities']),

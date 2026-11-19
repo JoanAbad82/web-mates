@@ -131,15 +131,51 @@ let server,browser;
  await page.select('#locale-select','ca');
  const back=await page.$eval('.f1-question-prompt',e=>e.textContent);
  check('CA_SWITCH_BACK_SAME_ROUTE',back.includes('Quina xifra'),back,'Catalan restored');
- await page.goto(base+'?lang=ca#/curso/E1/unidad/E1-N01/leccion/E1-N01-L02',{waitUntil:'networkidle0'});
+ const expectedCaTitles=[
+  'Valor posicional i comparaci',
+  'Arrodoniment i estimaci',
+  'Operacions amb nombres naturals',
+  'Jerarquia de les operacions',
+  'Propietats de les operacions',
+  'Problemes de diverses operacions'];
+ for(let i=1;i<=6;i++){
+  const suffix=String(i).padStart(2,'0');
+  await page.goto(base+'?lang=ca#/curso/E1/unidad/E1-N01/leccion/E1-N01-L'+suffix,{waitUntil:'networkidle0'});
+  await page.waitForSelector('.f1-question-prompt',{timeout:12000});
+  const state=await page.evaluate(()=>({
+   lang:document.querySelector('#main').lang,
+   title:document.querySelector('#main h1')?.textContent,
+   prompt:document.querySelector('.f1-question-prompt')?.textContent
+  }));
+  check('CA_FULL_E1_N01_L'+suffix,state.lang==='ca'&&
+    state.title.startsWith(expectedCaTitles[i-1].slice(0,8)),
+    state,'Unit lesson draft in ca-ES');
+ }
+ for(let i=1;i<=6;i++){
+  const suffix=String(i).padStart(2,'0');
+  await page.goto(base+'?lang=ca#/curso/E1/unidad/E1-N02/leccion/E1-N02-L'+suffix,{waitUntil:'networkidle0'});
+  await page.waitForSelector('.f1-question-prompt',{timeout:6000}).catch(async err=>{
+   console.log('DIAG_N02_MAIN',JSON.stringify(await page.$eval('#main',e=>e.textContent.slice(0,900))));throw err;
+  });
+  const state=await page.evaluate(()=>({
+    lang:document.querySelector('#main').lang,
+    title:document.querySelector('#main h1')?.textContent,
+    prompt:document.querySelector('.f1-question-prompt')?.textContent
+  }));
+  const titles=['El significat dels nombres enters','Ordre i valor absolut',
+    'La recta dels enters','Suma i resta','Multiplicaci','Operacions combinades'];
+  check('CA_FULL_E1_N02_L'+suffix,state.lang==='ca'&&
+    state.title.startsWith(titles[i-1].slice(0,8)),state,'E1-N02 Catalan text and language attribution');
+ }
+ await page.goto(base+'?lang=ca#/curso/E1/unidad/E1-N03/leccion/E1-N03-L01',{waitUntil:'networkidle0'});
  await page.waitForSelector('.f1-question-prompt',{timeout:12000});
  const pending=await page.evaluate(()=>({
   mainLang:document.querySelector('#main').lang,
   prompt:document.querySelector('.f1-question-prompt')?.textContent,
   bannerVisible:!document.querySelector('#locale-partial').hidden
  }));
- check('UNTRANSLATED_LESSON_ES_FALLBACK',pending.mainLang==='es'&&pending.bannerVisible,
-  pending,'All still-pending lessons correctly attribute Spanish');
+ check('UNTRANSLATED_E1_N03_ES_FALLBACK',pending.mainLang==='es'&&pending.bannerVisible,
+  pending,'Pending unit still attributed Spanish');
 
  check('NO_JS_OR_EXTERNAL',results.jsErrors.length===0&&results.external.length===0&&results.httpErrors.length===0,
   {jsErrors:results.jsErrors,external:results.external,httpErrors:results.httpErrors},'no errors/requests');
