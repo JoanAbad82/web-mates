@@ -63,3 +63,20 @@ La aplicación actual conserva gates F4 NO VERIFICADO y publicación web NO-GO.
 El nombre visible MATEVOLT sigue provisional, pendiente de un examen de
 semejanzas; no se considera una marca disponible por incluirla en un repositorio.
 GitHub Pages no está activado: el código fuente público no significa que la web esté desplegada.
+
+## Idiomas y traducci?n: prioridad al catal?n (19/11/2026)
+
+**C?digo abierto ya publicado; traducci?n al catal?n en desarrollo.**
+La web dispone de selector ?Catal? (beta) / Castellano? y mantiene los IDs can?nicos.
+Se han preparado los nombres de los 9 itinerarios y los t?tulos de las 85 unidades en catal?n,
+como borrador ling??stico. **Las 505 lecciones y 2.525 actividades siguen en castellano**:
+no se anuncian como traducidas ni validadas. El contenido original permanece en revisi?n.
+
+La interfaz puede abrirse con los par?metros de URL ?lang=ca o ?lang=es; la elecci?n no se
+guarda en cookies ni en localStorage. El fallback muestra un aviso expl?cito y conserva
+lang=es en las lecciones no traducidas, para no desorientar a los lectores de pantalla.
+
+Para participar: [traducci?n catalana, Issue #1](https://github.com/JoanAbad82/web-mates/issues/1).
+Consulta [plan y contrato i18n](docs/i18n/CA_ES_PLAN_Y_CONTRATO.md).
+El ingl?s se a?adir? en una fase posterior; a?n no est? implementado.
+Esta actualizaci?n del repositorio no activa GitHub Pages ni publica una web accesible a alumnado.

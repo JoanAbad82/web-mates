@@ -21,3 +21,15 @@ privados cuando GitHub permita habilitarlos.
 Los pull requests no se despliegan automáticamente. El proyecto utiliza
 versionado, pruebas y revisión de cambios; es posible añadir futuras
 secciones sin alterar silenciosamente los identificadores actuales.
+
+## Catal? (prioritat actual)
+
+Per col?laborar en la traducci? completa al catal?, presenta't i indica els IDs de la
+unitat que vols traduir a [l'Issue #1](https://github.com/JoanAbad82/web-mates/issues/1).
+Consulta el [contracte de localitzaci?](docs/i18n/CA_ES_PLAN_Y_CONTRATO.md).
+
+**Mant?n intactos** els IDs, les solucions, els validadors i el graf de prerequisits.
+No confonguis cobertura de traducci? amb revisi? matem?tica ni ling??stica.
+Marca els textos tradu?ts com a esborrany, revisi? o validat amb evid?ncies.
+No introdueixis dades personals de menors ni obres de tercers sense drets MIT.
+Les contribucions es tramiten per Pull Request i no impliquen un desplegament autom?tic.

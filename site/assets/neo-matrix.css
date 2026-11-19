@@ -445,3 +445,21 @@ pre{max-width:100%;overflow:auto}
 #main .breadcrumbs a{
   padding-inline:8px;
 }
+
+
+/* ca-ES: selector visible, acessible i av?s de cobertura parcial. */
+.locale-label { margin-inline-start: .5rem; font-size: .8rem; white-space: nowrap; }
+.locale-select { max-width: 10rem; min-height: 44px; padding: .35rem .5rem;
+  border: 1px solid currentColor; border-radius: .5rem;
+  color: inherit; background: #12303c; font: inherit; }
+.locale-select:focus-visible { outline: 3px solid #b7f785; outline-offset: 3px; }
+.locale-partial { margin: 0 auto; padding: .75rem max(1rem, calc((100vw - 1100px) / 2));
+  color: #f7f8f3; background: #27414b; border-block: 1px solid #66808b;
+  font-size: .9rem; line-height: 1.5; }
+.locale-partial a { color: #bcff82; margin-left: .5rem; text-decoration: underline; }
+.locale-partial[hidden] { display: none; }
+@media (max-width: 620px) {
+  .header-actions { flex-wrap: wrap; }
+  .locale-label { display: none; }
+  .locale-select { max-width: 9rem; min-height: 44px; }
+}
