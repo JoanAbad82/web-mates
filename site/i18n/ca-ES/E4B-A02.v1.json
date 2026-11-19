@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E4B-A02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e4b_a02.json": "0f3d7f9852e1ecc350abe5e7d58c0638bf25a8ef20506d35accf28eb97a27975",
+    "data/f3_e4b_a02_exercises.json": "8242fcbd247892c199e3f8e5ab825ad12175ad2ddaf490c335d43592113dc829"
+  },
+  "lessons": {
+    "E4B-A02-L01": {
+      "title": "Equacions lineals i quadràtiques",
+      "objectives": [
+        "Resoldre equacions lineals i quadràtiques respectant restriccions.",
+        "Verificar arrels en les equacions originals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Resoldre una equació significa determinar tots els valors del domini que verifiquen la igualtat. Una lineal ax +b=c, amb a≠0, té solució x=(c−b)/a. Una quadràtica ax ²+ bx +c=0, amb a≠0, té discriminant Δ=b²−4a c i arrels reals (−b±√Δ)/(2a) si Δ≥0. Si Δ<0 no hi ha solucions reals; si Δ=0 hi ha una arrel real doble. Factoritzar sol facilitar el càlcul quan el trinomi té arrels senceres. Un pas algebraic exigeix comprovar signes i coeficients: no dividir per una expressió desconeguda que pot ser zero sense analitzar el cas."
+        },
+        {
+          "body": "x²−5x+6=0 es factoritza (x−2)(x−3)=0, per la qual cosa x=2 o x=3."
+        },
+        {
+          "body": "3x+5=20 implica 3x=15 i x=5; substituir dóna 3·5+5=20."
+        },
+        {
+          "body": "Ceros d'una equació quadràtica. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Ceros d'una equació quadràtica. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Ceros d'una equació quadràtica"
+          }
+        },
+        {
+          "body": "Un discriminant negatiu implica dues arrels reals negatives?||No. Indica absència d'arrels reals de l'equació quadràtica."
+        },
+        {
+          "body": "Recuperació: Resoldre una equació significa determinar tots els valors del domini que verifiquen la igualtat. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    },
+    "E4B-A02-L02": {
+      "title": "Equacions polinòmiques senzilles",
+      "objectives": [
+        "Resoldre equacions polinòmiques per extracció de factor comú.",
+        "Aplicar la propietat del producte nul sense dividir per una incògnita."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si el producte de factors reals val zero, almenys un dels factors ha de ser zero. En x(x−2)(x+3)=0, els candidats són x=0, x=2 i x=−3; dividir inicialment per x perdria la solució zero. Per a equacions de grau major que dos convé extreure factors comuns i usar arrels ja comprovades; la factorització ha de multiplicar-se per verificar la identitat. El grau del polinomi limita el nombre d'arrels diferents, però pot haver-hi multiplicitats. Desenvolupar i reordenar és útil només si preserva tots els termes i els seus signes."
+        },
+        {
+          "body": "x³−4x=x(x²−4)=x(x−2)(x+2)=0, amb tres arrels reals −2,0, 2."
+        },
+        {
+          "body": "x²(x−3)=0 té arrels diferents 0 i 3, encara que la primera té multiplicitat dos."
+        },
+        {
+          "body": "Producte nul i zeros d'un polinomi. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Producte nul i zeros d'un polinomi. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Producte nul i zeros d'un polinomi"
+          }
+        },
+        {
+          "body": "Per què dividir x(x−2)=0 entre x pot perdre solucions?||Perquè x pot valer zero i mai es divideix entre una expressió que pot anul·lar-se."
+        },
+        {
+          "body": "Recuperació: Si el producte de factors reals val zero, almenys un dels factors ha de ser zero. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    },
+    "E4B-A02-L03": {
+      "title": "Equacions amb denominadors",
+      "objectives": [
+        "Resol equacions amb denominadors sense introduir valors prohibits.",
+        "Distingir simplificació formal d'equivalència sobre el domini original."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una equació racional P(x)/Q(x)=R(x)/S(x) exigeix Q(x)≠0 i S(x)≠0 des de l'inici. Per eliminar denominadors es pot multiplicar pel seu producte comú només en el domini permès i resoldre l'equació resultant; després han de descartar-se candidats que anul·lin denominadors. Cancel·lar (x−a) no legitima substituir x=a. En equacions amb dos denominadors diferents, escriure les restriccions abans d'operar prevé errors. Les solucions han de verificar-se en les fraccions originals, no sols en el polinomi final."
+        },
+        {
+          "body": "(x+1)/(x−1)=2 exigeix x≠1. Multipliquem: x+1=2x−2, d'on x=3, vàlida."
+        },
+        {
+          "body": "(x²−9)/(x−3)=6 amb x≠3 simplifica x+3=6, donant x=3; com està exclòs, l'equació original NO té solució."
+        },
+        {
+          "body": "Equació racional i exclusió. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Equació racional i exclusió. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Equació racional i exclusió"
+          }
+        },
+        {
+          "body": "Si el càlcul algebraic produeix x=3 quan el denominador original és x−3, s'accepta?||No: aquesta candidata viola el domini i ha de descartar-se."
+        },
+        {
+          "body": "Recuperació: Una equació racional P(x)/Q(x)=R(x)/S(x) exigeix Q(x)≠0 i S(x)≠0 des de l'inici. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    },
+    "E4B-A02-L04": {
+      "title": "Sistemes lineals i no lineals senzills",
+      "objectives": [
+        "Resoldre sistemes lineals de dues equacions per substitució o eliminació.",
+        "Interpretar solucions úniques, sistemes incompatibles i coincidents."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un sistema de dues equacions lineals en dues incògnites pot escriure's ax + by =e i cx + dy =f. Si el seu determinant D= ad − bc és diferent de zero, existeix una solució única, comprovable per substitució en ambdues equacions. Quan D=0, el sistema pot no tenir solució (rectes paral·leles diferents) o tenir infinites (coincidents); no es permet aplicar una fórmula que divideixi entre zero. Per resoldre per eliminació, multiplica equacions de manera equivalent i resta per cancel·lar una variable. Els sistemes no lineals senzills poden combinar una recta i una paràbola, amb zero, una o dues interseccions reals."
+        },
+        {
+          "body": "El sistema x+y=5, x−y=1 dóna per suma 2x=6, després x=3 i y=2. Les dues igualtats es comproven."
+        },
+        {
+          "body": "El sistema x+y=2, 2x+2y=5 no té solució: les esquerres són proporcionals però els resultats no."
+        },
+        {
+          "body": "Tall de dues rectes en un punt. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Tall de dues rectes en un punt. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Tall de dues rectes en un punt"
+          }
+        },
+        {
+          "body": "Si D=0 podem concloure automàticament que el sistema no té solució?||No. Pot ser incompatible o tenir infinites solucions; cal comparar també els termes independents."
+        },
+        {
+          "body": "Recuperació: Un sistema de dues equacions lineals en dues incògnites pot escriure's ax + by =e i cx + dy =f. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    },
+    "E4B-A02-L05": {
+      "title": "Inequacions i sistemes",
+      "objectives": [
+        "Resol inequacions lineals invertint el signe si escau.",
+        "Representar intervals i la seva intersecció amb extrems oberts o tancats."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una inequació compara expressions mitjançant <, ≤, > o ≥. Es poden sumar o restar els mateixos termes en ambdós membres sense canviar el sentit. En multiplicar o dividir per un nombre negatiu, la desigualtat s'inverteix: −2x<6 equival a x>−3. Els sistemes d'inequacions requereixen INTERSECCIÓ dels seus conjunts solució i no unió, tret que l'enunciat indiqui alternativa. Les desigualtats estrictes exclouen l'extrem; les no estrictes l'inclouen. Els signes de polinomis de grau major s'han d'estudiar mitjançant els seus zeros i el signe d'intervals, no dividint per factors variables sense analitzar el signe."
+        },
+        {
+          "body": "−2x<6 implica x>−3, perquè dividim per −2 i s'inverteix el signe de comparació."
+        },
+        {
+          "body": "El sistema x≥1 i x<4 produeix l'interval [1,4), inclòs 1 i exclòs 4."
+        },
+        {
+          "body": "Intersecció de dues desigualtats. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Intersecció de dues desigualtats. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Intersecció de dues desigualtats"
+          }
+        },
+        {
+          "body": "És equivalent −x<2 a x<−2?||No: en multiplicar per −1 s'inverteix la desigualtat; la solució és x>−2."
+        },
+        {
+          "body": "Recuperació: Una inequació compara expressions mitjançant <, ≤, > o ≥. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    },
+    "E4B-A02-L06": {
+      "title": "Discussió i comprovació de solucions",
+      "objectives": [
+        "Classificar equacions i sistemes per quantitat de solucions admeses.",
+        "Verificar arrels candidates i detectar solucions estranyes per restricció."
+      ],
+      "content_blocks": [
+        {
+          "body": "La discussió de solucions comença en el domini i condicions originals. Una equació lineal ax =b té única solució si a≠0, infinites si a=0 i b=0, i cap si a=0 i b≠0. En sistemes lineals de dues incògnites, D≠0 implica solució única; amb D=0 cal determinar si les dues equacions són compatibles o contradictòries. En equacions racionals i radicals, una candidata obtinguda per passos no equivalents pot ser falsa; sempre se substitueix en l'enunciat inicial. En problemes contextuals també s'exigeixen unitats, rang i signe admissibles."
+        },
+        {
+          "body": "2x+4=2x+4 és veritable per a tots els reals: infinites solucions, no una única."
+        },
+        {
+          "body": "2x+4=2x+5 es redueix a 4=5, contradicció: no té solució."
+        },
+        {
+          "body": "Discussió del nombre de solucions. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Discussió del nombre de solucions. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Discussió del nombre de solucions"
+          }
+        },
+        {
+          "body": "Si després d'elevar al quadrat apareix una arrel que no satisfà l'equació original, què fem?||Es descarta i es documenta per què va fallar l'equivalència."
+        },
+        {
+          "body": "Recuperació: La discussió de solucions comença en el domini i condicions originals. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E4B-A02-L01-01": {
+      "prompt": "Resol l'equació lineal 3x+(5)=20. Escriu x. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Organitza l'equació i distingeix discriminant d'arrel i cas degenerat.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 5. Organitza l'equació i distingeix discriminant d'arrel i cas degenerat. La lineal ax +b=c es buida si a≠0; Δ=b²−4a c determina arrels reals en la quadràtica. Resposta exacta: 5. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L01-02": {
+      "prompt": "Per a l'equació quadràtica 1x²+(-5)x+(6)=0, calcula el discriminant exacte Δ=b²−4a c. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Organitza l'equació i distingeix discriminant d'arrel i cas degenerat.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 1. Organitza l'equació i distingeix discriminant d'arrel i cas degenerat. La lineal ax +b=c es buida si a≠0; Δ=b²−4a c determina arrels reals en la quadràtica. Resposta exacta: 1. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L01-03": {
+      "prompt": "Resol (x−(2))(x−(3))=0. Retorna les arrels reals ordenades (x₁, x₂). Selecciona la resposta exacta.",
+      "hint": "Organitza l'equació i distingeix discriminant d'arrel i cas degenerat.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté (2, 3). Organitza l'equació i distingeix discriminant d'arrel i cas degenerat. La lineal ax +b=c es buida si a≠0; Δ=b²−4a c determina arrels reals en la quadràtica. Resposta exacta: (2, 3). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L01-04": {
+      "prompt": "Resol l'equació lineal -2x+(6)=14. Escriu x. Selecciona la resposta exacta.",
+      "hint": "Organitza l'equació i distingeix discriminant d'arrel i cas degenerat.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté -4. Organitza l'equació i distingeix discriminant d'arrel i cas degenerat. La lineal ax +b=c es buida si a≠0; Δ=b²−4a c determina arrels reals en la quadràtica. Resposta exacta: -4. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L01-05": {
+      "prompt": "Per a l'equació quadràtica 1x²+(2)x+(5)=0, calcula el discriminant exacte Δ=b²−4a c. Selecciona la resposta exacta.",
+      "hint": "Organitza l'equació i distingeix discriminant d'arrel i cas degenerat.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté -16. Organitza l'equació i distingeix discriminant d'arrel i cas degenerat. La lineal ax +b=c es buida si a≠0; Δ=b²−4a c determina arrels reals en la quadràtica. Resposta exacta: -16. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L02-01": {
+      "prompt": "Resol x(x−(2))(x−(-2))=0 sense dividir entre x. Indica les arrels diferents en ordre ascendent. Selecciona la resposta exacta.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté (-2, 0, 2). Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: (-2, 0, 2). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L02-02": {
+      "prompt": "Resol x(x−(3))(x−(-1))=0 sense dividir entre x. Indica les arrels diferents en ordre ascendent. Selecciona la resposta exacta.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté (-1, 0, 3). Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: (-1, 0, 3). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L02-03": {
+      "prompt": "Calcula P(2) per al polinomi P(x)=1x³+(0)x²+(-4)x+(0). Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 0. Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: 0. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L02-04": {
+      "prompt": "És x=2 una ARREL de P(x)=1x²+(-5)x+(6)? Calcula P(2) per decidir Sí / No. Selecciona la resposta exacta.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté Sí. Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: Sí. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L02-05": {
+      "prompt": "Una equació monòmica té arrels x=-2 i x=0. Calcula la suma de les arrels comptant cada una vegada. Selecciona la resposta exacta.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté -2. Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: -2. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L03-01": {
+      "prompt": "Resol (x+(1))/(x−(1))=2, amb x≠1. Comprova el resultat en l'equació original. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors.",
+      "explanation": "Procediment i verificació: Condició x≠1; multiplicant en el domini s'obté (1−2)x=−1−2, i en buidar es comprova 3. Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors. Multiplica només en el domini permès, factoritza i comprova les arrels en les fraccions de partida. Resposta exacta: 3. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L03-02": {
+      "prompt": "Resol (x+(2))/(x−(2))=3, amb x≠2. Comprova el resultat en l'equació original. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors.",
+      "explanation": "Procediment i verificació: Condició x≠2; multiplicant en el domini s'obté (1−3)x=−2−6, i en buidar es comprova 4. Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors. Multiplica només en el domini permès, factoritza i comprova les arrels en les fraccions de partida. Resposta exacta: 4. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L03-03": {
+      "prompt": "Torna al domini x≠3: (x²−9)/(x−3)=6. Encara que es cancel·li, comprova el valor exclòs. Selecciona la resposta exacta.",
+      "hint": "Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors.",
+      "explanation": "Procediment i verificació: El candidat x=3 anul·la el denominador original; no compleix el domini. Resultat: Sense solució. Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors. Multiplica només en el domini permès, factoritza i comprova les arrels en les fraccions de partida. Resposta exacta: Sense solució. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L03-04": {
+      "prompt": "Resol (x+(5))/(x−(1))=3, amb x≠1. Comprova el resultat en l'equació original. Selecciona la resposta exacta.",
+      "hint": "Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors.",
+      "explanation": "Procediment i verificació: Condició x≠1; multiplicant en el domini s'obté (1−3)x=−5−3, i en buidar es comprova 4. Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors. Multiplica només en el domini permès, factoritza i comprova les arrels en les fraccions de partida. Resposta exacta: 4. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L03-05": {
+      "prompt": "Torna al domini x≠2: (x²−4)/(x−2)=4. Encara que es cancel·li, comprova el valor exclòs. Selecciona la resposta exacta.",
+      "hint": "Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors.",
+      "explanation": "Procediment i verificació: El candidat x=2 anul·la el denominador original; no compleix el domini. Resultat: Sense solució. Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors. Multiplica només en el domini permès, factoritza i comprova les arrels en les fraccions de partida. Resposta exacta: Sense solució. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L04-01": {
+      "prompt": "Resol el sistema 1x+(1)y=5; 1x+(-1)y=1. Retorna la parella (x,y) comprovada. Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Determinant =-2, no nul; les coordenades (3, 2) compleixen 5 i 1 en ambdues equacions. Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: (3, 2). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L04-02": {
+      "prompt": "Resol el sistema 2x+(1)y=7; 1x+(-1)y=-1. Retorna la parella (x,y) comprovada. Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Determinant =-3, no nul; les coordenades (2, 3) compleixen 7 i -1 en ambdues equacions. Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: (2, 3). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L04-03": {
+      "prompt": "Classifica el sistema 1x+(1)y=2; 2x+(2)y=5 com a Única, Cap o Infinites solucions. Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Determinant =0. Si s'anul·la, compara les files ampliades per a distingir coincidència i contradicció: Cap. Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: Cap. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L04-04": {
+      "prompt": "Resol el sistema 1x+(2)y=9; 2x+(-1)y=-2. Retorna la parella (x,y) comprovada. Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Determinant =-5, no nul; les coordenades (1, 4) compleixen 9 i -2 en ambdues equacions. Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: (1, 4). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L04-05": {
+      "prompt": "Classifica el sistema 1x+(1)y=2; 2x+(2)y=4 com a Única, Cap o Infinites solucions. Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Determinant =0. Si s'anul·la, compara les files ampliades per distingir coincidència i contradicció: Infinites. Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: Infinites. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L05-01": {
+      "prompt": "Resol -2x+(0) < 6. Escriu la desigualtat correcta per a x, inverteix el signe si es divideixen per negatiu. Selecciona la resposta exacta.",
+      "hint": "Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions.",
+      "explanation": "Procediment i verificació: Desplaça x amb atenció a la inversió de desigualtat si el coeficient és negatiu. Solució x>-3. Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions. Invertir comparació en dividir per negatiu; per a producte quadràtic, usa signes d'intervals entre zeros. Resposta exacta: x>-3. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L05-02": {
+      "prompt": "Resol 3x+(-2) ≥ 7. Escriu la desigualtat correcta per a x, inverteix el signe si es divideixen per negatiu. Selecciona la resposta exacta.",
+      "hint": "Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions.",
+      "explanation": "Procediment i verificació: Desplaça x amb atenció a la inversió de desigualtat si el coeficient és negatiu. Solució x≥3. Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions. Invertir comparació en dividir per negatiu; per a producte quadràtic, usa signes d'intervals entre zeros. Resposta exacta: x≥3. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L05-03": {
+      "prompt": "Descriu l'INTERVAL de la intersecció x≥1 i x<4. Usa parèntesis i claudàtors. Selecciona la resposta exacta.",
+      "hint": "Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté [1,4). Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions. Invertir comparació en dividir per negatiu; per a producte quadràtic, usa signes d'intervals entre zeros. Resposta exacta: [1,4). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L05-04": {
+      "prompt": "Ressol sobre R (x−(2))(x−(3)) ≥ 0. Inclou o exclou extrems segons la desigualtat. Selecciona la resposta exacta.",
+      "hint": "Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté x≤2 o x≥3. Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions. Invertir comparació en dividir per negatiu; per a producte quadràtic, usa signes d'intervals entre zeros. Resposta exacta: x≤2 o x≥3. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L05-05": {
+      "prompt": "Resol -3x+(3) ≤ 12. Escriu la desigualtat correcta per a x, inverteix el signe si es divideixen per negatiu. Selecciona la resposta exacta.",
+      "hint": "Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions.",
+      "explanation": "Procediment i verificació: Desplaça x amb atenció a la inversió de desigualtat si el coeficient és negatiu. Solució x≥-3. Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions. Invertir comparació en dividir per negatiu; per a producte quadràtic, usa signes d'intervals entre zeros. Resposta exacta: x≥-3. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L06-01": {
+      "prompt": "Classifica el nombre de solucions reals de 0x=0: Única, Cap o Infinites. Selecciona la resposta exacta.",
+      "hint": "Organitza l'equació i distingeix discriminant d'arrel i cas degenerat.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté Infinites. Organitza l'equació i distingeix discriminant d'arrel i cas degenerat. La lineal ax +b=c es buida si a≠0; Δ=b²−4a c determina arrels reals en la quadràtica. Resposta exacta: Infinites. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L06-02": {
+      "prompt": "Classifica el nombre de solucions reals de 0x=1: Única, Cap o Infinites. Selecciona la resposta exacta.",
+      "hint": "Organitza l'equació i distingeix discriminant d'arrel i cas degenerat.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté Cap. Organitza l'equació i distingeix discriminant d'arrel i cas degenerat. La lineal ax +b=c es buida si a≠0; Δ=b²−4a c determina arrels reals en la quadràtica. Resposta exacta: Cap. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L06-03": {
+      "prompt": "Classifica el sistema 1x+(1)y=2; 2x+(2)y=4 com a Única, Cap o Infinites solucions. Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Determinant =0. Si s'anul·la, compara les files ampliades per distingir coincidència i contradicció: Infinites. Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: Infinites. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L06-04": {
+      "prompt": "Torna a R √(x+1)=x−1. Descarta l'arrel estranya després d'elevar al quadrat. Selecciona la resposta exacta.",
+      "hint": "Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu.",
+      "explanation": "Procediment i verificació: L'equació al quadrat ofereix 0 i 3; x−1≥0 descarta zero. Solució comprovada: 3. Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu. Abans de quadrar exigeix el signe del costat dret; verifica cada candidat en origen. Per log_ a(t)=k usa t=a^k amb a>0, a≠1. Resposta exacta: 3. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A02-L06-05": {
+      "prompt": "Classifica el sistema 1x+(1)y=2; 2x+(2)y=5 com a Única, Cap o Infinites solucions. Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Determinant =0. Si s'anul·la, compara les files ampliades per a distingir coincidència i contradicció: Cap. Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: Cap. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    }
+  }
+}

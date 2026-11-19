@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E2-P01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e2_p01.json": "3e72bb5a87d5ebf2c07c54eea658b208215c5fe199f4825063f4941e26eb961d",
+    "data/f3_e2_p01_exercises.json": "9efb1cbd28bbedf5b9ff6726959b0f2087b50dbefe3ac3fbbb63a0dad990705f"
+  },
+  "lessons": {
+    "E2-P01-L01": {
+      "title": "Proporcionalitat directa i inversa",
+      "objectives": [
+        "Distingir proporcionalitat directa, inversa i relacions no proporcionals mitjançant taules.",
+        "Comprova y/x constant en relacions directes i xy constant en inverses."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una relació directa compleix y= kx i té quocient y/x constant per a x diferent de zero. Una relació inversa compleix y=k/x i manté producte xy =k, amb x diferent de zero. Si cap condició es compleix, no classifiquis el model com a proporcional per semblar una corba o una recta. El context ha de permetre usar els valors representats."
+        },
+        {
+          "body": "Amb sis treballadors idèntics i treball fix, si la durada és 4 hores, amb tres treballadors equivalents serà 8 hores: 6·4=3·8=24."
+        },
+        {
+          "body": "Una tarifa 2+3x és lineal afí, però no directament proporcional perquè en x=0 val 2. Tampoc compleix producte xy constant."
+        },
+        {
+          "body": "Taula inversa per a treball fix: treballadors 2, 3, 4, 6; hores 12, 8, 6, 4; els productes valen 24.",
+          "alt": "Taula inversa per a treball fix: treballadors 2, 3, 4, 6; hores 12, 8, 6, 4; els productes valen 24.",
+          "visual_spec": {
+            "title": "Proporcionalitat inversa de temps i equips"
+          }
+        },
+        {
+          "body": "Si en duplicar x la sortida i es redueix a la meitat, quin tipus de proporcionalitat pot indicar?||Pot indicar proporcionalitat inversa, sempre que xy romangui constant en tot el domini considerat."
+        },
+        {
+          "body": "Directa: quocient constant; inversa: producte constant; cap: ambdues proves fallen."
+        }
+      ]
+    },
+    "E2-P01-L02": {
+      "title": "Relacions no proporcionals",
+      "objectives": [
+        "Reconèixer relacions amb terme fix o creixement no constant.",
+        "Justificar per què diverses dades no determinen una proporcionalitat."
+      ],
+      "content_blocks": [
+        {
+          "body": "No totes les relacions entre magnituds són proporcionals. Una tarifa y=5+2x té un cost inicial diferent de zero i el seu quocient y/x canvia; per tant no és directa. Si el producte xy tampoc és constant, no és inversa. Un parell aïllat no basta per a decidir: compara diverses files i explica el context."
+        },
+        {
+          "body": "Una subscripció costa 5 € fixos més 2 € per ús. Per a 1, 2 i 3 usos es paguen 7, 9 i 11 €; ni y/x ni xy es mantenen."
+        },
+        {
+          "body": "En y=x², en passar de 1 a 2 unitats la sortida va de 1 a 4, és a dir, es quadruplica. No és y= kx ni y=k/x."
+        },
+        {
+          "body": "Taula tarifa: usos 0,1, 2,3; cost 5,7, 9,11. Fixar-se en la fila de zero revela el terme fix.",
+          "alt": "Taula tarifa: usos 0,1, 2,3; cost 5,7, 9,11. Fixar-se en la fila de zero revela el terme fix.",
+          "visual_spec": {
+            "title": "Tarifa amb quota fixa no proporcional"
+          }
+        },
+        {
+          "body": "Una gràfica en forma de recta sempre descriu proporcionalitat directa?||No; una recta que no passa per l'origen té un terme fix i és una relació afí no proporcional."
+        },
+        {
+          "body": "Verifica diversos parells i la presència de quota fixa; no classifiquis només per aparença."
+        }
+      ]
+    },
+    "E2-P01-L03": {
+      "title": "Regla de tres raonada",
+      "objectives": [
+        "Resoldre problemes de proporcionalitat directa i inversa amb un model raonat.",
+        "Distingir quina magnitud es manté fixa i comprovar la solució en la relació original."
+      ],
+      "content_blocks": [
+        {
+          "body": "Abans d'aplicar una regla de tres, classifica el fenomen. En una relació directa y= kx, pots trobar k i escalar. En una inversa xy =k, mantenen el producte. No creus nombres de manera automàtica: dibuixa una taula amb unitats i comprova el resultat en el context, perquè més treballadors fan menys hores només sota supòsits comparables."
+        },
+        {
+          "body": "Tres màquines completen una tasca en 8 hores; sis màquines iguals la farien en 4 hores (3·8=6·4) suposant rendiment constant."
+        },
+        {
+          "body": "Dos quilos costen 7 € i cinc quilos a preu fix costen 17,50 € perquè el cost unitari és 3,50 €/ kg, una relació directa."
+        },
+        {
+          "body": "Taula inversa: màquines 2,4, 8; hores 12,6, 3 per a un treball fix de 24 màquina-hores.",
+          "alt": "Taula inversa: màquines 2,4, 8; hores 12,6, 3 per a un treball fix de 24 màquina-hores.",
+          "visual_spec": {
+            "title": "Treball fix i rendiment uniforme"
+          }
+        },
+        {
+          "body": "Per a una tasca fixa, per què en duplicar màquines iguals es redueix a la meitat el temps?||Perquè el producte màquines·temps ha de romandre constant sota els supòsits de rendiment uniforme."
+        },
+        {
+          "body": "Primer classifica; després usa k=y/x (directa) o k= xy (inversa) i verifica."
+        }
+      ]
+    },
+    "E2-P01-L04": {
+      "title": "Percentatges successius",
+      "objectives": [
+        "Resol canvis percentuals successius multiplicant factors.",
+        "Explicar per quins augments i descomptes del mateix percentatge no solen cancel·lar el canvi."
+      ],
+      "content_blocks": [
+        {
+          "body": "Els percentatges successius s'apliquen sobre bases noves. Una pujada del p % multiplica per 1+p/100; una baixada del q % multiplica per 1−q/100. El resultat s'obté multiplicant ambdós factors, no sumant percentatges sense més. Si primer augmenta un 10% i després baixa un 10%, el producte 1,1·0,9=0,99 produeix una caiguda neta del 1%."
+        },
+        {
+          "body": "Un preu de 100 € puja 20% i després baixa 10%: 100·1,2·0,9=108 €. Els canvis s'apliquen en ordre sobre preus successius."
+        },
+        {
+          "body": "Un import de 80 € amb un descompte de 25% i després un altre de 20% queda en 80·0,75·0,80=48 €. No és una rebaixa del 45% sinó del 40%."
+        },
+        {
+          "body": "Quadrícula de cent: 99 cel·les romanen després de pujar i baixar un 10%, partint de 100.",
+          "alt": "Quadrícula de cent: 99 cel·les romanen després de pujar i baixar un 10%, partint de 100.",
+          "visual_spec": {
+            "title": "Novenda i nou per cent del valor inicial"
+          }
+        },
+        {
+          "body": "Si el preu puja 10% i després baixa 10%, torna al valor inicial?||No. El factor total 1,1·0,9=0,99 deixa el valor un 1% per sota de l'inicial."
+        },
+        {
+          "body": "Multiplica factors successius; la base de cada canvi és el resultat anterior."
+        }
+      ]
+    },
+    "E2-P01-L05": {
+      "title": "Taxes i velocitat mitjana",
+      "objectives": [
+        "Calcular taxes i velocitats mitjanes amb unitats consistents.",
+        "Distingir velocitat mitjana de trajectes individuals i detectar mitjanes incorrectes."
+      ],
+      "content_blocks": [
+        {
+          "body": "La velocitat mitjana en un recorregut és distància total dividida entre temps total, amb unitats com km/h. Si el temps inclou parades, aquestes compten en el denominador quan es demana el temps transcorregut total. No calcules sempre la mitjana aritmètica de velocitats de trams: pot ser incorrecta si els temps difereixen."
+        },
+        {
+          "body": "Un viatge de 150 km dura 3 h, incloses parades: velocitat mitjana = 150/3=50 km/h."
+        },
+        {
+          "body": "Una bici recorre 20 km en 1 h i 10 km en una altra hora: velocitat mitjana total 30/2=15 km/h. El resultat coincideix amb la mitjana de 20 i 10 només perquè els temps d'ambdós trams són iguals."
+        },
+        {
+          "body": "Taula lineal distància-temps d'una velocitat constant de 30 km/h: (1,30), (2,60), (3,90).",
+          "alt": "Taula lineal distància-temps d'una velocitat constant de 30 km/h: (1,30), (2,60), (3,90).",
+          "visual_spec": {
+            "title": "Distància recorreguda a 30 km/h"
+          }
+        },
+        {
+          "body": "Si recorres 60 km en 2 h, què ha d'aparèixer en el denominador de la velocitat mitjana?||El temps total de dues hores; la velocitat mitjana és 60/2=30 km/h."
+        },
+        {
+          "body": "Taxa mitjana = canvi total/quantitat de referència; expressa i comprova les unitats."
+        }
+      ]
+    },
+    "E2-P01-L06": {
+      "title": "Interès simple i problemes comercials",
+      "objectives": [
+        "Calcula l'interès simple per a un capital i durada definits.",
+        "Resoldre situacions comercials identificant import base, tipus i temps sense barrejar unitats."
+      ],
+      "content_blocks": [
+        {
+          "body": "En l'interès simple, els interessos no s'incorporen al capital per a produir nous interessos. Per a un capital inicial C, un tipus anual r expressat com a fracció i t anys, l'interès és I= Crt. Si r està en percentatge, divideix entre 100. La fórmula no representa interès compost, despeses ni impostos. Els mesos es converteixen a anys sota la convenció indicada."
+        },
+        {
+          "body": "Dipositar 1.000 € al 5% anual simple durant 2 anys genera I=1000·0,05·2=100 € d'interessos, amb total final 1.100 €."
+        },
+        {
+          "body": "Un capital de 600 € al 4% simple durant 6 mesos produeix I=600·0,04·0,5=12 €. L'any fraccionari és mig any."
+        },
+        {
+          "body": "Taula d'interès simple sobre 1.000 € al 5%: anys 0,1, 2,3; interessos acumulats 0,50, 100,150.",
+          "alt": "Taula d'interès simple sobre 1.000 € al 5%: anys 0,1, 2,3; interessos acumulats 0,50, 100,150.",
+          "visual_spec": {
+            "title": "Interessos simples acumulats"
+          }
+        },
+        {
+          "body": "L'interès simple de 1.000 € al 5% durant dos anys és igual a l'interès compost del mateix període?||No en general. En interès simple cada any es calcula sobre els 1.000 € inicials; en compost els interessos poden capitalitzar."
+        },
+        {
+          "body": "Interès simple I=C·r·t, taxa en forma decimal i temps en anys; distingeix interès del saldo final."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E2-P01-L01-01": {
+      "prompt": "La taula de parells (2,12), (3,8), (4,6). És proporcionalitat directa, inversa o cap?",
+      "hint": "No classifiquis per la forma visual; verifica diverses files.",
+      "explanation": "Comprovació: Directa si y/x és constant; inversa si xy és constant. Amb les dades de l'enunciat, el resultat és Inversa. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L01-02": {
+      "prompt": "La taula de parells (1,2), (2,4), (3,6). És proporcionalitat directa, inversa o cap?",
+      "hint": "No classifiquis per la forma visual; verifica diverses files.",
+      "explanation": "Comprovació: Directa si y/x és constant; inversa si xy és constant. Amb les dades de l'enunciat, el resultat és Directa. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L01-03": {
+      "prompt": "Una magnitud inversa compleix xy =24. Si x=6, quant val i?",
+      "hint": "En proporcionalitat inversa es conserva el producte xy.",
+      "explanation": "Comprovació: Desplaça i dividint k entre l'entrada x. Amb les dades de l'enunciat, el resultat és 4. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L01-04": {
+      "prompt": "La taula de parells (1,7), (2,9), (3,11). És proporcionalitat directa, inversa o cap?",
+      "hint": "No classifiquis per la forma visual; verifica diverses files.",
+      "explanation": "Comprovació: Directa si y/x és constant; inversa si xy és constant. Amb les dades de l'enunciat, el resultat és Cap. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L01-05": {
+      "prompt": "Per a y=3x, quant val i quan x=7? Selecciona el valor correcte.",
+      "hint": "El model y= kx representa proporcionalitat directa.",
+      "explanation": "Comprovació: Multiplica l'entrada per la constant indicada. Amb les dades de l'enunciat, el resultat és 21. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L02-01": {
+      "prompt": "La tarifa és 5 € fixos més 2 € per ús. Quant es paga per 3 usos?",
+      "hint": "La quota fixa no es multiplica pel nombre d'usos.",
+      "explanation": "Comprovació: Suma el fix al producte de la tarifa variable pels usos. Amb les dades de l'enunciat, el resultat és 11. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L02-02": {
+      "prompt": "La tarifa és 4 € fixos més 1,5 € per ús. Quant es paga per 6 usos?",
+      "hint": "La quota fixa no es multiplica pel nombre d'usos.",
+      "explanation": "Comprovació: Suma el fix al producte de la tarifa variable pels usos. Amb les dades de l'enunciat, el resultat és 13. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L02-03": {
+      "prompt": "La taula de parells (0,5), (1,7), (2,9). És proporcionalitat directa, inversa o cap?",
+      "hint": "No classifiquis per la forma visual; verifica diverses files.",
+      "explanation": "Comprovació: Directa si y/x és constant; inversa si xy és constant. Amb les dades de l'enunciat, el resultat és Cap. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L02-04": {
+      "prompt": "La tarifa és 2 € fixos més 3 € per ús. Quant es paga per 5 usos? Selecciona el valor correcte.",
+      "hint": "La quota fixa no es multiplica pel nombre d'usos.",
+      "explanation": "Comprovació: Suma el fix al producte de la tarifa variable pels usos. Amb les dades de l'enunciat, el resultat és 17. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L02-05": {
+      "prompt": "La taula de parells (1,1), (2,4), (3,9). És proporcionalitat directa, inversa o cap?",
+      "hint": "No classifiquis per la forma visual; verifica diverses files.",
+      "explanation": "Comprovació: Directa si y/x és constant; inversa si xy és constant. Amb les dades de l'enunciat, el resultat és Cap. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L03-01": {
+      "prompt": "Una magnitud inversa compleix xy =24. Si x=6, quant val i?",
+      "hint": "En proporcionalitat inversa es conserva el producte xy.",
+      "explanation": "Comprovació: Desplaça i dividint k entre l'entrada x. Amb les dades de l'enunciat, el resultat és 4. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L03-02": {
+      "prompt": "Per a y=3,5x, quant val i quan x=5?",
+      "hint": "El model y= kx representa proporcionalitat directa.",
+      "explanation": "Comprovació: Multiplica l'entrada per la constant indicada. Amb les dades de l'enunciat, el resultat és 17,5. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L03-03": {
+      "prompt": "Una magnitud inversa compleix xy =36. Si x=9, quant val i?",
+      "hint": "En proporcionalitat inversa es conserva el producte xy.",
+      "explanation": "Comprovació: Desplaça i dividint k entre l'entrada x. Amb les dades de l'enunciat, el resultat és 4. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L03-04": {
+      "prompt": "Per a y=1,25x, quant val i quan x=8? Selecciona el valor correcte.",
+      "hint": "El model y= kx representa proporcionalitat directa.",
+      "explanation": "Comprovació: Multiplica l'entrada per la constant indicada. Amb les dades de l'enunciat, el resultat és 10. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L03-05": {
+      "prompt": "Una magnitud inversa compleix xy =60. Si x=12, quant val i? Selecciona el valor correcte.",
+      "hint": "En proporcionalitat inversa es conserva el producte xy.",
+      "explanation": "Comprovació: Desplaça i dividint k entre l'entrada x. Amb les dades de l'enunciat, el resultat és 5. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L04-01": {
+      "prompt": "Un import de 100 € canvia 20 % i després -10 % sobre la nova base. Import final?",
+      "hint": "Cada percentatge s'aplica sobre una base actualitzada.",
+      "explanation": "Comprovació: Multiplica els factors 1+p/100 i 1+q/100 un darrere l'altre. Amb les dades de l'enunciat, el resultat és 108. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L04-02": {
+      "prompt": "Un import de 80 € canvia -25 % i després -20 % sobre la nova base. Import final?",
+      "hint": "Cada percentatge s'aplica sobre una base actualitzada.",
+      "explanation": "Comprovació: Multiplica els factors 1+p/100 i 1+q/100 un darrere l'altre. Amb les dades de l'enunciat, el resultat és 48. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L04-03": {
+      "prompt": "Un import de 200 € canvia 10 % i després 5 % sobre la nova base. Import final?",
+      "hint": "Cada percentatge s'aplica sobre una base actualitzada.",
+      "explanation": "Comprovació: Multiplica els factors 1+p/100 i 1+q/100 un darrere l'altre. Amb les dades de l'enunciat, el resultat és 231. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L04-04": {
+      "prompt": "Un import de 50 € canvia 10 % i després -10 % sobre la nova base. Import final? Selecciona el valor correcte.",
+      "hint": "Cada percentatge s'aplica sobre una base actualitzada.",
+      "explanation": "Comprovació: Multiplica els factors 1+p/100 i 1+q/100 un darrere l'altre. Amb les dades de l'enunciat, el resultat és 49,5. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L04-05": {
+      "prompt": "Un import de 120 € canvia -10 % i després 10 % sobre la nova base. Import final? Selecciona el valor correcte.",
+      "hint": "Cada percentatge s'aplica sobre una base actualitzada.",
+      "explanation": "Comprovació: Multiplica els factors 1+p/100 i 1+q/100 un darrere l'altre. Amb les dades de l'enunciat, el resultat és 118,8. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L05-01": {
+      "prompt": "En un recorregut de 150 km durant 3 h totals, quina és la velocitat mitjana en km/h?",
+      "hint": "Calcula la distància total dividida entre temps total.",
+      "explanation": "Comprovació: Conserva les unitats km/h i divideix els quilòmetres entre les hores. Amb les dades de l'enunciat, el resultat és 50. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L05-02": {
+      "prompt": "En un recorregut de 30 km durant 2 h totals, quina és la velocitat mitjana en km/h?",
+      "hint": "Calcula la distància total dividida entre temps total.",
+      "explanation": "Comprovació: Conserva les unitats km/h i divideix els quilòmetres entre les hores. Amb les dades de l'enunciat, el resultat és 15. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L05-03": {
+      "prompt": "En un recorregut de 60 km durant 2 h totals, quina és la velocitat mitjana en km/h?",
+      "hint": "Calcula la distància total dividida entre temps total.",
+      "explanation": "Comprovació: Conserva les unitats km/h i divideix els quilòmetres entre les hores. Amb les dades de l'enunciat, el resultat és 30. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L05-04": {
+      "prompt": "En un recorregut de 180 km durant 4 h totals, quina és la velocitat mitjana en km/h? Selecciona el valor correcte.",
+      "hint": "Calcula la distància total dividida entre temps total.",
+      "explanation": "Comprovació: Conserva les unitats km/h i divideix els quilòmetres entre les hores. Amb les dades de l'enunciat, el resultat és 45. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L05-05": {
+      "prompt": "En un recorregut de 75 km durant 1,5 h totals, quina és la velocitat mitjana en km/h? Selecciona el valor correcte.",
+      "hint": "Calcula la distància total dividida entre temps total.",
+      "explanation": "Comprovació: Conserva les unitats km/h i divideix els quilòmetres entre les hores. Amb les dades de l'enunciat, el resultat és 50. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L06-01": {
+      "prompt": "Capital inicial 1000 €, tipus anual simple 5 % i temps 2 anys. Quants euros d'interès?",
+      "hint": "En interès simple no es capitalitzen els interessos cada any.",
+      "explanation": "Comprovació: Calcula capital·tip /100· anys. Amb les dades de l'enunciat, el resultat és 100. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L06-02": {
+      "prompt": "Capital inicial 600 €, tipus anual simple 4 % i temps 0,5 anys. Quants euros d'interès?",
+      "hint": "En interès simple no es capitalitzen els interessos cada any.",
+      "explanation": "Comprovació: Calcula capital·tip /100· anys. Amb les dades de l'enunciat, el resultat és 12. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L06-03": {
+      "prompt": "Capital 500 €, interès simple anual 4 % durant 3 anys. Quin saldo final hi ha en euros?",
+      "hint": "El saldo és capital inicial més interessos simples.",
+      "explanation": "Comprovació: Calcula l'interès i sobtat al capital original. Amb les dades de l'enunciat, el resultat és 560. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L06-04": {
+      "prompt": "Capital inicial 1200 €, tipus anual simple 3 % i temps 2 anys. Quants euros d'interès? Selecciona el valor correcte.",
+      "hint": "En interès simple no es capitalitzen els interessos cada any.",
+      "explanation": "Comprovació: Calcula capital·tip /100· anys. Amb les dades de l'enunciat, el resultat és 72. Revisa que unitats, base i operació corresponguin a la pregunta."
+    },
+    "F3-E2-P01-L06-05": {
+      "prompt": "Capital 800 €, interès simple anual 2,5 % durant 4 anys. Quin saldo final hi ha en euros? Selecciona el valor correcte.",
+      "hint": "El saldo és capital inicial més interessos simples.",
+      "explanation": "Comprovació: Calcula l'interès i sobtat al capital original. Amb les dades de l'enunciat, el resultat és 880. Revisa que unitats, base i operació corresponguin a la pregunta."
+    }
+  }
+}

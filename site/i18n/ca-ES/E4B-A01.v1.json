@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E4B-A01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e4b_a01.json": "a1e58f818c0f430cd1e4f0b0961b7d58d29bba3eb3b134eeffc3acc1679f7287",
+    "data/f3_e4b_a01_exercises.json": "ea32d4e3b1bbd463742368f6bc3cea97838cc414747a09dced55890e3b37fd14"
+  },
+  "lessons": {
+    "E4B-A01-L01": {
+      "title": "Identitats notables",
+      "objectives": [
+        "Desenvolupar identitats notables mitjançant la propietat distributiva.",
+        "Distingir el terme mixt d'un binomi al quadrat i una diferència de quadrats."
+      ],
+      "content_blocks": [
+        {
+          "body": "Les identitats algebraiques són igualtats veritables per a tots els valors de les seves variables. Usant la distributiva, (a+b)²=a²+2a b +b² i (a−b)²=a²−2a b +b²; el signe del terme mixt depèn del signe entre a i b. D'altra banda, (a+b)(a−b)=a²−b², sense terme mixt. En (x+3)² el terme 6x apareix perquè dos productes x·3 contribueixen. Comprovar amb valors senzills pot detectar un error, però no substitueix una demostració general per distributiva. En factoritzar es recorren aquestes identitats en sentit invers."
+        },
+        {
+          "body": "(x+3)²=x²+6x+9: expandim x·x, dues vegades x·3 i 3·3."
+        },
+        {
+          "body": "(2x−1)(2x+1)=4x²−1; els termes de primer grau es cancel·len i no queda +1."
+        },
+        {
+          "body": "Quadrat d'un binomi per àrees. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Quadrat d'un binomi per àrees. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Quadrat d'un binomi per àrees"
+          }
+        },
+        {
+          "body": "Per què (x+4)² no és igual a x²+16?||Perquè en distribuir també apareixen dos productes 4x: el terme mitjà és 8x."
+        },
+        {
+          "body": "Recuperació: Les identitats algebraiques són igualtats veritables per a tots els valors de les seves variables. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    },
+    "E4B-A01-L02": {
+      "title": "Divisió i factorització de polinomis",
+      "objectives": [
+        "Divideix polinomis per factors lineals amb Ruffini quan escaigui.",
+        "Factoritzar polinomis mitjançant arrels racionals comprovades."
+      ],
+      "content_blocks": [
+        {
+          "body": "La divisió euclidiana de polinomis compleix P(x)=D(x)Q(x)+R(x), amb el grau de R menor que el de D. En dividir per x−a, la resta és P(a), teorema de la resta, i el factor x−a existeix exactament quan P(a)=0. Ruffini organitza el càlcul per a divisors lineals de la forma x−a; no s'ha d'aplicar mecànicament a divisors de grau major. La factorització requereix verificar multiplicant els factors i respectar multiplicitats. Una arrel candidata pot descartar-se avaluant P(a) sense efectuar una divisió completa."
+        },
+        {
+          "body": "P(x)=x²−5x+6; P(2)=4−10+6=0. Per tant x−2 és factor i P=(x−2)(x−3)."
+        },
+        {
+          "body": "Per P(x)=x³−4x²+x+6, P(−1)=−1−4−1+6=0: Ruffini amb −1 dóna quocient x²−5x+6."
+        },
+        {
+          "body": "Factorització d'un trinomi mònic. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Factorització d'un trinomi mònic. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Factorització d'un trinomi mònic"
+          }
+        },
+        {
+          "body": "Si P(4) és diferent de zero, pot x−4 ser factor exacte de P?||No. El teorema de la resta identifica P(4) amb la resta d'aquesta divisió."
+        },
+        {
+          "body": "Recuperació: La divisió euclidiana de polinomis compleix P(x)=D(x)Q(x)+R(x), amb el grau de R menor que el de D. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    },
+    "E4B-A01-L03": {
+      "title": "Arrels de polinomis",
+      "objectives": [
+        "Relacionar arrels i factors lineals d'un polinomi.",
+        "Distingir arrels simples i múltiples per multiplicitat i comportament de signe."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una arrel r d'un polinomi P és un valor que verifica P(r)=0. Pel teorema del factor, x−r divideix P. Si un factor (x−r) es repeteix k vegades, r té multiplicitat k. Un zero de multiplicitat parell pot tocar l'eix x sense canviar signe; un de multiplicitat senar pot travessar-lo, encara que altres condicions locals importen. Comptar arrels reals diferents no és el mateix que comptar multiplicitats. Un polinomi de grau n no pot tenir més de n arrels diferents en el cos real. La fórmula quadràtica ofereix una altra eina quan no hi ha factorització immediata."
+        },
+        {
+          "body": "P(x)=(x−2)²(x+1) té zeros 2 (doble) i −1 (simple); la suma de multiplicitats és tres."
+        },
+        {
+          "body": "P(x)=x²−5x+6 té arrels 2 i 3; expandint (x−2)(x−3) recuperem el polinomi."
+        },
+        {
+          "body": "Arrels i multiplicitat algebraica. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Arrels i multiplicitat algebraica. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Arrels i multiplicitat algebraica"
+          }
+        },
+        {
+          "body": "Una arrel doble compta com dos valors diferents de x?||No: és un únic valor real amb multiplicitat algebraica dues."
+        },
+        {
+          "body": "Recuperació: Una arrel r d'un polinomi P és un valor que verifica P(r)=0. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    },
+    "E4B-A01-L04": {
+      "title": "Expressions racionals senzilles",
+      "objectives": [
+        "Simplificar expressions racionals mitjançant factorització.",
+        "Exclou del domini els zeros del denominador original."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una expressió racional P(x)/Q(x) requereix Q(x)≠0, fins i tot si una factorització permet cancel·lar factors comuns. Per simplificar (x²−1)/(x−1), factoritzem (x−1)(x+1) i cancel·lem el factor comú només per x≠1; l'expressió simplificada coincideix amb x+1 en el seu domini original, però no està definida en x=1. No existeix cancel·lació de termes separats per sumes: (x+1)/x no és 1+1. En combinar fraccions algebraiques, s'empra denominador comú i s'enumeren totes les exclusions. La igualtat entre expressions simplificades està condicionada per aquests dominis."
+        },
+        {
+          "body": "(x²−9)/(x−3)=x+3 per x≠3; x=3 segueix exclòs encara que l'expressió final tingui valor allà."
+        },
+        {
+          "body": "1/(x−1)+2/(x−1)=3/(x−1), mantenint x≠1 des de l'inici."
+        },
+        {
+          "body": "Simplificació i punt exclòs. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Simplificació i punt exclòs. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Simplificació i punt exclòs"
+          }
+        },
+        {
+          "body": "Es pot substituir x=3 en (x²−9)/(x−3) després de simplificar?||No en l'expressió original: el denominador era zero i la simplificació no recupera aquest punt."
+        },
+        {
+          "body": "Recuperació: Una expressió racional P(x)/Q(x) requereix Q(x)≠0, fins i tot si una factorització permet cancel·lar factors comuns. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    },
+    "E4B-A01-L05": {
+      "title": "Equivalències i restriccions",
+      "objectives": [
+        "Identificar restriccions de domini en transformacions algebraiques.",
+        "Distingir implicació d'equivalència en elevar al quadrat o multiplicar per expressions."
+      ],
+      "content_blocks": [
+        {
+          "body": "Dues equacions són equivalents si tenen el mateix conjunt de solucions dins del domini considerat. Multiplicar tots dos membres per una expressió que pot valer zero pot afegir solucions falses i dividir per ella pot perdre unes altres; per això han de registrar-se condicions de no anul·lació. En elevar al quadrat s'obté una condició necessària, no sempre suficient: de √(x+1)=x−1 es dedueix x+1=(x−1)², però les arrels algebraiques resultants requereixen comprovar que x−1≥0. Transformar correctament exigeix conservar condicions, justificar cada pas i substituir candidats en l'equació original."
+        },
+        {
+          "body": "√(x+1)=x−1 produeix candidats 0 i 3 en quadrar; x=0 falla pel signe del costat dret i només x=3 verifica 2=2."
+        },
+        {
+          "body": "Multiplicar (x−2)/(x−2)=1 per x−2 només és legítim si x≠2; el punt 2 mai entra en el domini d'origen."
+        },
+        {
+          "body": "Transformació i rebuig de solució estranya. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Transformació i rebuig de solució estranya. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Transformació i rebuig de solució estranya"
+          }
+        },
+        {
+          "body": "Voleu aixecar ambdós costats al quadrat sempre produeix una equació equivalent?||No: pot afegir solucions incompatibles amb els signes de l'equació original."
+        },
+        {
+          "body": "Recuperació: Dues equacions són equivalents si tenen el mateix conjunt de solucions dins del domini considerat. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    },
+    "E4B-A01-L06": {
+      "title": "Modelització simbòlica",
+      "objectives": [
+        "Modelitzar magnituds mitjançant expressions polinòmiques.",
+        "Comprovar coherència dimensional, domini contextual i factorització de resultats."
+      ],
+      "content_blocks": [
+        {
+          "body": "En modelització simbòlica cada variable ha de representar una magnitud definida i un domini raonable. L'àrea d'un rectangle de costats x+2 i x+5 és (x+2)(x+5)=x²+7x+10, amb longituds positives; el perímetre és 2[(x+2)+(x+5)]=4x+14, que no té les mateixes unitats que l'àrea. La factorització permet interpretar productes de mesures i analitzar zeros purament algebraics, però una arrel negativa pot mancar de sentit físic. Una comprovació amb x=1 ajuda a detectar errors de transcripció; contrastar unitats és fonamental."
+        },
+        {
+          "body": "Amb x=3, l'àrea del rectangle (x+2) per (x+5) és 5×8=40 unitats quadrades."
+        },
+        {
+          "body": "Si els costats són x+2 i x+5, l'increment de x en una unitat no augmenta l'àrea en una quantitat fixa: A(x)=x²+7x+10."
+        },
+        {
+          "body": "Àrea polinòmica d'un rectangle. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Àrea polinòmica d'un rectangle. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Àrea polinòmica d'un rectangle"
+          }
+        },
+        {
+          "body": "Per què una arrel x=−5 del polinomi d'àrea no descriu un rectangle real?||Perquè llavors un costat val zero, i el context exigeix longituds estrictament positives."
+        },
+        {
+          "body": "Recuperació: En modelització simbòlica cada variable ha de representar una magnitud definida i un domini raonable. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E4B-A01-L01-01": {
+      "prompt": "Desarrolla (1x+3)². Indica els tres COEFICIENTS (x², x, constant), en aquest ordre. Selecciona la resposta exacta.",
+      "hint": "Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté (1, 6, 9). Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre. Expandeix tots els productes: (a±b)²=a²±2a b +b² i (a−b)(a+b)=a²−b². Comprova substituint un valor. Resposta exacta: (1, 6, 9). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L01-02": {
+      "prompt": "En el desenvolupament de (2x−1)², quin és el COEFICIENT de x? Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté -4. Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre. Expandeix tots els productes: (a±b)²=a²±2a b +b² i (a−b)(a+b)=a²−b². Comprova substituint un valor. Resposta exacta: -4. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L01-03": {
+      "prompt": "En la identitat (2x−3)(2x+3)= Ax ²+C, calcula la CONSTANT C. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté -9. Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre. Expandeix tots els productes: (a±b)²=a²±2a b +b² i (a−b)(a+b)=a²−b². Comprova substituint un valor. Resposta exacta: -9. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L01-04": {
+      "prompt": "Avalua numèricament la identitat (1x+3)² per x=2, usant el seu desenvolupament o substitució. Selecciona la resposta exacta.",
+      "hint": "Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 25. Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre. Expandeix tots els productes: (a±b)²=a²±2a b +b² i (a−b)(a+b)=a²−b². Comprova substituint un valor. Resposta exacta: 25. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L01-05": {
+      "prompt": "Desarrolla (3x−2)². Indica els tres COEFICIENTS (x², x, constant), en aquest ordre. Selecciona la resposta exacta.",
+      "hint": "Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté (9, -12, 4). Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre. Expandeix tots els productes: (a±b)²=a²±2a b +b² i (a−b)(a+b)=a²−b². Comprova substituint un valor. Resposta exacta: (9, -12, 4). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L02-01": {
+      "prompt": "Calcula la resta de dividir P(x)=1x^2 + -5x^1 + 6x^0 per x−(2). Empra el teorema de la resta P(2). Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 0. Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: 0. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L02-02": {
+      "prompt": "Divide 1x²+(-5)x+(6) entre x−(2) amb resta zero. Dóna els dos coeficients (x, constant) del QUOCIENT. Selecciona la resposta exacta.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté (1, -3). Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: (1, -3). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L02-03": {
+      "prompt": "És x=4 una ARREL de P(x)=1x²+(-5)x+(6)? Calcula P(4) per decidir Sí / No. Selecciona la resposta exacta.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté No. Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: No. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L02-04": {
+      "prompt": "Calcula la resta de dividir P(x)=1x^3 + -4x^2 + 1x^1 + 6x^0 per x−(-1). Empra el teorema de la resta P(-1). Selecciona la resposta exacta.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 0. Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: 0. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L02-05": {
+      "prompt": "La factorització P(x)=(x−(2))(x−(3)) mostra dues arrels reals. Escríbeles en ordre creixent com a parell (r₁, r₂). Selecciona la resposta exacta.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté (2, 3). Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: (2, 3). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L03-01": {
+      "prompt": "La factorització P(x)=(x−(-1))(x−(2)) mostra dues arrels reals. Escríbeles en ordre creixent com a parell (r₁, r₂). Selecciona la resposta exacta.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté (-1, 2). Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: (-1, 2). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L03-02": {
+      "prompt": "És x=3 una ARREL de P(x)=1x²+(-5)x+(6)? Calcula P(3) per decidir Sí / No. Selecciona la resposta exacta.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté Sí. Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: Sí. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L03-03": {
+      "prompt": "Una equació monòmica té arrels x=2 i x=3. Calcula la suma de les arrels comptant cada una vegada. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 5. Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: 5. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L03-04": {
+      "prompt": "Una equació monòmica té arrels x=-1 i x=2. Calcula el PRODUCTE de les arrels. Selecciona la resposta exacta.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté -2. Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: -2. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L03-05": {
+      "prompt": "En P(x)=(x−(2))^2(x−(-1)), quina és la multiplicitat algebraica de l'arrel x=2? Selecciona la resposta exacta.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 2. Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: 2. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L04-01": {
+      "prompt": "Calcula el valor per a x=5 de l'expressió racional (x²−(3)²)/(x−(3)), amb restricció x≠3. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 8. Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors. Multiplica només en el domini permès, factoritza i comprova les arrels en les fraccions de partida. Resposta exacta: 8. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L04-02": {
+      "prompt": "Quina condició sobre x exclou el domini de (x²−(3)²)/(x−(3))? Escríbela com a desigualtat. Selecciona la resposta exacta.",
+      "hint": "Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté x≠3. Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors. Multiplica només en el domini permès, factoritza i comprova les arrels en les fraccions de partida. Resposta exacta: x≠3. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L04-03": {
+      "prompt": "Simplifica [(x−(3))(x+(2))]/(x−(3)) i mantenen l'exclusió original. Indica expressió i restricció. Selecciona la resposta exacta.",
+      "hint": "Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté x+2; x≠3. Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors. Multiplica només en el domini permès, factoritza i comprova les arrels en les fraccions de partida. Resposta exacta: x+2; x≠3. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L04-04": {
+      "prompt": "Suma 1/(x−3)+2/(x−3) en una sola fracció. Mantén la restricció del denominador. Selecciona la resposta exacta.",
+      "hint": "Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 3/(x−3), x≠3. Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors. Multiplica només en el domini permès, factoritza i comprova les arrels en les fraccions de partida. Resposta exacta: 3/(x−3), x≠3. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L04-05": {
+      "prompt": "Calcula el valor per a x=0 de l'expressió racional (x²−(-2)²)/(x−(-2)), amb restricció x≠-2. Selecciona la resposta exacta.",
+      "hint": "Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté -2. Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors. Multiplica només en el domini permès, factoritza i comprova les arrels en les fraccions de partida. Resposta exacta: -2. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L05-01": {
+      "prompt": "Torna a R √(x+1)=x−1. Descarta l'arrel estranya després d'elevar al quadrat. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu.",
+      "explanation": "Procediment i verificació: L'equació al quadrat ofereix 0 i 3; x−1≥0 descarta zero. Solució comprovada: 3. Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu. Abans de quadrar exigeix el signe del costat dret; verifica cada candidat en origen. Per log_ a(t)=k usa t=a^k amb a>0, a≠1. Resposta exacta: 3. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L05-02": {
+      "prompt": "Quina condició sobre x exclou el domini de (x²−(2)²)/(x−(2))? Escríbela com a desigualtat. Selecciona la resposta exacta.",
+      "hint": "Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté x≠2. Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors. Multiplica només en el domini permès, factoritza i comprova les arrels en les fraccions de partida. Resposta exacta: x≠2. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L05-03": {
+      "prompt": "En elevar al quadrat √(x+4)=x−2, QUANTES candidates algebraiques s'obtenen ABANS de comprovar el signe? Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 2. Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu. Abans de quadrar exigeix el signe del costat dret; verifica cada candidat en origen. Per log_ a(t)=k usa t=a^k amb a>0, a≠1. Resposta exacta: 2. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L05-04": {
+      "prompt": "És sempre equivalent elevar al quadrat tots dos membres d'una equació real, sense cap condició de signe? Selecciona la resposta exacta.",
+      "hint": "Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté No. Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu. Abans de quadrar exigeix el signe del costat dret; verifica cada candidat en origen. Per log_ a(t)=k usa t=a^k amb a>0, a≠1. Resposta exacta: No. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L05-05": {
+      "prompt": "Torna a R √(x+4)=x−2. Descarta l'arrel estranya després d'elevar al quadrat. Selecciona la resposta exacta.",
+      "hint": "Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu.",
+      "explanation": "Procediment i verificació: L'equació al quadrat ofereix 0 i 5; x−2≥0 descarta zero. Solució comprovada: 5. Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu. Abans de quadrar exigeix el signe del costat dret; verifica cada candidat en origen. Per log_ a(t)=k usa t=a^k amb a>0, a≠1. Resposta exacta: 5. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L06-01": {
+      "prompt": "Un rectangle té costats x+2 i x+5 metres, amb x=3 i longituds positives. Calcula l'àrea en m². Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 40. Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre. Expandeix tots els productes: (a±b)²=a²±2a b +b² i (a−b)(a+b)=a²−b². Comprova substituint un valor. Resposta exacta: 40. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L06-02": {
+      "prompt": "Expande (x+2)(x+5). Quin és el COEFICIENT de x en l'àrea expressada en forma polinòmica? Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 7. Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre. Expandeix tots els productes: (a±b)²=a²±2a b +b² i (a−b)(a+b)=a²−b². Comprova substituint un valor. Resposta exacta: 7. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L06-03": {
+      "prompt": "Un rectangle té costats x+2 i x+5, amb x=3. Calcula el PERÍMETRE. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 26. Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre. Expandeix tots els productes: (a±b)²=a²±2a b +b² i (a−b)(a+b)=a²−b². Comprova substituint un valor. Resposta exacta: 26. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L06-04": {
+      "prompt": "Un rectangle té costats x+3 i x+4 metres, amb x=1 i longituds positives. Calcula l'àrea en m². Selecciona la resposta exacta.",
+      "hint": "Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 20. Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre. Expandeix tots els productes: (a±b)²=a²±2a b +b² i (a−b)(a+b)=a²−b². Comprova substituint un valor. Resposta exacta: 20. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-E4B-A01-L06-05": {
+      "prompt": "Quin és el terme CONSTANT del producte (x+2)(x+5)? Selecciona la resposta exacta.",
+      "hint": "Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 10. Usa la distributiva sense ometre termes mixtos i distingeix àrea de perímetre. Expandeix tots els productes: (a±b)²=a²±2a b +b² i (a−b)(a+b)=a²−b². Comprova substituint un valor. Resposta exacta: 10. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    }
+  }
+}

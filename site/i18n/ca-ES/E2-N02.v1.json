@@ -1,0 +1,295 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E2-N02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e2_n02.json": "4967b7fa08030004007b3686a9c8109aa02629683b57d314798ee59673768514",
+    "data/f3_e2_n02_exercises.json": "54586ba1085f1addd41040308d2ac52dad9f921ee009451eeb67dd57681105c0"
+  },
+  "lessons": {
+    "E2-N02-L01": {
+      "title": "Decimals periòdics",
+      "objectives": [
+        "Distingir decimals exactes, periòdics purs i mixtos.",
+        "Vincular període decimal amb denominador irreductible."
+      ],
+      "content_blocks": [
+        {
+          "body": "Tota fracció racional té desenvolupament decimal exacte o periòdic. Després de simplificar-la, el seu decimal és exacte si el denominador només té factors 2 i 5. És periòdic pur si el denominador és coprim amb 10 i periòdic mixt quan combina algun factor 2 o 5 amb altres primers. Un període infinit no és un decimal finit aproximat i no s'ha de confondre amb un valor irracional."
+        },
+        {
+          "body": "1/3 = 0,333... és periòdic pur; el 3 es repeteix des del primer decimal."
+        },
+        {
+          "body": "1/6 = 0,1666... és periòdic mixt: 1 no es repeteix i a continuació es repeteix el 6."
+        },
+        {
+          "body": "Primers decimals de 1/6; el 6 continua sense fi. El gràfic presenta dades indicatives; la taula alternativa mostra els seus valors o expressions explícites.",
+          "alt": "Primers decimals de 1/6; el 6 continua sense fi. Els valors, etiquetes i relacions representats apareixen així mateix en la taula adjacent.",
+          "visual_spec": {
+            "title": "Primers decimals de 1/6; el 6 continua sense fi"
+          }
+        },
+        {
+          "body": "Per què 3/20 té decimal exacte?||Perquè 20 = 2²×5, per la qual cosa 3/20=0,15 acaba."
+        },
+        {
+          "body": "Recupera la idea fonamental sense mirar: Tota fracció racional té desenvolupament decimal exacte o periòdic. Aplica la regla a un cas nou i contrasta la validesa de la condició."
+        }
+      ]
+    },
+    "E2-N02-L02": {
+      "title": "Equivalència fracció-decimal",
+      "objectives": [
+        "Converteix fraccions a decimals sense perdre exactitud.",
+        "Reconèixer quan un decimal expressa un racional exacte."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una fracció és un quocient: per a convertir-la a decimal es divideix numerador entre denominador. Quan el decimal acaba, el nombre decimal amb totes les seves xifres representa exactament la fracció; si apareix un període, els punts suspensius indiquen infinitud. Per exemple 1/8=0,125 exactament, mentre que 1/3≠0,333 perquè falta una cua infinita de xifres."
+        },
+        {
+          "body": "7/8 = 0,875 exacte; basta dividir set entre vuit."
+        },
+        {
+          "body": "0,45 = 45/100 = 9/20 després de simplificar pel màxim comú divisor."
+        },
+        {
+          "body": "Fraccions i decimals exactes. El gràfic presenta dades indicatives; la taula alternativa mostra els seus valors o expressions explícites.",
+          "alt": "Fraccions i decimals exactes. Els valors, etiquetes i relacions representats apareixen així mateix en la taula adjacent.",
+          "visual_spec": {
+            "title": "Fraccions i decimals exactes"
+          }
+        },
+        {
+          "body": "0,333 és igual exactament a 1/3?||No, 0,333 té tres xifres decimals; 1/3 és el decimal periòdic infinit 0,333..."
+        },
+        {
+          "body": "Recupera la idea fonamental sense mirar: Una fracció és un quocient: per convertir-la a decimal es divideix numerador entre denominador. Aplica la regla a un cas nou i contrasta la validesa de la condició."
+        }
+      ]
+    },
+    "E2-N02-L03": {
+      "title": "Estimació i arrodoniment",
+      "objectives": [
+        "Estimar i arrodonir decimals amb precisió explícita.",
+        "Controlar els efectes d'arrodoniments prematurs."
+      ],
+      "content_blocks": [
+        {
+          "body": "Arrodonir a dècimes o centèsimes aproxima al múltiple més pròxim de 0,1 o 0,01. Per a quantitats positives, un empat exacte entre dos múltiples es resol cap amunt segons la regla editorial adoptada; altres convencions han de declarar-se. Conserva decimals suficients en operar i arrodoneix només al final, ja que arrodonir valors parcials pot acumular errors."
+        },
+        {
+          "body": "7,246 arrodonit a centèsimes és 7,25 perquè la xifra següent és 6."
+        },
+        {
+          "body": "3,141 arrodonit a dècimes és 3,1; el valor original pertany a l'interval de valors que arrodoneixen a 3,1."
+        },
+        {
+          "body": "3,141 i els seus valors arrodonits. El gràfic presenta dades indicatives; la taula alternativa mostra els seus valors o expressions explícites.",
+          "alt": "3,141 i els seus valors arrodonits. Els valors, etiquetes i relacions representats apareixen així mateix en la taula adjacent.",
+          "visual_spec": {
+            "title": "3,141 i els seus valors arrodonits"
+          }
+        },
+        {
+          "body": "Per què no convé arrodonir totes les xifres abans de calcular?||Perquè cada aproximació pot introduir error i modificar el resultat final."
+        },
+        {
+          "body": "Recupera la idea fonamental sense mirar: Arrodonir a dècimes o centèsimes aproxima al múltiple més pròxim de 0,1 o 0,01. Aplica la regla a un cas nou i contrasta la validesa de la condició."
+        }
+      ]
+    },
+    "E2-N02-L04": {
+      "title": "Precisió de mesures",
+      "objectives": [
+        "Interpretar resolució i marge d'arrodoniment d'una mesura.",
+        "Calcula diferències i errors absoluts."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una mesura comunicada a dècimes, arrodonida al més proper, introdueix com a màxim mig dècim d'incertesa d'arrodoniment, sense considerar incerteses instrumentals addicionals. La diferència absoluta entre un valor mesurat i un de referència és m−r i mai negativa. Especificar unitat i procediment és essencial; una lectura de 12,4 cm no garanteix per si sola una exactitud instrumental de ±0,05 cm."
+        },
+        {
+          "body": "Per a un valor 12,4 cm arrodonit a dècimes, l'interval teòric per arrodoniment és [12,35, 12,45) cm amb la convenció usada."
+        },
+        {
+          "body": "Si la lectura és 5,2 m i la referència 5,0 m, la diferència absoluta és 5,2−5,0 = 0,2 m."
+        },
+        {
+          "body": "Interval teòric d'arrodoniment de 12,4 cm. El gràfic presenta dades indicatives; la taula alternativa mostra els seus valors o expressions explícites.",
+          "alt": "Interval teòric d'arrodoniment de 12,4 cm. Els valors, etiquetes i relacions representats apareixen així mateix en la taula adjacent.",
+          "visual_spec": {
+            "title": "Interval teòric d'arrodoniment de 12,4 cm"
+          }
+        },
+        {
+          "body": "Una anotació a dècimes assegura que l'aparell mesuri amb precisió de 0,05?||No; el límit d'arrodoniment només descriu la representació, no tots els errors de l'instrument."
+        },
+        {
+          "body": "Recupera la idea fonamental sense mirar: Una mesura comunicada a dècimes, arrodonida al més proper, introdueix com a màxim mig desè d'incertesa d'arrodoniment, sense considerar incerteses instrumentals addicionals. Aplica la regla a un cas nou i contrasta la validesa de la condició."
+        }
+      ]
+    },
+    "E2-N02-L05": {
+      "title": "Càlcul amb unitats",
+      "objectives": [
+        "Converteix unitats de longitud, massa i temps.",
+        "Comprovar coherència dimensional en càlculs."
+      ],
+      "content_blocks": [
+        {
+          "body": "Canviar d'unitat no modifica la magnitud física: 1 km =1000 m, 1 m=100 cm, 1 m=1000 mm, 1 kg =1000 g i 1 h=60 min. Multiplica o divideix pel factor que correspongui a la direcció de conversió, no només per memòria d'una escala. Anota la unitat al costat de la dada i comprova que el resultat d'expressar la mateixa longitud en una unitat petita sigui numèricament major."
+        },
+        {
+          "body": "2,4 km = 2400 m perquè cada quilòmetre equival a 1000 metres."
+        },
+        {
+          "body": "750 g = 0,75 kg perquè hi ha mil grams en un quilogram."
+        },
+        {
+          "body": "Escales d'unitats de longitud. El gràfic presenta dades indicatives; la taula alternativa mostra els seus valors o expressions explícites.",
+          "alt": "Escales d'unitats de longitud. Els valors, etiquetes i relacions representats apareixen així mateix en la taula adjacent.",
+          "visual_spec": {
+            "title": "Escales d'unitats de longitud"
+          }
+        },
+        {
+          "body": "Per què 45 minuts no equivalen a 0,45 hores?||Perquè una hora conté 60 minuts: 45/60 = 0,75 hores."
+        },
+        {
+          "body": "Recupera la idea fonamental sense mirar: Canviar d'unitat no modifica la magnitud física: 1 km =1000 m, 1 m=100 cm, 1 m=1000 mm, 1 kg =1000 g i 1 h=60 min. Aplica la regla a un cas nou i contrasta la validesa de la condició."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E2-N02-L01-01": {
+      "prompt": "Classifica el desenvolupament decimal de la fracció 1/3: exacte, periòdic pur o periòdic mixt.",
+      "hint": "Simplifica la fracció i factoritza el seu denominador.",
+      "explanation": "Mètode: Simplifica la fracció i factoritza el seu denominador. Només 2 i 5 implica exacte; coprim amb 10 implica periòdic pur. Categoria correcta: Periòdic pur. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L01-02": {
+      "prompt": "Classifica el desenvolupament decimal de la fracció 1/6: exacte, periòdic pur o periòdic mixt.",
+      "hint": "Simplifica la fracció i factoritza el seu denominador.",
+      "explanation": "Mètode: Simplifica la fracció i factoritza el seu denominador. Només 2 i 5 implica exacte; coprim amb 10 implica periòdic pur. Categoria correcta: Periòdic mixt. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L01-03": {
+      "prompt": "Classifica el desenvolupament decimal de la fracció 3/20: exacte, periòdic pur o periòdic mixt.",
+      "hint": "Simplifica la fracció i factoritza el seu denominador.",
+      "explanation": "Mètode: Simplifica la fracció i factoritza el seu denominador. Només 2 i 5 implica exacte; coprim amb 10 implica periòdic pur. Categoria correcta: Exacte. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L01-04": {
+      "prompt": "Classifica el desenvolupament decimal de la fracció 2/7: exacte, periòdic pur o periòdic mixt.",
+      "hint": "Simplifica la fracció i factoritza el seu denominador.",
+      "explanation": "Mètode: Simplifica la fracció i factoritza el seu denominador. Només 2 i 5 implica exacte; coprim amb 10 implica periòdic pur. Categoria correcta: Periòdic pur. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L01-05": {
+      "prompt": "Classifica el desenvolupament decimal de la fracció 7/12: exacte, periòdic pur o periòdic mixt.",
+      "hint": "Simplifica la fracció i factoritza el seu denominador.",
+      "explanation": "Mètode: Simplifica la fracció i factoritza el seu denominador. Només 2 i 5 implica exacte; coprim amb 10 implica periòdic pur. Categoria correcta: Periòdic mixt. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L02-01": {
+      "prompt": "Expressa 7/8 com a decimal exacte.",
+      "hint": "Divideix numerador entre denominador amb precisió exacta.",
+      "explanation": "Mètode: Divideix numerador entre denominador amb precisió exacta. Tria totes les xifres decimals finites necessàries. Resposta exacta: 0,875. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L02-02": {
+      "prompt": "Expressa 9/20 com a decimal exacte.",
+      "hint": "Divideix numerador entre denominador amb precisió exacta.",
+      "explanation": "Mètode: Divideix numerador entre denominador amb precisió exacta. Tria totes les xifres decimals finites necessàries. Resposta exacta: 0,45. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L02-03": {
+      "prompt": "Expressa 3/5 com a decimal exacte.",
+      "hint": "Divideix numerador entre denominador amb precisió exacta.",
+      "explanation": "Mètode: Divideix numerador entre denominador amb precisió exacta. Tria totes les xifres decimals finites necessàries. Resposta exacta: 0,6. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L02-04": {
+      "prompt": "Expressa 11/40 com a decimal exacte. Selecciona el valor exacte correcte.",
+      "hint": "Divideix numerador entre denominador amb precisió exacta.",
+      "explanation": "Mètode: Divideix numerador entre denominador amb precisió exacta. Tria totes les xifres decimals finites necessàries. Resposta exacta: 0,275. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L02-05": {
+      "prompt": "Expressa 3/16 com a decimal exacte. Selecciona el valor exacte correcte.",
+      "hint": "Divideix numerador entre denominador amb precisió exacta.",
+      "explanation": "Mètode: Divideix numerador entre denominador amb precisió exacta. Tria totes les xifres decimals finites necessàries. Resposta exacta: 0,1875. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L03-01": {
+      "prompt": "Arrodoneix 7,246 a 2 xifres decimals.",
+      "hint": "Mira la primera xifra descartada i decideix si incrementes.",
+      "explanation": "Mètode: Mira la primera xifra descartada i decideix si incrementes. La regla d'empat editorial és cap amunt per a nombres positius. Resposta exacta: 7,25. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L03-02": {
+      "prompt": "Arrodoneix 3,141 a 1 xifres decimals.",
+      "hint": "Mira la primera xifra descartada i decideix si incrementes.",
+      "explanation": "Mètode: Mira la primera xifra descartada i decideix si incrementes. La regla d'empat editorial és cap amunt per a nombres positius. Resposta exacta: 3,1. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L03-03": {
+      "prompt": "Arrodoneix 8,75 a 1 xifres decimals.",
+      "hint": "Mira la primera xifra descartada i decideix si incrementes.",
+      "explanation": "Mètode: Mira la primera xifra descartada i decideix si incrementes. La regla d'empat editorial és cap amunt per a nombres positius. Resposta exacta: 8,8. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L03-04": {
+      "prompt": "Arrodoneix 2,655 a 2 xifres decimals. Selecciona el valor exacte correcte.",
+      "hint": "Mira la primera xifra descartada i decideix si incrementes.",
+      "explanation": "Mètode: Mira la primera xifra descartada i decideix si incrementes. La regla d'empat editorial és cap amunt per a nombres positius. Resposta exacta: 2,66. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L03-05": {
+      "prompt": "Arrodoneix 9,876 a 1 xifres decimals. Selecciona el valor exacte correcte.",
+      "hint": "Mira la primera xifra descartada i decideix si incrementes.",
+      "explanation": "Mètode: Mira la primera xifra descartada i decideix si incrementes. La regla d'empat editorial és cap amunt per a nombres positius. Resposta exacta: 9,9. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L04-01": {
+      "prompt": "Calcula 5,2 − 5, error absolut.",
+      "hint": "Resta la referència del valor aproximat.",
+      "explanation": "Mètode: Resta la referència del valor aproximat. Pren el valor absolut i conserva les unitats. Resposta exacta: 0,2. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L04-02": {
+      "prompt": "Una lectura 12,4 arrodonida a 0,1 unitats: quin és el límit inferior de l'interval d'arrodoniment?",
+      "hint": "Resta mitja resolució a la lectura arrodonida.",
+      "explanation": "Mètode: Resta mitja resolució a la lectura arrodonida. Es tracta només d'incertesa d'arrodoniment, no de l'instrument. Resposta exacta: 12,35. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L04-03": {
+      "prompt": "Una lectura 12,4 arrodonida a 0,1 unitats: quin és el límit superior de l'interval d'arrodoniment?",
+      "hint": "Suma mitja resolució a la lectura arrodonida.",
+      "explanation": "Mètode: Suma mitja resolució a la lectura arrodonida. Amb empat a l'alça per a positius, l'extrem superior queda exclòs. Resposta exacta: 12,45. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L04-04": {
+      "prompt": "Calcula 12,8 − 12,6, error absolut. Selecciona el valor exacte correcte.",
+      "hint": "Resta la referència del valor aproximat.",
+      "explanation": "Mètode: Resta la referència del valor aproximat. Pren el valor absolut i conserva les unitats. Resposta exacta: 0,2. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L04-05": {
+      "prompt": "Una lectura 8,5 arrodonida a 0,1 unitats: quin és el límit inferior de l'interval d'arrodoniment? Selecciona el valor exacte correcte.",
+      "hint": "Resta mitja resolució a la lectura arrodonida.",
+      "explanation": "Mètode: Resta mitja resolució a la lectura arrodonida. Es tracta només d'incertesa d'arrodoniment, no de l'instrument. Resposta exacta: 8,45. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L05-01": {
+      "prompt": "Converteix 2,4 unitats (km → m) i escriu només el nombre resultant.",
+      "hint": "Multiplica per l'equivalència entre les unitats indicada en l'enunciat.",
+      "explanation": "Mètode: Multiplica per l'equivalència entre les unitats indicada en l'enunciat. Especifica sempre la unitat final en raonar, encara que aquí es demani només nombre. Resposta exacta: 2400. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L05-02": {
+      "prompt": "Converteix 750 unitats (g → kg) i escriu només el nombre resultant.",
+      "hint": "Multiplica per l'equivalència entre les unitats indicada en l'enunciat.",
+      "explanation": "Mètode: Multiplica per l'equivalència entre les unitats indicada en l'enunciat. Especifica sempre la unitat final en raonar, encara que aquí es demani només nombre. Resposta exacta: 0,75. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L05-03": {
+      "prompt": "Converteix 45 unitats (min → h) i escriu només el nombre resultant.",
+      "hint": "Multiplica per l'equivalència entre les unitats indicada en l'enunciat.",
+      "explanation": "Mètode: Multiplica per l'equivalència entre les unitats indicada en l'enunciat. Especifica sempre la unitat final en raonar, encara que aquí es demani només nombre. Resposta exacta: 0,75. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L05-04": {
+      "prompt": "Converteix 125 unitats (cm → m) i escriu només el nombre resultant. Selecciona el valor exacte correcte.",
+      "hint": "Multiplica per l'equivalència entre les unitats indicada en l'enunciat.",
+      "explanation": "Mètode: Multiplica per l'equivalència entre les unitats indicada en l'enunciat. Especifica sempre la unitat final en raonar, encara que aquí es demani només nombre. Resposta exacta: 1,25. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    },
+    "F3-E2-N02-L05-05": {
+      "prompt": "Converteix 1,5 unitats (km → m) i escriu només el nombre resultant. Selecciona el valor exacte correcte.",
+      "hint": "Multiplica per l'equivalència entre les unitats indicada en l'enunciat.",
+      "explanation": "Mètode: Multiplica per l'equivalència entre les unitats indicada en l'enunciat. Especifica sempre la unitat final en raonar, encara que aquí es demani només nombre. Resposta exacta: 1500. Compara el procediment amb la teoria d'aquesta lliçó, no solament amb el resultat."
+    }
+  }
+}

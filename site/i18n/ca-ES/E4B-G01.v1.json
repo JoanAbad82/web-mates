@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E4B-G01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e4b_g01.json": "59b2b441247dc024b30f949d945353a133f633092a7ddcd1102decb87e369d37",
+    "data/f3_e4b_g01_exercises.json": "52e8da9ff0a1fd298f199a2106c033fcdc0b474c481d4522f98a20540f8f5fb2"
+  },
+  "lessons": {
+    "E4B-G01-L01": {
+      "title": "Sinus, cosinus i tangent d'angles aguts",
+      "objectives": [
+        "Definir sinus, cosinus i tangent d'un angle agut en triangle rectangle.",
+        "Identificar el catet oposat i l'adjacent respecte de l'angle escollit."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a un angle agut θ en un triangle rectangle, sinus és catet oposat dividit per hipotenusa; cosinus és catet adjacent dividit per hipotenusa; tangent és oposat dividit per adjacent. Hipotenusa és el costat davant de l'angle recte i sempre el més gran. Els papers d'oposat i adjacent canvien en canviar θ, però la hipotenusa no. Els quocients són adimensionals i depenen de l'angle, no de la mida del triangle semblant. Per 0° i 90° algunes raons requereixen tractament de límits o no estan definides."
+        },
+        {
+          "body": "En el triangle rectangle de catets 3 i 4 i hipotenusa 5, per a l'angle enfront del catet 3: sen θ = 3/5, cos θ = 4/5 i tan θ = 3/4."
+        },
+        {
+          "body": "En el mateix triangle, per a l'altre angle agut: sin φ = 4/5 i cos φ = 3/5. Intercanviar l'angle altera els catets de referència."
+        },
+        {
+          "body": "Raons trigonomètriques en triangle 3 – 4 – 5. Representació geomètrica amb taula de valors i relacions matemàtiques exactes. Les escales il·lustratives no substitueixen les condicions de l'enunciat.",
+          "alt": "Raons trigonomètriques en triangle 3 – 4 – 5. Tots els angles, costats, signes i quocients representats es descriuen en una taula semàntica alternativa sota del gràfic.",
+          "visual_spec": {
+            "title": "Raons trigonomètriques en triangle 3 – 4 – 5"
+          }
+        },
+        {
+          "body": "És sempre el costat 3 el catet oposat?||No: depèn de l'angle triat. Per θ oposat a 3 si, per l'altre angle no."
+        },
+        {
+          "body": "Recuperació: Per a un angle agut θ en un triangle rectangle, sinus és catet oposat dividit per hipotenusa; cosinus és catet adjacent dividit per hipotenusa; tangent és oposat dividit per adjacent. Revisa les condicions geomètriques, el quadrant o interval i l'exactitud abans de calcular un altre cas sense pistes."
+        }
+      ]
+    },
+    "E4B-G01-L02": {
+      "title": "Raons i costats",
+      "objectives": [
+        "Calcular costats amb una raó trigonomètrica i un angle conegut.",
+        "Conserva expressions exactes amb arrels en angles notables."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si es coneixen un angle agut i un costat d'un triangle rectangle, les raons trigonomètriques permeten trobar els altres costats. Per 30°, 45° i 60° existeixen valors exactes: sen 30°=1/2, cos 30°=√3/2, tan 45°=1 i sen 60°=√3/2. Si el costat demanat depèn de √3, l'expressió exacta es conserva sense substituir-la per 1,73. Abans de multiplicar o dividir comprova si la dada és catet oposat, adjacent o hipotenusa."
+        },
+        {
+          "body": "Hipotenusa 10 cm i angle 30°: catet oposat = 10× sen 30°=5 cm."
+        },
+        {
+          "body": "Catet adjacent 6 m i angle 45°: catet oposat = 6× tan 45°=6 m."
+        },
+        {
+          "body": "Llats en triangle 30°, 60°, 90°. Representació geomètrica amb taula de valors i relacions matemàtiques exactes. Les escales il·lustratives no substitueixen les condicions de l'enunciat.",
+          "alt": "Llats en triangle 30°, 60°, 90°. Tots els angles, costats, signes i quocients representats es descriuen en una taula semàntica alternativa sota del gràfic.",
+          "visual_spec": {
+            "title": "Llats en triangle 30°, 60°, 90°"
+          }
+        },
+        {
+          "body": "Per què amb hipotenusa 12 i angle 30° l'oposat no és 24?||Perquè el si és oposat/hipotenusa: oposat =12×1/2=6."
+        },
+        {
+          "body": "Recuperació: Si es coneixen un angle agut i un costat d'un triangle rectangle, les raons trigonomètriques permeten trobar els altres costats. Revisa les condicions geomètriques, el quadrant o interval i l'exactitud abans de calcular un altre cas sense pistes."
+        }
+      ]
+    },
+    "E4B-G01-L03": {
+      "title": "Resolució de triangles rectangles",
+      "objectives": [
+        "Resol un triangle rectangle amb dades suficients.",
+        "Comprovar costats mitjançant Pitàgores i complementarietat angular."
+      ],
+      "content_blocks": [
+        {
+          "body": "Resol un triangle rectangle significa trobar costats i angles desconeguts, sempre partint de dades suficients. Els seus dos angles aguts sumen 90°. Si coneixem ambdós catets, la hipotenusa surt per Pitàgores; si coneixem un angle notable i un costat, podem aplicar si, cosinus o tangent. Comprovar que el resultat respecta desigualtats i unitats evita errors. Si s'usa una aproximació d'un angle no notable, s'ha de declarar l'arrodoniment i no reemplaçar un valor aproximat per igualtat exacta."
+        },
+        {
+          "body": "Catets 6 i 8 cm: hipotenusa 10 cm per Pitàgores; la raó oposada/adjacent des del catet 6 és 6/8=3/4."
+        },
+        {
+          "body": "Un triangle rectangle amb angle agut de 35° té l'altre angle agut de 55°, doncs 35+55=90."
+        },
+        {
+          "body": "Triangle de catets 6 i 8. Representació geomètrica amb taula de valors i relacions matemàtiques exactes. Les escales il·lustratives no substitueixen les condicions de l'enunciat.",
+          "alt": "Triangle de catets 6 i 8. Tots els angles, costats, signes i quocients representats es descriuen en una taula semàntica alternativa sota del gràfic.",
+          "visual_spec": {
+            "title": "Triangle rectangle de catets 6 i 8"
+          }
+        },
+        {
+          "body": "Es poden tenir angles 60°, 40° i 90° en un triangle rectangle?||No; sumen 190°, però han de sumar 180°."
+        },
+        {
+          "body": "Recuperació: Resoldre un triangle rectangle significa trobar costats i angles desconeguts, sempre partint de dades suficients. Revisa les condicions geomètriques, el quadrant o interval i l'exactitud abans de calcular un altre cas sense pistes."
+        }
+      ]
+    },
+    "E4B-G01-L04": {
+      "title": "Angles i pendents",
+      "objectives": [
+        "Relacionar pendent d'una recta amb tangent de l'angle d'inclinació.",
+        "Distingir pendent positiu, negativa, nul·la i indefinida."
+      ],
+      "content_blocks": [
+        {
+          "body": "El pendent d'una recta no vertical és canvi vertical dividit entre canvi horitzontal, amb unitats compatibles. És igual a la tangent del seu angle d'inclinació α respecte del semieix horitzontal positiu quan α està entre 0° i 180°, exclòs 90° per rectes verticals. Per a una pujada de 3 m per cada 4 m horitzontals, pendent =3/4 i la seva inclinació és aguda. Un pendent negatiu descriu una recta descendent d'esquerra a dreta, i una recta vertical té pendent indefinit; el pendent no equival al percentatge excepte després de multiplicar per cent."
+        },
+        {
+          "body": "Una rampa puja 2 m per cada 10 m horitzontals: pendent 2/10=0,2 i pendent percentual 20%."
+        },
+        {
+          "body": "Una recta a 45° respecte de l'eix horitzontal positiu té pendent tan 45°=1."
+        },
+        {
+          "body": "Pendent = desnivell / distància horitzontal. Representació geomètrica amb taula de valors i relacions matemàtiques exactes. Les escales il·lustratives no substitueixen les condicions de l'enunciat.",
+          "alt": "Pendent = desnivell / distància horitzontal. Tots els angles, costats, signes i quocients representats es descriuen en una taula semàntica alternativa sota del gràfic.",
+          "visual_spec": {
+            "title": "Pendent = desnivell / distància horitzontal"
+          }
+        },
+        {
+          "body": "Un pendent del 12% equival a un angle de 12°?||No; significa desnivell/horitzontal =0,12 i l'angle requereix una tangent inversa."
+        },
+        {
+          "body": "Recuperació: El pendent d'una recta no vertical és canvi vertical dividit entre canvi horitzontal, amb unitats compatibles. Revisa les condicions geomètriques, el quadrant o interval i l'exactitud abans de calcular un altre cas sense pistes."
+        }
+      ]
+    },
+    "E4B-G01-L05": {
+      "title": "Alçàries i distàncies",
+      "objectives": [
+        "Modelitzar altures i distàncies amb un triangle rectangle.",
+        "Identificar nivell d'observació i perpendicularitat en el model."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per mesurar una altura inaccessible es pot formar un triangle rectangle amb l'horitzontal, una vertical i la línia de visió. La tangent de l'angle d'elevació relaciona l'altura per sobre dels ulls de l'observador amb la distància horitzontal. Si l'instrument està a una altura coneguda sobre el sòl, se suma aquesta altura al desnivell calculat. L'angle de depressió també es mesura des de l'horitzontal; no des de la vertical. La superfície ha de ser aproximadament horitzontal i l'objecte vertical per usar el model simple."
+        },
+        {
+          "body": "A 12 m horitzontals d'una paret i amb elevació 45°: el desnivell sobre els ulls és 12× tan45 °=12 m."
+        },
+        {
+          "body": "Si els ulls estan a 1,5 m del sòl, i el desnivell observat és 12 m, l'altura total de la paret és 13,5 m."
+        },
+        {
+          "body": "Alçada de paret per elevació de 45°. Representació geomètrica amb taula de valors i relacions matemàtiques exactes. Les escales il·lustratives no substitueixen les condicions de l'enunciat.",
+          "alt": "Alçada de paret per elevació de 45°. Tots els angles, costats, signes i quocients representats es descriuen en una taula semàntica alternativa sota del gràfic.",
+          "visual_spec": {
+            "title": "Alçada de paret per elevació de 45°"
+          }
+        },
+        {
+          "body": "Si l'angle és 45° i l'observador està a 8 m, l'altura calculada es refereix directament al sòl?||No sempre: primer es calcula la diferència d'altura respecte al nivell d'observació."
+        },
+        {
+          "body": "Recuperació: Per mesurar una altura inaccessible es pot formar un triangle rectangle amb l'horitzontal, una vertical i la línia de visió. Revisa les condicions geomètriques, el quadrant o interval i l'exactitud abans de calcular un altre cas sense pistes."
+        }
+      ]
+    },
+    "E4B-G01-L06": {
+      "title": "Problemes amb unitats",
+      "objectives": [
+        "Resoldre problemes de trigonometria amb conversió d'unitats.",
+        "Comprovar que costats i resultats corresponen a la magnitud sol·licitada."
+      ],
+      "content_blocks": [
+        {
+          "body": "En problemes trigonomètrics contextualitzats identifica primer què mesura cada dada, converteix totes les distàncies a una unitat coherent i després aplica la raó apropiada. Les raons de si, cosinus i tangent són adimensionals, però els costats i altures resultants han de portar unitats. Si s'empra una raó trigonomètrica amb angle de 30° o 45°, conserva el resultat exacte sempre que sigui possible. No confonguis un trajecte per catets amb una línia de visió obliqua."
+        },
+        {
+          "body": "Una rampa de 10 m inclinada 30° aconsegueix un desnivell de 10× sen30 °=5 m."
+        },
+        {
+          "body": "Una escala de 500 cm recolzada a 30° sobre el sòl assoleix 250 cm = 2,5 m d'altura."
+        },
+        {
+          "body": "Hipotenusa i altura amb unitats coherents. Representació geomètrica amb taula de valors i relacions matemàtiques exactes. Les escales il·lustratives no substitueixen les condicions de l'enunciat.",
+          "alt": "Hipotenusa i altura amb unitats coherents. Tots els angles, costats, signes i quocients representats es descriuen en una taula semàntica alternativa sota del gràfic.",
+          "visual_spec": {
+            "title": "Hipotenusa i altura amb unitats coherents"
+          }
+        },
+        {
+          "body": "Per què una hipotenusa de 6 m i angle de 30° no dóna una altura de 6 m?||Perquè l'altura oposada es calcula amb 6× sen30 °=3 m."
+        },
+        {
+          "body": "Recuperació: En problemes trigonomètrics contextualitzats identifica primer què mesura cada dada, converteix totes les distàncies a una unitat coherent i després aplica la raó apropiada. Revisa les condicions geomètriques, el quadrant o interval i l'exactitud abans de calcular un altre cas sense pistes."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E4B-G01-L01-01": {
+      "prompt": "En un triangle rectangle el catet oposat a θ mesura 3, l'adjacent 4 i la hipotenusa 5. Calcula el sinus de θ.",
+      "hint": "Identifica el catet oposat, l'adjacent i la hipotenusa respecte a l'angle θ.",
+      "explanation": "Procediment: Per sinθ es divideix 3/5; el quocient exacte és 0,6. Identifica el catet oposat, l'adjacent i la hipotenusa respecte a l'angle θ. Divideix exactament els costats apropiats; el si usa hipotenusa, el cosinus també i la tangent usa catets. Resposta exacta: 0,6. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L01-02": {
+      "prompt": "En un triangle rectangle el catet oposat a θ mesura 3, l'adjacent 4 i la hipotenusa 5. Calcula el cosinus de θ.",
+      "hint": "Identifica el catet oposat, l'adjacent i la hipotenusa respecte a l'angle θ.",
+      "explanation": "Procediment: Per cosθ es divideix 4/5; el quocient exacte és 0,8. Identifica el catet oposat, l'adjacent i la hipotenusa respecte a l'angle θ. Divideix exactament els costats apropiats; el si usa hipotenusa, el cosinus també i la tangent usa catets. Resposta exacta: 0,8. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L01-03": {
+      "prompt": "En un triangle rectangle el catet oposat a θ mesura 3, l'adjacent 4 i la hipotenusa 5. Calcula el tangent de θ.",
+      "hint": "Identifica el catet oposat, l'adjacent i la hipotenusa respecte a l'angle θ.",
+      "explanation": "Procediment: Per tanθ es divideix 3/4; el quocient exacte és 0,75. Identifica el catet oposat, l'adjacent i la hipotenusa respecte a l'angle θ. Divideix exactament els costats apropiats; el si usa hipotenusa, el cosinus també i la tangent usa catets. Resposta exacta: 0,75. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L01-04": {
+      "prompt": "En un triangle rectangle el catet oposat a θ mesura 4, l'adjacent 3 i la hipotenusa 5. Calcula el sinus de θ. Selecciona el valor exacte correcte.",
+      "hint": "Identifica el catet oposat, l'adjacent i la hipotenusa respecte a l'angle θ.",
+      "explanation": "Procediment: Per sinθ es divideix 4/5; el quocient exacte és 0,8. Identifica el catet oposat, l'adjacent i la hipotenusa respecte a l'angle θ. Divideix exactament els costats apropiats; el si usa hipotenusa, el cosinus també i la tangent usa catets. Resposta exacta: 0,8. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L01-05": {
+      "prompt": "En un triangle rectangle el catet oposat a θ mesura 4, l'adjacent 3 i la hipotenusa 5. Calcula el tangent de θ. Selecciona el valor exacte correcte.",
+      "hint": "Identifica el catet oposat, l'adjacent i la hipotenusa respecte a l'angle θ.",
+      "explanation": "Procediment: Per tanθ es divideix 4/3; el quocient exacte és 4/3. Identifica el catet oposat, l'adjacent i la hipotenusa respecte a l'angle θ. Divideix exactament els costats apropiats; el si usa hipotenusa, el cosinus també i la tangent usa catets. Resposta exacta: 4/3. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L02-01": {
+      "prompt": "Un triangle rectangle té angle agut de 30° i hipotenusa de 10 cm. Calcula el catet oposat en cm.",
+      "hint": "Determina quina raó vincula el costat conegut amb el costat demanat i l'angle indicat.",
+      "explanation": "Procediment: Raó notable a 30° aplicada al costat 10: catet demanat = 5 cm. Determina quina raó vincula el costat conegut amb el costat demanat i l'angle indicat. Per a angles notables usa sen30 °=1/2, cos60 °=1/2, cos45 °=√2/2 i tan45 °=1, sense arrodonir. Resposta exacta: 5. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L02-02": {
+      "prompt": "Un triangle rectangle té angle agut de 45° i catet adjacent de 6 cm. Calcula el catet oposat en cm.",
+      "hint": "Determina quina raó vincula el costat conegut amb el costat demanat i l'angle indicat.",
+      "explanation": "Procediment: Raó notable a 45° aplicada al costat 6: catet demanat = 6 cm. Determina quina raó vincula el costat conegut amb el costat demanat i l'angle indicat. Per a angles notables usa sen30 °=1/2, cos60 °=1/2, cos45 °=√2/2 i tan45 °=1, sense arrodonir. Resposta exacta: 6. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L02-03": {
+      "prompt": "Un triangle rectangle té angle agut de 60° i hipotenusa de 12 cm. Calcula el catet adjacent en cm.",
+      "hint": "Determina quina raó vincula el costat conegut amb el costat demanat i l'angle indicat.",
+      "explanation": "Procediment: Raó notable a 60° aplicada al costat 12: catet demanat = 6 cm. Determina quina raó vincula el costat conegut amb el costat demanat i l'angle indicat. Per a angles notables usa sen30 °=1/2, cos60 °=1/2, cos45 °=√2/2 i tan45 °=1, sense arrodonir. Resposta exacta: 6. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L02-04": {
+      "prompt": "Un triangle rectangle té angle agut de 45° i hipotenusa de 10 cm. Calcula el catet adjacent en cm.",
+      "hint": "Determina quina raó vincula el costat conegut amb el costat demanat i l'angle indicat.",
+      "explanation": "Procediment: Raó notable a 45° aplicada al costat 10: catet demanat = 5√2 cm. Determina quina raó vincula el costat conegut amb el costat demanat i l'angle indicat. Per a angles notables usa sen30 °=1/2, cos60 °=1/2, cos45 °=√2/2 i tan45 °=1, sense arrodonir. Resposta exacta: 5√2. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L02-05": {
+      "prompt": "Un triangle rectangle té angle agut de 60° i hipotenusa de 8 cm. Calcula el catet oposat en cm.",
+      "hint": "Determina quina raó vincula el costat conegut amb el costat demanat i l'angle indicat.",
+      "explanation": "Procediment: Raó notable a 60° aplicada al costat 8: catet demanat = 4√3 cm. Determina quina raó vincula el costat conegut amb el costat demanat i l'angle indicat. Per a angles notables usa sen30 °=1/2, cos60 °=1/2, cos45 °=√2/2 i tan45 °=1, sense arrodonir. Resposta exacta: 4√3. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L03-01": {
+      "prompt": "En un triangle rectangle amb catets 6 i 8 cm, calcula la hipotenusa en cm.",
+      "hint": "Eleva al quadrat els dos catets; Pitàgores val per a angles rectes.",
+      "explanation": "Procediment: Pitàgores: √(6²+8²)=√100=10 cm. Eleva al quadrat els dos catets; Pitàgores val per a angles rectes. La hipotenusa és l'arrel principal de la suma dels quadrats dels catets. Resposta exacta: 10. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L03-02": {
+      "prompt": "Un dels angles aguts d'un triangle rectangle mesura 35°. Quant mesura l'altre (graus)?",
+      "hint": "Els dos angles diferents del recte sumen noranta graus.",
+      "explanation": "Procediment: Angles aguts complementaris: 90°−35°=55°. Els dos angles diferents del recte sumen noranta graus. Resta l'angle conegut a noranta per a obtenir el seu complement. Resposta exacta: 55. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L03-03": {
+      "prompt": "Un triangle rectangle té hipotenusa 13 cm i un catet 5 cm. Calcula el catet restant.",
+      "hint": "La hipotenusa és el costat major: el seu quadrat supera el de cada catet.",
+      "explanation": "Procediment: Despullament de Pitàgores: √(13²−5²) = √144 = 12 cm. La hipotenusa és el costat major: el seu quadrat supera el de cada catet. Resta del quadrat de la hipotenusa el quadrat del catet conegut i pren arrel principal. Resposta exacta: 12. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L03-04": {
+      "prompt": "Un dels angles aguts d'un triangle rectangle mesura 40°. Quant mesura l'altre (graus)? Selecciona el valor exacte correcte.",
+      "hint": "Els dos angles diferents del recte sumen noranta graus.",
+      "explanation": "Procediment: Angles aguts complementaris: 90°−40°=50°. Els dos angles diferents del recte sumen noranta graus. Resta l'angle conegut a noranta per a obtenir el seu complement. Resposta exacta: 50. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L03-05": {
+      "prompt": "En un triangle rectangle el catet oposat a θ mesura 6, l'adjacent 8 i la hipotenusa 10. Calcula el tangent de θ. Selecciona el valor exacte correcte.",
+      "hint": "Identifica el catet oposat, l'adjacent i la hipotenusa respecte a l'angle θ.",
+      "explanation": "Procediment: Per tanθ es divideix 6/8; el quocient exacte és 0,75. Identifica el catet oposat, l'adjacent i la hipotenusa respecte a l'angle θ. Divideix exactament els costats apropiats; el si usa hipotenusa, el cosinus també i la tangent usa catets. Resposta exacta: 0,75. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L04-01": {
+      "prompt": "Una recta ascendeix 2 m per cada 10 m horitzontals. Calcula el seu pendent com a quocient exacte.",
+      "hint": "El pendent mesura desnivell vertical dividit per desplaçament horitzontal.",
+      "explanation": "Procediment: Pendent = 2/10 = 0,2; unitats lineals cancel·lades. El pendent mesura desnivell vertical dividit per desplaçament horitzontal. El resultat és un quocient sense unitats després de mesurar ambdós trams en metres. Resposta exacta: 0,2. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L04-02": {
+      "prompt": "Una rampa puja 3 m per cada 4 m horitzontals. Calcula el pendent percentual (escriu només el nombre).",
+      "hint": "Primer calcula el quocient de desnivell entre recorregut horitzontal.",
+      "explanation": "Procediment: Pendent en % = 100×(3/4) = 75%. Primer calcula el quocient de desnivell entre recorregut horitzontal. Multiplica per cent el pendent adimensional per expressar-la en tant per cent. Resposta exacta: 75. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L04-03": {
+      "prompt": "Una recta ascendeix 5 m per cada 10 m horitzontals. Calcula el seu pendent com a quocient exacte.",
+      "hint": "El pendent mesura desnivell vertical dividit per desplaçament horitzontal.",
+      "explanation": "Procediment: Pendent = 5/10 = 0,5; unitats lineals cancel·lades. El pendent mesura desnivell vertical dividit per desplaçament horitzontal. El resultat és un quocient sense unitats després de mesurar ambdós trams en metres. Resposta exacta: 0,5. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L04-04": {
+      "prompt": "Quant val exactament el pendent d'una recta que forma 45° amb l'horitzontal positiva? Selecciona el valor exacte correcte.",
+      "hint": "El pendent d'una recta no vertical coincideix amb la tangent de la seva inclinació.",
+      "explanation": "Procediment: La tangent de 45° és 1, per la qual cosa aquesta és el seu pendent. El pendent d'una recta no vertical coincideix amb la tangent de la seva inclinació. Per 45° usa el triangle rectangle de catets iguals: tan45 °=1. Resposta exacta: 1. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L04-05": {
+      "prompt": "Una rampa puja 1 m per cada 4 m horitzontals. Calcula el pendent percentual (escriu només el nombre). Selecciona el valor exacte correcte.",
+      "hint": "Primer calcula el quocient de desnivell entre recorregut horitzontal.",
+      "explanation": "Procediment: Pendent en % = 100×(1/4) = 25%. Primer calcula el quocient de desnivell entre recorregut horitzontal. Multiplica per cent el pendent adimensional per expressar-la en tant per cent. Resposta exacta: 25. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L05-01": {
+      "prompt": "Des d'un punt a 12 m horitzontals d'una paret vertical s'observa el cim amb elevació de 45°. Els ulls estan a 0 m sobre el sòl. Quants metres mesura la paret?",
+      "hint": "Identifica el triangle rectangle entre línia visual, horitzontal i paret.",
+      "explanation": "Procediment: Alçada sobre ulls = 12× tan45 °=12 m; més alçada ocular 0 m = 12 m. Identifica el triangle rectangle entre línia visual, horitzontal i paret. Primer troba el desnivell respecte dels ulls amb tangent; després suma l'altura de l'observador. Resposta exacta: 12. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L05-02": {
+      "prompt": "Des d'un punt a 12 m horitzontals d'una paret vertical s'observa el cim amb elevació de 45°. Els ulls estan a 1,5 m sobre el sòl. Quants metres mesura la paret?",
+      "hint": "Identifica el triangle rectangle entre línia visual, horitzontal i paret.",
+      "explanation": "Procediment: Alçada sobre ulls = 12× tan45 °=12 m; més alçada ocular 1,5 m = 13,5 m. Identifica el triangle rectangle entre línia visual, horitzontal i paret. Primer troba el desnivell respecte dels ulls amb tangent; després suma l'altura de l'observador. Resposta exacta: 13,5. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L05-03": {
+      "prompt": "Des d'un punt a 8 m horitzontals d'una paret vertical s'observa el cim amb elevació de 45°. Els ulls estan a 0 m sobre el sòl. Quants metres mesura la paret?",
+      "hint": "Identifica el triangle rectangle entre línia visual, horitzontal i paret.",
+      "explanation": "Procediment: Alçada sobre ulls = 8× tan45 °=8 m; més alçada ocular 0 m = 8 m. Identifica el triangle rectangle entre línia visual, horitzontal i paret. Primer troba el desnivell respecte dels ulls amb tangent; després suma l'altura de l'observador. Resposta exacta: 8. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L05-04": {
+      "prompt": "Des d'un punt a 15 m horitzontals d'una paret vertical s'observa el cim amb elevació de 45°. Els ulls estan a 2 m sobre el sòl. Quants metres mesura la paret? Selecciona el valor exacte correcte.",
+      "hint": "Identifica el triangle rectangle entre línia visual, horitzontal i paret.",
+      "explanation": "Procediment: Alçada sobre ulls = 15× tan45 °=15 m; més alçada ocular 2 m = 17 m. Identifica el triangle rectangle entre línia visual, horitzontal i paret. Primer troba el desnivell respecte dels ulls amb tangent; després suma l'altura de l'observador. Resposta exacta: 17. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L05-05": {
+      "prompt": "Des d'un punt a 9 m horitzontals d'una paret vertical s'observa el cim amb elevació de 45°. Els ulls estan a 1,5 m sobre el sòl. Quants metres mesura la paret? Selecciona el valor exacte correcte.",
+      "hint": "Identifica el triangle rectangle entre línia visual, horitzontal i paret.",
+      "explanation": "Procediment: Alçada sobre ulls = 9× tan45 °=9 m; més alçada ocular 1,5 m = 10,5 m. Identifica el triangle rectangle entre línia visual, horitzontal i paret. Primer troba el desnivell respecte dels ulls amb tangent; després suma l'altura de l'observador. Resposta exacta: 10,5. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L06-01": {
+      "prompt": "Un triangle rectangle té angle agut de 30° i hipotenusa de 10 cm. Calcula el catet oposat en cm.",
+      "hint": "Determina quina raó vincula el costat conegut amb el costat demanat i l'angle indicat.",
+      "explanation": "Procediment: Raó notable a 30° aplicada al costat 10: catet demanat = 5 cm. Determina quina raó vincula el costat conegut amb el costat demanat i l'angle indicat. Per a angles notables usa sen30 °=1/2, cos60 °=1/2, cos45 °=√2/2 i tan45 °=1, sense arrodonir. Resposta exacta: 5. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L06-02": {
+      "prompt": "Un triangle rectangle té angle agut de 30° i hipotenusa de 500 cm. Calcula el catet oposat en cm.",
+      "hint": "Determina quina raó vincula el costat conegut amb el costat demanat i l'angle indicat.",
+      "explanation": "Procediment: Raó notable a 30° aplicada al costat 500: catet demanat = 250 cm. Determina quina raó vincula el costat conegut amb el costat demanat i l'angle indicat. Per a angles notables usa sen30 °=1/2, cos60 °=1/2, cos45 °=√2/2 i tan45 °=1, sense arrodonir. Resposta exacta: 250. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L06-03": {
+      "prompt": "Una escala de 500 cm de longitud forma 30° amb el sòl. Quina altura vertical aconsegueix en METRES?",
+      "hint": "La longitud de l'escala és hipotenusa, i l'altura és catet oposat a trenta graus.",
+      "explanation": "Procediment: L'alçada és 500× sen30 ° = 500/2 cm = 2,5 m. La longitud de l'escala és hipotenusa, i l'altura és catet oposat a trenta graus. Usa SENO30 °=1/2 i converteix centímetres a metres després de calcular l'altura. Resposta exacta: 2,5. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L06-04": {
+      "prompt": "Un triangle rectangle té angle agut de 60° i hipotenusa de 10 cm. Calcula el catet adjacent en cm. Selecciona el valor exacte correcte.",
+      "hint": "Determina quina raó vincula el costat conegut amb el costat demanat i l'angle indicat.",
+      "explanation": "Procediment: Raó notable a 60° aplicada al costat 10: catet demanat = 5 cm. Determina quina raó vincula el costat conegut amb el costat demanat i l'angle indicat. Per a angles notables usa sen30 °=1/2, cos60 °=1/2, cos45 °=√2/2 i tan45 °=1, sense arrodonir. Resposta exacta: 5. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    },
+    "F3-E4B-G01-L06-05": {
+      "prompt": "Des d'un punt a 6 m horitzontals d'una paret vertical s'observa el cim amb elevació de 45°. Els ulls estan a 0 m sobre el sòl. Quants metres mesura la paret? Selecciona el valor exacte correcte.",
+      "hint": "Identifica el triangle rectangle entre línia visual, horitzontal i paret.",
+      "explanation": "Procediment: Alçada sobre ulls = 6× tan45 °=6 m; més alçada ocular 0 m = 6 m. Identifica el triangle rectangle entre línia visual, horitzontal i paret. Primer troba el desnivell respecte dels ulls amb tangent; després suma l'altura de l'observador. Resposta exacta: 6. Revisa les unitats, el quadrant o la hipòtesi geomètrica abans de passar al següent exercici."
+    }
+  }
+}

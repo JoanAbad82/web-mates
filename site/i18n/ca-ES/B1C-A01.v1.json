@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1C-A01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1c_a01.json": "57cecfd751a32e34ba73e1df74335ddea703da50408ff5243e4ce6ffdf284435",
+    "data/f3_b1c_a01_exercises.json": "6557f600fd1c1b13f7f3bc3c37a7618a1f79b6dc02065a06a7d11b9c074eabb7"
+  },
+  "lessons": {
+    "B1C-A01-L01": {
+      "title": "Equacions polinòmiques i racionals",
+      "objectives": [
+        "Resoldre equacions polinòmiques mitjançant factors i discriminant.",
+        "Resol equacions racionals no lineals amb control de denominadors."
+      ],
+      "content_blocks": [
+        {
+          "body": "En matemàtiques I es combinen factorització polinòmica, divisió per factors i l'anàlisi sistemàtica del domini. Si P(x)=0, la descomposició en factors permet enumerar arrels reals i multiplicitats; si la fórmula quadràtica té discriminant negatiu, no hi ha arrels reals. Per expressions racionals, els denominadors originals no poden anul·lar-se; el producte d'ells s'usa per eliminar fraccions només sobre el domini admès. Un factor cancel·lat no recupera el punt exclòs i una equació algebraicament simplificada pot introduir solucions prohibides. És imprescindible verificar les arrels en el problema original i distingir solucions reals de complexes quan la tasca està restringida a R."
+        },
+        {
+          "body": "x³−6x²+11x−6=(x−1)(x−2)(x−3). Les seves arrels reals són 1, 2 i 3."
+        },
+        {
+          "body": "(x²−1)/(x−1)=2, amb x≠1, simplifica x+1=2 i produeix x=1, que és invàlida: no té solució."
+        },
+        {
+          "body": "Polinomi cúbic i zeros reals. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Polinomi cúbic i zeros reals. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Polinomi cúbic i zeros reals"
+          }
+        },
+        {
+          "body": "Per què una arrel que anul·la el denominador original mai s'admet després d'una cancel·lació?||Perquè l'expressió de partida estava indefinida en aquest valor."
+        },
+        {
+          "body": "Recuperació: En matemàtiques I es combinen factorització polinòmica, divisió per factors i l'anàlisi sistemàtica del domini. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    },
+    "B1C-A01-L02": {
+      "title": "Equacions amb radicals i logaritmes senzilles",
+      "objectives": [
+        "Resol equacions amb radicals verificant restriccions de signe.",
+        "Reconèixer la definició i les restriccions de logaritmes senzills."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per √F(x)=G(x) es requereix F(x)≥0 i G(x)≥0, i només després es pot elevar al quadrat; les arrels de l'equació quadrada són candidates i han de comprovar-se. Per logaritmes reals es requereix argument estrictament positiu i base a>0, a≠1; log_ a(t)=k significa a^k=t. En una equació log_2 (x−1)=3, la restricció x>1 antecedeix a x−1=8, que dóna x=9. La definició de logaritme com a operació inversa de l'exponentciació s'exposa aquí de manera autònoma; el seu estudi previ detallat en E4B-F01 encara no es dóna per desenvolupat. No es pot aplicar el logaritme a zero o nombres negatius en R."
+        },
+        {
+          "body": "√(x+1)=x−1 produeix x=0 i x=3 en quadrar; només x=3 verifica signes i l'equació inicial."
+        },
+        {
+          "body": "log ₂(x−1)=3 implica x−1=2³=8 i x=9, que satisfà x>1."
+        },
+        {
+          "body": "Domini d'arrel i logaritme. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Domini d'arrel i logaritme. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Domini d'arrel i logaritme"
+          }
+        },
+        {
+          "body": "Es permet x=1 en log ₂(x−1)=3?||No. L'argument seria zero i els logaritmes reals exigeixen argument positiu."
+        },
+        {
+          "body": "Recuperació: Per √F(x)=G(x) es requereix F(x)≥0 i G(x)≥0, i només després es pot elevar al quadrat; les arrels de l'equació quadrada són candidates i s'han de comprovar. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    },
+    "B1C-A01-L03": {
+      "title": "Sistemes lineals i no lineals",
+      "objectives": [
+        "Resoldre sistemes lineals de dues incògnites per reducció i discutir compatibilitat.",
+        "Resoldre sistemes senzills de recta i paràbola controlant totes les interseccions."
+      ],
+      "content_blocks": [
+        {
+          "body": "En un sistema lineal A·(x, y)^T=b amb matriu 2×2, el determinant Δ= ad − bc classifica la unicitat si Δ≠0; si Δ=0 cal comparar files i termes independents per determinar infinites solucions o inconsistència. Gauss aplica operacions elementals reversibles a les equacions: intercanviar files, sumar múltiples d'una altra o escalar per un nombre no nul. Un sistema lineal i quadràtic pot produir dues interseccions, una tangència o cap en R; substituir l'expressió lineal en la paràbola i resoldre evita llegir solucions aproximades d'una gràfica. Tota parella solució ha de complir totes dues equacions originals."
+        },
+        {
+          "body": "x+y=5 i 2x−y=1 porten a 3x=6, per tant x=2 i y=3, comprovables en ambdues."
+        },
+        {
+          "body": "El sistema y=x² i y=x+2 implica x²−x−2=0, així que les solucions són (−1,1) i (2,4)."
+        },
+        {
+          "body": "Sistemes lineals i no lineals. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Sistemes lineals i no lineals. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Sistemes lineals i no lineals"
+          }
+        },
+        {
+          "body": "Un sistema amb determinant zero és sempre incompatible?||No. La proporcionalitat de les equacions completes pot produir infinites solucions."
+        },
+        {
+          "body": "Recuperació: En un sistema lineal A·(x, y)^T=b amb matriu 2×2, el determinant Δ= ad − bc classifica la unicitat si Δ≠0; si Δ=0 cal comparar files i termes independents per determinar infinites solucions o inconsistència. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    },
+    "B1C-A01-L04": {
+      "title": "Inequacions i sistemes",
+      "objectives": [
+        "Resol inequacions polinòmiques mitjançant taules de signe.",
+        "Combinar conjunts solució amb intersecció o unió justificades."
+      ],
+      "content_blocks": [
+        {
+          "body": "En una desigualtat polinòmica com (x−2)(x−3)≥0, els zeros divideixen l'eix en intervals de signe constant. Per un quadràtic mònic amb dues arrels simples 2 i 3, el producte és no negatiu fora de l'interval intermedi: x≤2 o x≥3. Un sistema de desigualtats correspon a la intersecció de conjunts solució; una disjunció s'expressa com a unió. En expressions racionals també són punts de tall els zeros del denominador, que sempre s'exclouen. Multiplicar per una expressió el signe de la qual es desconeix sense dividir per casos pot invertir o no la desigualtat, i no és un pas segur."
+        },
+        {
+          "body": "(x−2)(x−3)≥0 equival a x≤2 o x≥3. Els extrems estan inclosos perquè la comparació és ≥."
+        },
+        {
+          "body": "El sistema x>1, x≤4 té interval (1,4], diferent de la unió d'ambdues desigualtats."
+        },
+        {
+          "body": "Taula de signes d'un producte. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Taula de signes d'un producte. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Taula de signes d'un producte"
+          }
+        },
+        {
+          "body": "En resoldre (x−2)(x−3)<0 s'admeten x=2 i x=3?||No: el producte val zero i la desigualtat és estricta; resulta 2<x<3."
+        },
+        {
+          "body": "Recuperació: En una desigualtat polinòmica com (x−2)(x−3)≥0, els zeros divideixen l'eix en intervals de signe constant. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    },
+    "B1C-A01-L05": {
+      "title": "Modelització algebraica",
+      "objectives": [
+        "Traduir situacions contextualitzades a sistemes lineals.",
+        "Distingir resultats algebraics de solucions físicament admissibles."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una modelització algebraica defineix primer les incògnites amb unitats i després construeix les equacions de conservació (preu, quantitat, massa o temps). En el sistema x+y=12 i 2x+3y=30, x i i poden representar quantitats de productes; resoldre produeix x=6, y=6, tots dos no negatius i compatibles amb la primera igualtat. Si un resultat és negatiu per a una magnitud que no pot ser-ho, cal revisar el model o descartar-lo, no acceptar cegament la solució matemàtica. Comprovar els resultats en l'enunciat, interpretar unitats i avaluar si hi ha suficients equacions evita confondre solucions múltiples amb una resposta única."
+        },
+        {
+          "body": "En una venda s'adquireixen 12 objectes: uns costen 2 € i altres 3 €. Si es paguen 30 €, x+y=12, 2x+3y=30; hi ha 6 de cada classe."
+        },
+        {
+          "body": "En una barreja de 10 L amb 4 L del primer component, el segon aporta 6 L, calculats per conservació de volum."
+        },
+        {
+          "body": "Model de dos preus i dues quantitats. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Model de dos preus i dues quantitats. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Model de dos preus i dues quantitats"
+          }
+        },
+        {
+          "body": "És vàlid acceptar una solució x=−4 per a un nombre d'entrades venudes?||No, encara que pugui satisfer una equació abstracta: el context exigeix quantitat no negativa."
+        },
+        {
+          "body": "Recuperació: Una modelització algebraica defineix primer les incògnites amb unitats i després construeix les equacions de conservació (preu, quantitat, massa o temps). Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    },
+    "B1C-A01-L06": {
+      "title": "Comprovació de restriccions",
+      "objectives": [
+        "Comprovar restriccions i equivalències d'equacions racionals, radicals i sistemes.",
+        "Diagnosticar solucions estranyes sense perdre les vàlides."
+      ],
+      "content_blocks": [
+        {
+          "body": "La solució final d'un problema algebraic no és simplement la llista d'arrels d'un polinomi obtingut: ha d'intersectar-se amb el domini original i comprovar-se en cada equació. Per √(x+1)=x−1 s'exigeix x≥1; elevar al quadrat produeix x(x−3)=0 i la candidata x=0 falla, per la qual cosa la solució és x=3. Per (x²−9)/(x−3)=6 el domini exclou x=3, i la solució del polinomi transformat cau fora d'ell, així que no existeix solució. En sistemes han de complir-se totes les equacions simultàniament. Els passos de squaring, cancel·lació i eliminació de denominadors s'anoten com a implicacions condicionades, no com a equivalències sense restriccions."
+        },
+        {
+          "body": "(x+2)/(x−2)=3 exigeix x≠2, multiplicar per x−2 dóna x+2=3x−6 i x=4, vàlida."
+        },
+        {
+          "body": "√(x+1)=x−1: es proven 0 i 3 en origen, es descarta 0 i es conserva 3."
+        },
+        {
+          "body": "Control final de domini i equivalència. Recurs gràfic simbòlic i cartesià amb alternativa tabular semàntica exacta; no es requereix interpretar el color o la posició visual per resoldre.",
+          "alt": "Control final de domini i equivalència. La taula semàntica identifica expressions, restriccions i arrels exactes, independentment de la imatge.",
+          "visual_spec": {
+            "title": "Control final de domini i equivalència"
+          }
+        },
+        {
+          "body": "És suficient substituir una arrel en l'equació transformada?||No: has de comprovar-la en l'original, inclosos denominadors, radicals, signes i context."
+        },
+        {
+          "body": "Recuperació: La solució final d'un problema algebraic no és simplement la llista d'arrels d'un polinomi obtingut: ha d'intersectar-se amb el domini original i comprovar-se en cada equació. Reprodueix l'explicació de memòria, anota hipòtesi i comprova una variant sense pistes."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1C-A01-L01-01": {
+      "prompt": "El polinomi factoritzat (x−(1))(x−(2))(x−(3))=0 té tres arrels. Calcula la suma. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 6. Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: 6. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L01-02": {
+      "prompt": "El polinomi (x−(1))(x−(2))(x−(3))=0 té tres arrels. Calcula el seu PRODUCTE. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 6. Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: 6. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L01-03": {
+      "prompt": "Torna al domini x≠1: (x²−1)/(x−1)=2. Encara que es cancel·li, comprova el valor exclòs. Selecciona la resposta exacta.",
+      "hint": "Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors.",
+      "explanation": "Procediment i verificació: El candidat x=1 anul·la el denominador original; no compleix el domini. Resultat: Sense solució. Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors. Multiplica només en el domini permès, factoritza i comprova les arrels en les fraccions de partida. Resposta exacta: Sense solució. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L01-04": {
+      "prompt": "Resol (x−(-2))(x−(4))=0. Retorna les arrels reals ordenades (x₁, x₂). Selecciona la resposta exacta.",
+      "hint": "Organitza l'equació i distingeix discriminant d'arrel i cas degenerat.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté (-2, 4). Organitza l'equació i distingeix discriminant d'arrel i cas degenerat. La lineal ax +b=c es buida si a≠0; Δ=b²−4a c determina arrels reals en la quadràtica. Resposta exacta: (-2, 4). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L01-05": {
+      "prompt": "Calcula la resta de dividir P(x)=1x^3 + -6x^2 + 11x^1 + -6x^0 per x−(3). Empra el teorema de la resta P(3). Selecciona la resposta exacta.",
+      "hint": "Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r).",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 0. Les arrels es verifiquen substituint P(r)=0; la resta en dividir per x−r és P(r). Usa Ruffini només amb divisor lineal, factoritza si la resta és zero; no divideixes entre x en una equació amb factor x. Resposta exacta: 0. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L02-01": {
+      "prompt": "Torna a R √(x+1)=x−1. Descarta l'arrel estranya després d'elevar al quadrat. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu.",
+      "explanation": "Procediment i verificació: L'equació al quadrat ofereix 0 i 3; x−1≥0 descarta zero. Solució comprovada: 3. Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu. Abans de quadrar exigeix el signe del costat dret; verifica cada candidat en origen. Per log_ a(t)=k usa t=a^k amb a>0, a≠1. Resposta exacta: 3. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L02-02": {
+      "prompt": "Resol log_2 (x−(1))=3 en reals. Primer exigeix argument positiu i després usa la definició de logaritme. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu.",
+      "explanation": "Procediment i verificació: De log_2 (x−1)=3 es dedueix x−1=8, vàlid amb argument positiu. Resultat 9. Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu. Abans de quadrar exigeix el signe del costat dret; verifica cada candidat en origen. Per log_ a(t)=k usa t=a^k amb a>0, a≠1. Resposta exacta: 9. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L02-03": {
+      "prompt": "Indica la condició de domini real de log ₂(x−(1)). Selecciona la resposta exacta.",
+      "hint": "Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté x>1. Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu. Abans de quadrar exigeix el signe del costat dret; verifica cada candidat en origen. Per log_ a(t)=k usa t=a^k amb a>0, a≠1. Resposta exacta: x>1. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L02-04": {
+      "prompt": "Resol log_3 (x−(2))=2 en reals. Primer exigeix argument positiu i després usa la definició de logaritme. Selecciona la resposta exacta.",
+      "hint": "Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu.",
+      "explanation": "Procediment i verificació: De log_3 (x−2)=2 es dedueix x−2=9, vàlid amb argument positiu. Resultat 11. Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu. Abans de quadrar exigeix el signe del costat dret; verifica cada candidat en origen. Per log_ a(t)=k usa t=a^k amb a>0, a≠1. Resposta exacta: 11. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L02-05": {
+      "prompt": "En elevar al quadrat √(x+9)=x−3, QUANTES candidates algebraiques s'obtenen ABANS de comprovar el signe? Selecciona la resposta exacta.",
+      "hint": "Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 2. Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu. Abans de quadrar exigeix el signe del costat dret; verifica cada candidat en origen. Per log_ a(t)=k usa t=a^k amb a>0, a≠1. Resposta exacta: 2. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L03-01": {
+      "prompt": "Resol el sistema 1x+(1)y=5; 2x+(-1)y=1. Retorna la parella (x,y) comprovada. Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Determinant =-3, no nul; les coordenades (2, 3) compleixen 5 i 1 en ambdues equacions. Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: (2, 3). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L03-02": {
+      "prompt": "Classifica el sistema 1x+(1)y=2; 2x+(2)y=4 com a Única, Cap o Infinites solucions. Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Determinant =0. Si s'anul·la, compara les files ampliades per distingir coincidència i contradicció: Infinites. Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: Infinites. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L03-03": {
+      "prompt": "Troba les ABSCISES d'intersecció de la recta y=1x+2 i la paràbola y=x². Retorna el parell ordenat (x₁, x₂). Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté (-1, 2). Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: (-1, 2). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L03-04": {
+      "prompt": "Resol el sistema 3x+(2)y=7; 2x+(-1)y=0. Retorna la parella (x,y) comprovada. Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Determinant =-7, no nul; les coordenades (1, 2) compleixen 7 i 0 en ambdues equacions. Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: (1, 2). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L03-05": {
+      "prompt": "Classifica el sistema 1x+(1)y=2; 2x+(2)y=5 com a Única, Cap o Infinites solucions. Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Determinant =0. Si s'anul·la, compara les files ampliades per a distingir coincidència i contradicció: Cap. Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: Cap. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L04-01": {
+      "prompt": "Ressol sobre R (x−(2))(x−(3)) ≥ 0. Inclou o exclou extrems segons la desigualtat. Selecciona la resposta exacta.",
+      "hint": "Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté x≤2 o x≥3. Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions. Invertir comparació en dividir per negatiu; per a producte quadràtic, usa signes d'intervals entre zeros. Resposta exacta: x≤2 o x≥3. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L04-02": {
+      "prompt": "Ressol sobre R (x−(2))(x−(3)) < 0. Inclou o exclou extrems segons la desigualtat. Selecciona la resposta exacta.",
+      "hint": "Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 2<x<3. Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions. Invertir comparació en dividir per negatiu; per a producte quadràtic, usa signes d'intervals entre zeros. Resposta exacta: 2<x<3. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L04-03": {
+      "prompt": "Descriu l'INTERVAL de la intersecció x>1 i x≤4. Usa parèntesis i claudàtors. Selecciona la resposta exacta.",
+      "hint": "Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté (1,4]. Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions. Invertir comparació en dividir per negatiu; per a producte quadràtic, usa signes d'intervals entre zeros. Resposta exacta: (1,4]. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L04-04": {
+      "prompt": "Resol -4x+(2) > 10. Escriu la desigualtat correcta per a x, inverteix el signe si es divideixen per negatiu. Selecciona la resposta exacta.",
+      "hint": "Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions.",
+      "explanation": "Procediment i verificació: Desplaça x amb atenció a la inversió de desigualtat si el coeficient és negatiu. Solució x<-2. Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions. Invertir comparació en dividir per negatiu; per a producte quadràtic, usa signes d'intervals entre zeros. Resposta exacta: x<-2. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L04-05": {
+      "prompt": "Ressol sobre R (x−(-2))(x−(1)) ≤ 0. Inclou o exclou extrems segons la desigualtat. Selecciona la resposta exacta.",
+      "hint": "Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté -2≤x≤1. Llegeix si la desigualtat és estricta i determina quins intervals satisfan simultàniament les condicions. Invertir comparació en dividir per negatiu; per a producte quadràtic, usa signes d'intervals entre zeros. Resposta exacta: -2≤x≤1. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L05-01": {
+      "prompt": "Es venen 12 entrades de dos tipus, de 2 € i 3 €, amb recaptació 30 €. Quantes de cada tipus? Respon (no del primer tipus, no del segon). Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté (6, 6). Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: (6, 6). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L05-02": {
+      "prompt": "Resol el sistema 1x+(1)y=12; 2x+(3)y=30. Retorna la parella (x,y) comprovada. Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Determinant =1, no nul; les coordenades (6, 6) compleixen 12 i 30 en ambdues equacions. Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: (6, 6). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L05-03": {
+      "prompt": "Hi ha 10 litres de barreja, dels quals 4 L pertanyen al component A. Quants litres són del component B? Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté 6. Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: 6. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L05-04": {
+      "prompt": "Es venen 15 entrades de dos tipus, de 1 € i 2 €, amb recaptació 24 €. Quantes de cada tipus? Respon (no del primer tipus, no del segon). Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Aplicant les transformacions algebraiques amb les seves condicions d'equivalència i substituint les dades s'obté (6, 9). Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: (6, 9). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L05-05": {
+      "prompt": "Resol el sistema 1x+(1)y=6; 3x+(5)y=26. Retorna la parella (x,y) comprovada. Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Determinant =2, no nul; les coordenades (2, 4) compleixen 6 i 26 en ambdues equacions. Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: (2, 4). Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L06-01": {
+      "prompt": "Resol (x+(2))/(x−(2))=3, amb x≠2. Comprova el resultat en l'equació original. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors.",
+      "explanation": "Procediment i verificació: Condició x≠2; multiplicant en el domini s'obté (1−3)x=−2−6, i en buidar es comprova 4. Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors. Multiplica només en el domini permès, factoritza i comprova les arrels en les fraccions de partida. Resposta exacta: 4. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L06-02": {
+      "prompt": "Torna a R √(x+1)=x−1. Descarta l'arrel estranya després d'elevar al quadrat. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu.",
+      "explanation": "Procediment i verificació: L'equació al quadrat ofereix 0 i 3; x−1≥0 descarta zero. Solució comprovada: 3. Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu. Abans de quadrar exigeix el signe del costat dret; verifica cada candidat en origen. Per log_ a(t)=k usa t=a^k amb a>0, a≠1. Resposta exacta: 3. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L06-03": {
+      "prompt": "Torna al domini x≠3: (x²−9)/(x−3)=6. Encara que es cancel·li, comprova el valor exclòs. Selecciona la resposta exacta.",
+      "hint": "Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors.",
+      "explanation": "Procediment i verificació: El candidat x=3 anul·la el denominador original; no compleix el domini. Resultat: Sense solució. Anota els zeros del denominador original abans de cancel·lar o eliminar els denominadors. Multiplica només en el domini permès, factoritza i comprova les arrels en les fraccions de partida. Resposta exacta: Sense solució. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L06-04": {
+      "prompt": "Resol log_2 (x−(1))=3 en reals. Primer exigeix argument positiu i després usa la definició de logaritme. Selecciona la resposta exacta.",
+      "hint": "Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu.",
+      "explanation": "Procediment i verificació: De log_2 (x−1)=3 es dedueix x−1=8, vàlid amb argument positiu. Resultat 9. Radicals exigeixen argument no negatiu, logaritmes reals argument estrictament positiu. Abans de quadrar exigeix el signe del costat dret; verifica cada candidat en origen. Per log_ a(t)=k usa t=a^k amb a>0, a≠1. Resposta exacta: 9. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    },
+    "F3-B1C-A01-L06-05": {
+      "prompt": "Classifica el sistema 1x+(1)y=2; 2x+(2)y=5 com a Única, Cap o Infinites solucions. Selecciona la resposta exacta.",
+      "hint": "Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix.",
+      "explanation": "Procediment i verificació: Determinant =0. Si s'anul·la, compara les files ampliades per a distingir coincidència i contradicció: Cap. Nomena les incògnites i comprova ambdues equacions; elimina una variable o substitueix. En 2×2, D= ad − bc ≠0 assegura solució única; D=0 requereix discutir compatibilitat, mai dividir per zero. Resposta exacta: Cap. Comprova els signes, el domini original i les equacions implicades abans de continuar."
+    }
+  }
+}

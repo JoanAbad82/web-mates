@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E4A-G01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e4a_g01.json": "de7c54e7435e2649e420bd92b25946e69cd69f443cf8f945fac349b913b86722",
+    "data/f3_e4a_g01_exercises.json": "2a1e551dc8961d425486127bf52f4576cdda5a01c0b1db45a77592b9a0452f60"
+  },
+  "lessons": {
+    "E4A-G01-L01": {
+      "title": "Teorema de Pitàgores i semblança en contextos",
+      "objectives": [
+        "Resoldre distàncies geomètriques amb Pitàgores i justificar triangles rectangles.",
+        "Aplicar semblança a longituds homòlogues en plànols i objectes."
+      ],
+      "content_blocks": [
+        {
+          "body": "El teorema de Pitàgores estableix a²+b²=c² per a un triangle rectangle on c és la hipotenusa; no val com a igualtat general per a qualsevol triangle. Per costats perpendiculars de 3 i 4 unitats s'obté diagonal 5, ja que 9+16=25. En semblança, angles corresponents es mantenen i tots els costats homòlegs canvien segons la mateixa raó k>0. Si un costat passa de 3 a 6, la raó lineal és 2 i un costat corresponent de 4 passarà a 8. Una prova contextual ha de distingir longitud, superfície i volum i explicitar unitats de mesura. Amb dades aproximades, la solució final pot requerir arrodoniment proporcional a la precisió d'entrada."
+        },
+        {
+          "body": "Una pantalla rectangular mesura 6 cm per 8 cm. La seva diagonal és √(6²+8²)=10 cm, perquè les vores són perpendiculars."
+        },
+        {
+          "body": "Dos triangles semblants tenen costats corresponents 3↔6 i 4↔8 cm; la raó k=2 i els angles són iguals. La hipotenusa 5↔10."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Teorema de Pitàgores i semblança en contextos. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Teorema de Pitàgores i semblança en contextos"
+          }
+        },
+        {
+          "body": "Pot usar-se c²=a²+b² en un triangle no rectangle sense més?||No; Pitàgores exigeix un angle recte."
+        },
+        {
+          "body": "Recuperació activa: Resoldre distàncies geomètriques amb Pitàgores i justificar triangles rectangles. Marca un angle de 90° i distingeix catets d'hipotenusa. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E4A-G01-L02": {
+      "title": "Escales de plànols",
+      "objectives": [
+        "Interpretar escales lineals de plans amb conversions coherents.",
+        "Calcula àrees reals a partir d'escales de longitud elevades al quadrat."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una escala 1:s significa que una unitat de longitud del pla representa s unitats reals de la mateixa classe. Un segment de 4 cm en un dibuix 1: 500 correspon a 2000 cm reals, és a dir 20 metres. L'escala no es trasllada directament de forma lineal a superfícies: una àrea de 3 cm ² en el pla representa 3×500² cm ²=750000 cm ²=75 m² reals. La conversió entre cm ² i m² usa 10 000, no 100. Si l'escala no és uniforme o el pla està deformat, aquestes fórmules no serien vàlides. Una representació fiable inclou unitats, escala gràfica o numèrica i una estimació raonable de l'error de mesurament."
+        },
+        {
+          "body": "Un plànol a 1: 500 mostra un costat de 4 cm: longitud real 4×500=2000 cm =20 m."
+        },
+        {
+          "body": "La superfície d'un rectangle de 2 cm ×3 cm en aquest pla és 6 cm ²; en terreny equival a 6×500²/10000=150 m²."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Escales de plànols. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Escales de plànols"
+          }
+        },
+        {
+          "body": "Si un pla amplia distàncies 500 vegades, multiplica superfícies també per 500?||No, l'àrea escala per 500²."
+        },
+        {
+          "body": "Recuperació activa: Interpretar escales lineals de plans amb conversions coherents. Primer converteix longituds conservant la mateixa unitat. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E4A-G01-L03": {
+      "title": "Pendent i angles",
+      "objectives": [
+        "Calcula els pendents de les rectes no verticals a partir de coordenades.",
+        "Relacionar pendent amb angle i identificar rectes horitzontals i verticals."
+      ],
+      "content_blocks": [
+        {
+          "body": "El pendent de la recta que passa per (x₁, y₁) i (x₂, y₂) amb x₁≠x₂ és m=(y₂−y₁)/(x₂−x₁). Una recta horitzontal té pendent zero; per a una recta vertical el denominador és zero i no es defineix pendent finit. El pendent m és igual a tan (θ) per l'angle θ d'inclinació respecte a l'horitzontal positiva, amb convencions angulars clares. Un pendent de 1 correspon a 45°, i m=√3 a 60° en el primer quadrant. Els pendents de dues rectes no verticals perpendiculars satisfan m₁m₂=−1. Els eixos, el sentit positiu i les unitats han de constar en el gràfic."
+        },
+        {
+          "body": "Entre P=(1,2) i Q=(4,8), el pendent m=(8−2)/(4−1)=6/3=2. L'angle d'inclinació és arcten (2)≈63,435°."
+        },
+        {
+          "body": "Una recta de pendent 1 forma 45° amb horitzontal positiva. Per a pendent −1 el seu angle orientat es pot expressar com 135°, no 45°."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Pendent i angles. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Pendent i angles"
+          }
+        },
+        {
+          "body": "El pendent d'una recta vertical és zero?||No: és indefinida; el pendent zero correspon a recta horitzontal."
+        },
+        {
+          "body": "Recuperació activa: Calcula els pendents de rectes no verticals a partir de coordenades. Resta en el mateix ordre numerador i denominador. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E4A-G01-L04": {
+      "title": "Coordenades i rectes",
+      "objectives": [
+        "Relacionar una recta no vertical amb l'equació y= mx +b.",
+        "Calcula interseccions i verifica punts substituint-los en equacions."
+      ],
+      "content_blocks": [
+        {
+          "body": "L'equació explícita y= mx +b descriu una recta no vertical de pendent m i tall amb l'eix vertical b. Si es coneixen un punt (x₀, y₀) i el pendent, es pot escriure y−y₀=m(x−x₀). Per intersecar dues rectes s'igualen les seves expressions de y i es resol x; després es comprova i en ambdues equacions. Per exemple, y=2x+1 i y=x+4 es tallen en x=3, y=7. Si els pendents són iguals i els seus talls diferents, són paral·leles i no s'intersequen. Les rectes verticals s'expressen x=c, no amb m infinit numèric. Una representació amb eixos i unitats ajuda a detectar solucions incoherents."
+        },
+        {
+          "body": "Per y=2x+1 i y=x+4, igualar dóna 2x+1=x+4, x=3 i y=7. El punt (3,7) satisfà ambdues."
+        },
+        {
+          "body": "La recta per (1,3) amb pendent 2 compleix y−3=2(x−1), és a dir y=2x+1. La seva cort amb l'eix vertical és 1."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Coordenades i rectes. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Coordenades i rectes"
+          }
+        },
+        {
+          "body": "Tenen sempre un punt de tall dues rectes amb pendent igual però diferent tall vertical?||No; són paral·leles sense intersecció."
+        },
+        {
+          "body": "Recuperació activa: Relacionar una recta no vertical amb l'equació y= mx +b. Iguala les dues expressions de y; verifica el parell resultant en les dues. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E4A-G01-L05": {
+      "title": "Transformacions geomètriques",
+      "objectives": [
+        "Identificar translacions, girs, reflexions i homotècies de figures.",
+        "Calcula les coordenades transformades i distingeix les isometries de canvis d'escala."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una translació de vector (a, b) converteix P=(x, i) en P′=(x+a, y+b). La reflexió respecte de l'eix x produeix (x, −y) i un gir de 90° antihorari al voltant de l'origen produeix (−y, x). Aquestes tres transformacions són isometries i conserven distàncies, encara que una reflexió inverteix l'orientació de les figures. Una homotècia de centre origen i raó k transforma (x,y) en (kx,ky), canviant longituds per k i àrees per k². És essencial declarar el centre, eix i sentit de la transformació; sense aquestes dades no existeix una resposta única. En un problema combinat s'aplica l'ordre indicat, ja que certes composicions no commuten."
+        },
+        {
+          "body": "Traslladar P=(3, −1) per v=(−2,4) dóna P′=(1,3). La distància entre punts corresponent és la longitud del vector v=√20."
+        },
+        {
+          "body": "El gir antihorari de 90° de Q=(2,1) dóna Q′=(−1,2), mentre reflectir Q en l'eix x dóna (2, −1)."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Transformacions geomètriques. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Transformacions geomètriques"
+          }
+        },
+        {
+          "body": "La reflexió sobre eix x inverteix també el signe de x?||No; conserva x i canvia el signe de y."
+        },
+        {
+          "body": "Recuperació activa: Identificar translacions, girs, reflexions i homotècies de figures. Fixa l'origen o centre abans d'operar. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E4A-G01-L06": {
+      "title": "Mesurament en projectes",
+      "objectives": [
+        "Planificar mesuraments geomètrics contextualitzats amb unitats i escala.",
+        "Verificar dimensions, resultats i fonts d'error de mesures."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un mesurament aplicat necessita un model geomètric explícit, escala, unitats i tolerància. Per a un terreny rectangular de 4 m ×3 m, la superfície és 12 m² i el seu perímetre 14 m; ambdues magnituds no s'han de confondre. Si el dibuix està a escala 1: 200, una distància de 3 cm representa 600 cm =6 m. L'arrodoniment ha de reflectir precisió de mesures, i una superfície construïda a partir de longituds aproximades hereta incertesa. Els problemes de projecte inclouen estimar materials, delimitar restriccions i explicar per què s'usa un model de rectangle, triangle o cercle. No s'han de convertir unitats quadrades mitjançant factors lineals ni presentar precisió no recolzada per l'instrument."
+        },
+        {
+          "body": "Un hort rectangular de costats 4 m i 3 m requereix 14 m de prop (perímetre) i té superfície 12 m²; cada xifra respon a preguntes diferents."
+        },
+        {
+          "body": "En un pla a escala 1: 200, un segment de 3 cm representa 600 cm reals, equivalents a 6 m; sense la conversió final la unitat queda malament."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Mesurament en projectes. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Mesurament en projectes"
+          }
+        },
+        {
+          "body": "La superfície del rectangle de 4×3 s'expressa en metres lineals?||No; són 12 metres quadrats."
+        },
+        {
+          "body": "Recuperació activa: Planificar mesuraments geomètrics contextualitzats amb unitats i escala. Distingeix magnituds lineals i quadràtiques abans del càlcul. Repaso D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E4A-G01-L01-01": {
+      "prompt": "Un rectangle té costats perpendiculars 6 i 8 cm. Diagonal en cm?",
+      "hint": "Marca un angle de 90° i distingeix catets d'hipotenusa.",
+      "explanation": "√(6²+8²)=√100=10 cm usant Pitàgores. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4A-G01-L01-02": {
+      "prompt": "Triangle semblant: base inicial 3 cm, factor 2. Base final?",
+      "hint": "Marca un angle de 90° i distingeix catets d'hipotenusa.",
+      "explanation": "Els costats homòlegs es multipliquen per la raó lineal 2."
+    },
+    "F3-E4A-G01-L01-03": {
+      "prompt": "Catets de 3 i 4 cm: hipotenusa en cm?",
+      "hint": "Marca un angle de 90° i distingeix catets d'hipotenusa.",
+      "explanation": "3²+4²=25; la seva arrel positiva és 5. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4A-G01-L01-04": {
+      "prompt": "Què exigeix la igualtat a²+b²=c² de Pitàgores?",
+      "hint": "Marca un angle de 90° i distingeix catets d'hipotenusa.",
+      "explanation": "El teorema suposa un angle recte entre els catets."
+    },
+    "F3-E4A-G01-L01-05": {
+      "prompt": "Quina propietat es conserva en triangles semblants?",
+      "hint": "Marca un angle de 90° i distingeix catets d'hipotenusa.",
+      "explanation": "La semblança manté forma i multiplica longituds per k."
+    },
+    "F3-E4A-G01-L02-01": {
+      "prompt": "Escala 1: 500, distància 4 cm en pla. Distància real en metres?",
+      "hint": "Primer converteix longituds conservant la mateixa unitat.",
+      "explanation": "4×500=2000 cm, és a dir 20 m. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4A-G01-L02-02": {
+      "prompt": "Escala 1: 500, àrea de plànol 6 cm ². Àrea real en m²?",
+      "hint": "Primer converteix longituds conservant la mateixa unitat.",
+      "explanation": "6×500²/10000=150 m². El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4A-G01-L02-03": {
+      "prompt": "En escala 1: 500, un segment de 2 cm correspon a quants m?",
+      "hint": "Primer converteix longituds conservant la mateixa unitat.",
+      "explanation": "2×500 cm =1000 cm =10 m. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4A-G01-L02-04": {
+      "prompt": "Com canvia l'àrea en usar una raó lineal d'escala 500?",
+      "hint": "Primer converteix longituds conservant la mateixa unitat.",
+      "explanation": "Dues dimensions lineals generen un factor quadràtic."
+    },
+    "F3-E4A-G01-L02-05": {
+      "prompt": "Per a convertir cm ² a m², quin és el divisor exacte?",
+      "hint": "Primer converteix longituds conservant la mateixa unitat.",
+      "explanation": "1 m²=(100 cm )²=10000 cm ². El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4A-G01-L03-01": {
+      "prompt": "Pendent entre P=(1,2) i Q=(4,8)?",
+      "hint": "Resta en el mateix ordre numerador i denominador.",
+      "explanation": "(8−2)/(4−1)=6/3=2. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4A-G01-L03-02": {
+      "prompt": "Angle d'inclinació en graus de recta pendent 1?",
+      "hint": "Resta en el mateix ordre numerador i denominador.",
+      "explanation": "arcten (1)=45° sota la convenció d'inclinació."
+    },
+    "F3-E4A-G01-L03-03": {
+      "prompt": "Pendent entre (0,5) i (5,5)?",
+      "hint": "Resta en el mateix ordre numerador i denominador.",
+      "explanation": "Δy=0, per tant la recta és horitzontal i m=0."
+    },
+    "F3-E4A-G01-L03-04": {
+      "prompt": "Quin és el pendent d'una recta vertical x=2?",
+      "hint": "Resta en el mateix ordre numerador i denominador.",
+      "explanation": "Δx=0 i no és possible dividir Δ i per zero."
+    },
+    "F3-E4A-G01-L03-05": {
+      "prompt": "Si dues rectes no verticals tenen pendents 2 i −1/2, són:",
+      "hint": "Resta en el mateix ordre numerador i denominador.",
+      "explanation": "Sota coordenades ortogonals el producte de pendents perpendiculars és −1."
+    },
+    "F3-E4A-G01-L04-01": {
+      "prompt": "Intersecció de y=2x+1 e y=x+4: coordinada x?",
+      "hint": "Iguala les dues expressions de y; verifica el parell resultant en les dues.",
+      "explanation": "Iguala ambdues: 2x+1=x+4→x=3. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4A-G01-L04-02": {
+      "prompt": "En la intersecció de y=2x+1 i y=x+4, coordenades i?",
+      "hint": "Iguala les dues expressions de y; verifica el parell resultant en les dues.",
+      "explanation": "Per x=3, y=2×3+1=7. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4A-G01-L04-03": {
+      "prompt": "En y=2x+1, calcula i per x=1.",
+      "hint": "Iguala les dues expressions de y; verifica el parell resultant en les dues.",
+      "explanation": "y=2×1+1=3. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4A-G01-L04-04": {
+      "prompt": "Dues rectes d'igual pendent i talls verticals diferents són:",
+      "hint": "Iguala les dues expressions de y; verifica el parell resultant en les dues.",
+      "explanation": "Les expressions y= mx +b no tenen solució comuna si el mateix m acompanya b diferents."
+    },
+    "F3-E4A-G01-L04-05": {
+      "prompt": "Com verifiqueu un punt de tall calculat?",
+      "hint": "Iguala les dues expressions de y; verifica el parell resultant en les dues.",
+      "explanation": "Una intersecció ha de satisfer simultàniament ambdues rectes."
+    },
+    "F3-E4A-G01-L05-01": {
+      "prompt": "P=(3, −1) es trasllada per (−2,4). Coordenada x de P′?",
+      "hint": "Fixa l'origen o centre abans d'operar.",
+      "explanation": "x final =3−2=1. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4A-G01-L05-02": {
+      "prompt": "P=(3, −1) es trasllada per (−2,4). Coordenada i de P′?",
+      "hint": "Fixa l'origen o centre abans d'operar.",
+      "explanation": "i final =−1+4=3. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4A-G01-L05-03": {
+      "prompt": "Gir antihorari 90° de Q=(2,1): coordinada x resultant?",
+      "hint": "Fixa l'origen o centre abans d'operar.",
+      "explanation": "El gir (x, y)→(−y,x) produeix x final −1."
+    },
+    "F3-E4A-G01-L05-04": {
+      "prompt": "Quina és la reflexió de (2,1) sobre l'eix x?",
+      "hint": "Fixa l'origen o centre abans d'operar.",
+      "explanation": "La reflexió horitzontal conserva x i canvia signe de y."
+    },
+    "F3-E4A-G01-L05-05": {
+      "prompt": "Què transforma una homotècia de raó 2 respecte a l'origen?",
+      "hint": "Fixa l'origen o centre abans d'operar.",
+      "explanation": "L'homotècia aplica un factor comú a les coordenades relatives al centre."
+    },
+    "F3-E4A-G01-L06-01": {
+      "prompt": "Horta rectangular 4×3 m. Àrea en m²?",
+      "hint": "Distingeix magnituds lineals i quadràtiques abans del càlcul.",
+      "explanation": "La superfície és 4×3=12 m². El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4A-G01-L06-02": {
+      "prompt": "Horta rectangular 4×3 m. Perímetre en m?",
+      "hint": "Distingeix magnituds lineals i quadràtiques abans del càlcul.",
+      "explanation": "Perímetre =2(4+3)=14 m. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4A-G01-L06-03": {
+      "prompt": "Escala 1: 200, longitud dibuixada 3 cm. Longitud real en metres?",
+      "hint": "Distingeix magnituds lineals i quadràtiques abans del càlcul.",
+      "explanation": "3×200=600 cm =6 m. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4A-G01-L06-04": {
+      "prompt": "Quina unitat expressa l'àrea d'un hort de 4×3 m?",
+      "hint": "Distingeix magnituds lineals i quadràtiques abans del càlcul.",
+      "explanation": "L'àrea és un producte de dues longituds i s'expressa al quadrat."
+    },
+    "F3-E4A-G01-L06-05": {
+      "prompt": "En mesurar amb instruments amb incertesa, què ha de declarar-se?",
+      "hint": "Distingeix magnituds lineals i quadràtiques abans del càlcul.",
+      "explanation": "La utilitat del resultat depèn de la interpretació i qualitat de les mesures."
+    }
+  }
+}

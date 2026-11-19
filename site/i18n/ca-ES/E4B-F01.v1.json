@@ -1,0 +1,407 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E4B-F01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e4b_f01.json": "567b5f2ae837ac1d25b4bca97d0b88917836e929e6196b2f29d9f21bb70ec0f5",
+    "data/f3_e4b_f01_exercises.json": "c1bfd9d05113b1d3af73eaaf9a661367112ba31603f054348feae1615b096259"
+  },
+  "lessons": {
+    "E4B-F01-L01": {
+      "title": "Domini i recorregut",
+      "objectives": [
+        "Identificar domini i recorregut de funcions polinòmiques i racionals senzilles.",
+        "Justificar restriccions de denominadors i d'arrels quadrades reals."
+      ],
+      "content_blocks": [
+        {
+          "body": "El domini d'una funció és el conjunt d'entrades per a les quals està definida; el recorregut conté només les sortides efectivament obtingudes. Els polinomis admeten qualsevol x real; en una funció racional s'exclouen els zeros del denominador ORIGINAL encara que es cancel·li un factor. Per f(x)=1/(x−2) es té domini R sense 2 i recorregut R sense 0. Per g(x)=√(x+1) el radicant ha de ser no negatiu, per la qual cosa x≥−1 i el seu recorregut és y≥0. Una gràfica no prova per si sola el domini si té punts oberts o restriccions contextuals. El domini contextual, per exemple temps no negatiu, pot ser més petit que el purament algebraic."
+        },
+        {
+          "body": "Per f(x)=(x+1)/(x−3), x=3 queda exclòs; f(4)=5. Aquesta exclusió persisteix encara que transformem l'expressió."
+        },
+        {
+          "body": "Per g(x)=(x−1)²+2, el domini és tot R i el recorregut és [2, +∞): el quadrat mai és negatiu."
+        },
+        {
+          "body": "Funció racional amb asímptota i punt exclòs. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Funció racional amb asímptota i punt exclòs. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Funció racional amb asímptota i punt exclòs"
+          }
+        },
+        {
+          "body": "Per què no basta simplificar un quocient per a recuperar una entrada anul·lada?||Perquè el denominador de la fórmula original continua sent zero en aquesta entrada."
+        },
+        {
+          "body": "Recuperació activa: El domini d'una funció és el conjunt d'entrades per a les quals està definida; el recorregut conté només les sortides efectivament obtingudes. Torna després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    },
+    "E4B-F01-L02": {
+      "title": "Interseccions i monotonia",
+      "objectives": [
+        "Determinar punts de tall amb eixos resolent equacions.",
+        "Descriure monotonia mitjançant el signe de la variació, sense inferir-la de pocs punts."
+      ],
+      "content_blocks": [
+        {
+          "body": "Els talls amb l'eix x de y=f(x) satisfan f(x)=0, sempre dins del domini; el tall amb l'eix i, si existeix, és (0, f(0)). Per a una paràbola y=x²−4, els talls horitzontals són x=−2 i x=2, i el vertical (0, −4). Una funció és creixent en un interval si en augmentar x augmenta f(x), i decreixent si disminueix. La paràbola x² decreix per x≤0 i creix per x≥0, sense ser estrictament monòtona en tot R. Les arrels, màxims, mínims i trams no s'han de deduir únicament del gruix d'una corba dibuixada; l'àlgebra i la definició donen el criteri exacte."
+        },
+        {
+          "body": "f(x)=x²−4: la condició f(x)=0 porta a x²=4, amb arrels −2 i 2; f(0)=−4."
+        },
+        {
+          "body": "g(x)=(x−1)²+3 té mínim 3 en x=1; decreix abans i creix després."
+        },
+        {
+          "body": "Paràbola i talls amb els eixos. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Paràbola i talls amb els eixos. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Paràbola i talls amb els eixos"
+          }
+        },
+        {
+          "body": "Si una funció decreix fins a un mínim, pot afirmar-se que decreix en tota R?||No. Després del mínim pot augmentar; cal especificar intervals."
+        },
+        {
+          "body": "Recuperació activa: Els talls amb l'eix x de y=f(x) satisfan f(x)=0, sempre dins del domini; el tall amb l'eix i, si existeix, és (0, f(0)). Torna després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    },
+    "E4B-F01-L03": {
+      "title": "Funcions polinòmiques",
+      "objectives": [
+        "Interpretar zeros i vèrtexs de funcions polinòmiques de primer i segon grau.",
+        "Comparar signe, concavitat i creixement de models polinòmics senzills."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una funció polinòmica és combinació finita de potències senceres no negatives de x. Les afins tenen forma mx +b i pendent constant; per m>0 creixen en tot el domini i per m<0 decreuen. Les quadràtiques es representen com a paràboles; si a>0 obren cap amunt i si a<0 cap avall. El vèrtex de f(x)=a(x−h)²+k és (h,k), que correspon a mínim si a>0 i màxim si a<0. Les arrels han de calcular-se resolent f(x)=0 i poden no existir en R. El creixement en valors tabulats no basta per a justificar la forma fora de l'interval observat."
+        },
+        {
+          "body": "f(x)=2(x−3)²−5 té vèrtex (3, −5), mínim global −5 i eix de simetria x=3."
+        },
+        {
+          "body": "g(x)=−x²+4 presenta màxim 4 en x=0 i arrels −2 i 2."
+        },
+        {
+          "body": "Paràbola en forma de vèrtex. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Paràbola en forma de vèrtex. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Paràbola en forma de vèrtex"
+          }
+        },
+        {
+          "body": "Com canvia l'extrem en substituir a positiu per a negatiu en una quadràtica?||Amb a<0 el vèrtex és un màxim en lloc d'un mínim."
+        },
+        {
+          "body": "Recuperació activa: Una funció polinòmica és combinació finita de potències senceres no negatives de x. Torna després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    },
+    "E4B-F01-L04": {
+      "title": "Racionals senzilles",
+      "objectives": [
+        "Analitzar dominis i zeros de quocients de polinomis.",
+        "Distingir asímptotes verticals de discontinuïtats evitables."
+      ],
+      "content_blocks": [
+        {
+          "body": "En una funció racional f(x)=P(x)/Q(x), el domini exclou tots els x amb Q(x)=0. Un zero de P només és arrel de f si Q no s'anul·la allà. Per f(x)=1/(x−2), x=2 és una asímptota vertical: la magnitud creix sense cota en apropar-nos. Però (x²−1)/(x−1)=x+1 per x≠1 té un forat en (1,2), no una asímptota vertical; el límit en apropar-se és finit. La cancel·lació de factors serveix per calcular el límit, no per redefinir silenciosament el valor en el punt exclòs. Una asímptota horitzontal descriu comportament quan x tendeix a infinit i no és una prohibició d'encreuament general."
+        },
+        {
+          "body": "f(x)=(x−2)/(x−3) val 0 en x=2, està indefinida en x=3 i el seu límit a l'infinit és 1."
+        },
+        {
+          "body": "g(x)=(x²−1)/(x−1) coincideix amb x+1 excepte x=1; la corba té forat (1,2)."
+        },
+        {
+          "body": "asímptota vertical d'una funció racional. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "asímptota vertical d'una funció racional. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "ASÍmptota vertical d'una funció racional"
+          }
+        },
+        {
+          "body": "Tot zero del denominador produeix una asímptota vertical?||No: un factor cancel·lable pot generar un forat amb límit finit."
+        },
+        {
+          "body": "Recuperació activa: En una funció racional f(x)=P(x)/Q(x), el domini exclou tots els x amb Q(x)=0. Torna després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    },
+    "E4B-F01-L05": {
+      "title": "Exponencials i logarítmiques introductòries quan escaigui",
+      "objectives": [
+        "Descriure creixement exponencial i el seu domini/recorregut.",
+        "Resoldre logaritmes elementals per definició d'operació inversa quan escaigui."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a>0 i a≠1, la funció exponencial f(x)=a^x té domini R, recorregut (0, +∞), i passa per (0,1). Si a>1 creix i si 0<a<1 decreix. La funció logarítmica log_a(x) està definida només per x>0, té recorregut R i satisfà log_ a(a^t)=t. No s'ha de confondre log_ a(0) amb 0: no existeix logaritme real de zero. Les potències exponencials modelitzen multiplicació per un factor constant en cada unitat de temps, no addició d'una quantitat fixa. L'estudi del logaritme aquí és introductori i editorial, sense atribuir obligatorietat universal a la unitat de quart."
+        },
+        {
+          "body": "f(x)=2^x: f(−1)=1/2, f(0)=1 i f(3)=8; el resultat sempre és positiu."
+        },
+        {
+          "body": "log ₂(8)=3 perquè 2³=8. log ₂(x−1)=3 exigiria x>1 i donaria x=9."
+        },
+        {
+          "body": "Creixement exponencial de base 2. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Creixement exponencial de base 2. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Creixement exponencial de base 2"
+          }
+        },
+        {
+          "body": "Pot l'exponenciable 2^x produir exactament zero per a un x real finit?||No. S'aproxima a zero cap a −∞, però roman estrictament positiva."
+        },
+        {
+          "body": "Recuperació activa: Per a>0 i a≠1, la funció exponencial f(x)=a^x té domini R, recorregut (0, +∞), i passa per (0,1). Torna després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    },
+    "E4B-F01-L06": {
+      "title": "Taxa de variació mitjana",
+      "objectives": [
+        "Calcular taxes mitjanes de variació i conservar unitats del quocient.",
+        "Comparar el creixement mitjà de funcions afins i quadràtiques."
+      ],
+      "content_blocks": [
+        {
+          "body": "La taxa de variació mitjana de f en [a,b], amb a≠b, és (f(b)−f(a))/(b−a). Representa el pendent de la recta secant que uneix els punts (a,f(a)) i (b,f(b)). Per a una funció afí f(x)= mx +c, qualsevol interval ofereix la mateixa taxa m; per a una quadràtica pot variar segons els extrems. Les unitats són les de sortida per unitat d'entrada, no unitats d'àrea ni longitud per si soles. Una taxa mitjana nul·la no implica que la funció sigui constant entre els extrems. Si a=b, l'expressió no està definida com a quocient mitjà."
+        },
+        {
+          "body": "f(x)=x²: entre 1 i 3, la taxa és (9−1)/(3−1)=4; entre 2 i 4 resulta (16−4)/2=6."
+        },
+        {
+          "body": "g(x)=−3x+2: en [−2,5], la taxa mitjana és −3 sense necessitat de calcular tots dos valors per separat."
+        },
+        {
+          "body": "Taxa mitjana com a pendent secant. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Taxa mitjana com a pendent secant. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Taxa mitjana com a pendent secant"
+          }
+        },
+        {
+          "body": "Una taxa mitjana de zero implica variació nul·la en tots els instants?||No. Només informa que el valor final coincideix amb l'inicial."
+        },
+        {
+          "body": "Recuperació activa: La taxa de variació mitjana de f en [a,b], amb a≠b, és (f(b)−f(a))/(b−a). Resol després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    },
+    "E4B-F01-L07": {
+      "title": "Transformacions de gràfiques",
+      "objectives": [
+        "Interpretar translacions i reflexions de gràfiques mitjançant fórmules.",
+        "Reconèixer canvis de domini i recorregut després de transformacions."
+      ],
+      "content_blocks": [
+        {
+          "body": "Transformar f(x) a f(x−h)+k desplaça el seu gràfic h unitats horitzontalment a la dreta si h>0, i k unitats verticalment cap amunt si k>0. L'expressió −f(x) reflecteix els valors respecte a l'eix horitzontal; f(−x) reflecteix les abscises. En el vèrtex d'una paràbola f(x)=(x−h)²+k, la transformació permet llegir directament (h,k). No s'ha d'invertir el signe de la translació horitzontal per analogia amb la vertical: dins de l'argument, x−3 desplaça a la dreta tres. Les transformacions afecten també a dominis restringits, asímptotes, zeros i recorreguts, encara que la forma de la corba pugui mantenir-se."
+        },
+        {
+          "body": "Des de y=x², y=(x−3)²+2 desplaça el vèrtex (0,0) a (3,2)."
+        },
+        {
+          "body": "Des de y=1/x, y=1/(x−2)+4 té asímptota vertical x=2 i horitzontal y=4."
+        },
+        {
+          "body": "Translació d'una paràbola. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Translació d'una paràbola. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Translació d'una paràbola"
+          }
+        },
+        {
+          "body": "Per què f(x−2) desplaça la corba dues unitats a la dreta?||Perquè el mateix valor intern de f s'obté quan la nova x és dues unitats major."
+        },
+        {
+          "body": "Recuperació activa: Transformar f(x) a f(x−h)+k desplaça el seu gràfic h unitats horitzontalment a la dreta si h>0, i k unitats verticalment cap amunt si k>0. Torna després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E4B-F01-L01-01": {
+      "prompt": "Per f(x)=1/(x−(2)), indica el DOMINI real complet, excloent el zero del denominador. Selecciona la resposta EXACTA.",
+      "hint": "Separa domini, zeros i tendència: un denominador nul exclou l'entrada original.",
+      "explanation": "Procediment i comprovació: El denominador original ha de ser diferent de zero. Una cancel·lació preserva el límit però no defineix el valor exclòs. Resultat: R excepte 2. Separa domini, zeros i tendència: un denominador nul exclou l'entrada original. Factoritza abans de cancel·lar, comprova restriccions d'origen i diferencia un forat d'una asímptota vertical amb límits laterals. Solució exacta: R excepte 2. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L01-02": {
+      "prompt": "Per a f(x)=1(x−(1))²+(2), indica el RECORREGUT real mitjançant una desigualtat per a i. Selecciona la resposta EXACTA.",
+      "hint": "Escriu la paràbola en forma de vèrtex per identificar extrems i obertura.",
+      "explanation": "Procediment i comprovació: Usa f(x)=a(x−h)²+k i la positivitat del quadrat, o resol l'equació f(x)=0 segons el que es demana: y≥2. Escriu la paràbola en forma de vèrtex per identificar extrems i obertura. f(x)=a(x−h)²+k té vèrtex (h,k); a>0 mínim i a<0 màxim. Per a arrels iguala a zero i exigeix solucions reals. Solució exacta: y≥2. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L01-03": {
+      "prompt": "Per a f(x)=√(x−(-1)), quins valors reals de x pertanyen al domini? Usa una desigualtat. Selecciona la resposta EXACTA.",
+      "hint": "L'arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: x≥-1. L'arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals. Per √(x−h)+k impó x≥h i usa arrel principal; si el factor és negatiu, el sentit de creixement i el recorregut s'inverteixen. Solució exacta: x≥-1. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L01-04": {
+      "prompt": "Avalua f(4) per f(x)=1/(x−(2)), verificant que el denominador no s'anul·la. Selecciona la resposta EXACTA.",
+      "hint": "Separa domini, zeros i tendència: un denominador nul exclou l'entrada original.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 0,5. Separa domini, zeros i tendència: un denominador nul exclou l'entrada original. Factoritza abans de cancel·lar, comprova restriccions d'origen i diferencia un forat d'una asímptota vertical amb límits laterals. Solució exacta: 0,5. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L01-05": {
+      "prompt": "Calcula f(5) per f(x)=√(x−(1))+(0); usa l'arrel principal. Selecciona la resposta EXACTA.",
+      "hint": "L'arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 2. L'arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals. Per √(x−h)+k impó x≥h i usa arrel principal; si el factor és negatiu, el sentit de creixement i el recorregut s'inverteixen. Solució exacta: 2. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L02-01": {
+      "prompt": "Resol f(x)=x²−(4)=0. Retorna les dues ARRELS reals en ordre creixent (r₁, r₂). Selecciona la resposta EXACTA.",
+      "hint": "Escriu la paràbola en forma de vèrtex per identificar extrems i obertura.",
+      "explanation": "Procediment i comprovació: Usa f(x)=a(x−h)²+k i la positivitat del quadrat, o resol l'equació f(x)=0 segons el que es demana: (-2, 2). Escriu la paràbola en forma de vèrtex per identificar extrems i obertura. f(x)=a(x−h)²+k té vèrtex (h,k); a>0 mínim i a<0 màxim. Per a arrels iguala a zero i exigeix solucions reals. Solució exacta: (-2, 2). Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L02-02": {
+      "prompt": "En f(x)=1(x−(0))²+(-4), calcula l'ORDENAda del tall amb l'eix i, f(0). Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Escriu la paràbola en forma de vèrtex per identificar extrems i obertura.",
+      "explanation": "Procediment i comprovació: Usa f(x)=a(x−h)²+k i la positivitat del quadrat, o resol l'equació f(x)=0 segons el que es demana: -4. Escriu la paràbola en forma de vèrtex per identificar extrems i obertura. f(x)=a(x−h)²+k té vèrtex (h,k); a>0 mínim i a<0 màxim. Per a arrels iguala a zero i exigeix solucions reals. Solució exacta: -4. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L02-03": {
+      "prompt": "Troba el VÈRTEX (x,y) de la paràbola f(x)=1(x−(1))²+(3). Selecciona la resposta EXACTA.",
+      "hint": "Escriu la paràbola en forma de vèrtex per identificar extrems i obertura.",
+      "explanation": "Procediment i comprovació: Usa f(x)=a(x−h)²+k i la positivitat del quadrat, o resol l'equació f(x)=0 segons el que es demana: (1, 3). Escriu la paràbola en forma de vèrtex per identificar extrems i obertura. f(x)=a(x−h)²+k té vèrtex (h,k); a>0 mínim i a<0 màxim. Per a arrels iguala a zero i exigeix solucions reals. Solució exacta: (1, 3). Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L02-04": {
+      "prompt": "Per f(x)=1x², indica el patró global de monotonia a banda i banda del vèrtex: Decreix i després creix, o Creix i després decreix. Selecciona la resposta EXACTA.",
+      "hint": "Escriu la paràbola en forma de vèrtex per identificar extrems i obertura.",
+      "explanation": "Procediment i comprovació: Usa f(x)=a(x−h)²+k i la positivitat del quadrat, o resol l'equació f(x)=0 segons el que es demana: Decreix i després creix. Escriu la paràbola en forma de vèrtex per identificar extrems i obertura. f(x)=a(x−h)²+k té vèrtex (h,k); a>0 mínim i a<0 màxim. Per a arrels iguala a zero i exigeix solucions reals. Solució exacta: Decreix i després creix. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L02-05": {
+      "prompt": "Quantes arrels reals diferents té l'equació 1(x−(0))²+(5)=0? Escriu 0, 1 o 2. Selecciona la resposta EXACTA.",
+      "hint": "Escriu la paràbola en forma de vèrtex per identificar extrems i obertura.",
+      "explanation": "Procediment i comprovació: Usa f(x)=a(x−h)²+k i la positivitat del quadrat, o resol l'equació f(x)=0 segons el que es demana: 0. Escriu la paràbola en forma de vèrtex per identificar extrems i obertura. f(x)=a(x−h)²+k té vèrtex (h,k); a>0 mínim i a<0 màxim. Per a arrels iguala a zero i exigeix solucions reals. Solució exacta: 0. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L03-01": {
+      "prompt": "Calcula el valor extrem de f(x)=2(x−(3))²+(-5) (mínim si a>0, màxim si a<0). Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Escriu la paràbola en forma de vèrtex per identificar extrems i obertura.",
+      "explanation": "Procediment i comprovació: Usa f(x)=a(x−h)²+k i la positivitat del quadrat, o resol l'equació f(x)=0 segons el que es demana: -5. Escriu la paràbola en forma de vèrtex per identificar extrems i obertura. f(x)=a(x−h)²+k té vèrtex (h,k); a>0 mínim i a<0 màxim. Per a arrels iguala a zero i exigeix solucions reals. Solució exacta: -5. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L03-02": {
+      "prompt": "Quina és l'abscisa x del vèrtex de la paràbola f(x)=-1(x−(2))²+(4)? Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Escriu la paràbola en forma de vèrtex per identificar extrems i obertura.",
+      "explanation": "Procediment i comprovació: Usa f(x)=a(x−h)²+k i la positivitat del quadrat, o resol l'equació f(x)=0 segons el que es demana: 2. Escriu la paràbola en forma de vèrtex per identificar extrems i obertura. f(x)=a(x−h)²+k té vèrtex (h,k); a>0 mínim i a<0 màxim. Per a arrels iguala a zero i exigeix solucions reals. Solució exacta: 2. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L03-03": {
+      "prompt": "Per a f(x)=-2x²+1, indica si la paràbola obre A dalt o Avall. Selecciona la resposta EXACTA.",
+      "hint": "Escriu la paràbola en forma de vèrtex per identificar extrems i obertura.",
+      "explanation": "Procediment i comprovació: Usa f(x)=a(x−h)²+k i la positivitat del quadrat, o resol l'equació f(x)=0 segons el que es demana: Abaix. Escriu la paràbola en forma de vèrtex per identificar extrems i obertura. f(x)=a(x−h)²+k té vèrtex (h,k); a>0 mínim i a<0 màxim. Per a arrels iguala a zero i exigeix solucions reals. Solució exacta: Avall. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L03-04": {
+      "prompt": "Calcula f(5) per f(x)=2(x−(3))²+(-5). Selecciona la resposta EXACTA.",
+      "hint": "Escriu la paràbola en forma de vèrtex per identificar extrems i obertura.",
+      "explanation": "Procediment i comprovació: Usa f(x)=a(x−h)²+k i la positivitat del quadrat, o resol l'equació f(x)=0 segons el que es demana: 3. Escriu la paràbola en forma de vèrtex per identificar extrems i obertura. f(x)=a(x−h)²+k té vèrtex (h,k); a>0 mínim i a<0 màxim. Per a arrels iguala a zero i exigeix solucions reals. Solució exacta: 3. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L03-05": {
+      "prompt": "Resol f(x)=x²−(9)=0. Retorna les dues ARRELS reals en ordre creixent (r₁, r₂). Selecciona la resposta EXACTA.",
+      "hint": "Escriu la paràbola en forma de vèrtex per identificar extrems i obertura.",
+      "explanation": "Procediment i comprovació: Usa f(x)=a(x−h)²+k i la positivitat del quadrat, o resol l'equació f(x)=0 segons el que es demana: (-3, 3). Escriu la paràbola en forma de vèrtex per identificar extrems i obertura. f(x)=a(x−h)²+k té vèrtex (h,k); a>0 mínim i a<0 màxim. Per a arrels iguala a zero i exigeix solucions reals. Solució exacta: (-3, 3). Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L04-01": {
+      "prompt": "Troba l'únic ZERO de f(x)=(x−(2))/(x−(3)) quan x≠3. Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Separa domini, zeros i tendència: un denominador nul exclou l'entrada original.",
+      "explanation": "Procediment i comprovació: El denominador original ha de ser diferent de zero. Una cancel·lació preserva el límit però no defineix el valor exclòs. Resultat: 2. Separa domini, zeros i tendència: un denominador nul exclou l'entrada original. Factoritza abans de cancel·lar, comprova restriccions d'origen i diferencia un forat d'una asímptota vertical amb límits laterals. Solució exacta: 2. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L04-02": {
+      "prompt": "Escriu la restricció sobre x que imposa el denominador de f(x)=(x+1)/(x−(3)). Selecciona la resposta EXACTA.",
+      "hint": "Separa domini, zeros i tendència: un denominador nul exclou l'entrada original.",
+      "explanation": "Procediment i comprovació: El denominador original ha de ser diferent de zero. Una cancel·lació preserva el límit però no defineix el valor exclòs. Resultat: x≠3. Separa domini, zeros i tendència: un denominador nul exclou l'entrada original. Factoritza abans de cancel·lar, comprova restriccions d'origen i diferencia un forat d'una asímptota vertical amb límits laterals. Solució exacta: x≠3. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L04-03": {
+      "prompt": "La funció (x²−(1))/(x−(1)) no està definida en x=1, però simplifica per a altres x. És el punt un Forat o una asímptota vertical? Selecciona la resposta EXACTA.",
+      "hint": "Separa domini, zeros i tendència: un denominador nul exclou l'entrada original.",
+      "explanation": "Procediment i comprovació: El denominador original ha de ser diferent de zero. Una cancel·lació preserva el límit però no defineix el valor exclòs. Resultat: Forat. Separa domini, zeros i tendència: un denominador nul exclou l'entrada original. Factoritza abans de cancel·lar, comprova restriccions d'origen i diferencia un forat d'una asímptota vertical amb límits laterals. Solució exacta: Forat. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L04-04": {
+      "prompt": "Per a f(x)=1/(x−(2)), identifica l'equació EXACTA de la seva asímptota vertical. Selecciona la resposta EXACTA.",
+      "hint": "Separa domini, zeros i tendència: un denominador nul exclou l'entrada original.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: x=2. Separa domini, zeros i tendència: un denominador nul exclou l'entrada original. Factoritza abans de cancel·lar, comprova restriccions d'origen i diferencia un forat d'una asímptota vertical amb límits laterals. Solució exacta: x=2. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L04-05": {
+      "prompt": "Calcula lim (x→+∞)[(2)x²+1]/[(1)x²+3] per quocient de coeficients principals. Selecciona la resposta EXACTA.",
+      "hint": "Separa domini, zeros i tendència: un denominador nul exclou l'entrada original.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 2. Separa domini, zeros i tendència: un denominador nul exclou l'entrada original. Factoritza abans de cancel·lar, comprova restriccions d'origen i diferencia un forat d'una asímptota vertical amb límits laterals. Solució exacta: 2. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L05-01": {
+      "prompt": "Calcula el valor exacte de la potència exponencial 2^(3). Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Distingeix exponencial positiva de logaritme, definit només amb argument >0.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 8. Distingeix exponencial positiva de logaritme, definit només amb argument >0. log_ a(t)=s equival a a^s=t amb a>0 i a≠1; per a a>1, a^x→0 en tendir x→−∞. Solució exacta: 8. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L05-02": {
+      "prompt": "Calcula el valor exacte de la potència exponencial 2^(-2). Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Distingeix exponencial positiva de logaritme, definit només amb argument >0.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 0,25. Distingeix exponencial positiva de logaritme, definit només amb argument >0. log_ a(t)=s equival a a^s=t amb a>0 i a≠1; per a a>1, a^x→0 en tendir x→−∞. Solució exacta: 0,25. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L05-03": {
+      "prompt": "L'exponencial f(x)=3^x amb base positiva diferent d'un és Centent o Decent? Selecciona la resposta EXACTA.",
+      "hint": "Distingeix exponencial positiva de logaritme, definit només amb argument >0.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: Creixent. Distingeix exponencial positiva de logaritme, definit només amb argument >0. log_ a(t)=s equival a a^s=t amb a>0 i a≠1; per a a>1, a^x→0 en tendir x→−∞. Solució exacta: Creixent. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L05-04": {
+      "prompt": "Calcula el logaritme real exacte log_2 (32) (nombre t tal que 2^t=32). Selecciona la resposta EXACTA.",
+      "hint": "Distingeix exponencial positiva de logaritme, definit només amb argument >0.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 5. Distingeix exponencial positiva de logaritme, definit només amb argument >0. log_ a(t)=s equival a a^s=t amb a>0 i a≠1; per a a>1, a^x→0 en tendir x→−∞. Solució exacta: 5. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L05-05": {
+      "prompt": "Determina la condició de l'argument perquè log ₂(x−(5)) estigui definit en els reals. Respon com a desigualtat de x. Selecciona la resposta EXACTA.",
+      "hint": "Distingeix exponencial positiva de logaritme, definit només amb argument >0.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: x>5. Distingeix exponencial positiva de logaritme, definit només amb argument >0. log_ a(t)=s equival a a^s=t amb a>0 i a≠1; per a a>1, a^x→0 en tendir x→−∞. Solució exacta: x>5. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L06-01": {
+      "prompt": "Calcula la taxa mitjana de variació de f(x)=1x²+(0)x+(0) en [1,3] com [f(3)−f(1)]/(3−1). Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Una taxa mitjana mesura canvi de sortida dividit per canvi d'entrada, no la sortida final.",
+      "explanation": "Procediment i comprovació: Per definició, TVM =[f(b)−f(a)]/(b−a), mantenint l'ordre d'extrems i les unitats. Resultat 4. Una taxa mitjana mesura canvi de sortida dividit per canvi d'entrada, no la sortida final. Calcula exactament [f(b)−f(a)]/(b−a) amb a≠b. Per funció afí coincideix amb el pendent constant. Solució exacta: 4. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-E4B-F01-L06-02": {
+      "prompt": "Calcula la taxa mitjana de f(x)=-3x+(2) en [-2,5], amb -2≠5. Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Una taxa mitjana mesura canvi de sortida dividit per canvi d'entrada, no la sortida final.",
+      "explanation": "Procediment i comprovació: Per definició, TVM =[f(b)−f(a)]/(b−a), mantenint l'ordre d'extrems i les unitats. Resultat -3. Una taxa mitjana mesura canvi de sortida dividit per canvi d'entrada, no la sortida final. Calcula exactament [f(b)−f(a)]/(b−a) amb a≠b. Per funció afí coincideix amb el pendent constant. Solució exacta: -3. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-E4B-F01-L06-03": {
+      "prompt": "Calcula la taxa mitjana de variació de f(x)=2x²+(-1)x+(3) en [0,2] com [f(2)−f(0)]/(2−0). Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Una taxa mitjana mesura canvi de sortida dividit per canvi d'entrada, no la sortida final.",
+      "explanation": "Procediment i comprovació: Per definició, TVM =[f(b)−f(a)]/(b−a), mantenint l'ordre d'extrems i les unitats. Resultat 3. Una taxa mitjana mesura canvi de sortida dividit per canvi d'entrada, no la sortida final. Calcula exactament [f(b)−f(a)]/(b−a) amb a≠b. Per funció afí coincideix amb el pendent constant. Solució exacta: 3. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-E4B-F01-L06-04": {
+      "prompt": "Calcula la taxa mitjana de variació de f(x)=1x²+(1)x+(-2) en [2,5] com [f(5)−f(2)]/(5−2). Selecciona la resposta EXACTA.",
+      "hint": "Una taxa mitjana mesura canvi de sortida dividit per canvi d'entrada, no la sortida final.",
+      "explanation": "Procediment i comprovació: Per definició, TVM =[f(b)−f(a)]/(b−a), mantenint l'ordre d'extrems i les unitats. Resultat 8. Una taxa mitjana mesura canvi de sortida dividit per canvi d'entrada, no la sortida final. Calcula exactament [f(b)−f(a)]/(b−a) amb a≠b. Per funció afí coincideix amb el pendent constant. Solució exacta: 8. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-E4B-F01-L06-05": {
+      "prompt": "Calcula la taxa mitjana de f(x)=2x+(-5) en [0,7], amb 0≠7. Selecciona la resposta EXACTA.",
+      "hint": "Una taxa mitjana mesura canvi de sortida dividit per canvi d'entrada, no la sortida final.",
+      "explanation": "Procediment i comprovació: Per definició, TVM =[f(b)−f(a)]/(b−a), mantenint l'ordre d'extrems i les unitats. Resultat 2. Una taxa mitjana mesura canvi de sortida dividit per canvi d'entrada, no la sortida final. Calcula exactament [f(b)−f(a)]/(b−a) amb a≠b. Per funció afí coincideix amb el pendent constant. Solució exacta: 2. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-E4B-F01-L07-01": {
+      "prompt": "Si la funció original és y=x², quin és el vèrtex (h,k) de g(x)=(x−(3))²+(2)? Selecciona la resposta EXACTA.",
+      "hint": "Localitza el punt que abans era el vèrtex i distingeix signes dins i fora de l'argument.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: (3, 2). Localitza el punt que abans era el vèrtex i distingeix signes dins i fora de l'argument: f(x−h)+k mou h cap a la dreta i k cap amunt; −f(x) inverteix valors i x−h té vèrtex (h, 0). Solució exacta: (3, 2). Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-E4B-F01-L07-02": {
+      "prompt": "Per a f(x)=1/(x−(2)), identifica l'equació EXACTA de la seva asímptota vertical. Selecciona la resposta EXACTA.",
+      "hint": "Separa domini, zeros i tendència: un denominador nul exclou l'entrada original.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: x=2. Separa domini, zeros i tendència: un denominador nul exclou l'entrada original. Factoritza abans de cancel·lar, comprova restriccions d'origen i diferencia un forat d'una asímptota vertical amb límits laterals. Solució exacta: x=2. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-E4B-F01-L07-03": {
+      "prompt": "La funció g(x)=−x² és el reflex vertical de f(x)=x². Calcula g(2). Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Localitza el punt que abans era el vèrtex i distingeix signes dins i fora de l'argument.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: -4. Localitza el punt que abans era el vèrtex i distingeix signes dins i fora de l'argument: f(x−h)+k mou h cap a la dreta i k cap amunt; −f(x) inverteix valors i x−h té vèrtex (h, 0). Solució exacta: -4. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-E4B-F01-L07-04": {
+      "prompt": "La transformació g(x)=f(x−(4)) desplaça horitzontalment f una distància 4. Cap a la dreta o l'esquerra? Selecciona la resposta exacta.",
+      "hint": "Localitza el punt que abans era el vèrtex i distingeix signes dins i fora de l'argument.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. El resultat: dreta. Localitza el punt que abans era el vèrtex i distingeix signes dins i fora de l'argument: f(x−h)+k mou h cap a la dreta i k cap amunt; −f(x) inverteix valors i x−h té vèrtex (h, 0). Solució: Dreta. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-E4B-F01-L07-05": {
+      "prompt": "Si la funció original és y=x², quin és el vèrtex (h,k) de g(x)=(x−(-2))²+(5)? Selecciona la resposta EXACTA.",
+      "hint": "Localitza el punt que abans era el vèrtex i distingeix signes dins i fora de l'argument.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: (-2, 5). Localitza el punt que abans era el vèrtex i distingeix signes dins i fora de l'argument: f(x−h)+k mou h cap a la dreta i k cap amunt; −f(x) inverteix valors i x−h té vèrtex (h, 0). Solució exacta: (-2, 5). Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    }
+  }
+}
