@@ -31,6 +31,10 @@ def write_lessons(uid,translation):
     if uid=='E1-N03':
      intro=target.split('. ')[0]
      alt=intro+'. Totes les dades d’aquesta representació també apareixen en una taula semàntica.'
+    elif uid=='E1-A01':
+     alt='Representació verbal i taula accessible del concepte.'
+    elif uid=='E1-D01':
+     alt=t['visual_title']+'. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre del color.'
     elif uid in ('E1-M01','E1-G01'):
      intro=target.split('. ')[0]
      alt=intro+'. Els elements, els valors i les unitats també figuren a la taula semàntica següent.'

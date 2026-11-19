@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E1-D01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e1_d01.json": "93bcee835a15064728d924a99b4714744b556886b309ddba6983556931c1b6a0",
+    "data/f3_e1_d01_exercises.json": "aebda51e5f395de844c063d5dac40f6f77b5945ea4c92e05b2ee482b95ccd07d"
+  },
+  "lessons": {
+    "E1-D01-L01": {
+      "title": "Població, variable i dada",
+      "objectives": [
+        "Distingir població, mostra, individu, variable i dada observable.",
+        "Classificar variables qualitatives i quantitatives sense inferir propietats personals."
+      ],
+      "content_blocks": [
+        {
+          "body": "En un estudi estadístic, la població és el conjunt complet d’elements d’interès i la mostra és un subconjunt observat; un individu és cadascun dels elements. La variable és la característica que es registra i la dada és el valor particular d’aquella variable per a un individu. Si una classe voluntària observa el nombre de llibres llegits per cinc estudiants, la dada d’algú pot ser 3 i la variable és quantitativa discreta. El mitjà de transport declarat (a peu, bicicleta, autobús) és qualitatiu nominal i no permet operacions numèriques com calcular una mitjana. No s’ha de confondre el nombre d’observacions amb la mida de la població real, ni deduir que una mostra petita és representativa per si sola. Es fan servir només dades sintètiques i no es recullen respostes identificatives de menors."
+        },
+        {
+          "body": "Població de 80 alumnes i mostra anònima de 20 respostes: mida de la mostra n=20, diferent del total poblacional N=80."
+        },
+        {
+          "body": "Les dades de llibres [1,3,2,3,1] provenen de cinc observacions; la variable nombre de llibres és quantitativa discreta."
+        },
+        {
+          "body": "Classificació de dades sintètiques. SVG local de suport amb una taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Classificació de dades sintètiques. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre del color.",
+          "visual_spec": {
+            "title": "Classificació de dades sintètiques"
+          }
+        },
+        {
+          "body": "La mostra és necessàriament idèntica a tota la població?||No; pot contenir només una part de la població."
+        },
+        {
+          "body": "Recuperació activa: en un estudi estadístic, la població és el conjunt complet d’elements d’interès i la mostra és un subconjunt observat; un individu és cada element. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    },
+    "E1-D01-L02": {
+      "title": "Taules de freqüències",
+      "objectives": [
+        "Construir una taula de freqüències absolutes i relatives.",
+        "Comprovar que les sumes de freqüències absolutes i relatives són n i 1."
+      ],
+      "content_blocks": [
+        {
+          "body": "La freqüència absoluta nᵢ d’un valor és el nombre d’aparicions a les dades, i la seva freqüència relativa fᵢ=nᵢ/n és una proporció entre 0 i 1 quan n>0. A [1,1,2,3,3,3] tenim n=6: per al valor 1, n₁=2 i f₁=2/6=1/3; per al valor 2, n₂=1, f₂=1/6; per a 3, n₃=3, f₃=1/2. Les freqüències absolutes sumen 6 i les relatives sumen 1. Per mostrar percentatges es multiplica la freqüència relativa per 100, per exemple 1/2=50 %. La freqüència acumulada requereix un ordre significatiu, que existeix per a dades numèriques però no necessàriament per a categories nominals. Si n=0, no es divideix per zero ni s’interpreta una taula sense observacions com una distribució probabilística."
+        },
+        {
+          "body": "A [1,1,2,3,3,3], la freqüència absoluta de 3 és 3, la seva freqüència relativa és 3/6=1/2 i el percentatge és 50 %."
+        },
+        {
+          "body": "La taula dels valors 1,2,3 té freqüències 2,1,3. La suma 2+1+3=6 permet comprovar la mida de la mostra."
+        },
+        {
+          "body": "Freqüències de sis dades. SVG local de suport amb una taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Freqüències de sis dades. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre del color.",
+          "visual_spec": {
+            "title": "Freqüències de sis dades"
+          }
+        },
+        {
+          "body": "Pot sumar 1,5 una taula correcta de freqüències relatives amb categories disjuntes i exhaustives?||No; han de sumar exactament 1, llevat dels arrodoniments indicats clarament."
+        },
+        {
+          "body": "Recuperació activa: la freqüència absoluta nᵢ d’un valor és el nombre d’aparicions a les dades, i la freqüència relativa fᵢ=nᵢ/n és una proporció entre 0 i 1 quan n>0. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    },
+    "E1-D01-L03": {
+      "title": "Diagrames de barres i de sectors",
+      "objectives": [
+        "Interpretar diagrames de barres i sectors amb escales i categories correctes.",
+        "Convertir freqüències relatives en angles dels sectors sense modificar el total."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un diagrama de barres utilitza altures proporcionals a les freqüències de les categories, amb l’eix y i l’escala etiquetats; les barres de categories diferents no han de suggerir continuïtat. En un diagrama de sectors, cada categoria rep un angle θ=360°·nᵢ/n si el total n>0 i les categories són mútuament excloents. Amb 12 observacions i freqüències 3, 6 i 3, els sectors són de 90°, 180° i 90°, la suma dels quals és 360°. La meitat de les observacions vol dir 50 % i 180°, no 50°. Una gràfica ha d’indicar la font, el període, la unitat i el denominador; retallar l’eix o representar superfícies desproporcionades pot crear impressions enganyoses. No s’ha d’inferir mai causalitat de l’altura d’una barra ni inventar registres d’alumnes."
+        },
+        {
+          "body": "En 12 respostes amb les categories A=3, B=6 i C=3, el sector B correspon a 6/12=1/2 i ocupa 180°."
+        },
+        {
+          "body": "La categoria A ocupa 3/12=1/4 d’un cercle, per tant 90°; tots els angles sumen 360°."
+        },
+        {
+          "body": "Freqüències abans de dibuixar sectors. SVG local de suport amb una taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Freqüències abans de dibuixar sectors. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre del color.",
+          "visual_spec": {
+            "title": "Freqüències abans de dibuixar sectors"
+          }
+        },
+        {
+          "body": "Si una categoria representa la meitat de les respostes, ha d’ocupar 50° al diagrama circular?||No; representa 180° (50 % de 360°)."
+        },
+        {
+          "body": "Recuperació activa: un diagrama de barres utilitza altures proporcionals a les freqüències de les categories, amb l’eix y i l’escala etiquetats; les barres de categories diferents no han de suggerir continuïtat. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    },
+    "E1-D01-L04": {
+      "title": "Mitjana, mediana i moda inicials",
+      "objectives": [
+        "Calcular mitjanes aritmètiques, medianes i modes en mostres petites.",
+        "Triar les mesures segons el tipus de variable i la resistència als valors extrems."
+      ],
+      "content_blocks": [
+        {
+          "body": "La mitjana aritmètica de n dades numèriques és la suma dividida per n, sempre que n>0. La mediana és el valor central després d’ordenar la mostra; quan n és parell, es fa la mitjana dels dos valors centrals. La moda és el valor més freqüent i pot no ser única. Per a [1,2,2,3,12], la suma és 20, la mitjana és 4, la mediana és 2 i la moda és 2. El valor extrem 12 fa augmentar la mitjana però no desplaça la mediana en aquesta mostra. No es calcula una mitjana numèrica de respostes com colors o mitjans de transport perquè no tenen magnitud numèrica; sí que se’n pot identificar la moda. Les mesures descriuen la mostra i, per si soles, no permeten generalitzar a tota la població."
+        },
+        {
+          "body": "Ordena [1,2,2,3,12]. Mitjana (1+2+2+3+12)/5=20/5=4; mediana tercer valor=2; moda=2."
+        },
+        {
+          "body": "Per a [1,2,3,4], mitjana 10/4=2,5 i mediana (2+3)/2=2,5; no hi ha una moda única si totes les freqüències empaten."
+        },
+        {
+          "body": "Mitjana sensible a una dada extrema. SVG local de suport amb una taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Mitjana sensible a una dada extrema. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre del color.",
+          "visual_spec": {
+            "title": "Mitjana sensible a una dada extrema"
+          }
+        },
+        {
+          "body": "És correcte calcular la mitjana aritmètica de colors nominals fent servir codis numèrics arbitraris?||No; aquests codis no creen distàncies quantitatives."
+        },
+        {
+          "body": "Recuperació activa: la mitjana aritmètica de n dades numèriques és la suma dividida per n, sempre que n>0. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    },
+    "E1-D01-L05": {
+      "title": "Interpretació crítica de gràfiques",
+      "objectives": [
+        "Detectar gràfiques amb eixos truncats i escales no comparables.",
+        "Formular conclusions limitades per la mida i el mètode del mostreig."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una gràfica pot induir conclusions errònies si l’eix vertical comença en un valor diferent de zero sense avisar, si dues sèries fan servir escales diferents o si les àrees es dibuixen amb mides desproporcionades. Suposem que una barra mostra 48 respostes i una altra 52. La diferència absoluta és de 4 respostes i la relativa respecte de 48 és 4/48=1/12, aproximadament 8,33 %, no un creixement del 100 %. Si es dibuixen les barres amb l’eix a partir de 47, la primera altura visible és 1 i la segona 5, fet que suggereix una proporció 5:1 inexistent a la dada original. La mostra, la procedència i l’interval temporal són necessaris abans d’extrapolar conclusions; observar associació entre categories no demostra una causa. Les xifres d’aquesta activitat són completament sintètiques."
+        },
+        {
+          "body": "Dos grups registren 48 i 52 observacions: diferència absoluta 52−48=4, i la proporció dels totals és 52/48=13/12."
+        },
+        {
+          "body": "Si l’eix vertical comença en 47, les altures dibuixades poden ser 1 i 5, però els totals reals continuen sent 48 i 52."
+        },
+        {
+          "body": "Comparació amb un eix a partir de zero. SVG local de suport amb una taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Comparació amb un eix a partir de zero. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre del color.",
+          "visual_spec": {
+            "title": "Comparació amb un eix a partir de zero"
+          }
+        },
+        {
+          "body": "És legítim concloure que un grup quintuplica l’altre perquè l’eix retallat mostra altures 1 i 5?||No; els totals són 48 i 52, no 1 i 5."
+        },
+        {
+          "body": "Recuperació activa: una gràfica pot induir conclusions errònies si l’eix vertical comença en un valor diferent de zero sense avisar, si dues sèries fan servir escales diferents o si les àrees es dibuixen amb mides desproporcionades. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    },
+    "E1-D01-L06": {
+      "title": "Experiments aleatoris i freqüència relativa",
+      "objectives": [
+        "Distingir experiment aleatori, resultat i freqüència relativa observada.",
+        "Reconèixer que la freqüència experimental pot diferir de la probabilitat teòrica."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un experiment aleatori ofereix diversos resultats possibles abans de dur-se a terme. En el llançament ideal d’una moneda equilibrada, la probabilitat teòrica de cara és 1/2, però en una sèrie curta pot observar-se una freqüència relativa diferent de 1/2 sense contradicció. Si surten 7 cares en 10 llançaments independents, la freqüència relativa observada és 7/10=70 %, cosa que no prova que la probabilitat real sigui 70 %. Amb prou repeticions i sota les hipòtesis d’independència i condicions estables, les freqüències tendeixen a estabilitzar-se, però no es garanteix el resultat exacte en una mostra finita. Cal distingir espai mostral, esdeveniment i observació, i no equiparar mai freqüència observada amb probabilitat sense un model justificat. Les dades són sintètiques."
+        },
+        {
+          "body": "Es registren 7 cares en 10 assaigs. La freqüència relativa de cara és 7/10=0,7, mentre que la probabilitat teòrica ideal continua sent 1/2."
+        },
+        {
+          "body": "En 20 llançaments amb 9 cares, la freqüència relativa és 9/20=0,45, diferent de 0,5; no és una prova que la moneda estigui esbiaixada."
+        },
+        {
+          "body": "Freqüències observades d’una moneda sintètica. SVG local de suport amb una taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Freqüències observades d’una moneda sintètica. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre del color.",
+          "visual_spec": {
+            "title": "Freqüències observades d’una moneda sintètica"
+          }
+        },
+        {
+          "body": "Deu llançaments amb set cares demostren que la probabilitat teòrica de cara és 70 %?||No; una freqüència experimental finita no determina necessàriament la probabilitat teòrica."
+        },
+        {
+          "body": "Recuperació activa: un experiment aleatori ofereix diversos resultats possibles abans de dur-se a terme. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E1-D01-L01-01": {
+      "prompt": "En Població, variable i dada: d’una població de 80 unitats se n’observen 20; calcula la MIDA de la mostra n. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 20. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L01-02": {
+      "prompt": "En Població, variable i dada: d’una població de 50 unitats se n’observen 12; calcula la MIDA de la mostra n. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 12. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L01-03": {
+      "prompt": "En Població, variable i dada: en el conjunt de dades [1, 3, 2, 3, 1], compta el NOMBRE d’observacions. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 5. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L01-04": {
+      "prompt": "En Població, variable i dada: tota mostra coincideix necessàriament amb la població completa? Sí/No. Tria l’opció vàlida.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L01-05": {
+      "prompt": "En Població, variable i dada: el nombre de llibres llegits per estudiant és una variable: Quantitativa discreta, Qualitativa nominal o Contínua. Tria l’opció vàlida.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: Quantitativa discreta. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L02-01": {
+      "prompt": "En Taules de freqüències: en les dades [1, 1, 2, 3, 3, 3], calcula la freqüència ABSOLUTA del valor 3. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 3. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L02-02": {
+      "prompt": "En Taules de freqüències: en les dades [1, 1, 2, 3, 3, 3], calcula la freqüència RELATIVA exacta del valor 3. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 0,5. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L02-03": {
+      "prompt": "En Taules de freqüències: una taula presenta les freqüències absolutes [2, 1, 3]. Calcula la mida n total. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 6. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L02-04": {
+      "prompt": "En Taules de freqüències: poden sumar 1,5 les freqüències relatives exactes de categories disjuntes i exhaustives? Sí/No. Tria l’opció vàlida.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L02-05": {
+      "prompt": "En Taules de freqüències: en les dades [1, 1, 2, 3, 3, 3], calcula la freqüència ABSOLUTA del valor 1. Tria l’opció vàlida.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 2. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L03-01": {
+      "prompt": "En Diagrames de barres i sectors: en un diagrama de sectors amb 3 dades sobre un total de 12, calcula l’ANGLE corresponent en graus. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 90. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L03-02": {
+      "prompt": "En Diagrames de barres i sectors: en un diagrama de sectors amb 6 dades sobre un total de 12, calcula l’ANGLE corresponent en graus. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 180. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L03-03": {
+      "prompt": "En Diagrames de barres i sectors: en un diagrama de sectors amb 2 dades sobre un total de 8, calcula l’ANGLE corresponent en graus. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 90. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L03-04": {
+      "prompt": "En Diagrames de barres i sectors: mitja mostra representa un sector de 50° en un diagrama circular? Sí/No. Tria l’opció vàlida.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L03-05": {
+      "prompt": "En Diagrames de barres i sectors: quants graus ha de SUMAR un cercle complet ben repartit en sectors? Tria l’opció vàlida.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 360. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L04-01": {
+      "prompt": "En Mitjana, mediana i moda inicials: calcula la MITJANA aritmètica exacta de la llista de dades [1, 2, 2, 3, 12]. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 4. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L04-02": {
+      "prompt": "En Mitjana, mediana i moda inicials: ordena les dades [1, 2, 2, 3, 12] i calcula la MEDIANA exacta. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 2. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L04-03": {
+      "prompt": "En Mitjana, mediana i moda inicials: per a les dades [1, 2, 2, 3, 12], calcula la MODA numèrica més freqüent. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 2. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L04-04": {
+      "prompt": "En Mitjana, mediana i moda inicials: és vàlid calcular la mitjana de colors nominals assignant nombres arbitraris a les categories? Sí/No. Tria l’opció vàlida.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L04-05": {
+      "prompt": "En Mitjana, mediana i moda inicials: ordena les dades [1, 2, 3, 4] i calcula la MEDIANA exacta. Tria l’opció vàlida.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 2,5. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L05-01": {
+      "prompt": "En Interpretació crítica de gràfiques: calcula la DIFERÈNCIA absoluta dels recomptes 52−48. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 4. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L05-02": {
+      "prompt": "En Interpretació crítica de gràfiques: calcula el CREIXEMENT relatiu de 48 a 52, com a fracció exacta respecte del valor inicial. Tria l’opció vàlida.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 1/12. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L05-03": {
+      "prompt": "En Interpretació crítica de gràfiques: calcula el quocient exacte dels recomptes 52/48. Tria l’opció vàlida.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 13/12. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L05-04": {
+      "prompt": "En Interpretació crítica de gràfiques: un eix truncat que dibuixa barres d’altures 1 i 5 demostra que els valors reals 48 i 52 estan en proporció 1:5? Sí/No. Tria l’opció vàlida.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L05-05": {
+      "prompt": "En Interpretació crítica de gràfiques: calcula la DIFERÈNCIA absoluta dels recomptes 25−20. Tria l’opció vàlida.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 5. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L06-01": {
+      "prompt": "En Experiments aleatoris i freqüència relativa: s’observen 7 casos en 10 assaigs. Calcula la FREQÜÈNCIA relativa exacta. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 0,7. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L06-02": {
+      "prompt": "En Experiments aleatoris i freqüència relativa: s’observen 9 casos en 20 assaigs. Calcula la FREQÜÈNCIA relativa exacta. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 0,45. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L06-03": {
+      "prompt": "En Experiments aleatoris i freqüència relativa: en 10 assaigs hi ha 7 èxits. Calcula la freqüència com a PERCENTATGE numèric (sense el símbol %). Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 70. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L06-04": {
+      "prompt": "En Experiments aleatoris i freqüència relativa: set cares en deu llançaments demostren una probabilitat real de cara de 0,7? Sí/No. Tria l’opció vàlida.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    },
+    "F3-E1-D01-L06-05": {
+      "prompt": "En Experiments aleatoris i freqüència relativa: s’observen 3 casos en 10 assaigs. Calcula la FREQÜÈNCIA relativa exacta. Tria l’opció vàlida.",
+      "hint": "Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències.",
+      "explanation": "Solució verificada amb aritmètica exacta: 0,3. Distingeix mostra, variable i dada; identifica el total n abans de convertir freqüències. La freqüència relativa és nᵢ/n, el sector mesura 360°·nᵢ/n; ordena les dades per a la mediana i compara la mitjana amb els extrems. La mostra no demostra res sobre tota la població. Comprova les condicions i el significat del denominador, la unitat, l’interval o el polígon."
+    }
+  }
+}

@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
-"""Prove that translated E1 units cannot override mathematics, IDs or contracts."""
+"""Prove all published ca-ES packages cannot override mathematics, IDs or contracts."""
 from pathlib import Path
 import json,copy,tempfile
-from i18n_coverage import loaded,verify_package
+from i18n_coverage import CAT,SITE,loaded,verify_package
 R=Path(__file__).resolve().parents[1]
 passed=0
-for unit_id in ('E1-N01','E1-N02','E1-N03','E1-N04','E1-N05','E1-P01','E1-M01','E1-G01'):
+units=[u['unit_id'] for c in CAT['courses'] for u in c['units']
+       if (SITE/'i18n/ca-ES'/(u['unit_id']+'.v1.json')).is_file()]
+assert units,'No translated unit packages'
+for unit_id in units:
  src_a,src_b,data,bank=loaded(unit_id)
  file=R/'site/i18n/ca-ES'/(unit_id+'.v1.json')
  original=json.loads(file.read_text(encoding='utf8'))
  pos=verify_package(unit_id,file,data,bank,src_a,src_b)
- assert pos['lessons_translated']==6 and pos['activities_translated']==30,unit_id
+ assert pos['lessons_translated']==len(data['lesson_documents']) and pos['activities_translated']==len(bank['activities']),unit_id
  passed+=1
  def first_act(d):return d['activities'][next(iter(d['activities']))]
  def drop_first_lesson(d):
@@ -50,5 +53,5 @@ for unit_id in ('E1-N01','E1-N02','E1-N03','E1-N04','E1-N05','E1-P01','E1-M01','
    except (AssertionError,KeyError,TypeError):
     print('REJECT_PASS',unit_id,name);passed+=1
    else:raise AssertionError('Unsafe mutation accepted: '+unit_id+':'+name)
-print('I18N_CONTRACT_PASS',passed,'/ 104')
-assert passed==104
+print('I18N_CONTRACT_PASS',passed,'/',13*len(units),'units',len(units))
+assert passed==13*len(units)

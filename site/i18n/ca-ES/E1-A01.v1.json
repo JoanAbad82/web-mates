@@ -1,0 +1,333 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E1-A01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e1_a01.json": "a7b1b443d31458af515014691c4f6dc1d951e79088071b516b779a74a996643b",
+    "data/f3_e1_a01_exercises.json": "275cfaf9bad3e8a183e2e87fc615d3cd094a49d4f39b77f987ce2279b2e26d83"
+  },
+  "lessons": {
+    "E1-A01-L01": {
+      "title": "Patrons numèrics i geomètrics",
+      "objectives": [
+        "Identificar i continuar patrons numèrics i geomètrics senzills.",
+        "Explicar com canvia cada terme i expressar un patró mitjançant una regla."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un patró és una regularitat que permet predir termes. Primer observa les diferències entre valors successius; si són constants, pots expressar el terme n com una quantitat fixa més una part que es repeteix n vegades. Comprova la regla amb més d'un terme; tres exemples compatibles no demostren que sigui l'única regla."
+        },
+        {
+          "body": "Successió 4, 7, 10, 13: la diferència és +3. Si la primera posició correspon a n=1, el terme n és 3n+1. Per a n=5 val 16."
+        },
+        {
+          "body": "Un mosaic comença amb 2 quadrats i n’afegeix 4 a cada etapa: 2, 6, 10, 14. El terme n és 4n−2 (n≥1). Per a n=3: 10 quadrats."
+        },
+        {
+          "body": "Taula accessible: posició n: 1 | 2 | 3 | 4; quantitat: 4 | 7 | 10 | 13. La diferència en cada pas és +3.",
+          "alt": "Representació verbal i taula accessible del concepte."
+        },
+        {
+          "body": "Si una successió augmenta 3 a cada pas, és correcte afirmar sense més comprovacions que el terme n és 3n?||No. Cal comprovar la primera posició; en 4, 7, 10 la regla és 3n+1."
+        },
+        {
+          "body": "Identifica el canvi → determina el valor per a n=1 → escriu una regla → verifica diverses posicions."
+        }
+      ]
+    },
+    "E1-A01-L02": {
+      "title": "Expressions amb lletres",
+      "objectives": [
+        "Reconèixer lletres que representen quantitats variables.",
+        "Escriure expressions amb coeficients i constants en situacions senzilles."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una lletra pot representar una quantitat desconeguda o variable. En 3x, el 3 és un coeficient que multiplica x; 3x+2 hi afegeix dues unitats. L'expressió no és una equació perquè no conté cap igualtat. Escriu sempre què representa la lletra i la unitat de mesura, si n'hi ha."
+        },
+        {
+          "body": "Tres entrades de preu x i una comissió fixa de 2 € costen 3x+2 €. Si x=4 €, el total és 14 €."
+        },
+        {
+          "body": "Un rectangle d'amplada x i llargada x+2 té perímetre 2x+2(x+2)=4x+4, no 2x+2."
+        },
+        {
+          "body": "Representa x amb una caixa: 3x+2 són tres caixes idèntiques i dues fitxes addicionals. Les fitxes no es multipliquen per x.",
+          "alt": "Representació verbal i taula accessible del concepte."
+        },
+        {
+          "body": "Per què 5x no significa 5+x?||Perquè escriure les quantitats juntes sense signe indica multiplicació: 5x = 5·x."
+        },
+        {
+          "body": "Defineix la lletra, conserva les unitats i distingeix un terme amb lletra d’una quantitat fixa."
+        }
+      ]
+    },
+    "E1-A01-L03": {
+      "title": "Del llenguatge quotidià al simbòlic",
+      "objectives": [
+        "Traduir expressions del llenguatge quotidià a símbols algebraics.",
+        "Distingir les frases en què els parèntesis modifiquen el resultat."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per traduir un enunciat, identifica primer la quantitat de referència. «El triple d'un nombre més 4» s'expressa com 3x+4 si el +4 s'aplica al triple; «el triple de la suma del nombre i 4» s'escriu 3(x+4). L'ordre de les accions és important."
+        },
+        {
+          "body": "Una tarifa fixa de 5 € més 2 € per ús: C(n)=5+2n, amb n com a nombre d’usos. Per a 3 usos són 11 €."
+        },
+        {
+          "body": "«Quatre menys el doble d’un nombre» és 4−2x, mentre que «el doble de quatre menys un nombre» s’interpretaria com 2(4−x) si es refereix a tota la diferència."
+        },
+        {
+          "body": "Dos diagrames verbals: multiplicar x per 3 i després sumar 4 → 3x+4; sumar 4 a x i multiplicar el total per 3 → 3(x+4).",
+          "alt": "Representació verbal i taula accessible del concepte."
+        },
+        {
+          "body": "Quina diferència hi ha entre 3x+4 i 3(x+4)?||La segona expressió també multiplica el 4 per 3; difereixen en 8 per a qualsevol x."
+        },
+        {
+          "body": "Subratlla la quantitat, l’operació i l’abast de cada parèntesi. Verifica la traducció amb un valor concret."
+        }
+      ]
+    },
+    "E1-A01-L04": {
+      "title": "Valor numèric",
+      "objectives": [
+        "Calcular valors d’expressions senzilles substituint-hi una lletra.",
+        "Respectar els parèntesis, les potències i els signes durant el càlcul."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per trobar un valor numèric, substitueix la lletra pel nombre corresponent. Si el valor és negatiu, escriu-lo entre parèntesis, sobretot davant de potències. Després respecta la jerarquia: parèntesis, potències, multiplicacions i sumes."
+        },
+        {
+          "body": "Per a x=−2, en x²+3 es calcula (−2)²+3=4+3=7; sense parèntesis, −2² s’interpretaria com −4."
+        },
+        {
+          "body": "Si a=5, 3(a+2)=3·7=21; en canvi, 3a+2=17. Els parèntesis modifiquen què es multiplica."
+        },
+        {
+          "body": "Una màquina de càlcul rep x=4, duplica x i resta 5: 2·4−5=3. L’ordre de les operacions explica el resultat.",
+          "alt": "Representació verbal i taula accessible del concepte."
+        },
+        {
+          "body": "Per què, en substituir x=−3 a x², hem d’escriure (−3)²?||Perquè el signe negatiu també forma part de la base; (-3)²=9."
+        },
+        {
+          "body": "Substitueix amb parèntesis, calcula primer les potències i els productes i comprova si el signe final és raonable."
+        }
+      ]
+    },
+    "E1-A01-L05": {
+      "title": "Igualtats i equivalències",
+      "objectives": [
+        "Interpretar una igualtat com un equilibri entre dos membres.",
+        "Reconèixer transformacions equivalents i comprovar valors senzills."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una igualtat afirma que dues expressions tenen el mateix valor. Sumar o restar la mateixa quantitat a tots dos membres conserva la igualtat. Dues expressions són equivalents si coincideixen per a tots els valors permesos. Comprovar només un valor pot refutar una identitat, però no demostrar-la."
+        },
+        {
+          "body": "3x+2=14. Restar 2 a tots dos membres dona 3x=12; dividir tots dos membres per 3 dona x=4. Comprovació: 3·4+2=14."
+        },
+        {
+          "body": "2(x+3)=2x+6 per a qualsevol x: distribuir el 2 en tots dos sumands no altera l’expressió."
+        },
+        {
+          "body": "Imagina una balança amb el mateix pes als dos plats. Retirar la mateixa quantitat de cada costat manté l’equilibri; retirar-la només d’un costat el trenca.",
+          "alt": "Representació verbal i taula accessible del concepte."
+        },
+        {
+          "body": "N’hi ha prou que 2x i x+1 coincideixin per a x=1 per considerar-les equivalents?||No; per a x=2 donen 4 i 3, respectivament. Coincidir en un sol valor no demostra una identitat."
+        },
+        {
+          "body": "La igualtat es manté si fem la mateixa operació a tots dos costats; comprova sempre les solucions en la igualtat original."
+        }
+      ]
+    },
+    "E1-A01-L06": {
+      "title": "Equacions lineals molt senzilles",
+      "objectives": [
+        "Resoldre equacions lineals senzilles d’un pas o dos.",
+        "Comprovar que la solució satisfà l’enunciat original."
+      ],
+      "content_blocks": [
+        {
+          "body": "Resoldre una equació consisteix a trobar els valors que fan certa una igualtat. Per a x+7=12, desfés la suma restant 7 a tots dos membres; per a 3x=18, desfés el producte dividint per 3, que no és zero. Substitueix el resultat al final."
+        },
+        {
+          "body": "x+7=12 → x=5. Comprovació: 5+7=12."
+        },
+        {
+          "body": "2x+4=12 → resta 4: 2x=8 → divideix per 2: x=4. Comprova: 2·4+4=12."
+        },
+        {
+          "body": "Una balança té dues caixes x i quatre fitxes en un plat, i dotze fitxes a l’altre. Treure quatre fitxes de tots dos plats i repartir les vuit restants entre dues caixes dona x=4.",
+          "alt": "Representació verbal i taula accessible del concepte."
+        },
+        {
+          "body": "Si 3x=18, per què dividim entre 3 en comptes de restar 3?||Perquè 3x representa tres vegades x: l’operació inversa és dividir per 3."
+        },
+        {
+          "body": "Desfés les operacions en ordre invers, aplica-les a tots dos membres i comprova el resultat substituint-lo."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E1-A01-L01-01": {
+      "prompt": "En el patró 4, 7, 10, 13, quin és el terme de la posició 5?",
+      "hint": "Quant augmenta cada terme respecte de l’anterior?",
+      "explanation": "El cinquè terme és 13+3=16."
+    },
+    "F3-E1-A01-L01-02": {
+      "prompt": "En el patró de quadrats 2, 6, 10, 14, quants n’hi ha a la cinquena figura?",
+      "hint": "Compta l’augment fix entre dibuixos.",
+      "explanation": "La cinquena figura té 18 quadrats."
+    },
+    "F3-E1-A01-L01-03": {
+      "prompt": "Si un patró segueix la regla 3n+1 (n comença en 1), quin valor té per a n=8?",
+      "hint": "Substitueix la posició n per 8.",
+      "explanation": "El valor és 24+1=25."
+    },
+    "F3-E1-A01-L01-04": {
+      "prompt": "Després de 4, 7, 10, 13, quin nombre ve?",
+      "hint": "Les diferències valen +3.",
+      "explanation": "La continuació és 16, no 15 ni 17."
+    },
+    "F3-E1-A01-L01-05": {
+      "prompt": "Quina regla reprodueix 4, 7, 10 a les posicions 1, 2, 3?",
+      "hint": "El canvi constant és 3.",
+      "explanation": "3n+1 dona 4,7,10."
+    },
+    "F3-E1-A01-L02-01": {
+      "prompt": "Una entrada costa x=4 €; quant val 3x+2 €?",
+      "hint": "Calcula primer el preu de tres entrades.",
+      "explanation": "Total 14 €. Procediment: 3·4+2. Comprova que correspon a l’enunciat original."
+    },
+    "F3-E1-A01-L02-02": {
+      "prompt": "Calcula 5b−3 quan b=2.",
+      "hint": "El terme 5b significa 5 multiplicat per b.",
+      "explanation": "5·2−3=7. Procediment: 5·2−3. Comprova que correspon a l’enunciat original."
+    },
+    "F3-E1-A01-L02-03": {
+      "prompt": "Calcula 4x+4 quan x=3.",
+      "hint": "Substitueix x=3.",
+      "explanation": "12+4=16. Procediment: 4·3+4. Comprova que correspon a l’enunciat original."
+    },
+    "F3-E1-A01-L02-04": {
+      "prompt": "Quina expressió representa tres vegades x, més 2?",
+      "hint": "El 2 no es multiplica per 3.",
+      "explanation": "S’escriu 3x+2."
+    },
+    "F3-E1-A01-L02-05": {
+      "prompt": "Tres entrades de preu x més 2 € de taxa fixa: quina expressió representa el total?",
+      "hint": "La taxa es paga una sola vegada.",
+      "explanation": "Total 3x+2. Procediment: multiplica el preu x per 3 i afegeix 2. Comprova que correspon a l’enunciat original."
+    },
+    "F3-E1-A01-L03-01": {
+      "prompt": "Una tarifa val 5 € fixos més 2 € per ús. Quin és el preu de 3 usos?",
+      "hint": "Fes servir C(n)=5+2n.",
+      "explanation": "5+2·3=11 €. Procediment: substitueix n=3. Comprova que correspon a l’enunciat original."
+    },
+    "F3-E1-A01-L03-02": {
+      "prompt": "Calcula «quatre menys el doble de x» per a x=5.",
+      "hint": "Escriu 4−2x.",
+      "explanation": "4−10=−6. Procediment: substitueix x=5. Comprova que correspon a l’enunciat original."
+    },
+    "F3-E1-A01-L03-03": {
+      "prompt": "Calcula «el triple de la suma de x i 4» per a x=2.",
+      "hint": "La suma ha d’anar entre parèntesis.",
+      "explanation": "3·6=18. Procediment: 3(2+4). Comprova que correspon a l’enunciat original."
+    },
+    "F3-E1-A01-L03-04": {
+      "prompt": "Com escrius «el triple del nombre x, més quatre»?",
+      "hint": "El quatre s’afegeix després del triple.",
+      "explanation": "L’expressió és 3x+4."
+    },
+    "F3-E1-A01-L03-05": {
+      "prompt": "Com escrius «la meitat de x, més tres»?",
+      "hint": "La meitat només afecta x.",
+      "explanation": "Es representa per x/2+3."
+    },
+    "F3-E1-A01-L04-01": {
+      "prompt": "Calcula x²+3 quan x=−2.",
+      "hint": "Posa la base negativa entre parèntesis.",
+      "explanation": "El resultat és 7."
+    },
+    "F3-E1-A01-L04-02": {
+      "prompt": "Calcula 2x−5 quan x=4.",
+      "hint": "Substitueix x=4.",
+      "explanation": "El valor és 3."
+    },
+    "F3-E1-A01-L04-03": {
+      "prompt": "Calcula 3(a+2) quan a=5.",
+      "hint": "Primer suma dins del parèntesi.",
+      "explanation": "Resultat 21."
+    },
+    "F3-E1-A01-L04-04": {
+      "prompt": "Calcula x²−x quan x=−3.",
+      "hint": "Substitueix fent servir parèntesis.",
+      "explanation": "9+3=12. Procediment: 9−(−3). Comprova que correspon a l’enunciat original."
+    },
+    "F3-E1-A01-L04-05": {
+      "prompt": "Quant val x² quan x=−3?",
+      "hint": "No oblidis el parèntesi a (−3)².",
+      "explanation": "(−3)²=9. Procediment: un negatiu multiplicat per un altre de negatiu dona positiu. Comprova que correspon a l’enunciat original."
+    },
+    "F3-E1-A01-L05-01": {
+      "prompt": "Resol x+4=9. Escriu el valor de x.",
+      "hint": "Resta 4 a tots dos membres.",
+      "explanation": "x=5 i 5+4=9."
+    },
+    "F3-E1-A01-L05-02": {
+      "prompt": "Resol 3x=12. Escriu x.",
+      "hint": "L’operació inversa de multiplicar per 3 és dividir per 3.",
+      "explanation": "Comprovació: x=4; 3·4=12."
+    },
+    "F3-E1-A01-L05-03": {
+      "prompt": "És una identitat 2(x+3)=2x+6 per a qualsevol x?",
+      "hint": "Aplica la propietat distributiva.",
+      "explanation": "Sí, és vàlida per a qualsevol x real."
+    },
+    "F3-E1-A01-L05-04": {
+      "prompt": "Són equivalents 2x i x+1 per a tots els valors?",
+      "hint": "Prova el valor x=2.",
+      "explanation": "No és una identitat: només coincideixen en alguns valors."
+    },
+    "F3-E1-A01-L05-05": {
+      "prompt": "Resol 2x+4=12. Escriu x.",
+      "hint": "Resta 4 a tots dos membres.",
+      "explanation": "x=4 i comprova 2·4+4=12."
+    },
+    "F3-E1-A01-L06-01": {
+      "prompt": "Resol x+7=12.",
+      "hint": "Resta 7 a tots dos membres.",
+      "explanation": "x=5. Procediment: x=12−7. Comprova que correspon a l’enunciat original."
+    },
+    "F3-E1-A01-L06-02": {
+      "prompt": "Resol 3x=18.",
+      "hint": "Divideix tots dos membres per 3.",
+      "explanation": "x=6 i satisfà l’equació."
+    },
+    "F3-E1-A01-L06-03": {
+      "prompt": "Resol 2x+4=12.",
+      "hint": "Resta 4 abans de dividir.",
+      "explanation": "x=4. Procediment: 2x=8. Comprova que correspon a l’enunciat original."
+    },
+    "F3-E1-A01-L06-04": {
+      "prompt": "Resol x−3=8.",
+      "hint": "Suma 3 a tots dos membres.",
+      "explanation": "x=11. Procediment: x=8+3. Comprova que correspon a l’enunciat original."
+    },
+    "F3-E1-A01-L06-05": {
+      "prompt": "Quina solució té 3x+1=10?",
+      "hint": "Resta 1 a tots dos membres.",
+      "explanation": "x=3 perquè 3·3+1=10."
+    }
+  }
+}

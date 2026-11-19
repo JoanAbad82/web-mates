@@ -173,12 +173,16 @@ let server,browser;
   'E1-N05':['Lectura i comparació de decimals','Operacions amb nombres decimals','De fracció a decimal','Percentatges, fraccions i decimals','Càlcul de percentatges','Augments i descomptes percentuals'],
   'E1-P01':['Raons i proporcions','Proporcionalitat directa','Taules de proporcionalitat','Constant de proporcionalitat','Escales i receptes proporcionals','Problemes de preu i quantitat'],
   'E1-M01':['Magnituds i unitats de mesura','Canvis d’unitats','Estimació i precisió','Escales de plànols i mapes','Perímetres i unitats','Problemes de mesura i conversions'],
-  'E1-G01':['Rectes, segments i angles','Triangles i les seves propietats','Polígons i quadrilàters','Circumferència i cercle','Àrees de figures planes','Àrees de figures compostes']
+  'E1-G01':['Rectes, segments i angles','Triangles i les seves propietats','Polígons i quadrilàters','Circumferència i cercle','Àrees de figures planes','Àrees de figures compostes'],
+  'E1-A01':['Patrons numèrics i geomètrics','Expressions amb lletres','Del llenguatge quotidià al simbòlic','Valor numèric','Igualtats i equivalències','Equacions lineals molt senzilles'],
+  'E1-F01':['Eixos i coordenades','Parells de valors','Taules de dependència','Representació de punts','Lectura de gràfiques contextualitzades','Variacions positives i negatives'],
+  'E1-D01':['Població, variable i dada','Taules de freqüències','Diagrames de barres i de sectors','Mitjana, mediana i moda inicials','Interpretació crítica de gràfiques','Experiments aleatoris i freqüència relativa'],
+  'E2-N01':['Potències d’exponent natural','Producte i quocient de potències','Potència d’una potència','Arrels quadrades principals','Nombres racionals amb signe','Operacions combinades amb potències i racionals']
  };
  for(const [unit,titles] of Object.entries(newUnits)){
   for(let i=1;i<=6;i++){
    const suffix=String(i).padStart(2,'0');
-   await page.goto(base+'?lang=ca#/curso/E1/unidad/'+unit+'/leccion/'+unit+'-L'+suffix,{waitUntil:'networkidle0'});
+   await page.goto(base+'?lang=ca#/curso/'+unit.split('-')[0]+'/unidad/'+unit+'/leccion/'+unit+'-L'+suffix,{waitUntil:'networkidle0'});
    await page.waitForSelector('.f1-question-prompt',{timeout:10000});
    const state=await page.evaluate(()=>({
     lang:document.querySelector('#main').lang,
@@ -232,14 +236,36 @@ let server,browser;
   check('E1_NEW_VALIDATOR_'+unit,prompt.includes(fragment)&&feedback.includes('Correcte.')&&feedback.includes(result),
    {prompt,feedback},'Canonical validator and Catalan feedback');
  }
- await page.goto(base+'?lang=ca#/curso/E1/unidad/E1-A01/leccion/E1-A01-L01',{waitUntil:'networkidle0'});
+ const finalEso=[
+  ['E1-A01','E1-A01-L01','16','patró 4, 7, 10, 13'],
+  ['E1-F01','E1-F01-L01','3','coordenada horitzontal x'],
+  ['E1-D01','E1-D01-L01','20','població de 80 unitats']
+ ];
+ for(const [unit,lesson,answer,promptPart] of finalEso){
+  await page.goto(base+'?lang=ca#/curso/E1/unidad/'+unit+'/leccion/'+lesson,{waitUntil:'networkidle0'});
+  await page.waitForSelector('#f3-answer',{timeout:10000});
+  const exercisePrompt=await page.$eval('.f1-question-prompt',e=>e.textContent);
+  await page.click('#f3-answer');await page.keyboard.type(answer);
+  await page.click('.f3-question button[type=submit]');
+  const exerciseFeedback=await page.$eval('.f3-feedback',e=>e.textContent);
+  check('FINAL_E1_VALIDATOR_'+unit,exercisePrompt.includes(promptPart)&&exerciseFeedback.includes('Correcte.'),
+   {exercisePrompt,exerciseFeedback},'Original validator, translated question and feedback');
+ }
+ await page.goto(base+'?lang=ca#/curso/E2/unidad/E2-N01/leccion/E2-N01-L01',{waitUntil:'networkidle0'});
+ await page.waitForSelector('#f3-answer',{timeout:10000});
+ await page.click('#f3-answer');await page.keyboard.type('9');
+ await page.click('.f3-question button[type=submit]');
+ const e2Feedback=await page.$eval('.f3-feedback',e=>e.textContent);
+ check('E2_N01_VALIDATOR_CA',e2Feedback.includes('Correcte.')&&e2Feedback.includes('Resposta exacta: 9'),
+  e2Feedback.slice(0,240),'Signed power calculator preserves canonical answer');
+ await page.goto(base+'?lang=ca#/curso/E2/unidad/E2-N02/leccion/E2-N02-L01',{waitUntil:'networkidle0'});
  await page.waitForSelector('.f1-question-prompt',{timeout:12000});
  const pending=await page.evaluate(()=>({
   mainLang:document.querySelector('#main').lang,
   prompt:document.querySelector('.f1-question-prompt')?.textContent,
   bannerVisible:!document.querySelector('#locale-partial').hidden
  }));
- check('UNTRANSLATED_E1_A01_ES_FALLBACK',pending.mainLang==='es'&&pending.bannerVisible,
+ check('UNTRANSLATED_E2_N02_ES_FALLBACK',pending.mainLang==='es'&&pending.bannerVisible,
   pending,'Pending unit still attributed Spanish');
 
  check('NO_JS_OR_EXTERNAL',results.jsErrors.length===0&&results.external.length===0&&results.httpErrors.length===0,
