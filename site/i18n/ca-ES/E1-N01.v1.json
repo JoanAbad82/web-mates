@@ -1,0 +1,71 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E1-N01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e1_n01.json": "c5b46b74f9631325661000c0f4182b0c26f4d1f280b353b1904f71c07b442c09",
+    "data/f3_e1_n01_exercises.json": "dddb5cb38cd49c24f4a090bf883d4e987d2749a2fc2c87695b52463c76859166"
+  },
+  "lessons": {
+    "E1-N01-L01": {
+      "title": "Valor posicional i comparació",
+      "objectives": [
+        "Descompondre nombres naturals segons el valor posicional.",
+        "Comparar nombres fixant-se primer en la xifra d’ordre més alt."
+      ],
+      "content_blocks": [
+        {
+          "body": "En base deu, cada posició val deu vegades la que té a la dreta. Cada xifra aporta el seu valor multiplicat per 1, 10, 100, 1 000, etcètera. Per comparar dos nombres naturals, comença pel nombre de xifres i després compara, d’esquerra a dreta, les xifres que ocupen la mateixa posició. Un zero entre dues xifres conserva la posició encara que no aporti unitats."
+        },
+        {
+          "body": "4 305 = 4 000 + 300 + 0 + 5; el 3 aporta 300 unitats, no pas 3."
+        },
+        {
+          "body": "Per comparar 4 305 i 4 350, coincideixen els milers i les centenes; a les desenes, 0 < 5, de manera que 4 305 < 4 350."
+        },
+        {
+          "body": "Descomposició de 4 305. Fes servir la taula alternativa per llegir els valors exactes, independentment del gràfic.",
+          "alt": "Descomposició de 4 305. Totes les dades d’aquesta representació també apareixen en una taula semàntica.",
+          "visual_spec": {
+            "title": "Descomposició de 4 305"
+          }
+        },
+        {
+          "body": "Què canvia si intercanviem les xifres 2 i 5 de 2 530?||Passem a 5 230: cada xifra canvia de posició i, per tant, de valor."
+        },
+        {
+          "body": "Idea essencial: en base deu, cada posició val deu vegades la que té a la dreta. Identifica el procediment, explica’l i contrasta un exemple nou sense mirar les pistes."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E1-N01-L01-01": {
+      "prompt": "Quina xifra ocupa la posició de les centenes en 4 837?",
+      "hint": "Cada posició multiplica una xifra per una potència de deu.",
+      "explanation": "Mètode: cada posició multiplica una xifra per una potència de deu. Separa els milers, les centenes, les desenes i les unitats. Dades utilitzades: 4837, 100. Resultat: 8. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N01-L01-02": {
+      "prompt": "Quin valor aporta la xifra situada a la posició dels milers de 7 354?",
+      "hint": "Identifica la xifra i multiplica-la pel seu valor posicional.",
+      "explanation": "Mètode: identifica la xifra i multiplica-la pel seu valor posicional. El valor d’una xifra no és sempre només la xifra. Dades utilitzades: 7354, 1000. Resultat: 7000. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N01-L01-03": {
+      "prompt": "Quina xifra ocupa la posició de les desenes en 5 906?",
+      "hint": "Cada posició multiplica una xifra per una potència de deu.",
+      "explanation": "Mètode: cada posició multiplica una xifra per una potència de deu. Separa els milers, les centenes, les desenes i les unitats. Dades utilitzades: 5906, 10. Resultat: 0. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N01-L01-04": {
+      "prompt": "Compara 4 305 i 4 350. Tria <, = o >, en aquest ordre.",
+      "hint": "A la recta numèrica, els nombres creixen cap a la dreta.",
+      "explanation": "Mètode: a la recta numèrica, els nombres creixen cap a la dreta. Compara les posicions, no els valors absoluts. Dades utilitzades: 4305, 4350. Resultat: <. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N01-L01-05": {
+      "prompt": "Quin valor aporta la xifra situada a la posició de les centenes de 8 061? Selecciona la resposta numèrica correcta.",
+      "hint": "Identifica la xifra i multiplica-la pel seu valor posicional.",
+      "explanation": "Mètode: identifica la xifra i multiplica-la pel seu valor posicional. El valor d’una xifra no és sempre només la xifra. Dades utilitzades: 8061, 100. Resultat: 0. Comprova el càlcul i la unitat de l’enunciat."
+    }
+  }
+}
