@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E1-N03",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e1_n03.json": "5dd63ecd23aa093acba6ae2c74b62b1c19c955c58dd3059d32ad58d258618f07",
+    "data/f3_e1_n03_exercises.json": "06218adcb562bcead778d0392c62ed1a26b82ed2edfa0aa24e85277f35539088"
+  },
+  "lessons": {
+    "E1-N03-L01": {
+      "title": "Múltiples i divisors",
+      "objectives": [
+        "Distingir els múltiples dels divisors.",
+        "Identificar divisors positius i múltiples naturals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un nombre b és divisor de a quan existeix un natural k tal que a = b × k; b no pot ser zero. En aquest cas, a és múltiple de b. Tot natural positiu té almenys els divisors 1 i ell mateix, que poden coincidir quan a=1. Els múltiples són infinits; els divisors positius d’un natural més gran que zero són finits."
+        },
+        {
+          "body": "24 és múltiple de 6 perquè 24 = 6 × 4; alhora, 6 és divisor de 24."
+        },
+        {
+          "body": "Els divisors positius de 12 són 1, 2, 3, 4, 6 i 12; 5 no ho és perquè deixa residu 2."
+        },
+        {
+          "body": "Parelles de factors de 24. Fes servir la taula alternativa per llegir els valors exactes, independentment del gràfic.",
+          "alt": "Parelles de factors de 24. Totes les dades d’aquesta representació també apareixen en una taula semàntica.",
+          "visual_spec": {
+            "title": "Parelles de factors de 24"
+          }
+        },
+        {
+          "body": "Pot ser zero divisor de 12?||No: dividir entre zero no està definit i cap quocient no ho pot fer vàlid."
+        },
+        {
+          "body": "Idea essencial: un nombre b és divisor de a quan existeix un natural k tal que a = b × k; b no pot ser zero. Identifica el procediment, explica’l i comprova un exemple nou sense mirar les pistes."
+        }
+      ]
+    },
+    "E1-N03-L02": {
+      "title": "Criteris de divisibilitat",
+      "objectives": [
+        "Aplicar els criteris de divisibilitat de 2, 3, 5, 9 i 10.",
+        "Comprovar els criteris calculant residus quan calgui."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un natural és divisible per 2 si acaba en xifra parella; per 5 si acaba en 0 o 5; i per 10 si acaba en 0. És divisible per 3 si la suma de les seves xifres és múltiple de 3, i per 9 si aquesta suma és múltiple de 9. Són criteris diferents: acabar en 3 no garanteix que sigui divisible per 3. Per a altres divisors es pot comprovar el residu."
+        },
+        {
+          "body": "234 és divisible per 3 perquè 2 + 3 + 4 = 9, que és múltiple de 3; no és divisible per 5."
+        },
+        {
+          "body": "4 590 és divisible per 10, 5, 2, 3 i 9 perquè acaba en zero i les seves xifres sumen 18."
+        },
+        {
+          "body": "Divisors i criteris en 90. Fes servir la taula alternativa per llegir els valors exactes, independentment del gràfic.",
+          "alt": "Divisors i criteris en 90. Totes les dades d’aquesta representació també apareixen en una taula semàntica.",
+          "visual_spec": {
+            "title": "Divisors i criteris en 90"
+          }
+        },
+        {
+          "body": "Per què 124 no és divisible per 3 encara que acabi en 4?||Perquè 1 + 2 + 4 = 7, que no és múltiple de 3; l’última xifra no determina la divisibilitat per 3."
+        },
+        {
+          "body": "Idea essencial: un natural és divisible per 2 si acaba en xifra parella; per 5 si acaba en 0 o 5; i per 10 si acaba en 0. Identifica el procediment, explica’l i comprova un exemple nou sense mirar les pistes."
+        }
+      ]
+    },
+    "E1-N03-L03": {
+      "title": "Nombres primers i compostos",
+      "objectives": [
+        "Distingir nombres primers de nombres compostos.",
+        "Justificar si un nombre és primer comprovant els divisors necessaris."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un nombre primer és un natural més gran que 1 que només té com a divisors positius 1 i ell mateix. Un nombre compost més gran que 1 té altres divisors. El nombre 1 no és ni primer ni compost. Per comprovar si n és primer n’hi ha prou de descartar divisors primers fins a l’arrel quadrada de n: si tingués dos factors no trivials, almenys un no superaria aquesta arrel."
+        },
+        {
+          "body": "29 és primer: no és divisible per 2, 3 ni 5 i √29 està entre 5 i 6."
+        },
+        {
+          "body": "39 és compost perquè 3 × 13 = 39; la suma de xifres 3 + 9 = 12 revela que és divisible per 3."
+        },
+        {
+          "body": "El 29 té una parella de factors. Fes servir la taula alternativa per llegir els valors exactes, independentment del gràfic.",
+          "alt": "El 29 té una parella de factors. Totes les dades d’aquesta representació també apareixen en una taula semàntica.",
+          "visual_spec": {
+            "title": "El 29 té una parella de factors"
+          }
+        },
+        {
+          "body": "El nombre 1 és primer?||No: la definició exigeix exactament dos divisors positius diferents i 1 només en té un."
+        },
+        {
+          "body": "Idea essencial: un nombre primer és un natural més gran que 1 que només té com a divisors positius 1 i ell mateix. Identifica el procediment, explica’l i comprova un exemple nou sense mirar les pistes."
+        }
+      ]
+    },
+    "E1-N03-L04": {
+      "title": "Descomposició en factors primers",
+      "objectives": [
+        "Descompondre un nombre natural més gran que 1 en factors primers.",
+        "Comprovar la descomposició multiplicant els factors."
+      ],
+      "content_blocks": [
+        {
+          "body": "Tot nombre natural més gran que 1 es pot expressar com un producte de primers i aquesta factorització és única, llevat de l’ordre dels factors. Divideix successivament per un divisor primer fins a obtenir 1; expressa els factors repetits amb exponents, per exemple 2 × 2 × 3 = 2² × 3. No confonguis la suma dels factors amb el producte: 1 no és un factor primer."
+        },
+        {
+          "body": "72 = 2 × 2 × 2 × 3 × 3 = 2³ × 3²; 8 × 9 comprova 72."
+        },
+        {
+          "body": "84 = 2² × 3 × 7. La comprovació és 4 × 3 × 7 = 84."
+        },
+        {
+          "body": "Factors de 72. Fes servir la taula alternativa per llegir els valors exactes, independentment del gràfic.",
+          "alt": "Factors de 72. Totes les dades d’aquesta representació també apareixen en una taula semàntica.",
+          "visual_spec": {
+            "title": "Factors de 72"
+          }
+        },
+        {
+          "body": "Per què 12 = 2 + 2 + 3 no és una factorització?||Perquè la factorització és un producte: 12 = 2 × 2 × 3; la suma indicada només val 7."
+        },
+        {
+          "body": "Idea essencial: tot natural més gran que 1 és un producte de primers, amb una factorització única llevat de l’ordre dels factors. Identifica el procediment, explica’l i comprova un exemple nou sense mirar les pistes."
+        }
+      ]
+    },
+    "E1-N03-L05": {
+      "title": "Màxim comú divisor",
+      "objectives": [
+        "Calcular el màxim comú divisor de nombres naturals positius.",
+        "Interpretar el MCD en repartiments iguals sense residus."
+      ],
+      "content_blocks": [
+        {
+          "body": "El màxim comú divisor (MCD) de dos enters positius és el natural més gran que divideix exactament tots dos nombres. Es pot calcular comparant divisors o prenent els factors primers comuns amb els exponents menors. En un problema de lots idèntics sense sobrants, el MCD dona el màxim nombre de lots; cada lot conté a/MCD i b/MCD elements de cada mena."
+        },
+        {
+          "body": "MCD(18, 24) = 6 perquè 18 = 2 × 3² i 24 = 2³ × 3: els factors comuns són 2 × 3."
+        },
+        {
+          "body": "Amb 18 llapis vermells i 24 de blaus es poden fer com a màxim sis lots iguals sense que en sobri cap: tres de vermells i quatre de blaus per lot."
+        },
+        {
+          "body": "Divisors de 24 per contrastar el MCD. Fes servir la taula alternativa per llegir els valors exactes, independentment del gràfic.",
+          "alt": "Divisors de 24 per contrastar el MCD. Totes les dades d’aquesta representació també apareixen en una taula semàntica.",
+          "visual_spec": {
+            "title": "Divisors de 24 per contrastar el MCD"
+          }
+        },
+        {
+          "body": "Per què MCD(12, 18) no pot ser 12?||Perquè 12 no divideix exactament 18; el divisor comú més gran és 6."
+        },
+        {
+          "body": "Idea essencial: el màxim comú divisor (MCD) de dos enters positius és el natural més gran que divideix exactament tots dos nombres. Identifica el procediment, explica’l i comprova un exemple nou sense mirar les pistes."
+        }
+      ]
+    },
+    "E1-N03-L06": {
+      "title": "Mínim comú múltiple",
+      "objectives": [
+        "Calcular el mínim comú múltiple de nombres naturals positius.",
+        "Interpretar les coincidències periòdiques amb el MCM."
+      ],
+      "content_blocks": [
+        {
+          "body": "El mínim comú múltiple (MCM) de dos naturals positius és el nombre positiu més petit que és múltiple de tots dos. Amb factors primers es prenen tots els primers implicats amb els exponents més grans. En activitats que es repeteixen cada cert nombre de minuts, el MCM determina la primera coincidència posterior a l’inici, si tots dos cicles han començat alhora."
+        },
+        {
+          "body": "MCM(6, 8) = 24: els múltiples positius de 6 són 6, 12, 18, 24…, i els de 8 són 8, 16, 24…"
+        },
+        {
+          "body": "Si dos senyals es repeteixen cada 12 i 18 minuts, tornen a coincidir al cap de 36 minuts després de començar alhora."
+        },
+        {
+          "body": "Factors de 36 per contrastar múltiples. Fes servir la taula alternativa per llegir els valors exactes, independentment del gràfic.",
+          "alt": "Factors de 36 per contrastar múltiples. Totes les dades d’aquesta representació també apareixen en una taula semàntica.",
+          "visual_spec": {
+            "title": "Factors de 36 per contrastar múltiples"
+          }
+        },
+        {
+          "body": "Per què no fem servir el MCD per trobar la primera coincidència dels cicles?||Perquè necessitem un nombre múltiple de tots dos períodes; triem el positiu més petit."
+        },
+        {
+          "body": "Idea essencial: el mínim comú múltiple (MCM) de dos naturals positius és el nombre positiu més petit que és múltiple de tots dos. Identifica el procediment, explica’l i comprova un exemple nou sense mirar les pistes."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E1-N03-L01-01": {
+      "prompt": "Quin és el múltiple de 6 que s’obté multiplicant-lo per 4?",
+      "hint": "Un múltiple s’obté multiplicant per un nombre natural.",
+      "explanation": "Mètode: Un múltiple s’obté multiplicant per un nombre natural. Escriu un producte i comprova’l. Dades utilitzades: 6, 4. Resultat: 24. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L01-02": {
+      "prompt": "Quants divisors positius té 12?",
+      "hint": "Compta els divisors positius exactes sense repetir-los.",
+      "explanation": "Mètode: Compta els divisors positius exactes sense repetir-los. Busca parelles de factors amb aquest producte. Dades utilitzades: 12. Resultat: 6. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L01-03": {
+      "prompt": "És 6 divisor exacte de 24?",
+      "hint": "Comprova si el residu de la divisió és zero.",
+      "explanation": "Mètode: Comprova si el residu de la divisió és zero. També pots intentar expressar el nombre com un producte. Dades utilitzades: 24, 6. Resultat: Sí. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L01-04": {
+      "prompt": "És 6 divisor exacte de 35?",
+      "hint": "Comprova si el residu de la divisió és zero.",
+      "explanation": "Mètode: Comprova si el residu de la divisió és zero. També pots intentar expressar el nombre com un producte. Dades utilitzades: 35, 6. Resultat: No. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L01-05": {
+      "prompt": "Quin és el múltiple de 9 que s’obté multiplicant-lo per 7? Selecciona la resposta numèrica correcta.",
+      "hint": "Un múltiple s’obté multiplicant per un nombre natural.",
+      "explanation": "Mètode: Un múltiple s’obté multiplicant per un nombre natural. Escriu un producte i comprova’l. Dades utilitzades: 9, 7. Resultat: 63. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L02-01": {
+      "prompt": "Quin residu deixa 124 en dividir-lo per 3?",
+      "hint": "Busca el múltiple més gran del divisor que no superi el dividend.",
+      "explanation": "Mètode: Busca el múltiple més gran del divisor que no superi el dividend. El residu ha de ser inferior al divisor. Dades utilitzades: 124, 3. Resultat: 1. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L02-02": {
+      "prompt": "Quin residu deixa 4590 en dividir-lo per 9?",
+      "hint": "Busca el múltiple més gran del divisor que no superi el dividend.",
+      "explanation": "Mètode: Busca el múltiple més gran del divisor que no superi el dividend. El residu ha de ser inferior al divisor. Dades utilitzades: 4590, 9. Resultat: 0. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L02-03": {
+      "prompt": "És 3 divisor exacte de 234?",
+      "hint": "Comprova si el residu de la divisió és zero.",
+      "explanation": "Mètode: Comprova si el residu de la divisió és zero. També pots intentar expressar el nombre com un producte. Dades utilitzades: 234, 3. Resultat: Sí. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L02-04": {
+      "prompt": "És 3 divisor exacte de 124?",
+      "hint": "Comprova si el residu de la divisió és zero.",
+      "explanation": "Mètode: Comprova si el residu de la divisió és zero. També pots intentar expressar el nombre com un producte. Dades utilitzades: 124, 3. Resultat: No. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L02-05": {
+      "prompt": "És 10 divisor exacte de 4590?",
+      "hint": "Comprova si el residu de la divisió és zero.",
+      "explanation": "Mètode: Comprova si el residu de la divisió és zero. També pots intentar expressar el nombre com un producte. Dades utilitzades: 4590, 10. Resultat: Sí. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L03-01": {
+      "prompt": "Quants divisors positius té 29?",
+      "hint": "Compta els divisors positius exactes sense repetir-los.",
+      "explanation": "Mètode: Compta els divisors positius exactes sense repetir-los. Busca parelles de factors amb aquest producte. Dades utilitzades: 29. Resultat: 2. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L03-02": {
+      "prompt": "Quants divisors positius té 39?",
+      "hint": "Compta els divisors positius exactes sense repetir-los.",
+      "explanation": "Mètode: Compta els divisors positius exactes sense repetir-los. Busca parelles de factors amb aquest producte. Dades utilitzades: 39. Resultat: 4. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L03-03": {
+      "prompt": "Classifica 29: primer, compost o ni primer ni compost.",
+      "hint": "Busca divisors positius diferents de l’u i del mateix nombre.",
+      "explanation": "Mètode: Busca divisors positius diferents de l’u i del mateix nombre. Recorda que l’u és un cas especial. Dades utilitzades: 29. Resultat: Primo. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L03-04": {
+      "prompt": "Classifica 1: primer, compost o ni primer ni compost.",
+      "hint": "Busca divisors positius diferents de l’u i del mateix nombre.",
+      "explanation": "Mètode: Busca divisors positius diferents de l’u i del mateix nombre. Recorda que l’u és un cas especial. Dades utilitzades: 1. Resultat: Ni primo ni compuesto. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L03-05": {
+      "prompt": "Classifica 39: primer, compost o ni primer ni compost.",
+      "hint": "Busca divisors positius diferents de l’u i del mateix nombre.",
+      "explanation": "Mètode: Busca divisors positius diferents de l’u i del mateix nombre. Recorda que l’u és un cas especial. Dades utilitzades: 39. Resultat: Compuesto. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L04-01": {
+      "prompt": "A la factorització primera de 72, quantes vegades apareix el factor 2?",
+      "hint": "Divideix successivament pel nombre primer indicat.",
+      "explanation": "Mètode: Divideix successivament pel nombre primer indicat. Compta els exponents sense confondre’ls amb el producte. Dades utilitzades: 72, 2. Resultat: 3. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L04-02": {
+      "prompt": "A la factorització primera de 72, quantes vegades apareix el factor 3?",
+      "hint": "Divideix successivament pel nombre primer indicat.",
+      "explanation": "Mètode: Divideix successivament pel nombre primer indicat. Compta els exponents sense confondre’ls amb el producte. Dades utilitzades: 72, 3. Resultat: 2. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L04-03": {
+      "prompt": "Quants factors primers té 84 comptant les repeticions?",
+      "hint": "Descompon en un producte de nombres primers.",
+      "explanation": "Mètode: Descompon en un producte de nombres primers. Suma els exponents dels factors primers. Dades utilitzades: 84. Resultat: 4. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L04-04": {
+      "prompt": "A la factorització primera de 108, quantes vegades apareix el factor 3? Selecciona la resposta numèrica correcta.",
+      "hint": "Divideix successivament pel nombre primer indicat.",
+      "explanation": "Mètode: Divideix successivament pel nombre primer indicat. Compta els exponents sense confondre’ls amb el producte. Dades utilitzades: 108, 3. Resultat: 3. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L04-05": {
+      "prompt": "Quants factors primers té 90 comptant les repeticions? Selecciona la resposta numèrica correcta.",
+      "hint": "Descompon en un producte de nombres primers.",
+      "explanation": "Mètode: Descompon en un producte de nombres primers. Suma els exponents dels factors primers. Dades utilitzades: 90. Resultat: 4. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L05-01": {
+      "prompt": "Calcula el màxim comú divisor de 18 i 24.",
+      "hint": "Busca els factors primers comuns amb els exponents menors.",
+      "explanation": "Mètode: Busca els factors primers comuns amb els exponents menors. El resultat ha de dividir tots dos nombres. Dades utilitzades: 18, 24. Resultat: 6. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L05-02": {
+      "prompt": "Calcula el màxim comú divisor de 12 i 18.",
+      "hint": "Busca els factors primers comuns amb els exponents menors.",
+      "explanation": "Mètode: Busca els factors primers comuns amb els exponents menors. El resultat ha de dividir tots dos nombres. Dades utilitzades: 12, 18. Resultat: 6. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L05-03": {
+      "prompt": "Calcula el màxim comú divisor de 42 i 56.",
+      "hint": "Busca els factors primers comuns amb els exponents menors.",
+      "explanation": "Mètode: Busca els factors primers comuns amb els exponents menors. El resultat ha de dividir tots dos nombres. Dades utilitzades: 42, 56. Resultat: 14. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L05-04": {
+      "prompt": "Calcula el màxim comú divisor de 28 i 70. Selecciona la resposta numèrica correcta.",
+      "hint": "Busca els factors primers comuns amb els exponents menors.",
+      "explanation": "Mètode: Busca els factors primers comuns amb els exponents menors. El resultat ha de dividir tots dos nombres. Dades utilitzades: 28, 70. Resultat: 14. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L05-05": {
+      "prompt": "Calcula el màxim comú divisor de 45 i 60. Selecciona la resposta numèrica correcta.",
+      "hint": "Busca els factors primers comuns amb els exponents menors.",
+      "explanation": "Mètode: Busca els factors primers comuns amb els exponents menors. El resultat ha de dividir tots dos nombres. Dades utilitzades: 45, 60. Resultat: 15. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L06-01": {
+      "prompt": "Calcula el mínim comú múltiple positiu de 6 i 8.",
+      "hint": "Pren els factors primers amb els exponents més grans.",
+      "explanation": "Mètode: Pren els factors primers amb els exponents més grans. Ha de ser múltiple de tots dos i el positiu més petit. Dades utilitzades: 6, 8. Resultat: 24. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L06-02": {
+      "prompt": "Calcula el mínim comú múltiple positiu de 12 i 18.",
+      "hint": "Pren els factors primers amb els exponents més grans.",
+      "explanation": "Mètode: Pren els factors primers amb els exponents més grans. Ha de ser múltiple de tots dos i el positiu més petit. Dades utilitzades: 12, 18. Resultat: 36. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L06-03": {
+      "prompt": "Calcula el mínim comú múltiple positiu de 9 i 15.",
+      "hint": "Pren els factors primers amb els exponents més grans.",
+      "explanation": "Mètode: Pren els factors primers amb els exponents més grans. Ha de ser múltiple de tots dos i el positiu més petit. Dades utilitzades: 9, 15. Resultat: 45. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L06-04": {
+      "prompt": "Calcula el mínim comú múltiple positiu de 14 i 21. Selecciona la resposta numèrica correcta.",
+      "hint": "Pren els factors primers amb els exponents més grans.",
+      "explanation": "Mètode: Pren els factors primers amb els exponents més grans. Ha de ser múltiple de tots dos i el positiu més petit. Dades utilitzades: 14, 21. Resultat: 42. Comprova el càlcul i la unitat de l’enunciat."
+    },
+    "F3-E1-N03-L06-05": {
+      "prompt": "Calcula el mínim comú múltiple positiu de 8 i 12. Selecciona la resposta numèrica correcta.",
+      "hint": "Pren els factors primers amb els exponents més grans.",
+      "explanation": "Mètode: Pren els factors primers amb els exponents més grans. Ha de ser múltiple de tots dos i el positiu més petit. Dades utilitzades: 8, 12. Resultat: 24. Comprova el càlcul i la unitat de l’enunciat."
+    }
+  }
+}

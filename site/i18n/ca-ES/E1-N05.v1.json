@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E1-N05",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e1_n05.json": "39c04707fe15ef781f65163e331b16b42484cdfb0d558fba185fb14dfe1004a5",
+    "data/f3_e1_n05_exercises.json": "7f6bbd292906fb0c58b8dfcb538dc4f51c041c0b994cb64ca7c2f84071b97d1f"
+  },
+  "lessons": {
+    "E1-N05-L01": {
+      "title": "Lectura i comparació de decimals",
+      "objectives": [
+        "Llegir i comparar nombres decimals a partir del valor posicional.",
+        "Ordenar decimals positius afegint zeros finals sense canviar-ne el valor."
+      ],
+      "content_blocks": [
+        {
+          "body": "En la notació decimal, cada xifra té un valor segons la posició: unitats, dècimes, centèsimes i mil·lèsimes. Afegir zeros a la dreta de la part decimal no canvia el nombre. Per comparar decimals, iguala el nombre de xifres decimals i compara-les d’esquerra a dreta. No consideris més gran un nombre només perquè té més dígits, sense examinar-ne el valor."
+        },
+        {
+          "body": "0,7=0,70. Comparat amb 0,65, 0,70 és més gran encara que estiguin escrits amb el mateix nombre de centèsimes."
+        },
+        {
+          "body": "1,08 és menor que 1,1, perquè 1,08<1,10. La xifra 8 representa centèsimes, no dècimes."
+        },
+        {
+          "body": "Quadrícula de cent cel·les: setanta d’acolorides corresponen a 0,70 d’una unitat.",
+          "alt": "Quadrícula de cent cel·les: setanta d’acolorides corresponen a 0,70 d’una unitat.",
+          "visual_spec": {
+            "title": "Setanta centèsimes representen 0,70"
+          }
+        },
+        {
+          "body": "Per què 0,9 és més gran que 0,12 encara que 12 sigui més gran que 9 com a enter?||Perquè 0,9 equival a 0,90 i noranta centèsimes superen dotze centèsimes."
+        },
+        {
+          "body": "Compara igualant les posicions: 0,9=0,90; no comparis les cadenes de dígits com si fossin enters."
+        }
+      ]
+    },
+    "E1-N05-L02": {
+      "title": "Operacions amb nombres decimals",
+      "objectives": [
+        "Sumar, restar, multiplicar i dividir decimals controlant el valor posicional.",
+        "Estimar els resultats abans de calcular i comprovar les unitats i l’ordre de magnitud."
+      ],
+      "content_blocks": [
+        {
+          "body": "En les sumes i restes, col·loca els decimals en columnes respectant unitats, dècimes i centèsimes. En els productes, multiplica com si fossin enters i situa les posicions decimals; en dividir per 10 o 100, desplaça el valor posicional. Evita aplicar regles mecàniques sense estimar: 2,5·0,4 és aproximadament 1, no 10."
+        },
+        {
+          "body": "2,35+1,4=3,75; es pot escriure 1,4 com 1,40 per alinear les centèsimes."
+        },
+        {
+          "body": "2,5·0,4=1,0. Comptant els decimals s’obté 100/100=1, coherent amb multiplicar per menys d’u."
+        },
+        {
+          "body": "Taula d’entrades 1, 2, 3 i sortides 1,25; 2,50; 3,75 per a una tarifa proporcional d’1,25 € per unitat.",
+          "alt": "Taula d’entrades 1, 2, 3 i sortides 1,25; 2,50; 3,75 per a una tarifa proporcional d’1,25 € per unitat.",
+          "visual_spec": {
+            "title": "Preu decimal proporcional"
+          }
+        },
+        {
+          "body": "Per què 0,4·2,5 no ha de donar 10?||Perquè multiplicar per 0,4 redueix la quantitat; el resultat correcte és 1."
+        },
+        {
+          "body": "Alinea les posicions en sumar i restar; en multiplicar i dividir, estima primer i comprova l’escala."
+        }
+      ]
+    },
+    "E1-N05-L03": {
+      "title": "De fracció a decimal",
+      "objectives": [
+        "Convertir fraccions senzilles en decimals dividint el numerador pel denominador.",
+        "Distingir decimals exactes i periòdics, i reconèixer quan una aproximació no és exacta."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per convertir una fracció en decimal, divideix el numerador pel denominador, que ha de ser diferent de zero. Algunes fraccions generen decimals finits, com 3/4=0,75; d’altres són periòdiques, com 1/3=0,333… No escriguis una aproximació arrodonida com si fos una igualtat exacta sense indicar-ho. La fracció manté el valor exacte."
+        },
+        {
+          "body": "3/4=0,75 perquè 3÷4=0,75. En una quadrícula de cent, correspon a 75 cel·les acolorides."
+        },
+        {
+          "body": "1/8=0,125 és exacte. En canvi, 1/3≈0,333 quan arrodonim a tres decimals: el resultat exacte és 1/3."
+        },
+        {
+          "body": "Quadrícula amb 75 de 100 cel·les: representa 0,75=3/4.",
+          "alt": "Quadrícula amb 75 de 100 cel·les: representa 0,75=3/4.",
+          "visual_spec": {
+            "title": "Tres quarts expressats com setanta-cinc centèsimes"
+          }
+        },
+        {
+          "body": "És correcte escriure 1/3=0,33 com una igualtat exacta?||No. 0,33 és una aproximació a centèsimes, mentre que 1/3 té un desenvolupament decimal periòdic."
+        },
+        {
+          "body": "De fracció a decimal: divideix. Distingeix una igualtat exacta d’una aproximació i conserva les fraccions periòdiques."
+        }
+      ]
+    },
+    "E1-N05-L04": {
+      "title": "Percentatges, fraccions i decimals",
+      "objectives": [
+        "Interpretar p % com p de cada 100 i convertir entre percentatge, fracció i decimal.",
+        "Relacionar el percentatge amb una quadrícula de cent i distingir la unitat de referència."
+      ],
+      "content_blocks": [
+        {
+          "body": "El percentatge p % representa la raó p/100; per exemple 25%=25/100=1/4=0,25. Per convertir-lo a decimal, divideix per cent; per passar de decimal a percentatge, multiplica per cent. Un percentatge necessita una referència: 25% de quina quantitat? No identifiquis sempre «25%» amb «25 unitats», perquè depèn del total."
+        },
+        {
+          "body": "40%=40/100=0,4=2/5. Una quadrícula de 100 cel·les en mostra quaranta d’acolorides."
+        },
+        {
+          "body": "0,125 equival al 12,5%; correspon idealment a dotze cel·les i mitja de cada cent; per això una quadrícula de cel·les senceres només és una aproximació visual."
+        },
+        {
+          "body": "Quadrícula de cent: 40 cel·les acolorides mostren un quaranta per cent d’una unitat.",
+          "alt": "Quadrícula de cent: 40 cel·les acolorides mostren un quaranta per cent d’una unitat.",
+          "visual_spec": {
+            "title": "Quaranta per cent de cent cel·les"
+          }
+        },
+        {
+          "body": "És cert que 25% vol dir 25 objectes sense conèixer el total?||No. Significa una quarta part d’una quantitat que prenem com a cent per cent; cal especificar-ne el total."
+        },
+        {
+          "body": "Percentatge p %=p/100, decimal p/100 i fracció equivalent després de simplificar."
+        }
+      ]
+    },
+    "E1-N05-L05": {
+      "title": "Càlcul de percentatges",
+      "objectives": [
+        "Calcular percentatges de quantitats multiplicant el total per la raó percentual.",
+        "Reconstruir el total o una part en exemples senzills i comprovar que el resultat és plausible."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per calcular p % d’una quantitat N, multiplica N·p/100. Si p està entre zero i cent, i N no és negatiu, el resultat és entre zero i N. Recordar que 10% equival a una desena part permet fer estimacions ràpides. Distingeix el percentatge de la quantitat obtinguda i expressa sempre la unitat."
+        },
+        {
+          "body": "15% de 200 € són 200·15/100=30 €. Com a estimació: 10% són 20 i 5% són 10."
+        },
+        {
+          "body": "30% de 50 persones són 15 persones. La mateixa raó aplicada a un total de 100 en donaria 30."
+        },
+        {
+          "body": "Quadrícula de 100 cel·les amb 30 d’acolorides: representa un 30%.",
+          "alt": "Quadrícula de 100 cel·les amb 30 d’acolorides: representa un 30%.",
+          "visual_spec": {
+            "title": "Trenta per cent, tres dècimes parts"
+          }
+        },
+        {
+          "body": "30% de 50 és sempre el mateix que 30% de 100?||No. El percentatge és una proporció i la quantitat obtinguda depèn del total de referència."
+        },
+        {
+          "body": "Quantitat percentual = total·percentatge/100, amb unitats i una estimació del rang."
+        }
+      ]
+    },
+    "E1-N05-L06": {
+      "title": "Augments i descomptes percentuals",
+      "objectives": [
+        "Calcular els preus després d’augments i descomptes percentuals senzills.",
+        "Distingir l’import del canvi del valor final i explicar quina base s’utilitza."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un descompte del p % sobre un preu P dona el preu final P·(1−p/100), mentre que un augment dona P·(1+p/100). El percentatge s’aplica sobre el preu original de cada operació. Un descompte del 20% no significa pagar un 20%, sinó pagar el 80%. Si encadenes canvis, la nova base canvia i dos percentatges oposats normalment no s’anul·len."
+        },
+        {
+          "body": "Un article de 50 € amb un 20% de descompte costa 50·0,80=40 €; el descompte és de 10 €."
+        },
+        {
+          "body": "Una quota de 80 € que puja un 10% passa a 88 €. Si després baixa un 10% de 88, queda en 79,20 €, no en 80."
+        },
+        {
+          "body": "Quadrícula amb 80 de 100 cel·les acolorides: proporció del preu que es paga després d’un descompte del 20%.",
+          "alt": "Quadrícula amb 80 de 100 cel·les acolorides: proporció del preu que es paga després d’un descompte del 20%.",
+          "visual_spec": {
+            "title": "Vuitanta per cent del preu es manté"
+          }
+        },
+        {
+          "body": "Després de descomptar un 20% de 60 €, el preu final és 12 €?||No. Dotze euros és l’import descomptat; el preu final és 48 €."
+        },
+        {
+          "body": "Augment: multiplica per 1+p/100; descompte: per 1−p/100. Comprova sempre la nova base."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E1-N05-L01-01": {
+      "prompt": "Converteix 0,7 unitats en centèsimes: quantes centèsimes representa?",
+      "hint": "Cada unitat conté cent centèsimes.",
+      "explanation": "Comprovació: Multiplica el nombre decimal per cent. Amb les dades de l’enunciat, el resultat és 70. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L01-02": {
+      "prompt": "Converteix 1,08 unitats en centèsimes: quantes centèsimes representa?",
+      "hint": "Cada unitat conté cent centèsimes.",
+      "explanation": "Comprovació: Multiplica el nombre decimal per cent. Amb les dades de l’enunciat, el resultat és 108. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L01-03": {
+      "prompt": "Entre 7/10 i 65/100, quin símbol correspon en aquest ordre?",
+      "hint": "Compara totes dues fraccions fent servir la mateixa unitat.",
+      "explanation": "Comprovació: Multiplica en creu amb denominadors positius abans de triar el signe. Amb les dades de l’enunciat, el resultat és >. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L01-04": {
+      "prompt": "Entre 108/100 i 11/10, quin símbol correspon en aquest ordre?",
+      "hint": "Compara totes dues fraccions fent servir la mateixa unitat.",
+      "explanation": "Comprovació: Multiplica en creu amb denominadors positius abans de triar el signe. Amb les dades de l’enunciat, el resultat és <. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L01-05": {
+      "prompt": "Converteix 0,125 unitats en centèsimes: quantes centèsimes representa? Selecciona el valor correcte.",
+      "hint": "Cada unitat conté cent centèsimes.",
+      "explanation": "Comprovació: Multiplica el nombre decimal per cent. Amb les dades de l’enunciat, el resultat és 12,5. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L02-01": {
+      "prompt": "Calcula el resultat de 2,35 + 1,4.",
+      "hint": "Estima primer l’ordre de magnitud esperat del resultat.",
+      "explanation": "Comprovació: Respecta els valors posicionals i alinea els decimals si sumes o restes. Amb les dades de l’enunciat, el resultat és 3,75. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L02-02": {
+      "prompt": "Calcula el resultat de 5,6 − 2,48.",
+      "hint": "Estima primer l’ordre de magnitud esperat del resultat.",
+      "explanation": "Comprovació: Respecta els valors posicionals i alinea els decimals si sumes o restes. Amb les dades de l’enunciat, el resultat és 3,12. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L02-03": {
+      "prompt": "Calcula el resultat de 2,5 × 0,4.",
+      "hint": "Estima primer l’ordre de magnitud esperat del resultat.",
+      "explanation": "Comprovació: Respecta els valors posicionals i alinea els decimals si sumes o restes. Amb les dades de l’enunciat, el resultat és 1. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L02-04": {
+      "prompt": "Calcula el resultat de 7,5 ÷ 2,5. Selecciona el valor correcte.",
+      "hint": "Estima primer l’ordre de magnitud esperat del resultat.",
+      "explanation": "Comprovació: Respecta els valors posicionals i alinea els decimals si sumes o restes. Amb les dades de l’enunciat, el resultat és 3. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L02-05": {
+      "prompt": "Calcula el resultat de 0,75 + 0,125. Selecciona el valor correcte.",
+      "hint": "Estima primer l’ordre de magnitud esperat del resultat.",
+      "explanation": "Comprovació: Respecta els valors posicionals i alinea els decimals si sumes o restes. Amb les dades de l’enunciat, el resultat és 0,875. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L03-01": {
+      "prompt": "Calcula el valor numèric de la fracció 3/4.",
+      "hint": "Interpreta el numerador dividit pel denominador, no com dos nombres separats.",
+      "explanation": "Comprovació: Divideix les parts preses entre el nombre de parts de la unitat. Amb les dades de l’enunciat, el resultat és 0,75. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L03-02": {
+      "prompt": "Calcula el valor numèric de la fracció 1/8.",
+      "hint": "Interpreta el numerador dividit pel denominador, no com dos nombres separats.",
+      "explanation": "Comprovació: Divideix les parts preses entre el nombre de parts de la unitat. Amb les dades de l’enunciat, el resultat és 0,125. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L03-03": {
+      "prompt": "Calcula el valor numèric de la fracció 7/20.",
+      "hint": "Interpreta el numerador dividit pel denominador, no com dos nombres separats.",
+      "explanation": "Comprovació: Divideix les parts preses entre el nombre de parts de la unitat. Amb les dades de l’enunciat, el resultat és 0,35. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L03-04": {
+      "prompt": "La fracció 1/3 dona un decimal exacte o periòdic?",
+      "hint": "Redueix la fracció abans d’examinar el denominador.",
+      "explanation": "Comprovació: Només els factors 2 i 5 en el denominador reduït permeten un decimal exacte. Amb les dades de l’enunciat, el resultat és Periòdic. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L03-05": {
+      "prompt": "La fracció 6/15 dona un decimal exacte o periòdic?",
+      "hint": "Redueix la fracció abans d’examinar el denominador.",
+      "explanation": "Comprovació: Només els factors 2 i 5 en el denominador reduït permeten un decimal exacte. Amb les dades de l’enunciat, el resultat és Exacte. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L04-01": {
+      "prompt": "Converteix 40 % en nombre decimal.",
+      "hint": "Per cent vol dir dividir per cent.",
+      "explanation": "Comprovació: Divideix el percentatge per cent; no l’utilitzis com a nombre enter. Amb les dades de l’enunciat, el resultat és 0,4. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L04-02": {
+      "prompt": "Converteix 12,5 % en nombre decimal.",
+      "hint": "Per cent vol dir dividir per cent.",
+      "explanation": "Comprovació: Divideix el percentatge per cent; no l’utilitzis com a nombre enter. Amb les dades de l’enunciat, el resultat és 0,125. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L04-03": {
+      "prompt": "Converteix 25 % en nombre decimal.",
+      "hint": "Per cent vol dir dividir per cent.",
+      "explanation": "Comprovació: Divideix el percentatge per cent; no l’utilitzis com a nombre enter. Amb les dades de l’enunciat, el resultat és 0,25. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L04-04": {
+      "prompt": "Converteix 5 % en nombre decimal. Selecciona el valor correcte.",
+      "hint": "Per cent vol dir dividir per cent.",
+      "explanation": "Comprovació: Divideix el percentatge per cent; no l’utilitzis com a nombre enter. Amb les dades de l’enunciat, el resultat és 0,05. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L04-05": {
+      "prompt": "Converteix 150 % en nombre decimal. Selecciona el valor correcte.",
+      "hint": "Per cent vol dir dividir per cent.",
+      "explanation": "Comprovació: Divideix el percentatge per cent; no l’utilitzis com a nombre enter. Amb les dades de l’enunciat, el resultat és 1,5. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L05-01": {
+      "prompt": "Quant és el 15 % de 200 euros?",
+      "hint": "Determina la base a la qual s’aplica el percentatge.",
+      "explanation": "Comprovació: Multiplica el total per percentatge/100. Amb les dades de l’enunciat, el resultat és 30. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L05-02": {
+      "prompt": "Quant és el 30 % de 50 persones?",
+      "hint": "Determina la base a la qual s’aplica el percentatge.",
+      "explanation": "Comprovació: Multiplica el total per percentatge/100. Amb les dades de l’enunciat, el resultat és 15. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L05-03": {
+      "prompt": "Quant és el 12 % de 250 euros?",
+      "hint": "Determina la base a la qual s’aplica el percentatge.",
+      "explanation": "Comprovació: Multiplica el total per percentatge/100. Amb les dades de l’enunciat, el resultat és 30. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L05-04": {
+      "prompt": "Quant és el 5 % de 80 llibres? Selecciona el valor correcte.",
+      "hint": "Determina la base a la qual s’aplica el percentatge.",
+      "explanation": "Comprovació: Multiplica el total per percentatge/100. Amb les dades de l’enunciat, el resultat és 4. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L05-05": {
+      "prompt": "Quant és el 125 % de 40 unitats? Selecciona el valor correcte.",
+      "hint": "Determina la base a la qual s’aplica el percentatge.",
+      "explanation": "Comprovació: Multiplica el total per percentatge/100. Amb les dades de l’enunciat, el resultat és 50. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L06-01": {
+      "prompt": "Un article costa 50 €. Després d’un descompte del 20 %, quin és el preu final en euros?",
+      "hint": "Distingeix el descompte o l’augment del preu final.",
+      "explanation": "Comprovació: Multiplica per 1+p/100 si puja o per 1−p/100 si baixa. Amb les dades de l’enunciat, el resultat és 40. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L06-02": {
+      "prompt": "Un article costa 80 €. Després d’un augment del 10 %, quin és el preu final en euros?",
+      "hint": "Distingeix el descompte o l’augment del preu final.",
+      "explanation": "Comprovació: Multiplica per 1+p/100 si puja o per 1−p/100 si baixa. Amb les dades de l’enunciat, el resultat és 88. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L06-03": {
+      "prompt": "Un article costa 60 €. Després d’un descompte del 20 %, quin és el preu final en euros?",
+      "hint": "Distingeix el descompte o l’augment del preu final.",
+      "explanation": "Comprovació: Multiplica per 1+p/100 si puja o per 1−p/100 si baixa. Amb les dades de l’enunciat, el resultat és 48. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L06-04": {
+      "prompt": "Un article costa 75 €. Després d’un augment del 12 %, quin és el preu final en euros? Selecciona el valor correcte.",
+      "hint": "Distingeix el descompte o l’augment del preu final.",
+      "explanation": "Comprovació: Multiplica per 1+p/100 si puja o per 1−p/100 si baixa. Amb les dades de l’enunciat, el resultat és 84. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    },
+    "F3-E1-N05-L06-05": {
+      "prompt": "Un article costa 120 €. Després d’un descompte del 25 %, quin és el preu final en euros? Selecciona el valor correcte.",
+      "hint": "Distingeix el descompte o l’augment del preu final.",
+      "explanation": "Comprovació: Multiplica per 1+p/100 si puja o per 1−p/100 si baixa. Amb les dades de l’enunciat, el resultat és 90. Revisa que les unitats, la base i l’operació corresponguin a la pregunta."
+    }
+  }
+}

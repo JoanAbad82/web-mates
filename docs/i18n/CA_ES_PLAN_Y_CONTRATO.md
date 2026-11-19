@@ -8,9 +8,9 @@
 | --- | ---: | ---: | --- |
 | Catálogo e identificadores | 9 itinerarios / 85 unidades / 505 lecciones | 9 nombres de curso / 85 títulos de unidad | Borrador lingüístico |
 | Navegación, avisos y parte de controles | Original | Selección de cadenas frecuentes | Parcial (no todos los controles F1/F3) |
-| Títulos de 505 lecciones | 505 | 12 de 505 en catalán (`E1-N01` y `E1-N02`) | Borrador sin revisión lingüística |
-| Contenido teórico y didáctico de 505 lecciones | 505 editoriales en revisión | 12 de 505 con textos traducidos | Borrador sin revisión lingüística |
-| 2.525 actividades (enunciado, pistas, explicación) | 2.525 editoriales en revisión | 60 de 2.525 con textos traducidos; opciones matemáticas intactas | Borrador sin revisión lingüística |
+| Títulos de 505 lecciones | 505 | 30 de 505 en catalán (E1-N01 a E1-N05) | Borrador sin revisión lingüística |
+| Contenido teórico y didáctico de 505 lecciones | 505 editoriales en revisión | 30 de 505 con textos traducidos | Borrador sin revisión lingüística |
+| 2.525 actividades (enunciado, pistas, explicación) | 2.525 editoriales en revisión | 150 de 2.525 con textos traducidos; opciones matemáticas intactas | Borrador sin revisión lingüística |
 | Inglés | — | — | Futuro, no implementado |
 
 Las traducciones ca-ES iniciales **no se consideran revisadas ni validadas lingüísticamente**. El estado editorial matemático de la versión española tampoco cambia.
@@ -19,7 +19,7 @@ Las traducciones ca-ES iniciales **no se consideran revisadas ni validadas ling�
 
 El selector «Català (beta) / Castellano» aparece en la cabecera. Su preferencia viaja en la URL: `?lang=ca` o `?lang=es`; por decisión de prioridad la primera visita empieza en catalán. No utiliza cookies ni localStorage.
 
-La traducción inicial de interfaz se aplica mediante un mapa exacto; no traduce fórmulas ni texto libre y no ejecuta servicios externos. Los nombres de curso y los **85 títulos de unidad** están mapeados desde los IDs canónicos. Los paquetes versionados E1-N01 y E1-N02 cubren cada uno sus seis lecciones y treinta actividades sin modificar ninguno de los 245 JSON canónicos. Las demás lecciones y actividades siguen en castellano, advertidas por una franja cuya cobertura procede del manifiesto. Cuando una lección no está traducida, el contenido principal conserva `lang=es` para lectores de pantalla; no se etiqueta falsamente como catalán.
+La traducción inicial de interfaz se aplica mediante un mapa exacto; no traduce fórmulas ni texto libre y no ejecuta servicios externos. Los nombres de curso y los **85 títulos de unidad** están mapeados desde los IDs canónicos. Los cinco paquetes versionados E1-N01 a E1-N05 cubren cada uno sus seis lecciones y treinta actividades sin modificar ninguno de los 245 JSON canónicos. Las demás lecciones y actividades siguen en castellano, advertidas por una franja cuya cobertura procede del manifiesto. Cuando una lección no está traducida, el contenido principal conserva `lang=es` para lectores de pantalla; no se etiqueta falsamente como catalán.
 
 **Limitación deliberada:** algunas cadenas de interfaz permanecen en castellano porque los módulos F1 y F3 aún no consumen recursos de idioma por clave. No presentar este selector como versión íntegramente traducida.
 
