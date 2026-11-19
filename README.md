@@ -71,14 +71,16 @@ La aplicación ofrece el selector «Català (beta) / Castellano», con 9 itinera
 85 títulos de unidad traducidos al catalán en borrador. El manifiesto incluye las
 85 unidades, sus 505 lecciones y las 2.525 actividades con cobertura verificable.
 
-**Cobertura real actual:** 5 de las 11 unidades de 1.º ESO (E1-N01,
-E1-N02, E1-N03, E1-N04 y E1-N05) disponen de paquete ca-ES en borrador
-con todos los campos traducibles del contrato: **30 lecciones y 150 actividades**.
-Quedan **475 lecciones y 2.375 actividades sin traducir** en el proyecto,
-incluidas 6 unidades completas de 1.º ESO.
-Ningún paquete se ha revisado lingüísticamente por una persona.
-Las respuestas, los validadores y las opciones permanecen en castellano
-o en su notación original cuando lo requiere el contrato del motor.
+**Cobertura real actual:** ocho de las once unidades de 1.º ESO (E1-N01,
+E1-N02, E1-N03, E1-N04, E1-N05, E1-P01, E1-M01 y E1-G01) tienen paquetes
+ca-ES con todos los campos de texto traducibles cubiertos como borrador.
+Cobertura global: **48/505 lecciones y 240/2.525 actividades**.
+Quedan **457 lecciones y 2.285 actividades sin traducir** en el proyecto,
+incluidas las tres unidades restantes de 1.º ESO (E1-A01, E1-F01, E1-D01).
+Ninguna traducción tiene revisión lingüística humana. En estas tres
+unidades nuevas existen **20 actividades con opciones textuales aún
+en castellano**, por el contrato que preserva las opciones y validadores.
+Las respuestas, los IDs, los datos matemáticos y los validadores no se modifican.
 La interfaz F1/F3 todavía mezcla algunas etiquetas de ambos idiomas.
 No se presentan traducciones pendientes como terminadas ni homologadas.
 

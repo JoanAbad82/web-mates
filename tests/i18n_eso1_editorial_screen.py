@@ -3,7 +3,7 @@
 from pathlib import Path
 import json,re
 ROOT=Path(__file__).resolve().parents[1]
-UIDS=('E1-N03','E1-N04','E1-N05')
+UIDS=('E1-N03','E1-N04','E1-N05','E1-P01','E1-M01','E1-G01')
 # Conservative screen: not a substitute for review by a Catalan mathematics specialist.
 ES_MARKER=re.compile(r'[¿¡]|\b(?:fracción|comprobación|datos utilizados|resultado|respuesta numérica|cuántos|cuánto|multiplicarlo|como número|seleccione|el número de|denominador común)\b',re.I)
 checks=0

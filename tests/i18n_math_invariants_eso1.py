@@ -21,7 +21,7 @@ def invariant(src,dst,context):
  if math_ops(src)!=math_ops(dst):raise AssertionError((context,'operators_changed',src,dst))
  return 1
 count=0
-for uid in ('E1-N01','E1-N02','E1-N03','E1-N04','E1-N05'):
+for uid in ('E1-N01','E1-N02','E1-N03','E1-N04','E1-N05','E1-P01','E1-M01','E1-G01'):
  suffix=uid.lower().replace('-','_')
  docfile=R/'site/data'/('f3_'+suffix+'.json')
  bankfile=R/'site/data'/('f3_'+suffix+'_exercises.json')

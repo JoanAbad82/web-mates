@@ -16,19 +16,19 @@ El paquete incluye los SHA-256 de los dos JSON de origen (unidad y banco). Solo 
 
 El cliente carga el manifiesto, consulta paquetes únicamente si tienen entrada explícita, comprueba estructura/IDs y construye correspondencias textuales **acotadas a cada unidad**. No modifica el objeto canónico ni el validador. El selector `?lang=ca`/`?lang=es` restaura el castellano sin recargar y mantiene el `lang` apropiado en contenido aún no traducido. No hay servicio externo de traducción ni datos persistentes de alumnado.
 
-## Cobertura de la segunda oleada de 1.º ESO — 19/11/2026
+## Cobertura de la tercera oleada de 1.º ESO — 19/11/2026
 
-- Catálogo original: 9 cursos, 85 unidades, 505 lecciones y 2.525 actividades.
-- 85 títulos de unidad en catalán: borrador editorial, sin revisión humana.
-- E1-N01.v1.json y E1-N02.v1.json: 6 lecciones y 30 actividades traducidas por unidad, ya publicadas en PR #4.
-- E1-N03.v1.json: 6 lecciones y 30 actividades nuevas (divisibilidad, primos, MCD y MCM).
-- E1-N04.v1.json: 6 lecciones y 30 actividades nuevas (fracciones).
-- E1-N05.v1.json: 6 lecciones y 30 actividades nuevas (decimales y porcentajes).
-- **Total comprobable: 30/505 lecciones y 150/2.525 actividades en borrador**, con 5 de 11 unidades de 1.º ESO traducidas en los campos del contrato.
-- **Pendientes: 475 lecciones, 2.375 actividades y seis unidades completas de 1.º ESO** (E1-P01, E1-M01, E1-G01, E1-A01, E1-F01 y E1-D01).
-- **0 traducciones revisadas lingüísticamente**; el inglés sigue pendiente.
-- Las opciones de selección que contienen palabras españolas (por ejemplo, «Primo», «Compuesto», «Exacto», «Periódico») continúan en español para conservar la compatibilidad con los validadores. Por eso **la experiencia visual no es íntegramente catalana**, aunque los campos traducibles estén cubiertos.
-- Las regresiones comprueban números y operadores matemáticos, origen SHA-256, IDs, enunciados, pistas, explicaciones, navegación y fallback. **No prueban equivalencia semántica plena ni corrección editorial humana**.
+- Catálogo canónico: 9 itinerarios, 85 unidades, 505 lecciones y 2.525 actividades.
+- Los 85 títulos de unidad se mantienen en borrador catalán previo.
+- Paquetes previos E1-N01 a E1-N05: 30 lecciones y 150 actividades en borrador (PR #4 y #5).
+- Nuevo E1-P01: proporcionalidad, 6 lecciones y 30 actividades traducidas en sus campos del contrato.
+- Nuevo E1-M01: magnitudes, medidas y conversiones, 6 lecciones y 30 actividades.
+- Nuevo E1-G01: geometría plana, ángulos, perímetros y áreas, 6 lecciones y 30 actividades.
+- **Cobertura global: 48/505 lecciones y 240/2.525 actividades**, ocho de once unidades de 1.º ESO.
+- **Pendientes: 457 lecciones, 2.285 actividades y tres unidades de 1.º ESO**: E1-A01, E1-F01 y E1-D01.
+- **0 traducciones lingüísticamente revisadas**, estado `draft_unreviewed` para todos los nuevos paquetes; inglés pendiente.
+- **20 actividades de las tres unidades nuevas tienen opciones textuales en castellano:** 9 de E1-P01, 5 de E1-M01 y 6 de E1-G01. Las opciones y respuestas no se traducen bajo el contrato v1, porque cambiar las cadenas podría romper los validadores deterministas. La interfaz completa no se declara enteramente catalana.
+- Verificación reproducible: hashes de origen, IDs, campos, números, operaciones, unidades físicas, visuales y fallback. No demuestra corrección lingüística ni equivalencia semántica integral; la revisión por personas sigue pendiente.
 
 ## Procedimiento de colaboración
 

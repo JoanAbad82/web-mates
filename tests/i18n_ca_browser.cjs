@@ -170,7 +170,10 @@ let server,browser;
  const newUnits={
   'E1-N03':['Múltiples i divisors','Criteris de divisibilitat','Nombres primers i compostos','Descomposició en factors primers','Màxim comú divisor','Mínim comú múltiple'],
   'E1-N04':['Què és una fracció','Fraccions equivalents','Comparació de fraccions','Suma i resta de fraccions','Producte i divisió de fraccions','Problemes amb fraccions'],
-  'E1-N05':['Lectura i comparació de decimals','Operacions amb nombres decimals','De fracció a decimal','Percentatges, fraccions i decimals','Càlcul de percentatges','Augments i descomptes percentuals']
+  'E1-N05':['Lectura i comparació de decimals','Operacions amb nombres decimals','De fracció a decimal','Percentatges, fraccions i decimals','Càlcul de percentatges','Augments i descomptes percentuals'],
+  'E1-P01':['Raons i proporcions','Proporcionalitat directa','Taules de proporcionalitat','Constant de proporcionalitat','Escales i receptes proporcionals','Problemes de preu i quantitat'],
+  'E1-M01':['Magnituds i unitats de mesura','Canvis d’unitats','Estimació i precisió','Escales de plànols i mapes','Perímetres i unitats','Problemes de mesura i conversions'],
+  'E1-G01':['Rectes, segments i angles','Triangles i les seves propietats','Polígons i quadrilàters','Circumferència i cercle','Àrees de figures planes','Àrees de figures compostes']
  };
  for(const [unit,titles] of Object.entries(newUnits)){
   for(let i=1;i<=6;i++){
@@ -214,14 +217,29 @@ let server,browser;
  const n05Feedback=await page.$eval('.f3-feedback',e=>e.textContent);
  check('N05_CANONICAL_VALIDATOR_CA',n05Feedback.includes('Correcte.')&&n05Feedback.includes('resultat és 70'),
   n05Feedback.slice(0,200),'Decimal conversion validator unchanged in Catalan');
- await page.goto(base+'?lang=ca#/curso/E1/unidad/E1-P01/leccion/E1-P01-L01',{waitUntil:'networkidle0'});
+ const solved=[
+  ['E1-P01','E1-P01-L01','3','raó vermelles/blaves','3'],
+  ['E1-M01','E1-M01-L02','2400','Converteix 2,4 km','2400'],
+  ['E1-G01','E1-G01-L01','53','complement de 37°','53']
+ ];
+ for(const [unit,lesson,answer,fragment,result] of solved){
+  await page.goto(base+'?lang=ca#/curso/E1/unidad/'+unit+'/leccion/'+lesson,{waitUntil:'networkidle0'});
+  await page.waitForSelector('#f3-answer',{timeout:10000});
+  const prompt=await page.$eval('.f1-question-prompt',e=>e.textContent);
+  await page.click('#f3-answer');await page.keyboard.type(answer);
+  await page.click('.f3-question button[type=submit]');
+  const feedback=await page.$eval('.f3-feedback',e=>e.textContent);
+  check('E1_NEW_VALIDATOR_'+unit,prompt.includes(fragment)&&feedback.includes('Correcte.')&&feedback.includes(result),
+   {prompt,feedback},'Canonical validator and Catalan feedback');
+ }
+ await page.goto(base+'?lang=ca#/curso/E1/unidad/E1-A01/leccion/E1-A01-L01',{waitUntil:'networkidle0'});
  await page.waitForSelector('.f1-question-prompt',{timeout:12000});
  const pending=await page.evaluate(()=>({
   mainLang:document.querySelector('#main').lang,
   prompt:document.querySelector('.f1-question-prompt')?.textContent,
   bannerVisible:!document.querySelector('#locale-partial').hidden
  }));
- check('UNTRANSLATED_E1_P01_ES_FALLBACK',pending.mainLang==='es'&&pending.bannerVisible,
+ check('UNTRANSLATED_E1_A01_ES_FALLBACK',pending.mainLang==='es'&&pending.bannerVisible,
   pending,'Pending unit still attributed Spanish');
 
  check('NO_JS_OR_EXTERNAL',results.jsErrors.length===0&&results.external.length===0&&results.httpErrors.length===0,

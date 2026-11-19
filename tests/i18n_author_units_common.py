@@ -27,16 +27,21 @@ def write_lessons(uid,translation):
    content={'body':target}
    math_guard(source['body'],target,d['lesson_id']+':body')
    if source['type']=='figure':
+    assert 'alt' in source
     if uid=='E1-N03':
-     # Figure's alt repeats source caption and adds a generic semantic-table explanation.
      intro=target.split('. ')[0]
      alt=intro+'. Totes les dades d’aquesta representació també apareixen en una taula semàntica.'
-    else:alt=target # Exact source figure alt is same as figure body.
-    assert 'alt' in source and 'visual_spec' in source
+    elif uid in ('E1-M01','E1-G01'):
+     intro=target.split('. ')[0]
+     alt=intro+'. Els elements, els valors i les unitats també figuren a la taula semàntica següent.'
+    else:
+     alt=target if source['alt']==source['body'] else target.split('. ')[0]+'. Les dades també apareixen a la taula semàntica.'
     content['alt']=alt
-    content['visual_spec']={'title':t['visual_title']}
     math_guard(source['alt'],alt,d['lesson_id']+':alt')
-    math_guard(source['visual_spec']['title'],t['visual_title'],d['lesson_id']+':visual_title')
+    if 'visual_spec' in source and 'title' in source['visual_spec']:
+     content['visual_spec']={'title':t['visual_title']}
+     math_guard(source['visual_spec']['title'],t['visual_title'],d['lesson_id']+':visual_title')
+    else: assert t['visual_title'] is None
    blocks.append(content)
   for source,target in zip(d['objectives'],t['objectives']):
    math_guard(source,target,d['lesson_id']+':objective')
