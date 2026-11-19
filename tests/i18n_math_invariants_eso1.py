@@ -5,7 +5,9 @@ from hashlib import sha256
 import json,re,collections
 R=Path(__file__).resolve().parents[1]
 num=re.compile(r'(?<!\w)(?:-|−)?\d{1,3}(?:[ \u00a0]\d{3})+|(?<!\w)(?:-|−)?\d+(?!\w)')
-operators=re.compile(r'[+×÷=<>−]')
+operators=re.compile(r'[+×÷=<>−%≈≠√²³]|(?<![lL])·|·(?![lL])')
+math_div=re.compile(r'(?<=\d)/|/(?=\d)|(?<=[a-z])/(?=[a-z](?![a-z]))')
+def math_ops(text):return operators.findall(text)+math_div.findall(text)
 def nums(s):return [v.replace(' ','').replace('\u00a0','') for v in num.findall(s)]
 def invariant(src,dst,context):
  assert isinstance(dst,str) and dst.strip(),('missing',context)
@@ -16,10 +18,10 @@ def invariant(src,dst,context):
   if m and words[m.group(1)] in dst:
    a=list(a);a.remove(m.group(1))
  if a!=b:raise AssertionError((context,'numbers_changed',a,b))
- if operators.findall(src)!=operators.findall(dst):raise AssertionError((context,'operators_changed',src,dst))
+ if math_ops(src)!=math_ops(dst):raise AssertionError((context,'operators_changed',src,dst))
  return 1
 count=0
-for uid in ('E1-N01','E1-N02'):
+for uid in ('E1-N01','E1-N02','E1-N03','E1-N04','E1-N05'):
  suffix=uid.lower().replace('-','_')
  docfile=R/'site/data'/('f3_'+suffix+'.json')
  bankfile=R/'site/data'/('f3_'+suffix+'_exercises.json')

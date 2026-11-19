@@ -167,14 +167,61 @@ let server,browser;
   check('CA_FULL_E1_N02_L'+suffix,state.lang==='ca'&&
     state.title.startsWith(titles[i-1].slice(0,8)),state,'E1-N02 Catalan text and language attribution');
  }
+ const newUnits={
+  'E1-N03':['Múltiples i divisors','Criteris de divisibilitat','Nombres primers i compostos','Descomposició en factors primers','Màxim comú divisor','Mínim comú múltiple'],
+  'E1-N04':['Què és una fracció','Fraccions equivalents','Comparació de fraccions','Suma i resta de fraccions','Producte i divisió de fraccions','Problemes amb fraccions'],
+  'E1-N05':['Lectura i comparació de decimals','Operacions amb nombres decimals','De fracció a decimal','Percentatges, fraccions i decimals','Càlcul de percentatges','Augments i descomptes percentuals']
+ };
+ for(const [unit,titles] of Object.entries(newUnits)){
+  for(let i=1;i<=6;i++){
+   const suffix=String(i).padStart(2,'0');
+   await page.goto(base+'?lang=ca#/curso/E1/unidad/'+unit+'/leccion/'+unit+'-L'+suffix,{waitUntil:'networkidle0'});
+   await page.waitForSelector('.f1-question-prompt',{timeout:10000});
+   const state=await page.evaluate(()=>({
+    lang:document.querySelector('#main').lang,
+    title:document.querySelector('#main h1')?.textContent,
+    prompt:document.querySelector('.f1-question-prompt')?.textContent,
+    banner:!document.querySelector('#locale-partial').hidden
+   }));
+   check('CA_NEW_'+unit+'_L'+suffix,state.lang==='ca'&&
+    state.title.startsWith(titles[i-1])&&state.prompt?.length>12&&state.banner,
+    state,'Complete drafted lesson and first question in Catalan');
+  }
+ }
  await page.goto(base+'?lang=ca#/curso/E1/unidad/E1-N03/leccion/E1-N03-L01',{waitUntil:'networkidle0'});
+ await page.waitForSelector('#f3-answer',{timeout:10000});
+ await page.click('#f3-answer');await page.keyboard.type('24');
+ await page.click('.f3-question button[type=submit]');
+ const n03Feedback=await page.$eval('.f3-feedback',e=>e.textContent);
+ check('N03_CANONICAL_VALIDATOR_CA',n03Feedback.includes('Correcte.')&&n03Feedback.includes('Resultat: 24'),
+  n03Feedback.slice(0,200),'Numeric validator unchanged for translated natural-number activity');
+ await page.goto(base+'?lang=ca#/curso/E1/unidad/E1-N04/leccion/E1-N04-L01',{waitUntil:'networkidle0'});
+ await page.waitForSelector('#f3-answer',{timeout:10000});
+ await page.click('#f3-answer');await page.keyboard.type('0,375');
+ await page.click('.f3-question button[type=submit]');
+ const n04Feedback=await page.$eval('.f3-feedback',e=>e.textContent);
+ check('N04_FRACTION_VALIDATOR_CA',n04Feedback.includes('Correcte.')&&n04Feedback.includes('0,375'),
+  n04Feedback.slice(0,200),'Fraction numerical decimal comma validator unchanged');
+ await page.goto(base+'?lang=ca#/curso/E1/unidad/E1-N05/leccion/E1-N05-L03',{waitUntil:'networkidle0'});
+ await page.waitForSelector('.f1-question-prompt',{timeout:10000});
+ const n05FractionText=await page.$eval('.f1-question-prompt',e=>e.textContent);
+ check('N05_FRACTION_SPANISH_RESIDUAL_FIXED',n05FractionText.includes('valor numèric de la fracció 3/4')&&!n05FractionText.includes('fracción'),
+  n05FractionText,'No untranslated Spanish template remains in decimal conversion');
+ await page.goto(base+'?lang=ca#/curso/E1/unidad/E1-N05/leccion/E1-N05-L01',{waitUntil:'networkidle0'});
+ await page.waitForSelector('#f3-answer',{timeout:10000});
+ await page.click('#f3-answer');await page.keyboard.type('70');
+ await page.click('.f3-question button[type=submit]');
+ const n05Feedback=await page.$eval('.f3-feedback',e=>e.textContent);
+ check('N05_CANONICAL_VALIDATOR_CA',n05Feedback.includes('Correcte.')&&n05Feedback.includes('resultat és 70'),
+  n05Feedback.slice(0,200),'Decimal conversion validator unchanged in Catalan');
+ await page.goto(base+'?lang=ca#/curso/E1/unidad/E1-P01/leccion/E1-P01-L01',{waitUntil:'networkidle0'});
  await page.waitForSelector('.f1-question-prompt',{timeout:12000});
  const pending=await page.evaluate(()=>({
   mainLang:document.querySelector('#main').lang,
   prompt:document.querySelector('.f1-question-prompt')?.textContent,
   bannerVisible:!document.querySelector('#locale-partial').hidden
  }));
- check('UNTRANSLATED_E1_N03_ES_FALLBACK',pending.mainLang==='es'&&pending.bannerVisible,
+ check('UNTRANSLATED_E1_P01_ES_FALLBACK',pending.mainLang==='es'&&pending.bannerVisible,
   pending,'Pending unit still attributed Spanish');
 
  check('NO_JS_OR_EXTERNAL',results.jsErrors.length===0&&results.external.length===0&&results.httpErrors.length===0,
