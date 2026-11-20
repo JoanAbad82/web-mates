@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E4B-N01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e4b_n01.json": "e6d459b16bf54445b87186e6b0c49158f81db2bd059c1ddcf74b6ca914cf4494",
+    "data/f3_e4b_n01_exercises.json": "cead3417a3ba205caab5ae7c53e284b073bcc1c21af5722fa901254f750d1e44"
+  },
+  "lessons": {
+    "E4B-N01-L01": {
+      "title": "Conjunts numèrics i recta real",
+      "objectives": [
+        "Classificar nombres racionals, irracionals i reals amb arguments matemàtics.",
+        "Situar estimacions de arrels i intervals en la recta real."
+      ],
+      "content_blocks": [
+        {
+          "body": "Els nombres reals inclouen racionals, expressables com a quocient de enters amb denominador no nul, i irracionals, que no admeten aquesta representació. Tot decimal finit o periòdic és racional. La arrel quadrada d'un enter positiu que no és un quadrat perfecte és irracional. La recta real ordena ambdós tipus i permet aproximar quantitats amb error controlat. La classificació d'un nombre no depèn de quantes xifres mostri una calculadora: escriure √2≈1,414 no el converteix en racional. Per comparar √2 i 1,5, pot contrastar-se 2 amb 2,25 després d'assegurar positivitat. Distingeix sempre igualtat exacta i aproximació decimal."
+        },
+        {
+          "body": "El nombre 3/8=0,375 és racional. √2 és irracional, però està entre 1 i 2 perquè 1²<2<2²; El seu valor aproximat és 1,414."
+        },
+        {
+          "body": "Per comparar √3 i 1,8, ambdós positius: 3<3,24=1,8², per la qual cosa √3<1,8. La comparació no necessita truncar irracional."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Conjunts numèrics i recta real. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Conjunts numèrics i recta real"
+          }
+        },
+        {
+          "body": "Un decimal truncat transforma un nombre irracional en racional?||Núm.; representa una aproximació, no el seu valor exacte."
+        },
+        {
+          "body": "Recuperació activa: Classificar nombres racionals, irracionals i reals amb arguments matemàtics. Classifica primer: fracció de enters, decimal periòdic o arrel no exacta. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E4B-N01-L02": {
+      "title": "Intervals i desigualtats",
+      "objectives": [
+        "Representar intervals oberts i tancats amb desigualtats equivalents.",
+        "Resol desigualtats lineals invertint sentit en dividir per negatiu."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un interval com [a,b] inclou ambdós extrems; (a,b) els exclou, i combinacions mixtes inclouen un de sol. La intersecció de dos intervals està formada per nombres comuns; la unió conté els de qualsevol. Resoldre una desigualtat requereix conservar equivalència: sumar el mateix nombre a banda i banda manté el sentit, però multiplicar o dividir per un nombre negatiu ho inverteix. Per exemple, −2x<6 dóna x>−3. Les desigualtats estrictes generen extrems oberts; les no estrictes poden incloure'ls. En intervals buits no s'ha d'inventar cap element, i en semirectes l'infinit mai s'inclou com a extrem real."
+        },
+        {
+          "body": "Resoldre 2x−3≤5 condueix a 2x≤8 i x≤4; el conjunt és (−∞, 4]. El 4 sí que està inclòs."
+        },
+        {
+          "body": "La intersecció [1,5]∩(3,7) és (3,5]. L'extrem 3 s'exclou perquè el segon interval és obert allà."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Intervals i desigualtats. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Intervals i desigualtats"
+          }
+        },
+        {
+          "body": "Per què el 3 queda exclòs de [1,5]∩(3,7)?||Perquè el segon interval exigeix x>3."
+        },
+        {
+          "body": "Recuperació activa: Representar intervals oberts i tancats amb desigualtats equivalents. Comprova cada extrem contra totes les condicions simultàniament. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E4B-N01-L03": {
+      "title": "Radicals i simplificacions",
+      "objectives": [
+        "Simplificar radicals separant factors quadrats perfectes.",
+        "Sumar radicals semblants i reconèixer limitacions en la suma de arrels."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a nombres no negatius, √( ab )=√a√b, però aquesta propietat exigeix productes i dominis vàlids; no s'aplica a sumes. Una forma de simplificar √72 és extreure 36: √72=6√2. Només poden sumar-se com a termes semblants expressions amb el mateix radical després de simplificació: √18+√8=3√2+2√2=5√2. No és correcte afirmar √(a+b)=√a+√b. La racionalització de 1/√2 produeix √2/2 multiplicant numerador i denominador per √2, sense canviar el valor. En expressions amb variables, les hipòtesis sobre signes i dominis eviten falses equivalències com √(x²)=x per a x negatiu; el resultat general és |x|."
+        },
+        {
+          "body": "√72=√(36×2)=6√2, aproximadament 8,4853. És una igualtat exacta en forma radical i només aproximada en decimal."
+        },
+        {
+          "body": "√18+√8=3√2+2√2=5√2; també 1/√2=√2/2 mitjançant multiplicació per √2/√2."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Radicals i simplificacions. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Radicals i simplificacions"
+          }
+        },
+        {
+          "body": "És √(9+16) igual a √9+√16?||No; √25=5, però 3+4=7."
+        },
+        {
+          "body": "Recuperació activa: Simplificar radicals separant factors quadrats perfectes. Descompó el radicant com a quadrat perfecte per resta. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E4B-N01-L04": {
+      "title": "Potències racionals com a ampliació",
+      "objectives": [
+        "Relacionar potències racionals amb arrels reals sota dominis vàlids.",
+        "Calcular potències d'exponent fraccionari de bases positives."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a a>0 i enters m, n amb n positiu, a^(m/n)=( arrel n-èsima de a)^m. Per exemple, 27^(2/3)=(∛27)²=9. Aquesta extensió és coherent amb les propietats de potències d'exponent enter i permet modelitzar escales. El denominador de l'exponent indica l'índex de la arrel; el numerador indica la potència posterior, sense necessitat que s'apliquin en ordre fix quan a>0. En bases negatives les arrels d'índex parell no són reals, per la qual cosa aquesta lliçó treballa amb bases estrictament positives. Cal distingir a^(1/2)=√a de 1/(2a), i a^0=1 per a≠0."
+        },
+        {
+          "body": "27^(2/3)=(∛27)²=3²=9. La potència fraccionaria s'interpreta mitjançant arrel cúbica i quadrat."
+        },
+        {
+          "body": "16^(3/4)=(⁴√16)³=2³=8, mentre 16^(1/2)=4 i no 16/2=8. Comprova la igualtat amb les operacions inverses i revisa les condicions de l'exemple."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Potències racionals com a ampliació. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Potències racionals com a ampliació"
+          }
+        },
+        {
+          "body": "Què significa el denominador 3 de l'exponent 2/3?||Indica arrel cúbica; després s'eleva al quadrat."
+        },
+        {
+          "body": "Recuperació activa: Relacionar potències racionals amb arrels reals sota dominis vàlids. Expressa primer la fracció d'exponent com arrel i potència. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E4B-N01-L05": {
+      "title": "Logaritmes com a pont opcional",
+      "objectives": [
+        "Interpretar logaritmes com a exponents inversos de potències.",
+        "Aplica les propietats bàsiques només per a arguments i bases permesos."
+      ],
+      "content_blocks": [
+        {
+          "body": "El logaritme log_b(x) d'un nombre real positiu x, en base b>0 i b≠1, és l'exponent i que satisfà b^y=x. Així, log_2 (8)=3 perquè 2³=8. La propietat log_b(xy )= log_ b(x)+ log_b(y) val per a x, y>0, i log_ b(x^k)=k log_b(x) sota les seves hipòtesis. No és correcte log_ b(x+y)= log_ b(x)+ log_b(y). El domini real del logaritme és x>0; log_ b(0) i log_ b(−2) no tenen valor real. Els logaritmes es presenten com a ampliació / pont conceptual, sense imposar-los una correspondència normativa de curs no acarada."
+        },
+        {
+          "body": "log_2 (8)=3 perquè 2³=8; log_10 (1000)=3 perquè 10³=1000. El resultat indica exponent, no la base."
+        },
+        {
+          "body": "log_3 (81)=4 atès que 3⁴=81. També log_2 (4×8)= log_2 (32)=5=2+3. Comprova la igualtat amb les operacions inverses i revisa les condicions de l'exemple."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Logaritmes com a pont opcional. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Logaritmes com a pont opcional"
+          }
+        },
+        {
+          "body": "El ₂(8) és 8/2?||No; és l'exponent 3 que transforma 2 en 8."
+        },
+        {
+          "body": "Recuperació activa: Interpretar logaritmes com a exponents inversos de potències. Reescriu log_ b(x)=y en forma exponencial b^y=x. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E4B-N01-L06": {
+      "title": "Precisió i error",
+      "objectives": [
+        "Calcula errors absolut i relatiu de mesures amb valor de referència declarat.",
+        "Distingir precisió de mesures, arrodoniment i exactitud d'afirmacions."
+      ],
+      "content_blocks": [
+        {
+          "body": "L'error absolut d'un mesurament aproximat x respecte a un valor de referència r és |x−r|, expressat en les mateixes unitats. Si r≠0, l'error relatiu és |x−r|/|r| i el percentatge relatiu s'obté multiplicant per 100. Sense un valor de referència fiable només pot parlar-se d'incertesa estimada o dispersió, no d'error real conegut. Les xifres significatives i l'arrodoniment descriuen representació i precisió, però no justifiquen declarar exactitud experimental. Una cota d'arrodoniment a la unitat més propera és 0,5 unitat per nombres dins de la regla triada, si no hi ha altres errors. No s'ha d'afirmar que una mesura sigui exacta perquè coincideix amb un càlcul digital."
+        },
+        {
+          "body": "Un objecte mesura realment 10 cm segons patró i es registra 9,8 cm: error absolut 0,2 cm; error relatiu 0,2/10=0,02=2 %."
+        },
+        {
+          "body": "Arrodonir 12,34 cm a dècimes produeix 12,3 cm; l'error d'arrodoniment respecte a aquest valor és 0,04 cm, sense informar d'errors de l'instrument."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Precisió i error. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Precisió i error"
+          }
+        },
+        {
+          "body": "Es pot calcular un error absolut real sense conèixer un valor de referència?||Núm.; només estimar incertesa o comparar mesuraments."
+        },
+        {
+          "body": "Recuperació activa: Calcular errors absolut i relatiu de mesures amb valor de referència declarat. Separa el valor observat de la referència abans de restar. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E4B-N01-L01-01": {
+      "prompt": "Calcula √9 exactament.",
+      "hint": "Classifica primer: fracció de enters, decimal periòdic o arrel no exacta.",
+      "explanation": "√9=3 perquè 3²=9; és una arrel exacta, a diferència de √2."
+    },
+    "F3-E4B-N01-L01-02": {
+      "prompt": "Expressa 3/8 com a decimal.",
+      "hint": "Classifica primer: fracció de enters, decimal periòdic o arrel no exacta.",
+      "explanation": "La divisió 3÷8=0,375 és racional i acaba."
+    },
+    "F3-E4B-N01-L01-03": {
+      "prompt": "Aproxima √3 a quatre decimals.",
+      "hint": "Classifica primer: fracció de enters, decimal periòdic o arrel no exacta.",
+      "explanation": "√3≈1,7320508; arrodonit a 4 decimals és 1,7321."
+    },
+    "F3-E4B-N01-L01-04": {
+      "prompt": "Què afirma correctament la classificació de √2?",
+      "hint": "Classifica primer: fracció de enters, decimal periòdic o arrel no exacta.",
+      "explanation": "Una aproximació finita representa √2 sense canviar la seva naturalesa exacta."
+    },
+    "F3-E4B-N01-L01-05": {
+      "prompt": "Com compares √3 i 1,8 sense truncar?",
+      "hint": "Classifica primer: fracció de enters, decimal periòdic o arrel no exacta.",
+      "explanation": "S'obté 3<3,24 i per tant √3<1,8. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4B-N01-L02-01": {
+      "prompt": "Resol 2x−3≤5. Quin és el màxim x permès?",
+      "hint": "Comprova cada extrem contra totes les condicions simultàniament.",
+      "explanation": "2x≤8 implica x≤4; es permet l'extrem."
+    },
+    "F3-E4B-N01-L02-02": {
+      "prompt": "Longitud de l'interval (3,5] a la recta real?",
+      "hint": "Comprova cada extrem contra totes les condicions simultàniament.",
+      "explanation": "La longitud és 5−3=2; la inclusió d'extrems no altera la longitud."
+    },
+    "F3-E4B-N01-L02-03": {
+      "prompt": "Resol −2x<6. Valor frontera que queda exclòs?",
+      "hint": "Comprova cada extrem contra totes les condicions simultàniament.",
+      "explanation": "En dividir per −2 s'inverteix el signe: x>−3, frontera −3."
+    },
+    "F3-E4B-N01-L02-04": {
+      "prompt": "La intersecció [1,5]∩(3,7) és:",
+      "hint": "Comprova cada extrem contra totes les condicions simultàniament.",
+      "explanation": "Per pertànyer a tots dos han de complir-se x>3 i x≤5."
+    },
+    "F3-E4B-N01-L02-05": {
+      "prompt": "Què succeeix amb el signe en dividir una desigualtat per un nombre negatiu?",
+      "hint": "Comprova cada extrem contra totes les condicions simultàniament.",
+      "explanation": "Divideix per negatiu inverteix l'ordre en la recta real."
+    },
+    "F3-E4B-N01-L03-01": {
+      "prompt": "En √72= coeficient ×√2, quant val el coeficient positiu?",
+      "hint": "Descompó el radicant com a quadrat perfecte per resta.",
+      "explanation": "72=36×2; per tant √72=6√2. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4B-N01-L03-02": {
+      "prompt": "En √18+√8= coeficient ×√2, quin coeficient resulta?",
+      "hint": "Descompó el radicant com a quadrat perfecte per resta.",
+      "explanation": "√18=3√2 i √8=2√2; suma 5√2. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4B-N01-L03-03": {
+      "prompt": "Calcula 1/√2 aproximadament a quatre decimals.",
+      "hint": "Descompó el radicant com a quadrat perfecte per resta.",
+      "explanation": "1/√2=√2/2≈0,7071068; arrodoneix a 0,7071. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4B-N01-L03-04": {
+      "prompt": "Quina igualtat general entre arrels de no negatius és vàlida?",
+      "hint": "Descompó el radicant com a quadrat perfecte per resta.",
+      "explanation": "La multiplicació de radis admet descomposició, la suma no."
+    },
+    "F3-E4B-N01-L03-05": {
+      "prompt": "Per a x real negatiu, √(x²) val:",
+      "hint": "Descompó el radicant com a quadrat perfecte per resta.",
+      "explanation": "La arrel quadrada principal és no negativa, així que √(x²)=|x|."
+    },
+    "F3-E4B-N01-L04-01": {
+      "prompt": "Avalua 27 elevat a 2/3 amb base positiva.",
+      "hint": "Expressa primer la fracció d'exponent com arrel i potència.",
+      "explanation": "La arrel cúbica de 27 és 3 i 3²=9. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4B-N01-L04-02": {
+      "prompt": "Avalua 16 elevat a 3/4.",
+      "hint": "Expressa primer la fracció d'exponent com arrel i potència.",
+      "explanation": "La quarta arrel positiva de 16 és 2 i el seu cub 8."
+    },
+    "F3-E4B-N01-L04-03": {
+      "prompt": "Avalua 81 elevat a 1/2.",
+      "hint": "Expressa primer la fracció d'exponent com arrel i potència.",
+      "explanation": "81^(1/2)=√81=9, no 40,5. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4B-N01-L04-04": {
+      "prompt": "En 27^(2/3), el denominador 3 de l'exponent indica:",
+      "hint": "Expressa primer la fracció d'exponent com arrel i potència.",
+      "explanation": "a^(m/n)=( arrel n-èsima de a)^m per base positiva."
+    },
+    "F3-E4B-N01-L04-05": {
+      "prompt": "Per a la base positiva a, què significa a^0?",
+      "hint": "Expressa primer la fracció d'exponent com arrel i potència.",
+      "explanation": "L'exponent zero en una base no nul·la produeix la unitat multiplicativa."
+    },
+    "F3-E4B-N01-L05-01": {
+      "prompt": "Quant val log ₂(8)?",
+      "hint": "Reescriu log_ b(x)=y en forma exponencial b^y=x.",
+      "explanation": "2³=8, així que log ₂(8)=3. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4B-N01-L05-02": {
+      "prompt": "Quant val log ₃(81)?",
+      "hint": "Reescriu log_ b(x)=y en forma exponencial b^y=x.",
+      "explanation": "3⁴=81, per tant log ₃(81)=4. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4B-N01-L05-03": {
+      "prompt": "Quant val log ₁₀(1000)?",
+      "hint": "Reescriu log_ b(x)=y en forma exponencial b^y=x.",
+      "explanation": "10³=1000; el logaritme és el seu exponent. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4B-N01-L05-04": {
+      "prompt": "Quin domini exigeix log ₂(x) en nombres reals?",
+      "hint": "Reescriu log_ b(x)=y en forma exponencial b^y=x.",
+      "explanation": "L'argument del logaritme real ha de ser estrictament positiu."
+    },
+    "F3-E4B-N01-L05-05": {
+      "prompt": "Quina propietat de logaritmes és vàlida amb x, y>0 i base correcta?",
+      "hint": "Reescriu log_ b(x)=y en forma exponencial b^y=x.",
+      "explanation": "Els logaritmes converteixen productes en sumes d'exponents."
+    },
+    "F3-E4B-N01-L06-01": {
+      "prompt": "Referent 10 cm, mesura 9,8 cm. Error absolut en cm?",
+      "hint": "Separa el valor observat de la referència abans de restar.",
+      "explanation": "|9,8−10|=0,2 cm. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4B-N01-L06-02": {
+      "prompt": "Referent 10 cm, mida 9,8 cm. Error relatiu decimal.",
+      "hint": "Separa el valor observat de la referència abans de restar.",
+      "explanation": "Error relatiu =0,2/10=0,02. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4B-N01-L06-03": {
+      "prompt": "Referent 10 cm, mesura 9,8 cm. Error relatiu en percentatge ( nombre )?",
+      "hint": "Separa el valor observat de la referència abans de restar.",
+      "explanation": "0,02×100=2 %, no 0,02 %. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E4B-N01-L06-04": {
+      "prompt": "Què necessita el càlcul d'error absolut real?",
+      "hint": "Separa el valor observat de la referència abans de restar.",
+      "explanation": "L'error absolut compara amb una referència coneguda."
+    },
+    "F3-E4B-N01-L06-05": {
+      "prompt": "Si s'arrodoneix 12,34 cm a dècimes, què és correcte?",
+      "hint": "Separa el valor observat de la referència abans de restar.",
+      "explanation": "L'aproximació decimal no garanteix exactitud de les dades físiques."
+    }
+  }
+}

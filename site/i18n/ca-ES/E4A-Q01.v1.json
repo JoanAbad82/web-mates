@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E4A-Q01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e4a_q01.json": "be6edf5c78dacb85725570a59ababfeefaf9f4dc3769621b644f63e868d3a960",
+    "data/f3_e4a_q01_exercises.json": "cea773b4144d7c6c3bac7b8115e9c7c19345d7750071e8e38e8261e825a2c1e2"
+  },
+  "lessons": {
+    "E4A-Q01-L01": {
+      "title": "Experiments compostos",
+      "objectives": [
+        "Descriure experiments compostos mitjançant espai de rutes i arbre.",
+        "Distingir independència de dependència per extracció sense reemplaçament."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un experiment compost conté diverses etapes i cada ruta representa una seqüència ordenada. Dues monedes independents i equilibrades produeixen quatre rutes CC,CX,XC,XX equiprobables: la probabilitat de dues cares és 1/4, i d'exactament una cara és 2/4=1/2. Si s'extreuen dues fitxes d'una bossa de 2 vermelles i 1 blau sense reemplaçament, les probabilitats canvien després de la primera extracció: P(RR )=2/3·1/2=1/3, no (2/3)². En un arbre, les probabilitats sortints d'un node han de sumar 1, i la probabilitat d'una ruta és el producte de pesos condicionals locals. Per unir rutes incompatibles se sumen les seves probabilitats. La independència és hipòtesi que ha de provar-se o estar declarada, i les rutes no són equiprobables pel mer fet de ser dibuixades."
+        },
+        {
+          "body": "Dues monedes equilibrades i independents: CC,CX,XC,XX pesen 1/4. Exactament una cara té probabilitat 1/4+1/4=1/2."
+        },
+        {
+          "body": "Urna amb 2 vermelles i 1 blau sense reemplaçament: P(primera vermella )=2/3, P(segona vermella | primera vermella )=1/2, P(RR )=1/3."
+        },
+        {
+          "body": "Arbre d'extracció dependent. Gràfic SVG local de suport i taula semàntica amb dades exactes i limitacions.",
+          "alt": "Arbre d'extracció dependent. La taula completa indica coordenades, recomptes, model, unitats i limitacions, sense dependre de visió de color.",
+          "visual_spec": {
+            "title": "Arbre d'extracció dependent"
+          }
+        },
+        {
+          "body": "Dos extraccions sense reemplaçament conserven automàticament independència?||No; la segona composició depèn de la primera."
+        },
+        {
+          "body": "Recuperació activa: Un experiment compost conté diverses etapes i cada ruta representa una seqüència ordenada. Explica quina hipòtesi o biaix pot modificar la teva resposta."
+        }
+      ]
+    },
+    "E4A-Q01-L02": {
+      "title": "Laplace i recompte",
+      "objectives": [
+        "Aplicar la regla de Laplace i els principis de recompte amb hipòtesis explícites.",
+        "Evitar equiprobabilitat falsa de sumes i recomptes repetits."
+      ],
+      "content_blocks": [
+        {
+          "body": "La regla P(A)=|A|/| Ω | només funciona per simple recompte quan els resultats elementals de Ω tenen igual probabilitat. Dos daus ideals, distingibles i independents generen 36 parelles ordenades; la suma 7 apareix en 6 i la suma 2 en 1, amb probabilitats 1/6 i 1/36. En un experiment per etapes de 3 samarretes i 2 pantalons hi ha 3·2=6 vestits; triar un objecte d'un entre dos grups disjunts de 3 i 2 produeix 3+2=5 opcions. Confondre producte per etapes amb suma per alternatives és un error estructural. Ni les onze sumes del dau són equiprobables ni un dau carregat admet Laplace sense conèixer pesos. Els diagrames s'han d'acompanyar de taules que mostrin univers, unitat de resultat, nombre favorable i denominador."
+        },
+        {
+          "body": "Dos daus ideals: suma 7 s'obté amb sis parelles de 36, així que P(suma 7)=1/6; suma 2 només amb (1,1), P=1/36."
+        },
+        {
+          "body": "Escollir una samarreta entre 3 i un pantalons entre 2 genera 6 abillaments diferents; escollir només un de dos grups disjunts dóna 5 alternatives."
+        },
+        {
+          "body": "Multiplicitat de sumes de daus ideals. Gràfic SVG local de suport i taula semàntica amb dades exactes i limitacions.",
+          "alt": "Multiplicitat de sumes de daus ideals. La taula completa indica coordenades, recomptes, model, unitats i limitacions, sense dependre de visió de color.",
+          "visual_spec": {
+            "title": "Multiplicitat de sumes de daus ideals"
+          }
+        },
+        {
+          "body": "Poden considerar-se equiprobables les onze sumes de dos daus ideals?||No; són els parells elementals els equiprobables."
+        },
+        {
+          "body": "Recuperació activa: La regla P(A)=|A|/| Ω | només funciona per simple recompte quan els resultats elementals de Ω tenen igual probabilitat. Explica quina hipòtesi o biaix pot modificar la teva resposta."
+        }
+      ]
+    },
+    "E4A-Q01-L03": {
+      "title": "Arbres i taules",
+      "objectives": [
+        "Construeix arbres amb probabilitats condicionals i taules d'esdeveniments.",
+        "Calcular unió i intersecció sense comptar dues vegades els casos compartits."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a successos A,B, P(A∪B)=P(A)+P(B)−P(A∩B), fórmula vàlida independentment que siguin compatibles. Si un donat ideal defineix A= parell ={2,4, 6} i B=>4={5,6}, la intersecció és {6} i la unió {2,4, 5,6}; P(A∪B)=4/6=2/3. En dues monedes independents, l'arbre té rutes CC,CX,XC,XX, cadascuna amb probabilitat 1/4; les rutes CX i XC són incompatibles i poden sumar-se per exactament una cara. La independència entre esdeveniments i la seva incompatibilitat no són equivalents: esdeveniments excloents amb probabilitats positives no són independents. Un arbre condicionat descriu situacions amb probabilitats canviants i no ha de substituir-se per un producte ingenu de marginals. Tota xifra és sintètica, usada només per justificar regles."
+        },
+        {
+          "body": "En donat ideal A= parell (3 cares), B=>4 (2), A∩B={6} (1), la unió té 3+2−1=4 casos de sis."
+        },
+        {
+          "body": "Dues monedes independents: P(CX o XC )=1/4+1/4=1/2 perquè les rutes són disjuntes."
+        },
+        {
+          "body": "Intersecció i unió de successos. Gràfic SVG local de suport i taula semàntica amb dades exactes i limitacions.",
+          "alt": "Intersecció i unió de successos. La taula completa indica coordenades, recomptes, model, unitats i limitacions, sense dependre de visió de color.",
+          "visual_spec": {
+            "title": "Intersecció i unió de successos"
+          }
+        },
+        {
+          "body": "Incompatibilitat i independència signifiquen el mateix?||No; són propietats diferents dels successos."
+        },
+        {
+          "body": "Recuperació activa: Per a successos A,B, P(A∪B)=P(A)+P(B)−P(A∩B), fórmula vàlida independentment que siguin compatibles. Explica quina hipòtesi o biaix pot modificar la teva resposta."
+        }
+      ]
+    },
+    "E4A-Q01-L04": {
+      "title": "Simulació i freqüències",
+      "objectives": [
+        "Interpretar simulació com aproximació, no prova matemàtica d'un model.",
+        "Comparar freqüència empírica i probabilitat teòrica amb mostres finites."
+      ],
+      "content_blocks": [
+        {
+          "body": "Simular significa generar resultats d'un model suposat i observar els seus freqüències. En una moneda ideal P(cara )=1/2, però 18 cares en 40 simulacions produeixen freqüència observada 18/40=0,45, una desviació de 0,05 respecte a 0,50. Aquesta desviació no demostra biaix de l'instrument, i el model teòric tampoc obliga a obtenir exactament 20 cares en una sèrie de 40. En augmentar repeticions independents i de distribució idèntica, la freqüència tendeix en probabilitat cap al valor teòric, però no ha de millorar en cada pas ni hi ha igualtat garantida per a grandària finita. Una simulació reproduïble pot definir llavor i algorisme, no substitueix per si sola la verificació d'hipòtesis físiques d'un experiment. Les dades de la unitat són fixos i sintètics, sense trucades externes ni informació privada."
+        },
+        {
+          "body": "En 40 llançaments sintètics s'observen 18 cares: freqüència =18/40=9/20=0,45 i desviació absoluta |0,45−0,5|=0,05."
+        },
+        {
+          "body": "En 20 assajos amb 8 cares la freqüència és 8/20=0,4: no acredita que una moneda ideal tingui P(cara )=0,4."
+        },
+        {
+          "body": "freqüències simulades i model de moneda. Gràfic SVG local de suport i taula semàntica amb dades exactes i limitacions.",
+          "alt": "freqüències simulades i model de moneda. La taula completa indica coordenades, recomptes, model, unitats i limitacions, sense dependre de visió de color.",
+          "visual_spec": {
+            "title": "freqüències simulades i model de moneda"
+          }
+        },
+        {
+          "body": "La simulació amb quaranta assajos garanteix obtenir vint cares exactes d'una moneda ideal?||No; el resultat finit fluctua."
+        },
+        {
+          "body": "Recuperació activa: Simular significa generar resultats d'un model suposat i observar els seus freqüències. Explica quina hipòtesi o biaix pot modificar la teva resposta."
+        }
+      ]
+    },
+    "E4A-Q01-L05": {
+      "title": "Població, mostra i representativitat",
+      "objectives": [
+        "Distingir població, marc mostral i selecció representativa.",
+        "Identificar biaixos de selecció i denominadors de proporcions."
+      ],
+      "content_blocks": [
+        {
+          "body": "La població és el conjunt sobre el qual es desitja raonar; el marc mostral és el llistat o procediment des del qual se seleccionen observacions, que pot excloure part d'aquesta població. Una mostra de 20 respostes favorables entre 50 dóna una proporció 20/50=0,4, no prova que el 40 % de tota la població comparteixi la resposta. Si només contesten persones que voluntàriament visiten un lloc, el biaix d'autoselecció pot persistir encara que augmenti el nombre de respostes. Per a un mostreig aleatori simple ideal han de definir-se unitats i probabilitats de selecció, i considerar no resposta i cobertura del marc. Els percentatges han d'acompanyar-se de recomptes i denominadors; 20 % de 10 són 2 casos, mentre 20 % de 100 són 20. S'empren dades inventades, sense sol·licitar identificadors ni opinions reals de menors."
+        },
+        {
+          "body": "En una mostra de 50 respostes hi ha 20 favorables; proporció observada 20/50=2/5. No s'estén automàticament a tota la població."
+        },
+        {
+          "body": "En una mostra de 10 el 20 % són 2 casos, en una de 100 el mateix 20 % representa 20 casos, amb diferent precisió."
+        },
+        {
+          "body": "freqüències i denominadors mostrals. Gràfic SVG local de suport i taula semàntica amb dades exactes i limitacions.",
+          "alt": "freqüències i denominadors mostrals. La taula completa indica coordenades, recomptes, model, unitats i limitacions, sense dependre de visió de color.",
+          "visual_spec": {
+            "title": "freqüències i denominadors mostrals"
+          }
+        },
+        {
+          "body": "L'autoselecció voluntària desapareix com a biaix per recopilar més respostes sense canviar el disseny?||No; el mecanisme pot seguir esbiaixat."
+        },
+        {
+          "body": "Recuperació activa: La població és el conjunt sobre el qual es desitja raonar; el marc mostral és el llistat o procediment des del qual se seleccionen observacions, que pot excloure part d'aquesta població. Explica quina hipòtesi o biaix pot modificar la teva resposta."
+        }
+      ]
+    },
+    "E4A-Q01-L06": {
+      "title": "Inferència elemental amb limitacions",
+      "objectives": [
+        "Comunicar estimacions elementals sense inventar precisió estadística.",
+        "Distingir proporció mostral i paràmetre poblacional, amb límits d'inferència."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una proporció mostral p̂=k/n resumeix les dades observades quan n>0, mentre la proporció poblacional p és un paràmetre desconegut. Si una mostra sintètica de n=100 recull k=40 respostes favorables, p̂=0,4; no equival a demostrar que el paràmetre p sigui exactament 0,4. Una inferència formal requeriria disseny de mostreig, suposats d'independència i definició explícita d'estimador, variabilitat i nivell de confiança. No es pot fabricar un marge d'error o un interval de confiança sense fixar metodologia ni comprovar condicions. La mostra per conveniència pot estar esbiaixada i un interval calculat sota mostreig aleatori no elimina aquest biaix. La conclusió responsable indica denominador, mètode, origen i limitacions. Tampoc es confon una diferència de 40 % a 45 % amb 5 % relatiu: són cinc punts percentuals i un canvi relatiu 5/40=12,5 %."
+        },
+        {
+          "body": "En n=100 respostes sintètiques hi ha k=40 favorables. p̂=k/n=40/100=0,4; p de la població no és observable directament."
+        },
+        {
+          "body": "De 40 % a 45 % hi ha 5 punts percentuals i l'increment relatiu és (45−40)/40=1/8=12,5 %."
+        },
+        {
+          "body": "Proporció observada i paràmetre desconegut. Gràfic SVG local de suport i taula semàntica amb dades exactes i limitacions.",
+          "alt": "Proporció observada i paràmetre desconegut. La taula completa indica coordenades, recomptes, model, unitats i limitacions, sense dependre de visió de color.",
+          "visual_spec": {
+            "title": "Proporció observada i paràmetre desconegut"
+          }
+        },
+        {
+          "body": "Una proporció mostral p̂=0,4 assegura que p poblacional sigui exactament 0,4?||No; sense disseny i incertesa no es justifica identitat."
+        },
+        {
+          "body": "Recuperació activa: Una proporció mostral p̂=k/n resumeix les dades observades quan n>0, mentre la proporció poblacional p és un paràmetre desconegut. Explica quina hipòtesi o biaix pot modificar la teva resposta."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E4A-Q01-L01-01": {
+      "prompt": "En Experiments compostos: Dues monedes ideals i independents: calcula P(exactament una cara), sumant rutes CX i XC. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 0,5. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L01-02": {
+      "prompt": "En Experiments compostos: Dues monedes ideals i independents: calcula P(CC), dues cares consecutives. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 0,25. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L01-03": {
+      "prompt": "En Experiments compostos: Borsa 2 vermelles i 1 blau; extreure dos SENSE reemplaçament. Calcula P(RR) usant la segona branca condicionada. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 1/3. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L01-04": {
+      "prompt": "En Experiments compostos: Es pot assumir independència en dues extraccions SENSE reemplaçament de bossa petita? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: No. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L01-05": {
+      "prompt": "En Experiments compostos: Borsa 2 vermelles i 1 blau; calcula P (primera fitxa vermella) abans d'extreure. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 2/3. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L02-01": {
+      "prompt": "A Laplace i recompte: Dos daus ideals distingibles, 36 parelles equiprobables: calcula P(suma =7). Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 1/6. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L02-02": {
+      "prompt": "A Laplace i recompte: Dos daus ideals distingibles, 36 parelles equiprobables: calcula P(suma =2). Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 1/36. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L02-03": {
+      "prompt": "En Laplace i recompte: Etapes ordenades amb 3 opcions en primera i 2 en segona per a cadascuna: compte parells. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 6. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L02-04": {
+      "prompt": "En Laplace i recompte: Les sumes 2,3,..., 12 de dos daus ideals tenen igual probabilitat? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: No. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L02-05": {
+      "prompt": "A Laplace i recompte: tria una sola alternativa entre dos grups EXCLOENTs amb 3 i 2 opcions: total. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 5. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L03-01": {
+      "prompt": "A Arbres i taules: Donat ideal A={2,4, 6} i B={5,6}. Calcula P(A∪B) restant intersecció. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 2/3. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L03-02": {
+      "prompt": "A Arbres i taules: Donat ideal A={2,4, 6} i B={5,6}. Calcula P(A∩B) de resultats comuns. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 1/6. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L03-03": {
+      "prompt": "En Arbres i taules: Dues monedes ideals i independents: calcula P(exactament una cara), sumant rutes CX i XC. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 0,5. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L03-04": {
+      "prompt": "En Arbres i taules: Que dos successos siguin incompatibles significa que són INDEPENDENTS en general? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: No. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L03-05": {
+      "prompt": "En Arbres i taules: Borsa 2 vermelles i 1 blau; extreure dues SENSE reemplaçament. Calcula P(RR) usant la segona branca condicionada. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 1/3. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L04-01": {
+      "prompt": "A Simulació i freqüències: Calcula proporció exacta de 18 resultats favorables en 40 observacions. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 0,45. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L04-02": {
+      "prompt": "A Simulació i freqüències: Calcula diferència absoluta entre proporció observada 18/40 i valor teòric 1/2. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 0,05. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L04-03": {
+      "prompt": "A Simulació i freqüències: Calcula proporció exacta de 8 resultats favorables en 20 observacions. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 0,4. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L04-04": {
+      "prompt": "En Simulació i freqüències: Companta simulacions de moneda equilibrada GARANTEIXen vint cares exactes? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: No. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L04-05": {
+      "prompt": "A Simulació i freqüències: Si la freqüència relativa observada és 18/40, calcula freqüència COMPLEMENTÀRIA. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 0,55. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L05-01": {
+      "prompt": "En Població, mostra i representativitat: Calcula proporció exacta de 20 resultats favorables en 50 observacions. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 0,4. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L05-02": {
+      "prompt": "En Població, mostra i representativitat: Calcula el 20 % d'una mostra de n=10 observacions ( nombre de casos). Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 2. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L05-03": {
+      "prompt": "En Població, mostra i representativitat: Calcula el 20 % d'una mostra de n=100 observacions ( nombre de casos). Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 20. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L05-04": {
+      "prompt": "En Població, mostra i representativitat: El biaix d'AUTOSELECCIÓ desapareix necessàriament en augmentar n sense canviar mètode? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: No. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L05-05": {
+      "prompt": "En Població, mostra i representativitat: Amb proporció mostral 0,4 es coneix de forma exacta el PARÀMETRE poblacional? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: No. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L06-01": {
+      "prompt": "En Inferència elemental amb limitacions: Calcula proporció exacta de 40 resultats favorables en 100 observacions. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 0,4. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L06-02": {
+      "prompt": "En Inferència elemental amb limitacions: Un percentatge canvia de 40 % a 45 %. Calcula la diferència en punts percentuals. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 5. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L06-03": {
+      "prompt": "En Inferència elemental amb limitacions: Un percentatge passa de 40 % a 45 %. Calcula l'increment relatiu (fracció de l'inici). Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: 0,125. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L06-04": {
+      "prompt": "En Inferència elemental amb limitacions: Una estimació mostral p̂=0,4 prova necessàriament que p poblacional =0,4? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: No. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-Q01-L06-05": {
+      "prompt": "En Inferència elemental amb limitacions: És legítim publicar marge d'error amb cobertura garantida sense ESPECIFICAR disseny i mètode? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència.",
+      "explanation": "Solució justificada amb aritmètica exacta: No. Defineix Ω, l'ordre d'etapes i el denominador abans de calcular; comprova equiprobabilitat o dependència. Enumera parells o rutes i multiplica probabilitats CONDICIONADES; suma esdeveniments disjunts. Una mostra no demostra el paràmetre i una simulació finita fluctua. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    }
+  }
+}

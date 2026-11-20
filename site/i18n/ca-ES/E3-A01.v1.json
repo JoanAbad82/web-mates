@@ -1,0 +1,333 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E3-A01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e3_a01.json": "b68edffcd8c3d53775c1febe42624e87c59e7fe2b0abf7c641011d476ada8c9d",
+    "data/f3_e3_a01_exercises.json": "a35650afcbfeeeb80aef03cf834285dfffbc6bed824a92e3049477bd76029cc4"
+  },
+  "lessons": {
+    "E3-A01-L01": {
+      "title": "Operacions polinòmiques",
+      "objectives": [
+        "Sumar, restar i multiplicar polinomis senzills.",
+        "Comprova els resultats mitjançant la substitució numèrica."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per sumar o restar polinomis reuneix termes d'igual exponent. Per a multiplicar, cada terme d'un factor multiplica a cada terme de l'altre; agrupa termes semblants. La multiplicació és distributiva, no es multipliquen només primers i últims."
+        },
+        {
+          "body": "Expressió: (x+2)(x+3) = x²+3x+2x+6 = x²+5x+6."
+        },
+        {
+          "body": "(2x²+x−1)+(3x²−4x+5)=5x²−3x+4. Comprovació opcional: en x=1 ambdues expressions valen 6."
+        },
+        {
+          "body": "Una quadrícula de productes parcials: x·x=x²; x·3=3x; 2·x=2x; 2·3=6. Agrupa les quatre caselles.",
+          "alt": "Representació alternativa descrita textualment"
+        },
+        {
+          "body": "Per què (x+2)(x+3) no és x²+6?||Perquè falten els productes creuats 3x i 2x, que sumen 5x."
+        },
+        {
+          "body": "En productes: distribueix tots contra tots → suma semblants → comprova amb un valor."
+        }
+      ]
+    },
+    "E3-A01-L02": {
+      "title": "Productes notables",
+      "objectives": [
+        "Aplica el quadrat d'una suma, el d'una diferència i la diferència de quadrats.",
+        "Distingir les condicions de cada identitat."
+      ],
+      "content_blocks": [
+        {
+          "body": "Els productes notables són multiplicacions especials que convé reconèixer, no dreceres arbitraris. (a+b)²=a²+2a b +b², (a−b)²=a²−2a b +b² i (a+b)(a−b)=a²−b². El terme central del quadrat no desapareix excepte casos particulars."
+        },
+        {
+          "body": "(x+4)²=x²+8x+16. El terme central és 2·x·4."
+        },
+        {
+          "body": "(2x−3)(2x+3)=(2x)²−3²=4x²−9. Són conjugats i cancel·len els termes creuats."
+        },
+        {
+          "body": "Àrea verbal d'un quadrat de costat a+b: quatre parts, a², dos rectangles ab i b². Aquesta figura explica el doble producte.",
+          "alt": "Representació alternativa descrita textualment"
+        },
+        {
+          "body": "En (x+5)², per què no basta escriure x²+25?||Perquè l'àrea de les dues regions rectangulars suma 10x; el quadrat complet és x²+10x+25."
+        },
+        {
+          "body": "Quadrats: primer ² ± doble producte + segon ². Conjugats: primer ² − segon ²."
+        }
+      ]
+    },
+    "E3-A01-L03": {
+      "title": "Factor comú",
+      "objectives": [
+        "Reconèixer un factor compartit per tots els termes.",
+        "Extreure el màxim factor comú senzill i comprovar multiplicant."
+      ],
+      "content_blocks": [
+        {
+          "body": "Factoritzar per factor comú és escriure una suma com un producte: inverteix la propietat distributiva. Cerca coeficients i potències de lletres presents en tots els termes. En extreure x, revisa si dins del parèntesi queda 1."
+        },
+        {
+          "body": "Expressió: 6x²+9x=3x(2x+3). Distribuir confirma 6x²+9x."
+        },
+        {
+          "body": "4x³−8x²=4x²(x−2). El factor x² està en tots dos termes; el signe menys roman dins."
+        },
+        {
+          "body": "En una taula de factors, 6x² es compon de 3x·2x i 9x de 3x·3; comparteixen la peça 3x.",
+          "alt": "Representació alternativa descrita textualment"
+        },
+        {
+          "body": "Per què 5x²−5x no pot escriure's com 5x(x−x)?||Perquè en dividir el primer terme per 5x queda x, i el segon per 5x queda 1: resultat 5x(x−1)."
+        },
+        {
+          "body": "Busca el màxim divisor de coeficients i la menor potència de cada lletra comuna; divideix cada terme i comprova."
+        }
+      ]
+    },
+    "E3-A01-L04": {
+      "title": "Identitats algebraiques",
+      "objectives": [
+        "Reconèixer una identitat com a igualtat vàlida per a tot valor permès.",
+        "Justificar desenvolupaments i decidir si una proposta és identitat o equació."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una identitat conserva la igualtat per a tot valor permès: cada transformació ha de ser reversible en aquest domini. La igualtat (x+3)²=x²+6x+9 és una identitat; x²=9 només és certa per a certs x. Comprovar un valor serveix per refutar, però no prova una identitat per si sol."
+        },
+        {
+          "body": "(a+b)²−(a−b)² = (a²+2a b +b²)−(a²−2a b +b²) = 4a b."
+        },
+        {
+          "body": "(x+1)(x−1)+1 = x²−1+1 = x². Les expressions són equivalents per a tot x real."
+        },
+        {
+          "body": "Una identitat equival a dos procediments diferents que produeixen sempre la mateixa sortida. Una equació pot igualar sortides només en punts particulars.",
+          "alt": "Representació alternativa descrita textualment"
+        },
+        {
+          "body": "Si dues expressions coincideixen en x=2, és suficient per a afirmar que són idèntiques?||No. Cal justificar algebraicament l'equivalència per a tots els valors permesos."
+        },
+        {
+          "body": "Desenvolupa i redueix tots dos costats; si el resultat coincideix algebraicament, tens identitat. Un sol exemple no demostra generalitat."
+        }
+      ]
+    },
+    "E3-A01-L05": {
+      "title": "Factorització elemental",
+      "objectives": [
+        "Triar entre factor comú i diferència de quadrats.",
+        "Verificar factoritzacions en desenvolupar el producte."
+      ],
+      "content_blocks": [
+        {
+          "body": "Factoritzar és transformar un polinomi en producte. Primer comprova factor comú; després reconeix patrons com a²−b²=(a−b)(a+b). No confones diferència de quadrats amb suma de quadrats, que no es factoritza així sobre els reals."
+        },
+        {
+          "body": "x²−25=(x−5)(x+5). Comprova: x²+5x−5x−25=x²−25."
+        },
+        {
+          "body": "2x²+6x=2x(x+3). Extreure el factor comú simplifica abans de buscar altres patrons."
+        },
+        {
+          "body": "Dos quadrats d'àrees x² i 25: la seva diferència s'expressa com dues longituds conjugades multiplicades, (x−5)(x+5).",
+          "alt": "Representació alternativa descrita textualment"
+        },
+        {
+          "body": "Pot factoritzar-se x²+16 com (x−4)(x+4) en nombres reals?||No: aquest producte és x²−16, núm. x²+16. La identitat exigeix una resta de quadrats."
+        },
+        {
+          "body": "Factor comú primer; si queda resta de quadrats, usa conjugats. Multiplica per a comprovar."
+        }
+      ]
+    },
+    "E3-A01-L06": {
+      "title": "Fraccions algebraiques senzilles com a ampliació",
+      "objectives": [
+        "Simplificar fraccions amb factors comuns sota restriccions explícites.",
+        "Recorda que un valor que anul·lava el denominador inicial segueix exclòs."
+      ],
+      "content_blocks": [
+        {
+          "body": "AMPLIACIÓ EDITORIAL: una fracció algebraica té expressions amb lletres en numerador i denominador. Pots cancel·lar factors iguals només si no valen zero; mai cancel·lats termes solts d'una suma. El domini de l'expressió inicial ha de conservar-se després de simplificar."
+        },
+        {
+          "body": "(x²−9)/(x−3)=(x−3)(x+3)/(x−3)=x+3 només per x ≠ 3. En x=5 val 8."
+        },
+        {
+          "body": "(2x²+4x)/(2x)=2x(x+2)/(2x)=x+2 per a x≠0. En x=2 val 4."
+        },
+        {
+          "body": "Visualització verbal: el factor x−3 apareix tant a dalt com a baix; només es cancel·la quan no és zero. En x=3 el quocient original és 0/0, indefinit.",
+          "alt": "Representació alternativa descrita textualment"
+        },
+        {
+          "body": "Si una simplificació dóna x+3, per què no admet x=3 quan l'expressió inicial era (x²−9)/(x−3)?||Perquè el denominador original s'anul·la en 3; simplificar no recupera un punt exclòs."
+        },
+        {
+          "body": "Factoritza numerador i denominador, anota primer exclusions, cancel·la factors no nuls i avalua només en valors permesos."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E3-A01-L01-01": {
+      "prompt": "Quin és el coeficient de x en (x+2)(x+3)?",
+      "hint": "Distribueix els quatre productes.",
+      "explanation": "El desenvolupament és x²+5x+6."
+    },
+    "F3-E3-A01-L01-02": {
+      "prompt": "Quin és el terme independent de (x+2)(x+3)?",
+      "hint": "Multiplica les constants.",
+      "explanation": "L'expansió és x²+5x+6."
+    },
+    "F3-E3-A01-L01-03": {
+      "prompt": "Coeficient de x² en (2x²+x−1)+(3x²−4x+5).",
+      "hint": "Agrupa termes quadràtics.",
+      "explanation": "El coeficient és 5."
+    },
+    "F3-E3-A01-L01-04": {
+      "prompt": "Quina és la forma desenvolupada de (x+2)(x+3)?",
+      "hint": "Multiplica cada terme del primer parèntesi per cada terme del segon.",
+      "explanation": "x²+5x+6 és l'única forma equivalent de les opcions."
+    },
+    "F3-E3-A01-L01-05": {
+      "prompt": "Avalua (x+2)(x+3) per a x=2.",
+      "hint": "Substitueix abans de multiplicar.",
+      "explanation": "El producte val 20."
+    },
+    "F3-E3-A01-L02-01": {
+      "prompt": "Coeficient de x en (x+4)².",
+      "hint": "Recorda el doble producte 2·x·4.",
+      "explanation": "Càlcul: (x+4)²=x²+8x+16."
+    },
+    "F3-E3-A01-L02-02": {
+      "prompt": "Terme independent de (x+4)².",
+      "hint": "Multiplica 4 per 4.",
+      "explanation": "La constant és 16."
+    },
+    "F3-E3-A01-L02-03": {
+      "prompt": "Coeficient de x² en (2x−3)(2x+3).",
+      "hint": "És una diferència de quadrats.",
+      "explanation": "El producte val 4x²−9."
+    },
+    "F3-E3-A01-L02-04": {
+      "prompt": "Quina expressió equival a (x−5)²?",
+      "hint": "Utilitza (a−b)²=a²−2a b +b².",
+      "explanation": "El resultat és x²−10x+25."
+    },
+    "F3-E3-A01-L02-05": {
+      "prompt": "Quina expressió equival a (3x−2)(3x+2)?",
+      "hint": "Són factors conjugats.",
+      "explanation": "9x²−4 és la diferència de quadrats."
+    },
+    "F3-E3-A01-L03-01": {
+      "prompt": "Quin és el major factor comú numèric de 6x² i 9x?",
+      "hint": "Busca el màxim divisor enter positiu comú de 6 i 9.",
+      "explanation": "El factor comú numèric màxim és 3."
+    },
+    "F3-E3-A01-L03-02": {
+      "prompt": "Quin exponent de x s'extreu com a factor comú de 4x³ i −8x²?",
+      "hint": "Cerca la menor potència de x present en ambdós termes.",
+      "explanation": "Pot extreure's x²."
+    },
+    "F3-E3-A01-L03-03": {
+      "prompt": "Avalua 3x(2x+3) per a x=2.",
+      "hint": "Substitueix x=2 en ambdós llocs.",
+      "explanation": "Càlcul: 6·7=42."
+    },
+    "F3-E3-A01-L03-04": {
+      "prompt": "Quina és una factorització vàlida de 6x²+9x?",
+      "hint": "Extrau 3x.",
+      "explanation": "Càlcul: 3x(2x+3)=6x²+9x."
+    },
+    "F3-E3-A01-L03-05": {
+      "prompt": "Quina és la factorització de 4x³−8x²?",
+      "hint": "Busca el factor comú 4x².",
+      "explanation": "4x²(x−2) reprodueix el polinomi."
+    },
+    "F3-E3-A01-L04-01": {
+      "prompt": "Calcula (a+b)²−(a−b)² per a=2 i b=3.",
+      "hint": "Desenvolupa les dues potències abans de restar.",
+      "explanation": "Càlcul: 4·2·3=24."
+    },
+    "F3-E3-A01-L04-02": {
+      "prompt": "Avalua (x+1)(x−1)+1 per a x=5.",
+      "hint": "Els conjugats donen x²−1.",
+      "explanation": "Càlcul: 5²=25."
+    },
+    "F3-E3-A01-L04-03": {
+      "prompt": "Són equivalents (x+1)(x−1)+1 i x² per a tot x real?",
+      "hint": "Aplica la diferència de quadrats.",
+      "explanation": "Sí: és identitat per a tots els reals."
+    },
+    "F3-E3-A01-L04-04": {
+      "prompt": "Són equivalents 2(x+3) i 2x+3 per a tot x?",
+      "hint": "Distribueix el 2.",
+      "explanation": "No són equivalents."
+    },
+    "F3-E3-A01-L04-05": {
+      "prompt": "Per a x=2, quant val (x+3)²−(x²+6x)?",
+      "hint": "Desenvolupa (x+3)².",
+      "explanation": "La diferència val sempre 9; x=2 també."
+    },
+    "F3-E3-A01-L05-01": {
+      "prompt": "Avalua x²−25 per a x=7.",
+      "hint": "Pista: Calcula 7².",
+      "explanation": "El valor és 24."
+    },
+    "F3-E3-A01-L05-02": {
+      "prompt": "En 2x²+6x=2x(x+3), quina constant queda dins del parèntesi?",
+      "hint": "Divideix 6x entre 2x.",
+      "explanation": "La factorització correcta és 2x(x+3)."
+    },
+    "F3-E3-A01-L05-03": {
+      "prompt": "Quina factorització correspon a x²−25?",
+      "hint": "És una diferència de quadrats.",
+      "explanation": "El producte (x−5)(x+5) dóna x²−25."
+    },
+    "F3-E3-A01-L05-04": {
+      "prompt": "És (x−4)(x+4) una factorització de x²+16 en els reals?",
+      "hint": "Multiplica els conjugats.",
+      "explanation": "No: canvia el signe de la constant."
+    },
+    "F3-E3-A01-L05-05": {
+      "prompt": "Avalua (x−5)(x+5) per a x=6.",
+      "hint": "Ús x²−25.",
+      "explanation": "El valor és 11."
+    },
+    "F3-E3-A01-L06-01": {
+      "prompt": "AMPLIACIÓ. Avalua (x²−9)/(x−3) en x=5.",
+      "hint": "Factoritza x²−9.",
+      "explanation": "Amb x=5 val 8; x=3 està exclòs."
+    },
+    "F3-E3-A01-L06-02": {
+      "prompt": "AMPLIACIÓ. Avalua (2x²+4x)/(2x) en x=2.",
+      "hint": "Extreu 2x del numerador.",
+      "explanation": "En x=2 val 4."
+    },
+    "F3-E3-A01-L06-03": {
+      "prompt": "AMPLIACIÓ. Està permès x=3 en (x²−9)/(x−3)?",
+      "hint": "Comprova el denominador ORIGINAL.",
+      "explanation": "No es permet dividir per zero."
+    },
+    "F3-E3-A01-L06-04": {
+      "prompt": "AMPLIACIÓ. Està permès x=0 en (2x²+4x)/(2x)?",
+      "hint": "Vegeu el factor 2x del denominador.",
+      "explanation": "El valor està exclòs encara que la fracció pugui simplificar-se."
+    },
+    "F3-E3-A01-L06-05": {
+      "prompt": "AMPLIACIÓ. Avalua (x²−16)/(x−4) en x=6.",
+      "hint": "Factoritza com a diferència de quadrats.",
+      "explanation": "En x=6 val 10."
+    }
+  }
+}

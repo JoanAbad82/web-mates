@@ -72,3 +72,9 @@ Prueba en Chrome de 390px, con emulación táctil (no móvil real), ruta de curs
 
 30/85 unidades, 179/505 lecciones y 895/2.525 actividades (todos `draft_unreviewed`, 0 revisiones lingüísticas humanas). Pendientes: 55 unidades, 326 lecciones y 1630 actividades.
 Paquetes nuevos: B1C-A01, B1C-F02, B1C-G01, E2-A01, E2-A02, E2-F01, E2-G01, E2-M01, E2-N02, E2-P01, E3-G01, E4A-G01, E4A-N01, E4A-P01, E4B-A01, E4B-A02, E4B-F01, E4B-G01. Candidatos aislados, revisión humana pendiente y publicación de código por Pull Request; GitHub Pages no activado.
+
+
+## Estado de recuperación ca-ES — 20/11/2026
+
+63/85 unidades, 377/505 lecciones, 1885/2.525 actividades en catalán, todas con estado `draft_unreviewed` y **0 revisiones lingüísticas humanas**. Pendientes: 22 unidades, 128 lecciones y 640 actividades.
+Nuevos paquetes verificados: B1C-D01, B1C-F03, B1C-N01, B1C-Q01, B1S-A01, B1S-D01, B1S-D02, B1S-F02, B1S-F03, B2C-A01, B2C-F01, B2C-G01, B2C-G02, B2C-G03, B2S-A01, B2S-A02, B2S-D01, B2S-D02, B2S-F01, B2S-F02, B2S-F03, E3-A01, E3-F01, E3-G02, E3-N01, E4A-A01, E4A-D01, E4A-F01, E4A-Q01, E4B-D01, E4B-G02, E4B-N01, E4B-Q01. Procesamiento por candidato en staging aislado y Pull Request. Ninguna publicación web.

@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1S-F03",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1s_f03.json": "556b7d0f099bbc4849a7a0881d7a73dbd7e05351510a32cb4cb9e3979539f419",
+    "data/f3_b1s_f03_exercises.json": "af7d4bf63f6bb13fb594ff81ccbf2409ba419c1f3b085e98f98442309b4963b6"
+  },
+  "lessons": {
+    "B1S-F03-L01": {
+      "title": "Taxa de canvi mitjana",
+      "objectives": [
+        "Calcula la taxa de variació mitjana entre dos punts amb unitats.",
+        "Distingir secants de derivades locals i canvi total de taxa mitjana."
+      ],
+      "content_blocks": [
+        {
+          "body": "La taxa de canvi mitjana de f entre a i b, amb b≠a, és (f(b)−f(a))/(b−a). La seva unitat és unitat de sortida per unitat d'entrada, no la de la funció original. Per al cost C(q)=q²+10q+100, de q=2 a q=4 s'obtenen C(2)=124 i C(4)=156; la taxa mitjana val (156−124)/(4−2)=16 euros per unitat. Una taxa mitjana negativa indica descens net en l'interval, però no garanteix que el comportament fos decreixent en tots els seus punts. La secant travessa dos punts diferents; per parlar de derivada a a s'estudia el límit de secants en acostar b a a, quan aquest límit existeix. En variables discretes, les diferències finites poden ser més pertinents que una derivada de l'extensió real."
+        },
+        {
+          "body": "Per a f(x)=x², entre a=1 i b=4 la taxa mitjana és (16−1)/(4−1)=5 unitats de f per unitat de x."
+        },
+        {
+          "body": "Per a C(q)=5q+20, entre q=2 i q=8 la taxa mitjana és 5 €/ servei, independent dels extrems perquè el model és afí."
+        },
+        {
+          "body": "Secant entre dos punts de paràbola. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Secant entre dos punts de paràbola. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Secant entre dos punts de paràbola"
+          }
+        },
+        {
+          "body": "Pot calcular-se (f(b)−f(a))/(b−a) amb a=b dividint per zero?||No; la taxa mitjana entre dues entrades exigeix a≠b."
+        },
+        {
+          "body": "Recuperació activa: La taxa de canvi mitjana de f entre a i b, amb b≠a, és (f(b)−f(a))/(b−a). Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    },
+    "B1S-F03-L02": {
+      "title": "derivada en un punt",
+      "objectives": [
+        "Definir la derivada mitjançant límit del quocient incremental.",
+        "Detectar falta de derivabilitat davant pendents laterals diferents o discontinuïtat."
+      ],
+      "content_blocks": [
+        {
+          "body": "La derivada de f en a es defineix, si existeix límit finit, com f′(a)= lim (h→0)[f(a+h)−f(a)]/h; en el límit es prenen h diferents de zero. Per f(x)=x², el quocient en a és [(a+h)²−a²]/h=2a+h i el seu límit és 2a. Derivabilitat implica continuïtat en el punt, però continuïtat no implica derivabilitat: f(x)=|x| és contínua en 0 i els seus pendents laterals són −1 y +1, per tant f′(0) no existeix. Una discontinuïtat de salt impedeix la derivabilitat. Un gràfic pot suggerir una cantonada, però només l'anàlisi de quocients laterals justifica la no derivabilitat. No han d'emprar-se regles de derivació on l'expressió o la funció manquen de definició en el punt."
+        },
+        {
+          "body": "Per f(x)=x² en a=3, el quocient és [(3+h)²−9]/h=6+h i la derivada f′(3)=6 en fer h→0."
+        },
+        {
+          "body": "Per a f(x)=|x| en 0, la secant amb h<0 té pendent −1 i amb h>0 pendent +1; no hi ha derivada bilateral."
+        },
+        {
+          "body": "Cantonada contínua sense derivada bilateral. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Cantonada contínua sense derivada bilateral. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Cantonada contínua sense derivada bilateral"
+          }
+        },
+        {
+          "body": "Continuïtat en un punt garanteix que allí existeix derivada?||No; |x| és contínua en 0 però presenta pendents laterals diferents."
+        },
+        {
+          "body": "Recuperació activa: La derivada de f en a es defineix, si existeix límit finit, com f′(a)= lim (h→0)[f(a+h)−f(a)]/h; en el límit es prenen h diferents de zero. Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    },
+    "B1S-F03-L03": {
+      "title": "Regla de derivació elemental",
+      "objectives": [
+        "Aplicar la regla de la potència a polinomis i constants.",
+        "Distingir regla de producte i cadena en casos on calen."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si f(x)=x^n per a n natural positiu, f′(x)=n·x^(n−1); la derivada d'una constant és zero i es deriven sumes i múltiples constants terme a terme. Per exemple, per a f(x)=3x³−2x²+5x−7, la derivada és 9x²−4x+5. La regla de potència pressuposa que es tracta d'una potència diferenciable en el domini considerat: no es pot extrapolar a |x| en 0. La derivada d'un producte no és generalment producte de derivades; s'utilitza (uv )′=u′v+ uv ′. Per a (2x+1)², la regla de la cadena dóna derivada 2(2x+1)·2=4(2x+1). Les fórmules es comproven derivant o simplificant exemples, sense substituir la discussió prèvia de continuïtat i punts no derivables."
+        },
+        {
+          "body": "Deriva f(x)=3x³−2x²+5x−7: f′(x)=9x²−4x+5; en x=1 el valor de la derivada és 10."
+        },
+        {
+          "body": "Per a g(x)=(2x+1)², aplica cadena: g′(x)=2(2x+1)·2=4(2x+1), que en x=2 val 20."
+        },
+        {
+          "body": "Polinomi i taxa de canvi instantània. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Polinomi i taxa de canvi instantània. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Polinomi i taxa de canvi instantània"
+          }
+        },
+        {
+          "body": "És sempre (u·v)′ igual a u′·v′?||No; es requereix la suma u′v+ uv ′."
+        },
+        {
+          "body": "Recuperació activa: Si f(x)=x^n per a n natural positiu, f′(x)=n·x^(n−1); la derivada d'una constant és zero i es deriven sumes i múltiples constants terme a terme. Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    },
+    "B1S-F03-L04": {
+      "title": "Tangent",
+      "objectives": [
+        "Calcular equacions tangents amb pendent derivada i pas pel punt.",
+        "Rebutjar fórmules de tangent ordinària quan no existeix derivada."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si f és derivable en a, la recta tangent ordinària en (a,f(a)) té equació y=f(a)+f′(a)(x−a), el pendent de la qual és la derivada f′(a). Per f(x)=x² en a=2, f(2)=4 i f′(2)=4, per tant la tangent és y=4+4(x−2)=4x−4. No basta conèixer el pendent sense el punt de contacte. En un màxim o mínim interior derivable el pendent tangent pot ser zero, però el recíproc no assegura un extrem. En una cantonada com |x| en a=0, els pendents laterals difereixen i no existeix tangent única de la forma ordinària. En dades financeres una recta tangent aproxima el model matemàtic localment: no implica que una tarifa realment canviï linealment per a grans variacions."
+        },
+        {
+          "body": "Per a f(x)=x² i a=2: f(2)=4, f′(2)=4 i la tangent és y−4=4(x−2), o y=4x−4."
+        },
+        {
+          "body": "Per a g(x)=x²+1 en a=0: g(0)=1 i g′(0)=0; la tangent horitzontal és y=1."
+        },
+        {
+          "body": "Punt de tangència d'una paràbola. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Punt de tangència d'una paràbola. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Punt de tangència d'una paràbola"
+          }
+        },
+        {
+          "body": "Puc assignar a |x| en 0 una única tangent de pendent 0?||Núm.; a la cantonada no existeix derivada bilateral."
+        },
+        {
+          "body": "Recuperació activa: Si f és derivable en a, la recta tangent ordinària en (a,f(a)) té equació y=f(a)+f′(a)(x−a), el pendent de la qual és la derivada f′(a). Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    },
+    "B1S-F03-L05": {
+      "title": "Creixement i extrems inicials",
+      "objectives": [
+        "Estudiar creixement i extrems amb el signe de la derivada i restriccions.",
+        "Distingir punt crític, extrem, frontera de domini i punt estacionari sense extrem."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si f′(x)>0 en un interval, f és estrictament creixent allí; si f′(x)<0, decreixent. Per f(x)=(x−2)²+1 es té f′(x)=2(x−2), negativa a l'esquerra de 2 i positiva a la dreta: el punt x=2 és mínim amb valor 1. Per a x³, la derivada és 3x², s'anul·la en x=0 però la funció segueix creixent a banda i banda; una derivada zero no garanteix extrem. En intervals tancats es comparen punts crítics interiors i valors de frontera per buscar extrems absoluts. També poden existir extrems en punts on la derivada no està definida, sempre que el punt pertanyi al domini. L'anàlisi ha de respectar l'escala i les restriccions del fenomen modelitzat."
+        },
+        {
+          "body": "Per f(x)=(x−2)²+1, la derivada 2x−4 canvia de negativa a positiva en x=2: mínim f(2)=1."
+        },
+        {
+          "body": "Per g(x)=x³, g′(0)=0, però g(−1)=−1<g(0)=0<g(1)=1: no hi ha extrem local en 0."
+        },
+        {
+          "body": "Mínim quadràtic i canvi de signe de derivada. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Mínim quadràtic i canvi de signe de derivada. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Mínim quadràtic i canvi de signe de derivada"
+          }
+        },
+        {
+          "body": "N'hi ha prou amb trobar f′(a)=0 per declarar màxim o mínim?||No; cal comprovar canvi de signe o comparar valors i fronteres."
+        },
+        {
+          "body": "Recuperació activa: Si f′(x)>0 en un interval, f és estrictament creixent allí; si f′(x)<0, decreixent. Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    },
+    "B1S-F03-L06": {
+      "title": "Interpretació marginal de canvi",
+      "objectives": [
+        "Interpretar el cost o benefici marginal com derivada d'un model continu.",
+        "Distingir derivada local d'increment exacte d'una unitat en contextos discrets."
+      ],
+      "content_blocks": [
+        {
+          "body": "En una extensió diferenciable del cost C(q)=q²+10q+100 per q≥0, la derivada C′(q)=2q+10 s'interpreta com a cost marginal en euros per unitat: aproxima el canvi de cost per una petita variació al voltant de q. En q=4, C′(4)=18 €/ unitat. No obstant això, si produir una unitat addicional és un salt discret, la diferència exacta C(5)−C(4)=19 €, no 18 €; no s'ha de confondre una derivada amb la diferència finita de grandària un. El marginal pot perdre validesa si hi ha graons, capacitat màxima o indivisibilitat. Un benefici B(q)=I(q)−C(q) té derivada marginal B′=I′−C′ on ambdues funcions són derivables. Les unitats i domini han d'acompanyar el resultat i les interpretacions no constitueixen assessorament econòmic real."
+        },
+        {
+          "body": "Per C(q)=q²+10q+100, C′(4)=2·4+10=18 €/ unitat com a cost marginal local en q=4."
+        },
+        {
+          "body": "L'augment exacte de passar de q=4 a q=5 és C(5)−C(4)=(25+50+100)−(16+40+100)=19 €, una unitat més que el marginal 18."
+        },
+        {
+          "body": "Cost marginal continu enfront d'unitat addicional. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Cost marginal continu enfront d'unitat addicional. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Cost marginal continu enfront d'unitat addicional"
+          }
+        },
+        {
+          "body": "La derivada C′(4)=18 € garanteix que el cost exacte de fabricar la cinquena unitat sigui 18 €?||No; el salt discret exacte del model és 19 €."
+        },
+        {
+          "body": "Recuperació activa: En una extensió diferenciable del cost C(q)=q²+10q+100 per q≥0, la derivada C′(q)=2q+10 s'interpreta com a cost marginal en euros per unitat: aproxima el canvi de cost per una petita variació al voltant de q. Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1S-F03-L01-01": {
+      "prompt": "En Taxa de canvi mitjana: Per a f(x)=x² i extrems 1 i 4, calcula taxa de canvi MITJANA [f(b)−f(a)]/(b−a). Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 5. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 5."
+    },
+    "F3-B1S-F03-L01-02": {
+      "prompt": "En Taxa de canvi mitjana: Per a cost C(q)=q²+10q+100, calcula la taxa mitjana entre q=2 i q=4 €/ unitat. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 16. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 16."
+    },
+    "F3-B1S-F03-L01-03": {
+      "prompt": "En Taxa de canvi mitjana: Per a C(q)=5q+20, quina taxa MITJANA produeix entre q=2 i q=8, sent diferents? Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 5. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 5."
+    },
+    "F3-B1S-F03-L01-04": {
+      "prompt": "En Taxa de canvi mitjana: Pot calcular-se taxa mitjana (f(b)−f(a))/(b−a) sense límits amb b=a dividint entre zero (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; Resultat: No. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B1S-F03-L01-05": {
+      "prompt": "En Taxa de canvi mitjana: Una recta que passa pels punts (a,f(a)) i (b,f(b)), a≠b, és una recta: Secant, Tangent o Vertical. Tria l'opció matemàticament correcta.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; El resultat: sec. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: Secante."
+    },
+    "F3-B1S-F03-L02-01": {
+      "prompt": "En derivada en un punt: Calcula derivada f′(3) de f(x)=x² usant límit de quocient incremental o regla demostrada. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i confrontació del domini; resultat contrastat: 6. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 6."
+    },
+    "F3-B1S-F03-L02-02": {
+      "prompt": "En derivada en un punt: Calcula el pendent de secant lateral ESQUERRE que aproxima f(x)=|x| en x=0. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: -1. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: -1."
+    },
+    "F3-B1S-F03-L02-03": {
+      "prompt": "En derivada en un punt: Calcula el pendent de secant lateral dret que aproxima f(x)=|x| en x=0. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 1. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 1."
+    },
+    "F3-B1S-F03-L02-04": {
+      "prompt": "En derivada en un punt: Existeix f′(0) bilateral per a f(x)=|x|, els pendents laterals dels quals són −1 i 1 (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i confrontació del domini; Resultat contrastat: No. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B1S-F03-L02-05": {
+      "prompt": "En derivada en un punt: Ser derivable en un punt implica necessàriament continuïtat en aquest punt (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; Resultat: sí. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: Sí."
+    },
+    "F3-B1S-F03-L03-01": {
+      "prompt": "En Regla de derivació elemental: Per f(x)=3x³−2x²+5x−7, calcula f′(1) mitjançant derivació terme a terme. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i confrontació del domini; resultat contrastat: 10. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 10."
+    },
+    "F3-B1S-F03-L03-02": {
+      "prompt": "En Regla de derivació elemental: Per a g(x)=(2x+1)², calcula g′(2) aplicant regla de la cadena. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i confrontació del domini; resultat contrastat: 20. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 20."
+    },
+    "F3-B1S-F03-L03-03": {
+      "prompt": "En Regla de derivació elemental: Per f(x)=3x³−2x²+5x−7, calcula f′(0) mitjançant derivació terme a terme. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i confrontació del domini; resultat contrastat: 5. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 5."
+    },
+    "F3-B1S-F03-L03-04": {
+      "prompt": "En Regla de derivació elemental: És en general (uv )′=u′v′ per a funcions derivables o,v (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i confrontació del domini; Resultat contrastat: No. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B1S-F03-L03-05": {
+      "prompt": "En Regla de derivació elemental: Calcula la derivada de la funció CONSTANT f(x)=17 en qualsevol x real. Tria l'opció matemàticament correcta.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i confrontació del domini; resultat contrastat: 0. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 0."
+    },
+    "F3-B1S-F03-L04-01": {
+      "prompt": "A Tangent: Per f(x)=x², calcula el pendent de la tangent en a=2. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i confrontació del domini; resultat contrastat: 4. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 4."
+    },
+    "F3-B1S-F03-L04-02": {
+      "prompt": "En Tangent: La tangent de f(x)=x² en a=2 és y= mx +b. Calcula el terme independent b EXACTE. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i confrontació del domini; resultat contrastat: -4. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: -4."
+    },
+    "F3-B1S-F03-L04-03": {
+      "prompt": "A Tangent: Per g(x)=x²+1, la tangent en x=0 és y=b horitzontal. Calcula b. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i confrontació del domini; resultat contrastat: 1. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 1."
+    },
+    "F3-B1S-F03-L04-04": {
+      "prompt": "A Tangent: Existeix tangent ordinària única de pendent finita per a f(x)=|x| en x=0 (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i confrontació del domini; Resultat contrastat: No. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B1S-F03-L04-05": {
+      "prompt": "A Tangent: tria l'equació exacta de la tangent a y=x² en x=2: y=4x−4, y=2x+2 o y=4x+4. Tria l'opció matemàticament correcta.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i confrontació del domini; resultat contrastat: y=4x−4. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: y=4x−4."
+    },
+    "F3-B1S-F03-L05-01": {
+      "prompt": "En Creixement i extrems inicials: Per a f(x)=(x−2)²+1, calcula l'ABSCISA del mínim. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 2. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 2."
+    },
+    "F3-B1S-F03-L05-02": {
+      "prompt": "En Creixement i extrems inicials: Per a f(x)=(x−2)²+1, calcula el valor mínim que pren la paràbola. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 1. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 1."
+    },
+    "F3-B1S-F03-L05-03": {
+      "prompt": "En Creixement i extrems inicials: La condició f′(a)=0 basta PER SI SOLA per a assegurar màxim o mínim (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; Resultat: No. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B1S-F03-L05-04": {
+      "prompt": "En Creixement i extrems inicials: És x=0 màxim o mínim local de f(x)=x³, malgrat tenir derivada zero (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; Resultat: No. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B1S-F03-L05-05": {
+      "prompt": "En Creixement i extrems inicials: Per f(x)=(x−2)²+1, classifica el signe de f′(3): Positiva, Negativa o Cero. Tria l'opció matemàticament correcta.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i confrontació del domini; Resultat negatiu: positiu. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: Positiva."
+    },
+    "F3-B1S-F03-L06-01": {
+      "prompt": "En Interpretació marginal de canvi: Amb cost C(q)=q²+10q+100, calcula el marginal CONTINU C′(4) en €/ unitat. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i acarament del domini; resultat contrastat: 18. Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model. Deriva l'expressió per a taxa local, però calcula C(q+1)−C(q) o B(q+1)−B(q) per a increment discret. Compara valors dins del domini admès. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 18."
+    },
+    "F3-B1S-F03-L06-02": {
+      "prompt": "En Interpretació marginal de canvi: Amb C(q)=q²+10q+100, calcula canvi FINIT exacte C(5)−C(4) en €. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 19. Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model. Deriva l'expressió per a taxa local, però calcula C(q+1)−C(q) o B(q+1)−B(q) per a increment discret. Compara valors dins del domini admès. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 19."
+    },
+    "F3-B1S-F03-L06-03": {
+      "prompt": "En Interpretació marginal de canvi: Amb C(q)=q²+10q+100, avalua C(4) en euros. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 156. Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model. Deriva l'expressió per a taxa local, però calcula C(q+1)−C(q) o B(q+1)−B(q) per a increment discret. Compara valors dins del domini admès. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 156."
+    },
+    "F3-B1S-F03-L06-04": {
+      "prompt": "En Interpretació marginal de canvi: Coincideixen necessàriament C′(4) i C(5)−C(4) per a C(q)=q²+10q+100 (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i acarament del domini; resultat contrastat: No. Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model. Deriva l'expressió per a taxa local, però calcula C(q+1)−C(q) o B(q+1)−B(q) per a increment discret. Compara valors dins del domini admès. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B1S-F03-L06-05": {
+      "prompt": "En Interpretació marginal de canvi: Si C es mesura en euros i q en unitats, C′(q) es mesura en: €/ unitat, Euros o Unitats. Tria l'opció matemàticament correcta.",
+      "hint": "Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i acarament del domini; resultat contrastat: €/ unitat. Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model. Deriva l'expressió per a taxa local, però calcula C(q+1)−C(q) o B(q+1)−B(q) per a increment discret. Compara valors dins del domini admès. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: €/ unitat."
+    }
+  }
+}

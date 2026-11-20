@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E4A-D01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e4a_d01.json": "c5bb6b81cda810709f2c2c4347c7e3d455512f993cfea58bb8c985728c3b8e3e",
+    "data/f3_e4a_d01_exercises.json": "deae5e908c1938134086816b86d29c501455e09d24503fefdd1488211967fd06"
+  },
+  "lessons": {
+    "E4A-D01-L01": {
+      "title": "Variables i taules de contingència",
+      "objectives": [
+        "Interpretar parells de dades i freqüències conjuntes en taules de contingència.",
+        "Distingir freqüències marginals i condicionades, indicant denominadors."
+      ],
+      "content_blocks": [
+        {
+          "body": "L'estadística bidimensional registra parelles de valors en una mateixa observació. Una taula de contingència de dues variables qualitatives usa cel·les amb recomptes conjunts; les sumes per fila i columna són freqüències marginals. Si en 20 observacions sintètiques les files transport A/B i columnes èxit S/N donen A: (6,4), B: (3,7), els marginals són 10,10 i 9,11. La proporció d'èxit entre els qui usen A és 6/10, mentre la proporció de A entre els qui presenten èxit és 6/9; no són intercanviables. La taula per si sola no demostra que el transport causi un resultat, ni representa una població pel sol fet que les seves xifres sumin 20. Cada taxa ha de declarar el denominador i les recomptes són dades demostratives, no informació d'estudiants."
+        },
+        {
+          "body": "Taula A: 6 èxit, 4 no; B: 3 èxit, 7 no. Total 20, èxit marginal 6+3=9, no èxit 4+7=11."
+        },
+        {
+          "body": "El 60 % dins de la fila A són 6/10; dins de la columna èxit, A constitueix 6/9=2/3, una altra probabilitat condicionada."
+        },
+        {
+          "body": "freqüències conjuntes i marginals. Gràfic SVG local de suport i taula semàntica amb dades exactes i limitacions.",
+          "alt": "freqüències conjuntes i marginals. La taula completa indica coordenades, recomptes, model, unitats i limitacions, sense dependre de visió de color.",
+          "visual_spec": {
+            "title": "freqüències conjuntes i marginals"
+          }
+        },
+        {
+          "body": "P(èxit |A) i P(A| èxit) han de coincidir?||No; Els seus denominadors són 10 i 9."
+        },
+        {
+          "body": "Recuperació activa: L'estadística bidimensional registra parelles de valors en una mateixa observació. Explica quina hipòtesi o biaix pot modificar la teva resposta."
+        }
+      ]
+    },
+    "E4A-D01-L02": {
+      "title": "Núvol de punts",
+      "objectives": [
+        "Representar parelles quantitatives en núvol de punts sense unir-les indegudament.",
+        "Reconèixer direcció i força visual d'associació enfront d'una sèrie temporal."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un diagrama de dispersió situa cada parella quantitativa (x,y) com un punt. Les observacions (1,2), (2,4), (3,6) mostren una associació lineal creixent perfecta en aquesta mostra; (1,6), (2,4), (3,2) mostren associació decreixent. Els eixos han de portar magnitud, unitat i escala; intercanviar les variables canvia la pregunta de predicció. Els punts no s'uneixen automàticament com una corba d'evolució temporal si l'ordre no representa temps. Una tendència pot ser no lineal, contenir valors atípics o reflectir una variable de confusió; implica causalitat. La grandària de mostra és petit i sintètic, per la qual cosa el gràfic només il·lustra representació, no una regularitat universal."
+        },
+        {
+          "body": "Amb parells (1,2), (2,4), (3,6), representa en x les quantitats 1,2, 3 i en i 2,4, 6; els punts formen pendent ascendent."
+        },
+        {
+          "body": "Amb (1,6), (2,4), (3,2), en augmentar x la i disminueix; el sentit visual és descendent encara que el núvol també sigui lineal."
+        },
+        {
+          "body": "Núvol de punts creixent. Gràfic SVG local de suport i taula semàntica amb dades exactes i limitacions.",
+          "alt": "Núvol de punts creixent. La taula completa indica coordenades, recomptes, model, unitats i limitacions, sense dependre de visió de color.",
+          "visual_spec": {
+            "title": "Núvol de punts creixent"
+          }
+        },
+        {
+          "body": "Tres punts alineats són suficients per demostrar causalitat i possibilitat d'extrapolar?||No; només descriuen les dades observades."
+        },
+        {
+          "body": "Recuperació activa: Un diagrama de dispersió situa cada parella quantitativa (x,y) com un punt. Explica quina hipòtesi o biaix pot modificar la teva resposta."
+        }
+      ]
+    },
+    "E4A-D01-L03": {
+      "title": "Correlació i els seus límits",
+      "objectives": [
+        "Distingir correlació positiva, negativa o nul·la de dependència causal.",
+        "Interpretar el coeficient lineal r amb límits de validesa."
+      ],
+      "content_blocks": [
+        {
+          "body": "La correlació lineal de Pearson r és adimensional i està entre −1 i 1 quan ambdues desviacions típiques són positives. Valors pròxims a 1 indiquen associació lineal creixent, pròxims a −1 decreixent, i pròxims a zero poca associació lineal; r=0 no equival a independència estadística ni exclou dependència no lineal. Per a x=[1,2, 3] e y=[2,4, 6], r=1, ja que y=2x. Per a x=[1,2, 3] e y=[6,4, 2], r=−1; si una variable és constant, r no està definida per divisió entre zero. Pearson és sensible a extrems i una mostra petita pot induir correlacions espúries. Mai interpretar r com a percentatge de causalitat ni com a força d'associació universal en absència de les seves hipòtesis."
+        },
+        {
+          "body": "En x=1,2, 3; y=2,4, 6 la relació y=2x és lineal creixent perfecta i Pearson r=+1."
+        },
+        {
+          "body": "En x=1,2, 3; y=6,4, 2 la relació y=8−2x és decreixent perfecta i r=−1; correlació no prova causalitat."
+        },
+        {
+          "body": "Associació creixent en dades sintètiques. Gràfic SVG local de suport i taula semàntica amb dades exactes i limitacions.",
+          "alt": "Associació creixent en dades sintètiques. La taula completa indica coordenades, recomptes, model, unitats i limitacions, sense dependre de visió de color.",
+          "visual_spec": {
+            "title": "Associació creixent en dades sintètiques"
+          }
+        },
+        {
+          "body": "r=0 implica necessàriament que dues variables siguin independents?||Núm.; dependència no lineal."
+        },
+        {
+          "body": "Recuperació activa: La correlació lineal de Pearson r és adimensional i està entre −1 i 1 quan ambdues desviacions típiques són positives. Explica quina hipòtesi o biaix pot modificar la teva resposta."
+        }
+      ]
+    },
+    "E4A-D01-L04": {
+      "title": "Recta de regressió intuïtiva",
+      "objectives": [
+        "Trobar una recta d'ajust en casos perfectament alineats.",
+        "Distingir interpolació exacta i mínims quadrats en dades generals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una recta de regressió de y sobre x adopta ŷ=a+ bx. Amb punts alineats (0,1), (1,3), (2,5), la recta ŷ=1+2x reprodueix totes les dades; pendent b=2 unitats de i per unitat de x i ordenada a=1. Per a dades no exactament lineals, mínims quadrats tria a,b que minimitzen la suma de residus verticals al quadrat; una recta dibuixada a ull és aproximació, no càlcul equivalent. El pendent estimat no descriu necessàriament un efecte causal, i canviar x per i modifica el criteri d'ajust. Si tots els valors x són iguals, el denominador de b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² és zero i aquest ajust no està definit. La recta és model descriptiu subjecte a supòsits, no una llei extrapolable sense límit."
+        },
+        {
+          "body": "Punts (0,1), (1,3), (2,5) compleixen ŷ=1+2x: per x=2 prediu 5 i cada residu observat menys predit és 0."
+        },
+        {
+          "body": "Punts (0,2), (1,5), (2,8) compleixen ŷ=2+3x; el canvi de i per cada unitat addicional de x és 3."
+        },
+        {
+          "body": "Recta d'ajust exactament alineada. Gràfic SVG local de suport i taula semàntica amb dades exactes i limitacions.",
+          "alt": "Recta d'ajust exactament alineada. La taula completa indica coordenades, recomptes, model, unitats i limitacions, sense dependre de visió de color.",
+          "visual_spec": {
+            "title": "Recta d'ajust exactament alineada"
+          }
+        },
+        {
+          "body": "Una recta traçada a ull sempre coincideix amb la solució de mínims quadrats?||No; només si satisfà el criteri exacte corresponent."
+        },
+        {
+          "body": "Recuperació activa: Una recta de regressió d'i sobre x adopta ŷ=a+ bx. Explica quina hipòtesi o biaix pot modificar la teva resposta."
+        }
+      ]
+    },
+    "E4A-D01-L05": {
+      "title": "Predicció i interpolació",
+      "objectives": [
+        "Usa prediccions interpolades amb el domini observat explícit.",
+        "Calcular residus i explicar la diferència entre valor ajustat i observat."
+      ],
+      "content_blocks": [
+        {
+          "body": "La interpolació estima un valor de y en un x inclòs en l'interval d'observació, usant un model prèviament comprovat. Si les dades (0,1), (2,5), (4,9) són lineals, l'ajust és ŷ=1+2x; per x=3 interpolem ŷ=7, amb x dins de [0,4]. Una predicció no és una dada observada: fins i tot en aquest exemple exacte el valor 7 és estimació si x=3 no es va mesurar. El residu es defineix y−ŷ i pot ser positiu o negatiu; confondre'l amb el seu valor absolut impedeix analitzar biaixos. Un ajust imperfecte requereix estudiar dispersió, residus i escala abans de confiar en la predicció. El mateix model per a x=10 seria extrapolació i no pot justificar igual fiabilitat."
+        },
+        {
+          "body": "Amb ŷ=1+2x i observacions x=0,2, 4, per x=3 s'obté 1+6=7, interpolació perquè 0≤3≤4."
+        },
+        {
+          "body": "Si en x=2 el valor observat és 6 i la recta prediu 5, el residu és 6−5=+1, no −1."
+        },
+        {
+          "body": "Interpolació dins de dades. Gràfic SVG local de suport i taula semàntica amb dades exactes i limitacions.",
+          "alt": "Interpolació dins de dades. La taula completa indica coordenades, recomptes, model, unitats i limitacions, sense dependre de visió de color.",
+          "visual_spec": {
+            "title": "Interpolació dins de dades"
+          }
+        },
+        {
+          "body": "Una predicció dins de l'interval observat es converteix automàticament en dada mesurada?||No; segueix sent estimació del model."
+        },
+        {
+          "body": "Recuperació activa: La interpolació estima un valor de y en un x inclòs en l'interval d'observació, usant un model prèviament comprovat. Explica quina hipòtesi o biaix pot modificar la teva resposta."
+        }
+      ]
+    },
+    "E4A-D01-L06": {
+      "title": "Extrapolació i lectura crítica",
+      "objectives": [
+        "Detectar extrapolacions i riscos de biaix en la comunicació estadística.",
+        "Distingir evidència descriptiva, model i causalitat no demostrada."
+      ],
+      "content_blocks": [
+        {
+          "body": "Extrapolar consisteix a usar una recta ajustada fora de l'interval de x observat; la incertesa sol augmentar perquè no s'ha contrastat allí el comportament. Una recta ŷ=1+2x ajustada entre x=0 i 4 dóna ŷ(10)=21, però aquest càlcul algebraic no valida el valor real en x=10. Si la relació canvia després de x=4, la predicció pot fallar substancialment. Un núvol aparentment arrenglerat també pot reflectir subgrups, canvis d'escala, selecció esbiaixada, valors atípics o una causa comuna. En comunicar conclusions s'especifiquen font, grandària de mostra, domini, unitats i diferència entre observacions i estimacions. Un r elevat no acredita causalitat; un conjunt sintètic no equival a dades experimentals reals."
+        },
+        {
+          "body": "Ajust ŷ=1+2x sobre x=0,2, 4. Per x=10 el càlcul dóna 21, però és extrapolació fora de [0,4]."
+        },
+        {
+          "body": "El valor ŷ=7 per a x=3 amb el mateix model seria interpolació; canviar el domini altera la validesa contextual, no la fórmula."
+        },
+        {
+          "body": "Predicció fora del domini observat. Gràfic SVG local de suport i taula semàntica amb dades exactes i limitacions.",
+          "alt": "Predicció fora del domini observat. La taula completa indica coordenades, recomptes, model, unitats i limitacions, sense dependre de visió de color.",
+          "visual_spec": {
+            "title": "Predicció fora del domini observat"
+          }
+        },
+        {
+          "body": "Una recta d'ajust garanteix prediccions fiables a qualsevol distància de l'interval observat?||Núm.; no es va verificar el model fora d'ell."
+        },
+        {
+          "body": "Recuperació activa: Extrapolar consisteix a usar una recta ajustada fora de l'interval de x observat; la incertesa sol augmentar perquè no s'ha contrastat allí el comportament. Explica quina hipòtesi o biaix pot modificar la teva resposta."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E4A-D01-L01-01": {
+      "prompt": "En Variables i taules de contingència: Taula de contingència files A/B, columnes Sí / No: A=(6,4), B=(3,7). Calcula total n. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 20. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L01-02": {
+      "prompt": "En Variables i taules de contingència: Taula de contingència files A/B, columnes Sí / No: A=(6,4), B=(3,7). Calcula TOTAL columna Sí. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 9. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L01-03": {
+      "prompt": "En Variables i taules de contingència: Taula de contingència files A/B, columnes Sí / No: A=(6,4), B=(3,7). Calcula la proporció Sí dins de l'A. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 0,6. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L01-04": {
+      "prompt": "En Variables i taules de contingència: P(Sí |A) coincideix NECESSÀRIAMENT amb P(A| Sí) per tractar-se de la mateixa taula? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: No. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L01-05": {
+      "prompt": "En Variables i taules de contingència: Taula de contingència files A/B, columnes Sí / No: A=(6,4), B=(3,7). Calcula TOTAL fila A. Tria l'opció matemàticament justificada.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 10. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L02-01": {
+      "prompt": "En núvol de punts: Per a dos punts (1,2) i (2,4), calcula pendent Δy/Δx. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 2. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L02-02": {
+      "prompt": "En núvol de punts: Per a dos punts (1,6) i (3,2), calcula pendent Δy/Δx. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: -2. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L02-03": {
+      "prompt": "En Núvol de punts: En la seqüència de coordenades alternades [1, 2, 2, 4, 3, 6], quantes parelles (x,y) hi ha? Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 3. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L02-04": {
+      "prompt": "En Núvol de punts: Un núvol de punts creixent DEMOSTRA que x causa i sense controlar confusors? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: No. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L02-05": {
+      "prompt": "En Núvol de punts: Observa la sèrie de parells ordenats [(Fraction (1, 1), Fraction (2, 1)), (Fraction (2, 1), Fraction (4, 1)), (Fraction (3, 1), Fraction (6, 1))]. Tria tendència lineal: Creixent, Decreixent, Sense informació. Tria l'opció matemàticament justificada.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: Creixent. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L03-01": {
+      "prompt": "En Correlació i els seus límits: Amb parells perfectament alineats (x, y)=[( Fraction (1, 1), Fraction (2, 1)), (Fraction (2, 1), Fraction (4, 1)), (Fraction (3, 1), Fraction (6, 1))], calcula Pearson r exacte (ambdues variàncies positives). Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 1. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L03-02": {
+      "prompt": "En Correlació i els seus límits: Amb parells perfectament alineats (x, y)=[( Fraction (1, 1), Fraction (6, 1)), (Fraction (2, 1), Fraction (4, 1)), (Fraction (3, 1), Fraction (2, 1))], calcula Pearson r exacte (ambdues variàncies positives). Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: -1. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L03-03": {
+      "prompt": "En Correlació i els seus límits: Amb parells (x, y)=[( Fraction (1, 1), Fraction (2, 1)), (Fraction (2, 1), Fraction (4, 1)), (Fraction (3, 1), Fraction (6, 1))], calcula covariància descriptiva poblacional Σ(x−x̄)(y−ȳ)/n. Tria l'opció matemàticament justificada.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 4/3. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L03-04": {
+      "prompt": "En Correlació i els seus límits: Person r=0 implica necessàriament independència de les variables? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: No. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L03-05": {
+      "prompt": "En Correlació i els seus límits: Es defineix Pearson r si una de les variables és CONSTANT i té variància zero? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: No. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L04-01": {
+      "prompt": "En Recta de regressió intuïtiva: En parells [(Fraction (0, 1), Fraction (1, 1)), (Fraction (1, 1), Fraction (3, 1)), (Fraction (2, 1), Fraction (5, 1))], calcula pendent b de regressió i sobre x per mínims quadrats. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 2. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L04-02": {
+      "prompt": "En Recta de regressió intuïtiva: En parells [(Fraction (0, 1), Fraction (1, 1)), (Fraction (1, 1), Fraction (3, 1)), (Fraction (2, 1), Fraction (5, 1))], calcula ordenada a de regressió i sobre x per mínims quadrats. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 1. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L04-03": {
+      "prompt": "En Recta de regressió intuïtiva: Per recta ajustada ŷ=1+2x, calcula valor estimat ŷ(3). Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 7. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L04-04": {
+      "prompt": "En Recta de regressió intuïtiva: La recta traçada A ULL coincideix obligatòriament amb mínims quadrats? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: No. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L04-05": {
+      "prompt": "En Recta de regressió intuïtiva: En parells [(Fraction (0, 1), Fraction (2, 1)), (Fraction (1, 1), Fraction (4, 1)), (Fraction (2, 1), Fraction (6, 1))], calcula pendent b de regressió i sobre x per mínims quadrats. Tria l'opció matemàticament justificada.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 2. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L05-01": {
+      "prompt": "En Predicció i interpolació: Per recta ajustada ŷ=1+2x, calcula valor estimat ŷ(3). Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 7. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L05-02": {
+      "prompt": "En Predicció i interpolació: Amb i observat =6 i valor ajustat =5, calcula residu signat y−ŷ. Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 1. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L05-03": {
+      "prompt": "En Predicció i interpolació: Per recta ajustada ŷ=1+2x, calcula valor estimat ŷ(4). Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 9. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L05-04": {
+      "prompt": "En Predicció i interpolació: Una predicció lineal dins de dades es converteix automàticament en OBSERVACIÓ mesurada? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: No. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L05-05": {
+      "prompt": "En Predicció i interpolació: El model es va ajustar per x∈[0,4]. Avaluar x=3 és INTERPOLACIÓ? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: Sí. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L06-01": {
+      "prompt": "En Extrapolació i lectura crítica: Per recta ajustada ŷ=1+2x, calcula valor estimat ŷ(10). Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 21. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L06-02": {
+      "prompt": "En Extrapolació i lectura crítica: Per recta ajustada ŷ=1+2x, calcula valor estimat ŷ(3). Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 7. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L06-03": {
+      "prompt": "En Extrapolació i lectura crítica: Amb interval observat x∈[0,4], calcula distància de x=10 a l'extrem més pròxim de l'interval (zero si està dins). Introdueix el valor numèric exacte sense unitats.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: 6. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L06-04": {
+      "prompt": "En Extrapolació i lectura crítica: Un model lineal ajustat en un interval garanteix validesa fora d'ell? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: No. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    },
+    "F3-E4A-D01-L06-05": {
+      "prompt": "En Extrapolació i lectura crítica: El model es va ajustar per x∈[0,4]. Avaluar x=10 és INTERPOLACIÓ? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar.",
+      "explanation": "Solució justificada amb aritmètica exacta: No. Distingeix parells observats, marginals, denominadors i límits del rang x abans d'ajustar o interpretar. Per a mínims quadrats usa b=Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² i a=ȳ− bx ̄; el residu és y−ŷ. Covariància divideix per n, r normalitza; correlació implica causalitat. Comprova denominadors, signe de residus, rang observat o hipòtesi de probabilitat."
+    }
+  }
+}

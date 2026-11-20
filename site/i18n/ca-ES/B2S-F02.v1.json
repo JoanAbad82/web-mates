@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2S-F02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2s_f02.json": "6e594b29ba255537e205e36a38b4c1bdd4f7288488c6259591e3d48089e8c44d",
+    "data/f3_b2s_f02_exercises.json": "a66253a10369c04985d2561c0bc59a6710da1421724b8766fccc60164e192cca"
+  },
+  "lessons": {
+    "B2S-F02-L01": {
+      "title": "Costos i ingressos",
+      "objectives": [
+        "Identificar cost total, mitjà, fix i variable segons unitats i domini.",
+        "Relacionar ingressos amb preu unitari i quantitat venuda evitant confondre funcions."
+      ],
+      "content_blocks": [
+        {
+          "body": "En un model econòmic sintètic el cost total C(q) pot descompondre's en cost fix C(0) i part variable. Per exemple C(q)=q²+4q+20 per 0≤q≤10: el cost fix és 20 €, i el cost marginal continu C′(q)=2q+4 €/ unitat. El cost mitjà C(q)/q només està definit per q>0; mai es divideix per zero en avaluar q=0. Amb preu unitari constant p, l'ingrés és I(q)= pq, mentre que amb demanda preu-dependent p(q)=12−q pot ser I(q)=q(12−q), dins de l'interval on preu i quantitat tinguin sentit. Els models continus s'usen per derivades i les comandes reals poden exigir q enter. Una igualtat de corbes no acredita dades de mercat ni garanteix que una solució sigui viable sense restriccions de capacitat."
+        },
+        {
+          "body": "Per C(q)=q²+4q+20, C(0)=20 € i C(3)=9+12+20=41 €. El cost mitjà en q=3 és 41/3 €, no 41 €."
+        },
+        {
+          "body": "Amb preu p(q)=12−q, ingrés I(q)=q(12−q)=12q−q²; en q=4 l'ingrés és 32 €, mentre que el preu unitari és 8 €/ unitat."
+        },
+        {
+          "body": "Model sintètic de cost total. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Model sintètic de cost total. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Model sintètic de cost total"
+          }
+        },
+        {
+          "body": "Es pot definir cost mitjà C(0)/0 com a zero per conveni sense comprovar?||No; la divisió per zero no està definida."
+        },
+        {
+          "body": "Recuperació activa: En un model econòmic sintètic el cost total C(q) pot descompondre's en cost fix C(0) i part variable. Torna sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    },
+    "B2S-F02-L02": {
+      "title": "Beneficis i marges",
+      "objectives": [
+        "Construir benefici com a diferència entre ingressos i costos.",
+        "Distingir marge total, mitjà i derivada marginal en un interval viable."
+      ],
+      "content_blocks": [
+        {
+          "body": "El benefici modelitzat és B(q)=I(q)−C(q), amb ambdues magnituds en la mateixa unitat monetària. Si I(q)=12q−q² i C(q)=2q+8, llavors B(q)=−q²+10q−8, i el seu derivada B′(q)=10−2q determina el benefici marginal continu. Es pot definir marge per unitat B(q)/q només per q>0, però no és igual a la derivada de B; també pot distingir-se marge sobre vendes B(q)/I(q) si I(q)>0. La condició B(q)>0 no assegura automàticament liquiditat ni correspon a una comptabilitat real, perquè el model simplifica ingressos i costos. Per localitzar màxims es comproven punts crítics i extrems del domini. Si q és enter, es agafen quantitats senceres properes a l'òptim continu sense prometre divisibilitat de productes."
+        },
+        {
+          "body": "Amb I(q)=12q−q² i C(q)=2q+8, B(q)=−q²+10q−8. En q=4: B(4)=−16+40−8=16 €."
+        },
+        {
+          "body": "La mateixa funció té marginal B′(q)=10−2q. En q=4 val 2 €/ unitat, mentre B(5)−B(4)=1 €, diferència finita exacta."
+        },
+        {
+          "body": "Benefici quadràtic i marge decreixent. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Benefici quadràtic i marge decreixent. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Benefici quadràtic i marge decreixent"
+          }
+        },
+        {
+          "body": "Benefici marginal B′(q) és exactament igual a B(q+1)−B(q) per a tota funció?||No; només coincideixen en models adequats, no en general per a quadràtiques."
+        },
+        {
+          "body": "Recuperació activa: El benefici modelitzat és B(q)=I(q)−C(q), amb ambdues magnituds en la mateixa unitat monetària. Torna sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    },
+    "B2S-F02-L03": {
+      "title": "Elasticitat i interpretació quan escaigui",
+      "objectives": [
+        "Definir elasticitat-preu puntual en demanda diferenciable i positiva.",
+        "Interpretar signe i magnitud sense confondre percentatge amb unitats."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per una corba de demanda q(p)>0 i derivable respecte al preu p>0, l'elasticitat-preu puntual és E(p)=p·q′(p)/q(p). No teniu unitats. En una demanda decreixent E sol ser negativa; de vegades es comunica |E| per comparar respostes. Si q(p)=100−5p en 0<p<20, el seu derivada val −5 i E(10)=10·(−5)/50=−1. No està definida en p=20 perquè q(20)=0; l'expressió tampoc autoritza preus negatius ni excedir la regió de demanda positiva. En valor absolut |E|>1 es denomina demanda elàstica localment i |E|<1 inelàstica sota aquesta convenció, però la classificació descriu sensibilitat matemàtica puntual, no una llei inevitable del consumidor. Diferenciar elasticitat de pendent: −5 unitats demandades per unitat monetària no és −1 adimensional."
+        },
+        {
+          "body": "Demanda q(p)=100−5p. En p=10, q=50, q′=−5 i E(10)=10·(−5)/50=−1, elasticitat unitària en valor absolut."
+        },
+        {
+          "body": "Per a q(p)=80−2p, p=10 dóna q=60 i E=10·(−2)/60=−1/3. La demanda és inelàstica localment segons |E|<1."
+        },
+        {
+          "body": "Demanda lineal i elasticitat puntual. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Demanda lineal i elasticitat puntual. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Demanda lineal i elasticitat puntual"
+          }
+        },
+        {
+          "body": "Es pot calcular E(p)=p·q′(p)/q(p) quan q(p)=0?||No; falta denominador positiu i el punt queda fora del domini d'aquesta elasticitat."
+        },
+        {
+          "body": "Recuperació activa: Per a una corba de demanda q(p)>0 i derivable respecte al preu p>0, l'elasticitat-preu puntual és E(p)=p·q′(p)/q(p). Torna sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    },
+    "B2S-F02-L04": {
+      "title": "Problemes de màxim/mínim",
+      "objectives": [
+        "Optimitzar funcions quadràtiques comprovant naturalesa de l'extrem.",
+        "Comparar punts interiors, extrems d'un interval i quantitats discretes viables."
+      ],
+      "content_blocks": [
+        {
+          "body": "En un interval compacte una funció contínua aconsegueix màxim i mínim absoluts. Per a un polinomi diferenciable, s'avaluen extrems del domini i punts crítics interiors on f′=0; la derivada segona pot ajudar a classificar, però el seu valor nul no prova el tipus. Per B(q)=−q²+12q−20 sobre 0≤q≤10, B′(q)=12−2q s'anul·la en 6 i B′′=−2<0, així que el màxim és B(6)=16. Les fronteres B(0)=−20 i B(10)=0 són inferiors. Si només es permeten enters, q=6 continua sent factible; en altres models caldria comparar enters veïns. No es resol un màxim econòmic si la quantitat òptima viola capacitat o un benefici sense definició monetària coherent."
+        },
+        {
+          "body": "B(q)=−q²+12q−20 en [0,10]. Candidat interior q=6, B(6)=16; fronteres B(0)=−20 i B(10)=0. Màxim absolut 16."
+        },
+        {
+          "body": "Per f(x)=(x−3)²+2 en [0,5], el mínim és f(3)=2; el màxim és f(0)=11, després de comparar ambdós extrems i el vèrtex."
+        },
+        {
+          "body": "Òptim subjecte a capacitat. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Òptim subjecte a capacitat. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Òptim subjecte a capacitat"
+          }
+        },
+        {
+          "body": "Fins a resoldre f′(q)=0 per a assegurar el màxim global amb restriccions?||No; cal comparar valors de frontera i punts no derivables si existeixen."
+        },
+        {
+          "body": "Recuperació activa: En un interval compacte una funció contínua assoleix màxim i mínim absoluts. Torna sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    },
+    "B2S-F02-L05": {
+      "title": "Models amb restriccions",
+      "objectives": [
+        "Resoldre optimització en intervals tancats i amb condicions de capacitat.",
+        "Descartar punts crítics fora del domini i verificar solucions senceres."
+      ],
+      "content_blocks": [
+        {
+          "body": "Les restriccions de capacitat, pressupost i no negativitat formen el domini factible d'una funció objectiu. Per B(q)=−(q−6)²+16 i 0≤q≤4, el vèrtex q=6 està fora del domini; la derivada és positiva en tot [0,4], així que el màxim factible se situa en q=4 i val 12. No és correcte informar el màxim no factible B(6)=16. Si q ha de ser enter, l'optimització és sobre el conjunt {0,1, 2,3, 4} i es poden avaluar aquests cinc valors sense usar límits inexistents entre enters. La validesa matemàtica de l'extrem depèn que la funció sigui contínua en l'interval tancat; si el domini és obert, un suprem no té per què aconseguir-se. Un sistema de restriccions pot fins i tot deixar el conjunt buit, cas sense solució factible."
+        },
+        {
+          "body": "Benefici B(q)=−(q−6)²+16 amb q en [0,4]. La funció creix en aquest tram; B(4)=−4+16=12, màxim real i enter permès."
+        },
+        {
+          "body": "Amb f(q)=−(q−3)²+9 i capacitat 0≤q≤2, l'òptim formal q=3 no és viable. S'avalua q=2, f(2)=8."
+        },
+        {
+          "body": "Màxim restringit abans del vèrtex. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Màxim restringit abans del vèrtex. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Màxim restringit abans del vèrtex"
+          }
+        },
+        {
+          "body": "És lícit recomanar q=6 si la restricció documental indica q≤4?||No; el model ha d'optimitzar-se sobre el seu domini factible."
+        },
+        {
+          "body": "Recuperació activa: Les restriccions de capacitat, pressupost i no negativitat formen el domini factible d'una funció objectiu. Torna sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    },
+    "B2S-F02-L06": {
+      "title": "Validesa contextual de solucions",
+      "objectives": [
+        "Validar unitats, restriccions i sensibilitat de solucions.",
+        "Separar el valor exacte de l'òptim de la plausibilitat del model i la qualitat de les dades."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una solució optimitzada només pot interpretar-se si les variables, unitats i restriccions representen el problema original. Si un cost marginal és C′(q)=2q+4 €/ unitat, no és un ingrés en euros ni el cost total C(q). Per a q enter, la derivada aproxima una tendència local de l'extensió contínua; l'increment discret exacte és C(q+1)−C(q)=2q+5 €. Un canvi en preu fix, cost de matèries primeres o capacitat modifica el model i potencialment el seu òptim, la qual cosa exigeix tornar a calcular en comptes d'extrapolar el resultat anterior. En el cas B(q)=−q²+12q−20, el marge en q=6 és zero, però el benefici total és 16 €, no zero. Ha de notificar-se quan una projecció sintètica no disposa de validació empírica ni justifica una decisió empresarial real."
+        },
+        {
+          "body": "Per a C(q)=q²+4q+20, marginal C′(3)=2·3+4=10 €/ unitat; increment discret C(4)−C(3)=11 €, que no coincideix."
+        },
+        {
+          "body": "En B(q)=−q²+12q−20, la derivada és 12−2q. En q=6, B′(6)=0 però B(6)=16 €; marge nul no implica benefici nul."
+        },
+        {
+          "body": "Benefici total enfront del benefici marginal. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Benefici total enfront del benefici marginal. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Benefici total enfront del benefici marginal"
+          }
+        },
+        {
+          "body": "Que la derivada marginal sigui zero en l'òptim garanteix que el benefici total val zero?||No; derivada i valor de la funció són magnituds diferents."
+        },
+        {
+          "body": "Recuperació activa: Una solució optimitzada només pot interpretar-se si les variables, unitats i restriccions representen el problema original. Torna sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2S-F02-L01-01": {
+      "prompt": "En Costos i ingressos: En C(q)=1q²+4q+20, calcula cost total C(3) en euros. Escriu el nombre exacte sense unitats.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 41. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 41."
+    },
+    "F3-B2S-F02-L01-02": {
+      "prompt": "En Costos i ingressos: En el model C(q)=1q²+4q+20, determina cost FIX C(0) en euros. Escriu el nombre exacte sense unitats.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 20. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 20."
+    },
+    "F3-B2S-F02-L01-03": {
+      "prompt": "En Costos i ingressos: Amb preu variable p(q)=12−1q, avalua ingrés I(4)=q·p(q). Escriu el nombre exacte sense unitats.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 32. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 32."
+    },
+    "F3-B2S-F02-L01-04": {
+      "prompt": "En Costos i ingressos: Amb C(q)=1q²+4q+20, calcula cost mig C(3)/3 i respecta q>0. Selecciona l'opció matemàticament correcta.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 41/3. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 41/3."
+    },
+    "F3-B2S-F02-L01-05": {
+      "prompt": "En Costos i ingressos: Està definit cost mitjà C(0)/0 en el domini real ordinari (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-F02-L02-01": {
+      "prompt": "En Beneficis i marges: Amb benefici B(q)=-1q²+10q+(-8), avalua benefici TOTAL en q=4. Escriu el nombre exacte sense unitats.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 16. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 16."
+    },
+    "F3-B2S-F02-L02-02": {
+      "prompt": "En Beneficis i marges: Per B(q)=-1q²+10q−8, calcula benefici marginal CONTINU B′(4). Escriu el nombre exacte sense unitats.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 2. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 2."
+    },
+    "F3-B2S-F02-L02-03": {
+      "prompt": "En Beneficis i marges: Amb B(q)=-1q²+10q−8, calcula INCREMENT exacte B(5)−B(4). Escriu el nombre exacte sense unitats.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 1. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 1."
+    },
+    "F3-B2S-F02-L02-04": {
+      "prompt": "En Beneficis i marges: coincideix sempre la derivada B′(q) amb l'increment d'una unitat B(q+1)−B(q) (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-F02-L02-05": {
+      "prompt": "En Beneficis i marges: Amb B(q)=-1q²+10q+(-8), a<0, calcula l'abscisa del màxim del vèrtex. Selecciona l'opció matemàticament correcta.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 5. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 5."
+    },
+    "F3-B2S-F02-L03-01": {
+      "prompt": "En Elasticitat i interpretació quan escaigui: Per a demanda q(p)=100−5p, calcula elasticitat puntual E(p)=p·q′(p)/q(p) en p=10, sense unitats. Escriu el nombre exacte sense unitats.",
+      "hint": "Abans de calcular elasticitat, comprova preu positiu i demanda estrictament positiva.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: -1. Abans de calcular elasticitat, comprova preu positiu i demanda estrictament positiva. Deriva q(p), multiplica p·q′(p), divideix només si q(p)>0. L'elasticitat és adimensional i el seu signe importa; el pendent no és elasticitat. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: -1."
+    },
+    "F3-B2S-F02-L03-02": {
+      "prompt": "En Elasticitat i interpretació quan escaigui: Per a demanda q(p)=100−5p, calcula quantitat demandada en preu p=10. Escriu el nombre exacte sense unitats.",
+      "hint": "Abans de calcular elasticitat, comprova preu positiu i demanda estrictament positiva.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 50. Abans de calcular elasticitat, comprova preu positiu i demanda estrictament positiva. Deriva q(p), multiplica p·q′(p), divideix només si q(p)>0. L'elasticitat és adimensional i el seu signe importa; el pendent no és elasticitat. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 50."
+    },
+    "F3-B2S-F02-L03-03": {
+      "prompt": "En Elasticitat i interpretació quan escaigui: Per a demanda q(p)=80−2p, calcula elasticitat puntual E(p)=p·q′(p)/q(p) en p=10, sense unitats. Selecciona l'opció matemàticament correcta.",
+      "hint": "Abans de calcular elasticitat, comprova preu positiu i demanda estrictament positiva.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: -1/3. Abans de calcular elasticitat, comprova preu positiu i demanda estrictament positiva. Deriva q(p), multiplica p·q′(p), divideix només si q(p)>0. L'elasticitat és adimensional i el seu signe importa; el pendent no és elasticitat. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: -1/3."
+    },
+    "F3-B2S-F02-L03-04": {
+      "prompt": "En Elasticitat i interpretació quan escaigui: Quines unitats té l'elasticitat-preu E(p)=p·q′(p)/q(p): Sense unitats, Euros o Unitats? Selecciona l'opció matemàticament correcta.",
+      "hint": "Abans de calcular elasticitat, comprova preu positiu i demanda estrictament positiva.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: Sense unitats. Abans de calcular elasticitat, comprova preu positiu i demanda estrictament positiva. Deriva q(p), multiplica p·q′(p), divideix només si q(p)>0. L'elasticitat és adimensional i el seu signe importa; el pendent no és elasticitat. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: Sense unitats."
+    },
+    "F3-B2S-F02-L03-05": {
+      "prompt": "En Elasticitat i interpretació quan escaigui: Pot avaluar-se elasticitat puntual com a quocient p·q′(p)/q(p) quan q(p)=0 (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Abans de calcular elasticitat, comprova preu positiu i demanda estrictament positiva.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Abans de calcular elasticitat, comprova preu positiu i demanda estrictament positiva. Deriva q(p), multiplica p·q′(p), divideix només si q(p)>0. L'elasticitat és adimensional i el seu signe importa; el pendent no és elasticitat. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-F02-L04-01": {
+      "prompt": "En Problemes de màxim/mínim: Amb B(q)=-1q²+12q+(-20), a<0, calcula l'abscisa del màxim del vèrtex. Escriu el nombre exacte sense unitats.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 6. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 6."
+    },
+    "F3-B2S-F02-L04-02": {
+      "prompt": "En Problemes de màxim/mínim: Per a B(q)=-1q²+12q+(-20), calcula el valor màxim real del vèrtex. Escriu el nombre exacte sense unitats.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 16. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 16."
+    },
+    "F3-B2S-F02-L04-03": {
+      "prompt": "En Problemes de màxim/mínim: Amb benefici B(q)=-1q²+12q+(-20), avalua benefici TOTAL en q=10. Escriu el nombre exacte sense unitats.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 0. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 0."
+    },
+    "F3-B2S-F02-L04-04": {
+      "prompt": "En Problemes de màxim/mínim: L'equació B′(q)=0 és per si sola suficient per demostrar un màxim global factible (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-F02-L04-05": {
+      "prompt": "En Problemes de màxim/mínim: Per a B(q)=-1q²+12q+(-20) sobre interval tancat [0,10], calcula el màxim factible. Selecciona l'opció matemàticament correcta.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 16. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 16."
+    },
+    "F3-B2S-F02-L05-01": {
+      "prompt": "En Models amb restriccions: L'objectiu B(q)=−(q−6)²+16 es restringeix a [0,4]. Calcula el q que MAXIMitza dins de l'interval. Escriu el nombre exacte sense unitats.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 4. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 4."
+    },
+    "F3-B2S-F02-L05-02": {
+      "prompt": "En Models amb restriccions: Calcula B(4) per B(q)=−(q−6)²+16, respectant les unitats monetàries. Escriu el nombre exacte sense unitats.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 12. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 12."
+    },
+    "F3-B2S-F02-L05-03": {
+      "prompt": "En Models amb restriccions: L'objectiu B(q)=−(q−3)²+9 es restringeix a [0,2]. Calcula el q que MAXIMitza dins de l'interval. Escriu el nombre exacte sense unitats.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 2. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 2."
+    },
+    "F3-B2S-F02-L05-04": {
+      "prompt": "En Models amb restriccions: És vàlid triar el vèrtex q=6 d'un objectiu econòmic si el domini exigeix 0≤q≤4 (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-F02-L05-05": {
+      "prompt": "En Models amb restriccions: Calcula B(2) per B(q)=−(q−3)²+9, respectant les unitats monetàries. Selecciona l'opció matemàticament correcta.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 8. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 8."
+    },
+    "F3-B2S-F02-L06-01": {
+      "prompt": "En Validesa contextual de solucions: Per a C(q)=1q²+4q+20, calcula marginal CONTINU C′(3) en €/ unitat. Escriu el nombre exacte sense unitats.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 10. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 10."
+    },
+    "F3-B2S-F02-L06-02": {
+      "prompt": "En Validesa contextual de solucions: Per a C(q)=1q²+4q+20, calcula augment exacte C(4)−C(3) en sumar una unitat. Escriu el nombre exacte sense unitats.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 11. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 11."
+    },
+    "F3-B2S-F02-L06-03": {
+      "prompt": "En Validesa contextual de solucions: Per a B(q)=-1q²+12q−8, calcula benefici marginal CONTINU B′(6). Escriu el nombre exacte sense unitats.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 0. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 0."
+    },
+    "F3-B2S-F02-L06-04": {
+      "prompt": "En Validesa contextual de solucions: Una derivada del benefici B′(6)=0 obliga al fet que el benefici total B(6) sigui 0 (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-F02-L06-05": {
+      "prompt": "En Validesa contextual de solucions: Si cost total està en euros i q en unitats, el marginal C′(q) s'expressa en: €/ unitat, Euros o Sense unitats. Selecciona l'opció matemàticament correcta.",
+      "hint": "Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites.",
+      "explanation": "Es diferencien magnituds totals, mitjanes, marginals i extrems factibles. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: €/ unitat. Modelitza cost, ingrés, benefici o marginal amb domini i unitats explícites. El quadràtiques calcula derivada i vèrtex, després compara extrems del domini permès. Cost mitjà exigeix q>0. Marginal continu B′(q) no equival al salt B(q+1)−B(q). Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: €/ unitat."
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1S-D02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1s_d02.json": "a1287c9c18078f66c40a423d538be047f19a204c6e29042e35e6c6228de815e1",
+    "data/f3_b1s_d02_exercises.json": "177989ce816523ea110f12feb7aa185fe6c44b7190b31ee45c5be3bd3bc8b689"
+  },
+  "lessons": {
+    "B1S-D02-L01": {
+      "title": "Població i mostra",
+      "objectives": [
+        "Diferenciar població objectiu, marc mostral i participants observats.",
+        "Calcula mides i fraccions de mostratge en un exemple sintètic."
+      ],
+      "content_blocks": [
+        {
+          "body": "La població objectiu reuneix les persones o elements sobre els quals es desitja concloure; el marc mostral és la llista des de la qual realment se selecciona. Una mostra són les unitats efectivament seleccionades i observades. Si el marc exclou un grup, aquest grup no té oportunitat d'entrar: augmentar la grandària de la mostra no soluciona aquesta cobertura defectuosa. La fracció de mostreig és n/N, no la proporció d'una característica estudiada. Un cens pretén observar tota la població definida, mentre una mostra pretén inferir amb incertesa i supòsits."
+        },
+        {
+          "body": "Un centre té 600 matrícules i selecciona 60 mitjançant un sorteig verificable entre les 600: N=600, n=60, fracció n/N=60/600=0,10. Això no demostra absència de no resposta."
+        },
+        {
+          "body": "Si la pregunta es refereix a tot l'alumnat però el sorteig només inclou als qui usen el menjador, el marc no coincideix amb la població. Ni 300 qüestionaris eliminen aquesta exclusió."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Població i mostra. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Població i mostra"
+          }
+        },
+        {
+          "body": "Què canvia en augmentar n si el marc deixa fos un curs?||Millora la quantitat d'observacions del marc, però persisteix el biaix de cobertura."
+        },
+        {
+          "body": "Recuperació activa: Diferenciar població objectiu, marc mostral i participants observats. Identifica primer a qui es pretén descriure i qui apareix en el marc. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    },
+    "B1S-D02-L02": {
+      "title": "Mostres representatives",
+      "objectives": [
+        "Explicar per què la representativitat depèn del procés de selecció.",
+        "Reconèixer subcobertura i no resposta sense prometre absència de biaix."
+      ],
+      "content_blocks": [
+        {
+          "body": "Representativitat no significa que la mostra tingui exactament les proporcions de tots els grups, sinó que el disseny permeti inferir cap a una població ben definida amb errors estudiables. Seleccionar només voluntaris o persones disponibles pot sobre-representar perfils motivats. Un sorteig vàlid dins d'un marc incomplet segueix sense representar als qui van quedar exclosos. L'error aleatori disminueix habitualment amb mostres adequades, però el biaix sistemàtic no desapareix per multiplicar n. Quan hi ha estrats, és necessari especificar si s'han mostrejat proporcionalment i com es ponderen."
+        },
+        {
+          "body": "En un marc amb 300 estudiants de grup A i 100 del B, una assignació proporcional de 40 enquestes donaria 30 de l'A i 10 del B: 40×300/400=30."
+        },
+        {
+          "body": "Una enquesta de 500 visites a una web sobre tota la ciutat no garanteix representativitat per ser gran: ni el marc ni les probabilitats d'inclusió són coneguts."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Mostres representatives. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Mostres representatives"
+          }
+        },
+        {
+          "body": "És suficient una mostra molt gran de voluntaris?||No. Es necessiten un marc apropiat, mecanisme de selecció i control de no resposta."
+        },
+        {
+          "body": "Recuperació activa: Explicar per què la representativitat depèn del procés de selecció. Cerca quines persones mai van poder ser seleccionades. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    },
+    "B1S-D02-L03": {
+      "title": "Mostreig aleatori i biaix",
+      "objectives": [
+        "Distingir selecció aleatòria simple de conveniència i respostes voluntàries.",
+        "Calcula probabilitats d'inclusió sota mostreig aleatori simple sense reemplaçament."
+      ],
+      "content_blocks": [
+        {
+          "body": "En un mostreig aleatori simple sense reemplaçament, cada subconjunt de la mateixa grandària té igual probabilitat de selecció. Cada unitat d'un marc complet de grandària N té probabilitat d'inclusió n/N, però les inclusions no són independents: una unitat seleccionada canvia les possibilitats de les altres. En el mostreig estratificat se selecciona per separat en grups explícits i després pot fer falta ponderar. En el de conveniència es tria per facilitat i no està justificat tractar les observacions com a independents i idènticament distribuïdes de la població. La no resposta i les substitucions improvisades poden trencar el disseny inicial."
+        },
+        {
+          "body": "Sorteig de n=25 places entre N=250 persones, sense reemplaçament: cada persona té probabilitat 25/250=0,10 d'estar inclosa."
+        },
+        {
+          "body": "Amb N=10 i n=2 sense reemplaçament, el conjunt {A,B} i {A,C} són seleccions possibles; una vegada A seleccionada, la probabilitat de seleccionar B canvia. Igual probabilitat d'inclusió no equival a independència."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Mostreig aleatori i biaix. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Mostreig aleatori i biaix"
+          }
+        },
+        {
+          "body": "En un sorteig sense reemplaçament, les inclusions de dues persones són independents?||No; després d'una selecció canvia el conjunt disponible."
+        },
+        {
+          "body": "Recuperació activa: Distingir selecció aleatòria simple de conveniència i respostes voluntàries. Comprova si se sortegen persones, llars o grups i si existeix reemplaçament. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    },
+    "B1S-D02-L04": {
+      "title": "Paràmetre i estadístic",
+      "objectives": [
+        "Distingir el paràmetre poblacional de l'estadístic calculat en una mostra.",
+        "Calcular mitjanes i proporcions d'exemples sense confondre'ls amb valors poblacionals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un paràmetre és una propietat fixa de la població definida (per exemple, μ o p), normalment desconeguda. Un estadístic es calcula amb les dades de la mostra (mitjana x̄ o proporció p̂) i varia entre mostres. El seu valor no es converteix en paràmetre perquè tingui molts decimals. La mitjana mostral suma valors i divideix entre n; la proporció mostral divideix el nombre de casos que compleixen una condició entre n. Un estimador és una regla aleatòria; una estimació és el nombre observat en aplicar aquesta regla a una mostra concreta. No es conclou que p=p̂ sense quantificar incertesa i biaixos."
+        },
+        {
+          "body": "En una mostra sintètica amb temps 4, 6, 8 i 10 minuts, x̄=(4+6+8+10)/4=7 min. El paràmetre μ poblacional no s'ha observat."
+        },
+        {
+          "body": "Si 18 de 60 respostes són afirmatives, p̂=18/60=0,30. No es coneix amb això la proporció exacta p de tota la població."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Paràmetre i estadístic. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Paràmetre i estadístic"
+          }
+        },
+        {
+          "body": "És x̄=7 una afirmació que μ=7 exactament?||No x̄ és un estadístic mostral, μ és el paràmetre poblacional."
+        },
+        {
+          "body": "Recuperació activa: Distingir el paràmetre poblacional de l'estadístic calculat en una mostra. Decideix si el nombre es coneix per totes les unitats o només per una mostra. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    },
+    "B1S-D02-L05": {
+      "title": "Estimació puntual",
+      "objectives": [
+        "Construir estimacions puntuals descriptives sota un disseny explícit.",
+        "Distingir precisió d'arrodoniment de precisió inferencial no avaluada."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una estimació puntual proposa un sol nombre per a un paràmetre: x̄ per a μ, p̂ per a p. Sota mostreig aleatori simple i condicions pertinents poden estudiar-se propietats de l'estimador, però un nombre aïllat no inclou per si sol un marge d'error ni un nivell de confiança. Afirmar que «el 95 % de la població» queda dins de cert interval a partir de p̂ sense disseny i fórmula és una conclusió injustificada. En donar el resultat, n, marc, data, no resposta i mètode de selecció són part de la interpretació. L'excés de decimals no compensa un disseny esbiaixat."
+        },
+        {
+          "body": "Entre 80 enquestes seleccionades, 28 respostes positives: p̂=28/80=0,35, és a dir, estimació puntual del 35 %, no interval al 95 %."
+        },
+        {
+          "body": "Amb una mostra numèrica 10, 12 i 14, x̄=12; escriure 12,00000 no redueix la variabilitat entre possibles mostres."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Estimació puntual. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Estimació puntual"
+          }
+        },
+        {
+          "body": "Es pot deduir un marge d'error només de p̂=0,35?||No. Necessitem com a mínim disseny, grandària i suposats vàlids."
+        },
+        {
+          "body": "Recuperació activa: Construir estimacions puntuals descriptives sota un disseny explícit. L'estimador està definit per una operació; el seu valor no porta interval incorporat. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    },
+    "B1S-D02-L06": {
+      "title": "Interpretació d'estudis",
+      "objectives": [
+        "Criticar conclusions d'estudis considerant selecció, no resposta i causalitat.",
+        "Comunicar proporcions i límits sense exagerar inferències."
+      ],
+      "content_blocks": [
+        {
+          "body": "En llegir un estudi diferencia: pregunta, població objectiu, marc, mètode de mostreig, respostes, estimació i límits. Un 70 % entre els qui van respondre pot no ser el 70 % de tots els convidats; existeix no resposta. Dues variables associades no estableixen un efecte causal. Comparar grups requereix observar denominadors adequats, possibles factors de confusió i si els grups eren comparables. La mida de la mostra i els decimals no substitueixen el disseny. Una conclusió responsable assenyala per a qui és informativa l'evidència i què no permet assegurar."
+        },
+        {
+          "body": "Es convida a 200 persones i contesten 120: taxa de resposta =120/200=0,60. Si 84 diuen «sí», 84/120=0,70 entre respostes, però no 70 % dels 200 convidats."
+        },
+        {
+          "body": "En un seguiment sense assignació aleatòria, el grup que dedica més hores a estudiar obté millors resultats. Això és associació; no prova per si sol que canviar les hores produeixi aquesta diferència."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Interpretació d'estudis. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Interpretació d'estudis"
+          }
+        },
+        {
+          "body": "El 70 % entre els qui responen permet afirmar 70 % de tots?||No: la no resposta pot alterar la proporció."
+        },
+        {
+          "body": "Recuperació activa: Criticar conclusions d'estudis considerant selecció, no resposta i causalitat. Separa percentatge de resposta i percentatge d'opinió entre responents. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1S-D02-L01-01": {
+      "prompt": "En un marc complet de 600 matrícules se sortegen 60. Calcula n/N en decimal.",
+      "hint": "Identifica primer a qui es pretén descriure i qui apareix en el marc.",
+      "explanation": "n/N=60/600=0,10; no és el percentatge de respostes favorables."
+    },
+    "F3-B1S-D02-L01-02": {
+      "prompt": "Un marc té 200 persones i s'observen 18. Quin percentatge del marc està en la mostra? Dóna el percentatge, no la proporció.",
+      "hint": "Identifica primer a qui es pretén descriure i qui apareix en el marc.",
+      "explanation": "100×18/200=9 %, si les 18 es van seleccionar del marc de 200."
+    },
+    "F3-B1S-D02-L01-03": {
+      "prompt": "Se seleccionen 75 de 500 persones d'una llista. Quina és la fracció de mostreig en decimal?",
+      "hint": "Identifica primer a qui es pretén descriure i qui apareix en el marc.",
+      "explanation": "La fracció n/N=75/500=0,15."
+    },
+    "F3-B1S-D02-L01-04": {
+      "prompt": "Un qüestionari dirigit a tot un centre s'envia només a usuaris del menjador. Què descriu millor el problema?",
+      "hint": "Identifica primer a qui es pretén descriure i qui apareix en el marc.",
+      "explanation": "La població objectiu declarada continua sent tot el centre; el marc no la cobreix."
+    },
+    "F3-B1S-D02-L01-05": {
+      "prompt": "Quina és la mostra en un estudi de tota una ciutat que entrevista a 80 habitants?",
+      "hint": "Identifica primer a qui es pretén descriure i qui apareix en el marc.",
+      "explanation": "La mostra és el conjunt d'unitats observades, no la població ni un resultat."
+    },
+    "F3-B1S-D02-L02-01": {
+      "prompt": "Un marc conté 300 persones del grup A i 100 del B. Es planegen 40 entrevistes proporcionals. Quantes corresponen a A?",
+      "hint": "Cerca quines persones mai van poder ser seleccionades.",
+      "explanation": "40×300/400=30 participants del grup A."
+    },
+    "F3-B1S-D02-L02-02": {
+      "prompt": "D'una mostra proporcional de 40, deu són del grup B. Quina proporció de la mostra representa B?",
+      "hint": "Cerca quines persones mai van poder ser seleccionades.",
+      "explanation": "Càlcul: 10/40=0,25."
+    },
+    "F3-B1S-D02-L02-03": {
+      "prompt": "Es reserven 15 places de mostra per a un grup entre 60 places. Quina fracció de mostra serà d'aquest grup?",
+      "hint": "Cerca quines persones mai van poder ser seleccionades.",
+      "explanation": "15/60=1/4=0,25, sense afirmar que sigui representatiu per si sol."
+    },
+    "F3-B1S-D02-L02-04": {
+      "prompt": "Quin disseny ofereix millor justificació inicial per a estudiar a tots els alumnes d'un institut?",
+      "hint": "Cerca quines persones mai van poder ser seleccionades.",
+      "explanation": "Un marc complet amb selecció probabilística i seguiment de no resposta ofereix millor justificació, encara que no garanteix absència de biaixos."
+    },
+    "F3-B1S-D02-L02-05": {
+      "prompt": "Si una mostra de 10.000 voluntaris exclou als qui no usen internet, què es pot assegurar?",
+      "hint": "Cerca quines persones mai van poder ser seleccionades.",
+      "explanation": "La selecció voluntària i el marc incomplet continuen sent problemes, fins i tot amb n elevat."
+    },
+    "F3-B1S-D02-L03-01": {
+      "prompt": "En un sorteig simple sense reemplaçament, N=250 i n=25. Probabilitat d'inclusió d'una persona concreta?",
+      "hint": "Comprova si se sortegen persones, llars o grups i si existeix reemplaçament.",
+      "explanation": "Cada persona del marc té probabilitat d'inclusió n/N=25/250."
+    },
+    "F3-B1S-D02-L03-02": {
+      "prompt": "Un marc amb 10 persones tria 2 per mostreig aleatori simple sense reemplaçament. Probabilitat individual d'inclusió?",
+      "hint": "Comprova si se sortegen persones, llars o grups i si existeix reemplaçament.",
+      "explanation": "Càlcul: n/N=2/10=0,20."
+    },
+    "F3-B1S-D02-L03-03": {
+      "prompt": "De N=400 registres, una mostra aleatòria simple selecciona n=32. Probabilitat individual d'inclusió?",
+      "hint": "Comprova si se sortegen persones, llars o grups i si existeix reemplaçament.",
+      "explanation": "32/400=0,08, sense atribuir independència a les inclusions."
+    },
+    "F3-B1S-D02-L03-04": {
+      "prompt": "Què ocorre amb les inclusions en sortejar sense reemplaçament?",
+      "hint": "Comprova si se sortegen persones, llars o grups i si existeix reemplaçament.",
+      "explanation": "Selecciona sense reemplaçament modifica el conjunt disponible; no equival a selecció independent."
+    },
+    "F3-B1S-D02-L03-05": {
+      "prompt": "Quin exemple descriu una mostra de conveniència?",
+      "hint": "Comprova si se sortegen persones, llars o grups i si existeix reemplaçament.",
+      "explanation": "Se selecciona per accessibilitat, no amb una probabilitat d'inclusió controlada."
+    },
+    "F3-B1S-D02-L04-01": {
+      "prompt": "En la mostra sintètica 4, 6, 8 i 10 minuts, quina és la mitjana mostral?",
+      "hint": "Decideix si el nombre es coneix per totes les unitats o només per una mostra.",
+      "explanation": "x̄=(4+6+8+10)/4=7 min; μ poblacional segueix desconeguda."
+    },
+    "F3-B1S-D02-L04-02": {
+      "prompt": "En una mostra de 60, 18 contesten sí. Quina proporció mostral representa sí?",
+      "hint": "Decideix si el nombre es coneix per totes les unitats o només per una mostra.",
+      "explanation": "p̂=18/60=0,30, no el paràmetre poblacional p."
+    },
+    "F3-B1S-D02-L04-03": {
+      "prompt": "Una mostra de tres valors és 12, 14, 16. Troba la mitjana mostral.",
+      "hint": "Decideix si el nombre es coneix per totes les unitats o només per una mostra.",
+      "explanation": "Càlcul: x̄=(12+14+16)/3=14."
+    },
+    "F3-B1S-D02-L04-04": {
+      "prompt": "Es calcula una mitjana de 7 en 4 observacions. Quin símbol correspon a aquest nombre?",
+      "hint": "Decideix si el nombre es coneix per totes les unitats o només per una mostra.",
+      "explanation": "La mitjana calculada amb n observacions és un estadístic."
+    },
+    "F3-B1S-D02-L04-05": {
+      "prompt": "En què es diferencia estimador d'estimació?",
+      "hint": "Decideix si el nombre es coneix per totes les unitats o només per una mostra.",
+      "explanation": "Una regla aleatòria aplicada a dades produeix un resultat observat."
+    },
+    "F3-B1S-D02-L05-01": {
+      "prompt": "De 80 respostes de mostra, 28 són positives. Calcula p̂.",
+      "hint": "L'estimador està definit per una operació; el seu valor no porta interval incorporat.",
+      "explanation": "L'estimació puntual és 28/80=0,35, sense marge d'error."
+    },
+    "F3-B1S-D02-L05-02": {
+      "prompt": "Per a la mostra 10, 12, 14, calcula la mitjana puntual de μ.",
+      "hint": "L'estimador està definit per una operació; el seu valor no porta interval incorporat.",
+      "explanation": "La mitjana és 36/3=12, no una afirmació que μ=12."
+    },
+    "F3-B1S-D02-L05-03": {
+      "prompt": "S'observen 13 respostes afirmatives de n=50. Calcula la proporció puntual.",
+      "hint": "L'estimador està definit per una operació; el seu valor no porta interval incorporat.",
+      "explanation": "Càlcul: p̂=13/50=0,26, o 26 %."
+    },
+    "F3-B1S-D02-L05-04": {
+      "prompt": "Un informe presenta p̂=0,35 i declara «marge d'error del 1 % » sense mètode. Quina falta?",
+      "hint": "L'estimador està definit per una operació; el seu valor no porta interval incorporat.",
+      "explanation": "Una estimació puntual no determina un marge d'error."
+    },
+    "F3-B1S-D02-L05-05": {
+      "prompt": "Quina és la comunicació responsable d'una estimació?",
+      "hint": "L'estimador està definit per una operació; el seu valor no porta interval incorporat.",
+      "explanation": "El disseny i els límits són necessaris per interpretar l'estimació."
+    },
+    "F3-B1S-D02-L06-01": {
+      "prompt": "Es va convidar a 200 persones i van respondre 120. Quina fracció d'invitades va respondre?",
+      "hint": "Separa percentatge de resposta i percentatge d'opinió entre responents.",
+      "explanation": "La taxa de resposta és 120/200=0,60."
+    },
+    "F3-B1S-D02-L06-02": {
+      "prompt": "De 120 respostes obtingudes, 84 van ser afirmatives. Quina proporció de responents va dir sí?",
+      "hint": "Separa percentatge de resposta i percentatge d'opinió entre responents.",
+      "explanation": "84/120=0,70, restringida als qui van respondre."
+    },
+    "F3-B1S-D02-L06-03": {
+      "prompt": "Va haver-hi 84 respostes afirmatives entre 200 convidats. Quina proporció de convidats representa aquest recompte, sense inferir les opinions de no responents?",
+      "hint": "Separa percentatge de resposta i percentatge d'opinió entre responents.",
+      "explanation": "84/200=0,42 de convidats van emetre un sí; els restants poden no haver contestat."
+    },
+    "F3-B1S-D02-L06-04": {
+      "prompt": "Un estudi observacional troba associació entre estudiar i nota. Quina conclusió està justificada?",
+      "hint": "Separa percentatge de resposta i percentatge d'opinió entre responents.",
+      "explanation": "Una associació no identifica un efecte causal sense disseny i suposats addicionals."
+    },
+    "F3-B1S-D02-L06-05": {
+      "prompt": "De 120 responents, el 70 % diu sí. Quin és un advertiment necessari?",
+      "hint": "Separa percentatge de resposta i percentatge d'opinió entre responents.",
+      "explanation": "La no resposta pot canviar l'estimació entre convidats."
+    }
+  }
+}

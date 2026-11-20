@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2S-F03",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2s_f03.json": "89da3a03b9ea5dfb40f9e7e6e89e01142b32a6ed81ac95b0e97c9be63f549770",
+    "data/f3_b2s_f03_exercises.json": "0dc60a81db4f314935bbb12dcff212e3a81f4c7eed23ae4bb444e5c63385e05b"
+  },
+  "lessons": {
+    "B2S-F03-L01": {
+      "title": "Primitives bàsiques",
+      "objectives": [
+        "Definir primitives de polinomis com a funcions derivables en un interval.",
+        "Aplicar regles elementals i constant d'integració per a integrals indefinides."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una primitiva F d'una funció f sobre un interval satisfà F′(x)=f(x) en tots els seus punts. La integral indefinida representa la família F(x)+C, amb C constant real; oblidar C produeix una sola primitiva, no tota la família. Per n enter no negatiu, una primitiva de x^n és x^(n+1)/(n+1), ja que el seu derivada recupera x^n. La regla de potència requereix n≠−1 quan s'usa en la seva forma general; per 1/x les primitives són ln |x|+C en cada interval que no conté 0. En integrar 3x²+2x, s'obté x³+x²+C. La linealitat permet integrar suma i múltiple constant, sempre en intervals on existeixen les funcions i les primitives. Comprovar per derivació és un oracle més fiable que memoritzar un patró visual."
+        },
+        {
+          "body": "Per a f(x)=4x³+6x, una primitiva és F(x)=x⁴+3x². En efecte F′(x)=4x³+6x; la família completa afegeix C."
+        },
+        {
+          "body": "Per a f(x)=2x+5, la integral indefinida és x²+5x+C. Diferenciar dues primitives revela una constant."
+        },
+        {
+          "body": "Funció derivable i pendent de primitiva. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Funció derivable i pendent de primitiva. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Funció derivable i pendent de primitiva"
+          }
+        },
+        {
+          "body": "La integral indefinida de 2x és només x² sense possible constant?||No; qualsevol x²+C té derivada 2x."
+        },
+        {
+          "body": "Recuperació activa: Una primitiva F d'una funció f sobre un interval satisfà F′(x)=f(x) en tots els seus punts. Torna sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    },
+    "B2S-F03-L02": {
+      "title": "Integral definit",
+      "objectives": [
+        "Calcular integrals definides mitjançant una primitiva i el teorema fonamental.",
+        "Distingir integral com a acumulació signada d'àrea geomètrica positiva."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si f és contínua en [a,b] i F és una primitiva, el teorema fonamental del càlcul permet calcular la integral definida ∫ _a^b f(x)dx =F(b)−F(a). El seu resultat és un nombre amb unitats de f multiplicades per unitats de x. Per f(x)=2x a [1,3], F(x)=x² i l'acumulació signada és 9−1=8. Si f pren valors negatius, la integral té aportacions negatives: per exemple ∫ _0 ^2(x−1) dx =0, encara que l'àrea geomètrica entre la recta i l'eix no sigui zero. Intercanviar límits canvia el signe, no els valors absoluts de regions. La continuïtat és una hipòtesi suficient habitual, no permís per integrar sense justificar qualsevol singularitat. Una visualització ombrejada no substitueix els límits i la primitiva calculada."
+        },
+        {
+          "body": "Calcula ∫ de 1 a 3 de 2x dx: primitiva x², avalua 3²−1²=9−1=8 unitats acumulades."
+        },
+        {
+          "body": "Per ∫ de 0 a 2 de (x−1) dx, una primitiva és x²/2−x i el resultat és (2−2)−0=0 per cancel·lació d'àrees amb signe."
+        },
+        {
+          "body": "Acumulació signada sota una recta positiva. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Acumulació signada sota una recta positiva. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Acumulació signada sota una recta positiva"
+          }
+        },
+        {
+          "body": "La integral definida d'una funció que creua l'eix coincideix sempre amb l'àrea geomètrica positiva?||No; comptabilitza superfícies amb signe."
+        },
+        {
+          "body": "Recuperació activa: Si f és contínua en [a,b] i F és una primitiva, el teorema fonamental del càlcul permet calcular la integral definida ∫ _a^b f(x)dx =F(b)−F(a). Resol sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    },
+    "B2S-F03-L03": {
+      "title": "Propietats",
+      "objectives": [
+        "Aplicar linealitat, additivitat i canvi d'orientació en integrals definides.",
+        "Verificar hipòtesis d'integrabilitat i evitar substituir integral de producte per producte d'integrals."
+      ],
+      "content_blocks": [
+        {
+          "body": "La integral definida compleix linealitat: ∫( af + bg )=a∫f+b∫g per a funcions integrables i constants a,b. També és additiva en intervals: ∫ _a^c f=∫ _a^b f+∫ _b^c f. Canviar l'orientació inverteix el signe, ∫ _b^a f=−∫ _a^b f, i ∫ _a^a f=0. Cap d'aquestes regles diu ∫ fg =(∫f)(∫g) en general, ni permet dividir una integral per zero. En un model amb funció contínua, les propietats es proven a partir de sumes i de primitives; han de respectar-se els intervals reals i les unitats. Per f(x)=2x, ∫ _0 ^2 f=4 i ∫ _2 ^3 f=5, de manera que ∫ _0 ^3 f=9. La partició de l'interval no altera l'acumulació total, excepte petits errors numèrics si s'aproxima."
+        },
+        {
+          "body": "Per f(x)=2x, ∫ _0 ^2 f=4, ∫ _2 ^3 f=5 i la seva suma 9 coincideix amb ∫ _0 ^3 f=3²=9."
+        },
+        {
+          "body": "Intercanviant límits, ∫ _3 ^1 2x dx =−∫ _1 ^3 2x dx =−8; el signe depèn de l'orientació i no d'una superfície negativa."
+        },
+        {
+          "body": "Additivitat d'integrals per subintervals. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Additivitat d'integrals per subintervals. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Additivitat d'integrals per subintervals"
+          }
+        },
+        {
+          "body": "És sempre cert que la integral del producte f·g és el producte de les seves integrals?||No; la propietat demostrada és linealitat, no multiplicativitat."
+        },
+        {
+          "body": "Recuperació activa: La integral definida compleix linealitat: ∫( af + bg )=a∫f+b∫g per a funcions integrables i constants a,b. Torna sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    },
+    "B2S-F03-L04": {
+      "title": "Càlcul d'àrees",
+      "objectives": [
+        "Calcular àrea geomètrica entre una corba i l'eix amb integrals per trams.",
+        "Usa el valor absolut o el canvi de signe per a separar les àrees positives."
+      ],
+      "content_blocks": [
+        {
+          "body": "La integral signada ∫ _a^b f(x)dx no és sempre l'àrea geomètrica entre la corba i l'eix. L'àrea geomètrica s'obté integrant |f(x)| quan té sentit: convé localitzar les arrels i separar en intervals de signe constant. Per f(x)=x−1 a [0,2], la recta és negativa a [0,1] i positiva a [1,2]. La integral signada val zero, però l'àrea és ∫ _0 ^1(1−x) dx +∫ _1 ^2(x−1) dx =1/2+1/2=1. Per a dues corbes contínues, l'àrea entre elles es calcula per ∫|f−g|, localitzant abans les seves interseccions. Una cota inferior negativa d'altura no significa àrea negativa: el signe es relaciona amb orientació, mentre que la superfície física es compta positiva."
+        },
+        {
+          "body": "Per y=x−1 de 0 a 2, l'àrea geomètrica són dos triangles de base 1 i altura 1: 1/2+1/2=1, encara que integral signada zero."
+        },
+        {
+          "body": "Per f(x)=2 i g(x)=0 en [0,3], l'àrea entre ambdues rectes és ∫ _0 ^3 2d x =6 unitats quadrades."
+        },
+        {
+          "body": "Àrea positiva enfront d'integral amb cancel·lació. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Àrea positiva enfront d'integral amb cancel·lació. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Àrea positiva enfront d'integral amb cancel·lació"
+          }
+        },
+        {
+          "body": "El resultat 0 de ∫ _0 ^2(x−1) dx significa que no existeix cap regió geomètrica entre corba i eix?||No; les àrees amb signe es cancel·len."
+        },
+        {
+          "body": "Recuperació activa: La integral signada ∫ _a^b f(x)dx no és sempre l'àrea geomètrica entre la corba i l'eix. Resol sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    },
+    "B2S-F03-L05": {
+      "title": "Interpretació d'acumulació econòmica",
+      "objectives": [
+        "Interpretar una integral de taxa monetària com a variació acumulada.",
+        "Distingir magnitud instantània, acumulació neta i unitats de la variable temporal."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si una taxa neta contínua r(t) s'expressa en euros per mes i t es mesura en mesos, ∫ _a^b r(t)dt representa euros acumulats en aquest interval: les unitats €/ mes per mes resulten euros. Amb r(t)=10+2t i t∈[0,3], la variació acumulada és ∫ _0 ^3(10+2t) dt =[10t+t²] _0 ^3=30+9=39 €. Si la taxa fos negativa una part del temps, la integral neta permetria cancel·lacions i no coincidiria amb el flux monetari brut positiu. La interpretació suposa una taxa contínua i estable durant l'interval; els registres mensuals discrets no verifiquen automàticament aquesta hipòtesi ni permeten interpolació causal. Comparar 39 euros d'acumulació amb r(3)=16 €/ mes com si fossin mateixa magnitud produeix un error dimensional."
+        },
+        {
+          "body": "Per a r(t)=10+2t €/ mes entre t=0 i t=3 mesos, l'acumulació és [10t+t²] _0 ^3=30+9=39 euros."
+        },
+        {
+          "body": "La taxa constant r(t)=5 €/ hora durant 4 hores produeix ∫ _0 ^4 5d t =20 €: la unitat de temps es cancel·la correctament."
+        },
+        {
+          "body": "Taxa monetària i acumulació. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Taxa monetària i acumulació. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Taxa monetària i acumulació"
+          }
+        },
+        {
+          "body": "Té la mateixa unitat una taxa r(t) en €/ mes que la seva integral acumulada de tres mesos?||No; la integral es mesura en euros."
+        },
+        {
+          "body": "Recuperació activa: Si una taxa neta contínua r(t) s'expressa en euros per mes i t es mesura en mesos, ∫ _a^b r(t)dt representa euros acumulats en aquest interval: les unitats €/ mes per mes resulten euros. Resol sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    },
+    "B2S-F03-L06": {
+      "title": "Problemes amb unitats",
+      "objectives": [
+        "Aplicar integral definida en problemes de taxa amb unitats compatibles.",
+        "Comprovar límits, orientació, domini i plausibilitat de resultats exactes."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per recuperar una acumulació a partir d'una taxa es requereix conèixer la variable d'integració i la seva unitat, l'interval orientat i una descripció integrable de la taxa. Sigui v(t)=3t² m/s amb temps t en segons i domini [0,2]. El desplaçament és ∫ _0 ^2 3t² dt =[t³] _0 ^2=8 m. Si v pot ser negativa, la integral representa desplaçament net, mentre que la distància recorreguda és ∫|v| dt. Una funció de costos marginals C′(q)=2q+4 €/ unitat, aplicada de q=1 a 3, produeix augment total C(3)−C(1)=∫ _1 ^3(2q+4) dq =[q²+4q] _1 ^3=(9+12)−(1+4)=16 €. La constant d'integració es cancel·la en una integral definida, però la funció de cost total necessita una dada inicial per reconstruir-se."
+        },
+        {
+          "body": "Per a velocitat v(t)=3t² m/s entre 0 i 2 segons, el desplaçament és [t³] _0 ^2=8 metres."
+        },
+        {
+          "body": "Per marginal C′(q)=2q+4 de q=1 a 3, l'increment és [q²+4q] _1 ^3=(21−5)=16 euros, sense conèixer el cost fix."
+        },
+        {
+          "body": "Integral de velocitat no negativa. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Integral de velocitat no negativa. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Integral de velocitat no negativa"
+          }
+        },
+        {
+          "body": "Una integral definida de cost marginal en €/ unitat produeix necessàriament una quantitat en €/ unitat?||No; produeix euros, perquè integra respecte a unitats."
+        },
+        {
+          "body": "Recuperació activa: Per recuperar una acumulació a partir d'una taxa es requereix conèixer la variable d'integració i la seva unitat, l'interval orientat i una descripció integrable de la taxa. Torna sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2S-F03-L01-01": {
+      "prompt": "En Primitives bàsiques: Una primitiva de f(x)=4x^3 és Ax ^4+C. Calcula coeficient exacte A. Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 1. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 1."
+    },
+    "F3-B2S-F03-L01-02": {
+      "prompt": "En Primitives bàsiques: Escolliu la primitiva F(t)=4/(4)·t^4 amb C=0. Calcula F(1). Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 1. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 1."
+    },
+    "F3-B2S-F03-L01-03": {
+      "prompt": "En Primitives bàsiques: Una primitiva de f(x)=6x^1 és Ax ^2+C. Calcula coeficient exacte A. Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 3. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 3."
+    },
+    "F3-B2S-F03-L01-04": {
+      "prompt": "En Primitives bàsiques: S'ha d'incloure constant arbitrària C per descriure totes les primitives de f(x)=2x (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: Sí. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: Sí."
+    },
+    "F3-B2S-F03-L01-05": {
+      "prompt": "En Primitives bàsiques: Es pot aplicar directament x^(n+1)/(n+1) quan n=−1 dividint entre zero (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-F03-L02-01": {
+      "prompt": "En Integral definida: Calcula integral DEFINIDA des de 1 fins a 3 de f(x)=2x+(0), amb signe. Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 8. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 8."
+    },
+    "F3-B2S-F03-L02-02": {
+      "prompt": "En Integral definida: Calcula integral DEFINIDA des de 0 fins a 2 de f(x)=1x+(-1), amb signe. Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 0. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 0."
+    },
+    "F3-B2S-F03-L02-03": {
+      "prompt": "En Integral definida: Calcula integral DEFINIDA des de 0 fins a 2 de f(x)=2x+(0), amb signe. Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 4. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 4."
+    },
+    "F3-B2S-F03-L02-04": {
+      "prompt": "En Integral definida: La integral signada d'una funció que creua l'eix és sempre igual a l'àrea geomètrica positiva (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-F03-L02-05": {
+      "prompt": "En Integral definida: Calcula integral ORIENTADA des de 3 fins a 1 de f(x)=2x+0, invertint límits. Selecciona l'opció matemàticament correcta.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: -8. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: -8."
+    },
+    "F3-B2S-F03-L03-01": {
+      "prompt": "En Propietats: Calcula integral DEFINIDA des de 0 fins a 2 de f(x)=2x+(0), amb signe. Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 4. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 4."
+    },
+    "F3-B2S-F03-L03-02": {
+      "prompt": "En Propietats: Calcula integral DEFINIDA des de 2 fins a 3 de f(x)=2x+(0), amb signe. Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 5. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 5."
+    },
+    "F3-B2S-F03-L03-03": {
+      "prompt": "En Propietats: Calcula integral DEFINIDA des de 0 fins a 3 de f(x)=2x+(0), amb signe. Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 9. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 9."
+    },
+    "F3-B2S-F03-L03-04": {
+      "prompt": "En Propietats: És vàlid en general ∫f(x)g(x) dx =(∫f)(∫g) com a regla d'integrals (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-F03-L03-05": {
+      "prompt": "En Propietats: Calcula integral ORIENTADA des de 3 fins a 0 de f(x)=2x+0, invertint límits. Selecciona l'opció matemàticament correcta.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: -9. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: -9."
+    },
+    "F3-B2S-F03-L04-01": {
+      "prompt": "En Càlcul d'àrees: Calcula àrea geomètrica entre y=1(x−1) i l'eix, en [0,2], separant signe en x=1. Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 1. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 1."
+    },
+    "F3-B2S-F03-L04-02": {
+      "prompt": "En Càlcul d'àrees: Calcula integral DEFINIDA des de 0 fins a 2 de f(x)=1x+(-1), amb signe. Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 0. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 0."
+    },
+    "F3-B2S-F03-L04-03": {
+      "prompt": "En Càlcul d'àrees: Quina és l'àrea positiva entre f(x)=2 constant i eix x, des de x=0 fins a 3? Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 6. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 6."
+    },
+    "F3-B2S-F03-L04-04": {
+      "prompt": "En Càlcul d'àrees: Que ∫ _0 ^2 (x−1) dx =0 demostra àrea geomètrica inexistent (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-F03-L04-05": {
+      "prompt": "En Càlcul d'àrees: Calcula àrea geomètrica entre y=2(x−1) i l'eix, en [0,2], separant signe en x=1. Selecciona l'opció matemàticament correcta.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 2. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 2."
+    },
+    "F3-B2S-F03-L05-01": {
+      "prompt": "En Interpretació d'acumulació econòmica: Calcula integral DEFINIDA des de 0 fins a 3 de f(x)=2x+(10), amb signe. Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 39. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 39."
+    },
+    "F3-B2S-F03-L05-02": {
+      "prompt": "En Interpretació d'acumulació econòmica: Calcula integral DEFINIDA des de 0 fins a 4 de f(x)=0x+(5), amb signe. Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 20. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 20."
+    },
+    "F3-B2S-F03-L05-03": {
+      "prompt": "En Interpretació d'acumulació econòmica: Per a taxa monetària r(t)=2t+10 €/ mes, calcula la TAXA puntual r(3) en €/ mes. Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 16. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 16."
+    },
+    "F3-B2S-F03-L05-04": {
+      "prompt": "En Interpretació d'acumulació econòmica: La integral d'una taxa en €/ mes respecte al temps en mesos té unitats: Euros, €/ mes o Mesos. Selecciona l'opció matemàticament correcta.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: euros. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: Euros."
+    },
+    "F3-B2S-F03-L05-05": {
+      "prompt": "En Interpretació d'acumulació econòmica: Una taula d'imports mensuals, per si sola, prova que existeix taxa contínua exacta entre mesos (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-F03-L06-01": {
+      "prompt": "En Problemes amb unitats: Calcula integral des de 0 a 2 de f(t)=3t²+0t+0 exactament, aplicant primitiva. Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 8. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 8."
+    },
+    "F3-B2S-F03-L06-02": {
+      "prompt": "En Problemes amb unitats: Calcula integral DEFINIDA des de 1 fins a 3 de f(x)=2x+(4), amb signe. Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 16. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 16."
+    },
+    "F3-B2S-F03-L06-03": {
+      "prompt": "En Problemes amb unitats: Calcula integral DEFINIDA des de 0 fins a 2 de f(x)=2x+(4), amb signe. Escriu el nombre exacte sense unitats.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 12. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 12."
+    },
+    "F3-B2S-F03-L06-04": {
+      "prompt": "En Problemes amb unitats: La integral temporal d'una velocitat en m/s al llarg de segons produeix: Metros, m/s o Segons. Selecciona l'opció matemàticament correcta.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. El resultat: uns metres. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: Metres."
+    },
+    "F3-B2S-F03-L06-05": {
+      "prompt": "En Problemes amb unitats: La integral d'un cost marginal permet determinar cost TOTAL absolut sense conèixer cap cost inicial (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Calcula una primitiva i comprova derivant abans d'usar límits d'integració.",
+      "explanation": "Es verifica la primitiva per derivació i s'aplica el teorema fonamental només en el seu domini; signe i unitats inclosos. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Calcula una primitiva i comprova derivant abans d'usar límits d'integració. El teorema fonamental avalua F(b)−F(a). La integral és signada; àrea geomètrica integra |f| separant en arrels. Respecta unitats de taxa·temps. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    }
+  }
+}

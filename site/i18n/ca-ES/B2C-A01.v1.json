@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2C-A01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2c_a01.json": "e7b07a6a93a87ef107b0f20c9599f44bb51e7051fca194be90aa0f655bea484f",
+    "data/f3_b2c_a01_exercises.json": "0dbb352d6ca2ec11e7f7b173608c1669722e42c1e9cc6f77e21209a763b2851e"
+  },
+  "lessons": {
+    "B2C-A01-L01": {
+      "title": "Matrius i dimensió",
+      "objectives": [
+        "Determinar l'ordre, files, columnes i entrades d'una matriu.",
+        "Distingeix matrius quadrades, rectangulars, files, columnes i matriu zero."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una matriu A de m files i n columnes té dimensió m × n i les seves entrades s'indiquen aᵢⱼ, on el primer índex correspon a la fila. Només les matrius d'igual dimensió poden sumar-se o comparar-se entrada a entrada. Una matriu quadrada té el mateix nombre de files i columnes; la seva diagonal principal consta de a₁₁, a₂₂,..., aₙₙ i la traça és la seva suma. Una matriu zero té totes les seves entrades nul·les, però la seva grandària s'ha d'especificar. L'ordre 2×3 no equival a l'ordre 3×2; el parell descriu primer files i després columnes. Les matrius són estructures de dades matemàtiques, no fraccions i el seu quocient general no està definit."
+        },
+        {
+          "body": "A=[[1,2, 3], [4,5, 6]] té dimensió 2×3; a₂₃=6 perquè està en la segona fila i tercera columna."
+        },
+        {
+          "body": "B=[[2,0], [−1,4]] és quadrada d'ordre 2, té traça 2+4=6 i no és la matriu identitat."
+        },
+        {
+          "body": "Identificació d'entrades i dimensió. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Identificació d'entrades i dimensió. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Identificació de les entrades i la dimensió"
+          }
+        },
+        {
+          "body": "Una matriu 2×3 és igual a la seva transposada 3×2?||No. La trasposició intercanvia files i columnes i canvia l'ordre d'una matriu no quadrada."
+        },
+        {
+          "body": "Recuperació: Una matriu A de m files i n columnes té dimensió m × n i les seves entrades s'indiquen aᵢⱼ, on el primer índex correspon a la fila. Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    },
+    "B2C-A01-L02": {
+      "title": "Suma, producte i transposició",
+      "objectives": [
+        "Sumar i multiplicar matrius amb dimensions compatibles.",
+        "Comprendre la transposada i comprovar que el producte no sol ser commutatiu."
+      ],
+      "content_blocks": [
+        {
+          "body": "La suma A+B només està definida quan A i B tenen la mateixa mida i es realitza per entrades. Per al producte AB, el nombre de columnes d'A ha d'igualar el nombre de files de B; la seva entrada (i,j) és la suma de productes de la fila i de A per la columna j de B. En general AB≠BA, i fins i tot un dels dos productes pot no estar definit. La transposada AT intercanvia files i columnes: (AB)T =B TAT, invertint l'ordre. Una multiplicació per escalar afecta cada entrada, no només les diagonals. Confirmar les dimensions abans del càlcul evita errors de compatibilitat."
+        },
+        {
+          "body": "A=[[1,2], [0,1]], B=[[2,0], [3,4]]: AB =[[8,8], [3,4]], ja que a₁₁b₁₁+a₁₂b₂₁=2+6=8."
+        },
+        {
+          "body": "Per A=[[1,2], [3,4]], AT =[[1,3], [2,4]], i l'entrada (1,2) passa a ocupar (2,1)."
+        },
+        {
+          "body": "Producte fila per columna. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Producte fila per columna. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Producte fila per columna"
+          }
+        },
+        {
+          "body": "Per què AB i BA no tenen per què ser iguals?||El producte depèn de l'ordre fila-columna i no és commutatiu en general."
+        },
+        {
+          "body": "Recuperació: La suma A+B només està definida quan A i B tenen igual grandària i es realitza per entrades. Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    },
+    "B2C-A01-L03": {
+      "title": "Identitat i inversa",
+      "objectives": [
+        "Reconèixer la matriu identitat i la invertibilitat de matrius 2×2.",
+        "Calcula inverses exactes sota la condició de determinant no nul."
+      ],
+      "content_blocks": [
+        {
+          "body": "La identitat Iₙ té uns a la diagonal i zeros fora; AI = IA =A per a matrius d'ordre n. Una matriu quadrada A és invertible si existeix A⁻¹ amb AA ⁻¹=A⁻¹A=I. En ordre 2, per a A=[[a,b],[c,d]], det (A)= ad − bc. Si el determinant és diferent de zero, A⁻¹=(1/ det)[[d, −b], [−c,a]]. Amb determinant zero no hi ha inversa i no es divideix entre zero. Una matriu rectangular tampoc té inversa bilateral en aquest sentit. És preferible verificar el producte de la matriu i la inversa abans d'acceptar resultats obtinguts per fórmula."
+        },
+        {
+          "body": "A=[[2,1], [1,1]] té det =1 i inversa [[1, −1], [−1,2]], doncs el seu producte és la identitat."
+        },
+        {
+          "body": "A=[[1,2], [2,4]] té det =0: la seva segona fila és doble de la primera i no posseeix inversa."
+        },
+        {
+          "body": "Identitat i inversa d'una matriu 2×2. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Identitat i inversa d'una matriu 2×2. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Identitat i inversa d'una matriu 2×2"
+          }
+        },
+        {
+          "body": "Per què una matriu de determinant zero no pot tenir inversa?||Perquè les seves files són dependents i cap multiplicació pot restaurar la identitat de rang complet."
+        },
+        {
+          "body": "Recuperació: La identitat Iₙ té uns en la diagonal i zeros fora; AI = IA =A per a matrius d'ordre n. Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    },
+    "B2C-A01-L04": {
+      "title": "Operacions i propietats",
+      "objectives": [
+        "Aplicar propietats associativa i distributiva del producte matricial.",
+        "Diferenciar AB de BA i calcular potències de matrius quadrades."
+      ],
+      "content_blocks": [
+        {
+          "body": "La multiplicació de matrius compatibles és associativa: (AB )C=A( BC), i distributiva respecte a la suma: A(B+C)= AB + AC. No és commutativa en general, per la qual cosa no es poden reorganitzar lliurement factors. Una potència A² significa AA i només està definida per a matrius quadrades; no equival a elevar cada entrada al quadrat. La igualtat (AB)T =B TAT també inverteix l'ordre. Si A és invertible, (AB )⁻¹=B⁻¹A⁻¹ quan ambdues ho són. El principi dimensional ha de revisar-se en cada propietat, fins i tot quan les fórmules simbòliques semblen correctes."
+        },
+        {
+          "body": "Per a A=[[1,1], [0,1]], A²=[[1,2], [0,1]], no [[1,1], [0,1]] calculada per quadrats individuals."
+        },
+        {
+          "body": "Amb A=[[1,1], [0,1]] i B=[[1,0], [1,1]], AB =[[2,1], [1,1]] i BA =[[1,1], [1,2]], diferents."
+        },
+        {
+          "body": "Potències i no commutativitat. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Potències i no commutativitat. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Potències i no commutativitat"
+          }
+        },
+        {
+          "body": "És sempre correcte escriure (AB )²=A²B²?||No, excepte condicions addicionals com que A i B commutin."
+        },
+        {
+          "body": "Recuperació: La multiplicació de matrius compatibles és associativa: (AB )C=A( BC), i distributiva respecte a la suma: A(B+C)= AB + AC. Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    },
+    "B2C-A01-L05": {
+      "title": "Rang de matrius",
+      "objectives": [
+        "Determinar el rang per menors o reducció de files.",
+        "Relacionar rang amb dependència lineal i nombre de solucions."
+      ],
+      "content_blocks": [
+        {
+          "body": "El rang d'una matriu és la dimensió de l'espai generat per les seves columnes o, equivalentment, per les seves files. Operacions elementals reversibles no canvien el rang: permutar files, sumar múltiples i multiplicar una fila per escalar no nul. Per a una matriu 2×2, rang 2 equival a determinant no nul; si det =0 i alguna entrada és no nul·la, el rang és 1; la matriu zero té rang 0. Per a una 3×3, un determinant no nul implica rang 3; si s'anul·la han d'examinar-se menors o pivots. El rang d'una matriu rectangular no pot excedir el mínim de files i columnes i no s'ha de deduir només comptant files no nul·les abans d'esglaonar."
+        },
+        {
+          "body": "A=[[1,2], [2,4]] té rang 1: la segona fila és dues vegades la primera."
+        },
+        {
+          "body": "La matriu diagonal diag (1,2, 3) té tres pivots no nuls, per la qual cosa el seu rang és 3."
+        },
+        {
+          "body": "Rang i files dependents. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Rang i files dependents. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Rang i files dependents"
+          }
+        },
+        {
+          "body": "Si el determinant d'una matriu 3×3 val zero, el seu rang és necessàriament un?||No. Pot ser zero, un o dos; cal comprovar pivots o menors."
+        },
+        {
+          "body": "Recuperació: El rang d'una matriu és la dimensió de l'espai generat per les seves columnes o, equivalentment, per les seves files. Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    },
+    "B2C-A01-L06": {
+      "title": "Modelització matricial",
+      "objectives": [
+        "Modelitzar transformacions i sistemes com a productes matricials.",
+        "Comprovar dimensions, interpretació i coherència de les solucions."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una matriu pot representar un sistema lineal A·x=b, una transformació lineal de coordenades o una taula de quantitats. Per exemple, A=[[2,1], [1,3]] multiplica el vector de quantitats (x,y) i produeix els totals (2x+y, x+3y); cada fila expressa una magnitud observada. La multiplicació de matrius encadena transformacions en ordre: primer B i després A correspon a AB. La consistència física exigeix interpretar unitats i no tractar el producte com a suma de preus sense verificar què representen les files. L'ordre de les operacions importa i les dimensions de A, x i b han de ser compatibles."
+        },
+        {
+          "body": "Per A=[[2,1], [1,3]] i x=(4,2), el producte Ax =(10,10)."
+        },
+        {
+          "body": "Una transformació T=[[0, −1], [1,0]] aplicada a (3,2) produeix (−2,3): gir de 90° al voltant de l'origen."
+        },
+        {
+          "body": "Sistema de quantitats expressat com Ax =b. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Sistema de quantitats expressat com Ax =b. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Sistema de quantitats expressat com Ax =b"
+          }
+        },
+        {
+          "body": "Si A és de dimensió 2×3, pot multiplicar-se per qualsevol vector de dues entrades?||No: a la dreta requereix un vector columna de tres components."
+        },
+        {
+          "body": "Recuperació: Una matriu pot representar un sistema lineal A·x=b, una transformació lineal de coordenades o una taula de quantitats. Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2C-A01-L01-01": {
+      "prompt": "Una matriu té 2 files i 3 columnes. Escriu la dimensió (files, columnes). Selecciona la resposta EXACTA.",
+      "hint": "Les dimensions es llegeixen files abans que columnes; el primer índex indica fila.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (2, 3). Les dimensions es llegeixen files abans que columnes; el primer índex indica fila. Per a transposar, intercanvia files amb columnes; la traça és la suma d'elements diagonals, només en matrius quadrades. Resultat exacte: (2, 3). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L01-02": {
+      "prompt": "Per A=[[1,2, 3], [4,5, 6], [0,0, 0]] (només DUES primeres files), calcula l'entrada de la fila 2 i columna 3. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "Les dimensions es llegeixen files abans que columnes; el primer índex indica fila.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 6. Les dimensions es llegeixen files abans que columnes; el primer índex indica fila. Per a transposar, intercanvia files amb columnes; la traça és la suma d'elements diagonals, només en matrius quadrades. Resultat exacte: 6. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L01-03": {
+      "prompt": "Calcula la traça (suma diagonal) de A=[[2,0], [-1,4]]. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "Les dimensions es llegeixen files abans que columnes; el primer índex indica fila.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 6. Les dimensions es llegeixen files abans que columnes; el primer índex indica fila. Per a transposar, intercanvia files amb columnes; la traça és la suma d'elements diagonals, només en matrius quadrades. Resultat exacte: 6. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L01-04": {
+      "prompt": "Una matriu té 2 files i 3 columnes. És quadrada (Sí / No)? Selecciona la resposta EXACTA.",
+      "hint": "Les dimensions es llegeixen files abans que columnes; el primer índex indica fila.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament No. Les dimensions es llegeixen files abans que columnes; el primer índex indica fila. Per a transposar, intercanvia files amb columnes; la traça és la suma d'elements diagonals, només en matrius quadrades. Resultat exacte: No. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L01-05": {
+      "prompt": "És A=[[0,0], [0,0]] la matriu ZERO d'ordre dos? Selecciona la resposta EXACTA.",
+      "hint": "Les dimensions es llegeixen files abans que columnes; el primer índex indica fila.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament Sí. Les dimensions es llegeixen files abans que columnes; el primer índex indica fila. Per a transposar, intercanvia files amb columnes; la traça és la suma d'elements diagonals, només en matrius quadrades. Resultat exacte: Sí. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L02-01": {
+      "prompt": "Calcula A+B per A=[[1,2], [0,1]], B=[[2,0], [3,4]]. Indica quatre entrades per files. Selecciona la resposta EXACTA.",
+      "hint": "Comprova primer compatibilitat de dimensions i ordre dels factors.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (3, 2, 3, 5). Comprova primer compatibilitat de dimensions i ordre dels factors. Cada entrada d'AB és un producte escalar fila-columna; en general AB≠BA i A² no és el quadrat entrada a entrada. Resultat exacte: (3, 2, 3, 5). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L02-02": {
+      "prompt": "Calcula A·B en aquest ordre per a A=[[1,2], [0,1]], B=[[2,0], [3,4]]; indica quatre entrades per files. Selecciona la resposta EXACTA.",
+      "hint": "Comprova primer compatibilitat de dimensions i ordre dels factors.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (8, 8, 3, 4). Comprova primer compatibilitat de dimensions i ordre dels factors. Cada entrada d'AB és un producte escalar fila-columna; en general AB≠BA i A² no és el quadrat entrada a entrada. Resultat exacte: (8, 8, 3, 4). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L02-03": {
+      "prompt": "Calcula la transposada de A=[[1,2], [3,4]] i indica les quatre entrades per files. Selecciona la resposta EXACTA.",
+      "hint": "Les dimensions es llegeixen files abans que columnes; el primer índex indica fila.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (1, 3, 2, 4). Les dimensions es llegeixen files abans que columnes; el primer índex indica fila. Per a transposar, intercanvia files amb columnes; la traça és la suma d'elements diagonals, només en matrius quadrades. Resultat exacte: (1, 3, 2, 4). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L02-04": {
+      "prompt": "Donades A=[[1,2], [0,1]] i B=[[2,0], [3,4]], calcula l'entrada (1,1) del producte AB. Selecciona la resposta EXACTA.",
+      "hint": "Comprova primer compatibilitat de dimensions i ordre dels factors.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 8. Comprova primer compatibilitat de dimensions i ordre dels factors. Cada entrada d'AB és un producte escalar fila-columna; en general AB≠BA i A² no és el quadrat entrada a entrada. Resultat exacte: 8. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L02-05": {
+      "prompt": "Calcula A·B en aquest ordre per a A=[[2,1], [1,0]], B=[[1,1], [0,1]]; indica quatre entrades per files. Selecciona la resposta EXACTA.",
+      "hint": "Comprova primer compatibilitat de dimensions i ordre dels factors.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (2, 3, 1, 1). Comprova primer compatibilitat de dimensions i ordre dels factors. Cada entrada d'AB és un producte escalar fila-columna; en general AB≠BA i A² no és el quadrat entrada a entrada. Resultat exacte: (2, 3, 1, 1). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L03-01": {
+      "prompt": "Calcula el determinant exacte ad − bc de A=[[2,1], [1,1]]. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: det =(2)·(1)−(1)·(1)=1. El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: 1. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L03-02": {
+      "prompt": "Calcula la matriu inversa exacta de A=[[2,1], [1,1]]; torna les seves quatre entrades per files. Selecciona la resposta EXACTA.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (1, -1, -1, 2). El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: (1, -1, -1, 2). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L03-03": {
+      "prompt": "Existeix la inversa de A=[[1,2], [2,4]]? Comprova el determinant i respon Sí o No. Selecciona la resposta EXACTA.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament No. El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: No. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L03-04": {
+      "prompt": "Per A=[[2,1], [1,1]], calcula l'entrada (2,2) de A⁻¹, vàlida només si det (A)≠0. Selecciona la resposta EXACTA.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 2. El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: 2. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L03-05": {
+      "prompt": "És A=[[1,0], [0,1]] la matriu IDENTITAT d'ordre dos? Selecciona la resposta EXACTA.",
+      "hint": "Les dimensions es llegeixen files abans que columnes; el primer índex indica fila.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament Sí. Les dimensions es llegeixen files abans que columnes; el primer índex indica fila. Per a transposar, intercanvia files amb columnes; la traça és la suma d'elements diagonals, només en matrius quadrades. Resultat exacte: Sí. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L04-01": {
+      "prompt": "Calcula A²=A·A per A=[[1,1], [0,1]]. No elevis cada entrada individualment. Selecciona la resposta EXACTA.",
+      "hint": "Comprova primer compatibilitat de dimensions i ordre dels factors.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (1, 2, 0, 1). Comprova primer compatibilitat de dimensions i ordre dels factors. Cada entrada d'AB és un producte escalar fila-columna; en general AB≠BA i A² no és el quadrat entrada a entrada. Resultat exacte: (1, 2, 0, 1). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L04-02": {
+      "prompt": "Commuten les matrius A=[[1,1], [0,1]] i B=[[1,0], [1,1]]? Respon Sí si AB = BA, No en cas contrari. Selecciona la resposta EXACTA.",
+      "hint": "Comprova primer compatibilitat de dimensions i ordre dels factors.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament No. Comprova primer compatibilitat de dimensions i ordre dels factors. Cada entrada d'AB és un producte escalar fila-columna; en general AB≠BA i A² no és el quadrat entrada a entrada. Resultat exacte: No. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L04-03": {
+      "prompt": "Calcula la transposada de A=[[0,1], [2,3]] i indica les quatre entrades per files. Selecciona la resposta EXACTA.",
+      "hint": "Les dimensions es llegeixen files abans que columnes; el primer índex indica fila.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (0, 2, 1, 3). Les dimensions es llegeixen files abans que columnes; el primer índex indica fila. Per a transposar, intercanvia files amb columnes; la traça és la suma d'elements diagonals, només en matrius quadrades. Resultat exacte: (0, 2, 1, 3). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L04-04": {
+      "prompt": "Multiplica per escalar λ=-2 la matriu A=[[1, -1], [0,3]]. Dóna les quatre entrades. Selecciona la resposta EXACTA.",
+      "hint": "Comprova primer compatibilitat de dimensions i ordre dels factors.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (-2, 2, 0, -6). Comprova primer compatibilitat de dimensions i ordre dels factors. Cada entrada d'AB és un producte escalar fila-columna; en general AB≠BA i A² no és el quadrat entrada a entrada. Resultat exacte: (-2, 2, 0, -6). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L04-05": {
+      "prompt": "Calcula l'entrada (1,2) de A², amb A=[[1,1], [0,1]]. Selecciona la resposta EXACTA.",
+      "hint": "Comprova primer compatibilitat de dimensions i ordre dels factors.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 2. Comprova primer compatibilitat de dimensions i ordre dels factors. Cada entrada d'AB és un producte escalar fila-columna; en general AB≠BA i A² no és el quadrat entrada a entrada. Resultat exacte: 2. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L05-01": {
+      "prompt": "Per A=[[1,2], [2,4]], calcula el rang exacte ( nombre de pivots). Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "El rang és el nombre de pivots després de reducció reversible, no el nombre brut de files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 1. El rang és el nombre de pivots després de reducció reversible, no el nombre brut de files. Escalona sense dividir entre zero; un menor no nul aporta rang i el rang mai excedeix el nombre de files o columnes. Resultat exacte: 1. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L05-02": {
+      "prompt": "Calcula rang de A=[[1,0, 0], [0,2, 0], [0,0, 3]]. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "El rang és el nombre de pivots després de reducció reversible, no el nombre brut de files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 3. El rang és el nombre de pivots després de reducció reversible, no el nombre brut de files. Escalona sense dividir entre zero; un menor no nul aporta rang i el rang mai excedeix el nombre de files o columnes. Resultat exacte: 3. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L05-03": {
+      "prompt": "Per A=[[1,2], [2,4]], calcula la nul·litat =2− rang. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "El rang és el nombre de pivots després de reducció reversible, no el nombre brut de files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 1. El rang és el nombre de pivots després de reducció reversible, no el nombre brut de files. Escalona sense dividir entre zero; un menor no nul aporta rang i el rang mai excedeix el nombre de files o columnes. Resultat exacte: 1. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L05-04": {
+      "prompt": "Per A=[[0,0], [0,0]], calcula el rang exacte ( nombre de pivots). Selecciona la resposta EXACTA.",
+      "hint": "El rang és el nombre de pivots després de reducció reversible, no el nombre brut de files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 0. El rang és el nombre de pivots després de reducció reversible, no el nombre brut de files. Escalona sense dividir entre zero; un menor no nul aporta rang i el rang mai excedeix el nombre de files o columnes. Resultat exacte: 0. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L05-05": {
+      "prompt": "Calcula rang de A=[[1,2, 3], [2,4, 6], [0,1, 1]]. Selecciona la resposta EXACTA.",
+      "hint": "El rang és el nombre de pivots després de reducció reversible, no el nombre brut de files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 2. El rang és el nombre de pivots després de reducció reversible, no el nombre brut de files. Escalona sense dividir entre zero; un menor no nul aporta rang i el rang mai excedeix el nombre de files o columnes. Resultat exacte: 2. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L06-01": {
+      "prompt": "Calcula A·v amb A=[[2,1], [1,3]] i v=(4,2). Respon (x,y). Selecciona la resposta EXACTA.",
+      "hint": "Comprova primer compatibilitat de dimensions i ordre dels factors.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (10, 10). Comprova primer compatibilitat de dimensions i ordre dels factors. Cada entrada d'AB és un producte escalar fila-columna; en general AB≠BA i A² no és el quadrat entrada a entrada. Resultat exacte: (10, 10). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L06-02": {
+      "prompt": "Calcula la component 1 d'A·v amb A=[[2,1], [1,3]], v=(4,2). Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "Comprova primer compatibilitat de dimensions i ordre dels factors.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 10. Comprova primer compatibilitat de dimensions i ordre dels factors. Cada entrada d'AB és un producte escalar fila-columna; en general AB≠BA i A² no és el quadrat entrada a entrada. Resultat exacte: 10. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L06-03": {
+      "prompt": "Calcula A·v amb A=[[0, -1], [1,0]] i v=(3,2). Respon (x,y). Selecciona la resposta EXACTA.",
+      "hint": "Comprova primer compatibilitat de dimensions i ordre dels factors.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (-2, 3). Comprova primer compatibilitat de dimensions i ordre dels factors. Cada entrada d'AB és un producte escalar fila-columna; en general AB≠BA i A² no és el quadrat entrada a entrada. Resultat exacte: (-2, 3). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L06-04": {
+      "prompt": "Resol A·(x, y)=b per A=[[2,1], [1,3]], b=(10,10). Respon amb les dues components. Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (4, 2). Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, única si rang =n, infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: (4, 2). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A01-L06-05": {
+      "prompt": "A té grandària 2×3 i B 3×4. Indica la dimensió d'AB, o «No definida» si no es pot multiplicar. Selecciona la resposta EXACTA.",
+      "hint": "Comprova primer compatibilitat de dimensions i ordre dels factors.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (2, 4). Comprova primer compatibilitat de dimensions i ordre dels factors. Cada entrada d'AB és un producte escalar fila-columna; en general AB≠BA i A² no és el quadrat entrada a entrada. Resultat exacte: (2, 4). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1S-D01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1s_d01.json": "b86d2e4f88dc36a7cb92565128353d4a04f2264a4af1e20429703c503f6d8948",
+    "data/f3_b1s_d01_exercises.json": "05665ba69aa2308c0ba4fc209fa8bc794cab285d401c092ac8752b73ca88fda1"
+  },
+  "lessons": {
+    "B1S-D01-L01": {
+      "title": "Taules bidimensionals",
+      "objectives": [
+        "Organitzar dues variables en una taula bidimensional i trobar totals.",
+        "Triar de manera explícita denominadors conjunts, marginals i condicionals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una taula bidimensional presenta parells de categories registrades en la mateixa observació. En una mostra sintètica de 30 operacions, la fila del grup A conté 9 resultats favorables i 6 desfavorables, i la fila B té 5 favorables i 10 desfavorables. Els marginals per fila són 15 i 15; per columna favorable 14 i desfavorable 16. Una freqüència conjunta com 9/30 utilitza tota la mostra, mentre P(favorable |A)=9/15 usa la primera fila i P(A| favorable )=9/14 usa la primera columna. Canviar la direcció del condicionament canvia la pregunta. Una taula només descriu la mostra, no prova que el grup causi el resultat ni justifica generalització a la població. Totes les dades són inventats i es presenten amb denominadors."
+        },
+        {
+          "body": "La mostra té 9+6+5+10=30 observacions; el total de la columna favorable és 9+5=14 i el desfavorable 6+10=16."
+        },
+        {
+          "body": "La proporció favorable dins del grup A és 9/15=3/5; A entre els favorables representa 9/14, el denominador del qual no és 15."
+        },
+        {
+          "body": "Taula conjunta de trenta observacions sintètiques. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "Taula conjunta de trenta observacions sintètiques. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "Taula conjunta de trenta observacions sintètiques"
+          }
+        },
+        {
+          "body": "P(favorable |A) i P(A| favorable) han de donar el mateix nombre?||No; condicionen sobre grups diferents."
+        },
+        {
+          "body": "Recuperació activa: Una taula bidimensional presenta parells de categories registrades en la mateixa observació. Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    },
+    "B1S-D01-L02": {
+      "title": "Distribucions conjunta, marginal i condicionada",
+      "objectives": [
+        "Calcular distribucions marginals i condicionades de dues variables.",
+        "Interpretar diferències de taxes amb el grup de referència identificat."
+      ],
+      "content_blocks": [
+        {
+          "body": "Les freqüències marginals s'obtenen sumant files o columnes; les condicionades normalitzen pel total de la categoria imposada. En una taula de 20 casos sintètics amb files A: (6,4) i B: (3,7), la distribució marginal d'èxit és 9/20 i la de fracàs 11/20. Dins de la taxa d'èxit és 6/10=0,6; dins de B és 3/10=0,3. La diferència de taxes mostrals és de 30 punts percentuals, no de 30 % relatiu: (0,6−0,3)/0,3 equival al 100 % d'augment relatiu. Aquestes diferències poden suggerir associació, però un estudi observacional pot contenir confusors i biaix de selecció. Si alguna fila tingués total zero, la seva probabilitat condicionada no estaria definida. Les taules semàntiques han de conservar els quatre recomptes exactes."
+        },
+        {
+          "body": "Els marginals d'èxit i no èxit són 6+3=9 i 4+7=11, respectivament; les seves freqüències relatives són 9/20 i 11/20."
+        },
+        {
+          "body": "Taxa d'èxit A=6/10=60 %, B=3/10=30 %: la diferència són 30 punts percentuals i el canvi relatiu respecte de B és 100 %."
+        },
+        {
+          "body": "Marginals i condicionades per grups. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "Marginals i condicionades per grups. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "Marginals i condicionades per grups"
+          }
+        },
+        {
+          "body": "Una diferència de 30 punts percentuals equival sempre a un canvi relatiu del 30 %?||No; són unitats de comparació diferents."
+        },
+        {
+          "body": "Recuperació activa: Les freqüències marginals s'obtenen sumant files o columnes; les condicionades normalitzen pel total de la categoria imposada. Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    },
+    "B1S-D01-L03": {
+      "title": "Covariància",
+      "objectives": [
+        "Calcula la covariància descriptiva exacta a partir de parelles.",
+        "Distingir covariància de correlació normalitzada i les seves unitats."
+      ],
+      "content_blocks": [
+        {
+          "body": "En parelles quantitatives (xᵢ, yᵢ), la covariància descriptiva d'una mostra presa com a conjunt observat és Σ(xᵢ−x̄)(yᵢ−ȳ)/n. Per a (1,2), (2,4), (3,6), x̄=2, ȳ=4 i els productes de desviacions són 2,0, 2; per tant cov =4/3 positiva. Si s'inverteix el sentit amb (1,6), (2,4), (3,2), la covariància és −4/3. La covariància té unitats producte de les dues magnituds i canvia en canviar les seves escales; per això el seu valor absolut no mesura per si sol força de relació comparable entre estudis. El coeficient de Pearson divideix per desviacions típiques positives per obtenir una magnitud adimensional en [−1,1]. Una covariància zero pot coexistir amb una dependència no lineal. No s'atribueix causalitat a partir d'aquest resum descriptiu."
+        },
+        {
+          "body": "Per a x=1,2, 3 e y=2,4, 6, els productes centrats són (−1)(−2)=2, 0 i (1)(2)=2: covariància =4/3."
+        },
+        {
+          "body": "Per a x=1,2, 3 e y=6,4, 2, els productes centrats són −2,0, −2 i la covariància és −4/3."
+        },
+        {
+          "body": "Pares lineals creixents i covariància exacta. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "Pares lineals creixents i covariància exacta. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "Pares lineals creixents i covariància exacta"
+          }
+        },
+        {
+          "body": "La covariància sempre pertany a l'interval entre −1 i 1?||No; aquesta cota és del coeficient de Pearson."
+        },
+        {
+          "body": "Recuperació activa: En parelles quantitatives (xᵢ, yᵢ), la covariància descriptiva d'una mostra presa com a conjunt observat és Σ(xᵢ−x̄)(yᵢ−ȳ)/n. Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    },
+    "B1S-D01-L04": {
+      "title": "Correlació",
+      "objectives": [
+        "Interpretar el coeficient de Pearson amb condicions d'existència.",
+        "Diferenciar correlació lineal forta, associació no lineal i causalitat."
+      ],
+      "content_blocks": [
+        {
+          "body": "La correlació lineal de Pearson r=Σ(x−x̄)(y−ȳ)/√[Σ(x−x̄)²Σ(y−ȳ)²] només es defineix quan ambdues sumes de quadrats són positives. En els parells (1,2), (2,4), (3,6) resulta r=1; per (1,6), (2,4), (3,2), r=−1. El signe indica direcció lineal i |r| mesura la intensitat d'associació lineal de la mostra. Si tots els valors x són iguals, r no existeix, encara que la fórmula pugui intentar-se numèricament. La sèrie simètrica (−1,1), (0,0), (1,1) satisfà y=x², dependència total no lineal, però r=0 per anul·lació de la covariància. Correlació no determina causa, no controla variables ocultes i pot alterar-se per observacions extremes. Ha d'indicar-se grandària de mostra i domini."
+        },
+        {
+          "body": "Amb x=(1,2, 3) e y=(2,4, 6), y=2x; ambdues desviacions no nul·les i r=+1 per alineació perfecta."
+        },
+        {
+          "body": "Amb (−1,1), (0,0), (1,1), mitjana x=0, mitjana y=2/3 i covariància zero: Pearson r=0 malgrat dependència quadràtica."
+        },
+        {
+          "body": "Dependència parabòlica amb correlació lineal nul·la. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "Dependència parabòlica amb correlació lineal nul·la. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "Dependència parabòlica amb correlació lineal nul·la"
+          }
+        },
+        {
+          "body": "r=0 significa que dues variables siguin necessàriament independents?||No; pot existir dependència no lineal."
+        },
+        {
+          "body": "Recuperació activa: La correlació lineal de Pearson r=Σ(x−x̄)(y−ȳ)/√[Σ(x−x̄)²Σ(y−ȳ)²] només es defineix quan ambdues sumes de quadrats són positives. Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    },
+    "B1S-D01-L05": {
+      "title": "Regressió lineal i quadràtica",
+      "objectives": [
+        "Ajustar models lineal i quadràtic a dades sintètiques en casos identificables.",
+        "Comparar residus i evitar extrapolació o causalitat no justificada."
+      ],
+      "content_blocks": [
+        {
+          "body": "La recta de mínims quadrats ŷ=a+ bx minimitza Σ(yᵢ−a− bx ᵢ)² i, amb Sxxx >0, dóna b= Sxy / Sxxx i a=ȳ− bx ̄. Els parells (0,1), (1,3), (2,5) segueixen ŷ=1+2x i tenen residus zero. Una corba quadràtica ŷ=a+ bx + cx ² requereix almenys tres abscises diferents i disseny de rang tres. En els cinc parells x=−2, −1,0, 1,2 amb y=4,1, 0,1, 4, la paràbola ŷ=x² ajusta exactament i dóna SSE =0; la millor recta és ŷ=2 i té SSE =14. El menor error dins de la mostra no prova capacitat predictiva fora d'ella. Han d'explicar-se el rang observat, la complexitat i els supòsits de cada model. La corba SVG mostra només la regió d'abscises observades i la taula revela residus."
+        },
+        {
+          "body": "Per a (0,1), (1,3), (2,5), Sxy =4 i Sxxx =2: b=2, a=1 i predicció ŷ(1)=3, amb residu observat zero."
+        },
+        {
+          "body": "En (−2,4), (−1,1), (0,0), (1,1), (2,4), la millor paràbola és ŷ=x², SSE =0; la recta ŷ=2 genera SSE =14."
+        },
+        {
+          "body": "Model quadràtic enfront de recta constant. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "Model quadràtic enfront de recta constant. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "Model quadràtic davant de recta constant"
+          }
+        },
+        {
+          "body": "Una paràbola amb SSE =0 demostra que continuarà predient perfectament fora de l'interval observat?||No; ajusta no és validar externament."
+        },
+        {
+          "body": "Recuperació activa: La recta de mínims quadrats ŷ=a+ bx minimitza Σ(yᵢ−a− bx ᵢ)² i, amb Sxxx >0, dóna b= Sxy / Sxxx i a=ȳ− bx ̄. Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    },
+    "B1S-D01-L06": {
+      "title": "Interpretació del coeficient de determinació",
+      "objectives": [
+        "Calcular R² mitjançant SSE i SST amb les seves hipòtesis explícites.",
+        "Reconèixer els límits de R² davant extrapolació, sobreajustament i causalitat."
+      ],
+      "content_blocks": [
+        {
+          "body": "El coeficient de determinació per a un model ajustat amb intercepte es defineix R²=1− SSE/SST, on SSE =Σ(y−ŷ)² i SST =Σ(y−ȳ)²; requereix SST >0 per aplicar aquesta expressió. En els cinc parells y=x² per x=−2, −1,0, 1,2, mitjana y=2, SST =4+1+4+1+4=14. La millor recta ŷ=2 té SSE =14 i R²=0; la paràbola ŷ=x² té SSE =0 i R²=1. Amb intercepte i ajust MCO en mostra, R² està entre 0 i 1; fora d'aquestes condicions pot ser negatiu o no estar definit. R² no representa percentatge de causalitat ni garanteix generalització. Si i és constant, SST =0 i s'ha d'advertir que la fórmula indicada no defineix R². La comparació honesta inclou complexitat, grandària de mostra i validació independent."
+        },
+        {
+          "body": "Per a x=−2, −1,0, 1,2 i y=4,1, 0,1, 4, ȳ=2 i SST =14. La recta ŷ=2 té SSE =14: R²=1−14/14=0."
+        },
+        {
+          "body": "Amb les mateixes cinc dades, el model ŷ=x² produeix SSE =0 i R²=1−0/14=1, sense provar que extrapolar sigui fiable."
+        },
+        {
+          "body": "SSE i R² en dos models de les mateixes dades. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "SSE i R² en dos models de les mateixes dades. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "SSE i R² en dos models de les mateixes dades"
+          }
+        },
+        {
+          "body": "R²=1 implica necessàriament causalitat o predicció perfecta fora de la mostra?||No; només descriu l'ajust sota condicions."
+        },
+        {
+          "body": "Recuperació activa: El coeficient de determinació per a un model ajustat amb intercepte es defineix R²=1− SSE/SST, on SSE =Σ(y−ŷ)² i SST =Σ(y−ȳ)²; requereix SST >0 per aplicar aquesta expressió. Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1S-D01-L01-01": {
+      "prompt": "En Taules bidimensionals: Taula A=( Sí 9,No 6), B=( Sí 5,No 10). Calcula total N de totes les cel·les. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 30. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L01-02": {
+      "prompt": "En Taules bidimensionals: Taula A:(Sí 9,No 6), B:(Sí 5,No 10). Compte freqüència MARGINAL de columna Sí. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 14. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L01-03": {
+      "prompt": "En Taules bidimensionals: Taula A:(Sí 9,No 6), B:(Sí 5,No 10). Calcula la proporció Sí que està condicionada a la fila A. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,6. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L01-04": {
+      "prompt": "En Taules bidimensionals: P(Sí |A) i P(A| Sí) coincideixen NECESSÀRIAMENT? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L01-05": {
+      "prompt": "En Taules bidimensionals: Taula A=( Sí 9,No 6), B=( Sí 5,No 10). Calcula la proporció A dins de la columna SÍ. Tria l'opció matemàticament justificada.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 9/14. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L02-01": {
+      "prompt": "En Distribucions conjunta, marginal i condicionada: Taula A:(Sí 6,No 4), B:(Sí 3,No 7). Compte freqüència MARGINAL de columna Sí. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 9. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L02-02": {
+      "prompt": "En Distribucions conjunta, marginal i condicionada: Taula A:(Sí 6,No 4), B:(Sí 3,No 7). Calcula la proporció Sí que està condicionada a la fila A. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,6. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L02-03": {
+      "prompt": "En Distribucions conjunta, marginal i condicionada: Taula A=( Sí 6,No 4), B=( Sí 3,No 7). Calcula la proporció Sí dins de la fila B. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,3. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L02-04": {
+      "prompt": "En Distribucions conjunta, marginal i condicionada: El percentatge passa de 30 % a 60 %. Calcula l'augment en punts percentuals. Tria l'opció matemàticament justificada.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 30. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L02-05": {
+      "prompt": "En Distribucions conjunta, marginal i condicionada: Una diferència de 30 punts percentuals equival sempre a un augment relatiu del 30 %? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L03-01": {
+      "prompt": "En Covariància: En parells (x, y)=[( Fraction (1, 1), Fraction (2, 1)), (Fraction (2, 1), Fraction (4, 1)), (Fraction (3, 1), Fraction (6, 1))], calcula covariança descriptiva poblacional Σ(x−x̄)(y−ȳ)/n, SENSE dividir per n−1. Tria l'opció matemàticament justificada.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 4/3. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L03-02": {
+      "prompt": "En Covariància: En parells (x, y)=[( Fraction (1, 1), Fraction (6, 1)), (Fraction (2, 1), Fraction (4, 1)), (Fraction (3, 1), Fraction (2, 1))], calcula covariança descriptiva poblacional Σ(x−x̄)(y−ȳ)/n, SENSE dividir per n−1. Tria l'opció matemàticament justificada.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: -4/3. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L03-03": {
+      "prompt": "En Covariància: Per als parells lineals (x, y)=[( Fraction (1, 1), Fraction (2, 1)), (Fraction (2, 1), Fraction (4, 1)), (Fraction (3, 1), Fraction (6, 1))], calcula correlació Pearson r exacta, ambdues variàncies >0. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 1. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L03-04": {
+      "prompt": "En Covariància: La covariància descriptiva està sempre en [−1,1] com Pearson r? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L03-05": {
+      "prompt": "En Covariància: En parells (x, y)=[( Fraction (1, 1), Fraction (3, 1)), (Fraction (2, 1), Fraction (6, 1)), (Fraction (3, 1), Fraction (9, 1))], calcula covariança descriptiva poblacional Σ(x−x̄)(y−ȳ)/n, SENSE dividir per n−1. Tria l'opció matemàticament justificada.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 2. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L04-01": {
+      "prompt": "En Correlació: Per als parells lineals (x, y)=[( Fraction (1, 1), Fraction (2, 1)), (Fraction (2, 1), Fraction (4, 1)), (Fraction (3, 1), Fraction (6, 1))], calcula correlació Pearson r exacta, ambdues varies >0. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 1. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L04-02": {
+      "prompt": "En Correlació: Per als parells lineals (x, y)=[( Fraction (1, 1), Fraction (6, 1)), (Fraction (2, 1), Fraction (4, 1)), (Fraction (3, 1), Fraction (2, 1))], calcula correlació Pearson r exacta, ambdues varies >0. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: -1. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L04-03": {
+      "prompt": "En parells (x, y)=[( Fraction (-1, 1), Fraction (1, 1)), (Fraction (0, 1), Fraction (0, 1)), (Fraction (1, 1), Fraction (1, 1))], calcula covariància descriptiva poblacional Σ(x−x̄)(y−ȳ)/n, SENSE dividir per n−1. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L04-04": {
+      "prompt": "En Correlació: Person r=0 descarta DEPENDÈNCIA no lineal entre variables? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L04-05": {
+      "prompt": "En correlació: Pearson r està definit quan x és constant i la seva desviació típica és zero? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L05-01": {
+      "prompt": "En Regressió lineal i quadràtica: Amb parells [(Fraction (0, 1), Fraction (1, 1)), (Fraction (1, 1), Fraction (3, 1)), (Fraction (2, 1), Fraction (5, 1))], calcula b de regressió MCO de i sobre x mitjançant Sxy/Sxx. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 2. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L05-02": {
+      "prompt": "En Regressió lineal i quadràtica: Ajusta exactament ŷ=a+ bx + cx ² per MCO a parells [(Fraction (-2, 1), Fraction (4, 1)), (Fraction (-1, 1), Fraction (1, 1)), (Fraction (0, 1), Fraction (0, 1)), (Fraction (1, 1), Fraction (1, 1)), (Fraction (2, 1), Fraction (4, 1))]. Calcula el coeficient c. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 1. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L05-03": {
+      "prompt": "En Regressió lineal i quadràtica: Dades (x, y)=[( Fraction (-2, 1), Fraction (4, 1)), (Fraction (-1, 1), Fraction (1, 1)), (Fraction (0, 1), Fraction (0, 1)), (Fraction (1, 1), Fraction (1, 1)), (Fraction (2, 1), Fraction (4, 1))]. La recta ajustada és ŷ=2. Calcula SSE =Σ(y−ŷ)². Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 14. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L05-04": {
+      "prompt": "En regressió lineal i quadràtica: SSE =0 en cinc observacions GARANTEIX extrapolació correcta anés de mostra? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L05-05": {
+      "prompt": "En Regressió lineal i quadràtica: Amb parells [(Fraction (0, 1), Fraction (1, 1)), (Fraction (1, 1), Fraction (3, 1)), (Fraction (2, 1), Fraction (5, 1))], calcula a de regressió MCO de i sobre x, a=ȳ− bx ̄. Tria l'opció matemàticament justificada.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 1. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L06-01": {
+      "prompt": "En Interpretació del coeficient de determinació: Per a model amb intercepte i SST =14>0, SSE =14. Calcula R²=1− SSE/SST. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L06-02": {
+      "prompt": "En Interpretació del coeficient de determinació: Per a model amb intercepte i SST =14>0, SSE =0. Calcula R²=1− SSE/SST. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 1. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L06-03": {
+      "prompt": "En Interpretació del coeficient de determinació: Dades de parells (x,y) [(-2, 4), (-1, 1), (0, 0), (1, 1), (2, 4)]: calcula SST =Σ(y−ȳ)² de les seves ordenades. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 14. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L06-04": {
+      "prompt": "En Interpretació del coeficient de determinació: R²=1 d'un ajust en mostra DEMOSTRA causalitat i predicció exacta exterior? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-D01-L06-05": {
+      "prompt": "En Interpretació del coeficient de determinació: R²=1− SSE/SST és definit quan SST =0 per i constant? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Localitza la població de referència, mitjanes i denominadors; distingeix associació, ajust i predicció. Per MCO usa Sxxx i Sxy; R²=1− SSE/SST només amb SST >0. Covariància divideix per n i Pearson normalitza amb variàncies no nul·les; ni r ni R² proven causalitat. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E4A-A01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e4a_a01.json": "ee2e22d8c87451a3e654e95b24bbe2d14d0fd8e87733d24f2e259d9650103c65",
+    "data/f3_e4a_a01_exercises.json": "76fd544abd68642ba407423d77baba97ab9b43d8219a282604be13dc38755370"
+  },
+  "lessons": {
+    "E4A-A01-L01": {
+      "title": "Variables en contexts reals",
+      "objectives": [
+        "Identificar variables, unitats i restriccions en problemes quotidians.",
+        "Traduir enunciats a expressions algebraiques amb comprovació dimensional."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un model algebraic relaciona magnituds mitjançant variables i restriccions precises. Si una tarifa de transport cobra una quota fixa de 3 euros i 2 euros per trajecte, el cost de n trajectes és C(n)=3+2n, amb n enter no negatiu: no s'admeten 2,5 trajectes com si fossin una quantitat real contínua. La magnitud de sortida es mesura en euros i el pendent en euros per trajecte. Abans de triar una expressió s'identifiquen el significat de les variables, les unitats, les condicions de viabilitat i la distinció entre dades observades i hipòtesis de simplificació. Dos models poden coincidir en una mostra petita sense tenir el mateix significat causal; extrapolar fora del domini contextual no està justificat. La validació comença substituint casos coneguts."
+        },
+        {
+          "body": "Una subscripció costa 6 euros al mes més 4 euros per entrada: T(n)=6+4n per a n enter ≥0; amb 3 entrades, T(3)=18 euros."
+        },
+        {
+          "body": "Una compra de kg de fruita a 3 €/ kg es representa per P(m)=3m, amb m≥0 real. Per a m=1,5 kg, el preu és 4,5 €."
+        },
+        {
+          "body": "Model de tarifa fixa més cost per ús. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Model de tarifa fixa més cost per ús. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Model de tarifa fixa més cost per ús"
+          }
+        },
+        {
+          "body": "Pot una variable de nombre de persones prendre un valor real com 3,5?||No, si compta persones individuals el seu domini és discret i no negatiu."
+        },
+        {
+          "body": "Recuperació activa: Un model algebraic relaciona magnituds mitjançant variables i restriccions precises. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    },
+    "E4A-A01-L02": {
+      "title": "Relacions lineals",
+      "objectives": [
+        "Interpretar pendent i terme independent d'una relació afí contextual.",
+        "Resoldre problemes de comparació de dues tarifes lineals i condicions de domini."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un model afí C(x)= mx +b té un pendent m que expressa variació per unitat de x, i un terme independent b que representa el valor inicial quan x=0 pertany al domini. Si dues tarifes són C₁(x)=5+2x i C₂(x)=1+3x, la igualtat es produeix en resoldre 5+2x=1+3x, d'on x=4. Per x<4 la segona costa menys i per x>4 la primera és més barata, sempre respectant el domini d'usuaris o articles enters. La taxa m pot ser negativa en models de depreciació, però això no permet extrapolar preus negatius sense comprovar límits físics. Una recta ajustada a dades no és necessàriament una llei exacta fora del rang mesurat."
+        },
+        {
+          "body": "Dos taxis cobren A(x)=5+2x i B(x)=1+3x euros. S'igualen a x=4 km, on ambdós cobren 13 euros."
+        },
+        {
+          "body": "Per a C(t)=20−2t com a depreciació inicial, C(3)=14 unitats monetàries. El model ha de restringir-se abans que el preu sigui negatiu."
+        },
+        {
+          "body": "Comparació de dues tarifes afins. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Comparació de dues tarifes afins. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Comparació de dues tarifes afins"
+          }
+        },
+        {
+          "body": "El pendent 2 de C(x)=5+2x representa una quota fixa?||No, representa l'increment per cada unitat; la quota fixa és 5."
+        },
+        {
+          "body": "Recuperació activa: Un model afí C(x)= mx +b té un pendent m que expressa variació per unitat de x, i un terme independent b que representa el valor inicial quan x=0 pertany al domini. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    },
+    "E4A-A01-L03": {
+      "title": "Relacions quadràtiques",
+      "objectives": [
+        "Modelitzar àrees i ingressos mitjançant expressions quadràtiques senzilles.",
+        "Identificar vèrtex i restriccions geomètriques per decidir màxims."
+      ],
+      "content_blocks": [
+        {
+          "body": "En mantenir fix un perímetre, l'àrea d'un rectangle depèn d'un costat mitjançant una funció quadràtica. Si el perímetre és 20 m, els costats x i 10−x condueixen a l'àrea A(x)=x(10−x)=−x²+10x, amb 0<x<10 per a costats estrictament positius. En completar quadrats, A(x)=25−(x−5)², per la qual cosa el màxim 25 m² s'aconsegueix en x=5 m. La paràbola obre cap avall i el seu vèrtex representa una solució òptima en el domini factible. Si s'imposa que x prengui valors enters per raons de fabricació, ha de comparar-se el màxim continu amb els valors enters permesos. Un resultat algebraicament crític fora del domini físic no és vàlid."
+        },
+        {
+          "body": "Un recinte rectangular té perímetre 20 m. A(x)=−x²+10x=25−(x−5)², màxim 25 m² en x=5 m."
+        },
+        {
+          "body": "Si el cost és C(x)=(x−3)²+4 per 0≤x≤5, el mínim és 4 en x=3; les fronteres donen C(0)=13 i C(5)=8."
+        },
+        {
+          "body": "Àrea d'un rectangle amb perímetre fix. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Àrea d'un rectangle amb perímetre fix. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Àrea d'un rectangle amb perímetre fix"
+          }
+        },
+        {
+          "body": "Podem triar x=12 en un rectangle amb costats x i 10−x?||No, perquè el segon costat seria negatiu: viola la restricció geomètrica."
+        },
+        {
+          "body": "Recuperació activa: En mantenir fix un perímetre, l'àrea d'un rectangle depèn d'un costat mitjançant una funció quadràtica. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    },
+    "E4A-A01-L04": {
+      "title": "Proporcionalitat inversa",
+      "objectives": [
+        "Reconèixer models de proporcionalitat inversa i excloure valors prohibits.",
+        "Interpretar el producte constant i límits físics de la relació."
+      ],
+      "content_blocks": [
+        {
+          "body": "En una proporcionalitat inversa y=k/x per x≠0, el producte xy =k és constant. Si una tasca requereix 12 hores-persona i tots mantenen productivitat idèntica, un model simplificat de durada amb n treballadors és t(n)=12/n hores per a n enter positiu. Doblar treballadors redueix a la meitat el temps modelitzat, però no ha d'extrapolar-se a n=0 ni a divisions arbitràriament petites sense considerar coordinació. La gràfica matemàtica és una hipèrbola amb asímptotes x=0 i y=0; en el context només s'admet la branca positiva per n≥1. La proporcionalitat directa y= kx manté el quocient y/x, mentre que la inversa manté el producte xy. No s'ha de confondre un cost fix repartit amb un cost lineal per unitat."
+        },
+        {
+          "body": "Una tasca de 12 hores-persona triga t(n)=12/n. Amb 3 treballadors idèntics, t(3)=4 h, i amb 6 treballadors, t(6)=2 h."
+        },
+        {
+          "body": "Si 24 € es reparteixen equitativament entre n persones, cada persona paga p(n)=24/n per a n enter positiu; amb n=8 paga 3 €."
+        },
+        {
+          "body": "Repartiment inversament proporcional. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Repartiment inversament proporcional. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Repartiment inversament proporcional"
+          }
+        },
+        {
+          "body": "Es pot utilitzar n=0 en un model 12/n de treballadors?||No: el denominador s'anul·la i a més manca d'interpretació pràctica."
+        },
+        {
+          "body": "Recuperació activa: En una proporcionalitat inversa y=k/x per x≠0, el producte xy =k és constant. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    },
+    "E4A-A01-L05": {
+      "title": "Expressions i fórmules",
+      "objectives": [
+        "Reordenar fórmules aplicant operacions equivalents i comprovacions.",
+        "Verificar dimensions, denominadors i restriccions en buidar."
+      ],
+      "content_blocks": [
+        {
+          "body": "Desplaçar una variable significa realitzar operacions equivalents en tots dos membres d'una igualtat i respectar que no es divideixi entre zero. En d= vt, amb t≠0 s'obté v=d/t; si t=0 no pot buidar v únicament a partir de d=0. Per a un preu final P=p(1+r), el preu base p=P/(1+r) requereix 1+r≠0. Les unitats són part de la verificació: si d està en km i t en hores, v està en km/h. Quan una fórmula involucra quadrats, buidar pot produir dos arrels i el context tria signes admissibles, per exemple longitud positiva. És recomanable substituir el resultat en la fórmula original i comprovar límits de domini en cada transformació."
+        },
+        {
+          "body": "De d= vt, per a d=150 km i t=3 h, resulta v=150/3=50 km/h; la comprovació 50·3=150 recupera la dada."
+        },
+        {
+          "body": "En P=p(1+r), amb P=121 € i r=0,21, s'obté p=121/1,21=100 €. No es divideix per 1+r si fos zero."
+        },
+        {
+          "body": "Fórmula de distància, velocitat i temps. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Fórmula de distància, velocitat i temps. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Fórmula de distància, velocitat i temps"
+          }
+        },
+        {
+          "body": "Està permès dividir una equació per una expressió que podria valer zero sense comprovar-la?||No; pot perdre solucions o produir expressions sense significat."
+        },
+        {
+          "body": "Recuperació activa: Desplaçar una variable significa realitzar operacions equivalents en ambdós membres d'una igualtat i respectar que no es divideixi entre zero. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    },
+    "E4A-A01-L06": {
+      "title": "Ajusta d'un model a dades",
+      "objectives": [
+        "Calcula els paràmetres d'una recta a partir de dues observacions.",
+        "Distingir interpolació exacta i extrapolació no justificada."
+      ],
+      "content_blocks": [
+        {
+          "body": "Dues observacions amb abscises diferents permeten determinar una única recta afí que passa per ambdues. El pendent és m=(y₂−y₁)/(x₂−x₁) i el terme independent b=y₁− mx ₁. Si el cost observat és 9 € en x=2 i 17 € en x=6, m=8/4=2 € per unitat i b=5 €, de manera que el model és C(x)=2x+5. La recta pot interpolar exactament els dos punts sense demostrar que els costos veritables segueixin una llei lineal per a qualsevol x. Amb més de dues observacions sorolloses, ajustar una recta requereix una regla estadística i valoració d'errors; no correspon afirmar exactitud universal. Abans de calcular el pendent es comprova x₂≠x₁ i es registren unitats i restriccions de domini."
+        },
+        {
+          "body": "Observem (2,9) i (6,17) en una tarifa: m=(17−9)/(6−2)=2; b=9−2·2=5. Per tant y=2x+5."
+        },
+        {
+          "body": "Dos mesuraments (1,4) i (3,10) donen m=6/2=3 i b=1. El model interpolant és y=3x+1, però no justifica pronosticar x=100."
+        },
+        {
+          "body": "Recta interpolant a dues observacions. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Recta interpolant a dues observacions. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Recta interpolant a dues observacions"
+          }
+        },
+        {
+          "body": "Dos punts observats proven que qualsevol dada futura seguirà exactament aquesta recta?||No; només defineixen una interpolació afí sota aquesta hipòtesi."
+        },
+        {
+          "body": "Recuperació activa: Dues observacions amb abscises diferents permeten determinar una única recta afí que passa per ambdues. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E4A-A01-L01-01": {
+      "prompt": "Una tarifa costa 6 € fixos i 4 € per entrada. Calcula el cost de 3 entrades senceres. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Identifica magnituds, unitats i el domini físic abans de substituir valors.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 18. Identifica magnituds, unitats i el domini físic abans de substituir valors. Una tarifa és quota fixa més preu unitari per quantitat; persones i entrades són enters no negatius. Resposta comprovable: 18. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L01-02": {
+      "prompt": "Una mercaderia costa 3 €/ kg. Calcula el preu en euros de 3/2 kg sense arrodoniments. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Identifica magnituds, unitats i el domini físic abans de substituir valors.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 4,5. Identifica magnituds, unitats i el domini físic abans de substituir valors. Una tarifa és quota fixa més preu unitari per quantitat; persones i entrades són enters no negatius. Resposta comprovable: 4,5. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L01-03": {
+      "prompt": "Si n representa el nombre de persones o entrades indivisibles, quin conjunt de valors admet el model amb n≥0? Selecciona exactament una resposta.",
+      "hint": "Identifica magnituds, unitats i el domini físic abans de substituir valors.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir enters no negatius. Identifica magnituds, unitats i el domini físic abans de substituir valors. Una tarifa és quota fixa més preu unitari per quantitat; persones i entrades són enters no negatius. Resposta comprovable: enters no negatius. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L01-04": {
+      "prompt": "Una tarifa costa 5 € fixos i 2 € per entrada. Calcula el cost de 4 entrades senceres. Selecciona exactament una resposta.",
+      "hint": "Identifica magnituds, unitats i el domini físic abans de substituir valors.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 13. Identifica magnituds, unitats i el domini físic abans de substituir valors. Una tarifa és quota fixa més preu unitari per quantitat; persones i entrades són enters no negatius. Resposta comprovable: 13. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L01-05": {
+      "prompt": "Quines són les unitats del pendent d'una tarifa que mesura euros en funció del nombre d'entrades: €/ entrada, €/ hora o m/s? Selecciona exactament una resposta.",
+      "hint": "Identifica magnituds, unitats i el domini físic abans de substituir valors.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir €/ entrada. Identifica magnituds, unitats i el domini físic abans de substituir valors. Una tarifa és quota fixa més preu unitari per quantitat; persones i entrades són enters no negatius. Resposta comprovable: €/ entrada. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L02-01": {
+      "prompt": "Dos plans costen A(x)=5+(2)x i B(x)=1+(3)x. Calcula x on s'igualen. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte 4. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: 4. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L02-02": {
+      "prompt": "Avalua el model lineal f(x)=20+(-2)x en x=3 i comprova les unitats contextuals. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 14. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: 14. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L02-03": {
+      "prompt": "Per a A(x)=5+(2)x i B(x)=1+(3)x, calcula el VALOR COMÚ de la tarifa en igualar-les. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte 13. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: 13. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L02-04": {
+      "prompt": "En la recta cost C(x)=5+2x, què representa el pendent 2: Increment per unitat, Quota fixa o Cost total? Selecciona exactament una resposta.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir Increment per unitat. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: Increment per unitat. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L02-05": {
+      "prompt": "Compara les tarifes A(x)=5+(2)x i B(x)=1+(3)x quan x=2. Quin pla és més barat: Pla A o Pla B? Selecciona exactament una resposta.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte Pla B. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: Pla B. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L03-01": {
+      "prompt": "Un rectangle té perímetre total 20 m. Calcula el costat en m que MAXIMitza la seva àrea, amb ambdós costats positius. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Completa quadrats per reconèixer el vèrtex i contrasta el domini factible.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 5. Completa quadrats per reconèixer el vèrtex i contrasta el domini factible. Per a perímetre P, àrea A(x)=x(P/2−x), màxim en x=P/4 amb A=P²/16; no acceptis longituds negatives. Resposta comprovable: 5. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L03-02": {
+      "prompt": "Un rectangle amb perímetre total 20 m permet maximitzar la seva àrea. Calcula l'ÀREA màxima en m². Escriu el valor numèric exacte sense unitats.",
+      "hint": "Completa quadrats per reconèixer el vèrtex i contrasta el domini factible.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 25. Completa quadrats per reconèixer el vèrtex i contrasta el domini factible. Per a perímetre P, àrea A(x)=x(P/2−x), màxim en x=P/4 amb A=P²/16; no acceptis longituds negatives. Resposta comprovable: 25. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L03-03": {
+      "prompt": "Per f(x)=1(x−(3))²+(4), indica l'ABSCISA exacta del vèrtex. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Completa quadrats per reconèixer el vèrtex i contrasta el domini factible.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 3. Completa quadrats per reconèixer el vèrtex i contrasta el domini factible. Per a perímetre P, àrea A(x)=x(P/2−x), màxim en x=P/4 amb A=P²/16; no acceptis longituds negatives. Resposta comprovable: 3. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L03-04": {
+      "prompt": "Si el perímetre d'un rectangle és 20 m i els costats han de ser positius, és viable triar un costat x=12 m (Sí / No)? Selecciona exactament una resposta.",
+      "hint": "Completa quadrats per reconèixer el vèrtex i contrasta el domini factible.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir No. Completa quadrats per reconèixer el vèrtex i contrasta el domini factible. Per a perímetre P, àrea A(x)=x(P/2−x), màxim en x=P/4 amb A=P²/16; no acceptis longituds negatives. Resposta comprovable: No. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L03-05": {
+      "prompt": "Calcula el valor mínim de C(x)=(x−(3))²+(4), dins d'un domini que inclou x=3. Selecciona exactament una resposta.",
+      "hint": "Completa quadrats per reconèixer el vèrtex i contrasta el domini factible.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 4. Completa quadrats per reconèixer el vèrtex i contrasta el domini factible. Per a perímetre P, àrea A(x)=x(P/2−x), màxim en x=P/4 amb A=P²/16; no acceptis longituds negatives. Resposta comprovable: 4. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L04-01": {
+      "prompt": "En el model invers f(n)=12/n, amb n positiu, calcula f(3) com a valor exacte. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Aïlla la variable requerida i comprova que no divideixin entre zero.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 4. Aïlla la variable requerida i comprova que no divideixin entre zero. Relació inversa conserva n·y=K. Per a impostos P=p(1+r), buida p=P/(1+r) amb 1+r≠0; respecta unitats. Resposta comprovable: 4. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L04-02": {
+      "prompt": "En el model invers f(n)=24/n, amb n positiu, calcula f(8) com a valor exacte. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Aïlla la variable requerida i comprova que no divideixin entre zero.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 3. Aïlla la variable requerida i comprova que no divideixin entre zero. Relació inversa conserva n·y=K. Per a impostos P=p(1+r), buida p=P/(1+r) amb 1+r≠0; respecta unitats. Resposta comprovable: 3. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L04-03": {
+      "prompt": "En f(n)=K/n, amb K fix positiu, si dupliquem n, la quota per unitat queda en la Mitad, el Doble o Igual? Selecciona exactament una resposta.",
+      "hint": "Aïlla la variable requerida i comprova que no divideixin entre zero.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir Mitat. Aïlla la variable requerida i comprova que no divideixin entre zero. Relació inversa conserva n·y=K. Per a impostos P=p(1+r), buida p=P/(1+r) amb 1+r≠0; respecta unitats. Resposta comprovable: Mitad. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L04-04": {
+      "prompt": "És vàlid avaluar f(0)=12/0 en els nombres reals o com nombre de treballadors (Sí / No)? Selecciona exactament una resposta.",
+      "hint": "Aïlla la variable requerida i comprova que no divideixin entre zero.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir No. Aïlla la variable requerida i comprova que no divideixin entre zero. Relació inversa conserva n·y=K. Per a impostos P=p(1+r), buida p=P/(1+r) amb 1+r≠0; respecta unitats. Resposta comprovable: No. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L04-05": {
+      "prompt": "En el model invers f(n)=12/n, amb n positiu, calcula f(6) com a valor exacte. Selecciona exactament una resposta.",
+      "hint": "Aïlla la variable requerida i comprova que no divideixin entre zero.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 2. Aïlla la variable requerida i comprova que no divideixin entre zero. Relació inversa conserva n·y=K. Per a impostos P=p(1+r), buida p=P/(1+r) amb 1+r≠0; respecta unitats. Resposta comprovable: 2. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L05-01": {
+      "prompt": "En d=v·t, amb distància d=150 km i temps t=3 h, calcula v en km/h. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Aïlla la variable requerida i comprova que no divideixin entre zero.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 50. Aïlla la variable requerida i comprova que no divideixin entre zero. Relació inversa conserva n·y=K. Per a impostos P=p(1+r), buida p=P/(1+r) amb 1+r≠0; respecta unitats. Resposta comprovable: 50. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L05-02": {
+      "prompt": "El preu final amb augment de 21% és 121 €. Quin era el preu basi exacte abans de l'augment? Escriu el valor numèric exacte sense unitats.",
+      "hint": "Aïlla la variable requerida i comprova que no divideixin entre zero.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 100. Aïlla la variable requerida i comprova que no divideixin entre zero. Relació inversa conserva n·y=K. Per a impostos P=p(1+r), buida p=P/(1+r) amb 1+r≠0; respecta unitats. Resposta comprovable: 100. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L05-03": {
+      "prompt": "És vàlid dividir per una expressió algebraica que podria valer zero SENSE comprovar aquesta condició (Sí / No)? Selecciona exactament una resposta.",
+      "hint": "Aïlla la variable requerida i comprova que no divideixin entre zero.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir No. Aïlla la variable requerida i comprova que no divideixin entre zero. Relació inversa conserva n·y=K. Per a impostos P=p(1+r), buida p=P/(1+r) amb 1+r≠0; respecta unitats. Resposta comprovable: No. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L05-04": {
+      "prompt": "En d=v·t, amb distància d=210 km i temps t=7 h, calcula v en km/h. Selecciona exactament una resposta.",
+      "hint": "Aïlla la variable requerida i comprova que no divideixin entre zero.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 30. Aïlla la variable requerida i comprova que no divideixin entre zero. Relació inversa conserva n·y=K. Per a impostos P=p(1+r), buida p=P/(1+r) amb 1+r≠0; respecta unitats. Resposta comprovable: 30. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L05-05": {
+      "prompt": "El preu final amb augment de 10% és 110 €. Quin era el preu basi exacte abans de l'augment? Selecciona exactament una resposta.",
+      "hint": "Aïlla la variable requerida i comprova que no divideixin entre zero.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 100. Aïlla la variable requerida i comprova que no divideixin entre zero. Relació inversa conserva n·y=K. Per a impostos P=p(1+r), buida p=P/(1+r) amb 1+r≠0; respecta unitats. Resposta comprovable: 100. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L06-01": {
+      "prompt": "Troba el PENDENT de la recta interpolant entre els punts (2,9) i (6,17). Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte 2. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: 2. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L06-02": {
+      "prompt": "Dues observacions (2,9) i (6,17) determinen y= mx +b. Calcula el terme independent b. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte 5. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: 5. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L06-03": {
+      "prompt": "Amb recta que passa per (1,4) i (3,10), calcula el valor predit y(5) sota aquesta hipòtesi lineal. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte 16. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: 16. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L06-04": {
+      "prompt": "D'observacions proven que la recta interpolada serà EXACTA per a qualsevol futur dada fora del rang (Sí / No)? Selecciona exactament una resposta.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir No. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: No. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-A01-L06-05": {
+      "prompt": "Troba el PENDENT de la recta interpolant entre els punts (1,4) i (3,10). Selecciona exactament una resposta.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte 3. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: 3. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    }
+  }
+}

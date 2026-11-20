@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2S-F01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2s_f01.json": "da7dc05c21ce5d59da2e79e04f4878c7fd7acef56325f2eebef6a4d2e8195ef3",
+    "data/f3_b2s_f01_exercises.json": "b740c9818aa500196db63bab876b74c9f86576abf8a4046ec8f237ab4d197122"
+  },
+  "lessons": {
+    "B2S-F01-L01": {
+      "title": "Límits i continuïtat",
+      "objectives": [
+        "Unificar límits, continuïtat i domini en l'estudi d'una funció.",
+        "Separar discontinuïtats evitables, de salt i infinites mitjançant límits laterals."
+      ],
+      "content_blocks": [
+        {
+          "body": "L'anàlisi inicial d'una funció comença per domini, punts exclosos, límits en punts rellevants i comportament a l'infinit. En f(x)=(x²−9)/(x−3), x≠3, el límit en 3 val 6, però f(3) no existeix: la discontinuïtat és evitable. En h(x)=1/(x−2) els laterals divergeixen amb signes oposats en x=2 i hi ha asímptota vertical, no un buit. En una funció a trossos, un salt es verifica comparant límits laterals. La continuïtat en a requereix que f(a) estigui definida i coincideixi amb el límit bilateral, mentre que en extrems del domini s'usa límit relatiu unilateral. No s'ha de derivar en un punt discontinu ni suposar que un límit infinit sigui un nombre real. L'extensió d'un model social a entrades contínues és hipòtesi didàctica, no dada empírica."
+        },
+        {
+          "body": "La funció g(x)=(x²−16)/(x−4) per a x≠4 coincideix amb x+4 fora del punt; per tant lim (x→4)g(x)=8 i g(4) no existeix."
+        },
+        {
+          "body": "En h(x)=1/(x−2), el límit per l'esquerra de 2 és −∞ i per la dreta +∞: la funció té asímptota vertical en x=2."
+        },
+        {
+          "body": "Domini i límit de discontinuïtat evitable. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Domini i límit de discontinuïtat evitable. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Domini i límit de discontinuïtat evitable"
+          }
+        },
+        {
+          "body": "Un límit finit en un punt que no pertany al domini demostra continuïtat de l'expressió original?||Núm.; requereix a més que el valor en el punt existeixi i coincideixi."
+        },
+        {
+          "body": "Recuperació activa: L'anàlisi inicial d'una funció comença per domini, punts exclosos, límits en punts rellevants i comportament a l'infinit. Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    },
+    "B2S-F01-L02": {
+      "title": "derivades i tangent",
+      "objectives": [
+        "Derivar productes, quocients i composicions on estiguin definides.",
+        "Construir tangents i detectar restriccions que impedeixen derivar."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a funcions derivables o i v es compleixen (uv )′=u′v+ uv ′ i (u/v)′=(u′v− uv ′)/v² on v≠0. La regla de la cadena per a f(g(x)) exigeix derivabilitat de g i de f en el punt imatge, i llavors (f∘g)′=f′(g(x))g′(x). En un exemple, h(x)=x²(x+1)=x³+x² té h′(x)=3x²+2x. Per a r(x)=(x+1)/(x+2), la derivada és 1/(x+2)², vàlida quan x≠−2. En t(x)=(2x+1)², t′(x)=4(2x+1), de manera que t′(2)=20. Una tangent en a s'escriu y=t(a)+t′(a)(x−a). En punts de discontinuïtat o cantonades sense derivada no es força un pendent mitjançant una fórmula aplicada fora del domini."
+        },
+        {
+          "body": "Deriva h(x)=x²(x+1)=x³+x². La regla de producte ofereix h′=2x(x+1)+x²=3x²+2x; en x=2 val 16."
+        },
+        {
+          "body": "Deriva r(x)=(x+1)/(x+2), x≠−2: r′=[(x+2)−(x+1)]/(x+2)²=1/(x+2)²; en x=0 val 1/4."
+        },
+        {
+          "body": "Derivació d'una composició quadràtica. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Derivació d'una composició quadràtica. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Derivació d'una composició quadràtica"
+          }
+        },
+        {
+          "body": "Es pot usar la regla de quocient directament en un punt amb denominador zero?||No; l'expressió original ni tan sols està definida allà."
+        },
+        {
+          "body": "Recuperació activa: Per a funcions derivables o i v es compleixen (uv )′=u′v+ uv ′ i (u/v)′=(u′v− uv ′)/v² on v≠0. Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    },
+    "B2S-F01-L03": {
+      "title": "Monotonia i extrems",
+      "objectives": [
+        "Construir intervals de creixement i decreixement des del signe de la derivada.",
+        "Distingir punts crítics i extrems locals de canvis en punts exclosos."
+      ],
+      "content_blocks": [
+        {
+          "body": "El signe de la derivada permet estudiar monotonia en intervals oberts on la funció sigui derivable. Per a f(x)=x³−3x, el seu derivada f′(x)=3x²−3=3(x−1)(x+1) s'anul·la en −1 i 1. És positiva per a x<−1, negativa entre −1 i 1, positiva per a x>1: existeix màxim local f(−1)=2 i mínim local f(1)=−2. Si el domini es restringeix, els punts de frontera han d'avaluar-se a part per a extrems absoluts. Un punt crític f′=0 no implica per si mateix extrem, com x³ en x=0. La gràfica pot suggerir el patró, però els signes algebraics de f′ en cada component del domini constitueixen la justificació matemàtica. Mai es creua inadvertidament una asímptota o un buit en afirmar monotonia global."
+        },
+        {
+          "body": "Per a f(x)=x³−3x, la derivada és 3(x−1)(x+1): creix en (−∞, −1), decreix en (−1,1) i torna a créixer en (1, +∞)."
+        },
+        {
+          "body": "Els valors crítics de f(x)=x³−3x són f(−1)=2 i f(1)=−2. En −1 hi ha màxim local i en 1 mínim local per canvis de signe."
+        },
+        {
+          "body": "Creixement i extrems de funció cúbica. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Creixement i extrems de funció cúbica. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Creixement i extrems de funció cúbica"
+          }
+        },
+        {
+          "body": "Una derivada zero garanteix sempre un màxim?||No; s'ha d'estudiar el signe de la derivada o la definició de l'extrem."
+        },
+        {
+          "body": "Recuperació activa: El signe de la derivada permet estudiar monotonia en intervals oberts on la funció sigui derivable. Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    },
+    "B2S-F01-L04": {
+      "title": "Curvatura i inflexió quan escaigui",
+      "objectives": [
+        "Estudiar concavitat i punts d'inflexió mitjançant canvis de signe de segona derivada.",
+        "Rebutjar la falsa equivalència f′′(a)=0 si i només si hi ha inflexió."
+      ],
+      "content_blocks": [
+        {
+          "body": "Quan f és dues vegades derivable, la segona derivada orienta sobre curvatura: si f′′>0 en un interval és convexa (corba cap amunt), i si f′′<0 és còncava cap avall. Un punt d'inflexió interior es caracteritza per un canvi real de concavitat; la condició f′′(a)=0 pot ser candidata però no basta. Per f(x)=x³, f′′(x)=6x canvia de signe en creuar 0, per la qual cosa (0,0) és punt d'inflexió. Per a g(x)=x⁴, g′′(x)=12x²≥0 a banda i banda: g′′(0)=0 però NO hi ha inflexió. Un punt on f′′ no existeix també exigeix anàlisi d'intervals; si una funció manca de segona derivada en un punt, no s'aplica el criteri automàtic. En gràfics socials la curvatura representa acceleració del canvi només dins de les hipòtesis del model."
+        },
+        {
+          "body": "Per f(x)=x³, f′′(x)=6x és negativa si x<0 i positiva si x>0: la concavitat canvia en x=0, inflexió (0,0)."
+        },
+        {
+          "body": "Per a g(x)=x⁴, g′′(x)=12x² s'anul·la en 0 però roman no negativa en tots dos costats; no hi ha punt d'inflexió."
+        },
+        {
+          "body": "Canvi de concavitat en funció cúbica. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Canvi de concavitat en funció cúbica. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Canvi de concavitat en funció cúbica"
+          }
+        },
+        {
+          "body": "N'hi ha prou amb f′′(a)=0 per assegurar inflexió?||No; s'ha de comprovar canvi de concavitat."
+        },
+        {
+          "body": "Recuperació activa: Quan f és dues vegades derivable, la segona derivada orienta sobre curvatura: si f′′>0 en un interval és convexa (corba cap amunt), i si f′′<0 és còncava cap avall. Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    },
+    "B2S-F01-L05": {
+      "title": "Estudi complet de funcions",
+      "objectives": [
+        "Realitzar estudi complet d'una funció dins del seu domini.",
+        "Relacionar arrels, vèrtex, monotonia i límits sense confondre buits amb asímptotes."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un estudi ordenat inclou domini, interseccions amb eixos quan existeixin, límits rellevants, continuïtat i possibles discontinuïtats, signe de derivada, extrems, concavitat si escau i comportament cap als extrems del domini. Per f(x)=x²−4x+3=(x−2)²−1, les arrels són 1 i 3, el vèrtex (2, −1) és un mínim, i f′(x)=2x−4 passa de negativa a positiva en 2. Com a polinomi, la funció és contínua i derivable en tots els reals, i creix cap a +∞ quan x→±∞. Si el context imposa x≥0, s'avaluen extrems i resultats només allí. En canvi, (x²−1)/(x−1) no és contínua en x=1 com a expressió original, encara que se simplifiqui a x+1 per a x≠1. La gràfica resumeix les conclusions, però els càlculs són la prova."
+        },
+        {
+          "body": "Per f(x)=x²−4x+3 es factoritza (x−1)(x−3), de manera que talla l'eix x en 1 i 3 i té mínim f(2)=−1."
+        },
+        {
+          "body": "El seu derivada 2x−4 és negativa si x<2, zero en 2 i positiva si x>2; decreix abans del vèrtex i creix després."
+        },
+        {
+          "body": "Estudi complet de paràbola. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Estudi complet de paràbola. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Estudi complet de paràbola"
+          }
+        },
+        {
+          "body": "Una expressió racional simplificada defineix automàticament el seu valor en un zero del denominador original?||Núm.; una cancel·lació algebraica no elimina l'exclusió de domini."
+        },
+        {
+          "body": "Recuperació activa: Un estudi ordenat inclou domini, interseccions amb eixos quan existeixin, límits rellevants, continuïtat i possibles discontinuïtats, signe de derivada, extrems, concavitat si escau i comportament cap als extrems del domini. Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    },
+    "B2S-F01-L06": {
+      "title": "Interpretació de gràfiques econòmiques",
+      "objectives": [
+        "Interpretar òptims, pendents i restriccions en gràfics econòmics sintètics.",
+        "Separar benefici marginal continu, increment discret i capacitat factible."
+      ],
+      "content_blocks": [
+        {
+          "body": "Sigui un benefici sintètic B(q)=−q²+12q−20 per q∈[0,10], amb q enter quan representa unitats produïdes. El seu derivada B′(q)=12−2q s'anul·la en q=6 i canvia de positiva a negativa: existeix màxim B(6)=16. Les arrels B(q)=0 són q=2 i q=10, de manera que el model té benefici no negatiu entre elles dins del domini. En q=4 el benefici marginal continu és B′(4)=4 per unitat; no obstant això l'increment exacte B(5)−B(4)=3, diferent perquè la funció és quadràtica. Si s'intentés q=11 es violaria la restricció q≤10, encara que l'expressió algebraica continués acceptant la seva avaluació. Els resultats pertanyen únicament a un model il·lustratiu; no representen una recomanació empresarial ni prediuen ingressos reals."
+        },
+        {
+          "body": "El màxim de B(q)=−q²+12q−20 ocorre quan B′(q)=−2q+12=0: q=6, benefici B(6)=−36+72−20=16."
+        },
+        {
+          "body": "En q=4, B′(4)=4; l'increment finit B(5)−B(4)=[−25+60−20]−[−16+48−20]=15−12=3, no 4."
+        },
+        {
+          "body": "Benefici màxim condicionat per capacitat. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Benefici màxim condicionat per capacitat. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Benefici màxim condicionat per capacitat"
+          }
+        },
+        {
+          "body": "Pot decidir-se produir q=11 per conveniència de la paràbola si el domini permès acaba en 10?||No; Viola la restricció de capacitat del model."
+        },
+        {
+          "body": "Recuperació activa: Sigui un benefici sintètic B(q)=−q²+12q−20 per q∈[0,10], amb q enter quan representa unitats produïdes. Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2S-F01-L01-01": {
+      "prompt": "En Límits i continuïtat: Calcula lim (x→4) (x²−16)/(x−4) mitjançant factorització vàlida només per x≠4. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Càlcul del límit amb domini i expressions laterals diferenciades; valor contrastat: 8. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 8."
+    },
+    "F3-B2S-F01-L01-02": {
+      "prompt": "En Límits i continuïtat: Per r(x)=1/(x−2), determina l'abscisa x=a de la asímptota VERTICAL. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Càlcul del límit amb domini i expressions laterals diferenciades; valor contrastat: 2. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 2."
+    },
+    "F3-B2S-F01-L01-03": {
+      "prompt": "En Límits i continuïtat: La funció ORIGINAL g(x)=(x²−16)/(x−4) admet g(4) en el seu domini real (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Càlcul del límit amb domini i expressions laterals diferenciades; valor contrastat: No. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B2S-F01-L01-04": {
+      "prompt": "En Límits i continuïtat: Existeix límit BILATERAL finit quan els límits laterals són 3 i 5 (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Càlcul del límit amb domini i expressions laterals diferenciades; valor contrastat: No. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B2S-F01-L01-05": {
+      "prompt": "En Límits i continuïtat: Si una fracció original té límit 8 en el buit x=4 i definim f(4)=8, queda contínua la seva extensió (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Càlcul del límit amb domini i expressions laterals diferenciades; valor contrastat: Sí. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: Sí."
+    },
+    "F3-B2S-F01-L02-01": {
+      "prompt": "En derivades i tangent: Deriva h(x)=x²(x+1)=x³+x² i calcula h′(2). Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i confrontació del domini; resultat contrastat: 16. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 16."
+    },
+    "F3-B2S-F01-L02-02": {
+      "prompt": "En derivades i tangent: Per r(x)=(x+1)/(x+2), x≠−2, calcula r′(0) usant quocient exacte. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Revisa domini, derivades i signes en cada interval abans de classificar el comportament.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i acarament del domini; resultat contrastat: 0,25. Revisa domini, derivades i signes en cada interval abans de classificar el comportament. Regla de quocient (u′v− uv ′)/v² exigeix v≠0. Per inflexió cal canvi de concavitat, no només f′′=0. Verifica vèrtexs, arrels i extrems. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 0,25."
+    },
+    "F3-B2S-F01-L02-03": {
+      "prompt": "En derivades i tangent: Per g(x)=(2x+1)², calcula g′(2) aplicant regla de la cadena. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i confrontació del domini; resultat contrastat: 20. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 20."
+    },
+    "F3-B2S-F01-L02-04": {
+      "prompt": "En derivades i tangent: Es pot calcular r′(−2) de la funció original r(x)=(x+1)/(x+2) (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Revisa domini, derivades i signes en cada interval abans de classificar el comportament.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: No. Revisa domini, derivades i signes en cada interval abans de classificar el comportament. Regla de quocient (u′v− uv ′)/v² exigeix v≠0. Per inflexió cal canvi de concavitat, no només f′′=0. Verifica vèrtexs, arrels i extrems. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B2S-F01-L02-05": {
+      "prompt": "En derivades i tangent: Per f(x)=x², calcula el pendent de la tangent en a=2. Tria l'opció matemàticament correcta.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i confrontació del domini; resultat contrastat: 4. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 4."
+    },
+    "F3-B2S-F01-L03-01": {
+      "prompt": "A Monotonia i extrems: Per f(x)=x³−3x, calcula el punt crític NEGATIU on f′(x)=0. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Revisa domini, derivades i signes en cada interval abans de classificar el comportament.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: -1. Revisa domini, derivades i signes en cada interval abans de classificar el comportament. Regla de quocient (u′v− uv ′)/v² exigeix v≠0. Per inflexió cal canvi de concavitat, no només f′′=0. Verifica vèrtexs, arrels i extrems. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: -1."
+    },
+    "F3-B2S-F01-L03-02": {
+      "prompt": "A Monotonia i extrems: Per f(x)=x³−3x, calcula el punt crític POSITIU on f′(x)=0. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Revisa domini, derivades i signes en cada interval abans de classificar el comportament.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 1. Revisa domini, derivades i signes en cada interval abans de classificar el comportament. Regla de quocient (u′v− uv ′)/v² exigeix v≠0. Per inflexió cal canvi de concavitat, no només f′′=0. Verifica vèrtexs, arrels i extrems. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 1."
+    },
+    "F3-B2S-F01-L03-03": {
+      "prompt": "A Monotonia i extrems: Per f(x)=x³−3x, calcula el valor del seu màxim local f(−1). Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Revisa domini, derivades i signes en cada interval abans de classificar el comportament.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 2. Revisa domini, derivades i signes en cada interval abans de classificar el comportament. Regla de quocient (u′v− uv ′)/v² exigeix v≠0. Per inflexió cal canvi de concavitat, no només f′′=0. Verifica vèrtexs, arrels i extrems. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 2."
+    },
+    "F3-B2S-F01-L03-04": {
+      "prompt": "A Monotonia i extrems: La condició f′(a)=0 basta PER SI SOLA per assegurar màxim o mínim (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesi i domini.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; Resultat: No. Distingeix taxa de canvi mitjana, derivada per límit i tangent; revisa hipòtesis i domini. Taxa mitjana =(f(b)−f(a))/(b−a), a≠b. Per x² la derivada és 2x; en una cantonada |x| els pendents laterals −1 i 1 no coincideixen. f′=0 no implica per si sol extrem. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B2S-F01-L03-05": {
+      "prompt": "A Monotonia i extrems: Per f(x)=x³−3x, classifica el signe de f′(0): Positiva, Negativa o Cero. Tria l'opció matemàticament correcta.",
+      "hint": "Revisa domini, derivades i signes en cada interval abans de classificar el comportament.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i acarament del domini; resultat contrastat: Negativa. Revisa domini, derivades i signes en cada interval abans de classificar el comportament. Regla de quocient (u′v− uv ′)/v² exigeix v≠0. Per inflexió cal canvi de concavitat, no només f′′=0. Verifica vèrtexs, arrels i extrems. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: Negativa."
+    },
+    "F3-B2S-F01-L04-01": {
+      "prompt": "En Curvatura i inflexió quan escaigui: Per f(x)=x³, calcula el valor exacte f′′(2) de la segona derivada. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Revisa domini, derivades i signes en cada interval abans de classificar el comportament.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i acarament del domini; resultat contrastat: 12. Revisa domini, derivades i signes en cada interval abans de classificar el comportament. Regla de quocient (u′v− uv ′)/v² exigeix v≠0. Per inflexió cal canvi de concavitat, no només f′′=0. Verifica vèrtexs, arrels i extrems. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 12."
+    },
+    "F3-B2S-F01-L04-02": {
+      "prompt": "En Curvatura i inflexió quan escaigui: Per f(x)=x³, calcula el valor exacte f′′(-2) de la segona derivada. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Revisa domini, derivades i signes en cada interval abans de classificar el comportament.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i acarament del domini; resultat contrastat: -12. Revisa domini, derivades i signes en cada interval abans de classificar el comportament. Regla de quocient (u′v− uv ′)/v² exigeix v≠0. Per inflexió cal canvi de concavitat, no només f′′=0. Verifica vèrtexs, arrels i extrems. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: -12."
+    },
+    "F3-B2S-F01-L04-03": {
+      "prompt": "En Curvatura i inflexió quan escaigui: Per a f(x)=x³, quina és l'abscisa del punt d'inflexió per canvi de signe de f′′? Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Revisa domini, derivades i signes en cada interval abans de classificar el comportament.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 0. Revisa domini, derivades i signes en cada interval abans de classificar el comportament. Regla de quocient (u′v− uv ′)/v² exigeix v≠0. Per inflexió cal canvi de concavitat, no només f′′=0. Verifica vèrtexs, arrels i extrems. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 0."
+    },
+    "F3-B2S-F01-L04-04": {
+      "prompt": "En Curvatura i inflexió quan escaigui: Per f(x)=x⁴, f′′(0)=0. Hi ha NECESSÀRIAMENT inflexió en x=0 (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Revisa domini, derivades i signes en cada interval abans de classificar el comportament.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: No. Revisa domini, derivades i signes en cada interval abans de classificar el comportament. Regla de quocient (u′v− uv ′)/v² exigeix v≠0. Per inflexió cal canvi de concavitat, no només f′′=0. Verifica vèrtexs, arrels i extrems. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B2S-F01-L04-05": {
+      "prompt": "En Curvatura i inflexió quan escaigui: Per f(x)=x³, classifica curvatura en x=2: Convexa, Còncava o Cero. Tria l'opció matemàticament correcta.",
+      "hint": "Revisa domini, derivades i signes en cada interval abans de classificar el comportament.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: Convexa. Revisa domini, derivades i signes en cada interval abans de classificar el comportament. Regla de quocient (u′v− uv ′)/v² exigeix v≠0. Per inflexió cal canvi de concavitat, no només f′′=0. Verifica vèrtexs, arrels i extrems. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: Convexa."
+    },
+    "F3-B2S-F01-L05-01": {
+      "prompt": "En Estudi complet de funcions: Per a f(x)=x²−4x+3, calcula la menor de les seves dues arrels reals. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Revisa domini, derivades i signes en cada interval abans de classificar el comportament.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 1. Revisa domini, derivades i signes en cada interval abans de classificar el comportament. Regla de quocient (u′v− uv ′)/v² exigeix v≠0. Per inflexió cal canvi de concavitat, no només f′′=0. Verifica vèrtexs, arrels i extrems. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 1."
+    },
+    "F3-B2S-F01-L05-02": {
+      "prompt": "En Estudi complet de funcions: Per a f(x)=x²−4x+3, calcula la major de les seves dues arrels reals. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Revisa domini, derivades i signes en cada interval abans de classificar el comportament.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 3. Revisa domini, derivades i signes en cada interval abans de classificar el comportament. Regla de quocient (u′v− uv ′)/v² exigeix v≠0. Per inflexió cal canvi de concavitat, no només f′′=0. Verifica vèrtexs, arrels i extrems. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 3."
+    },
+    "F3-B2S-F01-L05-03": {
+      "prompt": "En Estudi complet de funcions: Per a f(x)=x²−4x+3, calcula el VALOR del mínim global. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Revisa domini, derivades i signes en cada interval abans de classificar el comportament.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: -1. Revisa domini, derivades i signes en cada interval abans de classificar el comportament. Regla de quocient (u′v− uv ′)/v² exigeix v≠0. Per inflexió cal canvi de concavitat, no només f′′=0. Verifica vèrtexs, arrels i extrems. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: -1."
+    },
+    "F3-B2S-F01-L05-04": {
+      "prompt": "En Estudi complet de funcions: És f(x)=x²−4x+3 contínua en tots els nombres reals (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Revisa domini, derivades i signes en cada interval abans de classificar el comportament.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: Sí. Revisa domini, derivades i signes en cada interval abans de classificar el comportament. Regla de quocient (u′v− uv ′)/v² exigeix v≠0. Per inflexió cal canvi de concavitat, no només f′′=0. Verifica vèrtexs, arrels i extrems. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: Sí."
+    },
+    "F3-B2S-F01-L05-05": {
+      "prompt": "En Estudi complet de funcions: Una cancel·lació de factor retorna el punt exclòs a una fracció racional ORIGINAL (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Revisa domini, derivades i signes en cada interval abans de classificar el comportament.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: No. Revisa domini, derivades i signes en cada interval abans de classificar el comportament. Regla de quocient (u′v− uv ′)/v² exigeix v≠0. Per inflexió cal canvi de concavitat, no només f′′=0. Verifica vèrtexs, arrels i extrems. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B2S-F01-L06-01": {
+      "prompt": "En Interpretació de gràfiques econòmiques: Amb B(q)=−q²+12q−20 per a 0≤q≤10, calcula la quantitat ÒPTIMA q del màxim factible. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 6. Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model. Deriva l'expressió per a taxa local, però calcula C(q+1)−C(q) o B(q+1)−B(q) per a increment discret. Compara valors dins del domini admès. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 6."
+    },
+    "F3-B2S-F01-L06-02": {
+      "prompt": "En Interpretació de gràfiques econòmiques: Amb B(q)=−q²+12q−20 en 0≤q≤10, calcula BENEFICI màxim real. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 16. Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model. Deriva l'expressió per a taxa local, però calcula C(q+1)−C(q) o B(q+1)−B(q) per a increment discret. Compara valors dins del domini admès. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 16."
+    },
+    "F3-B2S-F01-L06-03": {
+      "prompt": "En Interpretació de gràfiques econòmiques: En B(q)=−q²+12q−20, calcula el marginal CONTINU B′(4). Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model.",
+      "explanation": "Explicació matemàtica: Regla de derivació sota les seves hipòtesis, substitució i acarament del domini; resultat contrastat: 4. Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model. Deriva l'expressió per a taxa local, però calcula C(q+1)−C(q) o B(q+1)−B(q) per a increment discret. Compara valors dins del domini admès. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 4."
+    },
+    "F3-B2S-F01-L06-04": {
+      "prompt": "En Interpretació de gràfiques econòmiques: En B(q)=−q²+12q−20, calcula diferència FINITA B(5)−B(4) exacta. Tria l'opció matemàticament correcta.",
+      "hint": "Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 3. Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model. Deriva l'expressió per a taxa local, però calcula C(q+1)−C(q) o B(q+1)−B(q) per a increment discret. Compara valors dins del domini admès. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 3."
+    },
+    "F3-B2S-F01-L06-05": {
+      "prompt": "En Interpretació de gràfiques econòmiques: És factible q=11 quan el model B(q)=−q²+12q−20 restringeix 0≤q≤10 (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: No. Separa el marginal continu del canvi finit d'una unitat i comprova la capacitat del model. Deriva l'expressió per a taxa local, però calcula C(q+1)−C(q) o B(q+1)−B(q) per a increment discret. Compara valors dins del domini admès. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2C-G03",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2c_g03.json": "6b78089703defbb747cbb83314879136930916ea2990e6fe1e6234c1b9cb0fc6",
+    "data/f3_b2c_g03_exercises.json": "b28d7748f539148155445fcd0490fa8cecf2cd5f887d7e59acc3dc6f18b71620"
+  },
+  "lessons": {
+    "B2C-G03-L01": {
+      "title": "Angles entre vectors",
+      "objectives": [
+        "Calcular mòdul, producte escalar i cosinus de l'angle entre vectors no nuls en R³.",
+        "Interpretar direcció, orientació i casos de perpendicularitat."
+      ],
+      "content_blocks": [
+        {
+          "body": "En un sistema cartesià ortonormal tridimensional, un vector u=(u₁, u₂, u₃) té una norma |u|=√(u₁²+u₂²+u₃²), i el producte escalar de u i v és u·v=u₁v₁+u₂v₂+u₃v₃. Per vectors no nuls es compleix cos θ=(u·v)/(|u||v|), amb θ entre 0° i 180°. Un producte escalar zero significa perpendicularitat només si es consideren vectors no nuls; El vector zero no defineix la direcció. El cosinus està necessàriament entre −1 i 1, el que permet detectar errors d'aritmètica. La visualització isomètrica de dos vectors és una projecció gràfica de dades 3D i no substitueix les seves coordenades exactes."
+        },
+        {
+          "body": "Per u=(1,2, 2), |u|=√(1+4+4)=3. Si v=(2,1, 2), llavors u·v=2+2+4=8 i cos θ=8/9; els vectors no són perpendiculars."
+        },
+        {
+          "body": "Per a a=(1,0, 0) i b=(0,1, 0), el producte escalar és 0 i ambdues normes valen 1: θ=90°. Si b=(1,1, 0), cos θ=1/√2."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Angles entre vectors. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Angles entre vectors"
+          }
+        },
+        {
+          "body": "Un producte escalar zero defineix un angle si un dels vectors és nul?||No: el vector zero manca de direcció."
+        },
+        {
+          "body": "Recuperació activa: Calcular mòdul, producte escalar i cosinus de l'angle entre vectors no nuls en R³. Calcula per separat el producte escalar i les dues normes. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2C-G03-L02": {
+      "title": "Angle entre rectes i plans",
+      "objectives": [
+        "Obtenir l'angle agut entre rectes no orientades mitjançant els seus vectors directors.",
+        "Calcula l'angle agut de recta amb pla i de dos plans usant normals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per rectes sense orientació, l ́angle menor es calcula a partir dels seus vectors directors no nuls u i v mitjançant cos θ=|u·v|/(|u||v|), amb 0°≤θ≤90°. Per a dos plans s'usa la mateixa relació entre normals n₁ i n₂. En canvi, l'angle α d'una recta amb un pla s'obté de sinα =|u·n|/(|u||n|), on n és normal al pla; α =0° si la recta és paral·lela al pla i 90° si és perpendicular. És indispensable distingir l'angle entre una recta i la normal de l'angle entre la recta i el pla, que són complementaris. Les fórmules pressuposen geometria euclidiana ortonormal."
+        },
+        {
+          "body": "Una recta amb direcció (1,0, 1) forma 45° amb el pla z=0: la seva normal és (0,0, 1), i sinα =1/√2."
+        },
+        {
+          "body": "Dos plans amb normals (1,0, 0) i (1,1, 0) formen angle agut de 45°, ja que cos θ=1/√2. Les orientacions no alteren l'angle agut."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Angle entre rectes i plans. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Angle entre rectes i plans"
+          }
+        },
+        {
+          "body": "L'angle entre una recta i un pla equival a l'angle entre direcció i normal?||No: són complementaris."
+        },
+        {
+          "body": "Recuperació activa: Obtenir l'angle agut entre rectes no orientades mitjançant els seus vectors directors. Aclareix si es comparen vectors, rectes sense orientació o recta contra pla. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2C-G03-L03": {
+      "title": "Distància punt-recta / plànol",
+      "objectives": [
+        "Aplicar la distància punt-plà en forma cartesiana amb normal no nul·la.",
+        "Aplicar la distància punt-recta mitjançant producte vectorial."
+      ],
+      "content_blocks": [
+        {
+          "body": "La distància euclidiana del punt P=(x₀, y₀, z₀) al pla ax + by + cz +d=0, amb (a,b,c) no nul, és | ax ₀+ by ₀+ cz ₀+d|/√(a²+b²+c²). El numerador és una avaluació algebraica de l'equació i el denominador normalitza la normal; el resultat no pot ser negatiu. Per a una recta per A i vector director u≠0, la distància de P a la recta és |(P−A)× o |/|u|; la norma del producte vectorial dóna l'àrea d'un paral·lelogram, que es divideix per la seva base. Mai basta restar coordenades en una direcció arbitrària si el pla o la recta són oblics."
+        },
+        {
+          "body": "Per a P=(1,2, 5) i pla z=2, la distància és |5−2|/1=3 unitats; perpendicular baixa en direcció z al pla."
+        },
+        {
+          "body": "Per P=(0,3, 0) i recta r=(t, 0,0), la distància és 3. El vector (0,3, 0) és perpendicular a la direcció (1,0, 0)."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Distància punt-recta / plànol. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Distància punt-recta / plànol"
+          }
+        },
+        {
+          "body": "La distància punt-pla pot resultar negativa?||No; El numerador es pren en valor absolut."
+        },
+        {
+          "body": "Recuperació activa: Aplica la distància punt-plà en forma cartesiana amb normal no nul·la. Identifica normal del pla o direcció de la recta abans de calcular. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2C-G03-L04": {
+      "title": "Distàncies entre elements",
+      "objectives": [
+        "Calcular distàncies entre plans paral·lels i rectes paral·lels.",
+        "Distingir intersecció, paral·lelisme i posició creuada en espai."
+      ],
+      "content_blocks": [
+        {
+          "body": "Dos plans paral·lels amb una mateixa normal n no nul·la i equacions ax + by + cz +d₁=0 i ax + by + cz +d₂=0 estan separats per |d₂−d₁|/|n|. Només pot emprar-se directament aquesta fórmula si els coeficients normals estan normalitzats de manera idèntica; si les seves normals són proporcionals, es reescalen primer. Per a rectes paral·leles es mesura la distància de qualsevol punt d'una a l'altra. Per a rectes creuades amb directors u, v independents i punts A, B, la distància és |(B−A)·( o × v )|/| o × v |. Rectes que s'intersequen tenen distància zero; en 3D dues rectes no paral·leles no tenen per què tallar-se. S'ha de comprovar la posició relativa abans de triar la fórmula."
+        },
+        {
+          "body": "Els plànols z=0 i z=4 són paral·lels i la seva separació és 4 unitats, perquè les normals coincideixen amb mòdul un."
+        },
+        {
+          "body": "La recta x=(t, 0,0) i la recta y=(0,3+s, 4) són creuades. Amb u=(1,0, 0), v=(0,1, 0) i B−A=(0,3, 4), la distància és 4."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Distàncies entre elements. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Distàncies entre elements"
+          }
+        },
+        {
+          "body": "Dónes rectes 3D no paral·leles es tallen necessàriament?||No: poden ser creuades i no compartir punt."
+        },
+        {
+          "body": "Recuperació activa: Calcular distàncies entre plans paral·lels i rectes paral·leles. Determina primer si són coincidents, paral·leles, incidents o creuades. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2C-G03-L05": {
+      "title": "Projeccions",
+      "objectives": [
+        "Calcula les projeccions ortogonals dels vectors d'adreces no nul·les.",
+        "Descompondre un vector en component paral·lel i residual perpendicular."
+      ],
+      "content_blocks": [
+        {
+          "body": "La projecció vectorial de v sobre u≠0 és proy_ u(v)=[(v·u)/(u·u)]u. El vector residual v− proy_u(v) és perpendicular a u, ja que el seu producte escalar amb o és zero. Sobre l'eix x, la projecció de v=(3,4, 0) és (3,0, 0), i el residual té longitud 4. La projecció escalar (v·u)/|u| pot tenir signe i no s'ha de confondre amb la longitud no negativa de la projecció vectorial. La projecció sobre un pla de normal n≠0 s'obté com v− proy_n(v); en particular projectar al pla z=0 equival a eliminar la component z. Aquestes fórmules s'empren amb producte escalar euclidià."
+        },
+        {
+          "body": "Per v=(3,4, 0) i u=(1,0, 0), s'obté proy_ u(v)=(3,0, 0) i residual (0,4, 0). El mòdul residual és 4."
+        },
+        {
+          "body": "Per a w=(2,3, 6) i pla z=0, la projecció ortogonal és (2,3, 0) i la distància de w al pla és 6 unitats."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Projeccions. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Projeccions"
+          }
+        },
+        {
+          "body": "Una projecció ortogonal sobre una recta conserva necessàriament tota la norma de v?||No; només conserva la component paral·lela."
+        },
+        {
+          "body": "Recuperació activa: Calcular projeccions ortogonals de vectors sobre direccions no nul·les. Calcula u·u abans de dividir i verifica que no sigui nul. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2C-G03-L06": {
+      "title": "Problemes geomètrics complets",
+      "objectives": [
+        "Seleccionar i combinar distàncies, normes i volum geomètric en problemes 3D.",
+        "Comprovar supòsits de sistema ortonormal, unitats i raonabilitat."
+      ],
+      "content_blocks": [
+        {
+          "body": "La geometria mètrica de l'espai exigeix interpretar quins elements estan donats, determinar si són punts, rectes o plans i després seleccionar eines vectorials. Per a un desplaçament (3,4, 12), la distància euclidiana a l'origen és √(3²+4²+12²)=13, no la suma de components. La distància de l'origen al pla x+y+z=6 és |−6|/√3=2√3≈3,464; el denominador procedeix del mòdul de la normal (1,1, 1). El volum absolut del paral·lelepípede construït per u, v i w s'obté mitjançant |u·( v × w )|, amb unitats cúbiques. El volum és zero si els tres vectors són coplanaris. Una solució rigorosa revisa signes, escala, unitats i un possible model degenerat."
+        },
+        {
+          "body": "El vector (3,4, 12) té norma √(9+16+144)=13. La distància expressa la longitud recta entre extrems, no una trajectòria per eixos."
+        },
+        {
+          "body": "Els vectors u=(1,0, 0), v=(0,2, 0), w=(0,0, 3) delimiten paral·lelelepípede de volum |1·2·3|=6 unitats cúbiques."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Problemes geomètrics complets. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Problemes geomètrics complets"
+          }
+        },
+        {
+          "body": "El producte mixt pot ser negatiu si s'interpreta com a volum físic?||El seu valor absolut és el volum; el signe mesura orientació."
+        },
+        {
+          "body": "Recuperació activa: Seleccionar i combinar distàncies, normes i volum geomètric en problemes 3D. Identifica clarament la magnitud i les seves unitats abans d'escollir fórmula. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2C-G03-L01-01": {
+      "prompt": "Producte escalar u·v per u=(1,2, 2), v=(2,1, 2).",
+      "hint": "Calcula per separat el producte escalar i les dues normes.",
+      "explanation": "Multiplica i suma coordenades: 1×2+2×1+2×2=8."
+    },
+    "F3-B2C-G03-L01-02": {
+      "prompt": "Norma de u=(1,2, 2) en unitats.",
+      "hint": "Calcula per separat el producte escalar i les dues normes.",
+      "explanation": "|u|=√(1+4+4)=3. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-G03-L01-03": {
+      "prompt": "Cosinus de l'angle de (1,0, 0) i (1,1, 0), amb quatre decimals.",
+      "hint": "Calcula per separat el producte escalar i les dues normes.",
+      "explanation": "cos θ=1/√2≈0,70710678; arrodoniment a quatre decimals."
+    },
+    "F3-B2C-G03-L01-04": {
+      "prompt": "Si o i v són no nuls i u·v=0, què implica?",
+      "hint": "Calcula per separat el producte escalar i les dues normes.",
+      "explanation": "Amb normes no nul·les, cos θ=0 correspon a θ=90°."
+    },
+    "F3-B2C-G03-L01-05": {
+      "prompt": "Per què no s'assigna un angle a un vector zero?",
+      "hint": "Calcula per separat el producte escalar i les dues normes.",
+      "explanation": "La fórmula angular divideix per producte de normes i no admet norma zero."
+    },
+    "F3-B2C-G03-L02-01": {
+      "prompt": "Angle agut entre direccions (1,0, 0) i (0,1, 0), en graus.",
+      "hint": "Aclareix si es comparen vectors, rectes sense orientació o recta contra pla.",
+      "explanation": "El producte escalar és zero i les normes són un; 90°."
+    },
+    "F3-B2C-G03-L02-02": {
+      "prompt": "Angle agut entre recta direcció (1,0, 1) i pla z=0, en graus.",
+      "hint": "Aclareix si es comparen vectors, rectes sense orientació o recta contra pla.",
+      "explanation": "senα =|(1,0, 1)·(0,0, 1)|/(√2×1)=1/√2; α =45°."
+    },
+    "F3-B2C-G03-L02-03": {
+      "prompt": "Angle agut entre plans amb normals (1,0, 0) i (1,1, 0), en graus.",
+      "hint": "Aclareix si es comparen vectors, rectes sense orientació o recta contra pla.",
+      "explanation": "cos θ=1/√2; els plans formen un angle agut de 45°."
+    },
+    "F3-B2C-G03-L02-04": {
+      "prompt": "Com es calcula l'angle d'una recta amb un pla?",
+      "hint": "Aclareix si es comparen vectors, rectes sense orientació o recta contra pla.",
+      "explanation": "L'angle recta-pla és complementari al de la seva direcció i la normal."
+    },
+    "F3-B2C-G03-L02-05": {
+      "prompt": "Per què sol usar-se el valor absolut en l'angle menor entre rectes no orientades?",
+      "hint": "Aclareix si es comparen vectors, rectes sense orientació o recta contra pla.",
+      "explanation": "Les rectes no orientades identifiquen vectors directors oposats."
+    },
+    "F3-B2C-G03-L03-01": {
+      "prompt": "Distància P=(1,2, 5) al plànol z=2 en unitats.",
+      "hint": "Identifica normal del pla o direcció de la recta abans de calcular.",
+      "explanation": "Distància =|5−2|/1=3. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-G03-L03-02": {
+      "prompt": "Distància P=(0,3, 0) a la recta x=(t, 0,0), en unitats.",
+      "hint": "Identifica normal del pla o direcció de la recta abans de calcular.",
+      "explanation": "|(P−A)× o |/|u|=3 per a l'eix x. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-G03-L03-03": {
+      "prompt": "Distància P=(1,2, 3) al plànol z=0 en unitats.",
+      "hint": "Identifica normal del pla o direcció de la recta abans de calcular.",
+      "explanation": "Distància =|3|=3, perpendicular al pla."
+    },
+    "F3-B2C-G03-L03-04": {
+      "prompt": "Quin requisit necessita la fórmula de distància punt-plà?",
+      "hint": "Identifica normal del pla o direcció de la recta abans de calcular.",
+      "explanation": "Es divideix per |n|; una nul·la normal no defineix un pla."
+    },
+    "F3-B2C-G03-L03-05": {
+      "prompt": "Per què apareix valor absolut en el numerador de distància punt-pla?",
+      "hint": "Identifica normal del pla o direcció de la recta abans de calcular.",
+      "explanation": "El signe de l'equació del pla no representa distància orientada."
+    },
+    "F3-B2C-G03-L04-01": {
+      "prompt": "Distància entre els plans paral·lels z=0 i z=4.",
+      "hint": "Determina primer si són coincidents, paral·leles, incidents o creuades.",
+      "explanation": "Amb normal idèntica (0,0, 1), distància =|0−(−4)|=4."
+    },
+    "F3-B2C-G03-L04-02": {
+      "prompt": "Distància entre rectes creuades A+(t, 0,0), A=(0,0, 0), i B+(0,s, 0), B=(0,3, 4).",
+      "hint": "Determina primer si són coincidents, paral·leles, incidents o creuades.",
+      "explanation": "El producte mixt amb o × v =(0,0, 1) dóna 4; normes unitàries."
+    },
+    "F3-B2C-G03-L04-03": {
+      "prompt": "Distància entre la recta eix x i la seva paral·lela y=5, z=0.",
+      "hint": "Determina primer si són coincidents, paral·leles, incidents o creuades.",
+      "explanation": "Distància perpendicular del punt (0,5, 0) a l'eix x: 5."
+    },
+    "F3-B2C-G03-L04-04": {
+      "prompt": "En 3D, dues rectes amb directors no paral·lels poden ser:",
+      "hint": "Determina primer si són coincidents, paral·leles, incidents o creuades.",
+      "explanation": "La posició creuada és possible en l'espai encara que no en el pla."
+    },
+    "F3-B2C-G03-L04-05": {
+      "prompt": "Per a usar directament distància entre plans amb d₁, d₂, què ha de complir-se?",
+      "hint": "Determina primer si són coincidents, paral·leles, incidents o creuades.",
+      "explanation": "Si són proporcionals, primer cal escriure les equacions amb normal comú."
+    },
+    "F3-B2C-G03-L05-01": {
+      "prompt": "Longitud de projecció de v=(3,4, 0) sobre direcció de l'eix x.",
+      "hint": "Calcula u·u abans de dividir i verifica que no sigui nul.",
+      "explanation": "proy_ x(v)=(3,0, 0), el mòdul del qual és 3. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-G03-L05-02": {
+      "prompt": "Longitud del residual en projectar (3,4, 0) ortogonalment sobre eix x.",
+      "hint": "Calcula u·u abans de dividir i verifica que no sigui nul.",
+      "explanation": "El residual és (0,4, 0) i el seu mòdul val 4."
+    },
+    "F3-B2C-G03-L05-03": {
+      "prompt": "Distància de w=(2,3, 6) al plànol z=0 en projectar-lo ortogonalment.",
+      "hint": "Calcula u·u abans de dividir i verifica que no sigui nul.",
+      "explanation": "La component perpendicular al pla és z=6."
+    },
+    "F3-B2C-G03-L05-04": {
+      "prompt": "Què satisfà el residual v− proy_u(v) d'una projecció ortogonal?",
+      "hint": "Calcula u·u abans de dividir i verifica que no sigui nul.",
+      "explanation": "El seu producte escalar amb o és zero per definició de la projecció."
+    },
+    "F3-B2C-G03-L05-05": {
+      "prompt": "Quina és la condició per a projectar sobre una adreça o usant (v·u)/(u·u)?",
+      "hint": "Calcula u·u abans de dividir i verifica que no sigui nul.",
+      "explanation": "El denominador u·u s'anul·la si i només si o és zero."
+    },
+    "F3-B2C-G03-L06-01": {
+      "prompt": "Distància de l'origen al punt P=(3,4, 12) en unitats.",
+      "hint": "Identifica clarament la magnitud i les seves unitats abans d'escollir fórmula.",
+      "explanation": "√(9+16+144)=√169=13. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-G03-L06-02": {
+      "prompt": "Distància de l'origen al plànol x+y+z=6 a quatre decimals.",
+      "hint": "Identifica clarament la magnitud i les seves unitats abans d'escollir fórmula.",
+      "explanation": "Distància =6/√3=2√3≈3,4641016; arrodoneix a quatre decimals."
+    },
+    "F3-B2C-G03-L06-03": {
+      "prompt": "Volum del paral·lelepípede u=(1,0, 0), v=(0,2, 0), w=(0,0, 3).",
+      "hint": "Identifica clarament la magnitud i les seves unitats abans d'escollir fórmula.",
+      "explanation": "Volum =|u·( v × w )|=6 unitats cúbiques. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-G03-L06-04": {
+      "prompt": "Com s'interpreta el signe negatiu d'un producte mixt?",
+      "hint": "Identifica clarament la magnitud i les seves unitats abans d'escollir fórmula.",
+      "explanation": "El valor absolut del producte mixt dóna el volum no negatiu."
+    },
+    "F3-B2C-G03-L06-05": {
+      "prompt": "Si el producte mixt de tres vectors és zero, què ocorre?",
+      "hint": "Identifica clarament la magnitud i les seves unitats abans d'escollir fórmula.",
+      "explanation": "Un producte mixt nul indica que no generen volum tridimensional."
+    }
+  }
+}
