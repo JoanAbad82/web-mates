@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1C-N01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1c_n01.json": "a445413c9f3f4886cdffccc0957e3207d87a9dafc75528e92606c507b0b71118",
+    "data/f3_b1c_n01_exercises.json": "154180b5ea50ad04f9cbe560d371b6dbea7821b7a973d30f9703d40f32a80a09"
+  },
+  "lessons": {
+    "B1C-N01-L01": {
+      "title": "Reals i intervals",
+      "objectives": [
+        "Operar amb intervals reals i les seves interseccions amb extrems exactes.",
+        "Traduir desigualtats i valors absoluts a intervals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Els nombres reals estan ordenats i es representen per punts de la recta. La notació [a,b] inclou extrems i (a,b) els exclou, amb variants semiobertes. Si dos intervals representen condicions simultànies, la seva intersecció reuneix els valors que compleixen ambdues. Per a una distància respecte a c, |x−c|≤r amb r≥0 equival a c−r≤x≤c+r. La solució |x−2|≤3 és [−1,5]. Aquesta propietat interpreta valor absolut com a distància sobre la recta, sense confondre-ho amb una equació que tingui sempre dues arrels aïllades. Els nombres complexos s'introduiran després, però no posseeixen un ordre lineal compatible amb les operacions de camp com els reals."
+        },
+        {
+          "body": "Resolver |x−2|≤3 condueix a −3≤x−2≤3 i, sumant 2, a −1≤x≤5; per tant [−1,5]."
+        },
+        {
+          "body": "La intersecció (−2,6]∩[1,8) és [1,6]: el 1 pertany al segon i al primer, mentre el 6 pertany a tots dos."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Reals i intervals. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Reals i intervals"
+          }
+        },
+        {
+          "body": "És |x−2|≤3 un conjunt d'exactament dos nombres?||No; és tot l'interval de distància com a màxim 3 a 2."
+        },
+        {
+          "body": "Recuperació activa: Operar amb intervals reals i les seves interseccions amb extrems exactes. Llegeix |x−c| com a distància horitzontal a c. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B1C-N01-L02": {
+      "title": "Potències, radicals i logaritmes de suport",
+      "objectives": [
+        "Transformar radicals, potències racionals i logaritmes sota dominis correctes.",
+        "Usa identitats de potències i logaritmes per a simplificar expressions."
+      ],
+      "content_blocks": [
+        {
+          "body": "Les potències d'exponents reals de base positiva permeten enllaçar radicals i logaritmes: a^(1/n)= n √a per a a>0 i n positiu. Els logaritmes reals log_b(x) exigeixen b>0, b≠1 i x>0; són inversos de l'exponencial de base b. Per exemple log_3 (81)=4 perquè 3^4=81, i 81^(1/4)=3. La propietat log_b(xy )= log_ b(x)+ log_b(y) requereix arguments positius, però la mateixa separació és falsa per a sumes. En simplificar expressions radicals no es poden sumar radicants sense justificar una identitat; √a+√b no equival en general a √(a+b). Aquest pont sosté operacions reals que més tard es distingiran de les operacions complexes."
+        },
+        {
+          "body": "De 81=3⁴ es dedueix 81^(1/4)=3 i log_3 (81)=4; ambdues descripcions es refereixen a la mateixa relació de potències."
+        },
+        {
+          "body": "Per a base 2, log ₂(8×4)= log ₂(32)=5=3+2. En canvi log ₂(8+4) no és igual a 3+2."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Potències, radicals i logaritmes de suport. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Potències, radicals i logaritmes de suport"
+          }
+        },
+        {
+          "body": "És log_ b(x+y)= log_b x+ log_b i una identitat?||No; la propietat vàlida de suma de logaritmes requereix producte d'arguments."
+        },
+        {
+          "body": "Recuperació activa: Transformar radicals, potències racionals i logaritmes sota dominis correctes. Revisa dominis abans de transformar. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B1C-N01-L03": {
+      "title": "Necessitat de complexos",
+      "objectives": [
+        "Justificar la introducció d'i mitjançant una equació sense solució real.",
+        "Distingir arrels reals de solucions complexes bàsiques."
+      ],
+      "content_blocks": [
+        {
+          "body": "En els nombres reals, el quadrat de qualsevol valor és no negatiu, de manera que x²+1=0 manca de solució real. S'amplia el sistema numèric als complexos, definint una unitat imaginària i amb i²=−1. Així, les solucions de x²+1=0 són x=±i. És important no convertir en real la arrel d'un nombre negatiu: √(−9) no és un nombre real, i el seu arrel quadrada principal en complexos s'expressa 3i. Si una equació x²=−a amb a>0, llavors les dues solucions complexes són ±i√a. La definició algebraica d'i no implica que les quantitats físiques siguin imaginàries ni atribueix ordre usual als complexos."
+        },
+        {
+          "body": "L'equació x²+9=0 implica x²=−9; les solucions complexes són 3i i −3i, perquè (3i)²=−9."
+        },
+        {
+          "body": "L'equació x²+1=0 no té arrels reals, però x=i verifica i²+1=−1+1=0. Anàlogament x=−i."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Necessitat de complexos. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Necessitat de complexos"
+          }
+        },
+        {
+          "body": "És i un nombre real situat entre −1 i 0?||No; és una unitat complexa amb quadrat −1."
+        },
+        {
+          "body": "Recuperació activa: Justificar la introducció d'i mitjançant una equació sense solució real. Si x²=−a amb a>0, no hi ha arrels reals. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B1C-N01-L04": {
+      "title": "Forma binòmica",
+      "objectives": [
+        "Expressar un complex en forma a+ bi identificant parts reals i imaginàries.",
+        "Calcula conjugats i mòduls amb representació euclidiana."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un complex s'expressa en forma binòmica z=a+ bi, on a,b són reals i i²=−1. La seva part real és Re (z)=a i la seva part imaginària és Im (z)=b, que és un nombre real, no bi. El conjugat de z és z̄=a− bi i canvia el signe de la part imaginària. El mòdul |z|=√(a²+b²) és la distància del punt (a,b) a l'origen en el pla complex. Si z=3+4i, llavors |z|=5; z̄=3−4i i z·z̄=25, sempre real no negatiu. Conjugat i oposat no són el mateix: l'oposat −z canvia ambdós signes. Cap d'aquestes magnituds és un ordre sobre els complexos."
+        },
+        {
+          "body": "Per z=3+4i, Re (z)=3, Im (z)=4, z̄=3−4i i |z|=√(9+16)=5. Comprova la igualtat amb les operacions inverses i revisa les condicions de l'exemple."
+        },
+        {
+          "body": "Per w=−2+i, el conjugat és −2−i i el mòdul √5. La part imaginària és 1, no i."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Forma binòmica. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Forma binòmica"
+          }
+        },
+        {
+          "body": "És la part imaginària de 3+4i el terme 4i?||No; Im (z)=4, el coeficient real d'i."
+        },
+        {
+          "body": "Recuperació activa: Expressar un complex en forma a+ bi identificant parts reals i imaginàries. Representa a i b com a coordenades d'un punt. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B1C-N01-L05": {
+      "title": "Operacions amb complexos",
+      "objectives": [
+        "Realitzar suma, producte i quocient de complexos en forma binòmica.",
+        "Justificar l'ús de i²=−1 i del conjugat per dividir."
+      ],
+      "content_blocks": [
+        {
+          "body": "Els complexos se sumen component a component: (a+ bi )+(c+ di )=(a+c)+(b+d)i. Per multiplicar-los s'aplica distributivitat i se substitueix i² per −1, resultant (ac − bd )+( ad + bc)i. En dividir per un complex diferent de zero pot multiplicar-se numerador i denominador pel conjugat del divisor; el nou denominador és c²+d²>0. Per exemple, (3+i)/(1−i)=(3+i)(1+i)/2=1+2i. El quocient no s'obté dividint per separat parts reals i imaginàries, ja que en general això és fals. Ha d'identificar-se un possible divisor zero abans d'operar."
+        },
+        {
+          "body": "(2+i)(3−2i)=6−4i+3i−2i²=8−i. La part real incorpora −2i²=+2. Comprova la igualtat amb les operacions inverses i revisa les condicions de l'exemple."
+        },
+        {
+          "body": "(3+i)/(1−i)=(3+i)(1+i)/(1+1)=(2+4i)/2=1+2i; el conjugat elimina i del denominador."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Operacions amb complexos. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Operacions amb complexos"
+          }
+        },
+        {
+          "body": "És (3+i)/(1−i) igual a 3−i per dividir coeficients?||No; s'usa conjugat i s'obté 1+2i."
+        },
+        {
+          "body": "Recuperació activa: Realitzar suma, producte i quocient de complexos en forma binòmica. Substitueix sempre i² per −1 abans d'agrupar. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B1C-N01-L06": {
+      "title": "Representació en pla complex",
+      "objectives": [
+        "Representar complexos com punts/vectors del pla d'Argand.",
+        "Relacionar simetries geomètriques amb conjugat, oposat i mòdul."
+      ],
+      "content_blocks": [
+        {
+          "body": "El pla complex utilitza la coordenada horitzontal per a Re(z) i la vertical per a Im(z). Així, z=2+3i correspon al punt (2,3), amb mòdul √13. El conjugat 2−3i s'obté per reflexió respecte a l'eix real, mentre l'oposat −2−3i correspon a un gir de 180° al voltant de l'origen. Sumar complexos equival a sumar vectors en el pla, encara que multiplicar complexos introdueix a més escalat i gir. Per a z diferent de zero, el seu argument és la direcció del vector des de l'eix real positiu i requereix especificar quadrant i unitat angular. Per exemple, i té argument π/2 radians o 90°, però un complex amb part real negativa no sempre admet usar una arctangent simple sense corregir quadrant."
+        },
+        {
+          "body": "Per z=2+3i, el seu punt és (2,3) i el seu conjugat (2, −3), simètric respecte a l'eix real; tots dos tenen mòdul √13."
+        },
+        {
+          "body": "El nombre i està en (0,1) amb mòdul 1 i argument 90°; −i està en (0, −1) i el seu argument pot indicar-se com −90°."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Representació en pla complex. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Representació en pla complex"
+          }
+        },
+        {
+          "body": "El conjugat de 2+3i és −2−3i?||No; el conjugat és 2−3i i l'oposat −2−3i."
+        },
+        {
+          "body": "Recuperació activa: Representar complexos com a punts/vectors del pla d'Argand. L'eix real és horitzontal; l'imaginari, vertical. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1C-N01-L01-01": {
+      "prompt": "En |x−2|≤3, extrem inferior de l'interval solució?",
+      "hint": "Llegeix |x−c| com a distància horitzontal a c.",
+      "explanation": "L'extrem inferior és c−r=2−3=−1. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1C-N01-L01-02": {
+      "prompt": "En |x−2|≤3, extrem superior de l'interval solució?",
+      "hint": "Llegeix |x−c| com a distància horitzontal a c.",
+      "explanation": "L'extrem superior és 2+3=5. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1C-N01-L01-03": {
+      "prompt": "Longitud de [1,6], intersecció de (−2,6] i [1,8)?",
+      "hint": "Llegeix |x−c| com a distància horitzontal a c.",
+      "explanation": "La longitud 6−1=5; ambdós extrems pertanyen al conjunt."
+    },
+    "F3-B1C-N01-L01-04": {
+      "prompt": "Com s'interpreta |x−c|≤r amb r≥0?",
+      "hint": "Llegeix |x−c| com a distància horitzontal a c.",
+      "explanation": "El valor absolut mesura la distància en la recta."
+    },
+    "F3-B1C-N01-L01-05": {
+      "prompt": "Quina representa la intersecció d'intervals?",
+      "hint": "Llegeix |x−c| com a distància horitzontal a c.",
+      "explanation": "Intersecció lògica correspon a complir totes dues desigualtats."
+    },
+    "F3-B1C-N01-L02-01": {
+      "prompt": "Calcula 81 elevat a l'exponent 1/4.",
+      "hint": "Revisa dominis abans de transformar.",
+      "explanation": "La quarta arrel positiva de 81 és 3. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1C-N01-L02-02": {
+      "prompt": "Quant és log ₃(81)?",
+      "hint": "Revisa dominis abans de transformar.",
+      "explanation": "3⁴=81, per això log ₃(81)=4. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1C-N01-L02-03": {
+      "prompt": "Quant val log ₂(32)?",
+      "hint": "Revisa dominis abans de transformar.",
+      "explanation": "2⁵=32, de manera que el logaritme és cinc."
+    },
+    "F3-B1C-N01-L02-04": {
+      "prompt": "Quina propietat és vàlida per a log_b(xy) si x, y>0?",
+      "hint": "Revisa dominis abans de transformar.",
+      "explanation": "La suma de logaritmes correspon al producte d'arguments."
+    },
+    "F3-B1C-N01-L02-05": {
+      "prompt": "Què s'exigeix per a interpretar a^(1/n) en reals amb n parell?",
+      "hint": "Revisa dominis abans de transformar.",
+      "explanation": "Les arrels d'índex parell de reals negatius no existeixen en R."
+    },
+    "F3-B1C-N01-L03-01": {
+      "prompt": "Per a x=3i, quant val la part real de x²?",
+      "hint": "Si x²=−a amb a>0, no hi ha arrels reals.",
+      "explanation": "i²=−1; (3i)²=9i²=−9. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1C-N01-L03-02": {
+      "prompt": "En complexos, arrel quadrada principal de −9: coeficient d'i?",
+      "hint": "Si x²=−a amb a>0, no hi ha arrels reals.",
+      "explanation": "√(−9)=3i com arrel principal, perquè (3i)²=−9."
+    },
+    "F3-B1C-N01-L03-03": {
+      "prompt": "Resol x²+16=0 en C. Mòdul de cada arrel?",
+      "hint": "Si x²=−a amb a>0, no hi ha arrels reals.",
+      "explanation": "Les arrels són ±4i i cadascuna té mòdul 4."
+    },
+    "F3-B1C-N01-L03-04": {
+      "prompt": "Per què x²+1=0 no té solucions reals?",
+      "hint": "Si x²=−a amb a>0, no hi ha arrels reals.",
+      "explanation": "x²=−1 no té solució real, d'aquí l'ampliació a C."
+    },
+    "F3-B1C-N01-L03-05": {
+      "prompt": "Quina identitat defineix la unitat imaginària i?",
+      "hint": "Si x²=−a amb a>0, no hi ha arrels reals.",
+      "explanation": "La unitat imaginària permet resoldre equacions sense arrels reals."
+    },
+    "F3-B1C-N01-L04-01": {
+      "prompt": "Per a z=3+4i, calcula el seu mòdul.",
+      "hint": "Representa a i b com a coordenades d'un punt.",
+      "explanation": "|z|=√(3²+4²)=5. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1C-N01-L04-02": {
+      "prompt": "Per a w=−2+i, quina és la seva part real?",
+      "hint": "Representa a i b com a coordenades d'un punt.",
+      "explanation": "La part real de −2+i és −2. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1C-N01-L04-03": {
+      "prompt": "Per a z=3+4i, part imaginària del seu conjugat?",
+      "hint": "Representa a i b com a coordenades d'un punt.",
+      "explanation": "Conjugar canvia 4i per −4i; Im (z̄)=−4. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1C-N01-L04-04": {
+      "prompt": "En z=a+ bi, què és Im(z)?",
+      "hint": "Representa a i b com a coordenades d'un punt.",
+      "explanation": "La part imaginària es defineix com a coeficient d'i."
+    },
+    "F3-B1C-N01-L04-05": {
+      "prompt": "Quin és el conjugat de 3+4i?",
+      "hint": "Representa a i b com a coordenades d'un punt.",
+      "explanation": "El conjugat inverteix només el signe del coeficient imaginari."
+    },
+    "F3-B1C-N01-L05-01": {
+      "prompt": "Calcula la part real de (2+i)(3−2i).",
+      "hint": "Substitueix sempre i² per −1 abans d'agrupar.",
+      "explanation": "Real = ac − bd =6−(−2)=8. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1C-N01-L05-02": {
+      "prompt": "Calcula la part imaginària de (2+i)(3−2i).",
+      "hint": "Substitueix sempre i² per −1 abans d'agrupar.",
+      "explanation": "Im = ad + bc =−4+3=−1. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1C-N01-L05-03": {
+      "prompt": "Calcula la part imaginària de (3+i)/(1−i).",
+      "hint": "Substitueix sempre i² per −1 abans d'agrupar.",
+      "explanation": "Multiplica per 1+i: numerador 2+4i, denominador 2; Im =2."
+    },
+    "F3-B1C-N01-L05-04": {
+      "prompt": "Què s'usa en dividir z per c+ di, divisor no nul?",
+      "hint": "Substitueix sempre i² per −1 abans d'agrupar.",
+      "explanation": "El conjugat porta a denominador real c²+d²."
+    },
+    "F3-B1C-N01-L05-05": {
+      "prompt": "Quin resultat dóna (2+i)(3−2i)?",
+      "hint": "Substitueix sempre i² per −1 abans d'agrupar.",
+      "explanation": "La distributivitat i i²=−1 donen real 8 i imaginària −1."
+    },
+    "F3-B1C-N01-L06-01": {
+      "prompt": "Per a z=2+3i, calcula |z| aproximadament a 4 decimals.",
+      "hint": "L'eix real és horitzontal; l'imaginari, vertical.",
+      "explanation": "|z|=√13≈3,605551; arrodoniment a 3,6056. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1C-N01-L06-02": {
+      "prompt": "Per a z=2+3i, part imaginària del conjugat z̄?",
+      "hint": "L'eix real és horitzontal; l'imaginari, vertical.",
+      "explanation": "El conjugat és 2−3i i la seva part imaginària és −3."
+    },
+    "F3-B1C-N01-L06-03": {
+      "prompt": "Angle en graus de l'argument principal d'i?",
+      "hint": "L'eix real és horitzontal; l'imaginari, vertical.",
+      "explanation": "i està en l'eix imaginari positiu, 90° respecte a l'eix real."
+    },
+    "F3-B1C-N01-L06-04": {
+      "prompt": "Quina transformació geomètrica correspon a conjugar un complex?",
+      "hint": "L'eix real és horitzontal; l'imaginari, vertical.",
+      "explanation": "z=a+ bi i z̄=a− bi són simètrics respecte d'eix real."
+    },
+    "F3-B1C-N01-L06-05": {
+      "prompt": "Quina és la diferència entre conjugat i oposat de 2+3i?",
+      "hint": "L'eix real és horitzontal; l'imaginari, vertical.",
+      "explanation": "Conjugar inverteix només la part imaginària; oposar inverteix ambdues."
+    }
+  }
+}

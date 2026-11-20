@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2S-A02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2s_a02.json": "a1c7f2d650af85c35bc4fab2311770d9033f4991fbd0317009bdd6b394105ac6",
+    "data/f3_b2s_a02_exercises.json": "434f0a0bdcceef0ac5a302553b7d4b5c57416ee74033a69c3dbe2df4a7283303"
+  },
+  "lessons": {
+    "B2S-A02-L01": {
+      "title": "Variables de decisió",
+      "objectives": [
+        "Triar variables de decisió i funció objectiu amb unitats coherents.",
+        "Distingir hipòtesis de divisibilitat i no negativitat en un model lineal."
+      ],
+      "content_blocks": [
+        {
+          "body": "La programació lineal optimitza una funció objectiu lineal subjecta a desigualtats lineals. Primer es declaren variables de decisió amb significat i unitats: x = quantitat del producte A, y = quantitat del producte B. Per a un marge de 3 € per A i 5 € per B, l'objectiu és maximitzar Z=3x+5y euros; la sola funció objectiu no determina l'òptim sense restriccions. Les quantitats no negatives compleixen x≥0, y≥0. El model de programació lineal contínua admet quantitats fraccionàries; si són peces indivisibles es requereix després comprovar solucions senceres o usar programació sencera, que és un problema diferent. Un coeficient 3 € per peça no representa preu de venda si s'ha definit com a benefici. Tota decisió derivada del model és il·lustrativa i no substitueix dades econòmiques revisades."
+        },
+        {
+          "body": "Es venen lots A i B; x i i indiquen lots i el benefici per lot és 3 € i 5 €. L'objectiu és Z=3x+5y, i si x=2 i y=1 s'obtenen 11 €."
+        },
+        {
+          "body": "Si hi ha 4 lots A i 2 lots B, Z=3·4+5·2=22 €. L'expressió Z=5x+3y invertiria erròniament els marges declarats."
+        },
+        {
+          "body": "Variables, objectiu i no negativitat. SVG local de suport amb taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Variables, objectiu i no negativitat. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre de percepció del color.",
+          "visual_spec": {
+            "title": "Variables, objectiu i no negativitat"
+          }
+        },
+        {
+          "body": "Pot declarar-se viable qualsevol parell de quantitats positives sense comprovar recursos disponibles?||No; falten les restriccions del model."
+        },
+        {
+          "body": "Recuperació activa: La programació lineal optimitza una funció objectiu lineal subjecta a desigualtats lineals. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    },
+    "B2S-A02-L02": {
+      "title": "Restriccions lineals",
+      "objectives": [
+        "Traduir límits de primeres matèries i capacitat en inequacions.",
+        "Distingir semiplà permès de la seva frontera lineal i comprovar punts."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una restricció lineal com 2x+y≤8 descriu un semiplà tancat, inclosa la recta frontera 2x+y=8. Si a més x+y≤6 i x, y≥0, la regió factible és la intersecció de tots els semiplans; cada restricció ha de mantenir-se, no basta comprovar només una. El parell (x, y)=(2,3) satisfà 2·2+3=7≤8 i 2+3=5≤6. El parell (4,1) viola 2·4+1=9>8 encara que compleixi x+y≤6. Les desigualtats ≥ imposen un mínim en lloc de màxim, i canviar el seu sentit transforma el conjunt factible. En situacions reals, la quantitat pot ser sencera i la matriu de recursos pot incloure costos fixos no lineals: les solucions del model continu són proposicions condicionades."
+        },
+        {
+          "body": "Restriccions 2x+y≤8, x+y≤6, x≥0, y≥0. Per (2,3) es comprova 7≤8 i 5≤6, després és factible."
+        },
+        {
+          "body": "Per (4,1), 2·4+1=9 supera 8; el punt és inviable encara que 4+1=5 no supera el segon límit."
+        },
+        {
+          "body": "Intersecció de restriccions lineals. SVG local de suport amb taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Intersecció de restriccions lineals. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre de percepció del color.",
+          "visual_spec": {
+            "title": "Intersecció de restriccions lineals"
+          }
+        },
+        {
+          "body": "Fins a satisfer una sola de les restriccions quan el sistema exigeix diverses simultàniament?||No; un punt factible satisfà totes."
+        },
+        {
+          "body": "Recuperació activa: Una restricció lineal com 2x+y≤8 descriu un semiplà tancat, inclosa la recta frontera 2x+y=8. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    },
+    "B2S-A02-L03": {
+      "title": "Regió factible",
+      "objectives": [
+        "Construir la regió factible mitjançant intersecció de semiplans.",
+        "Identificar vèrtexs per interseccions exactes i no per inspecció visual."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per x≥0, y≥0, x≤4, y≤3 i x+y≤6, la regió factible és un polígon convex tancat i acotat. Els seus vèrtexs s'obtenen creuant parells de fronteres i descartant interseccions que incompleixen alguna desigualtat: (0,0), (4,0), (4,2), (3,3), (0,3). No és vàlid acceptar (4,3), perquè 4+3=7>6. Un dibuix amb eixos aproximats ajuda a identificar la regió, però els valors i la inclusió de les fronteres es justifiquen per substitució exacta. La regió pot resultar buida (restriccions incompatibles), no acotada, o reduir-se a un segment o punt. Només si el conjunt és no buit i compacte una funció objectiu contínua aconsegueix extrems globals, encara que els òptims poden no ser únics."
+        },
+        {
+          "body": "Amb x≤4, y≤3, x+y≤6, x, y≥0, la intersecció de x=4 amb x+y=6 és (4,2), que satisfà y≤3."
+        },
+        {
+          "body": "La intersecció de y=3 amb x+y=6 és (3,3). En canvi (4,3) viola x+y≤6, per tant no és vèrtex factible."
+        },
+        {
+          "body": "Regió factible exacta de cinc vèrtexs. SVG local de suport amb taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Regió factible exacta de cinc vèrtexs. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre de percepció del color.",
+          "visual_spec": {
+            "title": "Regió factible exacta de cinc vèrtexs"
+          }
+        },
+        {
+          "body": "La intersecció de dues rectes frontera és sempre vèrtex factible del sistema enter?||No; ha de satisfer les altres inequacions."
+        },
+        {
+          "body": "Recuperació activa: Per x≥0, y≥0, x≤4, y≤3 i x+y≤6, la regió factible és un polígon convex tancat i acotat. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    },
+    "B2S-A02-L04": {
+      "title": "Vèrtexs i funció objectiu",
+      "objectives": [
+        "Avaluar una funció objectiu en vèrtexs factibles.",
+        "Explicar per què un òptim lineal acotat s'aconsegueix en algun vèrtex."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a un polígon convex no buit, tancat i acotat definit per restriccions lineals, una funció objectiu lineal assoleix màxim i mínim en almenys un vèrtex; pot assolir un mateix valor sobre una aresta completa. A la regió x≥0, y≥0, x≤4, y≤3, x+y≤6, amb vèrtexs (0,0), (4,0), (4,2), (3,3), (0,3), l'objectiu Z=3x+5y presa respectivament 0,12, 22,24, 15 euros. El màxim és 24 en (3,3). Comprova només l'intercepte més llunyà d'una recta no demostra optimalitat. La gràfica de rectes de nivell 3x+5y=c es desplaça paral·lelament fins a contactar l'últim punt factible, però la taula de valors exactes és la prova. Si un domini no està acotat, pot no existir màxim: no extrapolar el criteri sense les seves hipòtesis."
+        },
+        {
+          "body": "Avalua Z=3x+5y: en (4,2) val 3·4+5·2=22; en (3,3) val 9+15=24, major."
+        },
+        {
+          "body": "En (0,3) Z=15 i en (4,0) Z=12. Comparats els cinc vèrtexs, el major resultat és 24 en (3,3)."
+        },
+        {
+          "body": "Màxim d'objectiu lineal en polígon. SVG local de suport amb taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Màxim d'objectiu lineal en polígon. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre de percepció del color.",
+          "visual_spec": {
+            "title": "Màxim d'objectiu lineal en polígon"
+          }
+        },
+        {
+          "body": "Pot declarar-se màxim sense avaluar la funció objectiu en tots els vèrtexs rellevants?||No; cal comparar candidats o demostrar una cota."
+        },
+        {
+          "body": "Recuperació activa: Per a un polígon convex no buit, tancat i acotat definit per restriccions lineals, una funció objectiu lineal assoleix màxim i mínim en almenys un vèrtex; pot assolir un mateix valor sobre una aresta completa. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    },
+    "B2S-A02-L05": {
+      "title": "Optimització gràfica",
+      "objectives": [
+        "Resol una optimització lineal bidimensional amb regió acotada.",
+        "Comprovar possibilitats d'òptims múltiples i inexistència de màxim."
+      ],
+      "content_blocks": [
+        {
+          "body": "El mètode gràfic consisteix a escriure variables i unitats, formular desigualtats, trobar regió factible, enumerar vèrtexs exactes, avaluar l'objectiu i comprovar la solució. Amb x+y≤6, x≤4, y≤3 i no negativitat, l'objectiu Z=x+y és màxim 6 en tota l'aresta entre (4,2) i (3,3): no hi ha una única solució encara que tots dos extrems siguin vèrtexs òptims. Si es maximitza Z=3x+5y, l'òptim únic en aquests vèrtexs és (3,3) amb 24. Quan el sistema és no acotat i objectiu augmenta indefinidament en una direcció permesa no existeix màxim finit; quan la intersecció de restriccions és buida no existeix solució factible. És essencial diferenciar aquests casos, i no afirmar sempre que el mètode produeix un únic vèrtex."
+        },
+        {
+          "body": "Amb Z=x+y sota x+y≤6, x≤4, y≤3, x, y≥0, tant (4,2) com (3,3) donen 6; tot segment de l'aresta és òptim."
+        },
+        {
+          "body": "Maximitzant Z=3x+5y, Z(3,3)=24 i Z(4,2)=22; l'òptim ja no és una aresta completa sinó el vèrtex (3,3)."
+        },
+        {
+          "body": "Optim múltiples sobre una aresta. SVG local de suport amb taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Optim múltiples sobre una aresta. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre de percepció del color.",
+          "visual_spec": {
+            "title": "Optim múltiples sobre una aresta"
+          }
+        },
+        {
+          "body": "El mètode dels vèrtexs garanteix sempre un únic punt òptim?||No; pot haver-hi un segment òptim, regió buida o objectiu no acotat."
+        },
+        {
+          "body": "Recuperació activa: El mètode gràfic consisteix a escriure variables i unitats, formular desigualtats, trobar regió factible, enumerar vèrtexs exactes, avaluar l'objectiu i comprovar la solució. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    },
+    "B2S-A02-L06": {
+      "title": "Interpretació econòmica i sensibilitat inicial",
+      "objectives": [
+        "Interpretar solucions contínues, senceres i canvis en paràmetres amb límits de validesa.",
+        "Comprovar factibilitat i condicions abans de traslladar un òptim a decisions reals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un problema de producció amb dos productes, recursos limitats i objectiu lineal pot representar-se en una regió convexa contínua. El seu òptim (3,3) per Z=3x+5y i la regió x+y≤6, x≤4, y≤3,x, y≥0 és factible i íntegre. Si l'objectiu canviés a Z=5x+3y, els vèrtexs donarien màxim en (4,2) amb 26 enfront de (3,3) amb 24; modificar coeficients pot desplaçar l'òptim. Una petita variació en la capacitat x+y≤6 pot alterar regió i vèrtexs, per la qual cosa la solució prèvia ja no està garantida. En problemes de béns indivisibles, un òptim fraccionari del model continu exigeix contrastar candidats enters, no arrodonir automàticament. Els coeficients i recursos són sintètics i no justifiquen recomanacions de negocis reals ni decisions sense dades i revisió humana."
+        },
+        {
+          "body": "Amb Z=5x+3y, Z(4,2)=20+6=26 i Z(3,3)=15+9=24; el major entre ambdós és 26 en (4,2)."
+        },
+        {
+          "body": "Amb Z=3x+5y, el màxim del mateix conjunt s'obté en (3,3) i val 24. Canviar marges pot canviar la decisió."
+        },
+        {
+          "body": "Sensibilitat al vector objectiu. SVG local de suport amb taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Sensibilitat al vector objectiu. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre de percepció del color.",
+          "visual_spec": {
+            "title": "Sensibilitat al vector objectiu"
+          }
+        },
+        {
+          "body": "Es manté forçosament l'òptim original en canviar el benefici unitari?||No; ha de tornar a avaluar-se l'objectiu sobre els vèrtexs factibles."
+        },
+        {
+          "body": "Recuperació activa: Un problema de producció amb dos productes, recursos limitats i objectiu lineal pot representar-se en una regió convexa contínua. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2S-A02-L01-01": {
+      "prompt": "En Variables de decisió: En Z=3x+5y euros, calcula l'objectiu en (x, y)=(2,1). Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 11. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L01-02": {
+      "prompt": "En Variables de decisió: En Z=3x+5y euros, calcula l'objectiu en (x, y)=(4,2). Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 22. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L01-03": {
+      "prompt": "En Variables de decisió: En Z=5x+3y euros, calcula l'objectiu en (x, y)=(3,3). Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 24. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L01-04": {
+      "prompt": "En Variables de decisió: El parell (-1,2) satisfà x≥0 e y≥0? Sí / No. Tria l'opció vàlida.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L01-05": {
+      "prompt": "En Variables de decisió: La funció objectiu Z=3x+5y constitueix per si sola un conjunt suficient de restriccions de recursos? Sí / No. Tria l'opció vàlida.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L02-01": {
+      "prompt": "En Restriccions lineals: És factible (2,3) per a la inequació 2x+1y≤8? Sí / No. Tria l'opció vàlida.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: Sí. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L02-02": {
+      "prompt": "En Restriccions lineals: És factible (4,1) per a la inequació 2x+1y≤8? Sí / No. Tria l'opció vàlida.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L02-03": {
+      "prompt": "En Restriccions lineals: Calcula folgura de 2x+1y≤8 per (2,3): c− ax − by. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 1. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L02-04": {
+      "prompt": "En restriccions lineals: satisfà (2,3) simultàniament 2x+1y≤8, 1x+1y≤6, x, y≥0? Sí / No. Tria l'opció vàlida.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: Sí. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L02-05": {
+      "prompt": "En Restriccions lineals: Deu un punt factible satisfer totes les restriccions simultànies del model lineal? Sí / No. Tria l'opció vàlida.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: Sí. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L03-01": {
+      "prompt": "A Regió factible: Intersecció de x=4 amb x+y=6. Calcula la coordenada y. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 2. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L03-02": {
+      "prompt": "A Regió factible: Intersecció de y=3 amb x+y=6. Calcula la coordenada x. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 3. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L03-03": {
+      "prompt": "A Regió factible: És factible (4,3) per a la inequació 1x+1y≤6? Sí / No. Tria l'opció vàlida.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L03-04": {
+      "prompt": "En Regió factible: La intersecció de dues fronteres és forçosament factible per a totes les altres inequacions? Sí / No. Tria l'opció vàlida.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L03-05": {
+      "prompt": "A Regió factible: Per a x, y≥0, x≤4, y≤3, x+y≤6, quants VÈRTEXs diferents té la regió poligonal? Tria l'opció vàlida.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 5. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L04-01": {
+      "prompt": "En Vèrtexs i funció objectiu: En Z=3x+5y euros, calcula l'objectiu en (x, y)=(4,2). Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 22. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L04-02": {
+      "prompt": "En Vèrtexs i funció objectiu: En Z=3x+5y euros, calcula l'objectiu en (x, y)=(3,3). Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 24. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L04-03": {
+      "prompt": "En vèrtexs i funció objectiu: Maximitza Z=3x+5y sobre vèrtexs (0,0), (4,0), (4,2), (3,3), (0,3). Calcula el valor màxim. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 24. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L04-04": {
+      "prompt": "En vèrtexs i funció objectiu: Maximitza Z=3x+5y sobre vèrtexs (0,0), (4,0), (4,2), (3,3), (0,3). Identifica vèrtex òptim: 3,3; 4,2; 0,3. Tria l'opció vàlida.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 3,3. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L04-05": {
+      "prompt": "En Vèrtexs i funció objectiu: Tota regió factible NO ACOTADA garanteix un màxim FINIT d'una funció lineal? Sí / No. Tria l'opció vàlida.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L05-01": {
+      "prompt": "A Optimització gràfica: Maximitza Z=1x+1y sobre vèrtexs (0,0), (4,0), (4,2), (3,3), (0,3). Calcula el valor màxim. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 6. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L05-02": {
+      "prompt": "En Optimització gràfica: En Z=1x+1y euros, calcula l'objectiu en (x, y)=(4,2). Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 6. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L05-03": {
+      "prompt": "En Optimització gràfica: En Z=1x+1y euros, calcula l'objectiu en (x, y)=(3,3). Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 6. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L05-04": {
+      "prompt": "En Optimització gràfica: Si Z=x+y es maximitza amb x+y≤6, x≤4, y≤3, x, y≥0, hi ha obligatòriament òptim ÚNIC? Sí / No. Tria l'opció vàlida.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L05-05": {
+      "prompt": "En Optimització gràfica: Si les restriccions lineals formen una regió factible BUIDA, pot existir solució factible? Sí / No. Tria l'opció vàlida.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L06-01": {
+      "prompt": "En Interpretació econòmica i sensibilitat inicial: Maximitza Z=5x+3y sobre vèrtexs (0,0), (4,0), (4,2), (3,3), (0,3). Calcula el valor màxim. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 26. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L06-02": {
+      "prompt": "En Interpretació econòmica i sensibilitat inicial: En Z=5x+3y euros, calcula l'objectiu en (x, y)=(4,2). Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 26. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L06-03": {
+      "prompt": "En Interpretació econòmica i sensibilitat inicial: En Z=5x+3y euros, calcula l'objectiu en (x, y)=(3,3). Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: 24. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L06-04": {
+      "prompt": "En Interpretació econòmica i sensibilitat inicial: Canviar Z=3x+5y per Z=5x+3y conserva NECESSÀRIAMENT el mateix vèrtex òptim? Sí / No. Tria l'opció vàlida.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-B2S-A02-L06-05": {
+      "prompt": "En Interpretació econòmica i sensibilitat inicial: Una solució òptima FRACCIONÀRIA de programació lineal contínua representa sempre un nombre vàlid de peces indivisibles? Sí / No. Tria l'opció vàlida.",
+      "hint": "Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Escriu totes les inequacions, comprova domini x, y≥0 i substitueix punts en les restriccions. Calcula les interseccions exactes, descarta punts no factibles i compara Z= ax + by en cada vèrtex; comprova òptims múltiples, absència de cotes i unitats. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    }
+  }
+}

@@ -1,0 +1,407 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E4A-F01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e4a_f01.json": "e98a50541bff730ba49c95db1182246065801d3f28f52eb7cdcb7827551e5947",
+    "data/f3_e4a_f01_exercises.json": "39fe7ee4e3ad46436809a14fc96adac5827df3f2b85f5d843d1c85f4372bb984"
+  },
+  "lessons": {
+    "E4A-F01-L01": {
+      "title": "Funcions i domini realista",
+      "objectives": [
+        "Determinar dominis realistes i distingir-los de dominis algebraics.",
+        "Explicar restriccions de quantitats, temps i preus amb unitats i context."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una funció assigna una única sortida a cada entrada del domini. El domini algebraic de f(x)=10−2x és tot R, però si x representa unitats produïdes i f preu no negatiu, el model contextual pot limitar-se a 0≤x≤5 i a valors enters. En un quocient f(x)=12/x s'exclou x=0 fins i tot abans d'imposar que el nombre de persones sigui positiu. El recorregut contextual s'obté avaluant la funció sobre les entrades admissibles, no sobre nombres fora del problema. Per estudiar gràfiques de mesures, s'han d'especificar eixos, unitats, precisió i si els punts entre observacions tenen significat. No tota corba contínua representa un fenomen definit per a qualsevol real; la interpretació antecedeix al càlcul."
+        },
+        {
+          "body": "Si C(n)=5+3n per a n entrades senceres no negatives, n=4 produeix C(4)=17 €. El valor C(4,5) manca de sentit si n compta entrades indivisibles."
+        },
+        {
+          "body": "Per a p(x)=20−2x preu en euros, exigir p≥0 i x≥0 dóna 0≤x≤10; no s'extrapola a preus negatius."
+        },
+        {
+          "body": "Domini realista d'una tarifa. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Domini realista d'una tarifa. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Domini realista d'una tarifa"
+          }
+        },
+        {
+          "body": "És sempre vàlid considerar nombres negatius d'unitats venudes només perquè una fórmula afí els accepta?||No; el domini físic pot restringir-se a enters no negatius."
+        },
+        {
+          "body": "Recuperació activa: Una funció assigna una única sortida a cada entrada del domini. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    },
+    "E4A-F01-L02": {
+      "title": "Lineals i afins",
+      "objectives": [
+        "Identificar pendent, creixement i quota fixa de models afins.",
+        "Resol interseccions de rectes per comparar tarifes sota un domini."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una funció afí f(x)= mx +b té pendent constant m i valor inicial b si x=0 és admissible. Si m>0 la recta creix i si m<0 decreix; si m=0 és constant. Comparar dues tarifes exigeix igualar expressions: A(x)=5+2x i B(x)=1+3x són iguals quan x=4. Això marca un llindar econòmic, però per a x que compta productes només s'usen enters. Les coordenades del punt de tall han d'acompanyar-se d'unitats; una solució negativa pot ser matemàticament vàlida i socialment inadmissible. La taxa de variació mitjana d'una funció afí sempre coincideix amb el seu pendent, però no ocorre així en models no lineals."
+        },
+        {
+          "body": "Per a dos plans A(x)=5+2x i B(x)=1+3x, la igualtat és 5+2x=1+3x i x=4, amb cost 13 €."
+        },
+        {
+          "body": "Si f(t)=20−3t, el pendent és −3 unitats per temps i f(2)=14; el model només és realista abans de valors negatius."
+        },
+        {
+          "body": "Llindar de dos plans de cost. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Llindar de dos plans de cost. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Llindar de dos plans de cost"
+          }
+        },
+        {
+          "body": "En C(n)=5+2n quina és la quota fixa i quin l'increment?||Quota fixa 5; increment 2 per cada unitat de n."
+        },
+        {
+          "body": "Recuperació activa: Una funció afí f(x)= mx +b té pendent constant m i valor inicial b si x=0 és admissible. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    },
+    "E4A-F01-L03": {
+      "title": "quadràtiques",
+      "objectives": [
+        "Localitzar vèrtexs i extrems en funcions quadràtiques contextualitzades.",
+        "Distingir màxim algebraic de màxim restringit a un interval de viabilitat."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una quadràtica f(x)=a(x−h)²+k té vèrtex (h,k) i eix de simetria x=h. Si a<0, el vèrtex és màxim global sobre R; si a>0, mínim. En problemes d'ingressos, la variable pot estar restringida a quantitats no negatives i potser a un interval tancat: en tal cas es compara el vèrtex quan està dins i les fronteres. Per R(q)=−q²+10q amb 0≤q≤10, la forma 25−(q−5)² mostra ingrés màxim 25 en q=5. Si el producte només pot vendre's en unitats senceres, es consideren enters propers al vèrtex. Els talls amb l'eix no sempre equivalen a solucions econòmicament vàlides fora del domini físic."
+        },
+        {
+          "body": "Si R(q)=−q²+10q, el vèrtex és q=5 i ingrés R(5)=25; en els extrems 0 i 10 l'ingrés és 0."
+        },
+        {
+          "body": "Per a C(x)=(x−3)²+4 i x∈[0,5], C(3)=4 és mínim. Comparar també C(0)=13 i C(5)=8 confirma el resultat."
+        },
+        {
+          "body": "Ingrés màxim en una paràbola. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Ingrés màxim en una paràbola. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Ingrés màxim en una paràbola"
+          }
+        },
+        {
+          "body": "Un vèrtex fora del domini de vendes es pot acceptar automàticament com a màxim factible?||No: només importen els valors permesos, inclòs la vora."
+        },
+        {
+          "body": "Recuperació activa: Una quadràtica f(x)=a(x−h)²+k té vèrtex (h,k) i eix de simetria x=h. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    },
+    "E4A-F01-L04": {
+      "title": "Inverses i altres no lineals senzilles",
+      "objectives": [
+        "Interpretar funcions inversament proporcionals i les seves asímptotes.",
+        "Comparar models de cost per persona i efectes de duplicar entrades."
+      ],
+      "content_blocks": [
+        {
+          "body": "En un repartiment uniforme de cost fix K entre n participants, p(n)=K/n amb n>0 i normalment n enter. Si K=24 €, amb n=3 cada persona paga 8 €, i amb n=6 paga 4 €. El producte n·p(n)=K es manté constant, però la quota per persona disminueix amb n. La funció matemàtica té una asímptota vertical en x=0 i una horitzontal y=0, sense que es pugui emprar x=0 en el repartiment. En contextos físics no s'utilitza la branca de nombres negatius si no representen participants. No s'ha de confondre reducció a la meitat del preu individual amb reducció del cost total; el model manté el total K."
+        },
+        {
+          "body": "Un sopar de 24 € es divideix per parts iguals: p(n)=24/n. Amb 8 persones es paguen 3 € per persona."
+        },
+        {
+          "body": "Amb un mateix treball de 12 hores-persona, t(n)=12/n i t(3)=4 h; duplicar treballadors a 6 redueix el temps model a 2 h."
+        },
+        {
+          "body": "Quota individual d'una despesa fixa. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Quota individual d'una despesa fixa. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Quota individual d'una despesa fixa"
+          }
+        },
+        {
+          "body": "Si dupliquem participants canvia el cost total K en K/n?||No, el cost total roman K; canvia la quota individual."
+        },
+        {
+          "body": "Recuperació activa: En un repartiment uniforme de cost fix K entre n participants, p(n)=K/n amb n>0 i normalment n enter. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    },
+    "E4A-F01-L05": {
+      "title": "Creixement i decreixement",
+      "objectives": [
+        "Distingir funcions creixents, decreixents i constants per intervals.",
+        "Reconèixer que una taxa global nul·la no descarta canvis interiors."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una funció és creixent en un interval si en augmentar les entrades no disminueixen les sortides; la versió estricta exigeix augment. Per a una paràbola (x−2)², la funció decreix fins a x=2 i creix després, per la qual cosa no pot qualificar-se de creixent en tot R. En una funció afí m>0 implica creixement constant i m<0 decreixement. Una comparació de només dos valors permet obtenir la variació neta, però no demostra monotonia en tot l'interval. Els màxims i mínims es justifiquen pel model, no només pels píxels d'una gràfica. En contextos de preus, el domini restringit pot alterar els trams pertinents, per exemple limitar-se a q≥0."
+        },
+        {
+          "body": "f(x)=(x−2)² té mínim 0 en x=2: decreix en (−∞, 2] i creix en [2, +∞)."
+        },
+        {
+          "body": "g(x)=−2x+10 decreix en tot R perquè el seu pendent és −2, encara que en el context no s'acceptin preus negatius."
+        },
+        {
+          "body": "Dos intervals de monotonia. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Dos intervals de monotonia. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Dos intervals de monotonia"
+          }
+        },
+        {
+          "body": "Què podem concloure de f(0)=f(4) per a f(x)=(x−2)²?||Només igualtat d'extrems; f primer decreix i després creix."
+        },
+        {
+          "body": "Recuperació activa: Una funció és creixent en un interval si en augmentar les entrades no disminueixen les sortides; la versió estricta exigeix augment. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    },
+    "E4A-F01-L06": {
+      "title": "Taxes mitjanes de canvi",
+      "objectives": [
+        "Calcular taxes mitjanes de canvi exactes en models lineals i quadràtics.",
+        "Interpretar el signe, unitats i límits d'una taxa mitjana."
+      ],
+      "content_blocks": [
+        {
+          "body": "La taxa mitjana de variació de f sobre [a,b] amb a≠b és [f(b)−f(a)]/(b−a), que coincideix amb el pendent d'una recta secant. Si f expressa ingressos en euros i x quantitat, la taxa té unitats d'euros per unitat de producte. Per f(x)=x², entre x=1 i x=3 la taxa val (9−1)/2=4, mentre que entre 2 i 4 val (16−4)/2=6; per tant no és constant. Per f(x)=3x+5, la taxa és sempre 3, independentment de l'interval. Una mitjana negativa expressa descens net, però no indica necessàriament que la funció decreixi en tots els instants. Si els valors dels extrems coincideixen, la taxa mitjana és zero, encara que internament pugui haver-hi un màxim o un mínim."
+        },
+        {
+          "body": "Per f(x)=x² en [1,3] s'obté taxa mitjana (9−1)/(3−1)=4 unitats de sortida per entrada."
+        },
+        {
+          "body": "Per a C(x)=5+2x en [2,7], la taxa mitjana és [19−9]/5=2 euros per unitat, igual al pendent."
+        },
+        {
+          "body": "Secant i taxa mitjana quadràtica. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Secant i taxa mitjana quadràtica. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Secant i taxa mitjana quadràtica"
+          }
+        },
+        {
+          "body": "Una taxa mitjana 0 prova que no va haver-hi variacions intermèdies?||No, només que els valors final i inicial coincideixen."
+        },
+        {
+          "body": "Recuperació activa: La taxa mitjana de variació de f sobre [a,b] amb a≠b és [f(b)−f(a)]/(b−a), que coincideix amb el pendent d'una recta secant. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    },
+    "E4A-F01-L07": {
+      "title": "Lectura de gràfics reals",
+      "objectives": [
+        "Llegeix punts i intervals rellevants d'una gràfica contextual amb dades exactes.",
+        "Detectar incertesa d'interpolació, unitats, salts i escales d'eixos."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una gràfica de dades reals s'interpreta llegint primer què representen els eixos, en quines unitats, amb quina escala i si les dades són punts aïllats o mesuraments continus. El pendent entre dues observacions és una taxa mitjana, però no demostra evolució lineal entre elles tret que el model el justifiqui. Un gràfic pot mostrar el cost d'un servei amb quota fixa, la distància recorreguda per un vehicle o vendes mensuals; cadascun imposa dominis diferents. La presència d'un salt pot deure's a tarifes per trams i un punt aïllat no basta per a inferir màxims globals. Per a un model afí conegut, els valors exactes s'obtenen de l'equació i es contrasten amb la taula alternativa, no mesurant visualment la posició del punt."
+        },
+        {
+          "body": "El gràfic de C(x)=5+2x, x≥0, mostra C(0)=5 i C(4)=13. El cost per unitat és 2 i la quota fixa 5, amb euros com a unitat."
+        },
+        {
+          "body": "Dues dades (1,7) i (3,11) donen una taxa mitjana (11−7)/(3−1)=2; no garanteixen que el fenomen sigui sempre lineal."
+        },
+        {
+          "body": "Lectura exacta d'una gràfica de costos. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Lectura exacta d'una gràfica de costos. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Lectura exacta d'una gràfica de costos"
+          }
+        },
+        {
+          "body": "Una recta que uneix dues observacions demostra causalitat o evolució exacta entre elles?||No, és una representació o hipòtesi d'interpolació, no una prova causal."
+        },
+        {
+          "body": "Recuperació activa: Una gràfica de dades reals s'interpreta llegint primer què representen els eixos, en quines unitats, amb quina escala i si les dades són punts aïllats o mesuraments continus. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E4A-F01-L01-01": {
+      "prompt": "El preu p(q)=20−(2)q s'aplica amb q≥0 i p≥0. Quin és el màxim q permès? Escriu el valor numèric exacte sense unitats.",
+      "hint": "Identifica magnituds, unitats i el domini físic abans de substituir valors.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 10. Identifica magnituds, unitats i el domini físic abans de substituir valors. Una tarifa és quota fixa més preu unitari per quantitat; persones i entrades són enters no negatius. Resposta comprovable: 10. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L01-02": {
+      "prompt": "Un servei cobra 5 € inicials més 3 € per ús. Quant costen 4 usos? Escriu el valor numèric exacte sense unitats.",
+      "hint": "Identifica magnituds, unitats i el domini físic abans de substituir valors.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 17. Identifica magnituds, unitats i el domini físic abans de substituir valors. Una tarifa és quota fixa més preu unitari per quantitat; persones i entrades són enters no negatius. Resposta comprovable: 17. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L01-03": {
+      "prompt": "Si n representa el nombre de persones o entrades indivisibles, quin conjunt de valors admet el model amb n≥0? Selecciona exactament una resposta.",
+      "hint": "Identifica magnituds, unitats i el domini físic abans de substituir valors.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir enters no negatius. Identifica magnituds, unitats i el domini físic abans de substituir valors. Una tarifa és quota fixa més preu unitari per quantitat; persones i entrades són enters no negatius. Resposta comprovable: enters no negatius. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L01-04": {
+      "prompt": "El preu p(q)=30−(3)q s'aplica amb q≥0 i p≥0. Quin és el màxim q permès? Selecciona exactament una resposta.",
+      "hint": "Identifica magnituds, unitats i el domini físic abans de substituir valors.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 10. Identifica magnituds, unitats i el domini físic abans de substituir valors. Una tarifa és quota fixa més preu unitari per quantitat; persones i entrades són enters no negatius. Resposta comprovable: 10. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L01-05": {
+      "prompt": "Un servei cobra 7 € inicials més 2 € per ús. Quant costen 5 usos? Selecciona exactament una resposta.",
+      "hint": "Identifica magnituds, unitats i el domini físic abans de substituir valors.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 17. Identifica magnituds, unitats i el domini físic abans de substituir valors. Una tarifa és quota fixa més preu unitari per quantitat; persones i entrades són enters no negatius. Resposta comprovable: 17. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L02-01": {
+      "prompt": "Per a f(x)=5+(2)x, calcula el PENDENT constant m de la gràfica. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 2. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: 2. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L02-02": {
+      "prompt": "Dos plans costen A(x)=5+(2)x i B(x)=1+(3)x. Calcula x on s'igualen. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte 4. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: 4. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L02-03": {
+      "prompt": "Per a A(x)=5+(2)x i B(x)=1+(3)x, calcula el VALOR COMÚ de la tarifa en igualar-les. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte 13. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: 13. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L02-04": {
+      "prompt": "La funció f(x)=5+2x, en x≥0, és Creixent, Decent o Constant? Selecciona exactament una resposta.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir Creixent. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: Creixent. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L02-05": {
+      "prompt": "Avalua el model lineal f(x)=20+(-3)x en x=2 i comprova les unitats contextuals. Selecciona exactament una resposta.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 14. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: 14. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L03-01": {
+      "prompt": "L'ingrés R(q)=−q²+(10)q amb 0≤q≤10 es maximitza en certa quantitat q. Troba q. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Completa quadrats per reconèixer el vèrtex i contrasta el domini factible.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 5. Completa quadrats per reconèixer el vèrtex i contrasta el domini factible. Per a perímetre P, àrea A(x)=x(P/2−x), màxim en x=P/4 amb A=P²/16; no acceptis longituds negatives. Resposta comprovable: 5. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L03-02": {
+      "prompt": "L'ingrés R(q)=−q²+(10)q per a 0≤q≤10 té màxim. Calcula l'ingrés màxim. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Completa quadrats per reconèixer el vèrtex i contrasta el domini factible.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 25. Completa quadrats per reconèixer el vèrtex i contrasta el domini factible. Per a perímetre P, àrea A(x)=x(P/2−x), màxim en x=P/4 amb A=P²/16; no acceptis longituds negatives. Resposta comprovable: 25. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L03-03": {
+      "prompt": "Per f(x)=-1(x−(5))²+(25), indica l'ABSCISA exacta del vèrtex. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Completa quadrats per reconèixer el vèrtex i contrasta el domini factible.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 5. Completa quadrats per reconèixer el vèrtex i contrasta el domini factible. Per a perímetre P, àrea A(x)=x(P/2−x), màxim en x=P/4 amb A=P²/16; no acceptis longituds negatives. Resposta comprovable: 5. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L03-04": {
+      "prompt": "El punt crític q=5 és FACTIBLE sota la restricció 0≤q≤10 (Sí / No)? Selecciona exactament una resposta.",
+      "hint": "Completa quadrats per reconèixer el vèrtex i contrasta el domini factible.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir Sí. Completa quadrats per reconèixer el vèrtex i contrasta el domini factible. Per a perímetre P, àrea A(x)=x(P/2−x), màxim en x=P/4 amb A=P²/16; no acceptis longituds negatives. Resposta comprovable: Sí. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L03-05": {
+      "prompt": "Calcula el valor mínim de C(x)=(x−(3))²+(4), dins d'un domini que inclou x=3. Selecciona exactament una resposta.",
+      "hint": "Completa quadrats per reconèixer el vèrtex i contrasta el domini factible.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 4. Completa quadrats per reconèixer el vèrtex i contrasta el domini factible. Per a perímetre P, àrea A(x)=x(P/2−x), màxim en x=P/4 amb A=P²/16; no acceptis longituds negatives. Resposta comprovable: 4. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L04-01": {
+      "prompt": "En el model invers f(n)=24/n, amb n positiu, calcula f(3) com a valor exacte. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Aïlla la variable requerida i comprova que no divideixin entre zero.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 8. Aïlla la variable requerida i comprova que no divideixin entre zero. Relació inversa conserva n·y=K. Per a impostos P=p(1+r), buida p=P/(1+r) amb 1+r≠0; respecta unitats. Resposta comprovable: 8. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L04-02": {
+      "prompt": "En f(n)=K/n, amb K fix positiu, si dupliquem n, la quota per unitat queda en la Mitad, el Doble o Igual? Selecciona exactament una resposta.",
+      "hint": "Aïlla la variable requerida i comprova que no divideixin entre zero.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir Mitat. Aïlla la variable requerida i comprova que no divideixin entre zero. Relació inversa conserva n·y=K. Per a impostos P=p(1+r), buida p=P/(1+r) amb 1+r≠0; respecta unitats. Resposta comprovable: Mitad. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L04-03": {
+      "prompt": "És vàlid avaluar f(0)=12/0 en els nombres reals o com nombre de treballadors (Sí / No)? Selecciona exactament una resposta.",
+      "hint": "Aïlla la variable requerida i comprova que no divideixin entre zero.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir No. Aïlla la variable requerida i comprova que no divideixin entre zero. Relació inversa conserva n·y=K. Per a impostos P=p(1+r), buida p=P/(1+r) amb 1+r≠0; respecta unitats. Resposta comprovable: No. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L04-04": {
+      "prompt": "En el model invers f(n)=24/n, amb n positiu, calcula f(6) com a valor exacte. Selecciona exactament una resposta.",
+      "hint": "Aïlla la variable requerida i comprova que no divideixin entre zero.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 4. Aïlla la variable requerida i comprova que no divideixin entre zero. Relació inversa conserva n·y=K. Per a impostos P=p(1+r), buida p=P/(1+r) amb 1+r≠0; respecta unitats. Resposta comprovable: 4. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L04-05": {
+      "prompt": "Si y=24/n per n>0, calcula el producte n·y, constant per a tot n vàlid. Selecciona exactament una resposta.",
+      "hint": "Aïlla la variable requerida i comprova que no divideixin entre zero.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 24. Aïlla la variable requerida i comprova que no divideixin entre zero. Relació inversa conserva n·y=K. Per a impostos P=p(1+r), buida p=P/(1+r) amb 1+r≠0; respecta unitats. Resposta comprovable: 24. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L05-01": {
+      "prompt": "Per a f(x)=1(x−(2))², quin patró apareix en creuar el vèrtex: Decreix i després creix, o Creix i després decreix? Selecciona exactament una resposta.",
+      "hint": "Completa quadrats per reconèixer el vèrtex i contrasta el domini factible.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir Decreix i després creix. Completa quadrats per reconèixer el vèrtex i contrasta el domini factible. Per a perímetre P, àrea A(x)=x(P/2−x), màxim en x=P/4 amb A=P²/16; no acceptis longituds negatives. Resposta comprovable: Decreix i després creix. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L05-02": {
+      "prompt": "Calcula el valor mínim de C(x)=(x−(2))²+(0), dins d'un domini que inclou x=2. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Completa quadrats per reconèixer el vèrtex i contrasta el domini factible.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir 0. Completa quadrats per reconèixer el vèrtex i contrasta el domini factible. Per a perímetre P, àrea A(x)=x(P/2−x), màxim en x=P/4 amb A=P²/16; no acceptis longituds negatives. Resposta comprovable: 0. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L05-03": {
+      "prompt": "La funció f(x)=5+2x, en x≥0, és Creixent, Decent o Constant? Selecciona exactament una resposta.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir Creixent. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: Creixent. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L05-04": {
+      "prompt": "Per a f(x)=(x−(2))², es compleix f(0)=f(4) per simetria respecte a x=2 (Sí / No)? Selecciona exactament una resposta.",
+      "hint": "Completa quadrats per reconèixer el vèrtex i contrasta el domini factible.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir Sí. Completa quadrats per reconèixer el vèrtex i contrasta el domini factible. Per a perímetre P, àrea A(x)=x(P/2−x), màxim en x=P/4 amb A=P²/16; no acceptis longituds negatives. Resposta comprovable: Sí. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L05-05": {
+      "prompt": "Per a f(x)=-1(x−(1))², quin patró apareix en creuar el vèrtex: Decreix i després creix, o Creix i després decreix? Selecciona exactament una resposta.",
+      "hint": "Completa quadrats per reconèixer el vèrtex i contrasta el domini factible.",
+      "explanation": "Justificació: Substitueix les magnituds dins del domini i verifica les condicions físiques i algebraiques per obtenir Creix i després decreix. Completa quadrats per reconèixer el vèrtex i contrasta el domini factible. Per a perímetre P, àrea A(x)=x(P/2−x), màxim en x=P/4 amb A=P²/16; no acceptis longituds negatives. Resposta comprovable: Creix i després decreix. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L06-01": {
+      "prompt": "Calcula la TAXA MITJANA [f(3)−f(1)]/(3−1) per f(x)=1x²+(0)x+(0). Escriu el valor numèric exacte sense unitats.",
+      "hint": "La taxa mitjana és la variació neta del resultat entre la variació d'entrada.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte 4. La taxa mitjana és la variació neta del resultat entre la variació d'entrada. TVM =[f(b)−f(a)]/(b−a) amb a≠b; una taxa zero no implica funció constant en tot l'interval. Resposta comprovable: 4. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L06-02": {
+      "prompt": "Calcula la taxa de variació mitjana de f(x)=2x+(5) en [2,7], sense confondre f(7) amb taxa. Escriu el valor numèric exacte sense unitats.",
+      "hint": "La taxa mitjana és la variació neta del resultat entre la variació d'entrada.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte 2. La taxa mitjana és la variació neta del resultat entre la variació d'entrada. TVM =[f(b)−f(a)]/(b−a) amb a≠b; una taxa zero no implica funció constant en tot l'interval. Resposta comprovable: 2. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L06-03": {
+      "prompt": "Calcula la TAXA MITJANA [f(4)−f(1)]/(4−1) per f(x)=2x²+(-1)x+(3). Escriu el valor numèric exacte sense unitats.",
+      "hint": "La taxa mitjana és la variació neta del resultat entre la variació d'entrada.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte 9. La taxa mitjana és la variació neta del resultat entre la variació d'entrada. TVM =[f(b)−f(a)]/(b−a) amb a≠b; una taxa zero no implica funció constant en tot l'interval. Resposta comprovable: 9. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L06-04": {
+      "prompt": "Per a f(x)=(x−(2))², calcula la taxa mitjana en [0,4] (valors finals simètrics). Selecciona exactament una resposta.",
+      "hint": "La taxa mitjana és la variació neta del resultat entre la variació d'entrada.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte 0. La taxa mitjana és la variació neta del resultat entre la variació d'entrada. TVM =[f(b)−f(a)]/(b−a) amb a≠b; una taxa zero no implica funció constant en tot l'interval. Resposta comprovable: 0. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L06-05": {
+      "prompt": "Calcula la taxa de variació mitjana de f(x)=-3x+(2) en [-2,3], sense confondre f(3) amb taxa. Selecciona exactament una resposta.",
+      "hint": "La taxa mitjana és la variació neta del resultat entre la variació d'entrada.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte -3. La taxa mitjana és la variació neta del resultat entre la variació d'entrada. TVM =[f(b)−f(a)]/(b−a) amb a≠b; una taxa zero no implica funció constant en tot l'interval. Resposta comprovable: -3. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L07-01": {
+      "prompt": "En la gràfica del model f(x)=2x+(5) calcula exactament l'ordenada f(4). Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte 13. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: 13. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L07-02": {
+      "prompt": "Interpreta i quantifica el pendent de la recta y=2x+(5), com a variació vertical per x. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte 2. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: 2. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L07-03": {
+      "prompt": "La gràfica correspon a y=2x+(5). Calcula la seva ordenada a l'origen f(0), quota fixa. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte 5. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: 5. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L07-04": {
+      "prompt": "Una gràfica o recta ajustada a dues dades demostra causalitat i exactitud futura del fenomen (Sí / No)? Selecciona exactament una resposta.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte No. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: No. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-E4A-F01-L07-05": {
+      "prompt": "Dues observacions d'una gràfica són (1,7) i (3,11). Calcula la taxa mitjana entre punts. Selecciona exactament una resposta.",
+      "hint": "Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x.",
+      "explanation": "Justificació: Construeix el model, substitueix dades i comprova unitats, interseccions i domini; resultat exacte 2. Una recta afí té forma y= mx +b; el seu pendent és variació de i per variació de x. Si compares tarifes iguala expressions i comprova el punt en ambdues; una interpolació no demostra exactitud fora de dades. Resposta comprovable: 2. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    }
+  }
+}

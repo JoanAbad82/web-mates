@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E4B-Q01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e4b_q01.json": "df33583a72468fcd5764177302de36664f249882990eaa5663ecc93d1fa6de60",
+    "data/f3_e4b_q01_exercises.json": "701f5622156ff3c16509b018bcfcc04baaab138249eb65f04ff20fe56c41f7fd"
+  },
+  "lessons": {
+    "E4B-Q01-L01": {
+      "title": "Espais mostrals",
+      "objectives": [
+        "Enumerar espais mostrals d'experiències de diverses etapes amb resultats elementals.",
+        "Distingir equiprobabilitat de simple enumeració i reconèixer ordre en els resultats."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un espai mostral és el conjunt de resultats elementals de l'experiment tal com s'ha definit. Dos llançaments ordenats d'una moneda amb cara C i creu X tenen Ω ={ CC,CX,XC,XX}; les quatre rutes són equiprobables únicament si les monedes són ideals i independents. En dos daus distingibles, els resultats elementals són 36 parelles (i,j), no les onze sumes 2 a 12. La suma 7 té sis rutes i la 2 una, de manera que les sumes no són equiprobables. El succés A es representa com a subconjunt de Ω; el seu complement és Ω sense A. Si els assajos estan correlacionats o el dau està carregat, l'espai de resultats pot ser igual però les probabilitats dels seus elements canvien. És essencial declarar si l'ordre compte i si hi ha reemplaçament abans de calcular."
+        },
+        {
+          "body": "Dues monedes independents equilibrades: Ω ={ CC,CX,XC,XX}; el succés exactament una cara és {CX,XC}, amb 2 rutes i probabilitat 1/2."
+        },
+        {
+          "body": "Dos daus ideals distingibles: Ω té 6·6=36 parelles; suma 7 inclou (1,6), (2,5), (3,4), (4,3), (5,2), (6,1)."
+        },
+        {
+          "body": "Rutes ordenats de dues monedes. SVG didàctic, acompanyat de taula HTML semàntica exacta i supòsits.",
+          "alt": "Rutes ordenats de dues monedes. La taula presenta dades exactes, hipòtesis i límits sense dependre de colors ni representació visual.",
+          "visual_spec": {
+            "title": "Camins ordenats de dues monedes"
+          }
+        },
+        {
+          "body": "Enumerar els resultats possibles assegura per si sol que tots són equiprobables?||No; depèn del model físic i les hipòtesis."
+        },
+        {
+          "body": "Recuperació activa: Un espai mostral és el conjunt de resultats elementals de l'experiment tal com s'ha definit. Justifica almenys una condició d'aplicació abans de respondre."
+        }
+      ]
+    },
+    "E4B-Q01-L02": {
+      "title": "Recompte sistemàtic",
+      "objectives": [
+        "Aplicar principis additiu i multiplicatiu per a comptar sense omissions.",
+        "Distingir selecció ordenada amb o sense reemplaçament en casos senzills."
+      ],
+      "content_blocks": [
+        {
+          "body": "El principi multiplicatiu compta etapes successives: amb 3 opcions per a la primera elecció i 2 disponibles per a la segona en cada cas, hi ha 3·2=6 seqüències. El principi additiu suma alternatives que són disjuntes: triar exactament un entre 3 bitllets de tipus A o 2 del tipus B dóna 5 opcions. Si es trien dos objectes diferents d'un conjunt de 4 i l'ordre importa, sense reemplaçament hi ha 4·3=12 parells; amb reemplaçament hi hauria 4·4=16. No confondre parelles ordenades AB i BA amb la mateixa combinació sense ordre. Els diagrames d'arbre han de mostrar totes les branques, mentre una taula pot justificar el recompte sense dependre del dibuix. Comptar seqüències no prova que totes siguin igual de probables; per usar Laplace cal verificar equiprobabilitat elemental."
+        },
+        {
+          "body": "Triar 2 posicions ordenades entre 4 fitxes diferents sense reemplaçament produeix 4·3=12 seqüències, no 4²=16."
+        },
+        {
+          "body": "Triar entre un grup disjunt amb 3 cartes o un altre amb 2 permet 3+2=5 opcions úniques, perquè és una alternativa i no dues etapes."
+        },
+        {
+          "body": "Nombre de primeres i segones etapes. SVG didàctic, acompanyat de taula HTML semàntica exacta i supòsits.",
+          "alt": "Nombre de primeres i segones etapes. La taula presenta dades exactes, hipòtesis i límits sense dependre de colors ni representació visual.",
+          "visual_spec": {
+            "title": "Comptatge de primeres i segones etapes"
+          }
+        },
+        {
+          "body": "S'ha de sumar 4+3 per a comptar dues extraccions consecutives sense reemplaçament amb ordre?||No; es multipliquen 4·3."
+        },
+        {
+          "body": "Recuperació activa: El principi multiplicatiu compta etapes successives: amb 3 opcions per a la primera elecció i 2 disponibles per a la segona en cada cas, hi ha 3·2=6 seqüències. Justifica almenys una condició d'aplicació abans de respondre."
+        }
+      ]
+    },
+    "E4B-Q01-L03": {
+      "title": "Experiments compostos",
+      "objectives": [
+        "Calcular probabilitats compostes amb independència explícita o condicionament.",
+        "Usa complementaris i rebutja la independència automàtica en extraccions sense reemplaçament."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a dos successos A i B sempre es compleix P(A∩B)=P(A)P(B|A) quan P(A)>0. Si a més són independents, P(B|A)=P(B) i es pot multiplicar P(A)P(B). Dues monedes ideals independents donen P(CC )=1/4. Una bossa conté 2 fitxes vermelles i una blava; en dues extraccions sense reemplaçament P(primera vermella )=2/3 i P(segona vermella | primera vermella )=1/2, després P(RR )=1/3. El producte (2/3)² seria incorrecte perquè el contingut de la bossa canvia. El complementari d'un succés A té probabilitat 1−P(A). En arbres, la suma de probabilitats de totes les branques sortints de cada node condicionat ha de ser 1; no es poden barrejar branques sota condicions diferents."
+        },
+        {
+          "body": "Dues monedes equilibrades independents: P(CC )=P(C primer)P(C segon )=1/2·1/2=1/4."
+        },
+        {
+          "body": "Urna amb dues vermelles i una blava sense reemplaçament: P(RR )=2/3·1/2=1/3; P(blau primer, vermella després )=1/3·1=1/3."
+        },
+        {
+          "body": "Condicionament en urna sense reemplaçament. SVG didàctic, acompanyat de taula HTML semàntica exacta i supòsits.",
+          "alt": "Condicionament en urna sense reemplaçament. La taula presenta dades exactes, hipòtesis i límits sense dependre de colors ni representació visual.",
+          "visual_spec": {
+            "title": "Condicionament en urna sense reemplaçament"
+          }
+        },
+        {
+          "body": "P(RR )=(2/3)² per a dues extraccions sense reemplaçament de dues vermelles i una blava?||No; la segona probabilitat ja no és 2/3."
+        },
+        {
+          "body": "Recuperació activa: Per a dos successos A i B sempre es compleix P(A∩B)=P(A)P(B|A) quan P(A)>0. Justifica almenys una condició d'aplicació abans de respondre."
+        }
+      ]
+    },
+    "E4B-Q01-L04": {
+      "title": "Diagrames d'arbre",
+      "objectives": [
+        "Interpretar arbres complets i probabilitats de rutes ordenades.",
+        "Distingir intersecció d'etapes i unió de camins disjunts."
+      ],
+      "content_blocks": [
+        {
+          "body": "Els arbres dibuixen seqüències: cada ruta combina successos d'etapes, i la seva probabilitat és el producte de probabilitats locals condicionades. En dos llançaments independents d'una moneda equilibrada, les rutes CC,CX,XC,XX tenen pes 1/4 cadascuna. Exactament una cara és una unió de camins disjunts, CX o XC, amb probabilitat 1/2; dues cares és una sola ruta amb probabilitat 1/4. En dues extraccions sense reemplaçament d'una urna amb dues vermelles R i una blava A, les rutes RR, RA i AR tenen probabilitat 1/3 cadascuna; AA és impossible. Aquesta enumeració s'obté tractant les dues fitxes vermelles com a fitxes individuals distingibles i sumant els seus casos. El diagrama SVG mostra un esquema parcial; la taula exacta especifica supòsits i probabilitats completes."
+        },
+        {
+          "body": "Dues monedes independents: P(exactament una cara )=P( CX )+P( XC )=1/4+1/4=1/2."
+        },
+        {
+          "body": "Urna dues vermelles i una blava sense reemplaçament: P(RA )=2/3·1/2=1/3 i P(AR )=1/3·1=1/3."
+        },
+        {
+          "body": "Arbre de dues monedes. SVG didàctic, acompanyat de taula HTML semàntica exacta i supòsits.",
+          "alt": "Arbre de dues monedes. La taula presenta dades exactes, hipòtesis i límits sense dependre de colors ni representació visual.",
+          "visual_spec": {
+            "title": "Arbre de dues monedes"
+          }
+        },
+        {
+          "body": "Per a sumar dues rutes ha de comprovar-se que representen resultats mútuament excloents?||Sí; si se solapen cal restar la intersecció."
+        },
+        {
+          "body": "Recuperació activa: Els arbres dibuixen seqüències: cada ruta combina successos d'etapes, i la seva probabilitat és el producte de probabilitats locals condicionades. Justifica almenys una condició d'aplicació abans de respondre."
+        }
+      ]
+    },
+    "E4B-Q01-L05": {
+      "title": "Expressió: Regla de Laplace",
+      "objectives": [
+        "Aplicar Laplace només a espais finits amb resultats equiprobables.",
+        "Utilitzar complements i reconèixer que les sumes de daus tenen pesos diferents."
+      ],
+      "content_blocks": [
+        {
+          "body": "La regla de Laplace P(A)=|A|/| Ω | es dedueix del model equiprobable per a resultats elementals finits. En dos daus equilibrats i independents distingibles hi ha 36 parelles igualment probables. El succés suma 7 inclou sis parelles i té P=6/36=1/6; el succés suma 2 només (1,1), P=1/36. La probabilitat de no sumar 7 és 1−1/6=5/6. No pot comptar-se la llista de sumes 2 a 12 com onze resultats igualment probables: són valors agregats amb multiplicitats diferents. Si el dau està carregat, s'ha d'utilitzar una distribució de probabilitats i no Laplace per recompte simple. Els successos A∪B requereixen restar P(A∩B) si se solapen. El recompte sistemàtic evita errors, però no reemplaça les hipòtesis del model."
+        },
+        {
+          "body": "Dos daus ideals: la suma 7 apareix en sis de 36 parelles; P(suma =7)=1/6 i el seu complement P(suma ≠7)=5/6."
+        },
+        {
+          "body": "Suma 2 només ocorre en (1,1) entre les 36 parelles; P(suma =2)=1/36 i no 1/11."
+        },
+        {
+          "body": "Multiplicitats de les sumes de dos daus. SVG didàctic, acompanyat de taula HTML semàntica exacta i supòsits.",
+          "alt": "Multiplicitats de les sumes de dos daus. La taula presenta dades exactes, hipòtesis i límits sense dependre de colors ni representació visual.",
+          "visual_spec": {
+            "title": "Multiplicitats de les sumes de dos daus"
+          }
+        },
+        {
+          "body": "La suma 7 i la suma 2 tenen igual probabilitat amb dos daus ideals?||No; tenen 6 i 1 rutes favorables."
+        },
+        {
+          "body": "Recuperació activa: La regla de Laplace P(A)=|A|/| Ω | es dedueix del model equiprobable per a resultats elementals finits. Justifica almenys una condició d'aplicació abans de respondre."
+        }
+      ]
+    },
+    "E4B-Q01-L06": {
+      "title": "Tècniques de mostratge i inferències bàsiques",
+      "objectives": [
+        "Diferenciar població, mostra, selecció aleatòria i conveniència.",
+        "Comunicar proporcions mostrals sense inferència injustificada sobre paràmetres."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una proporció mostral p̂=k/n descriu una mostra de n>0 observacions, no prova que el paràmetre d'una població sigui idèntic. Per exemple, 24 respostes favorables entre 60 observacions sintètiques donen p̂=24/60=0,4; aquesta xifra no determina p de la població sense un disseny inferencial adequat. Una mostra de voluntaris pot estar esbiaixada, fins i tot si el nombre de respostes augmenta. El mostreig aleatori simple ideal selecciona unitats amb probabilitats conegudes, però no elimina per si només l'error mostral ni la no resposta. Per atribuir un marge d'error cal declarar metodologia, grandària, nivell i condicions, que aquí no es proporcionen. El canvi de 40 % a 45 % són 5 punts percentuals i un increment relatiu 5/40=12,5 %, quantitats diferents. La unitat utilitza exclusivament dades fixes sintètices, no obté respostes de menors."
+        },
+        {
+          "body": "Una mostra sintètica de n=60 presenta k=24 respostes favorables; p̂=24/60=2/5, sense afirmar el valor de p poblacional."
+        },
+        {
+          "body": "De 40 % a 45 % hi ha 5 punts percentuals, mentre el creixement relatiu és (45−40)/40=1/8=12,5 %."
+        },
+        {
+          "body": "freqüències sintètiques d'una mostra. SVG didàctic, acompanyat de taula HTML semàntica exacta i supòsits.",
+          "alt": "freqüències sintètiques d'una mostra. La taula presenta dades exactes, hipòtesis i límits sense dependre de colors ni representació visual.",
+          "visual_spec": {
+            "title": "freqüències sintètiques d'una mostra"
+          }
+        },
+        {
+          "body": "Una mostra per voluntaris garanteix representar a la població només perquè n és elevat?||No; el biaix de selecció pot persistir."
+        },
+        {
+          "body": "Recuperació activa: Una proporció mostral p̂=k/n descriu una mostra de n>0 observacions, no prova que el paràmetre d'una població sigui idèntic. Justifica almenys una condició d'aplicació abans de respondre."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E4B-Q01-L01-01": {
+      "prompt": "En Espais mostrals: Dues monedes llançades en ordre: compte les rutes de Ω ={ CC,CX,XC,XX}. Introdueix valor numèric exacte sense unitats.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 4. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L01-02": {
+      "prompt": "En Espais mostrals: Dues monedes equilibrades independents: calcula P(exactament una cara), sumant les rutes CX i XC. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 0,5. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L01-03": {
+      "prompt": "En Espais mostrals: Dos daus ideals distingibles: amb 36 parells equiprobables, calcula P(suma =7). Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 1/6. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L01-04": {
+      "prompt": "En Espais mostrals: L'enumeració sola de Ω PROVA que tots els resultats són equiprobables? Sí / No. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: No. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L01-05": {
+      "prompt": "En Espais mostrals: Dos daus equilibrats distingibles: compte parelles ordenades elementals, no sumes. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 36. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L02-01": {
+      "prompt": "En Recompte sistemàtic: De 4 objectes diferents tria 2 en ORDRE, SENSE repetició. Compte variacions V(n,k). Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 12. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L02-02": {
+      "prompt": "En Recompte sistemàtic: De 4 objectes diferents tria 2 SENSE ORDRE ni repetició. Compte de combinacions C(n,k). Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 6. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L02-03": {
+      "prompt": "En Recompte sistemàtic: tria EXACTAMENT una opció de dos conjunts disjunts amb 3 i 2 opcions. Calcula total. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 5. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L02-04": {
+      "prompt": "En Recompte sistemàtic: Per a dues ETAPES successives amb 4 i 3 opcions ha de sumar-se 4+3 en lloc de multiplicar? Sí / No. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: No. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L02-05": {
+      "prompt": "En Recompte sistemàtic: S'emplenen 2 posicions ordenades triant entre 4 símbols amb repetició permesa. Compte resultats. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 16. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L03-01": {
+      "prompt": "En Experiments compostos: Dues monedes equilibrades independents: calcula P(CC), dues cares. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 0,25. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L03-02": {
+      "prompt": "En Experiments compostos: Urna 2 vermelles i 1 blau SENSE reemplaçament: calcula P(RR) amb branca condicionada. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 1/3. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L03-03": {
+      "prompt": "En Experiments compostos: Urna 2 vermelles i 1 blau SENSE reemplaçament: calcula P(AR), blau després vermella. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 1/3. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L03-04": {
+      "prompt": "En Experiments compostos: En dues extraccions SENSE reemplaçament es conserva la mateixa probabilitat marginal de la primera? Sí / No. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: No. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L03-05": {
+      "prompt": "En Experiments compostos: Urna amb 2 vermelles i 1 blau: calcula P (vermella en primera extracció). Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 2/3. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L04-01": {
+      "prompt": "En Diagrames d'arbre: Dues monedes equilibrades independents: calcula P(exactament una cara), sumant les rutes CX i XC. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 0,5. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L04-02": {
+      "prompt": "En Diagrames d'arbre: Dues monedes equilibrades independents: calcula P(primera cara, segona creu) en ruta CX. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 0,25. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L04-03": {
+      "prompt": "En Diagrames d'arbre: Urna 2 vermelles i 1 blau SENSE reemplaçament: calcula P(RA), vermella després blava. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 1/3. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L04-04": {
+      "prompt": "En Diagrames d'arbre: En unir rutes del mateix experiment que són disjuntes es poden sumar les seves probabilitats? Sí / No. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: Sí. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L04-05": {
+      "prompt": "En Diagrames d'arbre: Urna 2 vermelles i 1 blau SENSE reemplaçament: calcula P(AA), dos blaus. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 0. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L05-01": {
+      "prompt": "A Regla de Laplace: Dos daus ideals distingibles: amb 36 parells equiprobables, calcula P(suma =7). Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 1/6. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L05-02": {
+      "prompt": "A Regla de Laplace: Dos daus ideals distingibles: amb 36 parells equiprobables, calcula P(suma =2). Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 1/36. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L05-03": {
+      "prompt": "A Regla de Laplace: Dos daus ideals distingibles: calcula P(no sumar 7) per complement. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 5/6. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L05-04": {
+      "prompt": "A Regla de Laplace: Les onze SUMES 2 a 12 de dos daus ideals són totes equiprobables? Sí / No. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: No. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L05-05": {
+      "prompt": "A Regla de Laplace: Donada P(A)=1/6, calcula P ( A complementari). Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 5/6. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L06-01": {
+      "prompt": "En Tècniques de mostratge i inferències bàsiques: Calcula proporció exacta de 24 resultats favorables de 60 observats. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 0,4. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L06-02": {
+      "prompt": "En Tècniques de mostreig i inferències bàsiques: El percentatge passa de 40 % a 45 %. Calcula l'augment en punts percentuals. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 5. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L06-03": {
+      "prompt": "En Tècniques de mostreig i inferències bàsiques: El percentatge passa de 40 % a 45 %. Calcula l'increment relatiu com a fracció de l'inici. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 0,125. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L06-04": {
+      "prompt": "En Tècniques de mostreig i inferències bàsiques: Una mostra de VOLUNTARIS representa automàticament a la població si augmenta n? Sí / No. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: No. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-E4B-Q01-L06-05": {
+      "prompt": "En Tècniques de mostreig i inferències bàsiques: Una proporció mostral 2/5 determina EXACTAMENT el paràmetre poblacional sense disseny? Sí / No. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes.",
+      "explanation": "Resultat comprovat per aritmètica exacta: No. Defineix resultats elementals, ordre, reemplaçament i equiprobabilitat; decideix si sumes rutes disjuntes o multipliques etapes. Per a combinacions C(n, k)=n! /[k! (n−k)!]; per a rutes usa probabilitats condicionades. Una mostra no identifica el paràmetre i Laplace exigeix resultats elementals equiprobables. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    }
+  }
+}

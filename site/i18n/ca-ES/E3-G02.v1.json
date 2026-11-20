@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E3-G02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e3_g02.json": "de971ef553473e271ac7103e3b59163a888332916f46d7017767783a7277b672",
+    "data/f3_e3_g02_exercises.json": "7f5bbf75ba32c37712fc0a8316c4fc09b6af22e5516224125ab9086da503504a"
+  },
+  "lessons": {
+    "E3-G02-L01": {
+      "title": "Homotècies i semblança",
+      "objectives": [
+        "Reconèixer homotècies mitjançant raó lineal i punts corresponents.",
+        "Calcular longituds homòlogues amb factors positius o negatius."
+      ],
+      "content_blocks": [
+        {
+          "body": "Dues figures són semblants quan conserven angles corresponents i les longituds homòlogues mantenen una raó constant. Una homotècia de centre C i raó k transforma un punt P en P′ situat sobre la recta CP, complint el vector CP ′=k· CP. Les longituds es multipliquen per |k|, no per k amb signe; si k és negatiu, el punt transformat queda a l'altre costat del centre. Amb k=1 les longituds es conserven; amb 0<|k|<1 la figura es redueix. Àrees i volums no s'escalen linealment, sinó amb potències diferents de k. Per utilitzar semblança és necessari establir correspondències vàlides i evitar comparar costats no homòlegs."
+        },
+        {
+          "body": "Un triangle amb base 3 cm sota homotècia k=2 produeix base 6 cm; els angles es mantenen i la figura ampliada té àrea quatre vegades major."
+        },
+        {
+          "body": "Si el segment corresponent mesura 5 cm i k=−0,5, la seva nova longitud és 2,5 cm. El signe negatiu indica disposició relativa al centre, no longitud negativa."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Homotècies i semblança. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Homotècies i semblança"
+          }
+        },
+        {
+          "body": "Pot una homotècia amb k negatiu produir longitud negativa?||No: les longituds es multipliquen per |k|; el signe afecta la posició."
+        },
+        {
+          "body": "Recuperació activa: Reconèixer homotècies mitjançant raó lineal i punts corresponents. Identifica el centre i els costats homòlegs. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E3-G02-L02": {
+      "title": "Simetries i girs",
+      "objectives": [
+        "Transformar punts per reflexió i gir al voltant de l'origen.",
+        "Comprovar conservació de longituds i orientació segons la transformació."
+      ],
+      "content_blocks": [
+        {
+          "body": "La simetria respecte de l'eix horitzontal converteix (x,y) en (x, −y); la de l'eix vertical converteix (x,y) en (−x,y). Un gir de 90° antihorari amb centre en l'origen porta (x,y) a (−y,x); el gir horari de 90° produeix (i, −x). Una isometria conserva totes les distàncies i els angles, encara que pot canviar l'orientació d'una figura: la reflexió la inverteix i els girs la preserven. Per a un centre diferent de l'origen es traslladen les coordenades al centre, s'aplica la transformació i es torna a traslladar. El sentit del gir ha d'explicitar-se, no inferir-se per dibuixos esquemàtics."
+        },
+        {
+          "body": "El gir antihorari de 90° de P=(2,3) al voltant de l'origen produeix P′=(−3,2). Tots dos estan a distància √13 del centre."
+        },
+        {
+          "body": "La reflexió respecte de l'eix horitzontal de Q=(4, −1) produeix Q′=(4,1); canvia el signe d'i però no el de x."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Simetries i girs. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Simetries i girs"
+          }
+        },
+        {
+          "body": "Un gir antihorari de 90° transforma (2,3) en (3, −2)?||No; això és un gir horari. Antihorario dóna (−3,2)."
+        },
+        {
+          "body": "Recuperació activa: Transformar punts per reflexió i gir al voltant de l'origen. Fixa explícitament centre, eix i sentit del gir. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E3-G02-L03": {
+      "title": "Traslacions",
+      "objectives": [
+        "Descriure translacions mitjançant vectors i parells de coordenades.",
+        "Comprovar que una translació conserva distància, àrea i orientació."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una translació pel vector v=(a,b) converteix cada punt P=(x,y) en P′=(x+a, y+b). Totes les parts de la figura es desplacen la mateixa distància i direcció, sense canviar forma, àrea, perímetre ni orientació. El vector entre els punts corresponents P i P′ és exactament v. Per trobar el desplaçament a partir de dos punts es resten coordenades: v=(x′−x, y′−y). En compondre dues translacions se sumen els seus vectors component a component. Un gir no és una translació, perquè normalment mou els punts mitjançant vectors diferents. La malla cartesiana és útil, però el càlcul algebraic evita errors de lectura."
+        },
+        {
+          "body": "Traslladar P=(2, −3) per v=(−1,5) dóna P′=(1,2). La diferència P′−P=(−1,5) confirma el desplaçament."
+        },
+        {
+          "body": "Dues translacions de v1 =(3, −2) i v2 =(−1,4) equivalen a l'única translació v=(2,2); no hi ha gir ni canvi d'escala."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Traslacions. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Traslacions"
+          }
+        },
+        {
+          "body": "Una translació canvia l'àrea d'una figura?||No: es conserva la distància entre qualsevol parell de punts."
+        },
+        {
+          "body": "Recuperació activa: Descriure translacions mitjançant vectors i parells de coordenades. Resta punt final menys inicial per a trobar el vector. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E3-G02-L04": {
+      "title": "Escales d'àrea i volum",
+      "objectives": [
+        "Calcular factors de superfície i volum sota semblança espacial.",
+        "Evitar aplicar la raó lineal a magnituds quadràtiques o cúbiques."
+      ],
+      "content_blocks": [
+        {
+          "body": "Quan una figura semblant s'amplia amb raó lineal k, el seu perímetre i totes les seves longituds es multipliquen per |k|, les seves superfícies per k² i els seus volums per |k|³. El volum d'un sòlid semblant no es multiplica només per k², perquè intervenen tres dimensions. Per exemple, duplicar arestes multiplica àrees per quatre i volums per vuit. Una reducció a la meitat redueix superfícies a una quarta part i volums a un vuitè. Si el factor d'àrea conegut és 9, la raó de longituds positiva és 3. Per a objectes físics semblants també canvien capacitats i masses només sota hipòtesis de densitat comparable."
+        },
+        {
+          "body": "Per a una homotècia espacial k=3, una àrea de 4 cm ² passa a 4×9=36 cm ² i un volum de 2 cm ³ passa a 2×27=54 cm ³."
+        },
+        {
+          "body": "Amb factor de longitud 0,5, una àrea de 20 cm ² es converteix en 5 cm ² i un volum de 80 cm ³ en 10 cm ³. Els factors 1/4 i 1/8 són diferents."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Escales d'àrea i volum. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Escales d'àrea i volum"
+          }
+        },
+        {
+          "body": "Per què triplicar un costat multiplica el volum per 27?||Cadascuna de les tres dimensions es multiplica per 3; 3³=27."
+        },
+        {
+          "body": "Recuperació activa: Calcular factors de superfície i volum sota semblança espacial. Classifica la magnitud en longitud, superfície o volum. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E3-G02-L05": {
+      "title": "Superfícies i volums",
+      "objectives": [
+        "Calcular superfícies i volums de prismes i cilindres amb unitats.",
+        "Emprar fórmules de desenvolupament pla quan correspongui i distingir àrea de capacitat."
+      ],
+      "content_blocks": [
+        {
+          "body": "El volum d'un prisma recte és àrea de la base multiplicada per altura: V=A _base·h. Per a un cilindre circular recte de radi r i altura h, V=πr²h i l'àrea total és A=2πr²+2π rh, comptant dues bases circulars i superfície lateral. L'àrea total i volum d'un cub d'aresta a són 6a² i a³ respectivament. Les superfícies es mesuren en unitats quadrades, i els volums en cúbiques. Si el sòlid s'obre, la superfície lateral del cilindre forma un rectangle d'amplada 2πr i alçada h. Les fórmules pressuposen geometria ideal; cossos reals requereixen mesuraments i toleràncies."
+        },
+        {
+          "body": "Amb cilindre r=2 cm i h=5 cm, V=π×2²×5=20π cm ³≈62,832 cm ³ i àrea total =2π×4+2π×2×5=28π cm ²≈87,965 cm ²."
+        },
+        {
+          "body": "Per a un cub d'aresta 4 cm, l'àrea total és 6×4²=96 cm ² i el seu volum és 4³=64 cm ³. No s'ha d'intercanviar l'exponent de les unitats."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Superfícies i volums. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Superfícies i volums"
+          }
+        },
+        {
+          "body": "Per a un cilindre de radi 2 i altura 5, l'àrea total és 20π?||No: 20π és el volum; l'àrea total és 28π."
+        },
+        {
+          "body": "Recuperació activa: Calcular superfícies i volums de prismes i cilindres amb unitats. Dibuixa i separa bases i superfície lateral abans de sumar àrees. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E3-G02-L06": {
+      "title": "Resolució de problemes geomètrics",
+      "objectives": [
+        "Modelitzar problemes contextualitzats combinant semblança, escala i mesures.",
+        "Validar unitats i raonabilitat d'una solució geomètrica."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un problema de semblança requereix definir figures, assenyalar costats homòlegs i comprovar la raó comuna abans de fer càlculs. En mapes i plans amb escala 1:s, una longitud mesura es converteix a longitud real multiplicant per s, però és essencial convertir després les unitats. Els factors d'àrea són s² i no s. En triangles semblants, si la base es multiplica per k i l'altura també, la seva superfície canvia per k². Els resultats de mesuraments reals són aproximats quan l'escala o lectura té error. Una solució completa comunica diagrama, relacions, unitats i un control de plausibilitat."
+        },
+        {
+          "body": "En un pla amb escala 1: 25000, una longitud de 3 cm representa 75000 cm =750 m en la realitat; multiplicar per 25000 sense convertir centímetres a metres seria incomplet."
+        },
+        {
+          "body": "Un triangle de base 6 cm i altura 4 cm té àrea 12 cm ². Una còpia semblant amb raó k=1,5 té àrea 12×1,5²=27 cm ²."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Resolució de problemes geomètrics. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Resolució de problemes geomètrics"
+          }
+        },
+        {
+          "body": "Una ampliació de base per 1,5 multiplica l'àrea també per 1,5?||No: en figures semblants el factor d'àrea és 1,5²=2,25."
+        },
+        {
+          "body": "Recuperació activa: Modelitzar problemes contextualitzats combinant semblança, escala i mesures. Dibuixa les figures i anota correspondències i unitats. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E3-G02-L01-01": {
+      "prompt": "Homotècia de raó k=2 sobre un segment de 3 cm: longitud final en cm?",
+      "hint": "Identifica el centre i els costats homòlegs.",
+      "explanation": "3×|2|=6 cm. Els costats es multipliquen per |k|."
+    },
+    "F3-E3-G02-L01-02": {
+      "prompt": "Homotècia k=−0,5 sobre segment de 5 cm. Longitud transformada?",
+      "hint": "Identifica el centre i els costats homòlegs.",
+      "explanation": "Longitud =5×0,5=2,5 cm; el signe afecta a posició."
+    },
+    "F3-E3-G02-L01-03": {
+      "prompt": "Homotècia de raó k=2: factor multiplicatiu de les àrees?",
+      "hint": "Identifica el centre i els costats homòlegs.",
+      "explanation": "Les àrees es multipliquen per k²=4. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-G02-L01-04": {
+      "prompt": "En una homotècia de raó negativa, què passa amb les longituds?",
+      "hint": "Identifica el centre i els costats homòlegs.",
+      "explanation": "Una distància és no negativa; el signe de k descriu disposició respecte del centre."
+    },
+    "F3-E3-G02-L01-05": {
+      "prompt": "Quina condició caracteritza costats homòlegs de figures semblants?",
+      "hint": "Identifica el centre i els costats homòlegs.",
+      "explanation": "La semblança conserva forma i escala longituds per un únic factor."
+    },
+    "F3-E3-G02-L02-01": {
+      "prompt": "Gira el punt (2,3) 90° antihorari respecte a l'origen. Coordenada x final?",
+      "hint": "Fixa explícitament centre, eix i sentit del gir.",
+      "explanation": "En un gir de 90° antihorari x final = −y = −3."
+    },
+    "F3-E3-G02-L02-02": {
+      "prompt": "Gira (2,3) 90° antihorari respecte a l'origen. coordenada y final?",
+      "hint": "Fixa explícitament centre, eix i sentit del gir.",
+      "explanation": "i final = x original = 2. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-G02-L02-03": {
+      "prompt": "Reflecteix Q=(4, −1) respecte a l'eix horitzontal. coordenada y final?",
+      "hint": "Fixa explícitament centre, eix i sentit del gir.",
+      "explanation": "La reflexió (x, y)→(x, −y) converteix −1 en 1."
+    },
+    "F3-E3-G02-L02-04": {
+      "prompt": "Quina transformació correspon a (x, y)→(−y,x)?",
+      "hint": "Fixa explícitament centre, eix i sentit del gir.",
+      "explanation": "En girar antihorari x passa a −y i i passa a x."
+    },
+    "F3-E3-G02-L02-05": {
+      "prompt": "Què conserven reflexió i rotació d'una figura?",
+      "hint": "Fixa explícitament centre, eix i sentit del gir.",
+      "explanation": "Ambdues són isometries; la reflexió inverteix orientació."
+    },
+    "F3-E3-G02-L03-01": {
+      "prompt": "P=(2, −3) traslladat per v=(−1,5). Coordenada x final?",
+      "hint": "Resta punt final menys inicial per a trobar el vector.",
+      "explanation": "2+(−1)=1. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-G02-L03-02": {
+      "prompt": "P=(2, −3) traslladat per v=(−1,5). coordenada y final?",
+      "hint": "Resta punt final menys inicial per a trobar el vector.",
+      "explanation": "−3+5=2. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-G02-L03-03": {
+      "prompt": "Compó les translacions v1 =(3, −2), v2 =(−1,4). Component x total?",
+      "hint": "Resta punt final menys inicial per a trobar el vector.",
+      "explanation": "Les components se sumen 3−1=2. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-G02-L03-04": {
+      "prompt": "Què representa el vector entre P i la seva imatge P′ per translació?",
+      "hint": "Resta punt final menys inicial per a trobar el vector.",
+      "explanation": "Una translació desplaça uniformement tots els punts."
+    },
+    "F3-E3-G02-L03-05": {
+      "prompt": "Quina és una propietat de la translació?",
+      "hint": "Resta punt final menys inicial per a trobar el vector.",
+      "explanation": "La translació és una isometria orientada."
+    },
+    "F3-E3-G02-L04-01": {
+      "prompt": "Homotècia k=3: àrea inicial 4 cm ². Àrea semblant en cm ²?",
+      "hint": "Classifica la magnitud en longitud, superfície o volum.",
+      "explanation": "Multiplicar per k²=9: 4×9=36 cm ². El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-G02-L04-02": {
+      "prompt": "Sòlids semblants k=3: volum inicial 2 cm ³. Valumen final?",
+      "hint": "Classifica la magnitud en longitud, superfície o volum.",
+      "explanation": "Multiplicar per |k|³=27: 2×27=54 cm ³. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-G02-L04-03": {
+      "prompt": "Homotècia k=0,5: àrea inicial 20 cm ². Àrea final?",
+      "hint": "Classifica la magnitud en longitud, superfície o volum.",
+      "explanation": "El factor d'àrea és 0,5²=0,25; 20×0,25=5."
+    },
+    "F3-E3-G02-L04-04": {
+      "prompt": "Com canvia el volum d'un cos semblant al triplicar totes les seves dimensions?",
+      "hint": "Classifica la magnitud en longitud, superfície o volum.",
+      "explanation": "Tres dimensions multiplicades per 3 generen el factor 3³=27."
+    },
+    "F3-E3-G02-L04-05": {
+      "prompt": "Si una semblança espacial té raó lineal 1/2, factor d'àrees?",
+      "hint": "Classifica la magnitud en longitud, superfície o volum.",
+      "explanation": "Les superfícies són bidimensionals i es multipliquen per (1/2)²."
+    },
+    "F3-E3-G02-L05-01": {
+      "prompt": "Cilindre recte r=2 cm, h=5 cm. Calcula volum en cm ³ usant π; decimal a 3 xifres.",
+      "hint": "Dibuixa i separa bases i superfície lateral abans de sumar àrees.",
+      "explanation": "Volum =π× r ²× h =20π≈62,832 cm ³. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-G02-L05-02": {
+      "prompt": "Cilindre recte r=2 cm, h=5 cm. Àrea total en cm ², decimal a 3 xifres.",
+      "hint": "Dibuixa i separa bases i superfície lateral abans de sumar àrees.",
+      "explanation": "Àrea total =2π×4+2π×2×5=28π≈87,965 cm ². El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-G02-L05-03": {
+      "prompt": "Cub d'aresta 4 cm. Àrea total en cm ²?",
+      "hint": "Dibuixa i separa bases i superfície lateral abans de sumar àrees.",
+      "explanation": "A=6a²=6×4²=96 cm ². El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-G02-L05-04": {
+      "prompt": "Quina és la fórmula de volum d'un cilindre circular recte?",
+      "hint": "Dibuixa i separa bases i superfície lateral abans de sumar àrees.",
+      "explanation": "El volum és l'àrea circular de base multiplicada per l'alçada."
+    },
+    "F3-E3-G02-L05-05": {
+      "prompt": "Quina unitat correspon al volum d'un cos mesurat en centímetres?",
+      "hint": "Dibuixa i separa bases i superfície lateral abans de sumar àrees.",
+      "explanation": "El volum s'obté multiplicant tres longituds."
+    },
+    "F3-E3-G02-L06-01": {
+      "prompt": "Plànol d'escala 1: 25000. Una distància de 3 cm representa quants metres?",
+      "hint": "Dibuixa les figures i anota correspondències i unitats.",
+      "explanation": "3×25000 cm =75000 cm =750 m. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-G02-L06-02": {
+      "prompt": "Triangle de base 6 cm i alçada 4 cm. Àrea en cm ²?",
+      "hint": "Dibuixa les figures i anota correspondències i unitats.",
+      "explanation": "A=(6×4)/2=12 cm ². El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-G02-L06-03": {
+      "prompt": "Triangle semblant d'àrea original 12 cm ², k=1,5. Àrea nova?",
+      "hint": "Dibuixa les figures i anota correspondències i unitats.",
+      "explanation": "12×(1,5)²=12×2,25=27 cm ². El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-G02-L06-04": {
+      "prompt": "En un pla escala 1: 25000, quin càlcul representa 3 cm reals?",
+      "hint": "Dibuixa les figures i anota correspondències i unitats.",
+      "explanation": "L'escala lineal transforma 3×25000 cm i després es converteix a metres."
+    },
+    "F3-E3-G02-L06-05": {
+      "prompt": "Com escala l'àrea entre dos triangles semblants de factor lineal k?",
+      "hint": "Dibuixa les figures i anota correspondències i unitats.",
+      "explanation": "Àrea = base × altura /2, i ambdues dimensions canvien amb k."
+    }
+  }
+}

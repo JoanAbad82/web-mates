@@ -1,0 +1,295 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1C-D01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1c_d01.json": "51aee847066c29ad765d1c6e0835aab1db7580c994a7f608f398f5252b67f099",
+    "data/f3_b1c_d01_exercises.json": "601929038fa047a352f01d8771297bbab9c00904674c52a19f4d5c95f6c1c7ca"
+  },
+  "lessons": {
+    "B1C-D01-L01": {
+      "title": "Distribucions bidimensionals",
+      "objectives": [
+        "Descriure distribucions bidimensionals amb parells ordenats i taules marginals.",
+        "Diferenciar freqüència conjunta, condicionada i covariació en variables quantitatives."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una distribució bidimensional registra parells (xᵢ, yᵢ) sobre les mateixes unitats d'observació. La taula de parells (0,1), (1,3), (2,5) té tres individus i dues variables; mitjana x̄=1 i mitjana ȳ=3. Si les variables són categòriques, una taula de contingència com files A: (8,2), B: (4,6) informa 20 observacions, marginals Sí =12, No =8 i proporcions condicionals P(Sí |A)=8/10 enfront de P(A| Sí )=8/12. Aquestes probabilitats descriuen freqüències observades i no proven causalitat. Si es disposa de parells quantitatius, la dispersió en el pla revela possibles associacions, que poden ser lineals o no. L'ordre de les dades i la definició exacta de cada variable condicionen qualsevol anàlisi posterior. No és correcte usar una mesura lineal de correlació en variables nominals codificades arbitràriament."
+        },
+        {
+          "body": "Amb parells (0,1), (1,3), (2,5), n=3, suma x=3, suma y=9: x̄=1 i ȳ=3."
+        },
+        {
+          "body": "Taula A: (8,2), B: (4,6) total 20, marginal Sí =8+4=12; dins de fila A, la freqüència relativa de Sí que és 8/10."
+        },
+        {
+          "body": "Distribució conjunta i marginal. SVG didàctic, acompanyat de taula HTML semàntica exacta i supòsits.",
+          "alt": "Distribució conjunta i marginal. La taula presenta dades exactes, hipòtesis i límits sense dependre de colors ni representació visual.",
+          "visual_spec": {
+            "title": "Distribució conjunta i marginal"
+          }
+        },
+        {
+          "body": "Una taula de contingència de dues variables demostra que una causa l'altra?||No; descriu associació o recomptes observats."
+        },
+        {
+          "body": "Recuperació activa: Una distribució bidimensional registra parells (xᵢ, yᵢ) sobre les mateixes unitats d'observació. Justifica almenys una condició d'aplicació abans de respondre."
+        }
+      ]
+    },
+    "B1C-D01-L02": {
+      "title": "Covariància i correlació",
+      "objectives": [
+        "Calcula la covariància descriptiva i correlació lineal de Pearson en dades exactes.",
+        "Interpretar coeficients i reconèixer supòsits, escala i casos de variància zero."
+      ],
+      "content_blocks": [
+        {
+          "body": "La covariància descriptiva poblacional és cov(X, Y)=Σ(xᵢ−x̄)(yᵢ−ȳ)/n. Per a x=(1,2, 3) e y=(2,4, 6), les mitjanes 2 i 4 donen Σ productes centrats =4 i cov =4/3. Amb y=(6,4, 2), cov =−4/3. Pearson r=Σ(xᵢ−x̄)(yᵢ−ȳ)/√(Σ(xᵢ−x̄)²·Σ(yᵢ−ȳ)²), sempre que les dues sumes de quadrats siguin positives. En sèries perfectament alineades creixents r=1 i decreixents r=−1; canviar les unitats amb factor positiu altera covariància però no r. Si una variable és constant, r no existeix. Un r proper a zero només indica escassa relació lineal, no independència; un r alt no prova causalitat ni garanteix prediccions futures."
+        },
+        {
+          "body": "Per (x, y)=(1,2), (2,4), (3,6), la covariància és 4/3, i r=1 per alineació lineal creixent perfecta."
+        },
+        {
+          "body": "Per (1,6), (2,4), (3,2), la covariància és −4/3 i r=−1; cap conclusió causal es dedueix del signe."
+        },
+        {
+          "body": "Covariància i correlació amb tres parells. SVG didàctic, acompanyat de taula HTML semàntica exacta i supòsits.",
+          "alt": "Covariància i correlació amb tres parells. La taula presenta dades exactes, hipòtesis i límits sense dependre de colors ni representació visual.",
+          "visual_spec": {
+            "title": "Covariància i correlació amb tres parells"
+          }
+        },
+        {
+          "body": "Pearson r està definit si tots els valors de x són iguals?||No, la desviació típica de x és zero."
+        },
+        {
+          "body": "Recuperació activa: La covariància descriptiva poblacional és cov(X, Y)=Σ(xᵢ−x̄)(yᵢ−ȳ)/n. Justifica almenys una condició d'aplicació abans de respondre."
+        }
+      ]
+    },
+    "B1C-D01-L03": {
+      "title": "Regressió lineal",
+      "objectives": [
+        "Obtenir recta de regressió i sobre x per mínims quadrats exactes.",
+        "Interpretar intercepte, pendent, residus i casos degenerats."
+      ],
+      "content_blocks": [
+        {
+          "body": "L'ajust lineal ŷ=a+ bx minimitza Σ(yᵢ−a− bx ᵢ)². Si Σ(xᵢ−x̄)²>0, s'obté b=Σ(xᵢ−x̄)(yᵢ−ȳ)/Σ(xᵢ−x̄)² i a=ȳ− bx ̄. Per a (0,1), (1,3), (2,5), x̄=1 i ȳ=3, sumes Sxxx =2 i Sxy =4: b=2, a=1, amb residus zero. En dades no exactament alineades, l'ajust és aproximat i el residu yᵢ−ŷᵢ pot tenir signe. Una recta dibuixada a ull no equival necessàriament a la solució del problema de mínims quadrats; intercanviar variables altera l'ajust. Si x no varia, Sxxx =0 i el pendent d'aquest model no és identificable. La qualitat d'ajust en la mostra no permet extrapolar arbitràriament ni provar causalitat."
+        },
+        {
+          "body": "Amb (0,1), (1,3), (2,5), b=4/2=2 i a=3−2·1=1; la recta ŷ=1+2x passa per tots els punts."
+        },
+        {
+          "body": "Amb (0,2), (1,4), (2,6), b=2 i a=2, recta ŷ=2+2x; per x=2 el valor ajustat és 6."
+        },
+        {
+          "body": "Regressió lineal exacta. SVG didàctic, acompanyat de taula HTML semàntica exacta i supòsits.",
+          "alt": "Regressió lineal exacta. La taula presenta dades exactes, hipòtesis i límits sense dependre de colors ni representació visual.",
+          "visual_spec": {
+            "title": "Regressió lineal exacta"
+          }
+        },
+        {
+          "body": "Amb tots els x constants es pot dividir per Sxxx per determinar el pendent b?||No; Sxxx és zero."
+        },
+        {
+          "body": "Recuperació activa: L'ajust lineal ŷ=a+ bx minimitza Σ(yᵢ−a− bx ᵢ)². Justifica almenys una condició d'aplicació abans de respondre."
+        }
+      ]
+    },
+    "B1C-D01-L04": {
+      "title": "Regressió quadràtica",
+      "objectives": [
+        "Reconèixer i ajustar un model quadràtic ŷ=a+ bx + cx ² en dades sintètiques.",
+        "Distingir coeficients, grau de model, residus i manca d'identificació amb abscises insuficients."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una recta no descriu sempre un patró corb. El model quadràtic ŷ=a+ bx + cx ² pot estimar-se per mínims quadrats si les columnes 1, x, x² del disseny tenen rang complet (almenys tres abscises diferents). Amb punts (−2,4), (−1,1), (0,0), (1,1), (2,4), els valors coincideixen exactament amb y=x²: a=0, b=0, c=1, per la qual cosa la suma de residus quadrats és zero. Per y=1+x², a=1, b=0, c=1. En dades sorolloses les equacions normals s'obtenen minimitzant Σ(yᵢ−a− bx ᵢ− cx ᵢ²)², però un ajust perfecte amb poques observacions no demostra generalització. Comparar graus de polinomi exigeix considerar complexitat, residus i validació fora de la mostra. Una paràbola no és una recta i Pearson r=0 pot coexistir amb dependència quadràtica fort en un disseny simètric."
+        },
+        {
+          "body": "Punts x=−2, −1,0, 1,2 i y=4,1, 0,1, 4: el polinomi de segon grau ajustat exacte és ŷ=x², amb c=1 i a=b=0."
+        },
+        {
+          "body": "Per a x=−2, −1,0, 1,2 i y=5,2, 1,2, 5: l'ajust exacte és ŷ=1+x², amb a=1, b=0, c=1."
+        },
+        {
+          "body": "Regressió quadràtica exacta. SVG didàctic, acompanyat de taula HTML semàntica exacta i supòsits.",
+          "alt": "Regressió quadràtica exacta. La taula presenta dades exactes, hipòtesis i límits sense dependre de colors ni representació visual.",
+          "visual_spec": {
+            "title": "Regressió quadràtica exacta"
+          }
+        },
+        {
+          "body": "Pearson r=0 descarta la dependència quadràtica y=x² en una mostra simètrica?||No; és una relació no lineal encara que no hi hagi covariació lineal."
+        },
+        {
+          "body": "Recuperació activa: Una recta no descriu sempre un patró corb. Justifica almenys una condició d'aplicació abans de respondre."
+        }
+      ]
+    },
+    "B1C-D01-L05": {
+      "title": "Interpretació d'ajustos i residuals",
+      "objectives": [
+        "Comparar residus de models lineals i quadràtics en dades corbs.",
+        "Reconèixer sobreajustament i límits d'extrapolació i causalitat."
+      ],
+      "content_blocks": [
+        {
+          "body": "El residu d'una observació és eᵢ=yᵢ−ŷᵢ i la suma de quadrats de residus SSE =Σeᵢ². Per a punts (−2,4), (−1,1), (0,0), (1,1), (2,4), la millor recta per simetria té pendent 0 i intercepte 2, amb residus 2, −1, −2, −1,2 i SSE =4+1+4+1+4=14. El model quadràtic ŷ=x² ajusta exactament aquestes cinc dades i SSE =0, però no per això garanteix predicció fora de [−2,2]. Agregar termes polinòmics sempre pot millorar o mantenir l'ajust en mostra i causar sobreajustament; comparar requereix validació i justificar el fenomen. El gràfic ha de declarar domini observat, unitats, residus i si un valor és interpolat o extrapolat. Ni les corbes ni els coeficients proven causalitat per si sols."
+        },
+        {
+          "body": "En y=x² per x=−2, −1,0, 1,2, la mitjana y=2; la recta constant ŷ=2 dóna residus 2, −1, −2, −1,2 i SSE =14."
+        },
+        {
+          "body": "El quadràtic ŷ=x² reprodueix les cinc ordenades i té SSE =0; predir en x=10 donaria 100, però seria extrapolació no verificada."
+        },
+        {
+          "body": "Residus lineals enfront de paràbola. SVG didàctic, acompanyat de taula HTML semàntica exacta i supòsits.",
+          "alt": "Residus lineals enfront de paràbola. La taula presenta dades exactes, hipòtesis i límits sense dependre de colors ni representació visual.",
+          "visual_spec": {
+            "title": "Residus lineals enfront de paràbola"
+          }
+        },
+        {
+          "body": "SSE =0 en cinc punts garanteix que un model quadràtic predigui perfectament fora de la mostra?||No; l'ajust observat no valida l'extrapolació."
+        },
+        {
+          "body": "Recuperació activa: El residu d'una observació és eᵢ=yᵢ−ŷᵢ i la suma de quadrats de residus SSE =Σeᵢ². Justifica almenys una condició d'aplicació abans de respondre."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1C-D01-L01-01": {
+      "prompt": "En Distribucions bidimensionals: Llista de coordenades alternades x,y [0, 1, 1, 3, 2, 5]: compte parells observats. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 3. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L01-02": {
+      "prompt": "En Distribucions bidimensionals: Llista de parells (x, y)=[( Fraction (0, 1), Fraction (1, 1)), (Fraction (1, 1), Fraction (3, 1)), (Fraction (2, 1), Fraction (5, 1))]: calcula la mitjana exacta x̄. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 1. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L01-03": {
+      "prompt": "En Distribucions bidimensionals: Taula A:(Sí 8,No 2), B:(Sí 4,No 6). Compte freqüència MARGINAL de columna Sí. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 12. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L01-04": {
+      "prompt": "En Distribucions bidimensionals: Una taula de contingència observada demostra directament CAUSALITAT entre variables? Sí / No. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: No. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L01-05": {
+      "prompt": "En Distribucions bidimensionals: Taula A:(Sí 8,No 2), B:(Sí 4,No 6). Calcula la proporció Sí que està condicionada a la fila A. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 0,8. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L02-01": {
+      "prompt": "En Covariància i correlació: En parells (x, y)=[( Fraction (1, 1), Fraction (2, 1)), (Fraction (2, 1), Fraction (4, 1)), (Fraction (3, 1), Fraction (6, 1))], calcula covariància descriptiva poblacional Σ(x−x̄)(y−ȳ)/n, SENSE dividir per n−1. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 4/3. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L02-02": {
+      "prompt": "En Covariància i correlació: En parells (x, y)=[( Fraction (1, 1), Fraction (6, 1)), (Fraction (2, 1), Fraction (4, 1)), (Fraction (3, 1), Fraction (2, 1))], calcula covariància descriptiva poblacional Σ(x−x̄)(y−ȳ)/n, SENSE dividir per n−1. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: -4/3. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L02-03": {
+      "prompt": "En Covariància i correlació: Per als parells lineals (x, y)=[( Fraction (1, 1), Fraction (2, 1)), (Fraction (2, 1), Fraction (4, 1)), (Fraction (3, 1), Fraction (6, 1))], calcula correlació Pearson r exacta, ambdues variàncies >0. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 1. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L02-04": {
+      "prompt": "En Covariància i correlació: Pearson r està definit quan x és constant i la seva desviació típica és zero? Sí / No. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: No. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L02-05": {
+      "prompt": "En Covariància i correlació: Per als parells lineals (x, y)=[( Fraction (1, 1), Fraction (6, 1)), (Fraction (2, 1), Fraction (4, 1)), (Fraction (3, 1), Fraction (2, 1))], calcula correlació Pearson r exacta, ambdues variàncies >0. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: -1. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L03-01": {
+      "prompt": "En Regressió lineal: Amb parells [(Fraction (0, 1), Fraction (1, 1)), (Fraction (1, 1), Fraction (3, 1)), (Fraction (2, 1), Fraction (5, 1))], calcula b de regressió MCO de i sobre x mitjançant Sxy/Sxx. Introdueix valor numèric exacte sense unitats.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 2. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L03-02": {
+      "prompt": "En Regressió lineal: Amb parells [(Fraction (0, 1), Fraction (1, 1)), (Fraction (1, 1), Fraction (3, 1)), (Fraction (2, 1), Fraction (5, 1))], calcula a de regressió MCO de i sobre x, a=ȳ− bx ̄. Introdueix valor numèric exacte sense unitats.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 1. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L03-03": {
+      "prompt": "En regressió lineal: Per recta ajustada ŷ=1+2x calcula predicció ŷ(3). Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 7. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L03-04": {
+      "prompt": "En regressió lineal: Es determina b per Sxy / Sxxx si tots els x són idèntics (Sxxx =0)? Sí / No. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: No. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L03-05": {
+      "prompt": "En Regressió lineal: Amb els parells [(Fraction (0, 1), Fraction (1, 1)), (Fraction (1, 1), Fraction (3, 1)), (Fraction (2, 1), Fraction (5, 1))], calcula Σ(x−x̄)², denominador de pendent MCO. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 2. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L04-01": {
+      "prompt": "En Regressió quadràtica: Ajusta exactament ŷ=a+ bx + cx ² per MCO a parells [(Fraction (-2, 1), Fraction (4, 1)), (Fraction (-1, 1), Fraction (1, 1)), (Fraction (0, 1), Fraction (0, 1)), (Fraction (1, 1), Fraction (1, 1)), (Fraction (2, 1), Fraction (4, 1))]. Calcula el coeficient c. Introdueix valor numèric exacte sense unitats.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 1. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L04-02": {
+      "prompt": "En Regressió quadràtica: Ajusta exactament ŷ=a+ bx + cx ² per MCO a parells [(Fraction (-2, 1), Fraction (5, 1)), (Fraction (-1, 1), Fraction (2, 1)), (Fraction (0, 1), Fraction (1, 1)), (Fraction (1, 1), Fraction (2, 1)), (Fraction (2, 1), Fraction (5, 1))]. Calcula a. Introdueix valor numèric exacte sense unitats.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 1. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L04-03": {
+      "prompt": "En regressió quadràtica: Per a ajust quadràtic ŷ=0+0x+1x², calcula ŷ(3). Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 9. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L04-04": {
+      "prompt": "En Regressió quadràtica: Pearson r=0 DESCARTA la dependència quadràtica y=x² en abscisses simètriques? Sí / No. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: No. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L04-05": {
+      "prompt": "En Regressió quadràtica: Ajusta exactament ŷ=a+ bx + cx ² per MCO a parells [(Fraction (-2, 1), Fraction (4, 1)), (Fraction (-1, 1), Fraction (1, 1)), (Fraction (0, 1), Fraction (0, 1)), (Fraction (1, 1), Fraction (1, 1)), (Fraction (2, 1), Fraction (4, 1))]. Calcula el coeficient lineal b. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 0. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L05-01": {
+      "prompt": "En Interpretació d'ajustos i residuals: Dades (x, y)=[( Fraction (-2, 1), Fraction (4, 1)), (Fraction (-1, 1), Fraction (1, 1)), (Fraction (0, 1), Fraction (0, 1)), (Fraction (1, 1), Fraction (1, 1)), (Fraction (2, 1), Fraction (4, 1))]. La recta ajustada és ŷ=2. Calcula SSE =Σ(y−ŷ)². Introdueix valor numèric exacte sense unitats.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 14. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L05-02": {
+      "prompt": "En Interpretació d'ajustos i residuals: Dades (x, y)=[( Fraction (-2, 1), Fraction (4, 1)), (Fraction (-1, 1), Fraction (1, 1)), (Fraction (0, 1), Fraction (0, 1)), (Fraction (1, 1), Fraction (1, 1)), (Fraction (2, 1), Fraction (4, 1))]. Per model ŷ=x², calcula suma de residus quadrats SSE. Introdueix valor numèric exacte sense unitats.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 0. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L05-03": {
+      "prompt": "En Interpretació d'ajustos i residuals: Si l'i observat és 0 i l'ajustat ŷ=2, calcula residu SIGNAT y−ŷ. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: -2. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L05-04": {
+      "prompt": "En Interpretació d'ajustos i residuals: SSE =0 en cinc observacions GARANTEIX extrapolació correcta anés de mostra? Sí / No. Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: No. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    },
+    "F3-B1C-D01-L05-05": {
+      "prompt": "En Interpretació d'ajustos i residuals: Per ajust quadràtic ŷ=0+0x+1x², calcula ŷ(10). Selecciona l'opció matemàticament justificada.",
+      "hint": "Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat.",
+      "explanation": "Resultat comprovat per aritmètica exacta: 100. Defineix parells, mitjanes i el model abans de calcular; distingeix associació de causalitat i ajustat d'observat. Per a rectes calcula Sxxx i Sxy; per a quadràtica usa tres coeficients i comprova residus. El r només existeix amb dues variàncies positives i el millor ajust en mostra no garanteix extrapolació. Comprova hipòtesi, denominador, ordre, domini del model i la naturalesa de la conclusió."
+    }
+  }
+}

@@ -1,0 +1,333 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E3-F01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e3_f01.json": "b0c77d656fe72baaea0abc7c14a30449b3a1eeaada02a442accc96d1c79e2463",
+    "data/f3_e3_f01_exercises.json": "612aeb54d39a6289c4dc0b08512820a77927010068b1fa3ad7c5cabab5e22a4a"
+  },
+  "lessons": {
+    "E3-F01-L01": {
+      "title": "Relació, funció i domini contextual",
+      "objectives": [
+        "Distingir relacions de funcions i definir domini en contextos senzills.",
+        "Identificar entrades admissibles i justificar restriccions d'unitats o quantitats."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una relació assigna valors a altres valors, per tal que sigui funció, cada entrada admesa ha de tenir una sola sortida. El domini és el conjunt d'entrades permeses. En una tarifa d'hores es poden admetre h≥0; en comptar assistents es requereixen enters no negatius. El domini contextual pot ser menor que el domini algebraic de la fórmula."
+        },
+        {
+          "body": "En y=2x+1, per a cada x real hi ha una sola sortida. Si x=3, y=7. Si la variable representa entrades venudes, només tenen sentit x=0,1, 2,…"
+        },
+        {
+          "body": "Una relació que assigna a x=2 tant y=3 com y=5 no és funció de x. En canvi x=1 i x=2 poden compartir y=3 sense problema."
+        },
+        {
+          "body": "Pares ordenats d'una funció: (0,1), (1,3), (2,5). Cada x apareix amb una sola y. Un exemple no funcional inclouria (1,3) i (1,8).",
+          "alt": "y=2x+1 per a entrades x no negatives; taula accessible inclosa."
+        },
+        {
+          "body": "Pot el mateix valor y=4 correspondre a dos x diferents i continuar sent funció?||Sí. El prohibit és que una mateixa entrada x tingui dues sortides diferents."
+        },
+        {
+          "body": "Funció: una sortida per entrada permesa. Domini contextual: entrades amb sentit i unitats compatibles."
+        }
+      ]
+    },
+    "E3-F01-L02": {
+      "title": "Representacions múltiples",
+      "objectives": [
+        "Interpretar simultàniament taula, fórmula, gràfica i descripció d'una funció.",
+        "Comprova si un punt pertany a una corba a partir de la seva equació."
+      ],
+      "content_blocks": [
+        {
+          "body": "Taula, expressió, gràfic i relat descriuen la mateixa relació si representen els mateixos parells (x,y). Per comprovar un punt (a,b) en y=f(x), calcula f(a) i compara amb b. Les taules són discretes i no descriuen per si mateixes els valors intermedis; una línia dibuixada suposa un model continu que ha de justificar-se en context."
+        },
+        {
+          "body": "Una taula x: 0,1, 2 i: 3,5, 7 coincideix amb y=2x+3. El punt (2,7) pertany a la recta."
+        },
+        {
+          "body": "Per y=x², els parells (−2,4), (−1,1), (0,0), (1,1), (2,4) formen una paràbola, no una recta. La taula és simètrica respecte de x=0."
+        },
+        {
+          "body": "Taula de y=x²: x −2 | −1 | 0 | 1 | 2; i 4 | 1 | 0 | 1 | 4. Els extrems tenen la mateixa alçada.",
+          "alt": "Paràbola y=x²; taula accessible inclosa."
+        },
+        {
+          "body": "Si una taula només mostra x=0,1, 2, puc assegurar que la funció és lineal entre ells?||No sense un model o dada addicional. Una funció no lineal podria coincidir en aquests tres punts."
+        },
+        {
+          "body": "Connecta fórmula, taula i gràfica. Substitueix per a comprovar punts; evita extrapolar fora del domini conegut."
+        }
+      ]
+    },
+    "E3-F01-L03": {
+      "title": "Pendent i taxa mitjana",
+      "objectives": [
+        "Calcula les taxes mitjanes de variació entre dos valors d'una funció.",
+        "Compara el canvi constant d'una recta amb el canvi variable d'una paràbola."
+      ],
+      "content_blocks": [
+        {
+          "body": "La taxa mitjana de variació entre x=a i x=b, amb b diferent de a, és [f(b)−f(a)]/(b−a). En una recta és sempre el seu pendent m. En una paràbola pot variar segons l'interval: per això és important indicar entre quins valors es calcula i quines unitats té."
+        },
+        {
+          "body": "En f(x)=2x+3, de x=1 a x=4 s'obté (11−5)/(4−1)=6/3=2 per unitat."
+        },
+        {
+          "body": "En g(x)=x², de x=1 a x=3 s'obté (9−1)/(3−1)=8/2=4; de x=0 a x=2 s'obté (4−0)/2=2. No és una taxa constant."
+        },
+        {
+          "body": "Taula de y=x²: pas 0→1 canvia +1; 1→2 canvia +3; 2→3 canvia +5. La corba es fa més inclinada en avançar x positiu.",
+          "alt": "y=x² i canvis successius; taula accessible inclosa."
+        },
+        {
+          "body": "En què es diferencia el pendent d'una recta de la taxa mitjana d'una paràbola?||La recta manté un pendent fix en tots els intervals; la paràbola pot tenir taxes mitjanes diferents."
+        },
+        {
+          "body": "Taxa mitjana = Δy/Δx amb Δx≠0; indica interval, unitats i signe del canvi."
+        }
+      ]
+    },
+    "E3-F01-L04": {
+      "title": "Funció afí i lineal",
+      "objectives": [
+        "Distingir y= mx de y= mx +b amb b no nul usant convencions explícites.",
+        "Interpretar pendent i intercepte sense equiparar proporció i funció afí."
+      ],
+      "content_blocks": [
+        {
+          "body": "Utilitzarem «funció lineal de proporcionalitat» per a y= mx, que passa per l'origen, i «funció afí» per a y= mx +b. En algunes convencions escolars es diu lineal també a l'afí; per això convé assenyalar sempre la fórmula. Una recta amb pendent m=0 és constant, no creixent."
+        },
+        {
+          "body": "f(x)=3x és proporcional: f(0)=0; amb x=2 produeix 6."
+        },
+        {
+          "body": "g(x)=3x+2 és afí: g(0)=2 i g(2)=8. Encara que té el mateix pendent 3, no passa per l'origen."
+        },
+        {
+          "body": "Per x=0,1, 2: f=3x dóna 0,3, 6; g=3x+2 dóna 2,5, 8. Les rectes són paral·leles i se separen sempre 2 unitats.",
+          "alt": "Afí y=3x+2; taula accessible inclosa."
+        },
+        {
+          "body": "És y=3x+2 proporcionalitat directa?||No, perquè y=2 quan x=0; incorpora una quantitat inicial i per tant no passa per l'origen."
+        },
+        {
+          "body": "Compara el terme b i la taula per a x=0: b=0 → proporcional; b≠0 → afí no proporcional."
+        }
+      ]
+    },
+    "E3-F01-L05": {
+      "title": "Paràbola, vèrtex i arrels",
+      "objectives": [
+        "Identificar obertura, vèrtex, eix de simetria i arrels d'una paràbola.",
+        "Relacionar interseccions amb l'eix x i solucions d'equacions quadràtiques."
+      ],
+      "content_blocks": [
+        {
+          "body": "La gràfica de y= ax ²+ bx +c, amb a≠0, és una paràbola: obre cap amunt si a>0 i cap avall si a<0. El seu vèrtex té coordenada x=−b/(2a). Les arrels reals són els punts on y=0. Pot haver-hi dos, una tangent o cap, segons l'equació quadràtica. La paràbola segueix existint encara que no talli l'eix x."
+        },
+        {
+          "body": "f(x)=x²−4 té vèrtex (0, −4), obre cap amunt i talla l'eix x en x=−2 i x=2."
+        },
+        {
+          "body": "g(x)=(x−2)²−1 té vèrtex (2, −1), obre cap amunt i talla l'eix x en x=1 i x=3."
+        },
+        {
+          "body": "Taula de f(x)=x²−4: x −3 | −2 | 0 | 2 | 3; i 5 | 0 | −4 | 0 | 5. La corba és simètrica respecte de x=0.",
+          "alt": "Paràbola y=x²−4; taula accessible inclosa."
+        },
+        {
+          "body": "Si una paràbola no creua l'eix x, deixa de tenir funció?||No. Continua sent una funció; simplement la seva equació f(x)=0 no té arrels reals."
+        },
+        {
+          "body": "Coeficient a → obertura; vèrtex → extrem; f(x)=0 → arrels reals (si n'hi ha)."
+        }
+      ]
+    },
+    "E3-F01-L06": {
+      "title": "Comparació de models lineals i quadràtics",
+      "objectives": [
+        "Comparar un model afí amb un quadràtic mitjançant canvis i taules.",
+        "Triar models segons les unitats i descriure punts d'igualtat o encreuament."
+      ],
+      "content_blocks": [
+        {
+          "body": "El model lineal/afín té canvis iguals per a passos iguals de x, mentre que un quadràtic pot tenir variacions creixents. Per comparar models avalua ambdós en les mateixes entrades i resol on tenen igual sortida. Els encreuaments de corbes representen igualtat de quantitats, però han de complir el domini contextual."
+        },
+        {
+          "body": "A(x)=2x i B(x)=x²: per x=3, A=6 i B=9; per x=2 ambdós valen 4. També coincideixen en x=0; si x representa temps, només importen x≥0."
+        },
+        {
+          "body": "La tarifa C(x)=5+3x puja 3 € per ús, sempre; l'àrea d'un quadrat A(x)=x² creix +1, +3, +5,… per a costats x=0,1, 2,3. No comparteixen unitats, així que no han d'igualar-se directament sense context comú."
+        },
+        {
+          "body": "Taula de comparació amb x 0 | 1 | 2 | 3: 2x produeix 0|2|4|6 i x² produeix 0|1|4|9. Creus en x=0 i x=2.",
+          "alt": "Paràbola y=x²; la recta y=2x es descriu en la taula comparativa; taula accessible inclosa."
+        },
+        {
+          "body": "Per què no basta que dues funcions tinguin el mateix valor en x=2 per a afirmar que són idèntiques?||Perquè poden coincidir en un punt i diferir en uns altres: 2x i x² coincideixen en 2, però en 3 valen 6 i 9."
+        },
+        {
+          "body": "Compara models amb la mateixa entrada, les mateixes unitats i el domini vàlid; distingeix canvi constant de variable."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E3-F01-L01-01": {
+      "prompt": "Per y=2x+1, calcula y quan x=3.",
+      "hint": "Introdueix x=3 en la fórmula.",
+      "explanation": "y=7. Procediment: 2·3+1. Comprova que correspon a l'enunciat original."
+    },
+    "F3-E3-F01-L01-02": {
+      "prompt": "Relació (0,1), (1,3), (2,5). És funció de x?",
+      "hint": "Cada entrada ha de tenir una sola sortida.",
+      "explanation": "Sí, hi ha una única i per cada x."
+    },
+    "F3-E3-F01-L01-03": {
+      "prompt": "Una tarifa depèn del nombre d'entrades venudes. Pot l'entrada x ser −1?",
+      "hint": "Les entrades venudes es compten.",
+      "explanation": "No: −1 entrada està fora del domini contextual."
+    },
+    "F3-E3-F01-L01-04": {
+      "prompt": "Per y=2x+1, calcula y quan x=0.",
+      "hint": "Posa x=0.",
+      "explanation": "L'intercepte val 1."
+    },
+    "F3-E3-F01-L01-05": {
+      "prompt": "Relació (1,3), (1,8), (2,5). És funció de x?",
+      "hint": "Cerca una entrada amb dues sortides diferents.",
+      "explanation": "No pot ser funció de x."
+    },
+    "F3-E3-F01-L02-01": {
+      "prompt": "Una taula segueix y=2x+3. Què i correspon a x=2?",
+      "hint": "Substitueix x=2.",
+      "explanation": "y=7. Procediment: 4+3. Comprova que correspon a l'enunciat original."
+    },
+    "F3-E3-F01-L02-02": {
+      "prompt": "Per a y=x², quina sortida correspon a x=−2?",
+      "hint": "Eleva el nombre negatiu entre parèntesis.",
+      "explanation": "y=4. Procediment: (−2)². Comprova que correspon a l'enunciat original."
+    },
+    "F3-E3-F01-L02-03": {
+      "prompt": "Taula x: 0,1, 2; y: 3,5, 7. Quina fórmula representa aquests parells?",
+      "hint": "Els canvis són +2 en la sortida per cada +1 en x.",
+      "explanation": "La regla y=2x+3 coincideix amb els tres parells."
+    },
+    "F3-E3-F01-L02-04": {
+      "prompt": "Pertany el punt (2,7) a y=2x+3?",
+      "hint": "Substitueix x=2.",
+      "explanation": "Sí, les dues coordenades satisfan la fórmula."
+    },
+    "F3-E3-F01-L02-05": {
+      "prompt": "Taula x: −2, −1,0, 1,2; y: 4,1, 0,1, 4. Quin tipus de fórmula correspon?",
+      "hint": "Observa que hi ha simetria i valors 0,1, 4.",
+      "explanation": "És quadràtica, no una recta."
+    },
+    "F3-E3-F01-L03-01": {
+      "prompt": "Taxa mitjana de f(x)=2x+3 entre x=1 i x=4.",
+      "hint": "Calcula f(1)=5 i f(4)=11.",
+      "explanation": "La taxa mitjana és 2."
+    },
+    "F3-E3-F01-L03-02": {
+      "prompt": "Taxa mitjana de f(x)=x² entre x=1 i x=3.",
+      "hint": "Calcula f(1)=1 i f(3)=9.",
+      "explanation": "La taxa mitjana és 4."
+    },
+    "F3-E3-F01-L03-03": {
+      "prompt": "Taxa mitjana de f(x)=x² entre x=0 i x=2.",
+      "hint": "Substitueix els extrems.",
+      "explanation": "La taxa mitjana és 2."
+    },
+    "F3-E3-F01-L03-04": {
+      "prompt": "La taxa mitjana de y=x² és constant per a tots els intervals de la mateixa longitud?",
+      "hint": "Compara els increments en [0,1] i [1,2].",
+      "explanation": "No és constant."
+    },
+    "F3-E3-F01-L03-05": {
+      "prompt": "La funció y=−3x+2, quin signe té el seu pendent?",
+      "hint": "El coeficient de x és −3.",
+      "explanation": "És negativa."
+    },
+    "F3-E3-F01-L04-01": {
+      "prompt": "Calcula y=3x per x=2.",
+      "hint": "Multiplica l'entrada per 3.",
+      "explanation": "y=6. Procediment: 3·2. Comprova que correspon a l'enunciat original."
+    },
+    "F3-E3-F01-L04-02": {
+      "prompt": "Calcula y=3x+2 per x=2.",
+      "hint": "Suma el terme fix al triple de x.",
+      "explanation": "y=8. Procediment: 6+2. Comprova que correspon a l'enunciat original."
+    },
+    "F3-E3-F01-L04-03": {
+      "prompt": "És y=3x una proporcionalitat directa?",
+      "hint": "No ha de tenir terme fix.",
+      "explanation": "Sí, és y= kx."
+    },
+    "F3-E3-F01-L04-04": {
+      "prompt": "És y=3x+2 una proporcionalitat directa?",
+      "hint": "Posa x=0.",
+      "explanation": "No, és afí amb terme fix."
+    },
+    "F3-E3-F01-L04-05": {
+      "prompt": "En y=3x+2, quina és l'ordenada en l'origen?",
+      "hint": "És la sortida per a x=0.",
+      "explanation": "L'intercepte val 2."
+    },
+    "F3-E3-F01-L05-01": {
+      "prompt": "Per f(x)=x²−4, calcula f(3).",
+      "hint": "Eleva 3 al quadrat.",
+      "explanation": "f(3)=5. Procediment: 9−4. Comprova que correspon a l'enunciat original."
+    },
+    "F3-E3-F01-L05-02": {
+      "prompt": "La paràbola g(x)=(x−2)²−1 té vèrtex en què x?",
+      "hint": "Llegeix el desplaçament horitzontal.",
+      "explanation": "La coordenada x del vèrtex és 2."
+    },
+    "F3-E3-F01-L05-03": {
+      "prompt": "En g(x)=(x−2)²−1, quin és el valor mínim d'i?",
+      "hint": "El quadrat és no negatiu.",
+      "explanation": "El mínim i és −1."
+    },
+    "F3-E3-F01-L05-04": {
+      "prompt": "Quantes arrels reals té x²+1=0?",
+      "hint": "El quadrat d'un real no pot ser negatiu.",
+      "explanation": "No talla l'eix x."
+    },
+    "F3-E3-F01-L05-05": {
+      "prompt": "Què arrels reals té x²−4=0?",
+      "hint": "Aïlla x²=4.",
+      "explanation": "Les arrels són −2 i 2."
+    },
+    "F3-E3-F01-L06-01": {
+      "prompt": "Model quadràtic B(x)=x². Quant val B(3)?",
+      "hint": "Eleva 3 al quadrat.",
+      "explanation": "B(3)=9. Procediment: 3·3. Comprova que correspon a l'enunciat original."
+    },
+    "F3-E3-F01-L06-02": {
+      "prompt": "Model lineal A(x)=2x. Quant val A(3)?",
+      "hint": "Pista: Duplica el 3.",
+      "explanation": "A(3)=6. Procediment: 2·3. Comprova que correspon a l'enunciat original."
+    },
+    "F3-E3-F01-L06-03": {
+      "prompt": "A(x)=2x i B(x)=x². Per a x=3, quin model produeix major sortida?",
+      "hint": "Avalua ambdós amb x=3.",
+      "explanation": "B és major en x=3."
+    },
+    "F3-E3-F01-L06-04": {
+      "prompt": "A(x)=2x i B(x)=x² s'igualen en x=0 i un altre valor. Quin és l'altre x?",
+      "hint": "Resol x²=2x.",
+      "explanation": "Les solucions són 0 i 2; l'altra és x=2."
+    },
+    "F3-E3-F01-L06-05": {
+      "prompt": "Quin d'aquests models té increments constants en augmentar x sempre en 1?",
+      "hint": "El pendent d'una recta és fixa.",
+      "explanation": "A(x)=2x canvia +2 cada vegada."
+    }
+  }
+}

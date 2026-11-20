@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2C-G02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2c_g02.json": "cb48e8850a8b16761af31d05f0fcf74440709327647840e59da371252a100955",
+    "data/f3_b2c_g02_exercises.json": "b086d47687f96a2fd5e4a768e27f7980fc665960bff3d8280b2fe552141797e7"
+  },
+  "lessons": {
+    "B2C-G02-L01": {
+      "title": "Equacions de la recta",
+      "objectives": [
+        "Escriure equacions vectorials i paramètriques de rectes espacials.",
+        "Comprova la pertinença de punts amb un mateix paràmetre en les tres coordenades."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una recta a l'espai queda determinada per un punt P=(p₁, p₂, p₃) i un vector director v=(a,b,c) no nul: X=P+t v amb t real. Les seves equacions paramètriques són x=p₁+ at, y=p₂+ bt, z=p₃+ ct. Per comprovar que Q pertany a la recta, ha d'existir un únic mateix valor de t que satisfaci les tres equacions; resoldre cadascuna per separat sense contrastar-les genera falsos positius. L'equació contínua (x−p₁)/a=(y−p₂)/b=(z−p₃)/c només pot escriure's així si a,b,c són diferents de zero; per a components nul·les han d'utilitzar-se restriccions explícites o la forma paramètrica. Diferents vectors directors proporcionals no nuls descriuen la mateixa direcció."
+        },
+        {
+          "body": "La recta P=(1,2, 3), v=(2, −1,1) passa per (5,0, 5) per t=2."
+        },
+        {
+          "body": "La recta x=1+t, y=2, z=3−t no conté Q=(3,3, 1): de x resulta t=2, però i hauria de valer 2."
+        },
+        {
+          "body": "Recta paramètrica 3D. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Recta paramètrica 3D. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Recta paramètrica 3D"
+          }
+        },
+        {
+          "body": "Pot una recta tenir director (0,0, 0)?||No. El vector nul no defineix direcció ni una recta, només un punt constant."
+        },
+        {
+          "body": "Recuperació: Una recta a l'espai queda determinada per un punt P=(p₁, p₂, p₃) i un vector director v=(a,b,c) no nul: X=P+t v amb t real. Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    },
+    "B2C-G02-L02": {
+      "title": "Equacions del pla",
+      "objectives": [
+        "Construeix equacions de plans a partir de punt i normal no nul·la.",
+        "Verificar incidència substituint coordenades en l'equació del pla."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un plànol amb vector normal n=(a,b,c) no nul que passa per P=(p₁, p₂, p₃) satisfà n·(X−P)=0; la seva equació general és ax + by + cz =d amb d= ap ₁+ bp ₂+ cp ₃. Si n és nul, l'equació 0=d no defineix un pla geomètric i s'ha de rebutjar. Dues normals proporcionals no nul·les defineixen plans de la mateixa orientació, encara que poden ser plans diferents segons el terme independent. Per comprovar la pertinença de Q només cal substituir les seves tres coordenades i comparar amb d. La normal és perpendicular a tot vector direcció contingut en el pla."
+        },
+        {
+          "body": "El plànol amb n=(1,2, −1) per P=(1,0, 3) té equació x+2y−z=−2."
+        },
+        {
+          "body": "El punt Q=(2, −1,2) compleix 2+2(−1)−2=−2, així que pertany al mateix pla."
+        },
+        {
+          "body": "Plànol per un punt i vector normal. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Plànol per un punt i vector normal. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Plànol per un punt i vector normal"
+          }
+        },
+        {
+          "body": "Si n=(0,0, 0), pot definir una orientació vàlida de pla?||No. Per a un pla geomètric s'exigeix vector normal diferent de zero."
+        },
+        {
+          "body": "Recuperació: Un pla amb vector normal n=(a,b,c) no nul que passa per P=(p₁, p₂, p₃) satisfà n·(X−P)=0; la seva equació general és ax + by + cz =d amb d= ap ₁+ bp ₂+ cp ₃. Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    },
+    "B2C-G02-L03": {
+      "title": "Posicions relatives de rectes",
+      "objectives": [
+        "Distingir rectes paral·leles, secants, coincidents i creuades en 3D.",
+        "Resoldre igualtat de paràmetres i reconèixer absència d'intersecció espacial."
+      ],
+      "content_blocks": [
+        {
+          "body": "Dues rectes espacials amb vectors directors paral·lels poden ser coincidents si comparteixen un punt o paral·leles diferents si no ho comparteixen. Si els directors no són proporcionals, poden tallar-se (secants) o ser creuades (no coplanàries i sense punt comú). Per decidir-ho s'igualen els seus tres coordenades usant dos paràmetres independents t i s; resoldre només dues equacions pot proposar una trobada que la tercera coordenada contradigui. El producte mixt entre la diferència de punts base i els dos directors també permet detectar coplanaritat; si és diferent de zero, les rectes són creuades. Una representació en perspectiva no demostra que dues rectes es creuin."
+        },
+        {
+          "body": "r:(t, 0,0), s: (0,s, 0) es tallen en (0,0, 0), fins i tot tenint directors diferents."
+        },
+        {
+          "body": "r:(t, 0,0), s: (0,s, 1) són creuades: per x=y=0 hi ha candidats t=s=0, però les z són 0 i 1."
+        },
+        {
+          "body": "Rectes secants i creuades. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Rectes secants i creuades. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Rectes secants i croades"
+          }
+        },
+        {
+          "body": "Dos rectes de directors no paral·lels sempre es tallen en l'espai?||No. En 3D poden ser creuades si no estan en un mateix pla."
+        },
+        {
+          "body": "Recuperació: Dues rectes espacials amb vectors directors paral·lels poden ser coincidents si comparteixen un punt o paral·leles diferents si no ho comparteixen. Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    },
+    "B2C-G02-L04": {
+      "title": "Posicions relatives de plans",
+      "objectives": [
+        "Classificar posicions relatives de dos plans per les seves normals i termes independents.",
+        "Calcular direcció de la seva intersecció mitjançant producte vectorial."
+      ],
+      "content_blocks": [
+        {
+          "body": "Dos plànols a·x=d i b·x=e tenen normals a,b no nul·les. Si les normals són proporcionals, els plans són paral·lels diferents o coincidents, segons siguin compatibles els termes independents sota la mateixa proporció. Si les normals no són proporcionals, els plans es tallen en una recta; un vector director de la seva intersecció és a × b, no nul. La perpendicularitat entre plans equival al fet que les seves normals tinguin producte escalar zero. Reduir les dues equacions amb Gauss facilita obtenir un punt particular de la recta de tall. No es pot deduir coincidència comparant només els coeficients normals sense revisar la constant."
+        },
+        {
+          "body": "x=1 e y=2 són plans perpendiculars: normals (1,0, 0) i (0,1, 0), tall (1,2,t)."
+        },
+        {
+          "body": "Els plànols x+y=1 i 2x+2y=3 són paral·lels diferents, no coincidents, perquè 2·1≠3."
+        },
+        {
+          "body": "Intersecció de plans coordenats. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Intersecció de plans coordenats. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Intersecció de plans coordenats"
+          }
+        },
+        {
+          "body": "Dos plans amb normals paral·leles són necessàriament coincidents?||No. Només ho són si també ho és la proporció dels seus termes independents."
+        },
+        {
+          "body": "Recuperació: Dos plànols a·x=d i b·x=e tenen normals a,b no nul·les. Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    },
+    "B2C-G02-L05": {
+      "title": "Interseccions",
+      "objectives": [
+        "Resol interseccions recta-plà mitjançant substitució paramètrica.",
+        "Trobar talls de tres plans amb sistemes i controlar casos degenerats."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per intersectar una recta X=P+t v amb un plànol n·X=d, substituïm: n·P+t(n·v)=d. Si n·v≠0 hi ha un punt únic; si n·v=0, la recta és paral·lela al pla, i pot estar continguda (n·P=d) o quedar fora (n·P≠d). Per a tres plans, el punt comú s'obté resolent el sistema de tres equacions lineals per Gauss; determinant no nul garanteix un únic punt, mentre el cas singular exigeix rang i compatibilitat. No es permet dividir per n · v quan val zero. Un punt candidat ha de satisfer simultàniament recta i pla originals."
+        },
+        {
+          "body": "r:(x,y, z)=(0,0, 0)+t(1,2, 1), π: z=3. Llavors t=3 i el tall és (3,6, 3)."
+        },
+        {
+          "body": "La recta X=(1,0, 0)+t(0,1, 0) mai curta al pla x=2, perquè sempre x=1."
+        },
+        {
+          "body": "Intersecció paramètrica recta-plà. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Intersecció paramètrica recta-plà. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Intersecció paramètrica recta-plà"
+          }
+        },
+        {
+          "body": "Si n·v=0 i el punt basi ja pertany al pla, quants punts de tall hi ha?||Infinits: tota la recta està continguda en el pla."
+        },
+        {
+          "body": "Recuperació: Per intersectar una recta X=P+t v amb un plànol n·X=d, substituïm: n·P+t(n·v)=d. Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    },
+    "B2C-G02-L06": {
+      "title": "Sistemes associats",
+      "objectives": [
+        "Interpretar rang i compatibilitat de sistemes associats a posicions espacials.",
+        "Comprovar interseccions de rectes i plans en els tres eixos i evitar falses solucions."
+      ],
+      "content_blocks": [
+        {
+          "body": "Les posicions relatives de rectes i plans s'expressen mitjançant sistemes lineals on cada equació representa una restricció geomètrica. En tres plans ax + by + cz =d, la comparació de rangs del sistema i la seva ampliada determina existència de punts comuns; si el rang coincideix amb tres, hi ha intersecció única, si és menor hi ha infinits punts, i si no coincideix no hi ha tall comú. Les matrius singulars no autoritzen Cramer i requereixen anàlisis per Gauss. La substitució en les equacions originals verifica que la solució no sigui un artefacte d'arrodoniment. Les unitats físiques i vectors normals nuls han de tractar-se explícitament com a hipòtesi."
+        },
+        {
+          "body": "El sistema x+y=3, y+z=5, z=2 té única solució (0,3, 2), comprovable: 0+3=3 i 3+2=5."
+        },
+        {
+          "body": "Els plans x+y+z=1 i 2x+2y+2z=3 són incompatibles; no hi ha punt comú malgrat normals proporcionals."
+        },
+        {
+          "body": "Sistemes geomètrics en tres dimensions. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Sistemes geomètrics en tres dimensions. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Sistemes geomètrics en tres dimensions"
+          }
+        },
+        {
+          "body": "Si el rang del sistema augmentat és major que el de coeficients, existeix intersecció comuna?||No. El sistema és incompatible i els tres plans no comparteixen solució."
+        },
+        {
+          "body": "Recuperació: Les posicions relatives de rectes i plans s'expressen mitjançant sistemes lineals on cada equació representa una restricció geomètrica. Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2C-G02-L01-01": {
+      "prompt": "La recta espacial r:(x,y, z)=(1,2, 3)+t(2, -1,1). Quin punt correspon a t=2? Selecciona la resposta EXACTA.",
+      "hint": "La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (5, 0, 5). La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z. Per a dues rectes usa paràmetres diferents i comprova les tres coordenades; directors no paral·lels no garanteixen tall en 3D. Resultat exacte: (5, 0, 5). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L01-02": {
+      "prompt": "La recta espacial r:(x,y, z)=(1,2, 3)+t(2, -1,1). Pertany Q=(5, 0, 5) usant un mateix t? Selecciona la resposta EXACTA.",
+      "hint": "La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament Sí. La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z. Per a dues rectes usa paràmetres diferents i comprova les tres coordenades; directors no paral·lels no garanteixen tall en 3D. Resultat exacte: Sí. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L01-03": {
+      "prompt": "Una recta passa per P=(1, 2, 3) i té equació X=P+t·(2, -1,1). Indica un vector director. Selecciona la resposta EXACTA.",
+      "hint": "La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (2, -1, 1). La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z. Per a dues rectes usa paràmetres diferents i comprova les tres coordenades; directors no paral·lels no garanteixen tall en 3D. Resultat exacte: (2, -1, 1). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L01-04": {
+      "prompt": "Són paral·lels els vectors directors tridimensionals u=(2, -1, 1), v=(-4, 2, -2)? Tots dos són no nuls. Selecciona la resposta EXACTA.",
+      "hint": "La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament Sí. La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z. Per a dues rectes usa paràmetres diferents i comprova les tres coordenades; directors no paral·lels no garanteixen tall en 3D. Resultat exacte: Sí. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L01-05": {
+      "prompt": "La recta espacial r:(x,y, z)=(0,0, 1)+t(1,2, -1). Quin punt correspon a t=3? Selecciona la resposta EXACTA.",
+      "hint": "La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (3, 6, -2). La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z. Per a dues rectes usa paràmetres diferents i comprova les tres coordenades; directors no paral·lels no garanteixen tall en 3D. Resultat exacte: (3, 6, -2). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L02-01": {
+      "prompt": "El plànol de normal n=(1, 2, -1) no nul·la passa per P=(1, 0, 3). Calcula l'escala d de n·(x,y, z)=d. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "El pla es descriu mitjançant un vector normal no nul i n·X=d.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament -2. El pla es descriu mitjançant un vector normal no nul i n·X=d. Compara normals per proporcionalitat i verifica termes independents; la intersecció de dos plans no paral·lels té direcció n × m. Resultat exacte: -2. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L02-02": {
+      "prompt": "El punt Q=(2, -1, 2) pertany al pla 1x+(2)y+(-1)z=-2? Selecciona la resposta EXACTA.",
+      "hint": "El pla es descriu mitjançant un vector normal no nul i n·X=d.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament Sí. El pla es descriu mitjançant un vector normal no nul i n·X=d. Compara normals per proporcionalitat i verifica termes independents; la intersecció de dos plans no paral·lels té direcció n × m. Resultat exacte: Sí. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L02-03": {
+      "prompt": "Calcula el producte escalar de les normals n=(1, 2, -1) i m=(2, -1, 0). Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "El pla es descriu mitjançant un vector normal no nul i n·X=d.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 0. El pla es descriu mitjançant un vector normal no nul i n·X=d. Compara normals per proporcionalitat i verifica termes independents; la intersecció de dos plans no paral·lels té direcció n × m. Resultat exacte: 0. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L02-04": {
+      "prompt": "El plànol de normal n=(2, 0, 1) no nul·la passa per P=(3, 5, 4). Calcula l'escala d de n·(x,y, z)=d. Selecciona la resposta EXACTA.",
+      "hint": "El pla es descriu mitjançant un vector normal no nul i n·X=d.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 10. El pla es descriu mitjançant un vector normal no nul i n·X=d. Compara normals per proporcionalitat i verifica termes independents; la intersecció de dos plans no paral·lels té direcció n × m. Resultat exacte: 10. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L02-05": {
+      "prompt": "El punt Q=(1, 2, 3) pertany al pla 0x+(0)y+(1)z=3? Selecciona la resposta EXACTA.",
+      "hint": "El pla es descriu mitjançant un vector normal no nul i n·X=d.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament Sí. El pla es descriu mitjançant un vector normal no nul i n·X=d. Compara normals per proporcionalitat i verifica termes independents; la intersecció de dos plans no paral·lels té direcció n × m. Resultat exacte: Sí. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L03-01": {
+      "prompt": "Dues rectes tenen r: P+t·v amb P=(0, 0, 0), v=(1, 0, 0); s: Q+u·w amb Q=(0, 0, 1), w=(0, 1, 0). Classifica: Secants, Croades, Paral·leles o Coincidents. Selecciona la resposta EXACTA.",
+      "hint": "La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z.",
+      "explanation": "Procediment matemàtic: Compara productes vectorials de directors i coplanaritat amb producte mixt: Croades. La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z. Per a dues rectes usa paràmetres diferents i comprova les tres coordenades; directors no paral·lels no garanteixen tall en 3D. Resultat exacte: Croades. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L03-02": {
+      "prompt": "Dues rectes tenen r: P+t·v amb P=(0, 0, 0), v=(1, 0, 0); s: Q+u·w amb Q=(0, 0, 0), w=(0, 1, 0). Classifica: Secants, Croades, Paral·leles o Coincidents. Selecciona la resposta EXACTA.",
+      "hint": "La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z.",
+      "explanation": "Procediment matemàtic: Compara productes vectorials de directors i coplanaritat amb producte mixt: Secants. La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z. Per a dues rectes usa paràmetres diferents i comprova les tres coordenades; directors no paral·lels no garanteixen tall en 3D. Resultat exacte: Secants. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L03-03": {
+      "prompt": "Dues rectes tenen r: P+t·v amb P=(0, 0, 0), v=(1, 0, 0); s: Q+u·w amb Q=(0, 1, 0), w=(1, 0, 0). Classifica: Secants, Croades, Paral·leles o Coincidents. Selecciona la resposta EXACTA.",
+      "hint": "La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z.",
+      "explanation": "Procediment matemàtic: Compara productes vectorials de directors i coplanaritat amb producte mixt: Paral·lel·les. La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z. Per a dues rectes usa paràmetres diferents i comprova les tres coordenades; directors no paral·lels no garanteixen tall en 3D. Resultat exacte: Paral·lel·les. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L03-04": {
+      "prompt": "Dues rectes tenen r: P+t·v amb P=(0, 0, 0), v=(1, 0, 0); s: Q+u·w amb Q=(0, 1, 0), w=(2, 0, 0). Classifica: Secants, Croades, Paral·leles o Coincidents. Selecciona la resposta EXACTA.",
+      "hint": "La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z.",
+      "explanation": "Procediment matemàtic: Compara productes vectorials de directors i coplanaritat amb producte mixt: Paral·lel·les. La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z. Per a dues rectes usa paràmetres diferents i comprova les tres coordenades; directors no paral·lels no garanteixen tall en 3D. Resultat exacte: Paral·lel·les. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L03-05": {
+      "prompt": "Dues rectes tenen r: P+t·v amb P=(0, 0, 0), v=(1, 0, 0); s: Q+u·w amb Q=(0, 0, 0), w=(2, 0, 0). Classifica: Secants, Croades, Paral·leles o Coincidents. Selecciona la resposta EXACTA.",
+      "hint": "La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z.",
+      "explanation": "Procediment matemàtic: Compara productes vectorials de directors i coplanaritat amb producte mixt: Coincidents. La recta exigeix vector director no nul i un mateix paràmetre per a x,y,z. Per a dues rectes usa paràmetres diferents i comprova les tres coordenades; directors no paral·lels no garanteixen tall en 3D. Resultat exacte: Coincidents. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L04-01": {
+      "prompt": "Classifica els plànols 1x+(1)y+(0)z=1 i 2x+(2)y+(0)z=3: Secants, Paral·lels o Coincidents. Selecciona la resposta EXACTA.",
+      "hint": "El pla es descriu mitjançant un vector normal no nul i n·X=d.",
+      "explanation": "Procediment matemàtic: Compara normals i termes independents amb la mateixa proporció: Paral·lels. El pla es descriu mitjançant un vector normal no nul i n·X=d. Compara normals per proporcionalitat i verifica termes independents; la intersecció de dos plans no paral·lels té direcció n × m. Resultat exacte: Paral·lels. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L04-02": {
+      "prompt": "Classifica els plànols 1x+(0)y+(0)z=1 i 2x+(0)y+(0)z=2: Secants, Paral·lels o Coincidents. Selecciona la resposta EXACTA.",
+      "hint": "El pla es descriu mitjançant un vector normal no nul i n·X=d.",
+      "explanation": "Procediment matemàtic: Compara normals i termes independents amb la mateixa proporció: Coincidents. El pla es descriu mitjançant un vector normal no nul i n·X=d. Compara normals per proporcionalitat i verifica termes independents; la intersecció de dos plans no paral·lels té direcció n × m. Resultat exacte: Coincidents. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L04-03": {
+      "prompt": "Són perpendiculars els plans amb normals no nul·les (1, 0, 0) i (0, 1, 0)? Selecciona la resposta EXACTA.",
+      "hint": "El pla es descriu mitjançant un vector normal no nul i n·X=d.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament Sí. El pla es descriu mitjançant un vector normal no nul i n·X=d. Compara normals per proporcionalitat i verifica termes independents; la intersecció de dos plans no paral·lels té direcció n × m. Resultat exacte: Sí. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L04-04": {
+      "prompt": "Troba el vector director de la recta de tall dels dos plans amb normals (1, 0, 0) i (0, 1, 0), usant n × m. Selecciona la resposta EXACTA.",
+      "hint": "El pla es descriu mitjançant un vector normal no nul i n·X=d.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (0, 0, 1). El pla es descriu mitjançant un vector normal no nul i n·X=d. Compara normals per proporcionalitat i verifica termes independents; la intersecció de dos plans no paral·lels té direcció n × m. Resultat exacte: (0, 0, 1). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L04-05": {
+      "prompt": "Classifica els plànols 1x+(0)y+(0)z=1 i 0x+(1)y+(0)z=2: Secants, Paral·lels o Coincidents. Selecciona la resposta EXACTA.",
+      "hint": "El pla es descriu mitjançant un vector normal no nul i n·X=d.",
+      "explanation": "Procediment matemàtic: Compara normals i termes independents amb la mateixa proporció: Secants. El pla es descriu mitjançant un vector normal no nul i n·X=d. Compara normals per proporcionalitat i verifica termes independents; la intersecció de dos plans no paral·lels té direcció n × m. Resultat exacte: Secants. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L05-01": {
+      "prompt": "La recta r: X=(0, 0, 0)+t(1, 2, 1) i el pla π: n·X=3, n=(0, 0, 1). Calcula el paràmetre t únic d'intersecció, si existeix. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "Substitueix la recta X=P+t·v en l'equació del pla abans de classificar.",
+      "explanation": "Procediment matemàtic: Substitueix X=P+t·v i analitza n·v; resultat 3. Substitueix la recta X=P+t·v en l'equació del pla abans de classificar. Si n·v≠0 hi ha un tall únic t=(d−n·P)/(n·v). Si és zero, compara n·P=d per distingir continguda o paral·lela. Resultat exacte: 3. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L05-02": {
+      "prompt": "La recta r: X=(0, 0, 0)+t(1, 2, 1) i el pla π: n·X=3, n=(0, 0, 1). Calcula el punt d'intersecció (x,y,z) únic. Selecciona la resposta exacta.",
+      "hint": "Substitueix la recta X=P+t·v en l'equació del pla abans de classificar.",
+      "explanation": "Procediment matemàtic: Substitueix X=P+t·v i analitza n·v; resultat (3, 6, 3). Substitueix la recta X=P+t·v en l'equació del pla abans de classificar. Si n·v≠0 hi ha un tall únic t=(d−n·P)/(n·v). Si és zero, compara n·P=d per distingir continguda o paral·lela. Resultat exacte: (3, 6, 3). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L05-03": {
+      "prompt": "La recta r: X=(1, 0, 0)+t(0, 1, 0) i el pla π: n·X=2, n=(1, 0, 0). Classifica la relació com a única, paral·lela o continguda. Selecciona la resposta exacta.",
+      "hint": "Substitueix la recta X=P+t·v en l'equació del pla abans de classificar.",
+      "explanation": "Procediment matemàtic: Substitueix X=P+t·v i analitza n·v; resultat Paral·lel. Substitueix la recta X=P+t·v en l'equació del pla abans de classificar. Si n·v≠0 hi ha un tall únic t=(d−n·P)/(n·v). Si és zero, compara n·P=d per distingir continguda o paral·lela. Resultat exacte: Paral·lela. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L05-04": {
+      "prompt": "El sistema tridimensional A·(x,y, z)=b té A=[[1,0, 0], [0,1, 0], [0,0, 1]] i b=(1, 2, 3). Torna exactament per eliminació de Gauss, retorna (x,y,z). Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (1, 2, 3). Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, Única si rang =n, Infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: (1, 2, 3). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L05-05": {
+      "prompt": "La recta r: X=(1, 0, 0)+t(0, 1, 0) i el pla π: n·X=1, n=(1, 0, 0). Classifica la relació com a única, paral·lela o continguda. Selecciona la resposta exacta.",
+      "hint": "Substitueix la recta X=P+t·v en l'equació del pla abans de classificar.",
+      "explanation": "Procediment matemàtic: Substitueix X=P+t·v i analitza n·v; resultat Continguda. Substitueix la recta X=P+t·v en l'equació del pla abans de classificar. Si n·v≠0 hi ha un tall únic t=(d−n·P)/(n·v). Si és zero, compara n·P=d per distingir continguda o paral·lela. Resultat exacte: Continguda. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L06-01": {
+      "prompt": "El sistema tridimensional A·(x,y, z)=b té A=[[1,1, 0], [0,1, 1], [0,0, 1]] i b=(3, 5, 2). Torna exactament per eliminació de Gauss, retorna (x,y,z). Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (0, 3, 2). Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, Única si rang =n, Infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: (0, 3, 2). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L06-02": {
+      "prompt": "El sistema tridimensional A·(x,y, z)=b té A=[[1,1, 0], [2,2, 0], [0,0, 1]] i b=(2, 5, 1). Classifica rang/compatibilitat com a Única, Cap o Infinites. Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Reducció racional exacta i comparació de rangs de matriu i ampliada: Cap. Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, Única si rang =n, Infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: Cap. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L06-03": {
+      "prompt": "El sistema tridimensional A·(x,y, z)=b té A=[[1,1, 0], [0,1, 1], [0,0, 1]] i b=(3, 5, 2). Resol per Gauss i retorna exclusivament la incògnita d'índex 1. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 0. Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, Única si rang =n, Infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: 0. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L06-04": {
+      "prompt": "El punt Q=(0, 3, 2) pertany al pla 1x+(1)y+(0)z=3? Selecciona la resposta EXACTA.",
+      "hint": "El pla es descriu mitjançant un vector normal no nul i n·X=d.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament Sí. El pla es descriu mitjançant un vector normal no nul i n·X=d. Compara normals per proporcionalitat i verifica termes independents; la intersecció de dos plans no paral·lels té direcció n × m. Resultat exacte: Sí. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-G02-L06-05": {
+      "prompt": "El sistema tridimensional A·(x,y, z)=b té A=[[1,1, 0], [2,2, 0], [0,0, 1]] i b=(2, 4, 1). Classifica rang/compatibilitat com a Única, Cap o Infinites. Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Reducció racional exacta i comparació de rangs de matriu i ampliada: infinites. Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, Única si rang =n, Infinites si rang <n. Cramer només amb det ≠0. El resultat: infinites. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    }
+  }
+}

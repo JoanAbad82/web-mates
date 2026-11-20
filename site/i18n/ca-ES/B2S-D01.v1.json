@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2S-D01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2s_d01.json": "64e102f42b3452cf848a7b57e077f61fffa2190acf2589f3f1827fd7755b814b",
+    "data/f3_b2s_d01_exercises.json": "e7bd27f960b6c889ac0a48237c22bb34373d022afd5a9c3d5c3e9ea4583de62a"
+  },
+  "lessons": {
+    "B2S-D01-L01": {
+      "title": "Població i paràmetre",
+      "objectives": [
+        "Identificar població, marc i paràmetre enfront de l'estadístic mostral.",
+        "Separa el valor fix del paràmetre de la variabilitat d'estimadors."
+      ],
+      "content_blocks": [
+        {
+          "body": "La població és el conjunt definit de persones o objectes al qual es refereix la pregunta. El marc és la llista accessible per a seleccionar unitats; podeu no cobrir tota la població. Un paràmetre, com la mitjana poblacional μ o la proporció p, descriu aquesta població i no canvia en canviar de mostra. Una mitjana mostral x̄ o proporció p̂ és un estadístic: varia entre mostres. L'estimació d'una mostra no equival a conèixer el paràmetre exacte; fins i tot una selecció aleatòria adequada pot presentar error de mostreig. La subcobertura i la no resposta poden introduir biaix que un augment de n no elimina automàticament."
+        },
+        {
+          "body": "Població de 500 registres i mostra simple de 50: la fracció de mostreig és 50/500=0,10. La fracció no informa de quants responen afirmativament."
+        },
+        {
+          "body": "En una mostra de 4 valors sintètics 5,7, 9,11, la mitjana x̄=(5+7+9+11)/4=8. Aquesta xifra no prova que la mitjana poblacional μ sigui exactament 8."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Població i paràmetre. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Població i paràmetre"
+          }
+        },
+        {
+          "body": "Una mitjana de mostra de 8 equival a μ=8?||No; l'estadístic canvia entre mostres i el paràmetre roman desconegut."
+        },
+        {
+          "body": "Recuperació activa: Identificar població, marc i paràmetre enfront de l'estadístic mostral. Determina el conjunt objectiu i el marc abans de triar denominadors. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2S-D01-L02": {
+      "title": "Mètodes de mostreig",
+      "objectives": [
+        "Explicar el mostreig aleatori simple i l'estratificat sota hipòtesis explícites.",
+        "Calcula probabilitats d'inclusió sense confondre-les amb independència."
+      ],
+      "content_blocks": [
+        {
+          "body": "En mostreig aleatori simple sense reemplaçament de grandària fixa n, tots els subconjunts de grandària n del marc de N unitats són igualment probables. Cada individu té probabilitat d'inclusió n/N, però les inclusions de dues persones no són independents. En el mostreig estratificat es divideix el marc en estrats i se sortegen unitats dins de cadascun; els pesos han de justificar-se si l'assignació no és proporcional. El mostreig per conveniència i les respostes voluntàries no proporcionen per si sols probabilitats d'inclusió conegudes. Els efectes de disseny i de no resposta importen abans d'emprar fórmules habituals d'error estàndard."
+        },
+        {
+          "body": "Entre 200 registres, seleccionar 40 per mostreig aleatori simple sense reemplaçament dóna probabilitat individual 40/200=0,20, no garanteix que cada parell se seleccioni independentment."
+        },
+        {
+          "body": "En un marc amb 300 integrants del grup A i 100 del B, una mostra proporcional n=40 reserva 30 places per A i 10 per B: 40×300/400=30."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Mètodes de mostratge. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Mètodes de mostreig"
+          }
+        },
+        {
+          "body": "Voleu triar 40 entre 200 sense reemplaçament implica 40 seleccions independents?||No: el conjunt restant canvia en cada extracció."
+        },
+        {
+          "body": "Recuperació activa: Explicar el mostreig aleatori simple i l'estratificat sota hipòtesis explícites. Comprova si se sorteja sense reemplaçament i si el marc inclou la població. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2S-D01-L03": {
+      "title": "biaix i representativitat",
+      "objectives": [
+        "Detectar biaix de cobertura i no resposta en estudis observacionals.",
+        "Distingeix un error aleatori de biaix sistemàtic de selecció."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una mostra gran pot estar esbiaixada si la llista omet col·lectius o s'autoseleccionen les respostes. BIAIX no significa necessàriament una diferència observada gran: és un desplaçament sistemàtic associat al procés de generació de la mostra. La no resposta és especialment problemàtica si la probabilitat de contestar depèn de la variable estudiada. La dispersió entre mostres d'un disseny adequat descriu error aleatori; augmentar n sol reduir aquesta dispersió, però no corregeix un marc incomplet. Una associació entre variables tampoc identifica causalitat. La representativitat es justifica amb el procediment, no amb una fotografia superficial de la mostra."
+        },
+        {
+          "body": "Es convida a 250 persones d'un marc definit i contesten 175: taxa de resposta =175/250=0,70. Aquesta taxa no permet suposar que els 75 absents opinen igual."
+        },
+        {
+          "body": "Si es pregunta a 400 usuaris d'una aplicació per a representar a tota una localitat, l'enquesta pot excloure sistemàticament als qui no la utilitzen: major n no corregeix aquesta subcobertura."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "biaix i representativitat. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "biaix i representativitat"
+          }
+        },
+        {
+          "body": "Pot el biaix d'autoselecció desapareix automàticament en duplicar n?||No, ha de corregir-se o estudiar-se el mecanisme de selecció."
+        },
+        {
+          "body": "Recuperació activa: Detectar biaix de cobertura i no resposta en estudis observacionals. Pregunta qui podia entrar en la mostra i qui va decidir respondre. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2S-D01-L04": {
+      "title": "Mitjana i proporció mostral",
+      "objectives": [
+        "Calcula la mitjana mostral i la proporció mostral amb unitats correctes.",
+        "Distingir estimador insegat sota model i valor observat sense promesa universal."
+      ],
+      "content_blocks": [
+        {
+          "body": "La mitjana mostral x̄ és la suma d'observacions dividida entre n; p̂ és el nombre d'èxits dividit entre n. Sota observacions independents i idènticament distribuïdes amb esperança finita, E[x̄]=μ; per Bernoulli independents amb probabilitat fixa p, E[p̂]=p. Aquestes igualtats caracteritzen un disseny i un model, no acrediten l'absència de biaix d'una enquesta concreta. En calcular mitjanes es conserven unitats, mentre les proporcions són adimensionals. La desviació entre possibles resultats de x̄ s'estudia mitjançant la seva distribució mostral, no per decimals addicionals."
+        },
+        {
+          "body": "Quatre temps ficticis 10,12, 14,16 minuts produeixen x̄=(10+12+14+16)/4=13 minuts; μ del col·lectiu objectiu segueix desconeguda."
+        },
+        {
+          "body": "De 80 observacions amb 28 èxits, p̂=28/80=0,35. No és correcte afirmar que el paràmetre poblacional p ja va quedar demostrat com 0,35."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Mitjana i proporció mostral. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Mitjana i proporció mostral"
+          }
+        },
+        {
+          "body": "Són un paràmetre i el seu estadístic mostral el mateix objecte?||No: el paràmetre descriu la població i l'estadístic depèn de les dades seleccionades."
+        },
+        {
+          "body": "Recuperació activa: Calcula la mitjana mostral i la proporció mostral amb unitats correctes. Classifica si les dades són mesures o respostes binàries. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2S-D01-L05": {
+      "title": "Distribució mostral",
+      "objectives": [
+        "Descriure una distribució mostral de mitjanes o proporcions sota mostreig repetit.",
+        "Distingir variació d'estadístiques i distribució d'observacions individuals."
+      ],
+      "content_blocks": [
+        {
+          "body": "La distribució mostral no és l'histograma d'una sola mostra: és la distribució teòrica d'un estadístic que obtindríem repetint el mateix procés de mostreig. Si X_i són iid amb E[X_ i]=μ i Var(X_ i)=σ², E[x̄]=μ i Var (x̄)=σ²/n, de manera que SD (x̄)=σ/√n. Si cada X_i és normal, la mitjana és exactament normal. Si no, aproximacions pel teorema central del límit requereixen condicions i grandària apropiada. Per Bernoulli iid, E[p̂]=p i SD (p̂)=√(p(1−p)/n). En mostres sense reemplaçament de població finita es necessita considerar correcció i disseny; no usar fórmules iid indiscriminadament."
+        },
+        {
+          "body": "Amb σ=12 unitats i n=36 mesures iid, la desviació típica de les mitjanes mostrals és 12/√36=2 unitats; la de les observacions individuals continua sent 12."
+        },
+        {
+          "body": "Per Bernoulli iid amb p=0,5 i n=100, SD (p̂)=√(0,5×0,5/100)=0,05. La proporció concreta es pot allunyar de 0,5."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Distribució mostral. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Distribució mostral"
+          }
+        },
+        {
+          "body": "La distribució mostral de x̄ coincideix amb la distribució de cada X_i?||No: normalment comparteixen mitjana, però x̄ té dispersió σ/√n sota iid."
+        },
+        {
+          "body": "Recuperació activa: Descriure una distribució mostral de mitjanes o proporcions sota mostratge repetit. Pensa a repetir tot el sorteig, no a comptar els valors d'una mostra. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2S-D01-L06": {
+      "title": "Error estàndard com a magnitud",
+      "objectives": [
+        "Calcula l'error estàndard teòric d'una mitjana o proporció sota iid.",
+        "Interpretar la reducció proporcional de dispersió en créixer n."
+      ],
+      "content_blocks": [
+        {
+          "body": "L'error estàndard és la desviació típica de la distribució mostral d'un estimador, no la desviació típica de les observacions ni la diferència garantida amb el paràmetre. Per a una mitjana d'observacions iid amb desviació σ coneguda, SE =σ/√n. Per a una proporció Bernoulli iid de paràmetre p, SE =√(p(1−p)/n); si p és desconegut pot substituir-se per p̂ com a estimació de l'error, amb limitacions. Quadruplicar n redueix l'error estàndard a la meitat si la resta del model roman igual. Correlació, conglomerats i extracció sense reemplaçament poden canviar aquesta fórmula, per la qual cosa no s'ha d'utilitzar fora dels seus supòsits."
+        },
+        {
+          "body": "Amb σ=18 i n=81 observacions independents, ES (x̄)=18/9=2. Amb n=324 seria 18/18=1, la meitat."
+        },
+        {
+          "body": "Per 400 respostes Bernoulli iid amb p=0,5, SE (p̂)=√(0,25/400)=0,025; és dispersió teòrica, no marge garantit d'error."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Error estàndard com a magnitud. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Error estàndard com a magnitud"
+          }
+        },
+        {
+          "body": "Multiplicar n per quatre redueix S'a un quart baix iid?||No; ES redueix a la meitat per la seva dependència amb √n."
+        },
+        {
+          "body": "Recuperació activa: Calcular l'error estàndard teòric d'una mitjana o proporció sota iid. Determina si es busca σ de dades o SD d'un estimador. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2S-D01-L01-01": {
+      "prompt": "Un marc té N=500 registres i es trien n=50 a l'atzar. Fracció de mostreig n/N?",
+      "hint": "Determina el conjunt objectiu i el marc abans de triar denominadors.",
+      "explanation": "50/500=0,10. És fracció de selecció, no percentatge de respostes."
+    },
+    "F3-B2S-D01-L01-02": {
+      "prompt": "En quatre observacions fictícies 5,7, 9,11 calcula la mitjana mostral.",
+      "hint": "Determina el conjunt objectiu i el marc abans de triar denominadors.",
+      "explanation": "x̄=(5+7+9+11)/4=8. No es coneix μ. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D01-L01-03": {
+      "prompt": "En una mostra de 60 persones, 15 contesten sí. Calcula la proporció p̂.",
+      "hint": "Determina el conjunt objectiu i el marc abans de triar denominadors.",
+      "explanation": "15/60=0,25. És estadístic, no paràmetre conegut."
+    },
+    "F3-B2S-D01-L01-04": {
+      "prompt": "Quin d'aquestes afirmacions distingeix correctament μ i x̄?",
+      "hint": "Determina el conjunt objectiu i el marc abans de triar denominadors.",
+      "explanation": "El paràmetre μ és fix per a la població definida; l'estadístic x̄ pot variar."
+    },
+    "F3-B2S-D01-L01-05": {
+      "prompt": "Si el marc deixa fora a un sector de la població, què es pot concloure?",
+      "hint": "Determina el conjunt objectiu i el marc abans de triar denominadors.",
+      "explanation": "El disseny de selecció determina la cobertura i no el corregeix automàticament augmentar n."
+    },
+    "F3-B2S-D01-L02-01": {
+      "prompt": "En una selecció aleatòria simple sense reemplaçament de n=40 entre N=200, P(inclusió individual)?",
+      "hint": "Comprova si se sorteja sense reemplaçament i si el marc inclou la població.",
+      "explanation": "Cada unitat del marc té probabilitat 40/200=0,20 d'entrar."
+    },
+    "F3-B2S-D01-L02-02": {
+      "prompt": "Una mostra proporcional de grandària 40 té un estrat A de 300 entre N=400. Quants de A?",
+      "hint": "Comprova si se sorteja sense reemplaçament i si el marc inclou la població.",
+      "explanation": "40×300/400=30 persones de l'estrat A. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D01-L02-03": {
+      "prompt": "En una població N=250 se sortegen n=25 sense reemplaçament. Probabilitat individual d'inclusió?",
+      "hint": "Comprova si se sorteja sense reemplaçament i si el marc inclou la població.",
+      "explanation": "Cada element pot entrar amb 25/250=0,1 encara que les inclusions no siguin independents."
+    },
+    "F3-B2S-D01-L02-04": {
+      "prompt": "Quina afirmació és correcta per a una mostra aleatòria simple sense reemplaçament?",
+      "hint": "Comprova si se sorteja sense reemplaçament i si el marc inclou la població.",
+      "explanation": "Sense reemplaçament, després d'una selecció canvia el conjunt disponible."
+    },
+    "F3-B2S-D01-L02-05": {
+      "prompt": "Quin disseny exigeix especial cura en comparar taxes entre estrats?",
+      "hint": "Comprova si se sorteja sense reemplaçament i si el marc inclou la població.",
+      "explanation": "La ponderació depèn de les probabilitats d'inclusió i l'assignació."
+    },
+    "F3-B2S-D01-L03-01": {
+      "prompt": "Es convida a 250 persones i responen 175. Calcula la taxa de resposta en decimal.",
+      "hint": "Pregunta qui podia entrar en la mostra i qui va decidir respondre.",
+      "explanation": "175/250=0,70, no la proporció de resposta afirmativa."
+    },
+    "F3-B2S-D01-L03-02": {
+      "prompt": "De 175 responents, 70 contesten sí. Quina proporció de responents va dir sí?",
+      "hint": "Pregunta qui podia entrar en la mostra i qui va decidir respondre.",
+      "explanation": "70/175=0,40, limitada al conjunt dels qui van respondre."
+    },
+    "F3-B2S-D01-L03-03": {
+      "prompt": "De 250 convidades, 175 responen. Quina fracció d'invitades no va respondre?",
+      "hint": "Pregunta qui podia entrar en la mostra i qui va decidir respondre.",
+      "explanation": "75/250=0,30 d'invitades no va respondre; la seva opinió no és coneguda."
+    },
+    "F3-B2S-D01-L03-04": {
+      "prompt": "Què succeeix amb el biaix d'autoselecció en augmentar n sense canviar el procediment?",
+      "hint": "Pregunta qui podia entrar en la mostra i qui va decidir respondre.",
+      "explanation": "El biaix sistemàtic del marc i de la resposta no està cobert per augmentar n."
+    },
+    "F3-B2S-D01-L03-05": {
+      "prompt": "Una enquesta en una app pretén descriure a tota una ciutat. Quin és el risc principal?",
+      "hint": "Pregunta qui podia entrar en la mostra i qui va decidir respondre.",
+      "explanation": "No tots els habitants tenen la mateixa oportunitat d'accés al marc."
+    },
+    "F3-B2S-D01-L04-01": {
+      "prompt": "Per a temps de 10,12, 14,16 minuts, calcula x̄ en minuts.",
+      "hint": "Classifica si les dades són mesures o respostes binàries.",
+      "explanation": "52/4=13 min; és mitja mostral. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D01-L04-02": {
+      "prompt": "En n=80 casos s'observen k=28 èxits. Calcula p̂.",
+      "hint": "Classifica si les dades són mesures o respostes binàries.",
+      "explanation": "28/80=0,35. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D01-L04-03": {
+      "prompt": "Una mostra de 6 dades és 2,4, 6,8, 10,12. Troba la mitjana.",
+      "hint": "Classifica si les dades són mesures o respostes binàries.",
+      "explanation": "Sumar 42 i dividir entre 6 dóna 7. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D01-L04-04": {
+      "prompt": "Quina condició permet escriure E[x̄]=μ en el model exposat?",
+      "hint": "Classifica si les dades són mesures o respostes binàries.",
+      "explanation": "La igualtat teòrica s'obté d'hipòtesis sobre l'extracció i esperança."
+    },
+    "F3-B2S-D01-L04-05": {
+      "prompt": "La proporció p̂=0,35 d'una mostra representa:",
+      "hint": "Classifica si les dades són mesures o respostes binàries.",
+      "explanation": "Un estimador produeix un nombre, però no elimina incertesa."
+    },
+    "F3-B2S-D01-L05-01": {
+      "prompt": "Amb mesures iid, σ=12 i n=36, quant val SD (x̄)?",
+      "hint": "Pensa a repetir tot el sorteig, no a comptar els valors d'una mostra.",
+      "explanation": "ES =12/√36=2, mentre cada observació té σ=12."
+    },
+    "F3-B2S-D01-L05-02": {
+      "prompt": "Per Bernoulli iid amb p=0,5 i n=100, calcula SD (p̂).",
+      "hint": "Pensa a repetir tot el sorteig, no a comptar els valors d'una mostra.",
+      "explanation": "√(0,5×0,5/100)=0,05. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D01-L05-03": {
+      "prompt": "En observacions iid, σ=9 i n=81, calcula SD (x̄).",
+      "hint": "Pensa a repetir tot el sorteig, no a comptar els valors d'una mostra.",
+      "explanation": "9/√81=1. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D01-L05-04": {
+      "prompt": "Què és una distribució mostral?",
+      "hint": "Pensa a repetir tot el sorteig, no a comptar els valors d'una mostra.",
+      "explanation": "S'imagina repetir mostres completes, no reorganitzar una sola mostra."
+    },
+    "F3-B2S-D01-L05-05": {
+      "prompt": "Quan es distribueix exactament normal x̄ de dades iid?",
+      "hint": "Pensa a repetir tot el sorteig, no a comptar els valors d'una mostra.",
+      "explanation": "La normalitat exacta de la mitjana es dedueix en el model de variables normals iid."
+    },
+    "F3-B2S-D01-L06-01": {
+      "prompt": "Si σ=18 i n=81 iid, calcula SE de la mitjana.",
+      "hint": "Determina si es busca σ de dades o SD d'un estimador.",
+      "explanation": "18/√81=2. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D01-L06-02": {
+      "prompt": "Per a p=0,5 i n=400 Bernoulli iid, calcula SE de p̂.",
+      "hint": "Determina si es busca σ de dades o SD d'un estimador.",
+      "explanation": "√(0,25/400)=0,025. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D01-L06-03": {
+      "prompt": "Si σ=18 i n=324 iid, quant val SE de la mitjana?",
+      "hint": "Determina si es busca σ de dades o SD d'un estimador.",
+      "explanation": "18/√324=1; al quadruplicar n, es redueix S'a la meitat."
+    },
+    "F3-B2S-D01-L06-04": {
+      "prompt": "Què passa amb SE al quadruplicar n baix iid i σ constant?",
+      "hint": "Determina si es busca σ de dades o SD d'un estimador.",
+      "explanation": "ES =σ/√n, per tant √4=2. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D01-L06-05": {
+      "prompt": "L'error estàndard quantifica automàticament un biaix per no resposta?",
+      "hint": "Determina si es busca σ de dades o SD d'un estimador.",
+      "explanation": "Ha de distingir-se variació aleatòria del biaix sistemàtic del mecanisme."
+    }
+  }
+}

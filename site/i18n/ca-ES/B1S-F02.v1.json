@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1S-F02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1s_f02.json": "06efd12b0146d33342b01b1b1c8189619568b7502b140f6a83ee2a2fe16fa071",
+    "data/f3_b1s_f02_exercises.json": "9332f26af3b5df243fcfdbcdb2189b7034b0bf431dacf0bbfd1fd15836cee4bb"
+  },
+  "lessons": {
+    "B1S-F02-L01": {
+      "title": "Límits en un punt",
+      "objectives": [
+        "Calcular límits finits de polinomis i racionals amb simplificació justificada.",
+        "Distingir el valor d'una funció en un punt del seu límit, fins i tot si hi ha un buit."
+      ],
+      "content_blocks": [
+        {
+          "body": "El límit de f(x) quan x s'acosta a a descriu el comportament dels valors pròxims amb x diferent de a; no exigeix que f(a) estigui definit. Per a un polinomi, la continuïtat permet substituir directament. En una fracció amb 0/0, no es divideix per zero: primer es factoritza, cancel·la només per x≠a i després es calcula el límit. Així, per g(x)=(x²−4)/(x−2), x≠2, es té g(x)=x+2 i lim (x→2)g(x)=4; no obstant això g(2) no existeix en l'expressió original. Un resultat finit no prova per si mateix continuïtat: falta comprovar domini i valor en a. Els límits han d'analitzar-se per tots dos costats si el domini permet aproximacions des d'esquerra i dreta."
+        },
+        {
+          "body": "Per f(x)=x²+3x, en acostar-se x a 2, lim f(x)=4+6=10, per continuïtat del polinomi en tots els reals."
+        },
+        {
+          "body": "Per g(x)=(x²−9)/(x−3), x≠3, factoritza (x−3)(x+3); el límit en x=3 val 6, però g(3) està sense definir."
+        },
+        {
+          "body": "Límit finit en un buit. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Límit finit en un buit. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Límit finit en un buit"
+          }
+        },
+        {
+          "body": "Un límit finit garanteix que la funció original té valor en el punt?||No; l'expressió pot tenir un buit o estar definida amb un altre valor."
+        },
+        {
+          "body": "Recuperació activa: El límit de f(x) quan x s'acosta a a descriu el comportament dels valors pròxims amb x diferent de a; no exigeix que f(a) estigui definit. Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    },
+    "B1S-F02-L02": {
+      "title": "Límits laterals",
+      "objectives": [
+        "Calcular límits laterals aplicant la branca i la restricció correctes.",
+        "Deduir existència o inexistència del límit bilateral a partir d'ambdós costats."
+      ],
+      "content_blocks": [
+        {
+          "body": "Els límits laterals lim (x→a−)f(x) i lim (x→a+)f(x) consideren aproximacions des de x<a i x>a, respectivament. El límit bilateral finit existeix si tots dos límits laterals existeixen i coincideixen; el valor assignat f(a) pot ser diferent sense canviar aquesta condició. Exemple: f(x)=x+1 per a x<2 i f(x)=2x+1 per a x≥2. El límit esquerre és 3 i el dret és 5: no existeix límit bilateral finit, encara que f(2)=5. En canvi, si la segona branca fos 2x−1, ambdós laterals valdrien 3. La notació de branca oberta/tancada és essencial per a f(a), però l'expressió de cada costat s'usa exclusivament per a acostar-se des del seu semieix."
+        },
+        {
+          "body": "En x=2, f(x)=x+1 si x<2 i 2x+1 si x≥2: límit per l'esquerra 3, per la dreta 5; bilateral inexistent."
+        },
+        {
+          "body": "Per h(x)=x+1 si x<2 i 2x−1 si x≥2, ambdós límits laterals són 3; com h(2)=3, també hi ha continuïtat."
+        },
+        {
+          "body": "Salt i límits laterals diferents. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Salt i límits laterals diferents. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Salt i límits laterals diferents"
+          }
+        },
+        {
+          "body": "Si lim esquerre val 3 i lim dret 5 existeix un límit bilateral finit?||No; els dos límits laterals han de coincidir."
+        },
+        {
+          "body": "Recuperació activa: Els límits laterals lim (x→a−)f(x) i lim (x→a+)f(x) consideren aproximacions des de x<a i x>a, respectivament. Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    },
+    "B1S-F02-L03": {
+      "title": "Comportament asimptòtic",
+      "objectives": [
+        "Identificar asímptotes verticals i horitzontals mitjançant límits apropiats.",
+        "Distingir tendències infinites de valors reals assolits i de buits evitables."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una asímptota vertical x=a es reconeix quan almenys un límit lateral de f(x) quan x→a divergeix a +∞ o −∞. Per f(x)=1/(x−2), quan x→2− el denominador és negatiu i petit: el valor tendeix a −∞; des de x→2+ tendeix a +∞. Una asímptota horitzontal y=L es detecta si lim (x→+∞)f(x)=L o lim (x→−∞)f(x)=L. La mateixa funció 1/(x−2) té horitzontal y=0 en ambdós sentits. L'infinit no és una resposta numèrica real ni implica que el model social pugui usar infinits clients o temps il·limitat. Un quocient amb factors cancel·lables i límit finit té buit, no asímptota vertical. En dibuixar se separen branques sense unir segments a través de punts prohibits."
+        },
+        {
+          "body": "Per f(x)=1/(x−2), quan x→2− el resultat tendeix a −∞ i quan x→2+ a +∞; x=2 és asímptota vertical."
+        },
+        {
+          "body": "Per f(x)=3+1/(x−2), quan x→+∞ la part 1/(x−2) tendeix a zero i la asímptota horitzontal és y=3."
+        },
+        {
+          "body": "asímptota vertical i horitzontal de funció racional. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "asímptota vertical i horitzontal de funció racional. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "ASÍmptota vertical i horitzontal de funció racional"
+          }
+        },
+        {
+          "body": "Un punt exclòs amb límit finit és necessàriament una asímptota vertical?||No; pot ser una discontinuïtat evitable."
+        },
+        {
+          "body": "Recuperació activa: Una asímptota vertical x=a es reconeix quan almenys un límit lateral de f(x) quan x→a divergeix a +∞ o −∞. Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    },
+    "B1S-F02-L04": {
+      "title": "Continuïtat",
+      "objectives": [
+        "Comprovar continuïtat verificant valor i límit amb hipòtesis explícites.",
+        "Interpretar continuïtat relativa a extrems de domini i sobre intervals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una funció és contínua en un punt interior a del seu domini quan existeix f(a), el límit bilateral lim (x→a)f(x) existeix i coincideix amb f(a). Per a un extrem d'interval tancat es comprova continuïtat relativa al domini mitjançant el límit unilateral disponible; no ha d'exigir valors fora del domini. Els polinomis són continus en tots els reals, i un quocient de polinomis és continu on el seu denominador no s'anul·la. Una funció amb buit pot completar-se amb un valor adequat: si h(x)=(x²−4)/(x−2) per x≠2, definir h(2)=4 fa contínua l'extensió en x=2. Una funció amb salt no pot arreglar-se canviant només el seu valor en el punt, perquè els seus límits laterals no coincideixen."
+        },
+        {
+          "body": "Per a f(x)=x² i a=3: f(3)=9 i lim (x→3)x²=9; la igualtat verifica continuïtat en el punt."
+        },
+        {
+          "body": "L'expressió (x²−4)/(x−2), x≠2, té límit 4; si es redefineix exclusivament f(2)=4, l'extensió és contínua."
+        },
+        {
+          "body": "Continuïtat de l'extensió per valor correcte. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Continuïtat de l'extensió per valor correcte. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Continuïtat de l'extensió per valor correcte"
+          }
+        },
+        {
+          "body": "Fins a definir qualsevol valor en el punt de salt per a tornar contínua una funció?||No; els límits laterals continuarien sent diferents."
+        },
+        {
+          "body": "Recuperació activa: Una funció és contínua en un punt interior a del seu domini quan existeix f(a), el límit bilateral lim (x→a)f(x) existeix i coincideix amb f(a). Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    },
+    "B1S-F02-L05": {
+      "title": "Discontinuitats",
+      "objectives": [
+        "Classificar discontinuïtats evitables, de salt i de tipus infinit.",
+        "Justificar el tipus mitjançant domini i límits laterals, sense inferir-lo per una figura."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una discontinuïtat evitable ocorre si el límit bilateral finit existeix però la funció no està definida en a o el seu valor allí no coincideix amb el límit. Una discontinuïtat de salt es presenta quan els límits laterals finits existeixen i són diferents. Una discontinuïtat infinita succeeix si alguna branca tendeix a +∞ o −∞; no s'arregla assignant un valor finit. Per exemple (x²−9)/(x−3) té buit evitable en 3; la funció a trossos x+1 per x<2 i 2x+1 per x≥2 té salt de 2 unitats en 2; 1/(x−2) posseeix asímptota vertical en 2. Una representació gràfica és il·lustrativa: la classificació exigeix examinar l'expressió i els límits, i identificar les restriccions de context quan siguin pertinents."
+        },
+        {
+          "body": "En (x²−9)/(x−3), x≠3, el límit en 3 val 6; basta assignar el valor 6 per a eliminar la discontinuïtat evitable."
+        },
+        {
+          "body": "En x+1 per x<2 i 2x+1 per x≥2, els laterals són 3 i 5; hi ha salt de magnitud 2 que no s'elimina canviant f(2)."
+        },
+        {
+          "body": "Discontinuitat de salt entre branques. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Discontinuitat de salt entre branques. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Discontinuitat de salt entre branques"
+          }
+        },
+        {
+          "body": "La discontinuïtat de 1/(x−2) es pot eliminar assignant f(2)=0?||No; els valors propers divergeixen i el límit no és finit."
+        },
+        {
+          "body": "Recuperació activa: Una discontinuïtat evitable ocorre si el límit bilateral finit existeix però la funció no està definida en a o el seu valor allí no coincideix amb el límit. Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    },
+    "B1S-F02-L06": {
+      "title": "Interpretació de models a trossos",
+      "objectives": [
+        "Analitzar continuïtat de tarifes i models a trossos amb condicions reals.",
+        "Explicar per quina continuïtat matemàtica pot no ser significativa per a quantitats discretes."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una tarifa per trams pot presentar un canvi de regla i un salt en el llindar. Consideri's C(x)=10+2x si 0≤x≤3 i C(x)=9+4x si x>3, una extensió sobre reals. Es té C(3)=16; en acostar-se des de la dreta, el valor tendeix a 21, per la qual cosa el límit bilateral no existeix i hi ha un salt de 5 euros. Per x=5 s'aplica exclusivament la segona branca i C(5)=29. Si x compta entrades indivisibles, no es compren 3,01 entrades, de manera que els límits de l'extensió contínua són un recurs interpretatiu i no una observació econòmica real. Les condicions contractuals poden introduir costos fixos, arrodoniments i discreció no contemplats: els resultats corresponen només al model sintètic donat."
+        },
+        {
+          "body": "En la tarifa C(x)=10+2x per x≤3 i 9+4x per x>3, el valor C(3)=16 però el límit dret és 21: salt de 5."
+        },
+        {
+          "body": "Per x=5 s'elegeix C(x)=9+4x i s'obtenen 29 €. Emprar la primera branca donaria 20 €, resultat fora del seu domini."
+        },
+        {
+          "body": "Tarifa il·lustrativa amb salt al llindar. SVG local declaratiu i taula semàntica de valors i restriccions exactes. La il·lustració no substitueix la demostració.",
+          "alt": "Tarifa il·lustrativa amb salt al llindar. La taula accessible exposa domini, càlculs, hipòtesis i conclusions sense requerir interpretació de colors.",
+          "visual_spec": {
+            "title": "Tarifa il·lustrativa amb salt al llindar"
+          }
+        },
+        {
+          "body": "Demostra una discontinuïtat en una extensió real que els clients poden comprar fraccions d'entrada?||No; el model físic pot ser discret."
+        },
+        {
+          "body": "Recuperació activa: Una tarifa per trams pot presentar un canvi de regla i un salt en el llindar. Resol un cas variat i justifica per què fallaria una hipòtesi abans d'acceptar el càlcul."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1S-F02-L01-01": {
+      "prompt": "En Límits en un punt: Calcula lim (x→2) de f(x)=3+2x, justificant continuïtat del polinomi. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Càlcul del límit amb domini i expressions laterals diferenciades; valor contrastat: 7. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 7."
+    },
+    "F3-B1S-F02-L01-02": {
+      "prompt": "En Límits en un punt: Per a f(t)=t²+1, calcula lim (t→2)f(t) o f(2) segons continuïtat. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 5. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 5."
+    },
+    "F3-B1S-F02-L01-03": {
+      "prompt": "En Límits en un punt: Calcula lim (x→3) (x²−9)/(x−3) mitjançant factorització vàlida només per x≠3. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Càlcul del límit amb domini i expressions laterals diferenciades; valor contrastat: 6. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 6."
+    },
+    "F3-B1S-F02-L01-04": {
+      "prompt": "En Límits en un punt: La funció ORIGINAL g(x)=(x²−9)/(x−3) admet g(3) en el seu domini real (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Càlcul del límit amb domini i expressions laterals diferenciades; valor contrastat: No. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B1S-F02-L01-05": {
+      "prompt": "En Límits en un punt: L'existència d'un límit finit en x=a garanteix automàticament que f(a) està definida (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Càlcul del límit amb domini i expressions laterals diferenciades; valor contrastat: No. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B1S-F02-L02-01": {
+      "prompt": "En Límits laterals: En la funció a trams f(x)=1x+1 per x<2 i 2x+1 per x≥2, calcula el límit ESQUERRE en x=2. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 3. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 3."
+    },
+    "F3-B1S-F02-L02-02": {
+      "prompt": "En Límits laterals: En f(x)=x+1 si x<2 i 2x+1 si x≥2, calcula el límit DRET en x=2. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 5. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 5."
+    },
+    "F3-B1S-F02-L02-03": {
+      "prompt": "En Límits laterals: Els límits laterals de f en a són 3 i 5. Existeix límit bilateral finit (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: No. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B1S-F02-L02-04": {
+      "prompt": "En Límits laterals: Una funció té límit esquerre 3 i dret 5 en el llindar. Calcula la MAGNITUD del salt absolut. Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 2. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 2."
+    },
+    "F3-B1S-F02-L02-05": {
+      "prompt": "En Límits laterals: Coincideixen els límits de f(x)=1x+1 per a x<2 i 2x+(-1) per a x≥2 (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: Sí. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: Sí."
+    },
+    "F3-B1S-F02-L03-01": {
+      "prompt": "En Comportament asimptòtic: Per r(x)=3+1/(x−2), determina la asímptota HORITZONTAL y=L, introduint el valor L. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Càlcul del límit amb domini i expressions laterals diferenciades; valor contrastat: 3. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 3."
+    },
+    "F3-B1S-F02-L03-02": {
+      "prompt": "En Comportament asimptòtic: Per r(x)=1/(x−2), determina l'abscisa x=a de la asímptota VERTICAL. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Càlcul del límit amb domini i expressions laterals diferenciades; valor contrastat: 2. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 2."
+    },
+    "F3-B1S-F02-L03-03": {
+      "prompt": "En Comportament asimptòtic: En r(x)=1/(x−2), avalua exactament r(3) amb denominador diferent de zero. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Càlcul del límit amb domini i expressions laterals diferenciades; valor contrastat: 1. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 1."
+    },
+    "F3-B1S-F02-L03-04": {
+      "prompt": "En Comportament asimptòtic: Per a r(x)=1/(x−2), a quin infinit tendeix quan x→2 per l'ESQUERRA: −∞, +∞ o Cero? Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: −∞. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: −∞."
+    },
+    "F3-B1S-F02-L03-05": {
+      "prompt": "En Comportament asimptòtic: Per a r(x)=1/(x−2), a quin infinit tendeix quan x→2 per la dreta: −∞, +∞ o Cero? Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: +∞. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: +∞."
+    },
+    "F3-B1S-F02-L04-01": {
+      "prompt": "Per a f(t)=t²+0, calcula lim (t→3)f(t) o f(3) segons continuïtat. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 9. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 9."
+    },
+    "F3-B1S-F02-L04-02": {
+      "prompt": "A Continuïtat: Per a h(x)=(x²−4)/(x−2), x≠2, quin valor h(2) ha d'assignar-se per a estendre-la contínuament? Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Càlcul del límit amb domini i expressions laterals diferenciades; valor contrastat: 4. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 4."
+    },
+    "F3-B1S-F02-L04-03": {
+      "prompt": "En Continuïtat: És contínua f(x)=x² en x=3 perquè està definida i el seu límit coincideix amb f(3) (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: Sí. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: Sí."
+    },
+    "F3-B1S-F02-L04-04": {
+      "prompt": "En Continuïtat: Canviar únicament f(2) pot eliminar un salt amb límits laterals 3 i 5 (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: No. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B1S-F02-L04-05": {
+      "prompt": "En Continuïtat: S'utilitza el límit lateral interior al domini per a estudiar continuïtat en l'extrem de [0,5] (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: Sí. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: Sí."
+    },
+    "F3-B1S-F02-L05-01": {
+      "prompt": "En Discontinuitats: Una funció té límit esquerre 3 i dret 5 en el llindar. Calcula la MAGNITUD del salt absolut. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 2. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 2."
+    },
+    "F3-B1S-F02-L05-02": {
+      "prompt": "En Discontinuitats: Calcula lim (x→3) (x²−9)/(x−3) mitjançant factorització vàlida només per x≠3. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Càlcul del límit amb domini i expressions laterals diferenciades; valor contrastat: 6. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 6."
+    },
+    "F3-B1S-F02-L05-03": {
+      "prompt": "En Discontinuitats: Classifica discontinuïtat de (x²−9)/(x−3) en x=3: Evitable, De salt o Infinita. Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Càlcul del límit amb domini i expressions laterals diferenciades; valor contrastat: Evitable. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: Evitable."
+    },
+    "F3-B1S-F02-L05-04": {
+      "prompt": "En Discontinuitats: Classifica discontinuïtat amb límits laterals 3 i 5: Evitable, De salt o Infinita. Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: De salt. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: De salt."
+    },
+    "F3-B1S-F02-L05-05": {
+      "prompt": "En Discontinuitats: Classifica discontinuïtat de 1/(x−2) en x=2: Evitable, De salt o Infinita. Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: Infinita. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: Infinita."
+    },
+    "F3-B1S-F02-L06-01": {
+      "prompt": "En Interpretació de models a trossos: Tarifa hipotètica C(x)=10+2x per a x≤3 i 9+4x per a x>3. Calcula C(3) usant la branca vàlida. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 16. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 16."
+    },
+    "F3-B1S-F02-L06-02": {
+      "prompt": "En Interpretació de models a trossos: Per tarifa C(x)=10+2x si x≤3 i 9+4x si x>3, calcula límit dret en aproximar-se a 3. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Càlcul del límit amb domini i expressions laterals diferenciades; valor contrastat: 21. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 21."
+    },
+    "F3-B1S-F02-L06-03": {
+      "prompt": "En Interpretació de models a trossos: Tarifa hipotètica C(x)=10+2x per a x≤3 i 9+4x per a x>3. Calcula C(5) usant la branca vàlida. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 29. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 29."
+    },
+    "F3-B1S-F02-L06-04": {
+      "prompt": "En Interpretació de models a trossos: És contínua en x=3 la tarifa real estesa C(x)=10+2x si x≤3 i 9+4x si x>3 (Sí / No)? Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: No. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: No."
+    },
+    "F3-B1S-F02-L06-05": {
+      "prompt": "En Interpretació de models a trossos: Calcula el salt (valor absolut) de C(x)=10+2x per x≤3 i 9+4x per x>3 en x=3. Tria l'opció matemàticament correcta.",
+      "hint": "Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques.",
+      "explanation": "Explicació matemàtica: Avaluació simbòlica exacta, comprovació en l'expressió original i restriccions pertinents; resultat: 5. Comprova el domini, el valor en el punt i els límits laterals; evita dividir entre zero o barrejar branques. Factoritza només per a x diferent del punt exclòs. Existeix límit bilateral finit si els dos laterals coincideixen; continuïtat exigeix a més f(a)= límit. Una asímptota vertical requereix divergència lateral. Comprova límit lateral, continuïtat, punt no derivable, domini, signe, unitats i diferència discreta quan correspongui. Solució verificable: 5."
+    }
+  }
+}

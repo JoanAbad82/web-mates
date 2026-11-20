@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2C-F01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2c_f01.json": "fbce3bf4f38ce30ae88ebfe3684152293bc9ff69729ab9e13dbcdd8ccedc669d",
+    "data/f3_b2c_f01_exercises.json": "969017ee44f3774475b0028229bb1e1be5d4ea471a936a31386afc356df29464"
+  },
+  "lessons": {
+    "B2C-F01-L01": {
+      "title": "Repàs de límits",
+      "objectives": [
+        "Resoldre límits polinòmics i racionals en punts regulars i en infinit.",
+        "Distingir convergència finita, divergència i indeterminacions."
+      ],
+      "content_blocks": [
+        {
+          "body": "Els límits revisen el comportament prop d'un punt i en els extrems de la recta real. Un polinomi és continu i permet substituir directament. En una fracció racional amb denominador diferent de zero en a també se substitueix. Si s'obté 0/0, aquesta escriptura representa una indeterminació i exigeix factorització, racionalització o una altra transformació vàlida per a valors pròxims però diferents de a; no constitueix el valor del límit. En l'infinit es comparen els graus: si coincideixen, el límit és el quocient de coeficients principals; amb numerador de grau menor, val zero. Si el grau major està a dalt, s'analitza signe i direcció d'infinit. El límit bilateral exigeix acord de laterals, encara que f(a) no estigui definida."
+        },
+        {
+          "body": "Per f(x)=(3x²+1)/(2x²+5), en tendir x a +∞ els termes dominants donen 3/2. No se substitueix infinit com un nombre real."
+        },
+        {
+          "body": "Per g(x)=(x²−4)/(x−2), x≠2, factoritzar permet g(x)=x+2 prop de 2; per tant lim (x→2)g(x)=4 encara que g(2) no existeixi."
+        },
+        {
+          "body": "Límit en un forat. Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Límit en un forat. Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Límit en un forat"
+          }
+        },
+        {
+          "body": "0/0 demostra que el límit d'una funció és zero?||No; assenyala una indeterminació que ha de resoldre's transformant l'expressió en el seu domini."
+        },
+        {
+          "body": "Recuperació: Els límits revisen el comportament prop d'un punt i en els extrems de la recta real. Resol un cas de transferència sense ajuda, contrasta hipòtesi i registra errors importants."
+        }
+      ]
+    },
+    "B2C-F01-L02": {
+      "title": "Indeterminacions i tècniques",
+      "objectives": [
+        "Resoldre límits 0/0 mitjançant cancel·lació i conjugats sota condicions de domini.",
+        "Explicar quines transformacions no modifiquen el límit lateral o bilateral."
+      ],
+      "content_blocks": [
+        {
+          "body": "El quocient (x²−a²)/(x−a) coincideix amb x+a només quan x≠a; la transformació permet trobar el seu límit 2a, però no autoritza assignar un valor al punt exclòs sense declaració. En una expressió radical com [√(c+x)−√c]/x, amb c>0 i x proper a zero, racionalitzar dóna 1/[√(c+x)+√c] i límit 1/(2√c). És essencial multiplicar simultàniament numerador i denominador pel conjugat. Mai es divideix entre una expressió que podria anul·lar-se en el domini d'aproximació. El fet de trobar 0/0 després de substituir no permet aplicar cancel·lacions inexistents o concloure que qualsevol nombre sigui límit; s'ha d'exhibir una igualtat vàlida en l'entorn puncturado."
+        },
+        {
+          "body": "lim (x→3)(x²−9)/(x−3)= lim (x→3)(x+3)=6; el valor de la funció original en x=3 continua indefinit."
+        },
+        {
+          "body": "lim (x→0)(√(4+x)−2)/x= lim (x→0)1/(√(4+x)+2)=1/4, després de multiplicar pel conjugat."
+        },
+        {
+          "body": "Racionalització d'un límit radical. Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Racionalització d'un límit radical. Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Racionalització d'un límit radical"
+          }
+        },
+        {
+          "body": "Per què cancel·lar x−a no implica que la funció original estigui definida en x=a?||Perquè la identitat simplificada només s'estableix on el denominador inicial no val zero."
+        },
+        {
+          "body": "Recuperació: El quocient (x²−a²)/(x−a) coincideix amb x+a només quan x≠a; la transformació permet trobar el seu límit 2a, però no autoritza assignar un valor al punt exclòs sense declaració. Resol un cas de transferència sense ajuda, contrasta hipòtesis i registra errors importants."
+        }
+      ]
+    },
+    "B2C-F01-L03": {
+      "title": "asímptotes",
+      "objectives": [
+        "Trobar asímptotes verticals i horitzontals justificant límits.",
+        "Distingir asímptotes obliqües de línies horitzontals i de forats."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una asímptota vertical x=a existeix si algun límit lateral en a és infinit; un forat amb límit finit no compleix aquesta definició. Una asímptota horitzontal y=L s'obté si f(x)−L→0 en tendir x a +∞ o −∞. Una obliqua y= mx +n, m≠0, requereix lim (x→±∞)[f(x)−( mx +n)]=0 en la direcció considerada, no n'hi ha prou que la gràfica sembli recta. El quocient de polinomis amb grau del numerador un major que el denominador pot tenir asímptota obliqua calculada per divisió. Per f(x)=(x²+1)/x=x+1/x, x≠0, y=x és una asímptota obliqua en ±∞, i x=0 és vertical. Cap asímptota obliga que la funció no creui la seva recta en algun altre punt."
+        },
+        {
+          "body": "f(x)=1/(x−2)+3 posseeix AV x=2 i AH y=3: el segon sumant governa el límit a l'infinit."
+        },
+        {
+          "body": "g(x)=(x²+1)/x=x+1/x té asímptota obliqua y=x quan |x|→∞, doncs g(x)−x=1/x→0."
+        },
+        {
+          "body": "Asímptotes vertical i horitzontal. Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Asímptotes vertical i horitzontal. Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Asímptotes vertical i horitzontal"
+          }
+        },
+        {
+          "body": "Un límit finit en x=a demostra una asímptota vertical allí?||No. Per a vertical ha de divergir almenys un límit lateral."
+        },
+        {
+          "body": "Recuperació: Una asímptota vertical x=a existeix si algun límit lateral en a és infinit; un forat amb límit finit no compleix aquesta definició. Resol un cas de transferència sense ajuda, contrasta hipòtesi i registra errors importants."
+        }
+      ]
+    },
+    "B2C-F01-L04": {
+      "title": "Continuïtat en funcions a trossos",
+      "objectives": [
+        "Establir continuïtat en punts d'unió de funcions a trossos.",
+        "Calcula els paràmetres que igualen límits laterals i valor de la funció."
+      ],
+      "content_blocks": [
+        {
+          "body": "La continuïtat en a requereix simultàniament que f(a) estigui definida, que existeixi un límit bilateral finit i que coincideixi amb f(a). En una funció a trossos, primer es determina quina fórmula s'aplica en el punt i després es calculen els límits laterals amb les seves branques respectives. Per f(x)=x+2 si x<1 i f(x)= kx si x≥1, el límit esquerre és 3 i el dret k, igual al valor puntual k; hi ha continuïtat només quan k=3. Si els laterals no coincideixen, no n'hi ha prou modificar f(a). Si els laterals coincideixen i manca únicament el valor puntual, es tracta de discontinuïtat evitable. Si un divergeix, la discontinuïtat és infinita. El criteri no requereix que les dues expressions coincideixin en tot el domini."
+        },
+        {
+          "body": "En f(x)=x+2 per a x<1 i kx per a x≥1, en arribar a 1 per l'esquerra dóna 3; per la dreta dóna k. Resoldre 3=k garanteix continuïtat."
+        },
+        {
+          "body": "En g(x)=x+1 per x<0 i x² per x≥0, els laterals en 0 són 1 i 0; cap canvi de g(0) basta per eliminar el salt."
+        },
+        {
+          "body": "Unió de funcions a trossos. Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Unió de funcions a trossos. Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Unió de funcions a trossos"
+          }
+        },
+        {
+          "body": "Puc assegurar continuïtat comprovant només que f(a) està definida?||No. També ha d'existir el límit bilateral i coincidir exactament amb f(a)."
+        },
+        {
+          "body": "Recuperació: La continuïtat en a requereix simultàniament que f(a) estigui definida, que existeixi un límit bilateral finit i que coincideixi amb f(a). Resol un cas de transferència sense ajuda, contrasta hipòtesi i registra errors importants."
+        }
+      ]
+    },
+    "B2C-F01-L05": {
+      "title": "Derivabilitat i punts singulars",
+      "objectives": [
+        "Analitzar derivabilitat mitjançant quocients incrementals laterals.",
+        "Distingir cantonades, cúspides i discontinuïtats d'una tangent ordinària."
+      ],
+      "content_blocks": [
+        {
+          "body": "La derivabilitat bilateral de f en a exigeix que els límits laterals finits del quocient [f(a+h)−f(a)]/h coincideixin. La derivabilitat implica continuïtat, de manera que un salt exclou derivada. El valor absolut |x| és continu en 0, però les derivades laterals són −1 y +1: existeix cantonada i no derivada. La funció |x|^(2/3) és contínua en 0, però els seus pendents divergeixen amb signes oposats; és una cúspide. No han d'identificar-se pendents infinits amb una derivada real finita. Per a una funció a trossos de polinomis, primer es comprova continuïtat en l'enllaç i després la igualtat de derivades laterals; la igualtat de pendents sense continuïtat tampoc basta."
+        },
+        {
+          "body": "f(x)=|x|: el quocient incremental en a=0 val −1 si h<0 y +1 si h>0; per tant no té derivada bilateral."
+        },
+        {
+          "body": "g(x)=x² si x≤0 i 2x² si x>0 és contínua en zero i té derivades laterals 0 i 0; sí que és derivable en zero."
+        },
+        {
+          "body": "Punt continu però no derivable. Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Punt continu però no derivable. Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Punt continu però no derivable"
+          }
+        },
+        {
+          "body": "Una funció contínua és automàticament derivable en el mateix punt?||No; una cantonada com la de |x| en zero demostra que continuïtat no implica derivabilitat."
+        },
+        {
+          "body": "Recuperació: La derivabilitat bilateral de f en a exigeix que els límits laterals finits del quocient [f(a+h)−f(a)]/h coincideixin. Resol un cas de transferència sense ajuda, contrasta hipòtesi i registra errors importants."
+        }
+      ]
+    },
+    "B2C-F01-L06": {
+      "title": "Teoremes bàsics com a criteris",
+      "objectives": [
+        "Aplicar correctament Fermat, Rolle i valor mitjà segons les seves hipòtesis.",
+        "Reconèixer contraexemples quan falla continuïtat o derivabilitat."
+      ],
+      "content_blocks": [
+        {
+          "body": "Fermat afirma que, en un extrem local interior on f és derivable, f′(a)=0; la condició és necessària, no suficient. Rolle exigeix continuïtat de f en [a,b], derivabilitat en (a,b) i igualtat f(a)=f(b); llavors existeix c interior amb f′(c)=0. El teorema del valor mitjà exigeix continuïtat en [a,b] i derivabilitat en (a,b), i garanteix algun c amb f′(c)=[f(b)−f(a)]/(b−a). Ningú afirma unicitat del c. No es poden aplicar aquests teoremes ometent les hipòtesis d'interval tancat, interior o derivabilitat. En f(x)=|x| sobre [−1,1], els extrems tenen el mateix valor, però falla la derivabilitat en zero; Rolle no obliga a un c amb derivada zero."
+        },
+        {
+          "body": "Per f(x)=x² en [−1,1], f(−1)=f(1)=1 i f és contínua/derivable: Rolle produeix c=0, ja que f′(0)=0."
+        },
+        {
+          "body": "Per a g(x)=x² en [1,3], el pendent secant és (9−1)/(3−1)=4. El valor mitjà es compleix amb c=2 perquè g′(2)=4."
+        },
+        {
+          "body": "Teorema del valor mitjà per y=x². Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Teorema del valor mitjà per y=x². Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Teorema del valor mitjà per a y=x²"
+          }
+        },
+        {
+          "body": "Pot aplicar-se Rolle a |x| en [−1,1] només perquè els extrems valen el mateix?||No; falla la derivabilitat en x=0, punt interior de l'interval."
+        },
+        {
+          "body": "Recuperació: Fermat afirma que, en un extrem local interior on f és derivable, f′(a)=0; la condició és necessària, no suficient. Resol un cas de transferència sense ajuda, contrasta hipòtesi i registra errors importants."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2C-F01-L01-01": {
+      "prompt": "Calcula lim (t→2)[1t²+(3)t+(0)] per continuïtat polinòmica. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Verifica primer domini i si la substitució produeix nombre finit o forma 0/0.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 10. Verifica primer domini i si la substitució produeix nombre finit o forma 0/0. En 0/0, factoritza o racionalitza només en entorn punxat; el valor puntual no es crea per cancel·lar. En infinit compara graus. Resultat comprovat: 10. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L01-02": {
+      "prompt": "Calcula lim (t→1)[(1t+(2))/(1t+(3))], amb denominador no nul. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Verifica primer domini i si la substitució produeix nombre finit o forma 0/0.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 0,75. Verifica primer domini i si la substitució produeix nombre finit o forma 0/0. En 0/0, factoritza o racionalitza només en entorn punxat; el valor puntual no es crea per cancel·lar. En infinit compara graus. Resultat comprovat: 0,75. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L01-03": {
+      "prompt": "Calcula lim (x→+∞)[(3)x²+1]/[(2)x²+5] usant els coeficients líders. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Verifica primer domini i si la substitució produeix nombre finit o forma 0/0.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 1,5. Verifica primer domini i si la substitució produeix nombre finit o forma 0/0. En 0/0, factoritza o racionalitza només en entorn punxat; el valor puntual no es crea per cancel·lar. En infinit compara graus. Resultat comprovat: 1,5. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L01-04": {
+      "prompt": "Per a f(x)=(x²−(4))/(x−(2)), x≠2, calcula lim (x→2)f(x) per factorització. Selecciona la resposta EXACTA.",
+      "hint": "Verifica primer domini i si la substitució produeix nombre finit o forma 0/0.",
+      "explanation": "Explicació pas a pas de la regla: Resol el límit només en l'entorn punxat; no redefines el valor exclòs: 4. Verifica primer domini i si la substitució produeix nombre finit o forma 0/0. En 0/0, factoritza o racionalitza només en entorn punxat; el valor puntual no es crea per cancel·lar. En infinit compara graus. Resultat comprovat: 4. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L01-05": {
+      "prompt": "Per a f(x)=(x²−(4))/(x−(2)) amb la fórmula ORIGINAL, està f(2) definida (Sí / No)? Selecciona la resposta EXACTA.",
+      "hint": "Verifica primer domini i si la substitució produeix nombre finit o forma 0/0.",
+      "explanation": "Explicació pas a pas de la regla: Resol el límit només en l'entorn punxat; no redefines el valor exclòs: No. Verifica primer domini i si la substitució produeix nombre finit o forma 0/0. En 0/0, factoritza o racionalitza només en entorn punxat; el valor puntual no es crea per cancel·lar. En infinit compara graus. Resultat comprovat: No. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L02-01": {
+      "prompt": "Per a f(x)=(x²−(9))/(x−(3)), x≠3, calcula lim (x→3)f(x) per factorització. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Verifica primer domini i si la substitució produeix nombre finit o forma 0/0.",
+      "explanation": "Explicació pas a pas de la regla: Resol el límit només en l'entorn punxat; no redefines el valor exclòs: 6. Verifica primer domini i si la substitució produeix nombre finit o forma 0/0. En 0/0, factoritza o racionalitza només en entorn punxat; el valor puntual no es crea per cancel·lar. En infinit compara graus. Resultat comprovat: 6. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L02-02": {
+      "prompt": "Calcula exactament lim (x→0)[√(4+x)−√(4)]/x racionalitzant amb el conjugat. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Verifica primer domini i si la substitució produeix nombre finit o forma 0/0.",
+      "explanation": "Explicació pas a pas de la regla: Resol el límit només en l'entorn punxat; no redefines el valor exclòs: 0,25. Verifica primer domini i si la substitució produeix nombre finit o forma 0/0. En 0/0, factoritza o racionalitza només en entorn punxat; el valor puntual no es crea per cancel·lar. En infinit compara graus. Resultat comprovat: 0,25. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L02-03": {
+      "prompt": "Per a f(x)=(x²−(4))/(x−(2)), x≠2, calcula lim (x→2)f(x) per factorització. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Verifica primer domini i si la substitució produeix nombre finit o forma 0/0.",
+      "explanation": "Explicació pas a pas de la regla: Resol el límit només en l'entorn punxat; no redefines el valor exclòs: 4. Verifica primer domini i si la substitució produeix nombre finit o forma 0/0. En 0/0, factoritza o racionalitza només en entorn punxat; el valor puntual no es crea per cancel·lar. En infinit compara graus. Resultat comprovat: 4. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L02-04": {
+      "prompt": "Calcula exactament lim (x→0)[√(9+x)−√(9)]/x racionalitzant amb el conjugat. Selecciona la resposta EXACTA.",
+      "hint": "Verifica primer domini i si la substitució produeix nombre finit o forma 0/0.",
+      "explanation": "Explicació pas a pas de la regla: Resol el límit només en l'entorn punxat; no redefines el valor exclòs: 1/6. Verifica primer domini i si la substitució produeix nombre finit o forma 0/0. En 0/0, factoritza o racionalitza només en entorn punxat; el valor puntual no es crea per cancel·lar. En infinit compara graus. Resultat comprovat: 1/6. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L02-05": {
+      "prompt": "Per a f(x)=(x²−(9))/(x−(3)) amb la fórmula ORIGINAL, està f(3) definida (Sí / No)? Selecciona la resposta EXACTA.",
+      "hint": "Verifica primer domini i si la substitució produeix nombre finit o forma 0/0.",
+      "explanation": "Explicació pas a pas de la regla: Resol el límit només en l'entorn punxat; no redefines el valor exclòs: No. Verifica primer domini i si la substitució produeix nombre finit o forma 0/0. En 0/0, factoritza o racionalitza només en entorn punxat; el valor puntual no es crea per cancel·lar. En infinit compara graus. Resultat comprovat: No. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L03-01": {
+      "prompt": "Per f(x)=1/(x−(2))+3, escriu l'equació EXACTA de la asímptota VERTICAL. Selecciona la resposta EXACTA.",
+      "hint": "Una asímptota vertical requereix límit lateral infinit, una horitzontal límit finit en infinit.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat x=2. Una asímptota vertical requereix límit lateral infinit, una horitzontal límit finit en infinit. Per obliqua y= mx +b comprova f(x)−( mx +b)→0, m≠0. Un factor cancel·lat amb límit finit produeix forat. Resultat comprovat: x=2. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L03-02": {
+      "prompt": "Per a f(x)=1/(x−2)+(3), escriu l'equació EXACTA de la asímptota HORITZONTAL. Selecciona la resposta EXACTA.",
+      "hint": "Una asímptota vertical requereix límit lateral infinit, una horitzontal límit finit en infinit.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat y=3. Una asímptota vertical requereix límit lateral infinit, una horitzontal límit finit en infinit. Per obliqua y= mx +b comprova f(x)−( mx +b)→0, m≠0. Un factor cancel·lat amb límit finit produeix forat. Resultat comprovat: y=3. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L03-03": {
+      "prompt": "Per f(x)=(x²+(1)x+1)/x, x≠0, escriu la asímptota OBLIQUA y= mx +b vàlida a l'infinit. Selecciona la resposta EXACTA.",
+      "hint": "Una asímptota vertical requereix límit lateral infinit, una horitzontal límit finit en infinit.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat y=x+1. Una asímptota vertical requereix límit lateral infinit, una horitzontal límit finit en infinit. Per obliqua y= mx +b comprova f(x)−( mx +b)→0, m≠0. Un factor cancel·lat amb límit finit produeix forat. Resultat comprovat: y=x+1. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L03-04": {
+      "prompt": "Per a f(x)=(x²−(4))/(x−(2)), x≠2, classifica el punt exclòs x=2: Forat, Asíntota vertical o Contínua. Selecciona la resposta EXACTA.",
+      "hint": "Una asímptota vertical requereix límit lateral infinit, una horitzontal límit finit en infinit.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat Forat. Una asímptota vertical requereix límit lateral infinit, una horitzontal límit finit en infinit. Per obliqua y= mx +b comprova f(x)−( mx +b)→0, m≠0. Un factor cancel·lat amb límit finit produeix forat. Resultat comprovat: Forat. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L03-05": {
+      "prompt": "Indica el límit ESQUERRE de f(x)=1/(x−(2)) en acostar-se x→2: −∞ o +∞. Selecciona la resposta EXACTA.",
+      "hint": "Una asímptota vertical requereix límit lateral infinit, una horitzontal límit finit en infinit.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat −∞. Una asímptota vertical requereix límit lateral infinit, una horitzontal límit finit en infinit. Per obliqua y= mx +b comprova f(x)−( mx +b)→0, m≠0. Un factor cancel·lat amb límit finit produeix forat. Resultat comprovat: −∞. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L04-01": {
+      "prompt": "La funció és f(x)=x+(2) si x<1, i f(x)=k·x si x≥1. Halla k que fa la unió CONTÍNUA. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Calcula els límits per cada costat de la unió usant la fórmula correcta.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 3. Calcula els límits per cada costat de la unió usant la fórmula correcta. Continuïtat en a exigeix límit esquerre = límit dret = f(a); assignar f(a) no elimina un salt entre laterals diferents. Resultat comprovat: 3. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L04-02": {
+      "prompt": "En f(x)=x+(2) si x<1, i kx si x≥1, calcula el límit ESQUERRE en x=1. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Calcula els límits per cada costat de la unió usant la fórmula correcta.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 3. Calcula els límits per cada costat de la unió usant la fórmula correcta. Continuïtat en a exigeix límit esquerre = límit dret = f(a); assignar f(a) no elimina un salt entre laterals diferents. Resultat comprovat: 3. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L04-03": {
+      "prompt": "En f(x)=x+2 si x<1, i 3x si x≥1, calcula el límit DRET en x=1. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Calcula els límits per cada costat de la unió usant la fórmula correcta.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 3. Calcula els límits per cada costat de la unió usant la fórmula correcta. Continuïtat en a exigeix límit esquerre = límit dret = f(a); assignar f(a) no elimina un salt entre laterals diferents. Resultat comprovat: 3. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L04-04": {
+      "prompt": "Per f(x)=x+(2) si x<1, i 4x si x≥1, classifica la unió en 1: Salt o Contínua. Selecciona la resposta EXACTA.",
+      "hint": "Calcula els límits per cada costat de la unió usant la fórmula correcta.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat Salt. Calcula els límits per cada costat de la unió usant la fórmula correcta. Continuïtat en a exigeix límit esquerre = límit dret = f(a); assignar f(a) no elimina un salt entre laterals diferents. Resultat comprovat: Salt. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L04-05": {
+      "prompt": "Per a f(x)=x+(2) si x<1 i f(x)=3x si x≥1, és contínua en 1 (Sí / No)? Selecciona la resposta EXACTA.",
+      "hint": "Calcula els límits per cada costat de la unió usant la fórmula correcta.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat Sí. Calcula els límits per cada costat de la unió usant la fórmula correcta. Continuïtat en a exigeix límit esquerre = límit dret = f(a); assignar f(a) no elimina un salt entre laterals diferents. Resultat comprovat: Sí. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L05-01": {
+      "prompt": "La funció f(x)=|x| té una cantonada en x=0. Existeix el seu derivada BILATERAL en aquest punt (Sí / No)? Selecciona la resposta EXACTA.",
+      "hint": "La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral.",
+      "explanation": "Explicació pas a pas de la regla: Calcula quocients incrementals laterals de la funció i comprova si coincideixen: No. La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral. Compara h<0 i h>0 del quocient [f(a+h)−f(a)]/h; si els límits finits no coincideixen, no hi ha derivada real bilateral. Resultat comprovat: No. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L05-02": {
+      "prompt": "f(x)=x² si x≤0 i f(x)=2x² si x>0. Existeix f′(0) bilateral després de comprovar continuïtat (Sí / No)? Selecciona la resposta EXACTA.",
+      "hint": "La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat Sí. La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral. Compara h<0 i h>0 del quocient [f(a+h)−f(a)]/h; si els límits finits no coincideixen, no hi ha derivada real bilateral. Resultat comprovat: Sí. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L05-03": {
+      "prompt": "En un punt interior, l'existència de derivada bilateral finita de f implica que f és contínua allí (Sí / No)? Selecciona la resposta EXACTA.",
+      "hint": "La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat Sí. La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral. Compara h<0 i h>0 del quocient [f(a+h)−f(a)]/h; si els límits finits no coincideixen, no hi ha derivada real bilateral. Resultat comprovat: Sí. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L05-04": {
+      "prompt": "Calcula la derivada lateral ESQUERRA en x=0 de f(x)=|x|, usant h<0 en el quocient incremental. Selecciona la resposta EXACTA.",
+      "hint": "La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral.",
+      "explanation": "Explicació pas a pas de la regla: Calcula quocients incrementals laterals de la funció i comprova si coincideixen: -1. La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral. Compara h<0 i h>0 del quocient [f(a+h)−f(a)]/h; si els límits finits no coincideixen, no hi ha derivada real bilateral. Resultat comprovat: -1. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L05-05": {
+      "prompt": "Per a f(x)=|x|^(2/3), existeix derivada real FINITA i bilateral en x=0 (No existeix)? Selecciona la resposta EXACTA.",
+      "hint": "La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral.",
+      "explanation": "Explicació pas a pas de la regla: Calcula quocients incrementals laterals de la funció i comprova si coincideixen: No existeix. La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral. Compara h<0 i h>0 del quocient [f(a+h)−f(a)]/h; si els límits finits no coincideixen, no hi ha derivada real bilateral. Resultat comprovat: No existeix. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L06-01": {
+      "prompt": "Per a f(x)=x² en l'interval [−2,2], quin c INTERIOR satisfà f′(c)=0 segons Rolle? Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Abans d'usar Rolle o el valor mitjà, comprova continuïtat tancada i derivabilitat interior.",
+      "explanation": "Explicació pas a pas de la regla: Comprova les hipòtesis del teorema abans d'aplicar la seva conclusió: 0. Abans d'usar Rolle o el valor mitjà, comprova continuïtat tancada i derivabilitat interior. Rolle afegeix f(a)=f(b); el valor mitjà garanteix algun c interior amb f′(c)= TVM. Fermat és condició necessària, no suficient. Resultat comprovat: 0. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L06-02": {
+      "prompt": "Per f(x)=x² en [1,3], troba el c INTERIOR garantit pel teorema del valor mitjà amb f′(c)= TVM. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Abans d'usar Rolle o el valor mitjà, comprova continuïtat tancada i derivabilitat interior.",
+      "explanation": "Explicació pas a pas de la regla: Comprova les hipòtesis del teorema abans d'aplicar la seva conclusió: 2. Abans d'usar Rolle o el valor mitjà, comprova continuïtat tancada i derivabilitat interior. Rolle afegeix f(a)=f(b); el valor mitjà garanteix algun c interior amb f′(c)= TVM. Fermat és condició necessària, no suficient. Resultat comprovat: 2. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L06-03": {
+      "prompt": "Per a f(x)=|x| en [−1,1], són vàlides totes les hipòtesis de Rolle (Sí / No)? Revisa derivabilitat interior. Selecciona la resposta EXACTA.",
+      "hint": "Abans d'usar Rolle o el valor mitjà, comprova continuïtat tancada i derivabilitat interior.",
+      "explanation": "Explicació pas a pas de la regla: Comprova les hipòtesis del teorema abans d'aplicar la seva conclusió: No. Abans d'usar Rolle o el valor mitjà, comprova continuïtat tancada i derivabilitat interior. Rolle afegeix f(a)=f(b); el valor mitjà garanteix algun c interior amb f′(c)= TVM. Fermat és condició necessària, no suficient. Resultat comprovat: No. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L06-04": {
+      "prompt": "Si f és derivable i f′(a)=0, és suficient per a afirmar que a és màxim o mínim local (Sí / No)? Selecciona la resposta EXACTA.",
+      "hint": "Abans d'usar Rolle o el valor mitjà, comprova continuïtat tancada i derivabilitat interior.",
+      "explanation": "Explicació pas a pas de la regla: Comprova les hipòtesis del teorema abans d'aplicar la seva conclusió: No. Abans d'usar Rolle o el valor mitjà, comprova continuïtat tancada i derivabilitat interior. Rolle afegeix f(a)=f(b); el valor mitjà garanteix algun c interior amb f′(c)= TVM. Fermat és condició necessària, no suficient. Resultat comprovat: No. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F01-L06-05": {
+      "prompt": "Calcula el pendent de la secant [f(4)−f(1)]/(4−1) de f(x)=x² en [1,4]. Selecciona la resposta EXACTA.",
+      "hint": "Taxa mitjana = canvi de sortida dividit per canvi d'entrada, amb extrems diferents.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 5. Taxa mitjana = canvi de sortida dividit per canvi d'entrada, amb extrems diferents. TVM =[f(b)−f(a)]/(b−a). Calcula valors finals sense arrodoniment i conserva unitats; TVM zero no implica una funció constant. Resultat comprovat: 5. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2S-A01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2s_a01.json": "c6cdf1aa3b888285948fa5f3453828ef2012e62017652eeb78b78e234336322e",
+    "data/f3_b2s_a01_exercises.json": "e7d34aca051a6dec0d8cccaf287776ee086615362e2006b2ccff3d2cf8910749"
+  },
+  "lessons": {
+    "B2S-A01-L01": {
+      "title": "Matrius i operacions",
+      "objectives": [
+        "Llegir dimensions i operar suma, producte per escalar i transposició.",
+        "Comprova la compatibilitat de dimensions sense confondre l'entrada, la fila i la columna."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una matriu m × n disposa de m files i n columnes i representa dades estructurades, no un nombre aïllat. La suma A+B està definida únicament per a matrius de la mateixa grandària i es realitza component a component. Multiplicar per un escalar k multiplica cada entrada; la transposada AT intercanvia files i columnes, de dimensió n × m. Si A=[[1,2], [3,4]] i B=[[5,0], [-1,2]], A+B=[[6,2], [2,6]]. Per 2A s'obté [[2,4], [6,8]], mentre AT =[[1,3], [2,4]]. No se sumen matrius de dimensions diferents mitjançant emplenat de zeros excepte conveni explícit extern, ni s'assumeix que dues cel·les tenen unitats compatibles sense declarar el seu significat. Una taula mostra files i columnes amb encapçalaments i pot servir estudiants amb lector de pantalla."
+        },
+        {
+          "body": "Amb A=[[1,2], [3,4]], la matriu 2A=[[2,4], [6,8]]. L'entrada (2,1) passa de 3 a 6; la grandària 2×2 no canvia."
+        },
+        {
+          "body": "Per A=[[1,2], [3,4]] i B=[[5,0], [-1,2]], A+B=[[6,2], [2,6]]. L'entrada (2,1) és 3+(−1)=2."
+        },
+        {
+          "body": "Matriu com a taula de dades, no corba obligatòria. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Matriu com a taula de dades, no corba obligatòria. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Matriu com a taula de dades, no corba obligatòria"
+          }
+        },
+        {
+          "body": "Pot sumar-se directament una matriu 2×3 i una altra 3×2 sense transformar les seves dimensions?||No; la suma element a element exigeix dimensions iguals."
+        },
+        {
+          "body": "Recuperació activa: Una matriu m × n disposa de m files i n columnes i representa dades estructurades, no un nombre aïllat. Torna sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    },
+    "B2S-A01-L02": {
+      "title": "Producte i inversa",
+      "objectives": [
+        "Calcular producte matricial 2×2 respectant l'ordre.",
+        "Decidir invertibilitat d'una matriu 2×2 pel seu determinant i trobar la inversa quan existeix."
+      ],
+      "content_blocks": [
+        {
+          "body": "El producte AB requereix que les columnes d'A coincideixin amb les files de B; l'entrada (i,j) resulta del producte escalar de fila i i columna j. No és multiplicació element a element i, en general, AB≠BA. Per A=[[1,2], [0,1]] i B=[[2,0], [3,4]], AB =[[8,8], [3,4]], mentre BA =[[2,4], [3,7]]. Una matriu 2×2 A=[[a,[c,d]] té determinant ad − bc; té inversa si i només si el determinant és diferent de zero. La seva inversa és (1/ det)[[d, −b], [−c,a]], la validesa pot comprovar-se amb AA ⁻¹=I. Si det =0 és singular, i no s'ha d'afirmar una inversa en dividir entre zero. Aquestes operacions no es deriven del dibuix d'una recta: la taula exacta és la representació matemàtica principal."
+        },
+        {
+          "body": "A=[[1,2], [0,1]], B=[[2,0], [3,4]]: AB té primera entrada 1·2+2·3=8 i segona entrada 1·0+2·4=8."
+        },
+        {
+          "body": "Per A=[[2,1], [1,1]], det =2·1−1·1=1; A⁻¹=[[1, −1], [−1,2]]. Multiplica AA ⁻¹ per obtenir I."
+        },
+        {
+          "body": "Producte matricial en taula exacta. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Producte matricial en taula exacta. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Producte matricial en taula exacta"
+          }
+        },
+        {
+          "body": "Pot existir inversa ordinària d'una matriu quadrada amb determinant zero?||No; és singular."
+        },
+        {
+          "body": "Recuperació activa: El producte AB requereix que les columnes de A coincideixin amb les files de B; l'entrada (i,j) resulta del producte escalar de fila i i i columna j. Torna sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    },
+    "B2S-A01-L03": {
+      "title": "Sistemes lineals",
+      "objectives": [
+        "Resoldre sistemes 2×2 per eliminació o determinants amb comprovació.",
+        "Relacionar el sistema Ax =b amb solucions i condicions d'invertibilitat."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un sistema lineal 2×2 pot escriure's com Ax =b; la matriu de coeficients no s'ha de confondre amb la matriu ampliada. Si A té determinant diferent de zero, existeix una única solució x=A⁻¹b. Per 2x+y=7 i x−y=2 se sumen les equacions i s'obté 3x=9, x=3 e y=1; comprovar ambdós membres confirma 2·3+1=7 i 3−1=2. Per a matrius singulars, la fórmula de la inversa no s'aplica; s'han de comparar rangs de coeficients i ampliada. Resoldre només algebraicament sense atendre unitats i domini pot produir solucions que manquen de sentit si x i i representen nombres de productes indivisibles o no negatius."
+        },
+        {
+          "body": "Resol 2x+y=7, x−y=2: suma ambdues expressions, 3x=9, així x=3; substitueix y=1. Comprova 7 i 2."
+        },
+        {
+          "body": "Per a x+y=5 i x−y=1, sumar dóna 2x=6, x=3, y=2; ambdues equacions se satisfan exactament."
+        },
+        {
+          "body": "Dues equacions lineals amb solució única. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Dues equacions lineals amb solució única. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Dues equacions lineals amb solució única"
+          }
+        },
+        {
+          "body": "S'ha d'aplicar A⁻¹b sense comprovar primer que det (A)≠0?||No; la inversa exigeix invertibilitat."
+        },
+        {
+          "body": "Recuperació activa: Un sistema lineal 2×2 pot escriure's com Ax =b; la matriu de coeficients no s'ha de confondre amb la matriu ampliada. Torna sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    },
+    "B2S-A01-L04": {
+      "title": "Discussió de solucions",
+      "objectives": [
+        "Classificar un sistema singular com a compatible indeterminat o incompatible.",
+        "Usa rangs i relacions de proporcionalitat entre equacions per justificar el resultat."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un sistema Ax =b no té necessàriament solució única. Si el rang de A coincideix amb el de l'ampliada i és igual al nombre d'incògnites, la solució és única. Si ambdós rangs coincideixen però són menors, hi ha infinites solucions; si el rang de l'ampliada supera al d'A, no hi ha solucions. En 2×2 basta raonar amb equacions proporcionals: x+y=2 i 2x+2y=4 representen la mateixa recta, infinites solucions. En canvi x+y=2 i 2x+2y=5 són rectes paral·leles diferents, sense solucions. En ambdós casos el determinant de coeficients és zero, el que només prova no unicitat: no permet triar entre infinites o cap sense inspeccionar termes independents. L'anàlisi de rang, compatibilitat i restriccions econòmiques precedeix a qualsevol predicció basada en solucions."
+        },
+        {
+          "body": "Les equacions x+y=2 i 2x+2y=4 són equivalents: tot parell (t, 2−t) és solució; el sistema és compatible indeterminat."
+        },
+        {
+          "body": "Les equacions x+y=2 i 2x+2y=5 es contradiuen, perquè duplicar la primera donaria 2x+2y=4, no 5; sistema incompatible."
+        },
+        {
+          "body": "Sistemes proporcionals i classificació. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Sistemes proporcionals i classificació. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Sistemes proporcionals i classificació"
+          }
+        },
+        {
+          "body": "Determinant zero implica necessàriament que un sistema 2×2 no té solució?||No; pot tenir infinites solucions."
+        },
+        {
+          "body": "Recuperació activa: Un sistema Ax =b no té necessàriament solució única. Torna sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    },
+    "B2S-A01-L05": {
+      "title": "Aplicacions econòmiques",
+      "objectives": [
+        "Representar demandes i restriccions econòmiques mitjançant sistemes matricials.",
+        "Comprovar la no negativitat de quantitats i el significat de les unitats."
+      ],
+      "content_blocks": [
+        {
+          "body": "Les matrius poden organitzar consums i recursos. Una economia didàctica utilitza quantitats x i i de dos béns amb requisits x+y=10 unitats i 2x+y=14 unitats de recurs; per eliminació x=4 i y=6. En notació Ax =b, A=[[1,1], [2,1]], b=(10,14) T. El determinant és −1≠0: la solució algebraica és única i, en aquest exemple, no negativa i íntegra. Si el sistema tingués solució x<0, el model de producció podria ser matemàticament resoluble però físicament inviable; un determinant no garanteix la viabilitat econòmica. Tampoc es dedueix causalitat dels coeficients i no ha d'exposar-se la taula com si fossin dades reals d'empreses o estudiants. Les unitats de cada fila han de ser compatibles per sumar-se dins d'una equació."
+        },
+        {
+          "body": "Per x+y=10 i 2x+y=14, resta la primera a la segona: x=4; llavors y=6. El parell és no negatiu i satisfà ambdues."
+        },
+        {
+          "body": "Si x+y=5 i x−y=1, el sistema dóna x=3, y=2. Si x i y representen peces, ambdues quantitats són senceres factibles."
+        },
+        {
+          "body": "Recursos de dos béns en un sistema. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Recursos de dos béns en un sistema. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Recursos de dos béns en un sistema"
+          }
+        },
+        {
+          "body": "Resoldre Ax =b amb nombres reals assegura sempre quantitats no negatives de productes?||No; han de comprovar-se les restriccions contextuals."
+        },
+        {
+          "body": "Recuperació activa: Les matrius poden organitzar consums i recursos. Torna sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    },
+    "B2S-A01-L06": {
+      "title": "Grafs i matrius com a aplicació",
+      "objectives": [
+        "Interpretar matrius d'adjacència i potències com a recompte de recorreguts.",
+        "Distingir connexions directes de recorreguts de longitud dos en un graf simple."
+      ],
+      "content_blocks": [
+        {
+          "body": "En un graf dirigit petit amb nodes A i B, la matriu d'adjacència M té entrada M_ij =1 si hi ha una aresta directa i→j i zero en cas contrari. Per M=[[0,1], [1,0]], existeix un enllaç A→B i un altre B→A, però cap bucle directe en A o B. La matriu quadrat és M²=[[1,0], [0,1]], i la seva entrada (i,j) compta recorreguts de longitud exactament dos des de i fins a j; per això hi ha una volta A→B→A. No significa que existeixi una aresta directa A→A: una caminada de longitud dues no és un enllaç de longitud un. Per a grafs amb múltiples camins les entrades de potències poden superar 1, i la interpretació requereix definir bé l'ordre de nodes i les arestes. Un graf d'exemple no representa relacions reals entre menors ni conserva dades personals."
+        },
+        {
+          "body": "M=[[0,1], [1,0]] representa dues connexions creuades. Multiplica M·M: M²=[[1,0], [0,1]], recorregut A→B→A de longitud dues."
+        },
+        {
+          "body": "Per a matriu identitat I=[[1,0], [0,1]], I²=I. L'entrada (1,1) indica un únic recorregut de longitud dos de A a A mitjançant dos bucles."
+        },
+        {
+          "body": "Matrius d'adjacència i camins de dos passos. Gràfica SVG local de suport amb taula HTML semàntica exacta que proporciona el significat matemàtic complet.",
+          "alt": "Matrius d'adjacència i camins de dos passos. Les dades, dominis, restriccions, fórmules, valors i unitats s'inclouen en la taula textual accessible sense dependre de colors.",
+          "visual_spec": {
+            "title": "Matrius d'adjacència i camins de dos passos"
+          }
+        },
+        {
+          "body": "Una entrada positiva en M² garanteix una aresta directa en M entre els mateixos nodes?||No; compte recorreguts de dos passos, no connexions d'un."
+        },
+        {
+          "body": "Recuperació activa: En un graf dirigit petit amb nodes A i B, la matriu d'adjacència M té entrada M_ij =1 si hi ha una aresta directa i→j i zero en cas contrari. Torna sense pistes un altre exemple i explica una condició que invalidaria el mètode."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2S-A01-L01-01": {
+      "prompt": "En Matrius i operacions: Suma matrius A=[[1,2], [3,4]] i B=[[5,0], [-1,2]]. Calcula entrada (2,1) de A+B. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 2. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 2."
+    },
+    "F3-B2S-A01-L01-02": {
+      "prompt": "En Matrius i operacions: Per a A=[[1,2], [3,4]], calcula entrada (2,1) de 2A. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 6. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 6."
+    },
+    "F3-B2S-A01-L01-03": {
+      "prompt": "En Matrius i operacions: Per a A=[[1,2], [3,4]], calcula entrada (1,2) de la matriu TRANSPOSAda AT. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 3. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 3."
+    },
+    "F3-B2S-A01-L01-04": {
+      "prompt": "En Matrius i operacions: Pot sumar-se component a component una matriu 2×3 i una altra 3×2 sense transformació explícita (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-A01-L01-05": {
+      "prompt": "En Matrius i operacions: Si A té dimensions 2×3, quines dimensions té AT: 3×2, 2×3 o 3×3? Selecciona l'opció matemàticament correcta.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 3×2. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 3×2."
+    },
+    "F3-B2S-A01-L02-01": {
+      "prompt": "En Producte i inversa: Calcula entrada (1,1) del producte AB, A=[[1,2], [0,1]], B=[[2,0], [3,4]]. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 8. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 8."
+    },
+    "F3-B2S-A01-L02-02": {
+      "prompt": "En Producte i inversa: Calcula determinant exacte de A=[[2,1], [1,1]], det = ad − bc. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 1. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 1."
+    },
+    "F3-B2S-A01-L02-03": {
+      "prompt": "En Producte i inversa: La matriu A=[[2,1], [1,1]] és invertible. Calcula entrada (1,1) de A⁻¹. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 1. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 1."
+    },
+    "F3-B2S-A01-L02-04": {
+      "prompt": "En Producte i inversa: La identitat AB = BA és vàlida per a totes les matrius quadrades compatibles (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-A01-L02-05": {
+      "prompt": "En Producte i inversa: Una matriu quadrada 2×2 amb det =0 posseeix sempre inversa ordinària (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-A01-L03-01": {
+      "prompt": "En Sistemes lineals: Resol 2x+(1)y=7; 1x+(-1)y=2. Calcula variable x amb comprovació. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 3. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 3."
+    },
+    "F3-B2S-A01-L03-02": {
+      "prompt": "En Sistemes lineals: Resol 2x+(1)y=7; 1x+(-1)y=2. Calcula variable y amb comprovació. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 1. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 1."
+    },
+    "F3-B2S-A01-L03-03": {
+      "prompt": "En Sistemes lineals: Resol 1x+(1)y=5; 1x+(-1)y=1. Calcula variable x amb comprovació. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 3. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 3."
+    },
+    "F3-B2S-A01-L03-04": {
+      "prompt": "En Sistemes lineals: Determinant no nul de la matriu 2×2 garanteix solució única del sistema lineal Ax =b per a tot b (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: Sí. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: Sí."
+    },
+    "F3-B2S-A01-L03-05": {
+      "prompt": "En Sistemes lineals: Pot aplicar-se A⁻¹b a una matriu singular sense comprovar invertibilitat (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-A01-L04-01": {
+      "prompt": "En Discussió de solucions: Calcula rang de A=[[1,1], [2,2]], justificant amb proporcionalitat/determinant. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 1. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 1."
+    },
+    "F3-B2S-A01-L04-02": {
+      "prompt": "En Discussió de solucions: Sistema 1x+(1)y=2; 2x+(2)y=5. Calcula l'interval de la matriu AMPLIADA. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 2. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 2."
+    },
+    "F3-B2S-A01-L04-03": {
+      "prompt": "En Discussió de solucions: Sistema 1x+(1)y=2; 2x+(2)y=4. Calcula l'interval de la matriu AMPLIADA. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 1. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 1."
+    },
+    "F3-B2S-A01-L04-04": {
+      "prompt": "En Discussió de solucions: El determinant zero d'un sistema 2×2 obliga sempre a incompatibilitat i cap solució (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-A01-L04-05": {
+      "prompt": "En Discussió de solucions: Sistema 1x+(1)y=2; 2x+(2)y=4. Classifica solucions: Única, Infinites o Cap. Selecciona l'opció matemàticament correcta.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: Infinites. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: Infinites."
+    },
+    "F3-B2S-A01-L05-01": {
+      "prompt": "En Aplicacions econòmiques: Resol 1x+(1)y=10; 2x+(1)y=14. Calcula variable x amb comprovació. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 4. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 4."
+    },
+    "F3-B2S-A01-L05-02": {
+      "prompt": "En Aplicacions econòmiques: Resol 1x+(1)y=10; 2x+(1)y=14. Calcula variable y amb comprovació. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 6. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 6."
+    },
+    "F3-B2S-A01-L05-03": {
+      "prompt": "En Aplicacions econòmiques: Calcula determinant exacte de A=[[1,1], [2,1]], det = ad − bc. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: -1. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: -1."
+    },
+    "F3-B2S-A01-L05-04": {
+      "prompt": "En Aplicacions econòmiques: La unicitat de solució real de Ax =b garanteix quantitats de productes no negatives (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-A01-L05-05": {
+      "prompt": "En Aplicacions econòmiques: Resol 1x+(1)y=5; 1x+(-1)y=1. Calcula variable x amb comprovació. Selecciona l'opció matemàticament correcta.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 3. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 3."
+    },
+    "F3-B2S-A01-L06-01": {
+      "prompt": "En Grafos i matrius com a aplicació: En M=[[0,1], [1,0]] com a matriu d'adjacència, calcula entrada (1,1) de M²: recorreguts de DOS passos. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 1. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 1."
+    },
+    "F3-B2S-A01-L06-02": {
+      "prompt": "En Grafos i matrius com a aplicació: En M=[[0,1], [1,0]] com a matriu d'adjacència, calcula entrada (1,2) de M²: recorreguts de DOS passos. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 0. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 0."
+    },
+    "F3-B2S-A01-L06-03": {
+      "prompt": "En Grafos i matrius com a aplicació: En M=[[0,1], [1,0]] com a matriu d'adjacència, calcula entrada (2,2) de M²: recorreguts de DOS passos. Escriu el nombre exacte sense unitats.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 1. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 1."
+    },
+    "F3-B2S-A01-L06-04": {
+      "prompt": "En Grafos i matrius com a aplicació: Una entrada no nul·la de M² garanteix una aresta DIRECTA en aquesta mateixa posició de M (Sí / No)? Selecciona l'opció matemàticament correcta.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: No. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: No."
+    },
+    "F3-B2S-A01-L06-05": {
+      "prompt": "En Grafos i matrius com a aplicació: En M=[[0,1], [1,0]] com a matriu d'adjacència, calcula arestes DIRECTES entrada (1,2) de M. Selecciona l'opció matemàticament correcta.",
+      "hint": "Escriu files, columnes, determinant, rang i unitats abans d'operar matrius.",
+      "explanation": "Es comprova l'ordre fila-columna i el sistema amb rang, determinant o substitució, i s'interpreta l'estructura. Es comprova l'expressió original i el domini, amb aritmètica exacta. Resultat: 1. Escriu files, columnes, determinant, rang i unitats abans d'operar matrius. Suma i transposada per entrades; producte fila × columna. Inverteix només si det ≠0. Sistemes singulars es classifiquen comparant rang d'A i ampliada. M² compte recorreguts de dos passos. Comprova restriccions, unitats i la distinció entre magnituds o entre funció i model. Resposta exacta verificable: 1."
+    }
+  }
+}

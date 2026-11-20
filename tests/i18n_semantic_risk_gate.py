@@ -13,7 +13,7 @@ TERM={
  'aritmética':(r'\bmedia aritmética\b',r'\bmitjana aritmètica\b'),
  'raíz':(r'\braí(?:z|ces)\b',r'\barrels?\b'),
  'fracción':(r'\bfraccion(?:es)?\b|\bfracción\b',r'\bfraccion(?:s)?\b|\bfracció\b'),
- 'frecuencia':(r'\bfrecuencia(?:s)?\b',r'\bfreqüència(?:s)?\b'),
+ 'frecuencia':(r'\bfrecuencia(?:s)?\b',r'\bfreqüènci(?:a|es)\b'),
  'probabilidad':(r'\bprobabilidad(?:es)?\b',r'\bprobabilitat(?:s)?\b'),
  'ángulo':(r'\bángulo(?:s)?\b',r'\bangles?\b'),
  'ecuación':(r'\becuaci(?:ón|ones)\b',r'\bequaci(?:ó|ons)\b'),
@@ -23,7 +23,7 @@ TERM={
  'negativo':(r'\bnegativ[oa]s?\b',r'\bnegati(?:u|va|us|ves)\b'),
  'positivo':(r'\bpositiv[oa]s?\b',r'\bpositi(?:u|va|us|ves)\b')
 }
-RESIDUAL=re.compile(r'[¿¡]|\b(?:cuánto|cuántos|cuál|cuáles|fracción|fracciones|ecuación|ecuaciones|ejercicio|enunciado|respuesta|elige|sustituye|sustituir|cuadrado|periódico|número|números|valores|promedio|tabla|datos|resultado|donde|mientras|porque|entonces|pero|después|antes|entero|enteros|izquierda|derecha|arriba|abajo|tiene|tienen|debería|siempre|solamente|alumnos|alumno|muestra|población|frecuencia|gráfica|gráfico|largo|ancho|siendo|resuelve|comprueba|disminuye|aumenta)\b',re.I)
+RESIDUAL=re.compile(r'[¿¡]|\b(?:repaso|repasar|lee|escribe|introduce|cálculo|coordenadas|respuestas|conjunto|según|dado|por tanto|en cambio|sin embargo|cuánto|cuántos|cuál|cuáles|fracción|fracciones|ecuación|ecuaciones|ejercicio|enunciado|respuesta|elige|sustituye|sustituir|cuadrado|periódico|número|números|valores|promedio|tabla|datos|resultado|donde|mientras|porque|entonces|pero|después|antes|entero|enteros|izquierda|derecha|arriba|abajo|tiene|tienen|debería|siempre|solamente|alumnos|alumno|muestra|población|frecuencia|gráfica|gráfico|largo|ancho|siendo|resuelve|comprueba|disminuye|aumenta)\b',re.I)
 def test_pair(src,dst,key):
  assert isinstance(src,str) and isinstance(dst,str) and dst.strip(),key
  math_guard(src,dst,key)

@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1C-F03",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1c_f03.json": "0354f25299c03111e898e529b7d8f66425938c2131723b1f8298bc4c294791ee",
+    "data/f3_b1c_f03_exercises.json": "ff3797cead830ccc6f3137a814b4c5b4a0ce34d90b4cda5e09503baec7481e29"
+  },
+  "lessons": {
+    "B1C-F03-L01": {
+      "title": "Taxa de variació mitjana",
+      "objectives": [
+        "Calcula la taxa de variació mitjana en intervals no degenerats.",
+        "Relacionar la taxa mitjana amb pendent secant i unitats de mesura."
+      ],
+      "content_blocks": [
+        {
+          "body": "La taxa de variació mitjana de f en [a,b], a≠b, és TVM =(f(b)−f(a))/(b−a). La recta secant entre (a,f(a)) i (b,f(b)) posseeix precisament aquest pendent. Per a un moviment, si f(t) expressa posició en metres i t temps en segons, la TVM s'expressa en m/s; no significa velocitat instantània. El signe indica augment o disminució nets entre extrems, però no garanteix monotonia interna. Una taxa mitjana nul·la només prova igualtat entre els valors finals; el recorregut interior pot variar. Si a=b el quocient s'indetermina com a definició de taxa mitjana en un interval nul. Treballar amb fraccions exactes evita errors per arrodoniments."
+        },
+        {
+          "body": "Per a f(x)=x² en [1,3], f(3)−f(1)=9−1=8 i 3−1=2; TVM =4. El pendent de la secant és 4, encara que f no té pendent constant."
+        },
+        {
+          "body": "Per s(t)=−2t²+8t en [0,2], s(0)=0 i s(2)=8; la velocitat mitjana és 8/2=4 m/s si s està en metres i t en segons."
+        },
+        {
+          "body": "Secant de la paràbola entre x=1 i x=3. Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Secant de la paràbola entre x=1 i x=3. Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Secant de la paràbola entre x=1 i x=3"
+          }
+        },
+        {
+          "body": "Una TVM igual a zero prova que la funció sigui constant dins de l'interval?||No; només que f(a)=f(b). Pot pujar i baixar entre ambdós extrems."
+        },
+        {
+          "body": "Recuperació: La taxa de variació mitjana de f en [a,b], a≠b, és TVM =(f(b)−f(a))/(b−a). Resol un cas de transferència sense ajuda, contrasta hipòtesis i registra errors importants."
+        }
+      ]
+    },
+    "B1C-F03-L02": {
+      "title": "derivada en un punt",
+      "objectives": [
+        "Definir derivada com a límit bilateral de quocients incrementals.",
+        "Distingir existència de derivada de la simple continuïtat i dels límits laterals."
+      ],
+      "content_blocks": [
+        {
+          "body": "La derivada f′(a) es defineix pel límit bilateral de [f(a+h)−f(a)]/h quan h→0, si existeix i és finit. És el pendent de la tangent, obtingut com a límit de pendents de secants. Per f(x)=x², el quocient incremental en a és ((a+h)²−a²)/h=2a+h per h≠0; en tendir h a zero resulta f′(a)=2a. Una funció derivable en a ha de ser contínua en a, però el recíproc és fals: |x| és contínua en zero i té pendents laterals −1 y +1, per la qual cosa no és derivable allà. Calcular el quocient només amb h positiu no demostra derivabilitat bilateral; també cal comparar el límit des d'h negatiu."
+        },
+        {
+          "body": "En f(x)=x², a=3: [(3+h)²−9]/h=6+h per h≠0. El límit és 6, així que la tangent té pendent 6."
+        },
+        {
+          "body": "Per f(x)=|x| en a=0, el quocient és |h|/h: val −1 amb h<0 y +1 amb h>0; en discrepar, f′(0) no existeix."
+        },
+        {
+          "body": "La tangent com límit de secants. Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "La tangent com límit de secants. Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "La tangent com límit de secants"
+          }
+        },
+        {
+          "body": "Si existeix el límit de quocients només per a h>0, queda provada una derivada bilateral?||No; cal que els límits per ambdós costats coincideixin i siguin finits."
+        },
+        {
+          "body": "Recuperació: La derivada f′(a) es defineix pel límit bilateral de [f(a+h)−f(a)]/h quan h→0, si existeix i és finit. Resol un cas de transferència sense ajuda, contrasta hipòtesi i registra errors importants."
+        }
+      ]
+    },
+    "B1C-F03-L03": {
+      "title": "Interpretació geomètrica i física",
+      "objectives": [
+        "Interpretar la derivada com a pendent local i taxa instantània amb unitats.",
+        "Usa el signe de la derivada per a descriure la variació en intervals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Geomètricament f′(a) és el pendent de la tangent si la derivada existeix. Físicament, si s(t) mesura posició, s′(t) representa velocitat instantània i les seves unitats són distància per temps; una segona derivada seria acceleració, amb unitats de distància per temps al quadrat. Una derivada positiva significa creixement local quan la regularitat ho permet; una negativa descriu descens, mentre que zero assenyala pendent horitzontal, però no assegura un extrem. Per exemple f(x)=x³ té f′(0)=0 sense mínim ni màxim en zero. És important diferenciar velocitat i rapidesa: la rapidesa és el valor absolut de la velocitat, no pot ser negativa."
+        },
+        {
+          "body": "Per a s(t)=t²+2t metres, s′(t)=2t+2 m/s; en t=3 s, la velocitat instantània és 8 m/s, no la posició de 15 m."
+        },
+        {
+          "body": "Per a f(x)=x³, f′(x)=3x²≥0 i f′(0)=0; així i tot f creix travessant zero, de manera que el punt no és un màxim ni mínim."
+        },
+        {
+          "body": "Pendent instantània d'una posició quadràtica. Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Pendent instantània d'una posició quadràtica. Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Pendent instantània d'una posició quadràtica"
+          }
+        },
+        {
+          "body": "derivada zero en un punt implica sempre que hi hagi màxim o mínim?||No. Per exemple x³ té derivada zero en zero i manté el creixement a banda i banda."
+        },
+        {
+          "body": "Recuperació: Geomètricament f′(a) és el pendent de la tangent si la derivada existeix. Resol un cas de transferència sense ajuda, contrasta hipòtesi i registra errors importants."
+        }
+      ]
+    },
+    "B1C-F03-L04": {
+      "title": "Regles elementals de derivació",
+      "objectives": [
+        "Aplicar derivades elementals a polinomis i funcions senzilles.",
+        "Distingir regla de la suma, constant, potència i producte."
+      ],
+      "content_blocks": [
+        {
+          "body": "La derivada d'una constant és zero; (xn )′=n xn ⁻¹ per a exponents naturals, i (af + bg )′= af ′+ bg ′. D'aquestes regles es dedueix que (3x²−5x+7)′=6x−5. Quan es diferencien productes de funcions variables, no és vàlid multiplicar les seves derivades: (fg )′=f′g+ fg ′. Una derivada pot calcular-se simbòlicament per a x en un interval de derivabilitat, però les regles no autoritzen usar punts on l'expressió manca de domini. Per a potències negatives com 1/x s'ha d'excloure x=0. En la fase introductòria l'explicació conceptual per límits precedeix a l'ús algorítmic de regles."
+        },
+        {
+          "body": "Per f(x)=4x³−2x²+9, derivar terme a terme dóna f′(x)=12x²−4x; en x=1 el pendent local és 8."
+        },
+        {
+          "body": "Si f(x)=x² i g(x)=x+1, la derivada del producte és 2x(x+1)+x², no (2x)·1. En x=1 resulta 5."
+        },
+        {
+          "body": "Derivació d'un polinomi. Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Derivació d'un polinomi. Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Derivació d'un polinomi"
+          }
+        },
+        {
+          "body": "És correcta la identitat (fg )′=f′g′ en general?||No. La regla del producte és f′g+ fg ′ i exigeix derivabilitat de totes dues funcions."
+        },
+        {
+          "body": "Recuperació: La derivada d'una constant és zero; (xn )′=n xn ⁻¹ per a exponents naturals, i (af + bg )′= af ′+ bg ′. Resol un cas de transferència sense ajuda, contrasta hipòtesi i registra errors importants."
+        }
+      ]
+    },
+    "B1C-F03-L05": {
+      "title": "Recta tangent",
+      "objectives": [
+        "Construeix l'equació de la tangent a una gràfica derivable.",
+        "Reconèixer la normal com a perpendicular quan la tangent no és vertical."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si f és derivable en x=a, la recta tangent s'escriu y−f(a)=f′(a)(x−a). Conèixer únicament el pendent no determina la recta; cal a més el punt de contacte. La recta normal és perpendicular a la tangent: si f′(a)≠0, el seu pendent és −1/f′(a). Si f′(a)=0, la tangent és horitzontal i la normal és vertical x=a. La fórmula de la normal amb quocient no es pot utilitzar dividint entre zero. La tangent pot travessar la pròpia corba i no té per què tocar-la en un sol punt. El resultat ha de comprovar-se substituint el punt (a,f(a)) en l'equació obtinguda."
+        },
+        {
+          "body": "Per f(x)=x² en a=2: f(2)=4 i f′(2)=4, després y−4=4(x−2), és a dir y=4x−4. Comprova que (2,4) pertany a la recta."
+        },
+        {
+          "body": "Per g(x)=(x−1)² en a=1, el pendent és zero: tangent horitzontal y=0 i normal vertical x=1; no existeix pendent numèrica per a la normal."
+        },
+        {
+          "body": "Tangent a y=x² en (2,4). Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Tangent a y=x² en (2,4). Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Tangent a y=x² en (2,4)"
+          }
+        },
+        {
+          "body": "Pot calcular-se el pendent de la normal com −1/0 si la tangent és horitzontal?||No. La normal és una recta vertical i el seu pendent no està definit."
+        },
+        {
+          "body": "Recuperació: Si f és derivable en x=a, la recta tangent s'escriu y−f(a)=f′(a)(x−a). Resol un cas de transferència sense ajuda, contrasta hipòtesi i registra errors importants."
+        }
+      ]
+    },
+    "B1C-F03-L06": {
+      "title": "Creixement i extrems com a introducció",
+      "objectives": [
+        "Determinar intervals de creixement mitjançant el signe de la derivada.",
+        "Classificar extrems locals senzills sense confondre punts crítics i inflexions."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a una funció derivable en un interval, f′(x)>0 implica creixement estricte i f′(x)<0 decreixement. Un canvi de signe de positiu a negatiu en travessar un punt crític produeix un màxim local; de negatiu a positiu produeix un mínim. La condició f′(a)=0 per si sola és necessària per a extrems interiors derivables (teorema de Fermat), però no suficient. Un punt on f′ no existeix també pot ser un extrem, com el mínim de |x| en zero. Per estudiar extrems absoluts en intervals tancats cal comparar a més els valors dels extrems de l'interval, no només els punts estacionaris."
+        },
+        {
+          "body": "f(x)=x²−4x+1 té f′(x)=2x−4. És decreixent per x<2, creixent per x>2 i presenta mínim f(2)=−3."
+        },
+        {
+          "body": "g(x)=−(x−1)²+4 té derivada −2(x−1), positiva abans de x=1 i negativa després; el màxim val 4 en x=1."
+        },
+        {
+          "body": "Signe de la derivada i mínim. Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Signe de la derivada i mínim. Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Signe de la derivada i mínim"
+          }
+        },
+        {
+          "body": "Una derivada nul·la demostra un extrem encara que la funció continuï creixent?||No. Cal estudiar el canvi de signe o arguments addicionals."
+        },
+        {
+          "body": "Recuperació: Per a una funció derivable en un interval, f′(x)>0 implica creixement estricte i f′(x)<0 decreixement. Resol un cas de transferència sense ajuda, contrasta hipòtesi i registra errors importants."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1C-F03-L01-01": {
+      "prompt": "Calcula exactament la taxa mitjana de variació de f(x)=1x²+(0)x+(0) en [1,3]. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Taxa mitjana = canvi de sortida dividit per canvi d'entrada, amb extrems diferents.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 4. Taxa mitjana = canvi de sortida dividit per canvi d'entrada, amb extrems diferents. TVM =[f(b)−f(a)]/(b−a). Calcula valors finals sense arrodoniment i conserva unitats; TVM zero no implica una funció constant. Resultat comprovat: 4. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L01-02": {
+      "prompt": "Calcula la taxa mitjana de f(x)=-3x+(2) en [-2,5] amb extrems diferents. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Taxa mitjana = canvi de sortida dividit per canvi d'entrada, amb extrems diferents.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat -3. Taxa mitjana = canvi de sortida dividit per canvi d'entrada, amb extrems diferents. TVM =[f(b)−f(a)]/(b−a). Calcula valors finals sense arrodoniment i conserva unitats; TVM zero no implica una funció constant. Resultat comprovat: -3. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L01-03": {
+      "prompt": "Calcula exactament la taxa mitjana de variació de f(x)=-2x²+(8)x+(0) en [0,2]. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Taxa mitjana = canvi de sortida dividit per canvi d'entrada, amb extrems diferents.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 4. Taxa mitjana = canvi de sortida dividit per canvi d'entrada, amb extrems diferents. TVM =[f(b)−f(a)]/(b−a). Calcula valors finals sense arrodoniment i conserva unitats; TVM zero no implica una funció constant. Resultat comprovat: 4. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L01-04": {
+      "prompt": "Calcula exactament la taxa mitjana de variació de f(x)=2x²+(-1)x+(3) en [1,4]. Selecciona la resposta EXACTA.",
+      "hint": "Taxa mitjana = canvi de sortida dividit per canvi d'entrada, amb extrems diferents.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 9. Taxa mitjana = canvi de sortida dividit per canvi d'entrada, amb extrems diferents. TVM =[f(b)−f(a)]/(b−a). Calcula valors finals sense arrodoniment i conserva unitats; TVM zero no implica una funció constant. Resultat comprovat: 9. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L01-05": {
+      "prompt": "Per a f(x)=1x²+(0)x+(0) i extrems [-2,2], la taxa mitjana resulta zero perquè f(-2)=f(2)? Selecciona la resposta EXACTA.",
+      "hint": "Taxa mitjana = canvi de sortida dividit per canvi d'entrada, amb extrems diferents.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat Sí. Taxa mitjana = canvi de sortida dividit per canvi d'entrada, amb extrems diferents. TVM =[f(b)−f(a)]/(b−a). Calcula valors finals sense arrodoniment i conserva unitats; TVM zero no implica una funció constant. Resultat comprovat: Sí. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L02-01": {
+      "prompt": "A partir del límit bilateral del quocient incremental, calcula la derivada de f(x)=x² en a=3. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 6. La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral. Compara h<0 i h>0 del quocient [f(a+h)−f(a)]/h; si els límits finits no coincideixen, no hi ha derivada real bilateral. Resultat comprovat: 6. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L02-02": {
+      "prompt": "Quina és la derivada BILATERAL real de f(x)=|x| en x=0? Contesta No existeix si els pendents laterals no coincideixen. Selecciona la resposta EXACTA.",
+      "hint": "La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral.",
+      "explanation": "Explicació pas a pas de la regla: Calcula quocients incrementals laterals de la funció i comprova si coincideixen: No existeix. La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral. Compara h<0 i h>0 del quocient [f(a+h)−f(a)]/h; si els límits finits no coincideixen, no hi ha derivada real bilateral. Resultat comprovat: No existeix. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L02-03": {
+      "prompt": "A partir del límit bilateral del quocient incremental, calcula la derivada de f(x)=x² en a=-2. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat -4. La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral. Compara h<0 i h>0 del quocient [f(a+h)−f(a)]/h; si els límits finits no coincideixen, no hi ha derivada real bilateral. Resultat comprovat: -4. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L02-04": {
+      "prompt": "Calcula la derivada lateral ESQUERRA en x=0 de f(x)=|x|, usant h<0 en el quocient incremental. Selecciona la resposta EXACTA.",
+      "hint": "La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral.",
+      "explanation": "Explicació pas a pas de la regla: Calcula quocients incrementals laterals de la funció i comprova si coincideixen: -1. La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral. Compara h<0 i h>0 del quocient [f(a+h)−f(a)]/h; si els límits finits no coincideixen, no hi ha derivada real bilateral. Resultat comprovat: -1. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L02-05": {
+      "prompt": "Calcula la derivada lateral dreta en x=0 de f(x)=|x|, usant h>0 en el quocient incremental. Selecciona la resposta EXACTA.",
+      "hint": "La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral.",
+      "explanation": "Explicació pas a pas de la regla: Calcula quocients incrementals laterals de la funció i comprova si coincideixen: 1. La derivada és un límit bilateral de quocients incrementals, no només una secant o un límit lateral. Compara h<0 i h>0 del quocient [f(a+h)−f(a)]/h; si els límits finits no coincideixen, no hi ha derivada real bilateral. Resultat comprovat: 1. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L03-01": {
+      "prompt": "Per a posició s(t)=1t²+(2)t metres, calcula la VELOCITAT instantània en t=3 s (valor numèric en m/s). Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Deriva la posició per a velocitat, i la velocitat per a acceleració. Identifica les unitats.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 8. Deriva la posició per a velocitat, i la velocitat per a acceleració. Identifica les unitats. Per a s(t)= At ²+ Bt, s′(t)=2A t +B en m/s i s″(t)=2A en m/s²; distingeix velocitat amb signe de rapidesa no negativa. Resultat comprovat: 8. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L03-02": {
+      "prompt": "Per s(t)=2t²+(-3)t metres, calcula l'ACCELERACIÓ constant s″(t), valor numèric en m/s². Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Deriva la posició per a velocitat, i la velocitat per a acceleració. Identifica les unitats.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 4. Deriva la posició per a velocitat, i la velocitat per a acceleració. Identifica les unitats. Per a s(t)= At ²+ Bt, s′(t)=2A t +B en m/s i s″(t)=2A en m/s²; distingeix velocitat amb signe de rapidesa no negativa. Resultat comprovat: 4. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L03-03": {
+      "prompt": "En f(x)=x³ es compleix f′(0)=0. Classifica el punt x=0 com Màxim, Mínim o Cap d'ells. Selecciona la resposta EXACTA.",
+      "hint": "Troba punts crítics i examina el signe de la primera derivada a banda i banda.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat Cap. Troba punts crítics i examina el signe de la primera derivada a banda i banda. f′(a)=0 és necessari en extrems interiors derivables però no suficient; en intervals tancats compara també les fronteres. Resultat comprovat: Cap. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L03-04": {
+      "prompt": "Per a posició s(t)=2t²+(-3)t metres, calcula la VELOCITAT instantània en t=4 s (valor numèric en m/s). Selecciona la resposta EXACTA.",
+      "hint": "Deriva la posició per a velocitat, i la velocitat per a acceleració. Identifica les unitats.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 13. Deriva la posició per a velocitat, i la velocitat per a acceleració. Identifica les unitats. Per a s(t)= At ²+ Bt, s′(t)=2A t +B en m/s i s″(t)=2A en m/s²; distingeix velocitat amb signe de rapidesa no negativa. Resultat comprovat: 13. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L03-05": {
+      "prompt": "La posició és s(t)=1t²+(-5)t. Classifica la velocitat instantània el t=1 com a Positiva, Negativa o Nula. Selecciona la resposta EXACTA.",
+      "hint": "Deriva la posició per a velocitat, i la velocitat per a acceleració. Identifica les unitats.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat Negativa. Deriva la posició per a velocitat, i la velocitat per a acceleració. Identifica les unitats. Per a s(t)= At ²+ Bt, s′(t)=2A t +B en m/s i s″(t)=2A en m/s²; distingeix velocitat amb signe de rapidesa no negativa. Resultat comprovat: Negativa. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L04-01": {
+      "prompt": "Calcula f′(1) de f(x)=4x³+(-2)x²+(0)x+(9) aplicant potència i linealitat. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 8. Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició. Producte (uv )′=u′v+ uv ′; quocient (u/v)′=(u′v− uv ′)/v² amb v≠0; cadena [F(u)]′=F′(u)u′, sense ometre domini. Resultat comprovat: 8. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L04-02": {
+      "prompt": "Per a f(x)=(2x²+(1))(1x+(-2)), calcula exactament f′(2) amb la regla del PRODUCTE. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició.",
+      "explanation": "Explicació pas a pas de la regla: Aplica la regla estructural correcta; desenvolupa la derivada amb domini explícit i substitueix al final: 9. Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició. Producte (uv )′=u′v+ uv ′; quocient (u/v)′=(u′v− uv ′)/v² amb v≠0; cadena [F(u)]′=F′(u)u′, sense ometre domini. Resultat comprovat: 9. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L04-03": {
+      "prompt": "La funció és f(x)=(3x+(1))². Calcula f′(1) usant la regla de la CADENA. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició.",
+      "explanation": "Explicació pas a pas de la regla: Aplica la regla estructural correcta; desenvolupa la derivada amb domini explícit i substitueix al final: 24. Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició. Producte (uv )′=u′v+ uv ′; quocient (u/v)′=(u′v− uv ′)/v² amb v≠0; cadena [F(u)]′=F′(u)u′, sense ometre domini. Resultat comprovat: 24. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L04-04": {
+      "prompt": "Donada f(x)=7 constant per a tots els reals, quin és el valor exacte de f′(5)? Selecciona la resposta EXACTA.",
+      "hint": "Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 0. Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició. Producte (uv )′=u′v+ uv ′; quocient (u/v)′=(u′v− uv ′)/v² amb v≠0; cadena [F(u)]′=F′(u)u′, sense ometre domini. Resultat comprovat: 0. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L04-05": {
+      "prompt": "Calcula f′(2) si f(x)=(1x+(2))/(1x+(-1)), usant la regla del QUOCIENT, amb denominador diferent de zero. Selecciona la resposta EXACTA.",
+      "hint": "Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició.",
+      "explanation": "Explicació pas a pas de la regla: Aplica la regla estructural correcta; desenvolupa la derivada amb domini explícit i substitueix al final: -3. Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició. Producte (uv )′=u′v+ uv ′; quocient (u/v)′=(u′v− uv ′)/v² amb v≠0; cadena [F(u)]′=F′(u)u′, sense ometre domini. Resultat comprovat: -3. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L05-01": {
+      "prompt": "Per a f(x)=1x²+(0)x+(0), en el punt d'abscisa x=2, calcula el PENDENT de la tangent. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Primer calcula f(a) i la derivada f′(a); ambdós determinen la recta tangent.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 4. Primer calcula f(a) i la derivada f′(a); ambdós determinen la recta tangent. Tangent y−f(a)=f′(a)(x−a). Normal té pendent −1/m si m≠0; si tangent horitzontal, normal vertical x=a. Resultat comprovat: 4. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L05-02": {
+      "prompt": "Per f(x)=1x²+(0)x+(0), en el punt d'abscisa x=2, calcula l'ordenada b de la tangent escrita y= mx +b. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Primer calcula f(a) i la derivada f′(a); ambdós determinen la recta tangent.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat -4. Primer calcula f(a) i la derivada f′(a); ambdós determinen la recta tangent. Tangent y−f(a)=f′(a)(x−a). Normal té pendent −1/m si m≠0; si tangent horitzontal, normal vertical x=a. Resultat comprovat: -4. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L05-03": {
+      "prompt": "Per a f(x)=1x²+(0)x+(0), en el punt d'abscisa x=2, escriu exactament l'equació y= mx +b de la tangent, sense espais. Selecciona la resposta EXACTA.",
+      "hint": "Primer calcula f(a) i la derivada f′(a); ambdós determinen la recta tangent.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat y=4x - 4. Primer calcula f(a) i la derivada f′(a); ambdós determinen la recta tangent. Tangent y−f(a)=f′(a)(x−a). Normal té pendent −1/m si m≠0; si tangent horitzontal, normal vertical x=a. Resultat comprovat: y=4x - 4. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L05-04": {
+      "prompt": "Per a f(x)=1x²+(0)x+(0), en el punt d'abscisa x=2, calcula el PENDENT de la normal perpendicular a la tangent (no horitzontal). Selecciona la resposta EXACTA.",
+      "hint": "Primer calcula f(a) i la derivada f′(a); ambdós determinen la recta tangent.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat -0,25. Primer calcula f(a) i la derivada f′(a); ambdós determinen la recta tangent. Tangent y−f(a)=f′(a)(x−a). Normal té pendent −1/m si m≠0; si tangent horitzontal, normal vertical x=a. Resultat comprovat: -0,25. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L05-05": {
+      "prompt": "Per f(x)=1x²+(-2)x+(1), en el punt d'abscisa x=1, si la tangent és horitzontal, escriu l'equació de la NORMAL vertical. Selecciona la resposta EXACTA.",
+      "hint": "Primer calcula f(a) i la derivada f′(a); ambdós determinen la recta tangent.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat x=1. Primer calcula f(a) i la derivada f′(a); ambdós determinen la recta tangent. Tangent y−f(a)=f′(a)(x−a). Normal té pendent −1/m si m≠0; si tangent horitzontal, normal vertical x=a. Resultat comprovat: x=1. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L06-01": {
+      "prompt": "Per f(x)=1x²+(-4)x+(1), calcula l'abscisa del punt crític on f′(x)=0. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Troba punts crítics i examina el signe de la primera derivada a banda i banda.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 2. Troba punts crítics i examina el signe de la primera derivada a banda i banda. f′(a)=0 és necessari en extrems interiors derivables però no suficient; en intervals tancats compara també les fronteres. Resultat comprovat: 2. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L06-02": {
+      "prompt": "Calcula el valor extrem de f(x)=1x²+(-4)x+(1) en el seu vèrtex. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Troba punts crítics i examina el signe de la primera derivada a banda i banda.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat -3. Troba punts crítics i examina el signe de la primera derivada a banda i banda. f′(a)=0 és necessari en extrems interiors derivables però no suficient; en intervals tancats compara també les fronteres. Resultat comprovat: -3. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L06-03": {
+      "prompt": "Indica l'ordre del comportament de f(x)=1x²+(-4)x: Decreix i després creix, o Creix i després decreix. Selecciona la resposta EXACTA.",
+      "hint": "Troba punts crítics i examina el signe de la primera derivada a banda i banda.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat Decreix i després creix. Troba punts crítics i examina el signe de la primera derivada a banda i banda. f′(a)=0 és necessari en extrems interiors derivables però no suficient; en intervals tancats compara també les fronteres. Resultat comprovat: Decreix i després creix. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L06-04": {
+      "prompt": "En f(x)=x³ es compleix f′(0)=0. Classifica el punt x=0 com Màxim, Mínim o Cap d'ells. Selecciona la resposta EXACTA.",
+      "hint": "Troba punts crítics i examina el signe de la primera derivada a banda i banda.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat Cap. Troba punts crítics i examina el signe de la primera derivada a banda i banda. f′(a)=0 és necessari en extrems interiors derivables però no suficient; en intervals tancats compara també les fronteres. Resultat comprovat: Cap. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B1C-F03-L06-05": {
+      "prompt": "Per a f(x)=x² restringida a l'interval tancat [-1,2], en quina abscisa s'aconsegueix el màxim absolut? Selecciona la resposta EXACTA.",
+      "hint": "Troba punts crítics i examina el signe de la primera derivada a banda i banda.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 2. Troba punts crítics i examina el signe de la primera derivada a banda i banda. f′(a)=0 és necessari en extrems interiors derivables però no suficient; en intervals tancats compara també les fronteres. Resultat comprovat: 2. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    }
+  }
+}

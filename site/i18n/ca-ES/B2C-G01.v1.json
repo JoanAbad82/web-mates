@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2C-G01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2c_g01.json": "44cb73387aacf942a3b50fb133537894c5c7043a75b6fc137eff6b19b4a93c40",
+    "data/f3_b2c_g01_exercises.json": "40aa09a7f5983b5203338d74a8ce084c5071b038e3216b5b9b3b9dc5d408a80a"
+  },
+  "lessons": {
+    "B2C-G01-L01": {
+      "title": "Coordenades 3D",
+      "objectives": [
+        "Representar punts i vectors en un sistema cartesià de tres dimensions.",
+        "Calcular diferències i distàncies espacials mitjançant components exactes."
+      ],
+      "content_blocks": [
+        {
+          "body": "En un sistema cartesià tridimensional, P=(x,y,z) és una terna ordenada de coordenades respecte de tres eixos perpendiculars. El vector AB des de A=(a₁, a₂, a₃) fins a B=(b₁, b₂, b₃) es calcula restant extrem menys origen, component a component: B−A. La longitud AB és la arrel principal de la suma dels quadrats dels seus tres increments; per això mai és negativa i només és zero si A=B. Els vectors lliures amb les mateixes components són equivalents encara que parteixin de punts diferents. No confonguis l'eix z amb una segona component del pla."
+        },
+        {
+          "body": "A=(1, −2,3) i B=(4,2, 3): AB =(3,4, 0); la distància és √(9+16)=5 unitats."
+        },
+        {
+          "body": "A=(−1,2, 0) i B=(1, −1,6): AB =(2, −3,6) i la distància és √(4+9+36)=7."
+        },
+        {
+          "body": "Desplaçament en tres eixos. Diagrama conceptual declaratiu: totes les mesures exactes i relacions s'ofereixen de nou en una taula textual independent, sense requerir color o percepció espacial.",
+          "alt": "Desplaçament en tres eixos. La taula semàntica identifica amb exactitud totes les coordenades, dimensions, unitats i resultats d'aquesta representació.",
+          "visual_spec": {
+            "title": "Desplaçament en tres eixos"
+          }
+        },
+        {
+          "body": "Si canviem l'ordre d'extrems A i B, què ocorre amb el vector?||S'inverteix el sentit: BA =− AB, encara que la distància AB roman igual."
+        },
+        {
+          "body": "Recuperació activa: En un sistema cartesià tridimensional, P=(x,y,z) és una terna ordenada de coordenades respecte de tres eixos perpendiculars. Justifica cada resultat, comprova les unitats i resol després una variació sense pistes."
+        }
+      ]
+    },
+    "B2C-G01-L02": {
+      "title": "Operacions vectorials",
+      "objectives": [
+        "Sumar, restar i escalar vectors tridimensionals per components.",
+        "Interpretar combinacions lineals i direccions proporcionals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per vectors tridimensionals, la suma u+v, la resta u−v i el producte λu es defineixen component a component. La multiplicació per λ altera la longitud per |λ| i, si λ és negativa, inverteix el sentit; el vector nul roman nul. Una combinació lineal α u+ βv té tres coordenades, obtingudes amb els mateixos coeficients en totes les components. Dos vectors no nuls són paral·lels si un és múltiple escalar de l'altre, inclosa la direcció oposada. No s'han de sumar mòduls com si fossin coordenades ni assumir que vectors d'igual longitud són iguals."
+        },
+        {
+          "body": "u=(2, −1,3), v=(−1,4, 0): u+v=(1,3, 3), mentre u−v=(3, −5,3)."
+        },
+        {
+          "body": "Si u=(2, −1,3), llavors −2u=(−4,2, −6); inverteix el sentit i duplica el mòdul."
+        },
+        {
+          "body": "Suma vectorial en tres dimensions. Diagrama conceptual declaratiu: totes les mesures exactes i relacions s'ofereixen de nou en una taula textual independent, sense requerir color o percepció espacial.",
+          "alt": "Suma vectorial en tres dimensions. La taula semàntica identifica amb exactitud totes les coordenades, dimensions, unitats i resultats d'aquesta representació.",
+          "visual_spec": {
+            "title": "Suma vectorial en tres dimensions"
+          }
+        },
+        {
+          "body": "És |u+v| sempre igual a |u|+|v|?||No. Només ocorre en casos particulars d'alineació i sentit; normalment es compleix la desigualtat triangular."
+        },
+        {
+          "body": "Recuperació activa: Per a vectors tridimensionals, la suma u+v, la resta u−v i el producte λu es defineixen component a component. Justifica cada resultat, comprova les unitats i resol després una variació sense pistes."
+        }
+      ]
+    },
+    "B2C-G01-L03": {
+      "title": "Producte escalar",
+      "objectives": [
+        "Calcular productes escalars i angles entre vectors espacials no nuls.",
+        "Diagnosticar ortogonalitat i evitar la normalització del vector nul."
+      ],
+      "content_blocks": [
+        {
+          "body": "El producte escalar de u=(u₁, u₂, u₃) i v=(v₁, v₂, v₃) és el nombre real u₁v₁+u₂v₂+u₃v₃. També compleix u·v=|u||v| cosθ si ambdós vectors són no nuls, amb θ entre 0° i 180°. Un producte escalar zero indica ortogonalitat de direccions quan ambdós vectors són no nuls; si algun és nul, la igualtat zero no permet atribuir-li direcció. La norma satisfà |u|²=u·u. Per Cauchy-Schwarz, el quocient de cosinus sempre està entre −1 i 1 en vectors admissibles."
+        },
+        {
+          "body": "u=(1,2, 2) i v=(2, −1,0): u·v=2−2+0=0. Tots dos són no nuls, després són perpendiculars."
+        },
+        {
+          "body": "u=(1,0, 0) i v=(1,1, 0) tenen cosinus 1/√2 i un angle de 45°, sense calcular coordenades polars."
+        },
+        {
+          "body": "Producte escalar i ortogonalitat. Diagrama conceptual declaratiu: totes les mesures exactes i relacions s'ofereixen de nou en una taula textual independent, sense requerir color o percepció espacial.",
+          "alt": "Producte escalar i ortogonalitat. La taula semàntica identifica amb exactitud totes les coordenades, dimensions, unitats i resultats d'aquesta representació.",
+          "visual_spec": {
+            "title": "Producte escalar i ortogonalitat"
+          }
+        },
+        {
+          "body": "Per què no es divideix pel mòdul de (0,0, 0) per trobar un angle?||Perquè el seu mòdul és zero i el vector nul no defineix adreça; l'angle no està definit."
+        },
+        {
+          "body": "Recuperació activa: El producte escalar de u=(u₁, u₂, u₃) i v=(v₁, v₂, v₃) és el nombre real u₁v₁+u₂v₂+u₃v₃. Justifica cada resultat, comprova les unitats i resol després una variació sense pistes."
+        }
+      ]
+    },
+    "B2C-G01-L04": {
+      "title": "Producte vectorial",
+      "objectives": [
+        "Calcular el producte vectorial amb l'orientació correcta.",
+        "Relacionar el seu mòdul amb l'àrea d'un paral·lelogram."
+      ],
+      "content_blocks": [
+        {
+          "body": "A l'espai orientat de base dreta, el producte vectorial o × v és el vector (u₂v₃−u₃v₂, u₃v₁−u₁v₃, u₁v₂−u₂v₁). És perpendicular a u i v i el seu sentit segueix la regla de la mà dreta. No és commutatiu: v × o =−( o × v). El seu mòdul satisfà | o × v |=|u||v| senθ i equival a l'àrea del paral·lelogram de costats u i v. Si els vectors són paral·lels, el producte és zero i l'àrea nul·la. Distingeix producte escalar (nombre) de producte vectorial (terna)."
+        },
+        {
+          "body": "Per u=(1,0, 0), v=(0,1, 0), resulta o × v =(0,0, 1). En sentit invers v × o =(0,0, −1)."
+        },
+        {
+          "body": "Si u=(2,0, 0) i v=(0,3, 0), llavors o × v =(0,0, 6); l'àrea del paral·lelogram és 6 unitats quadrades."
+        },
+        {
+          "body": "Producte vectorial i àrea orientada. Diagrama conceptual declaratiu: totes les mesures exactes i relacions s'ofereixen de nou en una taula textual independent, sense requerir color o percepció espacial.",
+          "alt": "Producte vectorial i àrea orientada. La taula semàntica identifica amb exactitud totes les coordenades, dimensions, unitats i resultats d'aquesta representació.",
+          "visual_spec": {
+            "title": "Producte vectorial i àrea orientada"
+          }
+        },
+        {
+          "body": "Si s'inverteix l'ordre o × v, canvia el seu mòdul?||No, s'inverteix el signe de cada component, però tots dos productes tenen el mateix mòdul."
+        },
+        {
+          "body": "Recuperació activa: En l'espai orientat de base dreta, el producte vectorial o × v és el vector (u₂v₃−u₃v₂, u₃v₁−u₁v₃, u₁v₂−u₂v₁). Justifica cada resultat, comprova les unitats i resol després una variació sense pistes."
+        }
+      ]
+    },
+    "B2C-G01-L05": {
+      "title": "Producte mixt quan escaigui",
+      "objectives": [
+        "Obtenir el producte mixt de tres vectors i reconèixer el seu signe orientat.",
+        "Calcular volums i coplanaritat on procedeixi usant valor absolut."
+      ],
+      "content_blocks": [
+        {
+          "body": "El producte mixt de tres vectors u,v,w es defineix com u·(v × w), igual al determinant 3×3 dels seus components per files amb la mateixa orientació. El seu valor és escalar amb signe i canvia de signe en permutar dos vectors; el seu valor absolut expressa el volum del paral·lelepípede construït sobre ells. Si és zero, els vectors són linealment dependents i el volum és nul; equivalen a direccions coplanars. El volum d'un tetràedre amb aquests tres vectors des d'un vèrtex és |u·( v × w )|/6. Aquest contingut, “quan escaigui”, s'etiqueta com a proposta editorial, no com a saber obligatori universal."
+        },
+        {
+          "body": "Amb u=(1,0, 0), v=(0,2, 0) i w=(0,0, 3), el producte mixt és 6, volum del paral·lelelepípede 6 i del tetraedre 1."
+        },
+        {
+          "body": "Si w=u+v, llavors u·(v × w )=0 perquè els tres vectors estan continguts en el pla generat per u i v."
+        },
+        {
+          "body": "Producte mixt: orientació i volum. Diagrama conceptual declaratiu: totes les mesures exactes i relacions s'ofereixen de nou en una taula textual independent, sense requerir color o percepció espacial.",
+          "alt": "Producte mixt: orientació i volum. La taula semàntica identifica amb exactitud totes les coordenades, dimensions, unitats i resultats d'aquesta representació.",
+          "visual_spec": {
+            "title": "Producte mixt: orientació i volum"
+          }
+        },
+        {
+          "body": "Pot ser negatiu el volum encara que el producte mixt sigui negatiu?||No. El producte és orientat; el volum físic és el seu valor absolut."
+        },
+        {
+          "body": "Recuperació activa: El producte mixt de tres vectors u,v,w es defineix com u·(v × w), igual al determinant 3×3 dels seus components per files amb la mateixa orientació. Justifica cada resultat, comprova les unitats i resol després una variació sense pistes."
+        }
+      ]
+    },
+    "B2C-G01-L06": {
+      "title": "Aplicacions geomètriques",
+      "objectives": [
+        "Modelitzar àrees, distàncies i volums amb vectors espacials.",
+        "Verificar unitats, perpendicularitat i resultats degenerats."
+      ],
+      "content_blocks": [
+        {
+          "body": "Les eines vectorials resolen problemes espacials seleccionant l'operació pertinent: diferència de posicions per a desplaçaments, norma per a distàncies, producte escalar per a perpendicularitat, mòdul del producte vectorial per a àrees i valor absolut del mixt per a volums. Per al triangle format per dos vectors des d'un vèrtex, l'àrea és | o × v |/2; per al tetraedre, el volum és |u·( v × w )|/6. Els resultats d'àrea porten unitats quadrades i els de volum cúbiques. Vectors degenerats generen àrea o volum zero i no han de convertir-se en valors negatius."
+        },
+        {
+          "body": "Amb u=(3,0, 0) i v=(0,4, 0), | o × v |=12; el triangle té àrea 6 u²."
+        },
+        {
+          "body": "Amb u=(2,0, 0), v=(0,3, 0), w=(0,0, 4), el paral·lelelepípede té volum 24 u³ i el tetraedro 4 u³."
+        },
+        {
+          "body": "Àrea triangular mitjançant producte vectorial. Diagrama conceptual declaratiu: totes les mesures exactes i relacions s'ofereixen de nou en una taula textual independent, sense requerir color o percepció espacial.",
+          "alt": "Àrea triangular mitjançant producte vectorial. La taula semàntica identifica amb exactitud totes les coordenades, dimensions, unitats i resultats d'aquesta representació.",
+          "visual_spec": {
+            "title": "Àrea triangular mitjançant producte vectorial"
+          }
+        },
+        {
+          "body": "Si la figura és un triangle, per què es divideix el mòdul vectorial entre dos?||Perquè | o × v | dóna l'àrea del paral·lelogram, que conté dos triangles congruents."
+        },
+        {
+          "body": "Recuperació activa: Les eines vectorials resolen problemes espacials seleccionant l'operació pertinent: diferència de posicions per a desplaçaments, norma per a distàncies, producte escalar per perpendicularitat, mòdul del producte vectorial per a àrees i valor absolut del mixt per a volums. Justifica cada resultat, comprova les unitats i resol després una variació sense pistes."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2C-G01-L01-01": {
+      "prompt": "En un sistema cartesià de tres dimensions, A=(1, -2, 3) i B=(4, 2, 3). Calcula les components d'AB des d'A fins a B. Selecciona la resposta exacta.",
+      "hint": "Resta coordenades per eixos respectant origen i extrem; l'ordre de punts és fonamental.",
+      "explanation": "Procediment: Obtén els increments cartesians o components i aplica Pitàgores en tres dimensions, si correspon: resultat (3, 4, 0). Resta coordenades per eixos respectant origen i extrem; l'ordre de punts és fonamental. Per a la norma usa la arrel principal de Δx²+Δy²+Δz²; per al seu quadrat no uses arrel i per a BA inverteix les restes. Solució exacta: (3, 4, 0). Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L01-02": {
+      "prompt": "En un sistema cartesià de tres dimensions, A=(1, -2, 3) i B=(4, 2, 3). Calcula la distància euclidiana exacta entre els punts, no la longitud d'un camí per eixos. Escriu un nombre exacte sense unitats.",
+      "hint": "Resta coordenades per eixos respectant origen i extrem; l'ordre de punts és fonamental.",
+      "explanation": "Procediment: Obtén els increments cartesians o components i aplica Pitàgores en tres dimensions, si correspon: resultat 5. Resta coordenades per eixos respectant origen i extrem; l'ordre de punts és fonamental. Per a la norma usa la arrel principal de Δx²+Δy²+Δz²; per al seu quadrat no uses arrel i per a BA inverteix les restes. Solució exacta: 5. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L01-03": {
+      "prompt": "En un sistema cartesià de tres dimensions, A=(-1, 2, 0) i B=(1, -1, 6). Calcula la distància euclidiana exacta entre els punts, no la longitud d'un camí per eixos. Escriu un nombre exacte sense unitats.",
+      "hint": "Resta coordenades per eixos respectant origen i extrem; l'ordre de punts és fonamental.",
+      "explanation": "Procediment: Obtén els increments cartesians o components i aplica Pitàgores en tres dimensions, si correspon: resultat 7. Resta coordenades per eixos respectant origen i extrem; l'ordre de punts és fonamental. Per a la norma usa la arrel principal de Δx²+Δy²+Δz²; per al seu quadrat no uses arrel i per a BA inverteix les restes. Solució exacta: 7. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L01-04": {
+      "prompt": "En un sistema cartesià de tres dimensions, A=(1, -2, 3) i B=(4, 2, 3). Calcula les components de BA des de B fins a A. Selecciona la resposta exacta.",
+      "hint": "Resta coordenades per eixos respectant origen i extrem; l'ordre de punts és fonamental.",
+      "explanation": "Procediment: Obtén els increments cartesians o components i aplica Pitàgores en tres dimensions, si correspon: resultat (-3, -4, 0). Resta coordenades per eixos respectant origen i extrem; l'ordre de punts és fonamental. Per a la norma usa la arrel principal de Δx²+Δy²+Δz²; per al seu quadrat no uses arrel i per a BA inverteix les restes. Solució exacta: (-3, -4, 0). Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L01-05": {
+      "prompt": "Per al vector v=(2, -3, 6), calcula el quadrat del mòdul. Selecciona la resposta exacta.",
+      "hint": "Resta coordenades per eixos respectant origen i extrem; l'ordre de punts és fonamental.",
+      "explanation": "Procediment: Obtén els increments cartesians o components i aplica Pitàgores en tres dimensions, si correspon: resultat 49. Resta coordenades per eixos respectant origen i extrem; l'ordre de punts és fonamental. Per a la norma usa la arrel principal de Δx²+Δy²+Δz²; per al seu quadrat no uses arrel i per a BA inverteix les restes. Solució exacta: 49. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L02-01": {
+      "prompt": "Es donen els vectors tridimensionals u=(2, -1, 3) i v=(-1, 4, 0). Calcula el vector suma u+v per components. Selecciona la resposta exacta.",
+      "hint": "Interpreta els vectors com ternes ordenades i aplica la mateixa operació a cada coordenada.",
+      "explanation": "Procediment: Combinació lineal tridimensional amb ordre de components i signes comprovats; solució (1, 3, 3). Interpreta els vectors com ternes ordenades i aplica la mateixa operació a cada coordenada. Suma/resta component a component, multiplica cada component per λ; la proporcionalitat comprova el paral·lelisme. Solució exacta: (1, 3, 3). Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L02-02": {
+      "prompt": "Es donen els vectors tridimensionals u=(2, -1, 3) i v=(-1, 4, 0). Calcula el vector diferencia u−v per components. Selecciona la resposta exacta.",
+      "hint": "Interpreta els vectors com ternes ordenades i aplica la mateixa operació a cada coordenada.",
+      "explanation": "Procediment: Combinació lineal tridimensional amb ordre de components i signes comprovats; solució (3, -5, 3). Interpreta els vectors com ternes ordenades i aplica la mateixa operació a cada coordenada. Suma/resta component a component, multiplica cada component per λ; la proporcionalitat comprova el paral·lelisme. Solució exacta: (3, -5, 3). Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L02-03": {
+      "prompt": "Multiplica per escalar λ=-2 el vector tridimensional v=(2, -1, 3). Respon amb els seus tres components. Selecciona la resposta exacta.",
+      "hint": "Interpreta els vectors com ternes ordenades i aplica la mateixa operació a cada coordenada.",
+      "explanation": "Procediment: Combinació lineal tridimensional amb ordre de components i signes comprovats; solució (-4, 2, -6). Interpreta els vectors com ternes ordenades i aplica la mateixa operació a cada coordenada. Suma/resta component a component, multiplica cada component per λ; la proporcionalitat comprova el paral·lelisme. Solució exacta: (-4, 2, -6). Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L02-04": {
+      "prompt": "Es donen els vectors tridimensionals u=(2, 1, -1) i v=(-4, -2, 2). Calcula si u i v són paral·lels (dos vectors NO NULS). Selecciona la resposta exacta.",
+      "hint": "Interpreta els vectors com ternes ordenades i aplica la mateixa operació a cada coordenada.",
+      "explanation": "Procediment: Combinació lineal tridimensional amb ordre de components i signes comprovats; solució Sí. Interpreta els vectors com ternes ordenades i aplica la mateixa operació a cada coordenada. Suma/resta component a component, multiplica cada component per λ; la proporcionalitat comprova el paral·lelisme. Solució exacta: Sí. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L02-05": {
+      "prompt": "Es donen els vectors tridimensionals u=(2, -1, 3) i v=(-1, 4, 5). Calcula la tercera component de la suma u+v. Selecciona la resposta exacta.",
+      "hint": "Interpreta els vectors com ternes ordenades i aplica la mateixa operació a cada coordenada.",
+      "explanation": "Procediment: Combinació lineal tridimensional amb ordre de components i signes comprovats; solució 8. Interpreta els vectors com ternes ordenades i aplica la mateixa operació a cada coordenada. Suma/resta component a component, multiplica cada component per λ; la proporcionalitat comprova el paral·lelisme. Solució exacta: 8. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L03-01": {
+      "prompt": "Es donen els vectors tridimensionals u=(1, 2, 2) i v=(2, -1, 0). Calcula el producte ESCALAR u·v. Escriu un nombre exacte sense unitats.",
+      "hint": "El producte escalar suma tres productes per parelles de components, i és un nombre.",
+      "explanation": "Procediment: El producte escalar és 0, obtingut per tres multiplicacions i suma; comprova mòduls no nuls abans del cosinus. Resultat 0. El producte escalar suma tres productes per parelles de components, i és un nombre. u·v= ux·vx + uy·vy + uz·vz; l'ortogonalitat exigeix vectors no nuls i per cosθ divideix entre ambdós mòduls. Solució exacta: 0. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L03-02": {
+      "prompt": "Es donen els vectors tridimensionals u=(1, 2, 2) i v=(2, -1, 0). Calcula si els dos vectors no NULs són ortogonals. Selecciona la resposta exacta.",
+      "hint": "El producte escalar suma tres productes per parelles de components, i és un nombre.",
+      "explanation": "Procediment: El producte escalar és 0, obtingut per tres multiplicacions i suma; comprova mòduls no nuls abans del cosinus. Resultat Sí. El producte escalar suma tres productes per parelles de components, i és un nombre. u·v= ux·vx + uy·vy + uz·vz; l'ortogonalitat exigeix vectors no nuls i per cosθ divideix entre ambdós mòduls. Solució exacta: Sí. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L03-03": {
+      "prompt": "Per al vector v=(1, 2, 2), calcula el mòdul exacte. Escriu un nombre exacte sense unitats.",
+      "hint": "Resta coordenades per eixos respectant origen i extrem; l'ordre de punts és fonamental.",
+      "explanation": "Procediment: Obtén els increments cartesians o components i aplica Pitàgores en tres dimensions, si correspon: resultat 3. Resta coordenades per eixos respectant origen i extrem; l'ordre de punts és fonamental. Per a la norma usa la arrel principal de Δx²+Δy²+Δz²; per al seu quadrat no uses arrel i per a BA inverteix les restes. Solució exacta: 3. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L03-04": {
+      "prompt": "Es donen els vectors tridimensionals u=(1, 0, 0) i v=(1, 1, 0). Calcula el cosinus EXACTE de l'angle entre els dos vectors no NULs. Selecciona la resposta exacta.",
+      "hint": "El producte escalar suma tres productes per parelles de components, i és un nombre.",
+      "explanation": "Procediment: El producte escalar és 1, obtingut per tres multiplicacions i suma; comprova mòduls no nuls abans del cosinus. Resultat √2/2. El producte escalar suma tres productes per parelles de components, i és un nombre. u·v= ux·vx + uy·vy + uz·vz; l'ortogonalitat exigeix vectors no nuls i per cosθ divideix entre ambdós mòduls. Solució exacta: √2/2. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L03-05": {
+      "prompt": "Es donen els vectors tridimensionals u=(2, -1, 3) i v=(4, 2, -2). Calcula el producte ESCALAR u·v. Selecciona la resposta exacta.",
+      "hint": "El producte escalar suma tres productes per parelles de components, i és un nombre.",
+      "explanation": "Procediment: El producte escalar és 0, obtingut per tres multiplicacions i suma; comprova mòduls no nuls abans del cosinus. Resultat 0. El producte escalar suma tres productes per parelles de components, i és un nombre. u·v= ux·vx + uy·vy + uz·vz; l'ortogonalitat exigeix vectors no nuls i per cosθ divideix entre ambdós mòduls. Solució exacta: 0. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L04-01": {
+      "prompt": "Es donen els vectors tridimensionals u=(1, 0, 0) i v=(0, 1, 0). Calcula el producte VECTORIAL o × v en aquest ordre, usant una base dreta. Selecciona la resposta exacta.",
+      "hint": "L'ordre o × v importa. El seu resultat és un vector perpendicular a tots dos.",
+      "explanation": "Procediment: Producte vectorial o × v =(0, 0, 1), el mòdul del qual controla les àrees. Resultat (0, 0, 1). L'ordre o × v importa. El seu resultat és un vector perpendicular a tots dos. o × v =( uy·vz − uz·vy,uz·vx − ux·vz,ux·vy − uy·vx). El seu mòdul és l'àrea del paral·lelogram; per a triangle divideix entre 2. Solució exacta: (0, 0, 1). Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L04-02": {
+      "prompt": "Es donen els vectors tridimensionals u=(0, 1, 0) i v=(1, 0, 0). Calcula el producte VECTORIAL o × v en aquest ordre, usant una base dreta. Selecciona la resposta exacta.",
+      "hint": "L'ordre o × v importa. El seu resultat és un vector perpendicular a tots dos.",
+      "explanation": "Procediment: Producte vectorial o × v =(0, 0, -1), el mòdul del qual controla les àrees. Resultat (0, 0, -1). L'ordre o × v importa. El seu resultat és un vector perpendicular a tots dos. o × v =( uy·vz − uz·vy,uz·vx − ux·vz,ux·vy − uy·vx). El seu mòdul és l'àrea del paral·lelogram; per a triangle divideix entre 2. Solució exacta: (0, 0, -1). Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L04-03": {
+      "prompt": "Es donen els vectors tridimensionals u=(2, 0, 0) i v=(0, 3, 0). Calcula el MÒDUL exacte del producte vectorial | o × v | (àrea del paral·lelogram). Escriu un nombre exacte sense unitats.",
+      "hint": "L'ordre o × v importa. El seu resultat és un vector perpendicular a tots dos.",
+      "explanation": "Procediment: Producte vectorial o × v =(0, 0, 6), el mòdul del qual controla les àrees. Resultat 6. L'ordre o × v importa. El seu resultat és un vector perpendicular a tots dos. o × v =( uy·vz − uz·vy,uz·vx − ux·vz,ux·vy − uy·vx). El seu mòdul és l'àrea del paral·lelogram; per a triangle divideix entre 2. Solució exacta: 6. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L04-04": {
+      "prompt": "Es donen els vectors tridimensionals u=(2, 0, 0) i v=(0, 3, 0). Calcula la component z del producte vectorial o × v. Selecciona la resposta exacta.",
+      "hint": "L'ordre o × v importa. El seu resultat és un vector perpendicular a tots dos.",
+      "explanation": "Procediment: Producte vectorial o × v =(0, 0, 6), el mòdul del qual controla les àrees. Resultat 6. L'ordre o × v importa. El seu resultat és un vector perpendicular a tots dos. o × v =( uy·vz − uz·vy,uz·vx − ux·vz,ux·vy − uy·vx). El seu mòdul és l'àrea del paral·lelogram; per a triangle divideix entre 2. Solució exacta: 6. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L04-05": {
+      "prompt": "Es donen els vectors tridimensionals u=(1, 2, 3) i v=(2, 1, 0). Calcula el producte VECTORIAL o × v en aquest ordre, usant una base dreta. Selecciona la resposta exacta.",
+      "hint": "L'ordre o × v importa. El seu resultat és un vector perpendicular a tots dos.",
+      "explanation": "Procediment: Producte vectorial o × v =(-3, 6, -3), el mòdul del qual controla les àrees. Resultat (-3, 6, -3). L'ordre o × v importa. El seu resultat és un vector perpendicular a tots dos. o × v =( uy·vz − uz·vy,uz·vx − ux·vz,ux·vy − uy·vx). El seu mòdul és l'àrea del paral·lelogram; per a triangle divideix entre 2. Solució exacta: (-3, 6, -3). Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L05-01": {
+      "prompt": "En un espai cartesià es donen u=(1, 0, 0), v=(0, 2, 0) i w=(0, 0, 3). Calcula el PRODUCTE MIXT ORIENTAT u· ( v × w), amb signe. Escriu un nombre exacte sense unitats.",
+      "hint": "El producte mixt és un nombre amb signe; per a volum s'usa el seu valor absolut.",
+      "explanation": "Procediment: Producte mixt u·(v × w )=6. El seu valor absolut és el volum del paral·lelelepípede i un sisè dóna el del tetraedre: 6. El producte mixt és un nombre amb signe; per a volum s'usa el seu valor absolut. Calcula u·(v × w), conserva signe només si demanen orientació; volum tetraedre =| mixt |/6, i zero significa coplanaritat. Solució exacta: 6. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L05-02": {
+      "prompt": "En un espai cartesià es donen u=(2, 0, 0), v=(0, 3, 0) i w=(0, 0, 4). Calcula el VOLUM positiu del paral·lelepípede generat pels vectors. Escriu un nombre exacte sense unitats.",
+      "hint": "El producte mixt és un nombre amb signe; per a volum s'usa el seu valor absolut.",
+      "explanation": "Procediment: Producte mixt u·(v × w )=24. El seu valor absolut és el volum del paral·lelelepípede i un sisè dóna el del tetraedre: 24. El producte mixt és un nombre amb signe; per a volum s'usa el seu valor absolut. Calcula u·(v × w), conserva signe només si demanen orientació; volum tetraedre =| mixt |/6, i zero significa coplanaritat. Solució exacta: 24. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L05-03": {
+      "prompt": "En un espai cartesià es donen u=(1, 0, 0), v=(0, 2, 0) i w=(0, 0, 3). Calcula el VOLUM positiu del tetraedre amb els tres vectors des del mateix vèrtex. Escriu un nombre exacte sense unitats.",
+      "hint": "El producte mixt és un nombre amb signe; per a volum s'usa el seu valor absolut.",
+      "explanation": "Procediment: Producte mixt u·(v × w )=6. El seu valor absolut és el volum del paral·lelelepípede i un sisè dóna el del tetraedre: 1. El producte mixt és un nombre amb signe; per a volum s'usa el seu valor absolut. Calcula u·(v × w), conserva signe només si demanen orientació; volum tetraedre =| mixt |/6, i zero significa coplanaritat. Solució exacta: 1. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L05-04": {
+      "prompt": "En un espai cartesià es donen u=(1, 0, 0), v=(0, 1, 0) i w=(1, 1, 0). Calcula si els tres vectors són coplanaris (Sí / No). Selecciona la resposta exacta.",
+      "hint": "El producte mixt és un nombre amb signe; per a volum s'usa el seu valor absolut.",
+      "explanation": "Procediment: Producte mixt u·(v × w )=0. El seu valor absolut és el volum del paral·lelepípede i un sisè dóna el del tetraedre: Sí. El producte mixt és un nombre amb signe; per a volum s'usa el seu valor absolut. Calcula u·(v × w), conserva signe només si demanen orientació; volum tetraedre =| mixt |/6, i zero significa coplanaritat. Solució exacta: Sí. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L05-05": {
+      "prompt": "En un espai cartesià es donen u=(0, 1, 0), v=(1, 0, 0) i w=(0, 0, 2). Calcula el PRODUCTE MIXT ORIENTAT u· ( v × w), amb signe. Selecciona la resposta exacta.",
+      "hint": "El producte mixt és un nombre amb signe; per a volum s'usa el seu valor absolut.",
+      "explanation": "Procediment: Producte mixt u·(v × w )=-2. El seu valor absolut és el volum del paral·lelelepípede i un sisè dóna el del tetraedre: -2. El producte mixt és un nombre amb signe; per a volum s'usa el seu valor absolut. Calcula u·(v × w), conserva signe només si demanen orientació; volum tetraedre =| mixt |/6, i zero significa coplanaritat. Solució exacta: -2. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L06-01": {
+      "prompt": "Dos vectors espacials u=(3, 0, 0) i v=(0, 4, 0) parteixen del mateix vèrtex. Calcula l'ÀREA del triangle que determinen en unitats quadrades. Escriu un nombre exacte sense unitats.",
+      "hint": "L'ordre o × v importa. El seu resultat és un vector perpendicular a tots dos.",
+      "explanation": "Procediment: Producte vectorial o × v =(0, 0, 12), el mòdul del qual controla les àrees. Resultat 6. L'ordre o × v importa. El seu resultat és un vector perpendicular a tots dos. o × v =( uy·vz − uz·vy,uz·vx − ux·vz,ux·vy − uy·vx). El seu mòdul és l'àrea del paral·lelogram; per a triangle divideix entre 2. Solució exacta: 6. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L06-02": {
+      "prompt": "En un espai cartesià es donen u=(2, 0, 0), v=(0, 3, 0) i w=(0, 0, 4). Calcula el VOLUM positiu del tetraedre amb els tres vectors des del mateix vèrtex. Escriu un nombre exacte sense unitats.",
+      "hint": "El producte mixt és un nombre amb signe; per a volum s'usa el seu valor absolut.",
+      "explanation": "Procediment: Producte mixt u·(v × w )=24. El seu valor absolut és el volum del paral·lelelepípede i un sisè dóna el del tetraedre: 4. El producte mixt és un nombre amb signe; per a volum s'usa el seu valor absolut. Calcula u·(v × w), conserva signe només si demanen orientació; volum tetraedre =| mixt |/6, i zero significa coplanaritat. Solució exacta: 4. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L06-03": {
+      "prompt": "En un sistema cartesià de tres dimensions, A=(0, 0, 0) i B=(3, 4, 12). Calcula la distància euclidiana exacta entre els punts, no la longitud d'un camí per eixos. Escriu un nombre exacte sense unitats.",
+      "hint": "Resta coordenades per eixos respectant origen i extrem; l'ordre de punts és fonamental.",
+      "explanation": "Procediment: Obtén els increments cartesians o components i aplica Pitàgores en tres dimensions, si correspon: resultat 13. Resta coordenades per eixos respectant origen i extrem; l'ordre de punts és fonamental. Per a la norma usa la arrel principal de Δx²+Δy²+Δz²; per al seu quadrat no uses arrel i per a BA inverteix les restes. Solució exacta: 13. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L06-04": {
+      "prompt": "Es donen els vectors tridimensionals u=(3, 0, 0) i v=(0, 4, 0). Calcula el MÒDUL exacte del producte vectorial | o × v | (àrea del paral·lelogram). Selecciona la resposta exacta.",
+      "hint": "L'ordre o × v importa. El seu resultat és un vector perpendicular a tots dos.",
+      "explanation": "Procediment: Producte vectorial o × v =(0, 0, 12), el mòdul del qual controla les àrees. Resultat 12. L'ordre o × v importa. El seu resultat és un vector perpendicular a tots dos. o × v =( uy·vz − uz·vy,uz·vx − ux·vz,ux·vy − uy·vx). El seu mòdul és l'àrea del paral·lelogram; per a triangle divideix entre 2. Solució exacta: 12. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    },
+    "F3-B2C-G01-L06-05": {
+      "prompt": "Es donen els vectors tridimensionals u=(1, 1, 0) i v=(1, -1, 0). Calcula si els dos vectors no NULs són ortogonals. Selecciona la resposta exacta.",
+      "hint": "El producte escalar suma tres productes per parelles de components, i és un nombre.",
+      "explanation": "Procediment: El producte escalar és 0, obtingut per tres multiplicacions i suma; comprova mòduls no nuls abans del cosinus. Resultat Sí. El producte escalar suma tres productes per parelles de components, i és un nombre. u·v= ux·vx + uy·vy + uz·vz; l'ortogonalitat exigeix vectors no nuls i per cosθ divideix entre ambdós mòduls. Solució exacta: Sí. Comprova de nou la unitat, la dimensió, l'orientació i les condicions del model abans de continuar."
+    }
+  }
+}

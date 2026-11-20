@@ -71,9 +71,9 @@ La aplicación ofrece el selector «Català (beta) / Castellano», con 9 itinera
 85 títulos de unidad traducidos al catalán en borrador. El manifiesto incluye las
 85 unidades, sus 505 lecciones y las 2.525 actividades con cobertura verificable.
 
-**Cobertura real actual:** 1.º ESO dispone de 11/11 unidades en catalán, dentro de los campos traducibles del contrato v1. Con la oleada de modelos especializados, la cobertura general es **30/85 unidades, 179/505 lecciones y 895/2.525 actividades (todos `draft_unreviewed`, 0 revisiones lingüísticas humanas). Pendientes: 55 unidades, 326 lecciones y 1630 actividades.**
+**Cobertura real actual:** las 11 unidades de 1.? ESO est?n traducidas en los campos del contrato v1. Cobertura general: **63/85 unidades, 377/505 lecciones y 1.885/2.525 actividades**, todas en estado `draft_unreviewed`, con **0 revisiones ling??sticas humanas**. Pendientes: 22 unidades, 128 lecciones y 640 actividades.
 
-La generación de borradores se hizo mediante modelos especializados Softcatalà y Aina en un entorno local aislado. La promoción exige conservar fórmulas, IDs y validadores; superar cribado semántico automatizado, integridad, navegación y fallback. Los candidatos rechazados no forman parte de la web. **Los controles automáticos no certifican equivalencia semántica ni revisión lingüística humana**. Las opciones textuales de respuesta pueden seguir en castellano por contrato, para no modificar los validadores.
+El motor de traducción especializado Softcatalà/Aina opera localmente, protege fórmulas y usa memoria de traducción y glosario. Las unidades incompletas se mantienen en cuarentena, sin integrarlas. Los controles automáticos **no certifican equivalencia semántica ni revisión humana**; la traducción de opciones textuales de respuesta no está cubierta por el contrato v1 y algunas pueden permanecer en castellano.
 
 La interfaz F1/F3 todavía mezcla algunas etiquetas de ambos idiomas.
 No se presentan traducciones pendientes como terminadas ni homologadas.

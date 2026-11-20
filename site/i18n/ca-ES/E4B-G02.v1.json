@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E4B-G02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e4b_g02.json": "e1e155c9ee6cbd90b1a3cc9aba24702c3afa7f43d5db77d54d6cd254d3b7b029",
+    "data/f3_e4b_g02_exercises.json": "16910b2ab611206f295d5262a84392dd67d0adf2fde93dbcb69fed87b3ea6a60"
+  },
+  "lessons": {
+    "E4B-G02-L01": {
+      "title": "Vectors bàsics com a desplaçaments",
+      "objectives": [
+        "Interpretar un vector lliure com a desplaçament orientat entre punts.",
+        "Calcular els components restant les coordenades en l'ordre correcte."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un vector és un desplaçament amb direcció, sentit i mòdul. Entre A=(x₁, y₁) i B=(x₂, y₂), el vector AB té components (x₂−x₁, y₂−y₁). Els vectors iguals poden traslladar-se paral·lelament sense canviar components; no depenen del punt d'aplicació quan són lliures. El vector BA és l'oposat d'AB i el vector nul (0,0) no posseeix direcció única. L'ordre dels extrems importa i es comprova reconstruint B=A+ AB."
+        },
+        {
+          "body": "De A=(−2,1) a B=(3,4), AB =(3−(−2), 4−1)=(5,3)."
+        },
+        {
+          "body": "De B a A, BA =(−5, −3), diferent d'AB; els dos tenen el mateix mòdul."
+        },
+        {
+          "body": "Desplaçament d'A a B. Diagrama cartesià declaratiu complementat per taula semàntica exacta: no es requereix percebre colors ni geometria a escala per conèixer els valors.",
+          "alt": "Desplaçament d'A a B. Les coordenades, relacions i valors matemàtics de la il·lustració figuren també en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Desplaçament d'A a B"
+          }
+        },
+        {
+          "body": "Són AB i BA el mateix vector?||No, tenen igual longitud però sentit contrari: BA =− AB."
+        },
+        {
+          "body": "Recuperació: Un vector és un desplaçament amb direcció, sentit i mòdul. Relaciona cada resposta amb una dada, verifica signes i condicions abans de passar a una altra activitat."
+        }
+      ]
+    },
+    "E4B-G02-L02": {
+      "title": "Coordenades de punts",
+      "objectives": [
+        "Situar punts en els quatre quadrants.",
+        "Reconèixer vectors de posició i translacions en coordenades."
+      ],
+      "content_blocks": [
+        {
+          "body": "Cada punt del pla cartesià es representa mitjançant un parell ordenat (x,y), amb signe i ordre rellevants. Els quadrants es numeren en sentit antihorari des de x positiu i i positiu: I (+, +), II (−, +), III (−, −), IV (+, −). Els punts dels eixos no pertanyen a cap quadrant obert. El vector de posició OP comparteix components amb les coordenades de P. Una translació per v=(a,b) transforma P=(x,y) en P+v=(x+a, y+b)."
+        },
+        {
+          "body": "P=(−3,2) pertany al quadrant II i el seu vector de posició és OP =(−3,2)."
+        },
+        {
+          "body": "Traslladar (1, −2) per v=(3,4) produeix (4,2), sumant cada coordenada de manera independent."
+        },
+        {
+          "body": "Punts en quadrants i vector de posició. Diagrama cartesià declaratiu complementat per taula semàntica exacta: no es requereix percebre colors ni geometria a escala per conèixer els valors.",
+          "alt": "Punts en quadrants i vector de posició. Les coordenades, relacions i valors matemàtics de la il·lustració figuren també en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Punts en quadrants i vector de posició"
+          }
+        },
+        {
+          "body": "El punt (0,3) pertany al quadrant II?||No: està exactament sobre l'eix vertical i no pertany a cap quadrant."
+        },
+        {
+          "body": "Recuperació: Cada punt del pla cartesià es representa mitjançant un parell ordenat (x,y), amb signe i ordre rellevants. Relaciona cada resposta amb una dada, verifica signes i condicions abans de passar a una altra activitat."
+        }
+      ]
+    },
+    "E4B-G02-L03": {
+      "title": "Distància i punt mig",
+      "objectives": [
+        "Calcula les distàncies exactes entre punts del pla.",
+        "Aplicar el punt mitjà i comprovar simetries."
+      ],
+      "content_blocks": [
+        {
+          "body": "La distància euclidiana entre A i B és √((x₂−x₁)²+(y₂−y₁)²), arrel principal no negativa. Si la suma de quadrats no és un quadrat perfecte, es conserva l'expressió radical exacta, per exemple √13, sense substituir-la silenciosament per un decimal aproximat. El punt mig M promedia les abscises i les ordenades, respectivament. En un eix de simetria, els punts reflectits tenen punt mitjà en l'eix; cal comprovar-ho amb coordenades i no per aspecte visual."
+        },
+        {
+          "body": "Entre A=(1,1) i B=(3,4), la distància és √(2²+3²)=√13 unitats, exacta."
+        },
+        {
+          "body": "Per P=(−4,2) i Q=(2,6), el punt mitjà és (−1,4); ambdós extrems disten el mateix d'ell."
+        },
+        {
+          "body": "Distància exacta no sencera entre punts. Diagrama cartesià declaratiu complementat per taula semàntica exacta: no es requereix percebre colors ni geometria a escala per conèixer els valors.",
+          "alt": "Distància exacta no sencera entre punts. Les coordenades, relacions i valors matemàtics de la il·lustració figuren també en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Distància exacta no sencera entre punts"
+          }
+        },
+        {
+          "body": "És sempre enter el punt mitjà de dos punts amb coordenades senceres?||No: les mitjanes de nombres de diferent paritat poden ser semienteres."
+        },
+        {
+          "body": "Recuperació: La distància euclidiana entre A i B és √((x₂−x₁)²+(y₂−y₁)²), arrel principal no negativa. Relaciona cada resposta amb una dada, verifica signes i condicions abans de passar a una altra activitat."
+        }
+      ]
+    },
+    "E4B-G02-L04": {
+      "title": "Equacions de la recta",
+      "objectives": [
+        "Obtenir equacions de rectes a partir de punts i vectors directors.",
+        "Distingir formes explícita, general i equació vertical."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una recta pot descriure's per un punt P=(x₀, y₀) i un vector director no nul (a,b): (x, y)=P+t(a,b), t real. Si a≠0, el pendent és b/a i es pot expressar y−y₀=(b/a)(x−x₀). En forma general Ax + By +C=0, els coeficients A i B no poden ser ambdós zero. Les rectes verticals es representen x=k i no tenen pendent finita, encara que sí que admeten forma vectorial i general. Comprovar un punt consisteix a substituir les seves coordenades."
+        },
+        {
+          "body": "La recta per (1,2) i (3,6) té pendent 2 i equació y−2=2(x−1), equivalent a y=2x."
+        },
+        {
+          "body": "Per (2, −1) i (2,4) passa la recta vertical x=2; escriure y= mx +n per a ella exigiria dividir entre zero."
+        },
+        {
+          "body": "Recta amb pendent 2 i vector director (1,2). Diagrama cartesià declaratiu complementat per taula semàntica exacta: no es requereix percebre colors ni geometria a escala per conèixer els valors.",
+          "alt": "Recta amb pendent 2 i vector director (1,2). Les coordenades, relacions i valors matemàtics de la il·lustració figuren també en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Recta amb pendent 2 i vector director (1,2)"
+          }
+        },
+        {
+          "body": "Pot el vector (0,0) ser director d'una recta?||No: no defineix adreça ni permet generar una recta en variar el paràmetre."
+        },
+        {
+          "body": "Recuperació: Una recta pot descriure's per un punt P=(x₀, y₀) i un vector director no nul (a,b): (x, y)=P+t(a,b), t real. Relaciona cada resposta amb una dada, verifica signes i condicions abans de passar a una altra activitat."
+        }
+      ]
+    },
+    "E4B-G02-L05": {
+      "title": "Pendents i paral·lelisme/perpendicularitat",
+      "objectives": [
+        "Decidir paral·lelisme i perpendicularitat de dues rectes.",
+        "Comprova la condició de pendents o vectors sense dividir entre zero."
+      ],
+      "content_blocks": [
+        {
+          "body": "Dues rectes són paral·leles si tenen vectors directors proporcionals no nuls; quan s'expressen per y= mx +n, tenen pendent igual. Dues rectes no verticals són perpendiculars quan els seus pendents finits compleixen m₁m₂=−1. La condició general robusta per perpendicularitat és que els vectors directors tinguin producte escalar zero. Una recta vertical és perpendicular a una horitzontal, encara que la vertical no tingui pendent definida. Igualtat de pendents no distingeix rectes coincidents de paral·leles diferents sense altra informació."
+        },
+        {
+          "body": "Les rectes y=2x+1 i y=−x/2+3 són perpendiculars perquè 2×(−1/2)=−1."
+        },
+        {
+          "body": "Les rectes x=2 i y=3 es tallen perpendicularment sense necessitat de calcular pendent infinita."
+        },
+        {
+          "body": "Dues rectes perpendiculars al pla. Diagrama cartesià declaratiu complementat per taula semàntica exacta: no es requereix percebre colors ni geometria a escala per conèixer els valors.",
+          "alt": "Dues rectes perpendiculars al pla. Les coordenades, relacions i valors matemàtics de la il·lustració figuren també en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Dues rectes perpendiculars al pla"
+          }
+        },
+        {
+          "body": "Són perpendiculars dues rectes de pendents 2 i 1/2?||No; el producte val 1, mentre que per perpendiculars no verticals ha de ser −1."
+        },
+        {
+          "body": "Recuperació: Dues rectes són paral·leles si tenen vectors directors proporcionals no nuls; quan s'expressen per y= mx +n, tenen pendent igual. Relaciona cada resposta amb una dada, verifica signes i condicions abans de passar a una altra activitat."
+        }
+      ]
+    },
+    "E4B-G02-L06": {
+      "title": "Problemes de geometria coordenada",
+      "objectives": [
+        "Resoldre problemes contextualitzats mitjançant representacions coordenades.",
+        "Verificar solucions de rectes i distàncies per substitució i unitats."
+      ],
+      "content_blocks": [
+        {
+          "body": "La geometria coordenada permet representar trajectòries, posicions, canvis de pendent i interseccions sense dependre d'un dibuix a escala. Per trobar on es creuen dues rectes, es resol el seu sistema d'equacions i es comprova la solució en ambdues. Les rectes paral·leles diferents no es tallen; les coincidents tenen infinits punts comuns. La distància entre posicions es calcula com a longitud euclidiana i no com a suma d'increments si se sol·licita el trajecte directe. Cada pas ha de conservar les unitats del problema."
+        },
+        {
+          "body": "Les rectes y=x+1 i y=−x+5 es tallen en (2,3), doncs en igualar-les 2x=4 i ambdues donen y=3."
+        },
+        {
+          "body": "Entre A=(0,0) i B=(3,4), la distància directa és 5 unitats i el recorregut per eixos mesura 7."
+        },
+        {
+          "body": "Intersecció de dues rectes. Diagrama cartesià declaratiu complementat per taula semàntica exacta: no es requereix percebre colors ni geometria a escala per conèixer els valors.",
+          "alt": "Intersecció de dues rectes. Les coordenades, relacions i valors matemàtics de la il·lustració figuren també en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Intersecció de dues rectes"
+          }
+        },
+        {
+          "body": "Fins a trobar x=2 per a assegurar la intersecció de dues rectes?||No: també cal calcular i comprovar que el punt satisfà totes dues equacions."
+        },
+        {
+          "body": "Recuperació: La geometria coordenada permet representar trajectòries, posicions, canvis de pendent i interseccions sense dependre d'un dibuix a escala. Relaciona cada resposta amb una dada, verifica signes i condicions abans de passar a una altra activitat."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E4B-G02-L01-01": {
+      "prompt": "Donats A=(-2, 1) i B=(3, 4), calcula les components del vector AB de A cap a B. Selecciona la resposta exacta.",
+      "hint": "Un vector d'A a B s'obté restant coordenades finals menys inicials.",
+      "explanation": "Procediment i verificació: B−A=(3−(-2), 4−(1))=(5,3); canviar ordre inverteix el sentit. Resultat: (5, 3). Un vector d'A a B s'obté restant coordenades finals menys inicials. Calcula B−A per a AB i A−B per a BA; no mescles components. La resposta exacta és (5, 3). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L01-02": {
+      "prompt": "Donats A=(-2, 1) i B=(3, 4), calcula la component horitzontal del vector AB.",
+      "hint": "Un vector d'A a B s'obté restant coordenades finals menys inicials.",
+      "explanation": "Procediment i verificació: B−A=(3−(-2), 4−(1))=(5,3); canviar ordre inverteix el sentit. Resultat: 5. Un vector d'A a B s'obté restant coordenades finals menys inicials. Calcula B−A per a AB i A−B per a BA; no mescles components. La resposta exacta és 5. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L01-03": {
+      "prompt": "Donats A=(-2, 1) i B=(3, 4), calcula la component vertical del vector AB.",
+      "hint": "Un vector d'A a B s'obté restant coordenades finals menys inicials.",
+      "explanation": "Procediment i verificació: B−A=(3−(-2), 4−(1))=(5,3); canviar ordre inverteix el sentit. Resultat: 3. Un vector d'A a B s'obté restant coordenades finals menys inicials. Calcula B−A per a AB i A−B per a BA; no mescles components. La resposta exacta és 3. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L01-04": {
+      "prompt": "Donats A=(-2, 1) i B=(3, 4), calcula les components del vector BA de B cap a A. Selecciona la resposta exacta.",
+      "hint": "Un vector d'A a B s'obté restant coordenades finals menys inicials.",
+      "explanation": "Procediment i verificació: B−A=(3−(-2), 4−(1))=(5,3); canviar ordre inverteix el sentit. Resultat: (-5, -3). Un vector d'A a B s'obté restant coordenades finals menys inicials. Calcula B−A per a AB i A−B per a BA; no mescles components. La resposta exacta és (-5, -3). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L01-05": {
+      "prompt": "Donats A=(1, -2) i B=(4, 2), calcula les components del vector AB de A cap a B. Selecciona la resposta exacta.",
+      "hint": "Un vector d'A a B s'obté restant coordenades finals menys inicials.",
+      "explanation": "Procediment i verificació: B−A=(4−(1), 2−(-2))=(3,4); canviar ordre inverteix el sentit. Resultat: (3, 4). Un vector d'A a B s'obté restant coordenades finals menys inicials. Calcula B−A per a AB i A−B per a BA; no mescles components. La resposta exacta és (3, 4). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L02-01": {
+      "prompt": "En quin quadrant (I, II, III, IV) està el punt P=(-3, 2)? Si està sobre un eix, respon «Eix». Selecciona la resposta exacta.",
+      "hint": "La posició d'un punt depèn del signe i ordre de les coordenades.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament II. La posició d'un punt depèn del signe i ordre de les coordenades. Suma cada component d'una translació; per a quadrant usa els signes (x,y), excloent els eixos. La resposta exacta és II. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L02-02": {
+      "prompt": "Trasllada P=(1, -2) pel vector v=(3, 4). Quin és el punt P+v? Selecciona la resposta exacta.",
+      "hint": "La posició d'un punt depèn del signe i ordre de les coordenades.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament (4, 2). La posició d'un punt depèn del signe i ordre de les coordenades. Suma cada component d'una translació; per a quadrant usa els signes (x,y), excloent els eixos. La resposta exacta és (4, 2). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L02-03": {
+      "prompt": "En quin quadrant (I, II, III, IV) està el punt P=(0, 3)? Si està sobre un eix, respon «Eix». Selecciona la resposta exacta.",
+      "hint": "La posició d'un punt depèn del signe i ordre de les coordenades.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament Eix. La posició d'un punt depèn del signe i ordre de les coordenades. Suma cada component d'una translació; per a quadrant usa els signes (x,y), excloent els eixos. La resposta exacta és Eix. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L02-04": {
+      "prompt": "Trasllada P=(-3, 2) pel vector v=(3, 1). Quin és el punt P+v? Selecciona la resposta exacta.",
+      "hint": "La posició d'un punt depèn del signe i ordre de les coordenades.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament (0, 3). La posició d'un punt depèn del signe i ordre de les coordenades. Suma cada component d'una translació; per a quadrant usa els signes (x,y), excloent els eixos. La resposta exacta és (0, 3). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L02-05": {
+      "prompt": "En quin quadrant (I, II, III, IV) està el punt P=(2, -5)? Si està sobre un eix, respon «Eix». Selecciona la resposta exacta.",
+      "hint": "La posició d'un punt depèn del signe i ordre de les coordenades.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament IV. La posició d'un punt depèn del signe i ordre de les coordenades. Suma cada component d'una translació; per a quadrant usa els signes (x,y), excloent els eixos. La resposta exacta és IV. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L03-01": {
+      "prompt": "Donats A=(1, 1) i B=(3, 4), calcula la distància euclidiana exacta entre A i B. Selecciona la resposta exacta.",
+      "hint": "Identifica els canvis horitzontal i vertical; les coordenades tenen un ordre fix.",
+      "explanation": "Procediment i verificació: Δx=3−(1)=2 i Δy=4−(1)=3; Δx²+Δy²=13. Resultat exacte: √13. Identifica els canvis horitzontal i vertical; les coordenades tenen un ordre fix. Eleva al quadrat Δx i Δy, suma i pren arrel NOMÉS si es demana la distància; la distància al quadrat no porta arrel. La resposta exacta és √13. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L03-02": {
+      "prompt": "Donats A=(-4, 2) i B=(2, 6), calcula el punt mig M del segment AB. Selecciona la resposta exacta.",
+      "hint": "El punt mitjà queda a igual distància dels extrems i està sobre el segment.",
+      "explanation": "Procediment i verificació: M=((-4+(2))/2, (2+(6))/2). Component sol·licitada o punt complet: (-1, 4). El punt mitjà queda a igual distància dels extrems i està sobre el segment. Promedia x amb x i y amb y, dividint ambdues sumes entre dues. La resposta exacta és (-1, 4). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L03-03": {
+      "prompt": "Donats A=(-2, -1) i B=(1, 3), calcula el QUADRAT de la distància euclidiana entre A i B.",
+      "hint": "Identifica els canvis horitzontal i vertical; les coordenades tenen un ordre fix.",
+      "explanation": "Procediment i verificació: Δx=1−(-2)=3 i Δy=3−(-1)=4; Δx²+Δy²=25. Resultat exacte: 25. Identifica els canvis horitzontal i vertical; les coordenades tenen un ordre fix. Eleva al quadrat Δx i Δy, suma i pren arrel NOMÉS si es demana la distància; la distància al quadrat no porta arrel. La resposta exacta és 25. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L03-04": {
+      "prompt": "Donats A=(0, 0) i B=(1, 2), calcula la distància euclidiana exacta entre A i B. Selecciona la resposta exacta.",
+      "hint": "Identifica els canvis horitzontal i vertical; les coordenades tenen un ordre fix.",
+      "explanation": "Procediment i verificació: Δx=1−(0)=1 i Δy=2−(0)=2; Δx²+Δy²=5. Resultat exacte: √5. Identifica els canvis horitzontal i vertical; les coordenades tenen un ordre fix. Eleva al quadrat Δx i Δy, suma i pren arrel NOMÉS si es demana la distància; la distància al quadrat no porta arrel. La resposta exacta és √5. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L03-05": {
+      "prompt": "Donats A=(-3, 1) i B=(4, 2), calcula el punt mig M del segment AB. Selecciona la resposta exacta.",
+      "hint": "El punt mitjà queda a igual distància dels extrems i està sobre el segment.",
+      "explanation": "Procediment i verificació: M=((-3+(4))/2, (1+(2))/2). Component sol·licitada o punt complet: (1/2, 3/2). El punt mitjà queda a igual distància dels extrems i està sobre el segment. Promedia x amb x i y amb y, dividint ambdues sumes entre dues. La resposta exacta és (1/2, 3/2). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L04-01": {
+      "prompt": "Atesos A=(1, 2) i B=(3, 6), calcula el pendent de la recta AB; si és vertical, indica que no està definit.",
+      "hint": "El pendent és el quocient d'increments orientats vertical/horitzontal.",
+      "explanation": "Procediment i verificació: m=(6−(2))/(3−(1)) = 4/2 excepte Δx=0, quan no està definida. Resultat: 2. El pendent és el quocient d'increments orientats vertical/horitzontal. Calcula Δy/Δx; si Δx és zero el pendent no està definit. La resposta exacta és 2. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L04-02": {
+      "prompt": "Escriu o selecciona l'equació explícita y= mx +n de la recta que passa per (1, 2) i té pendent m=2. Selecciona la resposta exacta.",
+      "hint": "Relaciona equació de recta, punts coneguts i coordenades de manera coherent.",
+      "explanation": "Procediment i verificació: Es parteix de les dades de la recta, substituint coordenades o buidant el terme independent; resultat: y=2x. Relaciona equació de recta, punts coneguts i coordenades de manera coherent. Substitueix x i y; per a intersecció iguala les dues equacions i comprova; per a vertical usa x= constant. La resposta exacta és y=2x. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L04-03": {
+      "prompt": "El punt P=(3, 6) pertany a la recta y=2x+0? Selecciona la resposta exacta.",
+      "hint": "Relaciona equació de recta, punts coneguts i coordenades de manera coherent.",
+      "explanation": "Procediment i verificació: Es parteix de les dades de la recta, substituint coordenades o buidant el terme independent; resultat: Sí. Relaciona equació de recta, punts coneguts i coordenades de manera coherent. Substitueix x i y; per a intersecció iguala les dues equacions i comprova; per a vertical usa x= constant. La resposta exacta és Sí. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L04-04": {
+      "prompt": "Escriu l'equació de la recta que passa per A=(2, -1) i B=(2, 4). S'admet una recta vertical. Selecciona la resposta exacta.",
+      "hint": "Relaciona equació de recta, punts coneguts i coordenades de manera coherent.",
+      "explanation": "Procediment i verificació: Es parteix de les dades de la recta, substituint coordenades o buidant el terme independent; resultat: x=2. Relaciona equació de recta, punts coneguts i coordenades de manera coherent. Substitueix x i y; per a intersecció iguala les dues equacions i comprova; per a vertical usa x= constant. La resposta exacta és x=2. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L04-05": {
+      "prompt": "Escriu o selecciona l'equació explícita y= mx +n de la recta que passa per (-1, 2) i té pendent m=-1. Selecciona la resposta exacta.",
+      "hint": "Relaciona equació de recta, punts coneguts i coordenades de manera coherent.",
+      "explanation": "Procediment i verificació: Es parteix de les dades de la recta, substituint coordenades o buidant el terme independent; resultat: y= - x+1. Relaciona equació de recta, punts coneguts i coordenades de manera coherent. Substitueix x i y; per a intersecció iguala les dues equacions i comprova; per a vertical usa x= constant. La resposta exacta és y= - x+1. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L05-01": {
+      "prompt": "Són perpendiculars dues rectes no verticals els pendents de les quals són 2 i -0,5? Selecciona la resposta exacta.",
+      "hint": "Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament Sí. Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix. Paral·lelisme per pendents iguals, perpendicularitat per producte −1 o producte escalar zero; equipolència per components iguals. La resposta exacta és Sí. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L05-02": {
+      "prompt": "Dos rectes NO VERTICALs amb pendents m₁=3 i m₂=3 són paral·leles o coincidents per la seva adreça? Selecciona la resposta exacta.",
+      "hint": "Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament Sí. Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix. Paral·lelisme per pendents iguals, perpendicularitat per producte −1 o producte escalar zero; equipolència per components iguals. La resposta exacta és Sí. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L05-03": {
+      "prompt": "Són perpendiculars dues rectes no verticals els pendents de les quals són 2 i 0,5? Selecciona la resposta exacta.",
+      "hint": "Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament No. Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix. Paral·lelisme per pendents iguals, perpendicularitat per producte −1 o producte escalar zero; equipolència per components iguals. La resposta exacta és No. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L05-04": {
+      "prompt": "Calcula el producte escalar de u=(1, 2) i v=(2, -1). Selecciona la resposta exacta.",
+      "hint": "Les operacions sobre vectors es fan amb components i magnituds diferents.",
+      "explanation": "Procediment i verificació: Producte escalar = 1×2+2×-1 = 0; és un escalar. Les operacions sobre vectors es fan amb components i magnituds diferents. Producte escalar: ux·vx + uy·vy; mòdul: arrel de suma de quadrats; cosinus: producte escalar dividit per mòduls no nuls. La resposta exacta és 0. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L05-05": {
+      "prompt": "Dos rectes NO VERTICALs amb pendents m₁=0 i m₂=0 són paral·leles o coincidents per la seva adreça? Selecciona la resposta exacta.",
+      "hint": "Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament Sí. Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix. Paral·lelisme per pendents iguals, perpendicularitat per producte −1 o producte escalar zero; equipolència per components iguals. La resposta exacta és Sí. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L06-01": {
+      "prompt": "Resol el punt d'intersecció de les rectes y=1x+1 i y=-1x+5. Respon amb el parell (x, y). Selecciona la resposta exacta.",
+      "hint": "Relaciona equació de recta, punts coneguts i coordenades de manera coherent.",
+      "explanation": "Procediment i verificació: Igualem 1x+1=-1x+5; despullem x i substituïm en ambdues equacions. Cort: (2, 3). Relaciona equació de recta, punts coneguts i coordenades de manera coherent. Substitueix x i y; per a intersecció iguala les dues equacions i comprova; per a vertical usa x= constant. La resposta exacta és (2, 3). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L06-02": {
+      "prompt": "Donats A=(0, 0) i B=(3, 4), calcula la distància euclidiana exacta entre A i B.",
+      "hint": "Identifica els canvis horitzontal i vertical; les coordenades tenen un ordre fix.",
+      "explanation": "Procediment i verificació: Δx=3−(0)=3 i Δy=4−(0)=4; Δx²+Δy²=25. Resultat exacte: 5. Identifica els canvis horitzontal i vertical; les coordenades tenen un ordre fix. Eleva al quadrat Δx i Δy, suma i pren arrel NOMÉS si es demana la distància; la distància al quadrat no porta arrel. La resposta exacta és 5. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L06-03": {
+      "prompt": "Resol el punt d'intersecció de les rectes y=2x+1 i y=-1x+4. Respon amb el parell (x, y). Selecciona la resposta exacta.",
+      "hint": "Relaciona equació de recta, punts coneguts i coordenades de manera coherent.",
+      "explanation": "Procediment i verificació: Igualem 2x+1=-1x+4; despullem x i substituïm en ambdues equacions. Cort: (1, 3). Relaciona equació de recta, punts coneguts i coordenades de manera coherent. Substitueix x i y; per a intersecció iguala les dues equacions i comprova; per a vertical usa x= constant. La resposta exacta és (1, 3). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L06-04": {
+      "prompt": "A la recta y=-2x+5, calcula l'ordenada i per x=2. Selecciona la resposta exacta.",
+      "hint": "Relaciona equació de recta, punts coneguts i coordenades de manera coherent.",
+      "explanation": "Procediment i verificació: Es parteix de les dades de la recta, substituint coordenades o buidant el terme independent; resultat: 1. Relaciona equació de recta, punts coneguts i coordenades de manera coherent. Substitueix x i y; per a intersecció iguala les dues equacions i comprova; per a vertical usa x= constant. La resposta exacta és 1. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-E4B-G02-L06-05": {
+      "prompt": "Resol el punt d'intersecció de les rectes y=1x+2 i y=-1x+4. Respon amb el parell (x, y). Selecciona la resposta exacta.",
+      "hint": "Relaciona equació de recta, punts coneguts i coordenades de manera coherent.",
+      "explanation": "Procediment i verificació: Igualem 1x+2=-1x+4; despullem x i substituïm en ambdues equacions. Cort: (1, 3). Relaciona equació de recta, punts coneguts i coordenades de manera coherent. Substitueix x i y; per a intersecció iguala les dues equacions i comprova; per a vertical usa x= constant. La resposta exacta és (1, 3). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    }
+  }
+}

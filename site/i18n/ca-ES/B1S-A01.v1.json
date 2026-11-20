@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1S-A01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1s_a01.json": "04de1fe578e950f11c93837a72b1ce449afffed1dd2e18f0b0553805a62a10e1",
+    "data/f3_b1s_a01_exercises.json": "50f66b7de3d40d45ab0a53a5589b4c3804ccf837971f73120ee8e194d138d4a4"
+  },
+  "lessons": {
+    "B1S-A01-L01": {
+      "title": "Polinomis i fraccions algebraiques",
+      "objectives": [
+        "Simplificar polinomis i fraccions algebraiques preservant el domini original.",
+        "Detecta els factors cancel·lables sense recuperar els denominadors anul·lats."
+      ],
+      "content_blocks": [
+        {
+          "body": "Les expressions algebraiques racionals requereixen registrar els valors que anul·len qualsevol denominador original. Per exemple (x²−1)/(x−1) és igual a x+1 només on x≠1, perquè s'ha cancel·lat el factor (x−1) en un domini que ja excloïa aquest punt. La simplificació no redefineix automàticament el valor en x=1. Per sumar fraccions, es busca un denominador comú i es comproven totes les restriccions; mai se sumen numeradors i denominadors per separat. Els polinomis s'hi operen amb distributiva, productes notables i factorització. Una igualtat d'expressions racionals s'estableix en un domini comú, mentre que resoldre una equació racional exigeix descartar qualsevol candidata que anul·li un denominador. L'ús en models econòmics requereix a més x≥0 o quantitats senceres quan correspongui."
+        },
+        {
+          "body": "L'expressió (x²−9)/(x−3) se simplifica a x+3 per x≠3; en avaluar x=4 dóna 7, però el valor original en x=3 no existeix."
+        },
+        {
+          "body": "1/x+1/(x+1)=(2x+1)/[x(x+1)] sempre que x≠0 i x≠−1; es comprova multiplicant pel denominador comú."
+        },
+        {
+          "body": "Forat d'una fracció simplificable. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Forat d'una fracció simplificable. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Forat d'una fracció simplificable"
+          }
+        },
+        {
+          "body": "Cancel·la x−3 en una fracció permet després avaluar l'expressió original en x=3?||No; el valor x=3 continua exclòs del domini."
+        },
+        {
+          "body": "Recuperació activa: Les expressions algebraiques racionals requereixen registrar els valors que anul·len qualsevol denominador original. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    },
+    "B1S-A01-L02": {
+      "title": "Equacions i sistemes",
+      "objectives": [
+        "Resoldre equacions i sistemes segons el seu nombre de solucions.",
+        "Aplicar Cramer en casos no degenerats i diagnosticar rangs simples quan el determinant sigui zero."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a un sistema de dues equacions ax + by =e i cx + dy =f, el determinant D= ad − bc controla la solució única: quan D≠0 s'apliquen eliminació o Cramer, x=( ed − bf )/D e y=( af − ec )/D. Si D=0 la regla no val i ha de comprovar-se si les files representen equacions equivalents o contradictòries. En un model de vendes dues incògnites poden representar quantitats, els valors reals de les quals han de verificar-se després com enters no negatius. Si les variables són quantitats indivisibles, resoldre sobre reals no n'hi ha prou. Per a una equació quadràtica, el discriminant classifica arrels reals i es cullen restriccions de denominador. Mai es declara solució única per un sistema mal condicionat amb determinant exactament zero."
+        },
+        {
+          "body": "El sistema x+y=7 i 2x−y=2 té D=−3, solució x=3 i y=4; comprova 3+4=7 i 6−4=2."
+        },
+        {
+          "body": "El sistema x+2y=4 i 2x+4y=8 té equacions equivalents, infinites solucions, i D=0; dividir per D seria impossible."
+        },
+        {
+          "body": "Punt d'equilibri de sistema 2×2. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Punt d'equilibri de sistema 2×2. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Punt d'equilibri de sistema 2×2"
+          }
+        },
+        {
+          "body": "Determinant zero implica sempre que un sistema no té solució?||No; pot haver-hi infinites solucions si les equacions són equivalents."
+        },
+        {
+          "body": "Recuperació activa: Per a un sistema de dues equacions ax + by =e i cx + dy =f, el determinant D= ad − bc controla la solució única: quan D≠0 s'apliquen eliminació o Cramer, x=( ed − bf )/D i y=( af − ec )/D. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    },
+    "B1S-A01-L03": {
+      "title": "Equacions exponencials i logarítmiques senzilles",
+      "objectives": [
+        "Resol equacions exponencials senzilles reduint potències de la mateixa base.",
+        "Introduir logaritme com a exponent invers i especificar base i domini."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una equació exponencial conté la incògnita en un exponent; si els membres poden escriure's amb la mateixa base positiva a≠1, s'igualen els exponents. Així 2^(x+1)=16=2^4 implica x+1=4 i x=3. El logaritme log_a(b) és l'únic exponent i que satisfà a^y=b, amb a>0, a≠1 i b>0. Aquesta definició s'introdueix aquí de manera autosuficient, perquè el catàleg B1S-N01 (logaritmes) segueix pendent i no ha de suposar-se desenvolupat. Exemple log_2 (8)=3 perquè 2³=8. Una equació log_ a(x)=c es transforma en x=a^c i exigeix x>0; logaritmes de valors no positius no estan definits sobre els reals. En equacions amb expressions, es comprova domini abans de transformar-les, i no es confon log (x+y) amb log x+ log i."
+        },
+        {
+          "body": "2^(x+1)=16 equival a 2^(x+1)=2^4: els exponents coincideixen i x=3."
+        },
+        {
+          "body": "log_3 (x)=2 significa 3²=x; la solució és x=9>0, que satisfà el domini del logaritme."
+        },
+        {
+          "body": "Potència i logaritme com a operacions inverses. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Potència i logaritme com a operacions inverses. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Potència i logaritme com a operacions inverses"
+          }
+        },
+        {
+          "body": "Es pot avaluar log_2 (−8) en els nombres reals?||No; el seu argument ha de ser estrictament positiu."
+        },
+        {
+          "body": "Recuperació activa: Una equació exponencial conté la incògnita en un exponent; si els membres poden escriure's amb la mateixa base positiva a≠1, s'igualen els exponents. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    },
+    "B1S-A01-L04": {
+      "title": "Inequacions lineals i quadràtiques senzilles",
+      "objectives": [
+        "Resoldre inequacions lineals i quadràtiques mitjançant signes.",
+        "Expressar conjunts solució incloent fronteres segons desigualtats estrictes."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una inequació quadràtica com (x−2)(x−5)≤0 es resol localitzant els seus zeros x=2 i x=5 i estudiant el signe en els intervals que separen. El producte de dos factors lineals ordenats té signe negatiu entre les arrels, per la qual cosa les solucions són [2,5] i inclouen fronteres pel símbol ≤. Amb >0 les arrels s'exclouen i es prenen els trams exteriors. En inequacions racionals, els punts de denominador zero mai s'inclouen encara que el signe permeti valors veïns. Una inequació lineal inverteix sentit en dividir per nombre negatiu; multiplicar per un factor amb signe desconegut obliga a separar casos. En problemes econòmics s'intersecta el conjunt solució amb el domini de temps, quantitat i pressupost."
+        },
+        {
+          "body": "Resoldre (x−2)(x−5)≤0 dóna x∈[2,5] perquè els factors tenen signes oposats entre les arrels i el producte s'anul·la en extrems."
+        },
+        {
+          "body": "Per a x²−4>0, els punts crítics són −2 i 2; el producte és positiu fora: x<−2 o x>2, sense incloure les arrels."
+        },
+        {
+          "body": "Interval solució d'una inequació quadràtica. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Interval solució d'una inequació quadràtica. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Interval solució d'una inequació quadràtica"
+          }
+        },
+        {
+          "body": "Per a (x−2)(x−5)≤0 s'ha d'excloure x=2 i x=5?||No; el producte és zero allí i la desigualtat admet igualtat."
+        },
+        {
+          "body": "Recuperació activa: Una inequació quadràtica com (x−2)(x−5)≤0 es resol localitzant els seus zeros x=2 i x=5 i estudiant el signe en els intervals que separen. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    },
+    "B1S-A01-L05": {
+      "title": "Problemes econòmics",
+      "objectives": [
+        "Traduir costos i ingressos a funcions i resoldre el llindar de benefici.",
+        "Distingir benefici, facturació i viabilitat de quantitats senceres."
+      ],
+      "content_blocks": [
+        {
+          "body": "En un model econòmic elemental l'ingrés I(q) pot ser el preu de venda per quantitat, el cost C(q) suma cost fix i variable, i el benefici B(q)=I(q)−C(q). Si I(q)=8q i C(q)=50+3q, llavors B(q)=5q−50; el punt d'equilibri ocorre en q=10 i s'exigeix q>10 per a benefici positiu. Si q compta unitats indivisibles, la primera quantitat estrictament rendible és q=11. Els ingressos no equivalen al benefici perquè no descompten costos. Els exemples són sintètics i no incorporen impostos, costos escalonats ni elasticitat de demanda. Totes les decisions es restringeixen a q enter no negatiu i es comproven substituint en I i C; una solució negativa no s'usa."
+        },
+        {
+          "body": "Amb I(q)=8q i C(q)=50+3q, l'equilibri 8q=50+3q dóna q=10, on ingressos i costos valen 80."
+        },
+        {
+          "body": "En aquest mateix model B(q)=5q−50>0 implica q>10. Com la quantitat és sencera, la primera rendible és q=11."
+        },
+        {
+          "body": "Intersecció d'ingressos i costos. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Intersecció d'ingressos i costos. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Intersecció d'ingressos i costos"
+          }
+        },
+        {
+          "body": "Facturar 80 € significa guanyar 80 € de benefici si hi ha costos?||No; el benefici és ingressos menys costos."
+        },
+        {
+          "body": "Recuperació activa: En un model econòmic elemental l'ingrés I(q) pot ser el preu de venda per quantitat, el cost C(q) suma cost fix i variable, i el benefici B(q)=I(q)−C(q). Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    },
+    "B1S-A01-L06": {
+      "title": "Restriccions i interpretació",
+      "objectives": [
+        "Combinar restriccions de cost, capacitat i inequacions en decisions socials.",
+        "Comprovar solucions de frontera i justificar la seva viabilitat física i algebraica."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un problema d'elecció requereix especificar variables, restriccions simultànies i un criteri per acceptar una resposta. Si un taller pot produir com a màxim 12 unitats i té benefici modelitzat B(q)=5q−50, per aconseguir benefici estrictament positiu necessita q>10 i, amb 0≤q≤12 i q enter, només q=11 o q=12 resulten rendibles. La igualtat q=10 és equilibri amb benefici zero, i q=13 seria rendible en la fórmula però no factible per capacitat. En diverses variables es representa la intersecció de semiplans, comprovant cada inequació i la no negativitat; les decisions senceres poden ser més restrictives que la regió contínua. Els paràmetres del model són suposats i no demostren la viabilitat real del negoci; no s'estenen taxes i costos lineals indefinidament."
+        },
+        {
+          "body": "Si B(q)=5q−50, 0≤q≤12 enter i B(q)>0, llavors 10<q≤12: els únics valors factibles rendibles són 11 i 12."
+        },
+        {
+          "body": "Un pla amb 15 productes viola una capacitat màxima de 12 encara que el seu benefici teòric fos positiu; es descarta per restricció."
+        },
+        {
+          "body": "Benefici i restricció de capacitat. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Benefici i restricció de capacitat. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Benefici i restricció de capacitat"
+          }
+        },
+        {
+          "body": "És vàlid triar q=13 per maximitzar benefici si la capacitat màxima és 12?||No; incompleix la restricció de capacitat, que és part del model."
+        },
+        {
+          "body": "Recuperació activa: Un problema d'elecció requereix especificar variables, restriccions simultànies i un criteri per acceptar una resposta. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1S-A01-L01-01": {
+      "prompt": "En la lliçó Polinomis i fraccions algebraiques: Avalua exactament f(x)=(x²−9)/(x−3) en x=4, respectant l'exclusió x≠3. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Factoritza primer i escriu totes les exclusions originals de denominador.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 7. Factoritza primer i escriu totes les exclusions originals de denominador. La identitat (x²−a²)/(x−a)=x+a només val si x≠a; cancel·lar el factor no defineix la funció original en aquest valor. Resultat matemàtic contrastable: 7. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L01-02": {
+      "prompt": "En la lliçó Polinomis i fraccions algebraiques: La funció ORIGINAL f(x)=(x²−9)/(x−3) admet x=3 en el seu domini real (Sí / No)? Tria una resposta exacta.",
+      "hint": "Factoritza primer i escriu totes les exclusions originals de denominador.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat No. Factoritza primer i escriu totes les exclusions originals de denominador. La identitat (x²−a²)/(x−a)=x+a només val si x≠a; cancel·lar el factor no defineix la funció original en aquest valor. Resultat matemàtic contrastable: No. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L01-03": {
+      "prompt": "En la lliçó Polinomis i fraccions algebraiques: Avalua exactament f(x)=(x²−4)/(x−2) en x=5, respectant l'exclusió x≠2. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Factoritza primer i escriu totes les exclusions originals de denominador.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 7. Factoritza primer i escriu totes les exclusions originals de denominador. La identitat (x²−a²)/(x−a)=x+a només val si x≠a; cancel·lar el factor no defineix la funció original en aquest valor. Resultat matemàtic contrastable: 7. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L01-04": {
+      "prompt": "A la lliçó Polinomis i fraccions algebraiques: A 1/x+1/(x+1), quins dos valors s'han d'excloure del domini real? Trieu una resposta exacta.",
+      "hint": "Factoritza primer i escriu totes les exclusions originals de denominador.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 0 i −1. Factoritza primer i escriu totes les exclusions originals de denominador. La identitat (x²−a²)/(x−a)=x+a només val si x≠a; cancel·lar el factor no defineix la funció original en aquest valor. Resultat matemàtic contrastable: 0 i −1. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L01-05": {
+      "prompt": "En la lliçó Polinomis i fraccions algebraiques: Avalua exactament f(x)=(x²−16)/(x−4) en x=6, respectant l'exclusió x≠4. Tria una resposta exacta.",
+      "hint": "Factoritza primer i escriu totes les exclusions originals de denominador.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 10. Factoritza primer i escriu totes les exclusions originals de denominador. La identitat (x²−a²)/(x−a)=x+a només val si x≠a; cancel·lar el factor no defineix la funció original en aquest valor. Resultat matemàtic contrastable: 10. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L02-01": {
+      "prompt": "En la lliçó Equacions i sistemes: Resol el sistema (1)x+(1)y=7; (2)x+(-1)y=2. Calcula la incògnita x. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat 3. Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir. D= ad − bc: per a D≠0, x=( ed − bf )/D e y=( af − ec )/D. Per D=0 estudia equivalència o contradicció, mai dividides entre zero. Resultat matemàtic contrastable: 3. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L02-02": {
+      "prompt": "En la lliçó Equacions i sistemes: Resol el sistema (1)x+(1)y=7; (2)x+(-1)y=2. Calcula la incògnita y. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat 4. Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir. D= ad − bc: per a D≠0, x=( ed − bf )/D e y=( af − ec )/D. Per D=0 estudia equivalència o contradicció, mai dividides entre zero. Resultat matemàtic contrastable: 4. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L02-03": {
+      "prompt": "En la lliçó Equacions i sistemes: Calcula exactament el determinant D= ad − bc de la matriu [[1,1], [2, -1]] d'un sistema 2×2. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat -3. Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir. D= ad − bc: per a D≠0, x=( ed − bf )/D e y=( af − ec )/D. Per D=0 estudia equivalència o contradicció, mai dividides entre zero. Resultat matemàtic contrastable: -3. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L02-04": {
+      "prompt": "En la lliçó Equacions i sistemes: Classifica el sistema (1)x+(2)y=4; (2)x+(4)y=8: Única, Infinites o Cap. Tria una resposta exacta.",
+      "hint": "Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat Infinites. Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir. D= ad − bc: per a D≠0, x=( ed − bf )/D e y=( af − ec )/D. Per D=0 estudia equivalència o contradicció, mai dividides entre zero. Resultat matemàtic contrastable: Infinites. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L02-05": {
+      "prompt": "En la lliçó Equacions i sistemes: Classifica el sistema (1)x+(2)y=4; (2)x+(4)y=9: Única, Infinites o Cap. Tria una resposta exacta.",
+      "hint": "Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat Cap. Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir. D= ad − bc: per a D≠0, x=( ed − bf )/D e y=( af − ec )/D. Per D=0 estudia equivalència o contradicció, mai dividides entre zero. Resultat matemàtic contrastable: Cap. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L03-01": {
+      "prompt": "En la lliçó Equacions exponencials i logarítmiques senzilles: Resol l'equació exponencial 2^(x+(1))=16 reduint a potències amb la mateixa base. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Intenta escriure ambdós costats amb la mateixa base positiva diferent d'un.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 3. Intenta escriure ambdós costats amb la mateixa base positiva diferent d'un a^u=a^v amb a>0 i a≠1 implica u=v. log_ a(y)=x equival a a^x=y, amb y>0. Resultat matemàtic contrastable: 3. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L03-02": {
+      "prompt": "En la lliçó Equacions exponencials i logarítmiques senzilles: Calcula logaritme en base 3 de 9: l'exponent real i tal que 3^e=9. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Intenta escriure ambdós costats amb la mateixa base positiva diferent d'un.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 2. Intenta escriure ambdós costats amb la mateixa base positiva diferent d'un a^u=a^v amb a>0 i a≠1 implica u=v. log_ a(y)=x equival a a^x=y, amb y>0. Resultat matemàtic contrastable: 2. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L03-03": {
+      "prompt": "En la lliçó Equacions exponencials i logarítmiques senzilles: Resol l'equació exponencial 3^(x+(0))=81 reduint a potències amb la mateixa base. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Intenta escriure ambdós costats amb la mateixa base positiva diferent d'un.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 4. Intenta escriure ambdós costats amb la mateixa base positiva diferent d'un a^u=a^v amb a>0 i a≠1 implica u=v. log_ a(y)=x equival a a^x=y, amb y>0. Resultat matemàtic contrastable: 4. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L03-04": {
+      "prompt": "En la lliçó Equacions exponencials i logarítmiques senzilles: Està definit logaritme real d'un argument negatiu per a base positiva diferent de 1 (Sí / No)? Tria una resposta exacta.",
+      "hint": "Intenta escriure ambdós costats amb la mateixa base positiva diferent d'un.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat No. Intenta escriure ambdós costats amb la mateixa base positiva diferent d'un a^u=a^v amb a>0 i a≠1 implica u=v. log_ a(y)=x equival a a^x=y, amb y>0. Resultat matemàtic contrastable: No. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L03-05": {
+      "prompt": "En la lliçó Equacions exponencials i logarítmiques senzilles: Calcula logaritme en base 2 de 32: l'exponent real i tal que 2^e=32. Tria una resposta exacta.",
+      "hint": "Intenta escriure ambdós costats amb la mateixa base positiva diferent d'un.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 5. Intenta escriure ambdós costats amb la mateixa base positiva diferent d'un a^u=a^v amb a>0 i a≠1 implica u=v. log_ a(y)=x equival a a^x=y, amb y>0. Resultat matemàtic contrastable: 5. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L04-01": {
+      "prompt": "En la lliçó Inequacions lineals i quadràtiques senzilles: Resol la inequació (x−(2))(x−(5))≤0 i tria l'INTERVAL tancat exacte. Tria una resposta exacta.",
+      "hint": "Cerca les dues arrels que separen intervals amb signes diferents.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat [2,5]. Busca les dues arrels que separen intervals amb signes diferents. Amb a<b, (x−a)(x−b)≤0 da [a,b]; en >0 presa x<a o x>b excloent arrels. Resultat matemàtic contrastable: [2,5]. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L04-02": {
+      "prompt": "En la lliçó Inequacions lineals i quadràtiques senzilles: Pertany x=3 a la solució de (x−(2))(x−(5))≤0 (Sí / No)? Tria una resposta exacta.",
+      "hint": "Cerca les dues arrels que separen intervals amb signes diferents.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat Sí. Busca les dues arrels que separen intervals amb signes diferents. Amb a<b, (x−a)(x−b)≤0 da [a,b]; en >0 presa x<a o x>b excloent arrels. Resultat matemàtic contrastable: Sí. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L04-03": {
+      "prompt": "En la lliçó Inequacions lineals i quadràtiques senzilles: Pertany x=6 a la solució de (x−(2))(x−(5))≤0 (Sí / No)? Tria una resposta exacta.",
+      "hint": "Cerca les dues arrels que separen intervals amb signes diferents.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat No. Busca les dues arrels que separen intervals amb signes diferents. Amb a<b, (x−a)(x−b)≤0 da [a,b]; en >0 presa x<a o x>b excloent arrels. Resultat matemàtic contrastable: No. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L04-04": {
+      "prompt": "En la lliçó Inequacions lineals i quadràtiques senzilles: És x=1 solució de (x−(2))(x−(5))>0 (Sí / No)? Tria una resposta exacta.",
+      "hint": "Cerca les dues arrels que separen intervals amb signes diferents.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat Sí. Busca les dues arrels que separen intervals amb signes diferents. Amb a<b, (x−a)(x−b)≤0 da [a,b]; en >0 presa x<a o x>b excloent arrels. Resultat matemàtic contrastable: Sí. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L04-05": {
+      "prompt": "En la lliçó Inequacions lineals i quadràtiques senzilles: Resol la inequació (x−(-1))(x−(4))≤0 i tria l'INTERVAL tancat exacte. Tria una resposta exacta.",
+      "hint": "Cerca les dues arrels que separen intervals amb signes diferents.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat [-1,4]. Busca les dues arrels que separen intervals amb signes diferents. Amb a<b, (x−a)(x−b)≤0 da [a,b]; en >0 presa x<a o x>b excloent arrels. Resultat matemàtic contrastable: [-1,4]. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L05-01": {
+      "prompt": "En la lliçó Problemes econòmics: Ingrés I(q)=8q, cost C(q)=50+3q. Calcula la quantitat q d'EQUILIBRI amb benefici zero. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Planteja ingressos, costos, benefici i capacitat com a expressions separades.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 10. Planteja ingressos, costos, benefici i capacitat com a expressions separades. I(q)= preu ·q, C(q)= cost fix + cost variable ·q, B(q)=I−C. Benefici positiu exigeix B(q)>0 i q enter factible. Resultat matemàtic contrastable: 10. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L05-02": {
+      "prompt": "En la lliçó Problemes econòmics: Amb I(q)=8q i C(q)=50+3q, quin és el primer nombre enter q≥0 amb benefici estrictament positiu? Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Planteja ingressos, costos, benefici i capacitat com a expressions separades.",
+      "explanation": "Explicació: Contrasta la solució de les desigualtats amb capacitat, enters i pressupost; resultat 11. Planteja ingressos, costos, benefici i capacitat com a expressions separades. I(q)= preu ·q, C(q)= cost fix + cost variable ·q, B(q)=I−C. Benefici positiu exigeix B(q)>0 i q enter factible. Resultat matemàtic contrastable: 11. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L05-03": {
+      "prompt": "En la lliçó Problemes econòmics: Amb ingrés 8q i cost 50+3q, calcula el BENEFICI en q=12 unitats. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Planteja ingressos, costos, benefici i capacitat com a expressions separades.",
+      "explanation": "Explicació: Contrasta la solució de les desigualtats amb capacitat, enters i pressupost; resultat 10. Planteja ingressos, costos, benefici i capacitat com a expressions separades. I(q)= preu ·q, C(q)= cost fix + cost variable ·q, B(q)=I−C. Benefici positiu exigeix B(q)>0 i q enter factible. Resultat matemàtic contrastable: 10. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L05-04": {
+      "prompt": "En la lliçó Problemes econòmics: Calcula INGRÉS I(12) si es venen 12 unitats a 8 € cadascuna (no confones amb benefici). Tria una resposta exacta.",
+      "hint": "Planteja ingressos, costos, benefici i capacitat com a expressions separades.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 96. Planteja ingressos, costos, benefici i capacitat com a expressions separades. I(q)= preu ·q, C(q)= cost fix + cost variable ·q, B(q)=I−C. Benefici positiu exigeix B(q)>0 i q enter factible. Resultat matemàtic contrastable: 96. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L05-05": {
+      "prompt": "En la lliçó Problemes econòmics: Calcula COST total C(12) si C(q)=50+3q euros. Tria una resposta exacta.",
+      "hint": "Planteja ingressos, costos, benefici i capacitat com a expressions separades.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 86. Planteja ingressos, costos, benefici i capacitat com a expressions separades. I(q)= preu ·q, C(q)= cost fix + cost variable ·q, B(q)=I−C. Benefici positiu exigeix B(q)>0 i q enter factible. Resultat matemàtic contrastable: 86. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L06-01": {
+      "prompt": "En la lliçó Restriccions i interpretació: Amb B(q)=(8−3)q−50 i q enter entre 0 i 12, quantes quantitats donen benefici ESTRICTAMENT positiu? Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Planteja ingressos, costos, benefici i capacitat com a expressions separades.",
+      "explanation": "Explicació: Contrasta la solució de les desigualtats amb capacitat, enters i pressupost; resultat 2. Planteja ingressos, costos, benefici i capacitat com a expressions separades. I(q)= preu ·q, C(q)= cost fix + cost variable ·q, B(q)=I−C. Benefici positiu exigeix B(q)>0 i q enter factible. Resultat matemàtic contrastable: 2. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L06-02": {
+      "prompt": "En la lliçó Restriccions i interpretació: Amb B(q)=(8−3)q−50 i q enter 0≤q≤12, calcula el màxim benefici factible. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Planteja ingressos, costos, benefici i capacitat com a expressions separades.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 10. Planteja ingressos, costos, benefici i capacitat com a expressions separades. I(q)= preu ·q, C(q)= cost fix + cost variable ·q, B(q)=I−C. Benefici positiu exigeix B(q)>0 i q enter factible. Resultat matemàtic contrastable: 10. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L06-03": {
+      "prompt": "En la lliçó Restriccions i interpretació: Amb benefici B(q)=(8−3)q−50, capacitat 0≤q≤12 i q enter, és q=13 rendible I factible (Sí / No)? Tria una resposta exacta.",
+      "hint": "Planteja ingressos, costos, benefici i capacitat com a expressions separades.",
+      "explanation": "Explicació: Contrasta la solució de les desigualtats amb capacitat, enters i pressupost; resultat No. Planteja ingressos, costos, benefici i capacitat com a expressions separades. I(q)= preu ·q, C(q)= cost fix + cost variable ·q, B(q)=I−C. Benefici positiu exigeix B(q)>0 i q enter factible. Resultat matemàtic contrastable: No. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L06-04": {
+      "prompt": "En la lliçó Restriccions i interpretació: Amb benefici B(q)=(8−3)q−50, capacitat 0≤q≤12 i q enter, és q=11 rendible I factible (Sí / No)? Tria una resposta exacta.",
+      "hint": "Planteja ingressos, costos, benefici i capacitat com a expressions separades.",
+      "explanation": "Explicació: Contrasta la solució de les desigualtats amb capacitat, enters i pressupost; resultat Sí. Planteja ingressos, costos, benefici i capacitat com a expressions separades. I(q)= preu ·q, C(q)= cost fix + cost variable ·q, B(q)=I−C. Benefici positiu exigeix B(q)>0 i q enter factible. Resultat matemàtic contrastable: Sí. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-B1S-A01-L06-05": {
+      "prompt": "En la lliçó Restriccions i interpretació: Amb I(q)=10q i C(q)=36+4q, quin és el primer nombre enter q≥0 amb benefici estrictament positiu? Tria una resposta exacta.",
+      "hint": "Planteja ingressos, costos, benefici i capacitat com a expressions separades.",
+      "explanation": "Explicació: Contrasta la solució de les desigualtats amb capacitat, enters i pressupost; resultat 7. Planteja ingressos, costos, benefici i capacitat com a expressions separades. I(q)= preu ·q, C(q)= cost fix + cost variable ·q, B(q)=I−C. Benefici positiu exigeix B(q)>0 i q enter factible. Resultat matemàtic contrastable: 7. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    }
+  }
+}

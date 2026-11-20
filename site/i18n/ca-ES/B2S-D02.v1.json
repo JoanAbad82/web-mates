@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2S-D02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2s_d02.json": "1519c5f99a8a1918eaa90829023b531a6cd960cbed34527a68a0ff97152a5627",
+    "data/f3_b2s_d02_exercises.json": "bf8258b45456f3035304f9b1b7e68b6f2b84451a82103eab190dd26443207d11"
+  },
+  "lessons": {
+    "B2S-D02-L01": {
+      "title": "Estimació puntual i per intervals",
+      "objectives": [
+        "Distingir una estimació puntual d'un interval construït per un procediment.",
+        "Explicar quines dades i supòsits requereix una inferència quantitativa."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una estimació puntual de μ pot ser x̄ i de p pot ser p̂; Totes dues són valors obtinguts de la mostra. Un interval de confiança és el resultat d'un procediment estadístic basat en un disseny, un estadístic, un model de variabilitat i un nivell nominal de cobertura. La fórmula coneguda x̄ ± z·σ/√n per mitjana requereix mostreig iid i σ coneguda, a més d'una població normal o una aproximació defensable. No s'aplica automàticament a qualsevol mitjana ni corregeix biaixos de cobertura. Els extrems canvien d'una mostra a una altra; el paràmetre poblacional es considera fix. L'interval no garanteix que cada resultat particular inclogui el paràmetre."
+        },
+        {
+          "body": "Amb x̄=50, σ=10, n=25 iid normals, SE =10/√25=2. Per z≈1,96, marge =3,92 i l'interval nominal de 95 % és [46,08; 53,92]."
+        },
+        {
+          "body": "L'estimació puntual 50 és un sol valor; els extrems 46,08 i 53,92 requereixen suposar distribució i variància. En un mostreig esbiaixat l'etiqueta « 95 % » no repara aquest problema."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Estimació puntual i per intervals. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Estimació puntual i per intervals"
+          }
+        },
+        {
+          "body": "Un interval de confiança substitueix l'anàlisi de biaix del marc?||No: la seva cobertura es refereix al procediment i supòsits, no a errors sistemàtics."
+        },
+        {
+          "body": "Recuperació activa: Distingir una estimació puntual d'un interval construït per un procediment. Defineix població, mostreig i model abans d'inserir xifres. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2S-D02-L02": {
+      "title": "Nivell de confiança",
+      "objectives": [
+        "Interpretar nivell de confiança com a cobertura d'un procediment repetit.",
+        "Diferencia el paràmetre fix, l'interval aleatori i la probabilitat posterior."
+      ],
+      "content_blocks": [
+        {
+          "body": "Sota un model vàlid i el procediment habitual, dir «nivell de confiança 95 % » significa que a llarg termini al voltant del 95 % dels intervals construïts a partir de mostres repetides inclourien el paràmetre fix. Una vegada calculat un interval concret, des de l'enfocament freqüentista clàssic no es diu que hi hagi una probabilitat del 95 % que el paràmetre fix estigui dins. Per a una normal estàndard, z≈1,96 deixa al voltant del 2,5 % a cada costat i aproximadament el 95 % central; per a 90 % z≈1,645. Aquestes xifres són aproximades i depenen del model. Un nivell major generalment eixampla l'interval si els altres elements romanen iguals."
+        },
+        {
+          "body": "En un experiment il·lustratiu amb 100 mostres independents del mateix disseny vàlid, s'espera, en mitjana, que uns 95 intervals nominals del 95 % cobreixin μ; 95 no és un recompte garantit."
+        },
+        {
+          "body": "Si ES =2, el marge amb z≈1,96 és 3,92; amb z≈1,645 és 3,29. El segon interval és més estret pel nivell nominal menor."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Nivell de confiança. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Nivell de confiança"
+          }
+        },
+        {
+          "body": "Què representa el 95 %: cobertura del mètode o probabilitat d'un μ fix ja calculat?||Cobertura nominal del procediment sobre mostres repetides, sota supòsits."
+        },
+        {
+          "body": "Recuperació activa: Interpretar nivell de confiança com a cobertura d'un procediment repetit. L'aleatorietat en inferència freqüentista resideix en la mostra i l'interval. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2S-D02-L03": {
+      "title": "Interval de proporció",
+      "objectives": [
+        "Construeix intervals normals aproximats per a una proporció en condicions adequades.",
+        "Advertir per què l'interval de Wald és feble en mostres petites o extrems."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a n observacions Bernoulli independents amb la mateixa p i selecció pertinent, p̂=k/n. Una aproximació freqüent és l'interval de Wald p̂ ± z·√(p̂(1−p̂)/n), que s'ha d'etiquetar com aproximat i pot funcionar malament amb n petit o p̂ prop de zero o un. És necessari examinar almenys recomptes esperats i disseny; no és suficient un gran nombre de decimals. Els extrems no són una promesa exacta de 95 % de cobertura ni s'interpreten com a percentatge d'individus que van respondre correctament. En escenaris difícils són preferibles mètodes com Wilson o exactes amb revisió apropiada."
+        },
+        {
+          "body": "Amb 200 èxits de n=400 observacions Bernoulli iid, p̂=0,5 i S'estima =√(0,5×0,5/400)=0,025. El marge Wald al 95 % és 1,96×0,025=0,049; l'interval aproximat és [0,451; 0,549]."
+        },
+        {
+          "body": "Amb 1 èxit de n=10, p̂=0,1, l'interval Wald normal pot tenir cobertura deficient; no s'ha de qualificar com a inferència exacta per incloure la xifra 95 %."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Interval de proporció. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Interval de proporció"
+          }
+        },
+        {
+          "body": "És un interval Wald nominal del 95 % una garantia de cobertura exacta?||No: és una aproximació sensible a n, p i disseny."
+        },
+        {
+          "body": "Recuperació activa: Construir intervals normals aproximats per a una proporció en condicions adequades. Comprova independència, marc i si tots dos recomptes d'èxit i fracàs són suficients. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2S-D02-L04": {
+      "title": "Interval de mitjana en supòsits adequats",
+      "objectives": [
+        "Construir un interval de mitjana normal amb σ poblacional coneguda.",
+        "Reconèixer quan la fórmula z no s'ha d'utilitzar sense modificacions."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si les observacions són independents d'una població normal i σ és coneguda, la mitjana x̄ té distribució normal amb desviació σ/√n. Un interval bilateral nominal del 95 % per μ es calcula x̄±1,96·σ/√n (aproximant el quasi normal). Si σ es desconeix i se substitueix per la desviació típica mostral, el tractament habitual d'una mostra normal empra la distribució t de Student amb graus de llibertat n−1, no z de manera automàticament exacta. La correlació entre observacions o un disseny per conglomerats també canvia els errors estàndard. Un resultat amb hipòtesis falses no es rescata per arrodoniment."
+        },
+        {
+          "body": "Dades d'una mostra sintètica normal iid: x̄=80, σ poblacional coneguda =12, n=36. ES =2, marge ≈3,92 i l'interval aproximat al 95 % és [76,08; 83,92]."
+        },
+        {
+          "body": "Amb n=9, σ=6 coneguda i mitjana mostral 20 sota població normal, SE =6/3=2 i l'interval nominal 95 % usa [16,08; 23,92]."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Interval de mitjana en supòsits adequats. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Interval de mitjana en supòsits adequats"
+          }
+        },
+        {
+          "body": "És l'interval z exactament apropiat quan σ es desconeix sense més supòsits?||No: normalment s'estudia t i les condicions del disseny."
+        },
+        {
+          "body": "Recuperació activa: Construir un interval de mitjana normal amb σ poblacional coneguda. Declara σ coneguda i mostreig iid normal o aproximació justificada. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2S-D02-L05": {
+      "title": "Marge d'error",
+      "objectives": [
+        "Calcular i interpretar marge d'error i dependència amb n.",
+        "Evitar atribuir al marge errors sistemàtics o garanties que no cobreix."
+      ],
+      "content_blocks": [
+        {
+          "body": "El marge d'error modelitzat en un interval simètric és un múltiple z de l'error estàndard. Sota el mateix nivell nominal i condicions iid, S'és proporcional a 1/√n i quadruplicar la grandària mostral redueix aproximadament a la meitat el marge. Per a una proporció es pot usar √(p̂(1−p̂)/n) com a estimador del SE només quan l'aproximació és raonable; per a una mitjana amb σ coneguda és σ/√n. Cap d'aquestes expressions recull automàticament biaixos de selecció, no resposta o mesurament. No s'han d'anunciar «precisió» i « 95 % de certesa» com a equivalents, ni prometre un error real màxim."
+        },
+        {
+          "body": "Per a mitjana normal iid amb σ=20, n=100 i z≈1,96, SE =2 i marge ≈3,92. Si n=400, SE =1 i marge ≈1,96."
+        },
+        {
+          "body": "Per a p̂=0,5 en n=400, S'estimat =0,025 i marge de Wald ≈0,049; no cobreix la incertesa addicional d'un marc incomplet."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Marge d'error. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Marge d'error"
+          }
+        },
+        {
+          "body": "Reduir el marge per disseny elimina la no resposta diferencial?||No: el marge estadístic no integra automàticament el biaix sistemàtic."
+        },
+        {
+          "body": "Recuperació activa: Calcular i interpretar marge d'error i dependència amb n. Diferència la dispersió estadística dels possibles biaixos. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2S-D02-L06": {
+      "title": "Interpretació de resultats i límits",
+      "objectives": [
+        "Comunicar inferències i limitacions del disseny amb llenguatge no causal.",
+        "Detectar errors comuns en la interpretació de nivells i paràmetres."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un informe útil declara la població, el marc, la selecció, n, resposta, estimador, interval i suposats. Un interval de confiança nominal del 95 % correspon a cobertura de la regla sota repetició hipotètica del mostreig; no significa una probabilitat posterior del 95 % per al paràmetre fix. Els extrems poden oscil·lar entre mostres i no descriuen la variació entre persones individuals. Un estudi observacional no atribueix causalitat a associacions detectades. Davant autoselecció o dependència no modelitzada s'ha de considerar la inferència no verificada, fins i tot si les calculadores retornen un interval estret. La precisió aparent de xifres decimals no substitueix evidència de qualitat del disseny."
+        },
+        {
+          "body": "Una enquesta de 300 participants seleccionats aleatòriament d'una llista completa obté 180 respostes positives: p̂=0,60. Abans de generalitzar cal conèixer no resposta, disseny i possibles dependències."
+        },
+        {
+          "body": "Amb 50 observacions obtingudes per voluntariat, informar « 95 % de confiança» sense model vàlid i cobertura pot induir a error; la frase correcta admet limitacions i no promet exactitud poblacional."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Interpretació de resultats i límits. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Interpretació de resultats i límits"
+          }
+        },
+        {
+          "body": "Un interval que inclou només valors alts demostra causalitat?||No: inferència sobre paràmetres i causalitat exigeixen dissenys i supòsits diferents."
+        },
+        {
+          "body": "Recuperació activa: Comunicar inferències i limitacions del disseny amb llenguatge no causal. Separar l'observat, l'estimat i el no verificat. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2S-D02-L01-01": {
+      "prompt": "Amb σ=10 coneguda, n=25 iid normals i x̄=50, error estàndard de x̄?",
+      "hint": "Defineix població, mostreig i model abans d'inserir xifres.",
+      "explanation": "ES =10/√25=2, baix normal iid i σ coneguda."
+    },
+    "F3-B2S-D02-L01-02": {
+      "prompt": "Amb SE =2 i z=1,96, calcula el marge bilateral de l'interval.",
+      "hint": "Defineix població, mostreig i model abans d'inserir xifres.",
+      "explanation": "Marge ≈1,96×2=3,92. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D02-L01-03": {
+      "prompt": "Per a x̄=50 i marge =3,92, extrem inferior de l'interval?",
+      "hint": "Defineix població, mostreig i model abans d'inserir xifres.",
+      "explanation": "50−3,92=46,08. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D02-L01-04": {
+      "prompt": "Què és una estimació puntual?",
+      "hint": "Defineix població, mostreig i model abans d'inserir xifres.",
+      "explanation": "p̂ i x̄ són estimacions puntuals; no inclouen una cobertura per si mateixes."
+    },
+    "F3-B2S-D02-L01-05": {
+      "prompt": "Quina condició fa apropiat l'interval z exacte per a la mitjana plantejat aquí?",
+      "hint": "Defineix població, mostreig i model abans d'inserir xifres.",
+      "explanation": "Sense hipòtesi sobre distribució, disseny i σ, no es garanteix el model."
+    },
+    "F3-B2S-D02-L02-01": {
+      "prompt": "Sota normal estàndard, si z≈1,96 delimita cobertura central 95 %, quin percentatge queda en cada cua?",
+      "hint": "L'aleatorietat en inferència freqüentista resideix en la mostra i l'interval.",
+      "explanation": "Fora queda 5 %, meitat en cada cua: 2,5 %."
+    },
+    "F3-B2S-D02-L02-02": {
+      "prompt": "ES =2 i quasi z=1,645 per a interval nominal 90 %. Calcula el marge.",
+      "hint": "L'aleatorietat en inferència freqüentista resideix en la mostra i l'interval.",
+      "explanation": "1,645×2=3,29; aproximadament. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D02-L02-03": {
+      "prompt": "De 100 intervals nominals 95 % construïts amb el mètode correcte, quants cobreixen μ en mitjana?",
+      "hint": "L'aleatorietat en inferència freqüentista resideix en la mostra i l'interval.",
+      "explanation": "Esperança 100×0,95=95; no assegura exactament 95 en cada experiment."
+    },
+    "F3-B2S-D02-L02-04": {
+      "prompt": "Com s'interpreta un nivell freqüentista del 95 %?",
+      "hint": "L'aleatorietat en inferència freqüentista resideix en la mostra i l'interval.",
+      "explanation": "L'interval és aleatori abans d'observar la mostra; μ és fix."
+    },
+    "F3-B2S-D02-L02-05": {
+      "prompt": "En pujar el nivell nominal de 90 % a 95 %, amb mateixes dades i ES, l'interval:",
+      "hint": "L'aleatorietat en inferència freqüentista resideix en la mostra i l'interval.",
+      "explanation": "Amb z de 1,645 a 1,96 el marge augmenta."
+    },
+    "F3-B2S-D02-L03-01": {
+      "prompt": "Per n=400 Bernoulli iid i 200 èxits, quant és p̂?",
+      "hint": "Comprova independència, marc i si tots dos recomptes d'èxit i fracàs són suficients.",
+      "explanation": "p̂=200/400=0,5. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D02-L03-02": {
+      "prompt": "Amb n=400 i p̂=0,5, estima SE de proporció.",
+      "hint": "Comprova independència, marc i si tots dos recomptes d'èxit i fracàs són suficients.",
+      "explanation": "ES ≈√(0,5×0,5/400)=0,025. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D02-L03-03": {
+      "prompt": "Amb p̂=0,5, n=400 i z≈1,96, calcula límit inferior Wald 95 %.",
+      "hint": "Comprova independència, marc i si tots dos recomptes d'èxit i fracàs són suficients.",
+      "explanation": "0,5−1,96×0,025=0,451. Aproximat. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D02-L03-04": {
+      "prompt": "Quina limitació té l'interval de Wald per a p?",
+      "hint": "Comprova independència, marc i si tots dos recomptes d'èxit i fracàs són suficients.",
+      "explanation": "L'aproximació normal de proporcions pot fallar en casos extrems."
+    },
+    "F3-B2S-D02-L03-05": {
+      "prompt": "Si en n=10 hi ha 1 èxit, quin enfocament és més rigorós?",
+      "hint": "Comprova independència, marc i si tots dos recomptes d'èxit i fracàs són suficients.",
+      "explanation": "La mostra petita i el resultat extrem requereixen mètodes adequats."
+    },
+    "F3-B2S-D02-L04-01": {
+      "prompt": "Mitjana x̄=80, σ poblacional =12 coneguda i n=36 iid normals. ES?",
+      "hint": "Declara σ coneguda i mostreig iid normal o aproximació justificada.",
+      "explanation": "ES =12/√36=2. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D02-L04-02": {
+      "prompt": "Per a x̄=80, SE =2 i z≈1,96, calcula límit superior bilateral.",
+      "hint": "Declara σ coneguda i mostreig iid normal o aproximació justificada.",
+      "explanation": "80+1,96×2=83,92. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D02-L04-03": {
+      "prompt": "Amb x̄=20, σ coneguda =6 i n=9 iid normals, extrem inferior 95 % z?",
+      "hint": "Declara σ coneguda i mostreig iid normal o aproximació justificada.",
+      "explanation": "20−1,96×6/3=16,08, sota hipòtesis normals iid."
+    },
+    "F3-B2S-D02-L04-04": {
+      "prompt": "Si σ poblacional és desconeguda i n és petita, quin advertiment correspon?",
+      "hint": "Declara σ coneguda i mostreig iid normal o aproximació justificada.",
+      "explanation": "Amb normalitat i σ estimada, normalment s'usa t amb n−1 graus de llibertat."
+    },
+    "F3-B2S-D02-L04-05": {
+      "prompt": "Què pot canviar l'ES clàssic a més de σ i n?",
+      "hint": "Declara σ coneguda i mostreig iid normal o aproximació justificada.",
+      "explanation": "El disseny determina estructura de correlacions i variàncies."
+    },
+    "F3-B2S-D02-L05-01": {
+      "prompt": "Per a σ coneguda =20, n=100 iid normals i z=1,96, guany bilateral?",
+      "hint": "Diferència la dispersió estadística dels possibles biaixos.",
+      "explanation": "Marge =1,96×20/√100=3,92. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D02-L05-02": {
+      "prompt": "Amb σ coneguda =20 i n=400 iid normals, guany bilateral z=1,96?",
+      "hint": "Diferència la dispersió estadística dels possibles biaixos.",
+      "explanation": "Marge =1,96×20/20=1,96. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D02-L05-03": {
+      "prompt": "Per a p̂=0,5, n=400 i z=1,96, calcula marge de Wald.",
+      "hint": "Diferència la dispersió estadística dels possibles biaixos.",
+      "explanation": "Marge ≈1,96√(0,25/400)=0,049. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2S-D02-L05-04": {
+      "prompt": "Si es quadruplica n sota el mateix disseny iid, amb σ constant, el marge z:",
+      "hint": "Diferència la dispersió estadística dels possibles biaixos.",
+      "explanation": "La dependència és 1/√n; altres biaixos no estan coberts."
+    },
+    "F3-B2S-D02-L05-05": {
+      "prompt": "Un marge numèric petit garanteix inexistència de biaix de cobertura?",
+      "hint": "Diferència la dispersió estadística dels possibles biaixos.",
+      "explanation": "Un biaix sistemàtic no està necessàriament contingut en un ES convencional."
+    },
+    "F3-B2S-D02-L06-01": {
+      "prompt": "De 300 respostes sintètiques hi ha 180 afirmatives. Calcula p̂.",
+      "hint": "Separar l'observat, l'estimat i el no verificat.",
+      "explanation": "p̂=180/300=0,60; Comunica el denominador."
+    },
+    "F3-B2S-D02-L06-02": {
+      "prompt": "De 300 respostes, 120 són negatives. Quina proporció de respostes negatives hi ha?",
+      "hint": "Separar l'observat, l'estimat i el no verificat.",
+      "explanation": "120/300=0,4 de responents, no de tots els convidats."
+    },
+    "F3-B2S-D02-L06-03": {
+      "prompt": "Un informe té una estimació puntual 0,60 i un marge aproximat 0,05. Límit inferior?",
+      "hint": "Separar l'observat, l'estimat i el no verificat.",
+      "explanation": "0,60−0,05=0,55 sota un interval simètric; la seva validesa depèn del mètode."
+    },
+    "F3-B2S-D02-L06-04": {
+      "prompt": "Què afirma correctament un interval de confiança freqüent?",
+      "hint": "Separar l'observat, l'estimat i el no verificat.",
+      "explanation": "Cobertura i causalitat són conceptes diferents; el model i el disseny importen."
+    },
+    "F3-B2S-D02-L06-05": {
+      "prompt": "Què ha d'incloure un informe responsable d'inferència?",
+      "hint": "Separar l'observat, l'estimat i el no verificat.",
+      "explanation": "Els límits i l'origen de les dades són part del resultat."
+    }
+  }
+}
