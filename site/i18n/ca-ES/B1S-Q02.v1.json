@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1S-Q02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1s_q02.json": "f8d220e4dca2912f15ee03b981afeab0ad12ce07d6d123e880428df26e2628f1",
+    "data/f3_b1s_q02_exercises.json": "c5c844d9a56d7f3385ba9a4c66847fae1d26fee89f02db9e57ae04511b9ef1bc"
+  },
+  "lessons": {
+    "B1S-Q02-L01": {
+      "title": "Variables aleatòries",
+      "objectives": [
+        "Definir una variable aleatòria discreta com a funció de resultats a nombres.",
+        "Construir i comprovar distribucions finites de probabilitat sense confondre valors amb esdeveniments."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una variable aleatòria assigna a cada resultat elemental un valor numèric. Si X compta el nombre de cares de dues monedes ideals independents, els quatre resultats CC,CX,XC,XX són equiprobables, però els valors X=0,1, 2 tenen probabilitats 1/4,1/2,1/4. La probabilitat de X=1 reuneix dues rutes diferents, mentre X=0 i X=2 contenen una cadascun. Una funció de probabilitat discreta ha de tenir pesos no negatius i suma total un; els valors numèrics de X no tenen per què ser equiprobables. La funció de distribució F(x)=P(X≤x) és acumulada, no decreixent i assoleix un quan x sobrepassa tots els valors possibles. Les dades de l'esquema són sintètics i no justifiquen prediccions sobre casos reals sense un model ben especificat."
+        },
+        {
+          "body": "De CC,CX,XC,XX amb 1/4 cada ruta, X= cares val 0 amb probabilitat 1/4, 1 amb 2/4 i 2 amb 1/4."
+        },
+        {
+          "body": "Per a la variable X que compta les cares de dues monedes, l'acumulada F(1)=P(X≤1)=P(X=0)+P(X=1)=1/4+1/2=3/4, no 1/2."
+        },
+        {
+          "body": "Distribució del nombre de cares de dues monedes. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "Distribució del nombre de cares de dues monedes. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "Distribució del nombre de cares de dues monedes"
+          }
+        },
+        {
+          "body": "Els valors 0,1, 2 de la variable X tenen igual probabilitat per ser tres valors?||Núm.; els resultats elementals no s'agrupen uniformement."
+        },
+        {
+          "body": "Recuperació activa: Una variable aleatòria assigna a cada resultat elemental un valor numèric. Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    },
+    "B1S-Q02-L02": {
+      "title": "Distribució binomial",
+      "objectives": [
+        "Reconèixer hipòtesi d'una binomial B(n,p).",
+        "Calcular probabilitats puntuals amb el coeficient binomial i fraccions exactes."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si es repeteixen n assajos independents, cadascun amb dos resultats èxit / fracàs i probabilitat constant p d'èxit, X, nombre d'èxits, segueix B(n,p). La seva funció de massa és P(X=k)=C(n, k)p^k(1−p)^(n−k), k enter de 0 a n. Per a quatre assajos equilibrats, P(X=2)=C(4,2)(1/2)^4=6/16=3/8; P(X=0)=1/16 i P(X=4)=1/16. La distribució no és binomial si la probabilitat d'èxit canvia entre assajos, hi ha dependència rellevant o n no és fix. Una extracció sense reemplaçament d'una població petita normalment genera un model hipergeomètric, no binomial exacte. Els coeficients C(n,k) compten les seqüències amb k èxits, no impliquen que els valors k siguin equiprobables."
+        },
+        {
+          "body": "Per a quatre assajos Bernoulli independents amb p=1/2, X~ B(4,1/2), P(X=2)=C(4,2)(1/2)^2(1/2)^2=6/16=3/8."
+        },
+        {
+          "body": "A X~ B(4,1/2), P(X=0)=C(4,0)(1/2)^4=1/16, igual que P(X=4) per simetria."
+        },
+        {
+          "body": "Binomial B(4,1/2) per recompte. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "Binomial B(4,1/2) per recompte. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "Binomial B(4,1/2) per recompte"
+          }
+        },
+        {
+          "body": "Una sèrie d'extraccions sense reemplaçament amb p canviant segueix sempre una binomial exacta?||Núm.; falla constància o independència."
+        },
+        {
+          "body": "Recuperació activa: Si es repeteixen n assajos independents, cadascun amb dos resultats èxit / fracàs i probabilitat constant p d'èxit, X, nombre d'èxits, segueix B(n,p). Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    },
+    "B1S-Q02-L03": {
+      "title": "Esperança i dispersió",
+      "objectives": [
+        "Calcular esperança, variància i desviació típica d'una binomial.",
+        "Interpretar la variabilitat i distingir desviació típica de variància."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a X~B(n,p), amb assajos Bernoulli independents i p constant, l'esperança és E(X)= np i la variància Var (X)= np (1−p); la desviació típica és σ=√[ np (1−p)]. Una B(4,1/2) té E(X)=2, Var (X)=1 i σ=1. Per B(100,1/2), l'esperança és 50, variància 25 i desviació típica 5. No s'ha de confondre Var (X)=25 amb σ=25: la primera es mesura en unitats al quadrat, la segona en les unitats originals de X. L'esperança és una mitjana teòrica, no una predicció de resultat exacte en cada seqüència. Quan p està prop de 0 o 1, la distribució pot ser molt asimètrica i una aproximació normal no s'accepta únicament pel valor de n."
+        },
+        {
+          "body": "En 100 assajos de p=1/2, E(X)=100·1/2=50, Var (X)=100·1/2·1/2=25 i σ=√25=5."
+        },
+        {
+          "body": "Per a B(4,1/2), E(X)=2 i Var (X)=1; la desviació típica també és 1, per ser arrel de la variància."
+        },
+        {
+          "body": "Resum teòric d'una binomial equilibrada. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "Resum teòric d'una binomial equilibrada. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "Resum teòric d'una binomial equilibrada"
+          }
+        },
+        {
+          "body": "La variància 25 significa que la desviació típica és 25?||No; la desviació típica és 5."
+        },
+        {
+          "body": "Recuperació activa: Per a X~B(n,p), amb assajos Bernoulli independents i p constant, l'esperança és E(X)= np i la variància Var (X)= np (1−p); la desviació típica és σ=√[ np (1−p)]. Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    },
+    "B1S-Q02-L04": {
+      "title": "Distribució normal",
+      "objectives": [
+        "Identificar la densitat normal i el paper de mitjana i desviació típica.",
+        "Interpretar àrees de probabilitat en una distribució contínua i simetria."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una variable normal X~ N(μ, σ²), amb σ>0, té densitat f(x)= exp [−(x−μ)²/(2σ²)]/(σ√(2π)). L'àrea total sota la corba és un i una probabilitat d'interval correspon a una àrea, no a l'altura de la funció. Per continuïtat, P(X=μ)=0 encara que la densitat assoleixi allí el seu màxim. Per simetria P(X≤μ)=1/2 i P(X≥μ)=1/2. En una normal estàndard Z~ N(0,1), aproximadament el 68,27 % de l'àrea cau entre −1 i 1, i el 95,45 % entre −2 i 2; aproximacions numèriques, no fraccions exactes. L'elecció d'un model normal per a dades observades exigeix contrastar la seva adequació i no ha d'assumir-se per comoditat."
+        },
+        {
+          "body": "En X~ N(70,10²), el centre és μ=70; per simetria P(X≤70)=1/2, i P(X=70)=0 en ser contínua."
+        },
+        {
+          "body": "Per a Z~ N(0,1), P(−1≤Z≤1)≈0,6827; es tracta d'àrea entre dos límits, no de l'altura de la densitat."
+        },
+        {
+          "body": "Corba normal estàndard i àrees. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "Corba normal estàndard i àrees. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "Corba normal estàndard i àrees"
+          }
+        },
+        {
+          "body": "Una distribució normal contínua assigna probabilitat positiva a X=μ exactament?||No; Qualsevol punt individual té probabilitat zero."
+        },
+        {
+          "body": "Recuperació activa: Una variable normal X~ N(μ, σ²), amb σ>0, té densitat f(x)= exp [−(x−μ)²/(2σ²)]/(σ√(2π)). Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    },
+    "B1S-Q02-L05": {
+      "title": "Estandarització",
+      "objectives": [
+        "Estandaritzar observacions normals mitjançant z=(x−μ)/σ.",
+        "Usa la simetria i una funció de distribució normal sense confondre puntuació z i probabilitat."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si X~ N(μ, σ²) i σ>0, llavors Z=(X−μ)/σ segueix N(0,1). El nombre z indica quantes desviacions típiques separen x de la mitjana, i pot ser positiu o negatiu. A X~ N(70,10²), x=85 té z=(85−70)/10=1,5; x=60 té z=−1. Per obtenir la probabilitat P(X≤85) es consulta Φ (1,5)≈0,9332, no es respon 1,5 com si fos probabilitat. Per simetria Φ (−z)=1− Φ(z) i P(Z≤0)=1/2. Els arrodoniments de taules o programari es declaren com aproximats; no s'ha d'elevar una probabilitat superior a un per confondre z amb Φ(z). L'estandardització és exacta si la mitjana i desviació són paràmetres correctes del model donat."
+        },
+        {
+          "body": "Per a X~ N(70,10²) i x=85, z=(85−70)/10=1,5; el percentil teòric aproximat és Φ (1,5)≈0,9332."
+        },
+        {
+          "body": "Si X~ N(70,10²) i x=60, z=−1; per simetria P(X≤70)=0,5, independentment de l'escala."
+        },
+        {
+          "body": "Estandarització i puntuació z. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "Estandarització i puntuació z. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "Estandardització i puntuació z"
+          }
+        },
+        {
+          "body": "El valor estandarditzat z=1,5 és ell mateix una probabilitat?||No; la probabilitat és l'àrea Φ (1,5), diferent de z."
+        },
+        {
+          "body": "Recuperació activa: Si X~ N(μ, σ²) i σ>0, llavors Z=(X−μ)/σ segueix N(0,1). Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    },
+    "B1S-Q02-L06": {
+      "title": "Aproximació binomial-normal quan escaigui",
+      "objectives": [
+        "Comprovar condicions per aproximar una binomial per una normal.",
+        "Aplicar correcció de continuïtat i declarar l'aproximació numèrica."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a X~B(n,p), una aproximació normal N(np,np (1−p)) pot resultar útil quan els assajos són independents, p constant i els productes np i n(1−p) són prou grans. Com a criteri editorial prudent s'usa aquí np ≥10 i n(1−p)≥10, no un teorema universal d'error garantit. En B(100,1/2), μ=50 i σ=5; per aproximar P(X≤55) mitjançant normal s'inclou correcció de continuïtat: P(Y≤55,5), amb z=(55,5−50)/5=1,1 i Φ (1,1)≈0,8643. Sense correcció s'obtindria Φ (1)=0,8413, una estimació diferent. En B(10,0, 05), np =0,5 i la condició falla; no s'ha de presentar la normal com a apropiada sense comprovar error. L'aproximació no substitueix la massa binomial exacta ni acredita automàticament precisió."
+        },
+        {
+          "body": "Per a X~B(100,1/2), μ=50, σ=5, n p=n(1−p)=50. P(X≤55)≈Φ((55,5−50)/5)=Φ(1,1)≈0,8643."
+        },
+        {
+          "body": "Per a X~ B(10,0, 05), np =0,5 i n(1−p)=9,5; no supera llindars editorials 10 i 10, per la qual cosa s'evita aproximar."
+        },
+        {
+          "body": "Aproximació normal amb correcció de continuïtat. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "Aproximació normal amb correcció de continuïtat. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "Aproximació normal amb correcció de continuïtat"
+          }
+        },
+        {
+          "body": "L'aproximació normal d'una binomial és necessàriament exacta per usar correcció de continuïtat?||No; És una aproximació amb supòsits."
+        },
+        {
+          "body": "Recuperació activa: Per a X~B(n,p), una aproximació normal N(np,np (1−p)) pot resultar útil quan els assajos són independents, p constant i els productes np i n(1−p) són prou grans. Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1S-Q02-L01-01": {
+      "prompt": "En Variables aleatòries: Dues monedes ideals independents. X= nombre de cares. Calcula P(X=0) usant els seus quatre camins. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,25. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L01-02": {
+      "prompt": "En Variables aleatòries: Dues monedes ideals independents. X= nombre de cares. Calcula P(X=1) usant els seus quatre camins. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,5. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L01-03": {
+      "prompt": "En Variables aleatòries: Dues monedes ideals independents. X= nombre de cares. Calcula F(1)=P(X≤1). Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,75. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L01-04": {
+      "prompt": "En Variables aleatòries: Els tres VALORS de X= cares de dues monedes tenen igual probabilitat? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L01-05": {
+      "prompt": "En Variables aleatòries: Distribució del nombre de cares de dues monedes ideals: calcula P(X=0)+P(X=1)+P(X=2). Tria l'opció matemàticament justificada.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 1. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L02-01": {
+      "prompt": "En Distribució binomial: B(4, p=1/2) amb assajos independents: calcula P(X=2)=C(n, k)p^k(1−p)^(n−k). Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,375. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L02-02": {
+      "prompt": "En Distribució binomial: B(4, p=1/2) amb assajos independents: calcula P(X=0)=C(n, k)p^k(1−p)^(n−k). Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,0625. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L02-03": {
+      "prompt": "En Distribució binomial: B(4, p=1/2) amb assajos independents: calcula P(X=4)=C(n, k)p^k(1−p)^(n−k). Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,0625. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L02-04": {
+      "prompt": "En Distribució binomial: Un mostreig sense reemplaçament amb p canviant és sempre binomial exacte? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L02-05": {
+      "prompt": "En Distribució binomial: B(4, p=1/2), n assajos independents: calcula P(X≤1) sumant les masses de 0 a 1. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,3125. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L03-01": {
+      "prompt": "En Esperança i dispersió: X~ B(100, p=1/2) amb independència i p constant: calcula esperança E(X)= np. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 50. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L03-02": {
+      "prompt": "En Esperança i dispersió: X~ B(100, p=1/2) amb independència i p constant: calcula variància np (1−p). Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 25. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L03-03": {
+      "prompt": "En Esperança i dispersió: X~ B(100, p=1/2) amb independència i p constant: calcula desviació típica √[ np (1−p)]. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 5. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L03-04": {
+      "prompt": "A Esperança i dispersió: Si Var (X)=25 necessàriament la desviació típica σ val també 25? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L03-05": {
+      "prompt": "En Esperança i dispersió: X~ B(4, p=1/2) amb independència i p constant: calcula esperança E(X)= np. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 2. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L04-01": {
+      "prompt": "En Distribució normal: X~N(mitjana 70, desviació típica 10), contínua. Calcula P(X≤ mitjana) per simetria. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,5. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L04-02": {
+      "prompt": "En Distribució normal: X~N(mitjana 70, desviació típica 10) contínua: calcula P(X=70) EXACTA. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L04-03": {
+      "prompt": "En Distribució normal: Normal estàndard Z~ N(0,1): estima P(−1≤Z≤1) amb 4 decimals a partir de la integral normal. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,6827. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L04-04": {
+      "prompt": "En Distribució normal: Una normal contínua assigna probabilitat positiva a un punt exacte? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L04-05": {
+      "prompt": "En Distribució normal: X~N(mitjana 0, desviació típica 1), contínua. Calcula P(X≤ mitjana) per simetria. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,5. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L05-01": {
+      "prompt": "En Estandardització: X~N(media 70, desviació típica 10). Per a x=85, calcula z=(x−μ)/σ, no una probabilitat. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 1,5. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L05-02": {
+      "prompt": "En Estandardització: X~N(media 70, desviació típica 10). Per a x=60, calcula z=(x−μ)/σ, no una probabilitat. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: -1. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L05-03": {
+      "prompt": "En Estandardització: Normal estàndard Z: calcula Φ (3/2)=P(Z≤3/2), arrodoneix a quatre decimals. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,9332. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L05-04": {
+      "prompt": "En Estandardització: Una puntuació z=1,5 és per si mateixa una PROBABILITAT? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L05-05": {
+      "prompt": "En Estandardització: Normal estàndard Z: calcula Φ (0/1)=P(Z≤0/1), arrodoneix a quatre decimals. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,5. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L06-01": {
+      "prompt": "En Aproximació binomial-normal quan escaigui: X~ B(100, p=1/2) amb independència i p constant: calcula esperança E(X)= np. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 50. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L06-02": {
+      "prompt": "En Aproximació binomial-normal quan escaigui: X~ B(100, p=1/2) amb independència i p constant: calcula desviació típica √[ np (1−p)]. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 5. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L06-03": {
+      "prompt": "En Aproximació binomial-normal quan escaigui: Per a B(100,1/2), aproximació normal amb correcció de continuïtat a P(X≤55): z=( cut +0,5− np )/σ. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 1,1. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L06-04": {
+      "prompt": "En Aproximació binomial-normal quan escaigui: B(100,1/2), np i n(1−p)≥10: aproxima P(X≤55) per normal amb correcció +0,5; arrodoneix a 4 decimals. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,8643. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q02-L06-05": {
+      "prompt": "En Aproximació binomial-normal quan escaigui: La normal amb correcció de continuïtat dóna sempre la probabilitat binomial EXACTA? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Defineix si el model és discret binomial o continu normal i comprova les seves hipòtesis abans de calcular. En B(n,p), E= np i Var = np (1−p). Per a normal estandarditza z=(x−μ)/σ. Només si escau aproximació B→N, corregeix X≤k amb límit k+0,5 i declara que és estimació. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    }
+  }
+}

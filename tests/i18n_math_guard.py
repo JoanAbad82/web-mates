@@ -3,8 +3,26 @@
 import re
 NUM=re.compile(r'(?<!\w)(?:-|−)?\d{1,3}(?:[ \u00a0]\d{3})+|(?<!\w)(?:-|−)?\d+(?!\w)')
 OPS=re.compile(r'[+×÷=<>−%≈≠√²³^π±≤≥°Δθ]|(?<![lL])·|·(?![lL])')
-MATH_DIV=re.compile(r'(?<=\d)/|/(?=\d)|(?<=[a-z])/(?=[a-z](?![a-z]))')
-def math_ops(text):return OPS.findall(text)+MATH_DIV.findall(text)
+MATH_DIV=re.compile(r'/')
+# Slash can denote division in a formula or an editorial pairing of verbs.
+# The latter may legitimately become a Catalan conjunction ('sumar i restar').
+# Unicode-aware word extraction avoids misclassifying favorables/número.
+PROSE_SLASH_PAIRS={
+ ('suma','resta'),('sumar','restar'),('sumas','restas'),('sumes','restes'),
+ ('multiplicaciones','divisiones'),('multiplicacions','divisions'),
+ ('multiplicar','dividir'),('multiplicación','división'),
+ ('multiplicacio','divisio'),('multiplicació','divisió'),
+ ('cuadradas','cúbicas'),('quadrades','cúbiques')
+}
+def math_ops(text):
+ result=OPS.findall(text)
+ for slash in MATH_DIV.finditer(text):
+  before=re.search(r'[^\W\d_]+\s*$',text[:slash.start()],re.UNICODE)
+  after=re.match(r'\s*[^\W\d_]+',text[slash.end():],re.UNICODE)
+  pair=(before.group().strip().casefold(),after.group().strip().casefold()) if before and after else None
+  if pair in PROSE_SLASH_PAIRS:continue
+  result.append('/')
+ return result
 def numbers(text):
  return [t.replace(' ','').replace('\u00a0','') for t in NUM.findall(text)]
 def math_guard(original,translated,context):

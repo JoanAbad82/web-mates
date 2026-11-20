@@ -1,0 +1,407 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1S-F01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1s_f01.json": "96775514030d11a40c26b2827784e57d4e64d30fc7d46fc0a434b478db8c84e2",
+    "data/f3_b1s_f01_exercises.json": "33ab76481d8318917fab29c3259d6426a39774743a6a0d2bd1630264575ca78b"
+  },
+  "lessons": {
+    "B1S-F01-L01": {
+      "title": "Dominis amb sentit real",
+      "objectives": [
+        "Distingir domini algebraic de domini econòmicament viable.",
+        "Construir i interpretar funcions d'una variable en dades socials sense extrapolar."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una funció d'una variable assigna una sortida a cada entrada admesa. En models socials, el domini pot ser més estret que el domini algebraic: C(n)=20+5n admet tot nombre real com a fórmula, però si n compta entrades comprades, llavors n és enter no negatiu. En f(x)=12/(x−2), el domini algebraic exclou x=2; si x és nombre de clients a més excloem quantitats negatives o fraccionàries. L'expressió amb arrel quadrada g(t)=√(t−3) requereix t≥3. És fonamental distingir una taula d'observacions d'una funció causal exacta: interpolar no prova que un comportament continuï indefinidament. Les unitats de l'entrada i sortida han de declarar-se, les restriccions de capacitat i pressupost s'intersecten amb el domini, i les visualitzacions mostren hipòtesis, no mesurades externes verificades."
+        },
+        {
+          "body": "Una tarifa C(n)=20+5n euros s'usa només amb n enter no negatiu. Per a quatre viatges, C(4)=40 €, però 4,5 viatges no és una entrada vàlida del model."
+        },
+        {
+          "body": "L'expressió f(x)=12/(x−2) no admet x=2. Si x representa persones, tampoc valors negatius ni fraccionaris."
+        },
+        {
+          "body": "Domini discret en una tarifa contextual. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "Domini discret en una tarifa contextual. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "Domini discret en una tarifa contextual"
+          }
+        },
+        {
+          "body": "Que una fórmula accepti x=−3 garanteix que una quantitat de persones negativa té sentit?||No; Per tant, cal imposar el domini contextual i la unitat de la variable."
+        },
+        {
+          "body": "Recuperació activa: Una funció d'una variable assigna una sortida a cada entrada admesa. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    },
+    "B1S-F01-L02": {
+      "title": "Models lineals i quadràtics",
+      "objectives": [
+        "Comparar funcions afins i quadràtiques en escenaris econòmics amb restriccions.",
+        "Localitzar interseccions i extrems per mètodes algebraics exactes."
+      ],
+      "content_blocks": [
+        {
+          "body": "El model afí C(q)= mq +b descriu variació constant m i quota fixa b. En canvi una funció quadràtica R(q)=−q²+10q pot modelitzar un ingrés simplificat que primer creix i després decreix. El seu vèrtex q=5, R(5)=25 representa un màxim dins de 0≤q≤10. Per a comparar dues tarifes C1 (q)=5+2q i C2 (q)=1+3q, s'igualen i resulta q=4; abans d'aquest valor és menor la segona i després la primera. Els punts de tall visuals no substitueixen a resoldre les equacions. Si q ha de ser enter, les decisions es prenen sobre els enters factibles. Cap ajust algebraic implica causalitat o rendibilitat futura sense dades i supòsits; ha de comunicar-se la diferència entre explicació d'un model sintètic i predicció."
+        },
+        {
+          "body": "Dos plans de cost A(q)=5+2q i B(q)=1+3q coincideixen quan 5+2q=1+3q; q=4 i cost 13 €."
+        },
+        {
+          "body": "Un ingrés R(q)=−q²+10q=25−(q−5)² té màxim 25 unitats monetàries en q=5, sempre dins del domini 0≤q≤10."
+        },
+        {
+          "body": "Ingrés quadràtic i màxim factible. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "Ingrés quadràtic i màxim factible. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "Ingrés quadràtic i màxim factible"
+          }
+        },
+        {
+          "body": "S'ha d'acceptar un màxim de paràbola situat fora de l'interval de quantitats permeses?||No; Cal comparar el màxim factible i les fronteres del domini."
+        },
+        {
+          "body": "Recuperació activa: El model afí C(q)= mq +b descriu variació constant m i quota fixa b. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    },
+    "B1S-F01-L03": {
+      "title": "Funcions racionals",
+      "objectives": [
+        "Determinar el domini i les asímptotes de funcions racionals socials.",
+        "Diferenciar buit evitable i asímptota vertical mitjançant límits i denominadors."
+      ],
+      "content_blocks": [
+        {
+          "body": "Les funcions racionals són quocients de polinomis i no estan definides on el seu denominador s'anul·la. Una quota fixa de 120 € repartida entre n persones es modelitza com p(n)=120/n, amb n enter positiu en el context. En l'extensió matemàtica real, la funció té asímptota vertical n=0 i horitzontal p=0 a mesura que n creix sense límit; no s'interpreta com a infinites persones reals. En canvi g(x)=(x²−4)/(x−2) és igual a x+2 per x≠2, però l'expressió original no admet x=2: allà apareix un buit evitable i no una asímptota vertical. Cancel·la factors no restaura el punt exclòs. Per interpretar la gràfica s'ha de distingir domini, comportament proper a punts prohibits i unitats; no s'infereixen dades econòmiques reals a partir d'una corba."
+        },
+        {
+          "body": "La quota p(n)=120/n per n enter positiu dóna p(3)=40 €, p(6)=20 €, i no permet n=0. El producte n·p(n)=120 roman fix."
+        },
+        {
+          "body": "g(x)=(x²−4)/(x−2) se simplifica a x+2 només si x≠2. El límit en acostar-se a 2 val 4, però g(2) no existeix."
+        },
+        {
+          "body": "Repartiment inversament proporcional. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "Repartiment inversament proporcional. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "Repartiment inversament proporcional"
+          }
+        },
+        {
+          "body": "Cancel·lar un factor del denominador converteix automàticament el punt exclòs en definit?||No; el domini de l'expressió original conserva l'exclusió."
+        },
+        {
+          "body": "Recuperació activa: Les funcions racionals són quocients de polinomis i no estan definides on el seu denominador s'anul·la. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    },
+    "B1S-F01-L04": {
+      "title": "Exponencials i logarítmiques",
+      "objectives": [
+        "Compara el creixement exponencial amb funcions logarítmiques inverses.",
+        "Calcular temps de duplicació o llindars en models amb taxes periòdiques."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una evolució amb taxa efectiva constant r per període es modelitza com N(t)=N0(1+r)^t, amb N0>0 i factor 1+r>0. Una taxa del 10 % anual produeix un factor 1,10, no una suma de 10 unitats cada any. Per a N0=100 i t=2, N(2)=121. La funció logarítmica log_a(x) inverteix a^t per a a>0, a≠1, i només admet un argument positiu. Si es vol saber quan 2^t=32, s'obté t=log_2(32)=5. En contextos de població o vendes, el domini pot limitar t≥0 i exigir nombres enters quan es registren períodes complets. El creixement exponencial indefinit és una hipòtesi matemàtica, no una predicció garantida; la saturació, la capacitat i els canvis de taxa poden invalidar-la."
+        },
+        {
+          "body": "Partint de 100 unitats, una pujada composta del 10 % per període produeix N(2)=100·(1,1)²=121 al cap de dos períodes."
+        },
+        {
+          "body": "Resolver 2^t=32: com 32=2⁵, t=5. També s'escriu t= log ₂(32), amb argument i base vàlids."
+        },
+        {
+          "body": "Creixement percentual compost. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "Creixement percentual compost. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "Creixement percentual compost"
+          }
+        },
+        {
+          "body": "El model 100·1,1^t equival a sumar sempre 10 unitats per període?||No; l'increment és proporcional al valor acumulat i varia."
+        },
+        {
+          "body": "Recuperació activa: Una evolució amb taxa efectiva constant r per període es modelitza com N(t)=N0(1+r)^t, amb N0>0 i factor 1+r>0. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    },
+    "B1S-F01-L05": {
+      "title": "Funcions a trossos",
+      "objectives": [
+        "Representar tarifes i regles socials mitjançant funcions definides per trams.",
+        "Comprovar continuïtat, valors frontera i salts en trams amb domini."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una funció a trossos utilitza expressions diferents en intervals definits. Exemple de tarifa: C(x)=5+2x per a 0≤x≤3 i C(x)=11+3(x−3) per a x>3. Ambdues expressions coincideixen en x=3, on la primera val 11 i el límit dret també és 11, així que el model és continu allí. Si el segon tram comencés amb quota addicional 4, existiria un salt. Les desigualtats que delimiten trams han de cobrir el domini sense ambigüitat, i cada x ha de rebre exactament una sortida. En quantitats indivisibles potser els valors intermedis no representen operacions reals; una continuïtat de l'extensió matemàtica no transforma el problema discret en continu. Per calcular C(5), s'ha de triar la branca x>3, no extrapolar la inicial."
+        },
+        {
+          "body": "En C(x)=5+2x per x≤3 i C(x)=11+3(x−3) per a x>3, C(3)=11 i C(5)=17. Les branques concorden en el llindar."
+        },
+        {
+          "body": "Si una tarifa cobra 10 € per 0≤n≤2 i 15 € per n>2, en passar de 2 a valors amb prou feines majors de 2 apareix un salt de 5 € en el model continu."
+        },
+        {
+          "body": "Tarifa per trams amb continuïtat a la frontera. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "Tarifa per trams amb continuïtat a la frontera. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "Tarifa per trams amb continuïtat a la frontera"
+          }
+        },
+        {
+          "body": "Puc avaluar el segon tram en x=2 quan la seva condició exigeix x>3?||No; Cada expressió només s'aplica als valors del seu propi interval."
+        },
+        {
+          "body": "Recuperació activa: Una funció a trossos utilitza expressions diferents en intervals definits. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    },
+    "B1S-F01-L06": {
+      "title": "Funcions periòdiques",
+      "objectives": [
+        "Interpretar amplitud i període de models periòdics senzills.",
+        "Evitar inferir periodicitat real de poques dades i controlar les unitats angulars."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una funció periòdica compleix f(t+T)=f(t) per a tot t del seu domini i algun T>0. Un exemple matemàtic és f(t)=10+3 sense (2πt/12), on l'amplitud és 3 unitats, la línia mitjana 10 i el període fonamental 12 unitats de temps. La funció pren valors entre 7 i 13. S'utilitza radians en l'argument trigonomètric; t pot representar mesos en un model estacional il·lustratiu, però dotze dades aïllades no proven que el futur repeteixi exactament la mateixa forma. Els models periòdics poden tenir fases i translacions, i no tots els senyals econòmics segueixen un si simple. Un màxim s'aconsegueix quan el si val 1 i un mínim quan val −1; s'interpreten dins de l'interval del fenomen."
+        },
+        {
+          "body": "Per f(t)=10+3s en (2πt/12), la línia mitjana és 10 i el rang exacte és [7,13], perquè sen està entre −1 i 1."
+        },
+        {
+          "body": "La funció g(t)=2s en (πt/4) té període 2π/(π/4)=8 unitats temporals i amplitud 2."
+        },
+        {
+          "body": "Model periòdic il·lustratiu d'amplitud tres. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "Model periòdic il·lustratiu d'amplitud tres. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "Model periòdic il·lustratiu d'amplitud tres"
+          }
+        },
+        {
+          "body": "El període de 10+3s en (2πt/12) és 2π mesos?||No, el període en la variable t és 12 unitats de temps; 2π és el cicle de l'argument en radians."
+        },
+        {
+          "body": "Recuperació activa: Una funció periòdica compleix f(t+T)=f(t) per a tot t del seu domini i algun T>0. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    },
+    "B1S-F01-L07": {
+      "title": "Transformacions gràfiques",
+      "objectives": [
+        "Distingir translacions verticals i horitzontals de gràfiques.",
+        "Determinar transformacions i extrems contextualitzats sense alterar el domini inadvertidament."
+      ],
+      "content_blocks": [
+        {
+          "body": "A partir d'una funció base f, sumar una constant k a la sortida produeix g(x)=f(x)+k, desplaçament vertical de k unitats. Reemplaçar x per x−h genera g(x)=f(x−h), desplaçament horitzontal h unitats a la dreta quan h>0. Reflectir respecte a l'eix horitzontal correspon a −f(x); canviar f(x) per f(−x) reflecteix respecte a l'eix vertical. Per f(x)=x², g(x)=(x−2)²+3 té vèrtex (2,3) i mínim 3. Aquests canvis afecten també restriccions: si el domini base era x≥0, en traslladar f(x−2) el domini passa a x≥2. Una representació visual no substitueix el càlcul del vèrtex, arrels o punts notables; la taula alternativa conserva valors exactes."
+        },
+        {
+          "body": "Des de f(x)=x², la corba g(x)=(x−2)²+3 es trasllada dues unitats a la dreta i tres a dalt; el seu vèrtex és (2,3)."
+        },
+        {
+          "body": "Si f(t)=√t només admet t≥0, llavors g(t)=√(t−4) exigeix t≥4. El trasllat a la dreta també desplaça el domini."
+        },
+        {
+          "body": "Transformació de paràbola per translació. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "Transformació de paràbola per translació. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "Transformació de paràbola per translació"
+          }
+        },
+        {
+          "body": "L'expressió f(x−2) trasllada una gràfica dues unitats a l'esquerra?||No; trasllada la gràfica dues unitats a la dreta."
+        },
+        {
+          "body": "Recuperació activa: A partir d'una funció base f, sumar una constant k a la sortida produeix g(x)=f(x)+k, desplaçament vertical de k unitats. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1S-F01-L01-01": {
+      "prompt": "En Dominis amb sentit real: Tarifa social hipotètica amb 20 € fixos i 5 € per servei, per a n=4 serveis enters. Calcula cost final. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Identifica el domini real i el domini contextual, en particular zeros de denominador.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 40. Identifica el domini real i el domini contextual, en particular zeros de denominador. Una fracció no admet denominador zero; cancel·lar un factor no recupera el seu punt exclòs; el repartiment K/n exigeix n positiu. Resposta contrastable: 40. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L01-02": {
+      "prompt": "A Dominis amb sentit real: Per f(x)=12/(x−2) determina el valor REAL x que s'ha d'EXCLOUre del seu domini. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Identifica el domini real i el domini contextual, en particular zeros de denominador.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 2. Identifica el domini real i el domini contextual, en particular zeros de denominador. Una fracció no admet denominador zero; cancel·lar un factor no recupera el seu punt exclòs; el repartiment K/n exigeix n positiu. Resposta contrastable: 2. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L01-03": {
+      "prompt": "En Dominis amb sentit real: Per a la funció f(x)=√(x−3), calcula el límit INFERIOR exacte del domini real x≥ quant? Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Usa definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 3. Utilitza definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini. √(x²)=|x|; per a potències a^m·a^n=a^(m+n). Les arrels cúbiques reals admeten signe negatiu. Resposta contrastable: 3. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L01-04": {
+      "prompt": "En Dominis amb sentit real: Si n compta entrades o persones indivisibles no negatives, quin és el domini: enters no negatius, Tots els reals o Reals negatius? Selecciona una opció exacta.",
+      "hint": "Identifica el domini real i el domini contextual, en particular zeros de denominador.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte enters no negatius. Identifica el domini real i el domini contextual, en particular zeros de denominador. Una fracció no admet denominador zero; cancel·lar un factor no recupera el seu punt exclòs; el repartiment K/n exigeix n positiu. Resposta contrastable: enters no negatius. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L01-05": {
+      "prompt": "En Dominis amb sentit real: Tarifa social hipotètica amb 12 € fixos i 3 € per servei, per a n=6 serveis enters. Calcula cost final. Selecciona una opció exacta.",
+      "hint": "Identifica el domini real i el domini contextual, en particular zeros de denominador.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 30. Identifica el domini real i el domini contextual, en particular zeros de denominador. Una fracció no admet denominador zero; cancel·lar un factor no recupera el seu punt exclòs; el repartiment K/n exigeix n positiu. Resposta contrastable: 30. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L02-01": {
+      "prompt": "En Models lineals i quadràtics: Les tarifes A(q)=5+2q i B(q)=1+3q coincideixen en q. Calcula el llindar d'igualtat. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Expressa les tarifes afins i els ingressos quadràtics amb variables i restriccions clares.",
+      "explanation": "Raó matemàtica: Avalua el model simbòlic, les seves restriccions i les dades de la taula abans d'acceptar 4. Expressa les tarifes afins i els ingressos quadràtics amb variables i restriccions clares. Iguala tarifes per a trobar tall; quadrat per trobar vèrtex i compara fronteres de domini. Resposta contrastable: 4. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L02-02": {
+      "prompt": "En Models lineals i quadràtics: L'ingrés R(q)=−q²+10q, 0≤q≤10, té un màxim. Calcula el valor màxim. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Expressa les tarifes afins i els ingressos quadràtics amb variables i restriccions clares.",
+      "explanation": "Raó matemàtica: Avalua el model simbòlic, les seves restriccions i les dades de la taula abans d'acceptar 25. Expressa les tarifes afins i els ingressos quadràtics amb variables i restriccions clares. Iguala tarifes per a trobar tall; quadrat per trobar vèrtex i compara fronteres de domini. Resposta contrastable: 25. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L02-03": {
+      "prompt": "En Models lineals i quadràtics: L'ingrés R(q)=−q²+10q es maximitza per a certa q. Calcula ABSCISA del vèrtex. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Expressa les tarifes afins i els ingressos quadràtics amb variables i restriccions clares.",
+      "explanation": "Raó matemàtica: Avalua el model simbòlic, les seves restriccions i les dades de la taula abans d'acceptar 5. Expressa les tarifes afins i els ingressos quadràtics amb variables i restriccions clares. Iguala tarifes per a trobar tall; quadrat per trobar vèrtex i compara fronteres de domini. Resposta contrastable: 5. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L02-04": {
+      "prompt": "En Models lineals i quadràtics: Per a tarifes A(q)=5+2q i B(q)=1+3q, quina és més barata en q=2: Pla A, Pla B o Iguals? Selecciona una opció exacta.",
+      "hint": "Expressa les tarifes afins i els ingressos quadràtics amb variables i restriccions clares.",
+      "explanation": "Raó matemàtica: Avalua el model simbòlic, les seves restriccions i les dades de la taula abans d'acceptar Pla B. Expressa les tarifes afins i els ingressos quadràtics amb variables i restriccions clares. Iguala tarifes per a trobar tall; quadrat per trobar vèrtex i compara fronteres de domini. Resposta contrastable: Pla B. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L02-05": {
+      "prompt": "En Models lineals i quadràtics: L'ingrés R(q)=−q²+8q, 0≤q≤8, té un màxim. Calcula el valor màxim. Selecciona una opció exacta.",
+      "hint": "Expressa les tarifes afins i els ingressos quadràtics amb variables i restriccions clares.",
+      "explanation": "Raó matemàtica: Avalua el model simbòlic, les seves restriccions i les dades de la taula abans d'acceptar 16. Expressa les tarifes afins i els ingressos quadràtics amb variables i restriccions clares. Iguala tarifes per a trobar tall; quadrat per trobar vèrtex i compara fronteres de domini. Resposta contrastable: 16. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L03-01": {
+      "prompt": "En Funcions racionals: Per a quota individual y=120/n, amb n=3 persones i n positiu, calcula la quota individual exacta. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Identifica el domini real i el domini contextual, en particular zeros de denominador.",
+      "explanation": "Raó matemàtica: Avalua el model simbòlic, les seves restriccions i les dades de la taula abans d'acceptar 40. Identifica el domini real i el domini contextual, en particular zeros de denominador. Una fracció no admet denominador zero; cancel·lar un factor no recupera el seu punt exclòs; el repartiment K/n exigeix n positiu. Resposta contrastable: 40. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L03-02": {
+      "prompt": "En Funcions racionals: Per a quota individual y=120/n, amb n=6 persones i n positiu, calcula la quota individual exacta. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Identifica el domini real i el domini contextual, en particular zeros de denominador.",
+      "explanation": "Raó matemàtica: Avalua el model simbòlic, les seves restriccions i les dades de la taula abans d'acceptar 20. Identifica el domini real i el domini contextual, en particular zeros de denominador. Una fracció no admet denominador zero; cancel·lar un factor no recupera el seu punt exclòs; el repartiment K/n exigeix n positiu. Resposta contrastable: 20. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L03-03": {
+      "prompt": "A Funcions racionals: Calcula el límit en aproximar-se x a 2 de g(x)=(x²−4)/(x−2), sense suposar g(2) definida. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Identifica el domini real i el domini contextual, en particular zeros de denominador.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 4. Identifica el domini real i el domini contextual, en particular zeros de denominador. Una fracció no admet denominador zero; cancel·lar un factor no recupera el seu punt exclòs; el repartiment K/n exigeix n positiu. Resposta contrastable: 4. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L03-04": {
+      "prompt": "A Funcions racionals: Està definida l'expressió ORIGINAL g(x)=(x²−4)/(x−2) en x=2 (Sí / No)? Selecciona una opció exacta.",
+      "hint": "Identifica el domini real i el domini contextual, en particular zeros de denominador.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte No. Identifica el domini real i el domini contextual, en particular zeros de denominador. Una fracció no admet denominador zero; cancel·lar un factor no recupera el seu punt exclòs; el repartiment K/n exigeix n positiu. Resposta contrastable: No. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L03-05": {
+      "prompt": "En Funcions racionals: L'extensió real matemàtica de y=120/x té asímptota vertical en x=0 (Sí / No)? Selecciona una opció exacta.",
+      "hint": "Identifica el domini real i el domini contextual, en particular zeros de denominador.",
+      "explanation": "Raó matemàtica: Avalua el model simbòlic, les seves restriccions i les dades de la taula abans d'acceptar Sí. Identifica el domini real i el domini contextual, en particular zeros de denominador. Una fracció no admet denominador zero; cancel·lar un factor no recupera el seu punt exclòs; el repartiment K/n exigeix n positiu. Resposta contrastable: Sí. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L04-01": {
+      "prompt": "En Exponencials i logarítmiques: En model compost N(t)=100(1+10/100)^t, avalua N(2) sense arrodoniments. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Una taxa percentual periòdica usa un factor multiplicatiu, no suma fixa.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 121. Una taxa percentual periòdica usa un factor multiplicatiu, no suma fixa. Creixement compost: C(1+r)^n amb taxa efectiva r i n períodes coherents; verifica base, temps i domini. Resposta contrastable: 121. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L04-02": {
+      "prompt": "En Exponencials i logarítmiques: Calcula logaritme en base 2 de l'argument positiu 32: cerca exponent t tal que 2^t=32. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 5. Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible. log_ a(y)=x equival a a^x=y, amb a>0, a≠1 e y>0. En científica 1≤| mantisa |<10 i potència 10^n. Resposta contrastable: 5. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L04-03": {
+      "prompt": "En Exponencials i logarítmiques: El model 100·1,1^t creix sempre sumant la mateixa quantitat per període (Sí / No)? Selecciona una opció exacta.",
+      "hint": "Una taxa percentual periòdica usa un factor multiplicatiu, no suma fixa.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte No. Una taxa percentual periòdica usa un factor multiplicatiu, no suma fixa. Creixement compost: C(1+r)^n amb taxa efectiva r i n períodes coherents; verifica base, temps i domini. Resposta contrastable: No. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L04-04": {
+      "prompt": "En Exponencials i logarítmiques: Com ha de ser l'argument d'un logaritme real de base positiva diferent de 1: Positiu, Negatiu o Cero? Selecciona una opció exacta.",
+      "hint": "Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté Positiu. Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible. log_ a(y)=x equival a a^x=y, amb a>0, a≠1 e y>0. En científica 1≤| mantisa |<10 i potència 10^n. Resposta contrastable: Positiu. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L04-05": {
+      "prompt": "En Exponencials i logarítmiques: En model compost N(t)=200(1+5/100)^t, avalua N(2) sense arrodoniments. Selecciona una opció exacta.",
+      "hint": "Una taxa percentual periòdica usa un factor multiplicatiu, no suma fixa.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 220,5. Una taxa percentual periòdica usa un factor multiplicatiu, no suma fixa. Creixement compost: C(1+r)^n amb taxa efectiva r i n períodes coherents; verifica base, temps i domini. Resposta contrastable: 220,5. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L05-01": {
+      "prompt": "En funcions a trossos: En tarifa C(x)=5+2x per 0≤x≤3 i C(x)=11+3(x−3) per x>3, calcula C(2), triant la branca correcta. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Tria el tram o transformació correcta i comprova el llindar o període.",
+      "explanation": "Raó matemàtica: Avalua el model simbòlic, les seves restriccions i les dades de la taula abans d'acceptar 9. Tria el tram o transformació correcta i comprova el llindar o període. f(x−h) desplaça a la dreta h; a+b· sen té amplitud |b| i rang [a−|b|, a+|b|]; cada tram usa la seva pròpia condició. Resposta contrastable: 9. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L05-02": {
+      "prompt": "En funcions a trossos: En tarifa C(x)=5+2x per 0≤x≤3 i C(x)=11+3(x−3) per x>3, calcula C(3), triant la branca correcta. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Tria el tram o transformació correcta i comprova el llindar o període.",
+      "explanation": "Raó matemàtica: Avalua el model simbòlic, les seves restriccions i les dades de la taula abans d'acceptar 11. Tria el tram o transformació correcta i comprova el llindar o període. f(x−h) desplaça a la dreta h; a+b· sen té amplitud |b| i rang [a−|b|, a+|b|]; cada tram usa la seva pròpia condició. Resposta contrastable: 11. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L05-03": {
+      "prompt": "En funcions a trossos: En tarifa C(x)=5+2x per 0≤x≤3 i C(x)=11+3(x−3) per x>3, calcula C(5), triant la branca correcta. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Tria el tram o transformació correcta i comprova el llindar o període.",
+      "explanation": "Raó matemàtica: Avalua el model simbòlic, les seves restriccions i les dades de la taula abans d'acceptar 17. Tria el tram o transformació correcta i comprova el llindar o període. f(x−h) desplaça a la dreta h; a+b· sen té amplitud |b| i rang [a−|b|, a+|b|]; cada tram usa la seva pròpia condició. Resposta contrastable: 17. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L05-04": {
+      "prompt": "En funcions a trossos: Són iguals els valors d'ambdues expressions en x=3 per a C(x)=5+2x si x≤3 i 11+3(x−3) si x>3 (Sí / No)? Selecciona una opció exacta.",
+      "hint": "Tria el tram o transformació correcta i comprova el llindar o període.",
+      "explanation": "Raó matemàtica: Avalua el model simbòlic, les seves restriccions i les dades de la taula abans d'acceptar Sí. Tria el tram o transformació correcta i comprova el llindar o període. f(x−h) desplaça a la dreta h; a+b· sen té amplitud |b| i rang [a−|b|, a+|b|]; cada tram usa la seva pròpia condició. Resposta contrastable: Sí. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L05-05": {
+      "prompt": "En funcions a trossos: En tarifa C(x)=5+2x per 0≤x≤3 i C(x)=11+3(x−3) per x>3, calcula C(6), triant la branca correcta. Selecciona una opció exacta.",
+      "hint": "Tria el tram o transformació correcta i comprova el llindar o període.",
+      "explanation": "Raó matemàtica: Avalua el model simbòlic, les seves restriccions i les dades de la taula abans d'acceptar 20. Tria el tram o transformació correcta i comprova el llindar o període. f(x−h) desplaça a la dreta h; a+b· sen té amplitud |b| i rang [a−|b|, a+|b|]; cada tram usa la seva pròpia condició. Resposta contrastable: 20. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L06-01": {
+      "prompt": "A Funcions periòdiques: Per a f(t)=10+3s en (2πt/12), calcula el VALOR màxim real, amb si en [−1,1]. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Tria el tram o transformació correcta i comprova el llindar o període.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 13. Tria el tram o transformació correcta i comprova el llindar o període. f(x−h) desplaça a la dreta h; a+b· sen té amplitud |b| i rang [a−|b|, a+|b|]; cada tram usa la seva pròpia condició. Resposta contrastable: 13. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L06-02": {
+      "prompt": "A Funcions periòdiques: Per a f(t)=10+3s en (2πt/12), calcula el VALOR mínim real. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Tria el tram o transformació correcta i comprova el llindar o període.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 7. Tria el tram o transformació correcta i comprova el llindar o període. f(x−h) desplaça a la dreta h; a+b· sen té amplitud |b| i rang [a−|b|, a+|b|]; cada tram usa la seva pròpia condició. Resposta contrastable: 7. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L06-03": {
+      "prompt": "En Funcions periòdiques: En g(t)=2s en (2πt/12), identifica el període FONAMENTAL en unitats temporals. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Tria el tram o transformació correcta i comprova el llindar o període.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 12. Tria el tram o transformació correcta i comprova el llindar o període. f(x−h) desplaça a la dreta h; a+b· sen té amplitud |b| i rang [a−|b|, a+|b|]; cada tram usa la seva pròpia condició. Resposta contrastable: 12. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L06-04": {
+      "prompt": "En funcions periòdiques: Observar dotze dades mensuals prova per si sol repetició sinusoïdal exacta durant tots els anys futurs (Sí / No)? Selecciona una opció exacta.",
+      "hint": "Tria el tram o transformació correcta i comprova el llindar o període.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte No. Tria el tram o transformació correcta i comprova el llindar o període. f(x−h) desplaça a la dreta h; a+b· sen té amplitud |b| i rang [a−|b|, a+|b|]; cada tram usa la seva pròpia condició. Resposta contrastable: No. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L06-05": {
+      "prompt": "En Funcions periòdiques: En g(t)=2s en (2πt/8), identifica el període FONAMENTAL en unitats temporals. Selecciona una opció exacta.",
+      "hint": "Tria el tram o transformació correcta i comprova el llindar o període.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 8. Tria el tram o transformació correcta i comprova el llindar o període. f(x−h) desplaça a la dreta h; a+b· sen té amplitud |b| i rang [a−|b|, a+|b|]; cada tram usa la seva pròpia condició. Resposta contrastable: 8. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L07-01": {
+      "prompt": "En Transformacions gràfiques: Des de f(x)=x² s'obté g(x)=(x−2)²+3. Quina és abscisa del vèrtex nou? Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Tria el tram o transformació correcta i comprova el llindar o període.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 2. Tria el tram o transformació correcta i comprova el llindar o període. f(x−h) desplaça a la dreta h; a+b· sen té amplitud |b| i rang [a−|b|, a+|b|]; cada tram usa la seva pròpia condició. Resposta contrastable: 2. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L07-02": {
+      "prompt": "En Transformacions gràfiques: En g(x)=(x−2)²+3, calcula l'ordenada del VÈRTEX nou. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Tria el tram o transformació correcta i comprova el llindar o període.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 3. Tria el tram o transformació correcta i comprova el llindar o període. f(x−h) desplaça a la dreta h; a+b· sen té amplitud |b| i rang [a−|b|, a+|b|]; cada tram usa la seva pròpia condició. Resposta contrastable: 3. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L07-03": {
+      "prompt": "En Transformacions gràfiques: Avalua g(0) per g(x)=(x−2)²+3, després de desplaçar la paràbola base. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Tria el tram o transformació correcta i comprova el llindar o període.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 7. Tria el tram o transformació correcta i comprova el llindar o període. f(x−h) desplaça a la dreta h; a+b· sen té amplitud |b| i rang [a−|b|, a+|b|]; cada tram usa la seva pròpia condició. Resposta contrastable: 7. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L07-04": {
+      "prompt": "En Transformacions gràfiques: La gràfica g(x)=f(x−2) es trasllada cap a l'ESQUERRA dues unitats respecte a f(x) (Sí / No)? Selecciona una opció exacta.",
+      "hint": "Tria el tram o transformació correcta i comprova el llindar o període.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte No. Tria el tram o transformació correcta i comprova el llindar o període. f(x−h) desplaça a la dreta h; a+b· sen té amplitud |b| i rang [a−|b|, a+|b|]; cada tram usa la seva pròpia condició. Resposta contrastable: No. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-F01-L07-05": {
+      "prompt": "En Transformacions gràfiques: Per a la funció f(x)=√(x−4), calcula el límit INFERIOR exacte del domini real x≥ quant? Selecciona una opció exacta.",
+      "hint": "Usa definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 4. Utilitza definició de arrel principal, extreu factors quadrats perfectes i comprova el domini. √(x²)=|x|; per a potències a^m·a^n=a^(m+n). Les arrels cúbiques reals admeten signe negatiu. Resposta contrastable: 4. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    }
+  }
+}

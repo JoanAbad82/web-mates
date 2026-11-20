@@ -85,3 +85,14 @@ Participación: https://github.com/JoanAbad82/web-mates/issues/1.
 - Flujo local: modelos Softcatalà/Aina, memoria de traducción, aislamiento por unidad, pruebas de contrato, números y operadores, glosario, símbolos de subíndice, variable algebraica `y`, negaciones, navegador Chrome y fallback es-ES.
 - Las unidades no aceptadas quedan fuera del sitio y siguen siendo `pending_translation`.
 - Limitaciones: revisión lingüística y pedagógica humana pendiente, equivalencia semántica integral y WCAG 2.2 AA NO VERIFICADAS; no se habilitan GitHub Pages ni Cloudflare.
+
+
+## Cierre de los paquetes pendientes ca-ES — 20/11/2026
+
+- **Cobertura bajo contrato v1:** 85/85 unidades, 505/505 lecciones y 2525/2.525 actividades. Pendientes 0 unidades, 0 lecciones y 0 actividades.
+- **Paquetes nuevos verificados:** B1C-F01, B1C-G02, B1S-F01, B1S-N01, B1S-P01, B1S-Q01, B1S-Q02, B2C-A02, B2C-F02, B2C-F03, B2C-Q01, B2C-Q02, B2S-Q01, B2S-Q02, E2-D01, E2-Q01, E3-A02, E3-A03, E3-D01, E3-N02, E3-Q01, E4A-A02.
+- Los datos españoles canónicos, 245 JSON, IDs, respuestas, opciones, soluciones y validadores permanecen sin cambios.
+- Estado de todos los paquetes: `draft_unreviewed`, sin revisión lingüística/pedagógica humana ni equivalencia semántica integral certificada.
+- Se conservaron en evidencias externas las reparaciones literales por ID, SHA-256 de las fuentes, regresiones matemáticas (división con vocabulario Unicode, subíndices y variables), cribado textual y Chrome.
+- El contrato v1 no cubre la traducción de `choices` ni de toda la interfaz; su traducción exige preservar validadores y compatibilidad.
+- No se habilitan GitHub Pages ni Cloudflare. Publicación de código únicamente por Pull Request.

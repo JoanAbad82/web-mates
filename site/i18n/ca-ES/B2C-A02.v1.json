@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2C-A02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2c_a02.json": "9614481f923ec848788c95c33bed98783e3a03d6dcc1c4932bd0cc614dcd127c",
+    "data/f3_b2c_a02_exercises.json": "9767bc213812085849f025531b4adcaa51bb64184fe62b47d1796e90b5c947e6"
+  },
+  "lessons": {
+    "B2C-A02-L01": {
+      "title": "Determinants 2×2 i 3×3",
+      "objectives": [
+        "Calcular determinants 2×2 i 3×3 exactes.",
+        "Reconèixer que el determinant és un escalar i no una matriu."
+      ],
+      "content_blocks": [
+        {
+          "body": "El determinant de a, b, c, d és ad − bc. Per a una 3×3, s'expandeix per cofactors amb signes alterns o s'empra una regla vàlida com Sarrus exclusivament en ordre tres. Una matriu diagonal o triangular té determinant igual al producte de les seves entrades diagonals. El determinant nul indica dependència lineal de files o columnes; per matrius quadrades equival a no invertibilitat. Canviar l'ordre de les operacions en una expansió pot invertir signes: és recomanable comprovar amb un cas diagonal o una permutació. No existeix determinant usual d'una matriu rectangular."
+        },
+        {
+          "body": "det ([[2,1], [3,4]])=2·4−1·3=5. És escalar, no una matriu 2×2."
+        },
+        {
+          "body": "det ([[1,2, 0], [0,3, 1], [0,0, 4]])=1·3·4=12 perquè és triangular superior."
+        },
+        {
+          "body": "Determinants i diagonal de matrius. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Determinants i diagonal de matrius. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Determinants i diagonal de matrius"
+          }
+        },
+        {
+          "body": "Podem aplicar Sarrus sense canvis a una matriu 4×4?||No. És una regla particular per a 3×3; per a 4×4 usem cofactors o eliminació."
+        },
+        {
+          "body": "El determinant de [[a,b],[c,d]] és ad − bc. Explica el procediment sense ajuda, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    },
+    "B2C-A02-L02": {
+      "title": "Propietats",
+      "objectives": [
+        "Aplicar propietats del determinant davant operacions elementals.",
+        "Demostrar criteris de singularitat per files proporcionals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Intercanviar dues files canvia el signe del determinant; multiplicar una fila per λ multiplica el determinant per λ; suma a una fila un múltiple d'una altra no l'altera. En general det(AB )= det(A)det(B) per a matrius quadrades del mateix ordre, però det (A+B) no és normalment la suma de determinants. Les matrius triangulars tenen determinant producte de pivots diagonals. Dues files iguals o proporcionals impliquen determinant nul i rang menor que l'ordre. Per a un sistema amb determinant zero no basta concloure que és incompatible: s'examina també la matriu ampliada."
+        },
+        {
+          "body": "det ([[1,2], [3,4]])=−2. Si permutem files, la nova matriu té determinant +2."
+        },
+        {
+          "body": "A=[[1,0], [0,2]], B=[[3,0], [0,4]]: det(AB )=24= det(A)det (B)=2·12."
+        },
+        {
+          "body": "Propietats d'operacions per files. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Propietats d'operacions per files. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Propietats d'operacions per files"
+          }
+        },
+        {
+          "body": "Afegeix tres vegades la primera fila a la segona canvia el determinant?||No, una suma de múltiples de files manté el determinant."
+        },
+        {
+          "body": "Recuperació: Intercanviar dues files canvia el signe del determinant; multiplicar una fila per λ multiplica el determinant per λ; suma a una fila un múltiple d'una altra no l'altera. Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    },
+    "B2C-A02-L03": {
+      "title": "Matriu inversa i rang",
+      "objectives": [
+        "Relacionar rang, invertibilitat i determinant.",
+        "Calcula la matriu inversa mitjançant adjunta quan el determinant sigui no nul."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una matriu quadrada A té inversa exactament quan el seu determinant és no nul i el seu rang coincideix amb l'ordre. En dimensió dos s'obté A⁻¹=(1/ det)[[d, −b], [−c,a]], verificant AA ⁻¹=I. Per a n major, la fórmula A⁻¹= adj (A)/ det(A) exigeix construir cofactors i traslladar-los; alternativament es pot aplicar Gauss-Jordan sobre [A|I]. Si det (A)=0 no es pot dividir per construir inversa i cap sistema quadrat associat té solució única per a tots els termes independents. Un menor diferent de zero pot demostrar rang sense calcular tota la inversa."
+        },
+        {
+          "body": "A=[[1,1], [1,2]] té det =1 i inversa [[2, −1], [−1,1]]."
+        },
+        {
+          "body": "La matriu [[1,2], [2,4]] té determinant zero i rang un; qualsevol intent d'inrevés falla."
+        },
+        {
+          "body": "Inversa i condició de rang complet. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Inversa i condició de rang complet. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Inversa i condició de rang complet"
+          }
+        },
+        {
+          "body": "Una matriu singular pot tenir solució per a Ax =b?||Sí, per a alguns b pot tenir infinites; el que no té és inversa i solució única general."
+        },
+        {
+          "body": "Recuperació: Una matriu quadrada A té inversa exactament quan el seu determinant és no nul i el seu rang coincideix amb l'ordre. Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    },
+    "B2C-A02-L04": {
+      "title": "Discussió de sistemes",
+      "objectives": [
+        "Classificar sistemes lineals per rangs de matriu i ampliada.",
+        "Distingir sistemes compatibles determinats, indeterminats i incompatibles."
+      ],
+      "content_blocks": [
+        {
+          "body": "El teorema de Rouché-Frobenius estableix que Ax =b és compatible si i només si rang (A)= rang ([A|b]). Si a més aquest rang iguala el nombre d'incògnites, la solució és única; si és menor hi ha infinites solucions sobre els reals. Si els rangs són diferents, el sistema és incompatible. El determinant no nul d'una matriu quadrada garanteix solució única, però quan és zero cal examinar rangs, no assumir incompatibilitat. Reduir files mitjançant operacions reversibles preserva el conjunt de solucions. Un vector b incompatible amb l'espai columna no pot expressar-se com a combinació lineal de les columnes d'A."
+        },
+        {
+          "body": "Per x+y=2 i 2x+2y=4, rang A= rang ampliada =1 amb 2 incògnites: infinites solucions."
+        },
+        {
+          "body": "Per a x+y=2 i 2x+2y=5, rang A=1 però rang ampliada =2: incompatible."
+        },
+        {
+          "body": "Comparació de rangs per Gauss. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Comparació de rangs per Gauss. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Comparació de rangs per Gauss"
+          }
+        },
+        {
+          "body": "Fins a det (A)=0 per a afirmar que el sistema no té solució?||No. Pot ser compatible indeterminat o incompatible segons el rang de l'ampliada."
+        },
+        {
+          "body": "Recuperació: El teorema de Rouché-Frobenius estableix que Ax =b és compatible si i només si rang (A)= rang ([A|b]). Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    },
+    "B2C-A02-L05": {
+      "title": "Gauss i mètode matricial",
+      "objectives": [
+        "Aplicar eliminació de Gauss amb operacions elementals reversibles.",
+        "Resoldre sistemes 3×3 i detectar pivots nuls o redundants."
+      ],
+      "content_blocks": [
+        {
+          "body": "El mètode de Gauss transforma la matriu ampliada [A|b] mitjançant intercanvi de files, multiplicació d'una fila per un escalar no nul i addició de múltiples d'una altra fila. En obtenir un sistema triangular es resol per substitució cap enrere. Si apareix la fila 0= nonzero el sistema és incompatible; una fila 0=0 assenyala redundància i es comparen pivots amb el nombre de variables. Mai es divideix per un pivot nul: cal buscar intercanvi o discutir rang. Per reduir fraccions amb exactitud convé usar racionals, no arrodoniments prematurs que alterin compatibilitat."
+        },
+        {
+          "body": "x+y+z=6; y+z=5; z=3 és triangular: z=3, y=2, x=1."
+        },
+        {
+          "body": "De x+y=2 i 2x+2y=5, restar dues vegades la primera fila a la segona produeix 0=1, prova d'incompatibilitat."
+        },
+        {
+          "body": "Eliminació de Gauss i substitució. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Eliminació de Gauss i substitució. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Eliminació de Gauss i substitució"
+          }
+        },
+        {
+          "body": "Si una fila es redueix a [0,0, 0|0], el sistema no té solució?||No: és una equació redundant. La compatibilitat depèn de les altres files."
+        },
+        {
+          "body": "Recuperació: El mètode de Gauss transforma la matriu ampliada [A|b] mitjançant intercanvi de files, multiplicació d'una fila per un escalar no nul i addició de múltiples d'una altra fila. Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    },
+    "B2C-A02-L06": {
+      "title": "Regla de Cramer quan escaigui",
+      "objectives": [
+        "Aplicar la regla de Cramer quan el determinant sigui no nul.",
+        "Identificar casos singulars on Cramer no és aplicable."
+      ],
+      "content_blocks": [
+        {
+          "body": "La regla de Cramer resol un sistema quadrat Ax =b només quan det (A)≠0. El seu component i és xᵢ= det (Aᵢ)/ det(A), on Aᵢ s'obté reemplaçant la columna i de A per b. Si el determinant és zero, no pot dividir-se per ell i ha d'analitzar-se la compatibilitat amb Gauss o rangs. Encara que Cramer és útil per demostrar fórmules i resoldre sistemes petits, Gauss sol ser més eficient en sistemes grans. Les solucions es comproven substituint en totes les equacions; no s'accepten valors aproximats quan el problema admet racionals exactes."
+        },
+        {
+          "body": "Per x+y=5 i x−y=1, det (A)=−2; det (Aₓ)=−6 i det(Aᵧ)=−4, així x=3, y=2."
+        },
+        {
+          "body": "En x+y=2 i 2x+2y=4, det (A)=0; Cramer no procedeix i el sistema té infinites solucions."
+        },
+        {
+          "body": "Cramer de dues incògnites. Diagrama matemàtic declaratiu; la taula semàntica adjunta especifica de forma independent dimensions, valors exactes, condicions i equacions.",
+          "alt": "Cramer de dues incògnites. La taula accessible aporta tots els valors i condicions sense necessitat d'interpretar el dibuix.",
+          "visual_spec": {
+            "title": "Cramer de dues incògnites"
+          }
+        },
+        {
+          "body": "Podem aplicar Cramer quan el denominador det(A) val zero?||No. Hem de classificar el sistema mitjançant rangs o eliminació."
+        },
+        {
+          "body": "Recuperació: La regla de Cramer resol un sistema quadrat Ax =b només quan det (A)≠0. Explica el procediment sense ajut, distingeix els casos degenerats i revisa un exercici de transferència."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2C-A02-L01-01": {
+      "prompt": "Calcula el determinant exacte ad − bc de A=[[2,1], [3,4]]. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: det =(2)·(4)−(1)·(3)=5. El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: 5. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L01-02": {
+      "prompt": "Calcula el determinant 3×3 exacte de A=[[1,2, 0], [0,3, 1], [0,0, 4]]. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: Cofactors en primera fila de la 3×3: det =12; comprova signes alterns + − +. El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: 12. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L01-03": {
+      "prompt": "Calcula el determinant de la diagonal 3×3 amb entrades 2,3, 4. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 24. El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: 24. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L01-04": {
+      "prompt": "Calcula el determinant 3×3 exacte de A=[[1,2, 3], [0,1, 4], [5,6, 0]]. Selecciona la resposta EXACTA.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: Cofactors en primera fila de la 3×3: det =1; comprova signes alterns + − +. El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: 1. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L01-05": {
+      "prompt": "Calcula el determinant exacte ad − bc de A=[[1,2], [3,4]]. Selecciona la resposta EXACTA.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: det =(1)·(4)−(2)·(3)=-2. El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: -2. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L02-01": {
+      "prompt": "Per A=[[1,2], [3,4]], calcula det(B) si B resulta d'INTERCANVIar les seves dues files. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 2. El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: 2. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L02-02": {
+      "prompt": "Per A=[[1,2], [3,4]], calcula el determinant després de reemplaçar la segona fila per fila2 +(5)· fila1. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament -2. El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: -2. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L02-03": {
+      "prompt": "Per A=[[1,2], [3,4]], calcula el seu determinant després de MULTIPLICAR només la primera fila per 2. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament -4. El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: -4. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L02-04": {
+      "prompt": "Dues matrius diagonals 2×2 tenen diagonals (1,2) i (3,4). Calcula det(AB). Selecciona la resposta EXACTA.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 24. El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: 24. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L02-05": {
+      "prompt": "Calcula el determinant 3×3 exacte de A=[[1,2, 3], [2,4, 6], [0,1, 2]]. Selecciona la resposta EXACTA.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: Cofactors en primera fila de la 3×3: det =0; comprova signes alterns + − +. El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: 0. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L03-01": {
+      "prompt": "Calcula la matriu inversa exacta de A=[[1,1], [1,2]]; torna les seves quatre entrades per files. Selecciona la resposta EXACTA.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (2, -1, -1, 1). El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: (2, -1, -1, 1). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L03-02": {
+      "prompt": "Per A=[[1,1], [1,2]], calcula l'entrada (1,1) de A⁻¹, vàlida només si det (A)≠0. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 2. El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: 2. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L03-03": {
+      "prompt": "Existeix la inversa de A=[[1,2], [2,4]]? Comprova el determinant i respon Sí o No. Selecciona la resposta EXACTA.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament No. El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: No. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L03-04": {
+      "prompt": "Calcula rang de A=[[1,2, 3], [0,1, 4], [0,0, 2]]. Selecciona la resposta EXACTA.",
+      "hint": "El rang és el nombre de pivots després de reducció reversible, no el nombre brut de files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 3. El rang és el nombre de pivots després de reducció reversible, no el nombre brut de files. Escalona sense dividir entre zero; un menor no nul aporta rang i el rang mai excedeix el nombre de files o columnes. Resultat exacte: 3. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L03-05": {
+      "prompt": "Per A=[[2,1], [1,1]], calcula l'entrada (1,2) de la matriu ADJUNTA transposada (adj(A)). Selecciona la resposta EXACTA.",
+      "hint": "El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament -1. El determinant és un escalar; les operacions per files poden conservar-ho, canviar-ho o escalar-ho. En 2×2 usa ad − bc; en 3×3 cofactors o Gauss. Inversa només si det ≠0; l'adjunta s'ha de transposar. Resultat exacte: -1. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L04-01": {
+      "prompt": "Sistema 1x+(1)y=2; 2x+(2)y=4. Clasifícal com a Única, Cap o Infinites solucions. Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Reducció racional exacta i comparació de rangs de matriu i ampliada: infinites. Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, única si rang =n, infinites si rang <n. Cramer només amb det ≠0. El resultat: infinites. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L04-02": {
+      "prompt": "Sistema 1x+(1)y=2; 2x+(2)y=5. Clasifícal com a Única, Cap o Infinites solucions. Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Reducció racional exacta i comparació de rangs de matriu i ampliada: Cap. Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, única si rang =n, infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: Cap. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L04-03": {
+      "prompt": "El sistema tridimensional A·(x,y, z)=b té A=[[1,0, 0], [0,1, 0], [0,0, 1]] i b=(1, 2, 3). Classifica rang / compatibilitat com a Única, Cap o Infinites. Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Reducció racional exacta i comparació de rangs de matriu i ampliada: Única. Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, única si rang =n, infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: Única. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L04-04": {
+      "prompt": "Sistema 1x+(1)y=5; 1x+(-1)y=1. Resol el sistema i escriu (x,y). Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (3, 2). Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, única si rang =n, infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: (3, 2). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L04-05": {
+      "prompt": "El sistema tridimensional A·(x,y, z)=b té A=[[1,1, 0], [2,2, 0], [0,0, 1]] i b=(2, 5, 1). Classifica rang / compatibilitat com a Única, Cap o Infinites. Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Reducció racional exacta i comparació de rangs de matriu i ampliada: Cap. Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, única si rang =n, infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: Cap. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L05-01": {
+      "prompt": "El sistema tridimensional A·(x,y, z)=b té A=[[1,1, 1], [0,1, 1], [0,0, 1]] i b=(6, 5, 3). Torna exactament per eliminació de Gauss, retorna (x,y,z). Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (1, 2, 3). Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, única si rang =n, infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: (1, 2, 3). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L05-02": {
+      "prompt": "Calcula nombre de pivots no nuls en una reducció per files de A=[[1,0, 0], [0,2, 0], [0,0, 3]]. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "El rang és el nombre de pivots després de reducció reversible, no el nombre brut de files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 3. El rang és el nombre de pivots després de reducció reversible, no el nombre brut de files. Escalona sense dividir entre zero; un menor no nul aporta rang i el rang mai excedeix el nombre de files o columnes. Resultat exacte: 3. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L05-03": {
+      "prompt": "El sistema tridimensional A·(x,y, z)=b té A=[[1,1, 1], [0,1, 1], [0,0, 1]] i b=(6, 5, 3). Resol per Gauss i retorna exclusivament la incògnita d'índex 2. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament 2. Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, única si rang =n, infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: 2. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L05-04": {
+      "prompt": "El sistema tridimensional A·(x,y, z)=b té A=[[1,1, 0], [2,2, 0], [0,0, 1]] i b=(2, 5, 1). Classifica rang / compatibilitat com a Única, Cap o Infinites. Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Reducció racional exacta i comparació de rangs de matriu i ampliada: Cap. Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, única si rang =n, infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: Cap. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L05-05": {
+      "prompt": "El sistema tridimensional A·(x,y, z)=b té A=[[2,0, 0], [0,2, 0], [0,0, 2]] i b=(2, 4, 6). Torna exactament per eliminació de Gauss, retorna (x,y,z). Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (1, 2, 3). Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, única si rang =n, infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: (1, 2, 3). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L06-01": {
+      "prompt": "Sistema 1x+(1)y=5; 1x+(-1)y=1. Torna per Cramer si det (A)≠0. Retorna (x,y). Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (3, 2). Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, única si rang =n, infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: (3, 2). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L06-02": {
+      "prompt": "Sistema 1x+(1)y=5; 1x+(-1)y=1. Calcula el determinant del numerador de Cramer, amb la columna 1 substituïda per termes independents. Escriu el valor numèric EXACTE sense unitats.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament -6. Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, única si rang =n, infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: -6. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L06-03": {
+      "prompt": "El sistema tridimensional A·(x,y, z)=b té A=[[1,1, 1], [0,1, 1], [0,0, 1]] i b=(6, 5, 3). Torna per Cramer perquè det (A)≠0. Retorna (x,y,z). Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (1, 2, 3). Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, única si rang =n, infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: (1, 2, 3). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L06-04": {
+      "prompt": "És vàlida la regla de Cramer per a qualsevol b en A·x=b amb A=[[1,1], [2,2]]? Contesta Sí si det (A)≠0, No en cas contrari. Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament No. Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, única si rang =n, infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: No. Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    },
+    "F3-B2C-A02-L06-05": {
+      "prompt": "Sistema 2x+(1)y=7; 1x+(2)y=8. Torna per Cramer si det (A)≠0. Retorna (x,y). Selecciona la resposta EXACTA.",
+      "hint": "Escriu la matriu ampliada i conserva les equacions en operar per files.",
+      "explanation": "Procediment matemàtic: Substituint les dades en les fórmules i respectant dimensions i condicions s'obté exactament (2, 3). Escriu la matriu ampliada i conserva les equacions en operar per files. Rouché-Frobenius: rang(A)≠rang ([A|b]) implica Cap; si coincideixen, única si rang =n, infinites si rang <n. Cramer només amb det ≠0. Resultat exacte: (2, 3). Comprova hipòtesis, dimensions, signes, orientacions, sistemes originals i condicions de no anul·lació."
+    }
+  }
+}

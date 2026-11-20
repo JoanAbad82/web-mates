@@ -6,9 +6,7 @@ import json,re,collections
 from i18n_coverage import CAT,SITE,loaded
 R=Path(__file__).resolve().parents[1]
 num=re.compile(r'(?<!\w)(?:-|−)?\d{1,3}(?:[ \u00a0]\d{3})+|(?<!\w)(?:-|−)?\d+(?!\w)')
-operators=re.compile(r'[+×÷=<>−%≈≠√²³^π±≤≥°Δθ]|(?<![lL])·|·(?![lL])')
-math_div=re.compile(r'(?<=\d)/|/(?=\d)|(?<=[a-z])/(?=[a-z](?![a-z]))')
-def math_ops(text):return operators.findall(text)+math_div.findall(text)
+from i18n_math_guard import math_ops  # shared Unicode-aware mathematical-operator gate
 def nums(s):return [v.replace(' ','').replace('\u00a0','') for v in num.findall(s)]
 def invariant(src,dst,context):
  assert isinstance(dst,str) and dst.strip(),('missing',context)
