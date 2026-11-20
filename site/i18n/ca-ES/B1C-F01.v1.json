@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1C-F01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1c_f01.json": "bacc24d7960703e9a267935473d643542d00a0354f9f8f80b69926ab636b9b87",
+    "data/f3_b1c_f01_exercises.json": "dfd404984952008a18306c9d1e60e565f28dd9fedc3b46194a21fa9c6fafdc26"
+  },
+  "lessons": {
+    "B1C-F01-L01": {
+      "title": "Domini i recorregut",
+      "objectives": [
+        "Determinar domini i recorregut de famílies habituals de funcions reals.",
+        "Diferenciar restriccions algebraiques, gràfiques i contextuals amb justificació."
+      ],
+      "content_blocks": [
+        {
+          "body": "El domini d'un polinomi és tot R, mentre que una funció racional exclou els zeros del seu denominador original, una arrel quadrada real exigeix un radicand ≥0 i un logaritme real exigeix un argument >0. El recorregut requereix analitzar quins valors s'assoleixen: la funció quadràtica y=(x−2)²+1 té recorregut [1,+∞); una exponencial a^x té recorregut (0,+∞) i no assoleix zero. La composició de funcions afegeix restriccions: el valor de la funció interior ha de pertànyer al domini de l'exterior. En intervals contextuals de temps o quantitats, la interpretació física pot imposar límits addicionals. Un gràfic pot suggerir una conclusió, però no substituir la demostració algebraica del conjunt de valors."
+        },
+        {
+          "body": "g(x)=√(x−3) exigeix x≥3 i produeix y≥0; l'entrada 2 no és admissible en els reals."
+        },
+        {
+          "body": "f(x)=(x−1)²+4 pren mínim 4 en x=1, per la qual cosa el seu recorregut és [4, +∞)."
+        },
+        {
+          "body": "Domini i recorregut d'una funció radical. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Domini i recorregut d'una funció radical. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Domini i recorregut d'una funció radical"
+          }
+        },
+        {
+          "body": "Una exponencial amb recorregut positiu inclou el valor zero?||No. Pot aproximar-se arbitràriament a zero sense aconseguir-ho."
+        },
+        {
+          "body": "Recuperació activa: El domini d'un polinomi és tot R, mentre que una funció racional exclou els zeros del seu denominador original, una arrel quadrada real exigeix radicant ≥0 i un logaritme real exigeix argument >0. Torna després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    },
+    "B1C-F01-L02": {
+      "title": "Polinòmiques i racionals",
+      "objectives": [
+        "Comparar el comportament de polinomis i funcions racionals.",
+        "Identificar zeros, asímptotes i discontinuïtats evitables mitjançant factorització."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un polinomi és continu en tots els reals i el seu comportament per |x| gran depèn del terme de major grau. En f(x)=P(x)/Q(x), els zeros reals de Q s'exclouen fins i tot si un factor comú es cancel·la. Una arrel de P només és tall amb l'eix x quan pertany al domini. La funció (x²−1)/(x−1) coincideix amb x+1 per x≠1 i té discontinuïtat evitable en (1,2), no asímptota vertical. En canvi 1/(x−1) es fa no acotada en aproximar-se a 1 i posseeix asímptota vertical. En un quocient de polinomis del mateix grau, el límit en ±∞ és el quocient de coeficients líders si tots dos són no nuls."
+        },
+        {
+          "body": "f(x)=(2x²+1)/(x²+4): quan x→∞, el quocient tendeix a 2, perquè dominen 2x² i x²."
+        },
+        {
+          "body": "g(x)=(x²−4)/(x−2) té forat en x=2 amb límit 4; no es defineix en aquest punt."
+        },
+        {
+          "body": "Funció racional i asímptotes. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Funció racional i asímptotes. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Funció racional i asímptotes"
+          }
+        },
+        {
+          "body": "Una cancel·lació converteix automàticament el punt prohibit en part del domini?||No. Només simplifica l'expressió en el seu domini; el buit segueix exclòs."
+        },
+        {
+          "body": "Recuperació activa: Un polinomi és continu en tots els reals i el seu comportament per |x| gran depèn del terme de major grau. Torna després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    },
+    "B1C-F01-L03": {
+      "title": "Exponencials i logarítmiques",
+      "objectives": [
+        "Descriure i comparar funcions exponencials i logarítmiques.",
+        "Utilitzar la seva relació inversa per avaluar potències i logaritmes exactes."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a base a>0, a≠1, l'exponencial a^x està definida per a qualsevol real i sempre és positiva. El logaritme log_a(x) és la seva funció inversa, definida només en x>0 i amb recorregut R. Les identitats log_ a(a^x)=x i a^(log_a x)=x (aquesta última per x>0) permeten comprovar resultats sense calculadora. Amb a>1 ambdues funcions creixen; amb 0<a<1 decreixen. Les asímptotes de 2^x i log ₂(x) són, respectivament, y=0 en retrocedir indefinidament i x=0. No s'ha de confondre el creixement multiplicador exponencial amb creixement lineal ni tractar log de nombre negatiu com a valor real."
+        },
+        {
+          "body": "log ₂(32)=5 perquè 2⁵=32, mentre que log ₂(1/4)=−2 perquè 2^(−2)=1/4."
+        },
+        {
+          "body": "Si 3^x=81, la igualtat inversa produeix x= log ₃(81)=4."
+        },
+        {
+          "body": "Logaritme en base 2. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Logaritme en base 2. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Logaritme en base 2"
+          }
+        },
+        {
+          "body": "Per a quins valors reals de x té sentit log ₂(x−5)?||Només x>5, perquè l'argument ha de ser estrictament positiu."
+        },
+        {
+          "body": "Recuperació activa: Per a base a>0, a≠1, l'exponencial a^x està definida per a qualsevol real i sempre és positiva. Resol després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    },
+    "B1C-F01-L04": {
+      "title": "Radicals i irracionals",
+      "objectives": [
+        "Determinar el domini i recorregut de funcions radicals.",
+        "Relacionar transformacions de arrels amb el seu punt inicial i monotonia."
+      ],
+      "content_blocks": [
+        {
+          "body": "La funció √(x−h)+k està definida per x≥h; el seu recorregut és [k, +∞), perquè la arrel principal sempre és no negativa. Si apareix un factor a<0 davant de la arrel, el recorregut passa a (−∞,k], i la gràfica és decreixent. Per resoldre √(x−h)=q es requereix q≥0 abans d'elevar al quadrat; no s'accepten arrels estranyes originades en perdre el signe. Compondre arrels amb expressions polinòmiques pot produir dominis disjunts, per la qual cosa han de resoldre's inequitats del radicand. Els nombres que fan el radicand negatiu queden exclosos del camp real, encara que un gràfic esquemàtic no els mostri."
+        },
+        {
+          "body": "f(x)=√(x−4)+2 comença en (4,2), té domini [4, +∞) i recorregut [2, +∞)."
+        },
+        {
+          "body": "g(x)=−√(x+1)+3 té domini [−1, +∞), recorregut (−∞, 3] i màxim 3 quan x=−1."
+        },
+        {
+          "body": "arrel quadrada traslladada. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "arrel quadrada traslladada. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "arrel quadrada traslladada"
+          }
+        },
+        {
+          "body": "La funció √(x−4)+2 està definida en x=3?||No. El seu radicant seria −1, negatiu en els reals."
+        },
+        {
+          "body": "Recuperació activa: La funció √(x−h)+k està definida per x≥h; el seu recorregut és [k, +∞), perquè la arrel principal sempre és no negativa. Resol després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    },
+    "B1C-F01-L05": {
+      "title": "Trigonomètriques",
+      "objectives": [
+        "Reconèixer domini, rang i periodicitat de si i cosinus.",
+        "Calcula els valors trigonomètrics exactes en angles notables."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si i cosinus es defineixen en tots els reals, són periòdiques amb període 2π radiants i tenen recorregut [−1,1]. Els seus valors poden obtenir-se de la circumferència unitat: sen 0=0, sen (π/2)=1, cos 0=1 i cos π=−1. Un desplaçament horitzontal modifica la fase, mentre que multiplicar per a canvia l'amplitud a |a| sense modificar el període de sin(x) si l'argument segueix sent x. Per sen (2x), el període passa a π. No s'ha de confondre graus i radiants en les avaluacions; 90° i π/2 rad són el mateix angle, però 90 rad no ho és. La tangent està indefinida quan cos x=0."
+        },
+        {
+          "body": "f(x)=2s en(x) té amplitud 2 i període 2π; el seu recorregut és [−2,2]."
+        },
+        {
+          "body": "g(x)= cos (2x) té període π. g(0)=1 i g(π/2)=−1."
+        },
+        {
+          "body": "Funció sinus i valors notables. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Funció sinus i valors notables. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Funció sinus i valors notables"
+          }
+        },
+        {
+          "body": "Per què sen(x) i cos(x) no tenen com a recorregut tots els reals?||Perquè representen coordenades de punts de la circumferència unitat, entre −1 i 1."
+        },
+        {
+          "body": "Recuperació activa: Sinus i cosinus es defineixen en tots els reals, són periòdiques amb període 2π radians i tenen recorregut [−1,1]. Torna després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    },
+    "B1C-F01-L06": {
+      "title": "Definides a trossos i transformacions",
+      "objectives": [
+        "Avaluar funcions definides a trossos respectant desigualtats de cada tram.",
+        "Interpretar translacions, reflexions i salts d'una gràfica per parts."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una funció a trossos utilitza diferents fórmules en regions del domini especificades per desigualtats. Per a f(x)=x+1 si x<0 i x² si x≥0, el valor f(0)=0 procedeix únicament del segon tram, mentre que en acostar-se per l'esquerra els valors tendeixen a 1; hi ha un salt en x=0. Dibuixar punts oberts i tancats és imprescindible per reflectir el valor exacte en la vora. Les transformacions f(x−h)+k s'apliquen a totes les branques i a les seves condicions de domini. La funció valor absolut |x| és un cas a trossos continu: −x si x<0 i x si x≥0. Ha de distingir-se valor puntual de tendència lateral."
+        },
+        {
+          "body": "f(x)=x+1 (x<0), x² (x≥0): f(−2)=−1, f(0)=0 i límit per l'esquerra en 0 igual a 1."
+        },
+        {
+          "body": "g(x)=|x−2| té mínim zero en x=2 i es representa per dues rectes amb pendent −1 y +1."
+        },
+        {
+          "body": "Funció a trossos amb salt en zero. Gràfica original SVG declarativa amb taula HTML semàntica de dades exactes i condicions de domini. La visualització és il·lustrativa, no substitueix la demostració algebraica.",
+          "alt": "Funció a trossos amb salt en zero. La taula exacta conté domini, punts rellevants, restriccions i límits sense dependre de color, visió ni gestos.",
+          "visual_spec": {
+            "title": "Funció a trossos amb salt en zero"
+          }
+        },
+        {
+          "body": "Es pot usar la branca x<0 per avaluar f(0)?||No. El punt 0 pertany al tram x≥0; usar l'altra fórmula introdueix un valor fals."
+        },
+        {
+          "body": "Recuperació activa: Una funció a trossos utilitza diferents fórmules en regions del domini especificades per desigualtats. Torna després una variació sense pistes i revisa els casos de domini i discontinuïtat."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1C-F01-L01-01": {
+      "prompt": "Per a f(x)=√(x−(3)), quins valors reals de x pertanyen al domini? Usa una desigualtat. Selecciona la resposta EXACTA.",
+      "hint": "L'arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: x≥3. La arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals. Per a √(x−h)+k impó x≥h i usa arrel principal; si el factor és negatiu, el sentit de creixement i el recorregut s'inverteixen. Solució exacta: x≥3. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L01-02": {
+      "prompt": "Determina el RECORREGUT de f(x)=1√(x−1)+(2), usant desigualtat de y. Selecciona la resposta EXACTA.",
+      "hint": "L'arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: y≥2. La arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals. Per a √(x−h)+k impó x≥h i usa arrel principal; si el factor és negatiu, el sentit de creixement i el recorregut s'inverteixen. Solució exacta: y≥2. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L01-03": {
+      "prompt": "Per a f(x)=1(x−(1))²+(4), indica el RECORREGUT real mitjançant una desigualtat per a i. Selecciona la resposta EXACTA.",
+      "hint": "Escriu la paràbola en forma de vèrtex per identificar extrems i obertura.",
+      "explanation": "Procediment i comprovació: Usa f(x)=a(x−h)²+k i la positivitat del quadrat, o resol l'equació f(x)=0 segons el que es demana: y≥4. Escriu la paràbola en forma de vèrtex per identificar extrems i obertura. f(x)=a(x−h)²+k té vèrtex (h,k); a>0 mínim i a<0 màxim. Per a arrels iguala a zero i exigeix solucions reals. Solució exacta: y≥4. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L01-04": {
+      "prompt": "Calcula f(5) per a f(x)=√(x−(1))+(2); usa la arrel principal. Selecciona la resposta EXACTA.",
+      "hint": "L'arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 4. La arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals. Per a √(x−h)+k impó x≥h i usa arrel principal; si el factor és negatiu, el sentit de creixement i el recorregut s'inverteixen. Solució exacta: 4. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L01-05": {
+      "prompt": "Per f(x)=1/(x−(-3)), indica el DOMINI real complet, excloent el zero del denominador. Selecciona la resposta EXACTA.",
+      "hint": "Separa domini, zeros i tendència: un denominador nul exclou l'entrada original.",
+      "explanation": "Procediment i comprovació: El denominador original ha de ser diferent de zero. Una cancel·lació preserva el límit però no defineix el valor exclòs. Resultat: R excepte -3. Separa domini, zeros i tendència: un denominador nul exclou l'entrada original. Factoritza abans de cancel·lar, comprova restriccions d'origen i diferencia un forat d'una asímptota vertical amb límits laterals. Solució exacta: R excepte -3. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L02-01": {
+      "prompt": "Calcula lim (x→+∞)[(3)x²+1]/[(2)x²+3] per quocient de coeficients principals. Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Separa domini, zeros i tendència: un denominador nul exclou l'entrada original.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 1,5. Separa domini, zeros i tendència: un denominador nul exclou l'entrada original. Factoritza abans de cancel·lar, comprova restriccions d'origen i diferencia un forat d'una asímptota vertical amb límits laterals. Solució exacta: 1,5. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L02-02": {
+      "prompt": "Calcula el límit quan x→2 de (x²−(4))/(x−(2))+(0), simplificant només prop de x=2 (no en el punt). Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Límit no és el mateix que valor puntual: comprova el denominador en substituir.",
+      "explanation": "Procediment i comprovació: El denominador original ha de ser diferent de zero. Una cancel·lació preserva el límit però no defineix el valor exclòs. Resultat: 4. Límit no és el mateix que valor puntual: comprova el denominador en substituir. Si obtens 0/0, simplifica o racionalitza per x≠a i només després acosta x→a; conserva el punt exclòs. Solució exacta: 4. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F01-L02-03": {
+      "prompt": "Per a f(x)=1/(x−(1)), identifica l'equació EXACTA de la seva asímptota vertical. Selecciona la resposta EXACTA.",
+      "hint": "Separa domini, zeros i tendència: un denominador nul exclou l'entrada original.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: x=1. Separa domini, zeros i tendència: un denominador nul exclou l'entrada original. Factoritza abans de cancel·lar, comprova restriccions d'origen i diferencia un forat d'una asímptota vertical amb límits laterals. Solució exacta: x=1. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L02-04": {
+      "prompt": "Troba l'únic ZERO de f(x)=(x−(3))/(x−(4)) quan x≠4. Selecciona la resposta EXACTA.",
+      "hint": "Separa domini, zeros i tendència: un denominador nul exclou l'entrada original.",
+      "explanation": "Procediment i comprovació: El denominador original ha de ser diferent de zero. Una cancel·lació preserva el límit però no defineix el valor exclòs. Resultat: 3. Separa domini, zeros i tendència: un denominador nul exclou l'entrada original. Factoritza abans de cancel·lar, comprova restriccions d'origen i diferencia un forat d'una asímptota vertical amb límits laterals. Solució exacta: 3. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L02-05": {
+      "prompt": "La funció (x²−(4))/(x−(2)) no està definida en x=2, però simplifica per a altres x. És el punt un Forat o una asímptota vertical? Selecciona la resposta EXACTA.",
+      "hint": "Separa domini, zeros i tendència: un denominador nul exclou l'entrada original.",
+      "explanation": "Procediment i comprovació: El denominador original ha de ser diferent de zero. Una cancel·lació preserva el límit però no defineix el valor exclòs. Resultat: Forat. Separa domini, zeros i tendència: un denominador nul exclou l'entrada original. Factoritza abans de cancel·lar, comprova restriccions d'origen i diferencia un forat d'una asímptota vertical amb límits laterals. Solució exacta: Forat. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L03-01": {
+      "prompt": "Calcula el logaritme real exacte log_2 (32) ( nombre t tal que 2^t=32). Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Distingeix exponencial positiva de logaritme, definit només amb argument >0.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 5. Distingeix exponencial positiva de logaritme, definit només amb argument >0. log_ a(t)=s equival a a^s=t amb a>0 i a≠1; per a a>1, a^x→0 en tendir x→−∞. Solució exacta: 5. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L03-02": {
+      "prompt": "Resol l'equació exponencial 3^x=81 i indica l'exponent real x. Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Distingeix exponencial positiva de logaritme, definit només amb argument >0.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 4. Distingeix exponencial positiva de logaritme, definit només amb argument >0. log_ a(t)=s equival a a^s=t amb a>0 i a≠1; per a a>1, a^x→0 en tendir x→−∞. Solució exacta: 4. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L03-03": {
+      "prompt": "Determina la condició de l'argument perquè log ₂(x−(5)) estigui definit en els reals. Respon com a desigualtat de x. Selecciona la resposta EXACTA.",
+      "hint": "Distingeix exponencial positiva de logaritme, definit només amb argument >0.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: x>5. Distingeix exponencial positiva de logaritme, definit només amb argument >0. log_ a(t)=s equival a a^s=t amb a>0 i a≠1; per a a>1, a^x→0 en tendir x→−∞. Solució exacta: x>5. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L03-04": {
+      "prompt": "Calcula lim (x→−∞) 2^x, amb 2>1. Selecciona la resposta EXACTA.",
+      "hint": "Distingeix exponencial positiva de logaritme, definit només amb argument >0.",
+      "explanation": "Procediment i comprovació: Compara termes dominants en créixer |x|, considerant el seu signe i el sentit de l'infinit. Resultat 0. Distingeix exponencial positiva de logaritme, definit només amb argument >0. log_ a(t)=s equival a a^s=t amb a>0 i a≠1; per a>1, a^x→0 al tendir x→−∞. Solució exacta: 0. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F01-L03-05": {
+      "prompt": "Calcula el logaritme real exacte log_2 (4) ( nombre t tal que 2^t=4). Selecciona la resposta EXACTA.",
+      "hint": "Distingeix exponencial positiva de logaritme, definit només amb argument >0.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 2. Distingeix exponencial positiva de logaritme, definit només amb argument >0. log_ a(t)=s equival a a^s=t amb a>0 i a≠1; per a a>1, a^x→0 en tendir x→−∞. Solució exacta: 2. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L04-01": {
+      "prompt": "Calcula f(13) per a f(x)=√(x−(4))+(2); usa la arrel principal. Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "L'arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 5. La arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals. Per a √(x−h)+k impó x≥h i usa arrel principal; si el factor és negatiu, el sentit de creixement i el recorregut s'inverteixen. Solució exacta: 5. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L04-02": {
+      "prompt": "Per a f(x)=√(x−(4)), quins valors reals de x pertanyen al domini? Usa una desigualtat. Selecciona la resposta EXACTA.",
+      "hint": "L'arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: x≥4. La arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals. Per a √(x−h)+k impó x≥h i usa arrel principal; si el factor és negatiu, el sentit de creixement i el recorregut s'inverteixen. Solució exacta: x≥4. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L04-03": {
+      "prompt": "Determina el RECORREGUT de f(x)=-1√(x−1)+(3), usant desigualtat de y. Selecciona la resposta EXACTA.",
+      "hint": "L'arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: y≤3. La arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals. Per a √(x−h)+k impó x≥h i usa arrel principal; si el factor és negatiu, el sentit de creixement i el recorregut s'inverteixen. Solució exacta: y≤3. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L04-04": {
+      "prompt": "Resol √(x−(4))+(2)=5 per a x real i comprova la arrel principal. Selecciona la resposta EXACTA.",
+      "hint": "L'arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 13. La arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals. Per a √(x−h)+k impó x≥h i usa arrel principal; si el factor és negatiu, el sentit de creixement i el recorregut s'inverteixen. Solució exacta: 13. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L04-05": {
+      "prompt": "La funció f(x)=-1√(x−2)+4 en el seu domini és Creixent o Decreixent? Selecciona la resposta exacta.",
+      "hint": "L'arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: Decent. La arrel quadrada principal és no negativa i exigeix radicant ≥0 en els reals. Per a √(x−h)+k impó x≥h i usa arrel principal; si el factor és negatiu, el sentit de creixement i el recorregut s'inverteixen. Solució exacta: Decent. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L05-01": {
+      "prompt": "Calcula exactament sen (30°) (angle en GRAUS) sense decimals aproximats. Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Revisa si l'angle està expressat en graus o radians; sen i cos són periòdiques.",
+      "explanation": "Procediment i comprovació: Usa la circumferència unitat i el període 2π/|w| amb radians en l'argument. Resultat exacte 0,5. Revisa si l'angle està expressat en graus o radians; sen i cos són periòdiques. En la circumferència unitat sen30 °=1/2 i cos60 °=1/2; per a sen(wx), període 2π/|w|; amplitud |a|. Solució exacta: 0,5. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L05-02": {
+      "prompt": "Calcula exactament cos (60°) (angle en GRAUS) sense decimals aproximats. Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Revisa si l'angle està expressat en graus o radians; sen i cos són periòdiques.",
+      "explanation": "Procediment i comprovació: Usa la circumferència unitat i el període 2π/|w| amb radians en l'argument. Resultat exacte 0,5. Revisa si l'angle està expressat en graus o radians; sen i cos són periòdiques. En la circumferència unitat sen30 °=1/2 i cos60 °=1/2; per a sen(wx), període 2π/|w|; amplitud |a|. Solució exacta: 0,5. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L05-03": {
+      "prompt": "Quin és el període fonamental exacte de f(x)= sen (2x), amb x en radiants? Respon com a múltiple de π. Selecciona la resposta exacta.",
+      "hint": "Revisa si l'angle està expressat en graus o radians; sen i cos són periòdiques.",
+      "explanation": "Procediment i comprovació: Usa la circumferència unitat i el període 2π/|w| amb radiants en l'argument. Resultat exacte π. Revisa si l'angle està expressat en graus o radiants; Sen i cos són periòdiques. A la circumferència unitat sen30 °=1/2 i cos60 °=1/2; per sen(wx), període 2π/|w|; amplada |a|. Solució exacta: π. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'una gràfica."
+    },
+    "F3-B1C-F01-L05-04": {
+      "prompt": "Quina és l'amplitud positiva de la funció f(x)=3s en(x)? Selecciona la resposta EXACTA.",
+      "hint": "Revisa si l'angle està expressat en graus o radians; sen i cos són periòdiques.",
+      "explanation": "Procediment i comprovació: Usa la circumferència unitat i el període 2π/|w| amb radians en l'argument. Resultat exacte 3. Revisa si l'angle està expressat en graus o radians; sen i cos són periòdiques. En la circumferència unitat sen30 °=1/2 i cos60 °=1/2; per a sen(wx), període 2π/|w|; amplitud |a|. Solució exacta: 3. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L05-05": {
+      "prompt": "Escriu el RECORREGUT exacte [mínim,màxim] de f(x)=2c os(x). Selecciona la resposta exacta.",
+      "hint": "Revisa si l'angle està expressat en graus o radians; sen i cos són periòdiques.",
+      "explanation": "Procediment i comprovació: Usa la circumferència unitat i el període 2π/|w| amb radians en l'argument. Resultat exacte [-2,2]. Revisa si l'angle està expressat en graus o radians; sen i cos són periòdiques. En la circumferència unitat sen30 °=1/2 i cos60 °=1/2; per a sen(wx), període 2π/|w|; amplitud |a|. Solució exacta: [-2,2]. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L06-01": {
+      "prompt": "Per f(x)=x+1 si x<0 i f(x)=x² si x≥0, calcula f(-2) usant la branca correcta. Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Identifica el costat des del qual t'acosten i la condició exacta de cada tram.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: -1. Identifica el costat des del qual t'acosten i la condició exacta de cada tram. Existeix límit bilateral finit només si tots dos laterals coincideixen; continuïtat exigeix a més f(a)= aquest límit. Un salt no es repara assignant f(a). Solució exacta: -1. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L06-02": {
+      "prompt": "Per f(x)=x+1 si x<0 i f(x)=x² si x≥0, calcula f(0) usant la branca correcta. Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Identifica el costat des del qual t'acosten i la condició exacta de cada tram.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: 0. Identifica el costat des del qual t'acosten i la condició exacta de cada tram. Existeix límit bilateral finit només si tots dos laterals coincideixen; continuïtat exigeix a més f(a)= aquest límit. Un salt no es repara assignant f(a). Solució exacta: 0. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L06-03": {
+      "prompt": "Donada f(x)=x+1 si x<0, i x² si x≥0, calcula lim (x→0⁻)f(x). Escriu el resultat numèric EXACTE, sense unitats.",
+      "hint": "Identifica el costat des del qual t'acosten i la condició exacta de cada tram.",
+      "explanation": "Procediment i comprovació: Calcula cada límit lateral des de la seva fórmula i compara amb el valor puntual de la branca corresponent. Resultat 1. Identifica el costat des del qual t'acosten i la condició exacta de cada tram. Existeix límit bilateral finit només si tots dos laterals coincideixen; continuïtat exigeix a més f(a)= aquest límit. Un salt no es repara assignant f(a). Solució exacta: 1. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L06-04": {
+      "prompt": "En f(x)=x+1 per a x<0 i x² per a x≥0, els laterals en x=0 difereixen. Classifica la discontinuïtat: Salt, Evitable o Infinita. Selecciona la resposta EXACTA.",
+      "hint": "Identifica el costat des del qual t'acosten i la condició exacta de cada tram.",
+      "explanation": "Procediment i comprovació: Calcula cada límit lateral des de la seva fórmula i compara amb el valor puntual de la branca corresponent. Resultat Salt. Identifica el costat des del qual t'acosten i la condició exacta de cada tram. Existeix límit bilateral finit només si tots dos laterals coincideixen; continuïtat exigeix a més f(a)= aquest límit. Un salt no es repara assignant f(a). Solució exacta: Salt. Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    },
+    "F3-B1C-F01-L06-05": {
+      "prompt": "Troba el vèrtex (x,y) de f(x)=|x−(2)|, una funció a trossos. Selecciona la resposta EXACTA.",
+      "hint": "Localitza el punt que abans era el vèrtex i distingeix signes dins i fora de l'argument.",
+      "explanation": "Procediment i comprovació: Substitueix les dades en la definició o fórmula apropiada; comprova domini, signes, extrems i valor exacte. Resultat: (2, 0). Localitza el punt que abans era el vèrtex i distingeix signes dins i fora de l'argument. f(x−h)+k mou h a la dreta i k cap amunt; −f(x) inverteix valors i |x−h| té vèrtex (h, 0). Solució exacta: (2, 0). Comprova domini, signes, orientació dels límits, continuïtat i justificació, no només l'aparença d'un gràfic."
+    }
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E3-N02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e3_n02.json": "86abaaec7921b79bd14fe90b4556ef2ce0447449bdb11ff8e5efd2934be6f1ec",
+    "data/f3_e3_n02_exercises.json": "783472d78fdd6a608ec6707cb1b1670a66dcd49ffbf6ffb22e64f3714be5e8c7"
+  },
+  "lessons": {
+    "E3-N02-L01": {
+      "title": "Potències de deu",
+      "objectives": [
+        "Relacionar exponents enters amb multiplicació i divisió per potències de deu.",
+        "Interpretar exponents negatius com a fraccions positives sense canviar el signe del nombre."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una potència de deu 10^n té base 10 i exponent enter n. Quan n>0 desplaça la coma n posicions a la dreta en multiplicar; 10^0=1. Quan n<0, 10^n=1/10^(−n), de manera que 10^−3=0,001, no −1000. En un quocient de potències d'igual base, 10^a/10^b=10^(a−b), sempre que el divisor sigui diferent de zero. Multiplicar potències suma exponents. Aquestes regles permeten expressar quantitats molt grans i molt petites sense perdre de vista les unitats. Un canvi d'exponent de +1 multiplica el valor positiu per deu, no suma deu."
+        },
+        {
+          "body": "10^4=10000, 10^0=1 i 10^−3=1/1000=0,001. L'exponent negatiu no converteix el valor en negatiu."
+        },
+        {
+          "body": "10^5/10^2=10^(5−2)=10^3=1000; 10^−2×10^3=10^1=10. En el quocient es resten exponents i en el producte se sumen."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Potències de deu. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Potències de deu"
+          }
+        },
+        {
+          "body": "10^−3 és negatiu?||No; és la fracció positiva 1/1000."
+        },
+        {
+          "body": "Recuperació activa: Relacionar exponents enters amb multiplicació i divisió per potències de deu. Esbrina si l'exponent afecta el valor o el signe. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E3-N02-L02": {
+      "title": "Notació científica",
+      "objectives": [
+        "Normalitzar nombres no nuls a la forma a ×10^n amb 1≤|a|<10.",
+        "Convertir decimals ordinaris a notació científica conservant signe i magnitud."
+      ],
+      "content_blocks": [
+        {
+          "body": "La notació científica d'un nombre real no nul té forma a ×10^n, amb n enter i 1≤|a|<10. Si es mou la coma cap a l'esquerra en construir a, l'exponent augmenta; Si es mou cap a la dreta, l'exponent disminueix. Per exemple, 4 520 000=4,52×10^6 i 0,000078=7,8×10^−5. El nombre zero s'escriu 0 i no compleix la condició de mantissa normalitzada. Una notació com 45,2×10^5 pot representar el mateix valor, però no està normalitzada. S'ha de conservar la unitat de la magnitud original i assenyalar possibles xifres significatives."
+        },
+        {
+          "body": "4 520 000 es transforma en 4,52×10^6 perquè desplacem la coma sis posicions a l'esquerra."
+        },
+        {
+          "body": "0,000078 s'escriu 7,8×10^−5; 7,8×0,00001=0,000078, una comprovació directa d'equivalència."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Notació científica. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Notació científica"
+          }
+        },
+        {
+          "body": "És 45,2×10^5 una forma científica normalitzada?||No; té mantissa de valor absolut superior o igual a deu."
+        },
+        {
+          "body": "Recuperació activa: Normalitzar nombres no nuls a la forma a ×10^n amb 1≤|a|<10. Desplaça la coma fins que la mantissa tingui una sola xifra no nul·la abans d'ella. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E3-N02-L03": {
+      "title": "Conversió de magnituds",
+      "objectives": [
+        "Converteix magnituds utilitzant prefixos i equivalències d'unitats exactes.",
+        "Diferenciar nombres d'unitats per evitar factors de mil erronis."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per convertir unitats cal aplicar factors dimensionals, no únicament desplaçar comes sense context. Un quilòmetre equival a 10^3 metres, un mil·límetre a 10^−3 metres i un micròmetre a 10^−6 metres. La lletra majúscula M del prefix mega representa 10^6, mentre la minúscula m de mili representa 10^−3; la capitalització importa. Una conversió conserva la magnitud física i canvia el seu valor numèric i unitat. Si es converteixen unitats de superfície o volum, el factor lineal s'eleva al quadrat o al cub: 1 km ²=10^6 m². Els enunciats han d'indicar clarament longitud, àrea o volum."
+        },
+        {
+          "body": "Una distància de 3,2 km equival a 3,2×1000=3200 m=3,2×10^3 m. El valor físic no canvia."
+        },
+        {
+          "body": "Una longitud de 4500 mm equival a 4500×10^−3=4,5 m. En canvi 2 km ²=2×10^6 m², doncs el factor de longitud es quadra."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Conversió de magnituds. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Conversió de magnituds"
+          }
+        },
+        {
+          "body": "Per què 1 km ² no equival a 1000 m²?||Perquè el factor de longitud 1000 s'eleva al quadrat: 10^6 m²."
+        },
+        {
+          "body": "Recuperació activa: Convertir magnituds utilitzant prefixos i equivalències d'unitats exactes. Escriu l'equivalència amb unitats abans de calcular. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E3-N02-L04": {
+      "title": "Operacions amb notació científica",
+      "objectives": [
+        "Multiplicar i dividir nombres en notació científica aplicant potències.",
+        "Sumar quantitats alineant exponents abans d'operar les mantises."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per multiplicar (a ×10^m)( b ×10^n), es multipliquen les mantises a·b i se sumen els exponents m+n. Per dividir amb b≠0, es divideixen mantisses i es resten exponents. Després és necessari normalitzar si la mantellissa queda fora de l'interval 1≤|a|<10. En suma i resta no se sumen directament els exponents: primer s'expressen les quantitats amb la mateixa potència de deu, i només llavors se sumen les mantises. Les unitats han de ser compatibles per sumar. El resultat pot necessitar arrodoniment a xifres significatives segons la precisió de les dades; aquí es treballa amb valors exactes sintètics."
+        },
+        {
+          "body": "(2×10^3)(3×10^−2)=6×10^(3−2)=6×10^1=60; les mantises es multipliquen i els exponents se sumen."
+        },
+        {
+          "body": "(3×10^4)+(2×10^4)=5×10^4=50000. Si tinguessin exponents diferents, primer s'expressarien amb el mateix exponent."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Operacions amb notació científica. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Operacions amb notació científica"
+          }
+        },
+        {
+          "body": "Per sumar 3×10^4 i 2×10^4, se sumen els exponents?||No; les potències ja tenen el mateix exponent i només se sumen les mantisses."
+        },
+        {
+          "body": "Recuperació activa: Multiplicar i dividir nombres en notació científica aplicant potències. Distingeix producte de suma; la regla d'exponents depèn de l'operació. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "E3-N02-L05": {
+      "title": "Ordres de magnitud",
+      "objectives": [
+        "Comparar ordres de magnitud mitjançant raons i potències de deu.",
+        "Arrodonir xifres significatives sense inventar precisió experimental."
+      ],
+      "content_blocks": [
+        {
+          "body": "L'ordre de magnitud dóna una escala aproximada d'una quantitat positiva. Ha d'explicitar-se el conveni: aquí aproximem a l'exponent enter més proper de log10 (|x|), de manera que una quantitat 8×10^3 s'aproxima a 10^4 i 3×10^3 a 10^3. El límit està en √10×10^n i hi ha altres usos del terme en divulgació. Per comparar dos valors positius, el quocient indica quantes vegades major és un, mentre el quocient entre potències de deu indica diferències d'escala. Les xifres significatives reflecteixen precisió declarada; arrodonir 5,67×10^4 a dues xifres és 5,7×10^4, no un augment real d'exactitud."
+        },
+        {
+          "body": "La raó entre 4×10^5 i 2×10^3 és (4/2)×10^(5−3)=2×10²=200, equivalent a una diferència d'aproximadament dues ordres."
+        },
+        {
+          "body": "Segons el conveni de potència de deu més pròxima, 8×10^3 s'aproxima a 10^4 perquè log10 (8000)≈3,903; 3×10^3 s'aproxima a 10^3."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Ordres de magnitud. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Ordres de magnitud"
+          }
+        },
+        {
+          "body": "Una diferència de dues potències implica sempre que les quantitats reals difereixen exactament 100 vegades?||No; Les falgueres modifiquen la raó exacta."
+        },
+        {
+          "body": "Recuperació activa: Comparar ordres de magnitud mitjançant raons i potències de deu. Escriu el quocient complet mantises i potències abans d'estimar. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E3-N02-L01-01": {
+      "prompt": "Calcula 10 elevat a −3 com nombre decimal.",
+      "hint": "Esbrina si l'exponent afecta el valor o el signe.",
+      "explanation": "10^−3=1/1000=0,001; el valor continua sent positiu."
+    },
+    "F3-E3-N02-L01-02": {
+      "prompt": "Calcula 10^5 dividit entre 10^2.",
+      "hint": "Esbrina si l'exponent afecta el valor o el signe.",
+      "explanation": "Per a igual base resta exponents: 10^(5−2)=10³=1000."
+    },
+    "F3-E3-N02-L01-03": {
+      "prompt": "Calcula el valor de (10^−2)×(10^3).",
+      "hint": "Esbrina si l'exponent afecta el valor o el signe.",
+      "explanation": "Suma exponents −2+3=1: 10^1=10. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-N02-L01-04": {
+      "prompt": "Quin signe té 10^−3?",
+      "hint": "Esbrina si l'exponent afecta el valor o el signe.",
+      "explanation": "El signe de l'exponent determina el recíproc, no el signe del valor."
+    },
+    "F3-E3-N02-L01-05": {
+      "prompt": "En multiplicar potències de la mateixa base deu, quina operació es fa amb exponents?",
+      "hint": "Esbrina si l'exponent afecta el valor o el signe.",
+      "explanation": "10^ a ×10^b=10^(a+b). El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-N02-L02-01": {
+      "prompt": "Expressa 4,52×10^6 com nombre decimal.",
+      "hint": "Desplaça la coma fins que la mantissa tingui una sola xifra no nul·la abans d'ella.",
+      "explanation": "Desplaça sis posicions a la dreta: 4 520 000."
+    },
+    "F3-E3-N02-L02-02": {
+      "prompt": "Expressa 7,8×10^−5 com nombre decimal.",
+      "hint": "Desplaça la coma fins que la mantissa tingui una sola xifra no nul·la abans d'ella.",
+      "explanation": "7,8×0,00001=0,000078. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-N02-L02-03": {
+      "prompt": "Expressa 6,2×10^4 com nombre decimal.",
+      "hint": "Desplaça la coma fins que la mantissa tingui una sola xifra no nul·la abans d'ella.",
+      "explanation": "6,2×10000=62000. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-N02-L02-04": {
+      "prompt": "Què caracteritza una notació científica normalitzada no nul·la?",
+      "hint": "Desplaça la coma fins que la mantissa tingui una sola xifra no nul·la abans d'ella.",
+      "explanation": "La restricció de mantissa assegura una forma estàndard."
+    },
+    "F3-E3-N02-L02-05": {
+      "prompt": "És 45,2×10^5 forma normalitzada?",
+      "hint": "Desplaça la coma fins que la mantissa tingui una sola xifra no nul·la abans d'ella.",
+      "explanation": "Equival a 4,52×10^6, que sí que és normalitzada."
+    },
+    "F3-E3-N02-L03-01": {
+      "prompt": "Converteix 3,2 km en metres. Dóna el nombre de metres.",
+      "hint": "Escriu l'equivalència amb unitats abans de calcular.",
+      "explanation": "Un km equival a 10³ m; 3,2×1000=3200 m."
+    },
+    "F3-E3-N02-L03-02": {
+      "prompt": "Converteix 4500 mil·límetres en metres.",
+      "hint": "Escriu l'equivalència amb unitats abans de calcular.",
+      "explanation": "1 mm =10^−3 m; 4500×0,001=4,5 m. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-N02-L03-03": {
+      "prompt": "Converteix 2 km ² en m². Dóna el nombre de m².",
+      "hint": "Escriu l'equivalència amb unitats abans de calcular.",
+      "explanation": "El factor de longitud 1000 es quadra: 2×(10³)²=2 000 000 m²."
+    },
+    "F3-E3-N02-L03-04": {
+      "prompt": "Quina diferència hi ha entre el prefix M i el prefix m?",
+      "hint": "Escriu l'equivalència amb unitats abans de calcular.",
+      "explanation": "Les majúscules i minúscules en símbols del SI importen."
+    },
+    "F3-E3-N02-L03-05": {
+      "prompt": "Per què 1 km ² equival a un milió de m²?",
+      "hint": "Escriu l'equivalència amb unitats abans de calcular.",
+      "explanation": "En mesurar dues dimensions, el factor s'aplica dues vegades."
+    },
+    "F3-E3-N02-L04-01": {
+      "prompt": "Calcula (2×10^3)×(3×10^−2) com a decimal.",
+      "hint": "Distingeix producte de suma; la regla d'exponents depèn de l'operació.",
+      "explanation": "Mantissa: 2×3=6. Exponents: 3−2=1. Producte =60."
+    },
+    "F3-E3-N02-L04-02": {
+      "prompt": "Calcula (3×10^4)+(2×10^4) com a decimal.",
+      "hint": "Distingeix producte de suma; la regla d'exponents depèn de l'operació.",
+      "explanation": "En tenir igual exponent: (3+2)×10^4=50000."
+    },
+    "F3-E3-N02-L04-03": {
+      "prompt": "Calcula (6×10^5)/(2×10^2) com a decimal.",
+      "hint": "Distingeix producte de suma; la regla d'exponents depèn de l'operació.",
+      "explanation": "(6/2)×10^(5−2)=3×10³=3000. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-N02-L04-04": {
+      "prompt": "En sumar quantitats en notació científica, què és necessari fer?",
+      "hint": "Distingeix producte de suma; la regla d'exponents depèn de l'operació.",
+      "explanation": "La suma requereix quantitats de la mateixa escala i unitats."
+    },
+    "F3-E3-N02-L04-05": {
+      "prompt": "Quina és la regla d'exponents en dividir potències de base deu?",
+      "hint": "Distingeix producte de suma; la regla d'exponents depèn de l'operació.",
+      "explanation": "10^a/10^b=10^(a−b). El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-E3-N02-L05-01": {
+      "prompt": "Quina és la raó (4×10^5)/(2×10^3)?",
+      "hint": "Escriu el quocient complet mantises i potències abans d'estimar.",
+      "explanation": "Socient exacte 2×10²=200, no només una potència aproximada."
+    },
+    "F3-E3-N02-L05-02": {
+      "prompt": "Amb conveni de potència de deu més propera, exponent de l'ordre de 8000?",
+      "hint": "Escriu el quocient complet mantises i potències abans d'estimar.",
+      "explanation": "log10 (8000)≈3,903, el enter més proper del qual és 4."
+    },
+    "F3-E3-N02-L05-03": {
+      "prompt": "Arrodoneix 5,67×10^4 a dues xifres significatives. Da resultat decimal.",
+      "hint": "Escriu el quocient complet mantises i potències abans d'estimar.",
+      "explanation": "5,67 s'arrodoneix a 5,7: resultat 5,7×10^4=57000."
+    },
+    "F3-E3-N02-L05-04": {
+      "prompt": "Una aproximació per ordre de magnitud indica sempre la raó exacta entre quantitats?",
+      "hint": "Escriu el quocient complet mantises i potències abans d'estimar.",
+      "explanation": "Per comparar valors utilitza el quocient complet."
+    },
+    "F3-E3-N02-L05-05": {
+      "prompt": "Quin conveni d'ordre s'usa explícitament en aquesta lliçó?",
+      "hint": "Escriu el quocient complet mantises i potències abans d'estimar.",
+      "explanation": "8×10³ queda més a prop de 10^4 que de 10^3 en escala logarítmica."
+    }
+  }
+}

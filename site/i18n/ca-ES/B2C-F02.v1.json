@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2C-F02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2c_f02.json": "3e6ecf3791f4fc9090c35c0c939f9157aeff07e21b04ed15f3d073cd064b1af4",
+    "data/f3_b2c_f02_exercises.json": "dbd00678215634b724df2fe418610e22ee48f44ae975fe577b0665bcddf295e1"
+  },
+  "lessons": {
+    "B2C-F02-L01": {
+      "title": "Regles de derivació",
+      "objectives": [
+        "Diferenciar funcions mitjançant regles de potència, producte, quocient i cadena.",
+        "Respectar domini i condicions de no anul·lació en derivades racionals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Les regles operatives per a funcions derivables són (f+g)′=f′+g′, (fg )′=f′g+ fg ′ i (f/g)′=(f′g− fg ′)/g², sempre que g≠0. La regla de la cadena estableix (F∘u)′=(F′∘u)u′: per (3x−1)^4, la derivada és 12(3x−1)^3. La derivada de ln x és 1/x només per x>0, la de e^x és e^x, i les regles trigonomètriques usuals requereixen arguments en radiants. El mètode correcte depèn de l'estructura de l'expressió, no de memoritzar un patró de signes. La regla de quocient no significa f′/g′. La derivada calculada només és vàlida en punts on la funció original i les regles tenen sentit."
+        },
+        {
+          "body": "Si h(x)=(x²+1)(x−2), llavors h′=2x(x−2)+(x²+1), i h′(2)=5. No es multipliquen només les derivades dels factors."
+        },
+        {
+          "body": "Per a q(x)=(3x+1)², la regla de la cadena produeix q′=2(3x+1)·3=6(3x+1); en x=1 val 24."
+        },
+        {
+          "body": "Regla de la cadena en una paràbola. Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Regla de la cadena en una paràbola. Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Regla de la cadena en una paràbola"
+          }
+        },
+        {
+          "body": "Es pot derivar un quocient com f′/g′?||No. S'usa (f′g− fg ′)/g² en els punts on g és diferent de zero."
+        },
+        {
+          "body": "Recuperació: Les regles operatives per a funcions derivables són (f+g)′=f′+g′, (fg )′=f′g+ fg ′ i (f/g)′=(f′g− fg ′)/g², sempre que g≠0. Resol un cas de transferència sense ajuda, contrasta hipòtesi i registra errors importants."
+        }
+      ]
+    },
+    "B2C-F02-L02": {
+      "title": "derivades successives",
+      "objectives": [
+        "Calcula derivades successives de polinomis i funcions exponencials.",
+        "Relacionar segona derivada amb acceleració i concavitat sense confondre signes."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si f és derivable i f′ també ho és, la segona derivada f″ és la derivada de f′. Per un polinomi f(x)= ax ³+ bx ²+ cx +d, s'obté f′=3a x ²+2b x +c i f″=6a x +2b. La derivada tercera d'un cúbic és constant 6a i la quarta és zero. Si s(t) és posició, s′ és velocitat i s″ acceleració, sempre amb unitats coherents. Una segona derivada positiva indica concavitat cap amunt en intervals on existeix; no implica per si sola que la funció sigui creixent. Per exemple f(x)=x² té f″=2>0 en tot R, però decreix quan x<0. Les derivades successives s'avaluen després de diferenciar-les correctament, sense reutilitzar el valor numèric d'un ordre previ."
+        },
+        {
+          "body": "f(x)=x³−3x²+2: f′(x)=3x²−6x, f″(x)=6x−6 i f‴(x)=6. En x=2, f″(2)=6."
+        },
+        {
+          "body": "Una posició s(t)=2t²−3t+1 m produeix velocitat v(t)=4t−3 m/s i acceleració a(t)=4 m/s², constant."
+        },
+        {
+          "body": "Segona derivada d'un polinomi cúbic. Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Segona derivada d'un polinomi cúbic. Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Segona derivada d'un polinomi cúbic"
+          }
+        },
+        {
+          "body": "Si f″(x)>0 en un interval, necessàriament f creix allí?||No. Significa concavitat cap amunt; el signe de f′ determina creixement."
+        },
+        {
+          "body": "Recuperació: Si f és derivable i f′ també ho és, la segona derivada f″ és la derivada de f′. Resol un cas de transferència sense ajuda, contrasta hipòtesi i registra errors importants."
+        }
+      ]
+    },
+    "B2C-F02-L03": {
+      "title": "Monotonia i extrems",
+      "objectives": [
+        "Resoldre intervals de creixement i decreixement a partir de f′.",
+        "Detectar i classificar extrems locals i absoluts en intervals tancats."
+      ],
+      "content_blocks": [
+        {
+          "body": "L'estudi de monotonia comença identificant domini, punts on f′=0 i punts on f′ no existeix. Es construeix una taula de signes de f′ en els intervals determinats pels punts crítics. Un canvi de + a − caracteritza màxim local; de − a + mínim local. Si no canvia el signe, no hi ha extrem per aquest criteri. Per a extrems absoluts en un interval tancat [a,b] amb continuïtat es comparen els valors de tots els crítics interiors i d'ambdós extrems de l'interval. La condició f′(x)=0 no basta per a màxim ni mínim; un punt de discontinuïtat tampoc pot examinar-se mitjançant regles de derivació que no són aplicables allí. Cap conclusió fora del domini està justificada."
+        },
+        {
+          "body": "f(x)=x³−3x té f′=3x²−3=3(x−1)(x+1). És creixent fora de [−1,1] i decreixent entre −1 i 1; màxim local en −1 (2), mínim en 1 (−2)."
+        },
+        {
+          "body": "En f(x)=x² i [−1,2], el mínim absolut és 0 en x=0; el màxim absolut és 4 en x=2, que és extrem d'interval."
+        },
+        {
+          "body": "Signes de f′ en un cúbic. Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Signes de f′ en un cúbic. Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Signes de f′ en un cúbic"
+          }
+        },
+        {
+          "body": "Per al màxim absolut en [a,b] basta avaluar els punts amb f′=0?||No. Cal incloure a i b i qualsevol punt interior on no existeixi f′."
+        },
+        {
+          "body": "Recuperació: L'estudi de monotonia comença identificant domini, punts on f′=0 i punts on f′ no existeix. Resol un cas de transferència sense ajuda, contrasta hipòtesi i registra errors importants."
+        }
+      ]
+    },
+    "B2C-F02-L04": {
+      "title": "Curvatura i punts d'inflexió",
+      "objectives": [
+        "Classificar concavitat mitjançant la segona derivada en intervals.",
+        "Detectar inflexions per canvi de concavitat, no només f″=0."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si f″(x)>0 en un interval, la gràfica és còncava cap amunt (convexa en sentit elemental); si f″(x)<0 és còncava cap avall. Un punt d'inflexió requereix canvi de concavitat en travessar-lo; que f″(a)=0 és condició candidata, no suficient. Per f(x)=x³, f″=6x canvia de negatiu a positiu en zero, per la qual cosa existeix una inflexió en (0,0). Per g(x)=x^4, g″(x)=12x² s'anul·la en zero però no canvia de signe, així que no hi ha inflexió allí. Cal estudiar també punts on f″ no existeix, però amb continuïtat adequada del model. La prova de la segona derivada f″(a)>0 en un punt estacionari permet identificar mínim local; amb f″(a)<0, màxim; f″(a)=0 no decideix."
+        },
+        {
+          "body": "f(x)=x³−3x: f″=6x, negativa per a x<0 i positiva per a x>0; (0,0) és punt d'inflexió."
+        },
+        {
+          "body": "g(x)=x⁴: g″=12x²≥0 en ambdós costats de zero, així que f″(0)=0 no produeix punt d'inflexió."
+        },
+        {
+          "body": "Canvi de concavitat en x³. Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Canvi de concavitat en x³. Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Canvi de concavitat en x³"
+          }
+        },
+        {
+          "body": "Sempre que f″(a)=0 hi ha un punt d'inflexió?||No. La concavitat ha de canviar de signe entre els costats de a."
+        },
+        {
+          "body": "Recuperació: Si f″(x)>0 en un interval, la gràfica és còncava cap amunt (convexa en sentit elemental); si f″(x)<0 és còncava cap avall. Resol un cas de transferència sense ajuda, contrasta hipòtesi i registra errors importants."
+        }
+      ]
+    },
+    "B2C-F02-L05": {
+      "title": "Representació de funcions",
+      "objectives": [
+        "Representar gràfiques combinant domini, talls, asímptotes i derivades.",
+        "Justificar extrems, monotonia i concavitat a partir de signes, no d'aparença."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una anàlisi gràfica completa segueix un ordre: determinar domini i simetries, localitzar talls amb eixos, calcular límits i asímptotes, estudiar f′ per a creixement / extrems i f″ per a concavitat / inflexions. Les característiques han de ser compatibles entre si: una asímptota vertical es justifica per un límit infinit i un mínim interior derivable exigeix pendent zero. Per a f(x)=x³−3x, les arrels són 0 i ±√3, la derivada és 3x²−3 i la segona 6x. Té màxim local en x=−1, mínim en x=1 i inflexió en zero, i no posseeix asímptotes finites a l'infinit. Les gràfiques SVG són il·lustratives; les taules amb valors exactes i condicions són font accessible de comprovació, no una prova automàtica d'exactitud matemàtica."
+        },
+        {
+          "body": "Per a f(x)=x²−4, domini R, talls x=±2, mínim (0, −4), f′=2x i f″=2>0; decreix abans de zero i creix després."
+        },
+        {
+          "body": "Per g(x)=1/(x−1), domini R\\ {1}, AV x=1, AH y=0 i g′=−1/(x−1)²<0 a cada costat de l'asímptota, sense extrem local."
+        },
+        {
+          "body": "Gràfica de cúbica amb extrems i inflexió. Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Gràfica de cúbica amb extrems i inflexió. Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Gràfica de cúbica amb extrems i inflexió"
+          }
+        },
+        {
+          "body": "Una corba aparentment horitzontal a l'infinit demostra que existeix asímptota?||No. S'ha de calcular el límit i controlar el seu valor finit."
+        },
+        {
+          "body": "Recuperació: Una anàlisi gràfica completa segueix un ordre: determinar domini i simetries, localitzar talls amb eixos, calcular límits i asímptotes, estudiar f′ per a creixement / extrems i f″ per a concavitat / inflexions. Resol un cas de transferència sense ajuda, contrasta hipòtesi i registra errors importants."
+        }
+      ]
+    },
+    "B2C-F02-L06": {
+      "title": "Optimització amb restriccions",
+      "objectives": [
+        "Modelitzar problemes d'optimització amb variable, domini i restriccions.",
+        "Comprovar extrems interiors i de frontera interpretant unitats i factibilitat."
+      ],
+      "content_blocks": [
+        {
+          "body": "Optimitzar significa maximitzar o minimitzar una funció objectiu sota un domini factible. Abans de derivar cal establir quina variable representa cada magnitud i quines restriccions físiques (longituds no negatives, pressupost, intervals) delimiten el conjunt admissible. Per a un rectangle de perímetre 20, si x és un costat, l'altre val 10−x i l'àrea és A(x)=x(10−x), amb 0<x<10 per a un rectangle no degenerat; el seu màxim s'aconsegueix en x=5 i val 25. En un interval tancat s'han d'avaluar extrems de frontera a més de crítics, si formen part del domini. Un punt crític fora del domini es rebutja. La segona derivada o el canvi de signe verifiquen la classe d'extrem, però el resultat ha de comprovar-se enfront de les restriccions i unitats d'àrea."
+        },
+        {
+          "body": "Amb 20 m de perímetre, A(x)=10x−x², A′=10−2x; s'anul·la en x=5 m, A″=−2<0 i A(5)=25 m², màxim factible."
+        },
+        {
+          "body": "Per a minimitzar C(x)=(x−3)²+4 en [0,5], C′=2(x−3)=0 en 3 i C(3)=4; en fronteres C(0)=13 i C(5)=8, així el mínim global val 4."
+        },
+        {
+          "body": "Àrea màxima d'un rectangle amb perímetre fix. Gràfica SVG matemàtica declarativa original amb taula alternativa de dades exactes i condicions; la corba il·lustra, no substitueix demostració.",
+          "alt": "Àrea màxima d'un rectangle amb perímetre fix. Taula amb definicions, resultats exactes, domini i hipòtesi disponible sense interpretar color, imatge ni gestos.",
+          "visual_spec": {
+            "title": "Àrea màxima d'un rectangle amb perímetre fix"
+          }
+        },
+        {
+          "body": "Pot acceptar-se un extrem crític que viola el pressupost o el domini de longituds?||No. Només els candidats factibles i les fronteres admissibles poden optimitzar el problema."
+        },
+        {
+          "body": "Recuperació: Optimitzar significa maximitzar o minimitzar una funció objectiu sota un domini factible. Resol un cas de transferència sense ajuda, contrasta hipòtesi i registra errors importants."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2C-F02-L01-01": {
+      "prompt": "Per a f(x)=(2x²+(1))(1x+(-2)), calcula exactament f′(2) amb la regla del PRODUCTE. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició.",
+      "explanation": "Explicació pas a pas de la regla: Aplica la regla estructural correcta; desenvolupa la derivada amb domini explícit i substitueix al final: 9. Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició. Producte (uv )′=u′v+ uv ′; quocient (u/v)′=(u′v− uv ′)/v² amb v≠0; cadena [F(u)]′=F′(u)u′, sense ometre domini. Resultat comprovat: 9. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L01-02": {
+      "prompt": "La funció és f(x)=(3x+(1))². Calcula f′(1) usant la regla de la CADENA. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició.",
+      "explanation": "Explicació pas a pas de la regla: Aplica la regla estructural correcta; desenvolupa la derivada amb domini explícit i substitueix al final: 24. Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició. Producte (uv )′=u′v+ uv ′; quocient (u/v)′=(u′v− uv ′)/v² amb v≠0; cadena [F(u)]′=F′(u)u′, sense ometre domini. Resultat comprovat: 24. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L01-03": {
+      "prompt": "Calcula f′(2) si f(x)=(1x+(2))/(1x+(-1)), usant la regla del QUOCIENT, amb denominador diferent de zero. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició.",
+      "explanation": "Explicació pas a pas de la regla: Aplica la regla estructural correcta; desenvolupa la derivada amb domini explícit i substitueix al final: -3. Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició. Producte (uv )′=u′v+ uv ′; quocient (u/v)′=(u′v− uv ′)/v² amb v≠0; cadena [F(u)]′=F′(u)u′, sense ometre domini. Resultat comprovat: -3. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L01-04": {
+      "prompt": "Donada f(x)= ln(x) amb x>0, calcula la derivada f′(2) exactament. Selecciona la resposta EXACTA.",
+      "hint": "Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 0,5. Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició. Producte (uv )′=u′v+ uv ′; quocient (u/v)′=(u′v− uv ′)/v² amb v≠0; cadena [F(u)]′=F′(u)u′, sense ometre domini. Resultat comprovat: 0,5. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L01-05": {
+      "prompt": "Per f(x)=e^x, calcula la derivada f′(0) sense aproximacions decimals. Selecciona la resposta EXACTA.",
+      "hint": "Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 1. Tria la regla de derivació segons l'estructura: potència, suma, producte, quocient o composició. Producte (uv )′=u′v+ uv ′; quocient (u/v)′=(u′v− uv ′)/v² amb v≠0; cadena [F(u)]′=F′(u)u′, sense ometre domini. Resultat comprovat: 1. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L02-01": {
+      "prompt": "Per f(x)=1x³+(-3)x²+(0)x+(2), calcula exactament f″(2). Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Deriva el polinomi successivament terme a terme amb la regla de potències.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 6. Deriva el polinomi successivament terme a terme amb la regla de les potències. Si f(x)=Ax³+Bx²+Cx+D, f″=6Ax+2B, f‴=6A i f⁽⁴⁾=0. No confonguis la velocitat amb la posició. Resultat comprovat: 6. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L02-02": {
+      "prompt": "Per a f(x)=1x³+(-3)x²+(0)x+(2), calcula la tercera derivada f‴(x), que és constant. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Deriva el polinomi successivament terme a terme amb la regla de potències.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 6. Deriva el polinomi successivament terme a terme amb la regla de les potències. Si f(x)=Ax³+Bx²+Cx+D, f″=6Ax+2B, f‴=6A i f⁽⁴⁾=0. No confonguis la velocitat amb la posició. Resultat comprovat: 6. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L02-03": {
+      "prompt": "Per a f(x)=2x²+(-3)x+(1), calcula f″(x), constant per a tots els reals. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Deriva el polinomi successivament terme a terme amb la regla de potències.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 4. Deriva el polinomi successivament terme a terme amb la regla de les potències. Si f(x)=Ax³+Bx²+Cx+D, f″=6Ax+2B, f‴=6A i f⁽⁴⁾=0. No confonguis la velocitat amb la posició. Resultat comprovat: 4. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L02-04": {
+      "prompt": "Per s(t)=2t²+(-3)t metres, calcula l'ACCELERACIÓ constant s″(t), valor numèric en m/s². Selecciona la resposta EXACTA.",
+      "hint": "Deriva la posició per a velocitat, i la velocitat per a acceleració. Identifica les unitats.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 4. Deriva la posició per a velocitat, i la velocitat per a acceleració. Identifica les unitats. Per a s(t)= At ²+ Bt, s′(t)=2A t +B en m/s i s″(t)=2A en m/s²; distingeix velocitat amb signe de rapidesa no negativa. Resultat comprovat: 4. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L02-05": {
+      "prompt": "Per al polinomi cúbic f(x)=1x³+(-3)x²+(0)x+(2), calcula f⁽⁴⁾(x). Selecciona la resposta EXACTA.",
+      "hint": "Deriva el polinomi successivament terme a terme amb la regla de potències.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 0. Deriva el polinomi successivament terme a terme amb la regla de les potències. Si f(x)=Ax³+Bx²+Cx+D, f″=6Ax+2B, f‴=6A i f⁽⁴⁾=0. No confonguis la velocitat amb la posició. Resultat comprovat: 0. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L03-01": {
+      "prompt": "Per f(x)=x³−3x, troba l'ABSCISA del màxim local. Cal comprovar signe de f′ al voltant del crític. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Troba punts crítics i examina el signe de la primera derivada a banda i banda.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat -1. Troba punts crítics i examina el signe de la primera derivada a banda i banda. f′(a)=0 és necessari en extrems interiors derivables però no suficient; en intervals tancats compara també les fronteres. Resultat comprovat: -1. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L03-02": {
+      "prompt": "Per f(x)=x³−3x, calcula el VALOR de la funció en el seu mínim local (x=1). Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Troba punts crítics i examina el signe de la primera derivada a banda i banda.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat -2. Troba punts crítics i examina el signe de la primera derivada a banda i banda. f′(a)=0 és necessari en extrems interiors derivables però no suficient; en intervals tancats compara també les fronteres. Resultat comprovat: -2. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L03-03": {
+      "prompt": "Troba el valor mínim absolut de f(x)=x² en l'interval tancat [-1,2], comprovant els crítics. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Troba punts crítics i examina el signe de la primera derivada a banda i banda.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 0. Troba punts crítics i examina el signe de la primera derivada a banda i banda. f′(a)=0 és necessari en extrems interiors derivables però no suficient; en intervals tancats compara també les fronteres. Resultat comprovat: 0. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L03-04": {
+      "prompt": "Troba el valor màxim absolut de f(x)=x² en l'interval tancat [-1,2], incloent els extrems. Selecciona la resposta EXACTA.",
+      "hint": "Troba punts crítics i examina el signe de la primera derivada a banda i banda.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 4. Troba punts crítics i examina el signe de la primera derivada a banda i banda. f′(a)=0 és necessari en extrems interiors derivables però no suficient; en intervals tancats compara també les fronteres. Resultat comprovat: 4. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L03-05": {
+      "prompt": "És f′(a)=0 una condició suficient per si sola per a garantir un extrem local (Sí / No)? Selecciona la resposta EXACTA.",
+      "hint": "Troba punts crítics i examina el signe de la primera derivada a banda i banda.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat No. Troba punts crítics i examina el signe de la primera derivada a banda i banda. f′(a)=0 és necessari en extrems interiors derivables però no suficient; en intervals tancats compara també les fronteres. Resultat comprovat: No. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L04-01": {
+      "prompt": "La funció f(x)=x³ compleix f″(x)=6x. Troba l'ABSCISA de la inflexió amb canvi de concavitat. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "La concavitat s'estudia pel signe de la segona derivada a ambdós costats.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 0. La concavitat s'estudia pel signe de la segona derivada a banda i banda. f″(a)=0 només proposa un candidat; sense canvi de concavitat no hi ha inflexió. f″(a)>0 amb f′(a)=0 indica mínim local. Resultat comprovat: 0. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L04-02": {
+      "prompt": "Per f(x)=x⁴, f″(0)=0. Existeix punt d'INFLEXIÓ en x=0 (Sí / No)? Comprova signes. Selecciona la resposta EXACTA.",
+      "hint": "La concavitat s'estudia pel signe de la segona derivada a ambdós costats.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat No. La concavitat s'estudia pel signe de la segona derivada a banda i banda. f″(a)=0 només proposa un candidat; sense canvi de concavitat no hi ha inflexió. f″(a)>0 amb f′(a)=0 indica mínim local. Resultat comprovat: No. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L04-03": {
+      "prompt": "Per f(x)=1x³+(0)x²+(0)x+(0), calcula exactament f″(2). Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Deriva el polinomi successivament terme a terme amb la regla de potències.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 12. Deriva el polinomi successivament terme a terme amb la regla de les potències. Si f(x)=Ax³+Bx²+Cx+D, f″=6Ax+2B, f‴=6A i f⁽⁴⁾=0. No confonguis la velocitat amb la posició. Resultat comprovat: 12. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L04-04": {
+      "prompt": "Per f(x)=1x³, classifica la concavitat en x=-2: A dalt si f″>0, Abaix si f″<0. Selecciona la resposta EXACTA.",
+      "hint": "La concavitat s'estudia pel signe de la segona derivada a ambdós costats.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat A baix. La concavitat s'estudia pel signe de la segona derivada a banda i banda. f″(a)=0 només proposa un candidat; sense canvi de concavitat no hi ha inflexió. f″(a)>0 amb f′(a)=0 indica mínim local. Resultat comprovat: A baix. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L04-05": {
+      "prompt": "Una funció compleix f′(a)=0 i f″(a)=2. Què conclou el test de segona derivada: Mínim, Màxim o No concloent? Selecciona la resposta EXACTA.",
+      "hint": "La concavitat s'estudia pel signe de la segona derivada a ambdós costats.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat Mínim. La concavitat s'estudia pel signe de la segona derivada a banda i banda. f″(a)=0 només proposa un candidat; sense canvi de concavitat no hi ha inflexió. f″(a)>0 amb f′(a)=0 indica mínim local. Resultat comprovat: Mínim. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L05-01": {
+      "prompt": "Troba les dues arrels ordenades (x₁, x₂) de f(x)=x²−(4) i justifica els seus talls amb l'eix x. Selecciona la resposta EXACTA.",
+      "hint": "Estudia primer domini, zeros i límits abans d'usar els signes de derivades.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat (-2, 2). Estudia primer domini, zeros i límits abans d'usar els signes de derivades. Per a f(x)=1/(x−1), f′(x)=−1/(x−1)²<0 en cada tram. Resoldre x²−a²=0 dóna −a i a. Resultat comprovat: (-2, 2). Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L05-02": {
+      "prompt": "Per f(x)=x³−3x, troba l'ABSCISA del màxim local. Cal comprovar signe de f′ al voltant del crític. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Troba punts crítics i examina el signe de la primera derivada a banda i banda.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat -1. Troba punts crítics i examina el signe de la primera derivada a banda i banda. f′(a)=0 és necessari en extrems interiors derivables però no suficient; en intervals tancats compara també les fronteres. Resultat comprovat: -1. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L05-03": {
+      "prompt": "Per f(x)=1/(x−(1))+3, escriu l'equació EXACTA de la asímptota VERTICAL. Selecciona la resposta EXACTA.",
+      "hint": "Una asímptota vertical requereix límit lateral infinit, una horitzontal límit finit en infinit.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat x=1. Una asímptota vertical requereix límit lateral infinit, una horitzontal límit finit en infinit. Per obliqua y= mx +b comprova f(x)−( mx +b)→0, m≠0. Un factor cancel·lat amb límit finit produeix forat. Resultat comprovat: x=1. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L05-04": {
+      "prompt": "La funció f(x)=x³ compleix f″(x)=6x. Troba l'ABSCISA de la inflexió amb canvi de concavitat. Selecciona la resposta EXACTA.",
+      "hint": "La concavitat s'estudia pel signe de la segona derivada a ambdós costats.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 0. La concavitat s'estudia pel signe de la segona derivada a banda i banda. f″(a)=0 només proposa un candidat; sense canvi de concavitat no hi ha inflexió. f″(a)>0 amb f′(a)=0 indica mínim local. Resultat comprovat: 0. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L05-05": {
+      "prompt": "Per f(x)=1/(x−1) en el seu domini real x≠1, el signe de f′ en cada tram és Positiva o Negativa? Selecciona la resposta EXACTA.",
+      "hint": "Estudia primer domini, zeros i límits abans d'usar els signes de derivades.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat Negativa. Estudia primer domini, zeros i límits abans d'usar els signes de derivades. Per a f(x)=1/(x−1), f′(x)=−1/(x−1)²<0 en cada tram. Resoldre x²−a²=0 dóna −a i a. Resultat comprovat: Negativa. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L06-01": {
+      "prompt": "Un rectangle té perímetre total 20 m. Quina longitud en metres ha de tenir cada costat per a maximitzar la seva àrea? Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Escriu funció objectiu i restriccions del domini físic abans de derivar.",
+      "explanation": "Explicació pas a pas de la regla: Restringe les longituds i compara els extrems i crítics factibles: 5. Escriu funció objectiu i restriccions del domini físic abans de derivar. Rectangle de perímetre P: costats x i P/2−x, àrea x(P/2−x); el crític x=P/4 maximitza àrea P²/16. Resultat comprovat: 5. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L06-02": {
+      "prompt": "Un rectangle de perímetre 20 m s'optimitza entre formes rectangulars. Calcula l'àrea MÀXIMA en m². Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Escriu funció objectiu i restriccions del domini físic abans de derivar.",
+      "explanation": "Explicació pas a pas de la regla: Restringe les longituds i compara els extrems i crítics factibles: 25. Escriu funció objectiu i restriccions del domini físic abans de derivar. Rectangle de perímetre P: costats x i P/2−x, àrea x(P/2−x); el crític x=P/4 maximitza àrea P²/16. Resultat comprovat: 25. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L06-03": {
+      "prompt": "Per a f(x)=(x−(3))²+(4) en [0,5], calcula l'abscisa del mínim global factible. Escriu el resultat numèric exacte sense unitats.",
+      "hint": "Escriu funció objectiu i restriccions del domini físic abans de derivar.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 3. Escriu funció objectiu i restriccions del domini físic abans de derivar. Rectangle de perímetre P: costats x i P/2−x, àrea x(P/2−x); el crític x=P/4 maximitza àrea P²/16. Resultat comprovat: 3. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L06-04": {
+      "prompt": "Per a f(x)=(x−(3))²+(4) en [0,5], calcula el VALOR del mínim global factible. Selecciona la resposta EXACTA.",
+      "hint": "Escriu funció objectiu i restriccions del domini físic abans de derivar.",
+      "explanation": "Explicació pas a pas de la regla: Operació exacta segons les definicions i restriccions indicades, amb resultat 4. Escriu funció objectiu i restriccions del domini físic abans de derivar. Rectangle de perímetre P: costats x i P/2−x, àrea x(P/2−x); el crític x=P/4 maximitza àrea P²/16. Resultat comprovat: 4. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    },
+    "F3-B2C-F02-L06-05": {
+      "prompt": "Es va obtenir punt crític x=-1 per optimitzar sota restricció 0≤x≤5. És candidat FACTIBLE (Sí / No)? Selecciona la resposta EXACTA.",
+      "hint": "Escriu funció objectiu i restriccions del domini físic abans de derivar.",
+      "explanation": "Explicació pas a pas de la regla: Restringe les longituds i compara els extrems i crítics factibles: No. Escriu funció objectiu i restriccions del domini físic abans de derivar. Rectangle de perímetre P: costats x i P/2−x, àrea x(P/2−x); el crític x=P/4 maximitza àrea P²/16. Resultat comprovat: No. Revisa el domini, el límit bilateral, la regularitat, l'orientació dels signes, l'interval i les unitats abans d'interpretar el resultat."
+    }
+  }
+}

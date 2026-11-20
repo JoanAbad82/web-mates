@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2S-Q01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2s_q01.json": "138ce45aa38ebc9c9e34a3fb39c4f051b44c0da18c47c666883201f8e68121e8",
+    "data/f3_b2s_q01_exercises.json": "f607f30e49c3cfd090be7c125cd3c358e0fa7732f3af61ef0912d6fed9ec97dc"
+  },
+  "lessons": {
+    "B2S-Q01-L01": {
+      "title": "Successos compostos",
+      "objectives": [
+        "Calcular interseccions i unions sense confondre successos compatibles i incompatibles.",
+        "Interpretar experiments compostos mitjançant fraccions exactes."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a successos A i B, P(A∪B)=P(A)+P(B)−P(A∩B): si hi ha intersecció, sumar-la dues vegades és un error. Els successos incompatibles tenen intersecció buida; la independència és una altra propietat, P(A∩B)=P(A)P(B). En una extracció sense reemplaçament, les probabilitats canvien després del primer resultat i és necessari respectar l'ordre temporal. Un arbre ajuda a identificar rutes; les probabilitats de branques condicionades es multipliquen al llarg de cada ruta i se sumen entre rutes disjuntes."
+        },
+        {
+          "body": "En una urna amb 3 vermelles i 2 blaus, dues extraccions sense reemplaçament donen P(RR )=(3/5)(2/4)=3/10=0,30."
+        },
+        {
+          "body": "Si P(A)=0,6, P(B)=0,5 i P(A∩B)=0,2, llavors P(A∪B)=0,6+0,5−0,2=0,9. Sumar 1,1 seria comptar dues vegades la intersecció."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Successos compostos. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Successos compostos"
+          }
+        },
+        {
+          "body": "Són el mateix incompatibilitat i independència?||No. Si A i B incompatibles i tots dos de probabilitat positiva, no són independents."
+        },
+        {
+          "body": "Recuperació activa: Calcular interseccions i unions sense confondre successos compatibles i incompatibles. Dibuixa les dues etapes i determina si hi ha reemplaçament. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    },
+    "B2S-Q01-L02": {
+      "title": "Probabilitat condicionada",
+      "objectives": [
+        "Aplicar P(A|B)=P(A∩B)/P(B) amb P(B)>0.",
+        "Traduir denominadors d'una taula a la condició indicada."
+      ],
+      "content_blocks": [
+        {
+          "body": "Condicionar a B restringeix l'univers als casos en els quals ocorre B: P(A|B)=P(A∩B)/P(B), sempre que P(B)>0. Intercanviar A i B normalment canvia el denominador i la resposta. En una taula de recomptes, la proporció de A entre B divideix la cel·la d'intersecció entre el total de la columna o fila corresponent a B; mai entre el total general tret que es busqui probabilitat conjunta. La condició altera l'espai de referència, però no crea una direcció causal."
+        },
+        {
+          "body": "Entre 100 casos, 30 tenen B i 12 tenen també A. Llavors P(A|B)=12/30=0,40; P(A∩B)=12/100=0,12."
+        },
+        {
+          "body": "Si A= positiu i B= malaltia, P(A|B) és sensibilitat; no és P(B|A). La segona requereix prevalença i falsos positius."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Probabilitat condicionada. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Probabilitat condicionada"
+          }
+        },
+        {
+          "body": "Per què 12/100 no és P(A|B) si B va ocórrer en 30 casos?||Perquè s'ha de dividir entre els 30 amb B."
+        },
+        {
+          "body": "Recuperació activa: Aplicar P(A|B)=P(A∩B)/P(B) amb P(B)>0. La barra vertical el P(A|B) indica el denominador. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    },
+    "B2S-Q01-L03": {
+      "title": "Independència",
+      "objectives": [
+        "Comprovar independència amb productes de probabilitats.",
+        "Distingir independència d'incompatibilitat i d'associació causal."
+      ],
+      "content_blocks": [
+        {
+          "body": "A i B són independents quan P(A∩B)=P(A)P(B). Si P(B)>0, equival a P(A|B)=P(A). Aquesta és una propietat del model o de la distribució, no una conseqüència automàtica que dos esdeveniments tinguin noms diferents. Successos mútuament excloents amb probabilitats positives són dependents perquè la seva intersecció val zero i el seu producte és positiu. Una taula de freqüències aproximades no demostra independència de la població sense una anàlisi estadística adequada; aquí es raona sobre probabilitats sintètiques exactes."
+        },
+        {
+          "body": "Si P(A)=0,4 i P(B)=0,5, sota independència P(A∩B)=0,4×0,5=0,20. Es multipliquen probabilitats marginals perquè aquest supòsit s'ha declarat."
+        },
+        {
+          "body": "Si P(A)=0,4, P(B)=0,5 però P(A∩B)=0,10, no són independents: 0,10≠0,20. La discrepància permet rebutjar la igualtat definitòria."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Independència. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Independència"
+          }
+        },
+        {
+          "body": "Un esdeveniment impossible simultani amb un altre és independent si tots dos són possibles?||No: el producte positiu no coincideix amb la intersecció zero."
+        },
+        {
+          "body": "Recuperació activa: Comprovar independència amb productes de probabilitats. Independència és una igualtat comprovable, no una intuïció. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    },
+    "B2S-Q01-L04": {
+      "title": "Taules de contingència",
+      "objectives": [
+        "Llegir correctament taules de contingència 2×2.",
+        "Calcular probabilitats marginals, conjuntes i condicionades."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una taula de contingència organitza dues variables categòriques mitjançant quatre cel·les més les seves marginals. Per a P(A∩B) s'usa la cel·la entre el total general; per a P(A|B), la mateixa cel·la entre el total amb B; P(B|A), entre el total amb A. Les sumes de files i columnes han de concordar amb N. La taula permet comparar taxes, no provar que una variable causi l'altra. Amb recomptes sintètics, la lectura es pot verificar exactament sense arrodoniments."
+        },
+        {
+          "body": "Taula: 20 casos A∩B, 30 A∩ no B, 10 no A∩B i 40 no A∩ no B. N=100; P(A|B)=20/(20+10)=2/3."
+        },
+        {
+          "body": "A la mateixa taula, P(B|A)=20/(20+30)=0,40. No és el mateix que P(A|B)=2/3. El denominador canvia de 30 amb B a 50 amb A."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Taules de contingència. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Taules de contingència"
+          }
+        },
+        {
+          "body": "Quina diferència hi ha entre P(A|B) i P(B|A)?||Tenen normalment diferents denominadors: total B davant de total A."
+        },
+        {
+          "body": "Recuperació activa: Llegir correctament taules de contingència 2×2. Localitza la intersecció i dibuixa els totals marginals. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    },
+    "B2S-Q01-L05": {
+      "title": "Probabilitat total",
+      "objectives": [
+        "Aplica la probabilitat total sobre una partició exhaustiva.",
+        "Distingir probabilitat prèvia, condicional i resultat global."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si A i el seu complement formen una partició i les dades estan ben definides, P(B)=P(B|A)P(A)+P(B| no A)P(no A). Els pesos previs P(A), P(no A) sumen un i les condicionals estan entre zero i un. La suma no pot substituir-se per la mitjana aritmètica de condicionals si els grups tenen diferents mides. Un arbre presenta dues rutes disjuntes cap a B. Aquesta llei no necessita independència; precisament compara probabilitats condicionals diferents i prevalences conegudes."
+        },
+        {
+          "body": "Amb P(A)=0,2, P(B|A)=0,8 i P(B| no A)=0,1: P(B)=0,2×0,8+0,8×0,1=0,24. Les dues rutes cap a B són disjuntes."
+        },
+        {
+          "body": "Si els grups ocupen 90 % i 10 % de la població, no es pot fer una mitjana de sense ponderar les taxes 0,2 i 0,9: el total seria 0,9×0,2+0,1×0,9=0,27."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Probabilitat total. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Probabilitat total"
+          }
+        },
+        {
+          "body": "Es promedian sempre P(B|A) i P(B| no A) al 50 %?||Núm.; es ponderen per P(A) i P(no A)."
+        },
+        {
+          "body": "Recuperació activa: Aplica la probabilitat total sobre una partició exhaustiva. Enumera una partició que cobreixi tots els casos. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    },
+    "B2S-Q01-L06": {
+      "title": "Teorema de Bayes i probabilitat condicionada",
+      "objectives": [
+        "Obtenir P(A|B) a partir de prevalença i taxes condicionades.",
+        "Interpretar Bayes sense invertir indegudament les condicions."
+      ],
+      "content_blocks": [
+        {
+          "body": "Bayes inverteix una condició utilitzant probabilitats prèvies: P(A|B)=P(B|A)P(A)/P(B), sempre amb P(B)>0. El denominador P(B) es calcula per probabilitat total. Una prova amb sensibilitat elevada pot produir molts positius entre persones sense la condició si aquesta és poc freqüent. No es confonen sensibilitat, especificitat ni valor predictiu. Els nombres de l'exercici són simulacions matemàtiques, no consells mèdics ni estimacions de malalties reals."
+        },
+        {
+          "body": "Prevalença P(A)=0,01; sensibilitat P(+|A)=0,90; falsos positius P(+| no A)=0,10. P(+)=0,009+0,099=0,108; P(A|+)=0,009/0,108=1/12≈0,0833."
+        },
+        {
+          "body": "En 1000 casos ideals equivalents, s'esperen 9 veritables positius i 99 falsos positius; el valor predictiu positiu és 9/108=1/12, no 90 %."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Teorema de Bayes. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Teorema de Bayes i probabilitat condicionada"
+          }
+        },
+        {
+          "body": "Per què P(A|+) pot ser molt menor que P(+|A)?||Perquè intervenen la prevalença i els falsos positius de la població sense A."
+        },
+        {
+          "body": "Recuperació activa: Obtenir P(A|B) a partir de prevalença i taxes condicionades. Identifica l'esdeveniment que s'observa i el que es vol inferir. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2S-Q01-L01-01": {
+      "prompt": "Una urna té 3 boles vermelles i 2 blaves. S'extreuen dos sense reemplaçament. Halla P(vermella,vermella).",
+      "hint": "Dibuixa les dues etapes i determina si hi ha reemplaçament.",
+      "explanation": "P (RR )=(3/5)(2/4)=3/10=0,30."
+    },
+    "F3-B2S-Q01-L01-02": {
+      "prompt": "Si P(A)=0,6, P(B)=0,5 i P(A∩B)=0,2, troba P(A∪B).",
+      "hint": "Dibuixa les dues etapes i determina si hi ha reemplaçament.",
+      "explanation": "Càlcul: P(A∪B)=0,6+0,5−0,2=0,9."
+    },
+    "F3-B2S-Q01-L01-03": {
+      "prompt": "Amb 3 vermelles i 2 blaus, dues extraccions sense reemplaçament: P (primera vermella, segona blava).",
+      "hint": "Dibuixa les dues etapes i determina si hi ha reemplaçament.",
+      "explanation": "P ( RA )=(3/5)(2/4)=3/10."
+    },
+    "F3-B2S-Q01-L01-04": {
+      "prompt": "Dos successos tenen intersecció buida i probabilitats positives. Quin és correcte?",
+      "hint": "Dibuixa les dues etapes i determina si hi ha reemplaçament.",
+      "explanation": "Per a A i B positius, P(A)P(B)>0 mentre P(A∩B)=0."
+    },
+    "F3-B2S-Q01-L01-05": {
+      "prompt": "Quina operació correspon a dues etapes successives en una mateixa ruta?",
+      "hint": "Dibuixa les dues etapes i determina si hi ha reemplaçament.",
+      "explanation": "La regla del producte usa P(A∩B)=P(A)P(B|A)."
+    },
+    "F3-B2S-Q01-L02-01": {
+      "prompt": "Entre 100 casos sintètics, 30 compleixen B i 12 compleixen també A. Calcula P(A|B).",
+      "hint": "La barra vertical el P(A|B) indica el denominador.",
+      "explanation": "Càlcul: P(A|B)=12/30=0,40."
+    },
+    "F3-B2S-Q01-L02-02": {
+      "prompt": "En els mateixos 100 casos, 12 tenen A i B. Calcula P(A∩B).",
+      "hint": "La barra vertical el P(A|B) indica el denominador.",
+      "explanation": "La conjunta divideix la cel·la pel total general: 12/100."
+    },
+    "F3-B2S-Q01-L02-03": {
+      "prompt": "En una altra taula de 100, 40 compleixen A i 12 compleixen A∩B. Calcula P(B|A).",
+      "hint": "La barra vertical el P(A|B) indica el denominador.",
+      "explanation": "Càlcul: P(B|A)=12/40=0,30, no 12/100."
+    },
+    "F3-B2S-Q01-L02-04": {
+      "prompt": "Una taxa P(positiu | malaltia) és 0,9. Què es pot afirmar sobre P(malaltia | positiu)?",
+      "hint": "La barra vertical el P(A|B) indica el denominador.",
+      "explanation": "El denominador canvia en invertir la condició."
+    },
+    "F3-B2S-Q01-L02-05": {
+      "prompt": "Quin denominador s'usa per a P(A|B) en una taula?",
+      "hint": "La barra vertical el P(A|B) indica el denominador.",
+      "explanation": "La condició B defineix l'univers de referència."
+    },
+    "F3-B2S-Q01-L03-01": {
+      "prompt": "Si P(A)=0,4 i P(B)=0,5, sota independència calcula P(A∩B).",
+      "hint": "Independència és una igualtat comprovable, no una intuïció.",
+      "explanation": "Sota independència, P(A∩B)=0,4×0,5=0,20."
+    },
+    "F3-B2S-Q01-L03-02": {
+      "prompt": "Si P(A∩B)=0,2 i P(B)=0,5, calcula P(A|B).",
+      "hint": "Independència és una igualtat comprovable, no una intuïció.",
+      "explanation": "P(A|B)=0,2/0,5=0,4, igual a P(A) en el model independent."
+    },
+    "F3-B2S-Q01-L03-03": {
+      "prompt": "Si el producte P(A)P(B) val 0,2 i P(A∩B)=0,1, quant difereixen en valor absolut?",
+      "hint": "Independència és una igualtat comprovable, no una intuïció.",
+      "explanation": "|0,2−0,1|=0,1; no es compleix igualtat d'independència."
+    },
+    "F3-B2S-Q01-L03-04": {
+      "prompt": "Quin és el criteri matemàtic d'independència?",
+      "hint": "Independència és una igualtat comprovable, no una intuïció.",
+      "explanation": "La igualtat del producte defineix independència."
+    },
+    "F3-B2S-Q01-L03-05": {
+      "prompt": "Són independents dos esdeveniments incompatibles amb P(A)>0 i P(B)>0?",
+      "hint": "Independència és una igualtat comprovable, no una intuïció.",
+      "explanation": "Incompatibilitat positiva exclou independència."
+    },
+    "F3-B2S-Q01-L04-01": {
+      "prompt": "Taula 2×2: A∩B=20, no A∩B=10. Calcula P(A|B).",
+      "hint": "Localitza la intersecció i dibuixa els totals marginals.",
+      "explanation": "Total amb B=20+10=30; P(A|B)=20/30=2/3."
+    },
+    "F3-B2S-Q01-L04-02": {
+      "prompt": "A la mateixa taula, A∩B=20 i A∩no B=30. Calcula P(B|A).",
+      "hint": "Localitza la intersecció i dibuixa els totals marginals.",
+      "explanation": "Total amb A=20+30=50; P(B|A)=20/50=0,4."
+    },
+    "F3-B2S-Q01-L04-03": {
+      "prompt": "Taula de N=100 amb 20 casos A∩B. Calcula P(A∩B).",
+      "hint": "Localitza la intersecció i dibuixa els totals marginals.",
+      "explanation": "La probabilitat conjunta =20/100=0,20."
+    },
+    "F3-B2S-Q01-L04-04": {
+      "prompt": "Quin error ocorre en calcular P(A|B) dividint A∩B per N?",
+      "hint": "Localitza la intersecció i dibuixa els totals marginals.",
+      "explanation": "El conjunt utilitza N; la condicionada usa el total B."
+    },
+    "F3-B2S-Q01-L04-05": {
+      "prompt": "Si la suma de quatre cel·les 2×2 no coincideix amb el N informat, què fer?",
+      "hint": "Localitza la intersecció i dibuixa els totals marginals.",
+      "explanation": "La integritat de les taules és prerequisit."
+    },
+    "F3-B2S-Q01-L05-01": {
+      "prompt": "P(A)=0,2, P(B|A)=0,8 i P(B| no A)=0,1. Calcula P(B).",
+      "hint": "Enumera una partició que cobreixi tots els casos.",
+      "explanation": "Càlcul: P(B)=0,2×0,8+0,8×0,1=0,24."
+    },
+    "F3-B2S-Q01-L05-02": {
+      "prompt": "Amb pesos P(A)=0,9 i P(no A)=0,1, taxes de B de 0,2 i 0,9 respectivament, calcula P(B).",
+      "hint": "Enumera una partició que cobreixi tots els casos.",
+      "explanation": "Càlcul: P(B)=0,9×0,2+0,1×0,9=0,27."
+    },
+    "F3-B2S-Q01-L05-03": {
+      "prompt": "Si P(A)=0,2 i P(B|A)=0,8, calcula P(A∩B).",
+      "hint": "Enumera una partició que cobreixi tots els casos.",
+      "explanation": "La ruta conjunta té probabilitat 0,2×0,8=0,16."
+    },
+    "F3-B2S-Q01-L05-04": {
+      "prompt": "Quan és correcte fer una mitjana de 50 % dues taxes condicionades?",
+      "hint": "Enumera una partició que cobreixi tots els casos.",
+      "explanation": "Probabilitat total exigeix ponderar per P(A) i P(no A)."
+    },
+    "F3-B2S-Q01-L05-05": {
+      "prompt": "Exigeix independència la llei de la probabilitat total?",
+      "hint": "Enumera una partició que cobreixi tots els casos.",
+      "explanation": "No s'exigeix independència, sinó una partició i condicionals vàlides."
+    },
+    "F3-B2S-Q01-L06-01": {
+      "prompt": "Si P(A)=0,01, P(+|A)=0,90 i P(+| no A)=0,10, calcula P(+).",
+      "hint": "Identifica l'esdeveniment que s'observa i el que es vol inferir.",
+      "explanation": "Càlcul: P(+)=0,01×0,90+0,99×0,10=0,108."
+    },
+    "F3-B2S-Q01-L06-02": {
+      "prompt": "Amb les mateixes taxes, calcula P(A|+). Da decimal amb 4 xifres.",
+      "hint": "Identifica l'esdeveniment que s'observa i el que es vol inferir.",
+      "explanation": "P(A|+)=0,009/0,108=1/12≈0,0833; no és 0,90."
+    },
+    "F3-B2S-Q01-L06-03": {
+      "prompt": "Sota el mateix model, calcula P(no A|+). Da 4 decimals.",
+      "hint": "Identifica l'esdeveniment que s'observa i el que es vol inferir.",
+      "explanation": "La probabilitat P(no A|+)=0,099/0,108=11/12≈0,9167."
+    },
+    "F3-B2S-Q01-L06-04": {
+      "prompt": "Si una prova és molt sensible i la prevalença baixa, què és possible?",
+      "hint": "Identifica l'esdeveniment que s'observa i el que es vol inferir.",
+      "explanation": "Bayes incorpora taxa base i falsos positius."
+    },
+    "F3-B2S-Q01-L06-05": {
+      "prompt": "Què representa el denominador de Bayes en calcular P(A|B)?",
+      "hint": "Identifica l'esdeveniment que s'observa i el que es vol inferir.",
+      "explanation": "La probabilitat total normalitza les rutes que produeixen B."
+    }
+  }
+}

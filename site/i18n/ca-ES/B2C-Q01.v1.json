@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2C-Q01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2c_q01.json": "1f2da0f99275161f38d272717f6a092571f5cdf228047db91403da7d359aa671",
+    "data/f3_b2c_q01_exercises.json": "44f71c63dcc20b5253d25ec299b63c1370b6e027315a0e462d3022909938597c"
+  },
+  "lessons": {
+    "B2C-Q01-L01": {
+      "title": "Regles de probabilitat",
+      "objectives": [
+        "Aplica les regles de complement i unió amb interseccions explícites.",
+        "Comprovar probabilitats d'un espai equiprobable finit."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una probabilitat assigna a cada esdeveniment un valor entre zero i un; el total de l'espai és un. Per a A i B, P(A∪B)=P(A)+P(B)−P(A∩B), ja que la intersecció es compta dues vegades en sumar. El complement satisfà P(no A)=1−P(A). Els successos incompatibles tenen P(A∩B)=0. Independència no significa incompatibilitat: per a successos independents P(A∩B)=P(A)P(B). La regla de Laplace requereix resultats elementals equiprobables; en escenaris no equiprobables se sumen probabilitats reals de cada ruta."
+        },
+        {
+          "body": "Si P(A)=0,6, P(B)=0,5 i P(A∩B)=0,2, llavors P(A∪B)=0,6+0,5−0,2=0,9, no 1,1."
+        },
+        {
+          "body": "Amb dos daus ideals independents hi ha 36 parells equiprobables. Per al succés de suma set, sis parells serveixen i la probabilitat és 6/36=1/6."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Regles de probabilitat. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Regles de probabilitat"
+          }
+        },
+        {
+          "body": "Per què es resta P(A∩B) en trobar la unió?||Perquè la intersecció es va comptabilitzar dues vegades en sumar P(A)+P(B)."
+        },
+        {
+          "body": "Recuperació activa: Aplica les regles de complement i unió amb interseccions explícites. Distingeix unió, intersecció i complement abans de calcular. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2C-Q01-L02": {
+      "title": "Successos compostos",
+      "objectives": [
+        "Representar successos composts mitjançant arbres d'etapes.",
+        "Calcula les interseccions multiplicant probabilitats condicionades."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un succés compost reuneix diverses condicions o etapes de l'experiment. Per a dos esdeveniments A i B amb P(A)>0, P(A∩B)=P(A)P(B|A). En un arbre, les probabilitats condicionals de branques que surten del mateix node han de sumar-ne un. Les rutes disjuntes se sumen per trobar la probabilitat de l'esdeveniment d'interès. Sense reemplaçament, les probabilitats canvien després d'una extracció; amb reemplaçament i mescla apropiada poden romandre constants. Donar per suposada independència en extreure sense reemplaçament d'una urna petita produeix errors. Un arbre és un recurs de raonament, no una garantia que el model triat sigui realista."
+        },
+        {
+          "body": "Urna de 4 boles vermelles i 2 blaves: en dues extraccions sense reemplaçament, P(RR )=4/6×3/5=12/30=0,4."
+        },
+        {
+          "body": "Per a una vermella seguida de blava sense reemplaçament, P(RA )=4/6×2/5=8/30=4/15≈0,2667; en la segona etapa queden 5 boles, no 6."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Successos compostos. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Successos compostos"
+          }
+        },
+        {
+          "body": "Són les dues extraccions sense reemplaçament independents?||No: el resultat de la primera altera les proporcions de l'urna."
+        },
+        {
+          "body": "Recuperació activa: Representar successos compostos mitjançant arbres d'etapes. Traça les etapes i modifica el denominador després de cada extracció sense reemplaçament. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2C-Q01-L03": {
+      "title": "Condicionament",
+      "objectives": [
+        "Calcular P(A|B) a partir d'intersecció i base condicionant.",
+        "Evitar confondre condicionada i probabilitat conjunta."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per P(B)>0 es defineix P(A|B)=P(A∩B)/P(B). El succés després de la barra constitueix el nou univers de referència; ha de tenir probabilitat positiva. En una taula de freqüències, P(A|B) s'obté dividint la cel·la comuna A∩B entre el total de B, no entre el total de la mostra. Generalment P(A|B) i P(B|A) són diferents pels seus denominadors. Un canvi de condició no implica una relació causa-efecte. La lectura de les dades ha de separar recomptes exactes de probabilitats estimades per un mostreig amb incertesa."
+        },
+        {
+          "body": "En un model de 200 casos, 80 compleixen B i 24 compleixen tant A com B. Llavors P(A|B)=24/80=0,30, mentre P(A∩B)=24/200=0,12."
+        },
+        {
+          "body": "Si entre 200 casos 50 compleixen A i 24 A∩B, P(B|A)=24/50=0,48, diferent de P(A|B)=0,30."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Condicionament. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Condicionament"
+          }
+        },
+        {
+          "body": "Quin denominador usa P(B|A)?||Els casos amb A, a diferència de P(A|B), el denominador dels quals és B."
+        },
+        {
+          "body": "Recuperació activa: Calcular P(A|B) a partir d'intersecció i base condicionant. La lletra situada després de | indica el conjunt condicionant. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2C-Q01-L04": {
+      "title": "Independència",
+      "objectives": [
+        "Caracteritzar independència mitjançant producte de probabilitats.",
+        "Distingir dependència estadística, incompatibilitat i causalitat."
+      ],
+      "content_blocks": [
+        {
+          "body": "Dos successos són independents si P(A∩B)=P(A)P(B). Si P(B)>0, això equival a P(A|B)=P(A). Ser incompatibles significa que no poden ocórrer junts, i dos successos incompatibles de probabilitats positives no són independents. La igualtat de probabilitats marginals P(A)=P(B) no implica independència. En un conjunt de dades real, una igualtat aproximada de freqüències tampoc constitueix una prova universal d'independència poblacional: el mostreig i les seves incerteses requereixen anàlisi addicional. Independència és una afirmació matemàtica d'un model; no estableix causalitat entre successos."
+        },
+        {
+          "body": "Si P(A)=0,4 i P(B)=0,3 en un model independent, P(A∩B)=0,12. Si en un altre model la intersecció val 0,20, ja no hi ha independència."
+        },
+        {
+          "body": "Amb P(A)=0,4 i P(B)=0,3, successos incompatibles tenen intersecció 0, però el producte 0,12: per tant, no són independents."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Independència. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Independència"
+          }
+        },
+        {
+          "body": "Si dos successos tenen probabilitat positiva i no poden ocórrer junts són independents?||No: la intersecció val zero i el seu producte és positiu."
+        },
+        {
+          "body": "Recuperació activa: Caracteritzar independència mitjançant producte de probabilitats. Compara P(A∩B) amb P(A)P(B), no els seus noms. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2C-Q01-L05": {
+      "title": "Probabilitat total",
+      "objectives": [
+        "Aplica la llei de la probabilitat total a una partició vàlida.",
+        "Reconèixer que les taxes condicionades es promitgen amb pesos previs."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si A i no A formen una partició i es disposa de les seves probabilitats prèvies, la probabilitat total de B satisfà P(B)=P(B|A)P(A)+P(B| no A)P(no A). És imprescindible identificar els grups i que els seus pesos sumin un. No es promedian per igual dues taxes tret que els grups tinguin igual pes. En una partició de més de dos grups se sumen totes les rutes disjuntes. La fórmula no exigeix independència de A i B, sinó coherència de la partició i denominadors vàlids. La llei serveix com a denominador per a Bayes i evita confondre sensibilitat amb valor predictiu."
+        },
+        {
+          "body": "Si P(A)=0,30, P(B|A)=0,80 i P(B| no A)=0,20, P(B)=0,3×0,8+0,7×0,2=0,38."
+        },
+        {
+          "body": "Amb grups de grandàries relatives 0,9 i 0,1, i taxes de B 0,1 i 0,9, P(B)=0,9×0,1+0,1×0,9=0,18; la seva mitjana aritmètica 0,5 seria incorrecta."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Probabilitat total. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Probabilitat total"
+          }
+        },
+        {
+          "body": "Es pot promediar al 50 % taxes de grups de pesos 0,9 i 0,1?||No: es ponderen per les probabilitats de cada grup."
+        },
+        {
+          "body": "Recuperació activa: Aplica la llei de la probabilitat total a una partició vàlida. Identifica una partició exhaustiva i sense solapaments. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2C-Q01-L06": {
+      "title": "Teorema de Bayes i probabilitat condicionada",
+      "objectives": [
+        "Aplicar Bayes usant probabilitat total en el denominador.",
+        "Interpretar taxes base i distingir P(A|B) de P(B|A)."
+      ],
+      "content_blocks": [
+        {
+          "body": "El teorema de Bayes permet invertir una condició: P(A|B)=P(B|A)P(A)/P(B), per P(B)>0. El denominador P(B) es determina sumant totes les rutes que condueixen a B. Per això un senyal molt sensible pot tenir un valor predictiu relativament baix si l'esdeveniment buscat és rar i hi ha falsos positius. Els valors d'aquest exemple són matemàtics i sintètics, no indicadors sanitaris ni recomanacions diagnòstiques. Bayes no crea informació inexistent: exigeix probabilitats prèvies i taxes condicionals justificades. Han d'exposar-se denominadors, condicions i significat de cada succés."
+        },
+        {
+          "body": "En un model P(A)=0,02, P(+|A)=0,90 i P(+| no A)=0,10, P(+)=0,018+0,098=0,116, per la qual cosa P(A|+)=0,018/0,116=9/58≈0,1552."
+        },
+        {
+          "body": "En un model hipotètic equivalent de 5000 casos, hi hauria en mitjana 90 veritables positius i 490 falsos positius; entre 580 positius, 90/580=9/58 corresponen a A."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Teorema de Bayes. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Teorema de Bayes i probabilitat condicionada"
+          }
+        },
+        {
+          "body": "Pot P(A|+) ser molt menor que P(+|A)?||Sí: el denominador inclou falsos positius i la taxa prèvia P(A)."
+        },
+        {
+          "body": "Recuperació activa: Aplicar Bayes usant probabilitat total en el denominador. Separa la probabilitat prèvia de l'esdeveniment i la taxa de la prova. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2C-Q01-L01-01": {
+      "prompt": "Si P(A)=0,6, P(B)=0,5 i P(A∩B)=0,2, calcula P(A∪B).",
+      "hint": "Distingeix unió, intersecció i complement abans de calcular.",
+      "explanation": "P(A∪B)=0,6+0,5−0,2=0,9. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q01-L01-02": {
+      "prompt": "En el mateix model, calcula P(no A) quan P(A)=0,6.",
+      "hint": "Distingeix unió, intersecció i complement abans de calcular.",
+      "explanation": "P ( núm. A)=1−0,6=0,4. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q01-L01-03": {
+      "prompt": "Es llancen dos daus ideals independents. Probabilitat que la suma sigui 7? Decimal a 4 xifres.",
+      "hint": "Distingeix unió, intersecció i complement abans de calcular.",
+      "explanation": "Sis parelles de 36 donen suma 7, P=6/36=1/6≈0,1667."
+    },
+    "F3-B2C-Q01-L01-04": {
+      "prompt": "Per què es resta P(A∩B) en sumar una unió?",
+      "hint": "Distingeix unió, intersecció i complement abans de calcular.",
+      "explanation": "La identitat suma-resta evita comptar dues vegades la intersecció."
+    },
+    "F3-B2C-Q01-L01-05": {
+      "prompt": "Quina hipòtesi permet usar Laplace comptant casos favorables sobre possibles?",
+      "hint": "Distingeix unió, intersecció i complement abans de calcular.",
+      "explanation": "La regla de Laplace exigeix probabilitats elementals iguals."
+    },
+    "F3-B2C-Q01-L02-01": {
+      "prompt": "Urna amb 4 vermelles i 2 blaus. Dues extraccions sense reemplaçament: calcula P(RR).",
+      "hint": "Traça les etapes i modifica el denominador després de cada extracció sense reemplaçament.",
+      "explanation": "P (RR )=4/6×3/5=0,4. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q01-L02-02": {
+      "prompt": "En la mateixa urna, dues extraccions sense reemplaçament: P(vermella i després blau). Decimal a 4 xifres.",
+      "hint": "Traça les etapes i modifica el denominador després de cada extracció sense reemplaçament.",
+      "explanation": "4/6×2/5=4/15≈0,2667. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q01-L02-03": {
+      "prompt": "Amb 4 vermelles i 2 blaus, després d'extreure una vermella sense reemplaçament, calcula P(vermella segona | vermella primera).",
+      "hint": "Traça les etapes i modifica el denominador després de cada extracció sense reemplaçament.",
+      "explanation": "Després d'extreure vermella queden tres vermelles de cinc boles."
+    },
+    "F3-B2C-Q01-L02-04": {
+      "prompt": "En extreure dues boles sense reemplaçament d'una urna petita, els successos solen ser:",
+      "hint": "Traça les etapes i modifica el denominador després de cada extracció sense reemplaçament.",
+      "explanation": "Els denominadors de l'arbre s'actualitzen amb el resultat previ."
+    },
+    "F3-B2C-Q01-L02-05": {
+      "prompt": "Com es calcula la probabilitat d'un camí de l'arbre?",
+      "hint": "Traça les etapes i modifica el denominador després de cada extracció sense reemplaçament.",
+      "explanation": "P(A∩B)=P(A)P(B|A). El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q01-L03-01": {
+      "prompt": "En 200 casos hi ha 80 amb B i 24 amb A∩B. Calcula P(A|B).",
+      "hint": "La lletra situada després de | indica el conjunt condicionant.",
+      "explanation": "L'univers condicionat són els 80 amb B: 24/80=0,30."
+    },
+    "F3-B2C-Q01-L03-02": {
+      "prompt": "En 200 casos hi ha 24 A∩B. Calcula P(A∩B).",
+      "hint": "La lletra situada després de | indica el conjunt condicionant.",
+      "explanation": "La conjunta utilitza els 200 casos: 24/200=0,12."
+    },
+    "F3-B2C-Q01-L03-03": {
+      "prompt": "En 200 casos hi ha 50 amb A i 24 amb A∩B. Calcula P(B|A).",
+      "hint": "La lletra situada després de | indica el conjunt condicionant.",
+      "explanation": "P(B|A)=24/50=0,48, diferent de P(A|B). El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q01-L03-04": {
+      "prompt": "Què total serveix de denominador per a P(A|B)?",
+      "hint": "La lletra situada després de | indica el conjunt condicionant.",
+      "explanation": "La condició B defineix el nou univers de referència."
+    },
+    "F3-B2C-Q01-L03-05": {
+      "prompt": "Quina diferència hi ha entre P(A|B) i P(B|A)?",
+      "hint": "La lletra situada després de | indica el conjunt condicionant.",
+      "explanation": "La inversió requereix la regla de Bayes amb taxes prèvies."
+    },
+    "F3-B2C-Q01-L04-01": {
+      "prompt": "Per P(A)=0,4 i P(B)=0,3 independents, calcula P(A∩B).",
+      "hint": "Compara P(A∩B) amb P(A)P(B), no els seus noms.",
+      "explanation": "0,4×0,3=0,12 si són independents. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q01-L04-02": {
+      "prompt": "Si P(A∩B)=0,12 i P(B)=0,3, calcula P(A|B).",
+      "hint": "Compara P(A∩B) amb P(A)P(B), no els seus noms.",
+      "explanation": "0,12/0,3=0,4; coincideix amb P(A) en independència."
+    },
+    "F3-B2C-Q01-L04-03": {
+      "prompt": "Producte P(A)P(B)=0,12, intersecció observada en un altre model =0,20. Diferència absoluta?",
+      "hint": "Compara P(A∩B) amb P(A)P(B), no els seus noms.",
+      "explanation": "|0,12−0,20|=0,08, per tant no hi ha igualtat d'independència."
+    },
+    "F3-B2C-Q01-L04-04": {
+      "prompt": "Quina igualtat defineix independència entre A i B?",
+      "hint": "Compara P(A∩B) amb P(A)P(B), no els seus noms.",
+      "explanation": "La igualtat del producte és criteri matemàtic d'independència."
+    },
+    "F3-B2C-Q01-L04-05": {
+      "prompt": "Són independents dos successos incompatibles de probabilitat positiva?",
+      "hint": "Compara P(A∩B) amb P(A)P(B), no els seus noms.",
+      "explanation": "Incompatibilitat amb esdeveniments positius contradiu P(A∩B)=P(A)P(B)."
+    },
+    "F3-B2C-Q01-L05-01": {
+      "prompt": "P(A)=0,30, P(B|A)=0,80, P(B| no A)=0,20. Calcula P(B).",
+      "hint": "Identifica una partició exhaustiva i sense solapaments.",
+      "explanation": "0,3×0,8+0,7×0,2=0,38. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q01-L05-02": {
+      "prompt": "En el mateix model calcula P(A∩B).",
+      "hint": "Identifica una partició exhaustiva i sense solapaments.",
+      "explanation": "0,3×0,8=0,24. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q01-L05-03": {
+      "prompt": "Grups de pesos 0,9 i 0,1, amb taxes 0,1 i 0,9. Calcula P(B) total.",
+      "hint": "Identifica una partició exhaustiva i sense solapaments.",
+      "explanation": "0,9×0,1+0,1×0,9=0,18, no la mitjana 0,5. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q01-L05-04": {
+      "prompt": "Exigeix independència la fórmula de probabilitat total?",
+      "hint": "Identifica una partició exhaustiva i sense solapaments.",
+      "explanation": "Permet sumar rutes disjuntes ponderant els grups."
+    },
+    "F3-B2C-Q01-L05-05": {
+      "prompt": "Quin error suposa fer una mitjana de taxes de dos grups amb pesos 0,9 i 0,1 al 50 %?",
+      "hint": "Identifica una partició exhaustiva i sense solapaments.",
+      "explanation": "La mitjana correcta usa els pesos 0,9 i 0,1."
+    },
+    "F3-B2C-Q01-L06-01": {
+      "prompt": "P(A)=0,02, P(+|A)=0,90, P(+| no A)=0,10. Calcula P(+).",
+      "hint": "Separa la probabilitat prèvia de l'esdeveniment i la taxa de la prova.",
+      "explanation": "P(+)=0,02×0,90+0,98×0,10=0,116. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q01-L06-02": {
+      "prompt": "Al mateix model, calcula P(A|+). Decimal arrodonit a 4 xifres.",
+      "hint": "Separa la probabilitat prèvia de l'esdeveniment i la taxa de la prova.",
+      "explanation": "P(A|+)=0,018/0,116=9/58≈0,1552. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q01-L06-03": {
+      "prompt": "Amb aquestes taxes, calcula P(no A|+). Decimal a 4 xifres.",
+      "hint": "Separa la probabilitat prèvia de l'esdeveniment i la taxa de la prova.",
+      "explanation": "P ( núm. A|+)=0,098/0,116=49/58≈0,8448. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q01-L06-04": {
+      "prompt": "Per què P(A|+) pot ser menor que P(+|A)?",
+      "hint": "Separa la probabilitat prèvia de l'esdeveniment i la taxa de la prova.",
+      "explanation": "Una taxa prèvia petita pot reduir el valor predictiu positiu."
+    },
+    "F3-B2C-Q01-L06-05": {
+      "prompt": "A Bayes, què representa P(B) en P(A|B)=P(B|A)P(A)/P(B)?",
+      "hint": "Separa la probabilitat prèvia de l'esdeveniment i la taxa de la prova.",
+      "explanation": "La probabilitat total actua com a denominador normalitzador."
+    }
+  }
+}

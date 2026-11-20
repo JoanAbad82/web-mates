@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1S-P01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1s_p01.json": "0e709beb36cfef9fee1ddbacf97a3358eb7537bf79420dee04fa153e8561be30",
+    "data/f3_b1s_p01_exercises.json": "d1875e464fc5e7e39a3b263fd1db4195ff28edc2138ac3293f9205d68b6cbdf7"
+  },
+  "lessons": {
+    "B1S-P01-L01": {
+      "title": "Percentatges encadenats",
+      "objectives": [
+        "Composar taxes percentuals consecutives utilitzant factors i no sumes.",
+        "Interpretar variació neta i canvis respecte de la base inicial."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un percentatge relatiu d'augment r s'aplica multiplicant la magnitud inicial per 1+r quan r s'expressa en decimal. Una disminució de percentatge d multiplica per 1−d. Els canvis encadenats es componen multiplicant factors, de manera que un augment de 10 % seguit d'una reducció del 10 % condueix a 1,10×0,90=0,99, una pèrdua neta del 1 %, no a zero. L'ordenació de percentatges amb factor constant és commutativa matemàticament, però cada pas es calcula sobre la base actual, no l'original. Cal distingir una variació relativa de punts percentuals: pujar una taxa del 5 % al 7 % és +2 punts, equivalents a +40 % respecte a 5 %. Els imports usats són exemples sintètics, no preus actuals ni assessorament financer."
+        },
+        {
+          "body": "Un preu sintètic de 100 € puja 10 % i després baixa 10 %: 100×1,10×0,90=99 €. La variació neta és −1 €, és a dir −1 %."
+        },
+        {
+          "body": "Un índex de 100 augmenta 20 % i després 10 %: 100×1,20×1,10=132; l'increment net és 32 %, no 30 %."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Percentatges encadenats. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Percentatges encadenats"
+          }
+        },
+        {
+          "body": "Pujar 10 % i després baixar 10 % deixa exactament el preu inicial?||No; Els percentatges s'apliquen sobre bases diferents."
+        },
+        {
+          "body": "Recuperació activa: Composar taxes percentuals consecutives utilitzant factors i no sumes. Transforma cada percentatge en un factor multiplicatiu. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B1S-P01-L02": {
+      "title": "Capitalització simple",
+      "objectives": [
+        "Distingir interès simple i capital final amb períodes i tipus consistents.",
+        "Desplaçar temps o interès sota capitalització lineal i sense despeses."
+      ],
+      "content_blocks": [
+        {
+          "body": "En el model d'interès simple, l'interès meritat en t períodes és I=C₀ rt i el capital final C_ t=C₀(1+ rt), on el tipus r correspon al mateix període que t. És un model lineal: els interessos no generen nous interessos durant el termini. Per exemple, amb 1000 € inicials, 5 % anual i 3 anys, l'interès és 150 € i la suma 1150 €. Aquests càlculs suposen tipus fix, absència de comissions, impostos i fluxos intermedis; no són estimacions d'ofertes reals. Si la durada està expressada en mesos i r és anual, cal establir convenció temporal abans d'usar t/12. L'interès simple pot descriure operacions comercials acotades, però no s'ha de confondre amb capitalització composta."
+        },
+        {
+          "body": "Per C₀=1000 €, r=0,05 anual i t=3 anys, I=1000×0,05×3=150 € i capital final C_ t=1150 €."
+        },
+        {
+          "body": "Amb C₀=1000 €, r=0,05 anual i objectiu de 200 € d'interès simple, t=200/(1000×0,05)=4 anys exactes sota el model."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Capitalització simple. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Capitalització simple"
+          }
+        },
+        {
+          "body": "Els interessos d'un any generen interessos nous sota el model simple?||No, la base continua sent el capital inicial."
+        },
+        {
+          "body": "Recuperació activa: Distingir interès simple i capital final amb períodes i tipus consistents. Comprova que tipus i nombre de períodes usin la mateixa unitat temporal. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B1S-P01-L03": {
+      "title": "Capitalització composta",
+      "objectives": [
+        "Calcular munts d'interès compost mitjançant potències de factors periòdics.",
+        "Comparar interès compost i simple amb supòsits homogenis."
+      ],
+      "content_blocks": [
+        {
+          "body": "La capitalització composta reinverteix l'interès de cada període, per la qual cosa C_ n=C₀(1+i)^n per a un tipus efectiu periòdic i i n períodes, suposant que no hi ha aportacions, retirades, costos ni canvis de tipus. Per a 1000 € al 5 % anual durant 2 anys s'obté 1102,50 €, enfront de 1100 € en simple; la diferència es deu a l'interès sobre interessos del primer any. La taxa ha de correspondre a la unitat del període: no es pot usar una taxa anual directament com si fos mensual. Per a períodes fraccionaris cal aclarir convenció; aquí n és enter no negatiu. L'expressió exponencial descriu un supòsit matemàtic, no garanteix rendibilitat, absència de risc ni disponibilitat de productes comercials."
+        },
+        {
+          "body": "Amb 1000 € i tipus efectiu anual del 5 %, C₂=1000(1,05)²=1102,50 €, així que l'interès acumulat és 102,50 €."
+        },
+        {
+          "body": "A igual tipus i 2 anys, en simple C₂=1000(1+2×0,05)=1100 €; la diferència és 2,50 € perquè es reinverteix l'interès previ."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Capitalització composta. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Capitalització composta"
+          }
+        },
+        {
+          "body": "L'interès compost garanteix una rendibilitat positiva real?||No: és un model; inflació, risc i costos poden canviar el resultat real."
+        },
+        {
+          "body": "Recuperació activa: Calcular munts d'interès compost mitjançant potències de factors periòdics. Identifica el tipus periòdic efectiu i la freqüència de capitalització. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B1S-P01-L04": {
+      "title": "TAE i tipus com a lectura crítica",
+      "objectives": [
+        "Distingir tipus nominal, tipus efectiu periòdic i taxa anual equivalent sota condicions explícites.",
+        "Interpretar críticament l'efecte de freqüència de capitalització, comissions i despeses a la TAE."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si un interès nominal anual j es capitalitza m vegades a l'any amb repartiment periòdic proporcional i sense altres costos, el tipus periòdic és i=j/m i l'efectiu anual és (1+j/m)^m−1. Així, j=12 % convertible mensualment produeix (1,01)^12−1≈12,6825 % efectiu anual. Aquesta taxa equivalent per capitalització no constitueix necessàriament la TAE legal d'un préstec o dipòsit: la TAE publicada pot incloure despeses i fluxos definits per regulació, i requereix dades que aquí no s'aporten. Tampoc representa el tipus d'inflació ni garanteix rendibilitat real. La freqüència de liquidació importa fins i tot amb j nominal idèntic. Quan es comparen productes reals cal comprovar condicions, imports, terminis i tots els costos; els exemples són sintètics i només per a aprenentatge matemàtic."
+        },
+        {
+          "body": "Per j=12 % anual nominal i m=12, i=j/m=1 % mensual, i efectiu anual =(1,01)^12−1≈0,126825=12,6825 %."
+        },
+        {
+          "body": "Amb j=6 % nominal anual i dues capitalitzacions, tipus semestral 3 %; efectiu anual =(1,03)²−1=0,0609=6,09 %."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "TAE i tipus com a lectura crítica. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "TAE i tipus com a lectura crítica"
+          }
+        },
+        {
+          "body": "El tipus efectiu per capitalització calculat sense despeses és sempre la TAE contractual?||No: poden existir costos i convencions que canvien la TAE regulada."
+        },
+        {
+          "body": "Recuperació activa: Distingir tipus nominal, tipus efectiu periòdic i taxa anual equivalent sota condicions explícites. Distingeix nominal anual, periòdic efectiu i anual efectiu abans d'operar. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B1S-P01-L05": {
+      "title": "Quotes i préstecs",
+      "objectives": [
+        "Calcular la quota fixa d'un préstec d'anualitat vençuda sota tipus i períodes establerts.",
+        "Separar interès del període, amortització i saldo pendent sense confondre'ls."
+      ],
+      "content_blocks": [
+        {
+          "body": "En un préstec amortitzat mitjançant n quotes iguals vençudes i tipus efectiu per període i>0, sense comissions, assegurances ni pagaments extres, la quota A=P·i/[1−(1+i)^(−n)]. Per a i=0, la quota es calcula per continuïtat com P/n. La quota inclou interès del període calculat sobre el saldo viu i devolució de principal; no tot el pagament redueix deute. Amb P=1200 €, i=10 % anual i dos pagaments al final de cada any, A≈691,4286 €, el primer interès és 120 € i l'amortització de principal de la primera quota ≈571,4286 €. El saldo després d'aquesta quota és ≈628,5714 €. Els cèntims exigeixen una política d'arrodoniment real que pot ajustar l'última quota; aquests valors es mostren sense costos i amb precisió interna superior a dos decimals. No és una recomanació de finançament."
+        },
+        {
+          "body": "Amb principal 1200 €, tipus 10 % anual i dos pagaments vençuts, A=1200×0,10/[1−1/(1,1)²]≈691,4286 € per any."
+        },
+        {
+          "body": "Primera quota: interès 1200×0,10=120 €, amortització 691,4286−120≈571,4286 € i saldo restant ≈628,5714 €."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Quotes i préstecs. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Quotes i préstecs"
+          }
+        },
+        {
+          "body": "La quota d'un préstec equival íntegrament a amortització de principal?||No; part paga interessos del període."
+        },
+        {
+          "body": "Recuperació activa: Calcular la quota fixa d'un préstec d'anualitat vençuda sota tipus i períodes establerts. Comprova que el tipus i la freqüència de pagament corresponguin. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B1S-P01-L06": {
+      "title": "Inflació i variació de preus",
+      "objectives": [
+        "Calcular índexs de preus i interpretar inflació acumulada.",
+        "Distingir rendiment o salari nominal de variació real del poder adquisitiu."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un índex de preus amb base 100 multiplicat per 1+π reflecteix una variació de preus π en un període. La inflació acumulada de dos períodes amb taxes 3 % i 2 % no s'hi suma: el factor total és 1,03×1,02=1,0506, o augment del 5,06 %. Per comparar canvis nominals de diners i preus es calcula el factor real (1+r _nominal )/(1+π)−1 sempre que 1+π>0. Si els ingressos nominals pugen 5 % i els preus 3 %, la variació real és aproximadament 1,9417 %, no 2 % exacte. L'índex no descriu per si sol la cistella personal de cada llar i la inflació observada depèn de l'indicador i període triats. Aquí les xifres són completament sintètiques i no són estadístiques d'actualitat."
+        },
+        {
+          "body": "Un índex base 100 augmenta 3 % i després 2 %: 100×1,03×1,02=105,06, una inflació acumulada de 5,06 %."
+        },
+        {
+          "body": "Si l'ingrés nominal puja 5 % i l'índex de preus 3 %, el canvi real =(1,05/1,03)−1≈0,0194175, és a dir 1,94175 %."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Inflació i variació de preus. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Inflació i variació de preus"
+          }
+        },
+        {
+          "body": "Una pujada nominal de 5 % amb inflació 3 % implica necessàriament 2 % real exacte?||No; el factor real és 1,05/1,03 i dóna ≈1,94175 %."
+        },
+        {
+          "body": "Recuperació activa: Calcular índexs de preus i interpretar inflació acumulada. Encadena factors de preus com a multiplicacions i assenyala el període basi. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1S-P01-L01-01": {
+      "prompt": "Preu sintètic 100 €: puja 10 % i baixa 10 %. Import final en euros?",
+      "hint": "Transforma cada percentatge en un factor multiplicatiu.",
+      "explanation": "Els factors són 1,10 i 0,90: 100×1,10×0,90=99 €."
+    },
+    "F3-B1S-P01-L01-02": {
+      "prompt": "Preu 100 € després de +10 % i −10 %: variació neta percentual amb signe?",
+      "hint": "Transforma cada percentatge en un factor multiplicatiu.",
+      "explanation": "Factor total 0,99; canvi percentual (0,99−1)×100=−1 %."
+    },
+    "F3-B1S-P01-L01-03": {
+      "prompt": "Índex 100 després de pujades successives de 20 % i 10 %: augment total en %?",
+      "hint": "Transforma cada percentatge en un factor multiplicatiu.",
+      "explanation": "1,20×1,10=1,32, per tant augment del 32 %."
+    },
+    "F3-B1S-P01-L01-04": {
+      "prompt": "Per què +10 % i després −10 % no s'anul·len?",
+      "hint": "Transforma cada percentatge en un factor multiplicatiu.",
+      "explanation": "Les variacions compostes es multipliquen mitjançant factors, no se sumen."
+    },
+    "F3-B1S-P01-L01-05": {
+      "prompt": "Una taxa passa del 5 % al 7 %. Quina és la descripció inequívoca de la diferència?",
+      "hint": "Transforma cada percentatge en un factor multiplicatiu.",
+      "explanation": "Els punts percentuals són diferència de taxes; la variació relativa usa quocient 2/5."
+    },
+    "F3-B1S-P01-L02-01": {
+      "prompt": "Interès simple: 1000 € al 5 % anual durant 3 anys. Capital final?",
+      "hint": "Comprova que tipus i nombre de períodes usin la mateixa unitat temporal.",
+      "explanation": "Capital final 1000(1+0,05×3)=1150 € sense costos."
+    },
+    "F3-B1S-P01-L02-02": {
+      "prompt": "Interès simple: capital 1000 €, 5 % anual, 3 anys. Interessos guanyats?",
+      "hint": "Comprova que tipus i nombre de períodes usin la mateixa unitat temporal.",
+      "explanation": "I=C₀ rt =1000×0,05×3=150 €. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1S-P01-L02-03": {
+      "prompt": "En interès simple, 1000 € al 5 % anual produeixen 200 € d'interès. Anys?",
+      "hint": "Comprova que tipus i nombre de períodes usin la mateixa unitat temporal.",
+      "explanation": "t=I/(C₀r)=200/(1000×0,05)=4 anys. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1S-P01-L02-04": {
+      "prompt": "Què distingeix l'interès simple del compost?",
+      "hint": "Comprova que tipus i nombre de períodes usin la mateixa unitat temporal.",
+      "explanation": "L'interès simple calcula cada període sobre el capital inicial fix."
+    },
+    "F3-B1S-P01-L02-05": {
+      "prompt": "Si el tipus és anual i el període està en mesos, què s'ha de fer?",
+      "hint": "Comprova que tipus i nombre de períodes usin la mateixa unitat temporal.",
+      "explanation": "La fórmula C₀ rt exigeix unitats de període consistents."
+    },
+    "F3-B1S-P01-L03-01": {
+      "prompt": "Interès compost: 1000 €, 5 % efectiu anual durant 2 anys. Quin és el capital final?",
+      "hint": "Identifica el tipus periòdic efectiu i la freqüència de capitalització.",
+      "explanation": "1000×(1,05)²=1102,50 €. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1S-P01-L03-02": {
+      "prompt": "Compost: 1000 €, 5 % anual, 2 anys. Interès acumulat?",
+      "hint": "Identifica el tipus periòdic efectiu i la freqüència de capitalització.",
+      "explanation": "1102,50−1000=102,50 €. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1S-P01-L03-03": {
+      "prompt": "1000 €, 5 % anual, 2 anys: Diferència de munt compost menys simple?",
+      "hint": "Identifica el tipus periòdic efectiu i la freqüència de capitalització.",
+      "explanation": "Compost 1102,50 €; simple 1100 €; diferència 2,50 €."
+    },
+    "F3-B1S-P01-L03-04": {
+      "prompt": "Quin supòsit està incorporat al model de capitalització composta sense fluxos?",
+      "hint": "Identifica el tipus periòdic efectiu i la freqüència de capitalització.",
+      "explanation": "Cada període acumula sobre capital i rendiments previs."
+    },
+    "F3-B1S-P01-L03-05": {
+      "prompt": "Per a aplicar C_ n=C₀(1+i)^n correctament, què s'ha de verificar?",
+      "hint": "Identifica el tipus periòdic efectiu i la freqüència de capitalització.",
+      "explanation": "La consistència temporal del tipus efectiu i el termini és imprescindible."
+    },
+    "F3-B1S-P01-L04-01": {
+      "prompt": "Nominal anual 12 % convertible mensualment, sense despeses: efectiu anual en %, quatre decimals?",
+      "hint": "Distingeix nominal anual, periòdic efectiu i anual efectiu abans d'operar.",
+      "explanation": "[(1+0,12/12)^12−1]×100≈12,682503 %; arrodoneix 12,6825."
+    },
+    "F3-B1S-P01-L04-02": {
+      "prompt": "Nominal anual 6 % convertible semestralment, sense despeses: efectiu anual en %?",
+      "hint": "Distingeix nominal anual, periòdic efectiu i anual efectiu abans d'operar.",
+      "explanation": "[(1+0,06/2)²−1]×100=6,09 %. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1S-P01-L04-03": {
+      "prompt": "Nominal anual 12 % convertible mensualment: tipus per mes en %?",
+      "hint": "Distingeix nominal anual, periòdic efectiu i anual efectiu abans d'operar.",
+      "explanation": "El tipus mensual proporcional és (0,12/12)×100=1 %."
+    },
+    "F3-B1S-P01-L04-04": {
+      "prompt": "Un tipus efectiu anual calculat sense despeses coincideix necessàriament amb la TAE contractual?",
+      "hint": "Distingeix nominal anual, periòdic efectiu i anual efectiu abans d'operar.",
+      "explanation": "L'equivalència matemàtica sense costos no permet inferir una TAE regulada real."
+    },
+    "F3-B1S-P01-L04-05": {
+      "prompt": "Amb capitalització mensual i nominal j, quin tipus periòdic s'usa en el model sense despeses?",
+      "hint": "Distingeix nominal anual, periòdic efectiu i anual efectiu abans d'operar.",
+      "explanation": "La nominal es distribueix per nombre de capitalitzacions en aquest conveni."
+    },
+    "F3-B1S-P01-L05-01": {
+      "prompt": "Préstec 1200 €, tipus efectiu anual 10 %, 2 quotes anuals vençudes. Quota matemàtica a 4 decimals?",
+      "hint": "Comprova que el tipus i la freqüència de pagament corresponguin.",
+      "explanation": "A=1200×0,10/[1−(1,10)^−2]≈691,428571 €. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1S-P01-L05-02": {
+      "prompt": "Préstec 1200 € al 10 % anual, abans de primera quota: interès del primer any?",
+      "hint": "Comprova que el tipus i la freqüència de pagament corresponguin.",
+      "explanation": "El saldo inicial 1200 € genera 1200×0,10=120 € d'interès."
+    },
+    "F3-B1S-P01-L05-03": {
+      "prompt": "Préstec 1200 €, tipus 10 %, 2 pagaments vençuts. Saldo després de primera quota, a quatre decimals?",
+      "hint": "Comprova que el tipus i la freqüència de pagament corresponguin.",
+      "explanation": "Saldo =1200+120−691,428571≈628,571429 €. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1S-P01-L05-04": {
+      "prompt": "Què inclou una quota fixa d'amortització amb tipus positiu?",
+      "hint": "Comprova que el tipus i la freqüència de pagament corresponguin.",
+      "explanation": "Amortització de principal = quota − interès meritat del període."
+    },
+    "F3-B1S-P01-L05-05": {
+      "prompt": "Quina limitació té calcular quotes exactes amb decimals indefinits?",
+      "hint": "Comprova que el tipus i la freqüència de pagament corresponguin.",
+      "explanation": "La política d'arrodoniment afecta saldos i última quota, però no l'estructura del model."
+    },
+    "F3-B1S-P01-L06-01": {
+      "prompt": "Índex 100 després d'inflació de 3 % i després 2 %. Índex final?",
+      "hint": "Encadena factors de preus com a multiplicacions i assenyala el període basi.",
+      "explanation": "100×1,03×1,02=105,06. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1S-P01-L06-02": {
+      "prompt": "Ingrés puja 5 % i preus 3 %. Canvi real percentual a quatre decimals?",
+      "hint": "Encadena factors de preus com a multiplicacions i assenyala el període basi.",
+      "explanation": "[(1,05/1,03)−1]×100≈1,94174757 %. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B1S-P01-L06-03": {
+      "prompt": "Inflació encadenada de 3 % i 2 %. Inflació acumulada percentual?",
+      "hint": "Encadena factors de preus com a multiplicacions i assenyala el període basi.",
+      "explanation": "Factor 1,03×1,02=1,0506; la pujada acumulada és 5,06 %."
+    },
+    "F3-B1S-P01-L06-04": {
+      "prompt": "Com comparar un augment nominal d'ingressos amb l'augment de preus?",
+      "hint": "Encadena factors de preus com a multiplicacions i assenyala el període basi.",
+      "explanation": "Canvi real =(1+r)/(1+π)−1, una relació exacta sota l'índex suposat."
+    },
+    "F3-B1S-P01-L06-05": {
+      "prompt": "Quina limitació té un índex general de preus per a cada llar?",
+      "hint": "Encadena factors de preus com a multiplicacions i assenyala el període basi.",
+      "explanation": "La composició de la despesa personal pot diferir de la cistella estadística de l'índex."
+    }
+  }
+}

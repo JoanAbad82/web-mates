@@ -1,0 +1,295 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E3-A03",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e3_a03.json": "9f79581b639a23919f9a198243d3213136e8b406ee004caf817f2fa58a563ad6",
+    "data/f3_e3_a03_exercises.json": "d66fb06c546b47cbd478b61fcc5f8c9c1320598234fc2e40c649bbfb35b6656d"
+  },
+  "lessons": {
+    "E3-A03-L01": {
+      "title": "Desigualtats i les seves propietats",
+      "objectives": [
+        "Interpretar desigualtats i distingir signes estrictes o inclusius.",
+        "Predir el canvi de sentit en multiplicar per un nombre negatiu."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una desigualtat compara valors: < y > exclouen la igualtat; ≤ y ≥ l'admeten. Sumar o restar el mateix conserva el seu sentit. Multiplicar o dividir per un nombre negatiu obliga a invertir el signe de comparació. És important justificar-ho amb un exemple numèric i no aplicar-lo quan el factor és positiu."
+        },
+        {
+          "body": "De 2<5 s'obté −2>−5 en multiplicar per −1: el signe s'inverteix per conservar una afirmació veritable."
+        },
+        {
+          "body": "Si x≤4, llavors x+3≤7; sumar tres a banda i banda conserva el sentit de la desigualtat."
+        },
+        {
+          "body": "Recta numèrica proposada: x<4 inclou tots els punts a l'esquerra de 4 sense incloure l'extrem 4.",
+          "alt": "Recta numèrica proposada: x<4 inclou tots els punts a l'esquerra de 4 sense incloure l'extrem 4.",
+          "visual_spec": {
+            "title": "Representació d'un conjunt de solucions en la recta numèrica"
+          }
+        },
+        {
+          "body": "Per què en −2x<6, en dividir per −2, s'obté x>−3?||Perquè dividir una desigualtat per un nombre negatiu inverteix el seu sentit; es pot comprovar amb valors a cada costat del límit."
+        },
+        {
+          "body": "Sumar / restar conserva el signe; multiplicar / dividir per negatiu l'inverteix. Un extrem estricte s'exclou."
+        }
+      ]
+    },
+    "E3-A03-L02": {
+      "title": "Inequacions lineals",
+      "objectives": [
+        "Resol inequacions lineals d'una variable.",
+        "Comprovar valors dins i fora de la solució i tractar correctament els signes negatius."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una inequació té normalment un conjunt de solucions. Per a resoldre-la, simplifica tots dos membres conservant l'equivalència; multiplicar o dividir per un negatiu inverteix el signe. Verifica amb almenys un valor que satisfà i un altre que no satisfà la desigualtat original."
+        },
+        {
+          "body": "3x+2<11 → 3x<9 → x<3. x=2 sí que compleix (8<11); x=4 no compleix (14<11 és fals)."
+        },
+        {
+          "body": "−2x+4≥10 → −2x≥6 → x≤−3 en dividir per −2 i invertir el signe. x=−4 compleix: 12≥10."
+        },
+        {
+          "body": "Gràfica: el conjunt x<3 inclou nombres menors que 3, però no el 3. La vora queda oberta.",
+          "alt": "Gràfica: el conjunt x<3 inclou nombres menors que 3, però no el 3. La vora queda oberta.",
+          "visual_spec": {
+            "title": "Representació d'un conjunt de solucions en la recta numèrica"
+          }
+        },
+        {
+          "body": "La resposta de 2x>6 és un sol nombre x=3?||No; és el conjunt x>3. El 3 queda exclòs i qualsevol valor major compleix."
+        },
+        {
+          "body": "Aïlla x, inverteix en operar amb negatius, marca límit inclòs / exclòs i contrasta dos valors."
+        }
+      ]
+    },
+    "E3-A03-L03": {
+      "title": "Representació dels intervals",
+      "objectives": [
+        "Expressar solucions de desigualtats mitjançant intervals.",
+        "Representar extrems oberts / tancats i comprendre que infinit no és un extrem assolible."
+      ],
+      "content_blocks": [
+        {
+          "body": "En la recta real x≥2 s'escriu [2, +∞): el corxet inclou 2 i el parèntesi en infinit és obligatori. Per x<−1 s'escriu (−∞, −1), perquè ni −1 ni infinit estan inclosos. Un interval limitat com 1<x≤4 s'escriu (1,4]."
+        },
+        {
+          "body": "x≥2 inclou 2, 2,5 i 3, però exclou 1,9. El seu extrem en 2 és tancat."
+        },
+        {
+          "body": "1<x≤4 es representa per (1,4]; no inclou 1, però sí que inclou 4. Provar els extrems evita confusions."
+        },
+        {
+          "body": "Recta numèrica de x≥2: punt tancat en 2 i prolongació cap a la dreta.",
+          "alt": "Recta numèrica de x≥2: punt tancat en 2 i prolongació cap a la dreta.",
+          "visual_spec": {
+            "title": "Representació d'un conjunt de solucions en la recta numèrica"
+          }
+        },
+        {
+          "body": "S'escriu [+2, +∞] per a x≥2?||No. L'infinit mai s'inclou com un valor real concret; l'interval és [2, +∞)."
+        },
+        {
+          "body": "Símbol ≥ o ≤ inclou el límit; > o < ho exclou; infinit sempre entre parèntesis."
+        }
+      ]
+    },
+    "E3-A03-L04": {
+      "title": "Sistemes de restriccions senzills",
+      "objectives": [
+        "Resoldre sistemes senzills de restriccions per intersecció.",
+        "Representar conjunts buits i extrems inclosos o exclosos."
+      ],
+      "content_blocks": [
+        {
+          "body": "x>1 i x≤4 produeix 1<x≤4, és a dir, (1,4]. x<2 i x≥5 no admeten cap valor simultàniament: conjunt buit. No confones «i» (intersecció) amb «o» (unió)."
+        },
+        {
+          "body": "x>1 juntament amb x≤4 → (1,4]. x=1 no compleix la primera i x=4 sí que compleix ambdues."
+        },
+        {
+          "body": "x<2 i x≥5 no tenen solucions en comú, pel que es representa ∅."
+        },
+        {
+          "body": "Recta numèrica: tram ombrejat des de 1 (obert) fins a 4 (tancat). Taula de prova: 1 no, 2 sí, 4 sí, 5 no.",
+          "alt": "Recta numèrica: tram ombrejat des de 1 (obert) fins a 4 (tancat). Taula de prova: 1 no, 2 sí, 4 sí, 5 no.",
+          "visual_spec": {
+            "title": "Representació d'un conjunt de solucions en la recta numèrica"
+          }
+        },
+        {
+          "body": "Per a x>1 i x≤4 cal dibuixar dues regions separades?||No: es prenen els valors comuns a les dues condicions, l'interval (1,4]."
+        },
+        {
+          "body": "En sistemes amb «i», cerca la intersecció. Dues restriccions incompatibles donen conjunt buit."
+        }
+      ]
+    },
+    "E3-A03-L05": {
+      "title": "Problemes de llindars",
+      "objectives": [
+        "Traduir límits de pressupost, aforament i quantitat a inequacions.",
+        "Restringir solucions reals a enters no negatius quan el context l'exigeix."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una restricció contextual permet identificar quines respostes són vàlides. En un pressupost, cost ≤ màxim; un mínim de participants, quantitat ≥ mínim. Si n compta objectes, els valors admissibles són enters no negatius. Resoldre en reals és només un primer pas: després cal comprovar les unitats i seleccionar quantitats senceres factibles."
+        },
+        {
+          "body": "Amb pressupost de 15 € i cost C(n)=5+2n, la condició 5+2n≤15 porta a n≤5. Si n és quantitat de viatges, n pot ser 0,1, 2,3, 4 o 5."
+        },
+        {
+          "body": "Un taller requereix almenys 12 participants: n≥12, amb n enter. 11 no compleix i 12 sí. L'expressió «almenys» inclou el límit."
+        },
+        {
+          "body": "Recta de restricció n≤5 ( enters no negatius): s'admeten els valors 0, 1, 2, 3, 4 i 5, no 6.",
+          "alt": "Recta de restricció n≤5 ( enters no negatius): s'admeten els valors 0, 1, 2, 3, 4 i 5, no 6.",
+          "visual_spec": {
+            "title": "Representació d'un conjunt de solucions en la recta numèrica"
+          }
+        },
+        {
+          "body": "En 5+2n≤15, seria vàlida n=−1 per satisfer la desigualtat?||No. Encara que pugui satisfer la desigualtat algebraica, −1 viatges no té sentit: el context exigeix n≥0 enter."
+        },
+        {
+          "body": "Tradueix paraula-clau a signe, buida, creua amb el domini real del problema i comprova."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E3-A03-L01-01": {
+      "prompt": "En x+3<7, quin és el valor davantera que separa les solucions?",
+      "hint": "Resta tres a tots dos membres de la desigualtat.",
+      "explanation": "La desigualtat equivalent és x<4, amb frontera en 4 i l'extrem exclòs."
+    },
+    "F3-E3-A03-L01-02": {
+      "prompt": "Si 2<5 es multiplica per −1, quina comparació és correcta?",
+      "hint": "Multiplicar per un nombre negatiu inverteix l'ordre.",
+      "explanation": "La comparació veritable és −2>−5. Mantenir el signe anterior produiria una desigualtat falsa."
+    },
+    "F3-E3-A03-L01-03": {
+      "prompt": "Compleix el nombre x=4 la desigualtat estricta x<4?",
+      "hint": "Una desigualtat estricta exclou el seu punt frontera.",
+      "explanation": "El nombre 4 no pertany al conjunt x<4, perquè el símbol < no permet igualtat."
+    },
+    "F3-E3-A03-L01-04": {
+      "prompt": "En la condició x≤4, quin és el màxim valor enter admès?",
+      "hint": "El signe ≤ inclou el valor frontera.",
+      "explanation": "El major enter que satisfà x≤4 és precisament 4; l'extrem està inclòs."
+    },
+    "F3-E3-A03-L01-05": {
+      "prompt": "Resol −2x<6. Quina és la desigualtat equivalent?",
+      "hint": "Divideix ambdós membres entre un nombre negatiu.",
+      "explanation": "La solució correcta és x>−3; es verifica, per exemple, amb x=0."
+    },
+    "F3-E3-A03-L02-01": {
+      "prompt": "Resol 3x+2<11. Indica només el valor límit de x.",
+      "hint": "Resta dos en tots dos membres.",
+      "explanation": "S'obté x<3, per la qual cosa la frontera és 3, sense incloure-la."
+    },
+    "F3-E3-A03-L02-02": {
+      "prompt": "Resol −2x+4≥10. Indica només el valor límit.",
+      "hint": "Resta quatre abans de dividir.",
+      "explanation": "La solució és x≤−3 i la frontera numèrica és −3."
+    },
+    "F3-E3-A03-L02-03": {
+      "prompt": "En resoldre −2x≥6, quina desigualtat queda?",
+      "hint": "No mantinguis el sentit en dividir per un negatiu.",
+      "explanation": "El conjunt correcte és x≤−3. Un valor com −4 compleix la condició original."
+    },
+    "F3-E3-A03-L02-04": {
+      "prompt": "En resoldre 2x>6, quina condició obtins?",
+      "hint": "Com divideixen per dos positiu, el signe es conserva.",
+      "explanation": "La solució és x>3; el 3 no satisfà la desigualtat estricta."
+    },
+    "F3-E3-A03-L02-05": {
+      "prompt": "En 4x−8≤12, quina és la frontera numèrica del conjunt solució?",
+      "hint": "Suma vuit a tots dos membres.",
+      "explanation": "La condició equivalent és x≤5, amb frontera en 5 inclosa."
+    },
+    "F3-E3-A03-L03-01": {
+      "prompt": "Quin interval correspon a x≥2?",
+      "hint": "El signe ≥ inclou el límit 2.",
+      "explanation": "L'interval [2, +∞) inclou 2 i continua a la dreta sense incloure mai l'infinit."
+    },
+    "F3-E3-A03-L03-02": {
+      "prompt": "Quin interval representa x<−1?",
+      "hint": "Els nombres menors que −1 estan a la seva esquerra.",
+      "explanation": "S'escriu (−∞, −1): ni menys infinit ni l'extrem −1 s'inclouen."
+    },
+    "F3-E3-A03-L03-03": {
+      "prompt": "Pertany x=2 a l'interval [2, +∞)?",
+      "hint": "Observa el corchete en el límit.",
+      "explanation": "Sí, l'interval tancat per l'esquerra inclou el punt 2."
+    },
+    "F3-E3-A03-L03-04": {
+      "prompt": "Compleix x=1 la desigualtat x>1?",
+      "hint": "El signe > és estricte, no inclou igualtat.",
+      "explanation": "No: 1 és el límit però no una solució de x>1."
+    },
+    "F3-E3-A03-L03-05": {
+      "prompt": "Entre els enters 0,1, 2,3, 4,5, quants satisfan x≥2?",
+      "hint": "Enumera només els enters de l'interval donat.",
+      "explanation": "Els enters vàlids són 2, 3, 4 i 5; total quatre."
+    },
+    "F3-E3-A03-L04-01": {
+      "prompt": "Entre els enters de 0 a 5, quants compleixen alhora x>1 i x≤4?",
+      "hint": "La paraula «i» exigeix complir les dues restriccions.",
+      "explanation": "La intersecció (1,4] conté els enters 2,3, 4: tres valors."
+    },
+    "F3-E3-A03-L04-02": {
+      "prompt": "Quin interval expressa x>1 i x≤4 simultàniament?",
+      "hint": "No unes els conjunts: utilitza la seva intersecció.",
+      "explanation": "El sistema equival a 1<x≤4, escrit (1,4]."
+    },
+    "F3-E3-A03-L04-03": {
+      "prompt": "Un sistema exigeix x<2 i x≥5. Té alguna solució real?",
+      "hint": "Cerca si algun valor pot ser menor que dos i almenys cinc.",
+      "explanation": "No hi ha valor real que compleixi totes dues condicions: la intersecció és buida."
+    },
+    "F3-E3-A03-L04-04": {
+      "prompt": "Entre els enters 0 a 8, quants compleixen x≥3 i x<7?",
+      "hint": "Identifica quins extrems estan inclosos.",
+      "explanation": "El conjunt [3,7) conté exactament quatre enters: 3,4, 5,6."
+    },
+    "F3-E3-A03-L04-05": {
+      "prompt": "Compleix x=4 el sistema x>1 i x≤4?",
+      "hint": "Avalua les dues desigualtats per separat.",
+      "explanation": "Sí: quatre satisfà totes dues restriccions, perquè el límit superior està inclòs."
+    },
+    "F3-E3-A03-L05-01": {
+      "prompt": "Un servei costa 5 € fixos més 2 € per viatge; amb pressupost màxim 15 €, quants viatges enters com a màxim pots pagar?",
+      "hint": "Formula 5+2n≤15 amb n enter no negatiu.",
+      "explanation": "5+2n≤15 dóna n≤5; s'admeten com a màxim cinc viatges enters."
+    },
+    "F3-E3-A03-L05-02": {
+      "prompt": "Un servei costa 3 € fixos més 4 € per ús; amb pressupost màxim 19 €, quants usos enters pots pagar?",
+      "hint": "Planteja el límit 3+4n≤19.",
+      "explanation": "3+4n≤19 implica n≤4. Quatre usos costen exactament 19 €."
+    },
+    "F3-E3-A03-L05-03": {
+      "prompt": "En un recompte de viatges n, és vàlida la resposta n=−1 encara que satisfaci una desigualtat algebraica?",
+      "hint": "Revisa el significat real de la variable n.",
+      "explanation": "Núm.: n ha de ser enter no negatiu; resoldre la desigualtat no elimina el domini del context."
+    },
+    "F3-E3-A03-L05-04": {
+      "prompt": "El taller exigeix almenys 12 persones. Compleix el mínim un grup d'exactament 12?",
+      "hint": "«Almenys» significa major o igual, no estrictament major.",
+      "explanation": "Sí: 12≥12 i el grup compleix el mínim exigit."
+    },
+    "F3-E3-A03-L05-05": {
+      "prompt": "Un aula admet com a màxim 25 persones; ja hi ha 7. Quantes places queden lliures?",
+      "hint": "Resta l'aforament ocupat a l'aforament màxim.",
+      "explanation": "Queden 18 places. L'aforament restant es calcula com a capacitat menys ocupació."
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2C-F03",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2c_f03.json": "1a4c037b2bc0daff597c7aad80b564f7d5de40b0911d700dbe09106ee20f6141",
+    "data/f3_b2c_f03_exercises.json": "6a4a65c1336fd05d78541f9cd29531b52fb5c4101e6d1e12c27b8bd81569b438"
+  },
+  "lessons": {
+    "B2C-F03-L01": {
+      "title": "Primitives elementals",
+      "objectives": [
+        "Identificar primitives de potències, exponencials i constants respectant dominis.",
+        "Explicar per què tota família de primitives inclou una constant arbitrària C."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una primitiva F de f en un interval és una funció derivable la derivada F′ de la qual coincideix amb f en aquest interval. Per a n diferent de −1, una primitiva de xⁿ és x⁽ⁿ⁺¹⁾/(n+1); per 1/x, en intervals sense zero, és ln |x|. La primitiva de eˣ és eˣ i la d'una constant a és ax. Dues primitives d'una mateixa funció sobre un interval difereixen en una constant C; no s'ha d'ometre en integrals indefinides. La fórmula per a potències requereix n≠−1, i no autoritza travessar discontinuïtats de l'integrant sense precisar intervals. La comprovació determinista més útil és derivar el resultat, no comparar la seva aparença algebraica."
+        },
+        {
+          "body": "Per f(x)=6x², pren F(x)=2x³+C. Per la regla de potència F′(x)=6x², per la qual cosa tota constant C és vàlida."
+        },
+        {
+          "body": "Per f(x)=1/x amb x>0, F(x)= ln (x)+C perquè F′=1/x. En x<0 pot usar-se ln |x|+C amb constant per interval."
+        },
+        {
+          "body": "Primitiva de 2x i derivada. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Primitiva de 2x i derivada. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Primitiva de 2x i derivada"
+          }
+        },
+        {
+          "body": "Per què escriure només 2x³ per a integrar 6x² deixa incompleta la resposta general?||Perquè totes les funcions 2x³+C tenen la mateixa derivada i C és lliure."
+        },
+        {
+          "body": "Recuperació activa: Una primitiva F de f en un interval és una funció derivable la derivada F′ de la qual coincideix amb f en aquest interval. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    },
+    "B2C-F03-L02": {
+      "title": "Linealitat",
+      "objectives": [
+        "Aplicar linealitat de la integral indefinida a sumes i constants.",
+        "Verificar per derivació integrals de polinomis i exponencials."
+      ],
+      "content_blocks": [
+        {
+          "body": "La linealitat estableix ∫( af + bg)dx =a∫f dx +b∫g dx per a constants a i b, sempre que existeixin primitives en l'interval considerat. Per això s'integren terme a terme polinomis: ∫(3x²−4x+7) dx =x³−2x²+7x+C. La constant total no es multiplica ni s'escriu una nova C arbitrària per a cada sumant, ja que totes es reuneixen en una sola. No existeix una regla general ∫f·g=(∫f)(∫g), i tampoc es pot dividir mecànicament qualsevol potència pel seu exponent si és x⁻¹. Sempre comprova el resultat derivant i respectant les condicions de domini."
+        },
+        {
+          "body": "∫(2x+3) dx =x²+3x+C. En derivar x²+3x+C s'obté exactament 2x+3."
+        },
+        {
+          "body": "∫(6x²−8x+5) dx =2x³−4x²+5x+C; comprovació: 6x²−8x+5."
+        },
+        {
+          "body": "Linealitat amb polinomi. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Linealitat amb polinomi. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Linealitat amb polinomi"
+          }
+        },
+        {
+          "body": "És cert que la integral d'un producte equival al producte de les integrals?||No. La linealitat només s'aplica a sumes i factors constants, no a productes."
+        },
+        {
+          "body": "Recuperació activa: La linealitat estableix ∫( af + bg) dx =a∫f dx +b∫g dx per a constants a i b, sempre que existeixin primitives en l'interval considerat. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    },
+    "B2C-F03-L03": {
+      "title": "Substitució simple",
+      "objectives": [
+        "Reconèixer substitucions senzilles amb derivada de la funció interior.",
+        "Verificar el canvi de variable y les restriccions de domini."
+      ],
+      "content_blocks": [
+        {
+          "body": "La substitució aprofita la regla de la cadena: si u=g(x), llavors ∫f(g(x))g′(x) dx =F(g(x))+C sempre que F′=f i les expressions estiguin ben definides. Per ∫2x(x²+1)³ dx, tria u=x²+1, du =2x dx, integra u³ per obtenir u⁴/4+C i torna a x: (x²+1)⁴/4+C. Cal que aparegui el factor g′; si falta, no pot introduir-se sense compensació. En ∫1/(2x+1) dx, una primitiva és (1/2) ln |2x+1|+C en intervals que no contenen x=−1/2. Derivar la resposta obliga a recuperar l'integrant inicial."
+        },
+        {
+          "body": "∫2x(x²+1)³ dx: amb u=x²+1, du =2x dx; resulta (x²+1)⁴/4+C i el seu derivada és 2x(x²+1)³."
+        },
+        {
+          "body": "∫6(3x+2)⁴ dx: amb u=3x+2 i du =3d x, queda 2∫u⁴ du =(2/5)(3x+2)⁵+C."
+        },
+        {
+          "body": "Substitució i regla de la cadena. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Substitució i regla de la cadena. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Substitució i regla de la cadena"
+          }
+        },
+        {
+          "body": "És vàlid substituir u=x²+1 si apareix 2x dx a l'integrant?||Sí; precisament 2x dx és du i permet aplicar la regla inversa de la cadena."
+        },
+        {
+          "body": "Recuperació activa: La substitució aprofita la regla de la cadena: si u=g(x), llavors ∫f(g(x))g′(x) dx =F(g(x))+C sempre que F′=f i les expressions estiguin ben definides. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    },
+    "B2C-F03-L04": {
+      "title": "Integració per parts elemental",
+      "objectives": [
+        "Aplicar integració per parts a productes elementals.",
+        "Triar o i dv justificant la reducció i verificar per derivada."
+      ],
+      "content_blocks": [
+        {
+          "body": "La regla del producte condueix a ∫u dv =u·v−∫v du en intervals on les funcions són derivables i les primitives existeixen. És útil quan derivar un dels factors simplifica l'expressió, com ∫x eˣ dx. Tria u=x, dv =eˣ dx; llavors du = dx, v=eˣ i la integral és x eˣ−eˣ+C=eˣ(x−1)+C. Un altre cas és ∫x cos x dx amb u=x i dv = cos x dx, donant x sen x+ cos x+C. La regla no garanteix simplicitat per a una elecció arbitrària: convé avaluar si la nova integral és més senzilla. En tots els casos es verifica que en derivar o v−∫v du s'obté l'integrant."
+        },
+        {
+          "body": "Per ∫x eˣ dx, presa u=x, dv =eˣ dx. Llavors ∫x eˣ=x eˣ−∫eˣ dx =eˣ(x−1)+C. En derivar recuperes x eˣ."
+        },
+        {
+          "body": "Per a ∫x cos x dx, u=x i v= sen x. El resultat és x sen x−∫ sen x dx =x sen x+ cos x+C."
+        },
+        {
+          "body": "Integració per parts per a un producte. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Integració per parts per a un producte. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Integració per parts per a un producte"
+          }
+        },
+        {
+          "body": "En parts és correcte sumar ∫v du en comptes de restar-la?||No. La fórmula és ∫u dv =u v−∫v du, obtinguda de la derivada d'un producte."
+        },
+        {
+          "body": "Recuperació activa: La regla del producte condueix a ∫u dv =u·v−∫v du en intervals on les funcions són derivables i les primitives existeixen. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    },
+    "B2C-F03-L05": {
+      "title": "Integral definit i teorema fonamental",
+      "objectives": [
+        "Calcular integrals definides mitjançant Barrow sota hipòtesi de continuïtat.",
+        "Interpretar integral definida com a acumulació amb signe, no necessàriament com a àrea geomètrica."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si f és contínua en [a,b] i F és una primitiva, el teorema fonamental del càlcul i la regla de Barrow permeten ∫_a^b f(x)dx=F(b)−F(a). La integral definida és un nombre amb signe: invertir els límits canvia el signe, i ∫_a^a f=0. Per a f(x)=x entre −1 i 1, la integral val 0 perquè les contribucions negativa i positiva es compensen, encara que la regió total entre la gràfica i l'eix té àrea positiva 1. No s'afegeix la constant C al resultat final, perquè F(b)−F(a) elimina qualsevol constant. Per interpretar el resultat com a acumulació física, les unitats són el producte de les unitats de f per les de x. Abans d'utilitzar Barrow cal comprovar la continuïtat o altres condicions que garanteixin la integrabilitat i una primitiva adequada."
+        },
+        {
+          "body": "∫₀² 2x dx =[x²]₀²=4−0=4. La unitat seria la de f multiplicada per la unitat de x."
+        },
+        {
+          "body": "∫₋₁¹x dx =[x²/2]₋₁¹=1/2−1/2=0; les dues àrees triangulars tenen igual magnitud i signe oposat."
+        },
+        {
+          "body": "Àrea algebraica amb signe sota una recta. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Àrea algebraica amb signe sota una recta. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Àrea algebraica amb signe sota una recta"
+          }
+        },
+        {
+          "body": "Una integral definida nul·la sempre significa que no hi ha regió entre la corba i l'eix?||No. Pot haver-hi àrees positives i negatives que es cancel·len."
+        },
+        {
+          "body": "Recuperació activa: Si f és contínua en [a,b] i F és una primitiva, el teorema fonamental del càlcul i la regla de Barrow permeten ∫ _a^b f(x)dx =F(b)−F(a). Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    },
+    "B2C-F03-L06": {
+      "title": "Càlcul d'àrees planes",
+      "objectives": [
+        "Calcular àrees geomètriques amb integrals de valors absoluts.",
+        "Identificar creus i dividir intervals per distingir àrea i acumulació signada."
+      ],
+      "content_blocks": [
+        {
+          "body": "L'àrea geomètrica entre y=f(x) i l'eix x en [a,b] s'obté integrant |f(x)|, no f(x) sense comprovar el seu signe. Si f canvia de signe, es parteix l'interval en els seus zeros i se sumen valors absoluts de les integrals definides. Per f(x)=x a [−1,1], ∫₋₁⁰|x| dx +∫₀¹|x| dx =1/2+1/2=1, mentre que ∫₋₁¹x dx =0. Entre dues corbes contínues y=f(x) i y=g(x), l'àrea s'obté integrant |f−g|, separant trams on intercanvien posició. Un gràfic no basta per a fixar les interseccions exactes; cal resoldre f=g amb àlgebra. Les unitats resultants són quadrades quan ambdós eixos expressen longituds."
+        },
+        {
+          "body": "L'àrea entre f(x)=x i l'eix horitzontal en [−2,1] és ∫₋₂⁰(−x) dx +∫₀¹x dx =2+1/2=5/2."
+        },
+        {
+          "body": "L'àrea sota f(x)=x² en [0,2] és ∫₀²x² dx =[x³/3]₀²=8/3 unitats quadrades; no hi ha cap canvi de signe."
+        },
+        {
+          "body": "Àrea total davant integral amb signe. Gràfic SVG original i taula HTML semàntica amb expressions exactes i dominis; il·lustració, no demostració.",
+          "alt": "Àrea total davant integral amb signe. Les dades exactes, restriccions i resultats s'ofereixen també en taula accessible, sense dependre de color o imatge.",
+          "visual_spec": {
+            "title": "Àrea total enfront d'integral amb signe"
+          }
+        },
+        {
+          "body": "Per què l'àrea de f(x)=x en [−1,1] no val zero?||Perquè l'àrea suma magnituds positives; el zero correspon només a la integral amb signe."
+        },
+        {
+          "body": "Recuperació activa: L'àrea geomètrica entre y=f(x) i l'eix x en [a,b] s'obté integrant |f(x)|, no f(x) sense comprovar el seu signe. Comprova el domini, repeteix un càlcul sense pistes i explica un error típic."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2C-F03-L01-01": {
+      "prompt": "En ∫(6x^2) dx = A·x^3+C, calcula el COEFICIENT exacte A per a la família de primitives, n≥0. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: 2. Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat. Per a n≠−1, ∫a·x ndx =a·x⁽ n ⁺¹⁾/(n+1)+C; per 1/x usa ln |x|+C en un interval sense 0. Resposta comprovable: 2. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L01-02": {
+      "prompt": "En ∫(9x^2) dx = A·x^3+C, calcula el COEFICIENT exacte A per a la família de primitives, n≥0. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: 3. Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat. Per a n≠−1, ∫a·x ndx =a·x⁽ n ⁺¹⁾/(n+1)+C; per 1/x usa ln |x|+C en un interval sense 0. Resposta comprovable: 3. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L01-03": {
+      "prompt": "En ∫(5x^4) dx = A·x^5+C, calcula el COEFICIENT exacte A per a la família de primitives, n≥0. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: 1. Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat. Per a n≠−1, ∫a·x ndx =a·x⁽ n ⁺¹⁾/(n+1)+C; per 1/x usa ln |x|+C en un interval sense 0. Resposta comprovable: 1. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L01-04": {
+      "prompt": "En un interval sense zero, tria la primitiva GENERAL de f(x)=1/x, incloent C. Selecciona exactament una resposta.",
+      "hint": "Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: ln |x|+C. Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat. Per a n≠−1, ∫a·x ndx =a·x⁽ n ⁺¹⁾/(n+1)+C; per 1/x usa ln |x|+C en un interval sense 0. Resposta comprovable: ln |x|+C. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L01-05": {
+      "prompt": "És obligatori expressar la constant lliure C quan s'escriu la FAMÍLIA de primitives d'una funció (Sí / No)? Selecciona exactament una resposta.",
+      "hint": "Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: Sí. Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat. Per a n≠−1, ∫a·x ndx =a·x⁽ n ⁺¹⁾/(n+1)+C; per 1/x usa ln |x|+C en un interval sense 0. Resposta comprovable: Sí. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L02-01": {
+      "prompt": "La funció f(x)=2x+(3) admet una primitiva F(x)=2x²/2+(3)x+C. Amb C=0, calcula F(2). Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: 10. Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat. Per a n≠−1, ∫a·x ndx =a·x⁽ n ⁺¹⁾/(n+1)+C; per 1/x usa ln |x|+C en un interval sense 0. Resposta comprovable: 10. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L02-02": {
+      "prompt": "Integra f(x)=6x²+(-8)x+(5), fixa C_integració =0 i avalua la seva primitiva F(1). Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: 3. Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat. Per a n≠−1, ∫a·x ndx =a·x⁽ n ⁺¹⁾/(n+1)+C; per 1/x usa ln |x|+C en un interval sense 0. Resposta comprovable: 3. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L02-03": {
+      "prompt": "En ∫12x^2d x =A·x^3+C, quin és el coeficient exacte A? Escriu el valor numèric exacte sense unitats.",
+      "hint": "Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: 4. Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat. Per a n≠−1, ∫a·x ndx =a·x⁽ n ⁺¹⁾/(n+1)+C; per 1/x usa ln |x|+C en un interval sense 0. Resposta comprovable: 4. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L02-04": {
+      "prompt": "És vàlida en general la igualtat ∫(f(x)g(x)) dx =(∫f(x) dx )(∫g(x) dx) (Sí / No)? Selecciona exactament una resposta.",
+      "hint": "Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: No. Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat. Per a n≠−1, ∫a·x ndx =a·x⁽ n ⁺¹⁾/(n+1)+C; per 1/x usa ln |x|+C en un interval sense 0. Resposta comprovable: No. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L02-05": {
+      "prompt": "La funció f(x)=4x+(-2) admet una primitiva F(x)=4x²/2+(-2)x+C. Amb C=0, calcula F(3). Selecciona exactament una resposta.",
+      "hint": "Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: 12. Una primitiva F satisfà F′=f: aplica la regla inversa de potències o linealitat. Per a n≠−1, ∫a·x ndx =a·x⁽ n ⁺¹⁾/(n+1)+C; per 1/x usa ln |x|+C en un interval sense 0. Resposta comprovable: 12. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L03-01": {
+      "prompt": "En ∫2x(x²+1)^3d x =A(x²+1)^4+C, determina el factor A de la substitució u=x²+1. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Cerca una funció interior u=g(x) la derivada multiplica a l'integrant.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: 0,25. Cerca una funció interior u=g(x) la derivada multiplica a l'integrant. Amb du =g′(x) dx, integra en u i torna a x; comprova derivant el resultat i mantenen les restriccions del denominador. Resposta comprovable: 0,25. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L03-02": {
+      "prompt": "En ∫2x(x²+1)^4d x =A(x²+1)^5+C, determina el factor A de la substitució u=x²+1. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Cerca una funció interior u=g(x) la derivada multiplica a l'integrant.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: 0,2. Cerca una funció interior u=g(x) la derivada multiplica a l'integrant. Amb du =g′(x) dx, integra en u i torna a x; comprova derivant el resultat i mantenen les restriccions del denominador. Resposta comprovable: 0,2. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L03-03": {
+      "prompt": "Si u=g(x) i apareix exactament g′(x) dx en ∫f(g(x))g′(x) dx, pot aplicar-se substitució o (Sí / No)? Selecciona exactament una resposta.",
+      "hint": "Cerca una funció interior u=g(x) la derivada multiplica a l'integrant.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: Sí. Cerca una funció interior u=g(x) la derivada multiplica a l'integrant. Amb du =g′(x) dx, integra en u i torna a x; comprova derivant el resultat i mantenen les restriccions del denominador. Resposta comprovable: Sí. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L03-04": {
+      "prompt": "En ∫1/(2x+1) dx =A ln |2x+1|+C, troba el coeficient A i exclou el zero del denominador. Selecciona exactament una resposta.",
+      "hint": "Cerca una funció interior u=g(x) la derivada multiplica a l'integrant.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: 0,5. Cerca una funció interior u=g(x) la derivada multiplica a l'integrant. Amb du =g′(x) dx, integra en u i torna a x; comprova derivant el resultat i mantenen les restriccions del denominador. Resposta comprovable: 0,5. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L03-05": {
+      "prompt": "En ∫2x(x²+1)^2d x =A(x²+1)^3+C, determina el factor A de la substitució u=x²+1. Selecciona exactament una resposta.",
+      "hint": "Cerca una funció interior u=g(x) la derivada multiplica a l'integrant.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: 1/3. Cerca una funció interior u=g(x) la derivada multiplica a l'integrant. Amb du =g′(x) dx, integra en u i torna a x; comprova derivant el resultat i mantenen les restriccions del denominador. Resposta comprovable: 1/3. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L04-01": {
+      "prompt": "Tria la família correcta de primitives per a ∫x·e^x dx mitjançant integració per parts. Selecciona exactament una resposta.",
+      "hint": "Selecciona o i dv de manera que derivar o simplifiqui el producte.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: e^x(x−1)+C. Selecciona o i dv de manera que derivar o simplifiqui el producte. Per parts ∫u dv = uv −∫v du. Comprova el signe i deriva la primitiva obtinguda per verificar l'integrant. Resposta comprovable: e^x(x−1)+C. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L04-02": {
+      "prompt": "Per F(x)=e^x(x−1) primitiva de x·e^x, calcula F′(0), derivant mitjançant producte. Escriu el valor numèric exacte sense unitats.",
+      "hint": "Selecciona o i dv de manera que derivar o simplifiqui el producte.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: 0. Selecciona o i dv de manera que derivar o simplifiqui el producte. Per parts ∫u dv = uv −∫v du. Comprova el signe i deriva la primitiva obtinguda per verificar l'integrant. Resposta comprovable: 0. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L04-03": {
+      "prompt": "En la identitat ∫u dv =u v ±∫v du, quin és el signe correcte davant de la segona integral: Menys o Més? Selecciona exactament una resposta.",
+      "hint": "Selecciona o i dv de manera que derivar o simplifiqui el producte.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: Menys. Selecciona o i dv de manera que derivar o simplifiqui el producte. Per parts ∫u dv = uv −∫v du. Comprova el signe i deriva la primitiva obtinguda per verificar l'integrant. Resposta comprovable: Menys. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L04-04": {
+      "prompt": "Tria la primitiva general de ∫x cos(x)dx usant u=x i dv = cos(x)dx (argument en radians). Selecciona exactament una resposta.",
+      "hint": "Selecciona o i dv de manera que derivar o simplifiqui el producte.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: x sen (x)+ cos (x)+C. Selecciona o i dv de manera que derivar o simplifiqui el producte. Per parts ∫u dv = uv −∫v du. Comprova el signe i deriva la primitiva obtinguda per verificar l'integrant. Resposta comprovable: x sen (x)+ cos (x)+C. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L04-05": {
+      "prompt": "Per F(x)=e^x(x−1) primitiva de x·e^x, calcula F′(0), derivant mitjançant producte. Selecciona exactament una resposta.",
+      "hint": "Selecciona o i dv de manera que derivar o simplifiqui el producte.",
+      "explanation": "Justificació: Tria una primitiva amb regla vàlida, afegeix C quan sigui indefinida i DIFERÈNCIA per recuperar l'integrant. Resultat exacte: 0. Selecciona o i dv de manera que derivar o simplifiqui el producte. Per parts ∫u dv = uv −∫v du. Comprova el signe i deriva la primitiva obtinguda per verificar l'integrant. Resposta comprovable: 0. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L05-01": {
+      "prompt": "Calcula per Barrow ∫[0,2] (2x²+(0)x+(0)) dx, com nombre exacte amb SIGNE. Selecciona exactament una resposta.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservant l'orientació de límits.",
+      "explanation": "Justificació: Calcula F(b)−F(a) amb l'orientació correcta; per a àrea divideix en zeros o creus i suma magnituds. Resultat exacte: 16/3. En la integral definida calcula F(b)−F(a), conservant l'orientació de límits. Àrea geomètrica requereix |f| o superior − inferior separant creus; una integral amb signe pot cancel·lar-se encara que existeixi àrea. Resposta comprovable: 16/3. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L05-02": {
+      "prompt": "Calcula per Barrow ∫[-1,1] (1x²+(0)x+(0)) dx, com nombre exacte amb SIGNE. Selecciona exactament una resposta.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservant l'orientació de límits.",
+      "explanation": "Justificació: Calcula F(b)−F(a) amb l'orientació correcta; per a àrea divideix en zeros o creus i suma magnituds. Resultat exacte: 2/3. En la integral definida calcula F(b)−F(a), conservant l'orientació de límits. Àrea geomètrica requereix |f| o superior − inferior separant creus; una integral amb signe pot cancel·lar-se encara que existeixi àrea. Resposta comprovable: 2/3. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L05-03": {
+      "prompt": "Calcula ∫[-1,1] 1x dx com a integral definida amb signe, sense substituir per l'àrea. Escriu el valor numèric exacte sense unitats.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservant l'orientació de límits.",
+      "explanation": "Justificació: Calcula F(b)−F(a) amb l'orientació correcta; per a àrea divideix en zeros o creus i suma magnituds. Resultat exacte: 0. En la integral definida calcula F(b)−F(a), conservant l'orientació de límits. Àrea geomètrica requereix |f| o superior − inferior separant creus; una integral amb signe pot cancel·lar-se encara que existeixi àrea. Resposta comprovable: 0. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L05-04": {
+      "prompt": "Quant val exactament ∫[3,3] f(x)dx per a una funció contínua qualsevol en aquest punt? Selecciona exactament una resposta.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservant l'orientació de límits.",
+      "explanation": "Justificació: Calcula F(b)−F(a) amb l'orientació correcta; per a àrea divideix en zeros o creus i suma magnituds. Resultat exacte: 0. En la integral definida calcula F(b)−F(a), conservant l'orientació de límits. Àrea geomètrica requereix |f| o superior − inferior separant creus; una integral amb signe pot cancel·lar-se encara que existeixi àrea. Resposta comprovable: 0. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L05-05": {
+      "prompt": "Si f(x)=2x≥0 en [0,2], la integral de 2 a 0 té signe Positiu o Negatiu? Selecciona exactament una resposta.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservant l'orientació de límits.",
+      "explanation": "Justificació: Calcula F(b)−F(a) amb l'orientació correcta; per a àrea divideix en zeros o creus i suma magnituds. Resultat exacte: Negatiu. En la integral definida calcula F(b)−F(a), conservant l'orientació de límits. Àrea geomètrica requereix |f| o superior − inferior separant creus; una integral amb signe pot cancel·lar-se encara que existeixi àrea. Resposta comprovable: Negatiu. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L06-01": {
+      "prompt": "Calcula l'ÀREA geomètrica ∫[-2,1]|x| dx, separant per x=0; retorna un nombre exacte no negatiu. Escriu el valor numèric exacte sense unitats.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservant l'orientació de límits.",
+      "explanation": "Justificació: Calcula F(b)−F(a) amb l'orientació correcta; per a àrea divideix en zeros o creus i suma magnituds. Resultat exacte: 2,5. En la integral definida calcula F(b)−F(a), conservant l'orientació de límits. Àrea geomètrica requereix |f| o superior − inferior separant creus; una integral amb signe pot cancel·lar-se encara que existeixi àrea. Resposta comprovable: 2,5. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L06-02": {
+      "prompt": "En [0,2], calcula l'àrea sota y=x² i sobre l'eix x: ∫[0,2]x² dx. Selecciona exactament una resposta.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservant l'orientació de límits.",
+      "explanation": "Justificació: Calcula F(b)−F(a) amb l'orientació correcta; per a àrea divideix en zeros o creus i suma magnituds. Resultat exacte: 8/3. En la integral definida calcula F(b)−F(a), conservant l'orientació de límits. Àrea geomètrica requereix |f| o superior − inferior separant creus; una integral amb signe pot cancel·lar-se encara que existeixi àrea. Resposta comprovable: 8/3. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L06-03": {
+      "prompt": "Calcula l'àrea geomètrica entre les corbes y=x i y=x² en l'interval [0,1]; integra la superior menys la inferior. Selecciona exactament una resposta.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservant l'orientació de límits.",
+      "explanation": "Justificació: Calcula F(b)−F(a) amb l'orientació correcta; per a àrea divideix en zeros o creus i suma magnituds. Resultat exacte: 1/6. En la integral definida calcula F(b)−F(a), conservant l'orientació de límits. Àrea geomètrica requereix |f| o superior − inferior separant creus; una integral amb signe pot cancel·lar-se encara que existeixi àrea. Resposta comprovable: 1/6. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L06-04": {
+      "prompt": "Calcula ∫[-1,1] x dx amb SIGNE (no l'àrea total entre corba i eix). Selecciona exactament una resposta.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservant l'orientació de límits.",
+      "explanation": "Justificació: Calcula F(b)−F(a) amb l'orientació correcta; per a àrea divideix en zeros o creus i suma magnituds. Resultat exacte: 0. En la integral definida calcula F(b)−F(a), conservant l'orientació de límits. Àrea geomètrica requereix |f| o superior − inferior separant creus; una integral amb signe pot cancel·lar-se encara que existeixi àrea. Resposta comprovable: 0. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    },
+    "F3-B2C-F03-L06-05": {
+      "prompt": "Calcula l'ÀREA geomètrica ∫[-1,2]|x| dx, separant per x=0; retorna un nombre exacte no negatiu. Selecciona exactament una resposta.",
+      "hint": "En la integral definida calcula F(b)−F(a), conservant l'orientació de límits.",
+      "explanation": "Justificació: Calcula F(b)−F(a) amb l'orientació correcta; per a àrea divideix en zeros o creus i suma magnituds. Resultat exacte: 2,5. En la integral definida calcula F(b)−F(a), conservant l'orientació de límits. Àrea geomètrica requereix |f| o superior − inferior separant creus; una integral amb signe pot cancel·lar-se encara que existeixi àrea. Resposta comprovable: 2,5. No extrapols fora del domini; distingeix una integral signada d'una àrea i comprova les condicions dels procediments."
+    }
+  }
+}

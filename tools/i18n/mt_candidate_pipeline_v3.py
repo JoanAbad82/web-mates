@@ -29,7 +29,7 @@ GLOSSARY=[
  (re.compile(r'\bmediana\b',re.I),re.compile(r'\bmediana\b',re.I),'mediana'),
  (re.compile(r'\bmedia aritmética\b',re.I),re.compile(r'\bmitjana aritmètica\b',re.I),'mitjana aritmètica'),
  (re.compile(r'\bfracción\b',re.I),re.compile(r'\bfracció\b',re.I),'fracció'),
- (re.compile(r'\bfrecuencia\b',re.I),re.compile(r'\bfreqüència\b',re.I),'freqüència'),
+ (re.compile(r'\bfrecuencia\b',re.I),re.compile(r'\bfreqüènci(?:a|es)\b',re.I),'freqüència'),
  (re.compile(r'\bprobabilidad\b',re.I),re.compile(r'\bprobabilitat\b',re.I),'probabilitat'),
  (re.compile(r'\bdenominador\b',re.I),re.compile(r'\bdenominador\b',re.I),'denominador'),
  (re.compile(r'\bentero(?:s)?\b',re.I),re.compile(r'\b(?:enter(?:s|es)?|sencer(?:s|a|es)?)\b',re.I),'enter/sencer'),

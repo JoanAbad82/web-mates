@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E3-Q01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e3_q01.json": "2d9e53a66771a89deacd18f9946541002509fd622470f6c3c431cefc218298d6",
+    "data/f3_e3_q01_exercises.json": "64353c33ec1035e38edac90680a88b14dfdf03a004ada45b4dc8b845fb3d089b"
+  },
+  "lessons": {
+    "E3-Q01-L01": {
+      "title": "Experiments simples i compostos",
+      "objectives": [
+        "Distingir experiències simples i compostes i els seus espais mostrals.",
+        "Reconèixer l'ordre de resultats en experiments amb diverses etapes."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un experiment simple observa una etapa; un compost inclou diverses etapes que poden dependre entre si. Dos llançaments de moneda es representen per parells ordenats CC,CX,XC,XX. Comptar CX i XC com un sol resultat és incorrecte si l'ordre temporal importa, encara que l'esdeveniment exactament una cara els reuneixi. Si cada llançament és ideal i independent, les quatre parelles són equiprobables; si la moneda està esbiaixada, l'espai mostral continua sent el mateix però canvien els seus pesos. Un arbre enumera rutes i la taula les agrupa sense assumir automàticament igual probabilitat. La independència és una hipòtesi sobre probabilitats, no part automàtica de la definició de l'experiment compost. Un mateix esdeveniment es pot descriure verbalment i com a subconjunt de l'espai de resultats per comprovar coherència."
+        },
+        {
+          "body": "Dos llançaments independents de moneda equilibrada: Ω ={ CC,CX,XC,XX}. El succés d'una cara és {CX,XC} i conté dos casos."
+        },
+        {
+          "body": "Amb daus distingibles, (1,2) i (2,1) són parelles diferents i han d'explicar-se per separat en registrar primer i segon donat."
+        },
+        {
+          "body": "Seqüències ordenades de dues monedes. SVG didàctic amb alternativa tabular semàntica de valors i condicions exactes.",
+          "alt": "Seqüències ordenades de dues monedes. Dades, denominadors, hipòtesis i conclusions accessibles en taula sense dependre de colors ni formes.",
+          "visual_spec": {
+            "title": "Seqüències ordenades de dues monedes"
+          }
+        },
+        {
+          "body": "Pot fusionar-se CX i XC quan importa l'ordre dels llançaments?||No; representen resultats ordenats diferents."
+        },
+        {
+          "body": "Recuperació activa: Un experiment simple observa una etapa; un compost inclou diverses etapes que poden dependre entre si. Abans de resoldre una altra qüestió identifica una hipòtesi o biaix que podria alterar el resultat."
+        }
+      ]
+    },
+    "E3-Q01-L02": {
+      "title": "Regles de recompte",
+      "objectives": [
+        "Aplicar els principis additiu i multiplicatiu de recompte.",
+        "Diferenciar casos disjunts, alternatives successives i resultats ordenats."
+      ],
+      "content_blocks": [
+        {
+          "body": "El principi multiplicatiu compta seqüències: amb 3 samarretes i 2 pantalons hi ha 3·2=6 abillaments diferents. El principi additiu compta alternatives mútuament excloents: triar exactament un entre 3 cupons tipus A o 2 tipus B, sense duplicats, ofereix 3+2=5 opcions. Si les alternatives disponibles en la segona etapa depenen de la primera, es compten les branques per separat i se sumen; no sempre serveix un producte uniforme. Dues monedes generen quatre seqüències ordenades, però la variable nombre de cares té tres possibles valors amb multiplicitats 1,2, 1, no tres resultats equiprobables. El reemplaçament i l'ordre són condicions del problema que canvien el recompte. Definir l'espai elemental evita dobles conteus i omissions en diagrames d'arbre."
+        },
+        {
+          "body": "Tres samarretes i dos pantalons es combinen de sis formes perquè cada samarreta pot aparellar-se amb dos pantalons."
+        },
+        {
+          "body": "Triar un únic cupó entre tres del grup A o dos del B dóna cinc opcions per suma, sempre que no se solapin."
+        },
+        {
+          "body": "Recompte de combinacions. SVG didàctic amb alternativa tabular semàntica de valors i condicions exactes.",
+          "alt": "Recompte de combinacions. Dades, denominadors, hipòtesis i conclusions accessibles en taula sense dependre de colors ni formes.",
+          "visual_spec": {
+            "title": "Recompte de combinacions"
+          }
+        },
+        {
+          "body": "Per escollir una sola opció entre grups disjunts de 3 i 2 s'ha de multiplicar 3·2?||No; se sumen 3+2."
+        },
+        {
+          "body": "Recuperació activa: El principi multiplicatiu compta seqüències: amb 3 samarretes i 2 pantalons hi ha 3·2=6 abillaments diferents. Abans de resoldre una altra qüestió identifica una hipòtesi o biaix que podria alterar el resultat."
+        }
+      ]
+    },
+    "E3-Q01-L03": {
+      "title": "Expressió: Regla de Laplace",
+      "objectives": [
+        "Calcula probabilitats amb Laplace en resultats elementals equiprobables.",
+        "Evitar suposar equiprobables les sumes de dos daus."
+      ],
+      "content_blocks": [
+        {
+          "body": "Si els resultats elementals d'un espai finit són igualment probables, P(A)=|A|/| Ω |. Per a dos daus ideals distingibles i independents, les 36 parelles ordenades són equiprobables. La suma 7 s'obté amb sis parelles: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1), per la qual cosa P(suma =7)=6/36=1/6). La suma 2 només apareix amb (1,1) i té probabilitat 1/36. No es pot assumir que les onze sumes 2,..., 12 siguin equiprobables; S'estaria confonent els valors d'una variable amb l'espai de resultats elementals. Si un dau està carregat, el recompte simple no determina probabilitats. Una partició de successos disjunts i exhaustius té probabilitat total 1. Les hipòtesis físiques es declaren en comptes de deduir-se de la imatge."
+        },
+        {
+          "body": "Amb dos daus ideals distingibles hi ha 36 parelles. Sis sumen 7, així que P(suma =7)=6/36=1/6."
+        },
+        {
+          "body": "La suma 2 necessita que ambdós daus donin 1. És una parella sobre 36, amb probabilitat 1/36 en el model ideal."
+        },
+        {
+          "body": "Multiplicitats de sumes de dos daus. SVG didàctic amb alternativa tabular semàntica de valors i condicions exactes.",
+          "alt": "Multiplicitats de sumes de dos daus. Dades, denominadors, hipòtesis i conclusions accessibles en taula sense dependre de colors ni formes.",
+          "visual_spec": {
+            "title": "Multiplicitats de sumes de dos daus"
+          }
+        },
+        {
+          "body": "Són equiprobables les sumes 2 i 7 de dos daus equilibrats?||No; Tenen una i sis parelles favorables."
+        },
+        {
+          "body": "Recuperació activa: Si els resultats elementals d'un espai finit són igualment probables, P(A)=|A|/| Ω |. Abans de resoldre una altra qüestió identifica una hipòtesi o biaix que podria alterar el resultat."
+        }
+      ]
+    },
+    "E3-Q01-L04": {
+      "title": "freqüències empíriques",
+      "objectives": [
+        "Relacionar freqüència experimental i probabilitat teòrica.",
+        "Explicar fluctuacions en mostres finites sense afirmar convergència exacta."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una probabilitat teòrica pertany al model d'experiment, mentre la freqüència empírica és una proporció observada. En una moneda ideal P(cara )=1/2 encara que en 40 tirades sintètiques es registrin 18 cares: la freqüència relativa és 18/40=9/20=0,45. La diferència enfront de la teoria és 0,05 i no demostra per si sola un biaix físic de l'instrument. La llei dels grans nombres descriu l'acostament probabilístic en augmentar assajos independents i estables, però no assegura resultat exacte després d'un nombre fix ni una evolució monòtona. Si els assajos depenen entre si o se seleccionen resultats de manera esbiaixada, el model canvia. Una il·lustració d'assajos no equival a una avaluació experimental d'una moneda real i no usa dades personals."
+        },
+        {
+          "body": "En 40 llançaments sintètics apareixen 18 cares: f=18/40=9/20=0,45, enfront de P ideal =1/2."
+        },
+        {
+          "body": "Amb 8 cares en 20 assajos, freqüència experimental 8/20=0,4, que no prova una probabilitat veritable de 0,4."
+        },
+        {
+          "body": "Observació enfront de model. SVG didàctic amb alternativa tabular semàntica de valors i condicions exactes.",
+          "alt": "Observació enfront de model. Dades, denominadors, hipòtesis i conclusions accessibles en taula sense dependre de colors ni formes.",
+          "visual_spec": {
+            "title": "Observació enfront de model"
+          }
+        },
+        {
+          "body": "Una freqüència empírica de 0,45 prova que una moneda ideal té P(cara )=0,45?||No; Una mostra finita fluctua."
+        },
+        {
+          "body": "Recuperació activa: Una probabilitat teòrica pertany al model d'experiment, mentre la freqüència empírica és una proporció observada. Abans de resoldre una altra qüestió identifica una hipòtesi o biaix que podria alterar el resultat."
+        }
+      ]
+    },
+    "E3-Q01-L05": {
+      "title": "Arbres de dues etapes",
+      "objectives": [
+        "Construeix arbres amb probabilitats condicionals per branca.",
+        "Resoldre extraccions dependents sense aplicar independència erròniament."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un arbre de dues etapes etiqueta cada branca amb la probabilitat condicionada als resultats anteriors. Una bossa conté 2 fitxes vermelles i 1 blava; en extreure'n dues sense reposició, P(R1)=2/3. Després d'una vermella queden 1 vermella i 1 blava, de manera que P(R2|R1)=1/2 i P(RR)=(2/3)(1/2)=1/3. La ruta vermella-blava té probabilitat 1/3, i la ruta blava-vermella també 1/3, ja que després de treure la blava queden dues vermelles amb probabilitat 1. La ruta blava-blava té probabilitat 0; totes les rutes exhaustives sumen 1. Multiplicar (2/3)² per a dues vermelles correspondria a un model amb reposició, diferent de l'enunciat. La suma de les branques que surten d'un node amb informació fixa sempre val 1 i no s'ha de confondre amb la suma de probabilitats de rutes completes."
+        },
+        {
+          "body": "Bossa amb 2 fitxes vermelles i 1 blava sense reposició: P(RR)=P(R1)P(R2|R1)=(2/3)(1/2)=1/3."
+        },
+        {
+          "body": "En la mateixa bossa P(blau i després vermella )=(1/3)·1=1/3 perquè després d'extreure la blava només queden vermelles."
+        },
+        {
+          "body": "Arbre condicionat sense reemplaçament. SVG didàctic amb alternativa tabular semàntica de valors i condicions exactes.",
+          "alt": "Arbre condicionat sense reemplaçament. Dades, denominadors, hipòtesis i conclusions accessibles en taula sense dependre de colors ni formes.",
+          "visual_spec": {
+            "title": "Arbre condicionat sense reemplaçament"
+          }
+        },
+        {
+          "body": "És correcte calcular (2/3)² per a obtenir dues vermelles sense reemplaçament?||Núm.; la segona probabilitat passa a 1/2."
+        },
+        {
+          "body": "Recuperació activa: Un arbre de dues etapes etiqueta cada branca amb la probabilitat condicionada a resultats anteriors. Abans de resoldre una altra qüestió identifica una hipòtesi o biaix que podria alterar el resultat."
+        }
+      ]
+    },
+    "E3-Q01-L06": {
+      "title": "Successos compatibles i incompatibles inicials",
+      "objectives": [
+        "Distingir successos compatibles, incompatibles i complementaris.",
+        "Aplicar fórmula d'unió restant intersecció quan correspongui."
+      ],
+      "content_blocks": [
+        {
+          "body": "Dos successos són incompatibles si A∩B=∅; Són compatibles si poden ocórrer simultàniament. Per a qualsevol esdeveniment P(A∪B)=P(A)+P(B)−P(A∩B). Només quan són incompatibles la intersecció té probabilitat zero. En un dau ideal A= parell ={2,4, 6}, B= major que 4={5,6}; la intersecció és {6} i la unió {2,4, 5,6}, després P(A∪B)=3/6+2/6−1/6=4/6=2/3. Sumar 3/6+2/6 sense restar la intersecció comptaria dues vegades el resultat 6. Els successos complementaris són incompatibles, la seva unió és Ω i les seves probabilitats sumen 1. Compatibilitat i independència són propietats diferents: poder coincidir no acredita independència probabilística. Les taules de resultats permeten comprovar el càlcul fins i tot sense dibuix."
+        },
+        {
+          "body": "Atès ideal: A= parell amb 3 casos, B=>4 amb 2, intersecció {6} amb 1; unió té 3+2−1=4 casos, P=2/3."
+        },
+        {
+          "body": "Els successos A={1,2} i C={4,5} són incompatibles en un dau ideal; la unió té quatre casos, P=4/6=2/3."
+        },
+        {
+          "body": "Successos compatibles en un dau ideal. SVG didàctic amb alternativa tabular semàntica de valors i condicions exactes.",
+          "alt": "Successos compatibles en un dau ideal. Dades, denominadors, hipòtesis i conclusions accessibles en taula sense dependre de colors ni formes.",
+          "visual_spec": {
+            "title": "Successos compatibles en un dau ideal"
+          }
+        },
+        {
+          "body": "Es pot ometre sempre la intersecció en sumar probabilitats de successos compatibles?||No; s'explicaria dues vegades el seu solapament."
+        },
+        {
+          "body": "Recuperació activa: Dos successos són incompatibles si A∩B=∅; són compatibles si poden ocórrer simultàniament. Abans de resoldre una altra qüestió identifica una hipòtesi o biaix que podria alterar el resultat."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E3-Q01-L01-01": {
+      "prompt": "En Experiments simples i compostos: Un experiment ordenat té 2 alternatives inicials i 2 en cada segona etapa. Compte SEQÜÈNCIES. Introdueix nombre exacte sense unitats.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 4. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L01-02": {
+      "prompt": "En Experiments simples i compostos: Dues monedes llançades en ordre: quantes seqüències de Ω ={ CC,CX,XC,XX} tenen EXACTAMENT una cara? Introdueix nombre exacte sense unitats.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 2. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L01-03": {
+      "prompt": "En Experiments simples i compostos: Dues monedes ideals i independents: calcula P(exactament una cara), comptant rutes CX i XC. Introdueix nombre exacte sense unitats.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 0,5. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L01-04": {
+      "prompt": "En Experiments simples i compostos: CX i XC són la mateixa seqüència de dos llançaments ordenats? Sí / No. Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: No. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L01-05": {
+      "prompt": "En Experiments simples i compostos: Un experiment ordenat té 6 alternatives inicials i 6 en cada segona etapa. Compte SEQÜÈNCIES. Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 36. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L02-01": {
+      "prompt": "En Regles de recompte: Un experiment ordenat té 3 alternatives inicials i 2 en cada segona etapa. Compte SEQÜÈNCIES. Introdueix nombre exacte sense unitats.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 6. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L02-02": {
+      "prompt": "En Regles de recompte: tria una opció de grup A amb 3 opcions o grup B amb 2 opcions disjuntes. Compte alternatives. Introdueix nombre exacte sense unitats.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 5. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L02-03": {
+      "prompt": "En Regles de recompte: Un experiment ordenat té 2 alternatives inicials i 2 en cada segona etapa. Compte SEQÜÈNCIES. Introdueix nombre exacte sense unitats.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 4. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L02-04": {
+      "prompt": "En Regles de recompte: Es multipliquen 3×2 alternatives en triar exactament UNA entre dos grups disjunts de 3 i 2? Sí / No. Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: No. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L02-05": {
+      "prompt": "En Regles de recompte: Dues monedes llançades en ordre: quantes seqüències de Ω ={ CC,CX,XC,XX} tenen EXACTAMENT una cara? Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 2. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L03-01": {
+      "prompt": "A Regla de Laplace: Un experiment ordenat té 6 alternatives inicials i 6 en cada segona etapa. Compte SEQÜÈNCIES. Introdueix nombre exacte sense unitats.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 36. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L03-02": {
+      "prompt": "A Regla de Laplace: Dos daus ideals distingibles: compte 36 parelles equiprobables i calcula P(suma =7). Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 1/6. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L03-03": {
+      "prompt": "A Regla de Laplace: Dos daus ideals distingibles: compte 36 parelles equiprobables i calcula P(suma =2). Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 1/36. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L03-04": {
+      "prompt": "A Regla de Laplace: Les onze sumes possibles de dos daus ideals són EQUIPROBABLES? Sí / No. Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: No. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L03-05": {
+      "prompt": "A Regla de Laplace: Dos daus ideals distingibles: calcula P(suma diferent de 7) per complement de les 36 parelles. Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 5/6. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L04-01": {
+      "prompt": "En freqüències empíriques: Escriu fracció o decimal exacte de 18 casos favorables entre 40 casos totals. Introdueix nombre exacte sense unitats.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 0,45. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L04-02": {
+      "prompt": "En freqüències empíriques: Calcula el nombre de casos: el 45 % de 100 observacions. Introdueix nombre exacte sense unitats.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 45. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L04-03": {
+      "prompt": "En freqüències empíriques: Calcula diferència ABSOLUTA entre freqüència 18/40 i probabilitat teòrica 1/2. Introdueix nombre exacte sense unitats.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 0,05. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L04-04": {
+      "prompt": "En freqüències empíriques: Una freqüència experimental diferent de 1/2 determina la probabilitat real de la moneda sense més evidència? Sí / No. Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: No. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L04-05": {
+      "prompt": "En freqüències empíriques: Escriu fracció o decimal exacte de 8 casos favorables entre 20 casos totals. Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 0,4. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L05-01": {
+      "prompt": "En Arbres de dues etapes: En urna amb 2 fitxes vermelles i 1 blau, calcula P(roja en primera extracció). Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 2/3. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L05-02": {
+      "prompt": "En Arbres de dues etapes: Urna 2 vermelles i 1 blau SENSE reemplaçament: després de primera vermella, calcula P(roja segona | vermella primera). Introdueix nombre exacte sense unitats.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 0,5. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L05-03": {
+      "prompt": "En Arbres de dues etapes: Urna 2 vermelles i 1 blau SENSE reemplaçament: calcula P(roja i vermella) per branques condicionades. Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 1/3. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L05-04": {
+      "prompt": "En Arbres de dues etapes: Urna 2 vermelles i 1 blau SENSE reemplaçament: calcula P(blau i després vermella). Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 1/3. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L05-05": {
+      "prompt": "En Arbres de dues etapes: La segona extracció d'urna SENSE reemplaçament manté la mateixa probabilitat que la primera? Sí / No. Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: No. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L06-01": {
+      "prompt": "En Successos compatibles i incompatibles inicials: Donat ideal A= parell ={2,4, 6}, B=>4={5,6}. Calcula P(A∪B) sense comptar dues vegades 6. Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 2/3. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L06-02": {
+      "prompt": "En Successos compatibles i incompatibles inicials: Donat ideal A= parell i B=>4. Calcula P(A∩B) comptant resultats comuns. Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 1/6. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L06-03": {
+      "prompt": "En Successos compatibles i incompatibles inicials: Laplace sota EQUITAT de resultats: calcula P(A) amb 3 favorables entre 6 possibles. Introdueix nombre exacte sense unitats.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: 0,5. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L06-04": {
+      "prompt": "En Successos compatibles i incompatibles inicials: En donat ideal A= parell i B=>4, són compatibles perquè tots dos contenen el 6? Sí / No. Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: Sí. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    },
+    "F3-E3-Q01-L06-05": {
+      "prompt": "En Successos compatibles i incompatibles inicials: Si dos successos se SOLApen, es pot sumar P(A)+P(B) sense restar P(A∩B)? Sí / No. Selecciona la resposta matemàticament justificada.",
+      "hint": "Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica.",
+      "explanation": "Resultat exacte verificat: No. Enumera primer resultats elementals i comprova si són equiprobables; distingeix freqüència observada i probabilitat teòrica. En etapes multiplica probabilitats locals condicionades; per a alternatives disjuntes suma rutes. Laplace requereix equiprobabilitat; en unir successos compatibles resta intersecció. Sense substitució no hi ha independència automàtica. Comprova hipòtesis, denominadors, ordre de resultats, rang de dades i significat de la probabilitat o estadístic."
+    }
+  }
+}

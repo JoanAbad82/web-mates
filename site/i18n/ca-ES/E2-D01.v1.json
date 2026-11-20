@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E2-D01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e2_d01.json": "bc7b3c010ed5798b6e02ba06243135d2b26e24c77ac096dccec54a8b6006380b",
+    "data/f3_e2_d01_exercises.json": "d09897b3f44691c65d78653addc315799040fb2d9d7503c889d9c918166af777"
+  },
+  "lessons": {
+    "E2-D01-L01": {
+      "title": "Taules agrupades",
+      "objectives": [
+        "Construeix taules de freqüències i agrupa dades per intervals disjunts.",
+        "Diferenciar classe, marca de classe i valor original no recuperable en agrupar."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una taula de dades agrupades utilitza intervals de classe sense solapament, per exemple [0,10), [10,20), [20,30), i compta observacions en cada interval. L'extrem dret exclòs evita comptar dues vegades les dades fronterers, excepte si l'última classe es defineix d'una altra manera explícita. La marca de classe de l'interval [10,20) és (10+20)/2=15; representa el punt mitjà de l'interval, no una dada necessàriament observada. Si les freqüències de tres intervals són 2,3, 5, la grandària de mostra és 10, la freqüència relativa de l'últim és 5/10=1/2 i les acumulades són 2,5, 10. En agrupar es perd informació de valors individuals, així que una mitjana per marques de classe és aproximada excepte supòsits específics. Compara classes requereix amples coherents; per a histogrames d'amples diferents s'interpreta densitat de freqüència i no altura bruta."
+        },
+        {
+          "body": "Per a les classes [0,10), [10,20), [20,30) amb freqüències 2,3, 5, el total n és 10 i l'última freqüència relativa 5/10=1/2."
+        },
+        {
+          "body": "La marca de classe de l'interval [10,20) val (10+20)/2=15; la dada 20 pertany a la classe següent, no a aquesta."
+        },
+        {
+          "body": "freqüències agrupades en classes d'igual amplada. SVG local de suport amb taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "freqüències agrupades en classes d'igual amplada. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre de percepció del color.",
+          "visual_spec": {
+            "title": "freqüències agrupades en classes d'igual amplada"
+          }
+        },
+        {
+          "body": "La marca de classe ha de coincidir amb una de les dades observades?||No; és el punt mitjà representatiu d'un interval."
+        },
+        {
+          "body": "Recuperació activa: Una taula de dades agrupades utilitza intervals de classe sense solapament, per exemple [0,10), [10,20), [20,30), i compta observacions en cada interval. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    },
+    "E2-D01-L02": {
+      "title": "Mitjana, mediana i moda",
+      "objectives": [
+        "Calcular mesures de centralització a partir de dades i freqüències.",
+        "Justificar la diferència entre mitjana exacta i estimació per marques agrupades."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a valors xᵢ amb freqüències nᵢ, la mitjana ponderada és (Σxᵢnᵢ)/(Σnᵢ) quan el denominador és positiu. La mediana ordena les observacions; amb quantitat parell és la mitjana dels dos valors centrals. La moda és la dada de major freqüència, no sempre únic. Per a dades [1,1, 2,3, 3], freqüències 2,1, 2, la suma ponderada és 2+2+6=10, n=5 i mitjana =2; la mediana és 2 i les modes són 1 i 3 (bimodal). En agrupar per intervals i substituir cada dada per la marca de classe, la mitjana obtinguda és una estimació, no una reconstrucció exacta: molts conjunts diferents generen la mateixa taula. Mai es calcula la mitjana de categories nominals arbitràriament codificades."
+        },
+        {
+          "body": "Per 1 amb freqüència 2, 2 amb freqüència 1 i 3 amb freqüència 2, la mitjana és (2+2+6)/5=2."
+        },
+        {
+          "body": "La mostra [1,1, 2,3, 3] té mediana 2 i dues modes, 1 i 3; no es força una sola moda en empatar."
+        },
+        {
+          "body": "Distribució bimodal de cinc observacions. SVG local de suport amb taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Distribució bimodal de cinc observacions. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre de percepció del color.",
+          "visual_spec": {
+            "title": "Distribució bimodal de cinc observacions"
+          }
+        },
+        {
+          "body": "És sempre exacta la mitjana per marques de classe si només coneixem intervals i freqüències?||No; Normalment és una estimació."
+        },
+        {
+          "body": "Recuperació activa: Per a valors xᵢ amb freqüències nᵢ, la mitjana ponderada és (Σxᵢnᵢ)/(Σnᵢ) quan el denominador és positiu. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    },
+    "E2-D01-L03": {
+      "title": "Rang i dispersió elemental",
+      "objectives": [
+        "Calcular rang i variància poblacional de conjunts petits.",
+        "Relacionar dispersió amb unitats i sensibilitat a valors extrems."
+      ],
+      "content_blocks": [
+        {
+          "body": "El rang s'obté restant màxim − mínim de les dades observades. La variància descriptiva poblacional és la mitjana dels quadrats de desviacions respecte de la mitjana: σ²=(Σ(xᵢ−x̄)²)/n quan n>0; la desviació típica és la seva arrel quadrada. Si les dades són [1,2, 3], la mitjana és 2, les desviacions −1,0, 1, els quadrats 1,0, 1 i la variància poblacional 2/3; la desviació típica és √(2/3). La variància utilitza unitats al quadrat, no les mateixes que les dades. La variància mostral corregida usa divisor n−1 amb un altre propòsit inferencial: no ha de barrejar-se amb la descriptiva poblacional aquí definida. Amb dades constants el rang i la variància són 0. El rang és molt sensible a un extrem i no descriu per si només la distribució completa."
+        },
+        {
+          "body": "Per [1,2, 3], rang 3−1=2, mitjana 2 i variància poblacional (1+0+1)/3=2/3."
+        },
+        {
+          "body": "Per a [2,2, 2], rang 0 i variància poblacional 0; no hi ha dispersió al voltant de la mitjana 2."
+        },
+        {
+          "body": "Dades al voltant de la mitjana. SVG local de suport amb taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Dades al voltant de la mitjana. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre de percepció del color.",
+          "visual_spec": {
+            "title": "Dades al voltant de la mitjana"
+          }
+        },
+        {
+          "body": "La variància de mesures en centímetres també s'expressa en centímetres?||No; s'expressa en centímetres quadrats."
+        },
+        {
+          "body": "Recuperació activa: El rang s'obté restant màxim − mínim de les dades observades. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    },
+    "E2-D01-L04": {
+      "title": "Diagrames de barres, sectors i caixes de manera introductòria",
+      "objectives": [
+        "Llegir gràfics de barres, sectors i caixes amb escales consistents.",
+        "Determinar quartils segons una convenció explícita i comparar distribucions."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un diagrama de caixes representa el mínim, el primer quartil Q1, la mediana, el tercer quartil Q3 i el màxim (o els bigotis segons la convenció sobre valors atípics). En aquesta unitat s'utilitza la convenció de les meitats: per a n parell, la mediana divideix les dades en dues meitats de la mateixa mida i Q1 i Q3 són les medianes d'aquestes meitats. En les dades [1,2,3,4,5,6,7,8], la mediana és 4,5, Q1=(2+3)/2=2,5, Q3=(6+7)/2=6,5 i el rang interquartílic Q3−Q1=4. Altres convencions de quartils poden donar valors diferents: sempre cal indicar quina s'ha triat. Els sectors expressen parts d'un total i les barres comparen freqüències; no s'han de barrejar percentatges de totals diferents sense indicar els denominadors. El dibuix no ha de substituir el càlcul tabulat."
+        },
+        {
+          "body": "Dades ordenades [1,2, 3,4, 5,6, 7,8]: mediana 4,5; meitat inferior [1,2, 3,4], Q1 =2,5; superior [5,6, 7,8], Q3 =6,5."
+        },
+        {
+          "body": "El rang interquartílic és 6,5−2,5=4. Amb aquesta convenció, mínim 1 i màxim 8 romanen extrems del conjunt."
+        },
+        {
+          "body": "Quartils de vuit valors. SVG local de suport amb taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Quartils de vuit valors. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre de percepció del color.",
+          "visual_spec": {
+            "title": "Quartils de vuit valors"
+          }
+        },
+        {
+          "body": "Tots els llibres i programes han d'obtenir idèntics quartils sense especificar la convenció?||Núm.; hi ha convencions de càlcul diferents."
+        },
+        {
+          "body": "Recuperació activa: Un diagrama de caixes representa mínim, primer quartil Q1, mediana, tercer quartil Q3 i màxim (o bigotis segons convenció sobre valors atípics). Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    },
+    "E2-D01-L05": {
+      "title": "Comparació de distribucions",
+      "objectives": [
+        "Compara dues distribucions usant centre i dispersió.",
+        "Evitar conclusions de dispersió basades únicament en mitjanes iguals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Dos conjunts poden tenir la mateixa mitjana i dispersió diferent. Les dades A=[4,5, 6] tenen mitjana 5, rang 2 i variància poblacional (1+0+1)/3=2/3. Les dades B=[0,5, 10] tenen també mitjana 5, però rang 10 i variància poblacional (25+0+25)/3=50/3. Concloure que ambdós grups es comporten igual perquè comparteixen mitjana ocultaria una diferència notable de variabilitat. La mediana d'ambdós és 5; tampoc és suficient per si sola. S'han d'informar grandària, unitat, origen i mètode de mostreig abans de generalitzar a poblacions. El contrast d'histogrames amb escales diferents pot distorsionar i és necessari usar les mateixes classes o aclarir diferències. Les mostres són sintètiques i no descriuen alumnat real."
+        },
+        {
+          "body": "En A=[4,5, 6] i B=[0,5, 10], les mitjanes són 5 en tots dos casos; els rangs són 2 i 10, respectivament."
+        },
+        {
+          "body": "La variància poblacional d'A és 2/3, la de B és 50/3; B presenta major dispersió, encara que les mitjanes coincideixin en 5."
+        },
+        {
+          "body": "Distribucions amb igual mitjana i diferent rang. SVG local de suport amb taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Distribucions amb igual mitjana i diferent rang. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre de percepció del color.",
+          "visual_spec": {
+            "title": "Distribucions amb igual mitjana i diferent rang"
+          }
+        },
+        {
+          "body": "Tenir la mateixa mitjana obliga que dues distribucions tinguin la mateixa dispersió?||No; S'han de comparar rang, variància o altres mesures."
+        },
+        {
+          "body": "Recuperació activa: Dos conjunts poden tenir la mateixa mitjana i dispersió diferent. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    },
+    "E2-D01-L06": {
+      "title": "Gràfics enganyosos",
+      "objectives": [
+        "Detectar escales manipulades, mostres esbiaixades i denominadors omesos.",
+        "Justificar comparacions responsables sense inferir causalitat a partir de correlació visual."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una notícia pot presentar un augment de 48 a 52 respostes com si fos cinc vegades major en truncar l'eix a partir de 47, quan la diferència real és 4. També pot ocultar el denominador: 20 % de 10 observacions són 2, però 20 % de 100 observacions són 20; aquests recomptes no són equivalents. Si una mostra de voluntaris no representa la població, els seus percentatges no poden generalitzar-se automàticament. La causalitat no es dedueix de dues barres que pugen juntes, perquè podrien intervenir altres variables i biaixos de selecció. La interpretació responsable inclou escala completa o advertiment explícit, grandària i procedència de la mostra, unitats, temps i límits de la inferència. Les dades il·lustratives són sintètics i no representen informació privada de menors."
+        },
+        {
+          "body": "Una figura amb barres de 48 i 52 mostra diferència real 4 i relació 52/48=13/12, no una multiplicació per cinc."
+        },
+        {
+          "body": "Dues enquestes mostren 20 % de 10 i 20 % de 100 respostes. Els casos corresponents són 2 i 20, encara que els percentatges coincideixin."
+        },
+        {
+          "body": "Denominadors i escales comparables. SVG local de suport amb taula matemàtica semàntica de resultats exactes i condicions.",
+          "alt": "Denominadors i escales comparables. La taula exacta inclou dades, restriccions, convencions i resultats sense dependre de percepció del color.",
+          "visual_spec": {
+            "title": "Denominadors i escales comparables"
+          }
+        },
+        {
+          "body": "Un gràfic que usa mostres voluntàries permet afirmar sense més que tota la població presenta el mateix percentatge?||Núm.; ha d'avaluar-se representativitat i biaix."
+        },
+        {
+          "body": "Recuperació activa: Una notícia pot presentar un augment de 48 a 52 respostes com si fos cinc vegades major en truncar l'eix a partir de 47, quan la diferència real és 4. Resol un cas de transferència i argumenta per què una hipòtesi podria fallar."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E2-D01-L01-01": {
+      "prompt": "En Taules agrupades: Calcula la MARCA de classe de l'interval [10,20) com a mitjana d'extrems. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 15. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L01-02": {
+      "prompt": "En taules agrupades: Una taula presenta freqüències absolutes [2, 3, 5]. Calcula la mida n total. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 10. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L01-03": {
+      "prompt": "En Taules agrupades: S'observen 5 casos entre 10 assajos. Calcula freqüència relativa exacta. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 0,5. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L01-04": {
+      "prompt": "En taules agrupades: La mitjana calculada per MARQUES d'intervals reconstrueix sempre la mitjana EXACTA original? Sí / No. Tria l'opció vàlida.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L01-05": {
+      "prompt": "En Taules agrupades: freqüències per classes [2, 3, 5]. Calcula freqüència ACUMULADA fins a classe índex 1 (base 0) inclusivament. Tria l'opció vàlida.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 5. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L02-01": {
+      "prompt": "A Mitjana, mediana i moda: Valors i freqüències alternades [1, 2, 2, 1, 3, 2]: calcula MITJANA ponderada Σ(x·n)/Σn. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 2. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L02-02": {
+      "prompt": "En Mitjana, mediana i moda: Ordena les dades [1, 1, 2, 3, 3] i calcula mediana exacta. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 2. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L02-03": {
+      "prompt": "En Media, mediana i moda: En dades [1, 1, 2, 3, 3], calcula freqüència absoluta màxima de les seves modes. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 2. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L02-04": {
+      "prompt": "En Mitjana, mediana i moda: La mitjana calculada per MARQUES d'intervals reconstrueix sempre la mitjana EXACTA original? Sí / No. Tria l'opció vàlida.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L02-05": {
+      "prompt": "A Mitjana, mediana i moda: Valors i freqüències alternades [2, 1, 4, 1]: calcula MITJANA ponderada Σ(x·n)/Σn. Tria l'opció vàlida.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 3. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L03-01": {
+      "prompt": "A Rango i dispersió elemental: Per a les dades [1, 2, 3], calcula rang màxim − mínim. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 2. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L03-02": {
+      "prompt": "A Rango i dispersió elemental: Calcula variància POBLACIONAL exacta de [1, 2, 3] usant divisor n, no n−1. Tria l'opció vàlida.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 2/3. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L03-03": {
+      "prompt": "A Rango i dispersió elemental: Per a les dades [2, 2, 2], calcula rang màxim − mínim. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 0. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L03-04": {
+      "prompt": "A Rango i dispersió elemental: La variància poblacional de mesures en cm té també unitat cm en comptes de cm ²? Sí / No. Tria l'opció vàlida.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L03-05": {
+      "prompt": "A Rango i dispersió elemental: Calcula variància POBLACIONAL exacta de [2, 2, 2] usant divisor n, no n−1. Tria l'opció vàlida.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 0. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L04-01": {
+      "prompt": "En Diagrames de barres, sectors i caixes de forma introductòria: Dades ordenades [1, 2, 3, 4, 5, 6, 7, 8]. Quartils per MITJANES DE MEITATS: calcula Q1. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 2,5. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L04-02": {
+      "prompt": "En Diagrames de barres, sectors i caixes de forma introductòria: Dades ordenades [1, 2, 3, 4, 5, 6, 7, 8]. Quartils per MITJANES DE MEITATS: calcula Q3. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 6,5. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L04-03": {
+      "prompt": "En Diagrames de barres, sectors i caixes de manera introductòria: Dades ordenades [1, 2, 3, 4, 5, 6, 7, 8]. Quartils per MEDIANES DE MEITATS: calcula IQR=Q3−Q1. Introdueix el resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 4. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L04-04": {
+      "prompt": "En Diagrames de barres, sectors i caixes de manera introductòria: Totes les convencions matemàtiques de quartils han de donar sempre el mateix Q1 i Q3? Sí / No. Tria l'opció vàlida.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L04-05": {
+      "prompt": "En Diagrames de barres, sectors i caixes de forma introductòria: Ordena les dades [1, 2, 3, 4, 5, 6, 7, 8] i calcula mediana exacta. Tria l'opció vàlida.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 4,5. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L05-01": {
+      "prompt": "En Comparació de distribucions: Calcula mitjana aritmètica exacta de la llista de dades [4, 5, 6]. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 5. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L05-02": {
+      "prompt": "En Comparació de distribucions: Per a les dades [4, 5, 6], calcula rang màxim − mínim. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 2. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L05-03": {
+      "prompt": "En Comparació de distribucions: Per a les dades [0, 5, 10], calcula rang màxim − mínim. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 10. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L05-04": {
+      "prompt": "En Comparació de distribucions: Igual mitjana aritmètica obliga a tenir igual rang i variància? Sí / No. Tria l'opció vàlida.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L05-05": {
+      "prompt": "En Comparació de distribucions: Calcula variància POBLACIONAL exacta de [0, 5, 10] usant divisor n, no n−1. Tria l'opció vàlida.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 50/3. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L06-01": {
+      "prompt": "En Gràfics enganyosos: Una taxa del 20 % sobre n=10 observacions representa quants casos? Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 2. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L06-02": {
+      "prompt": "En Gràfics enganyosos: Una taxa del 20 % sobre n=100 observacions representa quants casos? Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 20. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L06-03": {
+      "prompt": "En Gràfics enganyosos: Calcula DIFERÈNCIA absoluta dels recomptes 52−48. Introdueix un resultat numèric exacte sense unitats.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 4. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L06-04": {
+      "prompt": "En Gràfics enganyosos: Té mostra coincideix necessàriament amb la població completa? Sí / No. Tria l'opció vàlida.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: No. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    },
+    "F3-E2-D01-L06-05": {
+      "prompt": "En Gràfics enganyosos: Una taxa del 25 % sobre n=80 observacions representa quants casos? Tria l'opció vàlida.",
+      "hint": "Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana.",
+      "explanation": "Solució verificada amb aritmètica exacta: 20. Identifica el conjunt i el seu total n i especifica la mesura descriptiva que es demana. Mitjana ponderada Σ xn /Σn, variància poblacional Σ(x− mitjana )²/n, rang max − min. Per a quartils aplica mitjanes de meitats i declara la convenció. Comprova les condicions i el significat del denominador, unitat, interval o polígon."
+    }
+  }
+}

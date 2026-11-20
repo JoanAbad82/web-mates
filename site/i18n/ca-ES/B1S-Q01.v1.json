@@ -1,0 +1,295 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1S-Q01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1s_q01.json": "0ae92bbe52b2f21262a9b76c45816de6897df030540c130dc0b213be02af43ce",
+    "data/f3_b1s_q01_exercises.json": "3fc9cb528316f28fdeba43e7cd5d2aa130a5110646d4b46c7d5b372493d8b6df"
+  },
+  "lessons": {
+    "B1S-Q01-L01": {
+      "title": "Recompte sistemàtic",
+      "objectives": [
+        "Enumerar sistemàticament resultats elementals i justificar el principi multiplicatiu.",
+        "Reconèixer quan sumar alternatives i quan multiplicar etapes ordenades."
+      ],
+      "content_blocks": [
+        {
+          "body": "Comptar requereix identificar la unitat de resultat i les opcions disponibles en cada etapa. Si es tria una clau de dues posicions de quatre símbols diferents sense repetició, hi ha 4·3=12 claus ordenades; amb reemplaçament hi ha 4²=16. Si s'escull un únic llibre entre dues prestatgeries disjuntes amb 3 i 2 exemplars, hi ha 5 opcions per suma. El nombre de rutes d'un arbre no prova equiprobabilitat: un procediment pot afavorir unes branques. Per a probabilitat, primer es fixa l'espai mostral i després s'assignen pesos justificats. Tampoc una parella triada sense ordre equival a triar dos càrrecs diferents. Una taula de recompte és alternativa accessible al dibuix i permet comprovar que no es repeteixen ni ometen casos."
+        },
+        {
+          "body": "Claus de dues lletres ordenades entre A,B,C,D sense repetir: quatre eleccions inicials i tres finals, total 4·3=12."
+        },
+        {
+          "body": "Triar exactament un exemplar d'una prestatgeria amb 3 llibres o d'una altra disjunta amb 2 produeix 3+2=5 alternatives."
+        },
+        {
+          "body": "Arbre d'elecció de dues posicions sense repetir. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "Arbre d'elecció de dues posicions sense repetir. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "Arbre d'elecció de dues posicions sense repetir"
+          }
+        },
+        {
+          "body": "Per a dues eleccions successives amb quatre i tres opcions s'aplica automàticament la suma 4+3?||No; Si són etapes consecutives es multipliquen."
+        },
+        {
+          "body": "Recuperació activa: Comptar requereix identificar la unitat de resultat i les opcions disponibles en cada etapa. Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    },
+    "B1S-Q01-L02": {
+      "title": "Variacions i combinacions contextualitzades",
+      "objectives": [
+        "Calcular variacions i combinacions sense repetició amb hipòtesis precises.",
+        "Determinar si l'ordre altera el resultat d'un problema contextualitzat."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a n objectes diferents, triar k sense repetició i amb ordre condueix a variacions V(n, k)=n! /(n−k)!, 0≤k≤n. Si l'ordre no importa s'usa C(n, k)=n! /[k! (n−k)!]. Entre cinc candidatures, assignar presidència i secretaria produeix V(5,2)=5·4=20 maneres; elegir dos representants amb iguals funcions produeix C(5,2)=10 equips. Comptar equips mitjançant variacions duplicaria cada parella exactament 2! vegades. La distinció entre permutació, variació i combinació depèn del significat real del problema, no només del nombre d'elements. Repetició permesa requereix regles diferents. Usar resultats equiprobables per a obtenir probabilitats suposa a més un mecanisme de selecció uniforme; la combinatòria sola no ho prova."
+        },
+        {
+          "body": "Cinc persones, dos càrrecs diferents: V(5,2)=5! /(5−2)! =20 assignacions ordenades."
+        },
+        {
+          "body": "Cinc persones, comissió de dos sense càrrecs: C(5,2)=5! /(2! ·3! )=10 grups; cada parella es va comptar dues vegades en V(5,2)."
+        },
+        {
+          "body": "Càrrecs ordenats davant de comissió sense càrrecs. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "Càrrecs ordenats davant de comissió sense càrrecs. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "Càrrecs ordenats davant de comissió sense càrrecs"
+          }
+        },
+        {
+          "body": "Una comissió sense càrrecs es compta amb V(n,k) com si l'ordre distingís resultats?||Núm.; es compten combinacions."
+        },
+        {
+          "body": "Recuperació activa: Per n objectes diferents, triar k sense repetició i amb ordre condueix a variacions V (n, k)=n! /(n−k)!, 0≤k≤n. Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    },
+    "B1S-Q01-L03": {
+      "title": "Regla de Laplace",
+      "objectives": [
+        "Aplicar la regla de Laplace només amb resultats elementals equiprobables.",
+        "Enumerar combinacions de resultats de dos daus i utilitzar complementaris."
+      ],
+      "content_blocks": [
+        {
+          "body": "La regla P(A)= casos favorables / casos possibles s'aplica directament quan l'espai elemental és finit i equiprobable. Dos donats ideals distingibles generen 36 parelles ordenades; la suma 7 apareix en sis, i la suma 2 en una, per la qual cosa les seves probabilitats són 1/6 i 1/36. El succés complementari de sumar 7 té probabilitat 1−1/6=5/6. No és legítim assignar probabilitat 1/11 a cada suma entre 2 i 12: aquestes sumes tenen multiplicitats diferents. Un dau carregat precisa pesos no uniformes. En una extracció sense reemplaçament, pot resultar equiprobable seleccionar parelles etiquetades, però cal definir la unitat elemental i la mecànica, no assumir uniformitat entre categories agregades."
+        },
+        {
+          "body": "Dos daus equilibrats, suma 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1), sis parelles de 36, P=1/6."
+        },
+        {
+          "body": "Suma 2 només (1,1): P=1/36; no sumar 7 té P=1−1/6=5/6, per complement."
+        },
+        {
+          "body": "freqüència de sumes de dos daus ideals. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "freqüència de sumes de dos daus ideals. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "freqüència de sumes de dos daus ideals"
+          }
+        },
+        {
+          "body": "Són equiprobables les onze sumes de dos daus ideals perquè hi ha onze valors?||No; La multiplicitat per suma és diferent."
+        },
+        {
+          "body": "Recuperació activa: La regla P(A)= casos favorables / casos possibles s'aplica directament quan l'espai elemental és finit i equiprobable. Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    },
+    "B1S-Q01-L04": {
+      "title": "Unions i interseccions",
+      "objectives": [
+        "Calcula la unió i la intersecció d'esdeveniments i el complement.",
+        "Distingir incompatibilitat d'independència amb probabilitats positives."
+      ],
+      "content_blocks": [
+        {
+          "body": "La fórmula general P(A∪B)=P(A)+P(B)−P(A∩B) evita comptar dues vegades els elements compartits. En un donat ideal A= parell ={2,4, 6} i B=>4={5,6}, la intersecció és {6} de probabilitat 1/6 i la unió {2,4, 5,6}, amb probabilitat 4/6=2/3. Si els successos són incompatibles la intersecció és buida i se sumen probabilitats sense correcció. Incompatibles no significa independents: dos successos de probabilitat positiva incompatibles compleixen P(A∩B)=0, mentre P(A)P(B)>0. Si P(A)>0, la probabilitat condicionada P(B|A)=P(A∩B)/P(A). Els gràfics de freqüències són il·lustratius; la taula exacta presenta els conjunts, operacions i condicions."
+        },
+        {
+          "body": "En un donat ideal, per a A={2,4, 6} i B={5,6}, P(A∪B)=3/6+2/6−1/6=4/6=2/3; P(A∩B)=1/6."
+        },
+        {
+          "body": "Els successos donat =1 i donat =6 són incompatibles i tots dos de probabilitat 1/6; el seu producte positiu descarta independència."
+        },
+        {
+          "body": "Unió i intersecció de dos successos de dau. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "Unió i intersecció de dos successos de dau. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "Unió i intersecció de dos successos de dau"
+          }
+        },
+        {
+          "body": "Dos successos incompatibles amb probabilitats positives són independents?||Núm.; la seva intersecció val zero i el producte no."
+        },
+        {
+          "body": "Recuperació activa: La fórmula general P(A∪B)=P(A)+P(B)−P(A∩B) evita comptar dues vegades els elements compartits. Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    },
+    "B1S-Q01-L05": {
+      "title": "Probabilitat d'experiments compostos",
+      "objectives": [
+        "Resol probabilitats d'experiments compostos mitjançant condicionals.",
+        "Distingir independència d'extracció sense reemplaçament i sumar rutes incompatibles."
+      ],
+      "content_blocks": [
+        {
+          "body": "La probabilitat conjunta satisfà P(A∩B)=P(A)P(B|A) si P(A)>0; la forma P(A)P(B) només procedeix amb independència. Dues monedes equilibrades independents donen P(CC )=1/4. En urna de dues fitxes vermelles i una blava, extraient dues sense reemplaçament, P(RR )=2/3·1/2=1/3, mentre P(blau primer, vermella després )=1/3·1=1/3; P(AA )=0 perquè només hi ha una blava. En un arbre complet les probabilitats sortints de cada node han de sumar un i cada ruta multiplica els pesos condicionats. Per calcular un esdeveniment amb diverses rutes incompatibles se sumen les probabilitats de totes elles. No inferir independència només per repetir-se una acció. Aquests són experiments model amb dades fixes sintètiques."
+        },
+        {
+          "body": "Urna amb 2 vermelles i 1 blau, extraient sense reemplaçament: P(RR )=2/3×1/2=1/3 i P(AR )=1/3×1=1/3."
+        },
+        {
+          "body": "Dues monedes independents ideals: CC,CX,XC,XX tenen P=1/4 cadascuna; exactament una cara suma 2/4=1/2."
+        },
+        {
+          "body": "Extracció condicionada d'urna petita. SVG local acompanyat de taula semàntica exacta amb condicions explícites.",
+          "alt": "Extracció condicionada d'urna petita. La taula HTML enumera xifres, supòsits, probabilitats, error d'aproximació i límits sense dependre de colors.",
+          "visual_spec": {
+            "title": "Extracció condicionada d'urna petita"
+          }
+        },
+        {
+          "body": "Es conserva P(vermell )=2/3 en la segona extracció sense reemplaçament després de treure una vermella?||Núm.; queda una vermella de dues fitxes."
+        },
+        {
+          "body": "Recuperació activa: La probabilitat conjunta satisfà P(A∩B)=P(A)P(B|A) si P(A)>0; la forma P(A)P(B) només procedeix amb independència. Justifica les hipòtesis abans de respondre."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1S-Q01-L01-01": {
+      "prompt": "En Recompte sistemàtic: De 4 objectes diferents tria 2 en ORDRE, SENSE repetició. Compte variacions V(n,k). Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 12. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L01-02": {
+      "prompt": "En Recompte sistemàtic: S'emplenen 2 posicions ordenades triant entre 4 símbols amb repetició permesa. Compte resultats. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 16. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L01-03": {
+      "prompt": "En Recompte sistemàtic: tria EXACTAMENT una opció de dos conjunts disjunts amb 3 i 2 opcions. Calcula total. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 5. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L01-04": {
+      "prompt": "En Recompte sistemàtic: Per a dues ETAPES successives amb 4 i 3 opcions ha de sumar-se 4+3 en lloc de multiplicar? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L01-05": {
+      "prompt": "En Recompte sistemàtic: De 4 objectes diferents tria 2 SENSE ORDRE ni repetició. Compte de combinacions C(n,k). Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 6. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L02-01": {
+      "prompt": "En Variacions i combinacions contextualitzades: De 5 objectes diferents tria 2 en ORDRE, SENSE repetició. Compte variacions V(n,k). Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 20. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L02-02": {
+      "prompt": "En Variacions i combinacions contextualitzades: De 5 objectes diferents tria 2 SENSE ORDRE ni repetició. Compte de combinacions C(n,k). Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 10. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L02-03": {
+      "prompt": "En Variacions i combinacions contextualitzades: Calcula nombre de permutacions de 4 objectes diferents, n!. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 24. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L02-04": {
+      "prompt": "En Variacions i combinacions contextualitzades: Escollir DOS integrants sense càrrecs és el mateix recompte que triar president i secretari? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L02-05": {
+      "prompt": "En Variacions i combinacions contextualitzades: De 4 objectes diferents tria 2 SENSE ORDRE ni repetició. Compte de combinacions C(n,k). Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 6. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L03-01": {
+      "prompt": "A Laplace: Dos daus ideals distingibles: amb 36 parells equiprobables, calcula P(suma =7). Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 1/6. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L03-02": {
+      "prompt": "A Laplace: Dos daus ideals distingibles: amb 36 parells equiprobables, calcula P(suma =2). Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 1/36. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L03-03": {
+      "prompt": "A Laplace: Dos daus ideals distingibles: calcula P(no sumar 7) per complement. Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 5/6. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L03-04": {
+      "prompt": "A Laplace: Les onze SUMES possibles de dos daus ideals són equiprobables? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L03-05": {
+      "prompt": "A Laplace: Dues monedes equilibrades independents: calcula P(exactament una cara), sumant les rutes CX i XC. Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,5. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L04-01": {
+      "prompt": "En Unions i interseccions: Donat equilibrat: A= parell {2,4, 6}, B= major que 4 {5,6}. Calcula P(A∪B) restant solapament. Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 2/3. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L04-02": {
+      "prompt": "En Unions i interseccions: Atès equilibrat: A={2,4, 6}, B={5,6}. Calcula P(A∩B). Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 1/6. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L04-03": {
+      "prompt": "En Unions i interseccions: Donat ideal A= parell i B=>4. Calcula P(B|A) atès que va sortir un nombre parell. Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 1/3. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L04-04": {
+      "prompt": "En Unions i interseccions: Dos successos INCOMPATIBLES de probabilitats positives són independents? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L04-05": {
+      "prompt": "En Unions i interseccions: En 6 casos equiprobables, dos successos disjunts tenen 2 i 2 casos. Calcula P(unió). Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 2/3. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L05-01": {
+      "prompt": "En Probabilitat d'experiments compostos: Urna 2 vermelles i 1 blau SENSE reemplaçament: calcula P(RR) amb branca condicionada. Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 1/3. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L05-02": {
+      "prompt": "En Probabilitat d'experiments compostos: Urna 2 vermelles i 1 blau SENSE reemplaçament: calcula P(AR), blau després vermella. Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 1/3. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L05-03": {
+      "prompt": "En Probabilitat d'experiments compostos: Urna 2 vermelles i 1 blau SENSE reemplaçament: calcula P(AA), dos blaus. Introdueix el nombre exacte o el decimal arrodonit que s'indica.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L05-04": {
+      "prompt": "En Probabilitat d'experiments compostos: En urna 2R i 1A SENSE reemplaçament és vàlida la independència de dues extraccions? Sí / No. Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: No. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    },
+    "F3-B1S-Q01-L05-05": {
+      "prompt": "En Probabilitat d'experiments compostos: Dues monedes equilibrades independents: calcula P(exactament una cara), sumant les rutes CX i XC. Tria l'opció matemàticament justificada.",
+      "hint": "Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; abans de Laplace verifica equiprobabilitat.",
+      "explanation": "Resultat exacte o aproximat segons s'indica: 0,5. Declara si l'ordre importa, si hi ha reemplaçament i quin és l'espai elemental; Abans de Laplace verifica equiprobabilitat. Per a combinacions utilitza C(n, k)=n! /[k! (n−k)!]; en una ruta multiplica probabilitats condicionades i entre rutes disjuntes suma sense duplicats. Comprova condicions de model, denominadors, unitats i biaix d'extrapolació abans de generalitzar."
+    }
+  }
+}

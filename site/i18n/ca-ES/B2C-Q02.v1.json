@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2C-Q02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2c_q02.json": "fbd71fbd922363c3b77c72899823cde47e262d08215f563a1cf4f1bcfba80045",
+    "data/f3_b2c_q02_exercises.json": "2b7b110f2ac0c5879e8e705f10e87b957c339f3dcd9c61d913f4ccc8b330e0de"
+  },
+  "lessons": {
+    "B2C-Q02-L01": {
+      "title": "Variables discretes i contínues",
+      "objectives": [
+        "Distingir variables discretes amb funcions de massa de variables contínues amb densitat.",
+        "Calcula probabilitats de conjunts sense confondre densitat i probabilitat puntual."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una variable aleatòria X assigna un nombre a cada resultat d'un experiment i la seva distribució descriu com es reparteixen les seves probabilitats. Si és discreta, P(X=x) es representa per masses no negatives la suma de les quals és un; la probabilitat d'un conjunt s'obté sumant masses. Si és contínua, una densitat f(x) no és la probabilitat puntual: P(X=a)=0 i les probabilitats es calculen com a àrees sobre intervals. Per exemple, una variable uniforme U(a,b) té densitat 1/(b−a) dins de l'interval i probabilitat igual a longitud favorable dividida per longitud total. L'elecció d'uniforme exigeix una hipòtesi raonada, no es dedueix que existeixin etiquetes diferents."
+        },
+        {
+          "body": "Si X pren 0, 1 i 2 amb probabilitats 0,2, 0,5 i 0,3, la suma és 1 i P(X≥1)=0,5+0,3=0,8; la distribució és discreta."
+        },
+        {
+          "body": "Per a T~ U(0,10) contínua, P(2≤T≤4)=(4−2)/10=0,2, però P(T=2)=0. La densitat val 0,1, no una massa en el punt."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Variables discretes i contínues. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Variables discretes i contínues"
+          }
+        },
+        {
+          "body": "És la densitat 0,1 d'una contínua igual a P(T=2)?||No: un punt té longitud nul·la i probabilitat zero."
+        },
+        {
+          "body": "Recuperació activa: Distingir variables discretes amb funcions de massa de variables contínues amb densitat. Esbrina primer si els resultats són valors comptables o mesuraments continus. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2C-Q02-L02": {
+      "title": "Paràmetres",
+      "objectives": [
+        "Calcular esperança i variància de variables aleatòries discretes.",
+        "Interpretar paràmetres teòrics sense atribuir-los automàticament a dades reals."
+      ],
+      "content_blocks": [
+        {
+          "body": "L'esperança μ=E[X] és una mitjana ponderada dels possibles valors de X segons les seves probabilitats: μ=Σx p(x). No teniu per què coincidir amb un valor possible de X. La variància Var (X)=E[(X−μ)²]=E[X²]−μ² és no negativa i mesura dispersió quadràtica respecte a l'esperança. La seva arrel quadrada σ conserva la unitat original, mentre la variància té unitats al quadrat. Per a una Bernoulli amb probabilitat p, E[X]=p i Var (X)=p(1−p); per a una binomial sota hipòtesis vàlides, E[X]= np i Var (X)= np (1−p). És essencial comprovar primer que les masses són no negatives i sumen un."
+        },
+        {
+          "body": "Si X pren 0,1, 2 amb probabilitats 1/4,1/2,1/4, llavors E[X]=1, E[X²]=1,5 i Var (X)=1,5−1=0,5."
+        },
+        {
+          "body": "Per a X~ B(20,0, 3) sota assajos independents, E[X]=20×0,3=6 i Var (X)=20×0,3×0,7=4,2; es tracta de paràmetres del model, no necessàriament d'un registre observat."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Paràmetres. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Paràmetres"
+          }
+        },
+        {
+          "body": "Pot l'esperança ser un valor no observable de X?||Sí, és la mitjana ponderada teòrica de tots els valors."
+        },
+        {
+          "body": "Recuperació activa: Calcular esperança i variància de variables aleatòries discretes. Per obtenir E[X] multiplica cada valor per la seva massa; Comprova que en sumin un. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2C-Q02-L03": {
+      "title": "Binomial i supòsits",
+      "objectives": [
+        "Reconèixer les quatre condicions d'un experiment binomial.",
+        "Calcula probabilitats binomials exactes amb combinacions."
+      ],
+      "content_blocks": [
+        {
+          "body": "X~B(n,p) compta èxits en un nombre fix n d'assajos amb exactament dos resultats per assaig, independència entre assajos i probabilitat constant p d'èxit. La massa P(X=k)=C(n, k)p^k(1−p)^(n−k) requereix k enter entre 0 i n. Les combinacions compten les seqüències diferents amb k èxits. En extraccions sense reemplaçament d'una urna petita p canvia i els assajos deixen de ser independents; usar una binomial seria injustificat. El càlcul exacte no és una aproximació normal i ha de distingir-se de qualsevol arrodoniment mostrat."
+        },
+        {
+          "body": "Amb quatre llançaments independents de moneda equilibrada, P(X=2)=C(4,2)(1/2)^4=6/16=0,375."
+        },
+        {
+          "body": "En cinc assajos Bernoulli independents amb p=0,2, P(X=0)=(0,8)^5=0,32768. Si les probabilitats canvien entre proves, aquest valor deixa de ser aplicable."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Binomial i supòsits. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Binomial i supòsits"
+          }
+        },
+        {
+          "body": "Es pot usar B(n,p) després d'extraccions sense reemplaçament quan canvia p?||No, fallen independència i probabilitat constant."
+        },
+        {
+          "body": "Recuperació activa: Reconèixer les quatre condicions d'un experiment binomial. Enumera n fix, dos resultats, independència i p constant. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2C-Q02-L04": {
+      "title": "Normal i estandardització",
+      "objectives": [
+        "Estandaritzar una variable normal amb mitjana i desviació conegudes.",
+        "Llegir probabilitats acumulades sense atribuir massa positiva a un punt."
+      ],
+      "content_blocks": [
+        {
+          "body": "En un model normal X ~ N(μ, σ²), on σ>0 és la desviació típica, la variable Z=(X−μ)/σ segueix N(0,1). Les probabilitats d'intervals es llegeixen com àrees sota la densitat, no com altures de la corba. La funció acumulada Φ (z)=P(Z≤z) és creixent; Φ (0)=0,5 i Φ (1)≈0,84134. Per simetria P(Z≥1)≈0,15866. Una corba normal és un model sota hipòtesi: el fet que existeixin moltes dades no demostra que les observacions individuals siguin normals. Especificar mitjana, dispersió i llindars evita confondre valors estandarditzats amb originals."
+        },
+        {
+          "body": "Per a X~ N(100,15²), el llindar 115 s'estandarditza com z=(115−100)/15=1, de manera que P(X≤115)≈0,84134."
+        },
+        {
+          "body": "Per a la mateixa distribució P(X≤100)=0,5 i P(X=100)=0; són resultats diferents encara que la densitat sigui màxima en la mitjana."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Normal i estandardització. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Normal i estandardització"
+          }
+        },
+        {
+          "body": "Per què P(X=100)=0 si X és normal amb mitjana 100?||Perquè en una variable contínua un punt no té àrea."
+        },
+        {
+          "body": "Recuperació activa: Estandaritzar una variable normal amb mitjana i desviació conegudes. Primer identifica si el problema es refereix a una àrea o una densitat. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2C-Q02-L05": {
+      "title": "Càlcul tecnològic de probabilitats",
+      "objectives": [
+        "Emprar algorismes matemàtics reproduïbles per a probabilitats discretes i contínues.",
+        "Documentar precisió, arrodoniment i comprovacions de coherència del càlcul."
+      ],
+      "content_blocks": [
+        {
+          "body": "El càlcul tecnològic de probabilitats ha d'especificar model, paràmetres i tipus d'operació. En la binomial discreta, P(X≤k) es calcula sumant les masses des de zero fins a k, no prenent solament P(X=k). En una normal s'utilitza una funció de distribució acumulada apropiada després d'estandarditzar; el seu resultat pot ser aproximat. Una calculadora no valguda per si sola independència, equiprobabilitat ni forma de la població. Per reproduir el càlcul, registrar n, p, k o μ, σ, el conveni inclusiu de ≤, la precisió i qualsevol aproximació. Comprova que l'acumulada està entre zero i un i no és decreixent ajuda a detectar errors."
+        },
+        {
+          "body": "Per a X~ B(4,0, 5), P(X≤2)=P(0)+P(1)+P(2)=(1+4+6)/16=11/16=0,6875, enfront de P(X=2)=6/16=0,375."
+        },
+        {
+          "body": "Per Z~ N(0,1), una calculadora acumulada dóna Φ (1)≈0,84134; complement P(Z>1)≈0,15866. És un valor de la CDF, no densitat puntual."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Càlcul tecnològic de probabilitats. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Càlcul tecnològic de probabilitats"
+          }
+        },
+        {
+          "body": "S'obté P(X≤2) avaluant només P(X=2)?||No; s'han de sumar totes les masses des de 0-2."
+        },
+        {
+          "body": "Recuperació activa: Utilitza algorismes matemàtics reproduïbles per a probabilitats discretes i contínues. Marca si es demana =, ≤, ≥ o un interval per triar l'operació. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    },
+    "B2C-Q02-L06": {
+      "title": "Selecció i avaluació de models",
+      "objectives": [
+        "Justificar la selecció d'un model amb criteris observables i supòsits.",
+        "Reconèixer quan es rebutgen binomial o normal per mecanismes incompatibles."
+      ],
+      "content_blocks": [
+        {
+          "body": "Seleccionar un model exigeix descriure la variable y el mecanisme que genera les dades abans de calcular. Si X compta èxits dicotòmics d'assajos independents amb n fix i p constant, una binomial resulta apropiada. Si una magnitud és contínua i el seu mecanisme admet una distribució simètrica en forma de campana, una normal pot ser una aproximació que requereix comprovació. Una suma de respostes dependents, un mostreig per conglomerats o una probabilitat d'èxit canviant invaliden suposicions usuals. La distribució de mitjanes mostrals no equival a la distribució individual; el teorema central del límit té condicions. Els models són hipòtesis falsables, no garanties normatives."
+        },
+        {
+          "body": "En 100 llançaments independents de moneda ideal, comptar cares permet B(100,0, 5), amb esperança 50 i desviació √25=5."
+        },
+        {
+          "body": "En 8 extraccions sense reemplaçament d'una urna petita, comptar vermelles no segueix en general B(8,p) fix perquè p varia en treure boles; s'ha de considerar un altre model, segons població i disseny."
+        },
+        {
+          "body": "Esquema matemàtic local il·lustratiu; la taula accessible conté xifres, hipòtesis i límits.",
+          "alt": "Selecció i avaluació de models. Figura il·lustrativa i alternativa tabular exacta sense dependència de color.",
+          "visual_spec": {
+            "title": "Selecció i avaluació de models"
+          }
+        },
+        {
+          "body": "Comptar resultats dicotòmics garanteix una binomial?||No; també es necessiten independència i probabilitat p constant."
+        },
+        {
+          "body": "Recuperació activa: Justificar la selecció d'un model amb criteris observables i supòsits. Descriu la població i els assajos abans d'escollir distribució. Repàs D+1, D+3, D+7, D+14, D+30: pauta editorial no calibrada."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2C-Q02-L01-01": {
+      "prompt": "X discreta té masses 0,2; 0,5; 0,3 per 0,1, 2. Calcula P(X≥1).",
+      "hint": "Esbrina primer si els resultats són valors comptables o mesuraments continus.",
+      "explanation": "P(X≥1)=0,5+0,3=0,8. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q02-L01-02": {
+      "prompt": "Si T~ U(0,10), calcula P(2≤T≤4).",
+      "hint": "Esbrina primer si els resultats són valors comptables o mesuraments continus.",
+      "explanation": "Longitud favorable 2 respecte de la longitud total 10: P=0,2."
+    },
+    "F3-B2C-Q02-L01-03": {
+      "prompt": "Per X amb masses 0,2; 0,5; 0,3 en els valors 0,1, 2, calcula P(X≤1).",
+      "hint": "Esbrina primer si els resultats són valors comptables o mesuraments continus.",
+      "explanation": "L'acumulada és 0,2+0,5=0,7. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q02-L01-04": {
+      "prompt": "Què correspon a la probabilitat d'un punt per a una variable contínua amb densitat?",
+      "hint": "Esbrina primer si els resultats són valors comptables o mesuraments continus.",
+      "explanation": "La probabilitat contínua s'obté integrant una densitat sobre un interval."
+    },
+    "F3-B2C-Q02-L01-05": {
+      "prompt": "Quina condició és essencial per a masses d'una distribució discreta?",
+      "hint": "Esbrina primer si els resultats són valors comptables o mesuraments continus.",
+      "explanation": "Les masses formen una distribució de probabilitat només si són vàlides i sumen un."
+    },
+    "F3-B2C-Q02-L02-01": {
+      "prompt": "X pren 0,1, 2 amb masses 1/4,1/2,1/4. Calculeu E[X].",
+      "hint": "Per obtenir E[X] multiplica cada valor per la seva massa; Comprova que en sumin un.",
+      "explanation": "0×0,25+1×0,5+2×0,25=1. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q02-L02-02": {
+      "prompt": "Per a X=0,1, 2 amb masses 1/4,1/2,1/4, calcula Var(X).",
+      "hint": "Per obtenir E[X] multiplica cada valor per la seva massa; Comprova que en sumin un.",
+      "explanation": "E[X²]=1,5 i E[X]=1; variància 1,5−1=0,5. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q02-L02-03": {
+      "prompt": "Si X~ B(20,0, 3) sota supòsits binomials, calcula E[X].",
+      "hint": "Per obtenir E[X] multiplica cada valor per la seva massa; Comprova que en sumin un.",
+      "explanation": "Mitjana binomial np =20×0,3=6. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q02-L02-04": {
+      "prompt": "Pot E[X] ser un nombre que X mai pren?",
+      "hint": "Per obtenir E[X] multiplica cada valor per la seva massa; Comprova que en sumin un.",
+      "explanation": "L'esperança descriu una mitjana, no un resultat elemental obligatori."
+    },
+    "F3-B2C-Q02-L02-05": {
+      "prompt": "Quines són les unitats de Var(X) si X es mesura en metres?",
+      "hint": "Per obtenir E[X] multiplica cada valor per la seva massa; Comprova que en sumin un.",
+      "explanation": "La variància mitjana quadrats de desviacions i té unitat elevada al quadrat."
+    },
+    "F3-B2C-Q02-L03-01": {
+      "prompt": "X~ B(4,0, 5). Probabilitat exacta P(X=2)?",
+      "hint": "Enumera n fix, dos resultats, independència i p constant.",
+      "explanation": "C(4,2)×(0,5)^4=6/16=0,375. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q02-L03-02": {
+      "prompt": "Cinc assajos binomials independents amb p=0,2. P(X=0)?",
+      "hint": "Enumera n fix, dos resultats, independència i p constant.",
+      "explanation": "P(0)=(1−0,2)^5=0,8^5=0,32768. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q02-L03-03": {
+      "prompt": "X~ B(3,0, 5). P(X=1)?",
+      "hint": "Enumera n fix, dos resultats, independència i p constant.",
+      "explanation": "Tres possibles posicions de l'èxit: C(3,1)/2^3=3/8."
+    },
+    "F3-B2C-Q02-L03-04": {
+      "prompt": "Quin supòsit pot fallar en extreure boles sense reemplaçament d'urna petita?",
+      "hint": "Enumera n fix, dos resultats, independència i p constant.",
+      "explanation": "La probabilitat d'èxit canvia després de cada extracció."
+    },
+    "F3-B2C-Q02-L03-05": {
+      "prompt": "Què representa C(n,k) en la fórmula binomial?",
+      "hint": "Enumera n fix, dos resultats, independència i p constant.",
+      "explanation": "El coeficient combinatori compta seqüències amb k èxits."
+    },
+    "F3-B2C-Q02-L04-01": {
+      "prompt": "Per a X~ N(100,15²), converteix x=115 al valor z.",
+      "hint": "Primer identifica si el problema es refereix a una àrea o una densitat.",
+      "explanation": "z=(115−100)/15=1. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q02-L04-02": {
+      "prompt": "Per a Z normal estàndard, calcula P(Z≤0).",
+      "hint": "Primer identifica si el problema es refereix a una àrea o una densitat.",
+      "explanation": "Per simetria Φ (0)=0,5. El resultat s'obté sota els supòsits de l'exemple; No garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q02-L04-03": {
+      "prompt": "Per a Z~ N(0,1), calcula P(Z≤1) arrodonit a quatre decimals.",
+      "hint": "Primer identifica si el problema es refereix a una àrea o una densitat.",
+      "explanation": "Φ (1)≈0,841344746; quatre decimals 0,8413."
+    },
+    "F3-B2C-Q02-L04-04": {
+      "prompt": "Què val P(X=μ) en una distribució normal contínua?",
+      "hint": "Primer identifica si el problema es refereix a una àrea o una densitat.",
+      "explanation": "Una probabilitat puntual contínua és zero; 0,5 correspon a una semirecta."
+    },
+    "F3-B2C-Q02-L04-05": {
+      "prompt": "Què canvia en estandarditzar una variable normal amb Z=(X−μ)/σ?",
+      "hint": "Primer identifica si el problema es refereix a una àrea o una densitat.",
+      "explanation": "El canvi lineal estandarditza sense alterar les àrees corresponents."
+    },
+    "F3-B2C-Q02-L05-01": {
+      "prompt": "Per B(4,0, 5), calcula P(X≤2) sumant masses exactes.",
+      "hint": "Marca si es demana =, ≤, ≥ o un interval per triar l'operació.",
+      "explanation": "P(0)+P(1)+P(2)=(1+4+6)/16=11/16=0,6875. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q02-L05-02": {
+      "prompt": "Per a B(4,0, 5), calcula P(X=2) sense acumular.",
+      "hint": "Marca si es demana =, ≤, ≥ o un interval per triar l'operació.",
+      "explanation": "La massa puntual és 6/16=0,375, no l'acumulada."
+    },
+    "F3-B2C-Q02-L05-03": {
+      "prompt": "Per a Z normal estàndard calcula P(Z>1), arrodonit a quatre decimals.",
+      "hint": "Marca si es demana =, ≤, ≥ o un interval per triar l'operació.",
+      "explanation": "P(Z>1)=1− Φ (1)≈0,158655; arrodoneix 0,1587."
+    },
+    "F3-B2C-Q02-L05-04": {
+      "prompt": "Quina operació ha de realitzar una calculadora per a P(X≤k) binomial?",
+      "hint": "Marca si es demana =, ≤, ≥ o un interval per triar l'operació.",
+      "explanation": "Una CDF discreta acumula probabilitats fins al llindar."
+    },
+    "F3-B2C-Q02-L05-05": {
+      "prompt": "Què garanteix un resultat numèric mostrat amb deu decimals?",
+      "hint": "Marca si es demana =, ≤, ≥ o un interval per triar l'operació.",
+      "explanation": "L'elecció i validesa del model són prèvies al càlcul tecnològic."
+    },
+    "F3-B2C-Q02-L06-01": {
+      "prompt": "X~ B(100,0, 5). Quin és el nombre esperat d'èxits?",
+      "hint": "Descriu la població i els assajos abans d'escollir distribució.",
+      "explanation": "E[X]= np =100×0,5=50. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q02-L06-02": {
+      "prompt": "X~ B(100,0, 5). Desviació típica teòrica?",
+      "hint": "Descriu la població i els assajos abans d'escollir distribució.",
+      "explanation": "Var (X)=100×0,5×0,5=25 i σ=5. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q02-L06-03": {
+      "prompt": "Cinc monedes ideals independents: P(cap cara).",
+      "hint": "Descriu la població i els assajos abans d'escollir distribució.",
+      "explanation": "P(X=0)=(0,5)^5=1/32=0,03125. El resultat s'obté sota els supòsits de l'exemple; no garanteix representativitat ni elimina incertesa."
+    },
+    "F3-B2C-Q02-L06-04": {
+      "prompt": "Quin model descriu adequadament comptar cares en 100 monedes ideals independents?",
+      "hint": "Descriu la població i els assajos abans d'escollir distribució.",
+      "explanation": "n fix, dos resultats, assajos independents i p constant permeten binomial."
+    },
+    "F3-B2C-Q02-L06-05": {
+      "prompt": "Quina és la primera decisió correcta abans d'ajustar una distribució?",
+      "hint": "Descriu la població i els assajos abans d'escollir distribució.",
+      "explanation": "El model es justifica pel mecanisme i l'evidència, no per comoditat."
+    }
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1S-N01",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1s_n01.json": "89bf3034ffc88933093b39473aeee20d4892de5170f41bade8843305f20dc6d1",
+    "data/f3_b1s_n01_exercises.json": "f79c073e60d34b6729a63015205fa733481e6430fc6d9f21fd646c94086343fb"
+  },
+  "lessons": {
+    "B1S-N01-L01": {
+      "title": "Reals i intervals",
+      "objectives": [
+        "Usa intervals, valor absolut i notació de conjunts reals amb domini.",
+        "Resoldre desigualtats senzilles interpretant oberts i tancats."
+      ],
+      "content_blocks": [
+        {
+          "body": "El conjunt de nombres reals inclou racionals i irracionals i ordena mesures sobre una recta contínua. El valor absolut |x−a| representa distància entre x i a, de manera que |x−3|≤2 equival a 1≤x≤5, mentre que |x−3|>2 dóna x<1 o x>5. Els intervals poden ser fitats, semirectes o unions; en [a,b] s'inclouen extrems si s'utilitza ≤ o ≥, però l'infinit mai és un extrem numèric incluible. Una distància no és negativa, així que una desigualtat |x|<−1 no té solucions. Si una variable descriu nombre de clients, el domini contextual podria incloure només enters, encara que l'equació algebraica admeti tots els reals. Abans d'operar logaritmes i radicals s'identifica el domini real; aquesta etapa completa la base de nombres de 4.o i no assumeix com desenvolupada una lliçó pendent."
+        },
+        {
+          "body": "Resoldre |x−3|≤2 equival a −2≤x−3≤2. En sumar 3 s'obté 1≤x≤5, interval tancat [1,5]."
+        },
+        {
+          "body": "La condició |x+1|>3 significa x+1<−3 o x+1>3: per tant x<−4 o x>2, amb extrems exclosos."
+        },
+        {
+          "body": "Distància i solucions de desigualtat absoluta. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "Distància i solucions de desigualtat absoluta. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "Distància i solucions de desigualtat absoluta"
+          }
+        },
+        {
+          "body": "Pot complir-se |x−3|<−1 per a algun nombre real?||Núm.; el valor absolut mai és negatiu."
+        },
+        {
+          "body": "Recuperació activa: El conjunt de nombres reals inclou racionals i irracionals i ordena mesures sobre una recta contínua. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    },
+    "B1S-N01-L02": {
+      "title": "Potències i arrels",
+      "objectives": [
+        "Aplicar propietats de potències i radicals preservant restriccions reals.",
+        "Simplificar arrels i exponents racionals evitant cancel·lacions invàlides."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a>0 i exponents reals, la identitat a^r·a^s=a^(r+s) i (a^r)^s=a^( rs) és segura sota la definició usual de potència positiva. Els exponents racionals p/q s'interpreten mitjançant arrel principal quan el domini ho permet. En els nombres reals, √a existeix si a≥0 i √(x²)=|x|; per a la arrel cúbica, un radicant negatiu sí que és admissible. Les arrels se simplifiquen extraient quadrats perfectes: √50=5√2. Per dividir potències s'exigeix denominador no nul. Quan es manipulen arrels en equacions, elevar al quadrat pot introduir solucions falses que han de verificar-se en l'expressió original. El domini a>0 és especialment important per connectar amb logaritmes: logaritme de base negativa no es defineix aquí en els reals."
+        },
+        {
+          "body": "Simplificar √200: √(100·2)=10√2. És una igualtat exacta sense aproximar decimals ni perdre el factor 10."
+        },
+        {
+          "body": "Per a x=−5, √(x²)=√25=5=|x|; reemplaçar-lo per x donaria −5, contradient que la arrel principal sigui no negativa."
+        },
+        {
+          "body": "arrel principal i valor absolut. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "arrel principal i valor absolut. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "arrel principal i valor absolut"
+          }
+        },
+        {
+          "body": "És correcta la identitat √(x²)=x sense imposar x≥0?||No: el resultat general real és |x|."
+        },
+        {
+          "body": "Recuperació activa: Per a>0 i exponents reals, la identitat a^r·a^s=a^(r+s) i (a^r)^s=a^( rs) és segura sota la definició usual de potència positiva. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    },
+    "B1S-N01-L03": {
+      "title": "Logaritmes i propietats",
+      "objectives": [
+        "Definir logaritmes mitjançant potències amb base i argument vàlids.",
+        "Aplicar lleis de producte, quocient i potència sense distribuir sobre sumes."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a base a>0 diferent de 1 i argument x>0, log_ a(x)=y significa que a^y=x; exponencial i logaritme són operacions inverses en els seus dominis. Exemples: log_2 (8)=3 i log_10 (0,01)=−2. Les propietats log_a(xy )= log_ a(x)+ log_a(y) i log_ a(x/y)= log_ a(x)− log_a(y) exigeixen x>0 e y>0; també log_ a(x^r)=r log_a(x) per a x>0. No existeix una regla log (x+y)= log x+ log i. Per resoldre log_2 (x−1)=3 es transforma en x−1=8, x=9, i es comprova x>1. Si l'argument és zero o negatiu, el logaritme real no existeix; a més la base no pot ser 1. Els canvis de base divideixen per log_b(a), que és diferent de zero quan a≠1."
+        },
+        {
+          "body": "Resoldre log_2 (x−1)=3 dóna x−1=2³=8, x=9. Comprovació: l'argument x−1=8 és positiu i log_2 (8)=3."
+        },
+        {
+          "body": "Utilitzant propietats vàlides, log_3 (9·27)= log_3 (9)+ log_3 (27)=2+3=5, ja que 9·27=243=3⁵."
+        },
+        {
+          "body": "Logaritme com a inversa d'una exponencial. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "Logaritme com a inversa d'una exponencial. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "Logaritme inversa d'una exponencial"
+          }
+        },
+        {
+          "body": "Es pot substituir log (x+y) per log x+ log i?||Núm.; la identitat logarítmica s'aplica a productes, no a sumes."
+        },
+        {
+          "body": "Recuperació activa: Per a base a>0 diferent de 1 i argument x>0, log_ a(x)=y significa que a^y=x; exponencial i logaritme són operacions inverses en els seus dominis. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    },
+    "B1S-N01-L04": {
+      "title": "Notació científica",
+      "objectives": [
+        "Converteix nombres entre forma decimal i notació científica estàndard.",
+        "Operar amb exponents de deu conservant unitats i ordre de magnitud."
+      ],
+      "content_blocks": [
+        {
+          "body": "La notació científica normalitzada escriu un nombre no nul com a·10^n, on 1≤|a|<10 i n és enter. Per exemple 0,00072=7,2·10^−4 i 3400000=3,4·10^6. Multiplicar dues quantitats científiques suma exponents i multiplica mantisses; després es normalitza la mantellissa si queda fora de l'interval. L'ordre de magnitud orienta comparacions, però la potència de deu i el coeficient han de mantenir-se junts per a xifres exactes. Amb mesures s'especifiquen unitats i xifres significatives: 3,4·10^3 m no necessàriament té precisió fins al metre. La forma científica no canvia la magnitud física, només la representa més compactament. Encara que E3-N02 està pendent, el procediment es desenvolupa aquí des de la definició sense presentar aquesta unitat com a acabada."
+        },
+        {
+          "body": "Escriure 0,00072 en notació científica: desplaça la coma quatre llocs a la dreta, 7,2·10^−4."
+        },
+        {
+          "body": "Multiplica (3·10⁴)(2·10³)=6·10⁷. La mantissa 6 es manté entre 1 i 10, de manera que el resultat està normalitzat."
+        },
+        {
+          "body": "Potència de deu i ordre de magnitud. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "Potència de deu i ordre de magnitud. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "Potència de deu i ordre de magnitud"
+          }
+        },
+        {
+          "body": "És científica normalitzada la forma 34·10^5?||No: cal reescriure-la com 3,4·10^6 per complir 1≤|a|<10."
+        },
+        {
+          "body": "Recuperació activa: La notació científica normalitzada escriu un nombre no nul com a·10^n, on 1≤|a|<10 i n és enter. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    },
+    "B1S-N01-L05": {
+      "title": "Operacions i aproximacions",
+      "objectives": [
+        "Avaluar aproximacions i propagació de cotes de mesura senzilles.",
+        "Escollir precisió raonable i diferenciar valor exacte d'arrodoniment."
+      ],
+      "content_blocks": [
+        {
+          "body": "L'aritmètica exacta i l'aproximada responen a necessitats diferents. Una fracció 1/3 és un valor racional exacte; escriure 0,333 representa una aproximació amb error 1/3000, no una igualtat. Per a dues quantitats aproximades amb errors absoluts acotats per e1 i e2, la suma té com a error absolut màxim e1+e2 per la desigualtat triangular. Si A=10±0,2 m i B=5±0,1 m, la suma A+B té un valor anunciat de 15 m i un error màxim de 0,3 m. L'error relatiu d'una magnitud real no nul·la compara l'error absolut amb |valor real| i no s'ha de confondre amb el percentatge de variació econòmica. Les xifres significatives expressen la precisió de les dades; per això, mostrar molts decimals calculats no els converteix en informació observada. Abans d'arrodonir es conserven els resultats exactes quan són manejables."
+        },
+        {
+          "body": "Summem mesures 10±0,2 cm i 5±0,1 cm: estimació central 15 cm i cota d'error absolut 0,3 cm."
+        },
+        {
+          "body": "La fracció 1/3 aproximada a 0,33 difereix en 1/300≈0,00333. És millor distingir sempre símbol igual de símbol aproximadament."
+        },
+        {
+          "body": "Errors absoluts acumulats en una suma. SVG local original de suport, taula HTML semàntica amb magnituds exactes, unitats i restriccions; el dibuix no substitueix la demostració.",
+          "alt": "Errors absoluts acumulats en una suma. Els resultats numèrics, dominis i restriccions consten en la taula accessible sense dependre de color.",
+          "visual_spec": {
+            "title": "Errors absoluts acumulats en una suma"
+          }
+        },
+        {
+          "body": "L'error màxim de sumar dues mesures amb cotes 0,2 i 0,1 pot justificar-se com 0,3?||Sí, per la desigualtat triangular d'errors absoluts."
+        },
+        {
+          "body": "Recuperació activa: L'aritmètica exacta i l'aproximada responen a necessitats diferents. Calcula un altre exemple sense pistes, assenyala un error de domini i recupera la idea l'endemà."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1S-N01-L01-01": {
+      "prompt": "En Reals i intervals: Per a |x−(3)|≤2, calcula l'extrem inferior del seu interval solució. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Representa les desigualtats en la recta i revisa cada extrem obert o tancat.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 1. Representa les desigualtats en la recta i revisa cada extrem obert o tancat. La intersecció exigeix complir dues condicions; |x−c|≤r equival a c−r≤x≤c+r, i |x−c|>r descriu l'exterior. Resposta contrastable: 1. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L01-02": {
+      "prompt": "En Reals i intervals: Per a |x−(3)|≤2, calcula l'extrem SUPERIOR del seu interval solució. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Representa les desigualtats en la recta i revisa cada extrem obert o tancat.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte 5. Representa les desigualtats en la recta i revisa cada extrem obert o tancat. La intersecció exigeix complir dues condicions; |x−c|≤r equival a c−r≤x≤c+r, i |x−c|>r descriu l'exterior. Resposta contrastable: 5. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L01-03": {
+      "prompt": "En Reals i intervals: Quina és la solució exacta de |x−(-1)|>3? Tria la unió d'intervals EXTERIORS. Selecciona una opció exacta.",
+      "hint": "Representa les desigualtats en la recta i revisa cada extrem obert o tancat.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte x<-4 o x>2. Representa les desigualtats en la recta i revisa cada extrem obert o tancat. La intersecció exigeix complir dues condicions; |x−c|≤r equival a c−r≤x≤c+r, i |x−c|>r descriu l'exterior. Resposta contrastable: x<-4 o x>2. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L01-04": {
+      "prompt": "En Reals i intervals: Pot un valor absolut real ser estrictament menor que −1 (Sí / No)? Selecciona una opció exacta.",
+      "hint": "Representa les desigualtats en la recta i revisa cada extrem obert o tancat.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte No. Representa les desigualtats en la recta i revisa cada extrem obert o tancat. La intersecció exigeix complir dues condicions; |x−c|≤r equival a c−r≤x≤c+r, i |x−c|>r descriu l'exterior. Resposta contrastable: No. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L01-05": {
+      "prompt": "En Reals i intervals: Està el valor x=5 inclòs en l'interval [1,5) (Sí / No)? Respecta l'extrem obert. Selecciona una opció exacta.",
+      "hint": "Representa les desigualtats en la recta i revisa cada extrem obert o tancat.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte No. Representa les desigualtats en la recta i revisa cada extrem obert o tancat. La intersecció exigeix complir dues condicions; |x−c|≤r equival a c−r≤x≤c+r, i |x−c|>r descriu l'exterior. Resposta contrastable: No. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L02-01": {
+      "prompt": "En Potències i arrels: Simplifica exactament √200 com A√2, amb A enter positiu. Quin és el coeficient A? Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Usa definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 10. Utilitza definició de arrel principal, extreu factors quadrats perfectes i comprova el domini. √(x²)=|x|; per a potències a^m·a^n=a^(m+n). Les arrels cúbiques reals admeten signe negatiu. Resposta contrastable: 10. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L02-02": {
+      "prompt": "En Potències i arrels: Per x=-5, calcula √(x²) com arrel principal no negativa i no com un signe triat sense justificació. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Usa definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 5. Utilitza definició de arrel principal, extreu factors quadrats perfectes i comprova el domini. √(x²)=|x|; per a potències a^m·a^n=a^(m+n). Les arrels cúbiques reals admeten signe negatiu. Resposta contrastable: 5. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L02-03": {
+      "prompt": "En Potències i arrels: Calcula 3^2·3^3 aplicant suma d'exponents i avalua el nombre exacte. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Usa definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 243. Utilitza definició de arrel principal, extreu factors quadrats perfectes i comprova el domini. √(x²)=|x|; per a potències a^m·a^n=a^(m+n). Les arrels cúbiques reals admeten signe negatiu. Resposta contrastable: 243. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L02-04": {
+      "prompt": "En Potències i arrels: Existeix la arrel quadrada principal real d'un nombre estrictament negatiu (Sí / No)? Selecciona una opció exacta.",
+      "hint": "Usa definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté No. Utilitza definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini. √(x²)=|x|; per a potències a^m·a^n=a^(m+n). Les arrels cúbiques reals admeten signe negatiu. Resposta contrastable: No. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L02-05": {
+      "prompt": "En Potències i arrels: Simplifica exactament √50 com A√2, amb A enter positiu. Quin és el coeficient A? Selecciona una opció exacta.",
+      "hint": "Usa definició d'arrel principal, extreu factors quadrats perfectes i comprova el domini.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 5. Utilitza definició de arrel principal, extreu factors quadrats perfectes i comprova el domini. √(x²)=|x|; per a potències a^m·a^n=a^(m+n). Les arrels cúbiques reals admeten signe negatiu. Resposta contrastable: 5. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L03-01": {
+      "prompt": "En Logaritmes i propietats: Calcula logaritme en base 2 de l'argument positiu 8: cerca exponent t tal que 2^t=8. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 3. Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible. log_ a(y)=x equival a a^x=y, amb a>0, a≠1 e y>0. En científica 1≤| mantisa |<10 i potència 10^n. Resposta contrastable: 3. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L03-02": {
+      "prompt": "En Logaritmes i propietats: Calcula logaritme en base 3 del producte positiu (9·27), mitjançant una potència o llei de producte vàlida. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 5. Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible. log_ a(y)=x equival a a^x=y, amb a>0, a≠1 e y>0. En científica 1≤| mantisa |<10 i potència 10^n. Resposta contrastable: 5. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L03-03": {
+      "prompt": "En Logaritmes i propietats: Resol log_2 (x−1)=3, exigint argument estrictament positiu. Introdueix x. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 9. Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible. log_ a(y)=x equival a a^x=y, amb a>0, a≠1 e y>0. En científica 1≤| mantisa |<10 i potència 10^n. Resposta contrastable: 9. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L03-04": {
+      "prompt": "En Logaritmes i propietats: És vàlid log (x+y)= log (x)+ log(y) en general per a x,i positius (Sí / No)? Selecciona una opció exacta.",
+      "hint": "Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté No. Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible. log_ a(y)=x equival a a^x=y, amb a>0, a≠1 e y>0. En científica 1≤| mantisa |<10 i potència 10^n. Resposta contrastable: No. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L03-05": {
+      "prompt": "En Logaritmes i propietats: Com ha de ser l'argument d'un logaritme real de base positiva diferent de 1: Positiu, Negatiu o Cero? Selecciona una opció exacta.",
+      "hint": "Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté Positiu. Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible. log_ a(y)=x equival a a^x=y, amb a>0, a≠1 e y>0. En científica 1≤| mantisa |<10 i potència 10^n. Resposta contrastable: Positiu. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L04-01": {
+      "prompt": "En Notació científica: En la notació científica NORMALitzada 36/5·10^5, quin és l'exponent enter de deu? Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 5. Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible. log_ a(y)=x equival a a^x=y, amb a>0, a≠1 e y>0. En científica 1≤| mantisa |<10 i potència 10^n. Resposta contrastable: 5. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L04-02": {
+      "prompt": "En Notació científica: En ( 3·10^4 ) ( 2·10^3 ), calcula el COEFICIENT normalitzat del producte. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 6. Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible. log_ a(y)=x equival a a^x=y, amb a>0, a≠1 e y>0. En científica 1≤| mantisa |<10 i potència 10^n. Resposta contrastable: 6. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L04-03": {
+      "prompt": "En Notació científica: En (3·10^4)(2·10^3), calcula l'exPONENT normalitzat de deu del producte. Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 7. Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible. log_ a(y)=x equival a a^x=y, amb a>0, a≠1 e y>0. En científica 1≤| mantisa |<10 i potència 10^n. Resposta contrastable: 7. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L04-04": {
+      "prompt": "En Notació científica: Està normalitzada l'expressió 34·10^5 com a notació científica amb mantissa 1≤|a|<10 (Sí / No)? Selecciona una opció exacta.",
+      "hint": "Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte No. Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible. log_ a(y)=x equival a a^x=y, amb a>0, a≠1 e y>0. En científica 1≤| mantisa |<10 i potència 10^n. Resposta contrastable: No. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L04-05": {
+      "prompt": "En Notació científica: En la notació científica NORMALitzada 17/5·10^6, quin és l'exponent enter de deu? Selecciona una opció exacta.",
+      "hint": "Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible.",
+      "explanation": "Raó matemàtica: Aplica identitat exacta amb el domini indicat, comprova mitjançant potència o arrel inversa i obté 6. Distingeix base, exponent i domini de logaritme. Usa igualtat amb potències quan sigui possible. log_ a(y)=x equival a a^x=y, amb a>0, a≠1 e y>0. En científica 1≤| mantisa |<10 i potència 10^n. Resposta contrastable: 6. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L05-01": {
+      "prompt": "En Operacions i aproximacions: Suma cotes d'error absolut independents de signe: 2/10 i 1/10. Quina cota garanteix la desigualtat triangular? Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Separa valor real, valor aproximat i cota d'error; conserva les unitats.",
+      "explanation": "Raó matemàtica: Separa error absolut, relatiu i precisió de dades, usant fraccions exactes per confirmar 0,3. Separa valor real, valor aproximat i cota d'error; conserva les unitats. Error absolut | real − aprox |; relatiu | real − aprox |/| real | si real ≠0; en sumar cotes s'usa desigualtat triangular. Resposta contrastable: 0,3. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L05-02": {
+      "prompt": "En Operacions i aproximacions: Calcula error absolut exacte en aproximar la fracció 1/3 per 33/100, sense arrodonir. Selecciona una opció exacta.",
+      "hint": "Separa valor real, valor aproximat i cota d'error; conserva les unitats.",
+      "explanation": "Raó matemàtica: Separa error absolut, relatiu i precisió de dades, usant fraccions exactes per confirmar 1/300. Separa valor real, valor aproximat i cota d'error; conserva les unitats. Error absolut | real − aprox |; relatiu | real − aprox |/| real | si real ≠0; en sumar cotes s'usa desigualtat triangular. Resposta contrastable: 1/300. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L05-03": {
+      "prompt": "En operacions i aproximacions: Un mesurament real 50 s'aproxima com 49. Quin és el seu error RELATIU en percentatge prenent | real | com a base? Escriu el resultat numèric exacte, sense unitats.",
+      "hint": "Separa valor real, valor aproximat i cota d'error; conserva les unitats.",
+      "explanation": "Raó matemàtica: Separa error absolut, relatiu i precisió de dades, usant fraccions exactes per confirmar 2. Separa valor real, valor aproximat i cota d'error; conserva les unitats. Error absolut |real−aprox|; relatiu |real−aprox|/|real| si real ≠0; en sumar cotes s'usa desigualtat triangular. Resposta contrastable: 2. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L05-04": {
+      "prompt": "En operacions i aproximacions: Més decimals en la calculadora garanteixen automàticament major precisió d'un mesurament físic (Sí / No)? Selecciona una opció exacta.",
+      "hint": "Separa valor real, valor aproximat i cota d'error; conserva les unitats.",
+      "explanation": "Raó matemàtica: Converteix valors, comprova hipòtesis i dominis i confirma per substitució el resultat exacte No. Separa valor real, valor aproximat i cota d'error; conserva les unitats. Error absolut |real−aprox|; relatiu |real−aprox|/|real| si real ≠0; en sumar cotes s'usa desigualtat triangular. Resposta contrastable: No. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    },
+    "F3-B1S-N01-L05-05": {
+      "prompt": "En Operacions i aproximacions: Suma cotes d'error absolut independents de signe: 3/10 i 2/10. Quina cota garanteix la desigualtat triangular? Selecciona una opció exacta.",
+      "hint": "Separa valor real, valor aproximat i cota d'error; conserva les unitats.",
+      "explanation": "Raó matemàtica: Separa error absolut, relatiu i precisió de dades, usant fraccions exactes per confirmar 0,5. Separa valor real, valor aproximat i cota d'error; conserva les unitats. Error absolut | real − aprox |; relatiu | real − aprox |/| real | si real ≠0; en sumar cotes s'usa desigualtat triangular. Resposta contrastable: 0,5. Per no confondre representació i prova, verifica les restriccions de domini, precisió, signes, unitats, bases i arguments."
+    }
+  }
+}

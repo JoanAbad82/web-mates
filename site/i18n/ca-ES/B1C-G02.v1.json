@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B1C-G02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b1c_g02.json": "147c453e5cbc8a6bef6f135905b58d86a4fd44ce63330ed305ce346c0bdc1dff",
+    "data/f3_b1c_g02_exercises.json": "3ea4c576f0bf845801aead7fdf00876b408e06bc7448a9b40a92c3ab7d5d38a5"
+  },
+  "lessons": {
+    "B1C-G02-L01": {
+      "title": "Vectors i coordenades",
+      "objectives": [
+        "Expressar vectors amb components i reconèixer vectors equipolents.",
+        "Distingir mòdul, direcció, sentit i vector nul."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un vector lliure del pla pot representar-se mitjançant components v=(vₓ, vᵧ). Des de A a B s'obté v=B−A; Els vectors amb les mateixes components són equipol.lents encara que tinguin diferents orígens. El seu mòdul és √(vₓ²+vᵧ ²) i és no negatiu. El vector nul té mòdul zero i no té una direcció única; no es pot normalitzar dividint entre el seu mòdul. Dos vectors són paral·lels si els seus components són proporcionals i tots dos no són nuls. En traslladar un vector lliure no canvien els seus components."
+        },
+        {
+          "body": "Entre A=(−1,2) i B=(3,5), AB =(4,3) i el seu mòdul és √(16+9)=5."
+        },
+        {
+          "body": "Un vector CD des de C=(0,0) fins a D=(4,3) coincideix amb AB com a vector lliure, encara que els seus orígens difereixen."
+        },
+        {
+          "body": "Vector equipolent de components (4,3). Diagrama cartesià declaratiu complementat per taula semàntica exacta: no es requereix percebre colors ni geometria a escala per conèixer els valors.",
+          "alt": "Vector equipolent de components (4,3). Les coordenades, relacions i valors matemàtics de la il·lustració figuren també en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Vector equipolent de components (4,3)"
+          }
+        },
+        {
+          "body": "Per què no existeix un vector unitari en la direcció de (0,0)?||Perquè el vector nul no defineix direcció i dividir entre el seu mòdul zero no està permès."
+        },
+        {
+          "body": "Recuperació: Un vector lliure del pla pot representar-se mitjançant components v=(vₓ,vᵧ). Relaciona cada resposta amb una dada, verifica signes i condicions abans de passar a una altra activitat."
+        }
+      ]
+    },
+    "B1C-G02-L02": {
+      "title": "Operacions vectorials",
+      "objectives": [
+        "Sumar, restar i multiplicar vectors per escalars.",
+        "Interpretar geomètricament les operacions mitjançant components."
+      ],
+      "content_blocks": [
+        {
+          "body": "La suma i resta de vectors del pla es fa per components: (a, b)+(c, d)=(a+c, b+d) i (a, b)−(c, d)=(a−c, b−d). Multiplicar per un escalar λ produeix (λa, λb), canvia el mòdul per |λ| i, si λ és negatiu, inverteix el sentit. La suma pot representar-se col·locant un vector al final de l'altre o amb la diagonal del paral·lelogram. L'ordre d'una resta importa; la suma sí que és commutativa. No s'han de sumar mòduls en lloc de components excepte casos especials de colinealitat."
+        },
+        {
+          "body": "u=(2,1) i v=(−1,3): u+v=(1,4), mentre u−v=(3, −2)."
+        },
+        {
+          "body": "Si u=(2, −3), llavors −2u=(−4,6), que té mòdul doble i sentit oposat."
+        },
+        {
+          "body": "Suma vectorial pel mètode punta-cola. Diagrama cartesià declaratiu complementat per taula semàntica exacta: no es requereix percebre colors ni geometria a escala per conèixer els valors.",
+          "alt": "Suma vectorial pel mètode punta-cola. Les coordenades, relacions i valors matemàtics de la il·lustració figuren també en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Suma vectorial pel mètode punta-cola"
+          }
+        },
+        {
+          "body": "És |u+v| necessàriament igual a |u|+|v|?||No: la igualtat només apareix en condicions particulars d'alineació i sentit; en general s'aplica la desigualtat triangular."
+        },
+        {
+          "body": "Recuperació: La suma i resta de vectors del pla es fa per components: (a, b)+(c, d)=(a+c, b+d) i (a, b)−(c, d)=(a−c, b−d). Relaciona cada resposta amb una dada, verifica signes i condicions abans de passar a una altra activitat."
+        }
+      ]
+    },
+    "B1C-G02-L03": {
+      "title": "Producte escalar",
+      "objectives": [
+        "Calcular el producte escalar de vectors plans.",
+        "Aplicar la condició d'ortogonalitat en problemes geomètrics."
+      ],
+      "content_blocks": [
+        {
+          "body": "El producte escalar de u=(uₓ,uᵧ) i v=(vₓ,vᵧ) és u·v=uₓvₓ+uᵧvᵧ, un nombre real. Per vectors no nuls també es pot escriure |u||v| cosθ, on θ és el seu angle entre 0° i 180°. Dos vectors no nuls són perpendiculars si i només si el seu producte escalar és zero. La condició u·v=0 inclou el cas del vector nul, per això en deduir perpendicularitat d'adreces s'ha de verificar que cap sigui nul. El producte escalar no és un producte vectorial, ni retorna un parell de components."
+        },
+        {
+          "body": "u=(3,1), v=(−1,3): u·v=3×(−1)+1×3=0, així que són perpendiculars en ser ambdós no nuls."
+        },
+        {
+          "body": "Per a u=(2, −1) i v=(4,3), u·v=8−3=5; no són perpendiculars."
+        },
+        {
+          "body": "Vectors perpendiculars amb producte escalar zero. Diagrama cartesià declaratiu complementat per taula semàntica exacta: no es requereix percebre colors ni geometria a escala per conèixer els valors.",
+          "alt": "Vectors perpendiculars amb producte escalar zero. Les coordenades, relacions i valors matemàtics de la il·lustració figuren també en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Vectors perpendiculars amb producte escalar zero"
+          }
+        },
+        {
+          "body": "El producte escalar de (2,3) i (4,5) és el vector (8,15)?||No: és un escalar, 2×4+3×5=23."
+        },
+        {
+          "body": "Recuperació: El producte escalar de u=(uₓ,uᵧ) i v=(vₓ,vᵧ) és u·v=uₓvₓ+uᵧvᵧ, un nombre real. Relaciona cada resposta amb una dada, verifica signes i condicions abans de passar a una altra activitat."
+        }
+      ]
+    },
+    "B1C-G02-L04": {
+      "title": "Mòdul i angle",
+      "objectives": [
+        "Calcula mòduls i angles entre vectors no nuls.",
+        "Distingir cosinus de l'angle i producte escalar."
+      ],
+      "content_blocks": [
+        {
+          "body": "El mòdul del vector u=(a,b) és |u|=√(a²+b²). L'angle θ entre vectors no nuls u i v compleix cos θ=(u·v)/(|u||v|), amb −1≤ cos θ≤1 per la desigualtat de Cauchy-Schwarz. Per a vectors ortogonals θ=90°; si comparteixen direcció i sentit θ=0°, i si són oposats θ=180°. No es pot calcular angle amb el vector nul, perquè apareix divisió entre mòdul zero. Per respostes exactes pot ser suficient proporcionar cosθ, sense introduir una aproximació decimal a l'angle."
+        },
+        {
+          "body": "u=(3,4) té mòdul 5; amb v=(5,0) de mòdul 5, el producte escalar val 15 i cos θ=15/25=3/5."
+        },
+        {
+          "body": "u=(2,0) i v=(−3,0) són oposats en direcció, així que el seu angle és 180° i cos θ=−1."
+        },
+        {
+          "body": "Cosinus de l'angle entre dos vectors. Diagrama cartesià declaratiu complementat per taula semàntica exacta: no es requereix percebre colors ni geometria a escala per conèixer els valors.",
+          "alt": "Cosinus de l'angle entre dos vectors. Les coordenades, relacions i valors matemàtics de la il·lustració figuren també en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Cosinus de l'angle entre dos vectors"
+          }
+        },
+        {
+          "body": "Es pot trobar l'angle entre u=(0,0) i v=(1,2)?||No es defineix un angle entre direccions perquè el vector nul no té direcció."
+        },
+        {
+          "body": "Recuperació: El mòdul del vector u=(a,b) és |u|=√(a²+b²). Relaciona cada resposta amb una dada, verifica signes i condicions abans de passar a una altra activitat."
+        }
+      ]
+    },
+    "B1C-G02-L05": {
+      "title": "Rectes en forma vectorial i paramètrica",
+      "objectives": [
+        "Escriure l'equació vectorial i paramètrica d'una recta en el pla.",
+        "Comprova si un punt pertany a una recta mitjançant un paràmetre comú."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una recta es representa amb un punt P=(x₀, y₀) i un vector director v=(a,b) no nul com (x, y)=(x₀, y₀)+t(a,b), t∈R. Les seves equacions paramètriques són x=x₀+ ta e y=y₀+ tb; el mateix valor de t ha de satisfer ambdues. Si a=0, la recta és vertical; si b=0, horitzontal. Multiplica v per un escalar no nul no canvia la recta. No s'ha de confondre el paràmetre lliure amb les coordenades i no pot usar-se v=(0,0) com a director."
+        },
+        {
+          "body": "La recta per (1,2) amb director (2, −1) compleix (x, y)=(1+2t, 2−t). Amb t=3 conté el punt (7, −1)."
+        },
+        {
+          "body": "El punt (3,1) pertany a la mateixa recta: la primera equació dóna t=1, que també produeix y=1."
+        },
+        {
+          "body": "Recta parametritzada per punt i vector director. Diagrama cartesià declaratiu complementat per taula semàntica exacta: no es requereix percebre colors ni geometria a escala per conèixer els valors.",
+          "alt": "Recta parametritzada per punt i vector director. Les coordenades, relacions i valors matemàtics de la il·lustració figuren també en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Recta parametritzada per punt i vector director"
+          }
+        },
+        {
+          "body": "És suficient que x=3 aparegui en alguna equació de la recta?||No: es requereix un mateix paràmetre t que satisfaci ambdues coordenades."
+        },
+        {
+          "body": "Recuperació: Una recta es representa amb un punt P=(x₀, y₀) i un vector director v=(a,b) no nul com (x, y)=(x₀, y₀)+t(a,b), t∈R. Relaciona cada resposta amb una dada, verifica signes i condicions abans de passar a una altra activitat."
+        }
+      ]
+    },
+    "B1C-G02-L06": {
+      "title": "Posicions relatives i distàncies",
+      "objectives": [
+        "Decidir si dues rectes són secants, paral·leles o coincidents.",
+        "Calcular distàncies simples d'un punt a una recta i justificar la perpendicular."
+      ],
+      "content_blocks": [
+        {
+          "body": "En el pla, dues rectes amb directors no proporcionals es tallen en un únic punt; si són proporcionals, poden ser paral·leles diferents o coincidents segons un punt d'una pertanyi a l'altra. Per trobar una intersecció es resol el sistema i es comprova en ambdues equacions. La distància d'un punt P=(x₀, y₀) a una recta Ax + By +C=0 amb (A, B)≠(0,0) és | Ax ₀+ By ₀+C|/√(A²+B²), sempre no negativa. Per a la recta horitzontal y=k, la distància és |y₀−k|; no s'ha de confondre amb la distància a qualsevol punt d'aquesta recta."
+        },
+        {
+          "body": "Les rectes y=x+1 i y=−x+3 es tallen en (1,2), perquè 1+1=−1+3=2."
+        },
+        {
+          "body": "La distància de (2,5) a y=1 és |5−1|=4 unitats, mitjançant segment vertical perpendicular."
+        },
+        {
+          "body": "Distància perpendicular de punt a recta. Diagrama cartesià declaratiu complementat per taula semàntica exacta: no es requereix percebre colors ni geometria a escala per conèixer els valors.",
+          "alt": "Distància perpendicular de punt a recta. Les coordenades, relacions i valors matemàtics de la il·lustració figuren també en la taula semàntica següent.",
+          "visual_spec": {
+            "title": "Distància perpendicular de punt a recta"
+          }
+        },
+        {
+          "body": "Dos rectes amb igual pendent són necessàriament coincidents?||No: poden ser paral·leles diferents si els seus termes independents són diferents."
+        },
+        {
+          "body": "Recuperació: En el pla, dues rectes amb directors no proporcionals es tallen en un únic punt; si són proporcionals, poden ser paral·leles diferents o coincidents segons un punt d'una pertanyi a l'altra. Relaciona cada resposta amb una dada, verifica signes i condicions abans de passar a una altra activitat."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B1C-G02-L01-01": {
+      "prompt": "Donats A=(-1, 2) i B=(3, 5), calcula les components del vector AB de A cap a B. Selecciona la resposta exacta.",
+      "hint": "Un vector d'A a B s'obté restant coordenades finals menys inicials.",
+      "explanation": "Procediment i verificació: B−A=(3−(-1), 5−(2))=(4,3); canvia l'ordre inverteix el sentit. Resultat: (4, 3). Un vector d'A a B s'obté restant coordenades finals menys inicials. Calcula B−A per a AB i A−B per a BA; no mescles components. La resposta exacta és (4, 3). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L01-02": {
+      "prompt": "Calcula el mòdul exacte del vector v=(3, 4).",
+      "hint": "Les operacions sobre vectors es fan amb components i magnituds diferents.",
+      "explanation": "Procediment i verificació: Quadrat del mòdul =3²+4²=25. Mòdul positiu o quadrat, segons la pregunta: 5. Les operacions sobre vectors es fan amb components i magnituds diferents. Producte escalar: ux·vx + uy·vy; mòdul: arrel de suma de quadrats; cosinus: producte escalar dividit per mòduls no nuls. La resposta exacta és 5. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L01-03": {
+      "prompt": "Són equipolents els vectors de components (4, 3) i (4, 3)? Selecciona la resposta exacta.",
+      "hint": "Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament Sí. Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix. Paral·lelisme per pendents iguals, perpendicularitat per producte −1 o producte escalar zero; equipolència per components iguals. La resposta exacta és Sí. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L01-04": {
+      "prompt": "Calcula el QUADRAT del mòdul del vector v=(5, 12). Selecciona la resposta exacta.",
+      "hint": "Les operacions sobre vectors es fan amb components i magnituds diferents.",
+      "explanation": "Procediment i verificació: Quadrat del mòdul =5²+12²=169. Mòdul positiu o quadrat, segons la pregunta: 169. Les operacions sobre vectors es fan amb components i magnituds diferents. Producte escalar: ux·vx + uy·vy; mòdul: arrel de suma de quadrats; cosinus: producte escalar dividit per mòduls no nuls. La resposta exacta és 169. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L01-05": {
+      "prompt": "Són equipolents els vectors de components (1, 2) i (2, 1)? Selecciona la resposta exacta.",
+      "hint": "Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament No. Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix. Paral·lelisme per pendents iguals, perpendicularitat per producte −1 o producte escalar zero; equipolència per components iguals. La resposta exacta és No. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L02-01": {
+      "prompt": "Suma els vectors u=(2, 1) i v=(-1, 3). Respon (x, y). Selecciona la resposta exacta.",
+      "hint": "Opera les components amb el mateix ordre d'eixos, respectant signes.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament (1, 4). Opera les components amb el mateix ordre d'eixos, respectant signes. Per a suma o resta combina cada component; per a producte per escalar multiplica ambdues components. La resposta exacta és (1, 4). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L02-02": {
+      "prompt": "Resta els vectors u=(2, 1) menys v=(-1, 3). Respon (x, y). Selecciona la resposta exacta.",
+      "hint": "Opera les components amb el mateix ordre d'eixos, respectant signes.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament (3, -2). Opera les components amb el mateix ordre d'eixos, respectant signes. Per a suma o resta combina cada component; per a producte per escalar multiplica ambdues components. La resposta exacta és (3, -2). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L02-03": {
+      "prompt": "Multiplica el vector v=(2, -3) per l'escalar λ=-2. Respon (x, y). Selecciona la resposta exacta.",
+      "hint": "Opera les components amb el mateix ordre d'eixos, respectant signes.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament (-4, 6). Opera les components amb el mateix ordre d'eixos, respectant signes. Per a suma o resta combina cada component; per a producte per escalar multiplica ambdues components. La resposta exacta és (-4, 6). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L02-04": {
+      "prompt": "Calcula la coordenada x de u+v amb u=(2, 1) i v=(-1, 3). Selecciona la resposta exacta.",
+      "hint": "Opera les components amb el mateix ordre d'eixos, respectant signes.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament 1. Opera les components amb el mateix ordre d'eixos, respectant signes. Per a suma o resta combina cada component; per a producte per escalar multiplica ambdues components. La resposta exacta és 1. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L02-05": {
+      "prompt": "Multiplica el vector v=(-1, 2) per l'escalar λ=3. Respon (x, y). Selecciona la resposta exacta.",
+      "hint": "Opera les components amb el mateix ordre d'eixos, respectant signes.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament (-3, 6). Opera les components amb el mateix ordre d'eixos, respectant signes. Per a suma o resta combina cada component; per a producte per escalar multiplica ambdues components. La resposta exacta és (-3, 6). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L03-01": {
+      "prompt": "Calcula el producte escalar de u=(3, 1) i v=(-1, 3).",
+      "hint": "Les operacions sobre vectors es fan amb components i magnituds diferents.",
+      "explanation": "Procediment i verificació: Producte escalar = 3×-1+1×3 = 0; és un escalar. Les operacions sobre vectors es fan amb components i magnituds diferents. Producte escalar: ux·vx + uy·vy; mòdul: arrel de suma de quadrats; cosinus: producte escalar dividit per mòduls no nuls. La resposta exacta és 0. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L03-02": {
+      "prompt": "Són ortogonals els vectors no nuls u=(3, 1) i v=(-1, 3)? Selecciona la resposta exacta.",
+      "hint": "Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix.",
+      "explanation": "Procediment i verificació: Producte escalar = 3×-1+1×3 = 0; ambdós vectors són no nuls. Resposta: Sí. Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix. Paral·lelisme per pendents iguals, perpendicularitat per producte −1 o producte escalar zero; per components iguals. La resposta exacta és Sí. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L03-03": {
+      "prompt": "Calcula el producte escalar de u=(2, -1) i v=(4, 3).",
+      "hint": "Les operacions sobre vectors es fan amb components i magnituds diferents.",
+      "explanation": "Procediment i verificació: Producte escalar = 2×4+-1×3 = 5; és un escalar. Les operacions sobre vectors es fan amb components i magnituds diferents. Producte escalar: ux·vx + uy·vy; mòdul: arrel de suma de quadrats; cosinus: producte escalar dividit per mòduls no nuls. La resposta exacta és 5. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L03-04": {
+      "prompt": "Són ortogonals els vectors no nuls u=(2, 3) i v=(6, -4)? Selecciona la resposta exacta.",
+      "hint": "Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix.",
+      "explanation": "Procediment i verificació: Producte escalar = 2×6+3×-4 = 0; ambdós vectors són no nuls. Resposta: Sí. Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix. Paral·lelisme per pendents iguals, perpendicularitat per producte −1 o producte escalar zero; per components iguals. La resposta exacta és Sí. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L03-05": {
+      "prompt": "Calcula el producte escalar de u=(-2, 5) i v=(3, 1). Selecciona la resposta exacta.",
+      "hint": "Les operacions sobre vectors es fan amb components i magnituds diferents.",
+      "explanation": "Procediment i verificació: Producte escalar = -2×3+5×1 = -1; és un escalar. Les operacions sobre vectors es fan amb components i magnituds diferents. Producte escalar: ux·vx + uy·vy; mòdul: arrel de suma de quadrats; cosinus: producte escalar dividit per mòduls no nuls. La resposta exacta és -1. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L04-01": {
+      "prompt": "Calcula el mòdul exacte del vector v=(3, 4).",
+      "hint": "Les operacions sobre vectors es fan amb components i magnituds diferents.",
+      "explanation": "Procediment i verificació: Quadrat del mòdul =3²+4²=25. Mòdul positiu o quadrat, segons la pregunta: 5. Les operacions sobre vectors es fan amb components i magnituds diferents. Producte escalar: ux·vx + uy·vy; mòdul: arrel de suma de quadrats; cosinus: producte escalar dividit per mòduls no nuls. La resposta exacta és 5. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L04-02": {
+      "prompt": "Calcula el cosinus exacte de l'angle entre els vectors no nuls u=(3, 4) i v=(5, 0).",
+      "hint": "Les operacions sobre vectors es fan amb components i magnituds diferents.",
+      "explanation": "Procediment i verificació: u·v=15; |u|²=25; |v|²=25; cos θ=(u·v)/(|u||v|)=0,6. Les operacions sobre vectors es fan amb components i magnituds diferents. Producte escalar: ux·vx + uy·vy; mòdul: arrel de suma de quadrats; cosinus: producte escalar dividit per mòduls no nuls. La resposta exacta és 0,6. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L04-03": {
+      "prompt": "Calcula el QUADRAT del mòdul del vector v=(2, -3).",
+      "hint": "Les operacions sobre vectors es fan amb components i magnituds diferents.",
+      "explanation": "Procediment i verificació: Quadrat del mòdul =2²+-3²=13. Mòdul positiu o quadrat, segons la pregunta: 13. Les operacions sobre vectors es fan amb components i magnituds diferents. Producte escalar: ux·vx + uy·vy; mòdul: arrel de suma de quadrats; cosinus: producte escalar dividit per mòduls no nuls. La resposta exacta és 13. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L04-04": {
+      "prompt": "Calcula el cosinus exacte de l'angle entre els vectors no nuls u=(2, 0) i v=(-3, 0). Selecciona la resposta exacta.",
+      "hint": "Les operacions sobre vectors es fan amb components i magnituds diferents.",
+      "explanation": "Procediment i verificació: u·v=-6; |u|²=4; |v|²=9; cos θ=(u·v)/(|u||v|)=-1. Les operacions sobre vectors es fan amb components i magnituds diferents. Producte escalar: ux·vx + uy·vy; mòdul: arrel de suma de quadrats; cosinus: producte escalar dividit per mòduls no nuls. La resposta exacta és -1. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L04-05": {
+      "prompt": "Calcula el mòdul exacte del vector v=(5, 12). Selecciona la resposta exacta.",
+      "hint": "Les operacions sobre vectors es fan amb components i magnituds diferents.",
+      "explanation": "Procediment i verificació: Quadrat del mòdul =5²+12²=169. Mòdul positiu o quadrat, segons la pregunta: 13. Les operacions sobre vectors es fan amb components i magnituds diferents. Producte escalar: ux·vx + uy·vy; mòdul: arrel de suma de quadrats; cosinus: producte escalar dividit per mòduls no nuls. La resposta exacta és 13. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L05-01": {
+      "prompt": "Una recta té parametrització x=1+2t, y=2+-1t. Quin punt correspon al paràmetre t=3? Selecciona la resposta exacta.",
+      "hint": "La recta paramètrica ha d'utilitzar el mateix paràmetre per a x i y.",
+      "explanation": "Procediment i verificació: En x=1+2t i y=2+-1t ha d'usar-se el mateix t; resultat (7, -1) i comprovació en les dues coordenades. La recta paramètrica ha d'utilitzar el mateix paràmetre per a x i y. Substitueix t per obtenir el punt, o buida t en una equació i verifica l'altra. La resposta exacta és (7, -1). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L05-02": {
+      "prompt": "Una recta té x=1+2t, y=2+-1t. Què t correspon al punt (3, 1)?",
+      "hint": "La recta paramètrica ha d'utilitzar el mateix paràmetre per a x i y.",
+      "explanation": "Procediment i verificació: En x=1+2t i y=2+-1t ha d'usar-se el mateix t; resultat 1 i comprovació en les dues coordenades. La recta paramètrica ha d'utilitzar el mateix paràmetre per a x i y. Substitueix t per obtenir el punt, o buida t en una equació i verifica l'altra. La resposta exacta és 1. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L05-03": {
+      "prompt": "Una recta té parametrització x=-2+1t, y=1+3t. Quin punt correspon al paràmetre t=2? Selecciona la resposta exacta.",
+      "hint": "La recta paramètrica ha d'utilitzar el mateix paràmetre per a x i y.",
+      "explanation": "Procediment i verificació: En x=-2+1t i y=1+3t ha d'usar-se el mateix t; resultat (0, 7) i comprovació en les dues coordenades. La recta paramètrica ha d'utilitzar el mateix paràmetre per a x i y. Substitueix t per obtenir el punt, o buida t en una equació i verifica l'altra. La resposta exacta és (0, 7). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L05-04": {
+      "prompt": "Una recta té x=0+1t, y=0+2t. Què t correspon al punt (4, 8)? Selecciona la resposta exacta.",
+      "hint": "La recta paramètrica ha d'utilitzar el mateix paràmetre per a x i y.",
+      "explanation": "Procediment i verificació: En x=0+1t i y=0+2t ha d'usar-se el mateix t; resultat 4 i comprovació en les dues coordenades. La recta paramètrica ha d'utilitzar el mateix paràmetre per a x i y. Substitueix t per obtenir el punt, o buida t en una equació i verifica l'altra. La resposta exacta és 4. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L05-05": {
+      "prompt": "Una recta té parametrització x=2+-1t, y=-1+2t. Quin punt correspon al paràmetre t=3? Selecciona la resposta exacta.",
+      "hint": "La recta paramètrica ha d'utilitzar el mateix paràmetre per a x i y.",
+      "explanation": "Procediment i verificació: En x=2+-1t i y=-1+2t ha d'usar-se el mateix t; resultat (-1, 5) i comprovació en les dues coordenades. La recta paramètrica ha d'utilitzar el mateix paràmetre per a x i y. Substitueix t per obtenir el punt, o buida t en una equació i verifica l'altra. La resposta exacta és (-1, 5). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L06-01": {
+      "prompt": "Resol el punt d'intersecció de les rectes y=1x+1 i y=-1x+3. Respon amb el parell (x, y). Selecciona la resposta exacta.",
+      "hint": "Relaciona equació de recta, punts coneguts i coordenades de manera coherent.",
+      "explanation": "Procediment i verificació: Igualem 1x+1=-1x+3; despullem x i substituïm en ambdues equacions. Cort: (1, 2). Relaciona equació de recta, punts coneguts i coordenades de manera coherent. Substitueix x i y; per a intersecció iguala les dues equacions i comprova; per a vertical usa x= constant. La resposta exacta és (1, 2). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L06-02": {
+      "prompt": "Calcula la distància des de P=(2, 5) a la recta horitzontal y=1.",
+      "hint": "La distància punt-recta segueix la perpendicular més curta, no qualsevol segment.",
+      "explanation": "Procediment i verificació: Distància mínima mesura perpendicularment a la recta de l'eix pertinent: 4. La distància punt-recta segueix la perpendicular més curta, no qualsevol segment. A la recta y=k usa | yp −k|; a x=k usa | xp −k|. La resposta exacta és 4. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L06-03": {
+      "prompt": "Dos rectes NO VERTICALs amb pendents m₁=2 i m₂=2 són paral·leles o coincidents per la seva adreça? Selecciona la resposta exacta.",
+      "hint": "Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix.",
+      "explanation": "Procediment i verificació: Aplicant la comparació d'adreces, signes o combinació per components s'obté exactament Sí. Comprova la relació matemàtica pertinent entre direccions o components, no només el dibuix. Paral·lelisme per pendents iguals, perpendicularitat per producte −1 o producte escalar zero; equipolència per components iguals. La resposta exacta és Sí. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L06-04": {
+      "prompt": "Calcula la distància des de P=(5, -2) a la recta vertical x=1. Selecciona la resposta exacta.",
+      "hint": "La distància punt-recta segueix la perpendicular més curta, no qualsevol segment.",
+      "explanation": "Procediment i verificació: Distància mínima mesura perpendicularment a la recta de l'eix pertinent: 4. La distància punt-recta segueix la perpendicular més curta, no qualsevol segment. A la recta y=k usa | yp −k|; a x=k usa | xp −k|. La resposta exacta és 4. Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    },
+    "F3-B1C-G02-L06-05": {
+      "prompt": "Resol el punt d'intersecció de les rectes y=2x - 1 e y=-1x+5. Respon amb el parell (x, y). Selecciona la resposta exacta.",
+      "hint": "Relaciona equació de recta, punts coneguts i coordenades de manera coherent.",
+      "explanation": "Procediment i verificació: Igualem 2x - 1=-1x+5; despullem x i substituïm en ambdues equacions. Cort: (2, 3). Relaciona equació de recta, punts coneguts i coordenades de manera coherent. Substitueix x i y; per a intersecció iguala les dues equacions i comprova; per a vertical usa x= constant. La resposta exacta és (2, 3). Comprova els signes, l'ordre de coordenades i les condicions del mètode abans de continuar."
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "B2S-Q02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_b2s_q02.json": "0a6202e31998ebd01e4ec51d236fab5ec3a2d24f19a5b1982acab1cf35965f6d",
+    "data/f3_b2s_q02_exercises.json": "0242eea627cbb7ac653f846fdd6febb0d3199edcfa43a85604eefb73a8fd8c7c"
+  },
+  "lessons": {
+    "B2S-Q02-L01": {
+      "title": "Variables aleatòries i paràmetres",
+      "objectives": [
+        "Definir distribucions discretes, esperança i variància.",
+        "Verificar que les probabilitats d'una taula sumen un."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una variable aleatòria associa un nombre a cada resultat i té una distribució. Per a X discreta, les seves masses són no negatives i sumen un. L'esperança E[X]=Σx·P(X=x) és una mitjana teòrica, no necessàriament un valor possible. La variància és E[(X−μ)²]=E[X²]−μ² i no pot ser negativa. Convé comparar mitjana i dispersió abans de triar un model. Les probabilitats aquí són hipotètiques, sense dades personals, i no representen una població real."
+        },
+        {
+          "body": "Si X pren 0, 1 i 2 amb probabilitats 1/4, 1/2 i 1/4: E[X]=0×1/4+1×1/2+2×1/4=1."
+        },
+        {
+          "body": "Per a la mateixa X, E[X²]=0+1/2+4/4=1,5; Var (X)=1,5−1²=0,5 i desviació típica √0,5≈0,7071."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Variables aleatòries i paràmetres. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Variables aleatòries i paràmetres"
+          }
+        },
+        {
+          "body": "Pot E[X]=1,5 encara que X només prengui enters?||Sí: és una mitjana ponderada, no necessàriament un resultat observable."
+        },
+        {
+          "body": "Recuperació activa: Definir distribucions discretes, esperança i variància. Comprova masses ≥0 i suma igual a un abans de calcular. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    },
+    "B2S-Q02-L02": {
+      "title": "Binomial i normal",
+      "objectives": [
+        "Triar binomial o normal segons la naturalesa de la variable y les hipòtesis.",
+        "Calcula masses binomials i propietats elementals d'una normal."
+      ],
+      "content_blocks": [
+        {
+          "body": "La binomial B(n,p) modela un nombre d'èxits en n assajos independents amb probabilitat fixa p. La seva massa és C(n, k)p^k(1−p)^(n−k). Si no hi ha independència o p canvia, la fórmula pot ser incorrecta. La normal N(μ, σ²) modela valors continus amb densitat en forma de campana i σ>0; la probabilitat d'un punt exacte és zero i les probabilitats d'intervals són àrees. No es passa de binomial a normal només perquè aparegui un gràfic suau."
+        },
+        {
+          "body": "Amb quatre assajos independents i p=1/2, P(X=2)=C(4,2)(1/2)^4=6/16=0,375. Hi ha sis ordenacions amb dos èxits."
+        },
+        {
+          "body": "Per a una normal amb mitjana μ=50 i desviació σ=10, P(X<50)=0,5 per simetria; P(X=50)=0, no 0,5."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Binomial i normal. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Binomial i normal"
+          }
+        },
+        {
+          "body": "És P(X=50)=0,5 per a una normal centrada en 50?||No: 0,5 correspon a cada semirecta; en un punt P=0."
+        },
+        {
+          "body": "Recuperació activa: Triar binomial o normal segons la naturalesa de la variable y les hipòtesis. Compte assajos, comprova independència i p constant. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    },
+    "B2S-Q02-L03": {
+      "title": "Distribució uniforme quan escaigui",
+      "objectives": [
+        "Identificar distribució uniforme discreta o contínua en situacions delimitades.",
+        "Diferenciar massa sobre resultats equiprobables de densitat constant."
+      ],
+      "content_blocks": [
+        {
+          "body": "AMPLIACIÓ EDITORIAL CONDICIONAL, no obligació curricular afirmada. Uniforme discreta en m resultats equiprobables assigna probabilitat 1/m a cada resultat. Uniforme contínua U(a,b) té densitat 1/(b−a) en l'interval i P(c≤X≤d)=(d−c)/(b−a) per a≤c≤d≤b. En la contínua P(X=c)=0 encara que la densitat sigui positiva. Igualtat de probabilitats discretes no es dedueix del fet que existeixin m etiquetes: fa falta una hipòtesi d'equiprobabilitat justificada."
+        },
+        {
+          "body": "Un donat ideal de sis cares té P(X=4)=1/6 i P(X∈{4,5})=2/6=1/3. S'han suposat sis resultats equiprobables."
+        },
+        {
+          "body": "Si T es modela uniforme contínua U(0,10), P(2≤T≤5)=(5−2)/(10−0)=3/10=0,30. P(T=2)=0."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Distribució uniforme quan escaigui. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Distribució uniforme quan escaigui"
+          }
+        },
+        {
+          "body": "Per què P(T=2)=0 en U(0,10) però la densitat és 0,1?||La densitat no és la massa puntual: un punt té amplària zero."
+        },
+        {
+          "body": "Recuperació activa: Identificar distribució uniforme discreta o contínua en situacions delimitades. Aclareix si comptes resultats discrets o mides una magnitud contínua. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    },
+    "B2S-Q02-L04": {
+      "title": "Probabilitats i quantils",
+      "objectives": [
+        "Llegir funció de distribució acumulada i quantils de models discrets i normals.",
+        "Usa el connector i l'estandardització amb llindars explícits."
+      ],
+      "content_blocks": [
+        {
+          "body": "La funció acumulada F(x)=P(X≤x) és creixent en sentit no estricte. En una variable discreta pot tenir salts; un quantil inferior de nivell q és el menor x amb F(x)≥q. En una variable normal, els quantils es llegeixen en una CDF contínua: si Z és normal estàndard, Φ (0)=0,5 i aproximadament Φ (1,645)=0,95. No s'interpreta el quantil 95 % com una probabilitat que la mitjana canviï. S'han d'indicar valors aproximats i la tolerància d'arrodoniment."
+        },
+        {
+          "body": "Per a X discreta amb masses P(0)=0,2, P(1)=0,5 i P(2)=0,3: F(0)=0,2, F(1)=0,7 i F(2)=1; el quasi inferior de nivell 0,60 és 1."
+        },
+        {
+          "body": "Per a una normal N(100,15²), la probabilitat P(X≤100)= Φ (0)=0,5. El seu quantil aproximat 95 % és 100+1,645×15=124,675."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Probabilitats i quantils. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Probabilitats i quantils"
+          }
+        },
+        {
+          "body": "F(1)=P(X=1)?||No: F(1) acumula les probabilitats dels valors ≤1."
+        },
+        {
+          "body": "Recuperació activa: Llegir funció de distribució acumulada i quantils de models discrets i normals. Decideix si es busca massa, acumulada o quantil. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    },
+    "B2S-Q02-L05": {
+      "title": "Aproximacions",
+      "objectives": [
+        "Compara la probabilitat binomial exacta amb aproximació normal amb correcció de continuïtat.",
+        "Declarar hipòtesis i caràcter aproximat de la resposta."
+      ],
+      "content_blocks": [
+        {
+          "body": "Per a X~B(n,p) amb condicions de regularitat, es pot aproximar mitjançant N(np,np (1−p)), però no és igualtat exacta. La correcció de continuïtat transforma, per exemple, P(X≤k) en P(Y≤k+0,5). La regla orientativa np ≥10 i n(1−p)≥10 ajuda a evitar distribucions massa asimètriques, però no garanteix un error donat. Si p és molt petit, n petit o hi ha dependència, convé usar la binomial exacta. El resultat aproximat s'ha d'etiquetar i comparar amb l'exacte quan sigui viable."
+        },
+        {
+          "body": "Amb X~ B(100,1/2), μ=50, σ=5: P(X≤55)≈P(Y≤55,5) i z=(55,5−50)/5=1,1; Φ (1,1)≈0,8643."
+        },
+        {
+          "body": "Per B(10,0, 05) s'obté np =0,5, molt lluny de 10. No es justifica aquí usar automàticament l'aproximació normal."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Aproximacions. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Aproximacions"
+          }
+        },
+        {
+          "body": "0,8643 és el valor exacte de P(B(100,0, 5)≤55)?||No: és una aproximació normal amb continuïtat; el valor exacte se suma binomialment."
+        },
+        {
+          "body": "Recuperació activa: Comparar probabilitat binomial exacta amb aproximació normal amb correcció de continuïtat. Comprova n, p, independència i regularitat. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    },
+    "B2S-Q02-L06": {
+      "title": "Selecció del model sota supòsits",
+      "objectives": [
+        "Justifica l'elecció d'un model abans de calcular.",
+        "Rebutjar binomial o normal quan fallen els seus supòsits."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un model és una hipòtesi explícita sobre el mecanisme generador, no un truc per encaixar dades. Per a una binomial cal nombre fix d'assajos, dicotomia èxit / fracàs, independència i probabilitat constant. Per a una normal contínua són rellevants forma de distribució, escala, context i paràmetres estimats amb fonament. Un conjunt de variables categòriques no es torna normal en augmentar n; la distribució de certes mitjanes pot aproximar-se a normal sota condicions diferents i no ha de confondre's amb la distribució d'observacions individuals. En interpretar un resultat documenta el model, el seu abast i si hi ha evidència suficient."
+        },
+        {
+          "body": "En 8 extraccions sense reemplaçament des d'una urna petita, la probabilitat de vermella canvia i no hi ha independència: comptar vermelles no segueix, en general, B(8,p) amb p fix."
+        },
+        {
+          "body": "Amb 100 llançaments independents de moneda ideal, X= nombre de cares sí que admet B(100,1/2); els seus paràmetres μ=50 i σ=5 són teòrics del model, no inferits de dades observades."
+        },
+        {
+          "body": "Representació matemàtica il·lustrativa amb taula de valors, denominadors i límits. Els símbols i xifres exactes es consulten en la taula accessible.",
+          "alt": "Selecció del model sota supòsits. Visual de suport; la taula HTML semàntica conté totes les dades i avisos.",
+          "visual_spec": {
+            "title": "Selecció del model sota supòsits"
+          }
+        },
+        {
+          "body": "Comptar èxits sempre justifica una binomial?||No: p pot canviar i els assajos poden dependre els uns dels altres."
+        },
+        {
+          "body": "Recuperació activa: Justifica l'elecció d'un model abans de calcular. Enumera assajos, independència, p constant i naturalesa contínua o discreta. Repeti l'endemà i després de 3, 7, 14 i 30 dies només com a pauta editorial, no com a eficàcia validada."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-B2S-Q02-L01-01": {
+      "prompt": "X pren 0,1, 2 amb masses 1/4,1/2,1/4. Troba E[X].",
+      "hint": "Comprova masses ≥0 i suma igual a un abans de calcular.",
+      "explanation": "Càlcul: E[X]=0×1/4+1×1/2+2×1/4=1."
+    },
+    "F3-B2S-Q02-L01-02": {
+      "prompt": "Per a la mateixa X i masses, calcula Var(X).",
+      "hint": "Comprova masses ≥0 i suma igual a un abans de calcular.",
+      "explanation": "E[X²]=1,5 i E[X]²=1; Var =0,5."
+    },
+    "F3-B2S-Q02-L01-03": {
+      "prompt": "Per a masses X=0: 1/4, X=1: 1/2 i X=2: 1/4, calcula F(1).",
+      "hint": "Comprova masses ≥0 i suma igual a un abans de calcular.",
+      "explanation": "Càlcul: F(1)=1/4+1/2=3/4."
+    },
+    "F3-B2S-Q02-L01-04": {
+      "prompt": "Pot una esperança matemàtica no ser un valor possible de X?",
+      "hint": "Comprova masses ≥0 i suma igual a un abans de calcular.",
+      "explanation": "L'esperança no és un resultat elemental necessari."
+    },
+    "F3-B2S-Q02-L01-05": {
+      "prompt": "Quina és una condició imprescindible per a una taula de masses discreta?",
+      "hint": "Comprova masses ≥0 i suma igual a un abans de calcular.",
+      "explanation": "Una distribució de probabilitats normalitzada suma un."
+    },
+    "F3-B2S-Q02-L02-01": {
+      "prompt": "X~ B(4,0, 5). Calcula P(X=2).",
+      "hint": "Compte assajos, comprova independència i p constant.",
+      "explanation": "Càlcul: C(4,2)(0,5)^4=6/16=0,375."
+    },
+    "F3-B2S-Q02-L02-02": {
+      "prompt": "Cinc monedes ideals independents: probabilitat de zero cares.",
+      "hint": "Compte assajos, comprova independència i p constant.",
+      "explanation": "Càlcul: P(X=0)=C(5,0)(1/2)^5=1/32."
+    },
+    "F3-B2S-Q02-L02-03": {
+      "prompt": "Si X~ N(50,10²), quant val P(X≤50)?",
+      "hint": "Compte assajos, comprova independència i p constant.",
+      "explanation": "Per simetria P(X≤μ)=0,5, en una variable contínua."
+    },
+    "F3-B2S-Q02-L02-04": {
+      "prompt": "Quina és una condició de binomial B(n,p)?",
+      "hint": "Compte assajos, comprova independència i p constant.",
+      "explanation": "La binomial exigeix assajos dicotòmics independents i probabilitat fixa."
+    },
+    "F3-B2S-Q02-L02-05": {
+      "prompt": "Què val P(X=50) per a una normal contínua N(50,100)?",
+      "hint": "Compte assajos, comprova independència i p constant.",
+      "explanation": "Un punt no té àrea sota una corba de densitat."
+    },
+    "F3-B2S-Q02-L03-01": {
+      "prompt": "Donat ideal de 6 cares, calcula P(X∈{4,5}) en decimal aproximat a 4 xifres.",
+      "hint": "Aclareix si comptes resultats discrets o mides una magnitud contínua.",
+      "explanation": "Dues cares de sis equiprobables: 2/6≈0,3333."
+    },
+    "F3-B2S-Q02-L03-02": {
+      "prompt": "T~ U(0,10) contínua. Calcula P(2≤T≤5).",
+      "hint": "Aclareix si comptes resultats discrets o mides una magnitud contínua.",
+      "explanation": "Longitud 5−2 respecte de 10−0: 3/10=0,30."
+    },
+    "F3-B2S-Q02-L03-03": {
+      "prompt": "T~ U(2,8) contínua. Calcula P(3≤T≤6).",
+      "hint": "Aclareix si comptes resultats discrets o mides una magnitud contínua.",
+      "explanation": "Longitud favorable 3 respecte de la longitud total 6: 0,5."
+    },
+    "F3-B2S-Q02-L03-04": {
+      "prompt": "Què significa P(T=2) quan T és uniforme contínua en [0,10]?",
+      "hint": "Aclareix si comptes resultats discrets o mides una magnitud contínua.",
+      "explanation": "Una densitat no és una probabilitat puntual."
+    },
+    "F3-B2S-Q02-L03-05": {
+      "prompt": "Amb quina precaució apareix l'uniforme en aquesta lliçó?",
+      "hint": "Aclareix si comptes resultats discrets o mides una magnitud contínua.",
+      "explanation": "La lliçó està assenyalada com a ampliació pendent d'acarament."
+    },
+    "F3-B2S-Q02-L04-01": {
+      "prompt": "Masses de X=0,1, 2 iguals a 0,2, 0,5 i 0,3: troba F(1).",
+      "hint": "Decideix si es busca massa, acumulada o quantil.",
+      "explanation": "Càlcul: F(1)=0,2+0,5=0,7."
+    },
+    "F3-B2S-Q02-L04-02": {
+      "prompt": "Normal N(100,15²). Quintil aproximat amb z=1,645? Expressa el valor.",
+      "hint": "Decideix si es busca massa, acumulada o quantil.",
+      "explanation": "Càlcul: x=μ+zσ=100+1,645×15=124,675."
+    },
+    "F3-B2S-Q02-L04-03": {
+      "prompt": "Per a X amb P(0)=0,2, P(1)=0,5 i P(2)=0,3, calcula P(X≥2).",
+      "hint": "Decideix si es busca massa, acumulada o quantil.",
+      "explanation": "Només contribueix X=2 amb massa 0,3."
+    },
+    "F3-B2S-Q02-L04-04": {
+      "prompt": "En una variable discreta, què és el quantil inferior de nivell q?",
+      "hint": "Decideix si es busca massa, acumulada o quantil.",
+      "explanation": "L'acumulada determina el punt en què s'assoleix el nivell q."
+    },
+    "F3-B2S-Q02-L04-05": {
+      "prompt": "Què descriu F(1)?",
+      "hint": "Decideix si es busca massa, acumulada o quantil.",
+      "explanation": "F suma les masses fins al llindar inclòs."
+    },
+    "F3-B2S-Q02-L05-01": {
+      "prompt": "Per B(100,0, 5), correcció de continuïtat de P(X≤55): calcula z=(55,5−50)/5.",
+      "hint": "Comprova n, p, independència i regularitat.",
+      "explanation": "μ=50, σ=5; llindar 55,5; z=1,1."
+    },
+    "F3-B2S-Q02-L05-02": {
+      "prompt": "Aproxima P(B(100,0, 5)≤55) mitjançant normal amb continuïtat. Quatre decimals.",
+      "hint": "Comprova n, p, independència i regularitat.",
+      "explanation": "Normal aproximada: Φ ((55,5−50)/5)= Φ (1,1)≈0,8643; No és un valor exacte."
+    },
+    "F3-B2S-Q02-L05-03": {
+      "prompt": "Per al model B(100,0, 5), aproxima amb correcció P(X≤50). Quatre decimals.",
+      "hint": "Comprova n, p, independència i regularitat.",
+      "explanation": "Φ ((50,5−50)/5)= Φ (0,1)≈0,5398; Aproximació."
+    },
+    "F3-B2S-Q02-L05-04": {
+      "prompt": "Què implica complir np ≥10 i n(1−p)≥10?",
+      "hint": "Comprova n, p, independència i regularitat.",
+      "explanation": "Un llindar orientatiu no garanteix precisió exacta."
+    },
+    "F3-B2S-Q02-L05-05": {
+      "prompt": "Si n=10 i p=0,05, quina decisió inicial és més rigorosa?",
+      "hint": "Comprova n, p, independència i regularitat.",
+      "explanation": "Amb np =0,5 la regularitat orientativa per a aproximació falla."
+    },
+    "F3-B2S-Q02-L06-01": {
+      "prompt": "Amb 100 llançaments independents de moneda ideal, quin és E[X] del nombre de cares?",
+      "hint": "Enumera assajos, independència, p constant i naturalesa contínua o discreta.",
+      "explanation": "En B(100,1/2), E[X]= np =50."
+    },
+    "F3-B2S-Q02-L06-02": {
+      "prompt": "En B(100,0, 5), quina és la desviació típica σ?",
+      "hint": "Enumera assajos, independència, p constant i naturalesa contínua o discreta.",
+      "explanation": "Var = np (1−p)=25; σ=√25=5."
+    },
+    "F3-B2S-Q02-L06-03": {
+      "prompt": "Urna amb 3 vermelles i 1 blau: probabilitat de vermella en la primera extracció.",
+      "hint": "Enumera assajos, independència, p constant i naturalesa contínua o discreta.",
+      "explanation": "Primera extracció vermella: 3/4=0,75; després canvia la composició sense reemplaçament."
+    },
+    "F3-B2S-Q02-L06-04": {
+      "prompt": "Quin model es rebutja per a 8 extraccions sense reemplaçament des d'urna petita?",
+      "hint": "Enumera assajos, independència, p constant i naturalesa contínua o discreta.",
+      "explanation": "Les extraccions sense reemplaçament violen independència i constància de p."
+    },
+    "F3-B2S-Q02-L06-05": {
+      "prompt": "En triar un model per a dades reals, quin ordre és correcte?",
+      "hint": "Enumera assajos, independència, p constant i naturalesa contínua o discreta.",
+      "explanation": "L'estructura del problema decideix el model, no la comoditat del càlcul."
+    }
+  }
+}

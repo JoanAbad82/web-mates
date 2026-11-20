@@ -1,0 +1,351 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E4A-A02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f3_e4a_a02.json": "277ccdd4d53c89c3f129b618a88961ee20b9bd2aa3d9b57d90cd288cc481cd87",
+    "data/f3_e4a_a02_exercises.json": "f7d11375c3009633397e08648128d14192edf702e3de6dc4ea2bb3935812950b"
+  },
+  "lessons": {
+    "E4A-A02-L01": {
+      "title": "Equacions lineals",
+      "objectives": [
+        "Resoldre equacions lineals i detectar equivalències, contradiccions i identitats.",
+        "Verificar solucions en la igualtat original i respectar el domini dels models."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una equació lineal ax +b=c amb a diferent de zero té solució x=(c−b)/a. Les operacions equivalents inclouen sumar la mateixa quantitat a ambdós membres i multiplicar per una constant no nul·la. Si en simplificar desapareix x, una identitat com 2(x+1)=2x+2 posseeix tots els reals com a solucions, mentre que 2x+1=2x+3 és impossible i no té cap. En una situació de tarifa, una solució negativa pot satisfer l'equació formal però quedar fora del domini de quantitats admissibles. Sempre se substitueix la solució en l'expressió original, evitant dividir per una expressió que pogués anul·lar-se. Un problema contextual requereix a més indicar la unitat de la variable."
+        },
+        {
+          "body": "Resoldre 3x+5=20 dóna 3x=15 i x=5; comprovar 3·5+5=20 confirma la igualtat."
+        },
+        {
+          "body": "L'equació 2(x+1)=2x+2 redueix a 2=2, veritable per a tot x. En canvi, 2x+1=2x+3 produeix 1=3, sense solució."
+        },
+        {
+          "body": "Intersecció de dues expressions afins. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Intersecció de dues expressions afins. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Intersecció de dues expressions afins"
+          }
+        },
+        {
+          "body": "Dividir una equació per una expressió amb x que pot valer zero preserva sempre les solucions?||No; Es pot eliminar valors vàlids o provocar divisió per zero."
+        },
+        {
+          "body": "Recuperació activa: Una equació lineal ax +b=c amb a diferent de zero posseeix solució x=(c−b)/a. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    },
+    "E4A-A02-L02": {
+      "title": "Equacions quadràtiques",
+      "objectives": [
+        "Resoldre equacions quadràtiques per factorització i fórmula general.",
+        "Interpretar discriminant i filtrar solucions incompatibles amb el context."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una equació quadràtica ax ²+ bx +c=0 amb a≠0 s'estudia amb el discriminant Δ=b²−4a c. Si Δ>0 apareixen dos arrels reals diferents, si Δ=0 una arrel doble i si Δ<0 no hi ha arrels reals. Per x²−5x+6=0 es factoritza (x−2)(x−3)=0, per tant x=2 o x=3. En problemes de mesures una arrel negativa pot ser algebraicament correcta i geomètricament inadmissible. La fórmula general x=[−b±√Δ]/(2a) només produeix arrels reals quan Δ≥0. Després de buidar, se substitueix cada candidata en l'equació original i es comprova que no s'hagin introduït arrels espúries per elevar al quadrat."
+        },
+        {
+          "body": "x²−5x+6=0 s'escriu (x−2)(x−3)=0. Les seves dues solucions reals són 2 i 3, comprovables per substitució."
+        },
+        {
+          "body": "x²+4=0 té Δ=0−16<0; no admet arrels reals, encara que sí complexes fora de l'abast d'aquest cas."
+        },
+        {
+          "body": "Corts d'una quadràtica en els seus arrels. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Corts d'una quadràtica en els seus arrels. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Corts d'una quadràtica en els seus arrels"
+          }
+        },
+        {
+          "body": "Un discriminant negatiu implica dues solucions reals?||No; una equació quadràtica real amb Δ<0 no té arrels reals."
+        },
+        {
+          "body": "Recuperació activa: Una equació quadràtica ax ²+ bx +c=0 amb a≠0 s'estudia amb el discriminant Δ=b²−4a c. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    },
+    "E4A-A02-L03": {
+      "title": "Sistemes 2×2",
+      "objectives": [
+        "Resoldre sistemes lineals 2×2 usant eliminació o substitució.",
+        "Reconèixer determinant nul i sistemes compatibles indeterminats o incompatibles."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un sistema de dues equacions ax + by =e i cx + dy =f pot resoldre's amb eliminació o substitució. Si D= ad − bc ≠0, la solució única és x=( ed − bf )/D, y=( af − ec )/D; comprovar ambdues equacions evita errors de signes. Amb D=0 la fórmula no es pot aplicar: les rectes poden coincidir (infinites solucions) o ser paral·leles diferents (cap solució). Per exemple x+y=5 i 2x−y=1 tenen solució (2,3), ja que 2+3=5 i 4−3=1. Per a 2x+2y=4 i x+y=2 hi ha infinites solucions; canviar la segona a x+y=3 produeix contradicció. El model contextual pot exigir x,i no negatius."
+        },
+        {
+          "body": "Resoldre x+y=5 i 2x−y=1: sumant dóna 3x=6, x=2 i y=3; verifica 2+3=5 i 2·2−3=1."
+        },
+        {
+          "body": "Les equacions x+y=2 i 2x+2y=4 descriuen la mateixa recta: hi ha infinits parells solució, no una solució única."
+        },
+        {
+          "body": "Rectes d'un sistema compatible determinat. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Rectes d'un sistema compatible determinat. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Rectes d'un sistema compatible determinat"
+          }
+        },
+        {
+          "body": "Pot aplicar-se Cramer dividint per D= ad − bc quan D val zero?||No; S'ha d'estudiar la compatibilitat per equivalència o rang."
+        },
+        {
+          "body": "Recuperació activa: Un sistema de dues equacions ax + by =e i cx + dy =f pot resoldre's amb eliminació o substitució. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    },
+    "E4A-A02-L04": {
+      "title": "Inequacions lineals",
+      "objectives": [
+        "Resol les inequacions lineals indicant intervals i fronteres obertes o tancades.",
+        "Canviar correctament el sentit de desigualtat en multiplicar per negatius."
+      ],
+      "content_blocks": [
+        {
+          "body": "Resoldre una inequació lineal exigeix operacions d'equivalència sobre desigualtats. Sumar el mateix valor no altera la relació, però multiplicar o dividir per un nombre estrictament negatiu inverteix el signe: −2x+3>7 equival a −2x>4 i després x<−2. Les desigualtats estrictes exclouen la frontera i les no estrictes la inclouen. El conjunt solució es comunica mitjançant interval i representació exacta: x<−2 és (−∞, −2), mentre que x≤−2 és (−∞, −2]. Si una condició econòmica exigeix quantitats no negatives, s'intersecta el conjunt matemàtic amb x≥0, podent resultar buit. No és correcte multiplicar per una expressió el signe de la qual depèn de x sense separar casos."
+        },
+        {
+          "body": "−2x+3>7 implica −2x>4; en dividir per −2, el sentit s'inverteix: x<−2."
+        },
+        {
+          "body": "La restricció 3x+2≤11 equival a x≤3. Si x≥0, les solucions contextuals són x∈[0,3]."
+        },
+        {
+          "body": "Frontera d'una inequació lineal. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Frontera d'una inequació lineal. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Frontera d'una inequació lineal"
+          }
+        },
+        {
+          "body": "En dividir una inequació per −2 es conserva el sentit del símbol?||No, cal invertir-ho."
+        },
+        {
+          "body": "Recuperació activa: Resoldre una inequació lineal exigeix operacions d'equivalència sobre desigualtats. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    },
+    "E4A-A02-L05": {
+      "title": "Restriccions en decisions",
+      "objectives": [
+        "Traduir restriccions de recursos i pressupostos a inequacions.",
+        "Determinar regions factibles simples i comprovar solucions candidates."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una decisió amb recursos limitats es modelitza mitjançant restriccions. Si fabricar x unitats consumeix 2 hores cadascuna i hi ha 12 hores disponibles, la condició és 2x≤12, juntament amb x≥0 i x enter si les unitats són indivisibles; per tant 0≤x≤6 en enters. Si existeixen dos productes x i i amb temps 2x+3y≤12, la regió factible està en el primer quadrant sota una recta, incloent la frontera quan es permet esgotar el recurs. Una solució algebraicament òptima fora de la regió no és admissible. No ha d'interpretar-se una recta dibuixada com la totalitat de les restriccions: el domini i totes les inequacions simultànies delimiten les decisions. Comprovar candidats mitjançant substitució directa és més fiable que una inspecció visual imprecisa."
+        },
+        {
+          "body": "Amb 12 hores i 2 hores per unitat, 2x≤12 i x enter no negatiu permeten produir com a màxim 6 unitats."
+        },
+        {
+          "body": "En 2x+3y≤12 amb x, y≥0, el pla x=3, y=2 usa 6+6=12 hores i és factible; x=4, y=2 consumiria 14 i no ho és."
+        },
+        {
+          "body": "Restricció de capacitat. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "Restricció de capacitat. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "Restricció de capacitat"
+          }
+        },
+        {
+          "body": "Un pla que supera una restricció continua sent vàlid perquè satisfà les altres?||No; totes les restriccions s'han de complir simultàniament."
+        },
+        {
+          "body": "Recuperació activa: Una decisió amb recursos limitats es modelitza mitjançant restriccions. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    },
+    "E4A-A02-L06": {
+      "title": "Interpretació i verificació de solucions",
+      "objectives": [
+        "Verificar solucions d'equacions, sistemes i inequacions en el problema original.",
+        "Distingir errors algebraics d'incompatibilitat amb unitats i domini."
+      ],
+      "content_blocks": [
+        {
+          "body": "La comprovació final d'una solució abasta tres nivells: igualtat o desigualtat algebraica original, totes les restriccions contextuals i unitats del resultat. Per a un sistema de dues tarifes, la solució d'igualtat pot ser negativa i per tant irrellevant si x representa serveis prestats. Per a una inequació de pressupost 5+2n≤15 i n enter no negatiu, resulta n≤5 i el màxim viable és n=5; comprovar 5+2·5=15 permet acceptar la frontera. Si una equació quadràtica té arrels 3 i −3 per a una longitud, es conserva només 3. Mai s'accepten extraccions de arrels, denominadors anul·lats o solucions aproximades que no satisfacin les equacions originals. En condicions de enters cal arrodonir en la direcció compatible amb la inequació, no arbitràriament."
+        },
+        {
+          "body": "Per 5+2n≤15 i n≥0 enter, n≤5. El màxim viable és 5 perquè 5+2·5=15; 6 dóna 17>15."
+        },
+        {
+          "body": "Si x²=9 representa una longitud, les solucions algebraiques són ±3, però x=−3 s'exclou per la restricció x>0."
+        },
+        {
+          "body": "arrel negativa incompatible amb longitud. Gràfic SVG original amb alternativa tabular semàntica de valors exactes i condicions, no constitueix prova matemàtica.",
+          "alt": "arrel negativa incompatible amb longitud. Taula accessible amb valors exactes, domini i conseqüències, independent de color o interpretació visual.",
+          "visual_spec": {
+            "title": "arrel negativa incompatible amb longitud"
+          }
+        },
+        {
+          "body": "Fins a obtenir una arrel algebraica sense comprovar el domini de l'enunciat?||Núm.; a més de verificar l'equació ha de pertànyer al domini contextual."
+        },
+        {
+          "body": "Recuperació activa: La comprovació final d'una solució abasta tres nivells: igualtat o desigualtat algebraica original, totes les restriccions contextuals i unitats del resultat. Comprova una solució diferent i explica un error de base, signe o restricció."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F3-E4A-A02-L01-01": {
+      "prompt": "En la lliçó Equacions lineals: Resol l'equació lineal (3)x+(5)=20; dóna el valor exacte de x i comprova substitució. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Aïlla x amb operacions equivalents sense dividir entre valors nuls.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat 5. Aïlla x amb operacions equivalents sense dividir entre valors nuls. Per a Ax +B=C i A≠0, x=(C−B)/A; si desapareix x, compara els membres constants per a identitat o contradicció. Resultat matemàtic contrastable: 5. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L01-02": {
+      "prompt": "En la lliçó Equacions lineals: Resol l'equació lineal (-2)x+(7)=-3; dóna el valor exacte de x i comprova substitució. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Aïlla x amb operacions equivalents sense dividir entre valors nuls.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat 5. Aïlla x amb operacions equivalents sense dividir entre valors nuls. Per a Ax +B=C i A≠0, x=(C−B)/A; si desapareix x, compara els membres constants per a identitat o contradicció. Resultat matemàtic contrastable: 5. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L01-03": {
+      "prompt": "En la lliçó Equacions lineals: L'equació 2(x+1)=2x+2 és una identitat. Quantes solucions reals té: Infinites, Cap o Una? Tria una resposta exacta.",
+      "hint": "Aïlla x amb operacions equivalents sense dividir entre valors nuls.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat Infinites. Aïlla x amb operacions equivalents sense dividir entre valors nuls. Per a Ax +B=C i A≠0, x=(C−B)/A; si desapareix x, compara els membres constants per a identitat o contradicció. Resultat matemàtic contrastable: Infinites. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L01-04": {
+      "prompt": "En la lliçó Equacions lineals: L'equació 2x+1=2x+3 és contradictòria. Quantes solucions reals té: Infinites, Cap o Una? Tria una resposta exacta.",
+      "hint": "Aïlla x amb operacions equivalents sense dividir entre valors nuls.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat Cap. Aïlla x amb operacions equivalents sense dividir entre valors nuls. Per a Ax +B=C i A≠0, x=(C−B)/A; si desapareix x, compara els membres constants per a identitat o contradicció. Resultat matemàtic contrastable: Cap. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L01-05": {
+      "prompt": "En la lliçó Equacions lineals: Resol l'equació lineal (4)x+(-6)=10; dóna el valor exacte de x i comprova substitució. Tria una resposta exacta.",
+      "hint": "Aïlla x amb operacions equivalents sense dividir entre valors nuls.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat 4. Aïlla x amb operacions equivalents sense dividir entre valors nuls. Per a Ax +B=C i A≠0, x=(C−B)/A; si desapareix x, compara els membres constants per a identitat o contradicció. Resultat matemàtic contrastable: 4. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L02-01": {
+      "prompt": "En la lliçó Equacions quadràtiques: Resol (1)x²+(-5)x+(6)=0 i tria el parell ORDENAT de arrels reals (x1,x2). Tria una resposta exacta.",
+      "hint": "Factoritza o calcula el discriminant per classificar les arrels reals.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat (2, 3). Factoritza o calcula el discriminant per classificar les arrels reals. Δ=b²−4a c. Si Δ≥0 les arrels són (−b±√Δ)/(2a); tria només valors compatibles amb les restriccions de l'enunciat. Resultat matemàtic contrastable: (2, 3). Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L02-02": {
+      "prompt": "A la lliçó Equacions quadràtiques: Calcula Δ=b²−4a c de l'equació (1)x²+(-5)x+(6)=0. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Factoritza o calcula el discriminant per classificar les arrels reals.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat 1. Factoritza o calcula el discriminant per classificar les arrels reals. Δ=b²−4a c. Si Δ≥0 les arrels són (−b±√Δ)/(2a); tria només valors compatibles amb les restriccions de l'enunciat. Resultat matemàtic contrastable: 1. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L02-03": {
+      "prompt": "En la lliçó Equacions quadràtiques: Per (1)x²+(0)x+(4)=0, quina classe de arrels REALS té: Cap, Una doble o Dues diferents? Tria una resposta exacta.",
+      "hint": "Factoritza o calcula el discriminant per classificar les arrels reals.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat Cap. Factoritza o calcula el discriminant per classificar les arrels reals. Δ=b²−4a c. Si Δ≥0 les arrels són (−b±√Δ)/(2a); tria només valors compatibles amb les restriccions de l'enunciat. Resultat matemàtic contrastable: Cap. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L02-04": {
+      "prompt": "En la lliçó Equacions quadràtiques: L'equació (1)x²+(0)x+(-9)=0 modelitza una longitud x>0. Retorna la arrel POSITIVA admesa. Tria una resposta exacta.",
+      "hint": "Factoritza o calcula el discriminant per classificar les arrels reals.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat 3. Factoritza o calcula el discriminant per classificar les arrels reals. Δ=b²−4a c. Si Δ≥0 les arrels són (−b±√Δ)/(2a); tria només valors compatibles amb les restriccions de l'enunciat. Resultat matemàtic contrastable: 3. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L02-05": {
+      "prompt": "En la lliçó Equacions quadràtiques: Per (1)x²+(-2)x+(1)=0, quina classe de arrels REALS té: Cap, Una doble o Dues diferents? Tria una resposta exacta.",
+      "hint": "Factoritza o calcula el discriminant per classificar les arrels reals.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat Una doble. Factoritza o calcula el discriminant per classificar les arrels reals. Δ=b²−4a c. Si Δ≥0 les arrels són (−b±√Δ)/(2a); tria només valors compatibles amb les restriccions de l'enunciat. Resultat matemàtic contrastable: Una doble. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L03-01": {
+      "prompt": "En la lliçó Sistemes 2×2: Resol el sistema (1)x+(1)y=5; (2)x+(-1)y=1. Calcula la incògnita x. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat 2. Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir. D= ad − bc: per a D≠0, x=( ed − bf )/D e y=( af − ec )/D. Per D=0 estudia equivalència o contradicció, mai dividides entre zero. Resultat matemàtic contrastable: 2. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L03-02": {
+      "prompt": "En la lliçó Sistemes 2×2: Resol el sistema (1)x+(1)y=5; (2)x+(-1)y=1. Calcula la incògnita y. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat 3. Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir. D= ad − bc: per a D≠0, x=( ed − bf )/D e y=( af − ec )/D. Per D=0 estudia equivalència o contradicció, mai dividides entre zero. Resultat matemàtic contrastable: 3. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L03-03": {
+      "prompt": "En la lliçó Sistemes 2×2: Calcula exactament el determinant D= ad − bc de la matriu [[1,1], [2, -1]] d'un sistema 2×2. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat -3. Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir. D= ad − bc: per a D≠0, x=( ed − bf )/D e y=( af − ec )/D. Per D=0 estudia equivalència o contradicció, mai dividides entre zero. Resultat matemàtic contrastable: -3. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L03-04": {
+      "prompt": "En la lliçó Sistemes 2×2: Classifica el sistema (1)x+(1)y=2; (2)x+(2)y=4: Única, Infinites o Cap. Tria una resposta exacta.",
+      "hint": "Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat Infinites. Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir. D= ad − bc: per a D≠0, x=( ed − bf )/D e y=( af − ec )/D. Per D=0 estudia equivalència o contradicció, mai dividides entre zero. Resultat matemàtic contrastable: Infinites. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L03-05": {
+      "prompt": "En la lliçó Sistemes 2×2: Classifica el sistema (1)x+(1)y=2; (1)x+(1)y=3: Única, Infinites o Cap. Tria una resposta exacta.",
+      "hint": "Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat Cap. Escriu la matriu 2×2 del sistema i prova si el seu determinant és nul abans de dividir. D= ad − bc: per a D≠0, x=( ed − bf )/D e y=( af − ec )/D. Per D=0 estudia equivalència o contradicció, mai dividides entre zero. Resultat matemàtic contrastable: Cap. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L04-01": {
+      "prompt": "En la lliçó Inequacions lineals: Resol (3)x+(2)≤11 i dóna la frontera numèrica x que pot incloure's en la solució. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Resol la desigualtat conservant el sentit, excepte en multiplicar o dividir per un negatiu.",
+      "explanation": "Explicació: Resol l'equació o sistema, verifica substitució i diagnostica degeneració o restriccions; resultat 3. Resol la desigualtat conservant el sentit, excepte en multiplicar o dividir per un negatiu. Desplaça el punt frontera i inclueix-lo només amb ≤ o ≥; si multipliques per nombre negatiu inverteix el signe de la desigualtat. Resultat matemàtic contrastable: 3. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L04-02": {
+      "prompt": "En la lliçó Inequacions lineals: Resol (-2)x+(3)>7. Dóna la frontera exacta després d'invertir el sentit en dividir per un negatiu. Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Resol la desigualtat conservant el sentit, excepte en multiplicar o dividir per un negatiu.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat -2. Resol la desigualtat conservant el sentit, excepte en multiplicar o dividir per un negatiu. Desplaça el punt frontera i inclueix-lo només amb ≤ o ≥; si multipliques per nombre negatiu inverteix el signe de la desigualtat. Resultat matemàtic contrastable: -2. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L04-03": {
+      "prompt": "En la lliçó Inequacions lineals: En −2x+3>7, després de buidar, s'obté x Menor que −2 o Major que −2? Tria una resposta exacta.",
+      "hint": "Resol la desigualtat conservant el sentit, excepte en multiplicar o dividir per un negatiu.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; menor que. Resol la desigualtat conservant el sentit, excepte en multiplicar o dividir per un negatiu. Desplaça el punt frontera i inclueix-lo només amb ≤ o ≥; si multipliques per nombre negatiu inverteix el signe de la desigualtat. Resultat matemàtic contrastable: Menor que. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L04-04": {
+      "prompt": "En la lliçó Inequacions lineals: És x=3 solució de (3)x+(2)≤11 (Sí / No)? Comprova la frontera. Tria una resposta exacta.",
+      "hint": "Resol la desigualtat conservant el sentit, excepte en multiplicar o dividir per un negatiu.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat Sí. Resol la desigualtat conservant el sentit, excepte en multiplicar o dividir per un negatiu. Desplaça el punt frontera i inclueix-lo només amb ≤ o ≥; si multipliques per nombre negatiu inverteix el signe de la desigualtat. Resultat matemàtic contrastable: Sí. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L04-05": {
+      "prompt": "En la lliçó Inequacions lineals: És x=4 solució de (3)x+(2)≤11 (Sí / No)? Comprova la frontera. Tria una resposta exacta.",
+      "hint": "Resol la desigualtat conservant el sentit, excepte en multiplicar o dividir per un negatiu.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat No. Resol la desigualtat conservant el sentit, excepte en multiplicar o dividir per un negatiu. Desplaça el punt frontera i inclueix-lo només amb ≤ o ≥; si multipliques per nombre negatiu inverteix el signe de la desigualtat. Resultat matemàtic contrastable: No. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L05-01": {
+      "prompt": "En la lliçó Restriccions en decisions: Capacitat total 12 hores; cada unitat requereix 2 hores. Quin és el màxim enter no negatiu d'unitats? Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 6. Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini. En quantitats senceres, calcula el major enter que satisfà la inequació; comprova frontera, no negativitat i unitats. Resultat matemàtic contrastable: 6. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L05-02": {
+      "prompt": "En la lliçó Restriccions en decisions: Amb restricció 2x+3y≤12 i no negativitat, és factible el pla x=3, y=2 (Sí / No)? Tria una resposta exacta.",
+      "hint": "Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini.",
+      "explanation": "Explicació: Contrasta la solució de les desigualtats amb capacitat, enters i pressupost; resultat Sí. Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini. En quantitats senceres, calcula el major enter que satisfà la inequació; comprova frontera, no negativitat i unitats. Resultat matemàtic contrastable: Sí. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L05-03": {
+      "prompt": "En la lliçó Restriccions en decisions: Amb restricció 2x+3y≤12 i no negativitat, és factible el pla x=4, y=2 (Sí / No)? Tria una resposta exacta.",
+      "hint": "Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini.",
+      "explanation": "Explicació: Contrasta la solució de les desigualtats amb capacitat, enters i pressupost; resultat No. Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini. En quantitats senceres, calcula el major enter que satisfà la inequació; comprova frontera, no negativitat i unitats. Resultat matemàtic contrastable: No. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L05-04": {
+      "prompt": "En la lliçó Restriccions en decisions: Capacitat total 30 hores; cada unitat requereix 5 hores. Quin és el màxim enter no negatiu d'unitats? Tria una resposta exacta.",
+      "hint": "Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 6. Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini. En quantitats senceres, calcula el major enter que satisfà la inequació; comprova frontera, no negativitat i unitats. Resultat matemàtic contrastable: 6. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L05-05": {
+      "prompt": "En la lliçó Restriccions en decisions: Amb 2x+3y≤12, x=3 i i enter no negatiu, calcula el màxim i admissible. Tria una resposta exacta.",
+      "hint": "Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini.",
+      "explanation": "Explicació: Contrasta la solució de les desigualtats amb capacitat, enters i pressupost; resultat 2. Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini. En quantitats senceres, calcula el major enter que satisfà la inequació; comprova frontera, no negativitat i unitats. Resultat matemàtic contrastable: 2. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L06-01": {
+      "prompt": "A la lliçó Interpretació i verificació de solucions: El pressupost màxim és 15 €, quota fixa 5 € i cost 2 € per ús. Quants usos enters no negatius caben? Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini.",
+      "explanation": "Explicació: Contrasta la solució de les desigualtats amb capacitat, enters i pressupost; resultat 5. Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini. En quantitats senceres, calcula el major enter que satisfà la inequació; comprova frontera, no negativitat i unitats. Resultat matemàtic contrastable: 5. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L06-02": {
+      "prompt": "En la lliçó Interpretació i verificació de solucions: L'equació x²=9 té dos arrels reals. Quina és la longitud x>0 vàlida? Introdueix un valor numèric exacte sense unitats.",
+      "hint": "Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 3. Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini. En quantitats senceres, calcula el major enter que satisfà la inequació; comprova frontera, no negativitat i unitats. Resultat matemàtic contrastable: 3. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L06-03": {
+      "prompt": "En la lliçó Interpretació i verificació de solucions: Amb pressupost 15 €, cost 5+2n, és factible n=6 enter no negatiu (Sí / No)? Tria una resposta exacta.",
+      "hint": "Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini.",
+      "explanation": "Explicació: Contrasta la solució de les desigualtats amb capacitat, enters i pressupost; resultat No. Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini. En quantitats senceres, calcula el major enter que satisfà la inequació; comprova frontera, no negativitat i unitats. Resultat matemàtic contrastable: No. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L06-04": {
+      "prompt": "En la lliçó Interpretació i verificació de solucions: L'equació x²=25 té dos arrels reals. Quina és la longitud x>0 vàlida? Tria una resposta exacta.",
+      "hint": "Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini.",
+      "explanation": "Explicació: Realitza les operacions exactes preservant bases, dominis i sentit de desigualtat; resultat 5. Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini. En quantitats senceres, calcula el major enter que satisfà la inequació; comprova frontera, no negativitat i unitats. Resultat matemàtic contrastable: 5. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    },
+    "F3-E4A-A02-L06-05": {
+      "prompt": "A la lliçó Interpretació i verificació de solucions: El pressupost màxim és 25 €, quota fixa 7 € i cost 3 € per ús. Quants usos enters no negatius caben? Tria una resposta exacta.",
+      "hint": "Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini.",
+      "explanation": "Explicació: Contrasta la solució de les desigualtats amb capacitat, enters i pressupost; resultat 6. Tradueix el recurs, pressupost o longitud a una restricció explícita i comprova el domini. En quantitats senceres, calcula el major enter que satisfà la inequació; comprova frontera, no negativitat i unitats. Resultat matemàtic contrastable: 6. Recorda comprovar la base de percentatge, el determinant, el domini, les restriccions i les unitats abans d'acceptar el valor."
+    }
+  }
+}

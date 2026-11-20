@@ -67,6 +67,10 @@ let server,browser;
   const url=base+'?lang=ca#/curso/'+ccode+'/unidad/'+uid+'/leccion/'+lid;
   await page.goto(url,{waitUntil:'networkidle0'});
   await page.waitForSelector('.f1-question-prompt',{timeout:10000});
+  // Locale overlay is loaded asynchronously after the lesson UI is mounted.
+  // Wait for the actual language attribution, not just for the Spanish skeleton.
+  try{await page.waitForFunction(()=>document.querySelector('#main')?.lang==='ca',{timeout:6000});}
+  catch(_err){/* state check below records a genuine non-localized failure */}
   const state=await page.evaluate(()=>({
     lang:document.querySelector('#main').lang,
     htmlLang:document.documentElement.lang,

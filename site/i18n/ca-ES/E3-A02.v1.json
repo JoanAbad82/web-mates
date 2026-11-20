@@ -1,0 +1,330 @@
+{
+  "schema": "webmates.ca-ES.unit-overlay.v1",
+  "version": "1.0.0",
+  "locale": "ca-ES",
+  "unit_id": "E3-A02",
+  "translation_status": "draft_unreviewed",
+  "source_files_sha256": {
+    "data/f1_e3_a02.json": "8b6d4cd0cccf8f5087d438dec6fa411dad05c68f1349be846ea941e94e8b450e",
+    "data/f1_e3_a02_exercises.json": "bb2d48cf6f4dc57b6708b4ceb1117377cdbfab20a4a8f8f0fc1da14f1a24342f"
+  },
+  "lessons": {
+    "E3-A02-L01": {
+      "title": "Equacions de primer grau amb dificultat creixent",
+      "objectives": [
+        "Resoldre equacions lineals amb parèntesi, fraccions senzilles i termes en ambdós membres.",
+        "Comprovar una solució substituint i reconèixer contradiccions."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una equació expressa que dues quantitats són iguals. Pots sumar, restar, multiplicar o dividir tots dos membres per la mateixa quantitat diferent de zero sense canviar les seves solucions. Distribueix els parèntesis, elimina denominadors multiplicant ambdós costats pel mínim comú múltiple i reuneix les x en un membre. Comprova sempre substituint en l'equació original."
+        },
+        {
+          "body": "3(x − 2) = 12.\n1. Distribueix: 3x − 6 = 12.\n2. Suma 6 en ambdós costats: 3x = 18.\n3. Divideix per 3: x = 6.\n4. Comprova: 3(6 − 2) = 12."
+        },
+        {
+          "body": "(x + 5)/2 = 7.\n1. Multiplica ambdós membres per 2: x + 5 = 14.\n2. Resta 5: x = 9.\n3. Comprova: (9 + 5)/2 = 7."
+        },
+        {
+          "body": "Si després de simplificar obtins 0 = 5, no existeix cap solució. Si obtens 0 = 0, tots els valors permesos són solucions. No divideixis mai per una expressió que podria valer zero."
+        },
+        {
+          "body": "Per què hem d'operar en tots dos membres i comprovar al final?||Perquè només les operacions equivalents conserven les solucions; substitució detecta errors de signes o de distribució."
+        },
+        {
+          "body": "Ruta ràpida: parèntesi → denominadors → termes semblants → buidar → comprovar. Si una operació implica dividir, el divisor no pot ser zero."
+        }
+      ]
+    },
+    "E3-A02-L02": {
+      "title": "Equació de segon grau incompleta",
+      "objectives": [
+        "Distingir quadràtiques incompletes de completes.",
+        "Resoldre ax ² + c = 0 i ax ² + bx = 0 amb mètodes adequats.",
+        "Identificar quan no hi ha arrels reals."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una equació quadràtica s'escriu ax ² + bx + c = 0, amb a ≠ 0. És incompleta si falta el terme lineal (b = 0) o el terme independent (c = 0). Primer porta tot a un membre. Si manca b, aïlla x² i comprova el signe. Si falta c, extreu x com a factor comú i aplica el producte nul."
+        },
+        {
+          "body": "x² − 25 = 0.\n1. Aïlla x² = 25.\n2. Presa ambdues possibilitats: x = 5 i x = −5.\n3. Comprova: 5² − 25 = 0 i (−5)² − 25 = 0."
+        },
+        {
+          "body": "3x² − 12x = 0.\n1. Extreu factor comú: 3x(x − 4) = 0.\n2. Producte zero: x = 0 o x − 4 = 0.\n3. Solucions: 0 i 4."
+        },
+        {
+          "body": "Si x² = −9 no hi ha solucions reals, perquè el quadrat d'un nombre real no és negatiu. No confones «no hi ha solucions reals» amb «no hi ha solucions» en altres conjunts numèrics."
+        },
+        {
+          "body": "En 4x² − 20x = 0, és correcte dividir primer per x?||No: x podria ser 0 i es perdria una solució. Primer extraiem 4x i apliquem el producte nul."
+        },
+        {
+          "body": "Si b = 0: buidar x² i estudiar el seu signe. Si c = 0: factor comú x; mai dividir per x sense comprovar x = 0."
+        }
+      ]
+    },
+    "E3-A02-L03": {
+      "title": "Equació de segon grau completa",
+      "objectives": [
+        "Resoldre quadràtiques completes per factorització quan sigui senzilla.",
+        "Aplicar correctament la fórmula general i comprovar les arrels."
+      ],
+      "content_blocks": [
+        {
+          "body": "Una quadràtica completa té la forma ax ² + bx + c = 0, amb a ≠ 0 i, normalment, b i c diferents de zero. Si és fàcil trobar dos factors, pots fer servir la factorització. En tots els casos reals pots estudiar el discriminant D = b² − 4a c i, si D ≥ 0, utilitzar x = (−b ± √D)/(2a). Col·loca cada coeficient amb el seu signe."
+        },
+        {
+          "body": "x² − 5x + 6 = 0.\n1. Busca dos nombres que sumin 5 i multipliquin 6: 2 i 3.\n2. Factoritza: (x − 2)(x − 3) = 0.\n3. arrels: x = 2 o x = 3.\n4. Substitueix ambdues en l'equació inicial."
+        },
+        {
+          "body": "2x² + 3x − 2 = 0.\n1-a = 2, b = 3, c = −2.\n2. D = 3² − 4·2·(−2) = 25.\n3-x = (−3 ± 5)/4.\n4. arrels: −2 i 1/2; comprova totes dues."
+        },
+        {
+          "body": "La barra de la fórmula divideix tot el numerador entre 2a, no solament la arrel. Si D < 0 no hi ha solucions reals. Si D = 0 apareix una única arrel real, comptada dues vegades algebraicament."
+        },
+        {
+          "body": "Què cal escriure primer per a evitar errors de signe en usar la fórmula?||Identificar a, b i c amb els seus signes; calcular D amb parèntesis i dividir el numerador complet entre 2a."
+        },
+        {
+          "body": "Ordre segur: forma estàndard → a, b, c → D → arrels (si D ≥ 0) → substitució. No memorices la fórmula sense comprendre cada coeficient."
+        }
+      ]
+    },
+    "E3-A02-L04": {
+      "title": "Discriminant i nombre de solucions",
+      "objectives": [
+        "Calcular el discriminant D = b² − 4a c.",
+        "Predir el nombre de solucions reals diferents i relacionar-lo amb la paràbola."
+      ],
+      "content_blocks": [
+        {
+          "body": "El discriminant d'ax ² + bx + c = 0 és D = b² − 4a c. Sense resoldre l'equació ja pots preveure quantes arrels reals diferents hi ha. D > 0: dos arrels; D = 0: una arrel doble; D < 0: cap arrel real."
+        },
+        {
+          "body": "Imagina la gràfica y = ax ² + bx + c: dues corts amb l'eix x si D > 0; un contacte tangent si D = 0; cap tall si D < 0. Aquest esquema verbal és alternativa accessible a la gràfica interactiva futura."
+        },
+        {
+          "body": "x² − 6x + 9 = 0.\nD = (−6)² − 4·1·9 = 36 − 36 = 0. Una única arrel real diferent (x = 3)."
+        },
+        {
+          "body": "2x² + 4x + 5 = 0.\nD = 4² − 4·2·5 = 16 − 40 = −24. No té arrels reals."
+        },
+        {
+          "body": "Si D = 0, hi ha zero arrels o una arrel real diferent?||Hi ha una arrel real diferent, doble algebraicament. La paràbola toca l'eix horitzontal."
+        },
+        {
+          "body": "Signe de D: positiu → 2; zero → 1; negatiu → 0 arrels reals diferents. Primer calcula D, després decideix si escau resoldre."
+        }
+      ]
+    },
+    "E3-A02-L05": {
+      "title": "Sistemes lineals 2×2",
+      "objectives": [
+        "Resoldre sistemes lineals 2×2 per substitució i reducció.",
+        "Comprovar un parell ordenat en les dues equacions.",
+        "Reconèixer sistemes amb cap o infinites solucions."
+      ],
+      "content_blocks": [
+        {
+          "body": "Un sistema 2×2 reuneix dues equacions lineals amb incògnites x i y. La solució (x, i) ha de complir ambdues. Per substitució, buida una incògnita i introdueix-la en l'altra. Per reducció, combina equacions per eliminar una incògnita. La comprovació sempre usa les dues equacions originals."
+        },
+        {
+          "body": "2x + y = 8; x − y = 1.\n1. Suma les equacions: 3x = 9.\n2. x = 3.\n3. Substitueix en x − y = 1: y = 2.\n4. Comprova: 2·3 + 2 = 8 i 3 − 2 = 1."
+        },
+        {
+          "body": "3x + 2y = 8; x − y = 1.\n1. De la segona: x = y + 1.\n2. Substitueix: 3(y + 1) + 2y = 8.\n3. 5y = 5 → y = 1; després x = 2.\n4. Verifica les dues equacions."
+        },
+        {
+          "body": "En la interpretació gràfica, una solució única és una intersecció de rectes. Si són paral·leles diferents, no hi ha solució; si són la mateixa recta, hi ha infinites solucions. No confones coordenades (x,y) amb dos arrels intercanviables."
+        },
+        {
+          "body": "Per què (2, 3) no equival a (3, 2) en un sistema?||Perquè x i i representen quantitats diferents; has de substituir cadascuna en la seva posició i en ambdues equacions."
+        },
+        {
+          "body": "Triar substitució o reducció → resoldre una incògnita → trobar l'altra → comprovar ambdues equacions. Si una variable desapareix, s'analitzarà la compatibilitat."
+        }
+      ]
+    },
+    "E3-A02-L06": {
+      "title": "Problemes algebraics contextualitzats",
+      "objectives": [
+        "Traduir un context a una equació quadràtica o a un sistema.",
+        "Interpretar les arrels i descartar les impossibles segons unitats i restriccions.",
+        "Comunicar i comprovar la solució en el problema original."
+      ],
+      "content_blocks": [
+        {
+          "body": "Resoldre un problema algebraic requereix quatre decisions: triar incògnites amb unitats, traduir relacions, resoldre de manera exacta i comprovar quines solucions tenen sentit en el context. Una arrel algebraica correcta pot ser impossible com a longitud o quantitat d'objectes."
+        },
+        {
+          "body": "Un rectangle té costats x i x + 2 cm, i àrea 24 cm ².\n1. Model: x(x + 2) = 24.\n2. x² + 2x − 24 = 0 → (x + 6)(x − 4) = 0.\n3. arrels −6 i 4; descarta −6 perquè una longitud ha de ser positiva.\n4. Llats: 4 cm i 6 cm; àrea 24 cm ²."
+        },
+        {
+          "body": "Dos quaderns i tres bolígrafs costen 13 €, i un quadern i dos bolígrafs costen 7 €.\n1. x = preu quadern, y = preu bolígraf.\n2. 2x + 3y = 13; x + 2y = 7.\n3. En resoldre: y = 1, x = 5.\n4. Verifica 2·5 + 3·1 = 13 i 5 + 2·1 = 7."
+        },
+        {
+          "body": "Si un enunciat exigeix nombres enters, comprova integritat. Si exigeix un nombre positiu, exclou zero i negatius. Escriu una resposta amb les seves unitats i una frase que interpreti el resultat."
+        },
+        {
+          "body": "Per què no n'hi ha prou amb obtenir x = −6 o x = 4 en el problema del rectangle?||Perquè cal tornar al context: −6 cm no és una longitud vàlida; la resposta és 4 cm i 6 cm."
+        },
+        {
+          "body": "Pla: incògnites + unitats → relacions → equació / sistema → solucions → restriccions → comprovació i frase final."
+        }
+      ]
+    }
+  },
+  "activities": {
+    "F1-E3-A02-L01-01": {
+      "prompt": "Resol 3(x − 2) = 12. Escriu x.",
+      "hint": "Distribueix primer el 3.",
+      "explanation": "Càlcul: 3x − 6 = 12 → 3x = 18 → x = 6; 3(6 − 2) = 12."
+    },
+    "F1-E3-A02-L01-02": {
+      "prompt": "Resol (x + 5)/2 = 7. Escriu x.",
+      "hint": "Multiplica ambdós membres per 2.",
+      "explanation": "Càlcul: x + 5 = 14 → x = 9; (9 + 5)/2 = 7."
+    },
+    "F1-E3-A02-L01-03": {
+      "prompt": "Resol 4x − 7 = 2x + 9. Escriu x.",
+      "hint": "Resta 2x en ambdós membres.",
+      "explanation": "Càlcul: 2x = 16 → x = 8; 32 − 7 = 16 + 9."
+    },
+    "F1-E3-A02-L01-04": {
+      "prompt": "Quantes solucions té 2(x + 3) = 2x + 1?",
+      "hint": "Desenvolupa el parèntesi.",
+      "explanation": "2x + 6 = 2x + 1 porta a 6 = 1, contradicció: cap solució."
+    },
+    "F1-E3-A02-L01-05": {
+      "prompt": "Resol 5 − 2(x − 1) = 1. Escriu x.",
+      "hint": "El signe menys multiplica a tot (x−1).",
+      "explanation": "Càlcul: 7 − 2x = 1 → −2x = −6 → x = 3."
+    },
+    "F1-E3-A02-L02-01": {
+      "prompt": "Resol x² − 25 = 0. Escriu les dues arrels separades per; o per coma.",
+      "hint": "Aïlla x² = 25.",
+      "explanation": "x² = 25 → x = −5 o x = 5. Ambdues verifiquen x² − 25 = 0."
+    },
+    "F1-E3-A02-L02-02": {
+      "prompt": "Resol 3x² − 12x = 0. Escriu les arrels.",
+      "hint": "Saca factor comú 3x.",
+      "explanation": "3x(x − 4)=0 → x=0 o x=4. No dividides entre x i perdis x=0."
+    },
+    "F1-E3-A02-L02-03": {
+      "prompt": "Resol 2x² − 18 = 0. Escriu les dues arrels.",
+      "hint": "Divideix entre 2: x² = 9.",
+      "explanation": "Càlcul: 2x² = 18 → x² = 9 → x = −3, 3."
+    },
+    "F1-E3-A02-L02-04": {
+      "prompt": "Resol x² + 4x = 0. Escriu les arrels.",
+      "hint": "Factor comú x.",
+      "explanation": "Càlcul: x(x + 4)=0 → x=0 o x=−4."
+    },
+    "F1-E3-A02-L02-05": {
+      "prompt": "En nombres reals, què ocorre amb x² + 9 = 0?",
+      "hint": "Aïlla x².",
+      "explanation": "x² = −9 és impossible en R. L'afirmació només es refereix a arrels reals."
+    },
+    "F1-E3-A02-L03-01": {
+      "prompt": "Resol x² − 5x + 6 = 0. Escriu les dues arrels.",
+      "hint": "Busca dos nombres que sumin 5 i multipliquin 6.",
+      "explanation": "(x−2)(x−3)=0 → 2 i 3. Substitueix: 4−10+6=0; 9−15+6=0."
+    },
+    "F1-E3-A02-L03-02": {
+      "prompt": "Resol 2x² + 3x − 2 = 0. Escriu ambdues arrels (decimals admesos).",
+      "hint": "Identifica els coeficients a=2, b=3, c=−2.",
+      "explanation": "D=9+16=25 → x=(−3±5)/4, per tant x=−2 i x=0,5."
+    },
+    "F1-E3-A02-L03-03": {
+      "prompt": "Resol x² − 9x + 20 = 0. Escriu les dues arrels.",
+      "hint": "Prova nombres que sumin 9 i multipliquin 20.",
+      "explanation": "(x−4)(x−5)=0; arrels 4 i 5."
+    },
+    "F1-E3-A02-L03-04": {
+      "prompt": "Resol x² + 2x − 8 = 0. Escriu ambdues arrels.",
+      "hint": "Busca un producte −8 i suma −2, ajustant signes de factors.",
+      "explanation": "(x+4)(x−2)=0; arrels −4 i 2."
+    },
+    "F1-E3-A02-L03-05": {
+      "prompt": "Resol x² − 2x − 3 = 0. Escriu les arrels.",
+      "hint": "Prova factorització.",
+      "explanation": "Càlcul: (x−3)(x+1)=0 → x=−1 o x=3."
+    },
+    "F1-E3-A02-L04-01": {
+      "prompt": "Calcula el discriminant D de x² − 6x + 9 = 0.",
+      "hint": "b=−6 i c=9.",
+      "explanation": "D=36−36=0; una arrel real doble."
+    },
+    "F1-E3-A02-L04-02": {
+      "prompt": "Quantes arrels reals diferents té 2x² + 4x + 5 = 0?",
+      "hint": "Calcula el discriminant D=4²−4·2·5.",
+      "explanation": "D=16−40=−24. No hi ha arrels reals."
+    },
+    "F1-E3-A02-L04-03": {
+      "prompt": "Calcula el discriminant D de x² − 3x − 4 = 0.",
+      "hint": "b=−3 i c=−4.",
+      "explanation": "D=9+16=25; l'equació té dos arrels reals diferents."
+    },
+    "F1-E3-A02-L04-04": {
+      "prompt": "Quantes arrels reals diferents té x² + 2x + 1 = 0?",
+      "hint": "Pista: D=2²−4·1·1.",
+      "explanation": "D=0. Una sola arrel real diferent, x=−1 (doble)."
+    },
+    "F1-E3-A02-L04-05": {
+      "prompt": "Calcula el discriminant D de x² − 4x + 1 = 0.",
+      "hint": "Pista: b=−4, c=1.",
+      "explanation": "D=(−4)²−4·1·1=12>0; hi ha dos arrels reals."
+    },
+    "F1-E3-A02-L05-01": {
+      "prompt": "El sistema x+y=7; x−y=1 té solució (x,y):",
+      "hint": "Suma les dues equacions.",
+      "explanation": "x=4, y=3; 4+3=7 i 4−3=1."
+    },
+    "F1-E3-A02-L05-02": {
+      "prompt": "En 2x+y=8; x−y=1, quant val x?",
+      "hint": "Suma ambdues equacions.",
+      "explanation": "x=3, y=2; comprova 2·3+2=8 i 3−2=1."
+    },
+    "F1-E3-A02-L05-03": {
+      "prompt": "Per a 3x+2y=8; x−y=1, el parell (x,y) és:",
+      "hint": "Desplaça x=y+1.",
+      "explanation": "Càlcul: 3(y+1)+2y=8 → y=1, x=2."
+    },
+    "F1-E3-A02-L05-04": {
+      "prompt": "Per a x+2y=11; 2x−y=2, quant val i?",
+      "hint": "De la segona equació: y=2x−2.",
+      "explanation": "x=3, y=4; 3+8=11 i 6−4=2."
+    },
+    "F1-E3-A02-L05-05": {
+      "prompt": "Per a 2x+3y=12; x−y=1, quant val x?",
+      "hint": "De x−y=1 dedueix x=y+1.",
+      "explanation": "5y=10 → y=2, x=3; 6+6=12 i 3−2=1."
+    },
+    "F1-E3-A02-L06-01": {
+      "prompt": "Un rectangle té costats x i x+2 cm; la seva àrea és 24 cm ². Quant val la longitud positiva x en cm?",
+      "hint": "Planteja x(x+2)=24.",
+      "explanation": "arrels algebraiques −6 i 4; només x=4 cm és una longitud admissible."
+    },
+    "F1-E3-A02-L06-02": {
+      "prompt": "Dos enters positius consecutius tenen producte 42. Quin és el menor?",
+      "hint": "Sigui n el menor: n(n+1)=42.",
+      "explanation": "n=6 o n=−7; es tria 6. Els nombres són 6 i 7."
+    },
+    "F1-E3-A02-L06-03": {
+      "prompt": "Dos quaderns i tres bolígrafs costen 13 €. Un quadern i dos bolígrafs costen 7 €. Pres d'un quadern en €?",
+      "hint": "Sigui x el preu del quadern, i el del bolígraf.",
+      "explanation": "Restant dues vegades la segona de la primera: −y=−1 → y=1; x=5 €."
+    },
+    "F1-E3-A02-L06-04": {
+      "prompt": "Un rectangle té costats x i x+3 cm i àrea 40 cm ². Calcula x positiu, en cm.",
+      "hint": "Pista: x(x+3)=40.",
+      "explanation": "x=5 o x=−8; x=5 cm i l'altre costat mesura 8 cm."
+    },
+    "F1-E3-A02-L06-05": {
+      "prompt": "Un rectangle té perímetre 26 cm i la longitud excedeix l'amplària en 3 cm. Quins són (longitud, amplària)?",
+      "hint": "L+A=13 i L−A=3.",
+      "explanation": "Longitud 8 cm i amplària 5 cm: 2(8+5)=26 i diferència 3."
+    }
+  }
+}
