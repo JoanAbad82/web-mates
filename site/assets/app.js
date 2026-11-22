@@ -59,7 +59,24 @@ let actions=el('div','','btnrow');let submit=el('button','Comprobar','action');s
 function f3ReviewPage(unitId){let s=shell();return renderF3Review({container:s,unitId});}
 function f1ReviewPage(){let s=shell();return renderF1Review({container:s,data:f1Data,bank:f1Bank});}
 function reviewPage(){let s=shell();hero(s,'Recordar','Repaso espaciado','F2 y F3 permiten practicar y recuperar errores en esta sesión. Para repasar en días posteriores, vuelve por tu cuenta: no hay guardado personal.');s.append(showNotice('Las 85 unidades contienen lecciones sintéticas EN REVISIÓN; la cobertura editorial no equivale a validación humana ni publicación.'));s.append(a('Abrir repaso espaciado E3-A02','#/repaso-e3-a02'));renderF3Directory({container:s,unitCatalog:units});let g=el('div','','grid');demoItems.forEach(it=>{let l=lessons.get(it.lesson_id);if(!l)return;let unit=units.get(it.lesson_id.replace(/-L\d+$/,''));let c=courses.get(unit.unit_id.split('-')[0]);g.append(card(l.title,`${c.name} · Demo técnica`,linkLesson(c,unit,l),'Probar ejercicio'))});s.append(g);}
-function aboutPage(){let s=shell();hero(s,'Transparencia','Qué incluye este prototipo','Estructura de navegación completa, actividades de muestra y una base técnica sin servicios externos.');s.append(showNotice('No es un curso terminado, no representa validación curricular autonómica completa ni se ha publicado.'));s.append(el('p','Los títulos provienen del catálogo LOMLOE editorial de 85 unidades y 505 lecciones. La planificación de contenidos, revisiones matemáticas y accesibilidad detallada está en los documentos del paquete.'));}
+function aboutPage(){
+ let s=shell();
+ hero(s,'Transparencia','Qué incluye este prototipo','Estructura de navegación completa, actividades de muestra y una base técnica sin servicios externos.');
+ s.append(showNotice('No es un curso terminado, no representa validación curricular autonómica completa ni se ha publicado.'));
+ s.append(el('p','Los títulos provienen del catálogo LOMLOE editorial de 85 unidades y 505 lecciones. La planificación de contenidos, revisiones matemáticas y accesibilidad detallada está en los documentos del paquete.'));
+ const invite=el('section','','card');
+ invite.setAttribute('aria-labelledby','collaboration-heading');
+ const heading=el('h2','Colabora en la revisión / Col·labora en la revisió');
+ heading.id='collaboration-heading';
+ invite.append(
+  heading,
+  el('p','ES: Ayúdanos a detectar errores matemáticos, lingüísticos o de accesibilidad. Indica el ID de la unidad o actividad, el problema y cómo reproducirlo.'),
+  el('p','CA: Ajuda’ns a detectar errors matemàtics, lingüístics o d’accessibilitat. Indica l’ID de la unitat o activitat, el problema i com reproduir-lo.'),
+  a('Participar en GitHub / Participa a GitHub — Issue #1','https://github.com/JoanAbad82/web-mates/issues/1'),
+  el('p','El contenido ca-ES está en estado draft_unreviewed: la cobertura no implica validación humana. No compartas datos de estudiantes / No comparteixis dades d’alumnes.')
+ );
+ s.append(invite);
+}
 function notFound(){let s=shell();hero(s,'Ruta no encontrada','Esta lección o unidad no figura en el catálogo','Comprueba el enlace o vuelve al listado de cursos.');s.append(a('Ir a cursos','#/'));}
 async function start(){try{const [c,d,f,g]=await Promise.all([fetch('./data/catalogo.json'),fetch('./data/demo_activities.json'),fetch('./data/f1_e3_a02.json'),fetch('./data/f1_e3_a02_exercises.json')]);if(!c.ok||!d.ok||!f.ok||!g.ok)throw new Error('No se pudo cargar la estructura.');catalog=await c.json();demoItems=(await d.json()).activities;f1Data=await f.json();f1Bank=await g.json();f1Bank.activities=f1Bank.activities.map(item=>({...item,...(f1Bank.validation_metadata[item.exercise_id]||{})}));const browserStorage=null; /* F4-SEC efímero: solo memoria; nunca leer historial persistente */configureF2({data:f1Data,bank:f1Bank,storage:browserStorage});if(f1Data.unit_id!=='E3-A02'||f1Data.lesson_documents.length!==6||f1Bank.activities.length!==30)throw new Error('F1: contenido incompleto');for(const course of catalog.courses){courses.set(course.code,course);for(const u of course.units){units.set(u.unit_id,u);for(const l of u.lessons){lessons.set(l.lesson_id,l);}}}if(courses.size!==9||units.size!==85||lessons.size!==505)throw new Error('El catálogo no cumple los recuentos esperados.');await initI18n(catalog);window.addEventListener('hashchange',route);route();}catch(e){const s=shell();hero(s,'Error de carga','No se pudo abrir el catálogo','Comprueba que has iniciado un servidor HTTP local desde la raíz del proyecto y vuelve a intentarlo.');s.append(showNotice(e.message));}}
 start();
