@@ -1,13 +1,16 @@
-# WEB MATES — matemáticas abiertas
+# WEB MATES — matemáticas abiertas / matemàtiques obertes
 
-**Proyecto y desarrollo web: Joan**.
+**Proyecto y desarrollo web: Joan.** Proyecto independiente de código abierto para ESO y Bachillerato / Projecte independent de codi obert per a ESO i batxillerat.
 
-**Estado: proyecto de código abierto en desarrollo.** Este repositorio distribuye código y material educativo original bajo MIT; no equivale a una web pública desplegada ni a un temario validado.
-La aplicación web contiene material matemático de ESO y Bachillerato. No expide
-títulos, certificados o notas oficiales. Las 505 lecciones y 2.525 actividades
-se encuentran en estado editorial de revisión; los ejercicios no están
-homologados, y pueden contener errores. El catálogo incluye 9 itinerarios y
-85 unidades.
+**[Consultar la beta educativa / Consultar la beta educativa](https://webmates-e3a02-beta.pages.dev/)**
+
+## Estado comprobado / Estat comprovat — 27/11/2026
+
+- **Beta pública:** 9 itinerarios, 85 unidades y 505 lecciones; 2.525 actividades en los manifiestos lingüísticos. Castellano, catalán e inglés en borrador. Acceso y recursos representativos comprobados el 27/11/2026 por GET y comparación con la referencia del despliegue del 24/11/2026. No es una certificación integral actual.
+- **Repositorio público:** código y material original en desarrollo; base de revisión documental `45e1b5b5243983fbda65c6e923a37a5c7c0434ea`. El manifiesto ca-ES de esa base contiene 85/85 unidades, 505/505 lecciones y 2.525/2.525 actividades traducibles en borrador, con 0 lecciones y 0 actividades marcadas como revisadas. Esa base no contiene el manifiesto en-GB de la beta. El código de GitHub no es una copia exacta del sitio desplegado.
+- **Estado editorial:** material asistido por IA, susceptible de errores; no homologado ni equivalente a revisión matemática, didáctica, lingüística o curricular especializada. Los manifiestos públicos ca-ES y en-GB declaran 0 lecciones y 0 actividades revisadas. Cobertura de traducción no equivale a corrección. No expide títulos, certificados ni notas oficiales.
+
+**Català:** La beta pública ofereix 9 itineraris, 85 unitats, 505 lliçons i 2.525 activitats en esborrany, amb castellà, català i anglès. El repositori i la beta són versions diferents; la base documental indicada conté el manifest català, però no l'anglès. La cobertura dels manifestos no certifica cap revisió humana. És material provisional assistit per IA, no homologat.
 
 ## Código abierto y licencia
 
@@ -30,61 +33,34 @@ licencia. Las nuevas contribuciones aceptadas deberán ser compatibles con MIT.
 
 ## Estructura y ejecución
 
-- site/: aplicación web estática con catálogo y ejercicios.
-- tests/: comprobaciones estructurales reproducibles.
-- CONTRIBUTING.md: procedimiento de participación.
-- SECURITY.md: comunicación responsable de vulnerabilidades.
+- `site/`: aplicación estática con catálogo y ejercicios.
+- `tests/`: comprobaciones estructurales reproducibles de la versión del repositorio.
+- [CONTRIBUTING.md](CONTRIBUTING.md): procedimiento de participación.
+- [SECURITY.md](SECURITY.md): comunicación responsable de vulnerabilidades.
 
-Desde site/ puede ejecutarse un servidor HTTP estático local para uso
-de prueba. El fichero _headers solo tiene efecto en proveedores que
-interpreten ese formato: no garantiza CSP en cualquier servidor.
+Para probar el código público, utiliza una copia local aislada de la base acordada y un servidor HTTP limitado a 127.0.0.1. El fichero _headers solo tiene efecto en proveedores que interpretan ese formato: no garantiza CSP en cualquier servidor. No se deben ejecutar pruebas invasivas contra la beta pública.
 
-WEB MATES no necesita cuenta, no instala analítica identificativa y usa
-estado educativo temporal de sesión. Es posible que un navegador conserve
-datos de versiones anteriores; la aplicación prevé borrado voluntario.
-Un futuro hosting puede tratar IP y logs de visitantes, independientemente
-del funcionamiento efímero.
+El estudio no requiere cuenta de estudiante. Las pruebas educativas deben utilizar datos sintéticos y no incluir información personal de menores. La beta dispone de avisos de privacidad diferenciados: [ES](https://webmates-e3a02-beta.pages.dev/privacidad.html), [CA](https://webmates-e3a02-beta.pages.dev/privacitat.html), [EN](https://webmates-e3a02-beta.pages.dev/privacy-en.html). La versión pública de referencia mantiene desactivados los envíos de comentarios en inglés. La política de privacidad vigente del sitio y las condiciones del servicio deben consultarse; no se infiere cumplimiento legal de una prueba GET.
 
-## Participar
+## Participar / Participar-hi
 
-Las aportaciones de código y contenido por GitHub Issues/Pull Requests son
-bienvenidas en el repositorio público. Cada contribución debe
-identificar procedencia, derechos, pruebas y las lecciones afectadas; una
-propuesta no equivale a revisión curricular o pedagógica.
+Buscamos revisiones pequeñas y verificables de matemáticas, didáctica, lenguas, tecnología y accesibilidad. No necesitas programar. / Busquem revisions petites i verificables de matemàtiques, didàctica, llengües, tecnologia i accessibilitat. No cal programar.
 
-## Publicación por etapas
+- [Issue #1 — Revisión humana / Revisió humana](https://github.com/JoanAbad82/web-mates/issues/1).
+- [Guía de contribución / Guia de contribució](CONTRIBUTING.md).
+- [Programa universitario propuesto / Programa universitari proposat](docs/colaboracion/PROGRAMA_ES_CA.md).
+- [Plantillas / Plantilles](docs/colaboracion/PLANTILLAS_ES_CA.md).
 
-El repositorio abierto y la web pública son dos entregables distintos.
-La fuente WIP puede distribuirse sin haber homologado 505 lecciones.
-El sitio educativo para menores requiere valorar exactamente qué contenido
-se muestra, su corrección, accesibilidad, privacidad, seguridad y operador.
-La aplicación actual conserva gates F4 NO VERIFICADO y publicación web NO-GO.
+El piloto universitario está propuesto, no confirmado: su activación depende de la aprobación de condiciones y de la disponibilidad de coordinación y revisores. Las propuestas ordinarias de revisión humana siguen siendo bienvenidas. Cada aportación debe indicar si se refiere a la beta o al código, versión/fecha o commit, IDs, evidencia, derechos y límites.
 
-El nombre visible MATEVOLT sigue provisional, pendiente de un examen de
-semejanzas; no se considera una marca disponible por incluirla en un repositorio.
-GitHub Pages no está activado: el código fuente público no significa que la web esté desplegada.
+## Publicación por etapas / Publicació per etapes
 
-## Idiomas: prioridad al catalán — 19/11/2026
+El repositorio abierto y la beta pública son entregables distintos. Una incidencia o Pull Request no implica integración, revisión especializada ni despliegue. Los cambios se revisan y se publican únicamente con las condiciones y autorización aplicables. La existencia de la beta no significa que se hayan cerrado los criterios F4 de publicación integral, accesibilidad, privacidad y revisión especializada.
 
-**Repositorio público MIT; traducción al catalán en desarrollo.**
-La aplicación ofrece el selector «Català (beta) / Castellano», con 9 itinerarios y
-85 títulos de unidad traducidos al catalán en borrador. El manifiesto incluye las
-85 unidades, sus 505 lecciones y las 2.525 actividades con cobertura verificable.
+El nombre MATEVOLT sigue provisional, pendiente de examen de semejanzas; su uso en el repositorio no acredita disponibilidad de marca. No se utiliza GitHub Pages como enlace de la beta: el enlace público indicado arriba corresponde a otro alojamiento.
 
-**Cobertura real actual:** la cobertura de los campos traducibles del contrato ca-ES v1 alcanza **85/85 unidades, 505/505 lecciones y 2525/2.525 actividades**, en estado `draft_unreviewed`. Pendientes 0 unidades, 0 lecciones y 0 actividades. **No existe revisión lingüística humana certificada (0 revisiones).** Las opciones de respuesta y algunas etiquetas de interfaz siguen vinculadas al castellano para preservar los validadores y la aplicación original.
+## Referencia histórica de localización (19/11/2026)
 
-Las últimas 22 unidades se recuperaron mediante Softcatalà y Aina ejecutados localmente, correcciones contrastadas por ID y SHA-256 de los campos españoles, verificación de equivalencia matemática, vocabulario, negaciones, navegador Chrome y fallback. Los controles automáticos no sustituyen la revisión lingüística, pedagógica ni de accesibilidad.
+En la base pública, la cobertura ca-ES v1 se consiguió con traducción asistida y controles por ID y SHA-256. Algunas opciones y etiquetas permanecían vinculadas al castellano para preservar validadores. Los controles automáticos no sustituyen la revisión humana. Esta descripción histórica no caracteriza todos los textos de la beta trilingüe posterior.
 
-La interfaz F1/F3 todavía mezcla algunas etiquetas de ambos idiomas.
-No se presentan traducciones pendientes como terminadas ni homologadas.
-
-La preferencia se pasa por URL (?lang=ca o ?lang=es), sin cookies ni localStorage.
-El contenido no traducido conserva una marca explícita de idioma para lector de pantalla.
-
-**Contribuir:** [Issue #1](https://github.com/JoanAbad82/web-mates/issues/1).
-[Contrato y generador de paquetes](docs/i18n/PAQUETES_CA_ES_V1.md) y
-[plan de localización](docs/i18n/CA_ES_PLAN_Y_CONTRATO.md).
-Las nuevas traducciones se aceptan mediante Pull Requests con pruebas de integridad.
-El inglés queda para más adelante.
-
-Este cambio publica **código fuente**, no despliega la web: GitHub Pages sigue desactivado.
+[Contrato de paquetes CA](docs/i18n/PAQUETES_CA_ES_V1.md) · [Plan de localización](docs/i18n/CA_ES_PLAN_Y_CONTRATO.md). No cambiar los contratos ni los datos canónicos mediante una propuesta exclusivamente lingüística.
